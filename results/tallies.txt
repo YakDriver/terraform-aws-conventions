@@ -14,6 +14,7 @@ Analysis Tallies
 2683	Lowercase-t test Functions:testAcc functions with config (any case)
 2827	Lowercase-t test Functions:testAcc functions returning strings
 8345	Any case-t Test Functions:All
+7747	Any case-t Test Functions:TestAcc
 2924	Any case-t Test Functions:TestAcc with lowercase after first underscore
 1642	Any case-t Test Functions:TestAcc with uppercase after first underscore
 3585	Any case-t Test Functions:TestAcc with only one underscore
