@@ -153,6 +153,10 @@ descriptions+=( "Test Constants:TestAcc (any case) with config (any case)" )
 fileNames+=( "./results/const-anyT-TestAcc-anyConfigAnywhere.txt" )
 perl -nle'print $& while m{(const\s+[tT]estAcc.*[cC]onfig.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
+descriptions+=( "Test Constants:TestAcc (any case) with config (any case) and no underscores" )
+fileNames+=( "./results/const-anyT-TestAcc-anyConfigAnywhereNoUnderscores.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*[cC]onfig[^_]*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
 descriptions+=( "Test Constants:TestAcc (any case) with underscore anywhere after config (any case)" )
 fileNames+=( "./results/const-anyT-TestAcc-underscoreAfterAnyConfig.txt" )
 perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*[cC]onfig.*_.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
