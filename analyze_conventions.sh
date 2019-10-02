@@ -81,6 +81,10 @@ descriptions+=( "Any case-t Test Functions:All" )
 fileNames+=( "./results/anyT-Test.txt" )
 perl -nle'print $& while m{(func\s+[tT]est.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
+descriptions+=( "Any case-t Test Functions:TestAcc" )
+fileNames+=( "./results/anyT-TestAcc.txt" )
+perl -nle'print $& while m{(func\s+[tT]estAcc.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
 descriptions+=( "Any case-t Test Functions:TestAcc with lowercase after first underscore" )
 fileNames+=( "./results/anyT-TestAcc-lowAfterUnderscore.txt" )
 perl -nle'print $& while m{(func\s+[tT]estAcc[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
