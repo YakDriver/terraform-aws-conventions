@@ -73,6 +73,14 @@ descriptions+=( "Lowercase-t test Functions:testAcc functions returning strings"
 fileNames+=( "./results/lowT-testAcc-returnStrings.txt" )
 perl -nle'print $& while m{(func\s+testAcc.*\s*string\s*\{)}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
+descriptions+=( "Lowercase-t test Functions:testAcc functions with config (any case) and returning strings" )
+fileNames+=( "./results/lowT-testAcc-anyConfigAnywhereReturnStrings.txt" )
+perl -nle'print $& while m{(func\s+testAcc.*[cC]onfig.*\s*string\s*\{)}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores" )
+fileNames+=( "./results/lowT-testAcc-anyConfigAnywhereReturnStringsNoUnderscore.txt" )
+perl -nle'print $& while m{(func\s+testAcc[^_]*[cC]onfig[^_]*\s*string\s*\{)}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
 ###################
 # any case-T test #
 ###################
