@@ -71,7 +71,7 @@ perl -nle'print $& while m{(func\s+testAcc.*[cC]onfig.*)\s*\(}g' ${TF_AWS_PATH}/
 
 descriptions+=( "Lowercase-t test Functions:testAcc functions returning strings" )
 fileNames+=( "./results/lowT-testAcc-returnStrings.txt" )
-perl -nle'print $& while m{(func\s+testAcc.*\s*string\s*\{}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+testAcc.*\s*string\s*\{)}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
 ###################
 # any case-T test #
