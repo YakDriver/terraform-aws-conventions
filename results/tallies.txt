@@ -19,10 +19,9 @@ Analysis Tallies
 3585	Any case-t Test Functions:TestAcc with only one underscore
 1376	Any case-t Test Functions:TestAcc with camel case after first underscore
 981	Any case-t Test Functions:TestAcc with multiple underscores
-0	Test Constants:All
+565	Test Constants:All
 556	Test Constants:TestAcc (any case)
 556	Test Constants:testAcc (lowercase)
-0	Test Constants:TestAcc (uppercase)
 174	Test Constants:TestAcc (any case) with lowercase after first underscore
 49	Test Constants:TestAcc (any case) with uppercase after first underscore
 80	Test Constants:TestAcc (any case) with camel case after underscore
