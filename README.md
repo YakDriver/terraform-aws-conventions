@@ -7,121 +7,121 @@ Good ol' fashioned Perl and RegExes gone awry
 
 Count: 3548
 
-Example: func TestAccAWSAutoScalingGroup_terminationPolicies(
+Example: func TestAccAWSAPIGatewayDeployment_Variables(
 
 ## all functions starting with capital-T TestAcc
 
 Count: 3115
 
-Example: func TestAccAWSGlueClassifier_JsonClassifier(
+Example: func TestAccAWSDBInstance_SnapshotIdentifier_Io1Storage(
 
 ## all functions starting with capital-T TestAccAWS
 
 Count: 2819
 
-Example: func TestAccAWSDataSyncLocationS3_Tags(
+Example: func TestAccAWSDBInstance_SnapshotIdentifier_IamDatabaseAuthenticationEnabled(
 
 ## all functions starting with capital-T TestAccAws
 
 Count: 142
 
-Example: func TestAccAwsBackupPlan_withLifecycleColdStorageAfterOnly(
+Example: func TestAccAwsAppsyncResolver_disappears(
 
 ## all functions starting with capital-T Test, lowercase after underscore
 
 Count: 2125
 
-Example: func TestAccAWSRedshiftSnapshotSchedule_basic(
+Example: func TestAccAWSCognitoUserPoolClient_allFields(
 
 ## all functions starting with capital-T Test, uppercase after underscore
 
 Count: 1045
 
-Example: func TestAccAWSCloudwatchLogSubscriptionFilter_Distribution(
+Example: func TestAccDataSourceAwsEip_Id(
 
 ## all functions starting with capital-T TestAcc, lowercase after underscore
 
 Count: 2019
 
-Example: func TestAccDataSourceAWSLB_basic(
+Example: func TestAccDataSourceAwsTransferServer_service_managed(
 
 ## all functions starting with capital-T TestAcc, uppercase after underscore
 
 Count: 1044
 
-Example: func TestAccAWSGlueCrawler_CatalogTarget(
+Example: func TestAccAWSDlmLifecyclePolicy_Full(
 
 ## all functions starting with lower-T test
 
 Count: 4797
 
-Example: func testSweepElasticacheReplicationGroups(
+Example: func testAccRoute53ZoneConfigForceDestroyTrailingPeriod(
 
 ## all functions starting with lower-T testAcc
 
 Count: 4632
 
-Example: func testAccInstanceConfig_creditSpecification_unspecified(
+Example: func testAccInstanceConfig_creditSpecification_unlimitedCpuCredits(
 
 ## all functions starting with lower-T testAccAWS
 
 Count: 1991
 
-Example: func testAccAWSLambdaEventSourceMappingConfigUpdate_kinesis(
+Example: func testAccAWSLBConfigALBAccessLogsNoBlocks(
 
 ## all functions starting with lower-T testAccAws
 
 Count: 225
 
-Example: func testAccAwsIAMRoleConfig(
+Example: func testAccAwsOrganizationsAccount_ParentId(
 
 ## all functions starting with lower-T test, lowercase after underscore
 
 Count: 932
 
-Example: func testAccVpcPeeringConnectionOptionsConfig_differentRegion_sameAccount(
+Example: func testAccDataSourceAwsNetworkInterface_basic(
 
 ## all functions starting with lower-T test, uppercase after underscore
 
 Count: 598
 
-Example: func testAccGlueCrawlerConfig_Role_ARN_NoPath(
+Example: func testAccAWSCodeBuildProjectConfig_Source_Type_CodePipeline(
 
 ## all functions starting with lower-T testAcc, lowercase after underscore
 
 Count: 905
 
-Example: func testAccAppmeshVirtualRouterConfig_tags(
+Example: func testAccDataSourceAwsCognitoUserPoolsConfig_notFound(
 
 ## all functions starting with lower-T testAcc, uppercase after underscore
 
 Count: 598
 
-Example: func testAccAWSDBInstanceConfig_ReplicateSourceDb_DeletionProtection(
+Example: func testAccAWSDBInstanceConfig_ReplicateSourceDb_AvailabilityZone(
 
 ## all functions starting with lower-T testAcc, including any case config
 
 Count: 2683
 
-Example: func testAccKinesisStreamConfigDecreaseRetentionPeriod(
+Example: func testAccAWSCodeBuildProjectConfig_Description(
 
 ## all functions starting with lower-T testAcc, underscore before any case config
 
 Count: 71
 
-Example: func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_createMultiple(
+Example: func testAccAWSEc2FleetConfig_LaunchTemplateConfig_Override_InstanceType(
 
 ## all functions starting with lower-T testAcc, underscore after any case config
 
 Count: 1260
 
-Example: func testAccAWSWafRegionalXssMatchSetConfig_changeTuples(
+Example: func testAccAWSCognitoUserPoolConfig_withEmailVerificationMessage(
 
 ## all consts starting with lower-T testAcc, including any case config
 
 Count: 496
 
-Example: const testAccAWSDataSourceAWSRoute53DelegationSetConfig_basic =
+Example: const testAccCheckWafRegionalWebAclAssociationConfig_multipleAssociations =
 
 ## all consts starting with lower-T testAcc, underscore before any case config
 
@@ -133,47 +133,47 @@ Example: const testAccAWSSecurityGroupRuleIngress_ipv6Config =
 
 Count: 200
 
-Example: const testAccInstanceDataSourceConfig_gp2IopsDevice =
+Example: const testAccDirectoryServiceDirectoryConfig_microsoftStandard =
 
 ## all functions starting with any case-T Test, lowercase after underscore
 
 Count: 3057
 
-Example: func TestAccAWSWafRegionalWebAcl_createRateBased(
+Example: func TestAccDataSourceS3Bucket_website(
 
 ## all functions starting with any case-T Test, uppercase after underscore
 
 Count: 1643
 
-Example: func TestAccAWSEc2Fleet_TargetCapacitySpecification_DefaultTargetCapacityType(
+Example: func TestAccAWSAthenaWorkGroup_Configuration_ResultConfiguration_OutputLocation(
 
 ## all functions starting with any case-T TestAcc, lowercase after underscore
 
 Count: 2924
 
-Example: func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_update(
+Example: func TestAccAWSRedshiftParameterGroup_withoutParameters(
 
 ## all functions starting with any case-T TestAcc, uppercase after underscore
 
 Count: 1642
 
-Example: func TestAccAWSCodeBuildProject_Artifacts_Location(
+Example: func TestAccAWSElasticacheCluster_Engine_Redis_Ec2Classic(
 
 ## all functions starting with any case-T TestAcc, only one underscore
 
 Count: 3585
 
-Example: func testAccAWSAPIGatewayIntegrationConfig_IntegrationTypeVpcLink(
+Example: func TestAccAWSFsxWindowsFileSystem_DailyAutomaticBackupStartTime(
 
 ## all functions starting with any case-T TestAcc, camel case
 
 Count: 1941
 
-Example: func TestAccAWSBatchComputeEnvironment_updateComputeEnvironmentName(
+Example: func TestAccAWSWafRegionalRuleGroup_changeActivatedRules(
 
 ## all functions starting with any case-T TestAcc, more than one underscore
 
 Count: 981
 
-Example: func TestAccAWSInstance_associatePublic_overridePublic(
+Example: func TestAccAWSElasticacheCluster_ReplicationGroupID_AvailabilityZone_Ec2Classic(
 
