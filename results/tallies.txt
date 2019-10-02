@@ -31,4 +31,5 @@ Analysis Tallies
 179	Test Constants:TestAcc (any case) with only one underscore
 44	Test Constants:TestAcc (any case) with multiple underscores
 496	Test Constants:TestAcc (any case) with config (any case)
+294	Test Constants:TestAcc (any case) with config (any case) and no underscores
 200	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
