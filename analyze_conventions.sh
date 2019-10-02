@@ -76,6 +76,30 @@ descriptions+=( "all functions starting with lower-T testAcc, uppercase after un
 fileNames+=( "./results/lowT-testAcc-uppAfterUnderscore.txt" )
 perl -nle'print $& while m{(func testAcc[^_]*_[A-Z].*)\s*\(}g' ${tfAWSPath}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
+descriptions+=( "all functions starting with lower-T testAcc, including any case config" )
+fileNames+=( "./results/lowT-testAcc-anyConfigAnywhere.txt" )
+perl -nle'print $& while m{(func testAcc.*[cC]onfig.*)\s*\(}g' ${tfAWSPath}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "all functions starting with lower-T testAcc, underscore before any case config" )
+fileNames+=( "./results/lowT-testAcc-underscoreBeforeAnyConfig.txt" )
+perl -nle'print $& while m{(func testAcc.*_.*[cC]onfig.*)\s*\(}g' ${tfAWSPath}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "all functions starting with lower-T testAcc, underscore after any case config" )
+fileNames+=( "./results/lowT-testAcc-underscoreAfterAnyConfig.txt" )
+perl -nle'print $& while m{(func testAcc.*[cC]onfig.*_.*)\s*\(}g' ${tfAWSPath}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "all consts starting with lower-T testAcc, including any case config" )
+fileNames+=( "./results/const-lowT-testAcc-anyConfigAnywhere.txt" )
+perl -nle'print $& while m{(const testAcc.*[cC]onfig.*)\s*=}g' ${tfAWSPath}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "all consts starting with lower-T testAcc, underscore before any case config" )
+fileNames+=( "./results/const-lowT-testAcc-underscoreBeforeAnyConfig.txt" )
+perl -nle'print $& while m{(const testAcc.*_.*[cC]onfig.*)\s*=}g' ${tfAWSPath}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "all consts starting with lower-T testAcc, underscore after any case config" )
+fileNames+=( "./results/const-lowT-testAcc-underscoreAfterAnyConfig.txt" )
+perl -nle'print $& while m{(const testAcc.*[cC]onfig.*_.*)\s*=}g' ${tfAWSPath}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
 ###################
 # any case-T test #
 ###################
@@ -118,4 +142,20 @@ printf "Analysis Tallies\n" > ${talliesFile}
 for i in "${!descriptions[@]}"; do
     count=$(< "${fileNames[$i]}" wc -l)
     printf "%s\t%s\n" "$count" "${descriptions[$i]}" >> ${talliesFile}
+done
+
+###################
+# create readme   #
+###################
+
+readmeFile="README.md"
+printf "# terraform-test-conventions\n" > ${readmeFile}
+printf "Code analysis: looking at conventions in the Terraform AWS provider\n\n" >> ${readmeFile}
+printf "Good ol' fashioned Perl and RegExes gone awry\n\n" >> ${readmeFile}
+
+for i in "${!descriptions[@]}"; do
+    count=$(< "${fileNames[$i]}" wc -l)
+    example=$(shuf -n 1 "${fileNames[$i]}")
+    printf "## %s\n\nCount: %s\n\n" "${descriptions[$i]}" "${count}" >> ${readmeFile}
+    printf "Example: %s\n\n" "${example}" >> ${readmeFile}
 done

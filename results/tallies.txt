@@ -15,6 +15,12 @@ Analysis Tallies
      598	all functions starting with lower-T test, uppercase after underscore
      906	all functions starting with lower-T testAcc, lowercase after underscore
      598	all functions starting with lower-T testAcc, uppercase after underscore
+    2679	all functions starting with lower-T testAcc, including any case config
+      71	all functions starting with lower-T testAcc, underscore before any case config
+    1261	all functions starting with lower-T testAcc, underscore after any case config
+     497	all consts starting with lower-T testAcc, including any case config
+       3	all consts starting with lower-T testAcc, underscore before any case config
+     200	all consts starting with lower-T testAcc, underscore after any case config
     3057	all functions starting with any case-T Test, lowercase after underscore
     1643	all functions starting with any case-T Test, uppercase after underscore
     2924	all functions starting with any case-T TestAcc, lowercase after underscore
