@@ -1,0 +1,26 @@
+Analysis Tallies
+3548	all functions starting with capital-T Test
+3115	all functions starting with capital-T TestAcc
+2819	all functions starting with capital-T TestAccAWS
+142	all functions starting with capital-T TestAccAws
+2019	all functions starting with capital-T TestAcc, lowercase after underscore
+1044	all functions starting with capital-T TestAcc, uppercase after underscore
+4797	all functions starting with lower-T test
+4632	all functions starting with lower-T testAcc
+1991	all functions starting with lower-T testAccAWS
+225	all functions starting with lower-T testAccAws
+905	all functions starting with lower-T testAcc, lowercase after underscore
+598	all functions starting with lower-T testAcc, uppercase after underscore
+2683	all functions starting with lower-T testAcc, including any case config
+71	all functions starting with lower-T testAcc, underscore before any case config
+1260	all functions starting with lower-T testAcc, underscore after any case config
+496	all consts starting with lower-T testAcc, including any case config
+3	all consts starting with lower-T testAcc, underscore before any case config
+200	all consts starting with lower-T testAcc, underscore after any case config
+3057	all functions starting with any case-T Test, lowercase after underscore
+1643	all functions starting with any case-T Test, uppercase after underscore
+2924	all functions starting with any case-T TestAcc, lowercase after underscore
+1642	all functions starting with any case-T TestAcc, uppercase after underscore
+3585	all functions starting with any case-T TestAcc, only one underscore
+1941	all functions starting with any case-T TestAcc, camel case
+981	all functions starting with any case-T TestAcc, more than one underscore

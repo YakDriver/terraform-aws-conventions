@@ -1,0 +1,3 @@
+const testAccAWSAutoScalingGroupConfig_withLaunchTemplate_toLaunchConfig =
+const testAccAWSSecurityGroupRuleIngress_ipv6Config =
+const testAccAWSSecurityGroupRuleIngress_protocolConfig =
