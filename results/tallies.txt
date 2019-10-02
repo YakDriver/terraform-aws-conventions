@@ -13,6 +13,8 @@ Analysis Tallies
 598	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
 2683	Lowercase-t test Functions:testAcc functions with config (any case)
 2827	Lowercase-t test Functions:testAcc functions returning strings
+2546	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
+1329	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
 8345	Any case-t Test Functions:All
 7747	Any case-t Test Functions:TestAcc
 2924	Any case-t Test Functions:TestAcc with lowercase after first underscore
