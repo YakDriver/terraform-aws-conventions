@@ -7,121 +7,121 @@ Good ol' fashioned Perl and RegExes gone awry
 
 Count: 3548
 
-Example: func TestDiffNeptuneTags(
+Example: func TestAccAWSSNSTopic_name(
 
 ## all functions starting with capital-T TestAcc
 
 Count: 3115
 
-Example: func TestAccAWSRoute_ipv6ToPeeringConnection(
+Example: func TestAccAWSOpsworksCustomLayer_importBasic(
 
 ## all functions starting with capital-T TestAccAWS
 
 Count: 2819
 
-Example: func TestAccAWSRDSCluster_DeletionProtection(
+Example: func TestAccAWSMqBroker_basic(
 
 ## all functions starting with capital-T TestAccAws
 
 Count: 142
 
-Example: func TestAccAwsAppsyncResolver_ResponseTemplate(
+Example: func TestAccAwsEc2ClientVpnEndpoint_disappears(
 
 ## all functions starting with capital-T Test, lowercase after underscore
 
 Count: 2125
 
-Example: func TestAccAWSKmsSecretDataSource_removed(
+Example: func TestAccAWSLightsailKeyPair_imported(
 
 ## all functions starting with capital-T Test, uppercase after underscore
 
 Count: 1045
 
-Example: func TestAccAwsDmsEndpoint_DocDB(
+Example: func TestAccAWSDBOptionGroup_Option_OptionSettings_IAMRole(
 
 ## all functions starting with capital-T TestAcc, lowercase after underscore
 
 Count: 2019
 
-Example: func TestAccAWSWafRuleGroup_changeNameForceNew(
+Example: func TestAccAWSDHCPOptions_deleteOptions(
 
 ## all functions starting with capital-T TestAcc, uppercase after underscore
 
 Count: 1044
 
-Example: func TestAccAWSFsxWindowsFileSystem_ThroughputCapacity(
+Example: func TestAccAWSDataSyncTask_DefaultSyncOptions_BytesPerSecond(
 
 ## all functions starting with lower-T test
 
 Count: 4797
 
-Example: func testAccAWSNeptuneClusterParameterGroupConfig_Description(
+Example: func testAccCheckAWSClusterEndpointDestroy(
 
 ## all functions starting with lower-T testAcc
 
 Count: 4632
 
-Example: func testAccCheckAWSWafRateBasedRuleExists(
+Example: func testAccRoute53ZoneConfigForceDestroyTrailingPeriod(
 
 ## all functions starting with lower-T testAccAWS
 
 Count: 1991
 
-Example: func testAccAWSEmrClusterConfigUpdatedRootVolumeSize(
+Example: func testAccAWSS3BucketMetricsConfigWithFilterPrefixAndMultipleTags(
 
 ## all functions starting with lower-T testAccAws
 
 Count: 225
 
-Example: func testAccAwsAcmCertificateDomainFromEnv(
+Example: func testAccAwsGuardDutyMember_invite_onUpdate(
 
 ## all functions starting with lower-T test, lowercase after underscore
 
 Count: 932
 
-Example: func testAccAWSCognitoUserPoolConfig_basic(
+Example: func testAccAWSSecurityHubAccount_basic(
 
 ## all functions starting with lower-T test, uppercase after underscore
 
 Count: 598
 
-Example: func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_LaunchTemplateSpecification_Version(
+Example: func testAccAwsSecretsManagerSecretVersionConfig_VersionStages_Multiple(
 
 ## all functions starting with lower-T testAcc, lowercase after underscore
 
 Count: 905
 
-Example: func testAccAWSIotThingTypeConfig_basic(
+Example: func testAccAWSCognitoUserPoolClientConfig_basic(
 
 ## all functions starting with lower-T testAcc, uppercase after underscore
 
 Count: 598
 
-Example: func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(
+Example: func testAccAWSDBInstanceConfig_SnapshotIdentifier_Tags(
 
 ## all functions starting with lower-T testAcc, including any case config
 
 Count: 2683
 
-Example: func testAccAWSWafRegionalByteMatchSetConfigChangeName(
+Example: func testAccCheckAWSSpotFleetRequestConfigRecreated(
 
 ## all functions starting with lower-T testAcc, underscore before any case config
 
 Count: 71
 
-Example: func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_CustomCname(
+Example: func testAccAWSEc2FleetConfig_LaunchTemplateConfig_Override_Priority_Multiple(
 
 ## all functions starting with lower-T testAcc, underscore after any case config
 
 Count: 1260
 
-Example: func testAccAWSLBTargetGroupConfig_enableHealthcheck(
+Example: func testAccAWSDBInstanceConfig_FinalSnapshotIdentifier_SkipFinalSnapshot(
 
 ## all consts starting with lower-T testAcc, including any case config
 
 Count: 496
 
-Example: const testAccCheckAwsOrganizationConfig =
+Example: const testAccAWSSecurityGroupConfigVpcNegOneIngress =
 
 ## all consts starting with lower-T testAcc, underscore before any case config
 
@@ -133,47 +133,47 @@ Example: const testAccAWSSecurityGroupRuleIngress_protocolConfig =
 
 Count: 200
 
-Example: const testAccAWSSecurityGroupConfig_importSourceSecurityGroup =
+Example: const testAccDocDBSubnetGroupConfig_namePrefix =
 
 ## all functions starting with any case-T Test, lowercase after underscore
 
 Count: 3057
 
-Example: func TestAccAWSDeviceFarmProject_basic(
+Example: func TestAwsEcsContainerDefinitionsAreEquivalent_portMappings(
 
 ## all functions starting with any case-T Test, uppercase after underscore
 
 Count: 1643
 
-Example: func TestAccAWSFlowLog_SubnetID(
+Example: func TestAccAWSNeptuneClusterParameterGroup_Parameter(
 
 ## all functions starting with any case-T TestAcc, lowercase after underscore
 
 Count: 2924
 
-Example: func TestAccAWSLB_generatedName(
+Example: func testAccAWSAutoscalingAttachment_alb(
 
 ## all functions starting with any case-T TestAcc, uppercase after underscore
 
 Count: 1642
 
-Example: func testAccAwsSecretsManagerSecretVersionConfig_SecretBinary(
+Example: func TestAccAWSDmsReplicationInstance_ReplicationSubnetGroupId(
 
 ## all functions starting with any case-T TestAcc, only one underscore
 
 Count: 3585
 
-Example: func TestAccAWSCloudFrontDistribution_OriginGroups(
+Example: func testAccAWSDataSourceS3BucketConfig_basic(
 
 ## all functions starting with any case-T TestAcc, camel case
 
 Count: 1941
 
-Example: func testAccESDomainConfig_internetToVpcEndpoint(
+Example: func TestAccAWSSubnet_enableIpv6(
 
 ## all functions starting with any case-T TestAcc, more than one underscore
 
 Count: 981
 
-Example: func TestAccAWSElasticacheCluster_Engine_Redis_Ec2Classic(
+Example: func testAccAWSDBInstanceConfig_SnapshotIdentifier_Tags_Unset(
 
