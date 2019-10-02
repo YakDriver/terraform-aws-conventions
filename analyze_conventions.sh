@@ -160,5 +160,5 @@ for i in "${!descriptions[@]}"; do
     count=$(< "${fileNames[$i]}" wc -l)
     example=$(shuf -n 1 "${fileNames[$i]}")
     printf "## %s\n\nCount: %s\n\n" "${descriptions[$i]}" "${count}" >> ${readmeFile}
-    printf "Example: \\\`%s\\\`\n\n" "${example}" >> ${readmeFile}
+    printf "Example: \`%s\`\n\n" "${example}" >> ${readmeFile}
 done
