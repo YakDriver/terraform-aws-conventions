@@ -137,27 +137,11 @@ descriptions+=( "Test Constants:TestAcc (any case) with multiple underscores" )
 fileNames+=( "./results/const-anyT-TestAcc-multipleUnderscores.txt" )
 perl -nle'print $& while m{(const\s+[tT]estAcc.*_.*_.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-#########################
-# constants config      #
-#########################
-
-descriptions+=( "Test Constants Config:TestAcc (any case) with config (any case)" )
+descriptions+=( "Test Constants:TestAcc (any case) with config (any case)" )
 fileNames+=( "./results/const-anyT-TestAcc-anyConfigAnywhere.txt" )
 perl -nle'print $& while m{(const\s+[tT]estAcc.*[cC]onfig.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "Test Constants Config:TestAcc (any case) with lowercase config after underscore" )
-fileNames+=( "./results/const-anyT-TestAcc-lowConfigAfterUnderscore.txt" )
-perl -nle'print $& while m{(const\s+[tT]estAcc.*_config.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "Test Constants Config:TestAcc (any case) with uppercase Config after underscore" )
-fileNames+=( "./results/const-anyT-TestAcc-capConfigAfterUnderscore.txt" )
-perl -nle'print $& while m{(const\s+[tT]estAcc.*_Config.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "Test Constants Config:TestAcc (any case) with underscore anywhere before config (any case)" )
-fileNames+=( "./results/const-anyT-TestAcc-underscoreBeforeAnyConfig.txt" )
-perl -nle'print $& while m{(const\s+[tT]estAcc.*_.*[cC]onfig.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "Test Constants Config:TestAcc (any case) with underscore anywhere after config (any case)" )
+descriptions+=( "Test Constants:TestAcc (any case) with underscore anywhere after config (any case)" )
 fileNames+=( "./results/const-anyT-TestAcc-underscoreAfterAnyConfig.txt" )
 perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*[cC]onfig.*_.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
