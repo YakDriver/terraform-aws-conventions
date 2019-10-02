@@ -166,9 +166,7 @@ done
 ###################
 
 readmeFile="README.md"
-printf "# terraform-test-conventions\n" > ${readmeFile}
-printf "Code analysis, looking at conventions in the Terraform AWS provider. " >> ${readmeFile}
-printf "Good ol' fashioned Perl and RegExes gone awry.\n\n" >> ${readmeFile}
+cat README_header.md > ${readmeFile}
 
 lastTitle=""
 for i in "${!descriptions[@]}"; do
