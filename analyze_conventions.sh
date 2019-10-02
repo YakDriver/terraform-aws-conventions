@@ -69,13 +69,9 @@ descriptions+=( "Lowercase-t test Functions:testAcc functions with config (any c
 fileNames+=( "./results/lowT-testAcc-anyConfigAnywhere.txt" )
 perl -nle'print $& while m{(func\s+testAcc.*[cC]onfig.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "Lowercase-t test Functions:testAcc functions with lowercase config after first underscore" )
-fileNames+=( "./results/lowT-testAcc-lowConfigAfterUnderscore.txt" )
-perl -nle'print $& while m{(func\s+testAcc[^_]*_config.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "Lowercase-t test Functions:testAcc functions with uppercase config after first underscore" )
-fileNames+=( "./results/lowT-testAcc-uppConfigAfterUnderscore.txt" )
-perl -nle'print $& while m{(func\s+testAcc[^_]*_Config.*_.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+descriptions+=( "Lowercase-t test Functions:testAcc functions returning strings" )
+fileNames+=( "./results/lowT-testAcc-returnStrings.txt" )
+perl -nle'print $& while m{(func\s+testAcc.*\s*string\s*\{}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
 ###################
 # any case-T test #
@@ -197,14 +193,14 @@ for i in "${!descriptions[@]}"; do
     title="${titleDesc[0]}"
     description="${titleDesc[1]}"
 
-    if [ "${title}" != "${lastTile}" ]; then
+    if [ "${title}" != "${lastTitle}" ]; then
         printf "## %s\n\n" "${title}" >> ${readmeFile}
         lastTitle="${title}"
     fi
 
     count=$(< "${fileNames[$i]}" wc -l)
     example=$(shuf -n 1 "${fileNames[$i]}")
-    printf "### %s\nCount: %s\n" "${description}" "${count}" >> ${readmeFile}
-    printf "[List matches](%s)\n" "${fileNames[$i]}" >> ${readmeFile}
+    printf "### %s\nCount: %s\n\n" "${description}" "${count}" >> ${readmeFile}
+    printf "[List matches](%s)\n\n" "${fileNames[$i]}" >> ${readmeFile}
     printf "Example: \`%s\`\n\n" "${example}" >> ${readmeFile}
 done
