@@ -27,8 +27,5 @@ Analysis Tallies
 80	Test Constants:TestAcc (any case) with camel case after underscore
 179	Test Constants:TestAcc (any case) with only one underscore
 44	Test Constants:TestAcc (any case) with multiple underscores
-496	Test Constants Config:TestAcc (any case) with config (any case)
-0	Test Constants Config:TestAcc (any case) with lowercase config after underscore
-0	Test Constants Config:TestAcc (any case) with uppercase Config after underscore
-3	Test Constants Config:TestAcc (any case) with underscore anywhere before config (any case)
-200	Test Constants Config:TestAcc (any case) with underscore anywhere after config (any case)
+496	Test Constants:TestAcc (any case) with config (any case)
+200	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
