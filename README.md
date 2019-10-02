@@ -1,179 +1,179 @@
 # terraform-test-conventions
 Code analysis: looking at conventions in the Terraform AWS provider
 
-Good ol' fashioned Perl and Regexes gone awry
+Good ol' fashioned Perl and RegExes gone awry
 
 ## all functions starting with capital-T Test
 
-Count:     3548
+Count: 3548
 
-Example: 
+Example: func TestAccAWSWafXssMatchSet_basic(
 
 ## all functions starting with capital-T TestAcc
 
-Count:     3114
+Count: 3115
 
-Example: 
+Example: func TestAccAWSSecurityGroup_importPrefixList(
 
 ## all functions starting with capital-T TestAccAWS
 
-Count:     2818
+Count: 2819
 
-Example: 
+Example: func TestAccAWSSpotFleetRequest_instanceInterruptionBehavior(
 
 ## all functions starting with capital-T TestAccAws
 
-Count:      142
+Count: 142
 
-Example: 
+Example: func TestAccAwsDmsEndpoint_DocDB(
 
 ## all functions starting with capital-T Test, lowercase after underscore
 
-Count:     2124
+Count: 2125
 
-Example: 
+Example: func TestAccDataSourceAwsVpc_basic(
 
 ## all functions starting with capital-T Test, uppercase after underscore
 
-Count:     1045
+Count: 1045
 
-Example: 
+Example: func TestAccAWSTransferUser_UserName_Validation(
 
 ## all functions starting with capital-T TestAcc, lowercase after underscore
 
-Count:     2018
+Count: 2019
 
-Example: 
+Example: func TestAccAWSSpotFleetRequest_withEBSDisk(
 
 ## all functions starting with capital-T TestAcc, uppercase after underscore
 
-Count:     1044
+Count: 1044
 
-Example: 
+Example: func TestAccAWSDmsReplicationInstance_ReplicationSubnetGroupId(
 
 ## all functions starting with lower-T test
 
-Count:     4793
+Count: 4797
 
-Example: 
+Example: func testAccAWSWafRegionalRegexPatternSetConfig_changePatterns(
 
 ## all functions starting with lower-T testAcc
 
-Count:     4629
+Count: 4632
 
-Example: 
+Example: func testAccCheckAWSLightsailInstanceDestroy(
 
 ## all functions starting with lower-T testAccAWS
 
-Count:     1991
+Count: 1991
 
-Example: 
+Example: func testAccAWSCloudwatchLogDestinationConfig(
 
 ## all functions starting with lower-T testAccAws
 
-Count:      225
+Count: 225
 
-Example: 
+Example: func testAccAwsDxTransitVirtualInterface_basic(
 
 ## all functions starting with lower-T test, lowercase after underscore
 
-Count:      933
+Count: 932
 
-Example: 
+Example: func testAccCheckAWSAPIGatewayMethodSettings_loggingLevel(
 
 ## all functions starting with lower-T test, uppercase after underscore
 
-Count:      598
+Count: 598
 
-Example: 
+Example: func testAccAWSEc2FleetConfig_LaunchTemplateConfig_Override_SubnetId(
 
 ## all functions starting with lower-T testAcc, lowercase after underscore
 
-Count:      906
+Count: 905
 
-Example: 
+Example: func testAccAWSWafRegexPatternSet_noPatterns(
 
 ## all functions starting with lower-T testAcc, uppercase after underscore
 
-Count:      598
+Count: 598
 
-Example: 
+Example: func testAccGlueCrawlerConfig_S3Target(
 
 ## all functions starting with lower-T testAcc, including any case config
 
-Count:     2679
+Count: 2683
 
-Example: 
+Example: func testAccAWSCloudTrailConfigCloudWatchModified(
 
 ## all functions starting with lower-T testAcc, underscore before any case config
 
-Count:       71
+Count: 71
 
-Example: 
+Example: func testAccAppsyncGraphqlApiConfig_UserPoolConfig_AwsRegion(
 
 ## all functions starting with lower-T testAcc, underscore after any case config
 
-Count:     1261
+Count: 1260
 
-Example: 
+Example: func testAccAWSAutoscalingPolicyConfig_SimpleScalingStepAdjustment(
 
 ## all consts starting with lower-T testAcc, including any case config
 
-Count:      497
+Count: 496
 
-Example: 
+Example: const testAccDataSourceAwsInternetGatewayConfig =
 
 ## all consts starting with lower-T testAcc, underscore before any case config
 
-Count:        3
+Count: 3
 
-Example: 
+Example: const testAccAWSSecurityGroupRuleIngress_ipv6Config =
 
 ## all consts starting with lower-T testAcc, underscore after any case config
 
-Count:      200
+Count: 200
 
-Example: 
+Example: const testAccASGNotificationConfig_pagination =
 
 ## all functions starting with any case-T Test, lowercase after underscore
 
-Count:     3057
+Count: 3057
 
-Example: 
+Example: func testAccAWSCognitoUserPoolConfig_withAliasAttributesUpdated(
 
 ## all functions starting with any case-T Test, uppercase after underscore
 
-Count:     1643
+Count: 1643
 
-Example: 
+Example: func TestAccAWSCloudFormationStackSet_Tags(
 
 ## all functions starting with any case-T TestAcc, lowercase after underscore
 
-Count:     2924
+Count: 2924
 
-Example: 
+Example: func TestAccAWSKinesisAnalyticsApplication_tags(
 
 ## all functions starting with any case-T TestAcc, uppercase after underscore
 
-Count:     1642
+Count: 1642
 
-Example: 
+Example: func testAccAWSRDSClusterConfig_SnapshotIdentifier_MasterPassword(
 
 ## all functions starting with any case-T TestAcc, only one underscore
 
-Count:     3585
+Count: 3585
 
-Example: 
+Example: func TestAccAWSAcmCertificateValidation_validationRecordFqdnsWildcardAndRoot(
 
 ## all functions starting with any case-T TestAcc, camel case
 
-Count:     1943
+Count: 1941
 
-Example: 
+Example: func testAccAWSWafRuleConfig_changePredicates(
 
 ## all functions starting with any case-T TestAcc, more than one underscore
 
-Count:      981
+Count: 981
 
-Example: 
+Example: func TestAccAWSCloudFormationStack_dataSource_basic(
 
