@@ -5,151 +5,151 @@ Good ol' fashioned Perl and RegExes gone awry
 
 ## all functions starting with capital-T Test
 
-Count: 
+Count: 3548
 
-Example: ``
+Example: `func TestAccAWSAcmCertificate_root_TrailingPeriod(`
 
 ## all functions starting with capital-T TestAcc
 
-Count: 
+Count: 3115
 
-Example: ``
+Example: `func TestAccAWSSecurityGroup_RuleDescription(`
 
 ## all functions starting with capital-T TestAccAWS
 
-Count: 
+Count: 2819
 
-Example: ``
+Example: `func TestAccAWSELB_generatedName(`
 
 ## all functions starting with capital-T TestAccAws
 
-Count: 
+Count: 142
 
-Example: ``
+Example: `func TestAccAwsEc2ClientVpnNetworkAssociation_disappears(`
 
 ## all functions starting with capital-T TestAcc, lowercase after underscore
 
-Count: 
+Count: 2019
 
-Example: ``
+Example: `func TestAccAWSAPIGatewayMethod_customauthorizer(`
 
 ## all functions starting with capital-T TestAcc, uppercase after underscore
 
-Count: 
+Count: 1044
 
-Example: ``
+Example: `func TestAccAWSAppsyncGraphqlApi_OpenIDConnectConfig_ClientID(`
 
 ## all functions starting with lower-T test
 
-Count: 
+Count: 4797
 
-Example: ``
+Example: `func testAccAWSBudgetsBudgetConfigWithNotification_Basic(`
 
 ## all functions starting with lower-T testAcc
 
-Count: 
+Count: 4632
 
-Example: ``
+Example: `func testAccDataSourceAwsVpcsConfig_tags(`
 
 ## all functions starting with lower-T testAccAWS
 
-Count: 
+Count: 1991
 
-Example: ``
+Example: `func testAccAWSVpnGatewayDisappears(`
 
 ## all functions starting with lower-T testAccAws
 
-Count: 
+Count: 225
 
-Example: ``
+Example: `func testAccAwsOpsworksPermissionCreate(`
 
 ## all functions starting with lower-T testAcc, lowercase after underscore
 
-Count: 
+Count: 905
 
-Example: ``
+Example: `func testAccDocDBClusterConfig_backupsUpdate(`
 
 ## all functions starting with lower-T testAcc, uppercase after underscore
 
-Count: 
+Count: 598
 
-Example: ``
+Example: `func testAccAWSCodebuildProjectConfig_Artifacts_Location(`
 
 ## all functions starting with lower-T testAcc, including any case config
 
-Count: 
+Count: 2683
 
-Example: ``
+Example: `func testAccDirectoryServiceDirectoryConfig_withSso(`
 
 ## all functions starting with lower-T testAcc, underscore before any case config
 
-Count: 
+Count: 71
 
-Example: ``
+Example: `func testAccAppsyncDatasourceConfig_HTTPConfig_Endpoint(`
 
 ## all functions starting with lower-T testAcc, underscore after any case config
 
-Count: 
+Count: 1260
 
-Example: ``
+Example: `func testAccAWSStorageGatewaySmbFileShareConfig_Authentication_ActiveDirectory(`
 
 ## all consts starting with lower-T testAcc, including any case config
 
-Count: 
+Count: 496
 
-Example: ``
+Example: `const testAccInstanceDataSourceConfig_blockDevices =`
 
 ## all consts starting with lower-T testAcc, underscore before any case config
 
-Count: 
+Count: 3
 
-Example: ``
+Example: `const testAccAWSSecurityGroupRuleIngress_ipv6Config =`
 
 ## all consts starting with lower-T testAcc, underscore after any case config
 
-Count: 
+Count: 200
 
-Example: ``
+Example: `const testAccDirectoryServiceDirectoryConfig_microsoft =`
 
 ## all functions starting with any case-T Test, lowercase after underscore
 
-Count: 
+Count: 3057
 
-Example: ``
+Example: `func TestAccAWSDBSnapshot_tags(`
 
 ## all functions starting with any case-T Test, uppercase after underscore
 
-Count: 
+Count: 1643
 
-Example: ``
+Example: `func testAccAWSElasticacheClusterConfig_ReplicationGroupID_Replica_Ec2Classic(`
 
 ## all functions starting with any case-T TestAcc, lowercase after underscore
 
-Count: 
+Count: 2924
 
-Example: ``
+Example: `func testAccDxTransitVirtualInterfaceConfig_tags(`
 
 ## all functions starting with any case-T TestAcc, uppercase after underscore
 
-Count: 
+Count: 1642
 
-Example: ``
+Example: `func TestAccAWSEc2Fleet_LaunchTemplateConfig_Override_AvailabilityZone(`
 
 ## all functions starting with any case-T TestAcc, only one underscore
 
-Count: 
+Count: 3585
 
-Example: ``
+Example: `func testAccAWSElasticacheReplicationGroupConfig_Uppercase(`
 
 ## all functions starting with any case-T TestAcc, camel case
 
-Count: 
+Count: 1941
 
-Example: ``
+Example: `func TestAccAWSSpotFleetRequest_WithTargetGroups(`
 
 ## all functions starting with any case-T TestAcc, more than one underscore
 
-Count: 
+Count: 981
 
-Example: ``
+Example: `func TestAccAWSDBInstance_ReplicateSourceDb_VpcSecurityGroupIds(`
 
