@@ -4,6 +4,8 @@ if [ "${TF_AWS_PATH}" = "" ]; then
     echo "ERROR: Must set the TF_AWS_PATH to AWS provider AWS directory location"
 fi
 
+rm ./results/*txt
+
 declare -a descriptions
 declare -a fileNames
 
@@ -11,113 +13,161 @@ declare -a fileNames
 # capT Test       #
 ###################
 
-descriptions+=( "all functions starting with capital-T Test" )
+descriptions+=( "Capital-T Test Functions:All" )
 fileNames+=( "./results/capT-Test.txt" )
-perl -nle'print $& while m{(func Test.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+Test.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with capital-T TestAcc" )
+descriptions+=( "Capital-T Test Functions:TestAcc" )
 fileNames+=( "./results/capT-TestAcc.txt" )
-perl -nle'print $& while m{(func TestAcc.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+TestAcc.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with capital-T TestAccAWS" )
+descriptions+=( "Capital-T Test Functions:TestAccAWS" )
 fileNames+=( "./results/capT-TestAcc-allCapAWS.txt" )
-perl -nle'print $& while m{(func TestAccAWS.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+TestAccAWS.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with capital-T TestAccAws" )
+descriptions+=( "Capital-T Test Functions:TestAccAws" )
 fileNames+=( "./results/capT-TestAcc-iniCapAws.txt" )
-perl -nle'print $& while m{(func TestAccAws.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+TestAccAws.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with capital-T TestAcc, lowercase after underscore" )
+descriptions+=( "Capital-T Test Functions:TestAcc and lowercase after first underscore" )
 fileNames+=( "./results/capT-TestAcc-lowAfterUnderscore.txt" )
-perl -nle'print $& while m{(func TestAcc[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+TestAcc[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with capital-T TestAcc, uppercase after underscore" )
+descriptions+=( "Capital-T Test Functions:TestAcc and uppercase after first underscore" )
 fileNames+=( "./results/capT-TestAcc-uppAfterUnderscore.txt" )
-perl -nle'print $& while m{(func TestAcc[^_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+TestAcc[^_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
 ###################
 # lowT Test       #
 ###################
 
-descriptions+=( "all functions starting with lower-T test" )
+descriptions+=( "Lowercase-t test Functions:All" )
 fileNames+=( "./results/lowT-test.txt" )
-perl -nle'print $& while m{(func test.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+test.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with lower-T testAcc" )
+descriptions+=( "Lowercase-t test Functions:testAcc" )
 fileNames+=( "./results/lowT-testAcc.txt" )
-perl -nle'print $& while m{(func testAcc.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+testAcc.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with lower-T testAccAWS" )
+descriptions+=( "Lowercase-t test Functions:testAccAWS" )
 fileNames+=( "./results/lowT-testAcc-allCapAWS.txt" )
-perl -nle'print $& while m{(func testAccAWS.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+testAccAWS.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with lower-T testAccAws" )
+descriptions+=( "Lowercase-t test Functions:testAccAws" )
 fileNames+=( "./results/lowT-testAcc-iniCapAws.txt" )
-perl -nle'print $& while m{(func testAccAws.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+testAccAws.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with lower-T testAcc, lowercase after underscore" )
+descriptions+=( "Lowercase-t test Functions:testAcc functions with lowercase after first underscore" )
 fileNames+=( "./results/lowT-testAcc-lowAfterUnderscore.txt" )
-perl -nle'print $& while m{(func testAcc[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+testAcc[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with lower-T testAcc, uppercase after underscore" )
+descriptions+=( "Lowercase-t test Functions:testAcc functions with uppercase after first underscore" )
 fileNames+=( "./results/lowT-testAcc-uppAfterUnderscore.txt" )
-perl -nle'print $& while m{(func testAcc[^_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+testAcc[^_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with lower-T testAcc, including any case config" )
+descriptions+=( "Lowercase-t test Functions:testAcc functions with config (any case)" )
 fileNames+=( "./results/lowT-testAcc-anyConfigAnywhere.txt" )
-perl -nle'print $& while m{(func testAcc.*[cC]onfig.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+testAcc.*[cC]onfig.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with lower-T testAcc, underscore before any case config" )
-fileNames+=( "./results/lowT-testAcc-underscoreBeforeAnyConfig.txt" )
-perl -nle'print $& while m{(func testAcc.*_.*[cC]onfig.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+descriptions+=( "Lowercase-t test Functions:testAcc functions with lowercase config after first underscore" )
+fileNames+=( "./results/lowT-testAcc-lowConfigAfterUnderscore.txt" )
+perl -nle'print $& while m{(func\s+testAcc[^_]*_config.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with lower-T testAcc, underscore after any case config" )
-fileNames+=( "./results/lowT-testAcc-underscoreAfterAnyConfig.txt" )
-perl -nle'print $& while m{(func testAcc.*[cC]onfig.*_.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "all consts starting with lower-T testAcc, including any case config" )
-fileNames+=( "./results/const-lowT-testAcc-anyConfigAnywhere.txt" )
-perl -nle'print $& while m{(const testAcc.*[cC]onfig.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "all consts starting with lower-T testAcc, underscore before any case config" )
-fileNames+=( "./results/const-lowT-testAcc-underscoreBeforeAnyConfig.txt" )
-perl -nle'print $& while m{(const testAcc.*_.*[cC]onfig.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "all consts starting with lower-T testAcc, underscore after any case config" )
-fileNames+=( "./results/const-lowT-testAcc-underscoreAfterAnyConfig.txt" )
-perl -nle'print $& while m{(const testAcc.*[cC]onfig.*_.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+descriptions+=( "Lowercase-t test Functions:testAcc functions with uppercase config after first underscore" )
+fileNames+=( "./results/lowT-testAcc-uppConfigAfterUnderscore.txt" )
+perl -nle'print $& while m{(func\s+testAcc[^_]*_Config.*_.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
 ###################
 # any case-T test #
 ###################
 
-descriptions+=( "all functions starting with any case-T Test, lowercase after underscore" )
-fileNames+=( "./results/anyT-Test-lowAfterUnderscore.txt" )
-perl -nle'print $& while m{(func [tT]est[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+descriptions+=( "Any case-t Test Functions:All" )
+fileNames+=( "./results/anyT-Test.txt" )
+perl -nle'print $& while m{(func\s+[tT]est.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with any case-T Test, uppercase after underscore" )
-fileNames+=( "./results/anyT-Test-uppAfterUnderscore.txt" )
-perl -nle'print $& while m{(func [tT]est[^_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "all functions starting with any case-T TestAcc, lowercase after underscore" )
+descriptions+=( "Any case-t Test Functions:TestAcc with lowercase after first underscore" )
 fileNames+=( "./results/anyT-TestAcc-lowAfterUnderscore.txt" )
-perl -nle'print $& while m{(func [tT]estAcc[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+[tT]estAcc[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with any case-T TestAcc, uppercase after underscore" )
-fileNames+=( "./results/anyT-TestAcc-uppAfterUnderscore.txt" )
-perl -nle'print $& while m{(func [tT]estAcc[^_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+descriptions+=( "Any case-t Test Functions:TestAcc with uppercase after first underscore" )
+fileNames+=( "./results/anyT-TestAcc-capAfterUnderscore.txt" )
+perl -nle'print $& while m{(func\s+[tT]estAcc[^_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with any case-T TestAcc, only one underscore" )
+descriptions+=( "Any case-t Test Functions:TestAcc with only one underscore" )
 fileNames+=( "./results/anyT-TestAcc-onlyOneUnderscore.txt" )
-perl -nle'print $& while m{(func [tT]estAcc[^_]*_[^_]*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+[tT]estAcc[^_]*_[^_]*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with any case-T TestAcc, camel case" )
+descriptions+=( "Any case-t Test Functions:TestAcc with camel case after first underscore" )
 fileNames+=( "./results/anyT-TestAcc-camelcase.txt" )
-perl -nle'print $& while m{(func [tT]estAcc[^_]*_[^_]*[a-z][^_]*[A-Z][^_]*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(func\s+[tT]estAcc[^_]*_[a-z][^_]*[A-Z][^_]*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with any case-T TestAcc, more than one underscore" )
-fileNames+=( "./results/anyT-TestAcc-moreThanOneUnderscore.txt" )
-perl -nle'print $& while m{(func [tT]estAcc[^_]*_[^_]*_.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+descriptions+=( "Any case-t Test Functions:TestAcc with multiple underscores" )
+fileNames+=( "./results/anyT-TestAcc-multipleUnderscores.txt" )
+perl -nle'print $& while m{(func\s+[tT]estAcc.*_.*_.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+#########################
+# constants             #
+#########################
+
+descriptions+=( "Test Constants:All" )
+fileNames+=( "./results/const-anyT-Test.txt" )
+perl -nle'print $& while m{(const\s+[tT]est.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants:TestAcc (any case)" )
+fileNames+=( "./results/const-anyT-TestAcc.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants:testAcc (lowercase)" )
+fileNames+=( "./results/const-lowT-testAcc.txt" )
+perl -nle'print $& while m{(const\s+testAcc.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants:TestAcc (uppercase)" )
+fileNames+=( "./results/const-capT-TestAcc.txt" )
+perl -nle'print $& while m{(const\s+TestAcc.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants:TestAcc (any case) with lowercase after first underscore" )
+fileNames+=( "./results/const-anyT-TestAcc-underscoreLower.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*_[a-z].*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants:TestAcc (any case) with uppercase after first underscore" )
+fileNames+=( "./results/const-anyT-TestAcc-underscoreUpper.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*_[A-Z].*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants:TestAcc (any case) with camel case after underscore" )
+fileNames+=( "./results/const-anyT-TestAcc-underscoreCamelcase.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*_[a-z][^_]*[A-Z][^_]*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants:TestAcc (any case) with only one underscore" )
+fileNames+=( "./results/const-anyT-TestAcc-onlyOneUnderscore.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*_[^_]*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants:TestAcc (any case) with multiple underscores" )
+fileNames+=( "./results/const-anyT-TestAcc-multipleUnderscores.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc.*_.*_.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+#########################
+# constants config      #
+#########################
+
+descriptions+=( "Test Constants Config:TestAcc (any case) with config (any case)" )
+fileNames+=( "./results/const-anyT-TestAcc-anyConfigAnywhere.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc.*[cC]onfig.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants Config:TestAcc (any case) with lowercase config after underscore" )
+fileNames+=( "./results/const-anyT-TestAcc-lowConfigAfterUnderscore.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc.*_config.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants Config:TestAcc (any case) with uppercase Config after underscore" )
+fileNames+=( "./results/const-anyT-TestAcc-capConfigAfterUnderscore.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc.*_Config.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants Config:TestAcc (any case) with underscore anywhere before config (any case)" )
+fileNames+=( "./results/const-anyT-TestAcc-underscoreBeforeAnyConfig.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc.*_.*[cC]onfig.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+
+descriptions+=( "Test Constants Config:TestAcc (any case) with underscore anywhere after config (any case)" )
+fileNames+=( "./results/const-anyT-TestAcc-underscoreAfterAnyConfig.txt" )
+perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*[cC]onfig.*_.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
 ###################
 # get tallies     #
@@ -137,12 +187,24 @@ done
 
 readmeFile="README.md"
 printf "# terraform-test-conventions\n" > ${readmeFile}
-printf "Code analysis: looking at conventions in the Terraform AWS provider\n\n" >> ${readmeFile}
-printf "Good ol' fashioned Perl and RegExes gone awry\n\n" >> ${readmeFile}
+printf "Code analysis, looking at conventions in the Terraform AWS provider. " >> ${readmeFile}
+printf "Good ol' fashioned Perl and RegExes gone awry.\n\n" >> ${readmeFile}
 
+lastTitle=""
 for i in "${!descriptions[@]}"; do
+    IFS=':'
+    read -ra titleDesc <<< "${descriptions[$i]}"
+    title="${titleDesc[0]}"
+    description="${titleDesc[1]}"
+
+    if [ "${title}" != "${lastTile}" ]; then
+        printf "## %s\n\n" "${title}" >> ${readmeFile}
+        lastTitle="${title}"
+    fi
+
     count=$(< "${fileNames[$i]}" wc -l)
     example=$(shuf -n 1 "${fileNames[$i]}")
-    printf "## %s\n\nCount: %s\n\n" "${descriptions[$i]}" "${count}" >> ${readmeFile}
+    printf "### %s\nCount: %s\n" "${description}" "${count}" >> ${readmeFile}
+    printf "[List matches](%s)\n" "${fileNames[$i]}" >> ${readmeFile}
     printf "Example: \`%s\`\n\n" "${example}" >> ${readmeFile}
 done
