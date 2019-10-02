@@ -27,14 +27,6 @@ descriptions+=( "all functions starting with capital-T TestAccAws" )
 fileNames+=( "./results/capT-TestAcc-iniCapAws.txt" )
 perl -nle'print $& while m{(func TestAccAws.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
-descriptions+=( "all functions starting with capital-T Test, lowercase after underscore" )
-fileNames+=( "./results/capT-Test-lowAfterUnderscore.txt" )
-perl -nle'print $& while m{(func Test[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "all functions starting with capital-T Test, uppercase after underscore" )
-fileNames+=( "./results/capT-Test-uppAfterUnderscore.txt" )
-perl -nle'print $& while m{(func Test[^_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
 descriptions+=( "all functions starting with capital-T TestAcc, lowercase after underscore" )
 fileNames+=( "./results/capT-TestAcc-lowAfterUnderscore.txt" )
 perl -nle'print $& while m{(func TestAcc[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
@@ -62,14 +54,6 @@ perl -nle'print $& while m{(func testAccAWS.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go 
 descriptions+=( "all functions starting with lower-T testAccAws" )
 fileNames+=( "./results/lowT-testAcc-iniCapAws.txt" )
 perl -nle'print $& while m{(func testAccAws.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "all functions starting with lower-T test, lowercase after underscore" )
-fileNames+=( "./results/lowT-test-lowAfterUnderscore.txt" )
-perl -nle'print $& while m{(func test[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "all functions starting with lower-T test, uppercase after underscore" )
-fileNames+=( "./results/lowT-test-uppAfterUnderscore.txt" )
-perl -nle'print $& while m{(func test[^_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
 descriptions+=( "all functions starting with lower-T testAcc, lowercase after underscore" )
 fileNames+=( "./results/lowT-testAcc-lowAfterUnderscore.txt" )
