@@ -4,6 +4,8 @@ stage: test
 install:
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
+  - git clone https://github.com/terraform-providers/terraform-provider-aws.git
+  - export TF_AWS_PATH=./terraform-provider-aws/aws
 script:
   - ./analyze_conventions.sh
   - git add README.md
