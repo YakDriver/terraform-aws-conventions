@@ -5,175 +5,151 @@ Good ol' fashioned Perl and RegExes gone awry
 
 ## all functions starting with capital-T Test
 
-Count: 3548
+Count: 
 
-Example: `func TestAccAWSRedshiftCluster_tags(`
+Example: ``
 
 ## all functions starting with capital-T TestAcc
 
-Count: 3115
+Count: 
 
-Example: `func TestAccAWSDBInstance_EnabledCloudwatchLogsExports_Postgresql(`
+Example: ``
 
 ## all functions starting with capital-T TestAccAWS
 
-Count: 2819
+Count: 
 
-Example: `func TestAccAWSAPIGatewayDocumentationVersion_importAllFields(`
+Example: ``
 
 ## all functions starting with capital-T TestAccAws
 
-Count: 142
+Count: 
 
-Example: `func TestAccAwsBackupPlan_withRuleRemove(`
-
-## all functions starting with capital-T Test, lowercase after underscore
-
-Count: 2125
-
-Example: `func TestAccAWSLambdaFunction_localUpdate_nameOnly(`
-
-## all functions starting with capital-T Test, uppercase after underscore
-
-Count: 1045
-
-Example: `func TestAccAWSRDSCluster_Tags(`
+Example: ``
 
 ## all functions starting with capital-T TestAcc, lowercase after underscore
 
-Count: 2019
+Count: 
 
-Example: `func TestAccAWSKinesisAnalyticsApplication_updateCloudwatchLoggingOptions(`
+Example: ``
 
 ## all functions starting with capital-T TestAcc, uppercase after underscore
 
-Count: 1044
+Count: 
 
-Example: `func TestAccAWSAppsyncGraphqlApi_AuthenticationType_AWSIAM(`
+Example: ``
 
 ## all functions starting with lower-T test
 
-Count: 4797
+Count: 
 
-Example: `func testAccRoute53ZoneConfigVPCMultiple(`
+Example: ``
 
 ## all functions starting with lower-T testAcc
 
-Count: 4632
+Count: 
 
-Example: `func testAccDataSourceAwsWafWebAclConfig_Name(`
+Example: ``
 
 ## all functions starting with lower-T testAccAWS
 
-Count: 1991
+Count: 
 
-Example: `func testAccAWSDBInstanceConfig_SnapshotIdentifier_Io1Storage(`
+Example: ``
 
 ## all functions starting with lower-T testAccAws
 
-Count: 225
+Count: 
 
-Example: `func testAccAwsSesDomainIdentityDomainFromEnv(`
-
-## all functions starting with lower-T test, lowercase after underscore
-
-Count: 932
-
-Example: `func testAccGlueCatalogTable_full_replacedValues(`
-
-## all functions starting with lower-T test, uppercase after underscore
-
-Count: 598
-
-Example: `func testAccInstanceConfig_UserData_EmptyString(`
+Example: ``
 
 ## all functions starting with lower-T testAcc, lowercase after underscore
 
-Count: 905
+Count: 
 
-Example: `func testAccInstanceConfig_associatePublic_overridePublic(`
+Example: ``
 
 ## all functions starting with lower-T testAcc, uppercase after underscore
 
-Count: 598
+Count: 
 
-Example: `func testAccAWSEc2FleetConfig_ReplaceUnhealthyInstances(`
+Example: ``
 
 ## all functions starting with lower-T testAcc, including any case config
 
-Count: 2683
+Count: 
 
-Example: `func testAccAWSKmsExternalKeyConfigTags1(`
+Example: ``
 
 ## all functions starting with lower-T testAcc, underscore before any case config
 
-Count: 71
+Count: 
 
-Example: `func testAccAWSEc2FleetConfig_LaunchTemplateConfig_Override_WeightedCapacity(`
+Example: ``
 
 ## all functions starting with lower-T testAcc, underscore after any case config
 
-Count: 1260
+Count: 
 
-Example: `func testAccFlowLogConfig_LogDestinationType_S3(`
+Example: ``
 
 ## all consts starting with lower-T testAcc, including any case config
 
-Count: 496
+Count: 
 
-Example: `const testAccAWSSecurityGroupRuleIngress_ipv6Config =`
+Example: ``
 
 ## all consts starting with lower-T testAcc, underscore before any case config
 
-Count: 3
+Count: 
 
-Example: `const testAccAWSSecurityGroupRuleIngress_protocolConfig =`
+Example: ``
 
 ## all consts starting with lower-T testAcc, underscore after any case config
 
-Count: 200
+Count: 
 
-Example: `const testAccAWSDBClusterParameterGroupConfig_generatedName_Parameter =`
+Example: ``
 
 ## all functions starting with any case-T Test, lowercase after underscore
 
-Count: 3057
+Count: 
 
-Example: `func TestAccAWSCodeDeployDeploymentGroup_loadBalancerInfo_create(`
+Example: ``
 
 ## all functions starting with any case-T Test, uppercase after underscore
 
-Count: 1643
+Count: 
 
-Example: `func TestAccAWSSQSQueue_Encryption(`
+Example: ``
 
 ## all functions starting with any case-T TestAcc, lowercase after underscore
 
-Count: 2924
+Count: 
 
-Example: `func testAccAWSCloudTrail_cloudwatch(`
+Example: ``
 
 ## all functions starting with any case-T TestAcc, uppercase after underscore
 
-Count: 1642
+Count: 
 
-Example: `func TestAccAWSWorkLinkFleet_Network(`
+Example: ``
 
 ## all functions starting with any case-T TestAcc, only one underscore
 
-Count: 3585
+Count: 
 
-Example: `func TestAccAWSKmsExternalKey_Tags(`
+Example: ``
 
 ## all functions starting with any case-T TestAcc, camel case
 
-Count: 1941
+Count: 
 
-Example: `func TestAccAWSElasticacheReplicationGroup_NumberCacheClusters(`
+Example: ``
 
 ## all functions starting with any case-T TestAcc, more than one underscore
 
-Count: 981
+Count: 
 
-Example: `func TestAccAWSDBInstance_MonitoringRoleArn_EnabledToRemoved(`
+Example: ``
 
