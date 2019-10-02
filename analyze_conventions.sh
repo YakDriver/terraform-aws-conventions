@@ -107,7 +107,7 @@ perl -nle'print $& while m{(func\s+[tT]estAcc.*_.*_.*)\s*\(}g' ${TF_AWS_PATH}/*_
 
 descriptions+=( "Test Constants:All" )
 fileNames+=( "./results/const-anyT-Test.txt" )
-perl -nle'print $& while m{(const\s+[tT]est.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
+perl -nle'print $& while m{(const\s+[tT]est.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
 descriptions+=( "Test Constants:TestAcc (any case)" )
 fileNames+=( "./results/const-anyT-TestAcc.txt" )
@@ -116,10 +116,6 @@ perl -nle'print $& while m{(const\s+[tT]estAcc.*)\s*=}g' ${TF_AWS_PATH}/*_test.g
 descriptions+=( "Test Constants:testAcc (lowercase)" )
 fileNames+=( "./results/const-lowT-testAcc.txt" )
 perl -nle'print $& while m{(const\s+testAcc.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
-
-descriptions+=( "Test Constants:TestAcc (uppercase)" )
-fileNames+=( "./results/const-capT-TestAcc.txt" )
-perl -nle'print $& while m{(const\s+TestAcc.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${fileNames[${#fileNames[@]}-1]}
 
 descriptions+=( "Test Constants:TestAcc (any case) with lowercase after first underscore" )
 fileNames+=( "./results/const-anyT-TestAcc-underscoreLower.txt" )
