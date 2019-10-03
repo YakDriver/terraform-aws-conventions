@@ -212,6 +212,7 @@ func testAccAlternateRegionProviderConfig() string {
 func testAccUsEast1RegionProviderConfig() string {
 func testAccAWSProviderConfigEndpoints(endpoints string) string {
 func testAccAWSProviderConfigRegion(region string) string {
+func testAccProviderConfigAssumeRolePolicy(policy string) string {
 func testAccAwsAcmCertificateDomainFromEnv(t *testing.T) string {
 func testAccAwsAcmCertificateRandomSubDomain(rootDomain string) string {
 func testAccAcmCertificateConfig(domainName, validationMethod string) string {
@@ -1278,6 +1279,8 @@ func testAccAWSEksClusterConfig_Base(rName string) string {
 func testAccAWSEksClusterConfig_Required(rName string) string {
 func testAccAWSEksClusterConfig_Version(rName, version string) string {
 func testAccAWSEksClusterConfig_Logging(rName string, logTypes []string) string {
+func testAccAWSEksClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSEksClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(rName string) string {
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(rName string, endpointPrivateAccess bool) string {
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(rName string, endpointPublicAccess bool) string {
@@ -1758,6 +1761,7 @@ func testAccAWSLambdaConfigEnvVariablesModifiedWithoutEnvironment(funcName, poli
 func testAccAWSLambdaConfigEncryptedEnvVariables(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariablesModified(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVersioned(fileName, funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigVpcConfigProperIamDependencies(rName string) string {
 func testAccAWSLambdaConfigWithTracingConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithTracingConfigUpdated(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithDeadLetterConfig(funcName, topicName, policyName, roleName, sgName string) string {
@@ -2298,6 +2302,7 @@ func testAccAWSS3BucketObjectConfig_noObjectLockLegalHold(randInt int, content s
 func testAccAWSS3BucketObjectConfig_withObjectLockLegalHold(randInt int, content, legalHoldStatus string) string {
 func testAccAWSS3BucketObjectConfig_noObjectLockRetention(randInt int, content string) string {
 func testAccAWSS3BucketObjectConfig_withObjectLockRetention(randInt int, content, retainUntilDate string) string {
+func testAccAWSS3BucketObjectConfig_NonVersioned(randInt int, source string) string {
 func testAccAWSS3BucketPolicyConfig(bucketName string) string {
 func testAccAWSS3BucketPolicyConfig_updated(bucketName string) string {
 func testAccAWSS3BucketPublicAccessBlockConfig(bucketName, blockPublicAcls, blockPublicPolicy, ignorePublicAcls, restrictPublicBuckets string) string {

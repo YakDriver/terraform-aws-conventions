@@ -122,6 +122,7 @@ func testAccAlternateRegionProviderConfig() string {
 func testAccUsEast1RegionProviderConfig() string {
 func testAccAWSProviderConfigEndpoints(endpoints string) string {
 func testAccAWSProviderConfigRegion(region string) string {
+func testAccProviderConfigAssumeRolePolicy(policy string) string {
 func testAccAcmCertificateConfig(domainName, validationMethod string) string {
 func testAccAcmCertificateConfigPrivateKey(commonName string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfigType(certificateAuthorityType string) string {
@@ -574,6 +575,8 @@ func testAccAWSEFSFileSystemConfigWithKmsKeyNoEncryption(rInt int) string {
 func testAccAWSEFSFileSystemConfigWithLifecyclePolicy(lpName string, lpVal string) string {
 func testAccAWSEFSMountTargetConfig(ct string) string {
 func testAccAWSEFSMountTargetConfigModified(ct string) string {
+func testAccAWSEksClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSEksClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSElasticacheParameterGroupConfig(rName string) string {
 func testAccAWSElasticacheParameterGroupConfigDescription(rName, description string) string {
 func testAccAWSElasticacheParameterGroupConfigParameter1(rName, family, parameterName1, parameterValue1 string) string {
@@ -780,6 +783,7 @@ func testAccAWSLambdaConfigEnvVariablesModifiedWithoutEnvironment(funcName, poli
 func testAccAWSLambdaConfigEncryptedEnvVariables(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariablesModified(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVersioned(fileName, funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigVpcConfigProperIamDependencies(rName string) string {
 func testAccAWSLambdaConfigWithTracingConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithTracingConfigUpdated(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithDeadLetterConfig(funcName, topicName, policyName, roleName, sgName string) string {

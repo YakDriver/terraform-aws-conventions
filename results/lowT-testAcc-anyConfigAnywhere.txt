@@ -201,6 +201,7 @@ func testAccAlternateRegionProviderConfig(
 func testAccUsEast1RegionProviderConfig(
 func testAccAWSProviderConfigEndpoints(
 func testAccAWSProviderConfigRegion(
+func testAccProviderConfigAssumeRolePolicy(
 func testAccAcmCertificateConfig(
 func testAccAcmCertificateConfig_privateCert(
 func testAccAcmCertificateConfig_subjectAlternativeNames(
@@ -1223,6 +1224,8 @@ func testAccAWSEksClusterConfig_Base(
 func testAccAWSEksClusterConfig_Required(
 func testAccAWSEksClusterConfig_Version(
 func testAccAWSEksClusterConfig_Logging(
+func testAccAWSEksClusterConfigTags1(
+func testAccAWSEksClusterConfigTags2(
 func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(
@@ -1646,6 +1649,7 @@ func testAccAWSLambdaConfigEnvVariablesModifiedWithoutEnvironment(
 func testAccAWSLambdaConfigEncryptedEnvVariables(
 func testAccAWSLambdaConfigEncryptedEnvVariablesModified(
 func testAccAWSLambdaConfigVersioned(
+func testAccAWSLambdaConfigVpcConfigProperIamDependencies(
 func testAccAWSLambdaConfigWithTracingConfig(
 func testAccAWSLambdaConfigWithTracingConfigUpdated(
 func testAccAWSLambdaConfigWithDeadLetterConfig(
@@ -2185,6 +2189,7 @@ func testAccAWSS3BucketObjectConfig_noObjectLockLegalHold(
 func testAccAWSS3BucketObjectConfig_withObjectLockLegalHold(
 func testAccAWSS3BucketObjectConfig_noObjectLockRetention(
 func testAccAWSS3BucketObjectConfig_withObjectLockRetention(
+func testAccAWSS3BucketObjectConfig_NonVersioned(
 func testAccAWSS3BucketPolicyConfig(
 func testAccAWSS3BucketPolicyConfig_updated(
 func testAccAWSS3BucketPublicAccessBlockConfig(

@@ -1553,6 +1553,7 @@ func testAccAWSEIPConfig_tags(
 func TestAccAWSEksCluster_basic(
 func TestAccAWSEksCluster_Version(
 func TestAccAWSEksCluster_Logging(
+func TestAccAWSEksCluster_Tags(
 func testAccAWSEksClusterConfig_Base(
 func testAccAWSEksClusterConfig_Required(
 func testAccAWSEksClusterConfig_Version(
@@ -2831,6 +2832,7 @@ func TestAccAWSS3BucketObject_content(
 func TestAccAWSS3BucketObject_etagEncryption(
 func TestAccAWSS3BucketObject_contentBase64(
 func TestAccAWSS3BucketObject_withContentCharacteristics(
+func TestAccAWSS3BucketObject_NonVersioned(
 func TestAccAWSS3BucketObject_updates(
 func TestAccAWSS3BucketObject_updateSameFile(
 func TestAccAWSS3BucketObject_updatesWithVersioning(
@@ -2859,6 +2861,7 @@ func testAccAWSS3BucketObjectConfig_noObjectLockLegalHold(
 func testAccAWSS3BucketObjectConfig_withObjectLockLegalHold(
 func testAccAWSS3BucketObjectConfig_noObjectLockRetention(
 func testAccAWSS3BucketObjectConfig_withObjectLockRetention(
+func testAccAWSS3BucketObjectConfig_NonVersioned(
 func TestAccAWSS3BucketPolicy_basic(
 func TestAccAWSS3BucketPolicy_policyUpdate(
 func testAccAWSS3BucketPolicyConfig_updated(

@@ -485,6 +485,7 @@ func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func TestAccAWSEksCluster_Version(
 func TestAccAWSEksCluster_Logging(
+func TestAccAWSEksCluster_Tags(
 func TestAccAWSEksCluster_VpcConfig_SecurityGroupIds(
 func TestAccAWSEksCluster_VpcConfig_EndpointPrivateAccess(
 func TestAccAWSEksCluster_VpcConfig_EndpointPublicAccess(
@@ -691,6 +692,7 @@ func TestAccAWSLambdaFunction_VPC(
 func TestAccAWSLambdaFunction_VPCRemoval(
 func TestAccAWSLambdaFunction_VPCUpdate(
 func TestAccAWSLambdaFunction_VPC_withInvocation(
+func TestAccAWSLambdaFunction_VpcConfig_ProperIamDependencies(
 func TestAccAWSLambdaFunction_EmptyVpcConfig(
 func TestAccAWSLambdaPermission_StatementId_Duplicate(
 func TestAccAWSLaunchTemplate_BlockDeviceMappings_EBS(
@@ -852,6 +854,7 @@ func TestAccAWSS3BucketNotification_LambdaFunction_LambdaFunctionArn_Alias(
 func TestAccAWSS3BucketNotification_Queue(
 func TestAccAWSS3BucketNotification_Topic(
 func TestAccAWSS3BucketNotification_Topic_Multiple(
+func TestAccAWSS3BucketObject_NonVersioned(
 func TestAccAWSS3BucketObject_ObjectLockLegalHoldStartWithNone(
 func TestAccAWSS3BucketObject_ObjectLockLegalHoldStartWithOn(
 func TestAccAWSS3BucketObject_ObjectLockRetentionStartWithNone(

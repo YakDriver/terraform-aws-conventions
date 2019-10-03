@@ -1385,6 +1385,7 @@ func TestAccAWSEIP_PublicIpv4Pool_custom(
 func TestAccAWSEksCluster_basic(
 func TestAccAWSEksCluster_Version(
 func TestAccAWSEksCluster_Logging(
+func TestAccAWSEksCluster_Tags(
 func TestAccAWSEksCluster_VpcConfig_SecurityGroupIds(
 func TestAccAWSEksCluster_VpcConfig_EndpointPrivateAccess(
 func TestAccAWSEksCluster_VpcConfig_EndpointPublicAccess(
@@ -1951,6 +1952,7 @@ func TestAccAWSLambdaFunction_VPC(
 func TestAccAWSLambdaFunction_VPCRemoval(
 func TestAccAWSLambdaFunction_VPCUpdate(
 func TestAccAWSLambdaFunction_VPC_withInvocation(
+func TestAccAWSLambdaFunction_VpcConfig_ProperIamDependencies(
 func TestAccAWSLambdaFunction_EmptyVpcConfig(
 func TestAccAWSLambdaFunction_s3(
 func TestAccAWSLambdaFunction_localUpdate(
@@ -2512,6 +2514,7 @@ func TestAccAWSS3BucketObject_content(
 func TestAccAWSS3BucketObject_etagEncryption(
 func TestAccAWSS3BucketObject_contentBase64(
 func TestAccAWSS3BucketObject_withContentCharacteristics(
+func TestAccAWSS3BucketObject_NonVersioned(
 func TestAccAWSS3BucketObject_updates(
 func TestAccAWSS3BucketObject_updateSameFile(
 func TestAccAWSS3BucketObject_updatesWithVersioning(
