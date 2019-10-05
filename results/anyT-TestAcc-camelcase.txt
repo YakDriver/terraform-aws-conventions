@@ -1086,6 +1086,7 @@ func TestAccAWSS3Bucket_generatedName(
 func TestAccAWSS3Bucket_shouldFailNotFound(
 func TestAccAWSS3Bucket_objectLock(
 func TestAccAWSS3Bucket_forceDestroy(
+func TestAccAWSS3Bucket_forceDestroyWithEmptyPrefixes(
 func TestAccAWSS3Bucket_forceDestroyWithObjectLockEnabled(
 func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(

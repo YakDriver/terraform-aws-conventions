@@ -1643,6 +1643,7 @@ func TestAccAWSS3Bucket_disableDefaultEncryption_whenDefaultEncryptionIsEnabled(
 func TestAccAWSS3Bucket_shouldFailNotFound(
 func TestAccAWSS3Bucket_objectLock(
 func TestAccAWSS3Bucket_forceDestroy(
+func TestAccAWSS3Bucket_forceDestroyWithEmptyPrefixes(
 func TestAccAWSS3Bucket_forceDestroyWithObjectLockEnabled(
 func TestAccAWSSagemakerEndpoint_basic(
 func TestAccAWSSagemakerModel_basic(
