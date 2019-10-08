@@ -833,8 +833,8 @@ func TestAccAWSAPIGatewayBasePathMapping_basic(
 func TestAccAWSAPIGatewayBasePathMapping_BasePath_Empty(
 func testAccCheckAWSAPIGatewayBasePathExists(
 func testAccCheckAWSAPIGatewayBasePathDestroy(
-func testAccAWSAPIGatewayBasePathConfig(
-func testAccAWSAPIGatewayEmptyBasePathConfig(
+func testAccAWSAPIGatewayBasePathConfigBase(
+func testAccAWSAPIGatewayBasePathConfigBasePath(
 func TestAccAWSAPIGatewayClientCertificate_basic(
 func TestAccAWSAPIGatewayClientCertificate_importBasic(
 func testAccCheckAWSAPIGatewayClientCertificateExists(
@@ -880,8 +880,6 @@ func TestAccAWSAPIGatewayDomainName_RegionalCertificateName(
 func TestAccAWSAPIGatewayDomainName_SecurityPolicy(
 func testAccCheckAWSAPIGatewayDomainNameExists(
 func testAccCheckAWSAPIGatewayDomainNameDestroy(
-func testAccAWSAPIGatewayCerts(
-func testAccAWSAPIGatewayDomainNameConfigAcmCertificateBase(
 func testAccAWSAPIGatewayDomainNameConfig_CertificateArn(
 func testAccAWSAPIGatewayDomainNameConfig_CertificateName(
 func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateArn(
@@ -8260,7 +8258,9 @@ func TestDiffTransferTags(
 func TestIgnoringTagsTransfer(
 func TestTlsRsaPrivateKeyPem(
 func TestTlsRsaPublicKeyPem(
-func TestTlsRsaX509CertificatePem(
+func TestTlsRsaX509LocallySignedCertificatePem(
+func TestTlsRsaX509SelfSignedCaCertificatePem(
+func TestTlsRsaX509SelfSignedCertificatePem(
 func TestBase64Encode(
 func TestLooksLikeJsonString(
 func TestJsonBytesEqualQuotedAndUnquoted(

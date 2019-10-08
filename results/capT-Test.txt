@@ -3457,7 +3457,9 @@ func TestDiffTransferTags(
 func TestIgnoringTagsTransfer(
 func TestTlsRsaPrivateKeyPem(
 func TestTlsRsaPublicKeyPem(
-func TestTlsRsaX509CertificatePem(
+func TestTlsRsaX509LocallySignedCertificatePem(
+func TestTlsRsaX509SelfSignedCaCertificatePem(
+func TestTlsRsaX509SelfSignedCertificatePem(
 func TestBase64Encode(
 func TestLooksLikeJsonString(
 func TestJsonBytesEqualQuotedAndUnquoted(

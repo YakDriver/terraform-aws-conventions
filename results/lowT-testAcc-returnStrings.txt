@@ -269,8 +269,8 @@ func testAccAWSAPIGatewayAuthorizerConfig_cognitoUpdate(apiGatewayName, authoriz
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationDefaultToken(apiGatewayName, authorizerName, lambdaName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationRequest(apiGatewayName, authorizerName, lambdaName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationCognito(apiGatewayName, authorizerName, cognitoName string) string {
-func testAccAWSAPIGatewayBasePathConfig(domainName string) string {
-func testAccAWSAPIGatewayEmptyBasePathConfig(domainName string) string {
+func testAccAWSAPIGatewayBasePathConfigBase(domainName, key, certificate string) string {
+func testAccAWSAPIGatewayBasePathConfigBasePath(domainName, key, certificate, basePath string) string {
 func testAccAWSAPIGatewayDeploymentConfigBase(uri string) string {
 func testAccAWSAPIGatewayDeploymentConfigCreateBeforeDestroy(description string, url string) string {
 func testAccAWSAPIGatewayDeploymentConfigDescription(description string) string {
@@ -283,13 +283,11 @@ func testAccAWSAPIGatewayDocumentationPartMethodConfig(apiName, properties strin
 func testAccAWSAPIGatewayDocumentationPartResponseHeaderConfig(apiName, properties string) string {
 func testAccAWSAPIGatewayDocumentationVersionBasicConfig(version, apiName string) string {
 func testAccAWSAPIGatewayDocumentationVersionAllFieldsConfig(version, apiName, stageName, description string) string {
-func testAccAWSAPIGatewayCerts(commonName string) string {
-func testAccAWSAPIGatewayDomainNameConfigAcmCertificateBase(commonName string) string {
 func testAccAWSAPIGatewayDomainNameConfig_CertificateArn(domainName, certificateArn string) string {
-func testAccAWSAPIGatewayDomainNameConfig_CertificateName(domainName, commonName string) string {
-func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateArn(domainName string) string {
-func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateName(domainName, commonName string) string {
-func testAccAWSAPIGatewayDomainNameConfig_SecurityPolicy(domainName, securityPolicy string) string {
+func testAccAWSAPIGatewayDomainNameConfig_CertificateName(domainName, key, certificate, chainCertificate string) string {
+func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateArn(domainName, key, certificate string) string {
+func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateName(domainName, key, certificate, chainCertificate string) string {
+func testAccAWSAPIGatewayDomainNameConfig_SecurityPolicy(domainName, key, certificate, securityPolicy string) string {
 func testAccAWSAPIGatewayGatewayResponseConfig(rName string) string {
 func testAccAWSAPIGatewayGatewayResponseConfigUpdate(rName string) string {
 func testAccAWSAPIGatewayIntegrationConfig_IntegrationTypeBase(rName string) string {
@@ -1858,13 +1856,13 @@ func testAccAWSLBListenerRuleConfig_Action_Order(rName, key, certificate string)
 func testAccAWSLBListenerConfig_basic(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfig_basicUdp(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
-func testAccAWSLBListenerConfig_https(lbName, targetGroupName string) string {
-func testAccAWSLBListenerConfig_Protocol_Tls(rName string) string {
+func testAccAWSLBListenerConfig_https(rName, key, certificate string) string {
+func testAccAWSLBListenerConfig_Protocol_Tls(rName, key, certificate string) string {
 func testAccAWSLBListenerConfig_redirect(lbName string) string {
 func testAccAWSLBListenerConfig_fixedResponse(lbName string) string {
-func testAccAWSLBListenerConfig_cognito(rName string) string {
-func testAccAWSLBListenerConfig_oidc(rName string) string {
-func testAccAWSLBListenerConfig_DefaultAction_Order(rName string) string {
+func testAccAWSLBListenerConfig_cognito(rName, key, certificate string) string {
+func testAccAWSLBListenerConfig_oidc(rName, key, certificate string) string {
+func testAccAWSLBListenerConfig_DefaultAction_Order(rName, key, certificate string) string {
 func testAccSslNegotiationPolicyConfig(rName, key, certificate string) string {
 func testAccAWSLBTargetGroupAttachmentConfigWithoutPort(targetGroupName string) string {
 func testAccAWSLBTargetGroupAttachmentConfig_basic(targetGroupName string) string {
