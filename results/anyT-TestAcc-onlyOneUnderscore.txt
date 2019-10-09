@@ -1458,7 +1458,6 @@ func TestAccAWSEc2TransitGatewayVpcAttachment_TransitGatewayDefaultRouteTableAss
 func TestAccAWSEc2TransitGatewayVpcAttachment_TransitGatewayDefaultRouteTableAssociation(
 func TestAccAWSEc2TransitGatewayVpcAttachment_TransitGatewayDefaultRouteTablePropagation(
 func TestAccAWSEcrLifecyclePolicy_basic(
-func TestAccAWSEcrLifecyclePolicy_import(
 func TestAccAWSEcrRepositoryPolicy_basic(
 func TestAccAWSEcrRepositoryPolicy_iam(
 func TestAccAWSEcrRepository_basic(
@@ -1521,7 +1520,6 @@ func TestAccAWSEcsTaskDefinition_Inactive(
 func TestAccAWSEcsTaskDefinition_Tags(
 func TestAccAWSEcsTaskDefinition_ProxyConfiguration(
 func testAccAWSEcsTaskDefinition_constraint(
-func TestAccAWSEFSFileSystem_importBasic(
 func TestAccAWSEFSFileSystem_basic(
 func TestAccAWSEFSFileSystem_pagedTags(
 func TestAccAWSEFSFileSystem_kmsKey(
@@ -1531,7 +1529,6 @@ func TestAccAWSEFSFileSystem_ThroughputMode(
 func TestAccAWSEFSFileSystem_lifecyclePolicy(
 func testAccAWSEFSFileSystemConfig_ThroughputMode(
 func testAccAWSEFSFileSystemConfig_ProvisionedThroughputInMibps(
-func TestAccAWSEFSMountTarget_importBasic(
 func TestAccAWSEFSMountTarget_basic(
 func TestAccAWSEFSMountTarget_disappears(
 func TestAccAWSEgressOnlyInternetGateway_basic(
@@ -1910,6 +1907,7 @@ func TestAccAWSIAMSamlProvider_basic(
 func TestAccAWSIAMServerCertificate_basic(
 func TestAccAWSIAMServerCertificate_disappears(
 func TestAccAWSIAMServerCertificate_file(
+func TestAccAWSIAMServerCertificate_Path(
 func testAccIAMServerCertConfig_random(
 func testAccIAMServerCertConfig_path(
 func testAccIAMServerCertConfig_file(
@@ -2142,8 +2140,6 @@ func testAccAWSLambdaEventSourceMappingConfig_kinesis(
 func testAccAWSLambdaEventSourceMappingConfigUpdate_kinesis(
 func testAccAWSLambdaEventSourceMappingConfig_sqs(
 func testAccAWSLambdaEventSourceMappingConfigUpdate_sqs(
-func TestAccAWSLambdaFunction_importLocalFile(
-func TestAccAWSLambdaFunction_importS3(
 func TestAccAWSLambdaFunction_basic(
 func TestAccAWSLambdaFunction_concurrency(
 func TestAccAWSLambdaFunction_concurrencyCycle(

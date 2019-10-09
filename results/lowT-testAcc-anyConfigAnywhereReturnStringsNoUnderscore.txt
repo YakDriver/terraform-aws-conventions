@@ -49,8 +49,8 @@ func testAccAwsIAMGroupConfig(name string) string {
 func testAccDatasourceAwsIamInstanceProfileConfig(roleName, profileName string) string {
 func testAccAwsDataSourceIamPolicyConfig(policyName string) string {
 func testAccAwsIAMRoleConfig(roleName string) string {
-func testAccAwsDataIAMServerCertConfig(rInt int) string {
-func testAccAwsDataIAMServerCertConfigPath(rInt int, path, pathPrefix string) string {
+func testAccAwsDataIAMServerCertConfig(rName, key, certificate string) string {
+func testAccAwsDataIAMServerCertConfigPath(rName, path, pathPrefix, key, certificate string) string {
 func testAccAwsDataSourceIAMUserConfig(name string) string {
 func testAccInstanceDataSourceConfigGetUserData(getUserData bool) string {
 func testAccInstanceDataSourceConfigGetUserDataNoUserData(getUserData bool) string {
@@ -709,7 +709,7 @@ func testAccAWSIAMRoleConfigWithUpdatedDescription(rName string) string {
 func testAccAWSIAMRolePrefixNameConfig(rName string) string {
 func testAccIAMSamlProviderConfig(rName string) string {
 func testAccIAMSamlProviderConfigUpdate(rName string) string {
-func testAccIAMServerCertConfig(rInt int) string {
+func testAccIAMServerCertConfig(rName, key, certificate string) string {
 func testAccAWSIAMServiceLinkedRoleConfig(awsServiceName string) string {
 func testAccAWSUserGroupMembershipConfigUsersAndGroups(userName1, userName2, groupName1, groupName2, groupName3 string) string {
 func testAccAWSUserPolicyAttachConfig(rName, policyName string) string {

@@ -67,8 +67,8 @@ func testAccAwsIAMGroupConfig(name string) string {
 func testAccDatasourceAwsIamInstanceProfileConfig(roleName, profileName string) string {
 func testAccAwsDataSourceIamPolicyConfig(policyName string) string {
 func testAccAwsIAMRoleConfig(roleName string) string {
-func testAccAwsDataIAMServerCertConfig(rInt int) string {
-func testAccAwsDataIAMServerCertConfigPath(rInt int, path, pathPrefix string) string {
+func testAccAwsDataIAMServerCertConfig(rName, key, certificate string) string {
+func testAccAwsDataIAMServerCertConfigPath(rName, path, pathPrefix, key, certificate string) string {
 func testAccAwsDataSourceIAMUserConfig(name string) string {
 func testAccInstancesDataSourceConfig_tags(rInt int) string {
 func testAccInstancesDataSourceConfig_instance_state_names(rInt int) string {
@@ -1582,9 +1582,9 @@ func testAccAWSIAMRoleConfig_tags(rName string) string {
 func testAccAWSIAMRoleConfig_tagsUpdate(rName string) string {
 func testAccIAMSamlProviderConfig(rName string) string {
 func testAccIAMSamlProviderConfigUpdate(rName string) string {
-func testAccIAMServerCertConfig(rInt int) string {
-func testAccIAMServerCertConfig_random() string {
-func testAccIAMServerCertConfig_path(rInt int, path string) string {
+func testAccIAMServerCertConfig(rName, key, certificate string) string {
+func testAccIAMServerCertConfig_random(key, certificate string) string {
+func testAccIAMServerCertConfig_path(rName, path, key, certificate string) string {
 func testAccIAMServerCertConfig_file(rInt int, fName string) string {
 func testAccAWSIAMServiceLinkedRoleConfig(awsServiceName string) string {
 func testAccAWSIAMServiceLinkedRoleConfig_CustomSuffix(awsServiceName, customSuffix string) string {

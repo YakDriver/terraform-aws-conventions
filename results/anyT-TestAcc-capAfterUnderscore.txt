@@ -1051,6 +1051,7 @@ func TestAccAWSIAMRole_MaxSessionDuration(
 func TestAccAWSIAMRole_PermissionsBoundary(
 func testAccCheckIAMRoleConfig_MaxSessionDuration(
 func testAccCheckIAMRoleConfig_PermissionsBoundary(
+func TestAccAWSIAMServerCertificate_Path(
 func TestAccAWSIAMServiceLinkedRole_CustomSuffix(
 func TestAccAWSIAMServiceLinkedRole_CustomSuffix_DiffSuppressFunc(
 func TestAccAWSIAMServiceLinkedRole_Description(

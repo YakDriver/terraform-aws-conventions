@@ -280,7 +280,6 @@ const testAccGuardDutyDetectorConfig_basic3 =
 const testAccGuardDutyDetectorConfig_basic4 =
 const testAccAWSIAMAccountPasswordPolicy =
 const testAccAWSIAMAccountPasswordPolicy_modified =
-const testAccTLSServerCert =
 const testAccAWSUserGroupMembershipConfigInit =
 const testAccAWSUserGroupMembershipConfigAddOne =
 const testAccAWSUserGroupMembershipConfigAddAll =
