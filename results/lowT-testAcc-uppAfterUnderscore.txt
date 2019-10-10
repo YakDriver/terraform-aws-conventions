@@ -351,6 +351,7 @@ func testAccAWSEmrClusterConfig_Step_Single(
 func testAccAWSEmrClusterConfig_Step_Zeroed(
 func testAccAWSEmrClusterConfig_Step(
 func testAccAWSEmrInstanceGroupConfig_BidPrice(
+func testAccAWSEmrInstanceGroupConfig_ConfigurationsJson(
 func testAccAWSEmrInstanceGroupConfig_AutoScalingPolicy(
 func testAccFlowLogConfig_LogDestinationType_CloudWatchLogs(
 func testAccFlowLogConfig_LogDestinationType_S3(

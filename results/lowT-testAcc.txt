@@ -2153,6 +2153,7 @@ func testAccLoadESTags(
 func testAccCheckESDomainExists(
 func testAccCheckAWSESDomainNotRecreated(
 func testAccCheckESDomainDestroy(
+func testAccPreCheckIamServiceLinkedRoleEs(
 func testAccESDomainConfig(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(
@@ -2191,6 +2192,7 @@ func testAccELBConfig_Listener_IAMServerCertificate_AddInvalidListener(
 func testAccCheck_bootstrap_order(
 func testAccCheckAWSEmrDestroy(
 func testAccCheckAWSEmrClusterExists(
+func testAccCheckAWSEmrClusterDisappears(
 func testAccCheckAWSEmrClusterNotRecreated(
 func testAccCheckAWSEmrClusterRecreated(
 func testAccAWSEmrClusterConfigBaseVpc(
@@ -2237,6 +2239,7 @@ func testAccAWSEMRInstanceGroupResourceImportStateIdFunc(
 func testAccAWSEMRInstanceGroupRecreated(
 func testAccAWSEmrInstanceGroupConfig_basic(
 func testAccAWSEmrInstanceGroupConfig_BidPrice(
+func testAccAWSEmrInstanceGroupConfig_ConfigurationsJson(
 func testAccAWSEmrInstanceGroupConfig_AutoScalingPolicy(
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(
 func testAccAWSEmrInstanceGroupConfig_zeroCount(

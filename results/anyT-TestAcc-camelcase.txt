@@ -482,8 +482,6 @@ func testAccDynamoDbGlobalTableConfig_invalidName(
 func TestAccAWSDynamoDbTableItem_rangeKey(
 func TestAccAWSDynamoDbTableItem_withMultipleItems(
 func TestAccAWSDynamoDbTableItem_updateWithRangeKey(
-func TestAccAWSDynamoDbTable_importBasic(
-func TestAccAWSDynamoDbTable_importTags(
 func TestAccAWSDynamoDbTable_enablePitr(
 func TestAccAWSDynamoDbTable_streamSpecification(
 func TestAccAWSDynamoDbTable_streamSpecificationValidation(

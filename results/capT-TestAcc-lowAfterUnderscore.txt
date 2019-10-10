@@ -714,14 +714,11 @@ func TestAccAwsDxPrivateVirtualInterface_mtuUpdate(
 func TestAccAwsDxPublicVirtualInterface_basic(
 func TestAccAWSDynamoDbGlobalTable_basic(
 func TestAccAWSDynamoDbGlobalTable_multipleRegions(
-func TestAccAWSDynamoDbGlobalTable_import(
 func TestAccAWSDynamoDbTableItem_basic(
 func TestAccAWSDynamoDbTableItem_rangeKey(
 func TestAccAWSDynamoDbTableItem_withMultipleItems(
 func TestAccAWSDynamoDbTableItem_update(
 func TestAccAWSDynamoDbTableItem_updateWithRangeKey(
-func TestAccAWSDynamoDbTable_importBasic(
-func TestAccAWSDynamoDbTable_importTags(
 func TestAccAWSDynamoDbTable_basic(
 func TestAccAWSDynamoDbTable_disappears(
 func TestAccAWSDynamoDbTable_disappears_PayPerRequestWithGSI(
@@ -947,6 +944,7 @@ func TestAccAWSELB_swap_subnets(
 func TestAccAWSELB_listener(
 func TestAccAWSEMRCluster_basic(
 func TestAccAWSEMRCluster_additionalInfo(
+func TestAccAWSEMRCluster_disappears(
 func TestAccAWSEMRCluster_configurationsJson(
 func TestAccAWSEMRCluster_instance_group(
 func TestAccAWSEMRCluster_instance_group_names(

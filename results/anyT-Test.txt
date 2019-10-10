@@ -3087,7 +3087,6 @@ func testAccDxTransitVirtualInterfaceConfig_tags(
 func testAccDxTransitVirtualInterfaceConfig_tagsUpdated(
 func TestAccAWSDynamoDbGlobalTable_basic(
 func TestAccAWSDynamoDbGlobalTable_multipleRegions(
-func TestAccAWSDynamoDbGlobalTable_import(
 func testAccCheckAwsDynamoDbGlobalTableDestroy(
 func testAccCheckAwsDynamoDbGlobalTableExists(
 func testAccPreCheckAWSDynamodbGlobalTable(
@@ -3110,8 +3109,6 @@ func testAccAWSDynamoDbItemConfigWithRangeKey(
 func testAccAWSDynamoDbItemConfigWithMultipleItems(
 func testSweepDynamoDbTables(
 func TestDiffDynamoDbGSI(
-func TestAccAWSDynamoDbTable_importBasic(
-func TestAccAWSDynamoDbTable_importTags(
 func TestAccAWSDynamoDbTable_basic(
 func TestAccAWSDynamoDbTable_disappears(
 func TestAccAWSDynamoDbTable_disappears_PayPerRequestWithGSI(
@@ -3842,6 +3839,7 @@ func testAccLoadESTags(
 func testAccCheckESDomainExists(
 func testAccCheckAWSESDomainNotRecreated(
 func testAccCheckESDomainDestroy(
+func testAccPreCheckIamServiceLinkedRoleEs(
 func testAccESDomainConfig(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(
@@ -3918,6 +3916,7 @@ func testAccELBConfig_Listener_IAMServerCertificate_AddInvalidListener(
 func testSweepEmrClusters(
 func TestAccAWSEMRCluster_basic(
 func TestAccAWSEMRCluster_additionalInfo(
+func TestAccAWSEMRCluster_disappears(
 func TestAccAWSEMRCluster_configurationsJson(
 func TestAccAWSEMRCluster_CoreInstanceGroup_AutoscalingPolicy(
 func TestAccAWSEMRCluster_CoreInstanceGroup_BidPrice(
@@ -3953,6 +3952,7 @@ func TestAccAWSEMRCluster_custom_ami_id(
 func testAccCheck_bootstrap_order(
 func testAccCheckAWSEmrDestroy(
 func testAccCheckAWSEmrClusterExists(
+func testAccCheckAWSEmrClusterDisappears(
 func testAccCheckAWSEmrClusterNotRecreated(
 func testAccCheckAWSEmrClusterRecreated(
 func testAccAWSEmrClusterConfigBaseVpc(
@@ -3995,8 +3995,10 @@ func testAccAWSEmrClusterConfigS3Logging(
 func testAccAWSEmrClusterConfigCustomAmiID(
 func TestAccAWSEMRInstanceGroup_basic(
 func TestAccAWSEMRInstanceGroup_BidPrice(
+func TestAccAWSEMRInstanceGroup_ConfigurationsJson(
 func TestAccAWSEMRInstanceGroup_AutoScalingPolicy(
 func TestAccAWSEMRInstanceGroup_InstanceCount(
+func TestAccAWSEMRInstanceGroup_EmrClusterDisappears(
 func TestAccAWSEMRInstanceGroup_EbsConfig_EbsOptimized(
 func testAccCheckAWSEmrInstanceGroupDestroy(
 func testAccCheckAWSEmrInstanceGroupExists(
@@ -4004,6 +4006,7 @@ func testAccAWSEMRInstanceGroupResourceImportStateIdFunc(
 func testAccAWSEMRInstanceGroupRecreated(
 func testAccAWSEmrInstanceGroupConfig_basic(
 func testAccAWSEmrInstanceGroupConfig_BidPrice(
+func testAccAWSEmrInstanceGroupConfig_ConfigurationsJson(
 func testAccAWSEmrInstanceGroupConfig_AutoScalingPolicy(
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(
 func testAccAWSEmrInstanceGroupConfig_zeroCount(
@@ -7568,6 +7571,7 @@ func testAccCheckAwsSwfDomainDestroy(
 func testAccCheckAwsSwfDomainExists(
 func testAccAWSSwfDomainConfig_Description(
 func testAccAWSSwfDomainConfig_Name(
+func testSweepTransferServers(
 func TestAccAWSTransferServer_basic(
 func TestAccAWSTransferServer_apigateway(
 func TestAccAWSTransferServer_disappears(

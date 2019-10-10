@@ -929,14 +929,11 @@ func TestAccAWSDxLag_basic(
 func TestAccAWSDxLag_tags(
 func TestAccAWSDynamoDbGlobalTable_basic(
 func TestAccAWSDynamoDbGlobalTable_multipleRegions(
-func TestAccAWSDynamoDbGlobalTable_import(
 func TestAccAWSDynamoDbTableItem_basic(
 func TestAccAWSDynamoDbTableItem_rangeKey(
 func TestAccAWSDynamoDbTableItem_withMultipleItems(
 func TestAccAWSDynamoDbTableItem_update(
 func TestAccAWSDynamoDbTableItem_updateWithRangeKey(
-func TestAccAWSDynamoDbTable_importBasic(
-func TestAccAWSDynamoDbTable_importTags(
 func TestAccAWSDynamoDbTable_basic(
 func TestAccAWSDynamoDbTable_disappears(
 func TestAccAWSDynamoDbTable_disappears_PayPerRequestWithGSI(
@@ -1269,6 +1266,7 @@ func TestAccAWSELBUpdate_ConnectionDraining(
 func TestAccAWSELB_SecurityGroups(
 func TestAccAWSEMRCluster_basic(
 func TestAccAWSEMRCluster_additionalInfo(
+func TestAccAWSEMRCluster_disappears(
 func TestAccAWSEMRCluster_configurationsJson(
 func TestAccAWSEMRCluster_CoreInstanceGroup_AutoscalingPolicy(
 func TestAccAWSEMRCluster_CoreInstanceGroup_BidPrice(
@@ -1303,8 +1301,10 @@ func TestAccAWSEMRCluster_root_volume_size(
 func TestAccAWSEMRCluster_custom_ami_id(
 func TestAccAWSEMRInstanceGroup_basic(
 func TestAccAWSEMRInstanceGroup_BidPrice(
+func TestAccAWSEMRInstanceGroup_ConfigurationsJson(
 func TestAccAWSEMRInstanceGroup_AutoScalingPolicy(
 func TestAccAWSEMRInstanceGroup_InstanceCount(
+func TestAccAWSEMRInstanceGroup_EmrClusterDisappears(
 func TestAccAWSEMRInstanceGroup_EbsConfig_EbsOptimized(
 func TestAccAWSEmrSecurityConfiguration_basic(
 func TestAccAWSFlowLog_VPCID(

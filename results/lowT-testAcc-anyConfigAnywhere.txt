@@ -1349,6 +1349,7 @@ func testAccAWSEmrClusterConfigS3Logging(
 func testAccAWSEmrClusterConfigCustomAmiID(
 func testAccAWSEmrInstanceGroupConfig_basic(
 func testAccAWSEmrInstanceGroupConfig_BidPrice(
+func testAccAWSEmrInstanceGroupConfig_ConfigurationsJson(
 func testAccAWSEmrInstanceGroupConfig_AutoScalingPolicy(
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(
 func testAccAWSEmrInstanceGroupConfig_zeroCount(

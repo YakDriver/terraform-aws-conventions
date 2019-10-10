@@ -553,8 +553,10 @@ func TestAccAWSEMRCluster_Step_Basic(
 func TestAccAWSEMRCluster_Step_ConfigMode(
 func TestAccAWSEMRCluster_Step_Multiple(
 func TestAccAWSEMRInstanceGroup_BidPrice(
+func TestAccAWSEMRInstanceGroup_ConfigurationsJson(
 func TestAccAWSEMRInstanceGroup_AutoScalingPolicy(
 func TestAccAWSEMRInstanceGroup_InstanceCount(
+func TestAccAWSEMRInstanceGroup_EmrClusterDisappears(
 func TestAccAWSEMRInstanceGroup_EbsConfig_EbsOptimized(
 func TestAccAWSFlowLog_VPCID(
 func TestAccAWSFlowLog_SubnetID(
