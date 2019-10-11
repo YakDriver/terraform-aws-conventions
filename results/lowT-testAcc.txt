@@ -277,6 +277,7 @@ func testAccGetPartition(
 func testAccAlternateAccountPreCheck(
 func testAccAlternateRegionPreCheck(
 func testAccEC2ClassicPreCheck(
+func testAccEC2VPCOnlyPreCheck(
 func testAccHasServicePreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccOrganizationsAccountPreCheck(
@@ -691,6 +692,7 @@ func testAccAWSAutoscalingAttachment_elb_associated(
 func testAccAWSAutoscalingAttachment_alb_associated(
 func testAccAWSAutoscalingAttachment_elb_double_associated(
 func testAccAWSAutoscalingAttachment_alb_double_associated(
+func testAccAWSAutoScalingGroupConfig_TargetGroupArns(
 func testAccCheckAWSAutoScalingGroupDestroy(
 func testAccCheckAWSAutoScalingGroupAttributes(
 func testAccCheckAWSAutoScalingGroupAttributesLoadBalancer(
@@ -4345,6 +4347,8 @@ func testAccVpcEndpointConnectionNotificationBasicConfig(
 func testAccVpcEndpointConnectionNotificationModifiedConfig(
 func testAccCheckVpcEndpointRouteTableAssociationDestroy(
 func testAccCheckVpcEndpointRouteTableAssociationExists(
+func testAccAWSVpcEndpointRouteTableAssociationImportStateIdFunc(
+func testAccVpcEndpointRouteTableAssociationConfig(
 func testAccCheckVpcEndpointServiceAllowedPrincipalDestroy(
 func testAccCheckVpcEndpointServiceAllowedPrincipalExists(
 func testAccVpcEndpointServiceAllowedPrincipalBasicConfig(

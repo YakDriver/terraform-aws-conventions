@@ -397,6 +397,7 @@ func testAccAthenaWorkGroupConfigConfigurationResultConfigurationEncryptionConfi
 func testAccAthenaWorkGroupConfigState(rName, state string) string {
 func testAccAthenaWorkGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAthenaWorkGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSAutoScalingGroupConfig_TargetGroupArns(rName string, tgCount int) string {
 func testAccAWSAutoScalingGroupConfig(name string) string {
 func testAccAWSAutoScalingGroupConfigUpdate(name string) string {
 func testAccAWSAutoScalingGroupConfig_withPlacementGroup(name string) string {
@@ -2402,6 +2403,7 @@ func testAccAWSTransferUserConfig_forceNew(rName string) string {
 func testAccVolumeAttachmentConfig_update(detach bool) string {
 func testAccVpcEndpointConnectionNotificationBasicConfig(lbName string) string {
 func testAccVpcEndpointConnectionNotificationModifiedConfig(lbName string) string {
+func testAccVpcEndpointRouteTableAssociationConfig(rName string) string {
 func testAccVpcEndpointServiceAllowedPrincipalBasicConfig(lbName string) string {
 func testAccVpcEndpointServiceConfig_base(rName1, rName2 string) string {
 func testAccVpcEndpointServiceConfig_basic(rName1, rName2 string) string {

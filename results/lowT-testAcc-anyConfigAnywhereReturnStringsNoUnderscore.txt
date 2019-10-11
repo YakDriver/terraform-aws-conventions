@@ -1260,6 +1260,7 @@ func testAccSsmResourceDataSyncConfig(rInt int, rName string) string {
 func testAccSsmResourceDataSyncConfigUpdate(rInt int, rName string) string {
 func testAccVpcEndpointConnectionNotificationBasicConfig(lbName string) string {
 func testAccVpcEndpointConnectionNotificationModifiedConfig(lbName string) string {
+func testAccVpcEndpointRouteTableAssociationConfig(rName string) string {
 func testAccVpcEndpointServiceAllowedPrincipalBasicConfig(lbName string) string {
 func testAccVpcEndpointConfigGatewayPolicy(rName, policy string) string {
 func testAccAwsVPCPeeringConnectionAccepterConfigSameRegionSameAccount(rName string) string {

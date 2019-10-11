@@ -180,6 +180,7 @@ func TestAccAWSAutoScalingGroup_VpcUpdates(
 func TestAccAWSAutoScalingGroup_WithLoadBalancer(
 func TestAccAWSAutoScalingGroup_WithLoadBalancer_ToTargetGroup(
 func TestAccAWSAutoScalingGroup_ALB_TargetGroups(
+func TestAccAWSAutoScalingGroup_TargetGroupArns(
 func TestAccAWSAutoScalingGroup_ALB_TargetGroups_ELBCapacity(
 func TestAccAWSAutoScalingGroup_LaunchTemplate_IAMInstanceProfile(
 func TestAccAWSAutoScalingGroup_MixedInstancesPolicy(
@@ -481,6 +482,7 @@ func TestAccAWSEcsTaskDefinition_Tags(
 func TestAccAWSEcsTaskDefinition_ProxyConfiguration(
 func TestAccAWSEFSFileSystem_ProvisionedThroughputInMibps(
 func TestAccAWSEFSFileSystem_ThroughputMode(
+func TestAccAWSEIP_Ec2Classic(
 func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func TestAccAWSEksCluster_Version(

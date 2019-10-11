@@ -525,7 +525,6 @@ const testAccVolumeAttachmentConfig =
 const testAccVolumeAttachmentConfigSkipDestroy =
 const testAccDHCPOptionsAssociationConfig =
 const testAccDHCPOptionsConfig =
-const testAccVpcEndpointRouteTableAssociationConfig =
 const testAccVpcEndpointSubnetAssociationConfig_basic =
 const testAccVpcEndpointSubnetAssociationConfig_multiple =
 const testAccAwsVpcIpv4CidrBlockAssociationConfig =

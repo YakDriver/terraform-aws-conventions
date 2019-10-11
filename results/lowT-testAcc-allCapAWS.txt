@@ -179,6 +179,7 @@ func testAccAWSAutoscalingAttachment_elb_associated(
 func testAccAWSAutoscalingAttachment_alb_associated(
 func testAccAWSAutoscalingAttachment_elb_double_associated(
 func testAccAWSAutoscalingAttachment_alb_double_associated(
+func testAccAWSAutoScalingGroupConfig_TargetGroupArns(
 func testAccAWSAutoScalingGroupConfig(
 func testAccAWSAutoScalingGroupConfigUpdate(
 func testAccAWSAutoScalingGroupConfig_withPlacementGroup(
@@ -1861,6 +1862,7 @@ func testAccAWSTransferUserName_validation(
 func testAccAWSTransferUserConfig_options(
 func testAccAWSTransferUserConfig_modify(
 func testAccAWSTransferUserConfig_forceNew(
+func testAccAWSVpcEndpointRouteTableAssociationImportStateIdFunc(
 func testAccAWSVpnConnectionDisappears(
 func testAccAWSVpnGatewayDisappears(
 func testAccAWSWafByteMatchSetConfig(
