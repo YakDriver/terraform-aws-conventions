@@ -311,8 +311,12 @@ func TestAccDataSourceAwsVpnGateway_unattached(
 func TestAccDataSourceAwsVpnGateway_attached(
 func TestAccDataSourceAwsWafIPSet_Basic(
 func testAccDataSourceAwsWafIPSet_Name(
+func TestAccDataSourceAwsWafRateBasedRule_Basic(
+func testAccDataSourceAwsWafRateBasedRuleConfig_Name(
 func TestAccDataSourceAwsWafRegionalIPSet_Basic(
 func testAccDataSourceAwsWafRegionalIPSet_Name(
+func TestAccDataSourceAwsWafRegionalRateBasedRule_Basic(
+func testAccDataSourceAwsWafRegionalRateBasedRuleConfig_Name(
 func TestAccDataSourceAwsWafRegionalRule_Basic(
 func testAccDataSourceAwsWafRegionalRuleConfig_Name(
 func TestAccDataSourceAwsWafRegionalWebAcl_Basic(
@@ -1762,10 +1766,12 @@ func TestAccAWSGlueCatalogTable_basic(
 func TestAccAWSGlueCatalogTable_full(
 func testAccGlueCatalogTable_basic(
 func testAccGlueCatalogTable_full(
+func TestAccAWSGlueClassifier_CsvClassifier(
 func TestAccAWSGlueClassifier_GrokClassifier(
 func TestAccAWSGlueClassifier_JsonClassifier(
 func TestAccAWSGlueClassifier_TypeChange(
 func TestAccAWSGlueClassifier_XmlClassifier(
+func testAccAWSGlueClassifierConfig_CsvClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier(
 func testAccAWSGlueClassifierConfig_JsonClassifier(
 func testAccAWSGlueClassifierConfig_XmlClassifier(
@@ -2576,6 +2582,9 @@ func TestAccAWSProxyProtocolPolicy_basic(
 func TestAccAWSQuickSightGroup_basic(
 func TestAccAWSQuickSightGroup_withDescription(
 func TestAccAWSQuickSightGroup_disappears(
+func TestAccAWSQuickSightUser_basic(
+func TestAccAWSQuickSightUser_withInvalidFormattedEmailStillWorks(
+func TestAccAWSQuickSightUser_disappears(
 func TestAccAwsRamPrincipalAssociation_basic(
 func TestAccAwsRamPrincipalAssociation_disappears(
 func TestAccAwsRamResourceAssociation_basic(
@@ -3528,6 +3537,7 @@ func TestAccAWSWafRuleGroup_basic(
 func TestAccAWSWafRuleGroup_changeNameForceNew(
 func TestAccAWSWafRuleGroup_disappears(
 func TestAccAWSWafRuleGroup_changeActivatedRules(
+func TestAccAWSWafRuleGroup_Tags(
 func TestAccAWSWafRuleGroup_noActivatedRules(
 func testAccAWSWafRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRuleGroupConfig_noActivatedRules(
@@ -3537,6 +3547,7 @@ func TestAccAWSWafRule_disappears(
 func TestAccAWSWafRule_changePredicates(
 func TestAccAWSWafRule_geoMatchSetPredicate(
 func TestAccAWSWafRule_noPredicates(
+func TestAccAWSWafRule_Tags(
 func testAccAWSWafRuleConfig_changePredicates(
 func testAccAWSWafRuleConfig_noPredicates(
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(
@@ -3560,6 +3571,7 @@ func TestAccAWSWafWebAcl_DefaultAction(
 func TestAccAWSWafWebAcl_Rules(
 func TestAccAWSWafWebAcl_LoggingConfiguration(
 func TestAccAWSWafWebAcl_disappears(
+func TestAccAWSWafWebAcl_Tags(
 func testAccAWSWafWebAclConfig_Required(
 func testAccAWSWafWebAclConfig_DefaultAction(
 func testAccAWSWafWebAclConfig_Logging(

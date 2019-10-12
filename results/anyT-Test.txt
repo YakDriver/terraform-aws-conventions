@@ -597,8 +597,12 @@ func testAccDataSourceAwsVpnGatewayUnattachedConfig(
 func testAccDataSourceAwsVpnGatewayAttachedConfig(
 func TestAccDataSourceAwsWafIPSet_Basic(
 func testAccDataSourceAwsWafIPSet_Name(
+func TestAccDataSourceAwsWafRateBasedRule_Basic(
+func testAccDataSourceAwsWafRateBasedRuleConfig_Name(
 func TestAccDataSourceAwsWafRegionalIPSet_Basic(
 func testAccDataSourceAwsWafRegionalIPSet_Name(
+func TestAccDataSourceAwsWafRegionalRateBasedRule_Basic(
+func testAccDataSourceAwsWafRegionalRateBasedRuleConfig_Name(
 func TestAccDataSourceAwsWafRegionalRule_Basic(
 func testAccDataSourceAwsWafRegionalRuleConfig_Name(
 func TestAccDataSourceAwsWafRegionalWebAcl_Basic(
@@ -4173,6 +4177,7 @@ func testAccGlueCatalogTable_full_replacedValues(
 func testAccCheckGlueTableDestroy(
 func testAccCheckGlueCatalogTableExists(
 func testSweepGlueClassifiers(
+func TestAccAWSGlueClassifier_CsvClassifier(
 func TestAccAWSGlueClassifier_GrokClassifier(
 func TestAccAWSGlueClassifier_GrokClassifier_CustomPatterns(
 func TestAccAWSGlueClassifier_JsonClassifier(
@@ -4180,6 +4185,7 @@ func TestAccAWSGlueClassifier_TypeChange(
 func TestAccAWSGlueClassifier_XmlClassifier(
 func testAccCheckAWSGlueClassifierExists(
 func testAccCheckAWSGlueClassifierDestroy(
+func testAccAWSGlueClassifierConfig_CsvClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier_CustomPatterns(
 func testAccAWSGlueClassifierConfig_JsonClassifier(
@@ -5949,6 +5955,14 @@ func testAccCheckQuickSightGroupDestroy(
 func testAccCheckQuickSightGroupDisappears(
 func testAccAWSQuickSightGroupConfig(
 func testAccAWSQuickSightGroupConfigWithDescription(
+func TestAccAWSQuickSightUser_basic(
+func TestAccAWSQuickSightUser_withInvalidFormattedEmailStillWorks(
+func TestAccAWSQuickSightUser_disappears(
+func testAccCheckQuickSightUserExists(
+func testAccCheckQuickSightUserDestroy(
+func testAccCheckQuickSightUserDisappears(
+func testAccAWSQuickSightUserConfigWithEmail(
+func testAccAWSQuickSightUserConfig(
 func TestAccAwsRamPrincipalAssociation_basic(
 func TestAccAwsRamPrincipalAssociation_disappears(
 func testAccCheckAwsRamPrincipalAssociationDisappears(
@@ -8013,6 +8027,7 @@ func TestAccAWSWafRuleGroup_basic(
 func TestAccAWSWafRuleGroup_changeNameForceNew(
 func TestAccAWSWafRuleGroup_disappears(
 func TestAccAWSWafRuleGroup_changeActivatedRules(
+func TestAccAWSWafRuleGroup_Tags(
 func TestAccAWSWafRuleGroup_noActivatedRules(
 func testAccCheckAWSWafRuleGroupDisappears(
 func testAccCheckAWSWafRuleGroupDestroy(
@@ -8020,6 +8035,8 @@ func testAccCheckAWSWafRuleGroupExists(
 func testAccAWSWafRuleGroupConfig(
 func testAccAWSWafRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRuleGroupConfig_noActivatedRules(
+func testAccAWSWafRuleGroupConfigTags1(
+func testAccAWSWafRuleGroupConfigTags2(
 func TestAccAWSWafRule_basic(
 func TestAccAWSWafRule_changeNameForceNew(
 func TestAccAWSWafRule_disappears(
@@ -8027,6 +8044,7 @@ func TestAccAWSWafRule_changePredicates(
 func TestAccAWSWafRule_geoMatchSetPredicate(
 func testCheckResourceAttrWithIndexesAddr(
 func TestAccAWSWafRule_noPredicates(
+func TestAccAWSWafRule_Tags(
 func testAccCheckAWSWafRuleDisappears(
 func testAccCheckAWSWafRuleDestroy(
 func testAccCheckAWSWafRuleExists(
@@ -8036,6 +8054,8 @@ func testAccAWSWafRuleConfigChangeName(
 func testAccAWSWafRuleConfig_changePredicates(
 func testAccAWSWafRuleConfig_noPredicates(
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(
+func testAccAWSWafRuleConfigTags1(
+func testAccAWSWafRuleConfigTags2(
 func TestAccAWSWafSizeConstraintSet_basic(
 func TestAccAWSWafSizeConstraintSet_changeNameForceNew(
 func TestAccAWSWafSizeConstraintSet_disappears(
@@ -8067,6 +8087,7 @@ func TestAccAWSWafWebAcl_DefaultAction(
 func TestAccAWSWafWebAcl_Rules(
 func TestAccAWSWafWebAcl_LoggingConfiguration(
 func TestAccAWSWafWebAcl_disappears(
+func TestAccAWSWafWebAcl_Tags(
 func testAccCheckAWSWafWebAclDisappears(
 func testAccCheckAWSWafWebAclDestroy(
 func testAccCheckAWSWafWebAclExists(
@@ -8077,6 +8098,8 @@ func testAccAWSWafWebAclConfig_Rules_Single_RuleGroup(
 func testAccAWSWafWebAclConfig_Rules_Multiple(
 func testAccAWSWafWebAclConfig_Logging(
 func testAccAWSWafWebAclConfig_LoggingUpdate(
+func testAccAWSWafWebAclConfigTags1(
+func testAccAWSWafWebAclConfigTags2(
 func TestAccAWSWafXssMatchSet_basic(
 func TestAccAWSWafXssMatchSet_changeNameForceNew(
 func TestAccAWSWafXssMatchSet_disappears(

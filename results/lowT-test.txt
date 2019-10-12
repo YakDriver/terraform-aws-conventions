@@ -256,7 +256,9 @@ func testAccDataSourceAwsVpcConfigMultipleCidr(
 func testAccDataSourceAwsVpnGatewayUnattachedConfig(
 func testAccDataSourceAwsVpnGatewayAttachedConfig(
 func testAccDataSourceAwsWafIPSet_Name(
+func testAccDataSourceAwsWafRateBasedRuleConfig_Name(
 func testAccDataSourceAwsWafRegionalIPSet_Name(
+func testAccDataSourceAwsWafRegionalRateBasedRuleConfig_Name(
 func testAccDataSourceAwsWafRegionalRuleConfig_Name(
 func testAccDataSourceAwsWafRegionalWebAclConfig_Name(
 func testAccDataSourceAwsWafRuleConfig_Name(
@@ -2439,6 +2441,7 @@ func testAccCheckGlueCatalogTableExists(
 func testSweepGlueClassifiers(
 func testAccCheckAWSGlueClassifierExists(
 func testAccCheckAWSGlueClassifierDestroy(
+func testAccAWSGlueClassifierConfig_CsvClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier_CustomPatterns(
 func testAccAWSGlueClassifierConfig_JsonClassifier(
@@ -3520,6 +3523,11 @@ func testAccCheckQuickSightGroupDestroy(
 func testAccCheckQuickSightGroupDisappears(
 func testAccAWSQuickSightGroupConfig(
 func testAccAWSQuickSightGroupConfigWithDescription(
+func testAccCheckQuickSightUserExists(
+func testAccCheckQuickSightUserDestroy(
+func testAccCheckQuickSightUserDisappears(
+func testAccAWSQuickSightUserConfigWithEmail(
+func testAccAWSQuickSightUserConfig(
 func testAccCheckAwsRamPrincipalAssociationDisappears(
 func testAccCheckAwsRamPrincipalAssociationExists(
 func testAccCheckAwsRamPrincipalAssociationDestroy(
@@ -4740,6 +4748,8 @@ func testAccCheckAWSWafRuleGroupExists(
 func testAccAWSWafRuleGroupConfig(
 func testAccAWSWafRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRuleGroupConfig_noActivatedRules(
+func testAccAWSWafRuleGroupConfigTags1(
+func testAccAWSWafRuleGroupConfigTags2(
 func testCheckResourceAttrWithIndexesAddr(
 func testAccCheckAWSWafRuleDisappears(
 func testAccCheckAWSWafRuleDestroy(
@@ -4750,6 +4760,8 @@ func testAccAWSWafRuleConfigChangeName(
 func testAccAWSWafRuleConfig_changePredicates(
 func testAccAWSWafRuleConfig_noPredicates(
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(
+func testAccAWSWafRuleConfigTags1(
+func testAccAWSWafRuleConfigTags2(
 func testAccCheckAWSWafSizeConstraintSetDisappears(
 func testAccCheckAWSWafSizeConstraintSetExists(
 func testAccCheckAWSWafSizeConstraintSetDestroy(
@@ -4775,6 +4787,8 @@ func testAccAWSWafWebAclConfig_Rules_Single_RuleGroup(
 func testAccAWSWafWebAclConfig_Rules_Multiple(
 func testAccAWSWafWebAclConfig_Logging(
 func testAccAWSWafWebAclConfig_LoggingUpdate(
+func testAccAWSWafWebAclConfigTags1(
+func testAccAWSWafWebAclConfigTags2(
 func testAccCheckAWSWafXssMatchSetDisappears(
 func testAccCheckAWSWafXssMatchSetExists(
 func testAccCheckAWSWafXssMatchSetDestroy(

@@ -184,6 +184,8 @@ func testAccDataSourceAwsVpcConfig(cidr, tag string) string {
 func testAccDataSourceAwsVpcConfigMultipleCidr(octet int) string {
 func testAccDataSourceAwsVpnGatewayUnattachedConfig(rInt int) string {
 func testAccDataSourceAwsVpnGatewayAttachedConfig(rInt int) string {
+func testAccDataSourceAwsWafRateBasedRuleConfig_Name(name string) string {
+func testAccDataSourceAwsWafRegionalRateBasedRuleConfig_Name(name string) string {
 func testAccDataSourceAwsWafRegionalRuleConfig_Name(name string) string {
 func testAccDataSourceAwsWafRegionalWebAclConfig_Name(name string) string {
 func testAccDataSourceAwsWafRuleConfig_Name(name string) string {
@@ -1302,6 +1304,7 @@ func testAccAWSGameliftFleetBasicUpdatedConfig(desc, fleetName, launchPath, para
 func testAccAWSGameliftFleetAllFieldsConfig(fleetName, desc, launchPath string, params string, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(fleetName, desc, launchPath string, params string, buildName, bucketName, key, roleArn string) string {
 func testAccGlacierVaultLockConfigCompleteLock(rName string, completeLock bool) string {
+func testAccAWSGlueClassifierConfig_CsvClassifier(rName string, allowSingleColumn bool, containsHeader string, delimiter string, disableValueTrimming bool) string {
 func testAccAWSGlueClassifierConfig_GrokClassifier(rName, classification, grokPattern string) string {
 func testAccAWSGlueClassifierConfig_GrokClassifier_CustomPatterns(rName, customPatterns string) string {
 func testAccAWSGlueClassifierConfig_JsonClassifier(rName, jsonPath string) string {
@@ -1857,6 +1860,8 @@ func testAccProxyProtocolPolicyConfig(rName string) string {
 func testAccProxyProtocolPolicyConfigUpdate(rName string) string {
 func testAccAWSQuickSightGroupConfig(rName string) string {
 func testAccAWSQuickSightGroupConfigWithDescription(rName, description string) string {
+func testAccAWSQuickSightUserConfigWithEmail(rName, email string) string {
+func testAccAWSQuickSightUserConfig(rName string) string {
 func testAccAwsRamPrincipalAssociationConfig(rName string) string {
 func testAccAwsRamResourceAssociationConfig(rName string) string {
 func testAccAwsRamResourceShareConfigAllowExternalPrincipals(shareName string, allowExternalPrincipals bool) string {
@@ -2515,11 +2520,15 @@ func testAccAWSWafRegionalXssMatchSetConfig_noTuples(name string) string {
 func testAccAWSWafRuleGroupConfig(ruleName, groupName string) string {
 func testAccAWSWafRuleGroupConfig_changeActivatedRules(ruleName1, ruleName2, ruleName3, groupName string) string {
 func testAccAWSWafRuleGroupConfig_noActivatedRules(groupName string) string {
+func testAccAWSWafRuleGroupConfigTags1(gName, tag1Key, tag1Value string) string {
+func testAccAWSWafRuleGroupConfigTags2(gName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafRuleConfig(name string) string {
 func testAccAWSWafRuleConfigChangeName(name string) string {
 func testAccAWSWafRuleConfig_changePredicates(name string) string {
 func testAccAWSWafRuleConfig_noPredicates(name string) string {
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(name string) string {
+func testAccAWSWafRuleConfigTags1(rName, tag1Key, tag1Value string) string {
+func testAccAWSWafRuleConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafSizeConstraintSetConfig(name string) string {
 func testAccAWSWafSizeConstraintSetConfigChangeName(name string) string {
 func testAccAWSWafSizeConstraintSetConfig_changeConstraints(name string) string {
@@ -2535,6 +2544,8 @@ func testAccAWSWafWebAclConfig_Rules_Single_RuleGroup(rName string) string {
 func testAccAWSWafWebAclConfig_Rules_Multiple(rName string) string {
 func testAccAWSWafWebAclConfig_Logging(rName string) string {
 func testAccAWSWafWebAclConfig_LoggingUpdate(rName string) string {
+func testAccAWSWafWebAclConfigTags1(rName, tag1Key, tag1Value string) string {
+func testAccAWSWafWebAclConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafXssMatchSetConfig(name string) string {
 func testAccAWSWafXssMatchSetConfigChangeName(name string) string {
 func testAccAWSWafXssMatchSetConfig_changeTuples(name string) string {

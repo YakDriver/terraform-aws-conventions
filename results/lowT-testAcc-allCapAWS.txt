@@ -957,6 +957,7 @@ func testAccAWSGameliftFleetAllFieldsUpdatedConfig(
 func testAccAWSGameliftFleetBasicTemplate(
 func testAccAWSGameliftGameSessionQueueBasicConfig(
 func testAccAWSGameliftSampleGame(region string) (
+func testAccAWSGlueClassifierConfig_CsvClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier_CustomPatterns(
 func testAccAWSGlueClassifierConfig_JsonClassifier(
@@ -1371,6 +1372,8 @@ func testAccAWSPinpointSMSChannelConfig_full(
 func testAccAWSPlacementGroupConfig(
 func testAccAWSQuickSightGroupConfig(
 func testAccAWSQuickSightGroupConfigWithDescription(
+func testAccAWSQuickSightUserConfigWithEmail(
+func testAccAWSQuickSightUserConfig(
 func testAccAWSClusterEndpointConfig(
 func testAccAWSClusterInstanceDisappears(
 func testAccAWSClusterInstanceConfig(
@@ -1958,11 +1961,15 @@ func testAccAWSWafRegionalXssMatchSetConfig_noTuples(
 func testAccAWSWafRuleGroupConfig(
 func testAccAWSWafRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRuleGroupConfig_noActivatedRules(
+func testAccAWSWafRuleGroupConfigTags1(
+func testAccAWSWafRuleGroupConfigTags2(
 func testAccAWSWafRuleConfig(
 func testAccAWSWafRuleConfigChangeName(
 func testAccAWSWafRuleConfig_changePredicates(
 func testAccAWSWafRuleConfig_noPredicates(
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(
+func testAccAWSWafRuleConfigTags1(
+func testAccAWSWafRuleConfigTags2(
 func testAccAWSWafSizeConstraintSetConfig(
 func testAccAWSWafSizeConstraintSetConfigChangeName(
 func testAccAWSWafSizeConstraintSetConfig_changeConstraints(
@@ -1978,6 +1985,8 @@ func testAccAWSWafWebAclConfig_Rules_Single_RuleGroup(
 func testAccAWSWafWebAclConfig_Rules_Multiple(
 func testAccAWSWafWebAclConfig_Logging(
 func testAccAWSWafWebAclConfig_LoggingUpdate(
+func testAccAWSWafWebAclConfigTags1(
+func testAccAWSWafWebAclConfigTags2(
 func testAccAWSWafXssMatchSetConfig(
 func testAccAWSWafXssMatchSetConfigChangeName(
 func testAccAWSWafXssMatchSetConfig_changeTuples(

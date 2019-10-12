@@ -1455,6 +1455,9 @@ func TestAccAWSProxyProtocolPolicy_basic(
 func TestAccAWSQuickSightGroup_basic(
 func TestAccAWSQuickSightGroup_withDescription(
 func TestAccAWSQuickSightGroup_disappears(
+func TestAccAWSQuickSightUser_basic(
+func TestAccAWSQuickSightUser_withInvalidFormattedEmailStillWorks(
+func TestAccAWSQuickSightUser_disappears(
 func TestAccAwsRamPrincipalAssociation_basic(
 func TestAccAwsRamPrincipalAssociation_disappears(
 func TestAccAwsRamResourceAssociation_basic(

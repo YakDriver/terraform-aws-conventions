@@ -277,7 +277,9 @@ func TestAccDataSourceAwsVpc_multipleCidr(
 func TestAccDataSourceAwsVpnGateway_unattached(
 func TestAccDataSourceAwsVpnGateway_attached(
 func TestAccDataSourceAwsWafIPSet_Basic(
+func TestAccDataSourceAwsWafRateBasedRule_Basic(
 func TestAccDataSourceAwsWafRegionalIPSet_Basic(
+func TestAccDataSourceAwsWafRegionalRateBasedRule_Basic(
 func TestAccDataSourceAwsWafRegionalRule_Basic(
 func TestAccDataSourceAwsWafRegionalWebAcl_Basic(
 func TestAccDataSourceAwsWafRule_Basic(
@@ -1605,6 +1607,7 @@ func TestAccAWSGlueCatalogTable_basic(
 func TestAccAWSGlueCatalogTable_full(
 func TestAccAWSGlueCatalogTable_update_addValues(
 func TestAccAWSGlueCatalogTable_update_replaceValues(
+func TestAccAWSGlueClassifier_CsvClassifier(
 func TestAccAWSGlueClassifier_GrokClassifier(
 func TestAccAWSGlueClassifier_GrokClassifier_CustomPatterns(
 func TestAccAWSGlueClassifier_JsonClassifier(
@@ -2266,6 +2269,9 @@ func TestAccAWSProxyProtocolPolicy_basic(
 func TestAccAWSQuickSightGroup_basic(
 func TestAccAWSQuickSightGroup_withDescription(
 func TestAccAWSQuickSightGroup_disappears(
+func TestAccAWSQuickSightUser_basic(
+func TestAccAWSQuickSightUser_withInvalidFormattedEmailStillWorks(
+func TestAccAWSQuickSightUser_disappears(
 func TestAccAwsRamPrincipalAssociation_basic(
 func TestAccAwsRamPrincipalAssociation_disappears(
 func TestAccAwsRamResourceAssociation_basic(
@@ -3070,6 +3076,7 @@ func TestAccAWSWafRuleGroup_basic(
 func TestAccAWSWafRuleGroup_changeNameForceNew(
 func TestAccAWSWafRuleGroup_disappears(
 func TestAccAWSWafRuleGroup_changeActivatedRules(
+func TestAccAWSWafRuleGroup_Tags(
 func TestAccAWSWafRuleGroup_noActivatedRules(
 func TestAccAWSWafRule_basic(
 func TestAccAWSWafRule_changeNameForceNew(
@@ -3077,6 +3084,7 @@ func TestAccAWSWafRule_disappears(
 func TestAccAWSWafRule_changePredicates(
 func TestAccAWSWafRule_geoMatchSetPredicate(
 func TestAccAWSWafRule_noPredicates(
+func TestAccAWSWafRule_Tags(
 func TestAccAWSWafSizeConstraintSet_basic(
 func TestAccAWSWafSizeConstraintSet_changeNameForceNew(
 func TestAccAWSWafSizeConstraintSet_disappears(
@@ -3093,6 +3101,7 @@ func TestAccAWSWafWebAcl_DefaultAction(
 func TestAccAWSWafWebAcl_Rules(
 func TestAccAWSWafWebAcl_LoggingConfiguration(
 func TestAccAWSWafWebAcl_disappears(
+func TestAccAWSWafWebAcl_Tags(
 func TestAccAWSWafXssMatchSet_basic(
 func TestAccAWSWafXssMatchSet_changeNameForceNew(
 func TestAccAWSWafXssMatchSet_disappears(

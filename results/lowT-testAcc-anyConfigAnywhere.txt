@@ -190,6 +190,8 @@ func testAccDataSourceAwsVpcConfig(
 func testAccDataSourceAwsVpcConfigMultipleCidr(
 func testAccDataSourceAwsVpnGatewayUnattachedConfig(
 func testAccDataSourceAwsVpnGatewayAttachedConfig(
+func testAccDataSourceAwsWafRateBasedRuleConfig_Name(
+func testAccDataSourceAwsWafRegionalRateBasedRuleConfig_Name(
 func testAccDataSourceAwsWafRegionalRuleConfig_Name(
 func testAccDataSourceAwsWafRegionalWebAclConfig_Name(
 func testAccDataSourceAwsWafRuleConfig_Name(
@@ -1396,6 +1398,7 @@ func testAccAWSGameliftFleetAllFieldsConfig(
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(
 func testAccAWSGameliftGameSessionQueueBasicConfig(
 func testAccGlacierVaultLockConfigCompleteLock(
+func testAccAWSGlueClassifierConfig_CsvClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier_CustomPatterns(
 func testAccAWSGlueClassifierConfig_JsonClassifier(
@@ -1983,6 +1986,8 @@ func testAccProxyProtocolPolicyConfig(
 func testAccProxyProtocolPolicyConfigUpdate(
 func testAccAWSQuickSightGroupConfig(
 func testAccAWSQuickSightGroupConfigWithDescription(
+func testAccAWSQuickSightUserConfigWithEmail(
+func testAccAWSQuickSightUserConfig(
 func testAccAwsRamPrincipalAssociationConfig(
 func testAccAwsRamResourceAssociationConfig(
 func testAccAwsRamResourceShareConfigAllowExternalPrincipals(
@@ -2652,11 +2657,15 @@ func testAccAWSWafRegionalXssMatchSetConfig_noTuples(
 func testAccAWSWafRuleGroupConfig(
 func testAccAWSWafRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRuleGroupConfig_noActivatedRules(
+func testAccAWSWafRuleGroupConfigTags1(
+func testAccAWSWafRuleGroupConfigTags2(
 func testAccAWSWafRuleConfig(
 func testAccAWSWafRuleConfigChangeName(
 func testAccAWSWafRuleConfig_changePredicates(
 func testAccAWSWafRuleConfig_noPredicates(
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(
+func testAccAWSWafRuleConfigTags1(
+func testAccAWSWafRuleConfigTags2(
 func testAccAWSWafSizeConstraintSetConfig(
 func testAccAWSWafSizeConstraintSetConfigChangeName(
 func testAccAWSWafSizeConstraintSetConfig_changeConstraints(
@@ -2672,6 +2681,8 @@ func testAccAWSWafWebAclConfig_Rules_Single_RuleGroup(
 func testAccAWSWafWebAclConfig_Rules_Multiple(
 func testAccAWSWafWebAclConfig_Logging(
 func testAccAWSWafWebAclConfig_LoggingUpdate(
+func testAccAWSWafWebAclConfigTags1(
+func testAccAWSWafWebAclConfigTags2(
 func testAccAWSWafXssMatchSetConfig(
 func testAccAWSWafXssMatchSetConfigChangeName(
 func testAccAWSWafXssMatchSetConfig_changeTuples(
