@@ -241,12 +241,16 @@ func TestAccDataSourceAWSS3BucketObject_kmsEncrypted(
 func TestAccDataSourceAWSS3BucketObject_allParams(
 func TestAccDataSourceAWSS3BucketObject_ObjectLockLegalHoldOff(
 func TestAccDataSourceAWSS3BucketObject_ObjectLockLegalHoldOn(
+func TestAccDataSourceAWSS3BucketObject_LeadingSlash(
+func TestAccDataSourceAWSS3BucketObject_MultipleSlashes(
 func testAccAWSDataSourceS3ObjectConfig_basic(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_readableBody(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_allParams(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOff(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOn(randInt int, retainUntilDate string) (
+func testAccAWSDataSourceS3ObjectConfig_leadingSlash(randInt int) (
+func testAccAWSDataSourceS3ObjectConfig_multipleSlashes(randInt int) (
 func TestAccDataSourceS3Bucket_basic(
 func TestAccDataSourceS3Bucket_website(
 func testAccAWSDataSourceS3BucketConfig_basic(
