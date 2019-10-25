@@ -1683,7 +1683,11 @@ func testAccAWSCloudFrontPublicKeyConfig_namePrefix(
 func testAccAWSCloudFrontPublicKeyConfigUpdate(
 func testSweepCloudhsmv2Clusters(
 func TestAccAWSCloudHsm2Cluster_basic(
-func testAccAWSCloudHsm2Cluster(
+func TestAccAWSCloudHsm2Cluster_Tags(
+func testAccAWSCloudHsm2ClusterConfigBase(
+func testAccAWSCloudHsm2ClusterConfig(
+func testAccAWSCloudHsm2ClusterConfigTags1(
+func testAccAWSCloudHsm2ClusterConfigTags2(
 func testAccCheckAWSCloudHsm2ClusterDestroy(
 func testAccCheckAWSCloudHsm2ClusterExists(
 func TestAccAWSCloudHsm2Hsm_basic(

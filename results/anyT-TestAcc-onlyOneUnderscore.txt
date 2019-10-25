@@ -747,6 +747,7 @@ func TestAccAWSCloudFrontPublicKey_namePrefix(
 func TestAccAWSCloudFrontPublicKey_update(
 func testAccAWSCloudFrontPublicKeyConfig_namePrefix(
 func TestAccAWSCloudHsm2Cluster_basic(
+func TestAccAWSCloudHsm2Cluster_Tags(
 func TestAccAWSCloudHsm2Hsm_basic(
 func testAccAWSCloudTrail_basic(
 func testAccAWSCloudTrail_cloudwatch(
