@@ -3399,8 +3399,6 @@ func TestDiffDXTags(
 func TestIgnoringTagsDX(
 func TestDiffDynamoDbTags(
 func TestIgnoringTagsDynamoDb(
-func TestDiffECRTags(
-func TestIgnoringTagsECR(
 func TestDiffECSTags(
 func TestIgnoringTagsECS(
 func TestDiffelasticacheTags(
