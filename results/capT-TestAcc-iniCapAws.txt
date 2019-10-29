@@ -36,11 +36,8 @@ func TestAccAwsAppsyncResolver_PipelineConfig(
 func TestAccAwsBackupPlan_basic(
 func TestAccAwsBackupPlan_withTags(
 func TestAccAwsBackupPlan_withRules(
-func TestAccAwsBackupPlan_withRuleRemove(
-func TestAccAwsBackupPlan_withRuleAdd(
 func TestAccAwsBackupPlan_withLifecycle(
-func TestAccAwsBackupPlan_withLifecycleDeleteAfterOnly(
-func TestAccAwsBackupPlan_withLifecycleColdStorageAfterOnly(
+func TestAccAwsBackupPlan_withRecoveryPointTags(
 func TestAccAwsBackupPlan_disappears(
 func TestAccAwsBackupSelection_basic(
 func TestAccAwsBackupSelection_disappears(
@@ -52,7 +49,6 @@ func TestAccAwsBackupVault_withKmsKey(
 func TestAccAwsBackupVault_withTags(
 func TestAccAwsCurReportDefinition_basic(
 func TestAccAwsDaxParameterGroup_basic(
-func TestAccAwsDaxParameterGroup_import(
 func TestAccAwsDaxSubnetGroup_basic(
 func TestAccAwsDmsEndpoint_Basic(
 func TestAccAwsDmsEndpoint_S3(
@@ -74,9 +70,8 @@ func TestAccAwsDxGatewayAssociation_basicTransitGatewayCrossAccount(
 func TestAccAwsDxGatewayAssociation_multiVpnGatewaysSingleAccount(
 func TestAccAwsDxGatewayAssociation_allowedPrefixesVpnGatewaySingleAccount(
 func TestAccAwsDxGatewayAssociation_allowedPrefixesVpnGatewayCrossAccount(
-func TestAccAwsDxGateway_importBasic(
-func TestAccAwsDxGateway_importComplex(
 func TestAccAwsDxGateway_basic(
+func TestAccAwsDxGateway_complex(
 func TestAccAwsDxHostedPrivateVirtualInterface_basic(
 func TestAccAwsDxHostedPublicVirtualInterface_basic(
 func TestAccAwsDxPrivateVirtualInterface_basic(

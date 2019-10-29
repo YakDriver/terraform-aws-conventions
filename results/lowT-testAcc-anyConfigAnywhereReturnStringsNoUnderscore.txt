@@ -224,7 +224,6 @@ func testAccAWSAutoScalingGroupConfigWithSuspendedProcesses(name string) string 
 func testAccAWSAutoScalingGroupConfigWithSuspendedProcessesUpdated(name string) string {
 func testAccAWSAutoscalingLifecycleHookConfig(name string) string {
 func testAccAWSAutoscalingScheduleConfig(r, start, end string) string {
-func testAccBackupPlanConfig(randInt int) string {
 func testAccBackupSelectionConfigBase(rInt int) string {
 func testAccBackupSelectionConfigBasic(rInt int) string {
 func testAccBackupSelectionConfigWithTags(rInt int) string {

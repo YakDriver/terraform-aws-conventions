@@ -477,13 +477,16 @@ func testAccAWSAutoscalingScheduleConfig(r, start, end string) string {
 func testAccAWSAutoscalingScheduleConfig_recurrence(r string) string {
 func testAccAWSAutoscalingScheduleConfig_zeroValues(r, start, end string) string {
 func testAccAWSAutoscalingScheduleConfig_negativeOne(r, start, end string) string {
-func testAccBackupPlanConfig(randInt int) string {
-func testAccBackupPlanWithTag(randInt int) string {
-func testAccBackupPlanWithTags(randInt int) string {
-func testAccBackupPlanWithLifecycle(stringID string) string {
-func testAccBackupPlanWithLifecycleDeleteAfterOnly(stringID string) string {
-func testAccBackupPlanWithLifecycleColdStorageAfterOnly(stringID string) string {
-func testAccBackupPlanWithRules(randInt int) string {
+func testAccAwsBackupPlanConfig_basic(rName string) string {
+func testAccAwsBackupPlanConfig_tags(rName string) string {
+func testAccAwsBackupPlanConfig_tagsUpdated(rName string) string {
+func testAccAwsBackupPlanConfig_twoRules(rName string) string {
+func testAccAwsBackupPlanConfig_threeRules(rName string) string {
+func testAccAwsBackupPlanConfig_lifecycleColdStorageAfterOnly(rName string) string {
+func testAccAwsBackupPlanConfig_lifecycleDeleteAfterOnly(rName string) string {
+func testAccAwsBackupPlanConfig_lifecycleColdStorageAfterAndDeleteAfter(rName string) string {
+func testAccAwsBackupPlanConfig_recoveryPointTags(rName string) string {
+func testAccAwsBackupPlanConfig_recoveryPointTagsUpdated(rName string) string {
 func testAccBackupSelectionConfigBase(rInt int) string {
 func testAccBackupSelectionConfigBasic(rInt int) string {
 func testAccBackupSelectionConfigWithTags(rInt int) string {
