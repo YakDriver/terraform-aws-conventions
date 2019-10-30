@@ -1263,6 +1263,8 @@ func testAccAWSSSMPatchBaselineConfigWithOperatingSystemUpdated(rName string) st
 func testAccAWSSSMPatchGroupBasicConfig(rName string) string {
 func testAccSsmResourceDataSyncConfig(rInt int, rName string) string {
 func testAccSsmResourceDataSyncConfigUpdate(rInt int, rName string) string {
+func testAccAWSStorageGatewaySmbFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccVpcEndpointConnectionNotificationBasicConfig(lbName string) string {
 func testAccVpcEndpointConnectionNotificationModifiedConfig(lbName string) string {
 func testAccVpcEndpointRouteTableAssociationConfig(rName string) string {

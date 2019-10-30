@@ -619,6 +619,7 @@ func TestAccAWSGlueJob_AllocatedCapacity(
 func TestAccAWSGlueJob_Command(
 func TestAccAWSGlueJob_DefaultArguments(
 func TestAccAWSGlueJob_Description(
+func TestAccAWSGlueJob_GlueVersion(
 func TestAccAWSGlueJob_ExecutionProperty(
 func TestAccAWSGlueJob_MaxRetries(
 func TestAccAWSGlueJob_Timeout(
@@ -760,11 +761,6 @@ func TestAccAWSNetworkInterfaceSGAttachment_DataSource(
 func TestAccAWSNetworkInterfaceSGAttachment_Multiple(
 func TestAccAWSENI_PrivateIpsCount(
 func TestAccAWSOpsworksInstance_UpdateHostNameForceNew(
-func TestAccAWSOpsworksStack_ImportBasic(
-func TestAccAWSOpsworksStack_NoVpc(
-func TestAccAWSOpsworksStack_NoVpcChangeServiceRoleForceNew(
-func TestAccAWSOpsworksStack_Vpc(
-func TestAccAWSOpsworksStack_NoVpcCreateTags(
 func TestAccAWSPinpointApp_CampaignHookLambda(
 func TestAccAWSPinpointApp_Limits(
 func TestAccAWSPinpointApp_QuietTime(
@@ -1015,6 +1011,7 @@ func TestAccAWSStorageGatewayNfsFileShare_Squash(
 func TestAccAWSStorageGatewaySmbFileShare_Authentication_ActiveDirectory(
 func TestAccAWSStorageGatewaySmbFileShare_Authentication_GuestAccess(
 func TestAccAWSStorageGatewaySmbFileShare_DefaultStorageClass(
+func TestAccAWSStorageGatewaySmbFileShare_Tags(
 func TestAccAWSStorageGatewaySmbFileShare_GuessMIMETypeEnabled(
 func TestAccAWSStorageGatewaySmbFileShare_InvalidUserList(
 func TestAccAWSStorageGatewaySmbFileShare_KMSEncrypted(

@@ -1356,6 +1356,7 @@ func testAccAWSGlueJobConfig_AllocatedCapacity(rName string, allocatedCapacity i
 func testAccAWSGlueJobConfig_Command(rName, scriptLocation string) string {
 func testAccAWSGlueJobConfig_DefaultArguments(rName, jobBookmarkOption, jobLanguage string) string {
 func testAccAWSGlueJobConfig_Description(rName, description string) string {
+func testAccAWSGlueJobConfig_GlueVersion(rName, glueVersion string) string {
 func testAccAWSGlueJobConfig_ExecutionProperty(rName string, maxConcurrentRuns int) string {
 func testAccAWSGlueJobConfig_MaxRetries(rName string, maxRetries int) string {
 func testAccAWSGlueJobConfig_Required(rName string) string {
@@ -2406,6 +2407,8 @@ func testAccAWSStorageGatewaySmbFileShareConfig_ReadOnly(rName string, readOnly 
 func testAccAWSStorageGatewaySmbFileShareConfig_RequesterPays(rName string, requesterPays bool) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_ValidUserList_Single(rName, validUser1 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_ValidUserList_Multiple(rName, validUser1, validUser2 string) string {
+func testAccAWSStorageGatewaySmbFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayUploadBufferConfig_Basic(rName string) string {
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(rName string) string {
 func testAccAWSSwfDomainConfig_Description(rName, description string) string {
