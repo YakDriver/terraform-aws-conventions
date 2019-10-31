@@ -362,6 +362,7 @@ func testAccFlowLogConfig_LogDestinationType_S3(
 func testAccFlowLogConfig_LogDestinationType_S3_Invalid(
 func testAccFlowLogConfig_SubnetID(
 func testAccFlowLogConfig_VPCID(
+func testAccFlowLogConfig_LogFormat(
 func testAccAWSGlueClassifierConfig_CsvClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier(
 func testAccAWSGlueClassifierConfig_GrokClassifier_CustomPatterns(

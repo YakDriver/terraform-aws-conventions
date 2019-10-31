@@ -1206,6 +1206,7 @@ func testAccAWSEcrRepositoryConfig(
 func testAccAWSEcrRepositoryConfig_tags(
 func testAccAWSEcrRepositoryConfig_tagsChanged(
 func testAccAWSEcrRepositoryConfig_immutability(
+func testAccAWSEcrRepositoryConfig_image_scanning_configuration(
 func testAccAWSEcsClusterConfig(
 func testAccAWSEcsClusterConfigTags1(
 func testAccAWSEcsClusterConfigTags2(
@@ -1378,6 +1379,7 @@ func testAccFlowLogConfig_LogDestinationType_S3(
 func testAccFlowLogConfig_LogDestinationType_S3_Invalid(
 func testAccFlowLogConfig_SubnetID(
 func testAccFlowLogConfig_VPCID(
+func testAccFlowLogConfig_LogFormat(
 func testAccAwsFsxLustreFileSystemConfigBase(
 func testAccAwsFsxLustreFileSystemConfigExportPath(
 func testAccAwsFsxLustreFileSystemConfigImportPath(

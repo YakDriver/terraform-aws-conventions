@@ -790,6 +790,7 @@ func testAccAWSEcrRepositoryConfig(
 func testAccAWSEcrRepositoryConfig_tags(
 func testAccAWSEcrRepositoryConfig_tagsChanged(
 func testAccAWSEcrRepositoryConfig_immutability(
+func testAccAWSEcrRepositoryConfig_image_scanning_configuration(
 func testAccAWSEcsClusterConfig(
 func testAccAWSEcsClusterConfigTags1(
 func testAccAWSEcsClusterConfigTags2(
@@ -1637,6 +1638,8 @@ func testAccAWSSecurityGroupRuleSelfInSource(
 func testAccAWSSecurityGroupRuleExpectInvalidType(
 func testAccAWSSecurityGroupRuleInvalidIPv4CIDR(
 func testAccAWSSecurityGroupRuleInvalidIPv6CIDR(
+func testAccAWSSecurityGroupImportStateCheckFunc(
+func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAccAWSSecurityGroupRulesPerGroupLimitFromEnv(
 func testAccAWSSecurityGroupConfigRuleLimit(
 func testAccAWSSecurityGroupConfigCidrBlockRuleLimit(

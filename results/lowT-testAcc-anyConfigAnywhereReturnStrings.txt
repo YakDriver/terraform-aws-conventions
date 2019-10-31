@@ -1121,6 +1121,7 @@ func testAccAWSEcrRepositoryConfig(rName string) string {
 func testAccAWSEcrRepositoryConfig_tags(rName string) string {
 func testAccAWSEcrRepositoryConfig_tagsChanged(rName string) string {
 func testAccAWSEcrRepositoryConfig_immutability(rName string) string {
+func testAccAWSEcrRepositoryConfig_image_scanning_configuration(rName string, scanOnPush bool) string {
 func testAccAWSEcsClusterConfig(rName string) string {
 func testAccAWSEcsClusterConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSEcsClusterConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
@@ -1284,6 +1285,7 @@ func testAccFlowLogConfig_LogDestinationType_S3(rName string) string {
 func testAccFlowLogConfig_LogDestinationType_S3_Invalid(rName string) string {
 func testAccFlowLogConfig_SubnetID(rName string) string {
 func testAccFlowLogConfig_VPCID(rName string) string {
+func testAccFlowLogConfig_LogFormat(rName string) string {
 func testAccAwsFsxLustreFileSystemConfigBase() string {
 func testAccAwsFsxLustreFileSystemConfigExportPath(rName, exportPrefix string) string {
 func testAccAwsFsxLustreFileSystemConfigImportPath(rName, importPrefix string) string {

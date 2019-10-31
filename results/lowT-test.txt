@@ -2019,6 +2019,7 @@ func testAccAWSEcrRepositoryConfig(
 func testAccAWSEcrRepositoryConfig_tags(
 func testAccAWSEcrRepositoryConfig_tagsChanged(
 func testAccAWSEcrRepositoryConfig_immutability(
+func testAccAWSEcrRepositoryConfig_image_scanning_configuration(
 func testSweepEcsClusters(
 func testAccCheckAWSEcsClusterDestroy(
 func testAccCheckAWSEcsClusterExists(
@@ -2356,6 +2357,7 @@ func testAccFlowLogConfig_LogDestinationType_S3(
 func testAccFlowLogConfig_LogDestinationType_S3_Invalid(
 func testAccFlowLogConfig_SubnetID(
 func testAccFlowLogConfig_VPCID(
+func testAccFlowLogConfig_LogFormat(
 func testAccCheckFmsAdminAccountDestroy(
 func testSweepFSXLustreFileSystems(
 func testAccCheckFsxLustreFileSystemExists(
@@ -4056,6 +4058,8 @@ func testAccAWSSecurityGroupRuleExpectInvalidType(
 func testAccAWSSecurityGroupRuleInvalidIPv4CIDR(
 func testAccAWSSecurityGroupRuleInvalidIPv6CIDR(
 func testSweepSecurityGroups(
+func testAccAWSSecurityGroupImportStateCheckFunc(
+func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAddRuleCycle(
 func testRemoveRuleCycle(
 func testAccCheckAWSSecurityGroupDestroy(
