@@ -119,8 +119,16 @@ func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateRegionProviderConfig() string {
+func testAccProviderConfigIgnoreTagPrefixes1(keyPrefix1 string) string {
+func testAccProviderConfigIgnoreTags1(key1 string) string {
 func testAccUsEast1RegionProviderConfig() string {
 func testAccAWSProviderConfigEndpoints(endpoints string) string {
+func testAccAWSProviderConfigIgnoreTagPrefixes0() string {
+func testAccAWSProviderConfigIgnoreTagPrefixes1(tagPrefix1 string) string {
+func testAccAWSProviderConfigIgnoreTagPrefixes2(tagPrefix1, tagPrefix2 string) string {
+func testAccAWSProviderConfigIgnoreTags0() string {
+func testAccAWSProviderConfigIgnoreTags1(tag1 string) string {
+func testAccAWSProviderConfigIgnoreTags2(tag1, tag2 string) string {
 func testAccAWSProviderConfigRegion(region string) string {
 func testAccProviderConfigAssumeRolePolicy(policy string) string {
 func testAccAcmCertificateConfig(domainName, validationMethod string) string {

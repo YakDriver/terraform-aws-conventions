@@ -407,10 +407,12 @@ func TestAccAWSAPIGatewayApiKey_Value(
 func TestAccAWSAPIGatewayAuthorizer_basic(
 func TestAccAWSAPIGatewayAuthorizer_cognito(
 func TestAccAWSAPIGatewayAuthorizer_switchAuthType(
+func TestAccAWSAPIGatewayAuthorizer_switchAuthorizerTTL(
 func TestAccAWSAPIGatewayAuthorizer_authTypeValidation(
 func testAccAWSAPIGatewayAuthorizerConfig_baseLambda(
 func testAccAWSAPIGatewayAuthorizerConfig_lambda(
 func testAccAWSAPIGatewayAuthorizerConfig_lambdaUpdate(
+func testAccAWSAPIGatewayAuthorizerConfig_lambdaNoCache(
 func testAccAWSAPIGatewayAuthorizerConfig_cognito(
 func testAccAWSAPIGatewayAuthorizerConfig_cognitoUpdate(
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationDefaultToken(
@@ -618,8 +620,10 @@ func TestAccAWSAutoScalingGroup_initialLifecycleHook(
 func TestAccAWSAutoScalingGroup_classicVpcZoneIdentifier(
 func TestAccAWSAutoScalingGroup_emptyAvailabilityZones(
 func TestAccAWSAutoScalingGroup_launchTemplate(
+func TestAccAWSAutoScalingGroup_LoadBalancers(
 func TestAccAWSAutoScalingGroup_MixedInstancesPolicy(
 func testAccAWSAutoScalingGroupConfig_withPlacementGroup(
+func testAccAWSAutoScalingGroupConfig_LoadBalancers(
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy(
 func TestAccAWSAutoscalingLifecycleHook_basic(
 func TestAccAWSAutoscalingLifecycleHook_omitDefaultResult(
@@ -1603,7 +1607,6 @@ func TestAccAWSElasticSearchDomainPolicy_basic(
 func TestAccAWSElasticSearchDomain_basic(
 func TestAccAWSElasticSearchDomain_withDedicatedMaster(
 func TestAccAWSElasticSearchDomain_duplicate(
-func TestAccAWSElasticSearchDomain_importBasic(
 func TestAccAWSElasticSearchDomain_v23(
 func TestAccAWSElasticSearchDomain_complex(
 func TestAccAWSElasticSearchDomain_vpc(
@@ -2853,6 +2856,7 @@ func TestAccAWSS3BucketPolicy_policyUpdate(
 func testAccAWSS3BucketPolicyConfig_updated(
 func TestAccAWSS3BucketPublicAccessBlock_basic(
 func TestAccAWSS3BucketPublicAccessBlock_disappears(
+func TestAccAWSS3BucketPublicAccessBlock_bucketDisappears(
 func TestAccAWSS3BucketPublicAccessBlock_BlockPublicAcls(
 func TestAccAWSS3BucketPublicAccessBlock_BlockPublicPolicy(
 func TestAccAWSS3BucketPublicAccessBlock_IgnorePublicAcls(
@@ -3275,6 +3279,7 @@ func testAccAWSStorageGatewayUploadBufferConfig_Basic(
 func TestAccAWSStorageGatewayWorkingStorage_Basic(
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(
 func TestAccAWSSubnet_basic(
+func TestAccAWSSubnet_ignoreTags(
 func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
 func TestAccAWSSubnet_availabilityZoneId(
@@ -3360,6 +3365,7 @@ func testAccVpcPeeringConfig_failedState(
 func testAccVpcPeeringConfig_autoAccept(
 func TestAccAWSVpc_basic(
 func TestAccAWSVpc_disappears(
+func TestAccAWSVpc_ignoreTags(
 func TestAccAWSVpc_AssignGeneratedIpv6CidrBlock(
 func TestAccAWSVpc_Tenancy(
 func TestAccAWSVpc_tags(

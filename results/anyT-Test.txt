@@ -663,6 +663,8 @@ func testAccOrganizationsAccountPreCheck(
 func testAccAlternateAccountProviderConfig(
 func testAccAlternateAccountAlternateRegionProviderConfig(
 func testAccAlternateRegionProviderConfig(
+func testAccProviderConfigIgnoreTagPrefixes1(
+func testAccProviderConfigIgnoreTags1(
 func testAccUsEast1RegionProviderConfig(
 func testAccAwsRegionProviderFunc(region string, providers *[]*schema.Provider) func(
 func testAccCheckWithProviders(f func(
@@ -670,14 +672,28 @@ func testAccPreCheckSkipError(
 func testSweepSkipSweepError(
 func TestAccAWSProvider_Endpoints(
 func TestAccAWSProvider_Endpoints_Deprecated(
+func TestAccAWSProvider_IgnoreTagPrefixes_None(
+func TestAccAWSProvider_IgnoreTagPrefixes_One(
+func TestAccAWSProvider_IgnoreTagPrefixes_Multiple(
+func TestAccAWSProvider_IgnoreTags_None(
+func TestAccAWSProvider_IgnoreTags_One(
+func TestAccAWSProvider_IgnoreTags_Multiple(
 func TestAccAWSProvider_Region_AwsChina(
 func TestAccAWSProvider_Region_AwsCommercial(
 func TestAccAWSProvider_Region_AwsGovCloudUs(
 func testAccCheckAWSProviderDnsSuffix(
 func testAccCheckAWSProviderEndpoints(
 func testAccCheckAWSProviderEndpointsDeprecated(
+func testAccCheckAWSProviderIgnoreTagPrefixes(
+func testAccCheckAWSProviderIgnoreTags(
 func testAccCheckAWSProviderPartition(
 func testAccAWSProviderConfigEndpoints(
+func testAccAWSProviderConfigIgnoreTagPrefixes0(
+func testAccAWSProviderConfigIgnoreTagPrefixes1(
+func testAccAWSProviderConfigIgnoreTagPrefixes2(
+func testAccAWSProviderConfigIgnoreTags0(
+func testAccAWSProviderConfigIgnoreTags1(
+func testAccAWSProviderConfigIgnoreTags2(
 func testAccAWSProviderConfigRegion(
 func testAccAssumeRoleARNPreCheck(
 func testAccProviderConfigAssumeRolePolicy(
@@ -819,6 +835,7 @@ func testAccAWSAPIGatewayApiKeyConfigValue(
 func TestAccAWSAPIGatewayAuthorizer_basic(
 func TestAccAWSAPIGatewayAuthorizer_cognito(
 func TestAccAWSAPIGatewayAuthorizer_switchAuthType(
+func TestAccAWSAPIGatewayAuthorizer_switchAuthorizerTTL(
 func TestAccAWSAPIGatewayAuthorizer_authTypeValidation(
 func testAccCheckAWSAPIGatewayAuthorizerAuthorizerUri(
 func testAccCheckAWSAPIGatewayAuthorizerIdentitySource(
@@ -832,6 +849,7 @@ func testAccCheckAWSAPIGatewayAuthorizerDestroy(
 func testAccAWSAPIGatewayAuthorizerConfig_baseLambda(
 func testAccAWSAPIGatewayAuthorizerConfig_lambda(
 func testAccAWSAPIGatewayAuthorizerConfig_lambdaUpdate(
+func testAccAWSAPIGatewayAuthorizerConfig_lambdaNoCache(
 func testAccAWSAPIGatewayAuthorizerConfig_cognito(
 func testAccAWSAPIGatewayAuthorizerConfig_cognitoUpdate(
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationDefaultToken(
@@ -1343,6 +1361,7 @@ func TestAccAWSAutoScalingGroup_emptyAvailabilityZones(
 func TestAccAWSAutoScalingGroup_launchTemplate(
 func TestAccAWSAutoScalingGroup_launchTemplate_update(
 func TestAccAWSAutoScalingGroup_LaunchTemplate_IAMInstanceProfile(
+func TestAccAWSAutoScalingGroup_LoadBalancers(
 func TestAccAWSAutoScalingGroup_MixedInstancesPolicy(
 func TestAccAWSAutoScalingGroup_MixedInstancesPolicy_InstancesDistribution_OnDemandAllocationStrategy(
 func TestAccAWSAutoScalingGroup_MixedInstancesPolicy_InstancesDistribution_OnDemandBaseCapacity(
@@ -1361,6 +1380,7 @@ func testAccAWSAutoScalingGroupConfig_ALB_TargetGroup_ELBCapacity(
 func testAccAWSAutoScalingGroupConfigWithSuspendedProcesses(
 func testAccAWSAutoScalingGroupConfigWithSuspendedProcessesUpdated(
 func testAccAWSAutoScalingGroupConfig_LaunchTemplate_IAMInstanceProfile(
+func testAccAWSAutoScalingGroupConfig_LoadBalancers(
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_Base(
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy(
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_InstancesDistribution_OnDemandAllocationStrategy(
@@ -3795,7 +3815,6 @@ func TestAccAWSElasticSearchDomain_basic(
 func TestAccAWSElasticSearchDomain_ClusterConfig_ZoneAwarenessConfig(
 func TestAccAWSElasticSearchDomain_withDedicatedMaster(
 func TestAccAWSElasticSearchDomain_duplicate(
-func TestAccAWSElasticSearchDomain_importBasic(
 func TestAccAWSElasticSearchDomain_v23(
 func TestAccAWSElasticSearchDomain_complex(
 func TestAccAWSElasticSearchDomain_vpc(
@@ -3804,7 +3823,6 @@ func TestAccAWSElasticSearchDomain_internetToVpcEndpoint(
 func TestAccAWSElasticSearchDomain_LogPublishingOptions(
 func TestAccAWSElasticSearchDomain_CognitoOptionsCreateAndRemove(
 func TestAccAWSElasticSearchDomain_CognitoOptionsUpdate(
-func testAccCheckESNumberOfSecurityGroups(
 func TestAccAWSElasticSearchDomain_policy(
 func TestAccAWSElasticSearchDomain_encrypt_at_rest_default_key(
 func TestAccAWSElasticSearchDomain_encrypt_at_rest_specify_key(
@@ -3813,6 +3831,7 @@ func TestAccAWSElasticSearchDomain_tags(
 func TestAccAWSElasticSearchDomain_update(
 func TestAccAWSElasticSearchDomain_update_volume_type(
 func TestAccAWSElasticSearchDomain_update_version(
+func testAccCheckESNumberOfSecurityGroups(
 func testAccCheckESEBSVolumeSize(
 func testAccCheckESEBSVolumeEnabled(
 func testAccCheckESSnapshotHour(
@@ -4121,6 +4140,7 @@ func testAccCheckGlacierVaultDestroy(
 func testAccGlacierVault_basic(
 func testAccGlacierVault_full(
 func testAccGlacierVault_withoutNotification(
+func testSweepGlobalAcceleratorAccelerators(
 func TestAccAwsGlobalAcceleratorAccelerator_basic(
 func TestAccAwsGlobalAcceleratorAccelerator_update(
 func TestAccAwsGlobalAcceleratorAccelerator_attributes(
@@ -4875,6 +4895,7 @@ func testAccKinesisFirehoseDeliveryStreamConfig_missingProcessingConfiguration(
 func testResourceAwsKinesisStreamStateDataV0(
 func testResourceAwsKinesisStreamStateDataV1(
 func TestResourceAwsKinesisStreamStateUpgradeV0(
+func testSweepKinesisStreams(
 func TestAccAWSKinesisStream_basic(
 func TestAccAWSKinesisStream_createMultipleConcurrentStreams(
 func TestAccAWSKinesisStream_encryptionWithoutKmsKeyThrowsError(
@@ -5402,6 +5423,7 @@ func TestAccAWSLightsailDomain_disappears(
 func testAccCheckAWSLightsailDomainExists(
 func testAccCheckAWSLightsailDomainDestroy(
 func testAccAWSLightsailDomainConfig_basic(
+func testSweepLightsailInstances(
 func TestAccAWSLightsailInstance_basic(
 func TestAccAWSLightsailInstance_Name(
 func TestAccAWSLightsailInstance_Tags(
@@ -6567,6 +6589,7 @@ func testAccAWSS3BucketPolicyConfig(
 func testAccAWSS3BucketPolicyConfig_updated(
 func TestAccAWSS3BucketPublicAccessBlock_basic(
 func TestAccAWSS3BucketPublicAccessBlock_disappears(
+func TestAccAWSS3BucketPublicAccessBlock_bucketDisappears(
 func TestAccAWSS3BucketPublicAccessBlock_BlockPublicAcls(
 func TestAccAWSS3BucketPublicAccessBlock_BlockPublicPolicy(
 func TestAccAWSS3BucketPublicAccessBlock_IgnorePublicAcls(
@@ -7549,6 +7572,7 @@ func testAccAWSStorageGatewayWorkingStorageConfig_Basic(
 func TestAWSSubnetMigrateState(
 func testSweepSubnets(
 func TestAccAWSSubnet_basic(
+func TestAccAWSSubnet_ignoreTags(
 func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
 func TestAccAWSSubnet_availabilityZoneId(
@@ -7557,6 +7581,7 @@ func testAccCheckAwsSubnetIpv6AfterUpdate(
 func testAccCheckAwsSubnetNotRecreated(
 func testAccCheckSubnetDestroy(
 func testAccCheckSubnetExists(
+func testAccCheckSubnetUpdateTags(
 func testAccPreCheckSwfDomainTestingEnabled(
 func TestAccAWSSwfDomain_basic(
 func TestAccAWSSwfDomain_NamePrefix(
@@ -7705,11 +7730,13 @@ func testAccVpcPeeringConfig_options_noAutoAccept(
 func testSweepVPCs(
 func TestAccAWSVpc_basic(
 func TestAccAWSVpc_disappears(
+func TestAccAWSVpc_ignoreTags(
 func TestAccAWSVpc_AssignGeneratedIpv6CidrBlock(
 func TestAccAWSVpc_Tenancy(
 func TestAccAWSVpc_tags(
 func TestAccAWSVpc_update(
 func testAccCheckVpcDestroy(
+func testAccCheckVpcUpdateTags(
 func testAccCheckVpcCidr(
 func testAccCheckVpcIdsEqual(
 func testAccCheckVpcIdsNotEqual(

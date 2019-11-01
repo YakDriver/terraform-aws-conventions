@@ -211,8 +211,16 @@ func testAccGetPartition() string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateRegionProviderConfig() string {
+func testAccProviderConfigIgnoreTagPrefixes1(keyPrefix1 string) string {
+func testAccProviderConfigIgnoreTags1(key1 string) string {
 func testAccUsEast1RegionProviderConfig() string {
 func testAccAWSProviderConfigEndpoints(endpoints string) string {
+func testAccAWSProviderConfigIgnoreTagPrefixes0() string {
+func testAccAWSProviderConfigIgnoreTagPrefixes1(tagPrefix1 string) string {
+func testAccAWSProviderConfigIgnoreTagPrefixes2(tagPrefix1, tagPrefix2 string) string {
+func testAccAWSProviderConfigIgnoreTags0() string {
+func testAccAWSProviderConfigIgnoreTags1(tag1 string) string {
+func testAccAWSProviderConfigIgnoreTags2(tag1, tag2 string) string {
 func testAccAWSProviderConfigRegion(region string) string {
 func testAccProviderConfigAssumeRolePolicy(policy string) string {
 func testAccAwsAcmCertificateDomainFromEnv(t *testing.T) string {
@@ -266,6 +274,7 @@ func testAccAWSAPIGatewayApiKeyConfigValue(rName, value string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_baseLambda(apiGatewayName, lambdaName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_lambda(apiGatewayName, authorizerName, lambdaName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_lambdaUpdate(apiGatewayName, authorizerName, lambdaName string) string {
+func testAccAWSAPIGatewayAuthorizerConfig_lambdaNoCache(apiGatewayName, authorizerName, lambdaName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_cognito(apiGatewayName, authorizerName, cognitoName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_cognitoUpdate(apiGatewayName, authorizerName, cognitoName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationDefaultToken(apiGatewayName, authorizerName, lambdaName string) string {
@@ -448,6 +457,7 @@ func testAccAWSAutoScalingGroupConfig_ALB_TargetGroup_ELBCapacity(rInt int) stri
 func testAccAWSAutoScalingGroupConfigWithSuspendedProcesses(name string) string {
 func testAccAWSAutoScalingGroupConfigWithSuspendedProcessesUpdated(name string) string {
 func testAccAWSAutoScalingGroupConfig_LaunchTemplate_IAMInstanceProfile(rName string) string {
+func testAccAWSAutoScalingGroupConfig_LoadBalancers(rName string, elbCount int) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_Base(rName string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy(rName string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_InstancesDistribution_OnDemandAllocationStrategy(rName, onDemandAllocationStrategy string) string {

@@ -225,6 +225,7 @@ func TestAccAWSAPIGatewayApiKey_basic(
 func TestAccAWSAPIGatewayAuthorizer_basic(
 func TestAccAWSAPIGatewayAuthorizer_cognito(
 func TestAccAWSAPIGatewayAuthorizer_switchAuthType(
+func TestAccAWSAPIGatewayAuthorizer_switchAuthorizerTTL(
 func TestAccAWSAPIGatewayAuthorizer_authTypeValidation(
 func TestAccAWSAPIGatewayBasePathMapping_basic(
 func TestAccAWSAPIGatewayClientCertificate_basic(
@@ -874,7 +875,6 @@ func TestAccAWSElasticSearchDomainPolicy_basic(
 func TestAccAWSElasticSearchDomain_basic(
 func TestAccAWSElasticSearchDomain_withDedicatedMaster(
 func TestAccAWSElasticSearchDomain_duplicate(
-func TestAccAWSElasticSearchDomain_importBasic(
 func TestAccAWSElasticSearchDomain_v23(
 func TestAccAWSElasticSearchDomain_complex(
 func TestAccAWSElasticSearchDomain_vpc(
@@ -1586,6 +1586,7 @@ func TestAccAWSS3BucketPolicy_basic(
 func TestAccAWSS3BucketPolicy_policyUpdate(
 func TestAccAWSS3BucketPublicAccessBlock_basic(
 func TestAccAWSS3BucketPublicAccessBlock_disappears(
+func TestAccAWSS3BucketPublicAccessBlock_bucketDisappears(
 func TestAccAWSS3Bucket_basic(
 func TestAccAWSS3Bucket_tagsWithNoSystemTags(
 func TestAccAWSS3Bucket_tagsWithSystemTags(
@@ -1795,6 +1796,7 @@ func TestAccAWSSsmResourceDataSync_basic(
 func TestAccAWSSsmResourceDataSync_update(
 func TestAccAWSStorageGatewayNfsFileShare_basic(
 func TestAccAWSSubnet_basic(
+func TestAccAWSSubnet_ignoreTags(
 func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
 func TestAccAWSSubnet_availabilityZoneId(
@@ -1848,6 +1850,7 @@ func TestAccAWSVPCPeeringConnection_accept(
 func TestAccAWSVPCPeeringConnection_optionsNoAutoAccept(
 func TestAccAWSVpc_basic(
 func TestAccAWSVpc_disappears(
+func TestAccAWSVpc_ignoreTags(
 func TestAccAWSVpc_tags(
 func TestAccAWSVpc_update(
 func TestAccAWSVpc_bothDnsOptionsSet(
