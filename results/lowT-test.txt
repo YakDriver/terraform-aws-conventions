@@ -166,6 +166,7 @@ func testAccDataSourceAwsPrefixListCheck(
 func testAccDataSourceAwsPricingProductConfigEc2(
 func testAccDataSourceAwsPricingProductConfigRedshift(
 func testAccPricingCheckValueIsJSON(
+func testAccDataSourceAwsQLDBLedgerConfig(
 func testAccDataSourceAwsRamResourceShareConfig_Name(
 func testAccDataSourceAwsRamResourceShareConfig_Tags(
 func testAccDataSourceAwsRdsClusterConfigBasic(
@@ -244,6 +245,8 @@ func testAccDataSourceAwsVpcDhcpOptionsConfig_Filter(
 func testAccDataSourceAwsVpcEndpointServiceCustomConfig(
 func testAccDataSourceAwsVpcEndpointConfig_gatewayBasic(
 func testAccDataSourceAwsVpcEndpointConfig_byId(
+func testAccDataSourceAwsVpcEndpointConfig_byFilter(
+func testAccDataSourceAwsVpcEndpointConfig_byTags(
 func testAccDataSourceAwsVpcEndpointConfig_gatewayWithRouteTableAndTags(
 func testAccDataSourceAwsVpcEndpointConfig_interface(
 func testAccDataSourceAwsVpcPeeringConnectionCheck(
@@ -1521,6 +1524,8 @@ func testAccDaxSubnetGroupConfig_update(
 func testAccCheckDbClusterSnapshotDestroy(
 func testAccCheckDbClusterSnapshotExists(
 func testAccAwsDbClusterSnapshotConfig(
+func testAccAwsDbClusterSnapshotConfigTags1(
+func testAccAwsDbClusterSnapshotConfigTags2(
 func testAccCheckAWSDBEventSubscriptionExists(
 func testAccCheckAWSDBEventSubscriptionDestroy(
 func testAccCheckAWSDBEventSubscriptionDisappears(
@@ -3273,6 +3278,8 @@ func testAccMqBrokerConfig_updateUsers3(
 func testAccMqBrokerConfig_updateTags1(
 func testAccMqBrokerConfig_updateTags2(
 func testAccMqBrokerConfig_updateTags3(
+func testAccMqBrokerConfig_updateSecurityGroups(
+func testAccMqBrokerConfig_updateUsersSecurityGroups(
 func testAccCheckAwsMqConfigurationDestroy(
 func testAccCheckAwsMqConfigurationExists(
 func testAccMqConfigurationConfig(
@@ -3548,6 +3555,13 @@ func testAccAWSPlacementGroupConfig(
 func testAccCheckProxyProtocolPolicyDestroy(
 func testAccProxyProtocolPolicyConfig(
 func testAccProxyProtocolPolicyConfigUpdate(
+func testSweepQLDBLedgers(
+func testAccCheckAWSQLDBLedgerDestroy(
+func testAccCheckAWSLedgerDestroyWithProvider(
+func testAccCheckAWSQLDBLedgerExists(
+func testAccAWSQLDBLedgerConfig(
+func testAccAWSQLDBLedgerConfigTags1(
+func testAccAWSQLDBLedgerConfigTags2(
 func testAccCheckQuickSightGroupExists(
 func testAccCheckQuickSightGroupDestroy(
 func testAccCheckQuickSightGroupDisappears(
@@ -4437,6 +4451,8 @@ func testAccSsmResourceDataSyncConfigUpdate(
 func testAccCheckAWSStorageGatewayCachedIscsiVolumeExists(
 func testAccCheckAWSStorageGatewayCachedIscsiVolumeDestroy(
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_Basic(
+func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags1(
+func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags2(
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_SnapshotId(
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_SourceVolumeArn(
 func testAccCheckAWSStorageGatewayCacheExists(
@@ -4455,6 +4471,8 @@ func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(
 func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettings(
 func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(
+func testAccAWSStorageGatewayGatewayConfigTags1(
+func testAccAWSStorageGatewayGatewayConfigTags2(
 func testAccCheckAWSStorageGatewayNfsFileShareDestroy(
 func testAccCheckAWSStorageGatewayNfsFileShareExists(
 func testAccAWSStorageGateway_S3FileShareBase(
@@ -4650,6 +4668,8 @@ func testAccAWSWafRateBasedRuleConfig(
 func testAccAWSWafRateBasedRuleConfigChangeName(
 func testAccAWSWafRateBasedRuleConfig_changePredicates(
 func testAccAWSWafRateBasedRuleConfig_noPredicates(
+func testAccAWSWafRateBasedRuleConfigTags1(
+func testAccAWSWafRateBasedRuleConfigTags2(
 func testSweepWafRegexMatchSet(
 func testAccAWSWafRegexMatchSet_basic(
 func testAccAWSWafRegexMatchSet_changePatterns(

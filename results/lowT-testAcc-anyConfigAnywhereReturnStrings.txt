@@ -119,6 +119,7 @@ func testAccDataSourceAwsNetworkInterfacesConfig_Filter(rName string) string {
 func testAccDataSourceAwsNetworkInterfacesConfig_Tags(rName string) string {
 func testAccDataSourceAwsPricingProductConfigEc2(dataName string, instanceType string) string {
 func testAccDataSourceAwsPricingProductConfigRedshift() string {
+func testAccDataSourceAwsQLDBLedgerConfig(rName string) string {
 func testAccDataSourceAwsRamResourceShareConfig_Name(rName string) string {
 func testAccDataSourceAwsRamResourceShareConfig_Tags(rName string) string {
 func testAccDataSourceAwsRdsClusterConfigBasic(clusterName string) string {
@@ -174,6 +175,8 @@ func testAccDataSourceAwsVpcDhcpOptionsConfig_Filter(rInt, count int) string {
 func testAccDataSourceAwsVpcEndpointServiceCustomConfig(rName string) string {
 func testAccDataSourceAwsVpcEndpointConfig_gatewayBasic(rName string) string {
 func testAccDataSourceAwsVpcEndpointConfig_byId(rName string) string {
+func testAccDataSourceAwsVpcEndpointConfig_byFilter(rName string) string {
+func testAccDataSourceAwsVpcEndpointConfig_byTags(rName string) string {
 func testAccDataSourceAwsVpcEndpointConfig_gatewayWithRouteTableAndTags(rName string) string {
 func testAccDataSourceAwsVpcEndpointConfig_interface(rName string) string {
 func testAccDataSourceAwsVpcsConfig() string {
@@ -842,6 +845,8 @@ func testAccDaxParameterGroupConfig_parameters(rName string) string {
 func testAccDaxSubnetGroupConfig(rName string) string {
 func testAccDaxSubnetGroupConfig_update(rName string) string {
 func testAccAwsDbClusterSnapshotConfig(rName string) string {
+func testAccAwsDbClusterSnapshotConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAwsDbClusterSnapshotConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSDBEventSubscriptionConfig(rInt int) string {
 func testAccAWSDBEventSubscriptionConfigWithPrefix(rInt int) string {
 func testAccAWSDBEventSubscriptionConfigUpdate(rInt int) string {
@@ -1760,6 +1765,8 @@ func testAccMqBrokerConfig_updateUsers3(sgName, brokerName string) string {
 func testAccMqBrokerConfig_updateTags1(sgName, brokerName string) string {
 func testAccMqBrokerConfig_updateTags2(sgName, brokerName string) string {
 func testAccMqBrokerConfig_updateTags3(sgName, brokerName string) string {
+func testAccMqBrokerConfig_updateSecurityGroups(sgName, brokerName string) string {
+func testAccMqBrokerConfig_updateUsersSecurityGroups(sgName, brokerName string) string {
 func testAccMqConfigurationConfig(configurationName string) string {
 func testAccMqConfigurationConfig_descriptionUpdated(configurationName string) string {
 func testAccMqConfigurationWithDataConfig(configurationName string) string {
@@ -1884,6 +1891,9 @@ func testAccAWSPinpointSMSChannelConfig_full(senderId, shortCode string) string 
 func testAccAWSPlacementGroupConfig(rName string) string {
 func testAccProxyProtocolPolicyConfig(rName string) string {
 func testAccProxyProtocolPolicyConfigUpdate(rName string) string {
+func testAccAWSQLDBLedgerConfig(n int) string {
+func testAccAWSQLDBLedgerConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSQLDBLedgerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSQuickSightGroupConfig(rName string) string {
 func testAccAWSQuickSightGroupConfigWithDescription(rName, description string) string {
 func testAccAWSQuickSightUserConfigWithEmail(rName, email string) string {
@@ -2381,6 +2391,8 @@ func testAccAWSSSMPatchGroupBasicConfig(rName string) string {
 func testAccSsmResourceDataSyncConfig(rInt int, rName string) string {
 func testAccSsmResourceDataSyncConfigUpdate(rInt int, rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_Basic(rName string) string {
+func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_SnapshotId(rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_SourceVolumeArn(rName string) string {
 func testAccAWSStorageGatewayCacheConfig_FileGateway(rName string) string {
@@ -2392,6 +2404,8 @@ func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(rName string) string 
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(rName, gatewayTimezone string) string {
 func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettings(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(rName, smbGuestPassword string) string {
+func testAccAWSStorageGatewayGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSStorageGatewayGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_Required(rName string) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_ClientList_Single(rName, clientList1 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_ClientList_Multiple(rName, clientList1, clientList2 string) string {
@@ -2489,6 +2503,8 @@ func testAccAWSWafRateBasedRuleConfig(name string) string {
 func testAccAWSWafRateBasedRuleConfigChangeName(name string) string {
 func testAccAWSWafRateBasedRuleConfig_changePredicates(name string) string {
 func testAccAWSWafRateBasedRuleConfig_noPredicates(name string) string {
+func testAccAWSWafRateBasedRuleConfigTags1(name, tag1Key, tag1Value string) string {
+func testAccAWSWafRateBasedRuleConfigTags2(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafRegexMatchSetConfig(matchSetName, patternSetName string) string {
 func testAccAWSWafRegexMatchSetConfig_changePatterns(matchSetName, patternSetName string) string {
 func testAccAWSWafRegexMatchSetConfig_noPatterns(matchSetName string) string {

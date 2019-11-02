@@ -531,6 +531,7 @@ func TestAccAWSDataSyncTask_DefaultSyncOptions_PreserveDevices(
 func TestAccAWSDataSyncTask_DefaultSyncOptions_Uid(
 func TestAccAWSDataSyncTask_DefaultSyncOptions_VerifyMode(
 func TestAccAWSDataSyncTask_Tags(
+func TestAccAWSDBClusterSnapshot_Tags(
 func TestAccAWSDBInstance_AllowMajorVersionUpgrade(
 func TestAccAWSDBInstance_DeletionProtection(
 func TestAccAWSDBInstance_FinalSnapshotIdentifier(
@@ -1251,6 +1252,7 @@ func TestAccAWSPinpointApp_Tags(
 func testAccAWSPinpointAppConfig_CampaignHookLambda(
 func testAccAWSPinpointAppConfig_Tag1(
 func testAccAWSPinpointAppConfig_Tag2(
+func TestAccAWSQLDBLedger_Tags(
 func TestAccAwsRamResourceShare_AllowExternalPrincipals(
 func TestAccAwsRamResourceShare_Name(
 func TestAccAwsRamResourceShare_Tags(
@@ -1538,6 +1540,7 @@ func TestAccAWSSSMMaintenanceWindow_StartDate(
 func TestAccAWSSSMParameter_Tier(
 func TestAccAWSSSMPatchBaseline_OperatingSystem(
 func TestAccAWSStorageGatewayCachedIscsiVolume_Basic(
+func TestAccAWSStorageGatewayCachedIscsiVolume_Tags(
 func TestAccAWSStorageGatewayCachedIscsiVolume_SnapshotId(
 func TestAccAWSStorageGatewayCachedIscsiVolume_SourceVolumeArn(
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_Basic(
@@ -1634,6 +1637,7 @@ func TestAccAWSVpc_DisabledDnsSupport(
 func TestAccAWSVpnConnection_TransitGatewayID(
 func TestAccAWSWafIPSet_IpSetDescriptors_1000UpdateLimit(
 func testAccAWSWafIPSetConfig_IpSetDescriptors(
+func TestAccAWSWafRateBasedRule_Tags(
 func TestAccAWSWafRegionalIPSet_IpSetDescriptors_1000UpdateLimit(
 func testAccAWSWafRegionalIPSetConfig_IpSetDescriptors(
 func TestAccAWSWafRegionalWebAclAssociation_ResourceArn_ApiGatewayStage(

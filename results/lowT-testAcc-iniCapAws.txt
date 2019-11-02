@@ -51,6 +51,8 @@ func testAccAwsBackupPlanConfig_recoveryPointTags(
 func testAccAwsBackupPlanConfig_recoveryPointTagsUpdated(
 func testAccAwsCurReportDefinitionConfig_basic(
 func testAccAwsDbClusterSnapshotConfig(
+func testAccAwsDbClusterSnapshotConfigTags1(
+func testAccAwsDbClusterSnapshotConfigTags2(
 func testAccAwsDbSnapshotConfig(
 func testAccAwsDbSnapshotConfigTags1(
 func testAccAwsDbSnapshotConfigTags2(

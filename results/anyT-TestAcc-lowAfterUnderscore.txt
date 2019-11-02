@@ -216,10 +216,14 @@ func TestAccDataSourceAwsVpcEndpointService_interface(
 func TestAccDataSourceAwsVpcEndpointService_custom(
 func TestAccDataSourceAwsVpcEndpoint_gatewayBasic(
 func TestAccDataSourceAwsVpcEndpoint_byId(
+func TestAccDataSourceAwsVpcEndpoint_byFilter(
+func TestAccDataSourceAwsVpcEndpoint_byTags(
 func TestAccDataSourceAwsVpcEndpoint_gatewayWithRouteTableAndTags(
 func TestAccDataSourceAwsVpcEndpoint_interface(
 func testAccDataSourceAwsVpcEndpointConfig_gatewayBasic(
 func testAccDataSourceAwsVpcEndpointConfig_byId(
+func testAccDataSourceAwsVpcEndpointConfig_byFilter(
+func testAccDataSourceAwsVpcEndpointConfig_byTags(
 func testAccDataSourceAwsVpcEndpointConfig_gatewayWithRouteTableAndTags(
 func testAccDataSourceAwsVpcEndpointConfig_interface(
 func TestAccDataSourceAwsVpcPeeringConnection_basic(
@@ -1988,6 +1992,7 @@ func TestAccAWSMqBroker_allFieldsDefaultVpc(
 func TestAccAWSMqBroker_allFieldsCustomVpc(
 func TestAccAWSMqBroker_updateUsers(
 func TestAccAWSMqBroker_updateTags(
+func TestAccAWSMqBroker_updateSecurityGroup(
 func testAccMqBrokerConfig_allFieldsDefaultVpc(
 func testAccMqBrokerConfig_allFieldsCustomVpc(
 func testAccMqBrokerConfig_updateUsers1(
@@ -1996,6 +2001,8 @@ func testAccMqBrokerConfig_updateUsers3(
 func testAccMqBrokerConfig_updateTags1(
 func testAccMqBrokerConfig_updateTags2(
 func testAccMqBrokerConfig_updateTags3(
+func testAccMqBrokerConfig_updateSecurityGroups(
+func testAccMqBrokerConfig_updateUsersSecurityGroups(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
 func TestAccAWSMqConfiguration_updateTags(
@@ -2121,6 +2128,7 @@ func TestAccAWSPinpointSMSChannel_full(
 func testAccAWSPinpointSMSChannelConfig_full(
 func TestAccAWSPlacementGroup_basic(
 func TestAccAWSProxyProtocolPolicy_basic(
+func TestAccAWSQLDBLedger_basic(
 func TestAccAWSQuickSightGroup_basic(
 func TestAccAWSQuickSightGroup_withDescription(
 func TestAccAWSQuickSightGroup_disappears(
@@ -2618,6 +2626,7 @@ func TestAccAWSSSMPatchBaseline_disappears(
 func TestAccAWSSSMPatchGroup_basic(
 func TestAccAWSSsmResourceDataSync_basic(
 func TestAccAWSSsmResourceDataSync_update(
+func TestAccAWSStorageGatewayGateway_tags(
 func TestAccAWSStorageGatewayNfsFileShare_basic(
 func TestAccAWSSubnet_basic(
 func TestAccAWSSubnet_ignoreTags(

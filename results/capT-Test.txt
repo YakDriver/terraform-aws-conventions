@@ -254,6 +254,7 @@ func TestAccAWSPartition_basic(
 func TestAccDataSourceAwsPrefixList(
 func TestAccDataSourceAwsPricingProduct_ec2(
 func TestAccDataSourceAwsPricingProduct_redshift(
+func TestAccDataSourceAwsQLDBLedger(
 func TestAccDataSourceAwsRamResourceShare_Basic(
 func TestAccDataSourceAwsRamResourceShare_Tags(
 func TestAccDataSourceAWSRDSCluster_basic(
@@ -330,6 +331,8 @@ func TestAccDataSourceAwsVpcEndpointService_interface(
 func TestAccDataSourceAwsVpcEndpointService_custom(
 func TestAccDataSourceAwsVpcEndpoint_gatewayBasic(
 func TestAccDataSourceAwsVpcEndpoint_byId(
+func TestAccDataSourceAwsVpcEndpoint_byFilter(
+func TestAccDataSourceAwsVpcEndpoint_byTags(
 func TestAccDataSourceAwsVpcEndpoint_gatewayWithRouteTableAndTags(
 func TestAccDataSourceAwsVpcEndpoint_interface(
 func TestAccDataSourceAwsVpcPeeringConnection_basic(
@@ -1029,6 +1032,7 @@ func TestAccAWSDAXCluster_encryption_enabled(
 func TestAccAwsDaxParameterGroup_basic(
 func TestAccAwsDaxSubnetGroup_basic(
 func TestAccAWSDBClusterSnapshot_basic(
+func TestAccAWSDBClusterSnapshot_Tags(
 func TestAccAWSDBEventSubscription_basicUpdate(
 func TestAccAWSDBEventSubscription_disappears(
 func TestAccAWSDBEventSubscription_withPrefix(
@@ -2264,6 +2268,7 @@ func TestAccAWSMqBroker_EncryptionOptions_UseAwsOwnedKey_Disabled(
 func TestAccAWSMqBroker_EncryptionOptions_UseAwsOwnedKey_Enabled(
 func TestAccAWSMqBroker_updateUsers(
 func TestAccAWSMqBroker_updateTags(
+func TestAccAWSMqBroker_updateSecurityGroup(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
 func TestAccAWSMqConfiguration_updateTags(
@@ -2395,6 +2400,8 @@ func TestAccAWSPinpointSMSChannel_basic(
 func TestAccAWSPinpointSMSChannel_full(
 func TestAccAWSPlacementGroup_basic(
 func TestAccAWSProxyProtocolPolicy_basic(
+func TestAccAWSQLDBLedger_basic(
+func TestAccAWSQLDBLedger_Tags(
 func TestAccAWSQuickSightGroup_basic(
 func TestAccAWSQuickSightGroup_withDescription(
 func TestAccAWSQuickSightGroup_disappears(
@@ -3032,6 +3039,7 @@ func TestAccAWSSsmResourceDataSync_basic(
 func TestAccAWSSsmResourceDataSync_update(
 func TestParseStorageGatewayVolumeGatewayARNAndTargetNameFromARN(
 func TestAccAWSStorageGatewayCachedIscsiVolume_Basic(
+func TestAccAWSStorageGatewayCachedIscsiVolume_Tags(
 func TestAccAWSStorageGatewayCachedIscsiVolume_SnapshotId(
 func TestAccAWSStorageGatewayCachedIscsiVolume_SourceVolumeArn(
 func TestDecodeStorageGatewayCacheID(
@@ -3041,6 +3049,7 @@ func TestAccAWSStorageGatewayGateway_GatewayType_Cached(
 func TestAccAWSStorageGatewayGateway_GatewayType_FileS3(
 func TestAccAWSStorageGatewayGateway_GatewayType_Stored(
 func TestAccAWSStorageGatewayGateway_GatewayType_Vtl(
+func TestAccAWSStorageGatewayGateway_tags(
 func TestAccAWSStorageGatewayGateway_GatewayName(
 func TestAccAWSStorageGatewayGateway_GatewayTimezone(
 func TestAccAWSStorageGatewayGateway_SmbActiveDirectorySettings(
@@ -3182,6 +3191,7 @@ func TestAccAWSWafRateBasedRule_changeNameForceNew(
 func TestAccAWSWafRateBasedRule_disappears(
 func TestAccAWSWafRateBasedRule_changePredicates(
 func TestAccAWSWafRateBasedRule_noPredicates(
+func TestAccAWSWafRateBasedRule_Tags(
 func TestAccAWSWafRegexMatchSet(
 func TestAccAWSWafRegexPatternSet(
 func TestAccAWSWafRegionalByteMatchSet_basic(

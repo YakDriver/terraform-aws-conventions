@@ -712,6 +712,7 @@ func TestAccAWSDAXCluster_resize(
 func TestAccAWSDAXCluster_encryption_disabled(
 func TestAccAWSDAXCluster_encryption_enabled(
 func TestAccAWSDBClusterSnapshot_basic(
+func TestAccAWSDBClusterSnapshot_Tags(
 func TestAccAWSDBEventSubscription_basicUpdate(
 func TestAccAWSDBEventSubscription_disappears(
 func TestAccAWSDBEventSubscription_withPrefix(
@@ -1846,6 +1847,7 @@ func TestAccAWSMqBroker_EncryptionOptions_UseAwsOwnedKey_Disabled(
 func TestAccAWSMqBroker_EncryptionOptions_UseAwsOwnedKey_Enabled(
 func TestAccAWSMqBroker_updateUsers(
 func TestAccAWSMqBroker_updateTags(
+func TestAccAWSMqBroker_updateSecurityGroup(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
 func TestAccAWSMqConfiguration_updateTags(
@@ -1975,6 +1977,8 @@ func TestAccAWSPinpointSMSChannel_basic(
 func TestAccAWSPinpointSMSChannel_full(
 func TestAccAWSPlacementGroup_basic(
 func TestAccAWSProxyProtocolPolicy_basic(
+func TestAccAWSQLDBLedger_basic(
+func TestAccAWSQLDBLedger_Tags(
 func TestAccAWSQuickSightGroup_basic(
 func TestAccAWSQuickSightGroup_withDescription(
 func TestAccAWSQuickSightGroup_disappears(
@@ -2538,6 +2542,7 @@ func TestAccAWSSSMPatchGroup_basic(
 func TestAccAWSSsmResourceDataSync_basic(
 func TestAccAWSSsmResourceDataSync_update(
 func TestAccAWSStorageGatewayCachedIscsiVolume_Basic(
+func TestAccAWSStorageGatewayCachedIscsiVolume_Tags(
 func TestAccAWSStorageGatewayCachedIscsiVolume_SnapshotId(
 func TestAccAWSStorageGatewayCachedIscsiVolume_SourceVolumeArn(
 func TestAccAWSStorageGatewayCache_FileGateway(
@@ -2546,6 +2551,7 @@ func TestAccAWSStorageGatewayGateway_GatewayType_Cached(
 func TestAccAWSStorageGatewayGateway_GatewayType_FileS3(
 func TestAccAWSStorageGatewayGateway_GatewayType_Stored(
 func TestAccAWSStorageGatewayGateway_GatewayType_Vtl(
+func TestAccAWSStorageGatewayGateway_tags(
 func TestAccAWSStorageGatewayGateway_GatewayName(
 func TestAccAWSStorageGatewayGateway_GatewayTimezone(
 func TestAccAWSStorageGatewayGateway_SmbActiveDirectorySettings(
@@ -2680,6 +2686,7 @@ func TestAccAWSWafRateBasedRule_changeNameForceNew(
 func TestAccAWSWafRateBasedRule_disappears(
 func TestAccAWSWafRateBasedRule_changePredicates(
 func TestAccAWSWafRateBasedRule_noPredicates(
+func TestAccAWSWafRateBasedRule_Tags(
 func TestAccAWSWafRegexMatchSet(
 func TestAccAWSWafRegexPatternSet(
 func TestAccAWSWafRegionalByteMatchSet_basic(
