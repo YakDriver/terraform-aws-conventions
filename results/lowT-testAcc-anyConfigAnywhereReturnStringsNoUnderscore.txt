@@ -142,11 +142,15 @@ func testAccAWSAMICopyConfigENASupport(rName string) string {
 func testAccAWSAMIFromInstanceConfig(rInt int) string {
 func testAccAWSAMILaunchPermissionConfig(rName string) string {
 func testAccAWSAPIGatewayApiKeyConfig(rName string) string {
+func testAccAWSAPIGatewayApiKeyConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAPIGatewayApiKeyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayApiKeyConfigDescription(rName, description string) string {
 func testAccAWSAPIGatewayApiKeyConfigEnabled(rName string, enabled bool) string {
 func testAccAWSAPIGatewayApiKeyConfigValue(rName, value string) string {
 func testAccAWSAPIGatewayBasePathConfigBase(domainName, key, certificate string) string {
 func testAccAWSAPIGatewayBasePathConfigBasePath(domainName, key, certificate, basePath string) string {
+func testAccAWSAPIGatewayClientCertificateConfigTags1(tagKey1, tagValue1 string) string {
+func testAccAWSAPIGatewayClientCertificateConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayDeploymentConfigBase(uri string) string {
 func testAccAWSAPIGatewayDeploymentConfigCreateBeforeDestroy(description string, url string) string {
 func testAccAWSAPIGatewayDeploymentConfigDescription(description string) string {
@@ -159,6 +163,8 @@ func testAccAWSAPIGatewayDocumentationPartMethodConfig(apiName, properties strin
 func testAccAWSAPIGatewayDocumentationPartResponseHeaderConfig(apiName, properties string) string {
 func testAccAWSAPIGatewayDocumentationVersionBasicConfig(version, apiName string) string {
 func testAccAWSAPIGatewayDocumentationVersionAllFieldsConfig(version, apiName, stageName, description string) string {
+func testAccAWSAPIGatewayDomainNameConfigTags1(domainName, key, certificate, tagKey1, tagValue1 string) string {
+func testAccAWSAPIGatewayDomainNameConfigTags2(domainName, key, certificate, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayGatewayResponseConfig(rName string) string {
 func testAccAWSAPIGatewayGatewayResponseConfigUpdate(rName string) string {
 func testAccAWSAPIGatewayMethodSettingsConfigBase(rName string) string {
@@ -194,7 +200,9 @@ func testAccAWSApiGatewayUsagePlanQuotaConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanQuotaModifiedConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesModifiedConfig(rName string) string {
-func testAccAPIGatewayVpcLinkConfig(rName string) string {
+func testAccAPIGatewayVpcLinkConfig(rName, description string) string {
+func testAccAPIGatewayVpcLinkConfigTags1(rName, description, tagKey1, tagValue1 string) string {
+func testAccAPIGatewayVpcLinkConfigTags2(rName, description, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAppautoscalingPolicyConfig(rName string) string {
 func testAccAWSAppautoscalingPolicyConfigResourceIdForceNewBase(rName string) string {
 func testAccAWSAppautoscalingPolicyConfigResourceIdForceNew1(rName string) string {
@@ -1281,6 +1289,8 @@ func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags1(rName, tagKey1, tagVal
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSStorageGatewayNfsFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSStorageGatewayNfsFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccVpcEndpointConnectionNotificationBasicConfig(lbName string) string {

@@ -231,6 +231,7 @@ func TestAccAWSAPIGatewayAuthorizer_switchAuthorizerTTL(
 func TestAccAWSAPIGatewayAuthorizer_authTypeValidation(
 func TestAccAWSAPIGatewayBasePathMapping_basic(
 func TestAccAWSAPIGatewayClientCertificate_basic(
+func TestAccAWSAPIGatewayClientCertificate_tags(
 func TestAccAWSAPIGatewayDeployment_basic(
 func TestAccAWSAPIGatewayDeployment_createBeforeDestoryUpdate(
 func TestAccAWSAPIGatewayDocumentationPart_basic(
@@ -269,6 +270,7 @@ func TestAccAWSAPIGatewayUsagePlan_throttlingInitialRateLimit(
 func TestAccAWSAPIGatewayUsagePlan_quota(
 func TestAccAWSAPIGatewayUsagePlan_apiStages(
 func TestAccAWSAPIGatewayVpcLink_basic(
+func TestAccAWSAPIGatewayVpcLink_tags(
 func TestAccAWSAppautoScalingPolicy_basic(
 func TestAccAWSAppautoScalingPolicy_disappears(
 func TestAccAWSAppautoScalingPolicy_scaleOutAndIn(
@@ -1800,6 +1802,7 @@ func TestAccAWSSsmResourceDataSync_basic(
 func TestAccAWSSsmResourceDataSync_update(
 func TestAccAWSStorageGatewayGateway_tags(
 func TestAccAWSStorageGatewayNfsFileShare_basic(
+func TestAccAWSStorageGatewayNfsFileShare_tags(
 func TestAccAWSSubnet_basic(
 func TestAccAWSSubnet_ignoreTags(
 func TestAccAWSSubnet_ipv6(

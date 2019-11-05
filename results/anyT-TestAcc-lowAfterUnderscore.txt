@@ -167,6 +167,8 @@ func testAccDataSourceAwsRoute53ResolverRules_resolverEndpointId(
 func TestAccDataSourceAwsRoute53ResolverRule_basic(
 func testAccDataSourceAwsRoute53ResolverRule_basic(
 func testAccDataSourceAwsRoute53ResolverRule_resolverEndpointIdWithTags(
+func testAccDataSourceAwsRoute53ResolverRule_sharedByMe(
+func testAccDataSourceAwsRoute53ResolverRule_sharedWithMe(
 func TestAccDataSourceAwsRouteTable_basic(
 func TestAccDataSourceAwsRouteTable_main(
 func TestAccAWSRouteDataSource_basic(
@@ -325,6 +327,7 @@ func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationRequest(
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationCognito(
 func TestAccAWSAPIGatewayBasePathMapping_basic(
 func TestAccAWSAPIGatewayClientCertificate_basic(
+func TestAccAWSAPIGatewayClientCertificate_tags(
 func TestAccAWSAPIGatewayDeployment_basic(
 func TestAccAWSAPIGatewayDeployment_createBeforeDestoryUpdate(
 func TestAccAWSAPIGatewayDocumentationPart_basic(
@@ -369,6 +372,7 @@ func TestAccAWSAPIGatewayUsagePlan_throttlingInitialRateLimit(
 func TestAccAWSAPIGatewayUsagePlan_quota(
 func TestAccAWSAPIGatewayUsagePlan_apiStages(
 func TestAccAWSAPIGatewayVpcLink_basic(
+func TestAccAWSAPIGatewayVpcLink_tags(
 func testAccAPIGatewayVpcLinkConfig_basis(
 func TestAccAWSAppautoScalingPolicy_basic(
 func TestAccAWSAppautoScalingPolicy_disappears(
@@ -2628,6 +2632,7 @@ func TestAccAWSSsmResourceDataSync_basic(
 func TestAccAWSSsmResourceDataSync_update(
 func TestAccAWSStorageGatewayGateway_tags(
 func TestAccAWSStorageGatewayNfsFileShare_basic(
+func TestAccAWSStorageGatewayNfsFileShare_tags(
 func TestAccAWSSubnet_basic(
 func TestAccAWSSubnet_ignoreTags(
 func TestAccAWSSubnet_ipv6(

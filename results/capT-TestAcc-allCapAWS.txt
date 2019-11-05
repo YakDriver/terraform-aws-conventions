@@ -188,6 +188,7 @@ func TestAccAWSAMI_basic(
 func TestAccAWSAMI_snapshotSize(
 func TestAccAWSAPIGatewayAccount_basic(
 func TestAccAWSAPIGatewayApiKey_basic(
+func TestAccAWSAPIGatewayApiKey_Tags(
 func TestAccAWSAPIGatewayApiKey_Description(
 func TestAccAWSAPIGatewayApiKey_Enabled(
 func TestAccAWSAPIGatewayApiKey_Value(
@@ -199,6 +200,7 @@ func TestAccAWSAPIGatewayAuthorizer_authTypeValidation(
 func TestAccAWSAPIGatewayBasePathMapping_basic(
 func TestAccAWSAPIGatewayBasePathMapping_BasePath_Empty(
 func TestAccAWSAPIGatewayClientCertificate_basic(
+func TestAccAWSAPIGatewayClientCertificate_tags(
 func TestAccAWSAPIGatewayDeployment_basic(
 func TestAccAWSAPIGatewayDeployment_createBeforeDestoryUpdate(
 func TestAccAWSAPIGatewayDeployment_Description(
@@ -216,6 +218,7 @@ func TestAccAWSAPIGatewayDomainName_CertificateName(
 func TestAccAWSAPIGatewayDomainName_RegionalCertificateArn(
 func TestAccAWSAPIGatewayDomainName_RegionalCertificateName(
 func TestAccAWSAPIGatewayDomainName_SecurityPolicy(
+func TestAccAWSAPIGatewayDomainName_Tags(
 func TestAccAWSAPIGatewayGatewayResponse_basic(
 func TestAccAWSAPIGatewayIntegrationResponse_basic(
 func TestAccAWSAPIGatewayIntegration_basic(
@@ -260,6 +263,7 @@ func TestAccAWSAPIGatewayUsagePlan_throttlingInitialRateLimit(
 func TestAccAWSAPIGatewayUsagePlan_quota(
 func TestAccAWSAPIGatewayUsagePlan_apiStages(
 func TestAccAWSAPIGatewayVpcLink_basic(
+func TestAccAWSAPIGatewayVpcLink_tags(
 func TestAccAWSAppautoScalingPolicy_basic(
 func TestAccAWSAppautoScalingPolicy_disappears(
 func TestAccAWSAppautoScalingPolicy_scaleOutAndIn(
@@ -2557,6 +2561,7 @@ func TestAccAWSStorageGatewayGateway_GatewayTimezone(
 func TestAccAWSStorageGatewayGateway_SmbActiveDirectorySettings(
 func TestAccAWSStorageGatewayGateway_SmbGuestPassword(
 func TestAccAWSStorageGatewayNfsFileShare_basic(
+func TestAccAWSStorageGatewayNfsFileShare_tags(
 func TestAccAWSStorageGatewayNfsFileShare_ClientList(
 func TestAccAWSStorageGatewayNfsFileShare_DefaultStorageClass(
 func TestAccAWSStorageGatewayNfsFileShare_GuessMIMETypeEnabled(

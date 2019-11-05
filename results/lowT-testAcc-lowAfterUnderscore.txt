@@ -33,6 +33,8 @@ func testAccDataSourceAwsRegionConfig_name(
 func testAccDataSourceAwsRoute53ResolverRules_resolverEndpointId(
 func testAccDataSourceAwsRoute53ResolverRule_basic(
 func testAccDataSourceAwsRoute53ResolverRule_resolverEndpointIdWithTags(
+func testAccDataSourceAwsRoute53ResolverRule_sharedByMe(
+func testAccDataSourceAwsRoute53ResolverRule_sharedWithMe(
 func testAccAWSDataSourceS3ObjectConfig_basic(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_readableBody(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(randInt int) (

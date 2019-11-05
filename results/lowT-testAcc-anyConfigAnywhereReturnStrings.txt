@@ -246,6 +246,8 @@ func testAccAmiConfig_snapshotSize(rName string) string {
 func testAccAWSAPIGatewayAccountConfig_updated(randName string) string {
 func testAccAWSAPIGatewayAccountConfig_updated2(randName string) string {
 func testAccAWSAPIGatewayApiKeyConfig(rName string) string {
+func testAccAWSAPIGatewayApiKeyConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAPIGatewayApiKeyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayApiKeyConfigDescription(rName, description string) string {
 func testAccAWSAPIGatewayApiKeyConfigEnabled(rName string, enabled bool) string {
 func testAccAWSAPIGatewayApiKeyConfigValue(rName, value string) string {
@@ -260,6 +262,8 @@ func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationRequest(apiGatewayNa
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationCognito(apiGatewayName, authorizerName, cognitoName string) string {
 func testAccAWSAPIGatewayBasePathConfigBase(domainName, key, certificate string) string {
 func testAccAWSAPIGatewayBasePathConfigBasePath(domainName, key, certificate, basePath string) string {
+func testAccAWSAPIGatewayClientCertificateConfigTags1(tagKey1, tagValue1 string) string {
+func testAccAWSAPIGatewayClientCertificateConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayDeploymentConfigBase(uri string) string {
 func testAccAWSAPIGatewayDeploymentConfigCreateBeforeDestroy(description string, url string) string {
 func testAccAWSAPIGatewayDeploymentConfigDescription(description string) string {
@@ -277,6 +281,8 @@ func testAccAWSAPIGatewayDomainNameConfig_CertificateName(domainName, key, certi
 func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateArn(domainName, key, certificate string) string {
 func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateName(domainName, key, certificate, chainCertificate string) string {
 func testAccAWSAPIGatewayDomainNameConfig_SecurityPolicy(domainName, key, certificate, securityPolicy string) string {
+func testAccAWSAPIGatewayDomainNameConfigTags1(domainName, key, certificate, tagKey1, tagValue1 string) string {
+func testAccAWSAPIGatewayDomainNameConfigTags2(domainName, key, certificate, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayGatewayResponseConfig(rName string) string {
 func testAccAWSAPIGatewayGatewayResponseConfigUpdate(rName string) string {
 func testAccAWSAPIGatewayIntegrationConfig_IntegrationTypeBase(rName string) string {
@@ -322,8 +328,10 @@ func testAccAWSApiGatewayUsagePlanQuotaModifiedConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesModifiedConfig(rName string) string {
 func testAccAPIGatewayVpcLinkConfig_basis(rName string) string {
-func testAccAPIGatewayVpcLinkConfig(rName string) string {
-func testAccAPIGatewayVpcLinkConfig_Update(rName string) string {
+func testAccAPIGatewayVpcLinkConfig(rName, description string) string {
+func testAccAPIGatewayVpcLinkConfigTags1(rName, description, tagKey1, tagValue1 string) string {
+func testAccAPIGatewayVpcLinkConfigTags2(rName, description, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAPIGatewayVpcLinkConfig_Update(rName, description string) string {
 func testAccAWSAppautoscalingPolicyConfig(rName string) string {
 func testAccAWSAppautoscalingPolicyConfigResourceIdForceNewBase(rName string) string {
 func testAccAWSAppautoscalingPolicyConfigResourceIdForceNew1(rName string) string {
@@ -2407,6 +2415,8 @@ func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(rName, smbGuestPassw
 func testAccAWSStorageGatewayGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_Required(rName string) string {
+func testAccAWSStorageGatewayNfsFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSStorageGatewayNfsFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_ClientList_Single(rName, clientList1 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_ClientList_Multiple(rName, clientList1, clientList2 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_DefaultStorageClass(rName, defaultStorageClass string) string {
