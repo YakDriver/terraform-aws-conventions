@@ -221,6 +221,7 @@ func TestAccAWSALBTargetGroup_lambdaMultiValueHeadersEnabled(
 func TestAccAWSALBTargetGroup_missingPortProtocolVpc(
 func TestAccAWSAMICopy_basic(
 func TestAccAWSAMI_basic(
+func TestAccAWSAMI_tags(
 func TestAccAWSAMI_snapshotSize(
 func TestAccAWSAPIGatewayAccount_basic(
 func TestAccAWSAPIGatewayApiKey_basic(
@@ -1781,6 +1782,7 @@ func TestAccAWSSSMMaintenanceWindowTarget_validation(
 func TestAccAWSSSMMaintenanceWindowTarget_update(
 func TestAccAWSSSMMaintenanceWindowTask_basic(
 func TestAccAWSSSMMaintenanceWindowTask_updateForcesNewResource(
+func TestAccAWSSSMMaintenanceWindowTask_emptyNotificationConfig(
 func TestAccAWSSSMMaintenanceWindow_basic(
 func TestAccAWSSSMMaintenanceWindow_tags(
 func TestAccAWSSSMMaintenanceWindow_disappears(
@@ -1809,6 +1811,7 @@ func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
 func TestAccAWSSubnet_availabilityZoneId(
 func TestAccAWSSwfDomain_basic(
+func TestAccAWSSwfDomain_tags(
 func TestAccAWSTransferServer_basic(
 func TestAccAWSTransferServer_apigateway(
 func TestAccAWSTransferServer_disappears(

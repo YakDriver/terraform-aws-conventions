@@ -378,8 +378,10 @@ func testAccCheckAmiDestroy(
 func testAccCheckAmiExists(
 func testAccCheckAmiBlockDevice(
 func testAccCheckAmiEbsBlockDevice(
+func testAccAmiConfig_base(
 func testAccAmiConfig_basic(
-func testAccAmiConfig_snapshotSize(
+func testAccAmiConfigTags1(
+func testAccAmiConfigTags2(
 func testAccCheckAWSAPIGatewayAccountCloudwatchRoleArn(
 func testAccCheckAWSAPIGatewayAccountExists(
 func testAccCheckAWSAPIGatewayAccountDestroy(
@@ -4413,6 +4415,7 @@ func testAccAWSSSMMaintenanceWindowTaskConfigBase(
 func testAccAWSSSMMaintenanceWindowTaskBasicConfig(
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdate(
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdated(
+func testAccAWSSSMMaintenanceWindowTaskConfigEmptyNotifcationConfig(
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfig(
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfigUpdate(
 func testAccAWSSSMMaintenanceWindowTaskLambdaConfig(
@@ -4538,6 +4541,8 @@ func testAccCheckAwsSwfDomainDestroy(
 func testAccCheckAwsSwfDomainExists(
 func testAccAWSSwfDomainConfig_Description(
 func testAccAWSSwfDomainConfig_Name(
+func testAccAWSSwfDomainConfigTags1(
+func testAccAWSSwfDomainConfigTags2(
 func testSweepTransferServers(
 func testAccCheckAWSTransferServerExists(
 func testAccCheckAWSTransferServerDisappears(

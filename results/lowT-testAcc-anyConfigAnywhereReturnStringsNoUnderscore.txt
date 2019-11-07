@@ -141,6 +141,8 @@ func testAccAWSAMICopyConfigDescription(rName, description string) string {
 func testAccAWSAMICopyConfigENASupport(rName string) string {
 func testAccAWSAMIFromInstanceConfig(rInt int) string {
 func testAccAWSAMILaunchPermissionConfig(rName string) string {
+func testAccAmiConfigTags1(rName, tagKey1, tagValue1 string, size int) string {
+func testAccAmiConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string, size int) string {
 func testAccAWSAPIGatewayApiKeyConfig(rName string) string {
 func testAccAWSAPIGatewayApiKeyConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayApiKeyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1254,6 +1256,7 @@ func testAccAWSSSMMaintenanceWindowTaskConfigBase(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdate(rName, description, taskType, taskArn string, priority, maxConcurrency, maxErrors int) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdated(rName string) string {
+func testAccAWSSSMMaintenanceWindowTaskConfigEmptyNotifcationConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfig(rName, version string) string {
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfigUpdate(rName, version string) string {
 func testAccAWSSSMMaintenanceWindowTaskLambdaConfig(funcName, policyName, roleName, sgName, rName string, rInt int) string {
@@ -1293,6 +1296,8 @@ func testAccAWSStorageGatewayNfsFileShareConfigTags1(rName, tagKey1, tagValue1 s
 func testAccAWSStorageGatewayNfsFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSwfDomainConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSwfDomainConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccVpcEndpointConnectionNotificationBasicConfig(lbName string) string {
 func testAccVpcEndpointConnectionNotificationModifiedConfig(lbName string) string {
 func testAccVpcEndpointRouteTableAssociationConfig(rName string) string {

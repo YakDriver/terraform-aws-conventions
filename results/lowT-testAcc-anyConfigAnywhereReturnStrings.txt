@@ -241,8 +241,10 @@ func testAccAWSAMICopyConfigDescription(rName, description string) string {
 func testAccAWSAMICopyConfigENASupport(rName string) string {
 func testAccAWSAMIFromInstanceConfig(rInt int) string {
 func testAccAWSAMILaunchPermissionConfig(rName string) string {
-func testAccAmiConfig_basic(rName string) string {
-func testAccAmiConfig_snapshotSize(rName string) string {
+func testAccAmiConfig_base(rName string, size int) string {
+func testAccAmiConfig_basic(rName string, size int) string {
+func testAccAmiConfigTags1(rName, tagKey1, tagValue1 string, size int) string {
+func testAccAmiConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string, size int) string {
 func testAccAWSAPIGatewayAccountConfig_updated(randName string) string {
 func testAccAWSAPIGatewayAccountConfig_updated2(randName string) string {
 func testAccAWSAPIGatewayApiKeyConfig(rName string) string {
@@ -2367,6 +2369,7 @@ func testAccAWSSSMMaintenanceWindowTaskConfigBase(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdate(rName, description, taskType, taskArn string, priority, maxConcurrency, maxErrors int) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdated(rName string) string {
+func testAccAWSSSMMaintenanceWindowTaskConfigEmptyNotifcationConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfig(rName, version string) string {
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfigUpdate(rName, version string) string {
 func testAccAWSSSMMaintenanceWindowTaskLambdaConfig(funcName, policyName, roleName, sgName, rName string, rInt int) string {
@@ -2449,6 +2452,8 @@ func testAccAWSStorageGatewayUploadBufferConfig_Basic(rName string) string {
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(rName string) string {
 func testAccAWSSwfDomainConfig_Description(rName, description string) string {
 func testAccAWSSwfDomainConfig_Name(rName string) string {
+func testAccAWSSwfDomainConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSwfDomainConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSTransferServerConfig_basicUpdate(rName string) string {
 func testAccAWSTransferServerConfig_apigateway(rName string) string {
 func testAccAWSTransferServerConfig_forcedestroy(rName string) string {

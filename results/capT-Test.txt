@@ -443,6 +443,7 @@ func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission_Public(
 func TestAccAWSAMILaunchPermission_Disappears_AMI(
 func TestAccAWSAMI_basic(
+func TestAccAWSAMI_tags(
 func TestAccAWSAMI_snapshotSize(
 func TestAccAWSAPIGatewayAccount_basic(
 func TestAccAWSAPIGatewayApiKey_basic(
@@ -3014,6 +3015,7 @@ func TestAccAWSSSMMaintenanceWindowTask_TaskInvocationLambdaParameters(
 func TestAccAWSSSMMaintenanceWindowTask_TaskInvocationRunCommandParameters(
 func TestAccAWSSSMMaintenanceWindowTask_TaskInvocationStepFunctionParameters(
 func TestAccAWSSSMMaintenanceWindowTask_TaskParameters(
+func TestAccAWSSSMMaintenanceWindowTask_emptyNotificationConfig(
 func TestAccAWSSSMMaintenanceWindow_basic(
 func TestAccAWSSSMMaintenanceWindow_tags(
 func TestAccAWSSSMMaintenanceWindow_disappears(
@@ -3095,6 +3097,7 @@ func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
 func TestAccAWSSubnet_availabilityZoneId(
 func TestAccAWSSwfDomain_basic(
+func TestAccAWSSwfDomain_tags(
 func TestAccAWSSwfDomain_NamePrefix(
 func TestAccAWSSwfDomain_GeneratedName(
 func TestAccAWSSwfDomain_Description(

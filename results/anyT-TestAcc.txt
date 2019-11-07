@@ -728,13 +728,16 @@ func testAccCheckAWSAMILaunchPermissionDisappears(
 func testAccAWSAMIDisappears(
 func testAccAWSAMILaunchPermissionConfig(
 func TestAccAWSAMI_basic(
+func TestAccAWSAMI_tags(
 func TestAccAWSAMI_snapshotSize(
 func testAccCheckAmiDestroy(
 func testAccCheckAmiExists(
 func testAccCheckAmiBlockDevice(
 func testAccCheckAmiEbsBlockDevice(
+func testAccAmiConfig_base(
 func testAccAmiConfig_basic(
-func testAccAmiConfig_snapshotSize(
+func testAccAmiConfigTags1(
+func testAccAmiConfigTags2(
 func TestAccAWSAPIGatewayAccount_basic(
 func testAccCheckAWSAPIGatewayAccountCloudwatchRoleArn(
 func testAccCheckAWSAPIGatewayAccountExists(
@@ -7069,6 +7072,7 @@ func TestAccAWSSSMMaintenanceWindowTask_TaskInvocationLambdaParameters(
 func TestAccAWSSSMMaintenanceWindowTask_TaskInvocationRunCommandParameters(
 func TestAccAWSSSMMaintenanceWindowTask_TaskInvocationStepFunctionParameters(
 func TestAccAWSSSMMaintenanceWindowTask_TaskParameters(
+func TestAccAWSSSMMaintenanceWindowTask_emptyNotificationConfig(
 func testAccCheckAwsSsmWindowsTaskNotRecreated(
 func testAccCheckAwsSsmWindowsTaskRecreated(
 func testAccCheckAWSSSMMaintenanceWindowTaskExists(
@@ -7078,6 +7082,7 @@ func testAccAWSSSMMaintenanceWindowTaskConfigBase(
 func testAccAWSSSMMaintenanceWindowTaskBasicConfig(
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdate(
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdated(
+func testAccAWSSSMMaintenanceWindowTaskConfigEmptyNotifcationConfig(
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfig(
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfigUpdate(
 func testAccAWSSSMMaintenanceWindowTaskLambdaConfig(
@@ -7272,6 +7277,7 @@ func testAccCheckSubnetExists(
 func testAccCheckSubnetUpdateTags(
 func testAccPreCheckSwfDomainTestingEnabled(
 func TestAccAWSSwfDomain_basic(
+func TestAccAWSSwfDomain_tags(
 func TestAccAWSSwfDomain_NamePrefix(
 func TestAccAWSSwfDomain_GeneratedName(
 func TestAccAWSSwfDomain_Description(
@@ -7279,6 +7285,8 @@ func testAccCheckAwsSwfDomainDestroy(
 func testAccCheckAwsSwfDomainExists(
 func testAccAWSSwfDomainConfig_Description(
 func testAccAWSSwfDomainConfig_Name(
+func testAccAWSSwfDomainConfigTags1(
+func testAccAWSSwfDomainConfigTags2(
 func TestAccAWSTransferServer_basic(
 func TestAccAWSTransferServer_apigateway(
 func TestAccAWSTransferServer_disappears(
