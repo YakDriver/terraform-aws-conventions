@@ -62,6 +62,7 @@ func TestAccAWSDataElasticsearchDomain_advanced(
 func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
 func TestAccAWSDataSourceIAMGroup_basic(
+func TestAccAWSDataSourceIAMGroup_users(
 func TestAccAWSDataSourceIAMInstanceProfile_basic(
 func TestAccAWSDataSourceIAMPolicyDocument_basic(
 func TestAccAWSDataSourceIAMPolicyDocument_source(

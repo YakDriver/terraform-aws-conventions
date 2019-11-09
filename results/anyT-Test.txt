@@ -253,7 +253,9 @@ func TestAccDataSourceAWSGlueScript_Language_Scala(
 func testAccDataSourceAWSGlueScriptConfigPython(
 func testAccDataSourceAWSGlueScriptConfigScala(
 func TestAccAWSDataSourceIAMGroup_basic(
+func TestAccAWSDataSourceIAMGroup_users(
 func testAccAwsIAMGroupConfig(
+func testAccAwsIAMGroupConfigWithUser(
 func TestAccAWSDataSourceIAMInstanceProfile_basic(
 func testAccDatasourceAwsIamInstanceProfileConfig(
 func TestAccAWSDataSourceIAMPolicyDocument_basic(

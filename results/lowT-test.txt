@@ -92,6 +92,7 @@ func testAccDataSourceAWSELBConfigBasic(
 func testAccDataSourceAWSGlueScriptConfigPython(
 func testAccDataSourceAWSGlueScriptConfigScala(
 func testAccAwsIAMGroupConfig(
+func testAccAwsIAMGroupConfigWithUser(
 func testAccDatasourceAwsIamInstanceProfileConfig(
 func testAccAwsDataSourceIamPolicyConfig(
 func testAccAwsIAMRoleConfig(

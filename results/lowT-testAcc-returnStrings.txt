@@ -64,6 +64,7 @@ func testAccDataSourceAWSELBConfigBasic(rName, testName string) string {
 func testAccDataSourceAWSGlueScriptConfigPython() string {
 func testAccDataSourceAWSGlueScriptConfigScala() string {
 func testAccAwsIAMGroupConfig(name string) string {
+func testAccAwsIAMGroupConfigWithUser(groupName, userName, membershipName string) string {
 func testAccDatasourceAwsIamInstanceProfileConfig(roleName, profileName string) string {
 func testAccAwsDataSourceIamPolicyConfig(policyName string) string {
 func testAccAwsIAMRoleConfig(roleName string) string {

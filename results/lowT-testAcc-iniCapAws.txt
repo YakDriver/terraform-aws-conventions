@@ -3,6 +3,7 @@ func testAccAwsDbEventCategoriesAttrCheck(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
 func testAccAwsElasticBeanstalkApplicationDataSourceConfig_Basic(
 func testAccAwsIAMGroupConfig(
+func testAccAwsIAMGroupConfigWithUser(
 func testAccAwsDataSourceIamPolicyConfig(
 func testAccAwsIAMRoleConfig(
 func testAccAwsDataIAMServerCertConfig(
