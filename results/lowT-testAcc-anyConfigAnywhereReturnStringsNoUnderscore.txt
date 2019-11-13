@@ -812,6 +812,7 @@ func testAccAWSLambdaConfigWithTracingConfig(funcName, policyName, roleName, sgN
 func testAccAWSLambdaConfigWithTracingConfigUpdated(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithDeadLetterConfig(funcName, topicName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithNilDeadLetterConfig(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigKmsKeyArnNoEnvironmentVariables(rName string) string {
 func testAccAWSLambdaConfigWithLayers(funcName, layerName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithLayersUpdated(funcName, layerName, layer2Name, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithVPC(funcName, policyName, roleName, sgName string) string {

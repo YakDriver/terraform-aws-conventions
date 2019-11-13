@@ -707,6 +707,7 @@ func TestAccAWSKmsGrant_ARN(
 func TestAccAWSLambdaEventSourceMapping_StartingPositionTimestamp(
 func TestAccAWSLambdaFunction_DeadLetterConfig(
 func TestAccAWSLambdaFunction_DeadLetterConfigUpdated(
+func TestAccAWSLambdaFunction_KmsKeyArn_NoEnvironmentVariables(
 func TestAccAWSLambdaFunction_Layers(
 func TestAccAWSLambdaFunction_LayersUpdate(
 func TestAccAWSLambdaFunction_VPC(

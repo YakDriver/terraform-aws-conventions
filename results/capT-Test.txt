@@ -2074,6 +2074,7 @@ func TestAccAWSLambdaFunction_DeadLetterConfig(
 func TestAccAWSLambdaFunction_DeadLetterConfigUpdated(
 func TestAccAWSLambdaFunction_nilDeadLetterConfig(
 func TestAccAWSLambdaFunction_tracingConfig(
+func TestAccAWSLambdaFunction_KmsKeyArn_NoEnvironmentVariables(
 func TestAccAWSLambdaFunction_Layers(
 func TestAccAWSLambdaFunction_LayersUpdate(
 func TestAccAWSLambdaFunction_VPC(

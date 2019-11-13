@@ -1703,6 +1703,7 @@ func testAccAWSLambdaConfigWithTracingConfigUpdated(
 func testAccAWSLambdaConfigWithDeadLetterConfig(
 func testAccAWSLambdaConfigWithDeadLetterConfigUpdated(
 func testAccAWSLambdaConfigWithNilDeadLetterConfig(
+func testAccAWSLambdaConfigKmsKeyArnNoEnvironmentVariables(
 func testAccAWSLambdaConfigWithLayers(
 func testAccAWSLambdaConfigWithLayersUpdated(
 func testAccAWSLambdaConfigWithVPC(
