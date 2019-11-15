@@ -522,8 +522,11 @@ func testAccCheckAWSAPIGatewayRestAPIMinimumCompressionSizeAttributeIsNil(
 func testAccCheckAWSAPIGatewayRestAPIRoutes(
 func testAccCheckAWSAPIGatewayRestAPIExists(
 func testAccCheckAWSAPIGatewayRestAPIDestroy(
+func testAccCheckAWSAPIGatewayRestAPIDisappears(
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfig_Name(
+func testAccAWSAPIGatewayRestAPIConfigTags1(
+func testAccAWSAPIGatewayRestAPIConfigTags2(
 func testAccCheckAWSAPIGatewayStageExists(
 func testAccCheckAWSAPIGatewayStageDestroy(
 func testAccAWSAPIGatewayStageImportStateIdFunc(
@@ -581,6 +584,7 @@ func testAccCheckAWSAppautoscalingTargetExists(
 func testAccAWSAppautoscalingTargetConfig(
 func testAccAWSAppautoscalingTargetConfigUpdate(
 func testAccAWSAppautoscalingTargetEmrClusterConfig(
+func testAccAWSAppautoscalingTargetSpotFleetRequestConfig(
 func testAccAWSAppautoscalingTarget_multipleTargets(
 func testAccAWSAppautoscalingTarget_optionalRoleArn(
 func testAccAWSAppautoscalingTargetImportStateIdFunc(
@@ -2527,6 +2531,8 @@ func testAccGlueCrawlerConfig_CatalogTarget_Multiple(
 func testAccGlueCrawlerConfig_Schedule(
 func testAccGlueCrawlerConfig_SchemaChangePolicy(
 func testAccGlueCrawlerConfig_TablePrefix(
+func testAccGlueCrawlerConfigTags1(
+func testAccGlueCrawlerConfigTags2(
 func testAccGlueCrawlerConfig_SecurityConfiguration(
 func testSweepGlueJobs(
 func testAccCheckAWSGlueJobExists(
@@ -4802,6 +4808,8 @@ func testAccCheckAWSWafRegionalWebAclDisappears(
 func testAccCheckAWSWafRegionalWebAclDestroy(
 func testAccCheckAWSWafRegionalWebAclExists(
 func testAccAWSWafRegionalWebAclConfig(
+func testAccAWSWafRegionalWebAclConfigTags1(
+func testAccAWSWafRegionalWebAclConfigTags2(
 func testAccAWSWafRegionalWebAclConfigRateBased(
 func testAccAWSWafRegionalWebAclConfigGroup(
 func testAccAWSWafRegionalWebAclConfig_changeName(

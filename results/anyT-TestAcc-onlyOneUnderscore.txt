@@ -475,6 +475,8 @@ func TestAccAWSAPIGatewayRequestValidator_basic(
 func TestAccAWSAPIGatewayResource_basic(
 func TestAccAWSAPIGatewayResource_update(
 func TestAccAWSAPIGatewayRestApi_basic(
+func TestAccAWSAPIGatewayRestApi_tags(
+func TestAccAWSAPIGatewayRestApi_disappears(
 func TestAccAWSAPIGatewayRestApi_EndpointConfiguration(
 func TestAccAWSAPIGatewayRestApi_policy(
 func TestAccAWSAPIGatewayRestApi_openapi(
@@ -1185,6 +1187,7 @@ func testAccDirectoryServiceDirectoryConfig_withSso(
 func TestAccAWSDirectoryServiceLogSubscription_basic(
 func TestAccAWSDlmLifecyclePolicy_Basic(
 func TestAccAWSDlmLifecyclePolicy_Full(
+func TestAccAWSDlmLifecyclePolicy_Tags(
 func TestAccAwsDmsEndpoint_Basic(
 func TestAccAwsDmsEndpoint_S3(
 func TestAccAwsDmsEndpoint_DynamoDb(
@@ -1790,6 +1793,7 @@ func TestAccAWSGlueCrawler_Description(
 func TestAccAWSGlueCrawler_Schedule(
 func TestAccAWSGlueCrawler_SchemaChangePolicy(
 func TestAccAWSGlueCrawler_TablePrefix(
+func TestAccAWSGlueCrawler_Tags(
 func TestAccAWSGlueCrawler_SecurityConfiguration(
 func testAccGlueCrawlerConfig_Base(
 func testAccGlueCrawlerConfig_Configuration(
@@ -3528,6 +3532,7 @@ func TestAccAWSWafRegionalWebAclAssociation_basic(
 func TestAccAWSWafRegionalWebAclAssociation_disappears(
 func TestAccAWSWafRegionalWebAclAssociation_multipleAssociations(
 func TestAccAWSWafRegionalWebAcl_basic(
+func TestAccAWSWafRegionalWebAcl_tags(
 func TestAccAWSWafRegionalWebAcl_createRateBased(
 func TestAccAWSWafRegionalWebAcl_createGroup(
 func TestAccAWSWafRegionalWebAcl_changeNameForceNew(

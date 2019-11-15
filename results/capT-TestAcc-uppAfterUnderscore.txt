@@ -29,6 +29,8 @@ func TestAccDataSourceAwsEip_Instance(
 func TestAccDataSourceAwsElasticacheReplicationGroup_ClusterMode(
 func TestAccDataSourceAWSGlueScript_Language_Python(
 func TestAccDataSourceAWSGlueScript_Language_Scala(
+func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_StringAndSlice(
+func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_MultiplePrincipals(
 func TestAccAWSDataSourceIAMPolicyDocument_Version_20081017(
 func TestAccAWSInstanceDataSource_AzUserData(
 func TestAccAWSInstanceDataSource_EbsBlockDevice_KmsKeyId(
@@ -409,6 +411,7 @@ func TestAccAWSDefaultNetworkAcl_SubnetReassign(
 func TestAccAWSDefaultRouteTable_Route_TransitGatewayID(
 func TestAccAWSDlmLifecyclePolicy_Basic(
 func TestAccAWSDlmLifecyclePolicy_Full(
+func TestAccAWSDlmLifecyclePolicy_Tags(
 func TestAccAwsDmsEndpoint_Basic(
 func TestAccAwsDmsEndpoint_S3(
 func TestAccAwsDmsEndpoint_DynamoDb(
@@ -626,6 +629,7 @@ func TestAccAWSGlueCrawler_Role_Name_Path(
 func TestAccAWSGlueCrawler_Schedule(
 func TestAccAWSGlueCrawler_SchemaChangePolicy(
 func TestAccAWSGlueCrawler_TablePrefix(
+func TestAccAWSGlueCrawler_Tags(
 func TestAccAWSGlueCrawler_SecurityConfiguration(
 func TestAccAWSGlueJob_Basic(
 func TestAccAWSGlueJob_AllocatedCapacity(

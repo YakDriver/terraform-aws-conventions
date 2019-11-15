@@ -339,6 +339,8 @@ func testAccAWSAPIGatewayMethodConfigWithCustomRequestValidator(rInt int) string
 func testAccAWSAPIGatewayMethodConfigWithCustomRequestValidatorUpdate(rInt int) string {
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(rName, endpointType string) string {
 func testAccAWSAPIGatewayRestAPIConfig_Name(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAPIGatewayRestAPIConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayStageConfig_base(rName string) string {
 func testAccAWSAPIGatewayStageConfig_basic(rName string) string {
 func testAccAWSAPIGatewayStageConfig_updated(rName string) string {
@@ -363,6 +365,7 @@ func testAccAPIGatewayVpcLinkConfigTags1(rName, description, tagKey1, tagValue1 
 func testAccAPIGatewayVpcLinkConfigTags2(rName, description, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAPIGatewayVpcLinkConfig_Update(rName, description string) string {
 func testAccAWSAppautoscalingPolicyConfig(rName string) string {
+func testAccAWSAppautoscalingPolicySpotFleetRequestConfig(randPolicyName, validUntil string) string {
 func testAccAWSAppautoscalingPolicy_multiplePoliciesSameName(tableName1, tableName2, namePrefix string) string {
 func testAccAWSAppautoscalingPolicy_multiplePoliciesSameResource(tableName, namePrefix string) string {
 func testAccAWSAppautoscalingPolicyConfigResourceIdForceNewBase(rName string) string {
@@ -371,8 +374,9 @@ func testAccAWSAppautoscalingPolicyConfigResourceIdForceNew2(rName string) strin
 func testAccAppautoscalingScheduledActionConfig_DynamoDB(rName, ts string) string {
 func testAccAppautoscalingScheduledActionConfig_ECS(rName, ts string) string {
 func testAccAppautoscalingScheduledActionConfig_EMR(rName, ts string) string {
-func testAccAppautoscalingScheduledActionConfig_SpotFleet(rName, ts string) string {
+func testAccAppautoscalingScheduledActionConfig_SpotFleet(rName, ts, validUntil string) string {
 func testAccAWSAppautoscalingTargetEmrClusterConfig(rInt int) string {
+func testAccAWSAppautoscalingTargetSpotFleetRequestConfig(validUntil string) string {
 func testAccAWSAppautoscalingTarget_multipleTargets(tableName string) string {
 func testAccAWSAppautoscalingTarget_optionalRoleArn(tableName string) string {
 func testAccAppCookieStickinessPolicyConfig(rName string) string {
@@ -1538,6 +1542,8 @@ func testAccGlueCrawlerConfig_CatalogTarget_Multiple(rName string) string {
 func testAccGlueCrawlerConfig_Schedule(rName, schedule string) string {
 func testAccGlueCrawlerConfig_SchemaChangePolicy(rName, deleteBehavior, updateBehavior string) string {
 func testAccGlueCrawlerConfig_TablePrefix(rName, tablePrefix string) string {
+func testAccGlueCrawlerConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlueCrawlerConfig_SecurityConfiguration(rName, securityConfiguration string) string {
 func testAccAWSGlueJobConfig_Base(rName string) string {
 func testAccAWSGlueJobConfig_AllocatedCapacity(rName string, allocatedCapacity int) string {
@@ -2552,30 +2558,30 @@ func testAccAWSSNSTopicConfigTags1(r, tag1Key, tag1Value string) string {
 func testAccAWSSNSTopicConfigTags2(r, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSSpotDatafeedSubscription(randInt int) string {
 func testAccAWSSpotFleetRequestConfigBase(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfig(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigAssociatePublicIpAddress(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigTargetCapacity(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigExcessCapacityTermination(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigFleetType(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigIamInstanceProfileArn(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigChangeSpotBidPrice(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigWithAzs(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigWithSubnet(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigWithELBs(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigWithTargetGroups(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigMultipleInstanceTypesinSameAz(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigMultipleInstanceTypesinSameSubnet(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigOverridingSpotPrice(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigWithoutSpotPrice(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigMultipleInstancePools(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigDiversifiedAllocation(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigWithWeightedCapacity(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestEBSConfig(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestLaunchSpecificationEbsBlockDeviceKmsKeyId(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestLaunchSpecificationRootBlockDeviceKmsKeyId(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestLaunchSpecificationWithInstanceStoreAmi(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestTagsConfig(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestTenancyGroupConfig(rName string, rInt int) string {
+func testAccAWSSpotFleetRequestConfig(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigAssociatePublicIpAddress(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigTargetCapacity(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigExcessCapacityTermination(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigFleetType(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigIamInstanceProfileArn(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigChangeSpotBidPrice(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithAzs(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithSubnet(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithELBs(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithTargetGroups(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigMultipleInstanceTypesinSameAz(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigMultipleInstanceTypesinSameSubnet(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigOverridingSpotPrice(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithoutSpotPrice(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigMultipleInstancePools(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigDiversifiedAllocation(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithWeightedCapacity(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestEBSConfig(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchSpecificationEbsBlockDeviceKmsKeyId(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchSpecificationRootBlockDeviceKmsKeyId(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchSpecificationWithInstanceStoreAmi(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestTagsConfig(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestTenancyGroupConfig(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotInstanceRequestValidUntil(t *testing.T) string {
 func testAccAWSSpotInstanceRequestTime(t *testing.T, duration string) string {
 func testAccAWSSpotInstanceRequestConfig(rInt int) string {
@@ -2842,6 +2848,8 @@ func testAccAWSWafRegionalSqlInjectionMatchSetConfig_changeTuples(name string) s
 func testAccAWSWafRegionalSqlInjectionMatchSetConfig_noTuples(name string) string {
 func testAccCheckWafRegionalWebAclAssociationConfigResourceArnApiGatewayStage(rName string) string {
 func testAccAWSWafRegionalWebAclConfig(name string) string {
+func testAccAWSWafRegionalWebAclConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAWSWafRegionalWebAclConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafRegionalWebAclConfigRateBased(name string) string {
 func testAccAWSWafRegionalWebAclConfigGroup(name string) string {
 func testAccAWSWafRegionalWebAclConfig_changeName(name string) string {

@@ -169,6 +169,8 @@ func TestAccAWSDataSourceIAMPolicyDocument_override(
 func TestAccAWSDataSourceIAMPolicyDocument_noStatementMerge(
 func TestAccAWSDataSourceIAMPolicyDocument_noStatementOverride(
 func TestAccAWSDataSourceIAMPolicyDocument_duplicateSid(
+func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_StringAndSlice(
+func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_MultiplePrincipals(
 func TestAccAWSDataSourceIAMPolicyDocument_Version_20081017(
 func TestAccAWSDataSourceIAMPolicy_basic(
 func TestAccAWSDataSourceIAMRole_basic(
@@ -463,6 +465,7 @@ func TestAccAWSAPIGatewayBasePathMapping_BasePath_Empty(
 func TestAccAWSAPIGatewayClientCertificate_basic(
 func TestAccAWSAPIGatewayClientCertificate_tags(
 func TestAccAWSAPIGatewayDeployment_basic(
+func TestAccAWSAPIGatewayDeployment_disappears_RestApi(
 func TestAccAWSAPIGatewayDeployment_createBeforeDestoryUpdate(
 func TestAccAWSAPIGatewayDeployment_Description(
 func TestAccAWSAPIGatewayDeployment_StageDescription(
@@ -508,6 +511,8 @@ func TestAccAWSAPIGatewayRequestValidator_basic(
 func TestAccAWSAPIGatewayResource_basic(
 func TestAccAWSAPIGatewayResource_update(
 func TestAccAWSAPIGatewayRestApi_basic(
+func TestAccAWSAPIGatewayRestApi_tags(
+func TestAccAWSAPIGatewayRestApi_disappears(
 func TestAccAWSAPIGatewayRestApi_EndpointConfiguration(
 func TestAccAWSAPIGatewayRestApi_EndpointConfiguration_Private(
 func TestAccAWSAPIGatewayRestApi_api_key_source(
@@ -1182,6 +1187,7 @@ func TestAccAWSDirectoryServiceDirectory_withAliasAndSso(
 func TestAccAWSDirectoryServiceLogSubscription_basic(
 func TestAccAWSDlmLifecyclePolicy_Basic(
 func TestAccAWSDlmLifecyclePolicy_Full(
+func TestAccAWSDlmLifecyclePolicy_Tags(
 func TestAccAWSDmsCertificateBasic(
 func TestAccAwsDmsEndpoint_Basic(
 func TestAccAwsDmsEndpoint_S3(
@@ -1750,6 +1756,7 @@ func TestAccAWSGlueCrawler_Role_Name_Path(
 func TestAccAWSGlueCrawler_Schedule(
 func TestAccAWSGlueCrawler_SchemaChangePolicy(
 func TestAccAWSGlueCrawler_TablePrefix(
+func TestAccAWSGlueCrawler_Tags(
 func TestAccAWSGlueCrawler_SecurityConfiguration(
 func TestAccAWSGlueJob_Basic(
 func TestAccAWSGlueJob_AllocatedCapacity(
@@ -3256,6 +3263,7 @@ func TestAccAWSWafRegionalWebAclAssociation_disappears(
 func TestAccAWSWafRegionalWebAclAssociation_multipleAssociations(
 func TestAccAWSWafRegionalWebAclAssociation_ResourceArn_ApiGatewayStage(
 func TestAccAWSWafRegionalWebAcl_basic(
+func TestAccAWSWafRegionalWebAcl_tags(
 func TestAccAWSWafRegionalWebAcl_createRateBased(
 func TestAccAWSWafRegionalWebAcl_createGroup(
 func TestAccAWSWafRegionalWebAcl_changeNameForceNew(
@@ -3370,8 +3378,6 @@ func TestIgnoringTagsCodePipeline(
 func TestDiffCognitoTags(
 func TestDiffConfigServiceTags(
 func TestIgnoringTagsConfigService(
-func TestDiffTagsDataPipeline(
-func TestIgnoringTagsDataPipeline(
 func TestDaxTagsDiff(
 func TestTagsDaxIgnore(
 func TestDmsTagsToMap(
@@ -3384,8 +3390,6 @@ func TestDiffDXTags(
 func TestIgnoringTagsDX(
 func TestDiffDynamoDbTags(
 func TestIgnoringTagsDynamoDb(
-func TestDiffECSTags(
-func TestIgnoringTagsECS(
 func TestDiffelasticacheTags(
 func TestIgnoringTagsEC(
 func TestDiffEFSTags(

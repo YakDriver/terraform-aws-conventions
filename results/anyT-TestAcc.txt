@@ -204,6 +204,8 @@ func TestAccAWSDataSourceIAMPolicyDocument_override(
 func TestAccAWSDataSourceIAMPolicyDocument_noStatementMerge(
 func TestAccAWSDataSourceIAMPolicyDocument_noStatementOverride(
 func TestAccAWSDataSourceIAMPolicyDocument_duplicateSid(
+func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_StringAndSlice(
+func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_MultiplePrincipals(
 func TestAccAWSDataSourceIAMPolicyDocument_Version_20081017(
 func TestAccAWSDataSourceIAMPolicy_basic(
 func testAccAwsDataSourceIamPolicyConfig(
@@ -796,6 +798,7 @@ func testAccCheckAWSAPIGatewayClientCertificateDestroy(
 func testAccAWSAPIGatewayClientCertificateConfigTags1(
 func testAccAWSAPIGatewayClientCertificateConfigTags2(
 func TestAccAWSAPIGatewayDeployment_basic(
+func TestAccAWSAPIGatewayDeployment_disappears_RestApi(
 func TestAccAWSAPIGatewayDeployment_createBeforeDestoryUpdate(
 func TestAccAWSAPIGatewayDeployment_Description(
 func TestAccAWSAPIGatewayDeployment_StageDescription(
@@ -932,6 +935,8 @@ func testAccCheckAWSAPIGatewayResourceExists(
 func testAccCheckAWSAPIGatewayResourceDestroy(
 func testAccAWSAPIGatewayResourceImportStateIdFunc(
 func TestAccAWSAPIGatewayRestApi_basic(
+func TestAccAWSAPIGatewayRestApi_tags(
+func TestAccAWSAPIGatewayRestApi_disappears(
 func TestAccAWSAPIGatewayRestApi_EndpointConfiguration(
 func TestAccAWSAPIGatewayRestApi_EndpointConfiguration_Private(
 func TestAccAWSAPIGatewayRestApi_api_key_source(
@@ -944,8 +949,11 @@ func testAccCheckAWSAPIGatewayRestAPIMinimumCompressionSizeAttributeIsNil(
 func testAccCheckAWSAPIGatewayRestAPIRoutes(
 func testAccCheckAWSAPIGatewayRestAPIExists(
 func testAccCheckAWSAPIGatewayRestAPIDestroy(
+func testAccCheckAWSAPIGatewayRestAPIDisappears(
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfig_Name(
+func testAccAWSAPIGatewayRestAPIConfigTags1(
+func testAccAWSAPIGatewayRestAPIConfigTags2(
 func TestAccAWSAPIGatewayStage_basic(
 func TestAccAWSAPIGatewayStage_accessLogSettings(
 func testAccCheckAWSAPIGatewayStageExists(
@@ -1031,6 +1039,7 @@ func testAccCheckAWSAppautoscalingTargetExists(
 func testAccAWSAppautoscalingTargetConfig(
 func testAccAWSAppautoscalingTargetConfigUpdate(
 func testAccAWSAppautoscalingTargetEmrClusterConfig(
+func testAccAWSAppautoscalingTargetSpotFleetRequestConfig(
 func testAccAWSAppautoscalingTarget_multipleTargets(
 func testAccAWSAppautoscalingTarget_optionalRoleArn(
 func testAccAWSAppautoscalingTargetImportStateIdFunc(
@@ -2725,6 +2734,7 @@ func testAccCheckAwsDirectoryServiceLogSubscriptionExists(
 func testAccDirectoryServiceLogSubscriptionConfig(
 func TestAccAWSDlmLifecyclePolicy_Basic(
 func TestAccAWSDlmLifecyclePolicy_Full(
+func TestAccAWSDlmLifecyclePolicy_Tags(
 func testAccPreCheckAWSDlm(
 func TestAccAWSDmsCertificateBasic(
 func TestAccAwsDmsEndpoint_Basic(
@@ -4027,6 +4037,7 @@ func TestAccAWSGlueCrawler_Role_Name_Path(
 func TestAccAWSGlueCrawler_Schedule(
 func TestAccAWSGlueCrawler_SchemaChangePolicy(
 func TestAccAWSGlueCrawler_TablePrefix(
+func TestAccAWSGlueCrawler_Tags(
 func TestAccAWSGlueCrawler_SecurityConfiguration(
 func testAccCheckAWSGlueCrawlerExists(
 func testAccCheckAWSGlueCrawlerDestroy(
@@ -4053,6 +4064,8 @@ func testAccGlueCrawlerConfig_CatalogTarget_Multiple(
 func testAccGlueCrawlerConfig_Schedule(
 func testAccGlueCrawlerConfig_SchemaChangePolicy(
 func testAccGlueCrawlerConfig_TablePrefix(
+func testAccGlueCrawlerConfigTags1(
+func testAccGlueCrawlerConfigTags2(
 func testAccGlueCrawlerConfig_SecurityConfiguration(
 func TestAccAWSGlueJob_Basic(
 func TestAccAWSGlueJob_AllocatedCapacity(
@@ -7679,6 +7692,7 @@ func testAccCheckWafRegionalWebAclAssociationExists(
 func testAccCheckWafRegionalWebAclAssociationDisappears(
 func testAccCheckWafRegionalWebAclAssociationConfigResourceArnApiGatewayStage(
 func TestAccAWSWafRegionalWebAcl_basic(
+func TestAccAWSWafRegionalWebAcl_tags(
 func TestAccAWSWafRegionalWebAcl_createRateBased(
 func TestAccAWSWafRegionalWebAcl_createGroup(
 func TestAccAWSWafRegionalWebAcl_changeNameForceNew(
@@ -7691,6 +7705,8 @@ func testAccCheckAWSWafRegionalWebAclDisappears(
 func testAccCheckAWSWafRegionalWebAclDestroy(
 func testAccCheckAWSWafRegionalWebAclExists(
 func testAccAWSWafRegionalWebAclConfig(
+func testAccAWSWafRegionalWebAclConfigTags1(
+func testAccAWSWafRegionalWebAclConfigTags2(
 func testAccAWSWafRegionalWebAclConfigRateBased(
 func testAccAWSWafRegionalWebAclConfigGroup(
 func testAccAWSWafRegionalWebAclConfig_changeName(
