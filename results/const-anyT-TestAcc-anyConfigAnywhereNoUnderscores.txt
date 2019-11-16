@@ -89,6 +89,7 @@ const testAccBatchJobDefinitionUpdateConfig =
 const testAccBatchJobQueueBaseConfig =
 const testAccAWSCloudFrontOriginAccessIdentityConfig =
 const testAccAWSCloudFrontOriginAccessIdentityNoCommentConfig =
+const testAccAWSDBInstanceConfigWithCACertificateIdentifier =
 const testAccDefaultRouteTableConfig =
 const testAccAWSDefaultSecurityGroupConfig =
 const testAccAWSDefaultSubnetConfigBasic =

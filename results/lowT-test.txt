@@ -282,6 +282,7 @@ func testAccCheckResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrGlobalARN(
+func testAccCheckResourceAttrGlobalARNNoAccount(
 func testAccMatchResourceAttrGlobalARN(
 func testAccGetAccountID(
 func testAccGetRegion(
@@ -4746,6 +4747,8 @@ func testAccCheckAWSWafRegionalRateBasedRuleDisappears(
 func testAccCheckAWSWafRegionalRateBasedRuleDestroy(
 func testAccCheckAWSWafRegionalRateBasedRuleExists(
 func testAccAWSWafRegionalRateBasedRuleConfig(
+func testAccAWSWafRegionalRateBasedRuleConfigTags1(
+func testAccAWSWafRegionalRateBasedRuleConfigTags2(
 func testAccAWSWafRegionalRateBasedRuleConfigChangeName(
 func testAccAWSWafRegionalRateBasedRuleConfig_changePredicates(
 func testAccAWSWafRegionalRateBasedRuleConfig_noPredicates(
@@ -4776,6 +4779,8 @@ func testAccCheckAWSWafRegionalRuleGroupDisappears(
 func testAccCheckAWSWafRegionalRuleGroupDestroy(
 func testAccCheckAWSWafRegionalRuleGroupExists(
 func testAccAWSWafRegionalRuleGroupConfig(
+func testAccAWSWafRegionalRuleGroupConfigTags1(
+func testAccAWSWafRegionalRuleGroupConfigTags2(
 func testAccAWSWafRegionalRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRegionalRuleGroupConfig_noActivatedRules(
 func testSweepWafRegionalRules(
@@ -4783,6 +4788,8 @@ func testAccCheckAWSWafRegionalRuleDisappears(
 func testAccCheckAWSWafRegionalRuleDestroy(
 func testAccCheckAWSWafRegionalRuleExists(
 func testAccAWSWafRegionalRuleConfig(
+func testAccAWSWafRegionalRuleConfigTags1(
+func testAccAWSWafRegionalRuleConfigTags2(
 func testAccAWSWafRegionalRuleConfigChangeName(
 func testAccAWSWafRegionalRule_noPredicates(
 func testAccAWSWafRegionalRule_changePredicates(
@@ -4902,7 +4909,6 @@ func testAccCheckAWSXraySamplingRuleDestroy(
 func testAccPreCheckAWSXray(
 func testAccAWSXraySamplingRuleConfig_basic(
 func testAccAWSXraySamplingRuleConfig_update(
-func testAccCheckCloudTrailCheckTags(
 func testAccCheckElasticsearchServiceTags(
 func testAccCheckELBTags(
 func testAccCheckTagsR53(

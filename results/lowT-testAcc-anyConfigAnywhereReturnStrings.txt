@@ -2548,6 +2548,8 @@ func testAccAWSWafRegionalIPSetConfigChangeIPSetDescriptors(name string) string 
 func testAccAWSWafRegionalIPSetConfig_IpSetDescriptors(name, ipSetDescriptors string) string {
 func testAccAWSWafRegionalIPSetConfig_noDescriptors(name string) string {
 func testAccAWSWafRegionalRateBasedRuleConfig(name string) string {
+func testAccAWSWafRegionalRateBasedRuleConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAWSWafRegionalRateBasedRuleConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafRegionalRateBasedRuleConfigChangeName(name string) string {
 func testAccAWSWafRegionalRateBasedRuleConfig_changePredicates(name string) string {
 func testAccAWSWafRegionalRateBasedRuleConfig_noPredicates(name string) string {
@@ -2559,9 +2561,13 @@ func testAccAWSWafRegionalRegexPatternSetConfig(name string) string {
 func testAccAWSWafRegionalRegexPatternSetConfig_changePatterns(name string) string {
 func testAccAWSWafRegionalRegexPatternSetConfig_noPatterns(name string) string {
 func testAccAWSWafRegionalRuleGroupConfig(ruleName, groupName string) string {
+func testAccAWSWafRegionalRuleGroupConfigTags1(ruleName, groupName, tagKey1, tagValue1 string) string {
+func testAccAWSWafRegionalRuleGroupConfigTags2(ruleName, groupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafRegionalRuleGroupConfig_changeActivatedRules(ruleName1, ruleName2, ruleName3, groupName string) string {
 func testAccAWSWafRegionalRuleGroupConfig_noActivatedRules(groupName string) string {
 func testAccAWSWafRegionalRuleConfig(name string) string {
+func testAccAWSWafRegionalRuleConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAWSWafRegionalRuleConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafRegionalRuleConfigChangeName(name string) string {
 func testAccAWSWafRegionalSizeConstraintSetConfig(name string) string {
 func testAccAWSWafRegionalSizeConstraintSetConfigChangeName(name string) string {

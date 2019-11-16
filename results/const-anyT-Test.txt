@@ -170,6 +170,7 @@ const testAccAWSCloudWatchLogGroup_generatedName =
 const testAccCodeCommitTrigger_basic =
 const testAccAWSDBInstanceConfig_namePrefix =
 const testAccAWSDBInstanceConfig_generatedName =
+const testAccAWSDBInstanceConfigWithCACertificateIdentifier =
 const testAccAWSDBOptionGroup_namePrefix =
 const testAccAWSDBOptionGroup_generatedName =
 const testAccDBParameterGroupConfig_namePrefix =

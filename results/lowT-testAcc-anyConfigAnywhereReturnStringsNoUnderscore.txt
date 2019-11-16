@@ -1345,12 +1345,18 @@ func testAccAWSWafRegionalIPSetConfig(name string) string {
 func testAccAWSWafRegionalIPSetConfigChangeName(name string) string {
 func testAccAWSWafRegionalIPSetConfigChangeIPSetDescriptors(name string) string {
 func testAccAWSWafRegionalRateBasedRuleConfig(name string) string {
+func testAccAWSWafRegionalRateBasedRuleConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAWSWafRegionalRateBasedRuleConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafRegionalRateBasedRuleConfigChangeName(name string) string {
 func testAccAWSWafRegionalRateBasedRuleWithRateLimitConfig(name string, limit string) string {
 func testAccAWSWafRegionalRegexMatchSetConfig(matchSetName, patternSetName string) string {
 func testAccAWSWafRegionalRegexPatternSetConfig(name string) string {
 func testAccAWSWafRegionalRuleGroupConfig(ruleName, groupName string) string {
+func testAccAWSWafRegionalRuleGroupConfigTags1(ruleName, groupName, tagKey1, tagValue1 string) string {
+func testAccAWSWafRegionalRuleGroupConfigTags2(ruleName, groupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafRegionalRuleConfig(name string) string {
+func testAccAWSWafRegionalRuleConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAWSWafRegionalRuleConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafRegionalRuleConfigChangeName(name string) string {
 func testAccAWSWafRegionalSizeConstraintSetConfig(name string) string {
 func testAccAWSWafRegionalSizeConstraintSetConfigChangeName(name string) string {

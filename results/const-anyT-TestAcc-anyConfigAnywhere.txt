@@ -160,6 +160,7 @@ const testAccAWSCloudFrontOriginAccessIdentityConfig =
 const testAccAWSCloudFrontOriginAccessIdentityNoCommentConfig =
 const testAccAWSDBInstanceConfig_namePrefix =
 const testAccAWSDBInstanceConfig_generatedName =
+const testAccAWSDBInstanceConfigWithCACertificateIdentifier =
 const testAccDBParameterGroupConfig_namePrefix =
 const testAccDBParameterGroupConfig_generatedName =
 const testAccDBSubnetGroupConfig_namePrefix =

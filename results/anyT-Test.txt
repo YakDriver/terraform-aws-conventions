@@ -663,6 +663,7 @@ func testAccCheckResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrGlobalARN(
+func testAccCheckResourceAttrGlobalARNNoAccount(
 func testAccMatchResourceAttrGlobalARN(
 func testAccGetAccountID(
 func testAccGetRegion(
@@ -2697,6 +2698,7 @@ func TestAccAWSRDSDBInstance_PerformanceInsightsKmsKeyId(
 func TestAccAWSRDSDBInstance_PerformanceInsightsRetentionPeriod(
 func TestAccAWSDBInstance_ReplicateSourceDb_PerformanceInsightsEnabled(
 func TestAccAWSDBInstance_SnapshotIdentifier_PerformanceInsightsEnabled(
+func TestAccAWSDBInstance_CACertificateIdentifier(
 func testAccAWSDBInstanceConfigWithOptionGroup(
 func testAccCheckAWSDBIAMAuth(
 func testAccAWSDBInstanceConfig_FinalSnapshotIdentifier_SkipFinalSnapshot(
@@ -7974,6 +7976,7 @@ func testAccAWSWafRegionalIPSetConfig_IpSetDescriptors(
 func testAccAWSWafRegionalIPSetConfig_noDescriptors(
 func testSweepWafRegionalRateBasedRules(
 func TestAccAWSWafRegionalRateBasedRule_basic(
+func TestAccAWSWafRegionalRateBasedRule_tags(
 func TestAccAWSWafRegionalRateBasedRule_changeNameForceNew(
 func TestAccAWSWafRegionalRateBasedRule_disappears(
 func TestAccAWSWafRegionalRateBasedRule_changePredicates(
@@ -7984,6 +7987,8 @@ func testAccCheckAWSWafRegionalRateBasedRuleDisappears(
 func testAccCheckAWSWafRegionalRateBasedRuleDestroy(
 func testAccCheckAWSWafRegionalRateBasedRuleExists(
 func testAccAWSWafRegionalRateBasedRuleConfig(
+func testAccAWSWafRegionalRateBasedRuleConfigTags1(
+func testAccAWSWafRegionalRateBasedRuleConfigTags2(
 func testAccAWSWafRegionalRateBasedRuleConfigChangeName(
 func testAccAWSWafRegionalRateBasedRuleConfig_changePredicates(
 func testAccAWSWafRegionalRateBasedRuleConfig_noPredicates(
@@ -8013,6 +8018,7 @@ func testAccAWSWafRegionalRegexPatternSetConfig_changePatterns(
 func testAccAWSWafRegionalRegexPatternSetConfig_noPatterns(
 func testSweepWafRegionalRuleGroups(
 func TestAccAWSWafRegionalRuleGroup_basic(
+func TestAccAWSWafRegionalRuleGroup_tags(
 func TestAccAWSWafRegionalRuleGroup_changeNameForceNew(
 func TestAccAWSWafRegionalRuleGroup_disappears(
 func TestAccAWSWafRegionalRuleGroup_changeActivatedRules(
@@ -8021,10 +8027,13 @@ func testAccCheckAWSWafRegionalRuleGroupDisappears(
 func testAccCheckAWSWafRegionalRuleGroupDestroy(
 func testAccCheckAWSWafRegionalRuleGroupExists(
 func testAccAWSWafRegionalRuleGroupConfig(
+func testAccAWSWafRegionalRuleGroupConfigTags1(
+func testAccAWSWafRegionalRuleGroupConfigTags2(
 func testAccAWSWafRegionalRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRegionalRuleGroupConfig_noActivatedRules(
 func testSweepWafRegionalRules(
 func TestAccAWSWafRegionalRule_basic(
+func TestAccAWSWafRegionalRule_tags(
 func TestAccAWSWafRegionalRule_changeNameForceNew(
 func TestAccAWSWafRegionalRule_disappears(
 func TestAccAWSWafRegionalRule_noPredicates(
@@ -8033,6 +8042,8 @@ func testAccCheckAWSWafRegionalRuleDisappears(
 func testAccCheckAWSWafRegionalRuleDestroy(
 func testAccCheckAWSWafRegionalRuleExists(
 func testAccAWSWafRegionalRuleConfig(
+func testAccAWSWafRegionalRuleConfigTags1(
+func testAccAWSWafRegionalRuleConfigTags2(
 func testAccAWSWafRegionalRuleConfigChangeName(
 func testAccAWSWafRegionalRule_noPredicates(
 func testAccAWSWafRegionalRule_changePredicates(
@@ -8269,9 +8280,6 @@ func TestDiffAppmeshTags(
 func TestIgnoringTagsAppmesh(
 func TestDiffBeanstalkTags(
 func TestIgnoringTagsBeanstalk(
-func TestDiffCloudtrailTags(
-func TestIgnoringTagsCloudtrail(
-func testAccCheckCloudTrailCheckTags(
 func TestDiffCloudWatchEventTags(
 func TestIgnoringTagsCloudWatchEvents(
 func TestDiffCloudWatchTags(
@@ -8343,20 +8351,12 @@ func TestIgnoringTagsRoute53Resolver(
 func TestDiffTagsR53(
 func TestIgnoringTagsRoute53(
 func testAccCheckTagsR53(
-func TestDiffSecretsManagerTags(
-func TestIgnoringTagsSecretsManager(
-func TestDiffSfnTags(
-func TestIgnoringTagsSfn(
-func TestDiffSNSTags(
-func TestIgnoringTagsSNS(
 func TestDiffSSMTags(
 func TestIgnoringTagsSSM(
 func TestDiffTags(
 func TestIgnoringTags(
 func TestTagsMapToHash(
 func testAccCheckTags(
-func TestDiffTransferTags(
-func TestIgnoringTagsTransfer(
 func TestTlsRsaPrivateKeyPem(
 func TestTlsRsaPublicKeyPem(
 func TestTlsRsaX509LocallySignedCertificatePem(
