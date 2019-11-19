@@ -605,6 +605,20 @@ func testAccAWSEFSMountTargetConfig(ct string) string {
 func testAccAWSEFSMountTargetConfigModified(ct string) string {
 func testAccAWSEksClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEksNodeGroupConfigBase(rName string) string {
+func testAccAWSEksNodeGroupConfigNodeGroupName(rName string) string {
+func testAccAWSEksNodeGroupConfigAmiType(rName, amiType string) string {
+func testAccAWSEksNodeGroupConfigDiskSize(rName string, diskSize int) string {
+func testAccAWSEksNodeGroupConfigInstanceTypes1(rName, instanceType1 string) string {
+func testAccAWSEksNodeGroupConfigLabels1(rName, labelKey1, labelValue1 string) string {
+func testAccAWSEksNodeGroupConfigLabels2(rName, labelKey1, labelValue1, labelKey2, labelValue2 string) string {
+func testAccAWSEksNodeGroupConfigReleaseVersion(rName, releaseVersion string) string {
+func testAccAWSEksNodeGroupConfigRemoteAccessEc2SshKey(rName string) string {
+func testAccAWSEksNodeGroupConfigRemoteAccessSourceSecurityGroupIds1(rName string) string {
+func testAccAWSEksNodeGroupConfigScalingConfigSizes(rName string, desiredSize, maxSize, minSize int) string {
+func testAccAWSEksNodeGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSEksNodeGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEksNodeGroupConfigVersion(rName, version string) string {
 func testAccAWSElasticacheParameterGroupConfig(rName string) string {
 func testAccAWSElasticacheParameterGroupConfigDescription(rName, description string) string {
 func testAccAWSElasticacheParameterGroupConfigParameter1(rName, family, parameterName1, parameterValue1 string) string {

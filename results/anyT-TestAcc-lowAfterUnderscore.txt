@@ -1248,6 +1248,8 @@ func TestAccAWSEIP_tags(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIP_classic_disassociate(
 func TestAccAWSEksCluster_basic(
+func TestAccAWSEksNodeGroup_basic(
+func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSElasticacheCluster_snapshotsWithUpdates(
 func TestAccAWSElasticacheCluster_vpc(
 func TestAccAWSElasticacheCluster_multiAZInVpc(

@@ -1560,6 +1560,15 @@ func testAccAWSEksClusterConfig_Base(
 func testAccAWSEksClusterConfig_Required(
 func testAccAWSEksClusterConfig_Version(
 func testAccAWSEksClusterConfig_Logging(
+func TestAccAWSEksNodeGroup_basic(
+func TestAccAWSEksNodeGroup_disappears(
+func TestAccAWSEksNodeGroup_AmiType(
+func TestAccAWSEksNodeGroup_DiskSize(
+func TestAccAWSEksNodeGroup_InstanceTypes(
+func TestAccAWSEksNodeGroup_Labels(
+func TestAccAWSEksNodeGroup_ReleaseVersion(
+func TestAccAWSEksNodeGroup_Tags(
+func TestAccAWSEksNodeGroup_Version(
 func TestAccAWSElasticacheCluster_SecurityGroup(
 func TestAccAWSElasticacheCluster_snapshotsWithUpdates(
 func TestAccAWSElasticacheCluster_vpc(
