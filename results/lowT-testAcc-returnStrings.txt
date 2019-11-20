@@ -63,6 +63,9 @@ func testAccAWSElasticsearchDomainConfigAdvancedWithDataSource(rInt int) string 
 func testAccDataSourceAWSELBConfigBasic(rName, testName string) string {
 func testAccDataSourceAWSGlueScriptConfigPython() string {
 func testAccDataSourceAWSGlueScriptConfigScala() string {
+func testAccAwsGuarddutyDetectorBasicResourceConfig() string {
+func testAccAwsGuarddutyDetectorBasicResourceDataConfig() string {
+func testAccAwsGuarddutyDetectorExplicitConfig() string {
 func testAccAwsIAMGroupConfig(name string) string {
 func testAccAwsIAMGroupConfigWithUser(groupName, userName, membershipName string) string {
 func testAccDatasourceAwsIamInstanceProfileConfig(roleName, profileName string) string {
@@ -1582,7 +1585,12 @@ func testAccAWSGlueTriggerConfig_Description(rName, description string) string {
 func testAccAWSGlueTriggerConfig_Enabled(rName string, enabled bool) string {
 func testAccAWSGlueTriggerConfig_OnDemand(rName string) string {
 func testAccAWSGlueTriggerConfig_Predicate(rName, state string) string {
+func testAccAWSGlueTriggerConfig_Crawler(rName, state string) string {
 func testAccAWSGlueTriggerConfig_Schedule(rName, schedule string) string {
+func testAccAWSGlueTriggerConfig_WorkflowName(rName string) string {
+func testAccAWSGlueWorkflowConfig_DefaultRunProperties(rName, firstPropValue, secondPropValue string) string {
+func testAccAWSGlueWorkflowConfig_Description(rName, description string) string {
+func testAccAWSGlueWorkflowConfig_Required(rName string) string {
 func testAccAwsGuardDutyInviteAccepterConfig_basic(email string) string {
 func testAccGuardDutyIpsetConfig_basic(bucketName, keyName, ipsetName string, activate bool) string {
 func testAccGuardDutyMemberConfig_basic(accountID, email string) string {
@@ -1607,7 +1615,7 @@ func testAccIAMGroupPolicyConfigUpdate(rInt int) string {
 func testAccAWSGroupConfig(groupName string) string {
 func testAccAWSGroupConfig2(groupName string) string {
 func testAccAwsIamInstanceProfileConfig(rName string) string {
-func testAccAwsIamInstanceProfileConfigMissingRole(rName string) string {
+func testAccAwsIamInstanceProfileConfigWithoutRole(rName string) string {
 func testAccAWSInstanceProfilePrefixNameConfig(rName string) string {
 func testAccAWSInstanceProfileWithRoleSpecified(rName string) string {
 func testAccIAMOpenIDConnectProviderConfig(rString string) string {
@@ -1810,6 +1818,7 @@ func testAccAwsLambdaAliasConfig(roleName, policyName, attachmentName, funcName,
 func testAccAwsLambdaAliasConfigWithRoutingConfig(roleName, policyName, attachmentName, funcName, aliasName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBase(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisStartingPositionTimestamp(rName, startingPositionTimestamp string) string {
+func testAccAWSLambdaEventSourceMappingConfigKinesisBatchWindow(rName string, batchWindow int64) string {
 func testAccAWSLambdaEventSourceMappingConfig_sqs_testWithFunctionName(roleName, policyName, attName, streamName, funcName string) string {
 func testAccAWSLambdaConfigBasic(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigBasicConcurrency(funcName, policyName, roleName, sgName string) string {
@@ -1837,13 +1846,16 @@ func testAccAWSLambdaConfigS3(bucketName, roleName, funcName string) string {
 func testAccAWSLambdaConfigNoRuntime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigNodeJs810Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigNodeJs10xRuntime(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigNodeJs12xRuntime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigPython27Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigJava8Runtime(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigJava11Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigTags(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigTagsModified(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigProvidedRuntime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigPython36Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigPython37Runtime(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigPython38Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigRuby25Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaFunctionConfig_local_name_only_tpl(filePath, roleName, funcName string) string {
 func testAccAWSLambdaFunctionConfig_s3_unversioned_tpl(bucketName, roleName, funcName, key, path string) string {
@@ -2292,7 +2304,9 @@ func testAccRedshiftSubnetGroup_updateDescription(rInt int) string {
 func testAccRedshiftSubnetGroupConfigWithTags(rInt int) string {
 func testAccRedshiftSubnetGroupConfigWithTagsUpdated(rInt int) string {
 func testAccRedshiftSubnetGroupConfig_updateSubnetIds(rInt int) string {
-func testAccAWSResourceGroupConfig_basic(rName string, desc string, query string) string {
+func testAccAWSResourceGroupConfig_basic(rName, desc, query string) string {
+func testAccAWSResourceGroupConfigTags1(rName, desc, query, tag1Key, tag1Value string) string {
+func testAccAWSResourceGroupConfigTags2(rName, desc, query, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccRoute53DelegationSetConfig(refName string) string {
 func testAccRoute53DelegationSetWithZonesConfig(refName, zoneName1, zoneName2 string) string {
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(rName string) string {

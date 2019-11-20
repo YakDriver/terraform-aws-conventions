@@ -610,7 +610,7 @@ func testAccIAMGroupPolicyConfig_namePrefix(
 func testAccIAMGroupPolicyConfig_generatedName(
 func TestAccAWSIAMGroup_nameChange(
 func TestAccAWSIAMInstanceProfile_withRoleNotRoles(
-func TestAccAWSIAMInstanceProfile_missingRoleThrowsError(
+func TestAccAWSIAMInstanceProfile_withoutRole(
 func TestAccAWSIAMInstanceProfile_namePrefix(
 func TestAccAWSIAMPolicyAttachment_paginatedEntities(
 func TestAccAWSIAMPolicy_namePrefix(

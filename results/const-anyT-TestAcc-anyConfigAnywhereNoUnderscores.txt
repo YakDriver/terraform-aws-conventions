@@ -205,6 +205,7 @@ const testAccAWSENIConfigWithAttachment =
 const testAccAWSENIConfigExternalAttachment =
 const testAccAwsOrganizationsOrganizationConfig =
 const testAccAWSRedshiftSnapshotScheduleConfigWithIdentifierPrefix =
+const testAccAWSResourceGroupConfigQuery =
 const testAccRoute53HealthCheckConfig =
 const testAccRoute53HealthCheckConfigUpdate =
 const testAccRoute53HealthCheckIpConfig =

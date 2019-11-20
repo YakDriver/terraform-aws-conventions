@@ -62,6 +62,9 @@ func testAccAWSElasticsearchDomainConfigAdvancedWithDataSource(
 func testAccDataSourceAWSELBConfigBasic(
 func testAccDataSourceAWSGlueScriptConfigPython(
 func testAccDataSourceAWSGlueScriptConfigScala(
+func testAccAwsGuarddutyDetectorBasicResourceConfig(
+func testAccAwsGuarddutyDetectorBasicResourceDataConfig(
+func testAccAwsGuarddutyDetectorExplicitConfig(
 func testAccAwsIAMGroupConfig(
 func testAccAwsIAMGroupConfigWithUser(
 func testAccDatasourceAwsIamInstanceProfileConfig(
@@ -1520,7 +1523,12 @@ func testAccAWSGlueTriggerConfig_Description(
 func testAccAWSGlueTriggerConfig_Enabled(
 func testAccAWSGlueTriggerConfig_OnDemand(
 func testAccAWSGlueTriggerConfig_Predicate(
+func testAccAWSGlueTriggerConfig_Crawler(
 func testAccAWSGlueTriggerConfig_Schedule(
+func testAccAWSGlueTriggerConfig_WorkflowName(
+func testAccAWSGlueWorkflowConfig_DefaultRunProperties(
+func testAccAWSGlueWorkflowConfig_Description(
+func testAccAWSGlueWorkflowConfig_Required(
 func testAccAwsGuardDutyInviteAccepterConfig_basic(
 func testAccGuardDutyIpsetConfig_basic(
 func testAccGuardDutyMemberConfig_basic(
@@ -1545,7 +1553,7 @@ func testAccIAMGroupPolicyConfigUpdate(
 func testAccAWSGroupConfig(
 func testAccAWSGroupConfig2(
 func testAccAwsIamInstanceProfileConfig(
-func testAccAwsIamInstanceProfileConfigMissingRole(
+func testAccAwsIamInstanceProfileConfigWithoutRole(
 func testAccAWSInstanceProfilePrefixNameConfig(
 func testAccIAMOpenIDConnectProviderConfig(
 func testAccIAMOpenIDConnectProviderConfig_modified(
@@ -1699,6 +1707,7 @@ func testAccAwsLambdaAliasConfig(
 func testAccAwsLambdaAliasConfigWithRoutingConfig(
 func testAccAWSLambdaEventSourceMappingConfigKinesisBase(
 func testAccAWSLambdaEventSourceMappingConfigKinesisStartingPositionTimestamp(
+func testAccAWSLambdaEventSourceMappingConfigKinesisBatchWindow(
 func testAccAWSLambdaEventSourceMappingConfig_kinesis(
 func testAccAWSLambdaEventSourceMappingConfigUpdate_kinesis_removeBatchSize(
 func testAccAWSLambdaEventSourceMappingConfigUpdate_kinesis(
@@ -1732,13 +1741,16 @@ func testAccAWSLambdaConfigS3(
 func testAccAWSLambdaConfigNoRuntime(
 func testAccAWSLambdaConfigNodeJs810Runtime(
 func testAccAWSLambdaConfigNodeJs10xRuntime(
+func testAccAWSLambdaConfigNodeJs12xRuntime(
 func testAccAWSLambdaConfigPython27Runtime(
 func testAccAWSLambdaConfigJava8Runtime(
+func testAccAWSLambdaConfigJava11Runtime(
 func testAccAWSLambdaConfigTags(
 func testAccAWSLambdaConfigTagsModified(
 func testAccAWSLambdaConfigProvidedRuntime(
 func testAccAWSLambdaConfigPython36Runtime(
 func testAccAWSLambdaConfigPython37Runtime(
+func testAccAWSLambdaConfigPython38Runtime(
 func testAccAWSLambdaConfigRuby25Runtime(
 func testAccAWSLambdaFunctionConfig_local_name_only_tpl(
 func testAccAWSLambdaFunctionConfig_s3_unversioned_tpl(
@@ -2186,6 +2198,8 @@ func testAccRedshiftSubnetGroupConfigWithTags(
 func testAccRedshiftSubnetGroupConfigWithTagsUpdated(
 func testAccRedshiftSubnetGroupConfig_updateSubnetIds(
 func testAccAWSResourceGroupConfig_basic(
+func testAccAWSResourceGroupConfigTags1(
+func testAccAWSResourceGroupConfigTags2(
 func testAccRoute53DelegationSetConfig(
 func testAccRoute53DelegationSetWithZonesConfig(
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(

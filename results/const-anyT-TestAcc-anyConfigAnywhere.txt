@@ -358,6 +358,7 @@ const testAccAWSDBClusterParameterGroupConfig_namePrefix_Parameter =
 const testAccAWSDBClusterParameterGroupConfig_generatedName =
 const testAccAWSDBClusterParameterGroupConfig_generatedName_Parameter =
 const testAccAWSRedshiftSnapshotScheduleConfigWithIdentifierPrefix =
+const testAccAWSResourceGroupConfigQuery =
 const testAccRoute53HealthCheckConfig =
 const testAccRoute53HealthCheckConfigUpdate =
 const testAccRoute53HealthCheckIpConfig =

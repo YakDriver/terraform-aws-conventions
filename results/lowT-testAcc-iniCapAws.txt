@@ -2,6 +2,9 @@ func testAccAwsAcmCertificateDataSourceConfigKeyTypes(
 func testAccAwsDbEventCategoriesAttrCheck(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
 func testAccAwsElasticBeanstalkApplicationDataSourceConfig_Basic(
+func testAccAwsGuarddutyDetectorBasicResourceConfig(
+func testAccAwsGuarddutyDetectorBasicResourceDataConfig(
+func testAccAwsGuarddutyDetectorExplicitConfig(
 func testAccAwsIAMGroupConfig(
 func testAccAwsIAMGroupConfigWithUser(
 func testAccAwsDataSourceIamPolicyConfig(
@@ -104,7 +107,7 @@ func testAccAwsGuardDutyMember_invitationMessage(
 func testAccAwsGuardDutyThreatintelset_basic(
 func testAccAwsGuardDutyThreatintelset_import(
 func testAccAwsIamInstanceProfileConfig(
-func testAccAwsIamInstanceProfileConfigMissingRole(
+func testAccAwsIamInstanceProfileConfigWithoutRole(
 func testAccAwsIamRolePolicyConfig(
 func testAccAwsIamUserPolicyConfig(
 func testAccAwsLambdaAliasConfig(

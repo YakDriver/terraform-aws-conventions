@@ -1030,7 +1030,12 @@ func testAccAWSGlueTriggerConfig_Description(
 func testAccAWSGlueTriggerConfig_Enabled(
 func testAccAWSGlueTriggerConfig_OnDemand(
 func testAccAWSGlueTriggerConfig_Predicate(
+func testAccAWSGlueTriggerConfig_Crawler(
 func testAccAWSGlueTriggerConfig_Schedule(
+func testAccAWSGlueTriggerConfig_WorkflowName(
+func testAccAWSGlueWorkflowConfig_DefaultRunProperties(
+func testAccAWSGlueWorkflowConfig_Description(
+func testAccAWSGlueWorkflowConfig_Required(
 func testAccAWSGuardDutyMemberFromEnv(t *testing.T) (
 func testAccAWSAccessKeyConfig(
 func testAccAWSAccessKeyConfig_encrypted(
@@ -1161,6 +1166,7 @@ func testAccAWSKmsKey_enabled(
 func testAccAWSKmsKey_tags(
 func testAccAWSLambdaEventSourceMappingConfigKinesisBase(
 func testAccAWSLambdaEventSourceMappingConfigKinesisStartingPositionTimestamp(
+func testAccAWSLambdaEventSourceMappingConfigKinesisBatchWindow(
 func testAccAWSLambdaEventSourceMappingConfig_kinesis(
 func testAccAWSLambdaEventSourceMappingConfigUpdate_kinesis_removeBatchSize(
 func testAccAWSLambdaEventSourceMappingConfigUpdate_kinesis(
@@ -1194,13 +1200,16 @@ func testAccAWSLambdaConfigS3(
 func testAccAWSLambdaConfigNoRuntime(
 func testAccAWSLambdaConfigNodeJs810Runtime(
 func testAccAWSLambdaConfigNodeJs10xRuntime(
+func testAccAWSLambdaConfigNodeJs12xRuntime(
 func testAccAWSLambdaConfigPython27Runtime(
 func testAccAWSLambdaConfigJava8Runtime(
+func testAccAWSLambdaConfigJava11Runtime(
 func testAccAWSLambdaConfigTags(
 func testAccAWSLambdaConfigTagsModified(
 func testAccAWSLambdaConfigProvidedRuntime(
 func testAccAWSLambdaConfigPython36Runtime(
 func testAccAWSLambdaConfigPython37Runtime(
+func testAccAWSLambdaConfigPython38Runtime(
 func testAccAWSLambdaConfigRuby25Runtime(
 func testAccAWSLambdaFunctionConfig_local_name_only_tpl(
 func testAccAWSLambdaFunctionConfig_s3_unversioned_tpl(
@@ -1541,6 +1550,8 @@ func testAccAWSRedshiftSnapshotScheduleConfigWithTags(
 func testAccAWSRedshiftSnapshotScheduleConfigWithTagsUpdate(
 func testAccAWSRedshiftSnapshotScheduleConfigWithForceDestroy(
 func testAccAWSResourceGroupConfig_basic(
+func testAccAWSResourceGroupConfigTags1(
+func testAccAWSResourceGroupConfigTags2(
 func testAccAWSRouteTabAssocImportStateIdFunc(
 func testAccAWSRouteTableConfigRouteConfigModeBlocks(
 func testAccAWSRouteTableConfigRouteConfigModeNoBlocks(
