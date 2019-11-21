@@ -318,9 +318,20 @@ func testAccAWSAPIGatewayDomainNameConfigTags1(domainName, key, certificate, tag
 func testAccAWSAPIGatewayDomainNameConfigTags2(domainName, key, certificate, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayGatewayResponseConfig(rName string) string {
 func testAccAWSAPIGatewayGatewayResponseConfigUpdate(rName string) string {
+func testAccAWSAPIGatewayIntegrationResponseConfig(rName string) string {
+func testAccAWSAPIGatewayIntegrationResponseConfigUpdate(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfig(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigUpdate(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigUpdateURI(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigUpdateContentHandling(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigRemoveContentHandling(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigUpdateNoTemplates(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigCacheKeyParameters(rName string) string {
 func testAccAWSAPIGatewayIntegrationConfig_IntegrationTypeBase(rName string) string {
 func testAccAWSAPIGatewayIntegrationConfig_IntegrationTypeVpcLink(rName string) string {
 func testAccAWSAPIGatewayIntegrationConfig_IntegrationTypeInternet(rName string) string {
+func testAccAWSAPIGatewayMethodResponseConfig(rName string) string {
+func testAccAWSAPIGatewayMethodResponseConfigUpdate(rName string) string {
 func testAccAWSAPIGatewayMethodSettingsConfigBase(rName string) string {
 func testAccAWSAPIGatewayMethodSettingsConfigSettingsCacheDataEncrypted(rName string, cacheDataEncrypted bool) string {
 func testAccAWSAPIGatewayMethodSettingsConfigSettingsCacheTtlInSeconds(rName string, cacheTtlInSeconds int) string {
@@ -340,16 +351,33 @@ func testAccAWSAPIGatewayMethodConfig(rInt int) string {
 func testAccAWSAPIGatewayMethodConfigUpdate(rInt int) string {
 func testAccAWSAPIGatewayMethodConfigWithCustomRequestValidator(rInt int) string {
 func testAccAWSAPIGatewayMethodConfigWithCustomRequestValidatorUpdate(rInt int) string {
+func testAccAWSAPIGatewayModelConfig(rName, modelName string) string {
+func testAccAWSAPIGatewayRequestValidatorConfig_base(rName string) string {
+func testAccAWSAPIGatewayRequestValidatorConfig(rName string) string {
+func testAccAWSAPIGatewayRequestValidatorUpdatedConfig(rName string) string {
+func testAccAWSAPIGatewayResourceConfig(rName string) string {
+func testAccAWSAPIGatewayResourceConfig_updatePathPart(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfig(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(rName, endpointType string) string {
 func testAccAWSAPIGatewayRestAPIConfig_Name(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayRestAPIConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSAPIGatewayRestAPIConfigWithAPIKeySource(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigWithUpdateAPIKeySource(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigWithPolicy(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigUpdatePolicy(rName string) string {
+func testAccAWSAPIGatewayRestAPIUpdateConfig(rName string) string {
+func testAccAWSAPIGatewayRestAPIDisableCompressionConfig(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigOpenAPI(rName string) string {
+func testAccAWSAPIGatewayRestAPIUpdateConfigOpenAPI(rName string) string {
 func testAccAWSAPIGatewayStageConfig_base(rName string) string {
 func testAccAWSAPIGatewayStageConfig_basic(rName string) string {
 func testAccAWSAPIGatewayStageConfig_updated(rName string) string {
 func testAccAWSAPIGatewayStageConfig_accessLogSettings(rName string, format string) string {
+func testAccAWSAPIGatewayUsagePlanKeyConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanKeyBasicConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanKeyBasicUpdatedConfig(rName string) string {
+func testAccAWSAPIGatewayUsagePlanConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanBasicConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanDescriptionConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanDescriptionUpdatedConfig(rName string) string {
@@ -1571,8 +1599,11 @@ func testAccAWSGlueJobConfig_GlueVersion(rName, glueVersion string) string {
 func testAccAWSGlueJobConfig_ExecutionProperty(rName string, maxConcurrentRuns int) string {
 func testAccAWSGlueJobConfig_MaxRetries(rName string, maxRetries int) string {
 func testAccAWSGlueJobConfig_Required(rName string) string {
+func testAccAWSGlueJobConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGlueJobConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGlueJobConfig_Timeout(rName string, timeout int) string {
 func testAccAWSGlueJobConfig_SecurityConfiguration(rName string, securityConfiguration string) string {
+func testAccAWSGlueJobConfig_WorkerType(rName string, workerType string) string {
 func testAccAWSGlueJobConfig_PythonShell(rName string) string {
 func testAccAWSGlueJobConfig_PythonShellWithVersion(rName string, pythonVersion string) string {
 func testAccAWSGlueJobConfig_MaxCapacity(rName string, maxCapacity float64) string {
@@ -1587,6 +1618,8 @@ func testAccAWSGlueTriggerConfig_OnDemand(rName string) string {
 func testAccAWSGlueTriggerConfig_Predicate(rName, state string) string {
 func testAccAWSGlueTriggerConfig_Crawler(rName, state string) string {
 func testAccAWSGlueTriggerConfig_Schedule(rName, schedule string) string {
+func testAccAWSGlueTriggerConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGlueTriggerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGlueTriggerConfig_WorkflowName(rName string) string {
 func testAccAWSGlueWorkflowConfig_DefaultRunProperties(rName, firstPropValue, secondPropValue string) string {
 func testAccAWSGlueWorkflowConfig_Description(rName, description string) string {

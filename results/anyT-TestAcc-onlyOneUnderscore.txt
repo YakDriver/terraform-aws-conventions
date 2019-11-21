@@ -474,8 +474,10 @@ func TestAccAWSAPIGatewayMethod_cognitoauthorizer(
 func TestAccAWSAPIGatewayMethod_customrequestvalidator(
 func TestAccAWSAPIGatewayModel_basic(
 func TestAccAWSAPIGatewayRequestValidator_basic(
+func testAccAWSAPIGatewayRequestValidatorConfig_base(
 func TestAccAWSAPIGatewayResource_basic(
 func TestAccAWSAPIGatewayResource_update(
+func testAccAWSAPIGatewayResourceConfig_updatePathPart(
 func TestAccAWSAPIGatewayRestApi_basic(
 func TestAccAWSAPIGatewayRestApi_tags(
 func TestAccAWSAPIGatewayRestApi_disappears(
@@ -1826,8 +1828,10 @@ func TestAccAWSGlueJob_Description(
 func TestAccAWSGlueJob_GlueVersion(
 func TestAccAWSGlueJob_ExecutionProperty(
 func TestAccAWSGlueJob_MaxRetries(
+func TestAccAWSGlueJob_Tags(
 func TestAccAWSGlueJob_Timeout(
 func TestAccAWSGlueJob_SecurityConfiguration(
+func TestAccAWSGlueJob_WorkerType(
 func TestAccAWSGlueJob_PythonShell(
 func TestAccAWSGlueJob_MaxCapacity(
 func testAccAWSGlueJobConfig_Base(
@@ -1841,6 +1845,7 @@ func testAccAWSGlueJobConfig_MaxRetries(
 func testAccAWSGlueJobConfig_Required(
 func testAccAWSGlueJobConfig_Timeout(
 func testAccAWSGlueJobConfig_SecurityConfiguration(
+func testAccAWSGlueJobConfig_WorkerType(
 func testAccAWSGlueJobConfig_PythonShell(
 func testAccAWSGlueJobConfig_PythonShellWithVersion(
 func testAccAWSGlueJobConfig_MaxCapacity(
@@ -1852,6 +1857,7 @@ func TestAccAWSGlueTrigger_Description(
 func TestAccAWSGlueTrigger_Enabled(
 func TestAccAWSGlueTrigger_Predicate(
 func TestAccAWSGlueTrigger_Schedule(
+func TestAccAWSGlueTrigger_Tags(
 func TestAccAWSGlueTrigger_WorkflowName(
 func testAccAWSGlueTriggerConfig_Description(
 func testAccAWSGlueTriggerConfig_Enabled(

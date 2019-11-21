@@ -173,6 +173,17 @@ func testAccAWSAPIGatewayDomainNameConfigTags1(domainName, key, certificate, tag
 func testAccAWSAPIGatewayDomainNameConfigTags2(domainName, key, certificate, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayGatewayResponseConfig(rName string) string {
 func testAccAWSAPIGatewayGatewayResponseConfigUpdate(rName string) string {
+func testAccAWSAPIGatewayIntegrationResponseConfig(rName string) string {
+func testAccAWSAPIGatewayIntegrationResponseConfigUpdate(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfig(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigUpdate(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigUpdateURI(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigUpdateContentHandling(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigRemoveContentHandling(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigUpdateNoTemplates(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfigCacheKeyParameters(rName string) string {
+func testAccAWSAPIGatewayMethodResponseConfig(rName string) string {
+func testAccAWSAPIGatewayMethodResponseConfigUpdate(rName string) string {
 func testAccAWSAPIGatewayMethodSettingsConfigBase(rName string) string {
 func testAccAWSAPIGatewayMethodSettingsConfigSettingsCacheDataEncrypted(rName string, cacheDataEncrypted bool) string {
 func testAccAWSAPIGatewayMethodSettingsConfigSettingsCacheTtlInSeconds(rName string, cacheTtlInSeconds int) string {
@@ -192,10 +203,25 @@ func testAccAWSAPIGatewayMethodConfig(rInt int) string {
 func testAccAWSAPIGatewayMethodConfigUpdate(rInt int) string {
 func testAccAWSAPIGatewayMethodConfigWithCustomRequestValidator(rInt int) string {
 func testAccAWSAPIGatewayMethodConfigWithCustomRequestValidatorUpdate(rInt int) string {
+func testAccAWSAPIGatewayModelConfig(rName, modelName string) string {
+func testAccAWSAPIGatewayRequestValidatorConfig(rName string) string {
+func testAccAWSAPIGatewayRequestValidatorUpdatedConfig(rName string) string {
+func testAccAWSAPIGatewayResourceConfig(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfig(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayRestAPIConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSAPIGatewayRestAPIConfigWithAPIKeySource(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigWithUpdateAPIKeySource(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigWithPolicy(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigUpdatePolicy(rName string) string {
+func testAccAWSAPIGatewayRestAPIUpdateConfig(rName string) string {
+func testAccAWSAPIGatewayRestAPIDisableCompressionConfig(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigOpenAPI(rName string) string {
+func testAccAWSAPIGatewayRestAPIUpdateConfigOpenAPI(rName string) string {
+func testAccAWSAPIGatewayUsagePlanKeyConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanKeyBasicConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanKeyBasicUpdatedConfig(rName string) string {
+func testAccAWSAPIGatewayUsagePlanConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanBasicConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanDescriptionConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanDescriptionUpdatedConfig(rName string) string {
@@ -719,6 +745,10 @@ func testAccAWSGameliftFleetAllFieldsUpdatedConfig(fleetName, desc, launchPath s
 func testAccGlacierVaultLockConfigCompleteLock(rName string, completeLock bool) string {
 func testAccGlueCrawlerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSGlueJobConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGlueJobConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSGlueTriggerConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGlueTriggerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAccessKeyConfig(rName string) string {
 func testAccAWSIAMAccountAliasConfig(rstring string) string {
 func testAccAWSGroupMemberConfig(groupName, userName, membershipName string) string {

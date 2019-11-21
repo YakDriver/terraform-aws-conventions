@@ -1783,8 +1783,10 @@ func TestAccAWSGlueJob_Description(
 func TestAccAWSGlueJob_GlueVersion(
 func TestAccAWSGlueJob_ExecutionProperty(
 func TestAccAWSGlueJob_MaxRetries(
+func TestAccAWSGlueJob_Tags(
 func TestAccAWSGlueJob_Timeout(
 func TestAccAWSGlueJob_SecurityConfiguration(
+func TestAccAWSGlueJob_WorkerType(
 func TestAccAWSGlueJob_PythonShell(
 func TestAccAWSGlueJob_MaxCapacity(
 func TestAccAWSGlueSecurityConfiguration_Basic(
@@ -1798,6 +1800,7 @@ func TestAccAWSGlueTrigger_Description(
 func TestAccAWSGlueTrigger_Enabled(
 func TestAccAWSGlueTrigger_Predicate(
 func TestAccAWSGlueTrigger_Schedule(
+func TestAccAWSGlueTrigger_Tags(
 func TestAccAWSGlueTrigger_WorkflowName(
 func TestAccAWSGlueWorkflow_Basic(
 func TestAccAWSGlueWorkflow_DefaultRunProperties(

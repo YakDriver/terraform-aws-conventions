@@ -409,6 +409,7 @@ func testAccAWSGlueJobConfig_MaxRetries(
 func testAccAWSGlueJobConfig_Required(
 func testAccAWSGlueJobConfig_Timeout(
 func testAccAWSGlueJobConfig_SecurityConfiguration(
+func testAccAWSGlueJobConfig_WorkerType(
 func testAccAWSGlueJobConfig_PythonShell(
 func testAccAWSGlueJobConfig_PythonShellWithVersion(
 func testAccAWSGlueJobConfig_MaxCapacity(

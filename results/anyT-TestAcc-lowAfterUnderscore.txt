@@ -356,8 +356,10 @@ func TestAccAWSAPIGatewayMethod_cognitoauthorizer(
 func TestAccAWSAPIGatewayMethod_customrequestvalidator(
 func TestAccAWSAPIGatewayModel_basic(
 func TestAccAWSAPIGatewayRequestValidator_basic(
+func testAccAWSAPIGatewayRequestValidatorConfig_base(
 func TestAccAWSAPIGatewayResource_basic(
 func TestAccAWSAPIGatewayResource_update(
+func testAccAWSAPIGatewayResourceConfig_updatePathPart(
 func TestAccAWSAPIGatewayRestApi_basic(
 func TestAccAWSAPIGatewayRestApi_tags(
 func TestAccAWSAPIGatewayRestApi_disappears(
