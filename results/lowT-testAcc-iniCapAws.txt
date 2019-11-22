@@ -65,7 +65,11 @@ func testAccAwsDxTransitVirtualInterface_basic(
 func testAccAwsDxTransitVirtualInterface_Tags(
 func testAccAwsEbsDefaultKmsKeyAwsManagedDefaultKey() (
 func testAccAwsEbsEncryptionByDefaultConfig(
+func testAccAwsEbsSnapshotCopyConfigTags1(
+func testAccAwsEbsSnapshotCopyConfigTags2(
 func testAccAwsEbsSnapshotConfigBasic(
+func testAccAwsEbsSnapshotConfigBasicTags1(
+func testAccAwsEbsSnapshotConfigBasicTags2(
 func testAccAwsEbsSnapshotConfigWithDescription(
 func testAccAwsEbsSnapshotConfigWithKms(
 func testAccAwsFsxLustreFileSystemConfigBase(

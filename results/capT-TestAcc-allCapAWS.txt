@@ -950,11 +950,13 @@ func TestAccAWSDynamoDbTable_encryption(
 func TestAccAWSEBSDefaultKmsKey_basic(
 func TestAccAWSEBSEncryptionByDefault_basic(
 func TestAccAWSEbsSnapshotCopy_basic(
+func TestAccAWSEbsSnapshotCopy_tags(
 func TestAccAWSEbsSnapshotCopy_withDescription(
 func TestAccAWSEbsSnapshotCopy_withRegions(
 func TestAccAWSEbsSnapshotCopy_withKms(
 func TestAccAWSEbsSnapshotCopy_disappears(
 func TestAccAWSEBSSnapshot_basic(
+func TestAccAWSEBSSnapshot_tags(
 func TestAccAWSEBSSnapshot_withDescription(
 func TestAccAWSEBSSnapshot_withKms(
 func TestAccAWSEBSVolume_basic(

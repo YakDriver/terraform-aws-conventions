@@ -392,6 +392,7 @@ func testAccAWSCloudWatchMetricAlarmConfigTreatEvaluateLowSampleCountPercentiles
 func testAccAWSCloudWatchMetricAlarmConfigExtendedStatistic(rInt int) string {
 func testAccAWSCloudWatchMetricAlarmConfigMissingStatistic(rInt int) string {
 func testAccAWSCloudWatchMetricAlarmConfigWithExpression(rInt int) string {
+func testAccAWSCloudWatchMetricAlarmConfigWithAnomalyDetectionExpression(rInt int) string {
 func testAccAWSCloudWatchMetricAlarmConfigWithExpressionUpdated(rInt int) string {
 func testAccAWSCloudWatchMetricAlarmConfigWithExpressionWithQueryUpdated(rInt int) string {
 func testAccAWSCloudWatchMetricAlarmConfigWithBadExpression(rInt int) string {
@@ -569,7 +570,11 @@ func testAccAWSDynamoDbConfigTimeToLive(rName string, ttlEnabled bool) string {
 func testAccAWSDynamoDbConfigOneAttribute(rName, hashKey, attrName, attrType string) string {
 func testAccAWSDynamoDbConfigTwoAttributes(rName, hashKey, rangeKey, attrName1, attrType1, attrName2, attrType2 string) string {
 func testAccAwsEbsEncryptionByDefaultConfig(enabled bool) string {
+func testAccAwsEbsSnapshotCopyConfigTags1(tagKey1, tagValue1 string) string {
+func testAccAwsEbsSnapshotCopyConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsEbsSnapshotConfigBasic(rName string) string {
+func testAccAwsEbsSnapshotConfigBasicTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAwsEbsSnapshotConfigBasicTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
 func testAccEc2ClientVpnEndpointConfigAcmCertificateBase() string {
