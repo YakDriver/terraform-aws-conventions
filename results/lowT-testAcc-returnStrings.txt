@@ -217,6 +217,7 @@ func testAccGetAccountID() string {
 func testAccGetRegion() string {
 func testAccGetAlternateRegion() string {
 func testAccGetPartition() string {
+func testAccGetAlternateRegionPartition() string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateRegionProviderConfig() string {
@@ -1148,6 +1149,10 @@ func testAccDxHostedPrivateVirtualInterfaceConfig_updated(cid, rName string, bgp
 func testAccDxHostedPublicVirtualInterfaceConfig_base(cid, rName string, bgpAsn, vlan int) string {
 func testAccDxHostedPublicVirtualInterfaceConfig_basic(cid, rName string, bgpAsn, vlan int) string {
 func testAccDxHostedPublicVirtualInterfaceConfig_updated(cid, rName string, bgpAsn, vlan int) string {
+func testAccDxHostedTransitVirtualInterfaceConfig_base(cid, rName string, amzAsn, bgpAsn, vlan int) string {
+func testAccDxHostedTransitVirtualInterfaceConfig_basic(cid, rName string, amzAsn, bgpAsn, vlan int) string {
+func testAccDxHostedTransitVirtualInterfaceConfig_accepterTags(cid, rName string, amzAsn, bgpAsn, vlan int) string {
+func testAccDxHostedTransitVirtualInterfaceConfig_accepterTagsUpdated(cid, rName string, amzAsn, bgpAsn, vlan int) string {
 func testAccDxLagConfig(n string) string {
 func testAccDxLagConfig_tags(n string) string {
 func testAccDxLagConfig_tagsChanged(n string) string {

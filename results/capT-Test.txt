@@ -1265,6 +1265,7 @@ func TestAccAwsDxGateway_basic(
 func TestAccAwsDxGateway_complex(
 func TestAccAwsDxHostedPrivateVirtualInterface_basic(
 func TestAccAwsDxHostedPublicVirtualInterface_basic(
+func TestAccAwsDxHostedTransitVirtualInterface(
 func TestAccAWSDxLag_basic(
 func TestAccAWSDxLag_tags(
 func TestAccAwsDxPrivateVirtualInterface_basic(
