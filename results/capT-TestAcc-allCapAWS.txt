@@ -847,6 +847,8 @@ func TestAccAWSDefaultNetworkAcl_withIpv6Ingress(
 func TestAccAWSDefaultNetworkAcl_SubnetRemoval(
 func TestAccAWSDefaultNetworkAcl_SubnetReassign(
 func TestAccAWSDefaultRouteTable_basic(
+func TestAccAWSDefaultRouteTable_disappears_Vpc(
+func TestAccAWSDefaultRouteTable_Route(
 func TestAccAWSDefaultRouteTable_swap(
 func TestAccAWSDefaultRouteTable_Route_TransitGatewayID(
 func TestAccAWSDefaultRouteTable_vpc_endpoint(

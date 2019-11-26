@@ -66,7 +66,7 @@ func testAccAwsGuarddutyDetectorBasicResourceConfig() string {
 func testAccAwsGuarddutyDetectorBasicResourceDataConfig() string {
 func testAccAwsGuarddutyDetectorExplicitConfig() string {
 func testAccAwsIAMGroupConfig(name string) string {
-func testAccAwsIAMGroupConfigWithUser(groupName, userName, membershipName string) string {
+func testAccAwsIAMGroupConfigWithUser(groupName, userName, membershipName string, userCount int) string {
 func testAccDatasourceAwsIamInstanceProfileConfig(roleName, profileName string) string {
 func testAccAwsDataSourceIamPolicyConfig(policyName string) string {
 func testAccAwsIAMRoleConfig(roleName string) string {
@@ -985,6 +985,8 @@ func testAccAwsDbSnapshotConfigTags1(rInt int, tag1Key, tag1Value string) string
 func testAccAwsDbSnapshotConfigTags2(rInt int, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccDBSubnetGroupConfig(rName string) string {
 func testAccDBSubnetGroupConfig_updatedDescription(rName string) string {
+func testAccDefaultRouteTableConfigDefaultRouteTableId(defaultRouteTableId string) string {
+func testAccDefaultRouteTableConfigRequired() string {
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
 func testAccDeviceFarmProjectConfig(rInt int) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {
@@ -1057,10 +1059,12 @@ func testAccDxGatewayAssociationConfig_allowedPrefixesVpnGatewayCrossAccountUpda
 func testAccDxGatewayConfig(rName string, rBgpAsn int) string {
 func testAccDxHostedPrivateVirtualInterfaceConfig_base(cid, rName string, bgpAsn, vlan int) string {
 func testAccDxHostedPrivateVirtualInterfaceConfig_basic(cid, rName string, bgpAsn, vlan int) string {
-func testAccDxHostedPrivateVirtualInterfaceConfig_updated(cid, rName string, bgpAsn, vlan int) string {
-func testAccDxHostedPublicVirtualInterfaceConfig_base(cid, rName string, bgpAsn, vlan int) string {
-func testAccDxHostedPublicVirtualInterfaceConfig_basic(cid, rName string, bgpAsn, vlan int) string {
-func testAccDxHostedPublicVirtualInterfaceConfig_updated(cid, rName string, bgpAsn, vlan int) string {
+func testAccDxHostedPrivateVirtualInterfaceConfig_accepterTags(cid, rName string, bgpAsn, vlan int) string {
+func testAccDxHostedPrivateVirtualInterfaceConfig_accepterTagsUpdated(cid, rName string, bgpAsn, vlan int) string {
+func testAccDxHostedPublicVirtualInterfaceConfig_base(cid, rName, amzAddr, custAddr string, bgpAsn, vlan int) string {
+func testAccDxHostedPublicVirtualInterfaceConfig_basic(cid, rName, amzAddr, custAddr string, bgpAsn, vlan int) string {
+func testAccDxHostedPublicVirtualInterfaceConfig_accepterTags(cid, rName, amzAddr, custAddr string, bgpAsn, vlan int) string {
+func testAccDxHostedPublicVirtualInterfaceConfig_accepterTagsUpdated(cid, rName, amzAddr, custAddr string, bgpAsn, vlan int) string {
 func testAccDxHostedTransitVirtualInterfaceConfig_base(cid, rName string, amzAsn, bgpAsn, vlan int) string {
 func testAccDxHostedTransitVirtualInterfaceConfig_basic(cid, rName string, amzAsn, bgpAsn, vlan int) string {
 func testAccDxHostedTransitVirtualInterfaceConfig_accepterTags(cid, rName string, amzAsn, bgpAsn, vlan int) string {
@@ -1068,12 +1072,15 @@ func testAccDxHostedTransitVirtualInterfaceConfig_accepterTagsUpdated(cid, rName
 func testAccDxLagConfig(n string) string {
 func testAccDxLagConfig_tags(n string) string {
 func testAccDxLagConfig_tagsChanged(n string) string {
-func testAccDxPrivateVirtualInterfaceConfig_noTags(cid, n string, bgpAsn, vlan int) string {
-func testAccDxPrivateVirtualInterfaceConfig_tags(cid, n string, bgpAsn, vlan int) string {
-func testAccDxPrivateVirtualInterfaceConfig_dxGateway(cid, n string, amzAsn, bgpAsn, vlan int) string {
-func testAccDxPrivateVirtualInterfaceConfig_jumboFrames(cid, n string, bgpAsn, vlan int) string {
-func testAccDxPublicVirtualInterfaceConfig_noTags(cid, n string, bgpAsn, vlan int) string {
-func testAccDxPublicVirtualInterfaceConfig_tags(cid, n string, bgpAsn, vlan int) string {
+func testAccDxPrivateVirtualInterfaceConfig_vpnGateway(rName string) string {
+func testAccDxPrivateVirtualInterfaceConfig_basic(cid, rName string, bgpAsn, vlan int) string {
+func testAccDxPrivateVirtualInterfaceConfig_updated(cid, rName string, bgpAsn, vlan int) string {
+func testAccDxPrivateVirtualInterfaceConfig_tags(cid, rName string, bgpAsn, vlan int) string {
+func testAccDxPrivateVirtualInterfaceConfig_tagsUpdated(cid, rName string, bgpAsn, vlan int) string {
+func testAccDxPrivateVirtualInterfaceConfig_dxGateway(cid, rName string, amzAsn, bgpAsn, vlan int) string {
+func testAccDxPublicVirtualInterfaceConfig_basic(cid, rName, amzAddr, custAddr string, bgpAsn, vlan int) string {
+func testAccDxPublicVirtualInterfaceConfig_tags(cid, rName, amzAddr, custAddr string, bgpAsn, vlan int) string {
+func testAccDxPublicVirtualInterfaceConfig_tagsUpdated(cid, rName, amzAddr, custAddr string, bgpAsn, vlan int) string {
 func testAccDxTransitVirtualInterfaceConfig_base(rName string, amzAsn int) string {
 func testAccDxTransitVirtualInterfaceConfig_basic(cid, rName string, amzAsn, bgpAsn, vlan int) string {
 func testAccDxTransitVirtualInterfaceConfig_updated(cid, rName string, amzAsn, bgpAsn, vlan int) string {

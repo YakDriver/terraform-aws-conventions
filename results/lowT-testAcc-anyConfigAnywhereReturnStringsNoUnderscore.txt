@@ -49,7 +49,7 @@ func testAccAwsGuarddutyDetectorBasicResourceConfig() string {
 func testAccAwsGuarddutyDetectorBasicResourceDataConfig() string {
 func testAccAwsGuarddutyDetectorExplicitConfig() string {
 func testAccAwsIAMGroupConfig(name string) string {
-func testAccAwsIAMGroupConfigWithUser(groupName, userName, membershipName string) string {
+func testAccAwsIAMGroupConfigWithUser(groupName, userName, membershipName string, userCount int) string {
 func testAccDatasourceAwsIamInstanceProfileConfig(roleName, profileName string) string {
 func testAccAwsDataSourceIamPolicyConfig(policyName string) string {
 func testAccAwsIAMRoleConfig(roleName string) string {
@@ -532,6 +532,8 @@ func testAccAwsDbSnapshotConfig(rInt int) string {
 func testAccAwsDbSnapshotConfigTags1(rInt int, tag1Key, tag1Value string) string {
 func testAccAwsDbSnapshotConfigTags2(rInt int, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccDBSubnetGroupConfig(rName string) string {
+func testAccDefaultRouteTableConfigDefaultRouteTableId(defaultRouteTableId string) string {
+func testAccDefaultRouteTableConfigRequired() string {
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
 func testAccDeviceFarmProjectConfig(rInt int) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {

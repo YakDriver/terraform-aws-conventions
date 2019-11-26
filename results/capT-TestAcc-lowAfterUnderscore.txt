@@ -620,6 +620,7 @@ func TestAccAWSDefaultNetworkAcl_basicIpv6Vpc(
 func TestAccAWSDefaultNetworkAcl_deny_ingress(
 func TestAccAWSDefaultNetworkAcl_withIpv6Ingress(
 func TestAccAWSDefaultRouteTable_basic(
+func TestAccAWSDefaultRouteTable_disappears_Vpc(
 func TestAccAWSDefaultRouteTable_swap(
 func TestAccAWSDefaultRouteTable_vpc_endpoint(
 func TestAccAWSDefaultSecurityGroup_basic(
@@ -686,8 +687,6 @@ func TestAccAwsDxHostedPublicVirtualInterface_basic(
 func TestAccAWSDxLag_basic(
 func TestAccAWSDxLag_tags(
 func TestAccAwsDxPrivateVirtualInterface_basic(
-func TestAccAwsDxPrivateVirtualInterface_dxGateway(
-func TestAccAwsDxPrivateVirtualInterface_mtuUpdate(
 func TestAccAwsDxPublicVirtualInterface_basic(
 func TestAccAWSDynamoDbGlobalTable_basic(
 func TestAccAWSDynamoDbGlobalTable_multipleRegions(
