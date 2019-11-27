@@ -1229,6 +1229,7 @@ func testAccEc2ClientVpnEndpointConfig_tagsChanged(rName string) string {
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
 func testAccEc2ClientVpnNetworkAssociationConfigAcmCertificateBase() string {
 func testAccEc2ClientVpnNetworkAssociationConfig(rName string) string {
+func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(rInt int) string {
 func testAccAWSEc2FleetConfig_BaseLaunchTemplate(rName string) string {
 func testAccAWSEc2FleetConfig_ExcessCapacityTerminationPolicy(rName, excessCapacityTerminationPolicy string) string {
 func testAccAWSEc2FleetConfig_LaunchTemplateConfig_LaunchTemplateSpecification_LaunchTemplateId(rName, launchTemplateResourceName string) string {
@@ -1954,6 +1955,7 @@ func testAccAWSLaunchTemplateConfig_creditSpecification(rName, instanceType, cpu
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(rName string) string {
 func testAccAWSLaunchTemplateConfig_licenseSpecification(rInt int) string {
 func testAccAWSLaunchTemplateConfig_description(rName, description string) string {
+func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccLBCookieStickinessPolicyConfigDestroy(rName string) string {
