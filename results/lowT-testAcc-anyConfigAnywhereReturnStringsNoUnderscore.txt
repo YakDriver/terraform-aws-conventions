@@ -56,8 +56,8 @@ func testAccAwsIAMRoleConfig(roleName string) string {
 func testAccAwsDataIAMServerCertConfig(rName, key, certificate string) string {
 func testAccAwsDataIAMServerCertConfigPath(rName, path, pathPrefix, key, certificate string) string {
 func testAccAwsDataSourceIAMUserConfig(name string) string {
-func testAccInstanceDataSourceConfigGetUserData(getUserData bool) string {
-func testAccInstanceDataSourceConfigGetUserDataNoUserData(getUserData bool) string {
+func testAccInstanceDataSourceConfigGetUserData(rName string, getUserData bool) string {
+func testAccInstanceDataSourceConfigGetUserDataNoUserData(rName string, getUserData bool) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBase(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBasic(rName string) string {
@@ -804,16 +804,38 @@ func testAccAWSUserConfig(rName, path string) string {
 func testAccAWSUserConfigForceDestroy(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfig(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfigResourceGroupArn(rName, inspectorResourceGroupResourceName string) string {
-func testAccInstanceConfigInDefaultVpcBySgName(rInt int) string {
-func testAccInstanceConfigInDefaultVpcBySgId(rInt int) string {
+func testAccInstanceConfigInDefaultVpcBySgName(rName string) string {
+func testAccInstanceConfigInDefaultVpcBySgId(rName string) string {
 func testAccInstanceConfigInEc2Classic(rInt int) string {
 func testAccInstanceConfig(rInt int) string {
 func testAccInstanceConfigWithUserDataBase64(rInt int) string {
-func testAccInstanceConfigDisableAPITermination(val bool) string {
-func testAccInstanceConfigPlacementGroup(rStr string) string {
+func testAccInstanceConfigSourceDestEnable(rName string) string {
+func testAccInstanceConfigSourceDestDisable(rName string) string {
+func testAccInstanceConfigDisableAPITermination(rName string, val bool) string {
+func testAccInstanceConfigVPC(rName string) string {
+func testAccInstanceConfigPlacementGroup(rName string) string {
+func testAccInstanceConfigIpv6ErrorConfig(rName string) string {
+func testAccInstanceConfigIpv6Support(rName string) string {
+func testAccInstanceConfigIpv6SupportWithIpv4(rName string) string {
 func testAccInstanceConfigWithoutInstanceProfile(rName string) string {
 func testAccInstanceConfigWithInstanceProfile(rName string) string {
-func testAccInstanceConfigKeyPair(keyPairName string) string {
+func testAccInstanceConfigPrivateIP(rName string) string {
+func testAccInstanceConfigAssociatePublicIPAndPrivateIP(rName string) string {
+func testAccInstanceConfigKeyPair(rName string) string {
+func testAccInstanceConfigRootBlockDeviceMismatch(rName string) string {
+func testAccInstanceConfigForceNewAndTagsDrift(rName string) string {
+func testAccInstanceConfigPrimaryNetworkInterface(rName string) string {
+func testAccInstanceConfigPrimaryNetworkInterfaceSourceDestCheck(rName string) string {
+func testAccInstanceConfigAddSecondaryNetworkInterfaceBefore(rName string) string {
+func testAccInstanceConfigAddSecondaryNetworkInterfaceAfter(rName string) string {
+func testAccInstanceConfigAddSecurityGroupBefore(rName string) string {
+func testAccInstanceConfigAddSecurityGroupAfter(rName string) string {
+func testAccLatestAmazonLinuxHvmEbsAmiConfig() string {
+func testAccLatestAmazonLinuxPvEbsAmiConfig() string {
+func testAccLatestWindowsServer2016CoreAmiConfig() string {
+func testAccAwsInstanceVpcConfig(rName string, mapPublicIpOnLaunch bool) string {
+func testAccAwsInstanceVpcSecurityGroupConfig(rName string) string {
+func testAccAwsInstanceVpcIpv6Config(rName string) string {
 func testAccAWSIotPolicyAttachmentConfig(policyName string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate1(policyName, policyName2 string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate2(policyName2 string) string {

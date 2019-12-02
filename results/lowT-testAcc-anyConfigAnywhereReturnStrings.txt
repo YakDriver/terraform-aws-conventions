@@ -76,12 +76,16 @@ func testAccAwsDataSourceIAMUserConfig(name string) string {
 func testAccInstancesDataSourceConfig_tags(rInt int) string {
 func testAccInstancesDataSourceConfig_instance_state_names(rInt int) string {
 func testAccInstanceDataSourceConfig_Tags(rInt int) string {
+func testAccInstanceDataSourceConfig_privateIP(rName string) string {
 func testAccInstanceDataSourceConfig_keyPair(rName string) string {
-func testAccInstanceDataSourceConfig_PlacementGroup(rStr string) string {
+func testAccInstanceDataSourceConfig_VPC(rName string) string {
+func testAccInstanceDataSourceConfig_PlacementGroup(rName string) string {
 func testAccInstanceDataSourceConfig_SecurityGroups(rInt int) string {
-func testAccInstanceDataSourceConfig_getPasswordData(val bool, rInt int) string {
-func testAccInstanceDataSourceConfigGetUserData(getUserData bool) string {
-func testAccInstanceDataSourceConfigGetUserDataNoUserData(getUserData bool) string {
+func testAccInstanceDataSourceConfig_VPCSecurityGroups(rName string) string {
+func testAccInstanceDataSourceConfig_getPasswordData(rName string, val bool) string {
+func testAccInstanceDataSourceConfigGetUserData(rName string, getUserData bool) string {
+func testAccInstanceDataSourceConfigGetUserDataNoUserData(rName string, getUserData bool) string {
+func testAccInstanceDataSourceConfig_creditSpecification(rName string) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBase(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBasic(rName string) string {
@@ -1565,37 +1569,59 @@ func testAccAWSUserConfig_tags(rName string) string {
 func testAccAWSUserConfig_tagsUpdate(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfig(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfigResourceGroupArn(rName, inspectorResourceGroupResourceName string) string {
-func testAccInstanceConfigInDefaultVpcBySgName(rInt int) string {
-func testAccInstanceConfigInDefaultVpcBySgId(rInt int) string {
+func testAccInstanceConfigInDefaultVpcBySgName(rName string) string {
+func testAccInstanceConfigInDefaultVpcBySgId(rName string) string {
 func testAccInstanceConfigInEc2Classic(rInt int) string {
 func testAccInstanceConfig_pre(rInt int) string {
 func testAccInstanceConfig(rInt int) string {
 func testAccInstanceConfigWithUserDataBase64(rInt int) string {
-func testAccInstanceConfigDisableAPITermination(val bool) string {
-func testAccInstanceConfigPlacementGroup(rStr string) string {
+func testAccInstanceConfigSourceDestEnable(rName string) string {
+func testAccInstanceConfigSourceDestDisable(rName string) string {
+func testAccInstanceConfigDisableAPITermination(rName string, val bool) string {
+func testAccInstanceConfigVPC(rName string) string {
+func testAccInstanceConfigPlacementGroup(rName string) string {
+func testAccInstanceConfigIpv6ErrorConfig(rName string) string {
+func testAccInstanceConfigIpv6Support(rName string) string {
+func testAccInstanceConfigIpv6SupportWithIpv4(rName string) string {
 func testAccInstanceConfigWithoutInstanceProfile(rName string) string {
 func testAccInstanceConfigWithInstanceProfile(rName string) string {
-func testAccInstanceConfigKeyPair(keyPairName string) string {
-func testAccInstanceConfig_associatePublic_defaultPrivate(rInt int) string {
-func testAccInstanceConfig_associatePublic_defaultPublic(rInt int) string {
-func testAccInstanceConfig_associatePublic_explicitPublic(rInt int) string {
-func testAccInstanceConfig_associatePublic_explicitPrivate(rInt int) string {
-func testAccInstanceConfig_associatePublic_overridePublic(rInt int) string {
-func testAccInstanceConfig_associatePublic_overridePrivate(rInt int) string {
-func testAccInstanceConfig_getPasswordData(val bool, rInt int) string {
+func testAccInstanceConfigPrivateIP(rName string) string {
+func testAccInstanceConfigAssociatePublicIPAndPrivateIP(rName string) string {
+func testAccInstanceConfigKeyPair(rName string) string {
+func testAccInstanceConfigRootBlockDeviceMismatch(rName string) string {
+func testAccInstanceConfigForceNewAndTagsDrift(rName string) string {
+func testAccInstanceConfigForceNewAndTagsDrift_Update(rName string) string {
+func testAccInstanceConfigPrimaryNetworkInterface(rName string) string {
+func testAccInstanceConfigPrimaryNetworkInterfaceSourceDestCheck(rName string) string {
+func testAccInstanceConfigAddSecondaryNetworkInterfaceBefore(rName string) string {
+func testAccInstanceConfigAddSecondaryNetworkInterfaceAfter(rName string) string {
+func testAccInstanceConfigAddSecurityGroupBefore(rName string) string {
+func testAccInstanceConfigAddSecurityGroupAfter(rName string) string {
+func testAccInstanceConfig_associatePublic_defaultPrivate(rName string) string {
+func testAccInstanceConfig_associatePublic_defaultPublic(rName string) string {
+func testAccInstanceConfig_associatePublic_explicitPublic(rName string) string {
+func testAccInstanceConfig_associatePublic_explicitPrivate(rName string) string {
+func testAccInstanceConfig_associatePublic_overridePublic(rName string) string {
+func testAccInstanceConfig_associatePublic_overridePrivate(rName string) string {
+func testAccInstanceConfig_getPasswordData(rName string, val bool) string {
 func testAccInstanceConfig_CreditSpecification_Empty_NonBurstable(rName string) string {
 func testAccInstanceConfig_CreditSpecification_Unspecified_NonBurstable(rName string) string {
-func testAccInstanceConfig_creditSpecification_unspecified(rInt int) string {
-func testAccInstanceConfig_creditSpecification_unspecified_t3(rInt int) string {
-func testAccInstanceConfig_creditSpecification_standardCpuCredits(rInt int) string {
-func testAccInstanceConfig_creditSpecification_standardCpuCredits_t3(rInt int) string {
-func testAccInstanceConfig_creditSpecification_unlimitedCpuCredits(rInt int) string {
-func testAccInstanceConfig_creditSpecification_unlimitedCpuCredits_t3(rInt int) string {
-func testAccInstanceConfig_creditSpecification_isNotAppliedToNonBurstable(rInt int) string {
-func testAccInstanceConfig_creditSpecification_unknownCpuCredits(rInt int, instanceType string) string {
-func testAccInstanceConfig_UserData_Base(rInt int) string {
-func testAccInstanceConfig_UserData_Unspecified(rInt int) string {
-func testAccInstanceConfig_UserData_EmptyString(rInt int) string {
+func testAccInstanceConfig_creditSpecification_unspecified(rName string) string {
+func testAccInstanceConfig_creditSpecification_unspecified_t3(rName string) string {
+func testAccInstanceConfig_creditSpecification_standardCpuCredits(rName string) string {
+func testAccInstanceConfig_creditSpecification_standardCpuCredits_t3(rName string) string {
+func testAccInstanceConfig_creditSpecification_unlimitedCpuCredits(rName string) string {
+func testAccInstanceConfig_creditSpecification_unlimitedCpuCredits_t3(rName string) string {
+func testAccInstanceConfig_creditSpecification_isNotAppliedToNonBurstable(rName string) string {
+func testAccInstanceConfig_creditSpecification_unknownCpuCredits(rName, instanceType string) string {
+func testAccInstanceConfig_UserData_Unspecified(rName string) string {
+func testAccInstanceConfig_UserData_EmptyString(rName string) string {
+func testAccLatestAmazonLinuxHvmEbsAmiConfig() string {
+func testAccLatestAmazonLinuxPvEbsAmiConfig() string {
+func testAccLatestWindowsServer2016CoreAmiConfig() string {
+func testAccAwsInstanceVpcConfig(rName string, mapPublicIpOnLaunch bool) string {
+func testAccAwsInstanceVpcSecurityGroupConfig(rName string) string {
+func testAccAwsInstanceVpcIpv6Config(rName string) string {
 func testAccAWSIotPolicyAttachmentConfig(policyName string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate1(policyName, policyName2 string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate2(policyName2 string) string {

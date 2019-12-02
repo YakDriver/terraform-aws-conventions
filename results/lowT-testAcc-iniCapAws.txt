@@ -116,6 +116,9 @@ func testAccAwsIamInstanceProfileConfig(
 func testAccAwsIamInstanceProfileConfigWithoutRole(
 func testAccAwsIamRolePolicyConfig(
 func testAccAwsIamUserPolicyConfig(
+func testAccAwsInstanceVpcConfig(
+func testAccAwsInstanceVpcSecurityGroupConfig(
+func testAccAwsInstanceVpcIpv6Config(
 func testAccAwsLambdaAliasConfig(
 func testAccAwsLambdaAliasConfigWithRoutingConfig(
 func testAccAwsInvokeLambdaFunction(
