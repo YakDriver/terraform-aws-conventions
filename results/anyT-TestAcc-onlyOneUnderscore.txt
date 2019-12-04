@@ -1589,6 +1589,9 @@ func testAccAWSEksClusterConfig_Base(
 func testAccAWSEksClusterConfig_Required(
 func testAccAWSEksClusterConfig_Version(
 func testAccAWSEksClusterConfig_Logging(
+func TestAccAWSEksFargateProfile_basic(
+func TestAccAWSEksFargateProfile_disappears(
+func TestAccAWSEksFargateProfile_Tags(
 func TestAccAWSEksNodeGroup_basic(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
@@ -2208,6 +2211,7 @@ func testAccAWSLambdaEventSourceMappingConfigUpdate_kinesis(
 func testAccAWSLambdaEventSourceMappingConfig_sqs(
 func testAccAWSLambdaEventSourceMappingConfigUpdate_sqs(
 func TestAccAWSLambdaFunction_basic(
+func TestAccAWSLambdaFunction_disappears(
 func TestAccAWSLambdaFunction_concurrency(
 func TestAccAWSLambdaFunction_concurrencyCycle(
 func TestAccAWSLambdaFunction_updateRuntime(
@@ -2251,6 +2255,8 @@ func testAccAWSLambdaPermissionConfig_multiplePermsModified(
 func testAccAWSLambdaPermissionConfig_withS3(
 func testAccAWSLambdaPermissionConfig_withSNS(
 func testAccAWSLambdaPermissionConfig_withIAMRole(
+func TestAccAWSLambdaProvisionedConcurrencyConfig_basic(
+func TestAccAWSLambdaProvisionedConcurrencyConfig_ProvisionedConcurrentExecutions(
 func TestAccAWSLaunchConfiguration_basic(
 func TestAccAWSLaunchConfiguration_withBlockDevices(
 func TestAccAWSLaunchConfiguration_updateRootBlockDevice(
@@ -2856,8 +2862,7 @@ func TestAccAWSRoute53Zone_Comment(
 func TestAccAWSRoute53Zone_DelegationSetID(
 func TestAccAWSRoute53Zone_ForceDestroy(
 func TestAccAWSRoute53Zone_Tags(
-func TestAccAWSRouteTableAssociation_basic(
-func TestAccAWSRouteTableAssociation_replace(
+func TestAccAWSRouteTableAssociation_disappears(
 func TestAccAWSRouteTable_basic(
 func TestAccAWSRouteTable_instance(
 func TestAccAWSRouteTable_ipv6(

@@ -641,6 +641,11 @@ func testAccAWSEFSMountTargetConfig(ct string) string {
 func testAccAWSEFSMountTargetConfigModified(ct string) string {
 func testAccAWSEksClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEksFargateProfileConfigBase(rName string) string {
+func testAccAWSEksFargateProfileConfigFargateProfileName(rName string) string {
+func testAccAWSEksFargateProfileConfigSelectorLabels1(rName, labelKey1, labelValue1 string) string {
+func testAccAWSEksFargateProfileConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSEksFargateProfileConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEksNodeGroupConfigBase(rName string) string {
 func testAccAWSEksNodeGroupConfigNodeGroupName(rName string) string {
 func testAccAWSEksNodeGroupConfigAmiType(rName, amiType string) string {
@@ -918,6 +923,10 @@ func testAccAWSLambdaConfigPython38Runtime(funcName, policyName, roleName, sgNam
 func testAccAWSLambdaConfigRuby25Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaPermissionConfig(funcName, roleName string) string {
 func testAccAWSLambdaPermissionConfigStatementIdDuplicate(rName string) string {
+func testAccAWSLambdaProvisionedConcurrencyConfigBase(rName string) string {
+func testAccAWSLambdaProvisionedConcurrencyConfigProvisionedConcurrentExecutions(rName string, provisionedConcurrentExecutions int) string {
+func testAccAWSLambdaProvisionedConcurrencyConfigQualifierAliasName(rName string) string {
+func testAccAWSLambdaProvisionedConcurrencyConfigQualifierFunctionVersion(rName string) string {
 func testAccAWSLaunchConfigurationConfigWithRootBlockDevice(rInt int) string {
 func testAccAWSLaunchConfigurationConfigWithEncryptedRootBlockDevice(rInt int) string {
 func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceUpdated(rInt int) string {

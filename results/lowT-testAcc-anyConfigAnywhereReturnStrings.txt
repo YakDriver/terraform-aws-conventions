@@ -1242,6 +1242,11 @@ func testAccAWSEksClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValu
 func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(rName string) string {
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(rName string, endpointPrivateAccess bool) string {
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(rName string, endpointPublicAccess bool) string {
+func testAccAWSEksFargateProfileConfigBase(rName string) string {
+func testAccAWSEksFargateProfileConfigFargateProfileName(rName string) string {
+func testAccAWSEksFargateProfileConfigSelectorLabels1(rName, labelKey1, labelValue1 string) string {
+func testAccAWSEksFargateProfileConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSEksFargateProfileConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEksNodeGroupConfigBase(rName string) string {
 func testAccAWSEksNodeGroupConfigNodeGroupName(rName string) string {
 func testAccAWSEksNodeGroupConfigAmiType(rName, amiType string) string {
@@ -1734,6 +1739,10 @@ func testAccAWSLambdaPermissionConfig_multiplePermsModified(funcName, roleName s
 func testAccAWSLambdaPermissionConfig_withS3(bucketName, funcName, roleName string) string {
 func testAccAWSLambdaPermissionConfig_withSNS(topicName, funcName, roleName string) string {
 func testAccAWSLambdaPermissionConfig_withIAMRole(funcName, roleName string) string {
+func testAccAWSLambdaProvisionedConcurrencyConfigBase(rName string) string {
+func testAccAWSLambdaProvisionedConcurrencyConfigProvisionedConcurrentExecutions(rName string, provisionedConcurrentExecutions int) string {
+func testAccAWSLambdaProvisionedConcurrencyConfigQualifierAliasName(rName string) string {
+func testAccAWSLambdaProvisionedConcurrencyConfigQualifierFunctionVersion(rName string) string {
 func testAccAWSLaunchConfigurationConfig_ami() string {
 func testAccAWSLaunchConfigurationConfigWithRootBlockDevice(rInt int) string {
 func testAccAWSLaunchConfigurationConfigWithEncryptedRootBlockDevice(rInt int) string {
