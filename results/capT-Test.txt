@@ -1863,6 +1863,7 @@ func TestAccAWSIAMRolePolicy_disappears(
 func TestAccAWSIAMRolePolicy_namePrefix(
 func TestAccAWSIAMRolePolicy_generatedName(
 func TestAccAWSIAMRolePolicy_invalidJSON(
+func TestAccAWSIAMRolePolicy_Policy_InvalidResource(
 func TestAccAWSIAMRole_basic(
 func TestAccAWSIAMRole_basicWithDescription(
 func TestAccAWSIAMRole_namePrefix(

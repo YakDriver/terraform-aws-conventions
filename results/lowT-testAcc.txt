@@ -2682,6 +2682,7 @@ func testAccIAMRolePolicyConfig_namePrefix(
 func testAccIAMRolePolicyConfig_generatedName(
 func testAccIAMRolePolicyConfigUpdate(
 func testAccIAMRolePolicyConfig_invalidJSON(
+func testAccIAMRolePolicyConfig_Policy_InvalidResource(
 func testAccCheckAWSRoleDestroy(
 func testAccCheckAWSRoleExists(
 func testAccCheckAWSRoleDisappears(

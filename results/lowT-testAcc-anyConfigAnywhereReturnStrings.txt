@@ -1538,6 +1538,7 @@ func testAccIAMRolePolicyConfig_namePrefix(role, policyAction string) string {
 func testAccIAMRolePolicyConfig_generatedName(role, policyAction string) string {
 func testAccIAMRolePolicyConfigUpdate(role, policy1, policy2 string) string {
 func testAccIAMRolePolicyConfig_invalidJSON(role string) string {
+func testAccIAMRolePolicyConfig_Policy_InvalidResource(rName string) string {
 func testAccCheckIAMRoleConfig_MaxSessionDuration(rName string, maxSessionDuration int) string {
 func testAccCheckIAMRoleConfig_PermissionsBoundary(rName, permissionsBoundary string) string {
 func testAccAWSIAMRoleConfig(rName string) string {

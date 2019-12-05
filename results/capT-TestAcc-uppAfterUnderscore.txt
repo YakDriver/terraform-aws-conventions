@@ -689,6 +689,7 @@ func TestAccAWSGlueWorkflow_Description(
 func TestAccAWSIAMPolicyAttachment_Groups_RenamedGroup(
 func TestAccAWSIAMPolicyAttachment_Roles_RenamedRole(
 func TestAccAWSIAMPolicyAttachment_Users_RenamedUser(
+func TestAccAWSIAMRolePolicy_Policy_InvalidResource(
 func TestAccAWSIAMRole_MaxSessionDuration(
 func TestAccAWSIAMRole_PermissionsBoundary(
 func TestAccAWSIAMServerCertificate_Path(
