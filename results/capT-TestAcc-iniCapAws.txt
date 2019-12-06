@@ -139,3 +139,4 @@ func TestAccAwsSesDomainIdentityVerification_timeout(
 func TestAccAwsSesDomainIdentityVerification_nonexistent(
 func TestAccAwsSESIdentityNotificationTopic_basic(
 func TestAccAwsVpcIpv4CidrBlockAssociation_basic(
+func TestAccAwsWorkspacesIpGroup_basic(
