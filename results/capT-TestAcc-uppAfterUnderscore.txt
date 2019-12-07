@@ -780,6 +780,7 @@ func TestAccAWSLB_NLB_AccessLogs(
 func TestAccAWSLB_NLB_AccessLogs_Prefix(
 func TestAccAWSLightsailInstance_Name(
 func TestAccAWSLightsailInstance_Tags(
+func TestAccAWSMediaConvertQueue_ReservationPlanSettings(
 func TestAccAWSMqBroker_EncryptionOptions_KmsKeyId(
 func TestAccAWSMqBroker_EncryptionOptions_UseAwsOwnedKey_Disabled(
 func TestAccAWSMqBroker_EncryptionOptions_UseAwsOwnedKey_Enabled(

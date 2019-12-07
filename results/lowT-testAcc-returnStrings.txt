@@ -384,6 +384,8 @@ func testAccAWSApiGatewayUsagePlanKeyBasicConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanKeyBasicUpdatedConfig(rName string) string {
 func testAccAWSAPIGatewayUsagePlanConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanBasicConfig(rName string) string {
+func testAccAWSApiGatewayUsagePlanBasicTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSApiGatewayUsagePlanBasicTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSApiGatewayUsagePlanDescriptionConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanDescriptionUpdatedConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanProductCodeConfig(rName string) string {
@@ -2019,6 +2021,27 @@ func testAccAWSLBListenerRuleConfig_priorityInUse(lbName, targetGroupName string
 func testAccAWSLBListenerRuleConfig_cognito(rName, key, certificate string) string {
 func testAccAWSLBListenerRuleConfig_oidc(rName, key, certificate string) string {
 func testAccAWSLBListenerRuleConfig_Action_Order(rName, key, certificate string) string {
+func testAccAWSLBListenerRuleConfig_condition_error(condition string) string {
+func testAccAWSLBListenerRuleConfig_conditionAttributesCount_empty() string {
+func testAccAWSLBListenerRuleConfig_conditionAttributesCount_field() string {
+func testAccAWSLBListenerRuleConfig_conditionAttributesCount_values() string {
+func testAccAWSLBListenerRuleConfig_conditionAttributesCount_http_header() string {
+func testAccAWSLBListenerRuleConfig_conditionAttributesCount_http_request_method() string {
+func testAccAWSLBListenerRuleConfig_conditionAttributesCount_path_pattern() string {
+func testAccAWSLBListenerRuleConfig_conditionAttributesCount_query_string() string {
+func testAccAWSLBListenerRuleConfig_conditionAttributesCount_source_ip() string {
+func testAccAWSLBListenerRuleConfig_conditionAttributesCount_classic() string {
+func testAccAWSLBListenerRuleConfig_condition_base(condition, name, lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionHostHeader(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionHostHeader_deprecated(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionHttpHeader(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionHttpHeader_invalid() string {
+func testAccAWSLBListenerRuleConfig_conditionHttpRequestMethod(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionPathPattern(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionPathPattern_deprecated(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionQueryString(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionSourceIp(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionMultiple(lbName string) string {
 func testAccAWSLBListenerConfig_basic(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfig_basicUdp(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
@@ -2102,6 +2125,11 @@ func testAccAWSMacieS3BucketAssociationConfig_basic(randInt int) string {
 func testAccAWSMacieS3BucketAssociationConfig_basicOneTime(randInt int) string {
 func testAccAWSMacieS3BucketAssociationConfig_accountIdAndPrefix(randInt int) string {
 func testAccAWSMacieS3BucketAssociationConfig_accountIdAndPrefixOneTime(randInt int) string {
+func testAccMediaConvertQueueConfig_Basic(rName string) string {
+func testAccMediaConvertQueueConfig_withStatus(rName, status string) string {
+func testAccMediaConvertQueueConfig_withDescription(rName, description string) string {
+func testAccMediaConvertQueueConfig_withTags(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccMediaConvertQueueConfig_ReservedQueue(rName, commitment, renewalType string, reservedSlots int) string {
 func testAccMediaPackageChannelConfig(rName string) string {
 func testAccMediaPackageChannelConfigDescription(rName, description string) string {
 func testAccMediaPackageChannelConfigWithTags(rName, key, value string) string {
