@@ -850,6 +850,7 @@ func TestAccAWSCodeBuildProject_EncryptionKey(
 func TestAccAWSCodeBuildProject_Tags(
 func TestAccAWSCodeBuildProject_VpcConfig(
 func TestAccAWSCodeBuildProject_WindowsContainer(
+func TestAccAWSCodeBuildProject_ARMContainer(
 func TestAccAWSCodeBuildProject_SecondaryArtifacts(
 func testAccAWSCodeBuildProjectConfig_basic(
 func testAccAWSCodebuildProjectConfig_BadgeEnabled(
@@ -862,6 +863,7 @@ func testAccAWSCodeBuildProjectConfig_Tags(
 func testAccAWSCodeBuildProjectConfig_VpcConfig1(
 func testAccAWSCodeBuildProjectConfig_VpcConfig2(
 func testAccAWSCodeBuildProjectConfig_WindowsContainer(
+func testAccAWSCodeBuildProjectConfig_ARMContainer(
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts(
 func TestAccAWSCodeBuildSourceCredential_Basic(
 func TestAccAWSCodeBuildSourceCredential_BasicAuth(

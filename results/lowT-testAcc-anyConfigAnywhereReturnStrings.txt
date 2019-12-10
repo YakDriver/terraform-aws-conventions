@@ -696,6 +696,7 @@ func testAccAWSCodeBuildProjectConfig_Tags(rName, tagKey, tagValue string) strin
 func testAccAWSCodeBuildProjectConfig_VpcConfig1(rName string) string {
 func testAccAWSCodeBuildProjectConfig_VpcConfig2(rName string) string {
 func testAccAWSCodeBuildProjectConfig_WindowsContainer(rName string) string {
+func testAccAWSCodeBuildProjectConfig_ARMContainer(rName string) string {
 func testAccAWSCodebuildProjectConfig_Artifacts_ArtifactIdentifier(rName string, bName string, artifactIdentifier string) string {
 func testAccAWSCodebuildProjectConfig_Artifacts_EncryptionDisabled(rName string, bName string, encryptionDisabled bool) string {
 func testAccAWSCodebuildProjectConfig_Artifacts_Location(rName, bName string) string {
