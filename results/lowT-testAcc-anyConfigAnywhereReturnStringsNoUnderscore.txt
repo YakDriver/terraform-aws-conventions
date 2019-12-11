@@ -634,6 +634,7 @@ func testAccAWSEcsTaskDefinitionConfigTags1(rName, tag1Key, tag1Value string) st
 func testAccAWSEcsTaskDefinitionConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSEFSFileSystemConfigPagedTags(rInt int) string {
 func testAccAWSEFSFileSystemConfigWithTags(rInt int) string {
+func testAccAWSEFSFileSystemConfigWithMaxTags(rInt int) string {
 func testAccAWSEFSFileSystemConfigWithKmsKey(rInt int) string {
 func testAccAWSEFSFileSystemConfigWithKmsKeyNoEncryption(rInt int) string {
 func testAccAWSEFSFileSystemConfigWithLifecyclePolicy(lpName string, lpVal string) string {
@@ -722,6 +723,7 @@ func testAccAWSEmrClusterConfigUpdatedTags(r int) string {
 func testAccAWSEmrClusterConfigUpdatedRootVolumeSize(r int) string {
 func testAccAWSEmrClusterConfigS3Logging(rInt int) string {
 func testAccAWSEmrClusterConfigCustomAmiID(r int) string {
+func testAccAWSEmrClusterConfigStepConcurrencyLevel(rName string, stepConcurrencyLevel int) string {
 func testAccAwsFsxLustreFileSystemConfigBase() string {
 func testAccAwsFsxLustreFileSystemConfigExportPath(rName, exportPrefix string) string {
 func testAccAwsFsxLustreFileSystemConfigImportPath(rName, importPrefix string) string {

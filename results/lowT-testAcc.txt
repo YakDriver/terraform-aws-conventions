@@ -2119,11 +2119,11 @@ func testAccAWSEcsTaskDefinitionImportStateIdFunc(
 func testAccCheckEfsFileSystemDestroy(
 func testAccCheckEfsFileSystem(
 func testAccCheckEfsCreationToken(
-func testAccCheckEfsFileSystemTags(
 func testAccCheckEfsFileSystemPerformanceMode(
 func testAccCheckEfsFileSystemLifecyclePolicy(
 func testAccAWSEFSFileSystemConfigPagedTags(
 func testAccAWSEFSFileSystemConfigWithTags(
+func testAccAWSEFSFileSystemConfigWithMaxTags(
 func testAccAWSEFSFileSystemConfigWithKmsKey(
 func testAccAWSEFSFileSystemConfigWithKmsKeyNoEncryption(
 func testAccAWSEFSFileSystemConfig_ThroughputMode(
@@ -2373,6 +2373,7 @@ func testAccAWSEmrClusterConfigUpdatedTags(
 func testAccAWSEmrClusterConfigUpdatedRootVolumeSize(
 func testAccAWSEmrClusterConfigS3Logging(
 func testAccAWSEmrClusterConfigCustomAmiID(
+func testAccAWSEmrClusterConfigStepConcurrencyLevel(
 func testAccCheckAWSEmrInstanceGroupDestroy(
 func testAccCheckAWSEmrInstanceGroupExists(
 func testAccAWSEMRInstanceGroupResourceImportStateIdFunc(

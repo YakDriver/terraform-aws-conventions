@@ -3677,11 +3677,11 @@ func TestAccAWSEFSFileSystem_lifecyclePolicy_removal(
 func testAccCheckEfsFileSystemDestroy(
 func testAccCheckEfsFileSystem(
 func testAccCheckEfsCreationToken(
-func testAccCheckEfsFileSystemTags(
 func testAccCheckEfsFileSystemPerformanceMode(
 func testAccCheckEfsFileSystemLifecyclePolicy(
 func testAccAWSEFSFileSystemConfigPagedTags(
 func testAccAWSEFSFileSystemConfigWithTags(
+func testAccAWSEFSFileSystemConfigWithMaxTags(
 func testAccAWSEFSFileSystemConfigWithKmsKey(
 func testAccAWSEFSFileSystemConfigWithKmsKeyNoEncryption(
 func testAccAWSEFSFileSystemConfig_ThroughputMode(
@@ -4116,6 +4116,7 @@ func TestAccAWSEMRCluster_visibleToAllUsers(
 func TestAccAWSEMRCluster_s3Logging(
 func TestAccAWSEMRCluster_tags(
 func TestAccAWSEMRCluster_root_volume_size(
+func TestAccAWSEMRCluster_step_concurrency_level(
 func TestAccAWSEMRCluster_custom_ami_id(
 func testAccCheck_bootstrap_order(
 func testAccCheckAWSEmrDestroy(
@@ -4161,6 +4162,7 @@ func testAccAWSEmrClusterConfigUpdatedTags(
 func testAccAWSEmrClusterConfigUpdatedRootVolumeSize(
 func testAccAWSEmrClusterConfigS3Logging(
 func testAccAWSEmrClusterConfigCustomAmiID(
+func testAccAWSEmrClusterConfigStepConcurrencyLevel(
 func TestAccAWSEMRInstanceGroup_basic(
 func TestAccAWSEMRInstanceGroup_BidPrice(
 func TestAccAWSEMRInstanceGroup_ConfigurationsJson(
@@ -8555,12 +8557,8 @@ func TestDiffDocDBTags(
 func TestIgnoringTagsDocDB(
 func TestDiffDXTags(
 func TestIgnoringTagsDX(
-func TestDiffDynamoDbTags(
-func TestIgnoringTagsDynamoDb(
 func TestDiffelasticacheTags(
 func TestIgnoringTagsEC(
-func TestDiffEFSTags(
-func TestIgnoringTagsEFS(
 func TestDiffElasticsearchServiceTags(
 func TestIgnoringTagsElasticsearchService(
 func testAccCheckElasticsearchServiceTags(
@@ -8575,8 +8573,6 @@ func TestDiffIAMTags(
 func TestIgnoringTagsIAM(
 func TestDiffKinesisAnalyticsTags(
 func TestIgnoringTagsKinesisAnalytics(
-func TestDiffKinesisFirehoseTags(
-func TestIgnoringTagsKinesisFirehose(
 func TestDiffTagsKinesis(
 func TestIgnoringTagsKinesis(
 func TestDiffLightsailTags(
