@@ -1206,8 +1206,15 @@ func testAccAWSEcrRepositoryConfig_tags(rName string) string {
 func testAccAWSEcrRepositoryConfig_tagsChanged(rName string) string {
 func testAccAWSEcrRepositoryConfig_immutability(rName string) string {
 func testAccAWSEcrRepositoryConfig_image_scanning_configuration(rName string, scanOnPush bool) string {
+func testAccAWSEcsCapacityProviderConfigBase(rName string) string {
+func testAccAWSEcsCapacityProviderConfig(rName string) string {
+func testAccAWSEcsCapacityProviderConfigManagedScaling(rName string) string {
+func testAccAWSEcsCapacityProviderConfigManagedScalingPartial(rName string) string {
+func testAccAWSEcsCapacityProviderConfigTags1(rName, tag1Key, tag1Value string) string {
+func testAccAWSEcsCapacityProviderConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSEcsClusterConfig(rName string) string {
 func testAccAWSEcsClusterConfigTags1(rName, tag1Key, tag1Value string) string {
+func testAccAWSEcsClusterCapacityProviderConfig(rName string) string {
 func testAccAWSEcsClusterConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSEcsClusterConfigContainerInsights(rName string) string {
 func testAccAWSEcsClusterConfigContainerInsightsDisable(rName string) string {
@@ -2378,9 +2385,9 @@ func testAccAWSSecurityGroupConfigIngressConfigModeBlocks() string {
 func testAccAWSSecurityGroupConfigIngressConfigModeNoBlocks() string {
 func testAccAWSSecurityGroupConfigIngressConfigModeZeroed() string {
 func testAccAWSSecurityHubAccountConfig() string {
-func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic1(name string) string {
-func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic2(name string) string {
-func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic3(name string) string {
+func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
+func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccServiceDiscoveryHttpNamespaceConfig(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigDescription(rName, description string) string {
 func testAccServiceDiscoveryPrivateDnsNamespaceConfig(rName string) string {

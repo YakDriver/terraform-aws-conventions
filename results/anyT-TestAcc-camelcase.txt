@@ -518,6 +518,7 @@ func TestAccAWSEcsCluster_containerInsights(
 func TestAccAWSEcsService_withARN(
 func TestAccAWSEcsService_basicImport(
 func TestAccAWSEcsService_withUnnormalizedPlacementStrategy(
+func TestAccAWSEcsService_withCapacityProviderStrategy(
 func TestAccAWSEcsService_withFamilyAndRevision(
 func TestAccAWSEcsService_withRenamedCluster(
 func TestAccAWSEcsService_healthCheckGracePeriodSeconds(

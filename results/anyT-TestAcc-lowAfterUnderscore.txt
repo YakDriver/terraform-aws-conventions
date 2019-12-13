@@ -1189,6 +1189,7 @@ func testAccAWSEcrRepositoryConfig_tags(
 func testAccAWSEcrRepositoryConfig_tagsChanged(
 func testAccAWSEcrRepositoryConfig_immutability(
 func testAccAWSEcrRepositoryConfig_image_scanning_configuration(
+func TestAccAWSEcsCapacityProvider_basic(
 func TestAccAWSEcsCluster_basic(
 func TestAccAWSEcsCluster_disappears(
 func TestAccAWSEcsCluster_containerInsights(
@@ -1196,6 +1197,7 @@ func TestAccAWSEcsService_withARN(
 func TestAccAWSEcsService_basicImport(
 func TestAccAWSEcsService_disappears(
 func TestAccAWSEcsService_withUnnormalizedPlacementStrategy(
+func TestAccAWSEcsService_withCapacityProviderStrategy(
 func TestAccAWSEcsService_withFamilyAndRevision(
 func TestAccAWSEcsService_withRenamedCluster(
 func TestAccAWSEcsService_healthCheckGracePeriodSeconds(
