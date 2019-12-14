@@ -810,6 +810,7 @@ func TestAccAWSEcsCapacityProvider_ManagedScaling(
 func TestAccAWSEcsCapacityProvider_ManagedScalingPartial(
 func TestAccAWSEcsCapacityProvider_Tags(
 func TestAccAWSEcsCluster_Tags(
+func TestAccAWSEcsCluster_SingleCapacityProvider(
 func TestAccAWSEcsCluster_CapacityProviders(
 func TestAccAWSEcsCluster_CapacityProvidersUpdate(
 func TestAccAWSEcsService_Tags(

@@ -308,6 +308,9 @@ func testAccAWSALBTargetGroupConfig_missing_port(
 func testAccAWSALBTargetGroupConfig_missing_protocol(
 func testAccAWSALBTargetGroupConfig_missing_vpc(
 func TestAccAWSAMICopy_basic(
+func TestAccAWSAMICopy_tags(
+func TestAccAWSAMIFromInstance_basic(
+func TestAccAWSAMIFromInstance_tags(
 func TestAccAWSAMI_basic(
 func TestAccAWSAMI_tags(
 func TestAccAWSAMI_snapshotSize(
@@ -1198,6 +1201,7 @@ func TestAccAWSEcsService_basicImport(
 func TestAccAWSEcsService_disappears(
 func TestAccAWSEcsService_withUnnormalizedPlacementStrategy(
 func TestAccAWSEcsService_withCapacityProviderStrategy(
+func TestAccAWSEcsService_withMultipleCapacityProviderStrategies(
 func TestAccAWSEcsService_withFamilyAndRevision(
 func TestAccAWSEcsService_withRenamedCluster(
 func TestAccAWSEcsService_healthCheckGracePeriodSeconds(

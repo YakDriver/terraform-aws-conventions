@@ -244,10 +244,15 @@ func testAccAWSALBTargetGroupConfig_missing_port(targetGroupName string) string 
 func testAccAWSALBTargetGroupConfig_missing_protocol(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_missing_vpc(targetGroupName string) string {
 func testAccAWSAMICopyConfigBase() string {
+func testAccAWSAMICopyConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAMICopyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAMICopyConfig(rName string) string {
 func testAccAWSAMICopyConfigDescription(rName, description string) string {
 func testAccAWSAMICopyConfigENASupport(rName string) string {
-func testAccAWSAMIFromInstanceConfig(rInt int) string {
+func testAccAWSAMIFromInstanceConfigBase() string {
+func testAccAWSAMIFromInstanceConfig(rName string) string {
+func testAccAWSAMIFromInstanceConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAMIFromInstanceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAMILaunchPermissionConfig(rName string) string {
 func testAccAmiConfig_base(rName string, size int) string {
 func testAccAmiConfig_basic(rName string, size int) string {

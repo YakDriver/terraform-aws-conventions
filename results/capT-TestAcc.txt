@@ -356,7 +356,9 @@ func TestAccAWSALBTargetGroup_missingPortProtocolVpc(
 func TestAccAWSAMICopy_basic(
 func TestAccAWSAMICopy_Description(
 func TestAccAWSAMICopy_EnaSupport(
-func TestAccAWSAMIFromInstance(
+func TestAccAWSAMICopy_tags(
+func TestAccAWSAMIFromInstance_basic(
+func TestAccAWSAMIFromInstance_tags(
 func TestAccAWSAMILaunchPermission_Basic(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission_Public(
@@ -1313,6 +1315,7 @@ func TestAccAWSEcsCapacityProvider_Tags(
 func TestAccAWSEcsCluster_basic(
 func TestAccAWSEcsCluster_disappears(
 func TestAccAWSEcsCluster_Tags(
+func TestAccAWSEcsCluster_SingleCapacityProvider(
 func TestAccAWSEcsCluster_CapacityProviders(
 func TestAccAWSEcsCluster_CapacityProvidersUpdate(
 func TestAccAWSEcsCluster_containerInsights(
@@ -1321,6 +1324,7 @@ func TestAccAWSEcsService_basicImport(
 func TestAccAWSEcsService_disappears(
 func TestAccAWSEcsService_withUnnormalizedPlacementStrategy(
 func TestAccAWSEcsService_withCapacityProviderStrategy(
+func TestAccAWSEcsService_withMultipleCapacityProviderStrategies(
 func TestAccAWSEcsService_withFamilyAndRevision(
 func TestAccAWSEcsService_withRenamedCluster(
 func TestAccAWSEcsService_healthCheckGracePeriodSeconds(

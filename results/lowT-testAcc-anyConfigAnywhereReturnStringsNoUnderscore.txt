@@ -140,10 +140,15 @@ func testAccAcmCertificateConfig(domainName, validationMethod string) string {
 func testAccAcmCertificateConfigPrivateKey(commonName string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfigType(certificateAuthorityType string) string {
 func testAccAWSAMICopyConfigBase() string {
+func testAccAWSAMICopyConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAMICopyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAMICopyConfig(rName string) string {
 func testAccAWSAMICopyConfigDescription(rName, description string) string {
 func testAccAWSAMICopyConfigENASupport(rName string) string {
-func testAccAWSAMIFromInstanceConfig(rInt int) string {
+func testAccAWSAMIFromInstanceConfigBase() string {
+func testAccAWSAMIFromInstanceConfig(rName string) string {
+func testAccAWSAMIFromInstanceConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAMIFromInstanceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAMILaunchPermissionConfig(rName string) string {
 func testAccAmiConfigTags1(rName, tagKey1, tagValue1 string, size int) string {
 func testAccAmiConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string, size int) string {

@@ -370,10 +370,17 @@ func testAccCheckAWSAMICopyExists(
 func testAccCheckAWSAMICopyDestroy(
 func testAccCheckAWSAMICopyAttributes(
 func testAccAWSAMICopyConfigBase(
+func testAccAWSAMICopyConfigTags1(
+func testAccAWSAMICopyConfigTags2(
 func testAccAWSAMICopyConfig(
 func testAccAWSAMICopyConfigDescription(
 func testAccAWSAMICopyConfigENASupport(
+func testAccCheckAWSAMIFromInstanceExists(
+func testAccCheckAWSAMIFromInstanceDestroy(
+func testAccAWSAMIFromInstanceConfigBase(
 func testAccAWSAMIFromInstanceConfig(
+func testAccAWSAMIFromInstanceConfigTags1(
+func testAccAWSAMIFromInstanceConfigTags2(
 func testAccCheckAWSAMILaunchPermissionExists(
 func testAccCheckAWSAMILaunchPermissionDestroy(
 func testAccCheckAWSAMILaunchPermissionAddPublic(
@@ -2058,7 +2065,9 @@ func testAccCheckAWSEcsClusterDisappears(
 func testAccAWSEcsClusterConfig(
 func testAccAWSEcsClusterConfigTags1(
 func testAccAWSEcsClusterCapacityProviderConfig(
+func testAccAWSEcsClusterSingleCapacityProvider(
 func testAccAWSEcsClusterCapacityProviders(
+func testAccAWSEcsClusterCapacityProvidersReOrdered(
 func testAccAWSEcsClusterCapacityProvidersFargate(
 func testAccAWSEcsClusterCapacityProvidersFargateSpot(
 func testAccAWSEcsClusterConfigTags2(
@@ -2071,6 +2080,7 @@ func testAccAWSEcsService(
 func testAccAWSEcsServiceModified(
 func testAccAWSEcsServiceWithInterchangeablePlacementStrategy(
 func testAccAWSEcsServiceWithCapacityProviderStrategy(
+func testAccAWSEcsServiceWithMultipleCapacityProviderStrategies(
 func testAccAWSEcsServiceWithPlacementStrategy(
 func testAccAWSEcsServiceWithRandomPlacementStrategy(
 func testAccAWSEcsServiceWithMultiPlacementStrategy(

@@ -272,10 +272,15 @@ func testAccAWSALBTargetGroupConfig_missing_port(targetGroupName string) string 
 func testAccAWSALBTargetGroupConfig_missing_protocol(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_missing_vpc(targetGroupName string) string {
 func testAccAWSAMICopyConfigBase() string {
+func testAccAWSAMICopyConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAMICopyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAMICopyConfig(rName string) string {
 func testAccAWSAMICopyConfigDescription(rName, description string) string {
 func testAccAWSAMICopyConfigENASupport(rName string) string {
-func testAccAWSAMIFromInstanceConfig(rInt int) string {
+func testAccAWSAMIFromInstanceConfigBase() string {
+func testAccAWSAMIFromInstanceConfig(rName string) string {
+func testAccAWSAMIFromInstanceConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAMIFromInstanceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAMILaunchPermissionConfig(rName string) string {
 func testAccAmiConfig_base(rName string, size int) string {
 func testAccAmiConfig_basic(rName string, size int) string {
@@ -1312,7 +1317,9 @@ func testAccAWSEcsCapacityProviderConfigTags2(rName, tag1Key, tag1Value, tag2Key
 func testAccAWSEcsClusterConfig(rName string) string {
 func testAccAWSEcsClusterConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSEcsClusterCapacityProviderConfig(rName string) string {
-func testAccAWSEcsClusterCapacityProviders(rName, providerName string) string {
+func testAccAWSEcsClusterSingleCapacityProvider(rName, providerName string) string {
+func testAccAWSEcsClusterCapacityProviders(rName string) string {
+func testAccAWSEcsClusterCapacityProvidersReOrdered(rName string) string {
 func testAccAWSEcsClusterCapacityProvidersFargate(rName, providerName string) string {
 func testAccAWSEcsClusterCapacityProvidersFargateSpot(rName, providerName string) string {
 func testAccAWSEcsClusterConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
@@ -1322,6 +1329,7 @@ func testAccAWSEcsService(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceModified(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithInterchangeablePlacementStrategy(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithCapacityProviderStrategy(providerName, clusterName, tdName, svcName string, weight, base int) string {
+func testAccAWSEcsServiceWithMultipleCapacityProviderStrategies(clusterName, tdName, svcName, sgName string) string {
 func testAccAWSEcsServiceWithPlacementStrategy(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithRandomPlacementStrategy(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithMultiPlacementStrategy(clusterName, tdName, svcName string) string {
