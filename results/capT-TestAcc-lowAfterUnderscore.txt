@@ -522,6 +522,7 @@ func TestAccAWSCognitoIdentityPool_openidConnectProviderArns(
 func TestAccAWSCognitoIdentityPool_samlProviderArns(
 func TestAccAWSCognitoIdentityPool_cognitoIdentityProviders(
 func TestAccAWSCognitoIdentityPool_addingNewProviderKeepsOldProvider(
+func TestAccAWSCognitoIdentityPool_tags(
 func TestAccAWSCognitoIdentityProvider_basic(
 func TestAccAWSCognitoResourceServer_basic(
 func TestAccAWSCognitoResourceServer_scope(
@@ -1191,6 +1192,9 @@ func TestAccAWSLambdaEventSourceMapping_sqs_withFunctionName(
 func TestAccAWSLambdaEventSourceMapping_kinesis_disappears(
 func TestAccAWSLambdaEventSourceMapping_sqsDisappears(
 func TestAccAWSLambdaEventSourceMapping_changesInEnabledAreDetected(
+func TestAccAWSLambdaFunctionEventInvokeConfig_basic(
+func TestAccAWSLambdaFunctionEventInvokeConfig_disappears_LambdaFunction(
+func TestAccAWSLambdaFunctionEventInvokeConfig_disappears_LambdaFunctionEventInvokeConfig(
 func TestAccAWSLambdaFunction_basic(
 func TestAccAWSLambdaFunction_disappears(
 func TestAccAWSLambdaFunction_concurrency(
@@ -1552,6 +1556,7 @@ func TestAccAWSResourceGroup_tags(
 func TestAccAWSRoute53DelegationSet_basic(
 func TestAccAWSRoute53DelegationSet_withZones(
 func TestAccAWSRoute53HealthCheck_basic(
+func TestAccAWSRoute53HealthCheck_tags(
 func TestAccAWSRoute53HealthCheck_withSearchString(
 func TestAccAWSRoute53HealthCheck_withChildHealthChecks(
 func TestAccAWSRoute53HealthCheck_withHealthCheckRegions(
@@ -1833,7 +1838,7 @@ func TestAccAWSSSMMaintenanceWindow_multipleUpdates(
 func TestAccAWSSSMParameter_basic(
 func TestAccAWSSSMParameter_disappears(
 func TestAccAWSSSMParameter_overwrite(
-func TestAccAWSSSMParameter_updateTags(
+func TestAccAWSSSMParameter_tags(
 func TestAccAWSSSMParameter_updateDescription(
 func TestAccAWSSSMParameter_changeNameForcesNew(
 func TestAccAWSSSMParameter_fullPath(
@@ -1841,6 +1846,7 @@ func TestAccAWSSSMParameter_secure(
 func TestAccAWSSSMParameter_secure_with_key(
 func TestAccAWSSSMParameter_secure_keyUpdate(
 func TestAccAWSSSMPatchBaseline_basic(
+func TestAccAWSSSMPatchBaseline_tags(
 func TestAccAWSSSMPatchBaseline_disappears(
 func TestAccAWSSSMPatchGroup_basic(
 func TestAccAWSSsmResourceDataSync_basic(

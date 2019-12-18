@@ -217,6 +217,9 @@ func testAccAWSProviderConfigIgnoreTags1(tag1 string) string {
 func testAccAWSProviderConfigIgnoreTags2(tag1, tag2 string) string {
 func testAccAWSProviderConfigRegion(region string) string {
 func testAccProviderConfigAssumeRolePolicy(policy string) string {
+func testAccAWSAccessAnalyzerAnalyzerConfigAnalyzerName(rName string) string {
+func testAccAWSAccessAnalyzerAnalyzerConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAccessAnalyzerAnalyzerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAcmCertificateConfig(domainName, validationMethod string) string {
 func testAccAcmCertificateConfig_privateCert(rName string) string {
 func testAccAcmCertificateConfig_subjectAlternativeNames(domainName, subjectAlternativeNames, validationMethod string) string {
@@ -767,8 +770,8 @@ func testAccAWSCognitoIdentityPoolConfig_samlProviderArnsModified(name string) s
 func testAccAWSCognitoIdentityPoolConfig_cognitoIdentityProviders(name string) string {
 func testAccAWSCognitoIdentityPoolConfig_cognitoIdentityProvidersModified(name string) string {
 func testAccAWSCognitoIdentityPoolConfig_cognitoIdentityProvidersAndOpenidConnectProviderArns(name string) string {
-func testAccAWSCognitoIdentityPoolConfigWithTags(name string) string {
-func testAccAWSCognitoIdentityPoolConfigWithTagsUpdated(name string) string {
+func testAccAWSCognitoIdentityPoolConfig_Tags1(name, tagKey1, tagValue1 string) string {
+func testAccAWSCognitoIdentityPoolConfig_Tags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCognitoIdentityProviderConfig_basic() string {
 func testAccAWSCognitoResourceServerConfig_basic(identifier string, name string, poolName string) string {
 func testAccAWSCognitoResourceServerConfig_scope(identifier string, name string, poolName string) string {
@@ -791,10 +794,10 @@ func testAccAWSCognitoUserPoolConfig_withDeviceConfiguration(name string) string
 func testAccAWSCognitoUserPoolConfig_withDeviceConfigurationUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withEmailVerificationMessage(name, subject, message string) string {
 func testAccAWSCognitoUserPoolConfig_withSmsVerificationMessage(name, authenticationMessage, verificationMessage string) string {
-func testAccAWSCognitoUserPoolConfig_withTags(name string) string {
+func testAccAWSCognitoUserPoolConfig_Tags1(name, tagKey1, tagValue1 string) string {
+func testAccAWSCognitoUserPoolConfig_Tags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCognitoUserPoolConfig_withEmailConfiguration(name, email, arn, account string) string {
 func testAccAWSCognitoUserPoolConfig_withSmsConfiguration(name string) string {
-func testAccAWSCognitoUserPoolConfig_withTagsUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAliasAttributes(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAliasAttributesUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withPasswordPolicy(name string) string {
@@ -1706,6 +1709,18 @@ func testAccAWSLambdaEventSourceMappingConfigKinesisBase(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisStartingPositionTimestamp(rName, startingPositionTimestamp string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBatchWindow(rName string, batchWindow int64) string {
 func testAccAWSLambdaEventSourceMappingConfig_sqs_testWithFunctionName(roleName, policyName, attName, streamName, funcName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigBase(rName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSnsTopic(rName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSqsQueue(rName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnSuccessDestinationSnsTopic(rName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnSuccessDestinationSqsQueue(rName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigFunctionName(rName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigFunctionNameArn(rName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigMaximumEventAgeInSeconds(rName string, maximumEventAgeInSeconds int) string {
+func testAccAWSLambdaFunctionEventInvokeConfigMaximumRetryAttempts(rName string, maximumRetryAttempts int) string {
+func testAccAWSLambdaFunctionEventInvokeConfigQualifierAliasName(rName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigQualifierFunctionVersion(rName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigQualifierLatest(rName string) string {
 func testAccAWSLambdaConfigBasic(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigBasicConcurrency(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigConcurrencyUpdate(funcName, policyName, roleName, sgName string) string {
@@ -2204,6 +2219,8 @@ func testAccAWSResourceGroupConfigTags1(rName, desc, query, tag1Key, tag1Value s
 func testAccAWSResourceGroupConfigTags2(rName, desc, query, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccRoute53DelegationSetConfig(refName string) string {
 func testAccRoute53DelegationSetWithZonesConfig(refName, zoneName1, zoneName2 string) string {
+func testAccRoute53HealthCheckConfigTags1(tag1Key, tag1Value string) string {
+func testAccRoute53HealthCheckConfigTags2(tag1Key, tag1Value, tagKey2, tagValue2 string) string {
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(rName string) string {
 func testAccRoute53RecordConfig_allowOverwrite(allowOverwrite bool) string {
 func testAccRoute53RecordConfigAliasS3(rName string) string {
@@ -2544,7 +2561,8 @@ func testAccAWSSSMMaintenanceWindowTaskRunCommandConfigUpdate(rName, comment str
 func testAccAWSSSMMaintenanceWindowTaskStepFunctionConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskConfigTaskParametersMultiple(rName string) string {
 func testAccAWSSSMMaintenanceWindowConfig(rName string) string {
-func testAccAWSSSMMaintenanceWindowConfigTags(rName string) string {
+func testAccAWSSSMMaintenanceWindowConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSSMMaintenanceWindowConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSSMMaintenanceWindowConfigCutoff(rName string, cutoff int) string {
 func testAccAWSSSMMaintenanceWindowConfigDuration(rName string, duration int) string {
 func testAccAWSSSMMaintenanceWindowConfigEnabled(rName string, enabled bool) string {
@@ -2555,12 +2573,15 @@ func testAccAWSSSMMaintenanceWindowConfigScheduleTimezone(rName, scheduleTimezon
 func testAccAWSSSMMaintenanceWindowConfigStartDate(rName, startDate string) string {
 func testAccAWSSSMParameterBasicConfig(rName, pType, value string) string {
 func testAccAWSSSMParameterConfigTier(rName, tier string) string {
-func testAccAWSSSMParameterBasicConfigTagsUpdated(rName, pType, value string) string {
+func testAccAWSSSMParameterBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSSMParameterBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSSMParameterBasicConfigOverwrite(rName, pType, value string) string {
 func testAccAWSSSMParameterBasicConfigOverwriteWithoutDescription(rName, pType, value string) string {
 func testAccAWSSSMParameterSecureConfig(rName string, value string) string {
 func testAccAWSSSMParameterSecureConfigWithKey(rName string, value string, keyAlias string) string {
 func testAccAWSSSMPatchBaselineBasicConfig(rName string) string {
+func testAccAWSSSMPatchBaselineBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSSMPatchBaselineBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSSMPatchBaselineBasicConfigUpdated(rName string) string {
 func testAccAWSSSMPatchBaselineConfigWithOperatingSystem(rName string) string {
 func testAccAWSSSMPatchBaselineConfigWithOperatingSystemUpdated(rName string) string {

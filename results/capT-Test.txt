@@ -392,6 +392,7 @@ func TestAccAWSProvider_IgnoreTags_Multiple(
 func TestAccAWSProvider_Region_AwsChina(
 func TestAccAWSProvider_Region_AwsCommercial(
 func TestAccAWSProvider_Region_AwsGovCloudUs(
+func TestAccAWSAccessAnalyzer(
 func TestAccAWSAcmCertificate_emailValidation(
 func TestAccAWSAcmCertificate_dnsValidation(
 func TestAccAWSAcmCertificate_root(
@@ -974,7 +975,7 @@ func TestAccAWSCognitoIdentityPool_openidConnectProviderArns(
 func TestAccAWSCognitoIdentityPool_samlProviderArns(
 func TestAccAWSCognitoIdentityPool_cognitoIdentityProviders(
 func TestAccAWSCognitoIdentityPool_addingNewProviderKeepsOldProvider(
-func TestAccAWSCognitoIdentityPoolWithTags(
+func TestAccAWSCognitoIdentityPool_tags(
 func TestAccAWSCognitoIdentityProvider_basic(
 func TestAccAWSCognitoResourceServer_basic(
 func TestAccAWSCognitoResourceServer_scope(
@@ -1429,6 +1430,7 @@ func TestAccAWSEcsCluster_Tags(
 func TestAccAWSEcsCluster_SingleCapacityProvider(
 func TestAccAWSEcsCluster_CapacityProviders(
 func TestAccAWSEcsCluster_CapacityProvidersUpdate(
+func TestAccAWSEcsCluster_CapacityProvidersNoStrategy(
 func TestAccAWSEcsCluster_containerInsights(
 func TestAccAWSEcsService_withARN(
 func TestAccAWSEcsService_basicImport(
@@ -2124,6 +2126,19 @@ func TestAccAWSLambdaEventSourceMapping_sqsDisappears(
 func TestAccAWSLambdaEventSourceMapping_changesInEnabledAreDetected(
 func TestAccAWSLambdaEventSourceMapping_StartingPositionTimestamp(
 func TestAccAWSLambdaEventSourceMapping_BatchWindow(
+func TestAccAWSLambdaFunctionEventInvokeConfig_basic(
+func TestAccAWSLambdaFunctionEventInvokeConfig_disappears_LambdaFunction(
+func TestAccAWSLambdaFunctionEventInvokeConfig_disappears_LambdaFunctionEventInvokeConfig(
+func TestAccAWSLambdaFunctionEventInvokeConfig_DestinationConfig_OnFailure_Destination(
+func TestAccAWSLambdaFunctionEventInvokeConfig_DestinationConfig_OnSuccess_Destination(
+func TestAccAWSLambdaFunctionEventInvokeConfig_DestinationConfig_Remove(
+func TestAccAWSLambdaFunctionEventInvokeConfig_DestinationConfig_Swap(
+func TestAccAWSLambdaFunctionEventInvokeConfig_FunctionName_Arn(
+func TestAccAWSLambdaFunctionEventInvokeConfig_MaximumEventAgeInSeconds(
+func TestAccAWSLambdaFunctionEventInvokeConfig_MaximumRetryAttempts(
+func TestAccAWSLambdaFunctionEventInvokeConfig_Qualifier_AliasName(
+func TestAccAWSLambdaFunctionEventInvokeConfig_Qualifier_FunctionVersion(
+func TestAccAWSLambdaFunctionEventInvokeConfig_Qualifier_Latest(
 func TestAccAWSLambdaFunction_basic(
 func TestAccAWSLambdaFunction_disappears(
 func TestAccAWSLambdaFunction_concurrency(
@@ -2655,6 +2670,7 @@ func TestAccAWSResourceGroup_tags(
 func TestAccAWSRoute53DelegationSet_basic(
 func TestAccAWSRoute53DelegationSet_withZones(
 func TestAccAWSRoute53HealthCheck_basic(
+func TestAccAWSRoute53HealthCheck_tags(
 func TestAccAWSRoute53HealthCheck_withSearchString(
 func TestAccAWSRoute53HealthCheck_withChildHealthChecks(
 func TestAccAWSRoute53HealthCheck_withHealthCheckRegions(
@@ -3131,7 +3147,7 @@ func TestAccAWSSSMParameter_basic(
 func TestAccAWSSSMParameter_Tier(
 func TestAccAWSSSMParameter_disappears(
 func TestAccAWSSSMParameter_overwrite(
-func TestAccAWSSSMParameter_updateTags(
+func TestAccAWSSSMParameter_tags(
 func TestAccAWSSSMParameter_updateDescription(
 func TestAccAWSSSMParameter_changeNameForcesNew(
 func TestAccAWSSSMParameter_fullPath(
@@ -3140,6 +3156,7 @@ func TestAccAWSSSMParameter_secure_with_key(
 func TestAccAWSSSMParameter_secure_keyUpdate(
 func TestAWSSSMParameterShouldUpdate(
 func TestAccAWSSSMPatchBaseline_basic(
+func TestAccAWSSSMPatchBaseline_tags(
 func TestAccAWSSSMPatchBaseline_disappears(
 func TestAccAWSSSMPatchBaseline_OperatingSystem(
 func TestAccAWSSSMPatchGroup_basic(
@@ -3464,7 +3481,6 @@ func TestDiffCloudWatchTags(
 func TestIgnoringTagsCloudWatch(
 func TestDiffCodePipelineTags(
 func TestIgnoringTagsCodePipeline(
-func TestDiffCognitoTags(
 func TestDaxTagsDiff(
 func TestTagsDaxIgnore(
 func TestDmsTagsToMap(
@@ -3500,16 +3516,8 @@ func TestDiffTagsPinPointApp(
 func TestIgnoringTagsPinPointApp(
 func TestDiffRAMTags(
 func TestIgnoringTagsRAM(
-func TestDiffRDSTags(
-func TestIgnoringTagsRDS(
 func TestDiffRedshiftTags(
 func TestIgnoringTagsRedshift(
-func TestDiffRoute53ResolverTags(
-func TestIgnoringTagsRoute53Resolver(
-func TestDiffTagsR53(
-func TestIgnoringTagsRoute53(
-func TestDiffSSMTags(
-func TestIgnoringTagsSSM(
 func TestDiffTags(
 func TestIgnoringTags(
 func TestTagsMapToHash(
