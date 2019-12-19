@@ -261,6 +261,7 @@ func TestAccAWSCloudWatchMetricAlarm_AlarmActions_SNSTopic(
 func TestAccAWSCloudWatchMetricAlarm_AlarmActions_SWFAction(
 func TestAccAWSCodeBuildProject_BadgeEnabled(
 func TestAccAWSCodeBuildProject_BuildTimeout(
+func TestAccAWSCodeBuildProject_QueuedTimeout(
 func TestAccAWSCodeBuildProject_Cache(
 func TestAccAWSCodeBuildProject_Description(
 func TestAccAWSCodeBuildProject_EncryptionKey(

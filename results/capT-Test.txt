@@ -841,6 +841,7 @@ func TestAccAWSCloudWatchMetricAlarm_tags(
 func TestAccAWSCodeBuildProject_basic(
 func TestAccAWSCodeBuildProject_BadgeEnabled(
 func TestAccAWSCodeBuildProject_BuildTimeout(
+func TestAccAWSCodeBuildProject_QueuedTimeout(
 func TestAccAWSCodeBuildProject_Cache(
 func TestAccAWSCodeBuildProject_Description(
 func TestAccAWSCodeBuildProject_EncryptionKey(
@@ -3444,6 +3445,7 @@ func TestExpandIPPerms_nonVPC(
 func TestExpandListeners(
 func TestExpandListeners_invalid(
 func TestFlattenHealthCheck(
+func TestFlattenOrganizationsOrganizationalUnits(
 func TestExpandStringList(
 func TestExpandStringListEmptyItems(
 func TestExpandParameters(
@@ -3501,8 +3503,6 @@ func TestDiffGenericTags(
 func TestIgnoringTagsGeneric(
 func TestDiffIAMTags(
 func TestIgnoringTagsIAM(
-func TestDiffKinesisAnalyticsTags(
-func TestIgnoringTagsKinesisAnalytics(
 func TestDiffTagsKinesis(
 func TestIgnoringTagsKinesis(
 func TestDiffLightsailTags(

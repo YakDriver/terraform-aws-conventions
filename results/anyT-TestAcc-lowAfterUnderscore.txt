@@ -150,6 +150,7 @@ func TestAccDataSourceAwsNetworkInterface_basic(
 func testAccDataSourceAwsNetworkInterface_basic(
 func TestAccDataSourceAwsNetworkInterface_filters(
 func testAccDataSourceAwsNetworkInterface_filters(
+func testAccDataSourceAwsOrganizationsOrganizationalUnits_basic(
 func testAccDataSourceAwsOrganizationsOrganization_basic(
 func TestAccAWSPartition_basic(
 func TestAccDataSourceAwsPricingProduct_ec2(

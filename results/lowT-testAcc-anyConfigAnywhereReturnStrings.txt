@@ -675,6 +675,7 @@ func testAccAWSCodeBuildProjectConfig_Base_ServiceRole(rName string) string {
 func testAccAWSCodeBuildProjectConfig_basic(rName string) string {
 func testAccAWSCodebuildProjectConfig_BadgeEnabled(rName string, badgeEnabled bool) string {
 func testAccAWSCodeBuildProjectConfig_BuildTimeout(rName string, buildTimeout int) string {
+func testAccAWSCodeBuildProjectConfig_QueuedTimeout(rName string, queuedTimeout int) string {
 func testAccAWSCodeBuildProjectConfig_Cache(rName, cacheLocation, cacheType string) string {
 func testAccAWSCodeBuildProjectConfig_LocalCache(rName, modeType string) string {
 func testAccAWSCodeBuildProjectConfig_Description(rName, description string) string {

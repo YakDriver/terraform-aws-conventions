@@ -62,6 +62,7 @@ const testAccDataSourceAwsKmsCiphertextConfig_validate =
 const testAccDataSourceAwsKmsCiphertextConfig_validate_withContext =
 const testAccDataSourceAwsKmsKeyConfig =
 const testAccAwsKmsSecretDataSourceConfig =
+const testAccDataSourceAwsOrganizationsOrganizationalUnitsConfig =
 const testAccCheckAwsOrganizationResourceOnlyConfig =
 const testAccCheckAwsOrganizationConfig =
 const testAccCheckAwsPartitionConfig_basic =

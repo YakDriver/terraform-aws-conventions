@@ -424,6 +424,7 @@ func TestAccDataSourceAwsNetworkInterface_basic(
 func testAccDataSourceAwsNetworkInterface_basic(
 func TestAccDataSourceAwsNetworkInterface_filters(
 func testAccDataSourceAwsNetworkInterface_filters(
+func testAccDataSourceAwsOrganizationsOrganizationalUnits_basic(
 func testAccDataSourceAwsOrganizationsOrganization_basic(
 func TestAccAWSPartition_basic(
 func testAccCheckAwsPartition(
@@ -2011,6 +2012,7 @@ func testAccAWSCodeBuildGitHubSourceLocationFromEnv(
 func TestAccAWSCodeBuildProject_basic(
 func TestAccAWSCodeBuildProject_BadgeEnabled(
 func TestAccAWSCodeBuildProject_BuildTimeout(
+func TestAccAWSCodeBuildProject_QueuedTimeout(
 func TestAccAWSCodeBuildProject_Cache(
 func TestAccAWSCodeBuildProject_Description(
 func TestAccAWSCodeBuildProject_EncryptionKey(
@@ -2067,6 +2069,7 @@ func testAccAWSCodeBuildProjectConfig_Base_ServiceRole(
 func testAccAWSCodeBuildProjectConfig_basic(
 func testAccAWSCodebuildProjectConfig_BadgeEnabled(
 func testAccAWSCodeBuildProjectConfig_BuildTimeout(
+func testAccAWSCodeBuildProjectConfig_QueuedTimeout(
 func testAccAWSCodeBuildProjectConfig_Cache(
 func testAccAWSCodeBuildProjectConfig_LocalCache(
 func testAccAWSCodeBuildProjectConfig_Description(
@@ -8588,6 +8591,7 @@ func TestExpandIPPerms_nonVPC(
 func TestExpandListeners(
 func TestExpandListeners_invalid(
 func TestFlattenHealthCheck(
+func TestFlattenOrganizationsOrganizationalUnits(
 func TestExpandStringList(
 func TestExpandStringListEmptyItems(
 func TestExpandParameters(
@@ -8646,8 +8650,6 @@ func TestDiffGenericTags(
 func TestIgnoringTagsGeneric(
 func TestDiffIAMTags(
 func TestIgnoringTagsIAM(
-func TestDiffKinesisAnalyticsTags(
-func TestIgnoringTagsKinesisAnalytics(
 func TestDiffTagsKinesis(
 func TestIgnoringTagsKinesis(
 func TestDiffLightsailTags(

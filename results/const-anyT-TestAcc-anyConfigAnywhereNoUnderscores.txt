@@ -43,6 +43,7 @@ const testAccAWSIPRangesConfig =
 const testAccAWSIPRangesConfigUrl =
 const testAccDataSourceAwsKmsKeyConfig =
 const testAccAwsKmsSecretDataSourceConfig =
+const testAccDataSourceAwsOrganizationsOrganizationalUnitsConfig =
 const testAccCheckAwsOrganizationResourceOnlyConfig =
 const testAccCheckAwsOrganizationConfig =
 const testAccDataSourceAwsPrefixListConfig =

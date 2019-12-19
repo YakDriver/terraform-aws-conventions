@@ -381,6 +381,7 @@ func TestAccAWSCloudWatchMetricAlarm_AlarmActions_SNSTopic(
 func TestAccAWSCloudWatchMetricAlarm_AlarmActions_SWFAction(
 func TestAccAWSCodeBuildProject_BadgeEnabled(
 func TestAccAWSCodeBuildProject_BuildTimeout(
+func TestAccAWSCodeBuildProject_QueuedTimeout(
 func TestAccAWSCodeBuildProject_Cache(
 func TestAccAWSCodeBuildProject_Description(
 func TestAccAWSCodeBuildProject_EncryptionKey(
@@ -431,6 +432,7 @@ func testAccAWSCodeBuildProjectConfig_Base_Bucket(
 func testAccAWSCodeBuildProjectConfig_Base_ServiceRole(
 func testAccAWSCodebuildProjectConfig_BadgeEnabled(
 func testAccAWSCodeBuildProjectConfig_BuildTimeout(
+func testAccAWSCodeBuildProjectConfig_QueuedTimeout(
 func testAccAWSCodeBuildProjectConfig_Cache(
 func testAccAWSCodeBuildProjectConfig_LocalCache(
 func testAccAWSCodeBuildProjectConfig_Description(
