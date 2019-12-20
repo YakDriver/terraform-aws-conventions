@@ -2252,6 +2252,7 @@ func TestAccAWSLBListenerRule_basic(
 func TestAccAWSLBListenerRuleBackwardsCompatibility(
 func TestAccAWSLBListenerRule_redirect(
 func TestAccAWSLBListenerRule_fixedResponse(
+func TestAccAWSLBListenerRule_updateFixedResponse(
 func TestAccAWSLBListenerRule_updateRulePriority(
 func TestAccAWSLBListenerRule_changeListenerRuleArnForcesNew(
 func TestAccAWSLBListenerRule_multipleConditionThrowsError(
@@ -2268,9 +2269,12 @@ func TestAccAWSLBListenerRule_conditionHttpHeader_invalid(
 func TestAccAWSLBListenerRule_conditionHttpRequestMethod(
 func TestAccAWSLBListenerRule_conditionPathPattern(
 func TestAccAWSLBListenerRule_conditionPathPattern_deprecated(
+func TestAccAWSLBListenerRule_conditionUpdatePathPattern_deprecated(
 func TestAccAWSLBListenerRule_conditionQueryString(
 func TestAccAWSLBListenerRule_conditionSourceIp(
+func TestAccAWSLBListenerRule_conditionUpdateMixed(
 func TestAccAWSLBListenerRule_conditionMultiple(
+func TestAccAWSLBListenerRule_conditionUpdateMultiple(
 func TestAccAWSLBListener_basic(
 func TestAccAWSLBListener_basicUdp(
 func TestAccAWSLBListener_BackwardsCompatibility(
@@ -3479,8 +3483,6 @@ func TestDiffBeanstalkTags(
 func TestIgnoringTagsBeanstalk(
 func TestDiffCloudWatchEventTags(
 func TestIgnoringTagsCloudWatchEvents(
-func TestDiffCloudWatchTags(
-func TestIgnoringTagsCloudWatch(
 func TestDiffCodePipelineTags(
 func TestIgnoringTagsCodePipeline(
 func TestDaxTagsDiff(
@@ -3505,17 +3507,12 @@ func TestDiffIAMTags(
 func TestIgnoringTagsIAM(
 func TestDiffTagsKinesis(
 func TestIgnoringTagsKinesis(
-func TestDiffLightsailTags(
-func TestDiffMediaStoreTags(
-func TestIgnoringTagsMediaStore(
 func TestDiffNeptuneTags(
 func TestIgnoringTagsNeptune(
 func TestDiffOrganizationsTags(
 func TestIgnoringTagsOrganizations(
 func TestDiffTagsPinPointApp(
 func TestIgnoringTagsPinPointApp(
-func TestDiffRAMTags(
-func TestIgnoringTagsRAM(
 func TestDiffRedshiftTags(
 func TestIgnoringTagsRedshift(
 func TestDiffTags(

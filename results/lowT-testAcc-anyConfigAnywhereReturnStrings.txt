@@ -651,25 +651,24 @@ func testAccAWSCloudwatchLogSubscriptionFilterConfigDestinationArnLambda(rName s
 func testAccAWSCloudwatchLogSubscriptionFilterConfigDistribution(rName, distribution string) string {
 func testAccAWSCloudwatchLogSubscriptionFilterConfigRoleArn1(rName string) string {
 func testAccAWSCloudwatchLogSubscriptionFilterConfigRoleArn2(rName string) string {
-func testAccAWSCloudWatchMetricAlarmConfig(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigDatapointsToAlarm(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigTreatMissingData(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigTreatMissingDataUpdate(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigTreatEvaluateLowSampleCountPercentiles(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigTreatEvaluateLowSampleCountPercentilesUpdated(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigExtendedStatistic(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigMissingStatistic(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigWithExpression(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigWithAnomalyDetectionExpression(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigWithExpressionUpdated(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigWithExpressionWithQueryUpdated(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigWithBadExpression(rInt int) string {
+func testAccAWSCloudWatchMetricAlarmConfig(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigDatapointsToAlarm(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigTreatMissingData(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigTreatMissingDataUpdate(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigTreatEvaluateLowSampleCountPercentiles(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigTreatEvaluateLowSampleCountPercentilesUpdated(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigExtendedStatistic(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigMissingStatistic(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigWithExpression(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigWithAnomalyDetectionExpression(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigWithExpressionUpdated(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigWithExpressionWithQueryUpdated(rName string) string {
+func testAccAWSCloudWatchMetricAlarmConfigWithBadExpression(rName string) string {
 func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsEC2Automate(rName, action string) string {
 func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSNSTopic(rName string) string {
 func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSWFAction(rName string) string {
-func testAccAWSCloudWatchMetricAlarmConfigTags(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigUpdateTags(rInt int) string {
-func testAccAWSCloudWatchMetricAlarmConfigRemoveTags(rInt int) string {
+func testAccAWSCloudWatchMetricAlarmConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCloudWatchMetricAlarmConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCodeBuildProjectConfig_Base_Bucket(rName string) string {
 func testAccAWSCodeBuildProjectConfig_Base_ServiceRole(rName string) string {
 func testAccAWSCodeBuildProjectConfig_basic(rName string) string {
@@ -1816,7 +1815,7 @@ func testAccAWSLBListenerRuleConfig_multipleConditions(lbName, targetGroupName s
 func testAccAWSLBListenerRuleConfig_basic(lbName, targetGroupName string) string {
 func testAccAWSLBListenerRuleConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccAWSLBListenerRuleConfig_redirect(lbName string) string {
-func testAccAWSLBListenerRuleConfig_fixedResponse(lbName string) string {
+func testAccAWSLBListenerRuleConfig_fixedResponse(lbName, response string) string {
 func testAccAWSLBListenerRuleConfig_updateRulePriority(lbName, targetGroupName string) string {
 func testAccAWSLBListenerRuleConfig_changeRuleArn(lbName, targetGroupName string) string {
 func testAccAWSLBListenerRuleConfig_priorityBase(lbName, targetGroupName string) string {
@@ -1848,9 +1847,15 @@ func testAccAWSLBListenerRuleConfig_conditionHttpHeader_invalid() string {
 func testAccAWSLBListenerRuleConfig_conditionHttpRequestMethod(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionPathPattern(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionPathPattern_deprecated(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionPathPattern_deprecatedUpdated(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionPathPattern_migrated(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionQueryString(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionSourceIp(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionMixed(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionMixed_updated(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionMixed_updated2(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionMultiple(lbName string) string {
+func testAccAWSLBListenerRuleConfig_conditionMultiple_updated(lbName string) string {
 func testAccAWSLBListenerConfig_basic(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfig_basicUdp(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
