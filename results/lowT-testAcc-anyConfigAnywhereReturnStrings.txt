@@ -573,6 +573,7 @@ func testAccAWSCloudFormationStackConfig_withParams(stackName string) string {
 func testAccAWSCloudFormationStackConfig_withParams_modified(stackName string) string {
 func testAccAWSCloudFormationStackConfig_templateUrl_withParams(rName, bucketKey, vpcCidr string) string {
 func testAccAWSCloudFormationStackConfig_templateUrl_withParams_withYaml(rName, bucketKey, vpcCidr string) string {
+func testAccAWSCloudFormationStackConfig_withTransform(rName string) string {
 func testAccAWSCloudFrontDistributionRetainConfig() string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNamesUnordered2(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNamesUnordered3(retainOnDelete bool) string {
@@ -2117,6 +2118,7 @@ func testAccAWSClusterInstanceConfigPerformanceInsightsKmsKeyIdAuroraMysql2(rNam
 func testAccAWSClusterInstanceConfigPerformanceInsightsKmsKeyIdAuroraPostgresql(rName string) string {
 func testAccAWSRDSClusterInstanceConfig_PubliclyAccessible(rName string, publiclyAccessible bool) string {
 func testAccAWSClusterInstanceConfig_CopyTagsToSnapshot(n int, f bool) string {
+func testAccAWSRDSClusterInstanceConfig_CACertificateIdentifier(rName string, caCertificateIdentifier string) string {
 func testAccAWSDBClusterParameterGroupConfig(name string) string {
 func testAccAWSDBClusterParameterGroupConfigWithApplyMethod(name string) string {
 func testAccAWSDBClusterParameterGroupAddParametersConfig(name string) string {
