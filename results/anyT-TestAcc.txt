@@ -3620,6 +3620,7 @@ func TestAccAWSEksFargateProfile_Tags(
 func testAccCheckAWSEksFargateProfileExists(
 func testAccCheckAWSEksFargateProfileDestroy(
 func testAccCheckAWSEksFargateProfileDisappears(
+func testAccPreCheckAWSEksFargateProfile(
 func testAccAWSEksFargateProfileConfigBase(
 func testAccAWSEksFargateProfileConfigFargateProfileName(
 func testAccAWSEksFargateProfileConfigSelectorLabels1(
