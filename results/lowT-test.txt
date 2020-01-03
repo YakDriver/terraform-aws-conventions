@@ -588,6 +588,7 @@ func testAccAWSAPIGatewayStageConfig_base(
 func testAccAWSAPIGatewayStageConfig_basic(
 func testAccAWSAPIGatewayStageConfig_updated(
 func testAccAWSAPIGatewayStageConfig_accessLogSettings(
+func testAccAWSAPIGatewayStageConfig_accessLogSettingsKinesis(
 func testAccCheckAWSAPIGatewayUsagePlanKeyExists(
 func testAccCheckAWSAPIGatewayUsagePlanKeyDestroy(
 func testAccAWSAPIGatewayUsagePlanKeyConfig(
@@ -1067,6 +1068,7 @@ func testAccAWSCloudTrailConfig_eventSelector(
 func testAccAWSCloudTrailConfig_eventSelectorModified(
 func testAccCheckCloudWatchDashboardExists(
 func testAccCheckAWSCloudWatchDashboardDestroy(
+func testAccCheckAWSCloudWatchDashboardDestroyPrevious(
 func testAccAWSCloudWatchDashboardName(
 func testAccAWSCloudWatchDashboardConfig(
 func testAccAWSCloudWatchDashboardConfig_updateBody(

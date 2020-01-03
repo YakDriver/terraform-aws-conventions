@@ -1015,6 +1015,7 @@ func testAccAWSAPIGatewayRestAPIConfigOpenAPI(
 func testAccAWSAPIGatewayRestAPIUpdateConfigOpenAPI(
 func TestAccAWSAPIGatewayStage_basic(
 func TestAccAWSAPIGatewayStage_accessLogSettings(
+func TestAccAWSAPIGatewayStage_accessLogSettings_kinesis(
 func testAccCheckAWSAPIGatewayStageExists(
 func testAccCheckAWSAPIGatewayStageDestroy(
 func testAccAWSAPIGatewayStageImportStateIdFunc(
@@ -1022,6 +1023,7 @@ func testAccAWSAPIGatewayStageConfig_base(
 func testAccAWSAPIGatewayStageConfig_basic(
 func testAccAWSAPIGatewayStageConfig_updated(
 func testAccAWSAPIGatewayStageConfig_accessLogSettings(
+func testAccAWSAPIGatewayStageConfig_accessLogSettingsKinesis(
 func TestAccAWSAPIGatewayUsagePlanKey_basic(
 func testAccCheckAWSAPIGatewayUsagePlanKeyExists(
 func testAccCheckAWSAPIGatewayUsagePlanKeyDestroy(
@@ -1737,8 +1739,10 @@ func testAccAWSCloudTrailConfig_eventSelector(
 func testAccAWSCloudTrailConfig_eventSelectorModified(
 func TestAccAWSCloudWatchDashboard_basic(
 func TestAccAWSCloudWatchDashboard_update(
+func TestAccAWSCloudWatchDashboard_updateName(
 func testAccCheckCloudWatchDashboardExists(
 func testAccCheckAWSCloudWatchDashboardDestroy(
+func testAccCheckAWSCloudWatchDashboardDestroyPrevious(
 func testAccAWSCloudWatchDashboardName(
 func testAccAWSCloudWatchDashboardConfig(
 func testAccAWSCloudWatchDashboardConfig_updateBody(

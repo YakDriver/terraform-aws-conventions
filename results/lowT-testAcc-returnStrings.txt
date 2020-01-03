@@ -387,6 +387,7 @@ func testAccAWSAPIGatewayStageConfig_base(rName string) string {
 func testAccAWSAPIGatewayStageConfig_basic(rName string) string {
 func testAccAWSAPIGatewayStageConfig_updated(rName string) string {
 func testAccAWSAPIGatewayStageConfig_accessLogSettings(rName string, format string) string {
+func testAccAWSAPIGatewayStageConfig_accessLogSettingsKinesis(rName string, format string) string {
 func testAccAWSAPIGatewayUsagePlanKeyConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanKeyBasicConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanKeyBasicUpdatedConfig(rName string) string {

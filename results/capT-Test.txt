@@ -525,6 +525,7 @@ func TestAccAWSAPIGatewayRestApi_policy(
 func TestAccAWSAPIGatewayRestApi_openapi(
 func TestAccAWSAPIGatewayStage_basic(
 func TestAccAWSAPIGatewayStage_accessLogSettings(
+func TestAccAWSAPIGatewayStage_accessLogSettings_kinesis(
 func TestAccAWSAPIGatewayUsagePlanKey_basic(
 func TestAccAWSAPIGatewayUsagePlan_basic(
 func TestAccAWSAPIGatewayUsagePlan_tags(
@@ -782,6 +783,7 @@ func TestAccAWSCloudHsm2Hsm_basic(
 func TestAccAWSCloudTrail(
 func TestAccAWSCloudWatchDashboard_basic(
 func TestAccAWSCloudWatchDashboard_update(
+func TestAccAWSCloudWatchDashboard_updateName(
 func TestAccAWSCloudWatchEventPermission_Basic(
 func TestAccAWSCloudWatchEventPermission_Action(
 func TestAccAWSCloudWatchEventPermission_Condition(
