@@ -293,6 +293,7 @@ func testAccBackupSelectionConfigUpdateTag(rInt int) string {
 func testAccBackupVaultConfig(randInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigBase(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2(rInt int) string {
+func testAccAWSBatchComputeEnvironmentConfigNamePrefix(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2WithTags(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigSpot(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigUnmanaged(rInt int) string {
@@ -302,6 +303,7 @@ func testAccAWSBatchComputeEnvironmentConfigEC2UpdateState(rInt int, state strin
 func testAccAWSBatchComputeEnvironmentConfigEC2UpdateComputeEnvironmentName(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2WithoutComputeResources(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigUnmanagedWithComputeResources(rInt int) string {
+func testAccAWSBatchComputeEnvironmentConfigSpotWithAllocationStrategy(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigSpotWithoutBidPercentage(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigLaunchTemplate(rInt int) string {
 func testAccAWSBudgetsBudgetConfigNotificationSnippet(notification budgets.Notification, emails []string, topics []string) string {
@@ -360,6 +362,14 @@ func testAccCheckAwsCloudWatchEventPermissionResourceConfigBasic(principal, stat
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigAction(action, principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigConditionOrganization(statementID, value string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigMultiple(principal1, statementID1, principal2, statementID2 string) string {
+func testAccAWSCloudWatchEventRuleConfig(name string) string {
+func testAccAWSCloudWatchEventRuleConfigPattern(name, pattern string) string {
+func testAccAWSCloudWatchEventRuleConfigDescription(name, description string) string {
+func testAccAWSCloudWatchEventRuleConfigIsEnabled(name string, enabled bool) string {
+func testAccAWSCloudWatchEventRuleConfigPrefix(name string) string {
+func testAccAWSCloudWatchEventRuleConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAWSCloudWatchEventRuleConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCloudWatchEventRuleConfigRole(name string) string {
 func testAccAWSCloudWatchEventTargetConfig(ruleName, snsTopicName, targetID string) string {
 func testAccAWSCloudWatchEventTargetConfigMissingTargetId(ruleName, snsTopicName string) string {
 func testAccAWSCloudWatchEventTargetConfigSsmDocument(rName string) string {
@@ -979,6 +989,8 @@ func testAccAWSLBTargetGroupAttachmentConfigWithoutPort(targetGroupName string) 
 func testAccAWSLBTargetGroupAttachmentConfigBackwardsCompatibility(targetGroupName string) string {
 func testAccAWSLBTargetGroupAttachmentConfigWithIpAddress(targetGroupName string) string {
 func testAccAWSLBTargetGroupAttachmentConfigWithLambda(targetGroupName string) string {
+func testAccAWSLBTargetGroupConfigTags1(targetGroupName, tagKey1, tagValue1 string) string {
+func testAccAWSLBTargetGroupConfigTags2(targetGroupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSLBTargetGroupConfigBackwardsCompatibility(targetGroupName string) string {
 func testAccAWSLBConfigWithIpAddressTypeUpdated(lbName string) string {
 func testAccAWSLBConfigWithIpAddressType(lbName string) string {

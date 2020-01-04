@@ -464,6 +464,7 @@ func TestAccAWSAPIGatewayAuthorizer_cognito(
 func TestAccAWSAPIGatewayAuthorizer_switchAuthType(
 func TestAccAWSAPIGatewayAuthorizer_switchAuthorizerTTL(
 func TestAccAWSAPIGatewayAuthorizer_authTypeValidation(
+func TestAccAWSAPIGatewayAuthorizer_disappears(
 func TestDecodeApiGatewayBasePathMappingId(
 func TestAccAWSAPIGatewayBasePathMapping_basic(
 func TestAccAWSAPIGatewayBasePathMapping_BasePath_Empty(
@@ -699,6 +700,7 @@ func TestAccAwsBackupVault_basic(
 func TestAccAwsBackupVault_withKmsKey(
 func TestAccAwsBackupVault_withTags(
 func TestAccAWSBatchComputeEnvironment_createEc2(
+func TestAccAWSBatchComputeEnvironment_createWithNamePrefix(
 func TestAccAWSBatchComputeEnvironment_createEc2WithTags(
 func TestAccAWSBatchComputeEnvironment_createSpot(
 func TestAccAWSBatchComputeEnvironment_createUnmanaged(
@@ -709,6 +711,7 @@ func TestAccAWSBatchComputeEnvironment_createEc2WithoutComputeResources(
 func TestAccAWSBatchComputeEnvironment_createUnmanagedWithComputeResources(
 func TestAccAWSBatchComputeEnvironment_launchTemplate(
 func TestAccAWSBatchComputeEnvironment_UpdateLaunchTemplate(
+func TestAccAWSBatchComputeEnvironment_createSpotWithAllocationStrategy(
 func TestAccAWSBatchComputeEnvironment_createSpotWithoutBidPercentage(
 func TestAccAWSBatchComputeEnvironment_updateState(
 func TestAccAWSBatchJobDefinition_basic(
@@ -790,11 +793,12 @@ func TestAccAWSCloudWatchEventPermission_Condition(
 func TestAccAWSCloudWatchEventPermission_Multiple(
 func TestAccAWSCloudWatchEventPermission_Disappears(
 func TestAccAWSCloudWatchEventRule_basic(
+func TestAccAWSCloudWatchEventRule_role(
+func TestAccAWSCloudWatchEventRule_description(
+func TestAccAWSCloudWatchEventRule_pattern(
 func TestAccAWSCloudWatchEventRule_prefix(
 func TestAccAWSCloudWatchEventRule_tags(
-func TestAccAWSCloudWatchEventRule_full(
-func TestAccAWSCloudWatchEventRule_enable(
-func TestResourceAWSCloudWatchEventRule_validateEventPatternValue(
+func TestAccAWSCloudWatchEventRule_IsEnabled(
 func TestAccAWSCloudWatchEventTarget_basic(
 func TestAccAWSCloudWatchEventTarget_missingTargetId(
 func TestAccAWSCloudWatchEventTarget_full(
@@ -2542,6 +2546,7 @@ func TestAccAwsRamResourceShare_Name(
 func TestAccAwsRamResourceShare_Tags(
 func TestAccAWSRDSClusterEndpoint_basic(
 func TestAccAWSRDSClusterInstance_basic(
+func TestAccAWSRDSClusterInstance_isAlreadyBeingDeleted(
 func TestAccAWSRDSClusterInstance_az(
 func TestAccAWSRDSClusterInstance_namePrefix(
 func TestAccAWSRDSClusterInstance_generatedName(
@@ -3485,8 +3490,6 @@ func TestCognitoUserPoolSchemaAttributeMatchesStandardAttribute(
 func TestCanonicalXML(
 func TestDiffBeanstalkTags(
 func TestIgnoringTagsBeanstalk(
-func TestDiffCloudWatchEventTags(
-func TestIgnoringTagsCloudWatchEvents(
 func TestDiffCodePipelineTags(
 func TestIgnoringTagsCodePipeline(
 func TestDaxTagsDiff(
@@ -3509,8 +3512,6 @@ func TestDiffGenericTags(
 func TestIgnoringTagsGeneric(
 func TestDiffIAMTags(
 func TestIgnoringTagsIAM(
-func TestDiffTagsKinesis(
-func TestIgnoringTagsKinesis(
 func TestDiffNeptuneTags(
 func TestIgnoringTagsNeptune(
 func TestDiffOrganizationsTags(
@@ -3597,6 +3598,7 @@ func TestValidateWafMetricName(
 func TestValidateIamRoleDescription(
 func TestValidateAwsSSMName(
 func TestValidateBatchName(
+func TestValidateBatchPrefix(
 func TestValidateCognitoRoleMappingsAmbiguousRoleResolutionAgainstType(
 func TestValidateCognitoRoleMappingsRulesConfiguration(
 func TestValidateSecurityGroupRuleDescription(
