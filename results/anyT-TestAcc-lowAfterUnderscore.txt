@@ -384,6 +384,7 @@ func testAccAWSAPIGatewayStageConfig_updated(
 func testAccAWSAPIGatewayStageConfig_accessLogSettings(
 func testAccAWSAPIGatewayStageConfig_accessLogSettingsKinesis(
 func TestAccAWSAPIGatewayUsagePlanKey_basic(
+func TestAccAWSAPIGatewayUsagePlanKey_disappears(
 func TestAccAWSAPIGatewayUsagePlan_basic(
 func TestAccAWSAPIGatewayUsagePlan_tags(
 func TestAccAWSAPIGatewayUsagePlan_description(

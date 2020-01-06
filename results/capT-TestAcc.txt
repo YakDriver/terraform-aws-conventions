@@ -441,6 +441,7 @@ func TestAccAWSAPIGatewayStage_basic(
 func TestAccAWSAPIGatewayStage_accessLogSettings(
 func TestAccAWSAPIGatewayStage_accessLogSettings_kinesis(
 func TestAccAWSAPIGatewayUsagePlanKey_basic(
+func TestAccAWSAPIGatewayUsagePlanKey_disappears(
 func TestAccAWSAPIGatewayUsagePlan_basic(
 func TestAccAWSAPIGatewayUsagePlan_tags(
 func TestAccAWSAPIGatewayUsagePlan_description(
