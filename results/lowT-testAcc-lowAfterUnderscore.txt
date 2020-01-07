@@ -970,5 +970,6 @@ func testAccAWSWafSqlInjectionMatchSetConfig_changeTuples(
 func testAccAWSWafSqlInjectionMatchSetConfig_noTuples(
 func testAccAWSWafXssMatchSetConfig_changeTuples(
 func testAccAWSWafXssMatchSetConfig_noTuples(
+func testAccWorkspacesDirectoryConfig_subnetIds(
 func testAccAWSXraySamplingRuleConfig_basic(
 func testAccAWSXraySamplingRuleConfig_update(

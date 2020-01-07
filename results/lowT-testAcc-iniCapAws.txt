@@ -248,5 +248,6 @@ func testAccAwsVpnConnectionConfigUpdate(
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func testAccAwsVpnConnectionConfigTunnelOptions(
+func testAccAwsWorkspacesDirectoryConfig_Prerequisites(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(

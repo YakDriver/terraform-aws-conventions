@@ -2054,6 +2054,8 @@ func TestAccAWSWafXssMatchSet_changeNameForceNew(
 func TestAccAWSWafXssMatchSet_disappears(
 func TestAccAWSWafXssMatchSet_changeTuples(
 func TestAccAWSWafXssMatchSet_noTuples(
+func TestAccAwsWorkspacesDirectory_basic(
+func TestAccAwsWorkspacesDirectory_subnetIds(
 func TestAccAwsWorkspacesIpGroup_basic(
 func TestAccAWSXraySamplingRule_basic(
 func TestAccAWSXraySamplingRule_update(

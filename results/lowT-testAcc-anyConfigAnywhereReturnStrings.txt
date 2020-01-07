@@ -33,6 +33,9 @@ func testAccCheckAwsDbClusterSnapshotDataSourceConfig_MostRecent(rName string) s
 func testAccAWSDBInstanceDataSourceConfig(rInt int) string {
 func testAccAWSDBInstanceDataSourceConfig_ec2Classic(rInt int) string {
 func testAccCheckAwsDbSnapshotDataSourceConfig(rInt int) string {
+func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(adType string) string {
+func testAccDataSourceAwsDirectoryServiceDirectoryConfig_SimpleAD(alias string) string {
+func testAccDataSourceAwsDirectoryServiceDirectoryConfig_MicrosoftAD(alias string) string {
 func testAccDataSourceAwsDxGatewayConfig_Name(rName string, rBgpAsn int) string {
 func testAccDataSourceAwsDynamoDbTableConfigBasic(tableName string) string {
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted1(rName string) string {
@@ -2834,6 +2837,11 @@ func testAccAWSWorkLinkFleetConfigDeviceCaCertificate(r string, fName string) st
 func testAccAWSWorkLinkFleetConfigIdentityProvider(r string, fName string) string {
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfig(r string) string {
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfigDisplayName(r, displayName string) string {
+func testAccAwsWorkspacesDirectoryConfig_Prerequisites(booster string) string {
+func testAccWorkspacesDirectoryConfigA(booster string) string {
+func testAccWorkspacesDirectoryConfigB(booster string) string {
+func testAccWorkspacesDirectoryConfigC(booster string) string {
+func testAccWorkspacesDirectoryConfig_subnetIds(booster string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
 func testAccAWSXraySamplingRuleConfig_basic(ruleName string) string {

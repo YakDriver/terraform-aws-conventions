@@ -1401,3 +1401,5 @@ func TestAccAWSWafXssMatchSet_changeTuples(
 func TestAccAWSWafXssMatchSet_noTuples(
 func testAccAWSWafXssMatchSetConfig_changeTuples(
 func testAccAWSWafXssMatchSetConfig_noTuples(
+func TestAccAwsWorkspacesDirectory_subnetIds(
+func testAccWorkspacesDirectoryConfig_subnetIds(
