@@ -2837,6 +2837,7 @@ func testAccCheckInstanceDestroyWithProvider(
 func testAccCheckInstanceExists(
 func testAccCheckInstanceExistsWithProvider(n string, i *ec2.Instance, providerF func(
 func testAccCheckInstanceDisappears(
+func testAccCheckStopInstance(
 func testAccInstanceConfigInDefaultVpcBySgName(
 func testAccInstanceConfigInDefaultVpcBySgId(
 func testAccInstanceConfigInEc2Classic(
@@ -3112,7 +3113,6 @@ func testAccAWSLambdaConfigWithVPCUpdated(
 func testAccAWSLambdaConfigWithEmptyVpcConfig(
 func testAccAWSLambdaConfigS3(
 func testAccAWSLambdaConfigNoRuntime(
-func testAccAWSLambdaConfigNodeJs810Runtime(
 func testAccAWSLambdaConfigNodeJs10xRuntime(
 func testAccAWSLambdaConfigNodeJs12xRuntime(
 func testAccAWSLambdaConfigPython27Runtime(
@@ -4990,6 +4990,8 @@ func testAccCheckAWSWorkLinkWebsiteCertificateAuthorityAssociationDisappears(
 func testAccCheckAWSWorkLinkWebsiteCertificateAuthorityAssociationExists(
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfig(
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfigDisplayName(
+func testAccAwsWorkspacesDirectory_basic(
+func testAccAwsWorkspacesDirectory_subnetIds(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryExists(
 func testAccAwsWorkspacesDirectoryConfig_Prerequisites(

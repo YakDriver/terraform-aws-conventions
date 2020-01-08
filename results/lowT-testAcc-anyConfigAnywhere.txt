@@ -1870,7 +1870,6 @@ func testAccAWSLambdaConfigWithVPCUpdated(
 func testAccAWSLambdaConfigWithEmptyVpcConfig(
 func testAccAWSLambdaConfigS3(
 func testAccAWSLambdaConfigNoRuntime(
-func testAccAWSLambdaConfigNodeJs810Runtime(
 func testAccAWSLambdaConfigNodeJs10xRuntime(
 func testAccAWSLambdaConfigNodeJs12xRuntime(
 func testAccAWSLambdaConfigPython27Runtime(

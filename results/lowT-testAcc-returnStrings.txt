@@ -1986,7 +1986,6 @@ func testAccAWSLambdaConfigWithVPCUpdated(funcName, policyName, roleName, sgName
 func testAccAWSLambdaConfigWithEmptyVpcConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigS3(bucketName, roleName, funcName string) string {
 func testAccAWSLambdaConfigNoRuntime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigNodeJs810Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigNodeJs10xRuntime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigNodeJs12xRuntime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigPython27Runtime(funcName, policyName, roleName, sgName string) string {

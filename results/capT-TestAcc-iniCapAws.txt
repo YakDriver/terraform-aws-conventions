@@ -139,6 +139,5 @@ func TestAccAwsSesDomainIdentityVerification_timeout(
 func TestAccAwsSesDomainIdentityVerification_nonexistent(
 func TestAccAwsSESIdentityNotificationTopic_basic(
 func TestAccAwsVpcIpv4CidrBlockAssociation_basic(
-func TestAccAwsWorkspacesDirectory_basic(
-func TestAccAwsWorkspacesDirectory_subnetIds(
+func TestAccAwsWorkspacesDirectory(
 func TestAccAwsWorkspacesIpGroup_basic(
