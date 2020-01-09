@@ -849,6 +849,7 @@ func TestAccAWSEksCluster_Tags(
 func TestAccAWSEksCluster_VpcConfig_SecurityGroupIds(
 func TestAccAWSEksCluster_VpcConfig_EndpointPrivateAccess(
 func TestAccAWSEksCluster_VpcConfig_EndpointPublicAccess(
+func TestAccAWSEksCluster_VpcConfig_PublicAccessCidrs(
 func testAccAWSEksClusterConfig_Base(
 func testAccAWSEksClusterConfig_Required(
 func testAccAWSEksClusterConfig_Version(
@@ -856,6 +857,7 @@ func testAccAWSEksClusterConfig_Logging(
 func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(
+func testAccAWSEksClusterConfig_VpcConfig_PublicAccessCidrs(
 func TestAccAWSEksFargateProfile_Selector_Labels(
 func TestAccAWSEksFargateProfile_Tags(
 func TestAccAWSEksNodeGroup_AmiType(

@@ -1533,6 +1533,7 @@ func TestAccAWSEksCluster_Tags(
 func TestAccAWSEksCluster_VpcConfig_SecurityGroupIds(
 func TestAccAWSEksCluster_VpcConfig_EndpointPrivateAccess(
 func TestAccAWSEksCluster_VpcConfig_EndpointPublicAccess(
+func TestAccAWSEksCluster_VpcConfig_PublicAccessCidrs(
 func TestAccAWSEksFargateProfile_basic(
 func TestAccAWSEksFargateProfile_disappears(
 func TestAccAWSEksFargateProfile_Selector_Labels(
@@ -3497,12 +3498,6 @@ func TestDiffBeanstalkTags(
 func TestIgnoringTagsBeanstalk(
 func TestDiffCodePipelineTags(
 func TestIgnoringTagsCodePipeline(
-func TestDaxTagsDiff(
-func TestTagsDaxIgnore(
-func TestDmsTagsToMap(
-func TestDmsTagsFromMap(
-func TestDmsDiffTags(
-func TestDmsGetTagKeys(
 func TestDiffDocDBTags(
 func TestIgnoringTagsDocDB(
 func TestDiffDXTags(
@@ -3511,8 +3506,6 @@ func TestDiffelasticacheTags(
 func TestIgnoringTagsEC(
 func TestDiffELBTags(
 func TestIgnoringTagsELB(
-func TestDiffFSXTags(
-func TestIgnoringTagsFSX(
 func TestDiffGenericTags(
 func TestIgnoringTagsGeneric(
 func TestDiffIAMTags(

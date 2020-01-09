@@ -1274,6 +1274,7 @@ func testAccAWSEksClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValu
 func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(rName string) string {
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(rName string, endpointPrivateAccess bool) string {
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(rName string, endpointPublicAccess bool) string {
+func testAccAWSEksClusterConfig_VpcConfig_PublicAccessCidrs(rName string, publicAccessCidr string) string {
 func testAccAWSEksFargateProfileConfigBase(rName string) string {
 func testAccAWSEksFargateProfileConfigFargateProfileName(rName string) string {
 func testAccAWSEksFargateProfileConfigSelectorLabels1(rName, labelKey1, labelValue1 string) string {
