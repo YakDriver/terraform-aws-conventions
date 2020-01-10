@@ -8684,12 +8684,8 @@ func TestDiffBeanstalkTags(
 func TestIgnoringTagsBeanstalk(
 func TestDiffCodePipelineTags(
 func TestIgnoringTagsCodePipeline(
-func TestDiffDocDBTags(
-func TestIgnoringTagsDocDB(
 func TestDiffDXTags(
 func TestIgnoringTagsDX(
-func TestDiffelasticacheTags(
-func TestIgnoringTagsEC(
 func TestDiffELBTags(
 func TestIgnoringTagsELB(
 func testAccCheckELBTags(
@@ -8697,8 +8693,6 @@ func TestDiffGenericTags(
 func TestIgnoringTagsGeneric(
 func TestDiffIAMTags(
 func TestIgnoringTagsIAM(
-func TestDiffNeptuneTags(
-func TestIgnoringTagsNeptune(
 func TestDiffOrganizationsTags(
 func TestIgnoringTagsOrganizations(
 func TestDiffTagsPinPointApp(

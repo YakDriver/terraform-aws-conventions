@@ -1,5 +1,5 @@
 Analysis Tallies
-3621	Capital-T Test Functions:All
+3615	Capital-T Test Functions:All
 3251	Capital-T Test Functions:TestAcc
 2943	Capital-T Test Functions:TestAccAWS
 143	Capital-T Test Functions:TestAccAws
@@ -15,7 +15,7 @@ Analysis Tallies
 3138	Lowercase-t test Functions:testAcc functions returning strings
 2848	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
 1536	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-8809	Any case-t Test Functions:All
+8803	Any case-t Test Functions:All
 8264	Any case-t Test Functions:TestAcc
 3035	Any case-t Test Functions:TestAcc with lowercase after first underscore
 1774	Any case-t Test Functions:TestAcc with uppercase after first underscore
