@@ -964,11 +964,17 @@ func TestAccAWSFsxLustreFileSystem_disappears(
 func TestAccAWSFsxWindowsFileSystem_basic(
 func TestAccAWSFsxWindowsFileSystem_disappears(
 func TestAccAWSGameliftAlias_basic(
+func TestAccAWSGameliftAlias_tags(
 func TestAccAWSGameliftAlias_fleetRouting(
+func TestAccAWSGameliftAlias_disappears(
 func TestAccAWSGameliftBuild_basic(
+func TestAccAWSGameliftBuild_tags(
+func TestAccAWSGameliftBuild_disappears(
 func TestAccAWSGameliftFleet_basic(
 func TestAccAWSGameliftFleet_allFields(
 func TestAccAWSGameliftGameSessionQueue_basic(
+func TestAccAWSGameliftGameSessionQueue_tags(
+func TestAccAWSGameliftGameSessionQueue_disappears(
 func TestAccAWSGlacierVaultLock_basic(
 func TestAccAWSGlacierVault_basic(
 func TestAccAWSGlacierVault_full(

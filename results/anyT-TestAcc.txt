@@ -604,7 +604,8 @@ func testAccAlternateAccountPreCheck(
 func testAccAlternateRegionPreCheck(
 func testAccEC2ClassicPreCheck(
 func testAccEC2VPCOnlyPreCheck(
-func testAccHasServicePreCheck(
+func testAccPartitionHasServicePreCheck(
+func testAccRegionHasServicePreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccOrganizationsAccountPreCheck(
 func testAccAlternateAccountProviderConfig(
@@ -2150,11 +2151,13 @@ func TestAccAWSCodePipelineWebhook_basic(
 func TestAccAWSCodePipelineWebhook_ipAuth(
 func TestAccAWSCodePipelineWebhook_unauthenticated(
 func TestAccAWSCodePipelineWebhook_tags(
+func TestAccAWSCodePipelineWebhook_UpdateAuthenticationConfiguration_SecretToken(
 func testAccCheckAWSCodePipelineWebhookExists(
 func testAccAWSCodePipelineWebhookConfig_basic(
 func testAccAWSCodePipelineWebhookConfig_ipAuth(
 func testAccAWSCodePipelineWebhookConfig_unauthenticated(
 func testAccAWSCodePipelineWebhookConfigWithTags(
+func testAccAWSCodePipelineWebhookConfig_secretTokenUpdated(
 func testAccAWSCodePipelineWebhookConfig_codePipeline(
 func TestAccAWSCognitoIdentityPoolRolesAttachment_basic(
 func TestAccAWSCognitoIdentityPoolRolesAttachment_roleMappings(
@@ -2578,6 +2581,7 @@ func TestAccAWSDBInstance_ReplicateSourceDb_MultiAZ(
 func TestAccAWSDBInstance_ReplicateSourceDb_ParameterGroupName(
 func TestAccAWSDBInstance_ReplicateSourceDb_Port(
 func TestAccAWSDBInstance_ReplicateSourceDb_VpcSecurityGroupIds(
+func TestAccAWSDBInstance_ReplicateSourceDb_CACertificateIdentifier(
 func TestAccAWSDBInstance_S3Import(
 func TestAccAWSDBInstance_SnapshotIdentifier(
 func TestAccAWSDBInstance_SnapshotIdentifier_AllocatedStorage(
@@ -2680,6 +2684,7 @@ func testAccAWSDBInstanceConfig_ReplicateSourceDb_MultiAZ(
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_ParameterGroupName(
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_Port(
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_VpcSecurityGroupIds(
+func testAccAWSDBInstanceConfig_ReplicateSourceDb_CACertificateIdentifier(
 func testAccAWSDBInstanceConfig_SnapshotIdentifier(
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_AllocatedStorage(
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_Io1Storage(
@@ -3942,12 +3947,13 @@ func TestAccAWSELBUpdate_Timeout(
 func TestAccAWSELB_ConnectionDraining(
 func TestAccAWSELBUpdate_ConnectionDraining(
 func TestAccAWSELB_SecurityGroups(
-func testAccLoadTags(
 func testAccCheckAWSELBDestroy(
 func testAccCheckAWSELBDisappears(
 func testAccCheckAWSELBAttributes(
 func testAccCheckAWSELBAttributesHealthCheck(
 func testAccCheckAWSELBExists(
+func testAccAWSELBConfigTags1(
+func testAccAWSELBConfigTags2(
 func testAccAWSELBAccessLogsOn(
 func testAccAWSELBAccessLogsDisabled(
 func testAccELBConfig_Listener_IAMServerCertificate(
@@ -3968,6 +3974,7 @@ func TestAccAWSEMRCluster_instance_group_names(
 func TestAccAWSEMRCluster_instance_group_update(
 func TestAccAWSEMRCluster_instance_group_EBSVolumeType_st1(
 func TestAccAWSEMRCluster_updateAutoScalingPolicy(
+func TestAccAWSEMRCluster_Ec2Attributes_DefaultManagedSecurityGroups(
 func TestAccAWSEMRCluster_Kerberos_ClusterDedicatedKdc(
 func TestAccAWSEMRCluster_MasterInstanceGroup_BidPrice(
 func TestAccAWSEMRCluster_MasterInstanceGroup_InstanceCount(
@@ -3994,6 +4001,10 @@ func testAccCheckAWSEmrClusterExists(
 func testAccCheckAWSEmrClusterDisappears(
 func testAccCheckAWSEmrClusterNotRecreated(
 func testAccCheckAWSEmrClusterRecreated(
+func testAccEmrDeleteManagedSecurityGroups(
+func testAccEmrDescribeManagedSecurityGroup(conn *ec2.EC2, vpc *ec2.Vpc, securityGroupName string) (
+func testAccEmrRevokeManagedSecurityGroup(
+func testAccEmrDeleteManagedSecurityGroup(
 func testAccAWSEmrClusterConfigBaseVpc(
 func testAccAWSEmrClusterConfig_bootstrap(
 func testAccAWSEmrClusterConfig(
@@ -4020,6 +4031,7 @@ func testAccAWSEmrClusterConfigInstanceGroupsName(
 func testAccAWSEmrClusterConfigInstanceGroupsUpdate(
 func testAccAWSEmrClusterConfigInstanceGroups_st1(
 func testAccAWSEmrClusterConfigInstanceGroups_updateAutoScalingPolicy(
+func testAccAWSEmrClusterConfigEc2AttributesDefaultManagedSecurityGroups(
 func testAccAWSEmrClusterConfigMasterInstanceGroupBidPrice(
 func testAccAWSEmrClusterConfigMasterInstanceGroupInstanceCount(
 func testAccAWSEmrClusterConfigMasterInstanceGroupInstanceType(
@@ -4128,16 +4140,26 @@ func testAccAwsFsxWindowsFileSystemConfigTags2(
 func testAccAwsFsxWindowsFileSystemConfigThroughputCapacity(
 func testAccAwsFsxWindowsFileSystemConfigWeeklyMaintenanceStartTime(
 func TestAccAWSGameliftAlias_basic(
+func TestAccAWSGameliftAlias_tags(
 func TestAccAWSGameliftAlias_fleetRouting(
+func TestAccAWSGameliftAlias_disappears(
+func testAccCheckAWSGameliftAliasDisappears(
 func testAccCheckAWSGameliftAliasExists(
 func testAccCheckAWSGameliftAliasDestroy(
 func testAccAWSGameliftAliasBasicConfig(
+func testAccAWSGameliftAliasBasicConfigTags1(
+func testAccAWSGameliftAliasBasicConfigTags2(
 func testAccAWSGameliftAliasAllFieldsConfig(
 func TestAccAWSGameliftBuild_basic(
+func TestAccAWSGameliftBuild_tags(
+func TestAccAWSGameliftBuild_disappears(
 func testAccCheckAWSGameliftBuildExists(
+func testAccCheckAWSGameliftBuildDisappears(
 func testAccCheckAWSGameliftBuildDestroy(
 func testAccPreCheckAWSGamelift(
 func testAccAWSGameliftBuildBasicConfig(
+func testAccAWSGameliftBuildBasicConfigTags1(
+func testAccAWSGameliftBuildBasicConfigTags2(
 func testAccGameliftListFleets(conn *gamelift.GameLift, nextToken *string, region string, f func(
 func TestAccAWSGameliftFleet_basic(
 func TestAccAWSGameliftFleet_allFields(
@@ -4149,9 +4171,14 @@ func testAccAWSGameliftFleetAllFieldsConfig(
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(
 func testAccAWSGameliftFleetBasicTemplate(
 func TestAccAWSGameliftGameSessionQueue_basic(
+func TestAccAWSGameliftGameSessionQueue_tags(
+func TestAccAWSGameliftGameSessionQueue_disappears(
 func testAccCheckAWSGameliftGameSessionQueueExists(
+func testAccCheckAWSGameliftGameSessionQueueDisappears(
 func testAccCheckAWSGameliftGameSessionQueueDestroy(
 func testAccAWSGameliftGameSessionQueueBasicConfig(
+func testAccAWSGameliftGameSessionQueueBasicConfigTags1(
+func testAccAWSGameliftGameSessionQueueBasicConfigTags2(
 func testAccAWSGameliftSampleGame(region string) (
 func testAccGameliftAccountIdByRegion(region string) (
 func TestAccAWSGlacierVaultLock_basic(
@@ -5911,10 +5938,13 @@ func testAccAwsOpsworksInstanceConfigUpdateHostName(
 func testAccAwsOpsworksInstanceConfigCreate(
 func testAccAwsOpsworksInstanceConfigUpdate(
 func TestAccAWSOpsworksPermission_basic(
+func TestAccAWSOpsworksPermission_Self(
 func testAccCheckAWSOpsworksPermissionExists(
 func testAccCheckAWSOpsworksCreatePermissionAttributes(
 func testAccCheckAwsOpsworksPermissionDestroy(
+func testAccAwsOpsworksPermissionBase(
 func testAccAwsOpsworksPermissionCreate(
+func testAccAwsOpsworksPermissionSelf(
 func TestAccAWSOpsworksRailsAppLayer(
 func testAccCheckAwsOpsworksRailsAppLayerDestroy(
 func testAccAwsOpsworksRailsAppLayerConfigVpcCreate(
@@ -6039,6 +6069,8 @@ func TestAccAWSPinpointApp_QuietTime(
 func TestAccAWSPinpointApp_Tags(
 func testAccCheckAWSPinpointAppExists(
 func testAccAWSPinpointAppConfig_CampaignHookLambda(
+func testAccAWSPinpointAppConfig_Limits(
+func testAccAWSPinpointAppConfig_QuietTime(
 func testAccAWSPinpointAppConfig_Tag1(
 func testAccAWSPinpointAppConfig_Tag2(
 func testAccCheckAWSPinpointAppDestroy(
@@ -8260,5 +8292,4 @@ func testAccCheckAWSXraySamplingRuleDestroy(
 func testAccPreCheckAWSXray(
 func testAccAWSXraySamplingRuleConfig_basic(
 func testAccAWSXraySamplingRuleConfig_update(
-func testAccCheckELBTags(
 func testAccCheckTags(

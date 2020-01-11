@@ -935,6 +935,7 @@ func TestAccAWSCodePipelineWebhook_tags(
 func testAccAWSCodePipelineWebhookConfig_basic(
 func testAccAWSCodePipelineWebhookConfig_ipAuth(
 func testAccAWSCodePipelineWebhookConfig_unauthenticated(
+func testAccAWSCodePipelineWebhookConfig_secretTokenUpdated(
 func testAccAWSCodePipelineWebhookConfig_codePipeline(
 func TestAccAWSCognitoIdentityPoolRolesAttachment_basic(
 func TestAccAWSCognitoIdentityPoolRolesAttachment_roleMappings(
@@ -1813,11 +1814,17 @@ func TestAccAWSFsxWindowsFileSystem_Tags(
 func TestAccAWSFsxWindowsFileSystem_ThroughputCapacity(
 func TestAccAWSFsxWindowsFileSystem_WeeklyMaintenanceStartTime(
 func TestAccAWSGameliftAlias_basic(
+func TestAccAWSGameliftAlias_tags(
 func TestAccAWSGameliftAlias_fleetRouting(
+func TestAccAWSGameliftAlias_disappears(
 func TestAccAWSGameliftBuild_basic(
+func TestAccAWSGameliftBuild_tags(
+func TestAccAWSGameliftBuild_disappears(
 func TestAccAWSGameliftFleet_basic(
 func TestAccAWSGameliftFleet_allFields(
 func TestAccAWSGameliftGameSessionQueue_basic(
+func TestAccAWSGameliftGameSessionQueue_tags(
+func TestAccAWSGameliftGameSessionQueue_disappears(
 func TestAccAWSGlacierVaultLock_basic(
 func TestAccAWSGlacierVaultLock_CompleteLock(
 func TestAccAWSGlacierVault_basic(
@@ -2653,6 +2660,7 @@ func TestAccAWSOpsworksCustomLayer_noVPC(
 func TestAccAWSOpsworksInstance_basic(
 func TestAccAWSOpsworksInstance_UpdateHostNameForceNew(
 func TestAccAWSOpsworksPermission_basic(
+func TestAccAWSOpsworksPermission_Self(
 func TestAccAWSOpsworksStack_noVpcBasic(
 func TestAccAWSOpsworksStack_noVpcChangeServiceRoleForceNew(
 func TestAccAWSOpsworksStack_vpc(
@@ -2702,6 +2710,8 @@ func TestAccAWSPinpointApp_Limits(
 func TestAccAWSPinpointApp_QuietTime(
 func TestAccAWSPinpointApp_Tags(
 func testAccAWSPinpointAppConfig_CampaignHookLambda(
+func testAccAWSPinpointAppConfig_Limits(
+func testAccAWSPinpointAppConfig_QuietTime(
 func testAccAWSPinpointAppConfig_Tag1(
 func testAccAWSPinpointAppConfig_Tag2(
 func TestAccAWSPinpointBaiduChannel_basic(

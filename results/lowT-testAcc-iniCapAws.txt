@@ -136,7 +136,9 @@ func testAccAwsOpsworksCustomLayerConfigUpdate(
 func testAccAwsOpsworksInstanceConfigUpdateHostName(
 func testAccAwsOpsworksInstanceConfigCreate(
 func testAccAwsOpsworksInstanceConfigUpdate(
+func testAccAwsOpsworksPermissionBase(
 func testAccAwsOpsworksPermissionCreate(
+func testAccAwsOpsworksPermissionSelf(
 func testAccAwsOpsworksRailsAppLayerConfigVpcCreate(
 func testAccAwsOpsworksRailsAppLayerNoManageBundlerConfigVpcCreate(
 func testAccAwsOpsworksRdsDbInstance(

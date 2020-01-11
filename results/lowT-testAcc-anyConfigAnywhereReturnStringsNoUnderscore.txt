@@ -718,6 +718,8 @@ func testAccESDomainConfigWithEncryptAtRestDefaultKey(randESId int) string {
 func testAccESDomainConfigWithEncryptAtRestWithKey(randESId int) string {
 func testAccESDomainConfigwithNodeToNodeEncryption(randInt int) string {
 func testAccESDomainConfigV23(randInt int) string {
+func testAccAWSELBConfigTags1(tagKey1, tagValue1 string) string {
+func testAccAWSELBConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEmrClusterConfigBaseVpc(mapPublicIpOnLaunch bool) string {
 func testAccAWSEmrClusterConfig(r int) string {
 func testAccAWSEmrClusterConfigAdditionalInfo(r int) string {
@@ -734,6 +736,7 @@ func testAccAWSEmrClusterConfigInstanceGroupMasterInstanceType(rName, masterInst
 func testAccAWSEmrClusterConfigInstanceGroups(r int) string {
 func testAccAWSEmrClusterConfigInstanceGroupsName(r int) string {
 func testAccAWSEmrClusterConfigInstanceGroupsUpdate(r int) string {
+func testAccAWSEmrClusterConfigEc2AttributesDefaultManagedSecurityGroups(rName string) string {
 func testAccAWSEmrClusterConfigMasterInstanceGroupBidPrice(rName, bidPrice string) string {
 func testAccAWSEmrClusterConfigMasterInstanceGroupInstanceCount(rName string, instanceCount int) string {
 func testAccAWSEmrClusterConfigMasterInstanceGroupInstanceType(rName, instanceType string) string {
@@ -773,11 +776,17 @@ func testAccAwsFsxWindowsFileSystemConfigTags2(tagKey1, tagValue1, tagKey2, tagV
 func testAccAwsFsxWindowsFileSystemConfigThroughputCapacity(throughputCapacity int) string {
 func testAccAwsFsxWindowsFileSystemConfigWeeklyMaintenanceStartTime(weeklyMaintenanceStartTime string) string {
 func testAccAWSGameliftAliasBasicConfig(aliasName, description, message string) string {
+func testAccAWSGameliftAliasBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGameliftAliasBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGameliftBuildBasicConfig(buildName, bucketName, key, roleArn string) string {
+func testAccAWSGameliftBuildBasicConfigTags1(buildName, bucketName, key, roleArn, tagKey1, tagValue1 string) string {
+func testAccAWSGameliftBuildBasicConfigTags2(buildName, bucketName, key, roleArn, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGameliftFleetBasicConfig(fleetName, launchPath, params, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetBasicUpdatedConfig(desc, fleetName, launchPath, params, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetAllFieldsConfig(fleetName, desc, launchPath string, params string, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(fleetName, desc, launchPath string, params string, buildName, bucketName, key, roleArn string) string {
+func testAccAWSGameliftGameSessionQueueBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGameliftGameSessionQueueBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlacierVaultLockConfigCompleteLock(rName string, completeLock bool) string {
 func testAccGlueCrawlerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

@@ -839,7 +839,8 @@ func testAccAWSCodePipelineWebhookConfig_basic(rName string) string {
 func testAccAWSCodePipelineWebhookConfig_ipAuth(rName string) string {
 func testAccAWSCodePipelineWebhookConfig_unauthenticated(rName string) string {
 func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2 string) string {
-func testAccAWSCodePipelineWebhookConfig_codePipeline(rName string, webhook string) string {
+func testAccAWSCodePipelineWebhookConfig_secretTokenUpdated(rName string) string {
+func testAccAWSCodePipelineWebhookConfig_codePipeline(rName string) string {
 func testAccAWSCognitoIdentityPoolRolesAttachmentConfig_basic(name string) string {
 func testAccAWSCognitoIdentityPoolRolesAttachmentConfig_roleMappings(name string) string {
 func testAccAWSCognitoIdentityPoolRolesAttachmentConfig_roleMappingsUpdated(name string) string {
@@ -1048,6 +1049,7 @@ func testAccAWSDBInstanceConfig_ReplicateSourceDb_MultiAZ(rName string, multiAz 
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_ParameterGroupName(rName string) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_Port(rName string, port int) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_VpcSecurityGroupIds(rName string) string {
+func testAccAWSDBInstanceConfig_ReplicateSourceDb_CACertificateIdentifier(rName string, caName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_AllocatedStorage(rName string, allocatedStorage int) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_Io1Storage(rName string, iops int) string {
@@ -1526,6 +1528,8 @@ func testAccESDomainConfig_vpc_update(randInt int, update bool) string {
 func testAccESDomainConfig_internetToVpcEndpoint(randInt int) string {
 func testAccESDomainConfig_LogPublishingOptions(randInt int) string {
 func testAccESDomainConfig_CognitoOptions(randInt int, includeCognitoOptions bool) string {
+func testAccAWSELBConfigTags1(tagKey1, tagValue1 string) string {
+func testAccAWSELBConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSELBAccessLogsOn(r string) string {
 func testAccAWSELBAccessLogsDisabled(r string) string {
 func testAccELBConfig_Listener_IAMServerCertificate(certName, certificate, key, lbProtocol string) string {
@@ -1556,6 +1560,7 @@ func testAccAWSEmrClusterConfigInstanceGroupsName(r int) string {
 func testAccAWSEmrClusterConfigInstanceGroupsUpdate(r int) string {
 func testAccAWSEmrClusterConfigInstanceGroups_st1(r int) string {
 func testAccAWSEmrClusterConfigInstanceGroups_updateAutoScalingPolicy(r int) string {
+func testAccAWSEmrClusterConfigEc2AttributesDefaultManagedSecurityGroups(rName string) string {
 func testAccAWSEmrClusterConfigMasterInstanceGroupBidPrice(rName, bidPrice string) string {
 func testAccAWSEmrClusterConfigMasterInstanceGroupInstanceCount(rName string, instanceCount int) string {
 func testAccAWSEmrClusterConfigMasterInstanceGroupInstanceType(rName, instanceType string) string {
@@ -1608,12 +1613,18 @@ func testAccAwsFsxWindowsFileSystemConfigTags2(tagKey1, tagValue1, tagKey2, tagV
 func testAccAwsFsxWindowsFileSystemConfigThroughputCapacity(throughputCapacity int) string {
 func testAccAwsFsxWindowsFileSystemConfigWeeklyMaintenanceStartTime(weeklyMaintenanceStartTime string) string {
 func testAccAWSGameliftAliasBasicConfig(aliasName, description, message string) string {
+func testAccAWSGameliftAliasBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGameliftAliasBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGameliftBuildBasicConfig(buildName, bucketName, key, roleArn string) string {
+func testAccAWSGameliftBuildBasicConfigTags1(buildName, bucketName, key, roleArn, tagKey1, tagValue1 string) string {
+func testAccAWSGameliftBuildBasicConfigTags2(buildName, bucketName, key, roleArn, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGameliftFleetBasicConfig(fleetName, launchPath, params, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetBasicUpdatedConfig(desc, fleetName, launchPath, params, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetAllFieldsConfig(fleetName, desc, launchPath string, params string, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(fleetName, desc, launchPath string, params string, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetBasicTemplate(buildName, bucketName, key, roleArn string) string {
+func testAccAWSGameliftGameSessionQueueBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGameliftGameSessionQueueBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlacierVaultLockConfigCompleteLock(rName string, completeLock bool) string {
 func testAccGlacierVault_basic(rInt int) string {
 func testAccGlacierVault_full(rInt int) string {
@@ -2295,7 +2306,9 @@ func testAccAwsOpsworksCustomLayerConfigUpdate(name string) string {
 func testAccAwsOpsworksInstanceConfigUpdateHostName(name string) string {
 func testAccAwsOpsworksInstanceConfigCreate(name string) string {
 func testAccAwsOpsworksInstanceConfigUpdate(name string) string {
+func testAccAwsOpsworksPermissionBase(rName string) string {
 func testAccAwsOpsworksPermissionCreate(name, ssh, sudo, level string) string {
+func testAccAwsOpsworksPermissionSelf(rName string, allowSsh bool, allowSudo bool) string {
 func testAccAwsOpsworksRailsAppLayerConfigVpcCreate(name string) string {
 func testAccAwsOpsworksRailsAppLayerNoManageBundlerConfigVpcCreate(name string) string {
 func testAccAwsOpsworksRdsDbInstance(name, userName, password string) string {
@@ -2336,9 +2349,11 @@ func testAccAWSPinpointAPNSVoipChannelConfig_basicCertificate(conf *testAccAwsPi
 func testAccAWSPinpointAPNSVoipChannelConfig_basicToken(conf *testAccAwsPinpointAPNSVoipChannelTokenConfiguration) string {
 func testAccAWSPinpointAPNSVoipSandboxChannelConfig_basicCertificate(conf *testAccAwsPinpointAPNSVoipSandboxChannelCertConfiguration) string {
 func testAccAWSPinpointAPNSVoipSandboxChannelConfig_basicToken(conf *testAccAwsPinpointAPNSVoipSandboxChannelTokenConfiguration) string {
-func testAccAWSPinpointAppConfig_CampaignHookLambda(appName, funcName string) string {
-func testAccAWSPinpointAppConfig_Tag1(shareName, tagKey1, tagValue1 string) string {
-func testAccAWSPinpointAppConfig_Tag2(shareName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSPinpointAppConfig_CampaignHookLambda(rName string) string {
+func testAccAWSPinpointAppConfig_Limits(rName string) string {
+func testAccAWSPinpointAppConfig_QuietTime(rName string) string {
+func testAccAWSPinpointAppConfig_Tag1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSPinpointAppConfig_Tag2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSPinpointBaiduChannelConfig_basic(apiKey, secretKey string) string {
 func testAccAWSPinpointBaiduChannelConfig_update(apiKey, secretKey string) string {
 func testAccAWSPinpointGCMChannelConfig_basic(apiKey string) string {
