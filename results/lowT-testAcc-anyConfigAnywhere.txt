@@ -2718,6 +2718,7 @@ func testAccAWSSSMDocumentPublicPermissionConfig(
 func testAccAWSSSMDocumentPrivatePermissionConfig(
 func testAccAWSSSMDocumentParamConfig(
 func testAccAWSSSMDocumentTypeAutomationConfig(
+func testAccAWSSSMDocumentTypePackageConfig(
 func testAccAWSSSMDocumentTypeSessionConfig(
 func testAccAWSSSMDocumentConfig_DocumentFormat_YAML(
 func testAccAWSSSMDocumentConfigSchemaVersion1(

@@ -3350,6 +3350,7 @@ func TestAccAWSSSMDocument_basic(
 func TestAccAWSSSMDocument_update(
 func TestAccAWSSSMDocument_params(
 func TestAccAWSSSMDocument_automation(
+func TestAccAWSSSMDocument_package(
 func TestAccAWSSSMDocument_session(
 func TestAccAWSSSMDocument_Tags(
 func TestAccAWSSSMMaintenanceWindowTarget_basic(

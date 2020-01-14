@@ -3143,6 +3143,7 @@ func TestAccAWSSSMDocument_permission_batching(
 func TestAccAWSSSMDocument_permission_change(
 func TestAccAWSSSMDocument_params(
 func TestAccAWSSSMDocument_automation(
+func TestAccAWSSSMDocument_package(
 func TestAccAWSSSMDocument_SchemaVersion_1(
 func TestAccAWSSSMDocument_session(
 func TestAccAWSSSMDocument_DocumentFormat_YAML(

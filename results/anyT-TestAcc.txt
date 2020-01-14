@@ -2760,6 +2760,7 @@ func testAccCheckAWSDbParamaterGroupDisappears(
 func testAccCheckAWSDBParameterGroupDestroy(
 func testAccCheckAWSDBParameterGroupAttributes(
 func testAccCheckAWSDBParameterGroupExists(
+func testAccCheckAWSDBParameterNotUserDefined(
 func testAccAWSDBParameterGroupConfig(
 func testAccAWSDBParameterGroupConfigWithApplyMethod(
 func testAccAWSDBParameterGroupAddParametersConfig(
@@ -6212,6 +6213,7 @@ func TestAccAWSDBClusterParameterGroup_generatedName_Parameter(
 func TestAccAWSDBClusterParameterGroup_disappears(
 func TestAccAWSDBClusterParameterGroup_only(
 func testAccCheckAWSDBClusterParameterGroupDestroy(
+func testAccCheckAWSRDSClusterParameterNotUserDefined(
 func testAccCheckAWSDBClusterParameterGroupAttributes(
 func testAccAWSDBClusterParameterGroupDisappears(
 func testAccCheckAWSDBClusterParameterGroupExists(
@@ -7467,6 +7469,7 @@ func TestAccAWSSSMDocument_permission_batching(
 func TestAccAWSSSMDocument_permission_change(
 func TestAccAWSSSMDocument_params(
 func TestAccAWSSSMDocument_automation(
+func TestAccAWSSSMDocument_package(
 func TestAccAWSSSMDocument_SchemaVersion_1(
 func TestAccAWSSSMDocument_session(
 func TestAccAWSSSMDocument_DocumentFormat_YAML(
@@ -7480,6 +7483,7 @@ func testAccAWSSSMDocumentPublicPermissionConfig(
 func testAccAWSSSMDocumentPrivatePermissionConfig(
 func testAccAWSSSMDocumentParamConfig(
 func testAccAWSSSMDocumentTypeAutomationConfig(
+func testAccAWSSSMDocumentTypePackageConfig(
 func testAccAWSSSMDocumentTypeSessionConfig(
 func testAccAWSSSMDocumentConfig_DocumentFormat_YAML(
 func testAccAWSSSMDocumentConfigSchemaVersion1(
