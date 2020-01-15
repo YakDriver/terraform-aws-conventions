@@ -4171,6 +4171,7 @@ func testAccAWSGameliftFleetBasicUpdatedConfig(
 func testAccAWSGameliftFleetAllFieldsConfig(
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(
 func testAccAWSGameliftFleetBasicTemplate(
+func testAccAWSGameLiftFleetIAMRole(
 func TestAccAWSGameliftGameSessionQueue_basic(
 func TestAccAWSGameliftGameSessionQueue_tags(
 func TestAccAWSGameliftGameSessionQueue_disappears(
@@ -6273,6 +6274,7 @@ func testAccCheckAWSClusterSnapshot(
 func testAccCheckAWSClusterExists(
 func testAccCheckAWSClusterExistsWithProvider(n string, v *rds.DBCluster, providerF func(
 func testAccCheckAWSClusterRecreated(
+func TestAccAWSRDSCluster_EnableHttpEndpoint(
 func testAccAWSClusterConfig(
 func testAccAWSClusterConfig_AvailabilityZones(
 func testAccAWSClusterConfig_BacktrackWindow(
@@ -6318,6 +6320,7 @@ func testAccAWSRDSClusterConfig_SnapshotIdentifier_VpcSecurityGroupIds(
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_VpcSecurityGroupIds_Tags(
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_EncryptedRestore(
 func testAccAWSClusterConfigWithCopyTagsToSnapshot(
+func testAccAWSRDSClusterConfig_EnableHttpEndpoint(
 func TestAccAWSRdsGlobalCluster_basic(
 func TestAccAWSRdsGlobalCluster_disappears(
 func TestAccAWSRdsGlobalCluster_DatabaseName(

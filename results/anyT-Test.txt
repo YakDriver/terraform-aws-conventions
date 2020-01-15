@@ -3846,6 +3846,7 @@ func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(
 func testAccAWSEksClusterConfig_VpcConfig_PublicAccessCidrs(
+func testSweepEksFargateProfiles(
 func TestAccAWSEksFargateProfile_basic(
 func TestAccAWSEksFargateProfile_disappears(
 func TestAccAWSEksFargateProfile_Selector_Labels(
@@ -3859,6 +3860,7 @@ func testAccAWSEksFargateProfileConfigFargateProfileName(
 func testAccAWSEksFargateProfileConfigSelectorLabels1(
 func testAccAWSEksFargateProfileConfigTags1(
 func testAccAWSEksFargateProfileConfigTags2(
+func testSweepEksFargateNodegroups(
 func TestAccAWSEksNodeGroup_basic(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
@@ -4392,6 +4394,7 @@ func testAccAWSGameliftFleetBasicUpdatedConfig(
 func testAccAWSGameliftFleetAllFieldsConfig(
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(
 func testAccAWSGameliftFleetBasicTemplate(
+func testAccAWSGameLiftFleetIAMRole(
 func testSweepGameliftGameSessionQueue(
 func TestAccAWSGameliftGameSessionQueue_basic(
 func TestAccAWSGameliftGameSessionQueue_tags(
@@ -6569,6 +6572,7 @@ func testAccCheckAWSClusterSnapshot(
 func testAccCheckAWSClusterExists(
 func testAccCheckAWSClusterExistsWithProvider(n string, v *rds.DBCluster, providerF func(
 func testAccCheckAWSClusterRecreated(
+func TestAccAWSRDSCluster_EnableHttpEndpoint(
 func testAccAWSClusterConfig(
 func testAccAWSClusterConfig_AvailabilityZones(
 func testAccAWSClusterConfig_BacktrackWindow(
@@ -6614,6 +6618,7 @@ func testAccAWSRDSClusterConfig_SnapshotIdentifier_VpcSecurityGroupIds(
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_VpcSecurityGroupIds_Tags(
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_EncryptedRestore(
 func testAccAWSClusterConfigWithCopyTagsToSnapshot(
+func testAccAWSRDSClusterConfig_EnableHttpEndpoint(
 func testSweepRdsGlobalClusters(
 func TestAccAWSRdsGlobalCluster_basic(
 func TestAccAWSRdsGlobalCluster_disappears(

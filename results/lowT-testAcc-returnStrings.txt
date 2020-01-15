@@ -1623,6 +1623,7 @@ func testAccAWSGameliftFleetBasicUpdatedConfig(desc, fleetName, launchPath, para
 func testAccAWSGameliftFleetAllFieldsConfig(fleetName, desc, launchPath string, params string, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(fleetName, desc, launchPath string, params string, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetBasicTemplate(buildName, bucketName, key, roleArn string) string {
+func testAccAWSGameLiftFleetIAMRole(rName string) string {
 func testAccAWSGameliftGameSessionQueueBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGameliftGameSessionQueueBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlacierVaultLockConfigCompleteLock(rName string, completeLock bool) string {
@@ -2443,6 +2444,7 @@ func testAccAWSRDSClusterConfig_SnapshotIdentifier_VpcSecurityGroupIds(rName str
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_VpcSecurityGroupIds_Tags(rName string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_EncryptedRestore(rName string) string {
 func testAccAWSClusterConfigWithCopyTagsToSnapshot(n int, f bool) string {
+func testAccAWSRDSClusterConfig_EnableHttpEndpoint(rName string, enableHttpEndpoint bool) string {
 func testAccAWSRdsGlobalClusterConfig(rName string) string {
 func testAccAWSRdsGlobalClusterConfigDatabaseName(rName, databaseName string) string {
 func testAccAWSRdsGlobalClusterConfigDeletionProtection(rName string, deletionProtection bool) string {

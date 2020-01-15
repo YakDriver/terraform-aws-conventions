@@ -2196,6 +2196,7 @@ func testAccAWSRDSClusterConfig_SnapshotIdentifier_VpcSecurityGroupIds(rName str
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_VpcSecurityGroupIds_Tags(rName string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_EncryptedRestore(rName string) string {
 func testAccAWSClusterConfigWithCopyTagsToSnapshot(n int, f bool) string {
+func testAccAWSRDSClusterConfig_EnableHttpEndpoint(rName string, enableHttpEndpoint bool) string {
 func testAccAWSRdsGlobalClusterConfig(rName string) string {
 func testAccAWSRdsGlobalClusterConfigDatabaseName(rName, databaseName string) string {
 func testAccAWSRdsGlobalClusterConfigDeletionProtection(rName string, deletionProtection bool) string {

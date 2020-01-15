@@ -2793,6 +2793,7 @@ func TestAccAWSRDSCluster_GlobalClusterIdentifier(
 func TestAccAWSRDSCluster_Port(
 func TestAccAWSRDSCluster_ScalingConfiguration(
 func TestAccAWSRDSCluster_SnapshotIdentifier(
+func TestAccAWSRDSCluster_EnableHttpEndpoint(
 func testAccAWSClusterConfig_AvailabilityZones(
 func testAccAWSClusterConfig_BacktrackWindow(
 func testAccAWSClusterConfig_ClusterIdentifierPrefix(
@@ -2812,6 +2813,7 @@ func testAccAWSRDSClusterConfig_EngineMode(
 func testAccAWSRDSClusterConfig_GlobalClusterIdentifier(
 func testAccAWSRDSClusterConfig_ScalingConfiguration(
 func testAccAWSRDSClusterConfig_SnapshotIdentifier(
+func testAccAWSRDSClusterConfig_EnableHttpEndpoint(
 func TestAccAWSRdsGlobalCluster_basic(
 func TestAccAWSRdsGlobalCluster_disappears(
 func TestAccAWSRdsGlobalCluster_DatabaseName(
