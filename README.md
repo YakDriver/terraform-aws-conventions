@@ -4,46 +4,46 @@ What is the current state of naming conventions in Terraform AWS provider accept
 ## Capital-T Test Functions
 
 ### All
-Count: 3619
+Count: 3615
 
 [List matches](./results/capT-Test.txt)
 
-Example: `func TestAccAWSDBInstance_AllowMajorVersionUpgrade(`
+Example: `func TestAccAWSDocDBCluster_namePrefix(`
 
 ### TestAcc
 Count: 3263
 
 [List matches](./results/capT-TestAcc.txt)
 
-Example: `func TestAccAWSAmiDataSource_localNameFilter(`
+Example: `func TestAccDataSourceS3Bucket_basic(`
 
 ### TestAccAWS
 Count: 2955
 
 [List matches](./results/capT-TestAcc-allCapAWS.txt)
 
-Example: `func TestAccAWSFlowLog_SubnetID(`
+Example: `func TestAccAWSRedshiftSnapshotSchedule_withMultipleDefinition(`
 
 ### TestAccAws
 Count: 143
 
 [List matches](./results/capT-TestAcc-iniCapAws.txt)
 
-Example: `func TestAccAwsGlobalAcceleratorAccelerator_attributes(`
+Example: `func TestAccAwsSecretsManagerSecret_RecoveryWindowInDays_Recreate(`
 
 ### TestAcc and lowercase after first underscore
 Count: 2065
 
 [List matches](./results/capT-TestAcc-lowAfterUnderscore.txt)
 
-Example: `func TestAccAWSVPCPeeringConnection_accept(`
+Example: `func TestAccAWSVpnGateway_reattach(`
 
 ### TestAcc and uppercase after first underscore
 Count: 1145
 
 [List matches](./results/capT-TestAcc-uppAfterUnderscore.txt)
 
-Example: `func TestAccAWSGlacierVaultLock_CompleteLock(`
+Example: `func TestAccAWSWorkLinkFleet_Disappears(`
 
 ## Lowercase-t test Functions
 
@@ -52,121 +52,121 @@ Count: 5218
 
 [List matches](./results/lowT-test.txt)
 
-Example: `func testAccCheckAWSAPIGatewayDocumentationVersionDestroy(`
+Example: `func testAccCheckAWSLaunchConfigurationExists(`
 
 ### testAcc
 Count: 5039
 
 [List matches](./results/lowT-testAcc.txt)
 
-Example: `func testAccAWSLambdaConfigWithTracingConfig(`
+Example: `func testAccCheckCloudWatchLogMetricFilterTransformation(`
 
 ### testAccAWS
 Count: 2239
 
 [List matches](./results/lowT-testAcc-allCapAWS.txt)
 
-Example: `func testAccAWSConfigConfigurationAggregatorConfig_tags(`
+Example: `func testAccAWSEFSFileSystemConfigWithKmsKey(`
 
 ### testAccAws
 Count: 257
 
 [List matches](./results/lowT-testAcc-iniCapAws.txt)
 
-Example: `func testAccAwsDocDBClusterSnapshotConfig(`
+Example: `func testAccAwsBackupPlanConfig_threeRules(`
 
 ### testAcc functions with lowercase after first underscore
 Count: 978
 
 [List matches](./results/lowT-testAcc-lowAfterUnderscore.txt)
 
-Example: `func testAccAWSLBListenerRuleConfig_conditionAttributesCount_path_pattern(`
+Example: `func testAccMqConfigurationConfig_updateTags1(`
 
 ### testAcc functions with uppercase after first underscore
 Count: 638
 
 [List matches](./results/lowT-testAcc-uppAfterUnderscore.txt)
 
-Example: `func testAccAwsDxTransitVirtualInterface_Tags(`
+Example: `func testAccAWSWafWebAclConfig_Rules_Multiple(`
 
 ### testAcc functions with config (any case)
 Count: 3008
 
 [List matches](./results/lowT-testAcc-anyConfigAnywhere.txt)
 
-Example: `func testAccMskClusterConfigEncryptionInfoEncryptionInTransitClientBroker(`
+Example: `func testAccDataSourceAwsWorkspaceBundleConfig(`
 
 ### testAcc functions returning strings
 Count: 3156
 
 [List matches](./results/lowT-testAcc-returnStrings.txt)
 
-Example: `func testAccAWSSecurityGroupRuleConfigMultipleRuleSearchingAllProtocolCrash(rName string) string {`
+Example: `func testAccMqConfigurationWithDataConfig(configurationName string) string {`
 
 ### testAcc functions with config (any case) and returning strings
 Count: 2863
 
 [List matches](./results/lowT-testAcc-anyConfigAnywhereReturnStrings.txt)
 
-Example: `func testAccAWSEksClusterConfig_Logging(rName string, logTypes []string) string {`
+Example: `func testAccKinesisStreamConfigWithEnforceConsumerDeletion(rInt int) string {`
 
 ### testAcc functions with config (any case) and returning strings without underscores
 Count: 1546
 
 [List matches](./results/lowT-testAcc-anyConfigAnywhereReturnStringsNoUnderscore.txt)
 
-Example: `func testAccAWSSecurityGroupRuleConfigDescriptionAllPortsNonZeroPorts(rName, description string) string {`
+Example: `func testAccInstanceConfigIpv6SupportWithIpv4(rName string) string {`
 
 ## Any case-t Test Functions
 
 ### All
-Count: 8837
+Count: 8833
 
 [List matches](./results/anyT-Test.txt)
 
-Example: `func TestAccAWSEc2TransitGateway_Description(`
+Example: `func testAccCheckAwsAvailabilityZonesBlacklisting(`
 
 ### TestAcc
 Count: 8302
 
 [List matches](./results/anyT-TestAcc.txt)
 
-Example: `func testAccCheckDbSnapshotDestroy(`
+Example: `func testAccCheckDbSnapshotExists(`
 
 ### TestAcc with lowercase after first underscore
 Count: 3043
 
 [List matches](./results/anyT-TestAcc-lowAfterUnderscore.txt)
 
-Example: `func TestAccAWSRedshiftParameterGroup_basic(`
+Example: `func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(`
 
 ### TestAcc with uppercase after first underscore
 Count: 1783
 
 [List matches](./results/anyT-TestAcc-capAfterUnderscore.txt)
 
-Example: `func testAccInstanceDataSourceConfig_Tags(`
+Example: `func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_ExternalUpdate(`
 
 ### TestAcc with only one underscore
 Count: 3782
 
 [List matches](./results/anyT-TestAcc-onlyOneUnderscore.txt)
 
-Example: `func testAccAWSWafRegionalRegexPatternSet_basic(`
+Example: `func testAccAWSNeptuneClusterConfig_iamAuth(`
 
 ### TestAcc with camel case after first underscore
 Count: 1406
 
 [List matches](./results/anyT-TestAcc-camelcase.txt)
 
-Example: `func TestAccAWSRedshiftCluster_withFinalSnapshot(`
+Example: `func TestAccAWSOpsworksStack_noVpcCreateTags(`
 
 ### TestAcc with multiple underscores
 Count: 1044
 
 [List matches](./results/anyT-TestAcc-multipleUnderscores.txt)
 
-Example: `func testAccConfigConfigRule_Scope_TagValue(`
+Example: `func TestAccAWSInstance_creditSpecificationT3_unspecifiedDefaultsToUnlimited(`
 
 ## Test Constants
 
@@ -175,75 +175,75 @@ Count: 522
 
 [List matches](./results/const-anyT-Test.txt)
 
-Example: `const testAccAWSSNSSMSPreferencesConfig_empty =`
+Example: `const testAccAwsSESIdentityNotificationTopicConfig_update =`
 
 ### TestAcc (any case)
 Count: 513
 
 [List matches](./results/const-anyT-TestAcc.txt)
 
-Example: `const testAccAWSEIPConfig_PublicIpv4Pool_default =`
+Example: `const testAccAWSENIConfigExternalAttachment =`
 
 ### testAcc (lowercase)
 Count: 513
 
 [List matches](./results/const-lowT-testAcc.txt)
 
-Example: `const testAccRoute53RecordAliasChangePre =`
+Example: `const testAccAWSSecurityGroupConfigPrefixListIngress =`
 
 ### TestAcc (any case) with lowercase after first underscore
 Count: 170
 
 [List matches](./results/const-anyT-TestAcc-underscoreLower.txt)
 
-Example: `const testAccDataSourceAwsTransferServerConfig_basic =`
+Example: `const testAccCheckWafRegionalWebAclAssociationConfig_basic =`
 
 ### TestAcc (any case) with uppercase after first underscore
 Count: 51
 
 [List matches](./results/const-anyT-TestAcc-underscoreUpper.txt)
 
-Example: `const testAccDataSourceAwsWafRegionalRateBasedRuleConfig_NonExistent =`
+Example: `const testAccVpcConfig_DisabledDnsSupport =`
 
 ### TestAcc (any case) with camel case after underscore
 Count: 76
 
 [List matches](./results/const-anyT-TestAcc-underscoreCamelcase.txt)
 
-Example: `const testAccAWSDBClusterParameterGroupConfig_generatedName =`
+Example: `const testAccAWSSNSTopicConfig_withGeneratedName =`
 
 ### TestAcc (any case) with only one underscore
 Count: 176
 
 [List matches](./results/const-anyT-TestAcc-onlyOneUnderscore.txt)
 
-Example: `const testAccDataSourceAwsWafRegionalIPSet_NonExistent =`
+Example: `const testAccAWSSNSSMSPreferencesConfig_empty =`
 
 ### TestAcc (any case) with multiple underscores
 Count: 45
 
 [List matches](./results/const-anyT-TestAcc-multipleUnderscores.txt)
 
-Example: `const testAccAWSDefaultNetworkConfig_Subnets_move =`
+Example: `const testAccAWSLaunchTemplateConfig_instanceMarketOptions_basic =`
 
 ### TestAcc (any case) with config (any case)
 Count: 454
 
 [List matches](./results/const-anyT-TestAcc-anyConfigAnywhere.txt)
 
-Example: `const testAccAWSNetworkAclRuleBasicConfig =`
+Example: `const testAccDBSubnetGroupConfig_generatedName =`
 
 ### TestAcc (any case) with config (any case) and no underscores
 Count: 254
 
 [List matches](./results/const-anyT-TestAcc-anyConfigAnywhereNoUnderscores.txt)
 
-Example: `const testAccAWSEIPConfig =`
+Example: `const testAccCheckAWSInspectorRulesPackagesConfig =`
 
 ### TestAcc (any case) with underscore anywhere after config (any case)
 Count: 198
 
 [List matches](./results/const-anyT-TestAcc-underscoreAfterAnyConfig.txt)
 
-Example: `const testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic =`
+Example: `const testAccAWSPinpointSMSChannelConfig_basic =`
 

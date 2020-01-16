@@ -3506,14 +3506,10 @@ func TestCheckYamlString(
 func TestNormalizeCloudFormationTemplate(
 func TestCognitoUserPoolSchemaAttributeMatchesStandardAttribute(
 func TestCanonicalXML(
-func TestDiffBeanstalkTags(
-func TestIgnoringTagsBeanstalk(
 func TestDiffDXTags(
 func TestIgnoringTagsDX(
 func TestDiffGenericTags(
 func TestIgnoringTagsGeneric(
-func TestDiffIAMTags(
-func TestIgnoringTagsIAM(
 func TestDiffOrganizationsTags(
 func TestIgnoringTagsOrganizations(
 func TestDiffTags(
