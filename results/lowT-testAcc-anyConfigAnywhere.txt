@@ -2246,6 +2246,8 @@ func testAccAWSPinpointBaiduChannelConfig_update(
 func testAccAWSPinpointGCMChannelConfig_basic(
 func testAccAWSPinpointSMSChannelConfig_full(
 func testAccAWSPlacementGroupConfig(
+func testAccAWSPlacementGroupConfigTags1(
+func testAccAWSPlacementGroupConfigTags2(
 func testAccProxyProtocolPolicyConfig(
 func testAccProxyProtocolPolicyConfigUpdate(
 func testAccAWSQLDBLedgerConfig(

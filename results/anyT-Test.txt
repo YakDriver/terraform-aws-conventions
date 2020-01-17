@@ -647,7 +647,6 @@ func TestAccDataSourceAwsWafWebAcl_Basic(
 func testAccDataSourceAwsWafWebAclConfig_Name(
 func TestAccDataSourceAwsWorkspaceBundle_basic(
 func testAccDataSourceAwsWorkspaceBundleConfig(
-func TestDataSyncTagsDiff(
 func TestDataSyncParseLocationURI(
 func testAccCheckAwsPolicyMatch(
 func TestSuppressEquivalentJsonDiffsWhitespaceAndNoWhitespace(
@@ -680,6 +679,7 @@ func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
 func testAccMatchResourceAttrGlobalARN(
+func testAccCheckResourceAttrRfc3339(
 func testAccCheckListHasSomeElementAttrPair(
 func testAccGetAccountID(
 func testAccGetRegion(
@@ -4919,6 +4919,7 @@ func testAccAWSInspectorTemplateAssessment(
 func testAccCheckAWSInspectorTemplatetModified(
 func TestAccAWSInspectorResourceGroup_basic(
 func testAccCheckAWSInspectorResourceGroupExists(
+func testAccCheckAWSInspectorResourceGroupRecreated(
 func TestAWSInstanceMigrateState(
 func TestAWSInstanceMigrateState_empty(
 func testSweepInstances(
@@ -6392,9 +6393,14 @@ func testAccCheckAWSPinpointSMSChannelExists(
 func testAccAWSPinpointSMSChannelConfig_full(
 func testAccCheckAWSPinpointSMSChannelDestroy(
 func TestAccAWSPlacementGroup_basic(
+func TestAccAWSPlacementGroup_tags(
+func TestAccAWSPlacementGroup_disappears(
 func testAccCheckAWSPlacementGroupDestroy(
+func testAccCheckAWSPlacementGroupDisappears(
 func testAccCheckAWSPlacementGroupExists(
 func testAccAWSPlacementGroupConfig(
+func testAccAWSPlacementGroupConfigTags1(
+func testAccAWSPlacementGroupConfigTags2(
 func TestAccAWSProxyProtocolPolicy_basic(
 func testAccCheckProxyProtocolPolicyDestroy(
 func testAccProxyProtocolPolicyConfig(
@@ -8725,10 +8731,6 @@ func TestCognitoUserPoolSchemaAttributeMatchesStandardAttribute(
 func TestCanonicalXML(
 func TestDiffDXTags(
 func TestIgnoringTagsDX(
-func TestDiffGenericTags(
-func TestIgnoringTagsGeneric(
-func TestDiffOrganizationsTags(
-func TestIgnoringTagsOrganizations(
 func TestDiffTags(
 func TestIgnoringTags(
 func TestTagsMapToHash(

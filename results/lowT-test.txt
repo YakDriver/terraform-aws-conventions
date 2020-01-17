@@ -295,6 +295,7 @@ func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
 func testAccMatchResourceAttrGlobalARN(
+func testAccCheckResourceAttrRfc3339(
 func testAccCheckListHasSomeElementAttrPair(
 func testAccGetAccountID(
 func testAccGetRegion(
@@ -2963,6 +2964,7 @@ func testAccCheckAWSInspectorTemplateExists(
 func testAccAWSInspectorTemplateAssessment(
 func testAccCheckAWSInspectorTemplatetModified(
 func testAccCheckAWSInspectorResourceGroupExists(
+func testAccCheckAWSInspectorResourceGroupRecreated(
 func testSweepInstances(
 func testAccCheckInstanceNotRecreated(
 func testAccCheckInstanceDestroy(
@@ -3852,8 +3854,11 @@ func testAccCheckAWSPinpointSMSChannelExists(
 func testAccAWSPinpointSMSChannelConfig_full(
 func testAccCheckAWSPinpointSMSChannelDestroy(
 func testAccCheckAWSPlacementGroupDestroy(
+func testAccCheckAWSPlacementGroupDisappears(
 func testAccCheckAWSPlacementGroupExists(
 func testAccAWSPlacementGroupConfig(
+func testAccAWSPlacementGroupConfigTags1(
+func testAccAWSPlacementGroupConfigTags2(
 func testAccCheckProxyProtocolPolicyDestroy(
 func testAccProxyProtocolPolicyConfig(
 func testAccProxyProtocolPolicyConfigUpdate(

@@ -1486,6 +1486,8 @@ func TestAccAWSPinpointGCMChannel_basic(
 func TestAccAWSPinpointSMSChannel_basic(
 func TestAccAWSPinpointSMSChannel_full(
 func TestAccAWSPlacementGroup_basic(
+func TestAccAWSPlacementGroup_tags(
+func TestAccAWSPlacementGroup_disappears(
 func TestAccAWSProxyProtocolPolicy_basic(
 func TestAccAWSQLDBLedger_basic(
 func TestAccAWSQuickSightGroup_basic(

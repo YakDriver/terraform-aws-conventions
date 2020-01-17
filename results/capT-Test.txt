@@ -362,7 +362,6 @@ func TestAccDataSourceAwsWafRegionalWebAcl_Basic(
 func TestAccDataSourceAwsWafRule_Basic(
 func TestAccDataSourceAwsWafWebAcl_Basic(
 func TestAccDataSourceAwsWorkspaceBundle_basic(
-func TestDataSyncTagsDiff(
 func TestDataSyncParseLocationURI(
 func TestSuppressEquivalentJsonDiffsWhitespaceAndNoWhitespace(
 func TestSuppressEquivalentTypeStringBoolean(
@@ -2539,6 +2538,8 @@ func TestAccAWSPinpointGCMChannel_basic(
 func TestAccAWSPinpointSMSChannel_basic(
 func TestAccAWSPinpointSMSChannel_full(
 func TestAccAWSPlacementGroup_basic(
+func TestAccAWSPlacementGroup_tags(
+func TestAccAWSPlacementGroup_disappears(
 func TestAccAWSProxyProtocolPolicy_basic(
 func TestAccAWSQLDBLedger_basic(
 func TestAccAWSQLDBLedger_Tags(
@@ -3508,10 +3509,6 @@ func TestCognitoUserPoolSchemaAttributeMatchesStandardAttribute(
 func TestCanonicalXML(
 func TestDiffDXTags(
 func TestIgnoringTagsDX(
-func TestDiffGenericTags(
-func TestIgnoringTagsGeneric(
-func TestDiffOrganizationsTags(
-func TestIgnoringTagsOrganizations(
 func TestDiffTags(
 func TestIgnoringTags(
 func TestTagsMapToHash(

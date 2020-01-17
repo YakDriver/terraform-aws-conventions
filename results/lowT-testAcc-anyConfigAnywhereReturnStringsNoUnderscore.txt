@@ -1094,6 +1094,8 @@ func testAccAwsOrganizationsOrganizationConfigEnabledPolicyTypes1(policyType1 st
 func testAccAwsOrganizationsOrganizationConfigFeatureSet(featureSet string) string {
 func testAccAwsOrganizationsPolicyConfigConcurrent(rName string) string {
 func testAccAWSPlacementGroupConfig(rName string) string {
+func testAccAWSPlacementGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSPlacementGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccProxyProtocolPolicyConfig(rName string) string {
 func testAccProxyProtocolPolicyConfigUpdate(rName string) string {
 func testAccAWSQLDBLedgerConfig(n int) string {
@@ -1297,7 +1299,7 @@ func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, ta
 func testAccServiceDiscoveryHttpNamespaceConfig(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigDescription(rName, description string) string {
 func testAccServiceDiscoveryPrivateDnsNamespaceConfig(rName string) string {
-func testAccServiceDiscoveryPrivateDnsNamespaceConfigOverlapping(topDomain, subDomain string) string {
+func testAccServiceDiscoveryPrivateDnsNamespaceConfigOverlapping(topDomain string) string {
 func testAccServiceDiscoveryPublicDnsNamespaceConfig(rName string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigSameValue(quotaCode, serviceCode string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigValue(quotaCode, serviceCode, value string) string {
