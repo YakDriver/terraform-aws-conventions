@@ -20,7 +20,10 @@ func TestAccAWSCloudFormationStack_dataSource_basic(
 func TestAccAWSCloudFormationStack_dataSource_yaml(
 func TestAccAWSCloudTrailServiceAccount_basic(
 func TestAccAWSCloudTrailServiceAccount_Region(
-func TestAccAWSCloudwatchLogGroupDataSource(
+func TestAccAWSCloudwatchLogGroupDataSource_basic(
+func TestAccAWSCloudwatchLogGroupDataSource_tags(
+func TestAccAWSCloudwatchLogGroupDataSource_kms(
+func TestAccAWSCloudwatchLogGroupDataSource_retention(
 func TestAccAWSCodeCommitRepositoryDataSource_basic(
 func TestAccAWSCustomerGatewayDataSource_Filter(
 func TestAccAWSCustomerGatewayDataSource_ID(
@@ -262,6 +265,7 @@ func TestAccAWSAPIGatewayRestApi_tags(
 func TestAccAWSAPIGatewayRestApi_disappears(
 func TestAccAWSAPIGatewayRestApi_EndpointConfiguration(
 func TestAccAWSAPIGatewayRestApi_EndpointConfiguration_Private(
+func TestAccAWSAPIGatewayRestApi_EndpointConfiguration_VPCEndpoint(
 func TestAccAWSAPIGatewayRestApi_api_key_source(
 func TestAccAWSAPIGatewayRestApi_policy(
 func TestAccAWSAPIGatewayRestApi_openapi(
@@ -1648,8 +1652,10 @@ func TestAccAWSIoTTopicRule_s3(
 func TestAccAWSIoTTopicRule_sns(
 func TestAccAWSIoTTopicRule_sqs(
 func TestAccAWSKeyPair_basic(
+func TestAccAWSKeyPair_tags(
 func TestAccAWSKeyPair_generatedName(
 func TestAccAWSKeyPair_namePrefix(
+func TestAccAWSKeyPair_disappears(
 func TestAccAWSKinesisAnalyticsApplication_basic(
 func TestAccAWSKinesisAnalyticsApplication_update(
 func TestAccAWSKinesisAnalyticsApplication_addCloudwatchLoggingOptions(
@@ -2122,6 +2128,7 @@ func TestAccAWSQuickSightUser_basic(
 func TestAccAWSQuickSightUser_withInvalidFormattedEmailStillWorks(
 func TestAccAWSQuickSightUser_disappears(
 func TestAccAWSRDSClusterEndpoint_basic(
+func TestAccAWSRDSClusterEndpoint_tags(
 func TestAccAWSRDSClusterInstance_basic(
 func TestAccAWSRDSClusterInstance_isAlreadyBeingDeleted(
 func TestAccAWSRDSClusterInstance_az(

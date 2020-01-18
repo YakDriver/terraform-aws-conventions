@@ -25,6 +25,10 @@ func TestAccAWSCloudFormationStack_dataSource_yaml(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(
 func TestAccDataSourceCloudHsm2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
+func TestAccAWSCloudwatchLogGroupDataSource_basic(
+func TestAccAWSCloudwatchLogGroupDataSource_tags(
+func TestAccAWSCloudwatchLogGroupDataSource_kms(
+func TestAccAWSCloudwatchLogGroupDataSource_retention(
 func TestAccAWSCodeCommitRepositoryDataSource_basic(
 func TestAccDataSourceAwsCognitoUserPools_basic(
 func testAccDataSourceAwsCognitoUserPoolsConfig_basic(
@@ -205,6 +209,8 @@ func TestAccDataSourceAwsSecurityGroups_filter(
 func testAccDataSourceAwsSecurityGroupsConfig_tag(
 func testAccDataSourceAwsSecurityGroupsConfig_filter(
 func TestAccDataSourceAwsSecurityGroup_basic(
+func TestAccDataSourceAwsSqsQueue_basic(
+func TestAccDataSourceAwsSqsQueue_tags(
 func TestAccAWSSsmDocumentDataSource_basic(
 func TestAccAWSSsmParameterDataSource_basic(
 func TestAccAWSSsmParameterDataSource_fullPath(
@@ -1691,8 +1697,10 @@ func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
 func TestAccAWSKeyPair_basic(
+func TestAccAWSKeyPair_tags(
 func TestAccAWSKeyPair_generatedName(
 func TestAccAWSKeyPair_namePrefix(
+func TestAccAWSKeyPair_disappears(
 func TestAccAWSKinesisAnalyticsApplication_basic(
 func TestAccAWSKinesisAnalyticsApplication_update(
 func TestAccAWSKinesisAnalyticsApplication_addCloudwatchLoggingOptions(
@@ -2263,6 +2271,7 @@ func TestAccAwsRamResourceAssociation_disappears(
 func TestAccAwsRamResourceShareAccepter_basic(
 func TestAccAwsRamResourceShare_basic(
 func TestAccAWSRDSClusterEndpoint_basic(
+func TestAccAWSRDSClusterEndpoint_tags(
 func TestAccAWSRDSClusterInstance_basic(
 func TestAccAWSRDSClusterInstance_isAlreadyBeingDeleted(
 func TestAccAWSRDSClusterInstance_az(

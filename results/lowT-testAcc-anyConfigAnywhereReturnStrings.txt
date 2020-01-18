@@ -21,6 +21,9 @@ func testAccCheckAwsCloudformationExportConfig(rName string) string {
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(stackName string) string {
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(stackName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
+func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
+func testAccCheckAWSCloudwatchLogGroupDataSourceConfigKMS(rName string) string {
+func testAccCheckAWSCloudwatchLogGroupDataSourceConfigRetention(rName string) string {
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_basic(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_notFound(rName string) string {
@@ -168,6 +171,7 @@ func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(serviceCode, q
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaName(serviceCode, quotaName string) string {
 func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(serviceName string) string {
 func testAccDataSourceAwsSqsQueueConfig(rName string) string {
+func testAccDataSourceAwsSqsQueueConfigTags(rName string) string {
 func testAccCheckAwsSsmDocumentDataSourceConfig(name string, documentFormat string) string {
 func testAccCheckAwsSsmParameterDataSourceConfig(name string, withDecryption string) string {
 func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskNode(rName string) string {
@@ -348,6 +352,7 @@ func testAccAWSAPIGatewayResourceConfig_updatePathPart(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfig(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(rName, endpointType string) string {
 func testAccAWSAPIGatewayRestAPIConfig_Name(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayRestAPIConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayRestAPIConfigWithAPIKeySource(rName string) string {
@@ -1696,6 +1701,8 @@ func testAccAWSIotThingConfig_full(thingName, typeName, answer string) string {
 func testAccAWSIotThingTypeConfig_basic(rName int) string {
 func testAccAWSIotThingTypeConfig_full(rName int) string {
 func testAccAWSIotThingTypeConfig_fullUpdated(rName int) string {
+func testAccAWSKeyPairConfigTags1(tagKey1, tagValue1 string) string {
+func testAccAWSKeyPairConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsApplicationConfigOutputsLambda(rInt int) string {
 func testAccFirehoseAWSLambdaConfigBasic(funcName, policyName, roleName string) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_s3WithCloudwatchLogging(rInt int) string {
@@ -2130,7 +2137,10 @@ func testAccAwsRamResourceShareConfigAllowExternalPrincipals(shareName string, a
 func testAccAwsRamResourceShareConfigName(shareName string) string {
 func testAccAwsRamResourceShareConfigTags1(shareName, tagKey1, tagValue1 string) string {
 func testAccAwsRamResourceShareConfigTags2(shareName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSClusterEndpointConfigBase(n int) string {
 func testAccAWSClusterEndpointConfig(n int) string {
+func testAccAWSClusterEndpointConfigTags1(n int, tagKey1, tagValue1 string) string {
+func testAccAWSClusterEndpointConfigTags2(n int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSClusterInstanceConfig(n int) string {
 func testAccAWSClusterInstanceConfigModified(n int) string {
 func testAccAWSClusterInstanceConfig_az(n int) string {

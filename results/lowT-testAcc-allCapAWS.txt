@@ -179,6 +179,7 @@ func testAccAWSAPIGatewayResourceConfig_updatePathPart(
 func testAccAWSAPIGatewayRestAPIConfig(
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfig_Name(
+func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfigTags1(
 func testAccAWSAPIGatewayRestAPIConfigTags2(
 func testAccAWSAPIGatewayRestAPIConfigWithAPIKeySource(
@@ -1240,6 +1241,8 @@ func testAccAWSIoTTopicRule_republish(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSKeyPairConfigTags1(
+func testAccAWSKeyPairConfigTags2(
 func testAccAWSKinesisStreamRegisterStreamConsumer(
 func testAccAWSKmsSingleAlias(
 func testAccAWSKmsSingleAlias_modified(
@@ -1578,7 +1581,10 @@ func testAccAWSQuickSightGroupConfig(
 func testAccAWSQuickSightGroupConfigWithDescription(
 func testAccAWSQuickSightUserConfigWithEmail(
 func testAccAWSQuickSightUserConfig(
+func testAccAWSClusterEndpointConfigBase(
 func testAccAWSClusterEndpointConfig(
+func testAccAWSClusterEndpointConfigTags1(
+func testAccAWSClusterEndpointConfigTags2(
 func testAccAWSClusterInstanceDisappears(
 func testAccAWSClusterInstanceConfig(
 func testAccAWSClusterInstanceConfigModified(

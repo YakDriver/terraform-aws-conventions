@@ -36,6 +36,9 @@ func testAccCheckAwsCloudformationExportConfig(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(
+func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(
+func testAccCheckAWSCloudwatchLogGroupDataSourceConfigKMS(
+func testAccCheckAWSCloudwatchLogGroupDataSourceConfigRetention(
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(
 func testAccDataSourceAwsCognitoUserPoolsConfig_basic(
 func testAccDataSourceAwsCognitoUserPoolsConfig_notFound(
@@ -239,6 +242,7 @@ func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(
 func testAccDataSourceAwsSnsTopicCheck(
 func testAccDataSourceAwsSqsQueueCheck(
 func testAccDataSourceAwsSqsQueueConfig(
+func testAccDataSourceAwsSqsQueueConfigTags(
 func testAccCheckAwsSsmDocumentDataSourceConfig(
 func testAccCheckAwsSsmParameterDataSourceConfig(
 func testAccAWSStorageGatewayLocalDiskDataSourceExists(
@@ -579,6 +583,7 @@ func testAccCheckAWSAPIGatewayRestAPIDisappears(
 func testAccAWSAPIGatewayRestAPIConfig(
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfig_Name(
+func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfigTags1(
 func testAccAWSAPIGatewayRestAPIConfigTags2(
 func testAccAWSAPIGatewayRestAPIConfigWithAPIKeySource(
@@ -2257,6 +2262,7 @@ func testAccAWSEcsTaskDefinitionModified(
 func testAccAWSEcsTaskDefinitionConfigTags1(
 func testAccAWSEcsTaskDefinitionConfigTags2(
 func testAccAWSEcsTaskDefinitionImportStateIdFunc(
+func testSweepEfsFileSystems(
 func testAccCheckEfsFileSystemDestroy(
 func testAccCheckEfsFileSystem(
 func testAccCheckEfsCreationToken(
@@ -2270,6 +2276,7 @@ func testAccAWSEFSFileSystemConfigWithKmsKeyNoEncryption(
 func testAccAWSEFSFileSystemConfig_ThroughputMode(
 func testAccAWSEFSFileSystemConfig_ProvisionedThroughputInMibps(
 func testAccAWSEFSFileSystemConfigWithLifecyclePolicy(
+func testSweepEfsMountTargets(
 func testAccCheckEfsMountTargetDestroy(
 func testAccCheckEfsMountTarget(
 func testAccAWSEFSMountTargetDisappears(
@@ -3085,9 +3092,12 @@ func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
 func testSweepKeyPairs(
 func testAccCheckAWSKeyPairDestroy(
+func testAccCheckAWSKeyPairDisappears(
 func testAccCheckAWSKeyPairFingerprint(
 func testAccCheckAWSKeyPairKeyNamePrefix(
 func testAccCheckAWSKeyPairExists(
+func testAccAWSKeyPairConfigTags1(
+func testAccAWSKeyPairConfigTags2(
 func testAccCheckKinesisAnalyticsApplicationDestroy(
 func testAccCheckKinesisAnalyticsApplicationExists(
 func testAccPreCheckAWSKinesisAnalytics(
@@ -3901,7 +3911,10 @@ func testAccCheckAWSClusterEndpointDestroy(
 func testAccCheckAWSClusterEndpointDestroyWithProvider(
 func testAccCheckAWSRDSClusterEndpointExists(
 func testAccCheckAWSRDSClusterEndpointExistsWithProvider(
+func testAccAWSClusterEndpointConfigBase(
 func testAccAWSClusterEndpointConfig(
+func testAccAWSClusterEndpointConfigTags1(
+func testAccAWSClusterEndpointConfigTags2(
 func testAccCheckAWSDBClusterInstanceAttributes(
 func testAccAWSClusterInstanceDisappears(
 func testAccCheckAWSClusterInstanceExists(

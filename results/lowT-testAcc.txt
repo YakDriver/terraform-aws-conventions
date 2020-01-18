@@ -36,6 +36,9 @@ func testAccCheckAwsCloudformationExportConfig(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(
+func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(
+func testAccCheckAWSCloudwatchLogGroupDataSourceConfigKMS(
+func testAccCheckAWSCloudwatchLogGroupDataSourceConfigRetention(
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(
 func testAccDataSourceAwsCognitoUserPoolsConfig_basic(
 func testAccDataSourceAwsCognitoUserPoolsConfig_notFound(
@@ -238,6 +241,7 @@ func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(
 func testAccDataSourceAwsSnsTopicCheck(
 func testAccDataSourceAwsSqsQueueCheck(
 func testAccDataSourceAwsSqsQueueConfig(
+func testAccDataSourceAwsSqsQueueConfigTags(
 func testAccCheckAwsSsmDocumentDataSourceConfig(
 func testAccCheckAwsSsmParameterDataSourceConfig(
 func testAccAWSStorageGatewayLocalDiskDataSourceExists(
@@ -573,6 +577,7 @@ func testAccCheckAWSAPIGatewayRestAPIDisappears(
 func testAccAWSAPIGatewayRestAPIConfig(
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfig_Name(
+func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfigTags1(
 func testAccAWSAPIGatewayRestAPIConfigTags2(
 func testAccAWSAPIGatewayRestAPIConfigWithAPIKeySource(
@@ -2971,9 +2976,12 @@ func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
 func testAccCheckAWSKeyPairDestroy(
+func testAccCheckAWSKeyPairDisappears(
 func testAccCheckAWSKeyPairFingerprint(
 func testAccCheckAWSKeyPairKeyNamePrefix(
 func testAccCheckAWSKeyPairExists(
+func testAccAWSKeyPairConfigTags1(
+func testAccAWSKeyPairConfigTags2(
 func testAccCheckKinesisAnalyticsApplicationDestroy(
 func testAccCheckKinesisAnalyticsApplicationExists(
 func testAccPreCheckAWSKinesisAnalytics(
@@ -3765,7 +3773,10 @@ func testAccCheckAWSClusterEndpointDestroy(
 func testAccCheckAWSClusterEndpointDestroyWithProvider(
 func testAccCheckAWSRDSClusterEndpointExists(
 func testAccCheckAWSRDSClusterEndpointExistsWithProvider(
+func testAccAWSClusterEndpointConfigBase(
 func testAccAWSClusterEndpointConfig(
+func testAccAWSClusterEndpointConfigTags1(
+func testAccAWSClusterEndpointConfigTags2(
 func testAccCheckAWSDBClusterInstanceAttributes(
 func testAccAWSClusterInstanceDisappears(
 func testAccCheckAWSClusterInstanceExists(
