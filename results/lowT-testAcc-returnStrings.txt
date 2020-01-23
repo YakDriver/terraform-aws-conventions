@@ -1398,6 +1398,8 @@ func testAccAWSEcsTaskDefinitionWithScratchVolume(tdName string) string {
 func testAccAWSEcsTaskDefinitionWithDockerVolumes(tdName string) string {
 func testAccAWSEcsTaskDefinitionWithDockerVolumesMinimalConfig(tdName string) string {
 func testAccAWSEcsTaskDefinitionWithTaskScopedDockerVolume(tdName string) string {
+func testAccAWSEcsTaskDefinitionWithEFSVolumeMinimal(tdName string) string {
+func testAccAWSEcsTaskDefinitionWithEFSVolume(tdName, rDir string) string {
 func testAccAWSEcsTaskDefinitionWithTaskRoleArn(roleName, policyName, tdName string) string {
 func testAccAWSEcsTaskDefinitionWithIpcMode(roleName, policyName, tdName string) string {
 func testAccAWSEcsTaskDefinitionWithPidMode(roleName, policyName, tdName string) string {
