@@ -140,7 +140,8 @@ func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
 func TestAccAWSEcsDataSource_ecsContainerDefinition(
 func TestAccAWSEcsServiceDataSource_basic(
 func TestAccAWSEcsDataSource_ecsTaskDefinition(
-func TestAccDataSourceAwsEfsFileSystem(
+func TestAccDataSourceAwsEfsFileSystem_id(
+func TestAccDataSourceAwsEfsFileSystem_name(
 func TestAccDataSourceAwsEfsMountTargetByMountTargetId(
 func TestAccDataSourceAwsEip_Filter(
 func TestAccDataSourceAwsEip_Id(
@@ -1503,6 +1504,7 @@ func TestAccAWSEcsTaskDefinition_ProxyConfiguration(
 func TestValidateAwsEcsTaskDefinitionContainerDefinitions(
 func TestResourceAWSEFSFileSystem_hasEmptyFileSystems(
 func TestAccAWSEFSFileSystem_basic(
+func TestAccAWSEFSFileSystem_tags(
 func TestAccAWSEFSFileSystem_pagedTags(
 func TestAccAWSEFSFileSystem_kmsKey(
 func TestAccAWSEFSFileSystem_kmsConfigurationWithoutEncryption(
@@ -1511,6 +1513,7 @@ func TestAccAWSEFSFileSystem_ThroughputMode(
 func TestAccAWSEFSFileSystem_lifecyclePolicy(
 func TestAccAWSEFSFileSystem_lifecyclePolicy_update(
 func TestAccAWSEFSFileSystem_lifecyclePolicy_removal(
+func TestAccAWSEFSFileSystem_disappears(
 func TestAccAWSEFSMountTarget_basic(
 func TestAccAWSEFSMountTarget_disappears(
 func TestResourceAWSEFSMountTarget_mountTargetDnsName(
@@ -3136,6 +3139,7 @@ func TestAccAWSSQSQueue_Encryption(
 func TestAccAWSSSMActivation_basic(
 func TestAccAWSSSMActivation_update(
 func TestAccAWSSSMActivation_expirationDate(
+func TestAccAWSSSMActivation_disappears(
 func TestAWSSsmAssociationRuleMigrateState(
 func TestAccAWSSSMAssociation_basic(
 func TestAccAWSSSMAssociation_withTargets(
@@ -3173,6 +3177,7 @@ func TestAccAWSSSMMaintenanceWindowTask_TaskInvocationStepFunctionParameters(
 func TestAccAWSSSMMaintenanceWindowTask_TaskParameters(
 func TestAccAWSSSMMaintenanceWindowTask_emptyNotificationConfig(
 func TestAccAWSSSMMaintenanceWindow_basic(
+func TestAccAWSSSMMaintenanceWindow_description(
 func TestAccAWSSSMMaintenanceWindow_tags(
 func TestAccAWSSSMMaintenanceWindow_disappears(
 func TestAccAWSSSMMaintenanceWindow_multipleUpdates(
@@ -3188,6 +3193,7 @@ func TestAccAWSSSMParameter_Tier(
 func TestAccAWSSSMParameter_disappears(
 func TestAccAWSSSMParameter_overwrite(
 func TestAccAWSSSMParameter_tags(
+func TestAccAWSSSMParameter_updateType(
 func TestAccAWSSSMParameter_updateDescription(
 func TestAccAWSSSMParameter_changeNameForcesNew(
 func TestAccAWSSSMParameter_fullPath(

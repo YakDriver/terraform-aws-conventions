@@ -880,6 +880,7 @@ func testAccAWSCognitoUserPoolDomainConfig_basic(domainName, poolName string) st
 func testAccAWSCognitoUserPoolDomainConfig_custom(customSubDomainName, poolName, certificateArn string) string {
 func testAccAWSCognitoUserPoolConfig_basic(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfiguration(name string) string {
+func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdatedError(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAdvancedSecurityMode(name string, mode string) string {
 func testAccAWSCognitoUserPoolConfig_withDeviceConfiguration(name string) string {
@@ -1409,9 +1410,11 @@ func testAccAWSEcsTaskDefinitionWithEcsServiceModified(clusterName, svcName, tdN
 func testAccAWSEcsTaskDefinitionModified(tdName string) string {
 func testAccAWSEcsTaskDefinitionConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSEcsTaskDefinitionConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAWSEFSFileSystemConfig(rName string) string {
+func testAccAWSEFSFileSystemConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSEFSFileSystemConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEFSFileSystemConfigPagedTags(rInt int) string {
-func testAccAWSEFSFileSystemConfigWithTags(rInt int) string {
-func testAccAWSEFSFileSystemConfigWithMaxTags(rInt int) string {
+func testAccAWSEFSFileSystemConfigWithMaxTags(rName string) string {
 func testAccAWSEFSFileSystemConfigWithKmsKey(rInt int) string {
 func testAccAWSEFSFileSystemConfigWithKmsKeyNoEncryption(rInt int) string {
 func testAccAWSEFSFileSystemConfig_ThroughputMode(throughputMode string) string {
@@ -2850,6 +2853,7 @@ func testAccExpectContentBasedDeduplicationError(queue string) string {
 func testAccAWSSQSConfigWithEncryption(queue string) string {
 func testAccAWSSQSConfigWithTags(r string) string {
 func testAccAWSSQSConfigWithTagsChanged(r string) string {
+func testAccAWSSSMActivationBasicConfigBase(rName string) string {
 func testAccAWSSSMActivationBasicConfig(rName string, rTag string) string {
 func testAccAWSSSMActivationConfig_expirationDate(rName, expirationDate string) string {
 func testAccAWSSSMAssociationBasicConfigWithParameters(rName string) string {
@@ -2897,6 +2901,7 @@ func testAccAWSSSMMaintenanceWindowTaskRunCommandConfigUpdate(rName, comment str
 func testAccAWSSSMMaintenanceWindowTaskStepFunctionConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskConfigTaskParametersMultiple(rName string) string {
 func testAccAWSSSMMaintenanceWindowConfig(rName string) string {
+func testAccAWSSSMMaintenanceWindowConfigDescription(rName, desc string) string {
 func testAccAWSSSMMaintenanceWindowConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSSMMaintenanceWindowConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSSMMaintenanceWindowConfigCutoff(rName string, cutoff int) string {

@@ -161,7 +161,8 @@ func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(
 func TestAccAWSEcsServiceDataSource_basic(
 func TestAccAWSEcsDataSource_ecsTaskDefinition(
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(
-func TestAccDataSourceAwsEfsFileSystem(
+func TestAccDataSourceAwsEfsFileSystem_id(
+func TestAccDataSourceAwsEfsFileSystem_name(
 func testAccDataSourceAwsEfsFileSystemCheck(
 func TestAccDataSourceAwsEfsMountTargetByMountTargetId(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
@@ -2264,6 +2265,7 @@ func testAccCheckAWSCognitoUserPoolExists(
 func testAccPreCheckAWSCognitoIdentityProvider(
 func testAccAWSCognitoUserPoolConfig_basic(
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfiguration(
+func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdatedError(
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdated(
 func testAccAWSCognitoUserPoolConfig_withAdvancedSecurityMode(
 func testAccAWSCognitoUserPoolConfig_withDeviceConfiguration(
@@ -3580,6 +3582,7 @@ func testAccAWSEcsTaskDefinitionConfigTags1(
 func testAccAWSEcsTaskDefinitionConfigTags2(
 func testAccAWSEcsTaskDefinitionImportStateIdFunc(
 func TestAccAWSEFSFileSystem_basic(
+func TestAccAWSEFSFileSystem_tags(
 func TestAccAWSEFSFileSystem_pagedTags(
 func TestAccAWSEFSFileSystem_kmsKey(
 func TestAccAWSEFSFileSystem_kmsConfigurationWithoutEncryption(
@@ -3588,13 +3591,17 @@ func TestAccAWSEFSFileSystem_ThroughputMode(
 func TestAccAWSEFSFileSystem_lifecyclePolicy(
 func TestAccAWSEFSFileSystem_lifecyclePolicy_update(
 func TestAccAWSEFSFileSystem_lifecyclePolicy_removal(
+func TestAccAWSEFSFileSystem_disappears(
 func testAccCheckEfsFileSystemDestroy(
 func testAccCheckEfsFileSystem(
+func testAccCheckEfsFileSystemDisappears(
 func testAccCheckEfsCreationToken(
 func testAccCheckEfsFileSystemPerformanceMode(
 func testAccCheckEfsFileSystemLifecyclePolicy(
+func testAccAWSEFSFileSystemConfig(
+func testAccAWSEFSFileSystemConfigTags1(
+func testAccAWSEFSFileSystemConfigTags2(
 func testAccAWSEFSFileSystemConfigPagedTags(
-func testAccAWSEFSFileSystemConfigWithTags(
 func testAccAWSEFSFileSystemConfigWithMaxTags(
 func testAccAWSEFSFileSystemConfigWithKmsKey(
 func testAccAWSEFSFileSystemConfigWithKmsKeyNoEncryption(
@@ -7463,9 +7470,12 @@ func testAccAWSSQSConfigWithTagsChanged(
 func TestAccAWSSSMActivation_basic(
 func TestAccAWSSSMActivation_update(
 func TestAccAWSSSMActivation_expirationDate(
+func TestAccAWSSSMActivation_disappears(
 func testAccCheckAWSSSMActivationRecreated(
 func testAccCheckAWSSSMActivationExists(
+func testAccCheckAWSSSMActivationDisappears(
 func testAccCheckAWSSSMActivationDestroy(
+func testAccAWSSSMActivationBasicConfigBase(
 func testAccAWSSSMActivationBasicConfig(
 func testAccAWSSSMActivationConfig_expirationDate(
 func TestAccAWSSSMAssociation_basic(
@@ -7559,6 +7569,7 @@ func testAccAWSSSMMaintenanceWindowTaskRunCommandConfigUpdate(
 func testAccAWSSSMMaintenanceWindowTaskStepFunctionConfig(
 func testAccAWSSSMMaintenanceWindowTaskConfigTaskParametersMultiple(
 func TestAccAWSSSMMaintenanceWindow_basic(
+func TestAccAWSSSMMaintenanceWindow_description(
 func TestAccAWSSSMMaintenanceWindow_tags(
 func TestAccAWSSSMMaintenanceWindow_disappears(
 func TestAccAWSSSMMaintenanceWindow_multipleUpdates(
@@ -7573,6 +7584,7 @@ func testAccCheckAWSSSMMaintenanceWindowExists(
 func testAccCheckAWSSSMMaintenanceWindowDisappears(
 func testAccCheckAWSSSMMaintenanceWindowDestroy(
 func testAccAWSSSMMaintenanceWindowConfig(
+func testAccAWSSSMMaintenanceWindowConfigDescription(
 func testAccAWSSSMMaintenanceWindowConfigTags1(
 func testAccAWSSSMMaintenanceWindowConfigTags2(
 func testAccAWSSSMMaintenanceWindowConfigCutoff(
@@ -7588,6 +7600,7 @@ func TestAccAWSSSMParameter_Tier(
 func TestAccAWSSSMParameter_disappears(
 func TestAccAWSSSMParameter_overwrite(
 func TestAccAWSSSMParameter_tags(
+func TestAccAWSSSMParameter_updateType(
 func TestAccAWSSSMParameter_updateDescription(
 func TestAccAWSSSMParameter_changeNameForcesNew(
 func TestAccAWSSSMParameter_fullPath(
