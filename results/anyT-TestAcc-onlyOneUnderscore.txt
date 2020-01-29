@@ -1720,6 +1720,7 @@ func testAccBeanstalkEnvConfig_settings(
 func testAccBeanstalkEnv_VPC(
 func TestAccAWSElasticSearchDomainPolicy_basic(
 func TestAccAWSElasticSearchDomain_basic(
+func TestAccAWSElasticSearchDomain_RequireHTTPS(
 func TestAccAWSElasticSearchDomain_withDedicatedMaster(
 func TestAccAWSElasticSearchDomain_duplicate(
 func TestAccAWSElasticSearchDomain_v23(
@@ -1733,6 +1734,7 @@ func TestAccAWSElasticSearchDomain_policy(
 func TestAccAWSElasticSearchDomain_NodeToNodeEncryption(
 func TestAccAWSElasticSearchDomain_tags(
 func TestAccAWSElasticSearchDomain_update(
+func testAccESDomainConfig_DomainEndpointOptions(
 func testAccESDomainConfig_WithDedicatedClusterMaster(
 func testAccESDomainConfig_ClusterUpdate(
 func testAccESDomainConfig_ClusterUpdateEBSVolume(

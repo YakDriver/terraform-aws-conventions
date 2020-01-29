@@ -579,7 +579,8 @@ func testAccAWSDynamoDbItemConfigBasic(tableName, hashKey, item string) string {
 func testAccAWSDynamoDbItemConfigWithRangeKey(tableName, hashKey, rangeKey, item string) string {
 func testAccAWSDynamoDbItemConfigWithMultipleItems(tableName, hashKey, rangeKey, firstItem, secondItem string) string {
 func testAccAWSDynamoDbConfigInitialState(rName string) string {
-func testAccAWSDynamoDbConfigInitialStateWithEncryption(rName string, enabled bool) string {
+func testAccAWSDynamoDbConfigInitialStateWithEncryptionAmazonCMK(rName string, enabled bool) string {
+func testAccAWSDynamoDbConfigInitialStateWithEncryptionBYOK(rName string) string {
 func testAccAWSDynamoDbConfigAddSecondaryGSI(rName string) string {
 func testAccAWSDynamoDbConfigStreamSpecification(tableName string, enabled bool, viewType string) string {
 func testAccAWSDynamoDbConfigTags() string {

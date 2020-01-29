@@ -1135,7 +1135,8 @@ func testAccAWSDynamoDbItemConfigWithMultipleItems(tableName, hashKey, rangeKey,
 func testAccAWSDynamoDbConfig_basic(rName string) string {
 func testAccAWSDynamoDbConfig_backup(rName string) string {
 func testAccAWSDynamoDbConfigInitialState(rName string) string {
-func testAccAWSDynamoDbConfigInitialStateWithEncryption(rName string, enabled bool) string {
+func testAccAWSDynamoDbConfigInitialStateWithEncryptionAmazonCMK(rName string, enabled bool) string {
+func testAccAWSDynamoDbConfigInitialStateWithEncryptionBYOK(rName string) string {
 func testAccAWSDynamoDbConfigAddSecondaryGSI(rName string) string {
 func testAccAWSDynamoDbConfigStreamSpecification(tableName string, enabled bool, viewType string) string {
 func testAccAWSDynamoDbConfigTags() string {
@@ -1360,6 +1361,7 @@ func testAccBeanstalkConfigTemplate(appName, envName, cfgTplName string, cfgTplV
 func testAccBeanstalkEnvApplicationVersionConfig(bucketName, appName, appVersionName, envName string) string {
 func testAccESDomainPolicyConfig(randInt int, policy string) string {
 func testAccESDomainConfig(randInt int) string {
+func testAccESDomainConfig_DomainEndpointOptions(randInt int, enforceHttps bool, tlsSecurityPolicy string) string {
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(rName string, availabilityZoneCount int) string {
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(rName string, zoneAwarenessEnabled bool) string {
 func testAccESDomainConfig_WithDedicatedClusterMaster(randInt int, enabled bool) string {

@@ -1929,7 +1929,8 @@ func testAccAWSDynamoDbBilling_Provisioned(
 func testAccAWSDynamoDbBilling_PayPerRequestWithGSI(
 func testAccAWSDynamoDbBilling_ProvisionedWithGSI(
 func testAccAWSDynamoDbConfigInitialState(
-func testAccAWSDynamoDbConfigInitialStateWithEncryption(
+func testAccAWSDynamoDbConfigInitialStateWithEncryptionAmazonCMK(
+func testAccAWSDynamoDbConfigInitialStateWithEncryptionBYOK(
 func testAccAWSDynamoDbConfigAddSecondaryGSI(
 func testAccAWSDynamoDbConfigStreamSpecification(
 func testAccAWSDynamoDbConfigTags(
@@ -2357,6 +2358,7 @@ func testAccBeanstalkEnv_TemplateChange_temp(
 func testAccBeanstalkEnvApplicationVersionConfig(
 func testAccBeanstalkEnvSettingJsonValue(
 func testAccESDomainPolicyConfig(
+func testAccCheckESDomainEndpointOptions(
 func testAccCheckESNumberOfSecurityGroups(
 func testAccCheckESEBSVolumeSize(
 func testAccCheckESEBSVolumeEnabled(
@@ -2370,6 +2372,7 @@ func testAccCheckAWSESDomainNotRecreated(
 func testAccCheckESDomainDestroy(
 func testAccPreCheckIamServiceLinkedRoleEs(
 func testAccESDomainConfig(
+func testAccESDomainConfig_DomainEndpointOptions(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(
 func testAccESDomainConfig_WithDedicatedClusterMaster(

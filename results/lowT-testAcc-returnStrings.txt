@@ -1230,7 +1230,8 @@ func testAccAWSDynamoDbBilling_Provisioned(rName string) string {
 func testAccAWSDynamoDbBilling_PayPerRequestWithGSI(rName string) string {
 func testAccAWSDynamoDbBilling_ProvisionedWithGSI(rName string) string {
 func testAccAWSDynamoDbConfigInitialState(rName string) string {
-func testAccAWSDynamoDbConfigInitialStateWithEncryption(rName string, enabled bool) string {
+func testAccAWSDynamoDbConfigInitialStateWithEncryptionAmazonCMK(rName string, enabled bool) string {
+func testAccAWSDynamoDbConfigInitialStateWithEncryptionBYOK(rName string) string {
 func testAccAWSDynamoDbConfigAddSecondaryGSI(rName string) string {
 func testAccAWSDynamoDbConfigStreamSpecification(tableName string, enabled bool, viewType string) string {
 func testAccAWSDynamoDbConfigTags() string {
@@ -1519,6 +1520,7 @@ func testAccBeanstalkEnvApplicationVersionConfig(bucketName, appName, appVersion
 func testAccBeanstalkEnvSettingJsonValue(appName, queueName, keyPairName, instanceProfileName, roleName, policyName, envName string) string {
 func testAccESDomainPolicyConfig(randInt int, policy string) string {
 func testAccESDomainConfig(randInt int) string {
+func testAccESDomainConfig_DomainEndpointOptions(randInt int, enforceHttps bool, tlsSecurityPolicy string) string {
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(rName string, availabilityZoneCount int) string {
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(rName string, zoneAwarenessEnabled bool) string {
 func testAccESDomainConfig_WithDedicatedClusterMaster(randInt int, enabled bool) string {
