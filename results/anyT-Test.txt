@@ -356,6 +356,7 @@ func TestAccDataSourceAwsKmsCiphertext_validate(
 func TestAccDataSourceAwsKmsCiphertext_validate_withContext(
 func TestAccDataSourceAwsKmsKey_basic(
 func testAccDataSourceAwsKmsKeyCheck(
+func testAccDataSourceAwsKmsKeyConfig(
 func TestAccAWSKmsSecretsDataSource_basic(
 func testAccDataSourceAwsKmsSecretsEncrypt(
 func testAccDataSourceAwsKmsSecretsDecrypt(
@@ -5337,6 +5338,7 @@ func testAccAWSKmsGrant_bare(
 func testAccAWSKmsGrant_ARN(
 func testSweepKmsKeys(
 func TestAccAWSKmsKey_basic(
+func TestAccAWSKmsKey_asymmetricKey(
 func TestAccAWSKmsKey_disappears(
 func TestAccAWSKmsKey_policy(
 func TestAccAWSKmsKey_isEnabled(
@@ -5345,8 +5347,10 @@ func testAccCheckAWSKmsKeyHasPolicy(
 func testAccCheckAWSKmsKeyDestroy(
 func testAccCheckAWSKmsKeyExists(
 func testAccCheckAWSKmsKeyIsEnabled(
+func testAccCheckAWSKmsKeyDisappears(
 func testAccAWSKmsKey(
-func testAccAWSKmsKey_other_region(
+func testAccAWSKmsKey_asymmetric(
+func testAccAWSKmsKey_policy(
 func testAccAWSKmsKey_removedPolicy(
 func testAccAWSKmsKey_enabledRotation(
 func testAccAWSKmsKey_disabled(
@@ -7291,12 +7295,15 @@ func testAccCheckAWSSagemakerNotebookInstanceDestroy(
 func testAccCheckAWSSagemakerNotebookInstanceExists(
 func testAccCheckAWSSagemakerNotebookInstanceDisappears(
 func testAccCheckAWSSagemakerNotebookInstanceName(
+func TestAccAWSSagemakerNotebookInstance_direct_internet_access(
+func testAccCheckAWSSagemakerNotebookDirectInternetAccess(
 func testAccCheckAWSSagemakerNotebookInstanceTags(
 func testAccAWSSagemakerNotebookInstanceConfig(
 func testAccAWSSagemakerNotebookInstanceUpdateConfig(
 func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(
 func testAccAWSSagemakerNotebookInstanceTagsConfig(
 func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(
+func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(
 func testSweepSecretsManagerSecrets(
 func TestAccAwsSecretsManagerSecret_Basic(
 func TestAccAwsSecretsManagerSecret_withNamePrefix(
@@ -7845,13 +7852,15 @@ func TestAccAWSSSMAssociation_withAssociationName(
 func TestAccAWSSSMAssociation_withAssociationNameAndScheduleExpression(
 func TestAccAWSSSMAssociation_withDocumentVersion(
 func TestAccAWSSSMAssociation_withOutputLocation(
+func TestAccAWSSSMAssociation_withAutomationTargetParamName(
 func TestAccAWSSSMAssociation_withScheduleExpression(
 func TestAccAWSSSMAssociation_withComplianceSeverity(
 func TestAccAWSSSMAssociation_rateControl(
 func testAccCheckAWSSSMAssociationExists(
 func testAccCheckAWSSSMAssociationDestroy(
-func testAccAWSSSMAssociationBasicConfigWithParameters(
+func testAccAWSSSMAssociationBasicConfigWithAutomationTargetParamName(
 func testAccAWSSSMAssociationBasicConfigWithParametersUpdated(
+func testAccAWSSSMAssociationBasicConfigWithParameters(
 func testAccAWSSSMAssociationBasicConfigWithTargets(
 func testAccAWSSSMAssociationBasicConfig(
 func testAccAWSSSMAssociationBasicConfigWithDocumentVersion(
@@ -7865,6 +7874,7 @@ func testAccAWSSSMAssociationConfigWithAssociationNameAndScheduleExpression(
 func testAccAWSSSMAssociationBasicConfigWithComplianceSeverity(
 func testAccAWSSSMAssociationRateControlConfig(
 func TestAccAWSSSMDocument_basic(
+func TestAccAWSSSMDocument_target_type(
 func TestAccAWSSSMDocument_update(
 func TestAccAWSSSMDocument_permission_public(
 func TestAccAWSSSMDocument_permission_private(
@@ -7880,6 +7890,7 @@ func TestAccAWSSSMDocument_Tags(
 func testAccCheckAWSSSMDocumentExists(
 func testAccCheckAWSSSMDocumentDestroy(
 func testAccAWSSSMDocumentBasicConfig(
+func testAccAWSSSMDocumentBasicConfigTargetType(
 func testAccAWSSSMDocument20Config(
 func testAccAWSSSMDocument20UpdatedConfig(
 func testAccAWSSSMDocumentPublicPermissionConfig(
@@ -8029,6 +8040,7 @@ func TestAccAWSStorageGatewayGateway_GatewayType_Stored(
 func TestAccAWSStorageGatewayGateway_GatewayType_Vtl(
 func TestAccAWSStorageGatewayGateway_tags(
 func TestAccAWSStorageGatewayGateway_GatewayName(
+func TestAccAWSStorageGatewayGateway_CloudWatchLogs(
 func TestAccAWSStorageGatewayGateway_GatewayTimezone(
 func TestAccAWSStorageGatewayGateway_SmbActiveDirectorySettings(
 func TestAccAWSStorageGatewayGateway_SmbGuestPassword(
@@ -8039,6 +8051,7 @@ func testAccAWSStorageGateway_FileGatewayBase(
 func testAccAWSStorageGateway_TapeAndVolumeGatewayBase(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Cached(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_FileS3(
+func testAccAWSStorageGatewayGatewayConfig_Log_Group(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Stored(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(
@@ -8771,6 +8784,8 @@ func TestCheckYamlString(
 func TestNormalizeCloudFormationTemplate(
 func TestCognitoUserPoolSchemaAttributeMatchesStandardAttribute(
 func TestCanonicalXML(
+func TestExpandRdsClusterScalingConfiguration_serverless(
+func TestExpandRdsClusterScalingConfiguration_basic(
 func TestDiffDXTags(
 func TestIgnoringTagsDX(
 func TestDiffTags(

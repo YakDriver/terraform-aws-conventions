@@ -62,7 +62,6 @@ const testAccAWSIPRangesConfigUrl =
 const testAccDataSourceAwsKmsCiphertextConfig_basic =
 const testAccDataSourceAwsKmsCiphertextConfig_validate =
 const testAccDataSourceAwsKmsCiphertextConfig_validate_withContext =
-const testAccDataSourceAwsKmsKeyConfig =
 const testAccCheckAwsKmsSecretsDataSourceKey =
 const testAccAwsKmsSecretDataSourceConfig =
 const testAccDataSourceAwsOrganizationsOrganizationalUnitsConfig =

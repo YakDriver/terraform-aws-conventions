@@ -93,6 +93,7 @@ func testAccInstanceDataSourceConfigGetUserData(rName string, getUserData bool) 
 func testAccInstanceDataSourceConfigGetUserDataNoUserData(rName string, getUserData bool) string {
 func testAccInstanceDataSourceConfig_creditSpecification(rName string) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
+func testAccDataSourceAwsKmsKeyConfig(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBase(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBasic(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigVersion(rName string) string {
@@ -2419,6 +2420,7 @@ func testAccAWSSagemakerNotebookInstanceUpdateConfig(notebookName string) string
 func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(rName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsConfig(notebookName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(notebookName string) string {
+func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(notebookName string, directInternetAccess string) string {
 func testAccAwsSecretsManagerSecretConfig_Description(rName, description string) string {
 func testAccAwsSecretsManagerSecretConfig_Name(rName string) string {
 func testAccAwsSecretsManagerSecretConfig_withNamePrefix(rName string) string {
@@ -2572,8 +2574,9 @@ func testAccAWSSQSConfigWithTagsChanged(r string) string {
 func testAccAWSSSMActivationBasicConfigBase(rName string) string {
 func testAccAWSSSMActivationBasicConfig(rName string, rTag string) string {
 func testAccAWSSSMActivationConfig_expirationDate(rName, expirationDate string) string {
-func testAccAWSSSMAssociationBasicConfigWithParameters(rName string) string {
+func testAccAWSSSMAssociationBasicConfigWithAutomationTargetParamName(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithParametersUpdated(rName string) string {
+func testAccAWSSSMAssociationBasicConfigWithParameters(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithTargets(rName, targetsStr string) string {
 func testAccAWSSSMAssociationBasicConfig(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithDocumentVersion(rName string) string {
@@ -2587,6 +2590,7 @@ func testAccAWSSSMAssociationConfigWithAssociationNameAndScheduleExpression(rNam
 func testAccAWSSSMAssociationBasicConfigWithComplianceSeverity(compSeverity, rName, assocName string) string {
 func testAccAWSSSMAssociationRateControlConfig(rName, rate string) string {
 func testAccAWSSSMDocumentBasicConfig(rName string) string {
+func testAccAWSSSMDocumentBasicConfigTargetType(rName, typ string) string {
 func testAccAWSSSMDocument20Config(rName string) string {
 func testAccAWSSSMDocument20UpdatedConfig(rName string) string {
 func testAccAWSSSMDocumentPublicPermissionConfig(rName string) string {
@@ -2654,6 +2658,7 @@ func testAccAWSStorageGatewayCacheConfig_FileGateway(rName string) string {
 func testAccAWSStorageGatewayCacheConfig_TapeAndVolumeGateway(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Cached(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_FileS3(rName string) string {
+func testAccAWSStorageGatewayGatewayConfig_Log_Group(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Stored(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(rName, gatewayTimezone string) string {

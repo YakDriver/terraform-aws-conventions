@@ -565,7 +565,8 @@ func testAccAWSKmsSingleAlias_modified(
 func testAccAWSKmsGrant_withConstraints(
 func testAccAWSKmsGrant_withRetiringPrincipal(
 func testAccAWSKmsGrant_bare(
-func testAccAWSKmsKey_other_region(
+func testAccAWSKmsKey_asymmetric(
+func testAccAWSKmsKey_policy(
 func testAccAWSKmsKey_removedPolicy(
 func testAccAWSKmsKey_enabledRotation(
 func testAccAWSKmsKey_disabled(

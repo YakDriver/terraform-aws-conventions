@@ -42,7 +42,6 @@ const testAccDataSourceAwsInternetGatewayConfig =
 const testAccAWSIotEndpointConfig =
 const testAccAWSIPRangesConfig =
 const testAccAWSIPRangesConfigUrl =
-const testAccDataSourceAwsKmsKeyConfig =
 const testAccAwsKmsSecretDataSourceConfig =
 const testAccDataSourceAwsOrganizationsOrganizationalUnitsConfig =
 const testAccCheckAwsOrganizationResourceOnlyConfig =

@@ -1773,11 +1773,13 @@ func testAccAWSKmsGrant_withConstraints(
 func testAccAWSKmsGrant_withRetiringPrincipal(
 func testAccAWSKmsGrant_bare(
 func TestAccAWSKmsKey_basic(
+func TestAccAWSKmsKey_asymmetricKey(
 func TestAccAWSKmsKey_disappears(
 func TestAccAWSKmsKey_policy(
 func TestAccAWSKmsKey_isEnabled(
 func TestAccAWSKmsKey_tags(
-func testAccAWSKmsKey_other_region(
+func testAccAWSKmsKey_asymmetric(
+func testAccAWSKmsKey_policy(
 func testAccAWSKmsKey_removedPolicy(
 func testAccAWSKmsKey_enabledRotation(
 func testAccAWSKmsKey_disabled(
@@ -2541,6 +2543,7 @@ func TestAccAWSSagemakerNotebookInstance_basic(
 func TestAccAWSSagemakerNotebookInstance_update(
 func TestAccAWSSagemakerNotebookInstance_tags(
 func TestAccAWSSagemakerNotebookInstance_disappears(
+func TestAccAWSSagemakerNotebookInstance_direct_internet_access(
 func TestAccAwsSecretsManagerSecret_withNamePrefix(
 func TestAccAwsSecretsManagerSecret_policy(
 func testAccAwsSecretsManagerSecretConfig_withNamePrefix(
@@ -2729,10 +2732,12 @@ func TestAccAWSSSMAssociation_withAssociationName(
 func TestAccAWSSSMAssociation_withAssociationNameAndScheduleExpression(
 func TestAccAWSSSMAssociation_withDocumentVersion(
 func TestAccAWSSSMAssociation_withOutputLocation(
+func TestAccAWSSSMAssociation_withAutomationTargetParamName(
 func TestAccAWSSSMAssociation_withScheduleExpression(
 func TestAccAWSSSMAssociation_withComplianceSeverity(
 func TestAccAWSSSMAssociation_rateControl(
 func TestAccAWSSSMDocument_basic(
+func TestAccAWSSSMDocument_target_type(
 func TestAccAWSSSMDocument_update(
 func TestAccAWSSSMDocument_permission_public(
 func TestAccAWSSSMDocument_permission_private(

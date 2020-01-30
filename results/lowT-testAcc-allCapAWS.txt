@@ -1269,7 +1269,8 @@ func testAccAWSKmsGrant_withRetiringPrincipal(
 func testAccAWSKmsGrant_bare(
 func testAccAWSKmsGrant_ARN(
 func testAccAWSKmsKey(
-func testAccAWSKmsKey_other_region(
+func testAccAWSKmsKey_asymmetric(
+func testAccAWSKmsKey_policy(
 func testAccAWSKmsKey_removedPolicy(
 func testAccAWSKmsKey_enabledRotation(
 func testAccAWSKmsKey_disabled(
@@ -1830,6 +1831,7 @@ func testAccAWSSagemakerNotebookInstanceUpdateConfig(
 func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(
 func testAccAWSSagemakerNotebookInstanceTagsConfig(
 func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(
+func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(
 func testAccAWSSecurityGroupRuleImportStateIdFunc(
 func testAccAWSSecurityGroupRuleImportGetAttrs(attrs map[string]string, key string) (
 func testAccAWSSecurityGroupRuleIngressConfig(
@@ -1965,8 +1967,9 @@ func testAccAWSSQSConfigWithTagsChanged(
 func testAccAWSSSMActivationBasicConfigBase(
 func testAccAWSSSMActivationBasicConfig(
 func testAccAWSSSMActivationConfig_expirationDate(
-func testAccAWSSSMAssociationBasicConfigWithParameters(
+func testAccAWSSSMAssociationBasicConfigWithAutomationTargetParamName(
 func testAccAWSSSMAssociationBasicConfigWithParametersUpdated(
+func testAccAWSSSMAssociationBasicConfigWithParameters(
 func testAccAWSSSMAssociationBasicConfigWithTargets(
 func testAccAWSSSMAssociationBasicConfig(
 func testAccAWSSSMAssociationBasicConfigWithDocumentVersion(
@@ -1980,6 +1983,7 @@ func testAccAWSSSMAssociationConfigWithAssociationNameAndScheduleExpression(
 func testAccAWSSSMAssociationBasicConfigWithComplianceSeverity(
 func testAccAWSSSMAssociationRateControlConfig(
 func testAccAWSSSMDocumentBasicConfig(
+func testAccAWSSSMDocumentBasicConfigTargetType(
 func testAccAWSSSMDocument20Config(
 func testAccAWSSSMDocument20UpdatedConfig(
 func testAccAWSSSMDocumentPublicPermissionConfig(
@@ -2049,6 +2053,7 @@ func testAccAWSStorageGateway_FileGatewayBase(
 func testAccAWSStorageGateway_TapeAndVolumeGatewayBase(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Cached(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_FileS3(
+func testAccAWSStorageGatewayGatewayConfig_Log_Group(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Stored(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(

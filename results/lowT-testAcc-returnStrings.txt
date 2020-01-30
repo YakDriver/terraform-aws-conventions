@@ -96,6 +96,7 @@ func testAccInstanceDataSourceConfig_creditSpecification(rName string) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
 func testAccDataSourceAwsKmsAlias_name(name string) string {
 func testAccDataSourceAwsKmsAlias_CMK(rInt int) string {
+func testAccDataSourceAwsKmsKeyConfig(rName string) string {
 func testAccCheckAwsKmsSecretsDataSourceSecret(payload string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBase(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBasic(rName string) string {
@@ -1965,7 +1966,8 @@ func testAccAWSKmsGrant_withRetiringPrincipal(rName string, timestamp string) st
 func testAccAWSKmsGrant_bare(rName string, timestamp string) string {
 func testAccAWSKmsGrant_ARN(rName string, timestamp string, operations string) string {
 func testAccAWSKmsKey(rName string) string {
-func testAccAWSKmsKey_other_region(rName string) string {
+func testAccAWSKmsKey_asymmetric(rName string) string {
+func testAccAWSKmsKey_policy(rName string) string {
 func testAccAWSKmsKey_removedPolicy(rName string) string {
 func testAccAWSKmsKey_enabledRotation(rName string) string {
 func testAccAWSKmsKey_disabled(rName string) string {
@@ -2688,6 +2690,7 @@ func testAccAWSSagemakerNotebookInstanceUpdateConfig(notebookName string) string
 func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(rName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsConfig(notebookName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(notebookName string) string {
+func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(notebookName string, directInternetAccess string) string {
 func testAccAwsSecretsManagerSecretConfig_Description(rName, description string) string {
 func testAccAwsSecretsManagerSecretConfig_Name(rName string) string {
 func testAccAwsSecretsManagerSecretConfig_withNamePrefix(rName string) string {
@@ -2858,8 +2861,9 @@ func testAccAWSSQSConfigWithTagsChanged(r string) string {
 func testAccAWSSSMActivationBasicConfigBase(rName string) string {
 func testAccAWSSSMActivationBasicConfig(rName string, rTag string) string {
 func testAccAWSSSMActivationConfig_expirationDate(rName, expirationDate string) string {
-func testAccAWSSSMAssociationBasicConfigWithParameters(rName string) string {
+func testAccAWSSSMAssociationBasicConfigWithAutomationTargetParamName(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithParametersUpdated(rName string) string {
+func testAccAWSSSMAssociationBasicConfigWithParameters(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithTargets(rName, targetsStr string) string {
 func testAccAWSSSMAssociationBasicConfig(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithDocumentVersion(rName string) string {
@@ -2873,6 +2877,7 @@ func testAccAWSSSMAssociationConfigWithAssociationNameAndScheduleExpression(rNam
 func testAccAWSSSMAssociationBasicConfigWithComplianceSeverity(compSeverity, rName, assocName string) string {
 func testAccAWSSSMAssociationRateControlConfig(rName, rate string) string {
 func testAccAWSSSMDocumentBasicConfig(rName string) string {
+func testAccAWSSSMDocumentBasicConfigTargetType(rName, typ string) string {
 func testAccAWSSSMDocument20Config(rName string) string {
 func testAccAWSSSMDocument20UpdatedConfig(rName string) string {
 func testAccAWSSSMDocumentPublicPermissionConfig(rName string) string {
@@ -2943,6 +2948,7 @@ func testAccAWSStorageGateway_FileGatewayBase(rName string) string {
 func testAccAWSStorageGateway_TapeAndVolumeGatewayBase(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Cached(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_FileS3(rName string) string {
+func testAccAWSStorageGatewayGatewayConfig_Log_Group(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Stored(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(rName, gatewayTimezone string) string {

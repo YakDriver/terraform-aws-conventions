@@ -1730,6 +1730,7 @@ func TestAccAWSKmsGrant_withRetiringPrincipal(
 func TestAccAWSKmsGrant_bare(
 func TestAccAWSKmsGrant_ARN(
 func TestAccAWSKmsKey_basic(
+func TestAccAWSKmsKey_asymmetricKey(
 func TestAccAWSKmsKey_disappears(
 func TestAccAWSKmsKey_policy(
 func TestAccAWSKmsKey_isEnabled(
@@ -2451,6 +2452,7 @@ func TestAccAWSSagemakerNotebookInstance_update(
 func TestAccAWSSagemakerNotebookInstance_LifecycleConfigName(
 func TestAccAWSSagemakerNotebookInstance_tags(
 func TestAccAWSSagemakerNotebookInstance_disappears(
+func TestAccAWSSagemakerNotebookInstance_direct_internet_access(
 func TestAccAWSSecurityGroupRule_Ingress_VPC(
 func TestAccAWSSecurityGroupRule_Ingress_Protocol(
 func TestAccAWSSecurityGroupRule_Ingress_Ipv6(
@@ -2647,10 +2649,12 @@ func TestAccAWSSSMAssociation_withAssociationName(
 func TestAccAWSSSMAssociation_withAssociationNameAndScheduleExpression(
 func TestAccAWSSSMAssociation_withDocumentVersion(
 func TestAccAWSSSMAssociation_withOutputLocation(
+func TestAccAWSSSMAssociation_withAutomationTargetParamName(
 func TestAccAWSSSMAssociation_withScheduleExpression(
 func TestAccAWSSSMAssociation_withComplianceSeverity(
 func TestAccAWSSSMAssociation_rateControl(
 func TestAccAWSSSMDocument_basic(
+func TestAccAWSSSMDocument_target_type(
 func TestAccAWSSSMDocument_update(
 func TestAccAWSSSMDocument_permission_public(
 func TestAccAWSSSMDocument_permission_private(
@@ -2718,6 +2722,7 @@ func TestAccAWSStorageGatewayGateway_GatewayType_Stored(
 func TestAccAWSStorageGatewayGateway_GatewayType_Vtl(
 func TestAccAWSStorageGatewayGateway_tags(
 func TestAccAWSStorageGatewayGateway_GatewayName(
+func TestAccAWSStorageGatewayGateway_CloudWatchLogs(
 func TestAccAWSStorageGatewayGateway_GatewayTimezone(
 func TestAccAWSStorageGatewayGateway_SmbActiveDirectorySettings(
 func TestAccAWSStorageGatewayGateway_SmbGuestPassword(

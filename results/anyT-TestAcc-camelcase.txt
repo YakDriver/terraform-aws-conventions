@@ -732,6 +732,7 @@ func TestAccAWSKmsGrant_withConstraints(
 func TestAccAWSKmsGrant_withRetiringPrincipal(
 func testAccAWSKmsGrant_withConstraints(
 func testAccAWSKmsGrant_withRetiringPrincipal(
+func TestAccAWSKmsKey_asymmetricKey(
 func TestAccAWSKmsKey_isEnabled(
 func testAccAWSKmsKey_removedPolicy(
 func testAccAWSKmsKey_enabledRotation(
@@ -1233,6 +1234,7 @@ func TestAccAWSSSMAssociation_withAssociationName(
 func TestAccAWSSSMAssociation_withAssociationNameAndScheduleExpression(
 func TestAccAWSSSMAssociation_withDocumentVersion(
 func TestAccAWSSSMAssociation_withOutputLocation(
+func TestAccAWSSSMAssociation_withAutomationTargetParamName(
 func TestAccAWSSSMAssociation_withScheduleExpression(
 func TestAccAWSSSMAssociation_withComplianceSeverity(
 func TestAccAWSSSMAssociation_rateControl(

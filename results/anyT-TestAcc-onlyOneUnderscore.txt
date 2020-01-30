@@ -2255,10 +2255,13 @@ func testAccAWSKmsGrant_withRetiringPrincipal(
 func testAccAWSKmsGrant_bare(
 func testAccAWSKmsGrant_ARN(
 func TestAccAWSKmsKey_basic(
+func TestAccAWSKmsKey_asymmetricKey(
 func TestAccAWSKmsKey_disappears(
 func TestAccAWSKmsKey_policy(
 func TestAccAWSKmsKey_isEnabled(
 func TestAccAWSKmsKey_tags(
+func testAccAWSKmsKey_asymmetric(
+func testAccAWSKmsKey_policy(
 func testAccAWSKmsKey_removedPolicy(
 func testAccAWSKmsKey_enabledRotation(
 func testAccAWSKmsKey_disabled(
@@ -3367,6 +3370,7 @@ func TestAccAWSSSMAssociation_withAssociationName(
 func TestAccAWSSSMAssociation_withAssociationNameAndScheduleExpression(
 func TestAccAWSSSMAssociation_withDocumentVersion(
 func TestAccAWSSSMAssociation_withOutputLocation(
+func TestAccAWSSSMAssociation_withAutomationTargetParamName(
 func TestAccAWSSSMAssociation_withScheduleExpression(
 func TestAccAWSSSMAssociation_withComplianceSeverity(
 func TestAccAWSSSMAssociation_rateControl(
@@ -3431,6 +3435,7 @@ func testAccAWSStorageGatewayCacheConfig_FileGateway(
 func testAccAWSStorageGatewayCacheConfig_TapeAndVolumeGateway(
 func TestAccAWSStorageGatewayGateway_tags(
 func TestAccAWSStorageGatewayGateway_GatewayName(
+func TestAccAWSStorageGatewayGateway_CloudWatchLogs(
 func TestAccAWSStorageGatewayGateway_GatewayTimezone(
 func TestAccAWSStorageGatewayGateway_SmbActiveDirectorySettings(
 func TestAccAWSStorageGatewayGateway_SmbGuestPassword(

@@ -62,6 +62,7 @@ func testAccAwsDataSourceIAMUserConfig(name string) string {
 func testAccInstanceDataSourceConfigGetUserData(rName string, getUserData bool) string {
 func testAccInstanceDataSourceConfigGetUserDataNoUserData(rName string, getUserData bool) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
+func testAccDataSourceAwsKmsKeyConfig(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBase(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBasic(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigVersion(rName string) string {
@@ -1286,6 +1287,7 @@ func testAccAWSSagemakerNotebookInstanceUpdateConfig(notebookName string) string
 func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(rName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsConfig(notebookName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(notebookName string) string {
+func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(notebookName string, directInternetAccess string) string {
 func testAccAWSSecurityGroupRuleIngressConfig(rInt int) string {
 func testAccAWSSecurityGroupRuleIngressClassicConfig(rInt int) string {
 func testAccAWSSecurityGroupRuleEgressConfig(rInt int) string {
@@ -1386,8 +1388,9 @@ func testAccAWSSQSConfigWithTags(r string) string {
 func testAccAWSSQSConfigWithTagsChanged(r string) string {
 func testAccAWSSSMActivationBasicConfigBase(rName string) string {
 func testAccAWSSSMActivationBasicConfig(rName string, rTag string) string {
-func testAccAWSSSMAssociationBasicConfigWithParameters(rName string) string {
+func testAccAWSSSMAssociationBasicConfigWithAutomationTargetParamName(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithParametersUpdated(rName string) string {
+func testAccAWSSSMAssociationBasicConfigWithParameters(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithTargets(rName, targetsStr string) string {
 func testAccAWSSSMAssociationBasicConfig(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithDocumentVersion(rName string) string {
@@ -1401,6 +1404,7 @@ func testAccAWSSSMAssociationConfigWithAssociationNameAndScheduleExpression(rNam
 func testAccAWSSSMAssociationBasicConfigWithComplianceSeverity(compSeverity, rName, assocName string) string {
 func testAccAWSSSMAssociationRateControlConfig(rName, rate string) string {
 func testAccAWSSSMDocumentBasicConfig(rName string) string {
+func testAccAWSSSMDocumentBasicConfigTargetType(rName, typ string) string {
 func testAccAWSSSMDocument20Config(rName string) string {
 func testAccAWSSSMDocument20UpdatedConfig(rName string) string {
 func testAccAWSSSMDocumentPublicPermissionConfig(rName string) string {
