@@ -229,6 +229,7 @@ func testAccGetAccountID() string {
 func testAccGetRegion() string {
 func testAccGetAlternateRegion() string {
 func testAccGetPartition() string {
+func testAccGetPartitionDNSSuffix() string {
 func testAccGetAlternateRegionPartition() string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {

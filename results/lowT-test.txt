@@ -297,6 +297,7 @@ func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
+func testAccMatchResourceAttrRegionalHostname(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
 func testAccMatchResourceAttrGlobalARN(
@@ -306,6 +307,7 @@ func testAccGetAccountID(
 func testAccGetRegion(
 func testAccGetAlternateRegion(
 func testAccGetPartition(
+func testAccGetPartitionDNSSuffix(
 func testAccGetAlternateRegionPartition(
 func testAccAlternateAccountPreCheck(
 func testAccAlternateRegionPreCheck(
