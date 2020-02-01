@@ -165,6 +165,8 @@ func TestAccDataSourceAwsSqsQueue_tags(
 func TestAccAWSSsmDocumentDataSource_basic(
 func TestAccAWSSsmParameterDataSource_basic(
 func TestAccAWSSsmParameterDataSource_fullPath(
+func TestAccAWSSsmPatchBaselineDataSource_existingBaseline(
+func TestAccAWSSsmPatchBaselineDataSource_newBaseline(
 func TestAccDataSourceAwsSubnetIDs_filter(
 func TestAccDataSourceAwsSubnet_basic(
 func TestAccDataSourceAwsSubnet_ipv6ByIpv6Filter(

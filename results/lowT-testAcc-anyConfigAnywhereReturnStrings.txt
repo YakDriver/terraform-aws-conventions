@@ -175,6 +175,8 @@ func testAccDataSourceAwsSqsQueueConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfigTags(rName string) string {
 func testAccCheckAwsSsmDocumentDataSourceConfig(name string, documentFormat string) string {
 func testAccCheckAwsSsmParameterDataSourceConfig(name string, withDecryption string) string {
+func testAccCheckAwsSsmPatchBaselineDataSourceConfig_existingBaseline() string {
+func testAccCheckAwsSsmPatchBaselineDataSourceConfig_newBaseline(name string) string {
 func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskNode(rName string) string {
 func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskNode_NonExistent(rName string) string {
 func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskPath(rName string) string {
@@ -711,6 +713,8 @@ func testAccAWSCodeBuildProjectConfig_LogsConfig_CloudWatchLogs(rName, status, g
 func testAccAWSCodeBuildProjectConfig_LogsConfig_S3Logs(rName, bName, status, location string, encryptionDisabled bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_Auth(rName, authResource, authType string) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitCloneDepth(rName string, gitCloneDepth int) string {
+func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig(rName string, fetchSubmodules bool) string {
+func testAccAWSCodeBuildProjectConfig_SecondarySources_GitSubmodulesConfig(rName string, fetchSubmodules bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_InsecureSSL(rName string, insecureSSL bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_ReportBuildStatus_Bitbucket(rName string, reportBuildStatus bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_ReportBuildStatus_GitHub(rName string, reportBuildStatus bool) string {
