@@ -827,7 +827,6 @@ func TestAccAWSLBListener_basicUdp(
 func TestAccAWSLBListener_fixedResponse(
 func testAccAWSLBListenerConfig_basicUdp(
 func testAccAWSLBListenerConfig_fixedResponse(
-func TestAccAWSLBTargetGroupAttachment_withoutPort(
 func TestAccAWSLBTargetGroupAttachment_ipAddress(
 func TestAccAWSLBTargetGroup_basicUdp(
 func TestAccAWSLBTargetGroup_withoutHealthcheck(

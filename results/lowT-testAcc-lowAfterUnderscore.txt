@@ -436,7 +436,6 @@ func testAccAWSEIPConfig_tags(
 func testAccAWSEIP_classic_disassociate(
 func testAccBeanstalkApplicationVersionConfig_duplicateLabel(
 func testAccBeanstalkEnvConfig_platform_arn(
-func testAccBeanstalkEnvConfig_empty_settings(
 func testAccBeanstalkEnvConfig_settings(
 func testAccESDomainConfig_complex(
 func testAccESDomainConfig_vpc(
@@ -655,7 +654,6 @@ func testAccAWSLBListenerConfig_redirect(
 func testAccAWSLBListenerConfig_fixedResponse(
 func testAccAWSLBListenerConfig_cognito(
 func testAccAWSLBListenerConfig_oidc(
-func testAccAWSLBTargetGroupAttachmentConfig_basic(
 func testAccALB_defaults(
 func testAccNLB_defaults(
 func testAccAWSLBTargetGroupConfig_basic(

@@ -16,7 +16,8 @@ func testAccCheckAwsAvailabilityZonesConfigBlacklistedNames() string {
 func testAccCheckAwsAvailabilityZonesConfigBlacklistedZoneIds() string {
 func testAccDataSourceAwsBatchComputeEnvironmentConfig(rName string) string {
 func testAccDataSourceAwsBatchJobQueueConfig(rName string) string {
-func testAccCheckAwsCloudformationExportConfig(rName string) string {
+func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
+func testAccCheckAwsCloudformationExportConfigResourceReference(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigKMS(rName string) string {
@@ -312,6 +313,7 @@ func testAccAWSBatchComputeEnvironmentConfigSpotWithAllocationStrategy(rInt int)
 func testAccAWSBatchComputeEnvironmentConfigSpotWithoutBidPercentage(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigLaunchTemplate(rInt int) string {
 func testAccAWSBudgetsBudgetConfigNotificationSnippet(notification budgets.Notification, emails []string, topics []string) string {
+func testAccAWSCloud9EnvironmentEc2ConfigBase() string {
 func testAccAWSCloud9EnvironmentEc2Config(name string) string {
 func testAccAWSCloud9EnvironmentEc2AllFieldsConfig(name, description, userName string) string {
 func testAccAWSCloudFormationStackSetInstanceConfigBase(rName string) string {
@@ -713,12 +715,13 @@ func testAccBeanstalkApplicationVersionConfig(randInt int) string {
 func testAccBeanstalkApplicationVersionConfigWithTags(randInt int, tag1, tag2 string) string {
 func testAccBeanstalkApplicationVersionConfigWithAddTags(randInt int, tag1, tag2, tag3 string) string {
 func testAccBeanstalkConfigurationTemplateConfig(r string) string {
-func testAccBeanstalkEnvImportConfig(appName, envName string) string {
-func testAccBeanstalkEnvConfig(appName, envName string) string {
-func testAccBeanstalkWorkerEnvConfig(instanceProfileName, roleName, policyName, appName, envName string) string {
-func testAccBeanstalkEnvCnamePrefixConfig(appName, envName, cnamePrefix string) string {
-func testAccBeanstalkConfigTemplate(appName, envName, cfgTplName string, cfgTplValue int) string {
-func testAccBeanstalkEnvApplicationVersionConfig(bucketName, appName, appVersionName, envName string) string {
+func testAccBeanstalkEnvConfigBase(rName string) string {
+func testAccBeanstalkEnvConfig(rName string) string {
+func testAccBeanstalkWorkerEnvConfig(rName string) string {
+func testAccBeanstalkEnvCnamePrefixConfig(rName string) string {
+func testAccBeanstalkConfigTemplate(rName string, cfgTplValue int) string {
+func testAccBeanstalkEnvApplicationVersionConfig(rName string) string {
+func testAccBeanstalkEnvApplicationVersionConfigUpdate(rName string) string {
 func testAccESDomainPolicyConfig(randInt int, policy string) string {
 func testAccESDomainConfig(randInt int) string {
 func testAccESDomainConfigWithPolicy(randESId int, randRoleId int) string {
@@ -1003,10 +1006,12 @@ func testAccLbListenerCertificateConfigMultipleAddNew(rName string, keys, certif
 func testAccAWSLBListenerRuleConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccSslNegotiationPolicyConfig(rName, key, certificate string) string {
-func testAccAWSLBTargetGroupAttachmentConfigWithoutPort(targetGroupName string) string {
-func testAccAWSLBTargetGroupAttachmentConfigBackwardsCompatibility(targetGroupName string) string {
-func testAccAWSLBTargetGroupAttachmentConfigWithIpAddress(targetGroupName string) string {
-func testAccAWSLBTargetGroupAttachmentConfigWithLambda(targetGroupName string) string {
+func testAccAWSLBTargetGroupAttachmentConfigInstanceBase() string {
+func testAccAWSLBTargetGroupAttachmentConfigTargetIdInstance(rName string) string {
+func testAccAWSLBTargetGroupAttachmentConfigPort(rName string) string {
+func testAccAWSLBTargetGroupAttachmentConfigBackwardsCompatibility(rName string) string {
+func testAccAWSLBTargetGroupAttachmentConfigTargetIdIpAddress(rName string) string {
+func testAccAWSLBTargetGroupAttachmentConfigTargetIdLambda(rName string) string {
 func testAccAWSLBTargetGroupConfigTags1(targetGroupName, tagKey1, tagValue1 string) string {
 func testAccAWSLBTargetGroupConfigTags2(targetGroupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSLBTargetGroupConfigBackwardsCompatibility(targetGroupName string) string {

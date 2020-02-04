@@ -17,7 +17,8 @@ func testAccCheckAwsAvailabilityZonesConfigBlacklistedNames() string {
 func testAccCheckAwsAvailabilityZonesConfigBlacklistedZoneIds() string {
 func testAccDataSourceAwsBatchComputeEnvironmentConfig(rName string) string {
 func testAccDataSourceAwsBatchJobQueueConfig(rName string) string {
-func testAccCheckAwsCloudformationExportConfig(rName string) string {
+func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
+func testAccCheckAwsCloudformationExportConfigResourceReference(rName string) string {
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(stackName string) string {
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(stackName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
@@ -556,6 +557,7 @@ func testAccAWSBudgetsBudgetConfig_BasicDefaults(budgetConfig budgets.Budget, co
 func testAccAWSBudgetsBudgetConfig_Basic(budgetConfig budgets.Budget, costFilterKey string) string {
 func testAccAWSBudgetsBudgetConfigWithNotification_Basic(budgetConfig budgets.Budget, notifications []budgets.Notification, emails []string, topics []string) string {
 func testAccAWSBudgetsBudgetConfigNotificationSnippet(notification budgets.Notification, emails []string, topics []string) string {
+func testAccAWSCloud9EnvironmentEc2ConfigBase() string {
 func testAccAWSCloud9EnvironmentEc2Config(name string) string {
 func testAccAWSCloud9EnvironmentEc2AllFieldsConfig(name, description, userName string) string {
 func testAccAWSCloudFormationStackSetInstanceConfigBase(rName string) string {
@@ -701,6 +703,7 @@ func testAccAWSCodeBuildProjectConfig_QueuedTimeout(rName string, queuedTimeout 
 func testAccAWSCodeBuildProjectConfig_Cache(rName, cacheLocation, cacheType string) string {
 func testAccAWSCodeBuildProjectConfig_LocalCache(rName, modeType string) string {
 func testAccAWSCodeBuildProjectConfig_Description(rName, description string) string {
+func testAccAWSCodeBuildProjectConfig_SourceVersion(rName, sourceVersion string) string {
 func testAccAWSCodeBuildProjectConfig_EncryptionKey(rName string) string {
 func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_One(rName string) string {
 func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_Two(rName string) string {
@@ -1355,15 +1358,15 @@ func testAccBeanstalkApplicationVersionConfigWithAddTags(randInt int, tag1, tag2
 func testAccBeanstalkConfigurationTemplateConfig(r string) string {
 func testAccBeanstalkConfigurationTemplateConfig_VPC(name string) string {
 func testAccBeanstalkConfigurationTemplateConfig_Setting(name string) string {
-func testAccBeanstalkEnvImportConfig(appName, envName string) string {
-func testAccBeanstalkEnvConfig(appName, envName string) string {
-func testAccBeanstalkEnvConfig_platform_arn(appName, envName, platformArn string) string {
-func testAccBeanstalkEnvConfig_empty_settings(appName, envName string) string {
-func testAccBeanstalkEnvConfig_settings(appName, envName string) string {
-func testAccBeanstalkWorkerEnvConfig(instanceProfileName, roleName, policyName, appName, envName string) string {
-func testAccBeanstalkEnvCnamePrefixConfig(appName, envName, cnamePrefix string) string {
-func testAccBeanstalkConfigTemplate(appName, envName, cfgTplName string, cfgTplValue int) string {
-func testAccBeanstalkEnvApplicationVersionConfig(bucketName, appName, appVersionName, envName string) string {
+func testAccBeanstalkEnvConfigBase(rName string) string {
+func testAccBeanstalkEnvConfig(rName string) string {
+func testAccBeanstalkEnvConfig_platform_arn(rName string) string {
+func testAccBeanstalkEnvConfig_settings(rName string) string {
+func testAccBeanstalkWorkerEnvConfig(rName string) string {
+func testAccBeanstalkEnvCnamePrefixConfig(rName string) string {
+func testAccBeanstalkConfigTemplate(rName string, cfgTplValue int) string {
+func testAccBeanstalkEnvApplicationVersionConfig(rName string) string {
+func testAccBeanstalkEnvApplicationVersionConfigUpdate(rName string) string {
 func testAccESDomainPolicyConfig(randInt int, policy string) string {
 func testAccESDomainConfig(randInt int) string {
 func testAccESDomainConfig_DomainEndpointOptions(randInt int, enforceHttps bool, tlsSecurityPolicy string) string {
@@ -1910,11 +1913,12 @@ func testAccAWSLBListenerConfig_cognito(rName, key, certificate string) string {
 func testAccAWSLBListenerConfig_oidc(rName, key, certificate string) string {
 func testAccAWSLBListenerConfig_DefaultAction_Order(rName, key, certificate string) string {
 func testAccSslNegotiationPolicyConfig(rName, key, certificate string) string {
-func testAccAWSLBTargetGroupAttachmentConfigWithoutPort(targetGroupName string) string {
-func testAccAWSLBTargetGroupAttachmentConfig_basic(targetGroupName string) string {
-func testAccAWSLBTargetGroupAttachmentConfigBackwardsCompatibility(targetGroupName string) string {
-func testAccAWSLBTargetGroupAttachmentConfigWithIpAddress(targetGroupName string) string {
-func testAccAWSLBTargetGroupAttachmentConfigWithLambda(targetGroupName string) string {
+func testAccAWSLBTargetGroupAttachmentConfigInstanceBase() string {
+func testAccAWSLBTargetGroupAttachmentConfigTargetIdInstance(rName string) string {
+func testAccAWSLBTargetGroupAttachmentConfigPort(rName string) string {
+func testAccAWSLBTargetGroupAttachmentConfigBackwardsCompatibility(rName string) string {
+func testAccAWSLBTargetGroupAttachmentConfigTargetIdIpAddress(rName string) string {
+func testAccAWSLBTargetGroupAttachmentConfigTargetIdLambda(rName string) string {
 func testAccAWSLBTargetGroupConfig_basic(targetGroupName string) string {
 func testAccAWSLBTargetGroupConfigTags1(targetGroupName, tagKey1, tagValue1 string) string {
 func testAccAWSLBTargetGroupConfigTags2(targetGroupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

@@ -29,6 +29,7 @@ func TestAccAWSCallerIdentity_basic(
 func TestAccAWSCallerIdentity_basic_panic(
 func TestAccDataSourceAwsCanonicalUserId_basic(
 func TestAccAWSCloudformationExportDataSource_basic(
+func TestAccAWSCloudformationExportDataSource_ResourceReference(
 func TestAccAWSCloudFormationStack_dataSource_basic(
 func TestAccAWSCloudFormationStack_dataSource_yaml(
 func TestAccDataSourceCloudHsm2Cluster_basic(
@@ -767,6 +768,7 @@ func TestAccAWSCodeBuildProject_BuildTimeout(
 func TestAccAWSCodeBuildProject_QueuedTimeout(
 func TestAccAWSCodeBuildProject_Cache(
 func TestAccAWSCodeBuildProject_Description(
+func TestAccAWSCodeBuildProject_SourceVersion(
 func TestAccAWSCodeBuildProject_EncryptionKey(
 func TestAccAWSCodeBuildProject_Environment_EnvironmentVariable(
 func TestAccAWSCodeBuildProject_Environment_EnvironmentVariable_Type(
@@ -1518,14 +1520,12 @@ func TestAccAWSBeanstalkConfigurationTemplate_VPC(
 func TestAccAWSBeanstalkConfigurationTemplate_Setting(
 func TestAccAWSBeanstalkEnv_basic(
 func TestAccAWSBeanstalkEnv_tier(
-func TestAccAWSBeanstalkEnv_outputs(
 func TestAccAWSBeanstalkEnv_cname_prefix(
 func TestAccAWSBeanstalkEnv_config(
 func TestAccAWSBeanstalkEnv_resource(
 func TestAccAWSBeanstalkEnv_tags(
-func TestAccAWSBeanstalkEnv_vpc(
 func TestAccAWSBeanstalkEnv_template_change(
-func TestAccAWSBeanstalkEnv_basic_settings_update(
+func TestAccAWSBeanstalkEnv_settings_update(
 func TestAccAWSBeanstalkEnv_version_label(
 func TestAccAWSBeanstalkEnv_settingWithJsonValue(
 func TestAccAWSBeanstalkEnv_platformArn(
@@ -2175,7 +2175,7 @@ func TestAccAWSLBSSLNegotiationPolicy_disappears(
 func TestAccAWSLBTargetGroupAttachment_basic(
 func TestAccAWSLBTargetGroupAttachment_disappears(
 func TestAccAWSLBTargetGroupAttachment_BackwardsCompatibility(
-func TestAccAWSLBTargetGroupAttachment_withoutPort(
+func TestAccAWSLBTargetGroupAttachment_Port(
 func TestAccAWSLBTargetGroupAttachment_ipAddress(
 func TestAccAWSLBTargetGroupAttachment_lambda(
 func TestAccAWSLBTargetGroup_basic(

@@ -22,6 +22,7 @@ func TestAccAWSBillingServiceAccount_basic(
 func TestAccAWSCallerIdentity_basic(
 func TestAccDataSourceAwsCanonicalUserId_basic(
 func TestAccAWSCloudformationExportDataSource_basic(
+func TestAccAWSCloudformationExportDataSource_ResourceReference(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(
 func TestAccDataSourceCloudHsm2Cluster_basic(
@@ -882,6 +883,7 @@ func TestAccAWSCodeBuildProject_BuildTimeout(
 func TestAccAWSCodeBuildProject_QueuedTimeout(
 func TestAccAWSCodeBuildProject_Cache(
 func TestAccAWSCodeBuildProject_Description(
+func TestAccAWSCodeBuildProject_SourceVersion(
 func TestAccAWSCodeBuildProject_EncryptionKey(
 func TestAccAWSCodeBuildProject_Tags(
 func TestAccAWSCodeBuildProject_VpcConfig(
@@ -895,6 +897,7 @@ func testAccAWSCodeBuildProjectConfig_QueuedTimeout(
 func testAccAWSCodeBuildProjectConfig_Cache(
 func testAccAWSCodeBuildProjectConfig_LocalCache(
 func testAccAWSCodeBuildProjectConfig_Description(
+func testAccAWSCodeBuildProjectConfig_SourceVersion(
 func testAccAWSCodeBuildProjectConfig_EncryptionKey(
 func testAccAWSCodeBuildProjectConfig_Tags(
 func testAccAWSCodeBuildProjectConfig_VpcConfig1(
@@ -1713,15 +1716,12 @@ func testAccBeanstalkConfigurationTemplateConfig_VPC(
 func testAccBeanstalkConfigurationTemplateConfig_Setting(
 func TestAccAWSBeanstalkEnv_basic(
 func TestAccAWSBeanstalkEnv_tier(
-func TestAccAWSBeanstalkEnv_outputs(
 func TestAccAWSBeanstalkEnv_config(
 func TestAccAWSBeanstalkEnv_resource(
 func TestAccAWSBeanstalkEnv_tags(
-func TestAccAWSBeanstalkEnv_vpc(
 func TestAccAWSBeanstalkEnv_settingWithJsonValue(
 func TestAccAWSBeanstalkEnv_platformArn(
 func testAccBeanstalkEnvConfig_settings(
-func testAccBeanstalkEnv_VPC(
 func TestAccAWSElasticSearchDomainPolicy_basic(
 func TestAccAWSElasticSearchDomain_basic(
 func TestAccAWSElasticSearchDomain_RequireHTTPS(
@@ -2436,10 +2436,9 @@ func TestAccAWSLBSSLNegotiationPolicy_disappears(
 func TestAccAWSLBTargetGroupAttachment_basic(
 func TestAccAWSLBTargetGroupAttachment_disappears(
 func TestAccAWSLBTargetGroupAttachment_BackwardsCompatibility(
-func TestAccAWSLBTargetGroupAttachment_withoutPort(
+func TestAccAWSLBTargetGroupAttachment_Port(
 func TestAccAWSLBTargetGroupAttachment_ipAddress(
 func TestAccAWSLBTargetGroupAttachment_lambda(
-func testAccAWSLBTargetGroupAttachmentConfig_basic(
 func TestAccAWSLBTargetGroup_basic(
 func TestAccAWSLBTargetGroup_basicUdp(
 func TestAccAWSLBTargetGroup_withoutHealthcheck(

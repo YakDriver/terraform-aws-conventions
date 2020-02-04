@@ -906,14 +906,12 @@ func TestAccAWSBeanstalkAppVersion_tags(
 func TestAccAWSBeanstalkConfigurationTemplate_basic(
 func TestAccAWSBeanstalkEnv_basic(
 func TestAccAWSBeanstalkEnv_tier(
-func TestAccAWSBeanstalkEnv_outputs(
 func TestAccAWSBeanstalkEnv_cname_prefix(
 func TestAccAWSBeanstalkEnv_config(
 func TestAccAWSBeanstalkEnv_resource(
 func TestAccAWSBeanstalkEnv_tags(
-func TestAccAWSBeanstalkEnv_vpc(
 func TestAccAWSBeanstalkEnv_template_change(
-func TestAccAWSBeanstalkEnv_basic_settings_update(
+func TestAccAWSBeanstalkEnv_settings_update(
 func TestAccAWSBeanstalkEnv_version_label(
 func TestAccAWSBeanstalkEnv_settingWithJsonValue(
 func TestAccAWSBeanstalkEnv_platformArn(
@@ -1340,7 +1338,6 @@ func TestAccAWSLBSSLNegotiationPolicy_basic(
 func TestAccAWSLBSSLNegotiationPolicy_disappears(
 func TestAccAWSLBTargetGroupAttachment_basic(
 func TestAccAWSLBTargetGroupAttachment_disappears(
-func TestAccAWSLBTargetGroupAttachment_withoutPort(
 func TestAccAWSLBTargetGroupAttachment_ipAddress(
 func TestAccAWSLBTargetGroupAttachment_lambda(
 func TestAccAWSLBTargetGroup_basic(
