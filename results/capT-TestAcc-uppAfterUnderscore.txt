@@ -336,6 +336,7 @@ func TestAccAWSDataSyncLocationNfs_AgentARNs_Multple(
 func TestAccAWSDataSyncLocationNfs_Subdirectory(
 func TestAccAWSDataSyncLocationNfs_Tags(
 func TestAccAWSDataSyncLocationS3_Tags(
+func TestAccAWSDataSyncLocationSmb_Tags(
 func TestAccAWSDataSyncTask_CloudWatchLogGroupARN(
 func TestAccAWSDataSyncTask_DefaultSyncOptions_AtimeMtime(
 func TestAccAWSDataSyncTask_DefaultSyncOptions_BytesPerSecond(

@@ -248,6 +248,11 @@ func testAccDataSourceAwsRoute53ResolverRule_basic(
 func testAccDataSourceAwsRoute53ResolverRule_resolverEndpointIdWithTags(
 func testAccDataSourceAwsRoute53ResolverRule_sharedByMe(
 func testAccDataSourceAwsRoute53ResolverRule_sharedWithMe(
+func TestAccDataSourceAwsRoute53Zone_id(
+func TestAccDataSourceAwsRoute53Zone_name(
+func TestAccDataSourceAwsRoute53Zone_tags(
+func TestAccDataSourceAwsRoute53Zone_vpc(
+func TestAccDataSourceAwsRoute53Zone_serviceDiscovery(
 func TestAccDataSourceAwsRouteTable_basic(
 func TestAccDataSourceAwsRouteTable_main(
 func TestAccAWSRouteDataSource_basic(
@@ -1131,6 +1136,9 @@ func TestAccAWSDataSyncLocationNfs_Tags(
 func TestAccAWSDataSyncLocationS3_basic(
 func TestAccAWSDataSyncLocationS3_disappears(
 func TestAccAWSDataSyncLocationS3_Tags(
+func TestAccAWSDataSyncLocationSmb_basic(
+func TestAccAWSDataSyncLocationSmb_disappears(
+func TestAccAWSDataSyncLocationSmb_Tags(
 func TestAccAWSDataSyncTask_basic(
 func TestAccAWSDataSyncTask_disappears(
 func TestAccAWSDataSyncTask_CloudWatchLogGroupARN(

@@ -648,6 +648,10 @@ func testAccAWSDataSyncLocationS3ConfigBase(
 func testAccAWSDataSyncLocationS3Config(
 func testAccAWSDataSyncLocationS3ConfigTags1(
 func testAccAWSDataSyncLocationS3ConfigTags2(
+func testAccAWSDataSyncLocationSmbConfigBase(
+func testAccAWSDataSyncLocationSmbConfig(
+func testAccAWSDataSyncLocationSmbConfigTags1(
+func testAccAWSDataSyncLocationSmbConfigTags2(
 func testAccAWSDataSyncTaskConfigDestinationLocationS3Base(
 func testAccAWSDataSyncTaskConfigSourceLocationNfsBase(
 func testAccAWSDataSyncTaskConfig(

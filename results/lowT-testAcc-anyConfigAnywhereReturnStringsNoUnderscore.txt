@@ -91,7 +91,11 @@ func testAccDataSourceAwsRdsClusterConfigBasic(clusterName string) string {
 func testAccAWSDataSourceRedshiftClusterConfig(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithVpc(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithLogging(rInt int) string {
-func testAccDataSourceAwsRoute53ZoneConfig(rInt int) string {
+func testAccDataSourceAwsRoute53ZoneConfigId(rInt int) string {
+func testAccDataSourceAwsRoute53ZoneConfigName(rInt int) string {
+func testAccDataSourceAwsRoute53ZoneConfigTagsPrivate(rInt int) string {
+func testAccDataSourceAwsRoute53ZoneConfigVpc(rInt int) string {
+func testAccDataSourceAwsRoute53ZoneConfigServiceDiscovery(rInt int) string {
 func testAccDataSourceAwsRouteTablesConfigWithDataSource(rInt int) string {
 func testAccDataSourceAwsRouteTablesConfig(rInt int) string {
 func testAccAWSRouteDataSourceConfigTransitGatewayID() string {
@@ -495,6 +499,10 @@ func testAccAWSDataSyncLocationS3ConfigBase(rName string) string {
 func testAccAWSDataSyncLocationS3Config(rName string) string {
 func testAccAWSDataSyncLocationS3ConfigTags1(rName, key1, value1 string) string {
 func testAccAWSDataSyncLocationS3ConfigTags2(rName, key1, value1, key2, value2 string) string {
+func testAccAWSDataSyncLocationSmbConfigBase() string {
+func testAccAWSDataSyncLocationSmbConfig() string {
+func testAccAWSDataSyncLocationSmbConfigTags1(key1, value1 string) string {
+func testAccAWSDataSyncLocationSmbConfigTags2(key1, value1, key2, value2 string) string {
 func testAccAWSDataSyncTaskConfigDestinationLocationS3Base(rName string) string {
 func testAccAWSDataSyncTaskConfigSourceLocationNfsBase(rName string) string {
 func testAccAWSDataSyncTaskConfig(rName string) string {
