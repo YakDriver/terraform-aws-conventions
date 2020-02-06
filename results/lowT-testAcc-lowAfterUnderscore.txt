@@ -747,6 +747,7 @@ func testAccAwsOrganizationsOrganization_basic(
 func testAccAwsOrganizationsPolicy_basic(
 func testAccAwsOrganizationsPolicy_concurrent(
 func testAccAwsOrganizationsPolicy_description(
+func testAccAwsOrganizationsPolicy_type(
 func testAccAWSPinpointADMChannelConfig_basic(
 func testAccAWSPinpointAPNSChannelConfig_basicCertificate(
 func testAccAWSPinpointAPNSChannelConfig_basicToken(

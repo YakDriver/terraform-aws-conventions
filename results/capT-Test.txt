@@ -1802,7 +1802,6 @@ func TestAccAWSGlacierVaultLock_CompleteLock(
 func TestAccAWSGlacierVault_basic(
 func TestAccAWSGlacierVault_full(
 func TestAccAWSGlacierVault_RemoveNotifications(
-func TestDiffGlacierVaultTags(
 func TestAccAwsGlobalAcceleratorAccelerator_basic(
 func TestAccAwsGlobalAcceleratorAccelerator_update(
 func TestAccAwsGlobalAcceleratorAccelerator_attributes(
@@ -2486,6 +2485,7 @@ func TestAccAWSNeptuneSubnetGroup_generatedName(
 func TestAccAWSNeptuneSubnetGroup_updateDescription(
 func TestAccAWSNetworkAclRule_basic(
 func TestAccAWSNetworkAclRule_disappears(
+func TestAccAWSNetworkAclRule_ingressEgressSameNumberDisappears(
 func TestAccAWSNetworkAclRule_disappears_NetworkAcl(
 func TestAccAWSNetworkAclRule_missingParam(
 func TestAccAWSNetworkAclRule_ipv6(
@@ -3298,6 +3298,7 @@ func TestAccAWSVolumeAttachment_update(
 func TestAccAWSDHCPOptionsAssociation_basic(
 func TestAccAWSDHCPOptions_basic(
 func TestAccAWSDHCPOptions_deleteOptions(
+func TestAccAWSDHCPOptions_tags(
 func TestAccAWSVpcEndpointConnectionNotification_basic(
 func TestAccAWSVpcEndpointRouteTableAssociation_basic(
 func TestAccAWSVpcEndpointServiceAllowedPrincipal_basic(

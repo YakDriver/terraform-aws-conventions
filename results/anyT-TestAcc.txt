@@ -5914,6 +5914,7 @@ func testAccNeptuneSubnetGroupConfig(
 func testAccNeptuneSubnetGroupConfig_updatedDescription(
 func TestAccAWSNetworkAclRule_basic(
 func TestAccAWSNetworkAclRule_disappears(
+func TestAccAWSNetworkAclRule_ingressEgressSameNumberDisappears(
 func TestAccAWSNetworkAclRule_disappears_NetworkAcl(
 func TestAccAWSNetworkAclRule_missingParam(
 func TestAccAWSNetworkAclRule_ipv6(
@@ -6091,11 +6092,13 @@ func testAccAwsOrganizationsPolicyAttachmentConfig_Root(
 func testAccAwsOrganizationsPolicy_basic(
 func testAccAwsOrganizationsPolicy_concurrent(
 func testAccAwsOrganizationsPolicy_description(
+func testAccAwsOrganizationsPolicy_type(
 func testAccCheckAwsOrganizationsPolicyDestroy(
 func testAccCheckAwsOrganizationsPolicyExists(
 func testAccAwsOrganizationsPolicyConfig_Description(
 func testAccAwsOrganizationsPolicyConfig_Required(
 func testAccAwsOrganizationsPolicyConfigConcurrent(
+func testAccAwsOrganizationsPolicyConfig_Type(
 func TestAccAWSOrganizations(
 func testAccAwsPinpointADMChannelConfigurationFromEnv(
 func TestAccAWSPinpointADMChannel_basic(
@@ -7866,9 +7869,13 @@ func testAccCheckDHCPOptionsAssociationDestroy(
 func testAccCheckDHCPOptionsAssociationExist(
 func TestAccAWSDHCPOptions_basic(
 func TestAccAWSDHCPOptions_deleteOptions(
+func TestAccAWSDHCPOptions_tags(
 func testAccCheckDHCPOptionsDestroy(
 func testAccCheckDHCPOptionsExists(
 func testAccCheckDHCPOptionsDelete(
+func testAccDHCPOptionsConfig(
+func testAccDHCPOptionsConfigTags1(
+func testAccDHCPOptionsConfigTags2(
 func TestAccAWSVpcEndpointConnectionNotification_basic(
 func testAccCheckVpcEndpointConnectionNotificationDestroy(
 func testAccCheckVpcEndpointConnectionNotificationExists(

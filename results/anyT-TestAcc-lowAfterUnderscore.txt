@@ -2198,6 +2198,7 @@ func TestAccAWSNeptuneSubnetGroup_updateDescription(
 func testAccNeptuneSubnetGroupConfig_updatedDescription(
 func TestAccAWSNetworkAclRule_basic(
 func TestAccAWSNetworkAclRule_disappears(
+func TestAccAWSNetworkAclRule_ingressEgressSameNumberDisappears(
 func TestAccAWSNetworkAclRule_disappears_NetworkAcl(
 func TestAccAWSNetworkAclRule_missingParam(
 func TestAccAWSNetworkAclRule_ipv6(
@@ -2239,6 +2240,7 @@ func testAccAwsOrganizationsOrganization_basic(
 func testAccAwsOrganizationsPolicy_basic(
 func testAccAwsOrganizationsPolicy_concurrent(
 func testAccAwsOrganizationsPolicy_description(
+func testAccAwsOrganizationsPolicy_type(
 func TestAccAWSPinpointADMChannel_basic(
 func testAccAWSPinpointADMChannelConfig_basic(
 func TestAccAWSPinpointAPNSChannel_basicCertificate(
@@ -2818,6 +2820,7 @@ func testAccVolumeAttachmentConfig_update(
 func TestAccAWSDHCPOptionsAssociation_basic(
 func TestAccAWSDHCPOptions_basic(
 func TestAccAWSDHCPOptions_deleteOptions(
+func TestAccAWSDHCPOptions_tags(
 func TestAccAWSVpcEndpointConnectionNotification_basic(
 func TestAccAWSVpcEndpointRouteTableAssociation_basic(
 func TestAccAWSVpcEndpointServiceAllowedPrincipal_basic(

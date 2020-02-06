@@ -2367,12 +2367,13 @@ func testAccAwsOrganizationsOrganizationConfigAwsServiceAccessPrincipals1(princi
 func testAccAwsOrganizationsOrganizationConfigAwsServiceAccessPrincipals2(principal1, principal2 string) string {
 func testAccAwsOrganizationsOrganizationConfigEnabledPolicyTypes1(policyType1 string) string {
 func testAccAwsOrganizationsOrganizationConfigFeatureSet(featureSet string) string {
-func testAccAwsOrganizationsPolicyAttachmentConfig_Account(rName string) string {
+func testAccAwsOrganizationsPolicyAttachmentConfig_Account(rName, policyType, policyContent string) string {
 func testAccAwsOrganizationsPolicyAttachmentConfig_OrganizationalUnit(rName string) string {
 func testAccAwsOrganizationsPolicyAttachmentConfig_Root(rName string) string {
 func testAccAwsOrganizationsPolicyConfig_Description(rName, description string) string {
 func testAccAwsOrganizationsPolicyConfig_Required(rName, content string) string {
 func testAccAwsOrganizationsPolicyConfigConcurrent(rName string) string {
+func testAccAwsOrganizationsPolicyConfig_Type(rName, content, policyType string) string {
 func testAccAWSPinpointADMChannelConfig_basic(conf *testAccAwsPinpointADMChannelConfiguration) string {
 func testAccAWSPinpointAPNSChannelConfig_basicCertificate(conf *testAccAwsPinpointAPNSChannelCertConfiguration) string {
 func testAccAWSPinpointAPNSChannelConfig_basicToken(conf *testAccAwsPinpointAPNSChannelTokenConfiguration) string {
@@ -3022,6 +3023,9 @@ func testAccAWSTransferUserConfig_options(rName string) string {
 func testAccAWSTransferUserConfig_modify(rName string) string {
 func testAccAWSTransferUserConfig_forceNew(rName string) string {
 func testAccVolumeAttachmentConfig_update(detach bool) string {
+func testAccDHCPOptionsConfig(rName string) string {
+func testAccDHCPOptionsConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccDHCPOptionsConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccVpcEndpointConnectionNotificationBasicConfig(lbName string) string {
 func testAccVpcEndpointConnectionNotificationModifiedConfig(lbName string) string {
 func testAccVpcEndpointRouteTableAssociationConfig(rName string) string {

@@ -2247,6 +2247,7 @@ func testAccAwsOrganizationsPolicyAttachmentConfig_Root(
 func testAccAwsOrganizationsPolicyConfig_Description(
 func testAccAwsOrganizationsPolicyConfig_Required(
 func testAccAwsOrganizationsPolicyConfigConcurrent(
+func testAccAwsOrganizationsPolicyConfig_Type(
 func testAccAwsPinpointADMChannelConfigurationFromEnv(
 func testAccAWSPinpointADMChannelConfig_basic(
 func testAccAwsPinpointAPNSChannelCertConfigurationFromEnv(
@@ -2872,6 +2873,9 @@ func testAccAWSTransferUserConfig_options(
 func testAccAWSTransferUserConfig_modify(
 func testAccAWSTransferUserConfig_forceNew(
 func testAccVolumeAttachmentConfig_update(
+func testAccDHCPOptionsConfig(
+func testAccDHCPOptionsConfigTags1(
+func testAccDHCPOptionsConfigTags2(
 func testAccVpcEndpointConnectionNotificationBasicConfig(
 func testAccVpcEndpointConnectionNotificationModifiedConfig(
 func testAccVpcEndpointRouteTableAssociationConfig(
