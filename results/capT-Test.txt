@@ -1091,6 +1091,7 @@ func TestAccAWSDBEventSubscription_disappears(
 func TestAccAWSDBEventSubscription_withPrefix(
 func TestAccAWSDBEventSubscription_withSourceIds(
 func TestAccAWSDBEventSubscription_categoryUpdate(
+func TestResourceAwsDbInstanceStateUpgradeV0(
 func TestAccAWSDbInstanceRoleAssociation_basic(
 func TestAccAWSDbInstanceRoleAssociation_disappears(
 func TestAccAWSDBInstance_basic(
@@ -1161,8 +1162,10 @@ func TestAccAWSDBInstance_MinorVersion(
 func TestAccAWSDBInstance_ec2Classic(
 func TestAccAWSDBInstance_cloudwatchLogsExportConfiguration(
 func TestAccAWSDBInstance_cloudwatchLogsExportConfigurationUpdate(
+func TestAccAWSDBInstance_EnabledCloudwatchLogsExports_MSSQL(
 func TestAccAWSDBInstance_EnabledCloudwatchLogsExports_Oracle(
 func TestAccAWSDBInstance_EnabledCloudwatchLogsExports_Postgresql(
+func TestAccAWSDBInstance_NoDeleteAutomatedBackups(
 func TestAccAWSRDSDBInstance_PerformanceInsightsEnabled_DisabledToEnabled(
 func TestAccAWSRDSDBInstance_PerformanceInsightsEnabled_EnabledToDisabled(
 func TestAccAWSRDSDBInstance_PerformanceInsightsKmsKeyId(
@@ -1793,7 +1796,9 @@ func TestAccAWSGameliftBuild_tags(
 func TestAccAWSGameliftBuild_disappears(
 func TestDiffGameliftPortSettings(
 func TestAccAWSGameliftFleet_basic(
+func TestAccAWSGameliftFleet_tags(
 func TestAccAWSGameliftFleet_allFields(
+func TestAccAWSGameliftFleet_disappears(
 func TestAccAWSGameliftGameSessionQueue_basic(
 func TestAccAWSGameliftGameSessionQueue_tags(
 func TestAccAWSGameliftGameSessionQueue_disappears(
@@ -2465,12 +2470,14 @@ func TestAccAWSNeptuneClusterSnapshot_basic(
 func TestAccAWSNeptuneCluster_basic(
 func TestAccAWSNeptuneCluster_namePrefix(
 func TestAccAWSNeptuneCluster_takeFinalSnapshot(
-func TestAccAWSNeptuneCluster_updateTags(
+func TestAccAWSNeptuneCluster_tags(
 func TestAccAWSNeptuneCluster_updateIamRoles(
 func TestAccAWSNeptuneCluster_kmsKey(
 func TestAccAWSNeptuneCluster_encrypted(
 func TestAccAWSNeptuneCluster_backupsUpdate(
 func TestAccAWSNeptuneCluster_iamAuth(
+func TestAccAWSNeptuneCluster_updateCloudwatchLogsExports(
+func TestAccAWSNeptuneCluster_deleteProtection(
 func TestAccAWSNeptuneEventSubscription_basic(
 func TestAccAWSNeptuneEventSubscription_withPrefix(
 func TestAccAWSNeptuneEventSubscription_withSourceIds(
@@ -2669,6 +2676,7 @@ func TestAccAWSRdsGlobalCluster_DatabaseName(
 func TestAccAWSRdsGlobalCluster_DeletionProtection(
 func TestAccAWSRdsGlobalCluster_Engine_Aurora(
 func TestAccAWSRdsGlobalCluster_EngineVersion_Aurora(
+func TestAccAWSRdsGlobalCluster_EngineVersion_AuroraMySQL(
 func TestAccAWSRdsGlobalCluster_StorageEncrypted(
 func TestValidateRedshiftClusterDbName(
 func TestAccAWSRedshiftCluster_basic(
@@ -3547,7 +3555,6 @@ func TestDiffDXTags(
 func TestIgnoringTagsDX(
 func TestDiffTags(
 func TestIgnoringTags(
-func TestTagsMapToHash(
 func TestTlsRsaPrivateKeyPem(
 func TestTlsRsaPublicKeyPem(
 func TestTlsRsaX509LocallySignedCertificatePem(

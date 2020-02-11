@@ -85,7 +85,6 @@ func testAccDataSourceAwsApiGatewayApiKeyConfig(
 func TestAccDataSourceAwsApiGatewayResource(
 func testAccDataSourceAwsApiGatewayResourceConfig(
 func TestAccDataSourceAwsApiGatewayRestApi(
-func testAccDataSourceAwsApiGatewayRestApiCheck(
 func testAccDataSourceAwsApiGatewayRestApiConfig(
 func TestAccDataSourceAwsApiGatewayVpcLink(
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(
@@ -2766,6 +2765,9 @@ func testAccAWSDBEventSubscriptionConfigUpdate(
 func testAccAWSDBEventSubscriptionConfigWithSourceIds(
 func testAccAWSDBEventSubscriptionConfigUpdateSourceIds(
 func testAccAWSDBEventSubscriptionConfigUpdateCategories(
+func testResourceAwsDbInstanceStateDataV0(
+func testResourceAwsDbInstanceStateDataV1(
+func TestResourceAwsDbInstanceStateUpgradeV0(
 func TestAccAWSDbInstanceRoleAssociation_basic(
 func TestAccAWSDbInstanceRoleAssociation_disappears(
 func testAccCheckAWSDbInstanceRoleAssociationExists(
@@ -2841,8 +2843,11 @@ func TestAccAWSDBInstance_MinorVersion(
 func TestAccAWSDBInstance_ec2Classic(
 func TestAccAWSDBInstance_cloudwatchLogsExportConfiguration(
 func TestAccAWSDBInstance_cloudwatchLogsExportConfigurationUpdate(
+func TestAccAWSDBInstance_EnabledCloudwatchLogsExports_MSSQL(
 func TestAccAWSDBInstance_EnabledCloudwatchLogsExports_Oracle(
 func TestAccAWSDBInstance_EnabledCloudwatchLogsExports_Postgresql(
+func TestAccAWSDBInstance_NoDeleteAutomatedBackups(
+func testAccCheckAWSDBInstanceAutomatedBackups(
 func testAccCheckAWSDBInstanceDestroy(
 func testAccCheckAWSDBInstanceAttributes(
 func testAccCheckAWSDBInstanceAttributes_MSSQL(
@@ -2887,6 +2892,7 @@ func testAccAWSDBInstanceConfigEc2Classic(
 func testAccAWSDBInstanceConfig_MariaDB(
 func testAccAWSDBInstanceConfig_DeletionProtection(
 func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Oracle(
+func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_MSSQL(
 func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Postgresql(
 func testAccAWSDBInstanceConfig_MaxAllocatedStorage(
 func testAccAWSDBInstanceConfig_Password(
@@ -2936,6 +2942,7 @@ func testAccAWSDBInstancePerformanceInsightsKmsKeyId(
 func testAccAWSDBInstancePerformanceInsightsRetentionPeriod(
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_PerformanceInsightsEnabled(
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_PerformanceInsightsEnabled(
+func testAccAWSDBInstanceConfig_NoDeleteAutomatedBackups(
 func testSweepDbOptionGroups(
 func TestAccAWSDBOptionGroup_basic(
 func TestAccAWSDBOptionGroup_timeoutBlock(
@@ -4449,10 +4456,15 @@ func testSweepGameliftFleets(
 func testAccGameliftListFleets(conn *gamelift.GameLift, nextToken *string, region string, f func(
 func TestDiffGameliftPortSettings(
 func TestAccAWSGameliftFleet_basic(
+func TestAccAWSGameliftFleet_tags(
 func TestAccAWSGameliftFleet_allFields(
+func TestAccAWSGameliftFleet_disappears(
 func testAccCheckAWSGameliftFleetExists(
+func testAccCheckAWSGameliftFleetDisappears(
 func testAccCheckAWSGameliftFleetDestroy(
 func testAccAWSGameliftFleetBasicConfig(
+func testAccAWSGameliftFleetBasicConfigTags1(
+func testAccAWSGameliftFleetBasicConfigTags2(
 func testAccAWSGameliftFleetBasicUpdatedConfig(
 func testAccAWSGameliftFleetAllFieldsConfig(
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(
@@ -6148,21 +6160,25 @@ func testAccAwsNeptuneClusterSnapshotConfig(
 func TestAccAWSNeptuneCluster_basic(
 func TestAccAWSNeptuneCluster_namePrefix(
 func TestAccAWSNeptuneCluster_takeFinalSnapshot(
-func TestAccAWSNeptuneCluster_updateTags(
+func TestAccAWSNeptuneCluster_tags(
 func TestAccAWSNeptuneCluster_updateIamRoles(
 func TestAccAWSNeptuneCluster_kmsKey(
 func TestAccAWSNeptuneCluster_encrypted(
 func TestAccAWSNeptuneCluster_backupsUpdate(
 func TestAccAWSNeptuneCluster_iamAuth(
+func TestAccAWSNeptuneCluster_updateCloudwatchLogsExports(
+func TestAccAWSNeptuneCluster_deleteProtection(
 func testAccCheckAWSNeptuneClusterDestroy(
 func testAccCheckAWSNeptuneClusterDestroyWithProvider(
 func testAccCheckAWSNeptuneClusterExists(
 func testAccCheckAWSNeptuneClusterExistsWithProvider(n string, v *neptune.DBCluster, providerF func(
 func testAccCheckAWSNeptuneClusterSnapshot(
 func testAccAWSNeptuneClusterConfig(
+func testAccAWSNeptuneClusterConfigDeleteProtection(
 func testAccAWSNeptuneClusterConfig_namePrefix(
 func testAccAWSNeptuneClusterConfigWithFinalSnapshot(
-func testAccAWSNeptuneClusterConfigUpdatedTags(
+func testAccAWSNeptuneClusterConfigTags1(
+func testAccAWSNeptuneClusterConfigTags2(
 func testAccAWSNeptuneClusterConfigIncludingIamRoles(
 func testAccAWSNeptuneClusterConfigAddIamRoles(
 func testAccAWSNeptuneClusterConfigRemoveIamRoles(
@@ -6171,6 +6187,7 @@ func testAccAWSNeptuneClusterConfig_encrypted(
 func testAccAWSNeptuneClusterConfig_backups(
 func testAccAWSNeptuneClusterConfig_backupsUpdate(
 func testAccAWSNeptuneClusterConfig_iamAuth(
+func testAccAWSNeptuneClusterConfig_cloudwatchLogsExports(
 func TestAccAWSNeptuneEventSubscription_basic(
 func TestAccAWSNeptuneEventSubscription_withPrefix(
 func TestAccAWSNeptuneEventSubscription_withSourceIds(
@@ -6711,6 +6728,7 @@ func TestAccAWSRdsGlobalCluster_DatabaseName(
 func TestAccAWSRdsGlobalCluster_DeletionProtection(
 func TestAccAWSRdsGlobalCluster_Engine_Aurora(
 func TestAccAWSRdsGlobalCluster_EngineVersion_Aurora(
+func TestAccAWSRdsGlobalCluster_EngineVersion_AuroraMySQL(
 func TestAccAWSRdsGlobalCluster_StorageEncrypted(
 func testAccCheckAWSRdsGlobalClusterExists(
 func testAccCheckAWSRdsGlobalClusterDestroy(
@@ -6928,10 +6946,12 @@ func testAccPreCheckAWSRoute53Resolver(
 func testAccRoute53ResolverEndpointConfig_base(
 func testAccRoute53ResolverEndpointConfig_initial(
 func testAccRoute53ResolverEndpointConfig_updated(
+func testSweepRoute53ResolverRuleAssociations(
 func TestAccAwsRoute53ResolverRuleAssociation_basic(
 func testAccCheckRoute53ResolverRuleAssociationDestroy(
 func testAccCheckRoute53ResolverRuleAssociationExists(
 func testAccRoute53ResolverRuleAssociationConfig_basic(
+func testSweepRoute53ResolverRules(
 func TestAccAwsRoute53ResolverRule_basic(
 func TestAccAwsRoute53ResolverRule_tags(
 func TestAccAwsRoute53ResolverRule_updateName(
@@ -8835,7 +8855,6 @@ func TestDiffDXTags(
 func TestIgnoringTagsDX(
 func TestDiffTags(
 func TestIgnoringTags(
-func TestTagsMapToHash(
 func testAccCheckTags(
 func TestTlsRsaPrivateKeyPem(
 func TestTlsRsaPublicKeyPem(

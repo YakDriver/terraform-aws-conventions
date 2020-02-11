@@ -11,7 +11,6 @@ func testAccDataSourceAwsAmiIdsConfig_sorted(
 func testAccCheckAwsAmiDataSourceID(
 func testAccDataSourceAwsApiGatewayApiKeyConfig(
 func testAccDataSourceAwsApiGatewayResourceConfig(
-func testAccDataSourceAwsApiGatewayRestApiCheck(
 func testAccDataSourceAwsApiGatewayRestApiConfig(
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(
 func testAccDataSourceAwsArn(
@@ -1613,6 +1612,7 @@ func testAccCheckAWSDbInstanceRoleAssociationExists(
 func testAccCheckAWSDbInstanceRoleAssociationDestroy(
 func testAccCheckAWSDbInstanceRoleAssociationDisappears(
 func testAccAWSDbInstanceRoleAssociationConfig(
+func testAccCheckAWSDBInstanceAutomatedBackups(
 func testAccCheckAWSDBInstanceDestroy(
 func testAccCheckAWSDBInstanceAttributes(
 func testAccCheckAWSDBInstanceAttributes_MSSQL(
@@ -1650,6 +1650,7 @@ func testAccAWSDBInstanceConfigEc2Classic(
 func testAccAWSDBInstanceConfig_MariaDB(
 func testAccAWSDBInstanceConfig_DeletionProtection(
 func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Oracle(
+func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_MSSQL(
 func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Postgresql(
 func testAccAWSDBInstanceConfig_MaxAllocatedStorage(
 func testAccAWSDBInstanceConfig_Password(
@@ -1699,6 +1700,7 @@ func testAccAWSDBInstancePerformanceInsightsKmsKeyId(
 func testAccAWSDBInstancePerformanceInsightsRetentionPeriod(
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_PerformanceInsightsEnabled(
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_PerformanceInsightsEnabled(
+func testAccAWSDBInstanceConfig_NoDeleteAutomatedBackups(
 func testAccCheckAWSDBOptionGroupOptionSettingsIAMRole(
 func testAccCheckAWSDBOptionGroupOptionVersionAttribute(
 func testAccCheckAWSDBOptionGroupExists(
@@ -2554,8 +2556,11 @@ func testAccAWSGameliftBuildBasicConfigTags1(
 func testAccAWSGameliftBuildBasicConfigTags2(
 func testAccGameliftListFleets(conn *gamelift.GameLift, nextToken *string, region string, f func(
 func testAccCheckAWSGameliftFleetExists(
+func testAccCheckAWSGameliftFleetDisappears(
 func testAccCheckAWSGameliftFleetDestroy(
 func testAccAWSGameliftFleetBasicConfig(
+func testAccAWSGameliftFleetBasicConfigTags1(
+func testAccAWSGameliftFleetBasicConfigTags2(
 func testAccAWSGameliftFleetBasicUpdatedConfig(
 func testAccAWSGameliftFleetAllFieldsConfig(
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(
@@ -3551,9 +3556,11 @@ func testAccCheckAWSNeptuneClusterExists(
 func testAccCheckAWSNeptuneClusterExistsWithProvider(n string, v *neptune.DBCluster, providerF func(
 func testAccCheckAWSNeptuneClusterSnapshot(
 func testAccAWSNeptuneClusterConfig(
+func testAccAWSNeptuneClusterConfigDeleteProtection(
 func testAccAWSNeptuneClusterConfig_namePrefix(
 func testAccAWSNeptuneClusterConfigWithFinalSnapshot(
-func testAccAWSNeptuneClusterConfigUpdatedTags(
+func testAccAWSNeptuneClusterConfigTags1(
+func testAccAWSNeptuneClusterConfigTags2(
 func testAccAWSNeptuneClusterConfigIncludingIamRoles(
 func testAccAWSNeptuneClusterConfigAddIamRoles(
 func testAccAWSNeptuneClusterConfigRemoveIamRoles(
@@ -3562,6 +3569,7 @@ func testAccAWSNeptuneClusterConfig_encrypted(
 func testAccAWSNeptuneClusterConfig_backups(
 func testAccAWSNeptuneClusterConfig_backupsUpdate(
 func testAccAWSNeptuneClusterConfig_iamAuth(
+func testAccAWSNeptuneClusterConfig_cloudwatchLogsExports(
 func testAccCheckAWSNeptuneEventSubscriptionExists(
 func testAccCheckAWSNeptuneEventSubscriptionDestroy(
 func testAccAWSNeptuneEventSubscriptionConfig(

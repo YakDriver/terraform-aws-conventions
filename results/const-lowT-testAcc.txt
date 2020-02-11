@@ -243,7 +243,6 @@ const testAccAWSEmrInstanceGroupBase =
 const testAccEmrSecurityConfigurationConfig =
 const testAccFmsAdminAccountConfig_basic =
 const testAccGameliftBuildPrefix =
-const testAccGameliftFleetPrefix =
 const testAccGameliftGameSessionQueuePrefix =
 const testAccGuardDutyDetectorConfig_basic1 =
 const testAccGuardDutyDetectorConfig_basic2 =

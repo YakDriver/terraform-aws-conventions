@@ -1053,6 +1053,7 @@ func testAccAWSDBInstanceConfigEc2Classic(rInt int) string {
 func testAccAWSDBInstanceConfig_MariaDB(rName string) string {
 func testAccAWSDBInstanceConfig_DeletionProtection(rName string, deletionProtection bool) string {
 func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Oracle(rName string) string {
+func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_MSSQL(rName string) string {
 func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Postgresql(rName string) string {
 func testAccAWSDBInstanceConfig_MaxAllocatedStorage(rName string, maxAllocatedStorage int) string {
 func testAccAWSDBInstanceConfig_Password(rName, password string) string {
@@ -1102,6 +1103,7 @@ func testAccAWSDBInstancePerformanceInsightsKmsKeyId(rName string) string {
 func testAccAWSDBInstancePerformanceInsightsRetentionPeriod(rName string, performanceInsightsRetentionPeriod int) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_PerformanceInsightsEnabled(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_PerformanceInsightsEnabled(rName string) string {
+func testAccAWSDBInstanceConfig_NoDeleteAutomatedBackups(rName string) string {
 func testAccAWSDBOptionGroupBasicConfigTimeoutBlock(r string) string {
 func testAccAWSDBOptionGroupBasicConfig(r string) string {
 func testAccAWSDBOptionGroupBasicDestroyConfig(r string) string {
@@ -1647,6 +1649,8 @@ func testAccAWSGameliftBuildBasicConfig(buildName, bucketName, key, roleArn stri
 func testAccAWSGameliftBuildBasicConfigTags1(buildName, bucketName, key, roleArn, tagKey1, tagValue1 string) string {
 func testAccAWSGameliftBuildBasicConfigTags2(buildName, bucketName, key, roleArn, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGameliftFleetBasicConfig(fleetName, launchPath, params, buildName, bucketName, key, roleArn string) string {
+func testAccAWSGameliftFleetBasicConfigTags1(fleetName, launchPath, params, buildName, bucketName, key, roleArn, tagKey1, tagValue1 string) string {
+func testAccAWSGameliftFleetBasicConfigTags2(fleetName, launchPath, params, buildName, bucketName, key, roleArn, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGameliftFleetBasicUpdatedConfig(desc, fleetName, launchPath, params, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetAllFieldsConfig(fleetName, desc, launchPath string, params string, buildName, bucketName, key, roleArn string) string {
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(fleetName, desc, launchPath string, params string, buildName, bucketName, key, roleArn string) string {
@@ -2290,18 +2294,21 @@ func testAccAWSNeptuneClusterParameterGroupConfig_Parameter(name, pName, pValue 
 func testAccAWSNeptuneClusterParameterGroupConfig_Tags(name, tKey, tValue string) string {
 func testAccAWSNeptuneClusterParameterGroupConfig(name string) string {
 func testAccAwsNeptuneClusterSnapshotConfig(rName string) string {
-func testAccAWSNeptuneClusterConfig(n int) string {
-func testAccAWSNeptuneClusterConfig_namePrefix() string {
-func testAccAWSNeptuneClusterConfigWithFinalSnapshot(n int) string {
-func testAccAWSNeptuneClusterConfigUpdatedTags(n int) string {
-func testAccAWSNeptuneClusterConfigIncludingIamRoles(n int) string {
-func testAccAWSNeptuneClusterConfigAddIamRoles(n int) string {
-func testAccAWSNeptuneClusterConfigRemoveIamRoles(n int) string {
-func testAccAWSNeptuneClusterConfig_kmsKey(n int) string {
-func testAccAWSNeptuneClusterConfig_encrypted(n int) string {
-func testAccAWSNeptuneClusterConfig_backups(n int) string {
-func testAccAWSNeptuneClusterConfig_backupsUpdate(n int) string {
-func testAccAWSNeptuneClusterConfig_iamAuth(n int) string {
+func testAccAWSNeptuneClusterConfig(rName string) string {
+func testAccAWSNeptuneClusterConfigDeleteProtection(rName string, isProtected bool) string {
+func testAccAWSNeptuneClusterConfig_namePrefix(rName string) string {
+func testAccAWSNeptuneClusterConfigWithFinalSnapshot(rName string) string {
+func testAccAWSNeptuneClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSNeptuneClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSNeptuneClusterConfigIncludingIamRoles(rName string) string {
+func testAccAWSNeptuneClusterConfigAddIamRoles(rName string) string {
+func testAccAWSNeptuneClusterConfigRemoveIamRoles(rName string) string {
+func testAccAWSNeptuneClusterConfig_kmsKey(rName string) string {
+func testAccAWSNeptuneClusterConfig_encrypted(rName string) string {
+func testAccAWSNeptuneClusterConfig_backups(rName string) string {
+func testAccAWSNeptuneClusterConfig_backupsUpdate(rName string) string {
+func testAccAWSNeptuneClusterConfig_iamAuth(rName string) string {
+func testAccAWSNeptuneClusterConfig_cloudwatchLogsExports(rName string) string {
 func testAccAWSNeptuneEventSubscriptionConfig(rInt int) string {
 func testAccAWSNeptuneEventSubscriptionConfigUpdate(rInt int) string {
 func testAccAWSNeptuneEventSubscriptionConfigWithPrefix(rInt int) string {

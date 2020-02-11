@@ -11,7 +11,6 @@ func testAccDataSourceAwsAmiIdsConfig_sorted(
 func testAccCheckAwsAmiDataSourceID(
 func testAccDataSourceAwsApiGatewayApiKeyConfig(
 func testAccDataSourceAwsApiGatewayResourceConfig(
-func testAccDataSourceAwsApiGatewayRestApiCheck(
 func testAccDataSourceAwsApiGatewayRestApiConfig(
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(
 func testAccDataSourceAwsArn(
@@ -1673,11 +1672,14 @@ func testAccAWSDBEventSubscriptionConfigUpdate(
 func testAccAWSDBEventSubscriptionConfigWithSourceIds(
 func testAccAWSDBEventSubscriptionConfigUpdateSourceIds(
 func testAccAWSDBEventSubscriptionConfigUpdateCategories(
+func testResourceAwsDbInstanceStateDataV0(
+func testResourceAwsDbInstanceStateDataV1(
 func testAccCheckAWSDbInstanceRoleAssociationExists(
 func testAccCheckAWSDbInstanceRoleAssociationDestroy(
 func testAccCheckAWSDbInstanceRoleAssociationDisappears(
 func testAccAWSDbInstanceRoleAssociationConfig(
 func testSweepDbInstances(
+func testAccCheckAWSDBInstanceAutomatedBackups(
 func testAccCheckAWSDBInstanceDestroy(
 func testAccCheckAWSDBInstanceAttributes(
 func testAccCheckAWSDBInstanceAttributes_MSSQL(
@@ -1715,6 +1717,7 @@ func testAccAWSDBInstanceConfigEc2Classic(
 func testAccAWSDBInstanceConfig_MariaDB(
 func testAccAWSDBInstanceConfig_DeletionProtection(
 func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Oracle(
+func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_MSSQL(
 func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Postgresql(
 func testAccAWSDBInstanceConfig_MaxAllocatedStorage(
 func testAccAWSDBInstanceConfig_Password(
@@ -1764,6 +1767,7 @@ func testAccAWSDBInstancePerformanceInsightsKmsKeyId(
 func testAccAWSDBInstancePerformanceInsightsRetentionPeriod(
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_PerformanceInsightsEnabled(
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_PerformanceInsightsEnabled(
+func testAccAWSDBInstanceConfig_NoDeleteAutomatedBackups(
 func testSweepDbOptionGroups(
 func testAccCheckAWSDBOptionGroupOptionSettingsIAMRole(
 func testAccCheckAWSDBOptionGroupOptionVersionAttribute(
@@ -2655,8 +2659,11 @@ func testAccAWSGameliftBuildBasicConfigTags2(
 func testSweepGameliftFleets(
 func testAccGameliftListFleets(conn *gamelift.GameLift, nextToken *string, region string, f func(
 func testAccCheckAWSGameliftFleetExists(
+func testAccCheckAWSGameliftFleetDisappears(
 func testAccCheckAWSGameliftFleetDestroy(
 func testAccAWSGameliftFleetBasicConfig(
+func testAccAWSGameliftFleetBasicConfigTags1(
+func testAccAWSGameliftFleetBasicConfigTags2(
 func testAccAWSGameliftFleetBasicUpdatedConfig(
 func testAccAWSGameliftFleetAllFieldsConfig(
 func testAccAWSGameliftFleetAllFieldsUpdatedConfig(
@@ -3687,9 +3694,11 @@ func testAccCheckAWSNeptuneClusterExists(
 func testAccCheckAWSNeptuneClusterExistsWithProvider(n string, v *neptune.DBCluster, providerF func(
 func testAccCheckAWSNeptuneClusterSnapshot(
 func testAccAWSNeptuneClusterConfig(
+func testAccAWSNeptuneClusterConfigDeleteProtection(
 func testAccAWSNeptuneClusterConfig_namePrefix(
 func testAccAWSNeptuneClusterConfigWithFinalSnapshot(
-func testAccAWSNeptuneClusterConfigUpdatedTags(
+func testAccAWSNeptuneClusterConfigTags1(
+func testAccAWSNeptuneClusterConfigTags2(
 func testAccAWSNeptuneClusterConfigIncludingIamRoles(
 func testAccAWSNeptuneClusterConfigAddIamRoles(
 func testAccAWSNeptuneClusterConfigRemoveIamRoles(
@@ -3698,6 +3707,7 @@ func testAccAWSNeptuneClusterConfig_encrypted(
 func testAccAWSNeptuneClusterConfig_backups(
 func testAccAWSNeptuneClusterConfig_backupsUpdate(
 func testAccAWSNeptuneClusterConfig_iamAuth(
+func testAccAWSNeptuneClusterConfig_cloudwatchLogsExports(
 func testAccCheckAWSNeptuneEventSubscriptionExists(
 func testAccCheckAWSNeptuneEventSubscriptionDestroy(
 func testAccAWSNeptuneEventSubscriptionConfig(
@@ -4158,9 +4168,11 @@ func testAccPreCheckAWSRoute53Resolver(
 func testAccRoute53ResolverEndpointConfig_base(
 func testAccRoute53ResolverEndpointConfig_initial(
 func testAccRoute53ResolverEndpointConfig_updated(
+func testSweepRoute53ResolverRuleAssociations(
 func testAccCheckRoute53ResolverRuleAssociationDestroy(
 func testAccCheckRoute53ResolverRuleAssociationExists(
 func testAccRoute53ResolverRuleAssociationConfig_basic(
+func testSweepRoute53ResolverRules(
 func testAccCheckRoute53ResolverRulesSame(
 func testAccCheckRoute53ResolverRulesDifferent(
 func testAccCheckRoute53ResolverRuleDestroy(

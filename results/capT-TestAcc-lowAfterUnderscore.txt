@@ -990,7 +990,9 @@ func TestAccAWSGameliftBuild_basic(
 func TestAccAWSGameliftBuild_tags(
 func TestAccAWSGameliftBuild_disappears(
 func TestAccAWSGameliftFleet_basic(
+func TestAccAWSGameliftFleet_tags(
 func TestAccAWSGameliftFleet_allFields(
+func TestAccAWSGameliftFleet_disappears(
 func TestAccAWSGameliftGameSessionQueue_basic(
 func TestAccAWSGameliftGameSessionQueue_tags(
 func TestAccAWSGameliftGameSessionQueue_disappears(
@@ -1441,12 +1443,14 @@ func TestAccAWSNeptuneClusterSnapshot_basic(
 func TestAccAWSNeptuneCluster_basic(
 func TestAccAWSNeptuneCluster_namePrefix(
 func TestAccAWSNeptuneCluster_takeFinalSnapshot(
-func TestAccAWSNeptuneCluster_updateTags(
+func TestAccAWSNeptuneCluster_tags(
 func TestAccAWSNeptuneCluster_updateIamRoles(
 func TestAccAWSNeptuneCluster_kmsKey(
 func TestAccAWSNeptuneCluster_encrypted(
 func TestAccAWSNeptuneCluster_backupsUpdate(
 func TestAccAWSNeptuneCluster_iamAuth(
+func TestAccAWSNeptuneCluster_updateCloudwatchLogsExports(
+func TestAccAWSNeptuneCluster_deleteProtection(
 func TestAccAWSNeptuneEventSubscription_basic(
 func TestAccAWSNeptuneEventSubscription_withPrefix(
 func TestAccAWSNeptuneEventSubscription_withSourceIds(
