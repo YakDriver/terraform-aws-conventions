@@ -442,6 +442,16 @@ func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string {
 func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
 func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2 string) string {
+func testAccAWSCodeStarNotificationsNotificationRuleConfigBase(rName string) string {
+func testAccAWSCodeStarNotificationsNotificationRuleConfigBasic(rName string) string {
+func testAccAWSCodeStarNotificationsNotificationRuleConfigStatus(rName, status string) string {
+func testAccAWSCodeStarNotificationsNotificationRuleConfigTargets1(rName string) string {
+func testAccAWSCodeStarNotificationsNotificationRuleConfigTargets2(rName string) string {
+func testAccAWSCodeStarNotificationsNotificationRuleConfigTags1(rName string) string {
+func testAccAWSCodeStarNotificationsNotificationRuleConfigTags2(rName string) string {
+func testAccAWSCodeStarNotificationsNotificationRuleConfigEventTypeIds1(rName string) string {
+func testAccAWSCodeStarNotificationsNotificationRuleConfigEventTypeIds2(rName string) string {
+func testAccAWSCodeStarNotificationsNotificationRuleConfigEventTypeIds3(rName string) string {
 func testAccConfigConfigurationRecorderStatusConfig(randInt int, enabled bool) string {
 func testAccConfigOrganizationCustomRuleConfigBase(rName string) string {
 func testAccConfigOrganizationCustomRuleConfigDescription(rName, description string) string {
@@ -1229,6 +1239,16 @@ func testAccAWSS3AccountPublicAccessBlockConfigBlockPublicAcls(blockPublicAcls b
 func testAccAWSS3AccountPublicAccessBlockConfigBlockPublicPolicy(blockPublicPolicy bool) string {
 func testAccAWSS3AccountPublicAccessBlockConfigIgnorePublicAcls(ignorePublicAcls bool) string {
 func testAccAWSS3AccountPublicAccessBlockConfigRestrictPublicBuckets(restrictPublicBuckets bool) string {
+func testAccAWSS3BucketAnalyticsConfiguration(name, bucket string) string {
+func testAccAWSS3BucketAnalyticsConfigurationUpdateBucket(name, originalBucket, updatedBucket string) string {
+func testAccAWSS3BucketAnalyticsConfigurationWithEmptyFilter(name, bucket string) string {
+func testAccAWSS3BucketAnalyticsConfigurationWithFilterPrefix(name, bucket, prefix string) string {
+func testAccAWSS3BucketAnalyticsConfigurationWithFilterSingleTag(name, bucket, tag string) string {
+func testAccAWSS3BucketAnalyticsConfigurationWithFilterMultipleTags(name, bucket, tag1, tag2 string) string {
+func testAccAWSS3BucketAnalyticsConfigurationWithFilterPrefixAndTags(name, bucket, prefix, tag1, tag2 string) string {
+func testAccAWSS3BucketAnalyticsConfigurationWithEmptyStorageClassAnalysis(name, bucket string) string {
+func testAccAWSS3BucketAnalyticsConfigurationWithDefaultStorageClassAnalysis(name, bucket string) string {
+func testAccAWSS3BucketAnalyticsConfigurationWithFullStorageClassAnalysis(name, bucket, prefix string) string {
 func testAccAWSS3BucketInventoryConfigBucket(name string) string {
 func testAccAWSS3BucketInventoryConfig(bucketName, inventoryName string) string {
 func testAccAWSS3BucketInventoryConfigEncryptWithSSES3(bucketName, inventoryName string) string {

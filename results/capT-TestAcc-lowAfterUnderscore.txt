@@ -1298,6 +1298,7 @@ func TestAccAWSLaunchTemplate_update(
 func TestAccAWSLaunchTemplate_tags(
 func TestAccAWSLaunchTemplate_capacityReservation_preference(
 func TestAccAWSLaunchTemplate_capacityReservation_target(
+func TestAccAWSLaunchTemplate_cpuOptions(
 func TestAccAWSLaunchTemplate_creditSpecification_nonBurstable(
 func TestAccAWSLaunchTemplate_creditSpecification_t2(
 func TestAccAWSLaunchTemplate_creditSpecification_t3(
@@ -1662,6 +1663,9 @@ func TestAccAWSRoute_changeRouteTable(
 func TestAccAWSRoute_changeCidr(
 func TestAccAWSRoute_noopdiff(
 func TestAccAWSRoute_doesNotCrashWithVPCEndpoint(
+func TestAccAWSS3BucketAnalyticsConfiguration_basic(
+func TestAccAWSS3BucketAnalyticsConfiguration_removed(
+func TestAccAWSS3BucketAnalyticsConfiguration_updateBasic(
 func TestAccAWSS3BucketInventory_basic(
 func TestAccAWSS3BucketInventory_encryptWithSSES3(
 func TestAccAWSS3BucketInventory_encryptWithSSEKMS(
