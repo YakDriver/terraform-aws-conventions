@@ -554,6 +554,9 @@ func testAccAWSBatchComputeEnvironmentConfigUnmanagedWithComputeResources(rInt i
 func testAccAWSBatchComputeEnvironmentConfigSpotWithAllocationStrategy(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigSpotWithoutBidPercentage(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigLaunchTemplate(rInt int) string {
+func testAccBatchJobDefinitionConfigContainerPropertiesAdvanced(rName string) string {
+func testAccBatchJobDefinitionConfigContainerPropertiesAdvancedUpdate(rName string) string {
+func testAccBatchJobDefinitionConfigName(rName string) string {
 func testAccAWSBudgetsBudgetConfig_WithAccountID(budgetConfig budgets.Budget, accountID, costFilterKey string) string {
 func testAccAWSBudgetsBudgetConfig_PrefixDefaults(budgetConfig budgets.Budget, costFilterKey string) string {
 func testAccAWSBudgetsBudgetConfig_Prefix(budgetConfig budgets.Budget, costFilterKey string) string {
@@ -844,6 +847,7 @@ func testAccAWSCognitoUserPoolConfig_withEmailConfiguration(name, email, arn, ac
 func testAccAWSCognitoUserPoolConfig_withSmsConfiguration(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAliasAttributes(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAliasAttributesUpdated(name string) string {
+func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigAndPasswordPolicy(rName string) string {
 func testAccAWSCognitoUserPoolConfig_withPasswordPolicy(name string) string {
 func testAccAWSCognitoUserPoolConfig_withPasswordPolicyUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withLambdaConfig(name string) string {
@@ -1714,6 +1718,7 @@ func testAccLatestWindowsServer2016CoreAmiConfig() string {
 func testAccAwsInstanceVpcConfig(rName string, mapPublicIpOnLaunch bool) string {
 func testAccAwsInstanceVpcSecurityGroupConfig(rName string) string {
 func testAccAwsInstanceVpcIpv6Config(rName string) string {
+func testAccInstanceConfigHibernation(hibernation bool) string {
 func testAccAWSIotPolicyAttachmentConfig(policyName string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate1(policyName, policyName2 string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate2(policyName2 string) string {
@@ -1843,9 +1848,12 @@ func testAccAWSLambdaProvisionedConcurrencyConfigProvisionedConcurrentExecutions
 func testAccAWSLambdaProvisionedConcurrencyConfigQualifierAliasName(rName string) string {
 func testAccAWSLambdaProvisionedConcurrencyConfigQualifierFunctionVersion(rName string) string {
 func testAccAWSLaunchConfigurationConfig_ami() string {
-func testAccAWSLaunchConfigurationConfigWithRootBlockDevice(rInt int) string {
+func testAccAWSLaunchConfigurationConfig_HvmEbsAmi() string {
+func testAccAWSLaunchConfigurationConfig_instanceStoreAMI() string {
+func testAccAWSLaunchConfigurationConfigWithInstanceStoreAMI(rName string) string {
+func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceCopiedAmi(rName string) string {
+func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceVolumeSize(rName string, volumeSize int) string {
 func testAccAWSLaunchConfigurationConfigWithEncryptedRootBlockDevice(rInt int) string {
-func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceUpdated(rInt int) string {
 func testAccAWSLaunchConfigurationConfig() string {
 func testAccAWSLaunchConfigurationWithSpotPriceConfig() string {
 func testAccAWSLaunchConfigurationNoNameConfig() string {

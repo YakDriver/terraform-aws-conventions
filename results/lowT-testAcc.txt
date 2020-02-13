@@ -419,6 +419,7 @@ func testAccAWSAMIDisappears(
 func testAccAWSAMILaunchPermissionConfig(
 func testAccAWSAMILaunchPermissionImportStateIdFunc(
 func testAccCheckAmiDestroy(
+func testAccCheckAmiDisappears(
 func testAccCheckAmiExists(
 func testAccCheckAmiBlockDevice(
 func testAccCheckAmiEbsBlockDevice(
@@ -929,6 +930,9 @@ func testAccCheckBatchJobDefinitionExists(
 func testAccCheckBatchJobDefinitionAttributes(
 func testAccCheckJobDefinitionRecreated(
 func testAccCheckBatchJobDefinitionDestroy(
+func testAccBatchJobDefinitionConfigContainerPropertiesAdvanced(
+func testAccBatchJobDefinitionConfigContainerPropertiesAdvancedUpdate(
+func testAccBatchJobDefinitionConfigName(
 func testAccCheckBatchJobQueueExists(
 func testAccCheckBatchJobQueueAttributes(
 func testAccCheckBatchJobQueueDestroy(
@@ -1387,6 +1391,7 @@ func testAccAWSCognitoUserPoolConfig_withEmailConfiguration(
 func testAccAWSCognitoUserPoolConfig_withSmsConfiguration(
 func testAccAWSCognitoUserPoolConfig_withAliasAttributes(
 func testAccAWSCognitoUserPoolConfig_withAliasAttributesUpdated(
+func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigAndPasswordPolicy(
 func testAccAWSCognitoUserPoolConfig_withPasswordPolicy(
 func testAccAWSCognitoUserPoolConfig_withPasswordPolicyUpdated(
 func testAccAWSCognitoUserPoolConfig_withLambdaConfig(
@@ -2695,6 +2700,7 @@ func testAccAWSGlueTriggerConfig_Schedule(
 func testAccAWSGlueTriggerConfigTags1(
 func testAccAWSGlueTriggerConfigTags2(
 func testAccAWSGlueTriggerConfig_WorkflowName(
+func testAccPreCheckAWSGlueWorkflow(
 func testAccCheckAWSGlueWorkflowExists(
 func testAccCheckAWSGlueWorkflowDestroy(
 func testAccAWSGlueWorkflowConfig_DefaultRunProperties(
@@ -2907,6 +2913,7 @@ func testAccCheckAWSInspectorTemplatetModified(
 func testAccCheckAWSInspectorResourceGroupExists(
 func testAccCheckAWSInspectorResourceGroupRecreated(
 func testAccCheckInstanceNotRecreated(
+func testAccCheckInstanceRecreated(
 func testAccCheckInstanceDestroy(
 func testAccCheckInstanceDestroyWithProvider(
 func testAccCheckInstanceExists(
@@ -2969,6 +2976,7 @@ func testAccLatestWindowsServer2016CoreAmiConfig(
 func testAccAwsInstanceVpcConfig(
 func testAccAwsInstanceVpcSecurityGroupConfig(
 func testAccAwsInstanceVpcIpv6Config(
+func testAccInstanceConfigHibernation(
 func testAccCheckInternetGatewayDestroy(
 func testAccCheckInternetGatewayExists(
 func testAccCheckAWSIoTCertificateDestroy_basic(
@@ -3241,9 +3249,12 @@ func testAccCheckAWSLaunchConfigurationDestroy(
 func testAccCheckAWSLaunchConfigurationAttributes(
 func testAccCheckAWSLaunchConfigurationExists(
 func testAccAWSLaunchConfigurationConfig_ami(
-func testAccAWSLaunchConfigurationConfigWithRootBlockDevice(
+func testAccAWSLaunchConfigurationConfig_HvmEbsAmi(
+func testAccAWSLaunchConfigurationConfig_instanceStoreAMI(
+func testAccAWSLaunchConfigurationConfigWithInstanceStoreAMI(
+func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceCopiedAmi(
+func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceVolumeSize(
 func testAccAWSLaunchConfigurationConfigWithEncryptedRootBlockDevice(
-func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceUpdated(
 func testAccAWSLaunchConfigurationConfig(
 func testAccAWSLaunchConfigurationWithSpotPriceConfig(
 func testAccAWSLaunchConfigurationNoNameConfig(

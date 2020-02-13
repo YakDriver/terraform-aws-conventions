@@ -316,6 +316,9 @@ func testAccAWSBatchComputeEnvironmentConfigUnmanagedWithComputeResources(rInt i
 func testAccAWSBatchComputeEnvironmentConfigSpotWithAllocationStrategy(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigSpotWithoutBidPercentage(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigLaunchTemplate(rInt int) string {
+func testAccBatchJobDefinitionConfigContainerPropertiesAdvanced(rName string) string {
+func testAccBatchJobDefinitionConfigContainerPropertiesAdvancedUpdate(rName string) string {
+func testAccBatchJobDefinitionConfigName(rName string) string {
 func testAccAWSBudgetsBudgetConfigNotificationSnippet(notification budgets.Notification, emails []string, topics []string) string {
 func testAccAWSCloud9EnvironmentEc2ConfigBase() string {
 func testAccAWSCloud9EnvironmentEc2Config(name string) string {
@@ -905,6 +908,7 @@ func testAccLatestWindowsServer2016CoreAmiConfig() string {
 func testAccAwsInstanceVpcConfig(rName string, mapPublicIpOnLaunch bool) string {
 func testAccAwsInstanceVpcSecurityGroupConfig(rName string) string {
 func testAccAwsInstanceVpcIpv6Config(rName string) string {
+func testAccInstanceConfigHibernation(hibernation bool) string {
 func testAccAWSIotPolicyAttachmentConfig(policyName string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate1(policyName, policyName2 string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate2(policyName2 string) string {
@@ -1004,9 +1008,10 @@ func testAccAWSLambdaProvisionedConcurrencyConfigBase(rName string) string {
 func testAccAWSLambdaProvisionedConcurrencyConfigProvisionedConcurrentExecutions(rName string, provisionedConcurrentExecutions int) string {
 func testAccAWSLambdaProvisionedConcurrencyConfigQualifierAliasName(rName string) string {
 func testAccAWSLambdaProvisionedConcurrencyConfigQualifierFunctionVersion(rName string) string {
-func testAccAWSLaunchConfigurationConfigWithRootBlockDevice(rInt int) string {
+func testAccAWSLaunchConfigurationConfigWithInstanceStoreAMI(rName string) string {
+func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceCopiedAmi(rName string) string {
+func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceVolumeSize(rName string, volumeSize int) string {
 func testAccAWSLaunchConfigurationConfigWithEncryptedRootBlockDevice(rInt int) string {
-func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceUpdated(rInt int) string {
 func testAccAWSLaunchConfigurationConfig() string {
 func testAccAWSLaunchConfigurationWithSpotPriceConfig() string {
 func testAccAWSLaunchConfigurationNoNameConfig() string {
