@@ -2105,6 +2105,7 @@ func TestAccAWSLambdaPermission_StatementId_Duplicate(
 func TestAccAWSLambdaPermission_withRawFunctionName(
 func TestAccAWSLambdaPermission_withStatementIdPrefix(
 func TestAccAWSLambdaPermission_withQualifier(
+func TestAccAWSLambdaPermission_disappears(
 func TestAccAWSLambdaPermission_multiplePerms(
 func TestAccAWSLambdaPermission_withS3(
 func TestAccAWSLambdaPermission_withSNS(

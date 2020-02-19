@@ -1,25 +1,25 @@
 Analysis Tallies
-3682	Capital-T Test Functions:All
-3332	Capital-T Test Functions:TestAcc
-3018	Capital-T Test Functions:TestAccAWS
+3683	Capital-T Test Functions:All
+3333	Capital-T Test Functions:TestAcc
+3019	Capital-T Test Functions:TestAccAWS
 143	Capital-T Test Functions:TestAccAws
-2108	Capital-T Test Functions:TestAcc and lowercase after first underscore
+2109	Capital-T Test Functions:TestAcc and lowercase after first underscore
 1175	Capital-T Test Functions:TestAcc and uppercase after first underscore
-5338	Lowercase-t test Functions:All
-5148	Lowercase-t test Functions:testAcc
-2302	Lowercase-t test Functions:testAccAWS
+5340	Lowercase-t test Functions:All
+5150	Lowercase-t test Functions:testAcc
+2304	Lowercase-t test Functions:testAccAWS
 259	Lowercase-t test Functions:testAccAws
 986	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
 647	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
 3092	Lowercase-t test Functions:testAcc functions with config (any case)
-3240	Lowercase-t test Functions:testAcc functions returning strings
+3241	Lowercase-t test Functions:testAcc functions returning strings
 2944	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
 1611	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-9020	Any case-t Test Functions:All
-8480	Any case-t Test Functions:TestAcc
-3094	Any case-t Test Functions:TestAcc with lowercase after first underscore
+9023	Any case-t Test Functions:All
+8483	Any case-t Test Functions:TestAcc
+3095	Any case-t Test Functions:TestAcc with lowercase after first underscore
 1822	Any case-t Test Functions:TestAcc with uppercase after first underscore
-3850	Any case-t Test Functions:TestAcc with only one underscore
+3851	Any case-t Test Functions:TestAcc with only one underscore
 1425	Any case-t Test Functions:TestAcc with camel case after first underscore
 1066	Any case-t Test Functions:TestAcc with multiple underscores
 518	Test Constants:All

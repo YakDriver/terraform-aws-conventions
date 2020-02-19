@@ -2543,6 +2543,7 @@ func testAccAWSELBConfigTags1(
 func testAccAWSELBConfigTags2(
 func testAccAWSELBAccessLogsOn(
 func testAccAWSELBAccessLogsDisabled(
+func testAccAWSELBAccessLogsCommon(
 func testAccELBConfig_Listener_IAMServerCertificate(
 func testAccELBConfig_Listener_IAMServerCertificate_AddInvalidListener(
 func testSweepEmrClusters(
@@ -3352,6 +3353,7 @@ func testAccAWSLambdaLayerVersionCreateBeforeDestroy(
 func testAccAWSLambdaLayerVersionCompatibleRuntimes(
 func testAccAWSLambdaLayerVersionDescription(
 func testAccAWSLambdaLayerVersionLicenseInfo(
+func testAccAWSLambdaPermissionDisappears(
 func testAccCheckLambdaPermissionExists(
 func testAccCheckAWSLambdaPermissionDestroy(
 func testAccAWSCLambdaPermissionImportStateIdFunc(
