@@ -133,6 +133,8 @@ func testAccDataSourceAwsKmsKeyConfig(
 func testAccDataSourceAwsKmsSecretsEncrypt(
 func testAccDataSourceAwsKmsSecretsDecrypt(
 func testAccCheckAwsKmsSecretsDataSourceSecret(
+func testAccDataSourceAWSLambdaAliasConfigBase(
+func testAccDataSourceAWSLambdaAliasConfigBasic(
 func testAccDataSourceAWSLambdaFunctionConfigBase(
 func testAccDataSourceAWSLambdaFunctionConfigBasic(
 func testAccDataSourceAWSLambdaFunctionConfigVersion(
@@ -3398,6 +3400,7 @@ func testAccAWSLaunchConfigurationConfig_withIAMProfile(
 func testAccAWSLaunchConfigurationConfigEbsNoDevice(
 func testAccAWSLaunchConfigurationConfig_userData(
 func testAccAWSLaunchConfigurationConfig_userDataBase64(
+func testSweepLaunchTemplates(
 func testAccCheckAWSLaunchTemplateExists(
 func testAccCheckAWSLaunchTemplateDestroy(
 func testAccCheckAWSLaunchTemplateDisappears(
@@ -4512,7 +4515,6 @@ func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAddRuleCycle(
 func testRemoveRuleCycle(
 func testAccCheckAWSSecurityGroupDestroy(
-func testAccCheckAWSSecurityGroupGeneratedNamePrefix(
 func testAccCheckAWSSecurityGroupExists(
 func testAccCheckAWSSecurityGroupAttributes(
 func testAccCheckAWSSecurityGroupAttributesNegOneProtocol(
@@ -4527,6 +4529,7 @@ func testSecurityGroupRuleCount(
 func testAccAWSSecurityGroupConfigRuleLimit(
 func testAccAWSSecurityGroupConfigCidrBlockRuleLimit(
 func testAccAWSSecurityGroupConfigRuleDescription(
+func testAccAWSSecurityGroupPrefixNameConfig(
 func testAccAWSSecurityGroupConfig_drift(
 func testAccAWSSecurityGroupConfig_drift_complex(
 func testAccAWSSecurityGroupConfig_ruleGathering(

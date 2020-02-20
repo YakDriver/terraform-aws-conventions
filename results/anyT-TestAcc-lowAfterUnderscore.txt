@@ -121,6 +121,7 @@ func TestAccDataSourceAwsKmsCiphertext_validate_withContext(
 func TestAccDataSourceAwsKmsKey_basic(
 func TestAccAWSKmsSecretsDataSource_basic(
 func TestAccAWSKmsSecretDataSource_removed(
+func TestAccDataSourceAWSLambdaAlias_basic(
 func TestAccDataSourceAWSLambdaFunction_basic(
 func TestAccDataSourceAWSLambdaFunction_version(
 func TestAccDataSourceAWSLambdaFunction_alias(

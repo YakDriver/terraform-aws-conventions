@@ -380,7 +380,6 @@ const testAccAWSSecurityGroupConfigTagsUpdate =
 const testAccAWSSecurityGroupConfig_generatedName =
 const testAccAWSSecurityGroupConfigDefaultEgress =
 const testAccAWSSecurityGroupConfigClassic =
-const testAccAWSSecurityGroupPrefixNameConfig =
 const testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs =
 const testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic =
 const testAccAWSSecurityGroupConfig_failWithDiffMismatch =

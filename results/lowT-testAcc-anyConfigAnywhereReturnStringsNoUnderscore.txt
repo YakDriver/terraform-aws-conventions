@@ -64,6 +64,8 @@ func testAccInstanceDataSourceConfigGetUserData(rName string, getUserData bool) 
 func testAccInstanceDataSourceConfigGetUserDataNoUserData(rName string, getUserData bool) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
 func testAccDataSourceAwsKmsKeyConfig(rName string) string {
+func testAccDataSourceAWSLambdaAliasConfigBase(rName string) string {
+func testAccDataSourceAWSLambdaAliasConfigBasic(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBase(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBasic(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigVersion(rName string) string {
@@ -1342,6 +1344,7 @@ func testAccAWSSecurityGroupRuleConfigMultipleRuleSearchingAllProtocolCrash(rNam
 func testAccAWSSecurityGroupConfigRuleLimit(egressStartIndex, egressRulesCount int) string {
 func testAccAWSSecurityGroupConfigCidrBlockRuleLimit(egressStartIndex, egressRulesCount int) string {
 func testAccAWSSecurityGroupConfigRuleDescription(egressDescription, ingressDescription string) string {
+func testAccAWSSecurityGroupPrefixNameConfig(namePrefix string) string {
 func testAccAWSSecurityGroupConfigEgressConfigModeBlocks() string {
 func testAccAWSSecurityGroupConfigEgressConfigModeNoBlocks() string {
 func testAccAWSSecurityGroupConfigEgressConfigModeZeroed() string {

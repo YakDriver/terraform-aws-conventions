@@ -363,6 +363,9 @@ func testAccDataSourceAwsKmsSecretsEncrypt(
 func testAccDataSourceAwsKmsSecretsDecrypt(
 func testAccCheckAwsKmsSecretsDataSourceSecret(
 func TestAccAWSKmsSecretDataSource_removed(
+func TestAccDataSourceAWSLambdaAlias_basic(
+func testAccDataSourceAWSLambdaAliasConfigBase(
+func testAccDataSourceAWSLambdaAliasConfigBasic(
 func TestAccDataSourceAWSLambdaFunction_basic(
 func TestAccDataSourceAWSLambdaFunction_version(
 func TestAccDataSourceAWSLambdaFunction_alias(
@@ -2300,7 +2303,6 @@ func testAccCheckCodeDeployDeploymentGroupTriggerTargetArn(
 func testAccCheckAWSCodeDeployDeploymentGroupDestroy(
 func testAccAWSCodeDeployDeploymentGroupDisappears(
 func testAccCheckAWSCodeDeployDeploymentGroupExists(
-func TestAWSCodeDeployDeploymentGroup_handleCodeDeployApiError(
 func testAccAWSCodeDeployDeploymentGroupImportStateIdFunc(
 func testAccAWSCodeDeployDeploymentGroup(
 func testAccAWSCodeDeployDeploymentGroupModified(
@@ -5679,6 +5681,7 @@ func testAccAWSLaunchConfigurationConfig_withIAMProfile(
 func testAccAWSLaunchConfigurationConfigEbsNoDevice(
 func testAccAWSLaunchConfigurationConfig_userData(
 func testAccAWSLaunchConfigurationConfig_userDataBase64(
+func testSweepLaunchTemplates(
 func TestAccAWSLaunchTemplate_basic(
 func TestAccAWSLaunchTemplate_disappears(
 func TestAccAWSLaunchTemplate_BlockDeviceMappings_EBS(
@@ -7559,7 +7562,6 @@ func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAddRuleCycle(
 func testRemoveRuleCycle(
 func testAccCheckAWSSecurityGroupDestroy(
-func testAccCheckAWSSecurityGroupGeneratedNamePrefix(
 func testAccCheckAWSSecurityGroupExists(
 func testAccCheckAWSSecurityGroupAttributes(
 func testAccCheckAWSSecurityGroupAttributesNegOneProtocol(
@@ -7580,6 +7582,7 @@ func testSecurityGroupRuleCount(
 func testAccAWSSecurityGroupConfigRuleLimit(
 func testAccAWSSecurityGroupConfigCidrBlockRuleLimit(
 func testAccAWSSecurityGroupConfigRuleDescription(
+func testAccAWSSecurityGroupPrefixNameConfig(
 func testAccAWSSecurityGroupConfig_drift(
 func testAccAWSSecurityGroupConfig_drift_complex(
 func testAccAWSSecurityGroupConfig_ruleGathering(

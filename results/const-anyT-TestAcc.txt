@@ -432,7 +432,6 @@ const testAccAWSSecurityGroupConfigTagsUpdate =
 const testAccAWSSecurityGroupConfig_generatedName =
 const testAccAWSSecurityGroupConfigDefaultEgress =
 const testAccAWSSecurityGroupConfigClassic =
-const testAccAWSSecurityGroupPrefixNameConfig =
 const testAccAWSSecurityGroupInvalidIngressCidr =
 const testAccAWSSecurityGroupInvalidEgressCidr =
 const testAccAWSSecurityGroupInvalidIPv6IngressCidr =

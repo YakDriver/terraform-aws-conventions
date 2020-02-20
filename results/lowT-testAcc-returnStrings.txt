@@ -99,6 +99,8 @@ func testAccDataSourceAwsKmsAlias_name(name string) string {
 func testAccDataSourceAwsKmsAlias_CMK(rInt int) string {
 func testAccDataSourceAwsKmsKeyConfig(rName string) string {
 func testAccCheckAwsKmsSecretsDataSourceSecret(payload string) string {
+func testAccDataSourceAWSLambdaAliasConfigBase(rName string) string {
+func testAccDataSourceAWSLambdaAliasConfigBasic(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBase(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBasic(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigVersion(rName string) string {
@@ -2783,6 +2785,7 @@ func testAccAWSSecurityGroupRuleInvalidIPv6CIDR(rInt int) string {
 func testAccAWSSecurityGroupConfigRuleLimit(egressStartIndex, egressRulesCount int) string {
 func testAccAWSSecurityGroupConfigCidrBlockRuleLimit(egressStartIndex, egressRulesCount int) string {
 func testAccAWSSecurityGroupConfigRuleDescription(egressDescription, ingressDescription string) string {
+func testAccAWSSecurityGroupPrefixNameConfig(namePrefix string) string {
 func testAccAWSSecurityGroupConfig_drift() string {
 func testAccAWSSecurityGroupConfig_drift_complex() string {
 func testAccAWSSecurityGroupConfig_ruleGathering(sgName string) string {

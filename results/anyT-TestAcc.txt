@@ -301,6 +301,9 @@ func testAccDataSourceAwsKmsSecretsEncrypt(
 func testAccDataSourceAwsKmsSecretsDecrypt(
 func testAccCheckAwsKmsSecretsDataSourceSecret(
 func TestAccAWSKmsSecretDataSource_removed(
+func TestAccDataSourceAWSLambdaAlias_basic(
+func testAccDataSourceAWSLambdaAliasConfigBase(
+func testAccDataSourceAWSLambdaAliasConfigBasic(
 func TestAccDataSourceAWSLambdaFunction_basic(
 func TestAccDataSourceAWSLambdaFunction_version(
 func TestAccDataSourceAWSLambdaFunction_alias(
@@ -7201,7 +7204,6 @@ func TestAccAWSSecurityGroup_ipv4andipv6Egress(
 func testAccAWSSecurityGroupImportStateCheckFunc(
 func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAccCheckAWSSecurityGroupDestroy(
-func testAccCheckAWSSecurityGroupGeneratedNamePrefix(
 func testAccCheckAWSSecurityGroupExists(
 func testAccCheckAWSSecurityGroupAttributes(
 func testAccCheckAWSSecurityGroupAttributesNegOneProtocol(
@@ -7221,6 +7223,7 @@ func testAccCheckAWSSecurityGroupRuleCount(
 func testAccAWSSecurityGroupConfigRuleLimit(
 func testAccAWSSecurityGroupConfigCidrBlockRuleLimit(
 func testAccAWSSecurityGroupConfigRuleDescription(
+func testAccAWSSecurityGroupPrefixNameConfig(
 func testAccAWSSecurityGroupConfig_drift(
 func testAccAWSSecurityGroupConfig_drift_complex(
 func testAccAWSSecurityGroupConfig_ruleGathering(
