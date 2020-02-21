@@ -60,7 +60,7 @@ func testAccAwsEfsMountTargetConfigByMountTargetId(ct string) string {
 func testAccDataSourceAwsEipConfigFilter(rName string) string {
 func testAccDataSourceAwsEipConfigTags(rName string) string {
 func testAccAWSEksClusterDataSourceConfig_Basic(rName string) string {
-func testAccAWSElastiCacheClusterConfigWithDataSource(rString string, rInt int) string {
+func testAccAWSElastiCacheClusterConfigWithDataSource(rName string) string {
 func testAccDataSourceAwsElasticacheReplicationGroupConfig_basic(rName string) string {
 func testAccDataSourceAwsElasticacheReplicationGroupConfig_ClusterMode(rName string) string {
 func testAccAwsElasticBeanstalkApplicationDataSourceConfig_Basic(rName string) string {
@@ -424,6 +424,9 @@ func testAccAppmeshRouteConfig_httpRouteUpdated(meshName, vrName, vn1Name, vn2Na
 func testAccAppmeshRouteConfig_tcpRoute(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_tcpRouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfigWithTags(meshName, vrName, vn1Name, vn2Name, rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsAppmeshRouteConfig_httpHeader(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_routePriority(meshName, vrName, vn1Name, vn2Name, rName string, priority int) string {
 func testAccAppmeshVirtualNodeConfig_mesh(rName string) string {
 func testAccAppmeshVirtualNodeConfig_basic(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_cloudMapServiceDiscovery(meshName, vnName, rName, attrKey, attrValue string) string {
@@ -1343,18 +1346,20 @@ func testAccAWSElasticacheClusterConfig_Engine_Memcached(rName string) string {
 func testAccAWSElasticacheClusterConfig_Engine_Redis(rName string) string {
 func testAccAWSElasticacheClusterConfig_ParameterGroupName(rName, engine, engineVersion, parameterGroupName string) string {
 func testAccAWSElasticacheClusterConfig_Port(rName string, port int) string {
+func testAccAWSElasticacheClusterConfig_snapshots(rName string) string {
+func testAccAWSElasticacheClusterConfig_snapshotsUpdated(rName string) string {
 func testAccAWSElasticacheClusterConfig_NumCacheNodes(rName string, numCacheNodes int) string {
 func testAccAWSElasticacheClusterConfig_NumCacheNodesWithPreferredAvailabilityZones(rName string, numCacheNodes int) string {
-func testAccAWSElasticacheClusterConfig_AZMode_Memcached_Ec2Classic(rName, azMode string) string {
-func testAccAWSElasticacheClusterConfig_AZMode_Redis_Ec2Classic(rName, azMode string) string {
-func testAccAWSElasticacheClusterConfig_EngineVersion_Memcached_Ec2Classic(rName, engineVersion string) string {
-func testAccAWSElasticacheClusterConfig_EngineVersion_Redis_Ec2Classic(rName, engineVersion string) string {
-func testAccAWSElasticacheClusterConfig_NodeType_Memcached_Ec2Classic(rName, nodeType string) string {
-func testAccAWSElasticacheClusterConfig_NodeType_Redis_Ec2Classic(rName, nodeType string) string {
-func testAccAWSElasticacheClusterConfig_NumCacheNodes_Redis_Ec2Classic(rName string, numCacheNodes int) string {
+func testAccAWSElasticacheClusterConfig_AZMode_Memcached(rName, azMode string) string {
+func testAccAWSElasticacheClusterConfig_AZMode_Redis(rName, azMode string) string {
+func testAccAWSElasticacheClusterConfig_EngineVersion_Memcached(rName, engineVersion string) string {
+func testAccAWSElasticacheClusterConfig_EngineVersion_Redis(rName, engineVersion string) string {
+func testAccAWSElasticacheClusterConfig_NodeType_Memcached(rName, nodeType string) string {
+func testAccAWSElasticacheClusterConfig_NodeType_Redis(rName, nodeType string) string {
+func testAccAWSElasticacheClusterConfig_NumCacheNodes_Redis(rName string, numCacheNodes int) string {
 func testAccAWSElasticacheClusterConfig_ReplicationGroupID_InvalidAttribute(rName, attrName, attrValue string) string {
-func testAccAWSElasticacheClusterConfig_ReplicationGroupID_AvailabilityZone_Ec2Classic(rName string) string {
-func testAccAWSElasticacheClusterConfig_ReplicationGroupID_Replica_Ec2Classic(rName string, count int) string {
+func testAccAWSElasticacheClusterConfig_ReplicationGroupID_AvailabilityZone(rName string) string {
+func testAccAWSElasticacheClusterConfig_ReplicationGroupID_Replica(rName string, count int) string {
 func testAccAWSElasticacheParameterGroupConfig(rName string) string {
 func testAccAWSElasticacheParameterGroupConfigDescription(rName, description string) string {
 func testAccAWSElasticacheParameterGroupConfigParameter1(rName, family, parameterName1, parameterValue1 string) string {
@@ -1808,6 +1813,7 @@ func testAccAWSLambdaConfigEnvVariablesModifiedWithoutEnvironment(funcName, poli
 func testAccAWSLambdaConfigEncryptedEnvVariables(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariablesModified(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVersioned(fileName, funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigVersionedNodeJs10xRuntime(fileName, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVpcConfigProperIamDependencies(rName string) string {
 func testAccAWSLambdaConfigWithTracingConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithTracingConfigUpdated(funcName, policyName, roleName, sgName string) string {
@@ -2763,6 +2769,7 @@ func testAccAWSSwfDomainConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue
 func testAccAWSTransferServerConfig_basicUpdate(rName string) string {
 func testAccAWSTransferServerConfig_apigateway(rName string) string {
 func testAccAWSTransferServerConfig_forcedestroy(rName string) string {
+func testAccAWSTransferServerConfig_hostKey(hostKey string) string {
 func testAccAWSTransferSshKeyConfig_basic(rName string) string {
 func testAccAWSTransferUserConfig_basic(rName string) string {
 func testAccAWSTransferUserConfig_options(rName string) string {

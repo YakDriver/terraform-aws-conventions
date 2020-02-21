@@ -1929,6 +1929,7 @@ func TestAccAWSTransferServer_apigateway(
 func TestAccAWSTransferServer_disappears(
 func TestAccAWSTransferServer_forcedestroy(
 func TestAccAWSTransferServer_vpcEndpointId(
+func TestAccAWSTransferServer_hostKey(
 func TestAccAWSTransferSshKey_basic(
 func TestAccAWSTransferUser_basic(
 func TestAccAWSTransferUser_modifyWithOptions(

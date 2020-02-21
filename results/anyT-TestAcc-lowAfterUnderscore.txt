@@ -443,10 +443,15 @@ func testAccAppmeshMeshConfig_egressFilter(
 func testAccAwsAppmeshRoute_httpRoute(
 func testAccAwsAppmeshRoute_tcpRoute(
 func testAccAwsAppmeshRoute_tags(
+func testAccAwsAppmeshRoute_httpHeader(
+func testAccAwsAppmeshRoute_routePriority(
 func testAccAppmeshRouteConfig_httpRoute(
 func testAccAppmeshRouteConfig_httpRouteUpdated(
 func testAccAppmeshRouteConfig_tcpRoute(
 func testAccAppmeshRouteConfig_tcpRouteUpdated(
+func testAccAwsAppmeshRouteConfig_httpHeader(
+func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(
+func testAccAwsAppmeshRouteConfig_routePriority(
 func testAccAwsAppmeshVirtualNode_basic(
 func testAccAwsAppmeshVirtualNode_cloudMapServiceDiscovery(
 func testAccAwsAppmeshVirtualNode_listenerHealthChecks(
@@ -1322,6 +1327,8 @@ func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSElasticacheCluster_snapshotsWithUpdates(
 func TestAccAWSElasticacheCluster_vpc(
 func TestAccAWSElasticacheCluster_multiAZInVpc(
+func testAccAWSElasticacheClusterConfig_snapshots(
+func testAccAWSElasticacheClusterConfig_snapshotsUpdated(
 func TestAccAWSElasticacheParameterGroup_basic(
 func TestAccAWSElasticacheParameterGroup_addParameter(
 func TestAccAWSElasticacheParameterGroup_removeAllParameters(
@@ -2817,9 +2824,11 @@ func TestAccAWSTransferServer_apigateway(
 func TestAccAWSTransferServer_disappears(
 func TestAccAWSTransferServer_forcedestroy(
 func TestAccAWSTransferServer_vpcEndpointId(
+func TestAccAWSTransferServer_hostKey(
 func testAccAWSTransferServerConfig_basicUpdate(
 func testAccAWSTransferServerConfig_apigateway(
 func testAccAWSTransferServerConfig_forcedestroy(
+func testAccAWSTransferServerConfig_hostKey(
 func TestAccAWSTransferSshKey_basic(
 func testAccAWSTransferSshKeyConfig_basic(
 func TestAccAWSTransferUser_basic(

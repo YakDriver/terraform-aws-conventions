@@ -43,7 +43,7 @@ func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(rName string) string {
 func testAccAwsEfsMountTargetConfigByMountTargetId(ct string) string {
 func testAccDataSourceAwsEipConfigFilter(rName string) string {
 func testAccDataSourceAwsEipConfigTags(rName string) string {
-func testAccAWSElastiCacheClusterConfigWithDataSource(rString string, rInt int) string {
+func testAccAWSElastiCacheClusterConfigWithDataSource(rName string) string {
 func testAccAWSElasticsearchDomainConfigWithDataSource(rInt int) string {
 func testAccAWSElasticsearchDomainConfigAdvancedWithDataSource(rInt int) string {
 func testAccDataSourceAWSELBConfigBasic(rName, testName string) string {
@@ -979,6 +979,7 @@ func testAccAWSLambdaConfigEnvVariablesModifiedWithoutEnvironment(funcName, poli
 func testAccAWSLambdaConfigEncryptedEnvVariables(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariablesModified(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVersioned(fileName, funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigVersionedNodeJs10xRuntime(fileName, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVpcConfigProperIamDependencies(rName string) string {
 func testAccAWSLambdaConfigWithTracingConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithTracingConfigUpdated(funcName, policyName, roleName, sgName string) string {

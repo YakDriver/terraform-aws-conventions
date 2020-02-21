@@ -31,6 +31,12 @@ func testAccAwsAppmeshMesh_tags(
 func testAccAwsAppmeshRoute_httpRoute(
 func testAccAwsAppmeshRoute_tcpRoute(
 func testAccAwsAppmeshRoute_tags(
+func testAccAwsAppmeshRoute_httpHeader(
+func testAccAwsAppmeshRoute_routePriority(
+func testAccAwsAppmeshRouteImportStateIdFunc(
+func testAccAwsAppmeshRouteConfig_httpHeader(
+func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(
+func testAccAwsAppmeshRouteConfig_routePriority(
 func testAccAwsAppmeshVirtualNode_basic(
 func testAccAwsAppmeshVirtualNode_cloudMapServiceDiscovery(
 func testAccAwsAppmeshVirtualNode_listenerHealthChecks(
