@@ -427,6 +427,7 @@ func testAccAWSGlueJobConfig_Description(
 func testAccAWSGlueJobConfig_GlueVersion(
 func testAccAWSGlueJobConfig_ExecutionProperty(
 func testAccAWSGlueJobConfig_MaxRetries(
+func testAccAWSGlueJobConfig_NotificationProperty(
 func testAccAWSGlueJobConfig_Required(
 func testAccAWSGlueJobConfig_Timeout(
 func testAccAWSGlueJobConfig_SecurityConfiguration(

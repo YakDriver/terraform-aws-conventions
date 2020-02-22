@@ -1525,6 +1525,11 @@ func testAccAWSEc2FleetConfig_ReplaceUnhealthyInstances(
 func testAccAWSEc2FleetConfig_Tags(
 func testAccAWSEc2FleetConfig_TerminateInstancesWithExpiration(
 func testAccAWSEc2FleetConfig_Type(
+func TestAccAWSEc2TrafficMirrorFilterRule_basic(
+func TestAccAWSEc2TrafficMirrorFilter_basic(
+func TestAccAWSEc2TrafficMirrorSession_basic(
+func TestAccAWSEc2TrafficMirrorTarget_nlb(
+func TestAccAWSEc2TrafficMirrorTarget_eni(
 func TestAccAWSEc2TransitGatewayRouteTableAssociation_basic(
 func TestAccAWSEc2TransitGatewayRouteTablePropagation_basic(
 func TestAccAWSEc2TransitGatewayRouteTable_basic(
@@ -1952,6 +1957,7 @@ func TestAccAWSGlueJob_Description(
 func TestAccAWSGlueJob_GlueVersion(
 func TestAccAWSGlueJob_ExecutionProperty(
 func TestAccAWSGlueJob_MaxRetries(
+func TestAccAWSGlueJob_NotificationProperty(
 func TestAccAWSGlueJob_Tags(
 func TestAccAWSGlueJob_Timeout(
 func TestAccAWSGlueJob_SecurityConfiguration(
@@ -1966,6 +1972,7 @@ func testAccAWSGlueJobConfig_Description(
 func testAccAWSGlueJobConfig_GlueVersion(
 func testAccAWSGlueJobConfig_ExecutionProperty(
 func testAccAWSGlueJobConfig_MaxRetries(
+func testAccAWSGlueJobConfig_NotificationProperty(
 func testAccAWSGlueJobConfig_Required(
 func testAccAWSGlueJobConfig_Timeout(
 func testAccAWSGlueJobConfig_SecurityConfiguration(
@@ -2308,6 +2315,11 @@ func TestAccAWSLambdaEventSourceMapping_sqsDisappears(
 func TestAccAWSLambdaEventSourceMapping_changesInEnabledAreDetected(
 func TestAccAWSLambdaEventSourceMapping_StartingPositionTimestamp(
 func TestAccAWSLambdaEventSourceMapping_BatchWindow(
+func TestAccAWSLambdaEventSourceMapping_ParallelizationFactor(
+func TestAccAWSLambdaEventSourceMapping_MaximumRetryAttempts(
+func TestAccAWSLambdaEventSourceMapping_MaximumRecordAgeInSeconds(
+func TestAccAWSLambdaEventSourceMapping_BisectBatch(
+func TestAccAWSLambdaEventSourceMapping_KinesisDestinationConfig(
 func testAccAWSLambdaEventSourceMappingConfig_kinesis(
 func testAccAWSLambdaEventSourceMappingConfigUpdate_kinesis(
 func testAccAWSLambdaEventSourceMappingConfig_sqs(
@@ -2620,6 +2632,7 @@ func testAccMqConfigurationConfig_updateTags3(
 func TestAccAWSMskCluster_basic(
 func TestAccAWSMskCluster_EnhancedMonitoring(
 func TestAccAWSMskCluster_NumberOfBrokerNodes(
+func TestAccAWSMskCluster_OpenMonitoring(
 func TestAccAWSMskCluster_Tags(
 func testAccMskClusterConfig_basic(
 func TestAccAWSMskConfiguration_basic(

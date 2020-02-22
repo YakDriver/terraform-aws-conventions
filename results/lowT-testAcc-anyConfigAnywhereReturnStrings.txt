@@ -178,6 +178,7 @@ func testAccDataSourceAwsSecurityGroupConfig(rInt int) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(serviceCode, quotaCode string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaName(serviceCode, quotaName string) string {
 func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(serviceName string) string {
+func testAccDataSourceAwsSfnStateMachineConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfigTags(rName string) string {
 func testAccCheckAwsSsmDocumentDataSourceConfig(name string, documentFormat string) string {
@@ -1236,6 +1237,15 @@ func testAccAWSEc2FleetConfig_TargetCapacitySpecification_DefaultTargetCapacityT
 func testAccAWSEc2FleetConfig_TargetCapacitySpecification_TotalTargetCapacity(rName string, totalTargetCapacity int) string {
 func testAccAWSEc2FleetConfig_TerminateInstancesWithExpiration(rName string, terminateInstancesWithExpiration bool) string {
 func testAccAWSEc2FleetConfig_Type(rName, fleetType string) string {
+func testAccEc2TrafficMirrorFilterRuleConfig(dstCidr, srcCidr, action, dir string, num int) string {
+func testAccEc2TrafficMirrorFilterRuleConfigFull(dstCidr, srcCidr, action, dir, description string, ruleNum, srcPortFrom, srcPortTo, dstPortFrom, dstPortTo, protocol int) string {
+func testAccTrafficMirrorFilterConfig(description string) string {
+func testAccTrafficMirrorFilterConfigWithoutDNS(description string) string {
+func testAccTrafficMirrorSessionConfigBase(lbName string) string {
+func testAccTrafficMirrorSessionConfig(lbName string, session int) string {
+func testAccTrafficMirrorSessionConfigWithOptionals(description string, lbName string, session, pLen, vni int) string {
+func testAccTrafficMirrorTargetConfigNlb(description string, lbName string) string {
+func testAccTrafficMirrorTargetConfigEni(description string) string {
 func testAccAWSEc2TransitGatewayRouteTableAssociationConfig() string {
 func testAccAWSEc2TransitGatewayRouteTablePropagationConfig() string {
 func testAccAWSEc2TransitGatewayRouteTableConfig() string {
@@ -1561,6 +1571,7 @@ func testAccAWSGlueJobConfig_Description(rName, description string) string {
 func testAccAWSGlueJobConfig_GlueVersion(rName, glueVersion string) string {
 func testAccAWSGlueJobConfig_ExecutionProperty(rName string, maxConcurrentRuns int) string {
 func testAccAWSGlueJobConfig_MaxRetries(rName string, maxRetries int) string {
+func testAccAWSGlueJobConfig_NotificationProperty(rName string, notifyDelayAfter int) string {
 func testAccAWSGlueJobConfig_Required(rName string) string {
 func testAccAWSGlueJobConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueJobConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1789,6 +1800,11 @@ func testAccAwsLambdaAliasConfigWithRoutingConfig(roleName, policyName, attachme
 func testAccAWSLambdaEventSourceMappingConfigKinesisBase(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisStartingPositionTimestamp(rName, startingPositionTimestamp string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBatchWindow(rName string, batchWindow int64) string {
+func testAccAWSLambdaEventSourceMappingConfigKinesisParallelizationFactor(rName string, parallelizationFactor int64) string {
+func testAccAWSLambdaEventSourceMappingConfigKinesisMaximumRetryAttempts(rName string, maximumRetryAttempts int64) string {
+func testAccAWSLambdaEventSourceMappingConfigKinesisBisectBatch(rName string, bisectBatch bool) string {
+func testAccAWSLambdaEventSourceMappingConfigKinesisMaximumRecordAgeInSeconds(rName string, maximumRecordAgeInSeconds int64) string {
+func testAccAWSLambdaEventSourceMappingConfigKinesisDestinationConfig(rName string, streamName string) string {
 func testAccAWSLambdaEventSourceMappingConfig_sqs_testWithFunctionName(roleName, policyName, attName, streamName, funcName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigBase(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSnsTopic(rName string) string {
@@ -2064,7 +2080,8 @@ func testAccMskClusterConfigEncryptionInfoEncryptionAtRestKmsKeyArn(rName string
 func testAccMskClusterConfigEncryptionInfoEncryptionInTransitClientBroker(rName, clientBroker string) string {
 func testAccMskClusterConfigEncryptionInfoEncryptionInTransitInCluster(rName string, inCluster bool) string {
 func testAccMskClusterConfigEnhancedMonitoring(rName, enhancedMonitoring string) string {
-func testAccMskClusterConfigNumberOfBrokerNodes(rName string) string {
+func testAccMskClusterConfigNumberOfBrokerNodes(rName string, brokerCount int) string {
+func testAccMskClusterConfigOpenMonitoring(rName string, jmxExporterEnabled bool, nodeExporterEnabled bool) string {
 func testAccMskClusterConfigTags1(rName string) string {
 func testAccMskClusterConfigTags2(rName string) string {
 func testAccMskConfigurationConfig(rName string) string {
