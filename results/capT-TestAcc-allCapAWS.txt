@@ -2386,6 +2386,12 @@ func TestAccAWSRoute_changeCidr(
 func TestAccAWSRoute_noopdiff(
 func TestAccAWSRoute_doesNotCrashWithVPCEndpoint(
 func TestAccAWSRoute_TransitGatewayID_DestinationCidrBlock(
+func TestAccAWSS3AccessPoint_basic(
+func TestAccAWSS3AccessPoint_disappears(
+func TestAccAWSS3AccessPoint_bucketDisappears(
+func TestAccAWSS3AccessPoint_Policy(
+func TestAccAWSS3AccessPoint_PublicAccessBlockConfiguration(
+func TestAccAWSS3AccessPoint_VpcConfiguration(
 func TestAccAWSS3Account(
 func TestAccAWSS3BucketAnalyticsConfiguration_basic(
 func TestAccAWSS3BucketAnalyticsConfiguration_removed(
@@ -2426,6 +2432,7 @@ func TestAccAWSS3BucketObject_NonVersioned(
 func TestAccAWSS3BucketObject_updates(
 func TestAccAWSS3BucketObject_updateSameFile(
 func TestAccAWSS3BucketObject_updatesWithVersioning(
+func TestAccAWSS3BucketObject_updatesWithVersioningViaAccessPoint(
 func TestAccAWSS3BucketObject_kms(
 func TestAccAWSS3BucketObject_sse(
 func TestAccAWSS3BucketObject_acl(

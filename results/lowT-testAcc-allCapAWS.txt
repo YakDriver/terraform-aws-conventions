@@ -23,7 +23,9 @@ func testAccAWSDataSourceRedshiftClusterConfigWithVpc(
 func testAccAWSDataSourceRedshiftClusterConfigWithLogging(
 func testAccAWSRouteDataSourceConfigTransitGatewayID(
 func testAccAWSDataSourceS3ObjectsConfigResources(
+func testAccAWSDataSourceS3ObjectsConfigResourcesPlusAccessPoint(
 func testAccAWSDataSourceS3ObjectsConfigBasic(
+func testAccAWSDataSourceS3ObjectsConfigBasicViaAccessPoint(
 func testAccAWSDataSourceS3ObjectsConfigAll(
 func testAccAWSDataSourceS3ObjectsConfigPrefixes(
 func testAccAWSDataSourceS3ObjectsConfigExtraResource(
@@ -32,6 +34,7 @@ func testAccAWSDataSourceS3ObjectsConfigMaxKeys(
 func testAccAWSDataSourceS3ObjectsConfigStartAfter(
 func testAccAWSDataSourceS3ObjectsConfigOwners(
 func testAccAWSDataSourceS3ObjectConfig_basic(randInt int) (
+func testAccAWSDataSourceS3ObjectConfig_basicViaAccessPoint(
 func testAccAWSDataSourceS3ObjectConfig_readableBody(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_allParams(randInt int) (
@@ -1767,6 +1770,12 @@ func testAccAWSRouteTableConfigRouteConfigModeZeroed(
 func testAccAWSRouteTableConfigRouteTransitGatewayID(
 func testAccAWSRouteImportStateIdFunc(
 func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock(
+func testAccAWSS3AccessPointConfig_basic(
+func testAccAWSS3AccessPointConfig_policy(
+func testAccAWSS3AccessPointConfig_policyUpdated(
+func testAccAWSS3AccessPointConfig_noPolicy(
+func testAccAWSS3AccessPointConfig_publicAccessBlock(
+func testAccAWSS3AccessPointConfig_vpc(
 func testAccAWSS3AccountPublicAccessBlock_basic(
 func testAccAWSS3AccountPublicAccessBlock_disappears(
 func testAccAWSS3AccountPublicAccessBlock_AccountId(
@@ -1817,6 +1826,7 @@ func testAccAWSS3BucketObjectConfigContent(
 func testAccAWSS3BucketObjectEtagEncryption(
 func testAccAWSS3BucketObjectConfigContentBase64(
 func testAccAWSS3BucketObjectConfig_updateable(
+func testAccAWSS3BucketObjectConfig_updateableViaAccessPoint(
 func testAccAWSS3BucketObjectConfig_withKMSId(
 func testAccAWSS3BucketObjectConfig_withSSE(
 func testAccAWSS3BucketObjectConfig_acl(

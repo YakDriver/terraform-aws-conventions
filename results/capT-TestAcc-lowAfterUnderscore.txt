@@ -151,6 +151,7 @@ func TestAccDataSourceAwsRouteTable_basic(
 func TestAccDataSourceAwsRouteTable_main(
 func TestAccAWSRouteDataSource_basic(
 func TestAccDataSourceAWSS3BucketObjects_basic(
+func TestAccDataSourceAWSS3BucketObjects_basicViaAccessPoint(
 func TestAccDataSourceAWSS3BucketObjects_all(
 func TestAccDataSourceAWSS3BucketObjects_prefixes(
 func TestAccDataSourceAWSS3BucketObjects_encoded(
@@ -158,6 +159,7 @@ func TestAccDataSourceAWSS3BucketObjects_maxKeys(
 func TestAccDataSourceAWSS3BucketObjects_startAfter(
 func TestAccDataSourceAWSS3BucketObjects_fetchOwner(
 func TestAccDataSourceAWSS3BucketObject_basic(
+func TestAccDataSourceAWSS3BucketObject_basicViaAccessPoint(
 func TestAccDataSourceAWSS3BucketObject_readableBody(
 func TestAccDataSourceAWSS3BucketObject_kmsEncrypted(
 func TestAccDataSourceAWSS3BucketObject_allParams(
@@ -1673,6 +1675,9 @@ func TestAccAWSRoute_changeRouteTable(
 func TestAccAWSRoute_changeCidr(
 func TestAccAWSRoute_noopdiff(
 func TestAccAWSRoute_doesNotCrashWithVPCEndpoint(
+func TestAccAWSS3AccessPoint_basic(
+func TestAccAWSS3AccessPoint_disappears(
+func TestAccAWSS3AccessPoint_bucketDisappears(
 func TestAccAWSS3BucketAnalyticsConfiguration_basic(
 func TestAccAWSS3BucketAnalyticsConfiguration_removed(
 func TestAccAWSS3BucketAnalyticsConfiguration_updateBasic(
@@ -1691,6 +1696,7 @@ func TestAccAWSS3BucketObject_withContentCharacteristics(
 func TestAccAWSS3BucketObject_updates(
 func TestAccAWSS3BucketObject_updateSameFile(
 func TestAccAWSS3BucketObject_updatesWithVersioning(
+func TestAccAWSS3BucketObject_updatesWithVersioningViaAccessPoint(
 func TestAccAWSS3BucketObject_kms(
 func TestAccAWSS3BucketObject_sse(
 func TestAccAWSS3BucketObject_acl(

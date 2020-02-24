@@ -156,7 +156,9 @@ func testAccDataSourceAwsRouteTablesConfigWithDataSource(rInt int) string {
 func testAccDataSourceAwsRouteTablesConfig(rInt int) string {
 func testAccAWSRouteDataSourceConfigTransitGatewayID() string {
 func testAccAWSDataSourceS3ObjectsConfigResources(randInt int) string {
+func testAccAWSDataSourceS3ObjectsConfigResourcesPlusAccessPoint(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigBasic(randInt int) string {
+func testAccAWSDataSourceS3ObjectsConfigBasicViaAccessPoint(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigAll(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigPrefixes(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigExtraResource(randInt int) string {
@@ -164,6 +166,7 @@ func testAccAWSDataSourceS3ObjectsConfigEncoded(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigMaxKeys(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigStartAfter(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigOwners(randInt int) string {
+func testAccAWSDataSourceS3ObjectConfig_basicViaAccessPoint(rName string) string {
 func testAccAWSDataSourceS3BucketConfig_basic(randInt int) string {
 func testAccAWSDataSourceS3BucketWebsiteConfig(randInt int) string {
 func testAccDataSourceAwsSecretsManagerSecretConfig_ARN(rName string) string {
@@ -2376,6 +2379,12 @@ func testAccAWSRouteTableConfigRouteConfigModeNoBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeZeroed() string {
 func testAccAWSRouteTableConfigRouteTransitGatewayID() string {
 func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock() string {
+func testAccAWSS3AccessPointConfig_basic(bucketName, accessPointName string) string {
+func testAccAWSS3AccessPointConfig_policy(rName string) string {
+func testAccAWSS3AccessPointConfig_policyUpdated(rName string) string {
+func testAccAWSS3AccessPointConfig_noPolicy(rName string) string {
+func testAccAWSS3AccessPointConfig_publicAccessBlock(rName string) string {
+func testAccAWSS3AccessPointConfig_vpc(rName string) string {
 func testAccAWSS3AccountPublicAccessBlockConfig() string {
 func testAccAWSS3AccountPublicAccessBlockConfigAccountId() string {
 func testAccAWSS3AccountPublicAccessBlockConfigBlockPublicAcls(blockPublicAcls bool) string {
@@ -2417,6 +2426,7 @@ func testAccAWSS3BucketObjectConfig_withContentCharacteristics(randInt int, sour
 func testAccAWSS3BucketObjectConfigContent(randInt int, content string) string {
 func testAccAWSS3BucketObjectConfigContentBase64(randInt int, contentBase64 string) string {
 func testAccAWSS3BucketObjectConfig_updateable(randInt int, bucketVersioning bool, source string) string {
+func testAccAWSS3BucketObjectConfig_updateableViaAccessPoint(rName string, bucketVersioning bool, source string) string {
 func testAccAWSS3BucketObjectConfig_withKMSId(randInt int, source string) string {
 func testAccAWSS3BucketObjectConfig_withSSE(randInt int, source string) string {
 func testAccAWSS3BucketObjectConfig_acl(randInt int, content, acl string) string {

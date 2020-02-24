@@ -191,6 +191,7 @@ func TestAccDataSourceAwsRouteTable_basic(
 func TestAccDataSourceAwsRouteTable_main(
 func TestAccAWSRouteDataSource_basic(
 func TestAccDataSourceAWSS3BucketObjects_basic(
+func TestAccDataSourceAWSS3BucketObjects_basicViaAccessPoint(
 func TestAccDataSourceAWSS3BucketObjects_all(
 func TestAccDataSourceAWSS3BucketObjects_prefixes(
 func TestAccDataSourceAWSS3BucketObjects_encoded(
@@ -198,10 +199,12 @@ func TestAccDataSourceAWSS3BucketObjects_maxKeys(
 func TestAccDataSourceAWSS3BucketObjects_startAfter(
 func TestAccDataSourceAWSS3BucketObjects_fetchOwner(
 func TestAccDataSourceAWSS3BucketObject_basic(
+func TestAccDataSourceAWSS3BucketObject_basicViaAccessPoint(
 func TestAccDataSourceAWSS3BucketObject_readableBody(
 func TestAccDataSourceAWSS3BucketObject_kmsEncrypted(
 func TestAccDataSourceAWSS3BucketObject_allParams(
 func testAccAWSDataSourceS3ObjectConfig_basic(randInt int) (
+func testAccAWSDataSourceS3ObjectConfig_basicViaAccessPoint(
 func testAccAWSDataSourceS3ObjectConfig_readableBody(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_allParams(randInt int) (
@@ -2499,6 +2502,15 @@ func TestAccAWSRoute_changeRouteTable(
 func TestAccAWSRoute_changeCidr(
 func TestAccAWSRoute_noopdiff(
 func TestAccAWSRoute_doesNotCrashWithVPCEndpoint(
+func TestAccAWSS3AccessPoint_basic(
+func TestAccAWSS3AccessPoint_disappears(
+func TestAccAWSS3AccessPoint_bucketDisappears(
+func testAccAWSS3AccessPointConfig_basic(
+func testAccAWSS3AccessPointConfig_policy(
+func testAccAWSS3AccessPointConfig_policyUpdated(
+func testAccAWSS3AccessPointConfig_noPolicy(
+func testAccAWSS3AccessPointConfig_publicAccessBlock(
+func testAccAWSS3AccessPointConfig_vpc(
 func testAccAWSS3AccountPublicAccessBlock_basic(
 func testAccAWSS3AccountPublicAccessBlock_disappears(
 func TestAccAWSS3BucketAnalyticsConfiguration_basic(
@@ -2520,6 +2532,7 @@ func TestAccAWSS3BucketObject_withContentCharacteristics(
 func TestAccAWSS3BucketObject_updates(
 func TestAccAWSS3BucketObject_updateSameFile(
 func TestAccAWSS3BucketObject_updatesWithVersioning(
+func TestAccAWSS3BucketObject_updatesWithVersioningViaAccessPoint(
 func TestAccAWSS3BucketObject_kms(
 func TestAccAWSS3BucketObject_sse(
 func TestAccAWSS3BucketObject_acl(
@@ -2529,6 +2542,7 @@ func TestAccAWSS3BucketObject_tags(
 func TestAccAWSS3BucketObject_tagsLeadingSlash(
 func testAccAWSS3BucketObjectConfig_withContentCharacteristics(
 func testAccAWSS3BucketObjectConfig_updateable(
+func testAccAWSS3BucketObjectConfig_updateableViaAccessPoint(
 func testAccAWSS3BucketObjectConfig_withKMSId(
 func testAccAWSS3BucketObjectConfig_withSSE(
 func testAccAWSS3BucketObjectConfig_acl(
@@ -3101,6 +3115,7 @@ func TestAccAWSWafXssMatchSet_noTuples(
 func testAccAWSWafXssMatchSetConfig_changeTuples(
 func testAccAWSWafXssMatchSetConfig_noTuples(
 func testAccAwsWorkspacesDirectory_basic(
+func testAccAwsWorkspacesDirectory_disappears(
 func testAccAwsWorkspacesDirectory_subnetIds(
 func testAccWorkspacesDirectoryConfig_subnetIds(
 func TestAccAwsWorkspacesIpGroup_basic(

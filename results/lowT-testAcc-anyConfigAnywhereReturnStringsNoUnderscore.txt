@@ -102,7 +102,9 @@ func testAccDataSourceAwsRouteTablesConfigWithDataSource(rInt int) string {
 func testAccDataSourceAwsRouteTablesConfig(rInt int) string {
 func testAccAWSRouteDataSourceConfigTransitGatewayID() string {
 func testAccAWSDataSourceS3ObjectsConfigResources(randInt int) string {
+func testAccAWSDataSourceS3ObjectsConfigResourcesPlusAccessPoint(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigBasic(randInt int) string {
+func testAccAWSDataSourceS3ObjectsConfigBasicViaAccessPoint(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigAll(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigPrefixes(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigExtraResource(randInt int) string {
