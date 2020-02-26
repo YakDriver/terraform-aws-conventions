@@ -1022,6 +1022,7 @@ func testAccAWSLambdaConfigPython36Runtime(funcName, policyName, roleName, sgNam
 func testAccAWSLambdaConfigPython37Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigPython38Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigRuby25Runtime(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigRuby27Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaPermissionConfig(funcName, roleName string) string {
 func testAccAWSLambdaPermissionConfigStatementIdDuplicate(rName string) string {
 func testAccAWSLambdaProvisionedConcurrencyConfigBase(rName string) string {

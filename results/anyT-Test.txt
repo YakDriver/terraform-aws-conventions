@@ -581,6 +581,9 @@ func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaName(
 func TestAccAwsServiceQuotasServiceDataSource_ServiceName(
 func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(
+func TestAccAWSStepFunctionsActivityDataSource(
+func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityArn(
+func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityName(
 func TestAccDataSourceAwsSfnStateMachine(
 func testAccDataSourceAwsSfnStateMachineConfig(
 func TestAccDataSourceAwsSnsTopic(
@@ -5591,6 +5594,7 @@ func TestAccAWSLambdaFunction_runtimeValidation_python36(
 func TestAccAWSLambdaFunction_runtimeValidation_python37(
 func TestAccAWSLambdaFunction_runtimeValidation_python38(
 func TestAccAWSLambdaFunction_runtimeValidation_ruby25(
+func TestAccAWSLambdaFunction_runtimeValidation_ruby27(
 func testAccCheckLambdaFunctionDestroy(
 func testAccCheckAwsLambdaFunctionDisappears(
 func testAccCheckAwsLambdaFunctionExists(
@@ -5639,6 +5643,7 @@ func testAccAWSLambdaConfigPython36Runtime(
 func testAccAWSLambdaConfigPython37Runtime(
 func testAccAWSLambdaConfigPython38Runtime(
 func testAccAWSLambdaConfigRuby25Runtime(
+func testAccAWSLambdaConfigRuby27Runtime(
 func testAccAWSLambdaFunctionConfig_local_name_only_tpl(
 func testAccAWSLambdaFunctionConfig_s3_unversioned_tpl(
 func testSweepLambdaLayerVersions(
@@ -9002,8 +9007,6 @@ func TestCognitoUserPoolSchemaAttributeMatchesStandardAttribute(
 func TestCanonicalXML(
 func TestExpandRdsClusterScalingConfiguration_serverless(
 func TestExpandRdsClusterScalingConfiguration_basic(
-func TestDiffDXTags(
-func TestIgnoringTagsDX(
 func TestDiffTags(
 func TestIgnoringTags(
 func testAccCheckTags(

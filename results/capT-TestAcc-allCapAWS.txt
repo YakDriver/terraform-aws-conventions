@@ -131,6 +131,7 @@ func TestAccAWSDataSourceRedshiftCluster_logging(
 func TestAccAWSRedshiftServiceAccount_basic(
 func TestAccAWSRouteDataSource_basic(
 func TestAccAWSRouteDataSource_TransitGatewayID(
+func TestAccAWSStepFunctionsActivityDataSource(
 func TestAccAWSSsmDocumentDataSource_basic(
 func TestAccAWSSsmParameterDataSource_basic(
 func TestAccAWSSsmParameterDataSource_fullPath(
@@ -1832,6 +1833,7 @@ func TestAccAWSLambdaFunction_runtimeValidation_python36(
 func TestAccAWSLambdaFunction_runtimeValidation_python37(
 func TestAccAWSLambdaFunction_runtimeValidation_python38(
 func TestAccAWSLambdaFunction_runtimeValidation_ruby25(
+func TestAccAWSLambdaFunction_runtimeValidation_ruby27(
 func TestAccAWSLambdaLayerVersion_basic(
 func TestAccAWSLambdaLayerVersion_update(
 func TestAccAWSLambdaLayerVersion_s3(

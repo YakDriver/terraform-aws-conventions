@@ -1371,6 +1371,7 @@ func testAccAWSLambdaConfigPython36Runtime(
 func testAccAWSLambdaConfigPython37Runtime(
 func testAccAWSLambdaConfigPython38Runtime(
 func testAccAWSLambdaConfigRuby25Runtime(
+func testAccAWSLambdaConfigRuby27Runtime(
 func testAccAWSLambdaFunctionConfig_local_name_only_tpl(
 func testAccAWSLambdaFunctionConfig_s3_unversioned_tpl(
 func testAccAWSLambdaLayerVersionBasic(

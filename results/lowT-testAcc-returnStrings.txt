@@ -192,6 +192,8 @@ func testAccDataSourceAwsSecurityGroupConfig(rInt int) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(serviceCode, quotaCode string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaName(serviceCode, quotaName string) string {
 func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(serviceName string) string {
+func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityArn(rName string) string {
+func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityName(rName string) string {
 func testAccDataSourceAwsSfnStateMachineConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfigTags(rName string) string {
@@ -2089,6 +2091,7 @@ func testAccAWSLambdaConfigPython36Runtime(funcName, policyName, roleName, sgNam
 func testAccAWSLambdaConfigPython37Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigPython38Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigRuby25Runtime(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigRuby27Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaFunctionConfig_local_name_only_tpl(filePath, roleName, funcName string) string {
 func testAccAWSLambdaFunctionConfig_s3_unversioned_tpl(bucketName, roleName, funcName, key, path string) string {
 func testAccAWSLambdaLayerVersionBasic(layerName string) string {

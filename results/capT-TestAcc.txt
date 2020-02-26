@@ -267,6 +267,7 @@ func TestAccDataSourceAwsSecurityGroup_basic(
 func TestAccAwsServiceQuotasServiceQuotaDataSource_QuotaCode(
 func TestAccAwsServiceQuotasServiceQuotaDataSource_QuotaName(
 func TestAccAwsServiceQuotasServiceDataSource_ServiceName(
+func TestAccAWSStepFunctionsActivityDataSource(
 func TestAccDataSourceAwsSfnStateMachine(
 func TestAccDataSourceAwsSnsTopic(
 func TestAccDataSourceAwsSqsQueue_basic(
@@ -2109,6 +2110,7 @@ func TestAccAWSLambdaFunction_runtimeValidation_python36(
 func TestAccAWSLambdaFunction_runtimeValidation_python37(
 func TestAccAWSLambdaFunction_runtimeValidation_python38(
 func TestAccAWSLambdaFunction_runtimeValidation_ruby25(
+func TestAccAWSLambdaFunction_runtimeValidation_ruby27(
 func TestAccAWSLambdaLayerVersion_basic(
 func TestAccAWSLambdaLayerVersion_update(
 func TestAccAWSLambdaLayerVersion_s3(
