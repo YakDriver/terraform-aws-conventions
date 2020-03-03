@@ -2487,7 +2487,7 @@ func testAccCheckAWSElasticacheSecurityGroupExists(
 func testAccCheckAWSElasticacheSubnetGroupDestroy(
 func testAccCheckAWSElasticacheSubnetGroupExists(
 func testAccCheckAWSElastiCacheSubnetGroupAttrs(
-func testSweepBeanstalkApplications(
+func testSweepElasticBeanstalkApplications(
 func testAccBeanstalkAppImportConfig(
 func testAccCheckBeanstalkAppDestroy(
 func testAccCheckBeanstalkAppExists(
@@ -2508,7 +2508,7 @@ func testAccCheckBeanstalkConfigurationTemplateExists(
 func testAccBeanstalkConfigurationTemplateConfig(
 func testAccBeanstalkConfigurationTemplateConfig_VPC(
 func testAccBeanstalkConfigurationTemplateConfig_Setting(
-func testSweepBeanstalkEnvironments(
+func testSweepElasticBeanstalkEnvironments(
 func testAccVerifyBeanstalkConfig(
 func testAccCheckBeanstalkEnvDestroy(
 func testAccCheckBeanstalkEnvExists(
