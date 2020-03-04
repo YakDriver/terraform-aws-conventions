@@ -44,6 +44,11 @@ func testAccDataSourceAwsDxGatewayConfig_Name(rName string, rBgpAsn int) string 
 func testAccDataSourceAwsDynamoDbTableConfigBasic(tableName string) string {
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted1(rName string) string {
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted2(rName string) string {
+func testAccAWSEc2InstanceTypeOfferingsDataSourceConfigFilter() string {
+func testAccAWSEc2InstanceTypeOfferingsDataSourceConfigLocationType() string {
+func testAccAWSEc2InstanceTypeOfferingDataSourceConfigFilter() string {
+func testAccAWSEc2InstanceTypeOfferingDataSourceConfigLocationType() string {
+func testAccAWSEc2InstanceTypeOfferingDataSourceConfigPreferredInstanceTypes() string {
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigTransitGatewayIdAndDxGatewayId(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayRouteTableDataSourceConfigFilter() string {
 func testAccAWSEc2TransitGatewayRouteTableDataSourceConfigID() string {
@@ -292,6 +297,7 @@ func testAccAWSALBTargetGroupConfig_updatedVpc(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_updateTags(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_updateHealthCheck(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_stickiness(targetGroupName string, addStickinessBlock bool, enabled bool) string {
+func testAccAWSALBTargetGroupConfig_loadBalancingAlgorithm(targetGroupName string, nonDefault bool, algoType string) string {
 func testAccAWSALBTargetGroupConfig_updateSlowStart(targetGroupName string, slowStartDuration int) string {
 func testAccAWSALBTargetGroupConfig_lambda(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_lambdaMultiValueHeadersEnabled(rName string, lambdaMultiValueHadersEnabled bool) string {

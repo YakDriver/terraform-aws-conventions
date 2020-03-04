@@ -28,6 +28,11 @@ func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {
 func testAccAWSDBInstanceDataSourceConfig(rInt int) string {
 func testAccCheckAwsDbSnapshotDataSourceConfig(rInt int) string {
 func testAccDataSourceAwsDynamoDbTableConfigBasic(tableName string) string {
+func testAccAWSEc2InstanceTypeOfferingsDataSourceConfigFilter() string {
+func testAccAWSEc2InstanceTypeOfferingsDataSourceConfigLocationType() string {
+func testAccAWSEc2InstanceTypeOfferingDataSourceConfigFilter() string {
+func testAccAWSEc2InstanceTypeOfferingDataSourceConfigLocationType() string {
+func testAccAWSEc2InstanceTypeOfferingDataSourceConfigPreferredInstanceTypes() string {
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigTransitGatewayIdAndDxGatewayId(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayRouteTableDataSourceConfigFilter() string {
 func testAccAWSEc2TransitGatewayRouteTableDataSourceConfigID() string {
