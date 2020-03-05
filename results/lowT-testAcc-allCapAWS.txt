@@ -1852,6 +1852,7 @@ func testAccAWSS3BucketPolicyConfig_updated(
 func testAccAWSS3BucketPublicAccessBlockConfig(
 func testAccAWSS3BucketPolicy(
 func testAccAWSS3BucketConfig(
+func testAccAWSS3BucketBasic(
 func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(
 func testAccAWSS3BucketConfig_withUpdatedTags(
@@ -1877,6 +1878,10 @@ func testAccAWSS3BucketConfigWithVersioning(
 func testAccAWSS3BucketConfigWithDisableVersioning(
 func testAccAWSS3BucketConfigWithCORS(
 func testAccAWSS3BucketConfigWithCORSEmptyOrigin(
+func testAccAWSS3BucketConfigWithAcl(
+func testAccAWSS3BucketConfigWithAclUpdate(
+func testAccAWSS3BucketConfigWithGrants(
+func testAccAWSS3BucketConfigWithGrantsUpdate(
 func testAccAWSS3BucketConfigWithLogging(
 func testAccAWSS3BucketConfigWithLifecycle(
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(

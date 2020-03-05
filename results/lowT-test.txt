@@ -4431,12 +4431,15 @@ func testAccCheckAWSS3BucketCors(
 func testAccCheckAWSS3RequestPayer(
 func testAccCheckAWSS3BucketLogging(
 func testAccCheckAWSS3BucketReplicationRules(n string, providerF func(
+func testAccCheckAWSS3BucketUpdateGrantSingle(resourceName string) func(
+func testAccCheckAWSS3BucketUpdateGrantMulti(resourceName string) func(
 func testAccBucketName(
 func testAccBucketDomainName(
 func testAccBucketRegionalDomainName(
 func testAccWebsiteEndpoint(
 func testAccAWSS3BucketPolicy(
 func testAccAWSS3BucketConfig(
+func testAccAWSS3BucketBasic(
 func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(
 func testAccAWSS3BucketConfig_withUpdatedTags(
@@ -4462,6 +4465,10 @@ func testAccAWSS3BucketConfigWithVersioning(
 func testAccAWSS3BucketConfigWithDisableVersioning(
 func testAccAWSS3BucketConfigWithCORS(
 func testAccAWSS3BucketConfigWithCORSEmptyOrigin(
+func testAccAWSS3BucketConfigWithAcl(
+func testAccAWSS3BucketConfigWithAclUpdate(
+func testAccAWSS3BucketConfigWithGrants(
+func testAccAWSS3BucketConfigWithGrantsUpdate(
 func testAccAWSS3BucketConfigWithLogging(
 func testAccAWSS3BucketConfigWithLifecycle(
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(

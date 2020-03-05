@@ -2474,6 +2474,10 @@ func testAccAWSS3BucketConfigWithVersioning(randInt int) string {
 func testAccAWSS3BucketConfigWithDisableVersioning(randInt int) string {
 func testAccAWSS3BucketConfigWithCORS(randInt int) string {
 func testAccAWSS3BucketConfigWithCORSEmptyOrigin(randInt int) string {
+func testAccAWSS3BucketConfigWithAcl(randInt int) string {
+func testAccAWSS3BucketConfigWithAclUpdate(randInt int) string {
+func testAccAWSS3BucketConfigWithGrants(randInt int) string {
+func testAccAWSS3BucketConfigWithGrantsUpdate(randInt int) string {
 func testAccAWSS3BucketConfigWithLogging(randInt int) string {
 func testAccAWSS3BucketConfigWithLifecycle(randInt int) string {
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(randInt int) string {

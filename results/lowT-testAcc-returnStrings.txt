@@ -2716,6 +2716,7 @@ func testAccBucketRegionalDomainName(randInt int, region string) string {
 func testAccWebsiteEndpoint(randInt int, region string) string {
 func testAccAWSS3BucketPolicy(randInt int, partition string) string {
 func testAccAWSS3BucketConfig(randInt int) string {
+func testAccAWSS3BucketBasic(randInt int) string {
 func testAccAWSS3BucketConfig_withNoTags(bucketName string) string {
 func testAccAWSS3BucketConfig_withTags(bucketName string) string {
 func testAccAWSS3BucketConfig_withUpdatedTags(bucketName string) string {
@@ -2741,6 +2742,10 @@ func testAccAWSS3BucketConfigWithVersioning(randInt int) string {
 func testAccAWSS3BucketConfigWithDisableVersioning(randInt int) string {
 func testAccAWSS3BucketConfigWithCORS(randInt int) string {
 func testAccAWSS3BucketConfigWithCORSEmptyOrigin(randInt int) string {
+func testAccAWSS3BucketConfigWithAcl(randInt int) string {
+func testAccAWSS3BucketConfigWithAclUpdate(randInt int) string {
+func testAccAWSS3BucketConfigWithGrants(randInt int) string {
+func testAccAWSS3BucketConfigWithGrantsUpdate(randInt int) string {
 func testAccAWSS3BucketConfigWithLogging(randInt int) string {
 func testAccAWSS3BucketConfigWithLifecycle(randInt int) string {
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(randInt int) string {

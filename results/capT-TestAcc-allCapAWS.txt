@@ -2473,6 +2473,9 @@ func TestAccAWSS3Bucket_acceleration(
 func TestAccAWSS3Bucket_RequestPayer(
 func TestAccAWSS3Bucket_Policy(
 func TestAccAWSS3Bucket_UpdateAcl(
+func TestAccAWSS3Bucket_UpdateGrant(
+func TestAccAWSS3Bucket_AclToGrant(
+func TestAccAWSS3Bucket_GrantToAcl(
 func TestAccAWSS3Bucket_Website_Simple(
 func TestAccAWSS3Bucket_WebsiteRedirect(
 func TestAccAWSS3Bucket_WebsiteRoutingRules(
