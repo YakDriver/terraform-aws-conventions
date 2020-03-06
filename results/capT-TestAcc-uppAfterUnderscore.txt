@@ -546,6 +546,7 @@ func TestAccAWSEFSFileSystem_ThroughputMode(
 func TestAccAWSEIP_Ec2Classic(
 func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
+func TestAccAWSEksCluster_EncryptionConfig(
 func TestAccAWSEksCluster_Version(
 func TestAccAWSEksCluster_Logging(
 func TestAccAWSEksCluster_Tags(

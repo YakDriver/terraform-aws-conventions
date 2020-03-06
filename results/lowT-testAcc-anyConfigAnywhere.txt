@@ -1427,6 +1427,7 @@ func testAccAWSEksClusterConfig_Version(
 func testAccAWSEksClusterConfig_Logging(
 func testAccAWSEksClusterConfigTags1(
 func testAccAWSEksClusterConfigTags2(
+func testAccAWSEksClusterConfig_EncryptionConfig(
 func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(

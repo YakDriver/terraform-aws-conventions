@@ -3779,6 +3779,7 @@ func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
 func testAccAWSEIP_classic_disassociate(
 func TestAccAWSEksCluster_basic(
+func TestAccAWSEksCluster_EncryptionConfig(
 func TestAccAWSEksCluster_Version(
 func TestAccAWSEksCluster_Logging(
 func TestAccAWSEksCluster_Tags(
@@ -3796,6 +3797,7 @@ func testAccAWSEksClusterConfig_Version(
 func testAccAWSEksClusterConfig_Logging(
 func testAccAWSEksClusterConfigTags1(
 func testAccAWSEksClusterConfigTags2(
+func testAccAWSEksClusterConfig_EncryptionConfig(
 func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(

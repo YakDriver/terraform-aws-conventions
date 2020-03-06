@@ -1685,6 +1685,7 @@ func TestAccAWSEIPAssociate_notAssociated(
 func TestAccAWSEIP_tags(
 func testAccAWSEIPConfig_tags(
 func TestAccAWSEksCluster_basic(
+func TestAccAWSEksCluster_EncryptionConfig(
 func TestAccAWSEksCluster_Version(
 func TestAccAWSEksCluster_Logging(
 func TestAccAWSEksCluster_Tags(
@@ -1692,6 +1693,7 @@ func testAccAWSEksClusterConfig_Base(
 func testAccAWSEksClusterConfig_Required(
 func testAccAWSEksClusterConfig_Version(
 func testAccAWSEksClusterConfig_Logging(
+func testAccAWSEksClusterConfig_EncryptionConfig(
 func TestAccAWSEksFargateProfile_basic(
 func TestAccAWSEksFargateProfile_disappears(
 func TestAccAWSEksFargateProfile_Tags(

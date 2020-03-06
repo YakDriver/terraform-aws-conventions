@@ -1492,6 +1492,7 @@ func testAccAWSEksClusterConfig_Version(rName, version string) string {
 func testAccAWSEksClusterConfig_Logging(rName string, logTypes []string) string {
 func testAccAWSEksClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEksClusterConfig_EncryptionConfig(rName string) string {
 func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(rName string) string {
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(rName string, endpointPrivateAccess bool) string {
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(rName string, endpointPublicAccess bool) string {

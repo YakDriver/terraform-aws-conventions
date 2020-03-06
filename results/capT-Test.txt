@@ -1577,6 +1577,7 @@ func TestAccAWSEIP_tags(
 func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func TestAccAWSEksCluster_basic(
+func TestAccAWSEksCluster_EncryptionConfig(
 func TestAccAWSEksCluster_Version(
 func TestAccAWSEksCluster_Logging(
 func TestAccAWSEksCluster_Tags(
