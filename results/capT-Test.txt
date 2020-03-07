@@ -3615,7 +3615,6 @@ func TestCognitoUserPoolSchemaAttributeMatchesStandardAttribute(
 func TestCanonicalXML(
 func TestExpandRdsClusterScalingConfiguration_serverless(
 func TestExpandRdsClusterScalingConfiguration_basic(
-func TestDiffTags(
 func TestIgnoringTags(
 func TestTlsRsaPrivateKeyPem(
 func TestTlsRsaPublicKeyPem(

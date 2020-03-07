@@ -8585,7 +8585,7 @@ func testAccWorkspacesDirectoryConfigC(
 func testAccWorkspacesDirectoryConfig_subnetIds(
 func TestAccAwsWorkspacesIpGroup_basic(
 func testAccCheckAwsWorkspacesIpGroupDestroy(
-func testAccWorkspacesIpGroupConfigExists(
+func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
 func TestAccAWSXraySamplingRule_basic(
