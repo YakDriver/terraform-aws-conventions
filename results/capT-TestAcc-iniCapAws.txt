@@ -96,6 +96,7 @@ func TestAccAwsFmsAdminAccount_basic(
 func TestAccAwsGlobalAcceleratorAccelerator_basic(
 func TestAccAwsGlobalAcceleratorAccelerator_update(
 func TestAccAwsGlobalAcceleratorAccelerator_attributes(
+func TestAccAwsGlobalAcceleratorAccelerator_tags(
 func TestAccAwsGlobalAcceleratorEndpointGroup_basic(
 func TestAccAwsGlobalAcceleratorEndpointGroup_update(
 func TestAccAwsGlobalAcceleratorListener_basic(

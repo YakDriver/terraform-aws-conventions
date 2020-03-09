@@ -465,6 +465,7 @@ func testAccGlacierVault_full(
 func testAccGlacierVault_withoutNotification(
 func testAccGlobalAcceleratorAccelerator_basic(
 func testAccGlobalAcceleratorAccelerator_attributes(
+func testAccGlobalAcceleratorAccelerator_tags(
 func testAccGlobalAcceleratorEndpointGroup_basic(
 func testAccGlobalAcceleratorEndpointGroup_update(
 func testAccGlobalAcceleratorListener_basic(

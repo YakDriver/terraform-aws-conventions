@@ -487,6 +487,7 @@ func testAccAppsyncGraphqlApiConfig_AdditionalAuth_AuthType(rName, defaultAuthTy
 func testAccAppsyncGraphqlApiConfig_AdditionalAuth_UserPoolConfig(rName string) string {
 func testAccAppsyncGraphqlApiConfig_AdditionalAuth_OpenIdConnect(rName, issuer string) string {
 func testAccAppsyncGraphqlApiConfig_AdditionalAuth_Multiple(rName, issuer string) string {
+func testAccAppsyncGraphqlApiConfig_XrayEnabled(rName string, xrayEnabled bool) string {
 func testAccAppsyncResolver_pipelineConfig(rName string) string {
 func testAccAthenaDatabaseConfig(randInt int, dbName string, forceDestroy bool) string {
 func testAccAthenaDatabaseWithKMSConfig(randInt int, dbName string, forceDestroy bool) string {
@@ -584,6 +585,8 @@ func testAccAWSBudgetsBudgetConfigNotificationSnippet(notification budgets.Notif
 func testAccAWSCloud9EnvironmentEc2ConfigBase() string {
 func testAccAWSCloud9EnvironmentEc2Config(name string) string {
 func testAccAWSCloud9EnvironmentEc2AllFieldsConfig(name, description, userName string) string {
+func testAccAWSCloud9EnvironmentEc2ConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAWSCloud9EnvironmentEc2ConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCloudFormationStackSetInstanceConfigBase(rName string) string {
 func testAccAWSCloudFormationStackSetInstanceConfig(rName string) string {
 func testAccAWSCloudFormationStackSetInstanceConfigParameterOverrides1(rName, value1 string) string {
@@ -1252,11 +1255,18 @@ func testAccEc2TrafficMirrorFilterRuleConfig(dstCidr, srcCidr, action, dir strin
 func testAccEc2TrafficMirrorFilterRuleConfigFull(dstCidr, srcCidr, action, dir, description string, ruleNum, srcPortFrom, srcPortTo, dstPortFrom, dstPortTo, protocol int) string {
 func testAccTrafficMirrorFilterConfig(description string) string {
 func testAccTrafficMirrorFilterConfigWithoutDNS(description string) string {
-func testAccTrafficMirrorSessionConfigBase(lbName string) string {
-func testAccTrafficMirrorSessionConfig(lbName string, session int) string {
-func testAccTrafficMirrorSessionConfigWithOptionals(description string, lbName string, session, pLen, vni int) string {
-func testAccTrafficMirrorTargetConfigNlb(description string, lbName string) string {
-func testAccTrafficMirrorTargetConfigEni(description string) string {
+func testAccTrafficMirrorFilterConfigTags1(tagKey1, tagValue1 string) string {
+func testAccTrafficMirrorFilterConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccTrafficMirrorSessionConfigBase(rName string) string {
+func testAccTrafficMirrorSessionConfig(rName string, session int) string {
+func testAccTrafficMirrorSessionConfigTags1(rName, tagKey1, tagValue1 string, session int) string {
+func testAccTrafficMirrorSessionConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string, session int) string {
+func testAccTrafficMirrorSessionConfigWithOptionals(description string, rName string, session, pLen, vni int) string {
+func testAccTrafficMirrorTargetConfigBase(rName string) string {
+func testAccTrafficMirrorTargetConfigNlb(rName, description string) string {
+func testAccTrafficMirrorTargetConfigEni(rName, description string) string {
+func testAccTrafficMirrorTargetConfigTags1(rName, description, tagKey1, tagValue1 string) string {
+func testAccTrafficMirrorTargetConfigTags2(rName, description, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEc2TransitGatewayRouteTableAssociationConfig() string {
 func testAccAWSEc2TransitGatewayRouteTablePropagationConfig() string {
 func testAccAWSEc2TransitGatewayRouteTableConfig() string {
