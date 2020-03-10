@@ -102,7 +102,8 @@ func TestAccAWSDataElasticacheCluster_basic(
 func TestAccDataSourceAwsElasticacheReplicationGroup_basic(
 func TestAccDataSourceAwsElasticacheReplicationGroup_ClusterMode(
 func TestAccAwsElasticBeanstalkApplicationDataSource_basic(
-func TestAccAWSDataSourceElasticBeanstalkHostedZone(
+func TestAccAWSDataSourceElasticBeanstalkHostedZone_basic(
+func TestAccAWSDataSourceElasticBeanstalkHostedZone_Region(
 func TestAccAWSElasticBeanstalkSolutionStackDataSource(
 func TestAccAWSDataElasticsearchDomain_basic(
 func TestAccAWSDataElasticsearchDomain_advanced(
@@ -1466,7 +1467,7 @@ func TestAccAWSEIP_instance(
 func TestAccAWSEIP_networkInterface(
 func TestAccAWSEIP_twoEIPsOneNetworkInterface(
 func TestAccAWSEIP_associated_user_private_ip(
-func TestAccAWSEIP_classic_disassociate(
+func TestAccAWSEIP_Instance_Reassociate(
 func TestAccAWSEIP_disappears(
 func TestAccAWSEIPAssociate_notAssociated(
 func TestAccAWSEIP_tags(
@@ -1675,6 +1676,8 @@ func TestAccAWSFlowLog_SubnetID(
 func TestAccAWSFlowLog_LogDestinationType_CloudWatchLogs(
 func TestAccAWSFlowLog_LogDestinationType_S3(
 func TestAccAWSFlowLog_LogDestinationType_S3_Invalid(
+func TestAccAWSFlowLog_tags(
+func TestAccAWSFlowLog_disappears(
 func TestAccAwsFmsAdminAccount_basic(
 func TestAccAWSFsxLustreFileSystem_basic(
 func TestAccAWSFsxLustreFileSystem_disappears(

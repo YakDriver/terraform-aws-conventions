@@ -67,6 +67,7 @@ func TestAccAWSDataElasticacheCluster_basic(
 func TestAccDataSourceAwsElasticacheReplicationGroup_basic(
 func testAccDataSourceAwsElasticacheReplicationGroupConfig_basic(
 func TestAccAwsElasticBeanstalkApplicationDataSource_basic(
+func TestAccAWSDataSourceElasticBeanstalkHostedZone_basic(
 func testAccCheckAwsElasticBeanstalkHostedZoneDataSource_byRegion(
 func TestAccAWSDataElasticsearchDomain_basic(
 func TestAccAWSDataElasticsearchDomain_advanced(
@@ -723,6 +724,7 @@ func testAccCodeCommitRepository_basic(
 func testAccCodeCommitRepository_withChanges(
 func testAccCodeCommitRepository_with_default_branch(
 func TestAccAWSCodeCommitTrigger_basic(
+func testAccCodeCommitTrigger_basic(
 func TestAccAWSCodeDeployApp_basic(
 func TestAccAWSCodeDeployApp_computePlatform(
 func TestAccAWSCodeDeployApp_computePlatform_ECS(
@@ -1135,7 +1137,6 @@ func testAccDynamoDbGlobalTableConfig_basic(
 func testAccDynamoDbGlobalTableConfig_multipleRegions_dynamodb_tables(
 func testAccDynamoDbGlobalTableConfig_multipleRegions1(
 func testAccDynamoDbGlobalTableConfig_multipleRegions2(
-func testAccDynamoDbGlobalTableConfig_multipleRegions3(
 func testAccDynamoDbGlobalTableConfig_invalidName(
 func TestAccAWSDynamoDbTableItem_basic(
 func TestAccAWSDynamoDbTableItem_rangeKey(
@@ -1331,12 +1332,10 @@ func TestAccAWSEIP_instance(
 func TestAccAWSEIP_networkInterface(
 func TestAccAWSEIP_twoEIPsOneNetworkInterface(
 func TestAccAWSEIP_associated_user_private_ip(
-func TestAccAWSEIP_classic_disassociate(
 func TestAccAWSEIP_disappears(
 func TestAccAWSEIPAssociate_notAssociated(
 func TestAccAWSEIP_tags(
 func testAccAWSEIPConfig_tags(
-func testAccAWSEIP_classic_disassociate(
 func TestAccAWSEksCluster_basic(
 func TestAccAWSEksFargateProfile_basic(
 func TestAccAWSEksFargateProfile_disappears(
@@ -1459,6 +1458,8 @@ func testAccAWSEmrInstanceGroupConfig_basic(
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(
 func testAccAWSEmrInstanceGroupConfig_zeroCount(
 func TestAccAWSEmrSecurityConfiguration_basic(
+func TestAccAWSFlowLog_tags(
+func TestAccAWSFlowLog_disappears(
 func TestAccAwsFmsAdminAccount_basic(
 func TestAccAWSFsxLustreFileSystem_basic(
 func TestAccAWSFsxLustreFileSystem_disappears(
@@ -2305,9 +2306,9 @@ func testAccAWSPinpointAPNSVoipSandboxChannelConfig_basicToken(
 func TestAccAWSPinpointApp_basic(
 func TestAccAWSPinpointBaiduChannel_basic(
 func testAccAWSPinpointBaiduChannelConfig_basic(
-func testAccAWSPinpointBaiduChannelConfig_update(
 func TestAccAWSPinpointEmailChannel_basic(
 func TestAccAWSPinpointEventStream_basic(
+func testAccAWSPinpointEventStreamConfig_basic(
 func TestAccAWSPinpointGCMChannel_basic(
 func testAccAWSPinpointGCMChannelConfig_basic(
 func TestAccAWSPinpointSMSChannel_basic(

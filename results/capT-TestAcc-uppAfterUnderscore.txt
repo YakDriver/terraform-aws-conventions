@@ -35,6 +35,7 @@ func TestAccDataSourceAwsEip_Tags(
 func TestAccDataSourceAwsEip_NetworkInterface(
 func TestAccDataSourceAwsEip_Instance(
 func TestAccDataSourceAwsElasticacheReplicationGroup_ClusterMode(
+func TestAccAWSDataSourceElasticBeanstalkHostedZone_Region(
 func TestAccDataSourceAWSGlueScript_Language_Python(
 func TestAccDataSourceAWSGlueScript_Language_Scala(
 func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_StringAndSlice(
@@ -545,6 +546,7 @@ func TestAccAWSEcsTaskDefinition_ProxyConfiguration(
 func TestAccAWSEFSFileSystem_ProvisionedThroughputInMibps(
 func TestAccAWSEFSFileSystem_ThroughputMode(
 func TestAccAWSEIP_Ec2Classic(
+func TestAccAWSEIP_Instance_Reassociate(
 func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func TestAccAWSEksCluster_EncryptionConfig(

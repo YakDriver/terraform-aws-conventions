@@ -326,6 +326,7 @@ func testAccAWSEc2FleetConfig_Type(
 func testAccAWSEFSFileSystemConfig_ThroughputMode(
 func testAccAWSEFSFileSystemConfig_ProvisionedThroughputInMibps(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
+func testAccAWSEIP_Instance(
 func testAccAWSEksClusterConfig_Base(
 func testAccAWSEksClusterConfig_Required(
 func testAccAWSEksClusterConfig_Version(
@@ -516,6 +517,7 @@ func testAccAWSPinpointAppConfig_Limits(
 func testAccAWSPinpointAppConfig_QuietTime(
 func testAccAWSPinpointAppConfig_Tag1(
 func testAccAWSPinpointAppConfig_Tag2(
+func testAccAWSPinpointEmailChannelConfig_FromAddress(
 func testAccAWSRDSClusterInstanceConfig_PubliclyAccessible(
 func testAccAWSClusterInstanceConfig_CopyTagsToSnapshot(
 func testAccAWSRDSClusterInstanceConfig_CACertificateIdentifier(

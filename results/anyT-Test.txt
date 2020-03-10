@@ -262,7 +262,9 @@ func testAccDataSourceAwsElasticacheReplicationGroupConfig_basic(
 func testAccDataSourceAwsElasticacheReplicationGroupConfig_ClusterMode(
 func TestAccAwsElasticBeanstalkApplicationDataSource_basic(
 func testAccAwsElasticBeanstalkApplicationDataSourceConfig_Basic(
-func TestAccAWSDataSourceElasticBeanstalkHostedZone(
+func TestAccAWSDataSourceElasticBeanstalkHostedZone_basic(
+func TestAccAWSDataSourceElasticBeanstalkHostedZone_Region(
+func testAccCheckAwsElasticBeanstalkHostedZone(
 func testAccCheckAwsElasticBeanstalkHostedZoneDataSource_byRegion(
 func TestAccAWSElasticBeanstalkSolutionStackDataSource(
 func testAccCheckAwsElasticBeanstalkSolutionStackDataSourceID(
@@ -743,7 +745,6 @@ func testAccAlternateRegionPreCheck(
 func testAccEC2ClassicPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func testAccPartitionHasServicePreCheck(
-func testAccRegionHasServicePreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccOrganizationsAccountPreCheck(
 func testAccAlternateAccountProviderConfig(
@@ -2271,6 +2272,7 @@ func testAccAWSCodeCommitRepositoryConfigTags2(
 func TestAccAWSCodeCommitTrigger_basic(
 func testAccCheckCodeCommitTriggerDestroy(
 func testAccCheckCodeCommitTriggerExists(
+func testAccCodeCommitTrigger_basic(
 func TestAccAWSCodeDeployApp_basic(
 func TestAccAWSCodeDeployApp_computePlatform(
 func TestAccAWSCodeDeployApp_computePlatform_ECS(
@@ -3394,7 +3396,6 @@ func testAccDynamoDbGlobalTableConfig_basic(
 func testAccDynamoDbGlobalTableConfig_multipleRegions_dynamodb_tables(
 func testAccDynamoDbGlobalTableConfig_multipleRegions1(
 func testAccDynamoDbGlobalTableConfig_multipleRegions2(
-func testAccDynamoDbGlobalTableConfig_multipleRegions3(
 func testAccDynamoDbGlobalTableConfig_invalidName(
 func TestAccAWSDynamoDbTableItem_basic(
 func TestAccAWSDynamoDbTableItem_rangeKey(
@@ -3985,7 +3986,7 @@ func TestAccAWSEIP_instance(
 func TestAccAWSEIP_networkInterface(
 func TestAccAWSEIP_twoEIPsOneNetworkInterface(
 func TestAccAWSEIP_associated_user_private_ip(
-func TestAccAWSEIP_classic_disassociate(
+func TestAccAWSEIP_Instance_Reassociate(
 func TestAccAWSEIP_disappears(
 func TestAccAWSEIPAssociate_notAssociated(
 func TestAccAWSEIP_tags(
@@ -4000,7 +4001,7 @@ func testAccCheckAWSEIPPrivateDNS(
 func testAccCheckAWSEIPPublicDNS(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
-func testAccAWSEIP_classic_disassociate(
+func testAccAWSEIP_Instance(
 func testSweepEksClusters(
 func TestAccAWSEksCluster_basic(
 func TestAccAWSEksCluster_EncryptionConfig(
@@ -4472,15 +4473,21 @@ func TestAccAWSFlowLog_SubnetID(
 func TestAccAWSFlowLog_LogDestinationType_CloudWatchLogs(
 func TestAccAWSFlowLog_LogDestinationType_S3(
 func TestAccAWSFlowLog_LogDestinationType_S3_Invalid(
+func TestAccAWSFlowLog_tags(
+func TestAccAWSFlowLog_disappears(
 func testAccCheckFlowLogExists(
+func testAccCheckFlowLogDisappears(
 func testAccCheckAWSFlowLogAttributes(
 func testAccCheckFlowLogDestroy(
+func testAccFlowLogConfigBase(
 func testAccFlowLogConfig_LogDestinationType_CloudWatchLogs(
 func testAccFlowLogConfig_LogDestinationType_S3(
 func testAccFlowLogConfig_LogDestinationType_S3_Invalid(
 func testAccFlowLogConfig_SubnetID(
 func testAccFlowLogConfig_VPCID(
 func testAccFlowLogConfig_LogFormat(
+func testAccFlowLogConfigTags1(
+func testAccFlowLogConfigTags2(
 func TestAccAwsFmsAdminAccount_basic(
 func testAccCheckFmsAdminAccountDestroy(
 func testSweepFSXLustreFileSystems(
@@ -6604,6 +6611,7 @@ func TestAccAWSPinpointApp_CampaignHookLambda(
 func TestAccAWSPinpointApp_Limits(
 func TestAccAWSPinpointApp_QuietTime(
 func TestAccAWSPinpointApp_Tags(
+func testAccPreCheckAWSPinpointApp(
 func testAccCheckAWSPinpointAppExists(
 func testAccAWSPinpointAppConfig_CampaignHookLambda(
 func testAccAWSPinpointAppConfig_Limits(
@@ -6614,13 +6622,14 @@ func testAccCheckAWSPinpointAppDestroy(
 func TestAccAWSPinpointBaiduChannel_basic(
 func testAccCheckAWSPinpointBaiduChannelExists(
 func testAccAWSPinpointBaiduChannelConfig_basic(
-func testAccAWSPinpointBaiduChannelConfig_update(
 func testAccCheckAWSPinpointBaiduChannelDestroy(
 func TestAccAWSPinpointEmailChannel_basic(
 func testAccCheckAWSPinpointEmailChannelExists(
+func testAccAWSPinpointEmailChannelConfig_FromAddress(
 func testAccCheckAWSPinpointEmailChannelDestroy(
 func TestAccAWSPinpointEventStream_basic(
 func testAccCheckAWSPinpointEventStreamExists(
+func testAccAWSPinpointEventStreamConfig_basic(
 func testAccCheckAWSPinpointEventStreamDestroy(
 func TestAccAWSPinpointGCMChannel_basic(
 func testAccCheckAWSPinpointGCMChannelExists(
@@ -7122,10 +7131,9 @@ func TestAccAWSRoute53ZoneAssociation_disappears_VPC(
 func TestAccAWSRoute53ZoneAssociation_disappears_Zone(
 func TestAccAWSRoute53ZoneAssociation_region(
 func testAccCheckRoute53ZoneAssociationDestroy(
-func testAccCheckRoute53ZoneAssociationDestroyWithProvider(
 func testAccCheckRoute53ZoneAssociationExists(
-func testAccCheckRoute53ZoneAssociationExistsWithProvider(n string, vpc *route53.VPC, providerF func(
 func testAccCheckRoute53ZoneAssociationDisappears(
+func testAccRoute53ZoneAssociationRegionConfig(
 func TestCleanZoneID(
 func TestCleanChangeID(
 func TestAccAWSRoute53Zone_basic(
@@ -7481,6 +7489,7 @@ func testAccAWSS3BucketConfigWithLogging(
 func testAccAWSS3BucketConfigWithLifecycle(
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(
 func testAccAWSS3BucketConfigWithVersioningLifecycle(
+func testAccAWSS3BucketConfigReplicationBasic(
 func testAccAWSS3BucketConfigReplication(
 func testAccAWSS3BucketConfigReplicationWithConfiguration(
 func testAccAWSS3BucketConfigReplicationWithSseKmsEncryptedObjects(

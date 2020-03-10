@@ -98,6 +98,7 @@ func testAccAWSElastiCacheClusterConfigWithDataSource(
 func testAccDataSourceAwsElasticacheReplicationGroupConfig_basic(
 func testAccDataSourceAwsElasticacheReplicationGroupConfig_ClusterMode(
 func testAccAwsElasticBeanstalkApplicationDataSourceConfig_Basic(
+func testAccCheckAwsElasticBeanstalkHostedZone(
 func testAccCheckAwsElasticBeanstalkHostedZoneDataSource_byRegion(
 func testAccCheckAwsElasticBeanstalkSolutionStackDataSourceID(
 func testAccAWSElasticsearchDomainConfigWithDataSource(
@@ -337,7 +338,6 @@ func testAccAlternateRegionPreCheck(
 func testAccEC2ClassicPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func testAccPartitionHasServicePreCheck(
-func testAccRegionHasServicePreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccOrganizationsAccountPreCheck(
 func testAccAlternateAccountProviderConfig(
@@ -1326,6 +1326,7 @@ func testAccAWSCodeCommitRepositoryConfigTags1(
 func testAccAWSCodeCommitRepositoryConfigTags2(
 func testAccCheckCodeCommitTriggerDestroy(
 func testAccCheckCodeCommitTriggerExists(
+func testAccCodeCommitTrigger_basic(
 func testAccCheckAWSCodeDeployAppDestroy(
 func testAccCheckAWSCodeDeployAppExists(
 func testAccCheckAWSCodeDeployAppRecreated(
@@ -2050,7 +2051,6 @@ func testAccDynamoDbGlobalTableConfig_basic(
 func testAccDynamoDbGlobalTableConfig_multipleRegions_dynamodb_tables(
 func testAccDynamoDbGlobalTableConfig_multipleRegions1(
 func testAccDynamoDbGlobalTableConfig_multipleRegions2(
-func testAccDynamoDbGlobalTableConfig_multipleRegions3(
 func testAccDynamoDbGlobalTableConfig_invalidName(
 func testAccCheckAWSDynamoDbItemDestroy(
 func testAccCheckAWSDynamoDbTableItemExists(
@@ -2413,7 +2413,7 @@ func testAccCheckAWSEIPPrivateDNS(
 func testAccCheckAWSEIPPublicDNS(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
-func testAccAWSEIP_classic_disassociate(
+func testAccAWSEIP_Instance(
 func testSweepEksClusters(
 func testAccCheckAWSEksClusterExists(
 func testAccCheckAWSEksClusterDestroy(
@@ -2673,14 +2673,18 @@ func testAccAWSEmrInstanceGroupConfig_zeroCount(
 func testAccCheckEmrSecurityConfigurationDestroy(
 func testAccCheckEmrSecurityConfigurationExists(
 func testAccCheckFlowLogExists(
+func testAccCheckFlowLogDisappears(
 func testAccCheckAWSFlowLogAttributes(
 func testAccCheckFlowLogDestroy(
+func testAccFlowLogConfigBase(
 func testAccFlowLogConfig_LogDestinationType_CloudWatchLogs(
 func testAccFlowLogConfig_LogDestinationType_S3(
 func testAccFlowLogConfig_LogDestinationType_S3_Invalid(
 func testAccFlowLogConfig_SubnetID(
 func testAccFlowLogConfig_VPCID(
 func testAccFlowLogConfig_LogFormat(
+func testAccFlowLogConfigTags1(
+func testAccFlowLogConfigTags2(
 func testAccCheckFmsAdminAccountDestroy(
 func testSweepFSXLustreFileSystems(
 func testAccCheckFsxLustreFileSystemExists(
@@ -3991,6 +3995,7 @@ func testAccAWSPinpointAPNSVoipSandboxChannelConfig_basicCertificate(
 func testAccAWSPinpointAPNSVoipSandboxChannelConfig_basicToken(
 func testAccCheckAWSPinpointAPNSVoipSandboxChannelDestroy(
 func testSweepPinpointApps(
+func testAccPreCheckAWSPinpointApp(
 func testAccCheckAWSPinpointAppExists(
 func testAccAWSPinpointAppConfig_CampaignHookLambda(
 func testAccAWSPinpointAppConfig_Limits(
@@ -4000,11 +4005,12 @@ func testAccAWSPinpointAppConfig_Tag2(
 func testAccCheckAWSPinpointAppDestroy(
 func testAccCheckAWSPinpointBaiduChannelExists(
 func testAccAWSPinpointBaiduChannelConfig_basic(
-func testAccAWSPinpointBaiduChannelConfig_update(
 func testAccCheckAWSPinpointBaiduChannelDestroy(
 func testAccCheckAWSPinpointEmailChannelExists(
+func testAccAWSPinpointEmailChannelConfig_FromAddress(
 func testAccCheckAWSPinpointEmailChannelDestroy(
 func testAccCheckAWSPinpointEventStreamExists(
+func testAccAWSPinpointEventStreamConfig_basic(
 func testAccCheckAWSPinpointEventStreamDestroy(
 func testAccCheckAWSPinpointGCMChannelExists(
 func testAccAWSPinpointGCMChannelConfig_basic(
@@ -4285,10 +4291,9 @@ func testAccRoute53ResolverRuleConfig_resolverVpc(
 func testAccRoute53ResolverRuleConfig_resolverEndpoint(
 func testAccRoute53ResolverRuleConfig_resolverEndpointRecreate(
 func testAccCheckRoute53ZoneAssociationDestroy(
-func testAccCheckRoute53ZoneAssociationDestroyWithProvider(
 func testAccCheckRoute53ZoneAssociationExists(
-func testAccCheckRoute53ZoneAssociationExistsWithProvider(n string, vpc *route53.VPC, providerF func(
 func testAccCheckRoute53ZoneAssociationDisappears(
+func testAccRoute53ZoneAssociationRegionConfig(
 func testAccCheckRoute53ZoneDestroy(
 func testAccCheckRoute53ZoneDestroyWithProvider(
 func testAccCreateRandomRoute53RecordsInZoneId(
@@ -4489,6 +4494,7 @@ func testAccAWSS3BucketConfigWithLogging(
 func testAccAWSS3BucketConfigWithLifecycle(
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(
 func testAccAWSS3BucketConfigWithVersioningLifecycle(
+func testAccAWSS3BucketConfigReplicationBasic(
 func testAccAWSS3BucketConfigReplication(
 func testAccAWSS3BucketConfigReplicationWithConfiguration(
 func testAccAWSS3BucketConfigReplicationWithSseKmsEncryptedObjects(

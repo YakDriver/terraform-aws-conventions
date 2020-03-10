@@ -109,6 +109,8 @@ func testAccDataSourceAwsElasticacheReplicationGroupConfig_basic(
 func testAccDataSourceAwsElasticacheReplicationGroupConfig_ClusterMode(
 func TestAccAwsElasticBeanstalkApplicationDataSource_basic(
 func testAccAwsElasticBeanstalkApplicationDataSourceConfig_Basic(
+func TestAccAWSDataSourceElasticBeanstalkHostedZone_basic(
+func TestAccAWSDataSourceElasticBeanstalkHostedZone_Region(
 func testAccCheckAwsElasticBeanstalkHostedZoneDataSource_byRegion(
 func TestAccAWSDataElasticsearchDomain_basic(
 func TestAccAWSDataElasticsearchDomain_advanced(
@@ -953,6 +955,7 @@ func TestAccAWSCodeCommitRepository_tags(
 func testAccCodeCommitRepository_basic(
 func testAccCodeCommitRepository_withChanges(
 func TestAccAWSCodeCommitTrigger_basic(
+func testAccCodeCommitTrigger_basic(
 func TestAccAWSCodeDeployApp_basic(
 func TestAccAWSCodeDeployApp_computePlatform(
 func TestAccAWSCodeDeployApp_name(
@@ -1449,7 +1452,6 @@ func TestAccAWSDynamoDbGlobalTable_multipleRegions(
 func testAccDynamoDbGlobalTableConfig_basic(
 func testAccDynamoDbGlobalTableConfig_multipleRegions1(
 func testAccDynamoDbGlobalTableConfig_multipleRegions2(
-func testAccDynamoDbGlobalTableConfig_multipleRegions3(
 func testAccDynamoDbGlobalTableConfig_invalidName(
 func TestAccAWSDynamoDbTableItem_basic(
 func TestAccAWSDynamoDbTableItem_rangeKey(
@@ -1694,6 +1696,7 @@ func TestAccAWSEIP_disappears(
 func TestAccAWSEIPAssociate_notAssociated(
 func TestAccAWSEIP_tags(
 func testAccAWSEIPConfig_tags(
+func testAccAWSEIP_Instance(
 func TestAccAWSEksCluster_basic(
 func TestAccAWSEksCluster_EncryptionConfig(
 func TestAccAWSEksCluster_Version(
@@ -1865,6 +1868,8 @@ func TestAccAWSEmrSecurityConfiguration_basic(
 func TestAccAWSFlowLog_VPCID(
 func TestAccAWSFlowLog_LogFormat(
 func TestAccAWSFlowLog_SubnetID(
+func TestAccAWSFlowLog_tags(
+func TestAccAWSFlowLog_disappears(
 func testAccFlowLogConfig_SubnetID(
 func testAccFlowLogConfig_VPCID(
 func testAccFlowLogConfig_LogFormat(
@@ -2821,9 +2826,10 @@ func testAccAWSPinpointAppConfig_Tag1(
 func testAccAWSPinpointAppConfig_Tag2(
 func TestAccAWSPinpointBaiduChannel_basic(
 func testAccAWSPinpointBaiduChannelConfig_basic(
-func testAccAWSPinpointBaiduChannelConfig_update(
 func TestAccAWSPinpointEmailChannel_basic(
+func testAccAWSPinpointEmailChannelConfig_FromAddress(
 func TestAccAWSPinpointEventStream_basic(
+func testAccAWSPinpointEventStreamConfig_basic(
 func TestAccAWSPinpointGCMChannel_basic(
 func testAccAWSPinpointGCMChannelConfig_basic(
 func TestAccAWSPinpointSMSChannel_basic(

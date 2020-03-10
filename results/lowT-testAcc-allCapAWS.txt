@@ -1001,7 +1001,7 @@ func testAccAWSEFSMountTargetConfigModified(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
-func testAccAWSEIP_classic_disassociate(
+func testAccAWSEIP_Instance(
 func testAccAWSEksClusterConfig_Base(
 func testAccAWSEksClusterConfig_Required(
 func testAccAWSEksClusterConfig_Version(
@@ -1631,7 +1631,8 @@ func testAccAWSPinpointAppConfig_QuietTime(
 func testAccAWSPinpointAppConfig_Tag1(
 func testAccAWSPinpointAppConfig_Tag2(
 func testAccAWSPinpointBaiduChannelConfig_basic(
-func testAccAWSPinpointBaiduChannelConfig_update(
+func testAccAWSPinpointEmailChannelConfig_FromAddress(
+func testAccAWSPinpointEventStreamConfig_basic(
 func testAccAWSPinpointGCMChannelConfig_basic(
 func testAccAWSPinpointSMSChannelConfig_full(
 func testAccAWSPlacementGroupConfig(
@@ -1889,6 +1890,7 @@ func testAccAWSS3BucketConfigWithLogging(
 func testAccAWSS3BucketConfigWithLifecycle(
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(
 func testAccAWSS3BucketConfigWithVersioningLifecycle(
+func testAccAWSS3BucketConfigReplicationBasic(
 func testAccAWSS3BucketConfigReplication(
 func testAccAWSS3BucketConfigReplicationWithConfiguration(
 func testAccAWSS3BucketConfigReplicationWithSseKmsEncryptedObjects(

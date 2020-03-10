@@ -1179,7 +1179,6 @@ func testAccDynamoDbGlobalTableConfig_basic(tableName string) string {
 func testAccDynamoDbGlobalTableConfig_multipleRegions_dynamodb_tables(tableName string) string {
 func testAccDynamoDbGlobalTableConfig_multipleRegions1(tableName string) string {
 func testAccDynamoDbGlobalTableConfig_multipleRegions2(tableName string) string {
-func testAccDynamoDbGlobalTableConfig_multipleRegions3(tableName string) string {
 func testAccDynamoDbGlobalTableConfig_invalidName(tableName string) string {
 func testAccAWSDynamoDbItemConfigBasic(tableName, hashKey, item string) string {
 func testAccAWSDynamoDbItemConfigWithRangeKey(tableName, hashKey, rangeKey, item string) string {
@@ -1502,12 +1501,15 @@ func testAccAWSEmrInstanceGroupConfig_ConfigurationsJson(r int, name string) str
 func testAccAWSEmrInstanceGroupConfig_AutoScalingPolicy(r, min, max int) string {
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(r int, o bool) string {
 func testAccAWSEmrInstanceGroupConfig_zeroCount(r int) string {
+func testAccFlowLogConfigBase(rName string) string {
 func testAccFlowLogConfig_LogDestinationType_CloudWatchLogs(rName string) string {
 func testAccFlowLogConfig_LogDestinationType_S3(rName string) string {
 func testAccFlowLogConfig_LogDestinationType_S3_Invalid(rName string) string {
 func testAccFlowLogConfig_SubnetID(rName string) string {
 func testAccFlowLogConfig_VPCID(rName string) string {
 func testAccFlowLogConfig_LogFormat(rName string) string {
+func testAccFlowLogConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccFlowLogConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsFsxLustreFileSystemConfigBase() string {
 func testAccAwsFsxLustreFileSystemConfigExportPath(rName, exportPrefix string) string {
 func testAccAwsFsxLustreFileSystemConfigImportPath(rName, importPrefix string) string {
@@ -2213,7 +2215,8 @@ func testAccAWSPinpointAppConfig_QuietTime(rName string) string {
 func testAccAWSPinpointAppConfig_Tag1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSPinpointAppConfig_Tag2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSPinpointBaiduChannelConfig_basic(apiKey, secretKey string) string {
-func testAccAWSPinpointBaiduChannelConfig_update(apiKey, secretKey string) string {
+func testAccAWSPinpointEmailChannelConfig_FromAddress(fromAddress string) string {
+func testAccAWSPinpointEventStreamConfig_basic(rName string) string {
 func testAccAWSPinpointGCMChannelConfig_basic(apiKey string) string {
 func testAccAWSPinpointSMSChannelConfig_full(senderId, shortCode string) string {
 func testAccAWSPlacementGroupConfig(rName string) string {
@@ -2384,6 +2387,7 @@ func testAccRoute53ResolverRuleConfig_forwardEndpointRecreate(name string) strin
 func testAccRoute53ResolverRuleConfig_resolverVpc(name string) string {
 func testAccRoute53ResolverRuleConfig_resolverEndpoint(name string) string {
 func testAccRoute53ResolverRuleConfig_resolverEndpointRecreate(name string) string {
+func testAccRoute53ZoneAssociationRegionConfig() string {
 func testAccRoute53ZoneConfig(zoneName string) string {
 func testAccRoute53ZoneConfigMultiple() string {
 func testAccRoute53ZoneConfigComment(zoneName, comment string) string {
@@ -2468,7 +2472,7 @@ func testAccAWSS3BucketConfig_withNoTags(bucketName string) string {
 func testAccAWSS3BucketConfig_withTags(bucketName string) string {
 func testAccAWSS3BucketConfig_withUpdatedTags(bucketName string) string {
 func testAccAWSS3MultiBucketConfigWithTags(randInt int) string {
-func testAccAWSS3BucketConfigWithRegion(bucketName, region string) string {
+func testAccAWSS3BucketConfigWithRegion(bucketName string) string {
 func testAccAWSS3BucketWebsiteConfig(randInt int) string {
 func testAccAWSS3BucketWebsiteConfigWithError(randInt int) string {
 func testAccAWSS3BucketWebsiteConfigWithRedirect(randInt int) string {
@@ -2493,6 +2497,7 @@ func testAccAWSS3BucketConfigWithLogging(randInt int) string {
 func testAccAWSS3BucketConfigWithLifecycle(randInt int) string {
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(randInt int) string {
 func testAccAWSS3BucketConfigWithVersioningLifecycle(randInt int) string {
+func testAccAWSS3BucketConfigReplicationBasic(randInt int) string {
 func testAccAWSS3BucketConfigReplication(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithConfiguration(randInt int, storageClass string) string {
 func testAccAWSS3BucketConfigReplicationWithSseKmsEncryptedObjects(randInt int) string {
