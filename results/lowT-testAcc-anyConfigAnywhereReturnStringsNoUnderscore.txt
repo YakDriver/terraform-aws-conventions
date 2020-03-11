@@ -957,8 +957,9 @@ func testAccAWSIotThingPrincipalAttachmentConfigUpdate1(thingName, thingName2 st
 func testAccAWSIotThingPrincipalAttachmentConfigUpdate2(thingName, thingName2 string) string {
 func testAccAWSIotThingPrincipalAttachmentConfigUpdate3(thingName string) string {
 func testAccAWSIotThingPrincipalAttachmentConfigUpdate4(thingName string) string {
-func testAccAWSKeyPairConfigTags1(tagKey1, tagValue1 string) string {
-func testAccAWSKeyPairConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSKeyPairConfig(rName string) string {
+func testAccAWSKeyPairConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSKeyPairConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsApplicationConfigOutputsLambda(rInt int) string {
 func testAccFirehoseAWSLambdaConfigBasic(funcName, policyName, roleName string) string {
 func testAccKinesisStreamConfig(rInt int) string {

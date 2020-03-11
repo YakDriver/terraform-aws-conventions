@@ -27,7 +27,6 @@ const testAccAWSELBConfig_subnet_swap =
 const testAccAWSEmrClusterConfig_Step_DebugLoggingStep =
 const testAccAWSEmrClusterConfig_Step_SparkStep =
 const testAccResourceAwsKmsCiphertextConfig_validate_withContext =
-const testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses =
 const testAccAWSLaunchTemplateConfig_asg_basic =
 const testAccAWSLaunchTemplateConfig_asg_update =
 const testAccAWSLaunchTemplateConfig_instanceMarketOptions_basic =

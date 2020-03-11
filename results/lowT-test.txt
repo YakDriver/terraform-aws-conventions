@@ -3227,6 +3227,7 @@ func testAccCheckAWSKeyPairDisappears(
 func testAccCheckAWSKeyPairFingerprint(
 func testAccCheckAWSKeyPairKeyNamePrefix(
 func testAccCheckAWSKeyPairExists(
+func testAccAWSKeyPairConfig(
 func testAccAWSKeyPairConfigTags1(
 func testAccAWSKeyPairConfigTags2(
 func testAccCheckKinesisAnalyticsApplicationDestroy(
@@ -3493,7 +3494,9 @@ func testAccAWSLaunchTemplateConfig_creditSpecification(
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(
 func testAccAWSLaunchTemplateConfig_licenseSpecification(
 func testAccAWSLaunchTemplateConfig_description(
+func testAccAWSLaunchTemplateConfig_networkInterface(
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(
+func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(
 func testAccCheckLBCookieStickinessPolicyDestroy(
 func testAccCheckLBCookieStickinessPolicy(
 func testAccLBCookieStickinessPolicyConfig(
@@ -4455,9 +4458,9 @@ func testAccCheckAWSS3BucketReplicationRules(n string, providerF func(
 func testAccCheckAWSS3BucketUpdateGrantSingle(resourceName string) func(
 func testAccCheckAWSS3BucketUpdateGrantMulti(resourceName string) func(
 func testAccBucketName(
-func testAccBucketDomainName(
+func testAccCheckS3BucketDomainName(
 func testAccBucketRegionalDomainName(
-func testAccWebsiteEndpoint(
+func testAccCheckS3BucketWebsiteEndpoint(
 func testAccAWSS3BucketPolicy(
 func testAccAWSS3BucketConfig(
 func testAccAWSS3BucketBasic(

@@ -104,7 +104,6 @@ const testAccAWSSSHKeyConfig_pemEncoding =
 const testAccAWSKeyPairConfig_generatedName =
 const testAccResourceAwsKmsCiphertextConfig_basic =
 const testAccResourceAwsKmsCiphertextConfig_validate =
-const testAccAWSLaunchTemplateConfig_networkInterface =
 const testAccAWSLBTargetGroupConfig_namePrefix =
 const testAccAWSLBTargetGroupConfig_generatedName =
 const testAccLicenseManagerAssociationConfig_basic =

@@ -44,7 +44,6 @@ const testAccAWSELBConfigListener_multipleListeners =
 const testAccAWSSSHKeyConfig_sshEncoding =
 const testAccAWSSSHKeyConfig_pemEncoding =
 const testAccAWSKeyPairConfig_generatedName =
-const testAccAWSLaunchTemplateConfig_networkInterface =
 const testAccAWSLBTargetGroupConfig_namePrefix =
 const testAccAWSLBTargetGroupConfig_generatedName =
 const testAccAWSNeptuneClusterParameterGroupConfig_namePrefix =

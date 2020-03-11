@@ -56,6 +56,8 @@ func TestCloudFrontStructure_flattenGeoRestriction_no_items(
 func TestCloudFrontStructure_expandViewerCertificate_cloudfront_default_certificate(
 func TestCloudFrontStructure_expandViewerCertificate_iam_certificate_id(
 func TestCloudFrontStructure_expandViewerCertificate_acm_certificate_arn(
+func TestAWSClientPartitionHostname(
+func TestAWSClientRegionalHostname(
 func TestGetSupportedEC2Platforms(
 func TestAccAWSVpc_coreMismatchedDiffs(
 func TestAccAWSAcmCertificateDataSource_singleIssued(
@@ -1565,7 +1567,6 @@ func TestAccAWSEFSFileSystem_lifecyclePolicy_removal(
 func TestAccAWSEFSFileSystem_disappears(
 func TestAccAWSEFSMountTarget_basic(
 func TestAccAWSEFSMountTarget_disappears(
-func TestResourceAWSEFSMountTarget_mountTargetDnsName(
 func TestResourceAWSEFSMountTarget_hasEmptyMountTargets(
 func TestAccAWSEgressOnlyInternetGateway_basic(
 func TestAccAWSEIPAssociation_instance(
@@ -2993,6 +2994,7 @@ func TestAccAWSS3Bucket_forceDestroyWithEmptyPrefixes(
 func TestAccAWSS3Bucket_forceDestroyWithObjectLockEnabled(
 func TestAWSS3BucketName(
 func TestBucketRegionalDomainName(
+func TestWebsiteEndpoint(
 func TestAccAWSSagemakerEndpointConfiguration_Basic(
 func TestAccAWSSagemakerEndpointConfiguration_ProductionVariants_InitialVariantWeight(
 func TestAccAWSSagemakerEndpointConfiguration_ProductionVariants_AcceleratorType(
@@ -3725,4 +3727,3 @@ func TestValidateLbTargetGroupNamePrefix(
 func TestValidateSecretManagerSecretName(
 func TestValidateSecretManagerSecretNamePrefix(
 func TestValidateRoute53ResolverName(
-func TestWebsiteEndpointUrl(

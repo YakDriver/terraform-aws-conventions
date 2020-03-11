@@ -1287,6 +1287,7 @@ func testAccAWSIoTTopicRule_republish(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSKeyPairConfig(
 func testAccAWSKeyPairConfigTags1(
 func testAccAWSKeyPairConfigTags2(
 func testAccAWSKinesisStreamRegisterStreamConsumer(
@@ -1438,7 +1439,9 @@ func testAccAWSLaunchTemplateConfig_creditSpecification(
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(
 func testAccAWSLaunchTemplateConfig_licenseSpecification(
 func testAccAWSLaunchTemplateConfig_description(
+func testAccAWSLaunchTemplateConfig_networkInterface(
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(
+func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(
 func testAccAWSLBListenerRuleConfig_multipleConditions(
 func testAccAWSLBListenerRuleConfig_basic(
 func testAccAWSLBListenerRuleConfigBackwardsCompatibility(

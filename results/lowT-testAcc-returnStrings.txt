@@ -1985,8 +1985,9 @@ func testAccAWSIoTTopicRule_republish(rName string) string {
 func testAccAWSIoTTopicRule_s3(rName string) string {
 func testAccAWSIoTTopicRule_sns(rName string) string {
 func testAccAWSIoTTopicRule_sqs(rName string) string {
-func testAccAWSKeyPairConfigTags1(tagKey1, tagValue1 string) string {
-func testAccAWSKeyPairConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSKeyPairConfig(rName string) string {
+func testAccAWSKeyPairConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSKeyPairConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsApplication_basic(rInt int) string {
 func testAccKinesisAnalyticsApplication_update(rInt int) string {
 func testAccKinesisAnalyticsApplication_cloudwatchLoggingOptions(rInt int, streamName string) string {
@@ -2168,7 +2169,9 @@ func testAccAWSLaunchTemplateConfig_creditSpecification(rName, instanceType, cpu
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(rName string) string {
 func testAccAWSLaunchTemplateConfig_licenseSpecification(rInt int) string {
 func testAccAWSLaunchTemplateConfig_description(rName, description string) string {
+func testAccAWSLaunchTemplateConfig_networkInterface(rName string) string {
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
+func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(rName string) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccLBCookieStickinessPolicyConfigDestroy(rName string) string {
@@ -2728,9 +2731,7 @@ func testAccAWSS3BucketPolicyConfig(bucketName string) string {
 func testAccAWSS3BucketPolicyConfig_updated(bucketName string) string {
 func testAccAWSS3BucketPublicAccessBlockConfig(bucketName, blockPublicAcls, blockPublicPolicy, ignorePublicAcls, restrictPublicBuckets string) string {
 func testAccBucketName(randInt int) string {
-func testAccBucketDomainName(randInt int) string {
 func testAccBucketRegionalDomainName(randInt int, region string) string {
-func testAccWebsiteEndpoint(randInt int, region string) string {
 func testAccAWSS3BucketPolicy(randInt int, partition string) string {
 func testAccAWSS3BucketConfig(randInt int) string {
 func testAccAWSS3BucketBasic(randInt int) string {

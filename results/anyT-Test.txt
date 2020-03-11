@@ -58,6 +58,8 @@ func TestCloudFrontStructure_flattenGeoRestriction_no_items(
 func TestCloudFrontStructure_expandViewerCertificate_cloudfront_default_certificate(
 func TestCloudFrontStructure_expandViewerCertificate_iam_certificate_id(
 func TestCloudFrontStructure_expandViewerCertificate_acm_certificate_arn(
+func TestAWSClientPartitionHostname(
+func TestAWSClientRegionalHostname(
 func TestGetSupportedEC2Platforms(
 func TestAccAWSVpc_coreMismatchedDiffs(
 func TestAccAWSAcmCertificateDataSource_singleIssued(
@@ -3957,7 +3959,6 @@ func testAccAWSEFSFileSystemConfigWithLifecyclePolicy(
 func testSweepEfsMountTargets(
 func TestAccAWSEFSMountTarget_basic(
 func TestAccAWSEFSMountTarget_disappears(
-func TestResourceAWSEFSMountTarget_mountTargetDnsName(
 func TestResourceAWSEFSMountTarget_hasEmptyMountTargets(
 func testAccCheckEfsMountTargetDestroy(
 func testAccCheckEfsMountTarget(
@@ -5352,6 +5353,7 @@ func testAccCheckAWSKeyPairDisappears(
 func testAccCheckAWSKeyPairFingerprint(
 func testAccCheckAWSKeyPairKeyNamePrefix(
 func testAccCheckAWSKeyPairExists(
+func testAccAWSKeyPairConfig(
 func testAccAWSKeyPairConfigTags1(
 func testAccAWSKeyPairConfigTags2(
 func TestAccAWSKinesisAnalyticsApplication_basic(
@@ -5834,7 +5836,9 @@ func testAccAWSLaunchTemplateConfig_creditSpecification(
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(
 func testAccAWSLaunchTemplateConfig_licenseSpecification(
 func testAccAWSLaunchTemplateConfig_description(
+func testAccAWSLaunchTemplateConfig_networkInterface(
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(
+func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(
 func TestAccAWSLBCookieStickinessPolicy_basic(
 func testAccCheckLBCookieStickinessPolicyDestroy(
 func testAccCheckLBCookieStickinessPolicy(
@@ -7430,6 +7434,7 @@ func TestAccAWSS3Bucket_forceDestroyWithEmptyPrefixes(
 func TestAccAWSS3Bucket_forceDestroyWithObjectLockEnabled(
 func TestAWSS3BucketName(
 func TestBucketRegionalDomainName(
+func TestWebsiteEndpoint(
 func testAccCheckAWSS3BucketDestroy(
 func testAccCheckAWSS3BucketDestroyWithProvider(
 func testAccCheckAWSS3BucketExists(
@@ -7450,9 +7455,9 @@ func testAccCheckAWSS3BucketReplicationRules(n string, providerF func(
 func testAccCheckAWSS3BucketUpdateGrantSingle(resourceName string) func(
 func testAccCheckAWSS3BucketUpdateGrantMulti(resourceName string) func(
 func testAccBucketName(
-func testAccBucketDomainName(
+func testAccCheckS3BucketDomainName(
 func testAccBucketRegionalDomainName(
-func testAccWebsiteEndpoint(
+func testAccCheckS3BucketWebsiteEndpoint(
 func testAccAWSS3BucketPolicy(
 func testAccAWSS3BucketConfig(
 func testAccAWSS3BucketBasic(
@@ -9166,4 +9171,3 @@ func TestValidateLbTargetGroupNamePrefix(
 func TestValidateSecretManagerSecretName(
 func TestValidateSecretManagerSecretNamePrefix(
 func TestValidateRoute53ResolverName(
-func TestWebsiteEndpointUrl(

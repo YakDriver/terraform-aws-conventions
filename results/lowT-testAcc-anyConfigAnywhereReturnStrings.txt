@@ -1783,8 +1783,9 @@ func testAccAWSIotThingConfig_full(thingName, typeName, answer string) string {
 func testAccAWSIotThingTypeConfig_basic(rName int) string {
 func testAccAWSIotThingTypeConfig_full(rName int) string {
 func testAccAWSIotThingTypeConfig_fullUpdated(rName int) string {
-func testAccAWSKeyPairConfigTags1(tagKey1, tagValue1 string) string {
-func testAccAWSKeyPairConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSKeyPairConfig(rName string) string {
+func testAccAWSKeyPairConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSKeyPairConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsApplicationConfigOutputsLambda(rInt int) string {
 func testAccFirehoseAWSLambdaConfigBasic(funcName, policyName, roleName string) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_s3WithCloudwatchLogging(rInt int) string {
@@ -1929,7 +1930,9 @@ func testAccAWSLaunchTemplateConfig_creditSpecification(rName, instanceType, cpu
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(rName string) string {
 func testAccAWSLaunchTemplateConfig_licenseSpecification(rInt int) string {
 func testAccAWSLaunchTemplateConfig_description(rName, description string) string {
+func testAccAWSLaunchTemplateConfig_networkInterface(rName string) string {
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
+func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(rName string) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccLBCookieStickinessPolicyConfigDestroy(rName string) string {

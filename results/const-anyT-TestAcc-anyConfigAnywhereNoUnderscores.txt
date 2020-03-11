@@ -130,7 +130,6 @@ const testAccInternetGatewayConfig =
 const testAccInternetGatewayConfigChangeVPC =
 const testAccCheckInternetGatewayConfigTags =
 const testAccCheckInternetGatewayConfigTagsUpdate =
-const testAccAWSKeyPairConfig =
 const testAccCheckAWSKeyPairPrefixNameConfig =
 const testAccKinesisFirehoseDeliveryStreamBaseConfig =
 const testAccMainRouteTableAssociationConfig =
