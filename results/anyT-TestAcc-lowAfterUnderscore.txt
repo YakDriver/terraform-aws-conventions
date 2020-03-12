@@ -23,7 +23,7 @@ func TestAccAWSCloudFormationStack_dataSource_basic(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(
 func TestAccAWSCloudFormationStack_dataSource_yaml(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(
-func TestAccDataSourceCloudHsm2Cluster_basic(
+func TestAccDataSourceCloudHsmV2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_tags(
@@ -640,8 +640,8 @@ func TestAccAWSCloudFrontPublicKey_basic(
 func TestAccAWSCloudFrontPublicKey_namePrefix(
 func TestAccAWSCloudFrontPublicKey_update(
 func testAccAWSCloudFrontPublicKeyConfig_namePrefix(
-func TestAccAWSCloudHsm2Cluster_basic(
-func TestAccAWSCloudHsm2Hsm_basic(
+func TestAccAWSCloudHsmV2Cluster_basic(
+func TestAccAWSCloudHsmV2Hsm_basic(
 func testAccAWSCloudTrail_basic(
 func testAccAWSCloudTrail_cloudwatch(
 func testAccAWSCloudTrail_enable_logging(

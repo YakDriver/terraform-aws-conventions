@@ -373,10 +373,10 @@ func testAccAWSCloudFrontDistributionConfigViewerCertificateAcmCertificateArnCon
 func testAccAWSCloudFrontDistributionConfigWaitForDeployment(enabled, waitForDeployment bool) string {
 func testAccAWSCloudFrontPublicKeyConfig(rInt int) string {
 func testAccAWSCloudFrontPublicKeyConfigUpdate(rInt int) string {
-func testAccAWSCloudHsm2ClusterConfigBase() string {
-func testAccAWSCloudHsm2ClusterConfig() string {
-func testAccAWSCloudHsm2ClusterConfigTags1(tagKey1, tagValue1 string) string {
-func testAccAWSCloudHsm2ClusterConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCloudHsmV2ClusterConfigBase() string {
+func testAccAWSCloudHsmV2ClusterConfig() string {
+func testAccAWSCloudHsmV2ClusterConfigTags1(tagKey1, tagValue1 string) string {
+func testAccAWSCloudHsmV2ClusterConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCloudTrailConfig(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigModified(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigCloudWatch(randInt int) string {

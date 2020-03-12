@@ -380,11 +380,11 @@ func testAccAWSCloudFrontDistributionConfigWaitForDeployment(
 func testAccAWSCloudFrontPublicKeyConfig(
 func testAccAWSCloudFrontPublicKeyConfig_namePrefix(
 func testAccAWSCloudFrontPublicKeyConfigUpdate(
-func testAccAWSCloudHsm2ClusterConfigBase(
-func testAccAWSCloudHsm2ClusterConfig(
-func testAccAWSCloudHsm2ClusterConfigTags1(
-func testAccAWSCloudHsm2ClusterConfigTags2(
-func testAccAWSCloudHsm2Hsm(
+func testAccAWSCloudHsmV2ClusterConfigBase(
+func testAccAWSCloudHsmV2ClusterConfig(
+func testAccAWSCloudHsmV2ClusterConfigTags1(
+func testAccAWSCloudHsmV2ClusterConfigTags2(
+func testAccAWSCloudHsmV2Hsm(
 func testAccAWSCloudTrail_basic(
 func testAccAWSCloudTrail_cloudwatch(
 func testAccAWSCloudTrail_enable_logging(

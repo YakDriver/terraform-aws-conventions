@@ -20,7 +20,7 @@ func TestAccDataSourceAwsCanonicalUserId_basic(
 func TestAccAWSCloudformationExportDataSource_basic(
 func TestAccAWSCloudFormationStack_dataSource_basic(
 func TestAccAWSCloudFormationStack_dataSource_yaml(
-func TestAccDataSourceCloudHsm2Cluster_basic(
+func TestAccDataSourceCloudHsmV2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_tags(
@@ -438,8 +438,8 @@ func TestAccAWSCloudFrontOriginAccessIdentity_noComment(
 func TestAccAWSCloudFrontPublicKey_basic(
 func TestAccAWSCloudFrontPublicKey_namePrefix(
 func TestAccAWSCloudFrontPublicKey_update(
-func TestAccAWSCloudHsm2Cluster_basic(
-func TestAccAWSCloudHsm2Hsm_basic(
+func TestAccAWSCloudHsmV2Cluster_basic(
+func TestAccAWSCloudHsmV2Hsm_basic(
 func TestAccAWSCloudWatchDashboard_basic(
 func TestAccAWSCloudWatchDashboard_update(
 func TestAccAWSCloudWatchDashboard_updateName(

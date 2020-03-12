@@ -650,10 +650,10 @@ func testAccAWSCloudFrontDistributionConfigWaitForDeployment(
 func testAccAWSCloudFrontPublicKeyConfig(
 func testAccAWSCloudFrontPublicKeyConfig_namePrefix(
 func testAccAWSCloudFrontPublicKeyConfigUpdate(
-func testAccAWSCloudHsm2ClusterConfigBase(
-func testAccAWSCloudHsm2ClusterConfig(
-func testAccAWSCloudHsm2ClusterConfigTags1(
-func testAccAWSCloudHsm2ClusterConfigTags2(
+func testAccAWSCloudHsmV2ClusterConfigBase(
+func testAccAWSCloudHsmV2ClusterConfig(
+func testAccAWSCloudHsmV2ClusterConfigTags1(
+func testAccAWSCloudHsmV2ClusterConfigTags2(
 func testAccAWSCloudTrailConfig(
 func testAccAWSCloudTrailConfigModified(
 func testAccAWSCloudTrailConfigCloudWatch(
