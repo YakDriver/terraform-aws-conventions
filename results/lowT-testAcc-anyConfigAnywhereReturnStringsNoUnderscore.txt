@@ -467,6 +467,7 @@ func testAccAWSCodeStarNotificationsNotificationRuleConfigTags2(rName string) st
 func testAccAWSCodeStarNotificationsNotificationRuleConfigEventTypeIds1(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigEventTypeIds2(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigEventTypeIds3(rName string) string {
+func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(rName string, externalID string) string {
 func testAccConfigConfigurationRecorderStatusConfig(randInt int, enabled bool) string {
 func testAccConfigOrganizationCustomRuleConfigBase(rName string) string {
 func testAccConfigOrganizationCustomRuleConfigDescription(rName, description string) string {
@@ -972,6 +973,7 @@ func testAccKinesisStreamConfigDecreaseRetentionPeriod(rInt int) string {
 func testAccKinesisStreamConfigAllShardLevelMetrics(rInt int) string {
 func testAccKinesisStreamConfigSingleShardLevelMetric(rInt int) string {
 func testAccKinesisStreamConfigWithEnforceConsumerDeletion(rInt int) string {
+func testAccKinesisVideoStreamConfig(rInt int) string {
 func testAccAWSKmsExternalKeyConfig() string {
 func testAccAWSKmsExternalKeyConfigDeletionWindowInDays(deletionWindowInDays int) string {
 func testAccAWSKmsExternalKeyConfigDescription(description string) string {

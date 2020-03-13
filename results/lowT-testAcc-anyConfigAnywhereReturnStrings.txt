@@ -406,6 +406,11 @@ func testAccAWSApiGatewayUsagePlanQuotaConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanQuotaModifiedConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesModifiedConfig(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_basicWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_basicHttp(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_allAttributesWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_allAttributesHttp(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_tags(rName string) string {
 func testAccAPIGatewayVpcLinkConfig_basis(rName string) string {
 func testAccAPIGatewayVpcLinkConfig(rName, description string) string {
 func testAccAPIGatewayVpcLinkConfigTags1(rName, description, tagKey1, tagValue1 string) string {
@@ -852,19 +857,26 @@ func testAccAWSCognitoUserPoolClientConfig_Name(rName, name string) string {
 func testAccAWSCognitoUserPoolClientConfig_allFields(userPoolName, clientName string, refreshTokenValidity int) string {
 func testAccAWSCognitoUserPoolDomainConfig_basic(domainName, poolName string) string {
 func testAccAWSCognitoUserPoolDomainConfig_custom(customSubDomainName, poolName, certificateArn string) string {
-func testAccAWSCognitoUserPoolConfig_basic(name string) string {
+func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(rName string, externalID string) string {
+func testAccAWSCognitoUserPoolConfig_Name(rName string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfiguration(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdatedError(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdated(name string) string {
-func testAccAWSCognitoUserPoolConfig_withAdvancedSecurityMode(name string, mode string) string {
+func testAccAWSCognitoUserPoolConfig_AdvancedSecurityMode(rName string, advancedSecurityMode string) string {
 func testAccAWSCognitoUserPoolConfig_withDeviceConfiguration(name string) string {
 func testAccAWSCognitoUserPoolConfig_withDeviceConfigurationUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withEmailVerificationMessage(name, subject, message string) string {
-func testAccAWSCognitoUserPoolConfig_withSmsVerificationMessage(name, authenticationMessage, verificationMessage string) string {
+func testAccAWSCognitoUserPoolConfig_MfaConfiguration(rName string, mfaConfiguration string) string {
+func testAccAWSCognitoUserPoolConfig_MfaConfiguration_SmsConfiguration(rName string) string {
+func testAccAWSCognitoUserPoolConfig_MfaConfiguration_SmsConfigurationAndSoftwareTokenMfaConfigurationEnabled(rName string, enabled bool) string {
+func testAccAWSCognitoUserPoolConfig_MfaConfiguration_SoftwareTokenMfaConfigurationEnabled(rName string, enabled bool) string {
+func testAccAWSCognitoUserPoolConfig_SmsAuthenticationMessage(rName, smsAuthenticationMessage string) string {
+func testAccAWSCognitoUserPoolConfig_SmsConfiguration_ExternalId(rName string, externalID string) string {
+func testAccAWSCognitoUserPoolConfig_SmsConfiguration_SnsCallerArn2(rName string) string {
+func testAccAWSCognitoUserPoolConfig_SmsVerificationMessage(rName, smsVerificationMessage string) string {
 func testAccAWSCognitoUserPoolConfig_Tags1(name, tagKey1, tagValue1 string) string {
 func testAccAWSCognitoUserPoolConfig_Tags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCognitoUserPoolConfig_withEmailConfiguration(name, email, arn, account string) string {
-func testAccAWSCognitoUserPoolConfig_withSmsConfiguration(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAliasAttributes(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAliasAttributesUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigAndPasswordPolicy(rName string) string {
@@ -1811,6 +1823,10 @@ func testAccKinesisStreamConfigAllShardLevelMetrics(rInt int) string {
 func testAccKinesisStreamConfigSingleShardLevelMetric(rInt int) string {
 func testAccKinesisStreamConfig_Tags(rInt, tagCount int) string {
 func testAccKinesisStreamConfigWithEnforceConsumerDeletion(rInt int) string {
+func testAccKinesisVideoStreamConfig(rInt int) string {
+func testAccKinesisVideoStreamConfig_Options(rInt int, rName, mediaType string) string {
+func testAccKinesisVideoStreamConfig_Tags1(rInt int, tagKey1, tagValue1 string) string {
+func testAccKinesisVideoStreamConfig_Tags2(rInt int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSKmsExternalKeyConfig() string {
 func testAccAWSKmsExternalKeyConfigDeletionWindowInDays(deletionWindowInDays int) string {
 func testAccAWSKmsExternalKeyConfigDescription(description string) string {
