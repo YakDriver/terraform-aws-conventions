@@ -869,6 +869,7 @@ func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_networkLoadbalancer_updateCrossZone(
 func TestAccAWSLB_applicationLoadBalancer_updateHttp2(
+func TestAccAWSLB_applicationLoadBalancer_updateDropInvalidHeaderFields(
 func TestAccAWSLB_applicationLoadBalancer_updateDeletionProtection(
 func TestAccAWSLB_ALB_AccessLogs(
 func TestAccAWSLB_ALB_AccessLogs_Prefix(

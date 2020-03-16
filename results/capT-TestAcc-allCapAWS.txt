@@ -88,6 +88,7 @@ func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_Multi
 func TestAccAWSDataSourceIAMPolicyDocument_Version_20081017(
 func TestAccAWSDataSourceIAMPolicy_basic(
 func TestAccAWSDataSourceIAMRole_basic(
+func TestAccAWSDataSourceIAMRole_tags(
 func TestAccAWSDataSourceIAMServerCertificate_basic(
 func TestAccAWSDataSourceIAMServerCertificate_matchNamePrefix(
 func TestAccAWSDataSourceIAMServerCertificate_path(
@@ -1624,6 +1625,8 @@ func TestAccAWSInspectorTarget_disappears(
 func TestAccAWSInspectorTarget_Name(
 func TestAccAWSInspectorTarget_ResourceGroupArn(
 func TestAccAWSInspectorTemplate_basic(
+func TestAccAWSInspectorTemplate_disappears(
+func TestAccAWSInspectorTemplate_tags(
 func TestAccAWSInspectorResourceGroup_basic(
 func TestAccAWSInstance_inDefaultVpcBySgName(
 func TestAccAWSInstance_inDefaultVpcBySgId(
@@ -2009,6 +2012,7 @@ func TestAccAWSLB_namePrefix(
 func TestAccAWSLB_tags(
 func TestAccAWSLB_networkLoadbalancer_updateCrossZone(
 func TestAccAWSLB_applicationLoadBalancer_updateHttp2(
+func TestAccAWSLB_applicationLoadBalancer_updateDropInvalidHeaderFields(
 func TestAccAWSLB_applicationLoadBalancer_updateDeletionProtection(
 func TestAccAWSLB_updatedSecurityGroups(
 func TestAccAWSLB_updatedSubnets(

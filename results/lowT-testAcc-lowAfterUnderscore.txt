@@ -9,6 +9,7 @@ func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted1(
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted2(
 func testAccDataSourceAwsElasticacheReplicationGroupConfig_basic(
 func testAccCheckAwsElasticBeanstalkHostedZoneDataSource_byRegion(
+func testAccAwsIAMRoleConfig_tags(
 func testAccInstancesDataSourceConfig_tags(
 func testAccInstancesDataSourceConfig_instance_state_names(
 func testAccInstanceDataSourceConfig_privateIP(
@@ -689,6 +690,7 @@ func testAccAWSLBTargetGroupConfig_stickiness(
 func testAccAWSLBTargetGroupConfig_stickinessWithTCP(
 func testAccAWSLBConfig_basic(
 func testAccAWSLBConfig_enableHttp2(
+func testAccAWSLBConfig_enableDropInvalidHeaderFields(
 func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(

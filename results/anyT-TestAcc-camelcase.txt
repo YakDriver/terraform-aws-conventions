@@ -879,6 +879,7 @@ func TestAccAWSLB_updatedSubnets(
 func TestAccAWSLB_updatedIpAddressType(
 func TestAccAWSLB_noSecurityGroup(
 func testAccAWSLBConfig_enableHttp2(
+func testAccAWSLBConfig_enableDropInvalidHeaderFields(
 func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer(
 func testAccAWSLBConfig_networkLoadBalancerEIP(

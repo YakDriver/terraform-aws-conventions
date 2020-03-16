@@ -83,6 +83,7 @@ func testAccAwsIAMGroupConfigWithUser(groupName, userName, membershipName string
 func testAccDatasourceAwsIamInstanceProfileConfig(roleName, profileName string) string {
 func testAccAwsDataSourceIamPolicyConfig(policyName string) string {
 func testAccAwsIAMRoleConfig(roleName string) string {
+func testAccAwsIAMRoleConfig_tags(roleName string) string {
 func testAccAwsDataIAMServerCertConfig(rName, key, certificate string) string {
 func testAccAwsDataIAMServerCertConfigPath(rName, path, pathPrefix, key, certificate string) string {
 func testAccAwsDataSourceIAMUserConfig(name string) string {
@@ -1902,8 +1903,10 @@ func testAccAWSUserConfig_tags(rName string) string {
 func testAccAWSUserConfig_tagsUpdate(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfig(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfigResourceGroupArn(rName, inspectorResourceGroupResourceName string) string {
-func testAccAWSInspectorTemplateAssessment(rInt int) string {
-func testAccCheckAWSInspectorTemplatetModified(rInt int) string {
+func testAccAWSInspectorTemplateAssessmentBase(rName string) string {
+func testAccAWSInspectorTemplateAssessmentBasic(rName string) string {
+func testAccAWSInspectorTemplateAssessmentTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSInspectorTemplateAssessmentTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccInstanceConfigInDefaultVpcBySgName(rName string) string {
 func testAccInstanceConfigInDefaultVpcBySgId(rName string) string {
 func testAccInstanceConfigInEc2Classic(rInt int) string {
@@ -2283,6 +2286,7 @@ func testAccAWSLBConfigWithIpAddressTypeUpdated(lbName string) string {
 func testAccAWSLBConfigWithIpAddressType(lbName string) string {
 func testAccAWSLBConfig_basic(lbName string) string {
 func testAccAWSLBConfig_enableHttp2(lbName string, http2 bool) string {
+func testAccAWSLBConfig_enableDropInvalidHeaderFields(lbName string, dropInvalid bool) string {
 func testAccAWSLBConfig_enableDeletionProtection(lbName string, deletion_protection bool) string {
 func testAccAWSLBConfig_networkLoadbalancer_subnets(lbName string) string {
 func testAccAWSLBConfig_networkLoadbalancer(lbName string, cz bool) string {
@@ -2373,6 +2377,8 @@ func testAccMskConfigurationConfig(rName string) string {
 func testAccMskConfigurationConfigDescription(rName, description string) string {
 func testAccMskConfigurationConfigKafkaVersions(rName string) string {
 func testAccMskConfigurationConfigServerProperties(rName string) string {
+func testAccNatGatewayConfigTags1(tagKey1, tagValue1 string) string {
+func testAccNatGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSNeptuneClusterInstanceConfig(n int) string {
 func testAccAWSNeptuneClusterInstanceConfigModified(n int) string {
 func testAccAWSNeptuneClusterInstanceConfig_az(n int) string {

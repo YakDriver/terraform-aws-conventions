@@ -1262,7 +1262,10 @@ func testAccAWSUserConfig_tags(
 func testAccAWSUserConfig_tagsUpdate(
 func testAccAWSInspectorTargetAssessmentConfig(
 func testAccAWSInspectorTargetAssessmentConfigResourceGroupArn(
-func testAccAWSInspectorTemplateAssessment(
+func testAccAWSInspectorTemplateAssessmentBase(
+func testAccAWSInspectorTemplateAssessmentBasic(
+func testAccAWSInspectorTemplateAssessmentTags1(
+func testAccAWSInspectorTemplateAssessmentTags2(
 func testAccAWSIotPolicyAttachmentConfig(
 func testAccAWSIotPolicyAttachmentConfigUpdate1(
 func testAccAWSIotPolicyAttachmentConfigUpdate2(
@@ -1539,6 +1542,7 @@ func testAccAWSLBConfigWithIpAddressTypeUpdated(
 func testAccAWSLBConfigWithIpAddressType(
 func testAccAWSLBConfig_basic(
 func testAccAWSLBConfig_enableHttp2(
+func testAccAWSLBConfig_enableDropInvalidHeaderFields(
 func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(

@@ -77,6 +77,7 @@ func TestAccAWSDataSourceIAMPolicyDocument_noStatementOverride(
 func TestAccAWSDataSourceIAMPolicyDocument_duplicateSid(
 func TestAccAWSDataSourceIAMPolicy_basic(
 func TestAccAWSDataSourceIAMRole_basic(
+func TestAccAWSDataSourceIAMRole_tags(
 func TestAccAWSDataSourceIAMServerCertificate_basic(
 func TestAccAWSDataSourceIAMServerCertificate_matchNamePrefix(
 func TestAccAWSDataSourceIAMServerCertificate_path(
@@ -389,6 +390,7 @@ func TestAccAwsBackupSelection_updateTag(
 func TestAccAwsBackupVault_basic(
 func TestAccAwsBackupVault_withKmsKey(
 func TestAccAwsBackupVault_withTags(
+func TestAccAwsBackupVault_disappears(
 func TestAccAWSBatchComputeEnvironment_createEc2(
 func TestAccAWSBatchComputeEnvironment_createWithNamePrefix(
 func TestAccAWSBatchComputeEnvironment_createEc2WithTags(
@@ -1108,6 +1110,8 @@ func TestAccAWSUser_tags(
 func TestAccAWSInspectorTarget_basic(
 func TestAccAWSInspectorTarget_disappears(
 func TestAccAWSInspectorTemplate_basic(
+func TestAccAWSInspectorTemplate_disappears(
+func TestAccAWSInspectorTemplate_tags(
 func TestAccAWSInspectorResourceGroup_basic(
 func TestAccAWSInstance_inDefaultVpcBySgName(
 func TestAccAWSInstance_inDefaultVpcBySgId(
@@ -1405,6 +1409,7 @@ func TestAccAWSLB_namePrefix(
 func TestAccAWSLB_tags(
 func TestAccAWSLB_networkLoadbalancer_updateCrossZone(
 func TestAccAWSLB_applicationLoadBalancer_updateHttp2(
+func TestAccAWSLB_applicationLoadBalancer_updateDropInvalidHeaderFields(
 func TestAccAWSLB_applicationLoadBalancer_updateDeletionProtection(
 func TestAccAWSLB_updatedSecurityGroups(
 func TestAccAWSLB_updatedSubnets(

@@ -82,6 +82,7 @@ func testAccAwsIAMGroupConfigWithUser(
 func testAccDatasourceAwsIamInstanceProfileConfig(
 func testAccAwsDataSourceIamPolicyConfig(
 func testAccAwsIAMRoleConfig(
+func testAccAwsIAMRoleConfig_tags(
 func testAccAwsDataIAMServerCertConfig(
 func testAccAwsDataIAMServerCertConfigPath(
 func testAccAwsDataSourceIAMUserConfig(
@@ -2160,6 +2161,7 @@ func testAccAWSLBConfigWithIpAddressTypeUpdated(
 func testAccAWSLBConfigWithIpAddressType(
 func testAccAWSLBConfig_basic(
 func testAccAWSLBConfig_enableHttp2(
+func testAccAWSLBConfig_enableDropInvalidHeaderFields(
 func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(
@@ -2256,6 +2258,8 @@ func testAccMskConfigurationConfig(
 func testAccMskConfigurationConfigDescription(
 func testAccMskConfigurationConfigKafkaVersions(
 func testAccMskConfigurationConfigServerProperties(
+func testAccNatGatewayConfigTags1(
+func testAccNatGatewayConfigTags2(
 func testAccAWSNeptuneClusterInstanceConfig(
 func testAccAWSNeptuneClusterInstanceConfigModified(
 func testAccAWSNeptuneClusterInstanceConfig_az(

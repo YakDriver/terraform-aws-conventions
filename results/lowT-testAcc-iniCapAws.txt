@@ -9,6 +9,7 @@ func testAccAwsIAMGroupConfig(
 func testAccAwsIAMGroupConfigWithUser(
 func testAccAwsDataSourceIamPolicyConfig(
 func testAccAwsIAMRoleConfig(
+func testAccAwsIAMRoleConfig_tags(
 func testAccAwsDataIAMServerCertConfig(
 func testAccAwsDataIAMServerCertConfigPath(
 func testAccAwsDataSourceIAMUserConfig(

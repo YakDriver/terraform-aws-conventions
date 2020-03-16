@@ -47,6 +47,7 @@ func TestAccAwsBackupSelection_updateTag(
 func TestAccAwsBackupVault_basic(
 func TestAccAwsBackupVault_withKmsKey(
 func TestAccAwsBackupVault_withTags(
+func TestAccAwsBackupVault_disappears(
 func TestAccAwsCurReportDefinition_basic(
 func TestAccAwsDaxParameterGroup_basic(
 func TestAccAwsDaxSubnetGroup_basic(
