@@ -405,6 +405,7 @@ func testAccAWSAPIGatewayRestAPIConfig(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(rName, endpointType string) string {
 func testAccAWSAPIGatewayRestAPIConfig_Name(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration2(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayRestAPIConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayRestAPIConfigWithAPIKeySource(rName string) string {
@@ -2042,6 +2043,7 @@ func testAccKinesisStreamConfigAllShardLevelMetrics(rInt int) string {
 func testAccKinesisStreamConfigSingleShardLevelMetric(rInt int) string {
 func testAccKinesisStreamConfig_Tags(rInt, tagCount int) string {
 func testAccKinesisStreamConfigWithEnforceConsumerDeletion(rInt int) string {
+func testAccKinesisStreamUpdateKmsKeyId(rInt int, key int) string {
 func testAccKinesisVideoStreamConfig(rInt int) string {
 func testAccKinesisVideoStreamConfig_Options(rInt int, rName, mediaType string) string {
 func testAccKinesisVideoStreamConfig_Tags1(rInt int, tagKey1, tagValue1 string) string {
@@ -2440,14 +2442,39 @@ func testAccAwsOpsworksCustomLayerSecurityGroups(name string) string {
 func testAccAwsOpsworksCustomLayerConfigNoVpcCreate(name string) string {
 func testAccAwsOpsworksCustomLayerConfigVpcCreate(name string) string {
 func testAccAwsOpsworksCustomLayerConfigUpdate(name string) string {
+func testAccAwsOpsworksCustomLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksCustomLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksGangliaLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksGangliaLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksGangliaLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksHAProxyLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksHAProxyLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksHAProxyLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOpsworksInstanceConfigUpdateHostName(name string) string {
 func testAccAwsOpsworksInstanceConfigCreate(name string) string {
 func testAccAwsOpsworksInstanceConfigUpdate(name string) string {
+func testAccAwsOpsworksJavaAppLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksJavaAppLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksJavaAppLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksMemcachedLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksMemcachedLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksMemcachedLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksMysqlLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksMysqlLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksMysqlLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksNodejsAppLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksNodejsAppLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksNodejsAppLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOpsworksPermissionBase(rName string) string {
 func testAccAwsOpsworksPermissionCreate(name, ssh, sudo, level string) string {
 func testAccAwsOpsworksPermissionSelf(rName string, allowSsh bool, allowSudo bool) string {
+func testAccAwsOpsworksPhpAppLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksPhpAppLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksPhpAppLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOpsworksRailsAppLayerConfigVpcCreate(name string) string {
 func testAccAwsOpsworksRailsAppLayerNoManageBundlerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksRailsAppLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksRailsAppLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOpsworksRdsDbInstance(name, userName, password string) string {
 func testAccAwsOpsworksRdsDbInstanceForceNew(name string) string {
 func testAccAwsOpsWorksStack_classic_endpoint(rName string, rInt int) string {
@@ -2459,6 +2486,9 @@ func testAccAwsOpsworksStackConfigNoVpcCreateUpdateServiceRole(name string) stri
 func testAccAwsOpsworksStackConfigVpcCreate(name string) string {
 func testAccAWSOpsworksStackConfigVpcUpdate(name string) string {
 func testAccAWSOpsworksStackConfig_CustomCookbooks_Set(name string) string {
+func testAccAwsOpsworksStaticWebLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksStaticWebLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksStaticWebLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOpsworksUserProfileCreate(rn string) string {
 func testAccAwsOpsworksUserProfileUpdate(rn, updateRn string) string {
 func testAccAwsOrganizationsAccountConfig(name, email string) string {

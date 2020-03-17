@@ -1157,17 +1157,45 @@ func testAccAWSENIConfigPrivateIpsCount(privateIpsCount int) string {
 func testAccAwsOpsworksCustomLayerConfigNoVpcCreate(name string) string {
 func testAccAwsOpsworksCustomLayerConfigVpcCreate(name string) string {
 func testAccAwsOpsworksCustomLayerConfigUpdate(name string) string {
+func testAccAwsOpsworksCustomLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksCustomLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksGangliaLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksGangliaLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksGangliaLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksHAProxyLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksHAProxyLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksHAProxyLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOpsworksInstanceConfigUpdateHostName(name string) string {
 func testAccAwsOpsworksInstanceConfigCreate(name string) string {
 func testAccAwsOpsworksInstanceConfigUpdate(name string) string {
+func testAccAwsOpsworksJavaAppLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksJavaAppLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksJavaAppLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksMemcachedLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksMemcachedLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksMemcachedLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksMysqlLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksMysqlLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksMysqlLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksNodejsAppLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksNodejsAppLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksNodejsAppLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOpsworksPhpAppLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksPhpAppLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksPhpAppLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOpsworksRailsAppLayerConfigVpcCreate(name string) string {
 func testAccAwsOpsworksRailsAppLayerNoManageBundlerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksRailsAppLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksRailsAppLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOpsworksStackConfigNoVpcCreate(name string) string {
 func testAccAwsOpsworksStackConfigNoVpcCreateTags(name string) string {
 func testAccAwsOpsworksStackConfigNoVpcUpdateTags(name string) string {
 func testAccAwsOpsworksStackConfigNoVpcCreateUpdateServiceRole(name string) string {
 func testAccAwsOpsworksStackConfigVpcCreate(name string) string {
 func testAccAWSOpsworksStackConfigVpcUpdate(name string) string {
+func testAccAwsOpsworksStaticWebLayerConfigVpcCreate(name string) string {
+func testAccAwsOpsworksStaticWebLayerConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOpsworksStaticWebLayerConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOrganizationsAccountConfig(name, email string) string {
 func testAccAwsOrganizationsAccountConfigParentId1(name, email string) string {
 func testAccAwsOrganizationsAccountConfigParentId2(name, email string) string {
