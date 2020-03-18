@@ -857,6 +857,9 @@ func testAccAWSCognitoUserPoolClientConfig_basic(userPoolName, clientName string
 func testAccAWSCognitoUserPoolClientConfig_RefreshTokenValidity(rName string, refreshTokenValidity int) string {
 func testAccAWSCognitoUserPoolClientConfig_Name(rName, name string) string {
 func testAccAWSCognitoUserPoolClientConfig_allFields(userPoolName, clientName string, refreshTokenValidity int) string {
+func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigBase(userPoolName, clientName string) string {
+func testAccAWSCognitoUserPoolClientConfigAnalyticsConfig(userPoolName, clientName string) string {
+func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigShareUserData(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolDomainConfig_basic(domainName, poolName string) string {
 func testAccAWSCognitoUserPoolDomainConfig_custom(customSubDomainName, poolName, certificateArn string) string {
 func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(rName string, externalID string) string {
@@ -878,12 +881,14 @@ func testAccAWSCognitoUserPoolConfig_SmsConfiguration_SnsCallerArn2(rName string
 func testAccAWSCognitoUserPoolConfig_SmsVerificationMessage(rName, smsVerificationMessage string) string {
 func testAccAWSCognitoUserPoolConfig_Tags1(name, tagKey1, tagValue1 string) string {
 func testAccAWSCognitoUserPoolConfig_Tags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSCognitoUserPoolConfig_withEmailConfiguration(name, email, arn, account string) string {
+func testAccAWSCognitoUserPoolConfig_withEmailConfiguration(name, email, arn, from, account string) string {
 func testAccAWSCognitoUserPoolConfig_withAliasAttributes(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAliasAttributesUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigAndPasswordPolicy(rName string) string {
 func testAccAWSCognitoUserPoolConfig_withPasswordPolicy(name string) string {
 func testAccAWSCognitoUserPoolConfig_withPasswordPolicyUpdated(name string) string {
+func testAccAWSCognitoUserPoolConfig_withUsernameConfiguration(name string) string {
+func testAccAWSCognitoUserPoolConfig_withUsernameConfigurationUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withLambdaConfig(name string) string {
 func testAccAWSCognitoUserPoolConfig_withLambdaConfigUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withSchemaAttributes(name string) string {
@@ -2634,6 +2639,8 @@ func testAccAWSSecurityGroupConfigIngressConfigModeBlocks() string {
 func testAccAWSSecurityGroupConfigIngressConfigModeNoBlocks() string {
 func testAccAWSSecurityGroupConfigIngressConfigModeZeroed() string {
 func testAccAWSSecurityHubAccountConfig() string {
+func testAccAWSSecurityHubMemberConfig_basic(accountId, email string) string {
+func testAccAWSSecurityHubMemberConfig_invite(accountId, email string, invite bool) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
