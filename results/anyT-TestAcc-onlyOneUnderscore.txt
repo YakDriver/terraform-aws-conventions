@@ -15,9 +15,15 @@ func TestAccDataSourceAwsArn_basic(
 func TestAccAWSAutoscalingGroups_basic(
 func TestAccAwsAutoScalingGroupDataSource_basic(
 func TestAccAWSAvailabilityZones_basic(
+func TestAccAWSAvailabilityZones_AllAvailabilityZones(
 func TestAccAWSAvailabilityZones_BlacklistedNames(
 func TestAccAWSAvailabilityZones_BlacklistedZoneIds(
+func TestAccAWSAvailabilityZones_Filter(
 func TestAccAWSAvailabilityZones_stateFilter(
+func TestAccDataSourceAwsAvailabilityZone_AllAvailabilityZones(
+func TestAccDataSourceAwsAvailabilityZone_Filter(
+func TestAccDataSourceAwsAvailabilityZone_Name(
+func TestAccDataSourceAwsAvailabilityZone_ZoneId(
 func TestAccAWSBillingServiceAccount_basic(
 func TestAccAWSCallerIdentity_basic(
 func TestAccDataSourceAwsCanonicalUserId_basic(
@@ -693,6 +699,7 @@ func TestAccAWSAthenaWorkGroup_basic(
 func TestAccAWSAthenaWorkGroup_disappears(
 func TestAccAWSAthenaWorkGroup_Description(
 func TestAccAWSAthenaWorkGroup_State(
+func TestAccAWSAthenaWorkGroup_ForceDestroy(
 func TestAccAWSAthenaWorkGroup_Tags(
 func TestAccAWSAutoscalingAttachment_elb(
 func TestAccAWSAutoscalingAttachment_albTargetGroup(
@@ -1520,6 +1527,7 @@ func TestAccAWSEBSVolume_updateIops(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_NoIops(
 func TestAccAWSEBSVolume_withTags(
+func TestAccAWSEc2AvailabilityZoneGroup_OptInStatus(
 func TestAccAWSEc2CapacityReservation_basic(
 func TestAccAWSEc2CapacityReservation_ebsOptimized(
 func TestAccAWSEc2CapacityReservation_endDate(

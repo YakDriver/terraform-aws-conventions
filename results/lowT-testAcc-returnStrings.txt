@@ -13,8 +13,14 @@ func testAccDataSourceAwsApiGatewayVpcLinkConfig(r string) string {
 func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(rInt1, rInt2, rInt3 int) string {
 func testAccAutoScalingGroupDataResourceConfig(rName string) string {
+func testAccCheckAwsAvailabilityZonesConfigAllAvailabilityZones() string {
 func testAccCheckAwsAvailabilityZonesConfigBlacklistedNames() string {
 func testAccCheckAwsAvailabilityZonesConfigBlacklistedZoneIds() string {
+func testAccCheckAwsAvailabilityZonesConfigFilter() string {
+func testAccDataSourceAwsAvailabilityZoneConfigAllAvailabilityZones() string {
+func testAccDataSourceAwsAvailabilityZoneConfigFilter() string {
+func testAccDataSourceAwsAvailabilityZoneConfigName() string {
+func testAccDataSourceAwsAvailabilityZoneConfigZoneId() string {
 func testAccDataSourceAwsBatchComputeEnvironmentConfig(rName string) string {
 func testAccDataSourceAwsBatchJobQueueConfig(rName string) string {
 func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
@@ -546,11 +552,13 @@ func testAccAthenaWorkGroupConfigConfigurationBytesScannedCutoffPerQuery(rName s
 func testAccAthenaWorkGroupConfigConfigurationEnforceWorkgroupConfiguration(rName string, enforceWorkgroupConfiguration bool) string {
 func testAccAthenaWorkGroupConfigConfigurationPublishCloudWatchMetricsEnabled(rName string, publishCloudwatchMetricsEnabled bool) string {
 func testAccAthenaWorkGroupConfigConfigurationResultConfigurationOutputLocation(rName string, bucketName string) string {
+func testAccAthenaWorkGroupConfigConfigurationResultConfigurationOutputLocationForceDestroy(rName string, bucketName string) string {
 func testAccAthenaWorkGroupConfigConfigurationResultConfigurationEncryptionConfigurationEncryptionOptionSseS3(rName string) string {
 func testAccAthenaWorkGroupConfigConfigurationResultConfigurationEncryptionConfigurationEncryptionOptionWithKms(rName, encryptionOption string) string {
 func testAccAthenaWorkGroupConfigState(rName, state string) string {
 func testAccAthenaWorkGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAthenaWorkGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAthenaWorkGroupConfigForceDestroy(rName, dbName string) string {
 func testAccAWSAutoscalingAttachment_alb(rInt int) string {
 func testAccAWSAutoscalingAttachment_elb(rInt int) string {
 func testAccAWSAutoscalingAttachment_elb_associated(rInt int) string {
@@ -1322,6 +1330,7 @@ func testAccAwsEbsSnapshotConfigBasicTags1(rName, tagKey1, tagValue1 string) str
 func testAccAwsEbsSnapshotConfigBasicTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
+func testAccEc2AvailabilityZoneGroupConfigOptInStatus(optInStatus string) string {
 func testAccEc2CapacityReservationConfig_ebsOptimized(ebsOptimized bool) string {
 func testAccEc2CapacityReservationConfig_endDate(endDate string) string {
 func testAccEc2CapacityReservationConfig_endDateType(endDateType string) string {

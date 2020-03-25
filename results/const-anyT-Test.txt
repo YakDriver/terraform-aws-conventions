@@ -9,7 +9,6 @@ const testAccCheckAwsAmiDataSourceNameRegexConfig =
 const testAccDataSourceAwsArnConfig =
 const testAccCheckAwsAvailabilityZonesConfig =
 const testAccCheckAwsAvailabilityZonesStateConfig =
-const testAccDataSourceAwsAvailabilityZoneConfig =
 const testAccCheckAwsBillingServiceAccountConfig =
 const testAccCheckAwsCallerIdentityConfig_basic =
 const testAccCheckAwsCallerIdentityConfig_basic_panic =

@@ -5,7 +5,6 @@ const testAccCheckAwsAmiDataSourceNameRegexConfig =
 const testAccDataSourceAwsArnConfig =
 const testAccCheckAwsAvailabilityZonesConfig =
 const testAccCheckAwsAvailabilityZonesStateConfig =
-const testAccDataSourceAwsAvailabilityZoneConfig =
 const testAccCheckAwsBillingServiceAccountConfig =
 const testAccDataSourceAwsCanonicalUserIdConfig =
 const testAccCheckAwsCloudTrailServiceAccountConfig =
