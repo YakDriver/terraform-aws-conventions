@@ -46,7 +46,9 @@ func testAccAWSEc2TransitGatewayDataSourceConfigFilter() string {
 func testAccAWSEc2TransitGatewayDataSourceConfigID() string {
 func testAccAWSEc2TransitGatewayVpcAttachmentDataSourceConfigFilter() string {
 func testAccAWSEc2TransitGatewayVpcAttachmentDataSourceConfigID() string {
+func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigBase(rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigTransitGatewayIdAndVpnConnectionId(rBgpAsn int) string {
+func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigFilter(rBgpAsn int) string {
 func testAccCheckAwsEcrImageDataSourceConfig(reg, repo, tag string) string {
 func testAccCheckAwsEcrRepositoryDataSourceConfig(rName string) string {
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(clusterName, tdName, svcName string) string {
@@ -87,6 +89,8 @@ func testAccDataSourceAWSLambdaFunctionConfigEnvironment(rName string) string {
 func testAccDataSourceAWSLambdaLayerVersionConfigBasic(rName string) string {
 func testAccDataSourceAWSLambdaLayerVersionConfigVersion(rName string) string {
 func testAccDataSourceAWSLambdaLayerVersionConfigRuntimes(rName string) string {
+func testAccAWSLaunchTemplateDataSourceConfigBasicFilter(rName string) string {
+func testAccAWSLaunchTemplateDataSourceConfigFilterTags(rName string, rInt int) string {
 func testAccDataSourceAWSLBListenerConfigBasic(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigHTTPS(lbName, targetGroupName, certificate, key string) string {
@@ -139,7 +143,10 @@ func testAccDataSourceAwsSubnetConfig(rInt int) string {
 func testAccDataSourceAwsSubnetConfigIpv6(rInt int) string {
 func testAccDataSourceAwsSubnetConfigIpv6WithDataSourceFilter(rInt int) string {
 func testAccDataSourceAwsSubnetConfigIpv6WithDataSourceIpv6CidrBlock(rInt int) string {
+func testAccDataSourceAwsVpcEndpointServiceCustomConfigBase(rName string) string {
 func testAccDataSourceAwsVpcEndpointServiceCustomConfig(rName string) string {
+func testAccDataSourceAwsVpcEndpointServiceCustomConfigFilter(rName string) string {
+func testAccDataSourceAwsVpcEndpointServiceCustomConfigFilterTags(rName string) string {
 func testAccDataSourceAwsVpcsConfig() string {
 func testAccDataSourceAwsVpcConfigIpv6(cidr, tag string) string {
 func testAccDataSourceAwsVpcConfig(cidr, tag string) string {

@@ -43,6 +43,7 @@ func TestAccDataSourceAwsEbsSnapshotIds_empty(
 func TestAccAWSEbsSnapshotDataSource_basic(
 func TestAccAWSEbsVolumeDataSource_basic(
 func TestAccAWSEbsVolumeDataSource_multipleFilters(
+func TestAccAWSEc2TransitGatewayVpnAttachmentDataSource_filter(
 func TestAccAWSEcrDataSource_ecrImage(
 func TestAccAWSEcrDataSource_ecrRepository(
 func TestAccAWSEcsDataSource_ecsCluster(
@@ -121,6 +122,8 @@ func TestAccDataSourceAWSLambdaLayerVersion_runtime(
 func TestAccAWSLaunchConfigurationDataSource_basic(
 func TestAccAWSLaunchConfigurationDataSource_securityGroups(
 func TestAccAWSLaunchTemplateDataSource_basic(
+func TestAccAWSLaunchTemplateDataSource_filter_basic(
+func TestAccAWSLaunchTemplateDataSource_filter_tags(
 func TestAccDataSourceAWSLBListener_basic(
 func TestAccDataSourceAWSLBListener_https(
 func TestAccDataSourceAWSALBTargetGroup_basic(
@@ -130,6 +133,8 @@ func TestAccDataSourceAwsNetworkAcls_basic(
 func TestAccDataSourceAwsNetworkInterface_basic(
 func TestAccDataSourceAwsNetworkInterface_filters(
 func TestAccAWSPartition_basic(
+func TestAccDataSourceAwsPrefixList_basic(
+func TestAccDataSourceAwsPrefixList_filter(
 func TestAccDataSourceAwsPricingProduct_ec2(
 func TestAccDataSourceAwsPricingProduct_redshift(
 func TestAccDataSourceAWSRDSCluster_basic(
@@ -188,6 +193,8 @@ func TestAccDataSourceAwsVpcDhcpOptions_basic(
 func TestAccDataSourceAwsVpcEndpointService_gateway(
 func TestAccDataSourceAwsVpcEndpointService_interface(
 func TestAccDataSourceAwsVpcEndpointService_custom(
+func TestAccDataSourceAwsVpcEndpointService_custom_filter(
+func TestAccDataSourceAwsVpcEndpointService_custom_filter_tags(
 func TestAccDataSourceAwsVpcEndpoint_gatewayBasic(
 func TestAccDataSourceAwsVpcEndpoint_byId(
 func TestAccDataSourceAwsVpcEndpoint_byFilter(
