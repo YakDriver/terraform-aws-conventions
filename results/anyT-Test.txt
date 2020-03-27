@@ -222,7 +222,9 @@ func testAccAWSEc2InstanceTypeOfferingDataSourceConfigFilter(
 func testAccAWSEc2InstanceTypeOfferingDataSourceConfigLocationType(
 func testAccAWSEc2InstanceTypeOfferingDataSourceConfigPreferredInstanceTypes(
 func TestAccAWSEc2TransitGatewayDxGatewayAttachmentDataSource_TransitGatewayIdAndDxGatewayId(
-func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigTransitGatewayIdAndDxGatewayId(
+func TestAccAWSEc2TransitGatewayDxGatewayAttachmentDataSource_filter(
+func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfig(
+func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfigFilter(
 func TestAccAWSEc2TransitGatewayRouteTableDataSource_Filter(
 func TestAccAWSEc2TransitGatewayRouteTableDataSource_ID(
 func testAccAWSEc2TransitGatewayRouteTableDataSourceConfigFilter(
@@ -762,6 +764,7 @@ func testAccCheckResourceAttrGlobalARNNoAccount(
 func testAccMatchResourceAttrGlobalARN(
 func testAccCheckResourceAttrRfc3339(
 func testAccCheckListHasSomeElementAttrPair(
+func testAccCheckResourceAttrEquivalentJSON(
 func testAccGetAccountID(
 func testAccGetRegion(
 func testAccGetAlternateRegion(
@@ -3980,6 +3983,7 @@ func TestAccAWSEcsTaskDefinition_ExecutionRole(
 func TestAccAWSEcsTaskDefinition_Inactive(
 func TestAccAWSEcsTaskDefinition_Tags(
 func TestAccAWSEcsTaskDefinition_ProxyConfiguration(
+func TestAccAWSEcsTaskDefinition_inferenceAccelerator(
 func testAccAWSEcsTaskDefinitionConfigProxyConfiguration(
 func testAccCheckAWSEcsTaskDefinitionProxyConfiguration(
 func testAccCheckEcsTaskDefinitionRecreated(
@@ -4009,6 +4013,7 @@ func testAccAWSEcsTaskDefinitionWithEcsServiceModified(
 func testAccAWSEcsTaskDefinitionModified(
 func testAccAWSEcsTaskDefinitionConfigTags1(
 func testAccAWSEcsTaskDefinitionConfigTags2(
+func testAccAWSEcsTaskDefinitionConfigInferenceAccelerator(
 func testAccAWSEcsTaskDefinitionImportStateIdFunc(
 func testSweepEfsFileSystems(
 func TestResourceAWSEFSFileSystem_hasEmptyFileSystems(
@@ -4491,7 +4496,7 @@ func testAccEmrDeleteManagedSecurityGroups(
 func testAccEmrDescribeManagedSecurityGroup(conn *ec2.EC2, vpc *ec2.Vpc, securityGroupName string) (
 func testAccEmrRevokeManagedSecurityGroup(
 func testAccEmrDeleteManagedSecurityGroup(
-func testAccAWSEmrClusterConfigBaseVpc(
+func testAccAWSEmrComposeConfig(
 func testAccAWSEmrClusterConfig_bootstrap(
 func testAccAWSEmrClusterConfig(
 func testAccAWSEmrClusterConfigAdditionalInfo(
@@ -4531,6 +4536,11 @@ func testAccAWSEmrClusterConfigUpdatedRootVolumeSize(
 func testAccAWSEmrClusterConfigS3Logging(
 func testAccAWSEmrClusterConfigCustomAmiID(
 func testAccAWSEmrClusterConfigStepConcurrencyLevel(
+func testAccAWSEmrClusterConfigBaseVpc(
+func testAccAWSEmrClusterConfigIAMServiceRoleBase(
+func testAccAWSEmrClusterConfigIAMServiceRoleCustomAmiID(
+func testAccAWSEmrClusterConfigIAMInstanceProfileBase(
+func testAccAWSEmrClusterConfigIAMAutoscalingRole(
 func TestAccAWSEMRInstanceGroup_basic(
 func TestAccAWSEMRInstanceGroup_BidPrice(
 func TestAccAWSEMRInstanceGroup_ConfigurationsJson(
@@ -4557,6 +4567,7 @@ func TestAccAWSFlowLog_SubnetID(
 func TestAccAWSFlowLog_LogDestinationType_CloudWatchLogs(
 func TestAccAWSFlowLog_LogDestinationType_S3(
 func TestAccAWSFlowLog_LogDestinationType_S3_Invalid(
+func TestAccAWSFlowLog_LogDestinationType_MaxAggregationInterval(
 func TestAccAWSFlowLog_tags(
 func TestAccAWSFlowLog_disappears(
 func testAccCheckFlowLogExists(
@@ -4572,6 +4583,7 @@ func testAccFlowLogConfig_VPCID(
 func testAccFlowLogConfig_LogFormat(
 func testAccFlowLogConfigTags1(
 func testAccFlowLogConfigTags2(
+func testAccFlowLogConfig_MaxAggregationInterval(
 func TestAccAwsFmsAdminAccount_basic(
 func testAccCheckFmsAdminAccountDestroy(
 func testSweepFSXLustreFileSystems(
@@ -6351,6 +6363,7 @@ func TestAccAWSMskCluster_EncryptionInfo_EncryptionInTransit_InCluster(
 func TestAccAWSMskCluster_EnhancedMonitoring(
 func TestAccAWSMskCluster_NumberOfBrokerNodes(
 func TestAccAWSMskCluster_OpenMonitoring(
+func TestAccAWSMskCluster_LoggingInfo(
 func TestAccAWSMskCluster_Tags(
 func testAccCheckMskClusterDestroy(
 func testAccCheckMskClusterExists(
@@ -6370,6 +6383,7 @@ func testAccMskClusterConfigEncryptionInfoEncryptionInTransitInCluster(
 func testAccMskClusterConfigEnhancedMonitoring(
 func testAccMskClusterConfigNumberOfBrokerNodes(
 func testAccMskClusterConfigOpenMonitoring(
+func testAccMskClusterConfigLoggingInfo(
 func testAccMskClusterConfigTags1(
 func testAccMskClusterConfigTags2(
 func TestAccAWSMskConfiguration_basic(

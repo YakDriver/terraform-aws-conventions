@@ -673,6 +673,7 @@ func TestAccAWSFlowLog_SubnetID(
 func TestAccAWSFlowLog_LogDestinationType_CloudWatchLogs(
 func TestAccAWSFlowLog_LogDestinationType_S3(
 func TestAccAWSFlowLog_LogDestinationType_S3_Invalid(
+func TestAccAWSFlowLog_LogDestinationType_MaxAggregationInterval(
 func TestAccAWSFsxLustreFileSystem_ExportPath(
 func TestAccAWSFsxLustreFileSystem_ImportPath(
 func TestAccAWSFsxLustreFileSystem_ImportedFileChunkSize(
@@ -880,6 +881,7 @@ func TestAccAWSMskCluster_EncryptionInfo_EncryptionInTransit_InCluster(
 func TestAccAWSMskCluster_EnhancedMonitoring(
 func TestAccAWSMskCluster_NumberOfBrokerNodes(
 func TestAccAWSMskCluster_OpenMonitoring(
+func TestAccAWSMskCluster_LoggingInfo(
 func TestAccAWSMskCluster_Tags(
 func TestAccAWSMskConfiguration_Description(
 func TestAccAWSMskConfiguration_KafkaVersions(
