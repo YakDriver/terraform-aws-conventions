@@ -98,6 +98,7 @@ func TestAccAWSInstanceDataSource_keyPair(
 func TestAccAWSInstanceDataSource_getPasswordData_trueToFalse(
 func TestAccAWSInstanceDataSource_getPasswordData_falseToTrue(
 func TestAccAWSInstanceDataSource_creditSpecification(
+func TestAccAWSInstanceDataSource_metadataOptions(
 func TestAccDataSourceAwsInternetGateway_typical(
 func TestAccAWSIotEndpointDataSource_basic(
 func TestAccAWSIPRanges_basic(
@@ -125,6 +126,7 @@ func TestAccAWSLaunchConfigurationDataSource_securityGroups(
 func TestAccAWSLaunchTemplateDataSource_basic(
 func TestAccAWSLaunchTemplateDataSource_filter_basic(
 func TestAccAWSLaunchTemplateDataSource_filter_tags(
+func TestAccAWSLaunchTemplateDataSource_metadataOptions(
 func TestAccDataSourceAWSLBListener_basic(
 func TestAccDataSourceAWSLBListener_https(
 func TestAccDataSourceAWSALBTargetGroup_basic(
@@ -1179,6 +1181,7 @@ func TestAccAWSInstance_creditSpecification_standardCpuCredits_t2Tot3Taint(
 func TestAccAWSInstance_creditSpecification_unlimitedCpuCredits_t2Tot3Taint(
 func TestAccAWSInstance_disappears(
 func TestAccAWSInstance_hibernation(
+func TestAccAWSInstance_metadataOptions(
 func TestAccAWSInternetGateway_basic(
 func TestAccAWSInternetGateway_delete(
 func TestAccAWSInternetGateway_tags(
@@ -1354,6 +1357,7 @@ func TestAccAWSLaunchTemplate_networkInterface_ipv6Addresses(
 func TestAccAWSLaunchTemplate_networkInterface_ipv6AddressCount(
 func TestAccAWSLaunchTemplate_instanceMarketOptions(
 func TestAccAWSLaunchTemplate_licenseSpecification(
+func TestAccAWSLaunchTemplate_metadataOptions(
 func TestAccAWSLBCookieStickinessPolicy_basic(
 func TestAccAWSLBCookieStickinessPolicy_drift(
 func TestAccAWSLBCookieStickinessPolicy_missingLB(
@@ -1676,6 +1680,7 @@ func TestAccAWSRoute53HealthCheck_withSearchString(
 func TestAccAWSRoute53HealthCheck_withChildHealthChecks(
 func TestAccAWSRoute53HealthCheck_withHealthCheckRegions(
 func TestAccAWSRoute53HealthCheck_withSNI(
+func TestAccAWSRoute53HealthCheck_disappears(
 func TestAccAWSRoute53Record_basic(
 func TestAccAWSRoute53Record_underscored(
 func TestAccAWSRoute53Record_disappears(

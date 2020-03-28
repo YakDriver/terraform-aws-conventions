@@ -140,6 +140,7 @@ func testAccInstanceDataSourceConfig_getPasswordData(
 func testAccInstanceDataSourceConfigGetUserData(
 func testAccInstanceDataSourceConfigGetUserDataNoUserData(
 func testAccInstanceDataSourceConfig_creditSpecification(
+func testAccInstanceDataSourceConfig_metadataOptions(
 func testAccAWSIotEndpointConfigEndpointType(
 func testAccAWSIPRangesCheckAttributes(
 func testAccAWSIPRangesCheckCidrBlocksAttribute(
@@ -174,6 +175,7 @@ func testAccLaunchConfigurationDataSourceConfig_securityGroups(
 func testAccAWSLaunchTemplateDataSourceConfig_Basic(
 func testAccAWSLaunchTemplateDataSourceConfigBasicFilter(
 func testAccAWSLaunchTemplateDataSourceConfigFilterTags(
+func testAccAWSLaunchTemplateDataSourceConfig_metadataOptions(
 func testAccDataSourceAWSLBListenerConfigBasic(
 func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(
 func testAccDataSourceAWSLBListenerConfigHTTPS(
@@ -373,6 +375,9 @@ func testAccCheckAWSProviderEndpointsDeprecated(
 func testAccCheckAWSProviderIgnoreTagPrefixes(
 func testAccCheckAWSProviderIgnoreTags(
 func testAccCheckAWSProviderPartition(
+func testAccPreCheckHasDefaultVpcOrEc2Classic(
+func testAccHasDefaultVpc(
+func testAccPreCheckOffersEc2InstanceType(
 func testAccAWSProviderConfigEndpoints(
 func testAccAWSProviderConfigIgnoreTagPrefixes0(
 func testAccAWSProviderConfigIgnoreTagPrefixes1(
@@ -3227,6 +3232,8 @@ func testAccAwsInstanceVpcConfig(
 func testAccAwsInstanceVpcSecurityGroupConfig(
 func testAccAwsInstanceVpcIpv6Config(
 func testAccInstanceConfigHibernation(
+func testAccInstanceConfigMetadataOptions(
+func testAccInstanceConfigMetadataOptionsUpdated(
 func testSweepInternetGateways(
 func testAccCheckInternetGatewayDestroy(
 func testAccCheckInternetGatewayExists(
@@ -3565,6 +3572,7 @@ func testAccAWSLaunchTemplateConfig_description(
 func testAccAWSLaunchTemplateConfig_networkInterface(
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(
 func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(
+func testAccAWSLaunchTemplateConfig_metadataOptions(
 func testAccCheckLBCookieStickinessPolicyDestroy(
 func testAccCheckLBCookieStickinessPolicy(
 func testAccLBCookieStickinessPolicyConfig(
@@ -4365,6 +4373,7 @@ func testAccRoute53DelegationSetConfig(
 func testAccRoute53DelegationSetWithZonesConfig(
 func testAccCheckRoute53HealthCheckDestroy(
 func testAccCheckRoute53HealthCheckExists(
+func testAccCheckRoute53HealthCheckDisappears(
 func testAccRoute53HealthCheckConfigTags1(
 func testAccRoute53HealthCheckConfigTags2(
 func testAccCheckRoute53QueryLogExists(

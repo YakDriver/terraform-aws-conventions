@@ -109,6 +109,7 @@ func testAccInstanceDataSourceConfig_getPasswordData(rName string, val bool) str
 func testAccInstanceDataSourceConfigGetUserData(rName string, getUserData bool) string {
 func testAccInstanceDataSourceConfigGetUserDataNoUserData(rName string, getUserData bool) string {
 func testAccInstanceDataSourceConfig_creditSpecification(rName string) string {
+func testAccInstanceDataSourceConfig_metadataOptions(rName, instanceType string) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
 func testAccDataSourceAwsKmsAlias_name(name string) string {
 func testAccDataSourceAwsKmsAlias_CMK(rInt int) string {
@@ -135,6 +136,7 @@ func testAccLaunchConfigurationDataSourceConfig_securityGroups(rInt int) string 
 func testAccAWSLaunchTemplateDataSourceConfig_Basic(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfigBasicFilter(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfigFilterTags(rName string, rInt int) string {
+func testAccAWSLaunchTemplateDataSourceConfig_metadataOptions(rName string) string {
 func testAccDataSourceAWSLBListenerConfigBasic(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigHTTPS(lbName, targetGroupName, certificate, key string) string {
@@ -1997,6 +1999,8 @@ func testAccAwsInstanceVpcConfig(rName string, mapPublicIpOnLaunch bool) string 
 func testAccAwsInstanceVpcSecurityGroupConfig(rName string) string {
 func testAccAwsInstanceVpcIpv6Config(rName string) string {
 func testAccInstanceConfigHibernation(hibernation bool) string {
+func testAccInstanceConfigMetadataOptions(rName, instanceType string) string {
+func testAccInstanceConfigMetadataOptionsUpdated(rName, instanceType string) string {
 func testAccAWSIotPolicyAttachmentConfig(policyName string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate1(policyName, policyName2 string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate2(policyName2 string) string {
@@ -2225,6 +2229,7 @@ func testAccAWSLaunchTemplateConfig_description(rName, description string) strin
 func testAccAWSLaunchTemplateConfig_networkInterface(rName string) string {
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
 func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(rName string) string {
+func testAccAWSLaunchTemplateConfig_metadataOptions(rName string) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccLBCookieStickinessPolicyConfigDestroy(rName string) string {

@@ -1546,6 +1546,7 @@ func TestAccAWSRedshiftSnapshotCopyGrant_Basic(
 func TestAccAWSRedshiftSnapshotCopyGrant_Update(
 func testAccAWSRedshiftSnapshotCopyGrant_Basic(
 func TestAccAWSRoute53HealthCheck_IpConfig(
+func TestAccAWSRoute53HealthCheck_Ipv6Config(
 func TestAccAWSRoute53HealthCheck_CloudWatchAlarmCheck(
 func TestAccAWSRoute53QueryLog_Basic(
 func TestAccAWSRoute53Record_Alias_Elb(

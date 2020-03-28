@@ -967,6 +967,8 @@ func testAccAwsInstanceVpcConfig(rName string, mapPublicIpOnLaunch bool) string 
 func testAccAwsInstanceVpcSecurityGroupConfig(rName string) string {
 func testAccAwsInstanceVpcIpv6Config(rName string) string {
 func testAccInstanceConfigHibernation(hibernation bool) string {
+func testAccInstanceConfigMetadataOptions(rName, instanceType string) string {
+func testAccInstanceConfigMetadataOptionsUpdated(rName, instanceType string) string {
 func testAccAWSIotPolicyAttachmentConfig(policyName string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate1(policyName, policyName2 string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate2(policyName2 string) string {
