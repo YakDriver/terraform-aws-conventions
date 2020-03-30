@@ -1364,6 +1364,7 @@ func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_createMultiple(
 func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_updateMultiple(
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(
+func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(
 func testAccCheckAWSCodePipelineExists(
 func testAccCheckAWSCodePipelineDestroy(
 func testAccPreCheckAWSCodePipeline(
@@ -3257,6 +3258,7 @@ func testAccAWSKmsExternalKeyConfigTags2(
 func testAccAWSKmsExternalKeyConfigValidTo(
 func testAccCheckAWSKmsGrantDestroy(
 func testAccCheckAWSKmsGrantExists(
+func testAccAWSKmsGrantConfigBase(
 func testAccAWSKmsGrant_Basic(
 func testAccAWSKmsGrant_withConstraints(
 func testAccAWSKmsGrant_withRetiringPrincipal(
@@ -3441,6 +3443,7 @@ func testAccAWSLaunchTemplateConfig_networkInterface(
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(
 func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(
 func testAccAWSLaunchTemplateConfig_metadataOptions(
+func testAccAWSLaunchTemplateConfigHibernation(
 func testAccCheckLBCookieStickinessPolicyDestroy(
 func testAccCheckLBCookieStickinessPolicy(
 func testAccLBCookieStickinessPolicyConfig(

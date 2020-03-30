@@ -2443,6 +2443,7 @@ func test_config_blue_green_deployment_complete(
 func test_config_blue_green_deployment_complete_updated(
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(
+func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(
 func TestAccAWSCodePipeline_basic(
 func TestAccAWSCodePipeline_emptyArtifacts(
 func TestAccAWSCodePipeline_deployWithServiceRole(
@@ -3161,6 +3162,7 @@ func testAccCheckAWSDBSecurityGroupDestroy(
 func testAccCheckAWSDBSecurityGroupAttributes(
 func testAccCheckAWSDBSecurityGroupExists(
 func testAccAWSDBSecurityGroupConfig(
+func testSweepDbSnapshots(
 func TestAccAWSDBSnapshot_basic(
 func TestAccAWSDBSnapshot_tags(
 func TestAccAWSDBSnapshot_disappears(
@@ -5632,6 +5634,7 @@ func TestAccAWSKmsGrant_bare(
 func TestAccAWSKmsGrant_ARN(
 func testAccCheckAWSKmsGrantDestroy(
 func testAccCheckAWSKmsGrantExists(
+func testAccAWSKmsGrantConfigBase(
 func testAccAWSKmsGrant_Basic(
 func testAccAWSKmsGrant_withConstraints(
 func testAccAWSKmsGrant_withRetiringPrincipal(
@@ -5943,6 +5946,7 @@ func TestAccAWSLaunchTemplate_networkInterface_ipv6AddressCount(
 func TestAccAWSLaunchTemplate_instanceMarketOptions(
 func TestAccAWSLaunchTemplate_licenseSpecification(
 func TestAccAWSLaunchTemplate_metadataOptions(
+func TestAccAWSLaunchTemplate_hibernation(
 func testAccCheckAWSLaunchTemplateExists(
 func testAccCheckAWSLaunchTemplateDestroy(
 func testAccCheckAWSLaunchTemplateDisappears(
@@ -5965,6 +5969,7 @@ func testAccAWSLaunchTemplateConfig_networkInterface(
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(
 func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(
 func testAccAWSLaunchTemplateConfig_metadataOptions(
+func testAccAWSLaunchTemplateConfigHibernation(
 func TestAccAWSLBCookieStickinessPolicy_basic(
 func testAccCheckLBCookieStickinessPolicyDestroy(
 func testAccCheckLBCookieStickinessPolicy(

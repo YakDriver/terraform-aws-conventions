@@ -1971,6 +1971,7 @@ func TestAccAWSLaunchTemplate_networkInterface_ipv6AddressCount(
 func TestAccAWSLaunchTemplate_instanceMarketOptions(
 func TestAccAWSLaunchTemplate_licenseSpecification(
 func TestAccAWSLaunchTemplate_metadataOptions(
+func TestAccAWSLaunchTemplate_hibernation(
 func testAccAWSLaunchTemplateConfig_basic(
 func testAccAWSLaunchTemplateConfig_ipv6_count(
 func testAccAWSLaunchTemplateConfig_data(

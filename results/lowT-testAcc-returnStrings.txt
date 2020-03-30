@@ -897,6 +897,7 @@ func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_createMultiple(rNa
 func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_updateMultiple(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string {
+func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) string {
 func testAccAWSCodePipelineConfig_basic(rName string) string {
 func testAccAWSCodePipelineConfig_basicUpdated(rName string) string {
 func testAccAWSCodePipelineConfig_emptyArtifacts(rName string) string {
@@ -2097,11 +2098,12 @@ func testAccAWSKmsExternalKeyConfigPolicy(policy string) string {
 func testAccAWSKmsExternalKeyConfigTags1(value1 string) string {
 func testAccAWSKmsExternalKeyConfigTags2(value1, value2 string) string {
 func testAccAWSKmsExternalKeyConfigValidTo(validTo string) string {
-func testAccAWSKmsGrant_Basic(rName string, timestamp string, operations string) string {
-func testAccAWSKmsGrant_withConstraints(rName string, timestamp string, constraintName string, encryptionContext string) string {
-func testAccAWSKmsGrant_withRetiringPrincipal(rName string, timestamp string) string {
-func testAccAWSKmsGrant_bare(rName string, timestamp string) string {
-func testAccAWSKmsGrant_ARN(rName string, timestamp string, operations string) string {
+func testAccAWSKmsGrantConfigBase(rName string) string {
+func testAccAWSKmsGrant_Basic(rName string, operations string) string {
+func testAccAWSKmsGrant_withConstraints(rName string, constraintName string, encryptionContext string) string {
+func testAccAWSKmsGrant_withRetiringPrincipal(rName string) string {
+func testAccAWSKmsGrant_bare(rName string) string {
+func testAccAWSKmsGrant_ARN(rName string, operations string) string {
 func testAccAWSKmsKey(rName string) string {
 func testAccAWSKmsKey_asymmetric(rName string) string {
 func testAccAWSKmsKey_policy(rName string) string {
@@ -2230,6 +2232,7 @@ func testAccAWSLaunchTemplateConfig_networkInterface(rName string) string {
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
 func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(rName string) string {
 func testAccAWSLaunchTemplateConfig_metadataOptions(rName string) string {
+func testAccAWSLaunchTemplateConfigHibernation(rName string, enabled bool) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccLBCookieStickinessPolicyConfigDestroy(rName string) string {

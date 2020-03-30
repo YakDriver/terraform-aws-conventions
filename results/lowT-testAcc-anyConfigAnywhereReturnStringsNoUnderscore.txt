@@ -471,6 +471,7 @@ func testAccAWSCodeDeployDeploymentConfigTrafficCanary(rName string, interval, p
 func testAccAWSCodeDeployDeploymentConfigTrafficLinear(rName string, interval, percentage int) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string {
+func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) string {
 func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
 func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2 string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBase(rName string) string {
@@ -1011,6 +1012,7 @@ func testAccAWSKmsExternalKeyConfigPolicy(policy string) string {
 func testAccAWSKmsExternalKeyConfigTags1(value1 string) string {
 func testAccAWSKmsExternalKeyConfigTags2(value1, value2 string) string {
 func testAccAWSKmsExternalKeyConfigValidTo(validTo string) string {
+func testAccAWSKmsGrantConfigBase(rName string) string {
 func testAccAwsLambdaAliasConfig(roleName, policyName, attachmentName, funcName, aliasName string) string {
 func testAccAwsLambdaAliasConfigWithRoutingConfig(roleName, policyName, attachmentName, funcName, aliasName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBase(rName string) string {
@@ -1090,6 +1092,7 @@ func testAccAWSLaunchConfigurationWithEncryptionUpdated() string {
 func testAccAWSLaunchConfigurationConfigEbsNoDevice(rInt int) string {
 func testAccAWSLaunchTemplateConfigElasticInferenceAccelerator(rName, elasticInferenceAcceleratorType string) string {
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(rName string) string {
+func testAccAWSLaunchTemplateConfigHibernation(rName string, enabled bool) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccLBCookieStickinessPolicyConfigDestroy(rName string) string {
