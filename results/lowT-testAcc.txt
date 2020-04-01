@@ -2553,8 +2553,11 @@ func testAccESDomainConfig_LogPublishingOptions(
 func testAccESDomainConfig_CognitoOptions(
 func testAccCheckAWSElasticTranscoderPipeline_notifications(
 func testAccCheckAWSElasticTranscoderPipelineExists(
+func testAccCheckAWSElasticTranscoderPipelineDisappears(
 func testAccCheckElasticTranscoderPipelineDestroy(
 func testAccPreCheckAWSElasticTranscoder(
+func testAccCheckElasticTranscoderPresetExists(
+func testAccCheckElasticTranscoderPresetDisappears(
 func testAccCheckElasticTranscoderPresetDestroy(
 func testAccCheckAWSELBDestroy(
 func testAccCheckAWSELBDisappears(
@@ -3258,6 +3261,7 @@ func testAccAWSKmsExternalKeyConfigTags2(
 func testAccAWSKmsExternalKeyConfigValidTo(
 func testAccCheckAWSKmsGrantDestroy(
 func testAccCheckAWSKmsGrantExists(
+func testAccCheckAWSKmsGrantDisappears(
 func testAccAWSKmsGrantConfigBase(
 func testAccAWSKmsGrant_Basic(
 func testAccAWSKmsGrant_withConstraints(

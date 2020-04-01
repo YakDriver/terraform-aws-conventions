@@ -4408,10 +4408,15 @@ func TestAccAWSElasticTranscoderPipeline_notifications(
 func testAccCheckAWSElasticTranscoderPipeline_notifications(
 func TestAccAWSElasticTranscoderPipeline_withContentConfig(
 func TestAccAWSElasticTranscoderPipeline_withPermissions(
+func TestAccAWSElasticTranscoderPipeline_disappears(
 func testAccCheckAWSElasticTranscoderPipelineExists(
+func testAccCheckAWSElasticTranscoderPipelineDisappears(
 func testAccCheckElasticTranscoderPipelineDestroy(
 func testAccPreCheckAWSElasticTranscoder(
 func TestAccAWSElasticTranscoderPreset_basic(
+func TestAccAWSElasticTranscoderPreset_disappears(
+func testAccCheckElasticTranscoderPresetExists(
+func testAccCheckElasticTranscoderPresetDisappears(
 func testAccCheckElasticTranscoderPresetDestroy(
 func TestAccAWSELBAttachment_basic(
 func TestAccAWSELBAttachment_drift(
@@ -5632,8 +5637,10 @@ func TestAccAWSKmsGrant_withConstraints(
 func TestAccAWSKmsGrant_withRetiringPrincipal(
 func TestAccAWSKmsGrant_bare(
 func TestAccAWSKmsGrant_ARN(
+func TestAccAWSKmsGrant_disappears(
 func testAccCheckAWSKmsGrantDestroy(
 func testAccCheckAWSKmsGrantExists(
+func testAccCheckAWSKmsGrantDisappears(
 func testAccAWSKmsGrantConfigBase(
 func testAccAWSKmsGrant_Basic(
 func testAccAWSKmsGrant_withConstraints(

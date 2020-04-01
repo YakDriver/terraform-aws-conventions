@@ -979,7 +979,9 @@ func TestAccAWSElasticTranscoderPipeline_kmsKey(
 func TestAccAWSElasticTranscoderPipeline_notifications(
 func TestAccAWSElasticTranscoderPipeline_withContentConfig(
 func TestAccAWSElasticTranscoderPipeline_withPermissions(
+func TestAccAWSElasticTranscoderPipeline_disappears(
 func TestAccAWSElasticTranscoderPreset_basic(
+func TestAccAWSElasticTranscoderPreset_disappears(
 func TestAccAWSELBAttachment_basic(
 func TestAccAWSELBAttachment_drift(
 func TestAccAWSELB_basic(
@@ -1260,6 +1262,7 @@ func TestAccAWSKmsExternalKey_disappears(
 func TestAccAWSKmsGrant_withConstraints(
 func TestAccAWSKmsGrant_withRetiringPrincipal(
 func TestAccAWSKmsGrant_bare(
+func TestAccAWSKmsGrant_disappears(
 func TestAccAWSKmsKey_basic(
 func TestAccAWSKmsKey_asymmetricKey(
 func TestAccAWSKmsKey_disappears(
