@@ -1663,6 +1663,8 @@ func testAccELBConfig_Listener_IAMServerCertificate(certName, certificate, key, 
 func testAccELBConfig_Listener_IAMServerCertificate_AddInvalidListener(certName, certificate, key string) string {
 func testAccAWSEmrComposeConfig(mapPublicIPOnLaunch bool, config ...string) string {
 func testAccAWSEmrClusterConfig_bootstrap(r string) string {
+func testAccAWSEmrClusterConfig_bootstrapAdd(r string) string {
+func testAccAWSEmrClusterConfig_bootstrapReorder(r string) string {
 func testAccAWSEmrClusterConfig(r string) string {
 func testAccAWSEmrClusterConfigAdditionalInfo(r string) string {
 func testAccAWSEmrClusterConfigConfigurationsJson(r string) string {
@@ -1706,6 +1708,7 @@ func testAccAWSEmrClusterConfigIAMServiceRoleBase(r string) string {
 func testAccAWSEmrClusterConfigIAMServiceRoleCustomAmiID(r string) string {
 func testAccAWSEmrClusterConfigIAMInstanceProfileBase(r string) string {
 func testAccAWSEmrClusterConfigIAMAutoscalingRole(r string) string {
+func testAccAWSEmrClusterConfigBootstrapActionBucket(r string) string {
 func testAccAWSEmrInstanceGroupConfig_basic(r int) string {
 func testAccAWSEmrInstanceGroupConfig_BidPrice(r int) string {
 func testAccAWSEmrInstanceGroupConfig_ConfigurationsJson(r int, name string) string {
@@ -2861,11 +2864,13 @@ func testAccAWSS3BucketConfigWithLogging(randInt int) string {
 func testAccAWSS3BucketConfigWithLifecycle(randInt int) string {
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(randInt int) string {
 func testAccAWSS3BucketConfigWithVersioningLifecycle(randInt int) string {
+func testAccAWSS3BucketConfigLifecycleRuleExpirationEmptyConfigurationBlock(rName string) string {
 func testAccAWSS3BucketConfigReplicationBasic(randInt int) string {
 func testAccAWSS3BucketConfigReplication(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithConfiguration(randInt int, storageClass string) string {
 func testAccAWSS3BucketConfigReplicationWithSseKmsEncryptedObjects(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithAccessControlTranslation(randInt int) string {
+func testAccAWSS3BucketConfigReplicationConfigurationRulesDestination(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithSseKmsEncryptedObjectsAndAccessControlTranslation(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithoutStorageClass(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithoutPrefix(randInt int) string {

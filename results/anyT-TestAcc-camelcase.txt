@@ -638,6 +638,8 @@ func TestAccAWSEMRCluster_terminationProtected(
 func TestAccAWSEMRCluster_keepJob(
 func TestAccAWSEMRCluster_visibleToAllUsers(
 func TestAccAWSEMRCluster_s3Logging(
+func testAccAWSEmrClusterConfig_bootstrapAdd(
+func testAccAWSEmrClusterConfig_bootstrapReorder(
 func testAccAWSEmrClusterConfigInstanceGroups_updateAutoScalingPolicy(
 func testAccAWSEmrClusterConfig_keepJob(
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(

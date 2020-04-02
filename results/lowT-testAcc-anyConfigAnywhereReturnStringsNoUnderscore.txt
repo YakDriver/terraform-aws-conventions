@@ -837,6 +837,7 @@ func testAccAWSEmrClusterConfigIAMServiceRoleBase(r string) string {
 func testAccAWSEmrClusterConfigIAMServiceRoleCustomAmiID(r string) string {
 func testAccAWSEmrClusterConfigIAMInstanceProfileBase(r string) string {
 func testAccAWSEmrClusterConfigIAMAutoscalingRole(r string) string {
+func testAccAWSEmrClusterConfigBootstrapActionBucket(r string) string {
 func testAccFlowLogConfigBase(rName string) string {
 func testAccFlowLogConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccFlowLogConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1410,11 +1411,13 @@ func testAccAWSS3BucketConfigWithLogging(randInt int) string {
 func testAccAWSS3BucketConfigWithLifecycle(randInt int) string {
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(randInt int) string {
 func testAccAWSS3BucketConfigWithVersioningLifecycle(randInt int) string {
+func testAccAWSS3BucketConfigLifecycleRuleExpirationEmptyConfigurationBlock(rName string) string {
 func testAccAWSS3BucketConfigReplicationBasic(randInt int) string {
 func testAccAWSS3BucketConfigReplication(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithConfiguration(randInt int, storageClass string) string {
 func testAccAWSS3BucketConfigReplicationWithSseKmsEncryptedObjects(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithAccessControlTranslation(randInt int) string {
+func testAccAWSS3BucketConfigReplicationConfigurationRulesDestination(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithSseKmsEncryptedObjectsAndAccessControlTranslation(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithoutStorageClass(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithoutPrefix(randInt int) string {
