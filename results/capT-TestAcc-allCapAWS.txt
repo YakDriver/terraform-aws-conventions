@@ -691,6 +691,9 @@ func TestAccAWSCodePipeline_basic(
 func TestAccAWSCodePipeline_emptyArtifacts(
 func TestAccAWSCodePipeline_deployWithServiceRole(
 func TestAccAWSCodePipeline_tags(
+func TestAccAWSCodePipeline_multiregion_basic(
+func TestAccAWSCodePipeline_multiregion_Update(
+func TestAccAWSCodePipeline_multiregion_ConvertSingleRegion(
 func TestAccAWSCodePipelineWebhook_basic(
 func TestAccAWSCodePipelineWebhook_ipAuth(
 func TestAccAWSCodePipelineWebhook_unauthenticated(

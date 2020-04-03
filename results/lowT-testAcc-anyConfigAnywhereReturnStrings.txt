@@ -830,6 +830,9 @@ func testAccAWSCodePipelineConfig_basicUpdated(rName string) string {
 func testAccAWSCodePipelineConfig_emptyArtifacts(rName string) string {
 func testAccAWSCodePipelineConfig_deployWithServiceRole(rName string) string {
 func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
+func testAccAWSCodePipelineConfig_multiregion(rName string) string {
+func testAccAWSCodePipelineConfig_multiregionUpdated(rName string) string {
+func testAccAWSCodePipelineConfig_backToBasic(rName string) string {
 func testAccAWSCodePipelineWebhookConfig_basic(rName string) string {
 func testAccAWSCodePipelineWebhookConfig_ipAuth(rName string) string {
 func testAccAWSCodePipelineWebhookConfig_unauthenticated(rName string) string {

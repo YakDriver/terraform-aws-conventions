@@ -898,11 +898,20 @@ func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_updateMultiple(rNa
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) string {
+func testAccAWSCodePipelineServiceIAMRole(rName string) string {
+func testAccAWSCodePipelineServiceIAMRoleWithAssumeRole(rName string) string {
 func testAccAWSCodePipelineConfig_basic(rName string) string {
 func testAccAWSCodePipelineConfig_basicUpdated(rName string) string {
 func testAccAWSCodePipelineConfig_emptyArtifacts(rName string) string {
+func testAccAWSCodePipelineDeployActionIAMRole(rName string) string {
 func testAccAWSCodePipelineConfig_deployWithServiceRole(rName string) string {
 func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
+func testAccAWSCodePipelineConfig_multiregion(rName string) string {
+func testAccAWSCodePipelineConfig_multiregionUpdated(rName string) string {
+func testAccAWSCodePipelineConfig_backToBasic(rName string) string {
+func testAccAWSCodePipelineS3DefaultBucket(rName string) string {
+func testAccAWSCodePipelineS3Bucket(bucket, rName string) string {
+func testAccAWSCodePipelineS3BucketWithProvider(bucket, rName, provider string) string {
 func testAccAWSCodePipelineWebhookConfig_basic(rName string) string {
 func testAccAWSCodePipelineWebhookConfig_ipAuth(rName string) string {
 func testAccAWSCodePipelineWebhookConfig_unauthenticated(rName string) string {
