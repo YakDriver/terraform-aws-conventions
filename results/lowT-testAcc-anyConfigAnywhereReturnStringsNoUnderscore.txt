@@ -624,6 +624,7 @@ func testAccDocDBClusterConfigWithFinalSnapshot(n int) string {
 func testAccDocDBClusterConfigWithoutUserNameAndPassword(n int) string {
 func testAccDocDBClusterConfigUpdatedTags(n int) string {
 func testAccDocDBClusterNoCloudwatchLogsConfig(n int) string {
+func testAccDocDBClusterConfigDeleteProtection(isProtected bool) string {
 func testAccDocDBSubnetGroupConfig(rName string) string {
 func testAccDxBgpPeerConfig(vifId string, bgpAsn int) string {
 func testAccDxConnectionAssociationConfig(rName string) string {

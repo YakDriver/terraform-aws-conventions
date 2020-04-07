@@ -142,6 +142,7 @@ func TestAccAWSCloudFormationStack_dataSource_basic(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(
 func TestAccAWSCloudFormationStack_dataSource_yaml(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(
+func TestAccAWSDataSourceCloudFrontDistribution_basic(
 func TestAccDataSourceCloudHsmV2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
 func TestAccAWSCloudTrailServiceAccount_Region(
@@ -1290,7 +1291,8 @@ func TestAccAWSAppautoScalingPolicy_basic(
 func TestAccAWSAppautoScalingPolicy_disappears(
 func TestAccAWSAppautoScalingPolicy_scaleOutAndIn(
 func TestAccAWSAppautoScalingPolicy_spotFleetRequest(
-func TestAccAWSAppautoScalingPolicy_dynamoDb(
+func TestAccAWSAppautoScalingPolicy_dynamodb_table(
+func TestAccAWSAppautoScalingPolicy_dynamodb_index(
 func TestAccAWSAppautoScalingPolicy_multiplePoliciesSameName(
 func TestAccAWSAppautoScalingPolicy_multiplePoliciesSameResource(
 func TestAccAWSAppautoScalingPolicy_ResourceId_ForceNew(
@@ -1300,6 +1302,7 @@ func testAccCheckAWSAppautoscalingPolicyDisappears(
 func testAccAWSAppautoscalingPolicyConfig(
 func testAccAWSAppautoscalingPolicySpotFleetRequestConfig(
 func testAccAWSAppautoscalingPolicyDynamoDB(
+func testAccAWSAppautoscalingPolicyDynamoDBIndex(
 func testAccAWSAppautoscalingPolicy_multiplePoliciesSameName(
 func testAccAWSAppautoscalingPolicy_multiplePoliciesSameResource(
 func testAccAWSAppautoscalingPolicyScaleOutAndInConfig(
@@ -3343,6 +3346,7 @@ func TestAccAWSDocDBCluster_kmsKey(
 func TestAccAWSDocDBCluster_encrypted(
 func TestAccAWSDocDBCluster_backupsUpdate(
 func TestAccAWSDocDBCluster_Port(
+func TestAccAWSDocDBCluster_deleteProtection(
 func testAccCheckDocDBClusterDestroy(
 func testAccCheckDocDBClusterDestroyWithProvider(
 func testAccCheckDocDBClusterExists(
@@ -3361,6 +3365,7 @@ func testAccDocDBClusterConfig_encrypted(
 func testAccDocDBClusterConfig_backups(
 func testAccDocDBClusterConfig_backupsUpdate(
 func testAccDocDBClusterConfig_Port(
+func testAccDocDBClusterConfigDeleteProtection(
 func TestAccAWSDocDBSubnetGroup_basic(
 func TestAccAWSDocDBSubnetGroup_disappears(
 func TestAccAWSDocDBSubnetGroup_namePrefix(
@@ -6136,6 +6141,7 @@ func TestAccAWSLBTargetGroup_basic(
 func TestAccAWSLBTargetGroup_basicUdp(
 func TestAccAWSLBTargetGroup_withoutHealthcheck(
 func TestAccAWSLBTargetGroup_networkLB_TargetGroup(
+func TestAccAWSLBTargetGroup_Protocol_Tcp_HealthCheck_Protocol(
 func TestAccAWSLBTargetGroup_Protocol_Tls(
 func TestAccAWSLBTargetGroup_networkLB_TargetGroupWithProxy(
 func TestAccAWSLBTargetGroup_TCP_HTTPHealthCheck(
@@ -6155,6 +6161,8 @@ func TestAccAWSLBTargetGroup_defaults_network(
 func TestAccAWSLBTargetGroup_stickinessWithTCPDisabled(
 func TestAccAWSLBTargetGroup_stickinessWithTCPEnabledShouldError(
 func testAccCheckAWSLBTargetGroupExists(
+func testAccCheckAWSLBTargetGroupNotRecreated(
+func testAccCheckAWSLBTargetGroupRecreated(
 func testAccCheckAWSLBTargetGroupHealthCheckEnabled(
 func testAccCheckAWSLBTargetGroupHealthCheckInterval(
 func testAccCheckAWSLBTargetGroupHealthCheckTimeout(

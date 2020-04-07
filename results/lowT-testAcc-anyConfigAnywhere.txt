@@ -1247,6 +1247,7 @@ func testAccDocDBClusterConfig_encrypted(
 func testAccDocDBClusterConfig_backups(
 func testAccDocDBClusterConfig_backupsUpdate(
 func testAccDocDBClusterConfig_Port(
+func testAccDocDBClusterConfigDeleteProtection(
 func testAccDocDBSubnetGroupConfig(
 func testAccDocDBSubnetGroupConfig_updatedDescription(
 func testAccDxBgpPeerConfig(

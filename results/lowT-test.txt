@@ -700,6 +700,7 @@ func testAccCheckAWSAppautoscalingPolicyDisappears(
 func testAccAWSAppautoscalingPolicyConfig(
 func testAccAWSAppautoscalingPolicySpotFleetRequestConfig(
 func testAccAWSAppautoscalingPolicyDynamoDB(
+func testAccAWSAppautoscalingPolicyDynamoDBIndex(
 func testAccAWSAppautoscalingPolicy_multiplePoliciesSameName(
 func testAccAWSAppautoscalingPolicy_multiplePoliciesSameResource(
 func testAccAWSAppautoscalingPolicyScaleOutAndInConfig(
@@ -2013,6 +2014,7 @@ func testAccDocDBClusterConfig_encrypted(
 func testAccDocDBClusterConfig_backups(
 func testAccDocDBClusterConfig_backupsUpdate(
 func testAccDocDBClusterConfig_Port(
+func testAccDocDBClusterConfigDeleteProtection(
 func testAccCheckDocDBSubnetGroupDestroy(
 func testAccCheckAWSDocDBSubnetGroupDisappears(
 func testAccCheckDocDBSubnetGroupExists(
@@ -3680,6 +3682,8 @@ func testAccAWSLBTargetGroupAttachmentConfigTargetIdIpAddress(
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdLambda(
 func testSweepLBTargetGroups(
 func testAccCheckAWSLBTargetGroupExists(
+func testAccCheckAWSLBTargetGroupNotRecreated(
+func testAccCheckAWSLBTargetGroupRecreated(
 func testAccCheckAWSLBTargetGroupHealthCheckEnabled(
 func testAccCheckAWSLBTargetGroupHealthCheckInterval(
 func testAccCheckAWSLBTargetGroupHealthCheckTimeout(

@@ -1163,6 +1163,7 @@ func testAccDocDBClusterConfig_encrypted(n int) string {
 func testAccDocDBClusterConfig_backups(n int) string {
 func testAccDocDBClusterConfig_backupsUpdate(n int) string {
 func testAccDocDBClusterConfig_Port(rInt, port int) string {
+func testAccDocDBClusterConfigDeleteProtection(isProtected bool) string {
 func testAccDocDBSubnetGroupConfig(rName string) string {
 func testAccDocDBSubnetGroupConfig_updatedDescription(rName string) string {
 func testAccDxBgpPeerConfig(vifId string, bgpAsn int) string {

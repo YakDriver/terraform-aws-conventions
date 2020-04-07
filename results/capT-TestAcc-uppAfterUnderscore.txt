@@ -858,6 +858,7 @@ func TestAccAWSLBListener_DefaultAction_Order(
 func TestAccAWSLBListener_DefaultAction_Order_Recreates(
 func TestAccAWSLBTargetGroupAttachment_BackwardsCompatibility(
 func TestAccAWSLBTargetGroupAttachment_Port(
+func TestAccAWSLBTargetGroup_Protocol_Tcp_HealthCheck_Protocol(
 func TestAccAWSLBTargetGroup_Protocol_Tls(
 func TestAccAWSLBTargetGroup_TCP_HTTPHealthCheck(
 func TestAccAWSLB_ALB_basic(

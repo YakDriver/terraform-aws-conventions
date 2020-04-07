@@ -20,6 +20,7 @@ func TestAccDataSourceAwsCanonicalUserId_basic(
 func TestAccAWSCloudformationExportDataSource_basic(
 func TestAccAWSCloudFormationStack_dataSource_basic(
 func TestAccAWSCloudFormationStack_dataSource_yaml(
+func TestAccAWSDataSourceCloudFrontDistribution_basic(
 func TestAccDataSourceCloudHsmV2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_basic(
@@ -324,7 +325,8 @@ func TestAccAWSAppautoScalingPolicy_basic(
 func TestAccAWSAppautoScalingPolicy_disappears(
 func TestAccAWSAppautoScalingPolicy_scaleOutAndIn(
 func TestAccAWSAppautoScalingPolicy_spotFleetRequest(
-func TestAccAWSAppautoScalingPolicy_dynamoDb(
+func TestAccAWSAppautoScalingPolicy_dynamodb_table(
+func TestAccAWSAppautoScalingPolicy_dynamodb_index(
 func TestAccAWSAppautoScalingPolicy_multiplePoliciesSameName(
 func TestAccAWSAppautoScalingPolicy_multiplePoliciesSameResource(
 func TestAccAWSAppautoscalingScheduledAction_dynamo(
@@ -716,6 +718,7 @@ func TestAccAWSDocDBCluster_updateCloudwatchLogsExports(
 func TestAccAWSDocDBCluster_kmsKey(
 func TestAccAWSDocDBCluster_encrypted(
 func TestAccAWSDocDBCluster_backupsUpdate(
+func TestAccAWSDocDBCluster_deleteProtection(
 func TestAccAWSDocDBSubnetGroup_basic(
 func TestAccAWSDocDBSubnetGroup_disappears(
 func TestAccAWSDocDBSubnetGroup_namePrefix(

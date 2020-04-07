@@ -467,6 +467,7 @@ func testAccAPIGatewayVpcLinkConfigTags2(rName, description, tagKey1, tagValue1,
 func testAccAPIGatewayVpcLinkConfig_Update(rName, description string) string {
 func testAccAWSAppautoscalingPolicyConfig(rName string) string {
 func testAccAWSAppautoscalingPolicySpotFleetRequestConfig(randPolicyName, validUntil string) string {
+func testAccAWSAppautoscalingPolicyDynamoDBIndex(rName string) string {
 func testAccAWSAppautoscalingPolicy_multiplePoliciesSameName(tableName1, tableName2, namePrefix string) string {
 func testAccAWSAppautoscalingPolicy_multiplePoliciesSameResource(tableName, namePrefix string) string {
 func testAccAWSAppautoscalingPolicyConfigResourceIdForceNewBase(rName string) string {
@@ -1262,6 +1263,7 @@ func testAccDocDBClusterConfig_encrypted(n int) string {
 func testAccDocDBClusterConfig_backups(n int) string {
 func testAccDocDBClusterConfig_backupsUpdate(n int) string {
 func testAccDocDBClusterConfig_Port(rInt, port int) string {
+func testAccDocDBClusterConfigDeleteProtection(isProtected bool) string {
 func testAccDocDBSubnetGroupConfig(rName string) string {
 func testAccDocDBSubnetGroupConfig_updatedDescription(rName string) string {
 func testAccDxBgpPeerConfig(vifId string, bgpAsn int) string {
