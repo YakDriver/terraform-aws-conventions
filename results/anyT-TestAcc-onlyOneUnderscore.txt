@@ -1240,6 +1240,7 @@ func TestAccAWSDBInstance_subnetGroup(
 func TestAccAWSDBInstance_optionGroup(
 func TestAccAWSDBInstance_iamAuth(
 func TestAccAWSDBInstance_AllowMajorVersionUpgrade(
+func TestAccAWSDBInstance_DbSubnetGroupName(
 func TestAccAWSDBInstance_DeletionProtection(
 func TestAccAWSDBInstance_FinalSnapshotIdentifier(
 func TestAccAWSDBInstance_IsAlreadyBeingDeleted(
@@ -1266,6 +1267,7 @@ func testAccSnapshotInstanceConfig_mysqlPort(
 func testAccSnapshotInstanceConfig_updateMysqlPort(
 func testAccAWSDBMSSQL_timezone(
 func testAccAWSDBInstanceConfig_MariaDB(
+func testAccAWSDBInstanceConfig_DbSubnetGroupName(
 func testAccAWSDBInstanceConfig_DeletionProtection(
 func testAccAWSDBInstanceConfig_MaxAllocatedStorage(
 func testAccAWSDBInstanceConfig_Password(
@@ -1722,6 +1724,7 @@ func testAccAWSEFSFileSystemConfig_ProvisionedThroughputInMibps(
 func TestAccAWSEFSMountTarget_basic(
 func TestAccAWSEFSMountTarget_disappears(
 func TestAccAWSEgressOnlyInternetGateway_basic(
+func TestAccAWSEgressOnlyInternetGateway_Tags(
 func TestAccAWSEIPAssociation_instance(
 func TestAccAWSEIPAssociation_networkInterface(
 func TestAccAWSEIPAssociation_basic(
@@ -3504,6 +3507,7 @@ func testAccAWSSpotDatafeedSubscription_importBasic(
 func testAccAWSSpotDatafeedSubscription_basic(
 func testAccAWSSpotDatafeedSubscription_disappears(
 func TestAccAWSSpotFleetRequest_basic(
+func TestAccAWSSpotFleetRequest_tags(
 func TestAccAWSSpotFleetRequest_associatePublicIpAddress(
 func TestAccAWSSpotFleetRequest_instanceInterruptionBehavior(
 func TestAccAWSSpotFleetRequest_fleetType(

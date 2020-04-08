@@ -249,17 +249,19 @@ func testAccDataSourceAwsWafWebAclConfig_Name(name string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
+func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
 func testAccAlternateRegionProviderConfig() string {
-func testAccProviderConfigIgnoreTagPrefixes1(keyPrefix1 string) string {
-func testAccProviderConfigIgnoreTags1(key1 string) string {
+func testAccProviderConfigIgnoreTagsKeyPrefixes1(keyPrefix1 string) string {
+func testAccProviderConfigIgnoreTagsKeys1(key1 string) string {
 func testAccUsEast1RegionProviderConfig() string {
 func testAccAWSProviderConfigEndpoints(endpoints string) string {
-func testAccAWSProviderConfigIgnoreTagPrefixes0() string {
-func testAccAWSProviderConfigIgnoreTagPrefixes1(tagPrefix1 string) string {
-func testAccAWSProviderConfigIgnoreTagPrefixes2(tagPrefix1, tagPrefix2 string) string {
-func testAccAWSProviderConfigIgnoreTags0() string {
-func testAccAWSProviderConfigIgnoreTags1(tag1 string) string {
-func testAccAWSProviderConfigIgnoreTags2(tag1, tag2 string) string {
+func testAccAWSProviderConfigIgnoreTagsEmptyConfigurationBlock() string {
+func testAccAWSProviderConfigIgnoreTagsKeyPrefixes0() string {
+func testAccAWSProviderConfigIgnoreTagsKeyPrefixes1(tagPrefix1 string) string {
+func testAccAWSProviderConfigIgnoreTagsKeyPrefixes2(tagPrefix1, tagPrefix2 string) string {
+func testAccAWSProviderConfigIgnoreTagsKeys0() string {
+func testAccAWSProviderConfigIgnoreTagsKeys1(tag1 string) string {
+func testAccAWSProviderConfigIgnoreTagsKeys2(tag1, tag2 string) string {
 func testAccAWSProviderConfigRegion(region string) string {
 func testAccProviderConfigAssumeRolePolicy(policy string) string {
 func testAccAWSAccessAnalyzerAnalyzerConfigAnalyzerName(rName string) string {
@@ -1047,6 +1049,9 @@ func testAccAWSDBInstanceConfigCloudwatchLogsExportConfigurationModify(rInt int)
 func testAccAWSDBInstanceConfigCloudwatchLogsExportConfigurationDelete(rInt int) string {
 func testAccAWSDBInstanceConfigEc2Classic(rInt int) string {
 func testAccAWSDBInstanceConfig_MariaDB(rName string) string {
+func testAccAWSDBInstanceConfig_DbSubnetGroupName(rName string) string {
+func testAccAWSDBInstanceConfig_DbSubnetGroupName_RamShared(rName string) string {
+func testAccAWSDBInstanceConfig_DbSubnetGroupName_VpcSecurityGroupIds(rName string) string {
 func testAccAWSDBInstanceConfig_DeletionProtection(rName string, deletionProtection bool) string {
 func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Oracle(rName string) string {
 func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_MSSQL(rName string) string {
@@ -1060,6 +1065,9 @@ func testAccAWSDBInstanceConfig_ReplicateSourceDb_AutoMinorVersionUpgrade(rName 
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_AvailabilityZone(rName string) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_BackupRetentionPeriod(rName string, backupRetentionPeriod int) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_BackupWindow(rName, backupWindow, maintenanceWindow string) string {
+func testAccAWSDBInstanceConfig_ReplicateSourceDb_DbSubnetGroupName(rName string) string {
+func testAccAWSDBInstanceConfig_ReplicateSourceDb_DbSubnetGroupName_RamShared(rName string) string {
+func testAccAWSDBInstanceConfig_ReplicateSourceDb_DbSubnetGroupName_VpcSecurityGroupIds(rName string) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_DeletionProtection(rName string, deletionProtection bool) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_IamDatabaseAuthenticationEnabled(rName string, iamDatabaseAuthenticationEnabled bool) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_MaintenanceWindow(rName, backupWindow, maintenanceWindow string) string {
@@ -1387,6 +1395,8 @@ func testAccAWSEFSFileSystemConfig_ProvisionedThroughputInMibps(provisionedThrou
 func testAccAWSEFSFileSystemConfigWithLifecyclePolicy(lpName string, lpVal string) string {
 func testAccAWSEFSMountTargetConfig(ct string) string {
 func testAccAWSEFSMountTargetConfigModified(ct string) string {
+func testAccAWSEgressOnlyInternetGatewayConfigTags1(tagKey1, tagValue1 string) string {
+func testAccAWSEgressOnlyInternetGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEIPAssociationConfig_spotInstance(rInt int) string {
 func testAccAWSEIPConfig_tags(rName, testName string) string {
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(poolName string) string {
@@ -1944,6 +1954,7 @@ func testAccAWSLambdaConfigPython37Runtime(funcName, policyName, roleName, sgNam
 func testAccAWSLambdaConfigPython38Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigRuby25Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigRuby27Runtime(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigDotNetCore31Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaFunctionConfig_local_name_only_tpl(filePath, roleName, funcName string) string {
 func testAccAWSLambdaFunctionConfig_s3_unversioned_tpl(bucketName, roleName, funcName, key, path string) string {
 func testAccAWSLambdaPermissionConfig(funcName, roleName string) string {
@@ -2752,6 +2763,8 @@ func testAccAWSSNSTopicConfigTags1(r, tag1Key, tag1Value string) string {
 func testAccAWSSNSTopicConfigTags2(r, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSSpotFleetRequestConfigBase(rName string, rInt int) string {
 func testAccAWSSpotFleetRequestConfig(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigTags1(rName, validUntil, tagKey1, tagValue1 string, rInt int) string {
+func testAccAWSSpotFleetRequestConfigTags2(rName, validUntil, tagKey1, tagValue1, tagKey2, tagValue2 string, rInt int) string {
 func testAccAWSSpotFleetRequestConfigAssociatePublicIpAddress(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigTargetCapacity(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigExcessCapacityTermination(rName string, rInt int, validUntil string) string {
