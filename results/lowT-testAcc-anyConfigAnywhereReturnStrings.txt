@@ -431,6 +431,22 @@ func testAccAWSAPIGatewayV2ApiConfig_basicHttp(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_allAttributesWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_allAttributesHttp(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_tags(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_baseWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_baseHttp(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_credentials(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_credentialsUpdated(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_jwt(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_jwtUpdated(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_apiWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttp(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttpUpdated(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_lambda(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_vpcLink(rName string) string {
+func testAccAWSAPIGatewayV2ModelConfig_api(rName string) string {
+func testAccAWSAPIGatewayV2ModelConfig_basic(rName, schema string) string {
+func testAccAWSAPIGatewayV2ModelConfig_allAttributes(rName, schema string) string {
 func testAccAPIGatewayVpcLinkConfig_basis(rName string) string {
 func testAccAPIGatewayVpcLinkConfig(rName, description string) string {
 func testAccAPIGatewayVpcLinkConfigTags1(rName, description, tagKey1, tagValue1 string) string {

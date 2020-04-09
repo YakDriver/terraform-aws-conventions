@@ -319,6 +319,12 @@ func TestAccAWSAPIGatewayUsagePlan_apiStages(
 func TestAccAWSAPIGatewayV2Api_basicWebSocket(
 func TestAccAWSAPIGatewayV2Api_basicHttp(
 func TestAccAWSAPIGatewayV2Api_disappears(
+func TestAccAWSAPIGatewayV2Authorizer_basic(
+func TestAccAWSAPIGatewayV2Authorizer_disappears(
+func TestAccAWSAPIGatewayV2Integration_basic(
+func TestAccAWSAPIGatewayV2Integration_disappears(
+func TestAccAWSAPIGatewayV2Model_basic(
+func TestAccAWSAPIGatewayV2Model_disappears(
 func TestAccAWSAPIGatewayVpcLink_basic(
 func TestAccAWSAPIGatewayVpcLink_tags(
 func TestAccAWSAppautoScalingPolicy_basic(
