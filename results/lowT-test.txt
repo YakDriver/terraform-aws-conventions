@@ -2447,6 +2447,7 @@ func testAccAWSEcsServiceConfigTags2(
 func testAccAWSEcsServiceConfigManagedTags(
 func testAccAWSEcsServiceConfigPropagateTags(
 func testAccAWSEcsServiceWithReplicaSchedulingStrategy(
+func testSweepEcsTaskDefinitions(
 func testAccAWSEcsTaskDefinitionConfigProxyConfiguration(
 func testAccCheckAWSEcsTaskDefinitionProxyConfiguration(
 func testAccCheckEcsTaskDefinitionRecreated(

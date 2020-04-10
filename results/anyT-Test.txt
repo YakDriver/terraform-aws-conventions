@@ -4045,6 +4045,7 @@ func testAccAWSEcsServiceConfigTags2(
 func testAccAWSEcsServiceConfigManagedTags(
 func testAccAWSEcsServiceConfigPropagateTags(
 func testAccAWSEcsServiceWithReplicaSchedulingStrategy(
+func testSweepEcsTaskDefinitions(
 func TestAccAWSEcsTaskDefinition_basic(
 func TestAccAWSEcsTaskDefinition_withScratchVolume(
 func TestAccAWSEcsTaskDefinition_withDockerVolume(
@@ -7171,6 +7172,7 @@ func TestAccAWSRdsGlobalCluster_DeletionProtection(
 func TestAccAWSRdsGlobalCluster_Engine_Aurora(
 func TestAccAWSRdsGlobalCluster_EngineVersion_Aurora(
 func TestAccAWSRdsGlobalCluster_EngineVersion_AuroraMySQL(
+func TestAccAWSRdsGlobalCluster_EngineVersion_AuroraPostgresql(
 func TestAccAWSRdsGlobalCluster_StorageEncrypted(
 func testAccCheckAWSRdsGlobalClusterExists(
 func testAccCheckAWSRdsGlobalClusterDestroy(
