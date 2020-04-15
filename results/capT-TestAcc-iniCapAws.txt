@@ -38,6 +38,9 @@ func TestAccAwsBackupPlan_withTags(
 func TestAccAwsBackupPlan_withRules(
 func TestAccAwsBackupPlan_withLifecycle(
 func TestAccAwsBackupPlan_withRecoveryPointTags(
+func TestAccAwsBackupPlan_Rule_CopyAction_SameRegion(
+func TestAccAwsBackupPlan_Rule_CopyAction_Multiple(
+func TestAccAwsBackupPlan_Rule_CopyAction_CrossRegion(
 func TestAccAwsBackupPlan_disappears(
 func TestAccAwsBackupSelection_basic(
 func TestAccAwsBackupSelection_disappears(
@@ -87,6 +90,7 @@ func TestAccAwsDxTransitVirtualInterface(
 func TestAccAwsEc2ClientVpnEndpoint_basic(
 func TestAccAwsEc2ClientVpnEndpoint_disappears(
 func TestAccAwsEc2ClientVpnEndpoint_msAD(
+func TestAccAwsEc2ClientVpnEndpoint_mutualAuthAndMsAD(
 func TestAccAwsEc2ClientVpnEndpoint_withLogGroup(
 func TestAccAwsEc2ClientVpnEndpoint_withDNSServers(
 func TestAccAwsEc2ClientVpnEndpoint_tags(

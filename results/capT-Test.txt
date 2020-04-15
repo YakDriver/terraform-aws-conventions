@@ -297,6 +297,9 @@ func TestAccAWSDataSourceRedshiftCluster_basic(
 func TestAccAWSDataSourceRedshiftCluster_vpc(
 func TestAccAWSDataSourceRedshiftCluster_logging(
 func TestAccAWSRedshiftServiceAccount_basic(
+func TestAccDataSourceAwsRegions_Basic(
+func TestAccDataSourceAwsRegions_Filter(
+func TestAccDataSourceAwsRegions_AllRegions(
 func TestFindRegionByEc2Endpoint(
 func TestFindRegionByName(
 func TestAccDataSourceAwsRegion_basic(
@@ -593,6 +596,9 @@ func TestAccAWSAPIGatewayV2Authorizer_basic(
 func TestAccAWSAPIGatewayV2Authorizer_disappears(
 func TestAccAWSAPIGatewayV2Authorizer_Credentials(
 func TestAccAWSAPIGatewayV2Authorizer_JWT(
+func TestAccAWSAPIGatewayV2IntegrationResponse_basic(
+func TestAccAWSAPIGatewayV2IntegrationResponse_disappears(
+func TestAccAWSAPIGatewayV2IntegrationResponse_AllAttributes(
 func TestAccAWSAPIGatewayV2Integration_basic(
 func TestAccAWSAPIGatewayV2Integration_disappears(
 func TestAccAWSAPIGatewayV2Integration_IntegrationTypeHttp(
@@ -759,6 +765,9 @@ func TestAccAwsBackupPlan_withTags(
 func TestAccAwsBackupPlan_withRules(
 func TestAccAwsBackupPlan_withLifecycle(
 func TestAccAwsBackupPlan_withRecoveryPointTags(
+func TestAccAwsBackupPlan_Rule_CopyAction_SameRegion(
+func TestAccAwsBackupPlan_Rule_CopyAction_Multiple(
+func TestAccAwsBackupPlan_Rule_CopyAction_CrossRegion(
 func TestAccAwsBackupPlan_disappears(
 func TestAccAwsBackupSelection_basic(
 func TestAccAwsBackupSelection_disappears(
@@ -1434,6 +1443,7 @@ func TestAccAWSDynamoDbTable_Ttl_Disabled(
 func TestAccAWSDynamoDbTable_attributeUpdate(
 func TestAccAWSDynamoDbTable_attributeUpdateValidation(
 func TestAccAWSDynamoDbTable_encryption(
+func TestAccAWSDynamoDbTable_Replica(
 func TestAccAWSEBSDefaultKmsKey_basic(
 func TestAccAWSEBSEncryptionByDefault_basic(
 func TestAccAWSEbsSnapshotCopy_basic(
@@ -1468,6 +1478,7 @@ func TestAccAWSEc2CapacityReservation_tenancy(
 func TestAccAwsEc2ClientVpnEndpoint_basic(
 func TestAccAwsEc2ClientVpnEndpoint_disappears(
 func TestAccAwsEc2ClientVpnEndpoint_msAD(
+func TestAccAwsEc2ClientVpnEndpoint_mutualAuthAndMsAD(
 func TestAccAwsEc2ClientVpnEndpoint_withLogGroup(
 func TestAccAwsEc2ClientVpnEndpoint_withDNSServers(
 func TestAccAwsEc2ClientVpnEndpoint_tags(

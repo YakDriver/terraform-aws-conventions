@@ -323,6 +323,9 @@ func testAccAWSAutoScalingGroupConfigWithSuspendedProcesses(name string) string 
 func testAccAWSAutoScalingGroupConfigWithSuspendedProcessesUpdated(name string) string {
 func testAccAWSAutoscalingLifecycleHookConfig(name string) string {
 func testAccAWSAutoscalingScheduleConfig(r, start, end string) string {
+func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter int, deleteAfter int) string {
+func testAccAwsBackupPlanConfigRuleCopyActionMultiple(rName string) string {
+func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
 func testAccBackupSelectionConfigBase(rInt int) string {
 func testAccBackupSelectionConfigBasic(rInt int) string {
 func testAccBackupSelectionConfigWithTags(rInt int) string {
@@ -665,6 +668,7 @@ func testAccEc2ClientVpnEndpointConfig(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithLogGroup(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithDNSServers(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithMicrosoftAD(rName string) string {
+func testAccEc2ClientVpnEndpointConfigWithMutualAuthAndMicrosoftAD(rName string) string {
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
 func testAccEc2ClientVpnNetworkAssociationConfigAcmCertificateBase() string {
 func testAccEc2ClientVpnNetworkAssociationConfig(rName string) string {

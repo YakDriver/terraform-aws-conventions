@@ -315,6 +315,9 @@ func TestAccAWSAPIGatewayV2Authorizer_basic(
 func TestAccAWSAPIGatewayV2Authorizer_disappears(
 func TestAccAWSAPIGatewayV2Authorizer_Credentials(
 func TestAccAWSAPIGatewayV2Authorizer_JWT(
+func TestAccAWSAPIGatewayV2IntegrationResponse_basic(
+func TestAccAWSAPIGatewayV2IntegrationResponse_disappears(
+func TestAccAWSAPIGatewayV2IntegrationResponse_AllAttributes(
 func TestAccAWSAPIGatewayV2Integration_basic(
 func TestAccAWSAPIGatewayV2Integration_disappears(
 func TestAccAWSAPIGatewayV2Integration_IntegrationTypeHttp(
@@ -1058,6 +1061,7 @@ func TestAccAWSDynamoDbTable_Ttl_Disabled(
 func TestAccAWSDynamoDbTable_attributeUpdate(
 func TestAccAWSDynamoDbTable_attributeUpdateValidation(
 func TestAccAWSDynamoDbTable_encryption(
+func TestAccAWSDynamoDbTable_Replica(
 func TestAccAWSEBSDefaultKmsKey_basic(
 func TestAccAWSEBSEncryptionByDefault_basic(
 func TestAccAWSEbsSnapshotCopy_basic(

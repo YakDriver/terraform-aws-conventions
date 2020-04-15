@@ -163,6 +163,9 @@ func testAccDataSourceAwsRdsClusterConfigBasic(clusterName string) string {
 func testAccAWSDataSourceRedshiftClusterConfig(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithVpc(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithLogging(rInt int) string {
+func testAccDataSourceAwsRegionsConfig_empty() string {
+func testAccDataSourceAwsRegionsConfig_allRegions() string {
+func testAccDataSourceAwsRegionsConfig_allRegionsFiltered(filter string) string {
 func testAccDataSourceAwsRegionConfig_endpoint(endpoint string) string {
 func testAccDataSourceAwsRegionConfig_endpointAndName(endpoint, name string) string {
 func testAccDataSourceAwsRegionConfig_name(name string) string {
@@ -438,6 +441,9 @@ func testAccAWSAPIGatewayV2AuthorizerConfig_credentials(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_credentialsUpdated(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_jwt(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_jwtUpdated(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationResponseConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributes(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributesUpdated(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_apiWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttp(rName string) string {
@@ -594,6 +600,9 @@ func testAccAwsBackupPlanConfig_lifecycleDeleteAfterOnly(rName string) string {
 func testAccAwsBackupPlanConfig_lifecycleColdStorageAfterAndDeleteAfter(rName string) string {
 func testAccAwsBackupPlanConfig_recoveryPointTags(rName string) string {
 func testAccAwsBackupPlanConfig_recoveryPointTagsUpdated(rName string) string {
+func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter int, deleteAfter int) string {
+func testAccAwsBackupPlanConfigRuleCopyActionMultiple(rName string) string {
+func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
 func testAccBackupSelectionConfigBase(rInt int) string {
 func testAccBackupSelectionConfigBasic(rInt int) string {
 func testAccBackupSelectionConfigWithTags(rInt int) string {
@@ -885,7 +894,8 @@ func testAccAWSCognitoIdentityPoolConfig_cognitoIdentityProvidersModified(name s
 func testAccAWSCognitoIdentityPoolConfig_cognitoIdentityProvidersAndOpenidConnectProviderArns(name string) string {
 func testAccAWSCognitoIdentityPoolConfig_Tags1(name, tagKey1, tagValue1 string) string {
 func testAccAWSCognitoIdentityPoolConfig_Tags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSCognitoIdentityProviderConfig_basic() string {
+func testAccAWSCognitoIdentityProviderConfig_basic(userPoolName string) string {
+func testAccAWSCognitoIdentityProviderConfig_basicUpdated(userPoolName string) string {
 func testAccAWSCognitoResourceServerConfig_basic(identifier string, name string, poolName string) string {
 func testAccAWSCognitoResourceServerConfig_scope(identifier string, name string, poolName string) string {
 func testAccAWSCognitoResourceServerConfig_scope_update(identifier string, name string, poolName string) string {
@@ -1291,6 +1301,7 @@ func testAccEc2ClientVpnEndpointConfig(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithLogGroup(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithDNSServers(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithMicrosoftAD(rName string) string {
+func testAccEc2ClientVpnEndpointConfigWithMutualAuthAndMicrosoftAD(rName string) string {
 func testAccEc2ClientVpnEndpointConfig_tags(rName string) string {
 func testAccEc2ClientVpnEndpointConfig_tagsChanged(rName string) string {
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
