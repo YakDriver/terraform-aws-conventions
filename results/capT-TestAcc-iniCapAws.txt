@@ -57,6 +57,10 @@ func TestAccAwsDaxSubnetGroup_basic(
 func TestAccAwsDmsEndpoint_Basic(
 func TestAccAwsDmsEndpoint_S3(
 func TestAccAwsDmsEndpoint_DynamoDb(
+func TestAccAwsDmsEndpoint_Elasticsearch(
+func TestAccAwsDmsEndpoint_Elasticsearch_ErrorRetryDuration(
+func TestAccAwsDmsEndpoint_Elasticsearch_FullLoadErrorPercentage(
+func TestAccAwsDmsEndpoint_Kinesis(
 func TestAccAwsDmsEndpoint_MongoDb(
 func TestAccAwsDmsEndpoint_DocDB(
 func TestAccAwsDmsEndpoint_Db2(

@@ -441,6 +441,7 @@ func testAccAWSAPIGatewayV2AuthorizerConfig_credentials(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_credentialsUpdated(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_jwt(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_jwtUpdated(rName string) string {
+func testAccAWSAPIGatewayV2DeploymentConfig_basic(rName, description string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributes(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributesUpdated(rName string) string {
@@ -453,6 +454,17 @@ func testAccAWSAPIGatewayV2IntegrationConfig_vpcLink(rName string) string {
 func testAccAWSAPIGatewayV2ModelConfig_api(rName string) string {
 func testAccAWSAPIGatewayV2ModelConfig_basic(rName, schema string) string {
 func testAccAWSAPIGatewayV2ModelConfig_allAttributes(rName, schema string) string {
+func testAccAWSAPIGatewayV2RouteResponseConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2RouteResponseConfig_model(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_apiWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_authorizer(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_authorizerUpdated(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_jwtAuthorization(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_jwtAuthorizationUpdated(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_model(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_simpleAttributes(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_target(rName string) string {
 func testAccAPIGatewayVpcLinkConfig_basis(rName string) string {
 func testAccAPIGatewayVpcLinkConfig(rName, description string) string {
 func testAccAPIGatewayVpcLinkConfigTags1(rName, description, tagKey1, tagValue1 string) string {
@@ -1161,6 +1173,11 @@ func testAccDirectoryServiceDirectoryConfig_withAlias(alias string) string {
 func testAccDirectoryServiceDirectoryConfig_withSso(alias string) string {
 func testAccDirectoryServiceDirectoryConfig_withSso_modified(alias string) string {
 func testAccDirectoryServiceLogSubscriptionConfig(logGroupName string) string {
+func testAccDmsEventSubscriptionConfigBase(rName string) string {
+func testAccDmsEventSubscriptionConfigEnabled(rName string, enabled bool) string {
+func testAccDmsEventSubscriptionConfigEventCategories2(rName string, eventCategory1 string, eventCategory2 string) string {
+func testAccDmsEventSubscriptionConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccDmsEventSubscriptionConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSDmsReplicationInstanceConfig_AllocatedStorage(rName string, allocatedStorage int) string {
 func testAccAWSDmsReplicationInstanceConfig_AutoMinorVersionUpgrade(rName string, autoMinorVersionUpgrade bool) string {
 func testAccAWSDmsReplicationInstanceConfig_AvailabilityZone(rName string) string {

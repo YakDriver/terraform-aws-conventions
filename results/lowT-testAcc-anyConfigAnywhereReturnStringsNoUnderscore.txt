@@ -619,6 +619,11 @@ func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
 func testAccDeviceFarmProjectConfig(rInt int) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {
 func testAccDirectoryServiceLogSubscriptionConfig(logGroupName string) string {
+func testAccDmsEventSubscriptionConfigBase(rName string) string {
+func testAccDmsEventSubscriptionConfigEnabled(rName string, enabled bool) string {
+func testAccDmsEventSubscriptionConfigEventCategories2(rName string, eventCategory1 string, eventCategory2 string) string {
+func testAccDmsEventSubscriptionConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccDmsEventSubscriptionConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSDocDBClusterInstanceConfig(n int) string {
 func testAccAWSDocDBClusterInstanceConfigModified(n int) string {
 func testAccAWSDocDBClusterInstanceConfigKmsKey(n int) string {
