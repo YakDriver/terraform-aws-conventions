@@ -323,6 +323,8 @@ func TestAccAWSAPIGatewayV2Authorizer_basic(
 func TestAccAWSAPIGatewayV2Authorizer_disappears(
 func TestAccAWSAPIGatewayV2Deployment_basic(
 func TestAccAWSAPIGatewayV2Deployment_disappears(
+func TestAccAWSAPIGatewayV2DomainName_basic(
+func TestAccAWSAPIGatewayV2DomainName_disappears(
 func TestAccAWSAPIGatewayV2IntegrationResponse_basic(
 func TestAccAWSAPIGatewayV2IntegrationResponse_disappears(
 func TestAccAWSAPIGatewayV2Integration_basic(
@@ -333,6 +335,8 @@ func TestAccAWSAPIGatewayV2RouteResponse_basic(
 func TestAccAWSAPIGatewayV2RouteResponse_disappears(
 func TestAccAWSAPIGatewayV2Route_basic(
 func TestAccAWSAPIGatewayV2Route_disappears(
+func TestAccAWSAPIGatewayV2Stage_basic(
+func TestAccAWSAPIGatewayV2Stage_disappears(
 func TestAccAWSAPIGatewayVpcLink_basic(
 func TestAccAWSAPIGatewayVpcLink_tags(
 func TestAccAWSAppautoScalingPolicy_basic(

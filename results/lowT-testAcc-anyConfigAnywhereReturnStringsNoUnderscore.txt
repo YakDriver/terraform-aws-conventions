@@ -955,6 +955,8 @@ func testAccInstanceConfigInDefaultVpcBySgId(rName string) string {
 func testAccInstanceConfigInEc2Classic(rInt int) string {
 func testAccInstanceConfig(rInt int) string {
 func testAccInstanceConfigWithUserDataBase64(rInt int) string {
+func testAccAwsEc2InstanceConfigBlockDevices(size string) string {
+func testAccAwsEc2InstanceConfigBlockDevicesWithDeleteOnTerminate(size, delete string) string {
 func testAccInstanceConfigSourceDestEnable(rName string) string {
 func testAccInstanceConfigSourceDestDisable(rName string) string {
 func testAccInstanceConfigDisableAPITermination(rName string, val bool) string {

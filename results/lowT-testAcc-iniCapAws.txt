@@ -126,6 +126,11 @@ func testAccAwsIamInstanceProfileConfig(
 func testAccAwsIamInstanceProfileConfigWithoutRole(
 func testAccAwsIamRolePolicyConfig(
 func testAccAwsIamUserPolicyConfig(
+func testAccAwsEc2InstanceEbsRootDeviceBasic(
+func testAccAwsEc2InstanceRootBlockDevice(
+func testAccAwsEc2InstanceRootBlockDeviceWithIOPS(
+func testAccAwsEc2InstanceConfigBlockDevices(
+func testAccAwsEc2InstanceConfigBlockDevicesWithDeleteOnTerminate(
 func testAccAwsInstanceVpcConfig(
 func testAccAwsInstanceVpcSecurityGroupConfig(
 func testAccAwsInstanceVpcIpv6Config(

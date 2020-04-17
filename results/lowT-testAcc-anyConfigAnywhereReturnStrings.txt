@@ -442,6 +442,9 @@ func testAccAWSAPIGatewayV2AuthorizerConfig_credentialsUpdated(rName string) str
 func testAccAWSAPIGatewayV2AuthorizerConfig_jwt(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_jwtUpdated(rName string) string {
 func testAccAWSAPIGatewayV2DeploymentConfig_basic(rName, description string) string {
+func testAccAWSAPIGatewayV2DomainNameConfig_base(rName, certificate, key string, count int) string {
+func testAccAWSAPIGatewayV2DomainNameConfig_basic(rName, certificate, key string, count, index int) string {
+func testAccAWSAPIGatewayV2DomainNameConfig_tags(rName, certificate, key string, count, index int) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributes(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributesUpdated(rName string) string {
@@ -465,6 +468,16 @@ func testAccAWSAPIGatewayV2RouteConfig_jwtAuthorizationUpdated(rName string) str
 func testAccAWSAPIGatewayV2RouteConfig_model(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_simpleAttributes(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_target(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_api(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_accessLogSettings(rName, format string) string {
+func testAccAWSAPIGatewayV2StageConfig_clientCertificateIdAndDescription(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_clientCertificateIdAndDescriptionUpdated(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_defaultRouteSettings(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_deployment(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_routeSettings(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_stageVariables(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_tags(rName string) string {
 func testAccAPIGatewayVpcLinkConfig_basis(rName string) string {
 func testAccAPIGatewayVpcLinkConfig(rName, description string) string {
 func testAccAPIGatewayVpcLinkConfigTags1(rName, description, tagKey1, tagValue1 string) string {
@@ -1823,6 +1836,8 @@ func testAccInstanceConfigInEc2Classic(rInt int) string {
 func testAccInstanceConfig_pre(rInt int) string {
 func testAccInstanceConfig(rInt int) string {
 func testAccInstanceConfigWithUserDataBase64(rInt int) string {
+func testAccAwsEc2InstanceConfigBlockDevices(size string) string {
+func testAccAwsEc2InstanceConfigBlockDevicesWithDeleteOnTerminate(size, delete string) string {
 func testAccInstanceConfigSourceDestEnable(rName string) string {
 func testAccInstanceConfigSourceDestDisable(rName string) string {
 func testAccInstanceConfigDisableAPITermination(rName string, val bool) string {

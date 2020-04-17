@@ -115,7 +115,6 @@ const testAccAWSUserGroupMembershipConfigRemoveGroup =
 const testAccAWSUserGroupMembershipConfigDeleteResource =
 const testAccInstanceConfigWithSmallInstanceType =
 const testAccInstanceConfigUpdateInstanceType =
-const testAccInstanceConfigBlockDevices =
 const testAccInstanceConfigMultipleRegions =
 const testAccCheckInstanceConfigTags =
 const testAccInstanceConfigEbsBlockDeviceKmsKeyArn =

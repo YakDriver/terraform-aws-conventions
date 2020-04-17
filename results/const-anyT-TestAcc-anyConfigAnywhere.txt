@@ -230,7 +230,6 @@ const testAccAWSSSHKeyConfig_sshEncoding =
 const testAccAWSSSHKeyConfig_pemEncoding =
 const testAccInstanceConfigWithSmallInstanceType =
 const testAccInstanceConfigUpdateInstanceType =
-const testAccInstanceConfigBlockDevices =
 const testAccInstanceConfigMultipleRegions =
 const testAccCheckInstanceConfigTags =
 const testAccInstanceConfigEbsBlockDeviceKmsKeyArn =
