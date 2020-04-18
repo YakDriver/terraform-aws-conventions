@@ -229,6 +229,8 @@ func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration2(
 func TestAccAWSAPIGatewayV2Api_AllAttributesWebSocket(
 func TestAccAWSAPIGatewayV2Api_AllAttributesHttp(
 func TestAccAWSAPIGatewayV2Api_Tags(
+func TestAccAWSAPIGatewayV2Api_CorsConfiguration(
+func TestAccAWSAPIGatewayV2Api_QuickCreate(
 func TestAccAWSAPIGatewayV2Authorizer_Credentials(
 func TestAccAWSAPIGatewayV2Authorizer_JWT(
 func TestAccAWSAPIGatewayV2DomainName_Tags(
@@ -251,6 +253,7 @@ func TestAccAWSAPIGatewayV2Stage_Deployment(
 func TestAccAWSAPIGatewayV2Stage_RouteSettings(
 func TestAccAWSAPIGatewayV2Stage_StageVariables(
 func TestAccAWSAPIGatewayV2Stage_Tags(
+func TestAccAWSAPIGatewayV2VpcLink_Tags(
 func testAccAPIGatewayVpcLinkConfig_Update(
 func TestAccAWSAppautoScalingPolicy_ResourceId_ForceNew(
 func TestAccAWSAppautoscalingScheduledAction_ECS(

@@ -434,6 +434,9 @@ func testAccAWSAPIGatewayV2ApiConfig_basicHttp(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_allAttributesWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_allAttributesHttp(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_tags(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_corsConfiguration(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_corsConfigurationUpdated(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_quickCreate(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_baseWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_baseHttp(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_basic(rName string) string {
@@ -478,6 +481,9 @@ func testAccAWSAPIGatewayV2StageConfig_deployment(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_routeSettings(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_stageVariables(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_tags(rName string) string {
+func testAccAWSAPIGatewayV2VpcLinkConfig_base(rName string) string {
+func testAccAWSAPIGatewayV2VpcLinkConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2VpcLinkConfig_tags(rName string) string {
 func testAccAPIGatewayVpcLinkConfig_basis(rName string) string {
 func testAccAPIGatewayVpcLinkConfig(rName, description string) string {
 func testAccAPIGatewayVpcLinkConfigTags1(rName, description, tagKey1, tagValue1 string) string {
