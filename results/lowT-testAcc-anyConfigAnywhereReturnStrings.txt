@@ -429,6 +429,9 @@ func testAccAWSApiGatewayUsagePlanQuotaConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanQuotaModifiedConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesModifiedConfig(rName string) string {
+func testAccAWSAPIGatewayV2ApiMappingConfig_base(rName, certificateArn string) string {
+func testAccAWSAPIGatewayV2ApiMappingConfig_basic(rName, certificateArn string) string {
+func testAccAWSAPIGatewayV2ApiMappingConfig_apiMappingKey(rName, certificateArn, apiMappingKey string) string {
 func testAccAWSAPIGatewayV2ApiConfig_basicWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_basicHttp(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_allAttributesWebSocket(rName string) string {
@@ -551,6 +554,7 @@ func testAccAWSAppsyncFunctionConfigDescription(r1, r2, region, description stri
 func testAccAWSAppsyncFunctionConfigResponseMappingTemplate(r1, r2, region string) string {
 func testAccAppsyncGraphqlApiConfig_AuthenticationType(rName, authenticationType string) string {
 func testAccAppsyncGraphqlApiConfig_LogConfig_FieldLogLevel(rName, fieldLogLevel string) string {
+func testAccAppsyncGraphqlApiConfig_LogConfig_ExcludeVerboseContent(rName string, excludeVerboseContent bool) string {
 func testAccAppsyncGraphqlApiConfig_OpenIDConnectConfig_AuthTTL(rName string, authTTL int) string {
 func testAccAppsyncGraphqlApiConfig_OpenIDConnectConfig_ClientID(rName, clientID string) string {
 func testAccAppsyncGraphqlApiConfig_OpenIDConnectConfig_IatTTL(rName string, iatTTL int) string {
@@ -1958,7 +1962,9 @@ func testAccAWSKmsExternalKeyConfigTags1(value1 string) string {
 func testAccAWSKmsExternalKeyConfigTags2(value1, value2 string) string {
 func testAccAWSKmsExternalKeyConfigValidTo(validTo string) string {
 func testAccAWSKmsGrantConfigBase(rName string) string {
+func testAccAwsLambdaAliasBaseConfig(roleName, policyName, attachmentName string) string {
 func testAccAwsLambdaAliasConfig(roleName, policyName, attachmentName, funcName, aliasName string) string {
+func testAccAwsLambdaAliasConfigUsingFunctionName(roleName, policyName, attachmentName, funcName, aliasName string) string {
 func testAccAwsLambdaAliasConfigWithRoutingConfig(roleName, policyName, attachmentName, funcName, aliasName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBase(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisStartingPositionTimestamp(rName, startingPositionTimestamp string) string {
@@ -2906,6 +2912,7 @@ func testAccAWSSSMDocumentConfigSchemaVersion1Update(rName string) string {
 func testAccAWSSSMDocumentConfig_Tags_Single(rName, key1, value1 string) string {
 func testAccAWSSSMDocumentConfig_Tags_Multiple(rName, key1, value1, key2, value2 string) string {
 func testAccAWSSSMMaintenanceWindowTargetBasicConfig(rName string) string {
+func testAccAWSSSMMaintenanceWindowTargetBasicResourceGroupConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTargetNoNameOrDescriptionConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTargetBasicConfigUpdated(rName string) string {
 func testAccAWSSSMMaintenanceWindowTargetBasicConfigWithTarget(rName, tName, tDesc string) string {

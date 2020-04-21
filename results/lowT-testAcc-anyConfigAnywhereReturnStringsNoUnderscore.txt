@@ -1030,7 +1030,9 @@ func testAccAWSKmsExternalKeyConfigTags1(value1 string) string {
 func testAccAWSKmsExternalKeyConfigTags2(value1, value2 string) string {
 func testAccAWSKmsExternalKeyConfigValidTo(validTo string) string {
 func testAccAWSKmsGrantConfigBase(rName string) string {
+func testAccAwsLambdaAliasBaseConfig(roleName, policyName, attachmentName string) string {
 func testAccAwsLambdaAliasConfig(roleName, policyName, attachmentName, funcName, aliasName string) string {
+func testAccAwsLambdaAliasConfigUsingFunctionName(roleName, policyName, attachmentName, funcName, aliasName string) string {
 func testAccAwsLambdaAliasConfigWithRoutingConfig(roleName, policyName, attachmentName, funcName, aliasName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBase(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisStartingPositionTimestamp(rName, startingPositionTimestamp string) string {
@@ -1591,6 +1593,7 @@ func testAccAWSSSMDocumentTypeSessionConfig(rName string) string {
 func testAccAWSSSMDocumentConfigSchemaVersion1(rName string) string {
 func testAccAWSSSMDocumentConfigSchemaVersion1Update(rName string) string {
 func testAccAWSSSMMaintenanceWindowTargetBasicConfig(rName string) string {
+func testAccAWSSSMMaintenanceWindowTargetBasicResourceGroupConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTargetNoNameOrDescriptionConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTargetBasicConfigUpdated(rName string) string {
 func testAccAWSSSMMaintenanceWindowTargetBasicConfigWithTarget(rName, tName, tDesc string) string {

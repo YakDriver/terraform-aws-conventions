@@ -134,7 +134,9 @@ func testAccAwsEc2InstanceConfigBlockDevicesWithDeleteOnTerminate(
 func testAccAwsInstanceVpcConfig(
 func testAccAwsInstanceVpcSecurityGroupConfig(
 func testAccAwsInstanceVpcIpv6Config(
+func testAccAwsLambdaAliasBaseConfig(
 func testAccAwsLambdaAliasConfig(
+func testAccAwsLambdaAliasConfigUsingFunctionName(
 func testAccAwsLambdaAliasConfigWithRoutingConfig(
 func testAccAwsInvokeLambdaFunction(
 func testAccAwsNeptuneClusterSnapshotConfig(
