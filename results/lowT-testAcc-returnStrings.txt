@@ -137,6 +137,7 @@ func testAccAWSLaunchTemplateDataSourceConfig_Basic(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfigBasicFilter(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfigFilterTags(rName string, rInt int) string {
 func testAccAWSLaunchTemplateDataSourceConfig_metadataOptions(rName string) string {
+func testAccAWSLaunchTemplateDataSourceConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
 func testAccDataSourceAWSLBListenerConfigBasic(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigHTTPS(lbName, targetGroupName, certificate, key string) string {
@@ -975,6 +976,7 @@ func testAccAWSCodePipelineConfig_backToBasic(rName string) string {
 func testAccAWSCodePipelineS3DefaultBucket(rName string) string {
 func testAccAWSCodePipelineS3Bucket(bucket, rName string) string {
 func testAccAWSCodePipelineS3BucketWithProvider(bucket, rName, provider string) string {
+func testAccAWSCodePipelineConfigWithNamespace(rName string) string {
 func testAccAWSCodePipelineWebhookConfig_basic(rName string) string {
 func testAccAWSCodePipelineWebhookConfig_ipAuth(rName string) string {
 func testAccAWSCodePipelineWebhookConfig_unauthenticated(rName string) string {

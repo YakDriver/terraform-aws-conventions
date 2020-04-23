@@ -138,6 +138,7 @@ func TestAccAWSLaunchTemplateDataSource_basic(
 func TestAccAWSLaunchTemplateDataSource_filter_basic(
 func TestAccAWSLaunchTemplateDataSource_filter_tags(
 func TestAccAWSLaunchTemplateDataSource_metadataOptions(
+func TestAccAWSLaunchTemplateDataSource_associatePublicIPAddress(
 func TestAccAWSMskClusterDataSource_Name(
 func TestAccAWSMskConfigurationDataSource_Name(
 func TestAccAWSPartition_basic(
@@ -744,6 +745,7 @@ func TestAccAWSCodePipeline_tags(
 func TestAccAWSCodePipeline_multiregion_basic(
 func TestAccAWSCodePipeline_multiregion_Update(
 func TestAccAWSCodePipeline_multiregion_ConvertSingleRegion(
+func TestAccAWSCodePipelineWithNamespace(
 func TestAccAWSCodePipelineWebhook_basic(
 func TestAccAWSCodePipelineWebhook_ipAuth(
 func TestAccAWSCodePipelineWebhook_unauthenticated(

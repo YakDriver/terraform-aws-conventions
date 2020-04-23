@@ -478,6 +478,7 @@ func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) string {
 func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
+func testAccAWSCodePipelineConfigWithNamespace(rName string) string {
 func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2 string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBase(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBasic(rName string) string {
