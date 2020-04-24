@@ -3112,7 +3112,6 @@ func TestAccAWSRDSCluster_DeletionProtection(
 func TestAccAWSRDSCluster_EngineMode(
 func TestAccAWSRDSCluster_EngineVersion(
 func TestAccAWSRDSCluster_EngineVersionWithPrimaryInstance(
-func TestAccAWSRDSCluster_GlobalClusterIdentifier(
 func TestAccAWSRDSCluster_Port(
 func TestAccAWSRDSCluster_ScalingConfiguration(
 func TestAccAWSRDSCluster_SnapshotIdentifier(
@@ -3133,7 +3132,6 @@ func testAccAWSClusterConfig_EngineVersionWithPrimaryInstance(
 func testAccAWSClusterConfig_Port(
 func testAccAWSRDSClusterConfig_DeletionProtection(
 func testAccAWSRDSClusterConfig_EngineMode(
-func testAccAWSRDSClusterConfig_GlobalClusterIdentifier(
 func testAccAWSRDSClusterConfig_ScalingConfiguration(
 func testAccAWSRDSClusterConfig_SnapshotIdentifier(
 func testAccAWSRDSClusterConfig_EnableHttpEndpoint(
@@ -3953,6 +3951,7 @@ func TestAccAWSWafIPSet_disappears(
 func TestAccAWSWafIPSet_changeNameForceNew(
 func TestAccAWSWafIPSet_changeDescriptors(
 func TestAccAWSWafIPSet_noDescriptors(
+func TestAccAWSWafIPSet_ipv6(
 func testAccAWSWafIPSetConfig_IpSetDescriptors(
 func testAccAWSWafIPSetConfig_noDescriptors(
 func TestAccAWSWafRateBasedRule_basic(

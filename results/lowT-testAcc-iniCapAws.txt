@@ -67,6 +67,7 @@ func testAccAwsCurReportDefinitionConfig_basic(
 func testAccAwsDbClusterSnapshotConfig(
 func testAccAwsDbClusterSnapshotConfigTags1(
 func testAccAwsDbClusterSnapshotConfigTags2(
+func testAccAwsDbSnapshotConfigBase(
 func testAccAwsDbSnapshotConfig(
 func testAccAwsDbSnapshotConfigTags1(
 func testAccAwsDbSnapshotConfigTags2(

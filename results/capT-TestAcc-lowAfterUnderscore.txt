@@ -2120,6 +2120,7 @@ func TestAccAWSWafIPSet_disappears(
 func TestAccAWSWafIPSet_changeNameForceNew(
 func TestAccAWSWafIPSet_changeDescriptors(
 func TestAccAWSWafIPSet_noDescriptors(
+func TestAccAWSWafIPSet_ipv6(
 func TestAccAWSWafRateBasedRule_basic(
 func TestAccAWSWafRateBasedRule_changeNameForceNew(
 func TestAccAWSWafRateBasedRule_disappears(

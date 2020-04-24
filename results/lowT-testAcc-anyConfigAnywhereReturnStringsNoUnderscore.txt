@@ -4,7 +4,7 @@ func testAccCheckAwsAcmCertificateDataSourceConfigWithTypes(domain, certType str
 func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecent(domain string, mostRecent bool) string {
 func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndStatus(domain, status string, mostRecent bool) string {
 func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndTypes(domain, certType string, mostRecent bool) string {
-func testAccAwsAcmCertificateDataSourceConfigKeyTypes(certificate, key string) string {
+func testAccAwsAcmCertificateDataSourceConfigKeyTypes(certificate, key, rName string) string {
 func testAccDataSourceAwsApiGatewayApiKeyConfig(r string) string {
 func testAccDataSourceAwsApiGatewayResourceConfig(r string) string {
 func testAccDataSourceAwsApiGatewayRestApiConfig(r string) string {
@@ -610,9 +610,10 @@ func testAccAWSDBParameterGroupAddParametersConfig(n string) string {
 func testAccAWSDBParameterGroupOnlyConfig(n string) string {
 func testAccAWSDBParameterGroupIncludeDefaultConfig(n string) string {
 func testAccAWSDBSecurityGroupConfig(name string) string {
-func testAccAwsDbSnapshotConfig(rInt int) string {
-func testAccAwsDbSnapshotConfigTags1(rInt int, tag1Key, tag1Value string) string {
-func testAccAwsDbSnapshotConfigTags2(rInt int, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAwsDbSnapshotConfigBase(rName string) string {
+func testAccAwsDbSnapshotConfig(rName string) string {
+func testAccAwsDbSnapshotConfigTags1(rName, tag1Key, tag1Value string) string {
+func testAccAwsDbSnapshotConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccDBSubnetGroupConfig(rName string) string {
 func testAccDefaultRouteTableConfigDefaultRouteTableId(defaultRouteTableId string) string {
 func testAccDefaultRouteTableConfigRequired() string {
@@ -1676,6 +1677,7 @@ func testAccAWSWafGeoMatchSetConfigChangeName(name string) string {
 func testAccAWSWafIPSetConfig(name string) string {
 func testAccAWSWafIPSetConfigChangeName(name string) string {
 func testAccAWSWafIPSetConfigChangeIPSetDescriptors(name string) string {
+func testAccAWSWafIPSetIPV6Config(name string) string {
 func testAccAWSWafRateBasedRuleConfig(name string) string {
 func testAccAWSWafRateBasedRuleConfigChangeName(name string) string {
 func testAccAWSWafRateBasedRuleConfigTags1(name, tag1Key, tag1Value string) string {

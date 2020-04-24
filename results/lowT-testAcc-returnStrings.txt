@@ -4,7 +4,7 @@ func testAccCheckAwsAcmCertificateDataSourceConfigWithTypes(domain, certType str
 func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecent(domain string, mostRecent bool) string {
 func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndStatus(domain, status string, mostRecent bool) string {
 func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndTypes(domain, certType string, mostRecent bool) string {
-func testAccAwsAcmCertificateDataSourceConfigKeyTypes(certificate, key string) string {
+func testAccAwsAcmCertificateDataSourceConfigKeyTypes(certificate, key, rName string) string {
 func testAccDataSourceAwsAmiIdsConfig_sorted(sort_ascending bool) string {
 func testAccDataSourceAwsApiGatewayApiKeyConfig(r string) string {
 func testAccDataSourceAwsApiGatewayResourceConfig(r string) string {
@@ -1283,9 +1283,10 @@ func testAccAWSDBParameterGroupAddParametersConfig(n string) string {
 func testAccAWSDBParameterGroupOnlyConfig(n string) string {
 func testAccAWSDBParameterGroupIncludeDefaultConfig(n string) string {
 func testAccAWSDBSecurityGroupConfig(name string) string {
-func testAccAwsDbSnapshotConfig(rInt int) string {
-func testAccAwsDbSnapshotConfigTags1(rInt int, tag1Key, tag1Value string) string {
-func testAccAwsDbSnapshotConfigTags2(rInt int, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAwsDbSnapshotConfigBase(rName string) string {
+func testAccAwsDbSnapshotConfig(rName string) string {
+func testAccAwsDbSnapshotConfigTags1(rName, tag1Key, tag1Value string) string {
+func testAccAwsDbSnapshotConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccDBSubnetGroupConfig(rName string) string {
 func testAccDBSubnetGroupConfig_updatedDescription(rName string) string {
 func testAccDefaultRouteTableConfigDefaultRouteTableId(defaultRouteTableId string) string {
@@ -2746,8 +2747,9 @@ func testAccAWSClusterConfigEncryptedCrossRegionReplica(n int) string {
 func testAccAWSRDSClusterConfig_DeletionProtection(rName string, deletionProtection bool) string {
 func testAccAWSRDSClusterConfig_EngineMode(rName, engineMode string) string {
 func testAccAWSRDSClusterConfig_EngineMode_Multimaster(rName string) string {
-func testAccAWSRDSClusterConfig_GlobalClusterIdentifier(rName string) string {
-func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_Update(rName, globalClusterIdentifierResourceName string) string {
+func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_EngineMode_Global(rName string) string {
+func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_EngineMode_Global_Update(rName, globalClusterIdentifierResourceName string) string {
+func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_EngineMode_Provisioned(rName string) string {
 func testAccAWSRDSClusterConfig_ScalingConfiguration(rName string, autoPause bool, maxCapacity, minCapacity, secondsUntilAutoPause int, timeoutAction string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier(rName string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_DeletionProtection(rName string, deletionProtection bool) string {
@@ -3389,6 +3391,7 @@ func testAccAWSWafIPSetConfigChangeName(name string) string {
 func testAccAWSWafIPSetConfigChangeIPSetDescriptors(name string) string {
 func testAccAWSWafIPSetConfig_IpSetDescriptors(name, ipSetDescriptors string) string {
 func testAccAWSWafIPSetConfig_noDescriptors(name string) string {
+func testAccAWSWafIPSetIPV6Config(name string) string {
 func testAccAWSWafRateBasedRuleConfig(name string) string {
 func testAccAWSWafRateBasedRuleConfigChangeName(name string) string {
 func testAccAWSWafRateBasedRuleConfig_changePredicates(name string) string {
