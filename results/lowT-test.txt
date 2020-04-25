@@ -3975,6 +3975,7 @@ func testAccMediaStoreContainerConfigWithTags(
 func testSweepMqBrokers(
 func testAccCheckAwsMqBrokerDestroy(
 func testAccCheckAwsMqBrokerExists(
+func testAccCheckAwsMqBrokerDisappears(
 func testAccPreCheckAWSMq(
 func testAccMqBrokerConfig(
 func testAccMqBrokerConfig_allFieldsDefaultVpc(

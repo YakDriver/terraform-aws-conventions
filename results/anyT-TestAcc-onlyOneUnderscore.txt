@@ -2832,6 +2832,7 @@ func TestAccAWSMqBroker_allFieldsCustomVpc(
 func TestAccAWSMqBroker_updateUsers(
 func TestAccAWSMqBroker_updateTags(
 func TestAccAWSMqBroker_updateSecurityGroup(
+func TestAccAWSMqBroker_disappears(
 func testAccMqBrokerConfig_allFieldsDefaultVpc(
 func testAccMqBrokerConfig_allFieldsCustomVpc(
 func testAccMqBrokerConfig_updateUsers1(

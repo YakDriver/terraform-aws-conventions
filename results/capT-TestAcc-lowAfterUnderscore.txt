@@ -1510,6 +1510,7 @@ func TestAccAWSMqBroker_allFieldsCustomVpc(
 func TestAccAWSMqBroker_updateUsers(
 func TestAccAWSMqBroker_updateTags(
 func TestAccAWSMqBroker_updateSecurityGroup(
+func TestAccAWSMqBroker_disappears(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
 func TestAccAWSMqConfiguration_updateTags(

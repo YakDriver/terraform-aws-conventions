@@ -2633,6 +2633,7 @@ func TestAccAWSMqBroker_EncryptionOptions_UseAwsOwnedKey_Enabled(
 func TestAccAWSMqBroker_updateUsers(
 func TestAccAWSMqBroker_updateTags(
 func TestAccAWSMqBroker_updateSecurityGroup(
+func TestAccAWSMqBroker_disappears(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
 func TestAccAWSMqConfiguration_updateTags(
