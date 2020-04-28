@@ -1,27 +1,27 @@
 Analysis Tallies
-3908	Capital-T Test Functions:All
-3559	Capital-T Test Functions:TestAcc
-3222	Capital-T Test Functions:TestAccAWS
+3914	Capital-T Test Functions:All
+3565	Capital-T Test Functions:TestAcc
+3228	Capital-T Test Functions:TestAccAWS
 153	Capital-T Test Functions:TestAccAws
-2222	Capital-T Test Functions:TestAcc and lowercase after first underscore
+2228	Capital-T Test Functions:TestAcc and lowercase after first underscore
 1289	Capital-T Test Functions:TestAcc and uppercase after first underscore
-5761	Lowercase-t test Functions:All
-5559	Lowercase-t test Functions:testAcc
-2496	Lowercase-t test Functions:testAccAWS
+5765	Lowercase-t test Functions:All
+5563	Lowercase-t test Functions:testAcc
+2499	Lowercase-t test Functions:testAccAWS
 306	Lowercase-t test Functions:testAccAws
 1083	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
 681	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
-3351	Lowercase-t test Functions:testAcc functions with config (any case)
-3518	Lowercase-t test Functions:testAcc functions returning strings
-3204	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
-1750	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-9669	Any case-t Test Functions:All
-9118	Any case-t Test Functions:TestAcc
-3305	Any case-t Test Functions:TestAcc with lowercase after first underscore
+3354	Lowercase-t test Functions:testAcc functions with config (any case)
+3521	Lowercase-t test Functions:testAcc functions returning strings
+3207	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
+1753	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
+9679	Any case-t Test Functions:All
+9128	Any case-t Test Functions:TestAcc
+3311	Any case-t Test Functions:TestAcc with lowercase after first underscore
 1970	Any case-t Test Functions:TestAcc with uppercase after first underscore
-4144	Any case-t Test Functions:TestAcc with only one underscore
-1496	Any case-t Test Functions:TestAcc with camel case after first underscore
-1131	Any case-t Test Functions:TestAcc with multiple underscores
+4149	Any case-t Test Functions:TestAcc with only one underscore
+1500	Any case-t Test Functions:TestAcc with camel case after first underscore
+1132	Any case-t Test Functions:TestAcc with multiple underscores
 509	Test Constants:All
 500	Test Constants:TestAcc (any case)
 500	Test Constants:testAcc (lowercase)

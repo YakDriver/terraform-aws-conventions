@@ -1533,6 +1533,9 @@ func testAccAWSSpotFleetRequestConfigTags1(rName, validUntil, tagKey1, tagValue1
 func testAccAWSSpotFleetRequestConfigTags2(rName, validUntil, tagKey1, tagValue1, tagKey2, tagValue2 string, rInt int) string {
 func testAccAWSSpotFleetRequestConfigAssociatePublicIpAddress(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigTargetCapacity(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchTemplateConfig(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchTemplateMultipleConfig(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchTemplateConfigWithOverrides(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigExcessCapacityTermination(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigFleetType(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigIamInstanceProfileArn(rName string, rInt int, validUntil string) string {
@@ -1717,8 +1720,8 @@ func testAccAWSWafRegionalWebAclConfigRateBased(name string) string {
 func testAccAWSWafRegionalWebAclConfigGroup(name string) string {
 func testAccAWSWafRegionalWebAclConfigLoggingConfiguration(rName string) string {
 func testAccAWSWafRegionalWebAclConfigLoggingConfigurationUpdate(rName string) string {
-func testAccAWSWafRegionalXssMatchSetConfig(name string) string {
-func testAccAWSWafRegionalXssMatchSetConfigChangeName(name string) string {
+func testAccAWSWafRegionalXssMatchSetConfig(rName string) string {
+func testAccAWSWafRegionalXssMatchSetConfigChangeName(rName string) string {
 func testAccAWSWafRuleGroupConfig(ruleName, groupName string) string {
 func testAccAWSWafRuleGroupConfigTags1(gName, tag1Key, tag1Value string) string {
 func testAccAWSWafRuleGroupConfigTags2(gName, tag1Key, tag1Value, tag2Key, tag2Value string) string {

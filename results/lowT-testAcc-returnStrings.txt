@@ -3141,6 +3141,9 @@ func testAccAWSSpotFleetRequestConfigTags1(rName, validUntil, tagKey1, tagValue1
 func testAccAWSSpotFleetRequestConfigTags2(rName, validUntil, tagKey1, tagValue1, tagKey2, tagValue2 string, rInt int) string {
 func testAccAWSSpotFleetRequestConfigAssociatePublicIpAddress(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigTargetCapacity(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchTemplateConfig(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchTemplateMultipleConfig(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchTemplateConfigWithOverrides(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigExcessCapacityTermination(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigFleetType(rName string, rInt int, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigIamInstanceProfileArn(rName string, rInt int, validUntil string) string {
@@ -3460,10 +3463,10 @@ func testAccAWSWafRegionalWebAclConfig_noRules(name string) string {
 func testAccAWSWafRegionalWebAclConfig_changeRules(name string) string {
 func testAccAWSWafRegionalWebAclConfigLoggingConfiguration(rName string) string {
 func testAccAWSWafRegionalWebAclConfigLoggingConfigurationUpdate(rName string) string {
-func testAccAWSWafRegionalXssMatchSetConfig(name string) string {
-func testAccAWSWafRegionalXssMatchSetConfigChangeName(name string) string {
-func testAccAWSWafRegionalXssMatchSetConfig_changeTuples(name string) string {
-func testAccAWSWafRegionalXssMatchSetConfig_noTuples(name string) string {
+func testAccAWSWafRegionalXssMatchSetConfig(rName string) string {
+func testAccAWSWafRegionalXssMatchSetConfigChangeName(rName string) string {
+func testAccAWSWafRegionalXssMatchSetConfig_changeTuples(rName string) string {
+func testAccAWSWafRegionalXssMatchSetConfig_noTuples(rName string) string {
 func testAccAWSWafRuleGroupConfig(ruleName, groupName string) string {
 func testAccAWSWafRuleGroupConfig_changeActivatedRules(ruleName1, ruleName2, ruleName3, groupName string) string {
 func testAccAWSWafRuleGroupConfig_noActivatedRules(groupName string) string {
