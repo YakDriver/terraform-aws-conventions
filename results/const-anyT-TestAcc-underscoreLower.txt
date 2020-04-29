@@ -1,4 +1,7 @@
 const testAccDataSourceAwsAmiIdsConfig_basic =
+const testAccAwsBackupPlanDataSourceConfig_nonExistent =
+const testAccAwsBackupSelectionDataSourceConfig_nonExistent =
+const testAccAwsBackupVaultDataSourceConfig_nonExistent =
 const testAccCheckAwsCallerIdentityConfig_basic =
 const testAccCheckAwsCallerIdentityConfig_basic_panic =
 const testAccDataSourceAwsEbsSnapshotIdsConfig_basic =

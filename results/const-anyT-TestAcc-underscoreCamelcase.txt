@@ -1,3 +1,6 @@
+const testAccAwsBackupPlanDataSourceConfig_nonExistent =
+const testAccAwsBackupSelectionDataSourceConfig_nonExistent =
+const testAccAwsBackupVaultDataSourceConfig_nonExistent =
 const testAccCheckAwsElasticBeanstalkHostedZoneDataSource_currentRegion =
 const testAccInstanceDataSourceConfig_gp2IopsDevice =
 const testAccInstanceDataSourceConfig_blockDevices =

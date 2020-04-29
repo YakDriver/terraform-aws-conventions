@@ -13,6 +13,9 @@ func TestAccAWSAutoscalingGroups_basic(
 func TestAccAwsAutoScalingGroupDataSource_basic(
 func TestAccAWSAvailabilityZones_basic(
 func TestAccAWSAvailabilityZones_stateFilter(
+func TestAccAWSBackupPlanDataSource_basic(
+func TestAccAWSBackupSelectionDataSource_basic(
+func TestAccAWSBackupVaultDataSource_basic(
 func TestAccAWSBillingServiceAccount_basic(
 func TestAccAWSCallerIdentity_basic(
 func TestAccAWSCallerIdentity_basic_panic(
@@ -66,8 +69,6 @@ func TestAccAWSDataElasticsearchDomain_advanced(
 func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
 func TestAccDataSourceAWSELB_basic(
-func TestAccAWSGuarddutyDetectorDataSource_basic(
-func TestAccAWSGuarddutyDetectorDataSource_explicit(
 func TestAccAWSDataSourceIAMGroup_basic(
 func TestAccAWSDataSourceIAMGroup_users(
 func TestAccAWSDataSourceIAMInstanceProfile_basic(
@@ -442,7 +443,6 @@ func TestAccAWSBatchJobDefinition_basic(
 func TestAccAWSBatchJobDefinition_updateForcesNewResource(
 func TestAccAWSBatchJobQueue_basic(
 func TestAccAWSBatchJobQueue_disappears(
-func TestAccAWSBatchJobQueue_update(
 func TestAccAWSBudgetsBudget_basic(
 func TestAccAWSBudgetsBudget_prefix(
 func TestAccAWSBudgetsBudget_notification(
@@ -703,6 +703,7 @@ func TestAccAWSDefaultRouteTable_basic(
 func TestAccAWSDefaultRouteTable_disappears_Vpc(
 func TestAccAWSDefaultRouteTable_swap(
 func TestAccAWSDefaultRouteTable_vpc_endpoint(
+func TestAccAWSDefaultRouteTable_tags(
 func TestAccAWSDefaultSecurityGroup_basic(
 func TestAccAWSDefaultSecurityGroup_classic(
 func TestAccAWSDefaultSubnet_basic(

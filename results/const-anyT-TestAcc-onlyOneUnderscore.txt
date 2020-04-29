@@ -1,6 +1,9 @@
 const testAccDataSourceAwsAcmpcaCertificateAuthorityConfig_ARN =
 const testAccDataSourceAwsAcmpcaCertificateAuthorityConfig_NonExistent =
 const testAccDataSourceAwsAmiIdsConfig_basic =
+const testAccAwsBackupPlanDataSourceConfig_nonExistent =
+const testAccAwsBackupSelectionDataSourceConfig_nonExistent =
+const testAccAwsBackupVaultDataSourceConfig_nonExistent =
 const testAccCheckAwsCallerIdentityConfig_basic =
 const testAccDataSourceAwsDxGatewayConfig_NonExistent =
 const testAccDataSourceAwsEbsSnapshotIdsConfig_basic =

@@ -21,6 +21,9 @@ func testAccDataSourceAwsAvailabilityZoneConfigAllAvailabilityZones() string {
 func testAccDataSourceAwsAvailabilityZoneConfigFilter() string {
 func testAccDataSourceAwsAvailabilityZoneConfigName() string {
 func testAccDataSourceAwsAvailabilityZoneConfigZoneId() string {
+func testAccAwsBackupPlanDataSourceConfig_basic(rInt int) string {
+func testAccAwsBackupSelectionDataSourceConfig_basic(rInt int) string {
+func testAccAwsBackupVaultDataSourceConfig_basic(rInt int) string {
 func testAccDataSourceAwsBatchComputeEnvironmentConfig(rName string) string {
 func testAccDataSourceAwsBatchJobQueueConfig(rName string) string {
 func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
@@ -108,7 +111,7 @@ func testAccInstanceDataSourceConfig_getPasswordData(rName string, val bool) str
 func testAccInstanceDataSourceConfigGetUserData(rName string, getUserData bool) string {
 func testAccInstanceDataSourceConfigGetUserDataNoUserData(rName string, getUserData bool) string {
 func testAccInstanceDataSourceConfig_creditSpecification(rName string) string {
-func testAccInstanceDataSourceConfig_metadataOptions(rName, instanceType string) string {
+func testAccInstanceDataSourceConfig_metadataOptions(rName string) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
 func testAccDataSourceAwsKmsKeyConfig(rName string) string {
 func testAccDataSourceAWSLambdaAliasConfigBase(rName string) string {
@@ -213,6 +216,7 @@ func testAccCheckAwsSsmDocumentDataSourceConfig(name string, documentFormat stri
 func testAccCheckAwsSsmParameterDataSourceConfig(name string, withDecryption string) string {
 func testAccCheckAwsSsmPatchBaselineDataSourceConfig_existingBaseline() string {
 func testAccCheckAwsSsmPatchBaselineDataSourceConfig_newBaseline(name string) string {
+func testAccAWSStorageGatewayLocalDiskDataSourceConfigBase(rName string) string {
 func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskNode(rName string) string {
 func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskNode_NonExistent(rName string) string {
 func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskPath(rName string) string {
@@ -501,6 +505,7 @@ func testAccAWSAppautoscalingPolicyConfigResourceIdForceNew2(rName string) strin
 func testAccAppautoscalingScheduledActionConfig_DynamoDB(rName, ts string) string {
 func testAccAppautoscalingScheduledActionConfig_ECS(rName, ts string) string {
 func testAccAppautoscalingScheduledActionConfig_EMR(rName, ts string) string {
+func testAccAppautoscalingScheduledActionConfig_Name_Duplicate(rName string) string {
 func testAccAppautoscalingScheduledActionConfig_SpotFleet(rName, ts, validUntil string) string {
 func testAccAWSAppautoscalingTargetEmrClusterConfig(rInt int) string {
 func testAccAWSAppautoscalingTargetSpotFleetRequestConfig(validUntil string) string {
@@ -663,6 +668,9 @@ func testAccAWSBatchComputeEnvironmentConfigLaunchTemplate(rInt int) string {
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvanced(rName string) string {
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvancedUpdate(rName string) string {
 func testAccBatchJobDefinitionConfigName(rName string) string {
+func testAccBatchJobQueueConfigBase(rName string) string {
+func testAccBatchJobQueueConfigPriority(rName string, priority int) string {
+func testAccBatchJobQueueConfigState(rName string, state string) string {
 func testAccAWSBudgetsBudgetConfig_WithAccountID(budgetConfig budgets.Budget, accountID, costFilterKey string) string {
 func testAccAWSBudgetsBudgetConfig_PrefixDefaults(budgetConfig budgets.Budget, costFilterKey string) string {
 func testAccAWSBudgetsBudgetConfig_Prefix(budgetConfig budgets.Budget, costFilterKey string) string {
@@ -1193,6 +1201,8 @@ func testAccDBSubnetGroupConfig_updatedDescription(rName string) string {
 func testAccDefaultRouteTableConfigDefaultRouteTableId(defaultRouteTableId string) string {
 func testAccDefaultRouteTableConfigRequired() string {
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
+func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccDeviceFarmProjectConfig(rInt int) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {
 func testAccDirectoryServiceDirectoryConfig_withAlias(alias string) string {
@@ -1578,6 +1588,10 @@ func testAccESDomainConfig_vpc_update(randInt int, update bool) string {
 func testAccESDomainConfig_internetToVpcEndpoint(randInt int) string {
 func testAccESDomainConfig_LogPublishingOptions(randInt int) string {
 func testAccESDomainConfig_CognitoOptions(randInt int, includeCognitoOptions bool) string {
+func testAccAwsElasticTranscoderPresetConfig(rName string) string {
+func testAccAwsElasticTranscoderPresetConfigDescription(rName string, description string) string {
+func testAccAwsElasticTranscoderPresetConfigFull1(rName string) string {
+func testAccAwsElasticTranscoderPresetConfigFull2(rName string) string {
 func testAccAWSELBConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSELBConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccELBConfig_Listener_IAMServerCertificate(certName, certificate, key, lbProtocol string) string {
@@ -1666,6 +1680,7 @@ func testAccAwsFsxWindowsFileSystemConfigKmsKeyId2() string {
 func testAccAwsFsxWindowsFileSystemConfigSecurityGroupIds1() string {
 func testAccAwsFsxWindowsFileSystemConfigSecurityGroupIds2() string {
 func testAccAwsFsxWindowsFileSystemConfigSelfManagedActiveDirectory() string {
+func testAccAwsFsxWindowsFileSystemConfigSelfManagedActiveDirectoryUsername(username string) string {
 func testAccAwsFsxWindowsFileSystemConfigStorageCapacity(storageCapacity int) string {
 func testAccAwsFsxWindowsFileSystemConfigSubnetIds1() string {
 func testAccAwsFsxWindowsFileSystemConfigTags1(tagKey1, tagValue1 string) string {
@@ -1687,6 +1702,9 @@ func testAccAWSGameliftFleetAllFieldsUpdatedConfig(fleetName, desc, launchPath s
 func testAccAWSGameliftGameSessionQueueBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGameliftGameSessionQueueBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlacierVaultLockConfigCompleteLock(rName string, completeLock bool) string {
+func testAccGlueCatalogTableConfigStorageDescriptorEmptyConfigurationBlock(rName string) string {
+func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoEmptyConfigurationBlock(rName string) string {
+func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationBlock(rName string) string {
 func testAccAWSGlueClassifierConfig_CsvClassifier(rName string, allowSingleColumn bool, containsHeader string, delimiter string, disableValueTrimming bool) string {
 func testAccAWSGlueClassifierConfig_GrokClassifier(rName, classification, grokPattern string) string {
 func testAccAWSGlueClassifierConfig_GrokClassifier_CustomPatterns(rName, customPatterns string) string {
@@ -1899,8 +1917,8 @@ func testAccAwsInstanceVpcConfig(rName string, mapPublicIpOnLaunch bool) string 
 func testAccAwsInstanceVpcSecurityGroupConfig(rName string) string {
 func testAccAwsInstanceVpcIpv6Config(rName string) string {
 func testAccInstanceConfigHibernation(hibernation bool) string {
-func testAccInstanceConfigMetadataOptions(rName, instanceType string) string {
-func testAccInstanceConfigMetadataOptionsUpdated(rName, instanceType string) string {
+func testAccInstanceConfigMetadataOptions(rName string) string {
+func testAccInstanceConfigMetadataOptionsUpdated(rName string) string {
 func testAccAWSIotPolicyAttachmentConfig(policyName string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate1(policyName, policyName2 string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate2(policyName2 string) string {
@@ -1939,6 +1957,7 @@ func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_DataFormatConversionC
 func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_DataFormatConversionConfiguration_OrcSerDe_Empty(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_DataFormatConversionConfiguration_ParquetSerDe_Empty(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_ErrorOutputPrefix(rName string, rInt int, errorOutputPrefix string) string {
+func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_ProcessingConfiguration_Empty(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_missingProcessingConfiguration(rInt int) string {
 func testAccKinesisStreamConfig(rInt int) string {
 func testAccKinesisStreamConfigConcurrent(rInt int) string {
@@ -2964,6 +2983,7 @@ func testAccAWSSSMPatchBaselineConfigWithOperatingSystemUpdated(rName string) st
 func testAccAWSSSMPatchGroupBasicConfig(rName string) string {
 func testAccSsmResourceDataSyncConfig(rInt int, rName string) string {
 func testAccSsmResourceDataSyncConfigUpdate(rInt int, rName string) string {
+func testAccAWSStorageGatewayCachedIscsiVolumeConfigBase(rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_Basic(rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

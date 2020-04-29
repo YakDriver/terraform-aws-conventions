@@ -59,7 +59,6 @@ const testAccAWSAutoScalingGroupConfigWithLoadBalancer =
 const testAccAWSAutoScalingGroupConfigWithTargetGroup =
 const testAccAWSAutoScalingGroupConfigWithAZ =
 const testAccAWSAutoScalingGroupConfigWithVPCIdent =
-const testAccBatchJobQueueBaseConfig =
 const testAccAWSCloudFrontOriginAccessIdentityConfig =
 const testAccAWSCloudFrontOriginAccessIdentityNoCommentConfig =
 const testAccAWSDBInstanceConfigWithCACertificateIdentifier =

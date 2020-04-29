@@ -1,4 +1,7 @@
 func testAccDataSourceAwsAmiIdsConfig_sorted(
+func testAccAwsBackupPlanDataSourceConfig_basic(
+func testAccAwsBackupSelectionDataSourceConfig_basic(
+func testAccAwsBackupVaultDataSourceConfig_basic(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(
 func testAccDataSourceAwsCognitoUserPoolsConfig_basic(
@@ -9,6 +12,7 @@ func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted1(
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted2(
 func testAccDataSourceAwsElasticacheReplicationGroupConfig_basic(
 func testAccCheckAwsElasticBeanstalkHostedZoneDataSource_byRegion(
+func testAccAWSGuarddutyDetectorDataSource_basic(
 func testAccAwsIAMRoleConfig_tags(
 func testAccInstancesDataSourceConfig_tags(
 func testAccInstancesDataSourceConfig_instance_state_names(
@@ -546,7 +550,6 @@ func testAccGlueCatalogTable_basic(
 func testAccGlueCatalogTable_full(
 func testAccGlueCatalogTable_full_replacedValues(
 func testAccAwsGuardDutyDetector_basic(
-func testAccAwsGuardDutyDetector_import(
 func testAccAwsGuardDutyInviteAccepter_basic(
 func testAccAwsGuardDutyInviteAccepterConfig_basic(
 func testAccAwsGuardDutyIpset_basic(

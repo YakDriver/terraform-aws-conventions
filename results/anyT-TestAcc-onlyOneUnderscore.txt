@@ -24,6 +24,12 @@ func TestAccDataSourceAwsAvailabilityZone_AllAvailabilityZones(
 func TestAccDataSourceAwsAvailabilityZone_Filter(
 func TestAccDataSourceAwsAvailabilityZone_Name(
 func TestAccDataSourceAwsAvailabilityZone_ZoneId(
+func TestAccAWSBackupPlanDataSource_basic(
+func testAccAwsBackupPlanDataSourceConfig_basic(
+func TestAccAWSBackupSelectionDataSource_basic(
+func testAccAwsBackupSelectionDataSourceConfig_basic(
+func TestAccAWSBackupVaultDataSource_basic(
+func testAccAwsBackupVaultDataSourceConfig_basic(
 func TestAccAWSBillingServiceAccount_basic(
 func TestAccAWSCallerIdentity_basic(
 func TestAccDataSourceAwsCanonicalUserId_basic(
@@ -126,8 +132,8 @@ func TestAccAWSDataElasticsearchDomain_advanced(
 func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
 func TestAccDataSourceAWSELB_basic(
-func TestAccAWSGuarddutyDetectorDataSource_basic(
-func TestAccAWSGuarddutyDetectorDataSource_explicit(
+func testAccAWSGuarddutyDetectorDataSource_basic(
+func testAccAWSGuarddutyDetectorDataSource_Id(
 func TestAccAWSDataSourceIAMGroup_basic(
 func TestAccAWSDataSourceIAMGroup_users(
 func TestAccAWSDataSourceIAMInstanceProfile_basic(
@@ -916,7 +922,8 @@ func TestAccAWSBatchJobDefinition_basic(
 func TestAccAWSBatchJobDefinition_updateForcesNewResource(
 func TestAccAWSBatchJobQueue_basic(
 func TestAccAWSBatchJobQueue_disappears(
-func TestAccAWSBatchJobQueue_update(
+func TestAccAWSBatchJobQueue_Priority(
+func TestAccAWSBatchJobQueue_State(
 func TestAccAWSBudgetsBudget_basic(
 func TestAccAWSBudgetsBudget_prefix(
 func TestAccAWSBudgetsBudget_notification(
@@ -1423,6 +1430,7 @@ func TestAccAWSDefaultNetworkAcl_SubnetReassign(
 func TestAccAWSDefaultRouteTable_basic(
 func TestAccAWSDefaultRouteTable_Route(
 func TestAccAWSDefaultRouteTable_swap(
+func TestAccAWSDefaultRouteTable_tags(
 func TestAccAWSDefaultSecurityGroup_basic(
 func TestAccAWSDefaultSecurityGroup_classic(
 func TestAccAWSDefaultSubnet_basic(
@@ -1984,6 +1992,8 @@ func TestAccAWSElasticTranscoderPipeline_withPermissions(
 func TestAccAWSElasticTranscoderPipeline_disappears(
 func TestAccAWSElasticTranscoderPreset_basic(
 func TestAccAWSElasticTranscoderPreset_disappears(
+func TestAccAWSElasticTranscoderPreset_Description(
+func TestAccAWSElasticTranscoderPreset_Full(
 func TestAccAWSELBAttachment_basic(
 func TestAccAWSELBAttachment_drift(
 func TestAccAWSELB_basic(
@@ -2206,7 +2216,6 @@ func testAccAWSGlueWorkflowConfig_DefaultRunProperties(
 func testAccAWSGlueWorkflowConfig_Description(
 func testAccAWSGlueWorkflowConfig_Required(
 func testAccAwsGuardDutyDetector_basic(
-func testAccAwsGuardDutyDetector_import(
 func testAccAwsGuardDutyInviteAccepter_basic(
 func testAccAwsGuardDutyInviteAccepterConfig_basic(
 func testAccAwsGuardDutyIpset_basic(
