@@ -256,9 +256,17 @@ abbrevs+=( "waf" )
 declare -a bad_ids
 bad_ids+=( "alidat:ali---dat" )
 bad_ids+=( "nvalid:nvali---d" )
+bad_ids+=( "Valid:Vali---d" )
+bad_ids+=( "valid:vali---d" )
 bad_ids+=( "verride:verri---de" )
 bad_ids+=( "rovide:rovi---de" )
 bad_ids+=( "Bid:Bi---d" )
+bad_ids+=( "Side:Si---de" )
+bad_ids+=( "Video:Vi---deo" )
+bad_ids+=( "Baidu:Bai---du" )
+bad_ids+=( "Cidr:Ci---dr" )
+bad_ids+=( "Inside:Insi---de" )
+bad_ids+=( "Width:Wi---dth" )
 
 caps() {
   local term=$1
