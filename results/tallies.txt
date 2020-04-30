@@ -38,4 +38,6 @@ Resource Tallies
 353	Resource Functions:All Multi caps
 2909	Resource Functions:resourceAws All
 164	Resource Functions:resourceAws Multi Caps
-1805	Resource Functions:non-resourceAws All
+0	Resource Functions:non-resourceAws All
+52	Resource Functions:ID
+59	Resource Functions:Id

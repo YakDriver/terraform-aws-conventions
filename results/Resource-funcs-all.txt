@@ -2085,7 +2085,7 @@ func resourceAwsGameliftAliasDelete(
 func expandGameliftRoutingStrategy(
 func flattenGameliftRoutingStrategy(
 func init(
-func listGameliftAliases(input *gamelift.ListAliasesInput, conn *gamelift.GameLift, f func(
+func listGameliftAliases(
 func resourceAwsGameliftBuild(
 func resourceAwsGameliftBuildCreate(
 func resourceAwsGameliftBuildRead(
