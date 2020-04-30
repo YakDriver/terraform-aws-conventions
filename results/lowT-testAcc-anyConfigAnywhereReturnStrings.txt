@@ -60,6 +60,11 @@ func testAccAWSEc2InstanceTypeOfferingDataSourceConfigLocationType() string {
 func testAccAWSEc2InstanceTypeOfferingDataSourceConfigPreferredInstanceTypes() string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfig(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfigFilter(rName string, rBgpAsn int) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigFilter_sameAccount(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigID_sameAccount(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigTags_sameAccount(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigFilter_differentAccount(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigID_differentAccount(rName string) string {
 func testAccAWSEc2TransitGatewayRouteTableDataSourceConfigFilter() string {
 func testAccAWSEc2TransitGatewayRouteTableDataSourceConfigID() string {
 func testAccAWSEc2TransitGatewayDataSourceConfigFilter() string {
@@ -1403,6 +1408,13 @@ func testAccTrafficMirrorTargetConfigNlb(rName, description string) string {
 func testAccTrafficMirrorTargetConfigEni(rName, description string) string {
 func testAccTrafficMirrorTargetConfigTags1(rName, description, tagKey1, tagValue1 string) string {
 func testAccTrafficMirrorTargetConfigTags2(rName, description, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentConfig_base(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentConfig_sameAccount_base(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentConfig_differentAccount_base(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentConfigBasic_sameAccount(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentConfigBasic_differentAccount(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentConfigTags1_sameAccount(rName, tagKey1, tagValue1 string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentConfigTags2_sameAccount(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEc2TransitGatewayRouteTableAssociationConfig() string {
 func testAccAWSEc2TransitGatewayRouteTablePropagationConfig() string {
 func testAccAWSEc2TransitGatewayRouteTableConfig() string {
@@ -2477,7 +2489,7 @@ func testAccAWSDBClusterParameterGroupConfig(name string) string {
 func testAccAWSDBClusterParameterGroupConfigWithApplyMethod(name string) string {
 func testAccAWSDBClusterParameterGroupAddParametersConfig(name string) string {
 func testAccAWSDBClusterParameterGroupOnlyConfig(name string) string {
-func testAccAWSClusterConfig(n int) string {
+func testAccAWSClusterConfig(rName string) string {
 func testAccAWSClusterConfig_AvailabilityZones(rName string) string {
 func testAccAWSClusterConfig_BacktrackWindow(backtrackWindow int) string {
 func testAccAWSClusterConfig_ClusterIdentifierPrefix(clusterIdentifierPrefix string) string {

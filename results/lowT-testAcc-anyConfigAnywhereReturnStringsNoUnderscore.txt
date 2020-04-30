@@ -1322,7 +1322,7 @@ func testAccAWSDBClusterParameterGroupConfig(name string) string {
 func testAccAWSDBClusterParameterGroupConfigWithApplyMethod(name string) string {
 func testAccAWSDBClusterParameterGroupAddParametersConfig(name string) string {
 func testAccAWSDBClusterParameterGroupOnlyConfig(name string) string {
-func testAccAWSClusterConfig(n int) string {
+func testAccAWSClusterConfig(rName string) string {
 func testAccAWSClusterConfigWithFinalSnapshot(n int) string {
 func testAccAWSClusterConfigWithoutUserNameAndPassword(n int) string {
 func testAccAWSClusterConfigTags1(rName, tagKey1, tagValue1 string) string {

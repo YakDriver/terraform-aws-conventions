@@ -1,27 +1,27 @@
 Analysis Tallies
-3939	Capital-T Test Functions:All
-3590	Capital-T Test Functions:TestAcc
-3250	Capital-T Test Functions:TestAccAWS
+3949	Capital-T Test Functions:All
+3600	Capital-T Test Functions:TestAcc
+3260	Capital-T Test Functions:TestAccAWS
 155	Capital-T Test Functions:TestAccAws
-2236	Capital-T Test Functions:TestAcc and lowercase after first underscore
-1307	Capital-T Test Functions:TestAcc and uppercase after first underscore
-5799	Lowercase-t test Functions:All
-5596	Lowercase-t test Functions:testAcc
-2509	Lowercase-t test Functions:testAccAWS
+2240	Capital-T Test Functions:TestAcc and lowercase after first underscore
+1313	Capital-T Test Functions:TestAcc and uppercase after first underscore
+5815	Lowercase-t test Functions:All
+5611	Lowercase-t test Functions:testAcc
+2521	Lowercase-t test Functions:testAccAWS
 317	Lowercase-t test Functions:testAccAws
-1088	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
+1100	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
 687	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
-3387	Lowercase-t test Functions:testAcc functions with config (any case)
-3552	Lowercase-t test Functions:testAcc functions returning strings
-3239	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
+3399	Lowercase-t test Functions:testAcc functions with config (any case)
+3564	Lowercase-t test Functions:testAcc functions returning strings
+3251	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
 1777	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-9738	Any case-t Test Functions:All
-9186	Any case-t Test Functions:TestAcc
-3324	Any case-t Test Functions:TestAcc with lowercase after first underscore
-1994	Any case-t Test Functions:TestAcc with uppercase after first underscore
-4171	Any case-t Test Functions:TestAcc with only one underscore
-1500	Any case-t Test Functions:TestAcc with camel case after first underscore
-1147	Any case-t Test Functions:TestAcc with multiple underscores
+9764	Any case-t Test Functions:All
+9211	Any case-t Test Functions:TestAcc
+3340	Any case-t Test Functions:TestAcc with lowercase after first underscore
+2000	Any case-t Test Functions:TestAcc with uppercase after first underscore
+4186	Any case-t Test Functions:TestAcc with only one underscore
+1510	Any case-t Test Functions:TestAcc with camel case after first underscore
+1154	Any case-t Test Functions:TestAcc with multiple underscores
 511	Test Constants:All
 502	Test Constants:TestAcc (any case)
 502	Test Constants:testAcc (lowercase)
@@ -34,29 +34,29 @@ Analysis Tallies
 245	Test Constants:TestAcc (any case) with config (any case) and no underscores
 196	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
 Resource Tallies
-3939	Capital-T Test Functions:All
-3590	Capital-T Test Functions:TestAcc
-3250	Capital-T Test Functions:TestAccAWS
+3949	Capital-T Test Functions:All
+3600	Capital-T Test Functions:TestAcc
+3260	Capital-T Test Functions:TestAccAWS
 155	Capital-T Test Functions:TestAccAws
-2236	Capital-T Test Functions:TestAcc and lowercase after first underscore
-1307	Capital-T Test Functions:TestAcc and uppercase after first underscore
-5799	Lowercase-t test Functions:All
-5596	Lowercase-t test Functions:testAcc
-2509	Lowercase-t test Functions:testAccAWS
+2240	Capital-T Test Functions:TestAcc and lowercase after first underscore
+1313	Capital-T Test Functions:TestAcc and uppercase after first underscore
+5815	Lowercase-t test Functions:All
+5611	Lowercase-t test Functions:testAcc
+2521	Lowercase-t test Functions:testAccAWS
 317	Lowercase-t test Functions:testAccAws
-1088	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
+1100	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
 687	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
-3387	Lowercase-t test Functions:testAcc functions with config (any case)
-3552	Lowercase-t test Functions:testAcc functions returning strings
-3239	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
+3399	Lowercase-t test Functions:testAcc functions with config (any case)
+3564	Lowercase-t test Functions:testAcc functions returning strings
+3251	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
 1777	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-9738	Any case-t Test Functions:All
-9186	Any case-t Test Functions:TestAcc
-3324	Any case-t Test Functions:TestAcc with lowercase after first underscore
-1994	Any case-t Test Functions:TestAcc with uppercase after first underscore
-4171	Any case-t Test Functions:TestAcc with only one underscore
-1500	Any case-t Test Functions:TestAcc with camel case after first underscore
-1147	Any case-t Test Functions:TestAcc with multiple underscores
+9764	Any case-t Test Functions:All
+9211	Any case-t Test Functions:TestAcc
+3340	Any case-t Test Functions:TestAcc with lowercase after first underscore
+2000	Any case-t Test Functions:TestAcc with uppercase after first underscore
+4186	Any case-t Test Functions:TestAcc with only one underscore
+1510	Any case-t Test Functions:TestAcc with camel case after first underscore
+1154	Any case-t Test Functions:TestAcc with multiple underscores
 511	Test Constants:All
 502	Test Constants:TestAcc (any case)
 502	Test Constants:testAcc (lowercase)
@@ -68,4 +68,8 @@ Resource Tallies
 443	Test Constants:TestAcc (any case) with config (any case)
 245	Test Constants:TestAcc (any case) with config (any case) and no underscores
 196	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
-2905	Resource Functions:All
+4710	Resource Functions:All
+353	Resource Functions:All:Multi caps
+2909	Resource Functions:resourceAws
+164	Resource Functions:resourceAws:Multi Caps
+10577	Resource Functions:non-resourceAws:All
