@@ -214,7 +214,7 @@ declare -a filenames
 
 descriptions+=( "Resource Functions:All" )
 filenames+=( "./results/Resource-funcs.txt" )
-perl -nle'print $& while m{(func\s+[rR]esourceA[wW][sS].*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+perl -nle'print $& while m{(func\s+[rR]esourceA[wW][sS][^)]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
 
 ###################
 # get tallies     #
