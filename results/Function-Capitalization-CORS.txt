@@ -1,0 +1,2 @@
+func testAccAWSS3BucketConfigWithCORS(
+func testAccAWSS3BucketConfigWithCORSEmptyOrigin(

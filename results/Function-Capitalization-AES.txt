@@ -1,0 +1,2 @@
+func TestAccAWSS3Bucket_enableDefaultEncryption_whenAES256IsUsed(
+func testAccAWSS3BucketEnableDefaultEncryptionWithAES256(
