@@ -33,32 +33,50 @@ Analysis Tallies
 443	Test Constants:TestAcc (any case) with config (any case)
 245	Test Constants:TestAcc (any case) with config (any case) and no underscores
 196	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
-4674	Resource Functions:All
-353	Resource Functions:All Multi caps
-2909	Resource Functions:resourceAws All
-164	Resource Functions:resourceAws Multi Caps
-1805	Resource Functions:not test, not resourceAws
-6639	Capitalization:AWS
-3772	Capitalization:Aws
-130	Capitalization:ID
-185	Capitalization:Id
-96	Capitalization:IP
-117	Capitalization:Ip
-12	Capitalization:EC2
-404	Capitalization:Ec2
-8	Capitalization:WAF
-508	Capitalization:Waf
-6	Capitalization:CIDR
-34	Capitalization:Cidr
-68	Capitalization:VPC
-372	Capitalization:Vpc
-134	Capitalization:RDS
-46	Capitalization:Rds
-28	Capitalization:ARN
-114	Capitalization:Arn
-431	Capitalization:DB
-299	Capitalization:Db
-51	Capitalization:ELB
-22	Capitalization:Elb
-48	Capitalization:AMI
-36	Capitalization:Ami
+3974	Functions:All Exported
+11478	Functions:All Non-Exported
+7789	Functions:All Multi caps
+2914	Resource Functions:Resource
+170	Resource Functions:Resource Multi Caps
+4674	Resource Functions:Non-test
+353	Resource Functions:Non-test Multi-caps
+1805	Resource Functions:Non-test, non-resource
+13	Function Capitalization:ami
+50	Function Capitalization:Ami
+51	Function Capitalization:AMI
+6	Function Capitalization:acl
+182	Function Capitalization:Acl
+7	Function Capitalization:ACL
+2	Function Capitalization:arn
+121	Function Capitalization:Arn
+40	Function Capitalization:ARN
+9	Function Capitalization:aws
+4503	Function Capitalization:Aws
+6980	Function Capitalization:AWS
+0	Function Capitalization:cidr
+40	Function Capitalization:Cidr
+10	Function Capitalization:CIDR
+54	Function Capitalization:db
+363	Function Capitalization:Db
+449	Function Capitalization:DB
+29	Function Capitalization:ec2
+489	Function Capitalization:Ec2
+25	Function Capitalization:EC2
+4	Function Capitalization:elb
+35	Function Capitalization:Elb
+53	Function Capitalization:ELB
+752	Function Capitalization:id
+592	Function Capitalization:Id
+173	Function Capitalization:ID
+817	Function Capitalization:ip
+135	Function Capitalization:Ip
+119	Function Capitalization:IP
+41	Function Capitalization:rds
+56	Function Capitalization:Rds
+135	Function Capitalization:RDS
+37	Function Capitalization:vpc
+451	Function Capitalization:Vpc
+78	Function Capitalization:VPC
+1	Function Capitalization:waf
+563	Function Capitalization:Waf
+8	Function Capitalization:WAF

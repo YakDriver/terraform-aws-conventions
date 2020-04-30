@@ -1,0 +1,2 @@
+func TestCloudFrontStructure_expandViewerCertificate_acm_certificate_arn(
+func testAccBeanstalkEnvConfig_platform_arn(
