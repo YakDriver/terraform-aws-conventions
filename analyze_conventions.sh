@@ -273,12 +273,12 @@ caps() {
       read -ra bad_parts <<< "${baddie}"
       search="${bad_parts[0]}"
       replace="${bad_parts[1]}"
-      sed 's/'${search}'/'${replace}'/g' ${filenames[${#filenames[@]}-1]}
+      sed -i 's/'${search}'/'${replace}'/g' ${filenames[${#filenames[@]}-1]}
     done
     cat ${filenames[${#filenames[@]}-1]} | grep "${term}" > temp.txt
     rm ${filenames[${#filenames[@]}-1]}
     mv temp.txt ${filenames[${#filenames[@]}-1]}
-    sed 's/i---d/id/g' ${filenames[${#filenames[@]}-1]}
+    sed -i 's/i---d/id/g' ${filenames[${#filenames[@]}-1]}
   fi
 }
 
