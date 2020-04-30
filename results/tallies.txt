@@ -34,42 +34,8 @@ Analysis Tallies
 245	Test Constants:TestAcc (any case) with config (any case) and no underscores
 196	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
 Resource Tallies
-	0
-3600	Capital-T Test Functions:TestAcc
-3260	Capital-T Test Functions:TestAccAWS
-155	Capital-T Test Functions:TestAccAws
-2240	Capital-T Test Functions:TestAcc and lowercase after first underscore
-1313	Capital-T Test Functions:TestAcc and uppercase after first underscore
-5815	Lowercase-t test Functions:All
-5611	Lowercase-t test Functions:testAcc
-2521	Lowercase-t test Functions:testAccAWS
-317	Lowercase-t test Functions:testAccAws
-1100	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
-687	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
-3399	Lowercase-t test Functions:testAcc functions with config (any case)
-3564	Lowercase-t test Functions:testAcc functions returning strings
-3251	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
-1777	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-9764	Any case-t Test Functions:All
-9211	Any case-t Test Functions:TestAcc
-3340	Any case-t Test Functions:TestAcc with lowercase after first underscore
-2000	Any case-t Test Functions:TestAcc with uppercase after first underscore
-4186	Any case-t Test Functions:TestAcc with only one underscore
-1510	Any case-t Test Functions:TestAcc with camel case after first underscore
-1154	Any case-t Test Functions:TestAcc with multiple underscores
-511	Test Constants:All
-502	Test Constants:TestAcc (any case)
-502	Test Constants:testAcc (lowercase)
-167	Test Constants:TestAcc (any case) with lowercase after first underscore
-51	Test Constants:TestAcc (any case) with uppercase after first underscore
-79	Test Constants:TestAcc (any case) with camel case after underscore
-174	Test Constants:TestAcc (any case) with only one underscore
-44	Test Constants:TestAcc (any case) with multiple underscores
-443	Test Constants:TestAcc (any case) with config (any case)
-245	Test Constants:TestAcc (any case) with config (any case) and no underscores
-196	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
 4674	Resource Functions:All
 353	Resource Functions:All Multi caps
 2909	Resource Functions:resourceAws All
 164	Resource Functions:resourceAws Multi Caps
-0	Resource Functions:non-resourceAws All
+1805	Resource Functions:non-resourceAws All
