@@ -33,11 +33,32 @@ Analysis Tallies
 443	Test Constants:TestAcc (any case) with config (any case)
 245	Test Constants:TestAcc (any case) with config (any case) and no underscores
 196	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
-Resource Tallies
 4674	Resource Functions:All
 353	Resource Functions:All Multi caps
 2909	Resource Functions:resourceAws All
 164	Resource Functions:resourceAws Multi Caps
 1805	Resource Functions:not test, not resourceAws
-52	Resource Functions:ID
-59	Resource Functions:Id
+6639	Capitalization:AWS
+3772	Capitalization:Aws
+130	Capitalization:ID
+185	Capitalization:Id
+96	Capitalization:IP
+117	Capitalization:Ip
+12	Capitalization:EC2
+404	Capitalization:Ec2
+8	Capitalization:WAF
+508	Capitalization:Waf
+6	Capitalization:CIDR
+34	Capitalization:Cidr
+68	Capitalization:VPC
+372	Capitalization:Vpc
+134	Capitalization:RDS
+46	Capitalization:Rds
+28	Capitalization:ARN
+114	Capitalization:Arn
+431	Capitalization:DB
+299	Capitalization:Db
+51	Capitalization:ELB
+22	Capitalization:Elb
+48	Capitalization:AMI
+36	Capitalization:Ami

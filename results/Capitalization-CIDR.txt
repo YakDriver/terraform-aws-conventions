@@ -1,0 +1,6 @@
+func TestAccAWSSecurityGroupRule_ExpectInvalidCIDR(
+func testAccAWSSecurityGroupRuleInvalidIPv4CIDR(
+func testAccAWSSecurityGroupRuleInvalidIPv6CIDR(
+func TestAccAWSSecurityGroup_invalidCIDRBlock(
+func TestAccAWSSecurityGroup_CIDRandGroups(
+func validateVpnConnectionTunnelInsideCIDR(
