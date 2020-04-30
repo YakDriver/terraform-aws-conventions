@@ -4,7 +4,7 @@ if [ "${TF_AWS_PATH}" = "" ]; then
   echo "ERROR: Must set the TF_AWS_PATH to AWS provider AWS directory location"
 fi
 
-rm ./results/*txt
+rm ./results/*txt || echo "Nothing to delete"
 
 declare -a descriptions
 declare -a filenames
