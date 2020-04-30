@@ -1,6 +1,0 @@
-func testAccGetPartitionDNSSuffix(
-func TestAccAwsEc2ClientVpnEndpoint_withDNSServers(
-func testAccEc2ClientVpnEndpointConfigWithDNSServers(
-func testAccTrafficMirrorFilterConfigWithoutDNS(
-func testAccCheckAWSEIPPrivateDNS(
-func testAccCheckAWSEIPPublicDNS(

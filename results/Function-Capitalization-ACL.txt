@@ -1,7 +1,0 @@
-func Test_expandNetworkACLEntry(
-func revokeAllNetworkACLEntries(
-func testAccCheckAWSDefaultACLAttributes(
-func TestAccAWSStorageGatewayNfsFileShare_ObjectACL(
-func testAccAWSStorageGatewayNfsFileShareConfig_ObjectACL(
-func TestAccAWSStorageGatewaySmbFileShare_ObjectACL(
-func testAccAWSStorageGatewaySmbFileShareConfig_ObjectACL(

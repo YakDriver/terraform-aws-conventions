@@ -236,7 +236,9 @@ abbrevs+=( "json" )
 abbrevs+=( "kms" )
 abbrevs+=( "mfa" )
 abbrevs+=( "nat" )
+abbrevs+=( "ram" )
 abbrevs+=( "rds" )
+abbrevs+=( "sid" )
 abbrevs+=( "sms" )
 abbrevs+=( "sqs" )
 abbrevs+=( "sse" )
@@ -244,10 +246,18 @@ abbrevs+=( "ssl" )
 abbrevs+=( "sso" )
 abbrevs+=( "sts" )
 abbrevs+=( "tcp" )
+abbrevs+=( "url" )
 abbrevs+=( "vpc" )
 abbrevs+=( "vpg" )
 abbrevs+=( "vpn" )
 abbrevs+=( "waf" )
+
+declare -a bad_ids
+bad_ids+=( "alidat:ali---dat" )
+bad_ids+=( "nvalid:nvali---d" )
+bad_ids+=( "verride:verri---de" )
+bad_ids+=( "rovide:rovi---de" )
+bad_ids+=( "Bid:Bi---d" )
 
 caps() {
   local term=$1
@@ -255,6 +265,20 @@ caps() {
   descriptions+=( "Function Capitalization:${term}" )
   filenames+=( "./results/Function-Capitalization-${term}.txt" )
   perl -nle'print $& while m{(func\s+[^(]*'${term}'[^(]*)\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
+  if [ "${term}" == "id" ]; then
+    for baddie in ${bad_ids[@]}; do
+      IFS=':'
+      read -ra bad_parts <<< "${baddie}"
+      search="${bad_parts[0]}"
+      replace="${bad_parts[1]}"
+      sed 's/'${search}'/'${replace}'/g' ${filenames[${#filenames[@]}-1]}
+    done
+    cat ${filenames[${#filenames[@]}-1]} | grep "${term}" > temp.txt
+    rm ${filenames[${#filenames[@]}-1]}
+    mv temp.txt ${filenames[${#filenames[@]}-1]}
+    sed 's/i---d/id/g' ${filenames[${#filenames[@]}-1]}
+  fi
 }
 
 for lower in ${abbrevs[@]}; do
@@ -299,6 +323,8 @@ for i in "${!descriptions[@]}"; do
   count=$(< "${filenames[$i]}" wc -l)
   example=$(shuf -n 1 "${filenames[$i]}")
   printf "### %s\nCount: %s\n" "${description}" "${count}" >> ${readmeFile}
-  printf "[List matches](%s)\n\n" "${filenames[$i]}" >> ${readmeFile}
-  printf "Example: \`%s\`\n\n" "${example}" >> ${readmeFile}
+  if (( count > 0 )); then
+    printf "[List matches](%s)\n\n" "${filenames[$i]}" >> ${readmeFile}
+    printf "Example: \`%s\`\n\n" "${example}" >> ${readmeFile}
+  fi
 done
