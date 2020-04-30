@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "${TF_AWS_PATH}" = "" ]; then
-    echo "ERROR: Must set the TF_AWS_PATH to AWS provider AWS directory location"
+  echo "ERROR: Must set the TF_AWS_PATH to AWS provider AWS directory location"
 fi
 
 rm ./results/*txt
@@ -162,128 +162,77 @@ filenames+=( "./results/const-anyT-TestAcc-underscoreAfterAnyConfig.txt" )
 perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*[cC]onfig.*_.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
 
 ###################
-# Resources       #
+# Functions       #
 ###################
 
-descriptions+=( "Resource Functions:All" )
-filenames+=( "./results/Resource-funcs-all.txt" )
+descriptions+=( "Functions:All Exported" )
+filenames+=( "./results/functions-all-exported.txt" )
+perl -nle'print $& while m{(func\s+[A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Functions:All Non-Exported" )
+filenames+=( "./results/functions-all-non-exported.txt" )
+perl -nle'print $& while m{(func\s+[a-z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Functions:All Multi caps" )
+filenames+=( "./results/functions-all-multicaps.txt" )
+perl -nle'print $& while m{(func\s+[^(]*[A-Z][A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
+############################
+# Resource Functions       #
+############################
+
+descriptions+=( "Resource Functions:Resource" )
+filenames+=( "./results/resource-functions-resource.txt" )
+perl -nle'print $& while m{(func\s+resource[^(]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Resource Functions:Resource Multi Caps" )
+filenames+=( "./results/resource-functions-resource-multicap.txt" )
+perl -nle'print $& while m{(func\s+resource[^(]*[A-Z][A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Resource Functions:Non-test" )
+filenames+=( "./results/resource-functions-non-test.txt" )
 perl -nle'print $& while m{(func\s+(?![tT]est)[a-zA-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
 
-descriptions+=( "Resource Functions:All Multi caps" )
-filenames+=( "./results/Resource-funcs-all-multicaps.txt" )
+descriptions+=( "Resource Functions:Non-test Multi-caps" )
+filenames+=( "./results/resource-functions-non-test-multicap.txt" )
 perl -nle'print $& while m{(func\s+(?![tT]est)[a-zA-Z][^(]*[A-Z][A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
 
-descriptions+=( "Resource Functions:resourceAws All" )
-filenames+=( "./results/Resource-funcs-resAws-all.txt" )
-perl -nle'print $& while m{(func\s+[rR]esourceA[wW][sS][^(]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+descriptions+=( "Resource Functions:Non-test, non-resource" )
+filenames+=( "./results/resource-functions-non-test-non-resource.txt" )
+perl -nle'print $& while m{(func\s+(?!resourceAws|[tT]est)[^(]*\()}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
 
-descriptions+=( "Resource Functions:resourceAws Multi Caps" )
-filenames+=( "./results/Resource-funcs-resAws-multicaps.txt" )
-perl -nle'print $& while m{(func\s+[rR]esourceA[wW][sS][^(]*[A-Z][A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+############################
+# Function Capitalization  #
+############################
 
-descriptions+=( "Resource Functions:not test, not resourceAws" )
-filenames+=( "./results/Resource-funcs-non-resAws-all.txt" )
-perl -nle'print $& while m{(func\s+(?![rR]esourceAws|[tT]est)[^(]*\()}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+declare -a abbrevs
+abbrevs+=( "ami" )
+abbrevs+=( "acl" )
+abbrevs+=( "arn" )
+abbrevs+=( "aws" )
+abbrevs+=( "cidr" )
+abbrevs+=( "db" )
+abbrevs+=( "ec2" )
+abbrevs+=( "elb" )
+abbrevs+=( "id" )
+abbrevs+=( "ip" )
+abbrevs+=( "rds" )
+abbrevs+=( "vpc" )
+abbrevs+=( "waf" )
 
-###################
-# Capitalization  #
-###################
+caps() {
+  local term=$1
 
-descriptions+=( "Capitalization:AWS" )
-filenames+=( "./results/Capitalization-AWS.txt" )
-perl -nle'print $& while m{(func\s+[^(]*AWS[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+  descriptions+=( "Function Capitalization:${term}" )
+  filenames+=( "./results/Function-Capitalization-${term}.txt" )
+  perl -nle'print $& while m{(func\s+[^(]*'${term}'[^(]*)\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+}
 
-descriptions+=( "Capitalization:Aws" )
-filenames+=( "./results/Capitalization-Aws.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Aws[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:ID" )
-filenames+=( "./results/Capitalization-ID.txt" )
-perl -nle'print $& while m{(func\s+[^(]*ID[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Id" )
-filenames+=( "./results/Capitalization-Id.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Id(\b|[A-Z])[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:IP" )
-filenames+=( "./results/Capitalization-IP.txt" )
-perl -nle'print $& while m{(func\s+[^(]*IP[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Ip" )
-filenames+=( "./results/Capitalization-Ip.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Ip[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:EC2" )
-filenames+=( "./results/Capitalization-EC2.txt" )
-perl -nle'print $& while m{(func\s+[^(]*EC2[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Ec2" )
-filenames+=( "./results/Capitalization-Ec2.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Ec2[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:WAF" )
-filenames+=( "./results/Capitalization-WAF.txt" )
-perl -nle'print $& while m{(func\s+[^(]*WAF[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Waf" )
-filenames+=( "./results/Capitalization-Waf.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Waf(\b|[A-Z])[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:CIDR" )
-filenames+=( "./results/Capitalization-CIDR.txt" )
-perl -nle'print $& while m{(func\s+[^(]*CIDR[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Cidr" )
-filenames+=( "./results/Capitalization-Cidr.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Cidr[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:VPC" )
-filenames+=( "./results/Capitalization-VPC.txt" )
-perl -nle'print $& while m{(func\s+[^(]*VPC[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Vpc" )
-filenames+=( "./results/Capitalization-Vpc.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Vpc[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:RDS" )
-filenames+=( "./results/Capitalization-RDS.txt" )
-perl -nle'print $& while m{(func\s+[^(]*RDS[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Rds" )
-filenames+=( "./results/Capitalization-Rds.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Rds[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:ARN" )
-filenames+=( "./results/Capitalization-ARN.txt" )
-perl -nle'print $& while m{(func\s+[^(]*ARN[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Arn" )
-filenames+=( "./results/Capitalization-Arn.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Arn[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:DB" )
-filenames+=( "./results/Capitalization-DB.txt" )
-perl -nle'print $& while m{(func\s+[^(]*DB[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Db" )
-filenames+=( "./results/Capitalization-Db.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Db[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:ELB" )
-filenames+=( "./results/Capitalization-ELB.txt" )
-perl -nle'print $& while m{(func\s+[^(]*ELB[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Elb" )
-filenames+=( "./results/Capitalization-Elb.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Elb[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:AMI" )
-filenames+=( "./results/Capitalization-AMI.txt" )
-perl -nle'print $& while m{(func\s+[^(]*AMI[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Capitalization:Ami" )
-filenames+=( "./results/Capitalization-Ami.txt" )
-perl -nle'print $& while m{(func\s+[^(]*Ami[^(]*)\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+for lower in ${abbrevs[@]}; do
+  caps ${lower}
+  caps ${lower^}
+  caps ${lower^^}
+done
 
 ###################
 # get tallies     #
@@ -293,8 +242,8 @@ talliesFile="./results/tallies.txt"
 printf "Analysis Tallies\n" > ${talliesFile}
 
 for i in "${!descriptions[@]}"; do
-    count=$(< "${filenames[$i]}" wc -l)
-    printf "%s\t%s\n" "$count" "${descriptions[$i]}" >> ${talliesFile}
+  count=$(< "${filenames[$i]}" wc -l)
+  printf "%s\t%s\n" "$count" "${descriptions[$i]}" >> ${talliesFile}
 done
 
 ###################
@@ -304,23 +253,23 @@ done
 readmeFile="README.md"
 cat README_header.md > ${readmeFile}
 
-printf "# %s\n" "Acceptance Tests" >> ${readmeFile}
+printf "# %s\n" "Conventions" >> ${readmeFile}
 
 lastTitle=""
 for i in "${!descriptions[@]}"; do
-    IFS=':'
-    read -ra titleDesc <<< "${descriptions[$i]}"
-    title="${titleDesc[0]}"
-    description="${titleDesc[1]}"
+  IFS=':'
+  read -ra titleDesc <<< "${descriptions[$i]}"
+  title="${titleDesc[0]}"
+  description="${titleDesc[1]}"
 
-    if [ "${title}" != "${lastTitle}" ]; then
-        printf "## %s\n\n" "${title}" >> ${readmeFile}
-        lastTitle="${title}"
-    fi
+  if [ "${title}" != "${lastTitle}" ]; then
+    printf "## %s\n\n" "${title}" >> ${readmeFile}
+    lastTitle="${title}"
+  fi
 
-    count=$(< "${filenames[$i]}" wc -l)
-    example=$(shuf -n 1 "${filenames[$i]}")
-    printf "### %s\nCount: %s\n" "${description}" "${count}" >> ${readmeFile}
-    printf "[List matches](%s)\n\n" "${filenames[$i]}" >> ${readmeFile}
-    printf "Example: \`%s\`\n\n" "${example}" >> ${readmeFile}
+  count=$(< "${filenames[$i]}" wc -l)
+  example=$(shuf -n 1 "${filenames[$i]}")
+  printf "### %s\nCount: %s\n" "${description}" "${count}" >> ${readmeFile}
+  printf "[List matches](%s)\n\n" "${filenames[$i]}" >> ${readmeFile}
+  printf "Example: \`%s\`\n\n" "${example}" >> ${readmeFile}
 done
