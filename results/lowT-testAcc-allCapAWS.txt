@@ -1284,6 +1284,7 @@ func testAccAWSGlueConnectionConfig_MatchCriteria_Second(
 func testAccAWSGlueConnectionConfig_MatchCriteria_Third(
 func testAccAWSGlueConnectionConfig_PhysicalConnectionRequirements(
 func testAccAWSGlueConnectionConfig_Required(
+func testAccAWSGlueConnectionConfig_MongoDB(
 func testAccAWSGlueJobConfig_Base(
 func testAccAWSGlueJobConfig_AllocatedCapacity(
 func testAccAWSGlueJobConfig_Command(
