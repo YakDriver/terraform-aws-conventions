@@ -8,7 +8,7 @@ func testAccAwsAcmCertificateDataSourceConfigKeyTypes(certificate, key, rName st
 func testAccDataSourceAwsAmiIdsConfig_sorted(sort_ascending bool) string {
 func testAccDataSourceAwsApiGatewayApiKeyConfig(r string) string {
 func testAccDataSourceAwsApiGatewayResourceConfig(r string) string {
-func testAccDataSourceAwsApiGatewayRestApiConfig(r string) string {
+func testAccDataSourceAwsApiGatewayRestApiConfigName() string {
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(r string) string {
 func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(rInt1, rInt2, rInt3 int) string {
@@ -204,8 +204,8 @@ func testAccAWSDataSourceS3ObjectsConfigMaxKeys(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigStartAfter(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigOwners(randInt int) string {
 func testAccAWSDataSourceS3ObjectConfig_basicViaAccessPoint(rName string) string {
-func testAccAWSDataSourceS3BucketConfig_basic(randInt int) string {
-func testAccAWSDataSourceS3BucketWebsiteConfig(randInt int) string {
+func testAccAWSDataSourceS3BucketConfig_basic(bucketName string) string {
+func testAccAWSDataSourceS3BucketWebsiteConfig(bucketName string) string {
 func testAccDataSourceAwsSecretsManagerSecretConfig_ARN(rName string) string {
 func testAccDataSourceAwsSecretsManagerSecretConfig_Name(rName string) string {
 func testAccDataSourceAwsSecretsManagerSecretConfig_Policy(rName string) string {
@@ -443,6 +443,8 @@ func testAccAWSAPIGatewayRestAPIDisableCompressionConfig(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfigOpenAPI(rName string) string {
 func testAccAWSAPIGatewayRestAPIUpdateConfigOpenAPI(rName string) string {
 func testAccAWSAPIGatewayStageConfig_base(rName string) string {
+func testAccAWSAPIGatewayStageConfigBaseDeploymentStageName(rName string, stageName string) string {
+func testAccAWSAPIGatewayStageConfigReferencingDeployment(rName string) string {
 func testAccAWSAPIGatewayStageConfig_basic(rName string) string {
 func testAccAWSAPIGatewayStageConfig_updated(rName string) string {
 func testAccAWSAPIGatewayStageConfig_accessLogSettings(rName string, format string) string {
@@ -974,7 +976,7 @@ func testAccAWSCodePipelineServiceIAMRole(rName string) string {
 func testAccAWSCodePipelineServiceIAMRoleWithAssumeRole(rName string) string {
 func testAccAWSCodePipelineConfig_basic(rName string) string {
 func testAccAWSCodePipelineConfig_basicUpdated(rName string) string {
-func testAccAWSCodePipelineConfig_emptyArtifacts(rName string) string {
+func testAccAWSCodePipelineConfig_emptyStageArtifacts(rName string) string {
 func testAccAWSCodePipelineDeployActionIAMRole(rName string) string {
 func testAccAWSCodePipelineConfig_deployWithServiceRole(rName string) string {
 func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
@@ -1444,6 +1446,7 @@ func testAccAwsEbsSnapshotConfigBasicTags1(rName, tagKey1, tagValue1 string) str
 func testAccAwsEbsSnapshotConfigBasicTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
+func testAccAwsEbsVolumeConfigOutpost(outpostArn string) string {
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(optInStatus string) string {
 func testAccEc2CapacityReservationConfig_ebsOptimized(ebsOptimized bool) string {
 func testAccEc2CapacityReservationConfig_endDate(endDate string) string {
@@ -1971,6 +1974,8 @@ func testAccGuardDutyIpsetConfig_basic(bucketName, keyName, ipsetName string, ac
 func testAccGuardDutyMemberConfig_basic(accountID, email string) string {
 func testAccGuardDutyMemberConfig_invite(accountID, email string, invite bool) string {
 func testAccGuardDutyMemberConfig_invitationMessage(accountID, email, invitationMessage string) string {
+func testAccGuardDutyOrganizationAdminAccountConfigSelf() string {
+func testAccGuardDutyOrganizationConfigurationConfigAutoEnable(autoEnable bool) string {
 func testAccGuardDutyThreatintelsetConfig_basic(bucketName, keyName, threatintelsetName string, activate bool) string {
 func testAccAWSAccessKeyConfig(rName string) string {
 func testAccAWSAccessKeyConfig_encrypted(rName, key string) string {
@@ -2073,6 +2078,8 @@ func testAccInstanceConfigSourceDestEnable(rName string) string {
 func testAccInstanceConfigSourceDestDisable(rName string) string {
 func testAccInstanceConfigDisableAPITermination(rName string, val bool) string {
 func testAccInstanceConfigVPC(rName string) string {
+func testAccInstanceConfigOutpost(outpostArn string) string {
+func testAccAwsInstanceOutpostConfig(outpostArn string) string {
 func testAccInstanceConfigPlacementGroup(rName string) string {
 func testAccInstanceConfigIpv6ErrorConfig(rName string) string {
 func testAccInstanceConfigIpv6Support(rName string) string {
@@ -2229,6 +2236,8 @@ func testAccAWSKmsGrant_ARN(rName string, operations string) string {
 func testAccAWSKmsKey(rName string) string {
 func testAccAWSKmsKey_asymmetric(rName string) string {
 func testAccAWSKmsKey_policy(rName string) string {
+func testAccAWSKmsKeyConfigPolicyIamRole(rName string) string {
+func testAccAWSKmsKeyConfigPolicyIamServiceLinkedRole(rName string) string {
 func testAccAWSKmsKey_removedPolicy(rName string) string {
 func testAccAWSKmsKey_enabledRotation(rName string) string {
 func testAccAWSKmsKey_disabled(rName string) string {
@@ -2949,44 +2958,42 @@ func testAccAWSS3BucketObjectConfig_NonVersioned(randInt int, source string) str
 func testAccAWSS3BucketPolicyConfig(bucketName string) string {
 func testAccAWSS3BucketPolicyConfig_updated(bucketName string) string {
 func testAccAWSS3BucketPublicAccessBlockConfig(bucketName, blockPublicAcls, blockPublicPolicy, ignorePublicAcls, restrictPublicBuckets string) string {
-func testAccBucketName(randInt int) string {
-func testAccBucketRegionalDomainName(randInt int, region string) string {
-func testAccAWSS3BucketPolicy(randInt int, partition string) string {
-func testAccAWSS3BucketConfig(randInt int) string {
-func testAccAWSS3BucketBasic(randInt int) string {
+func testAccBucketRegionalDomainName(bucket, region string) string {
+func testAccAWSS3BucketPolicy(bucketName, partition string) string {
+func testAccAWSS3BucketConfig_Basic(bucketName string) string {
 func testAccAWSS3BucketConfig_withNoTags(bucketName string) string {
 func testAccAWSS3BucketConfig_withTags(bucketName string) string {
 func testAccAWSS3BucketConfig_withUpdatedTags(bucketName string) string {
 func testAccAWSS3MultiBucketConfigWithTags(randInt int) string {
 func testAccAWSS3BucketConfigWithRegion(bucketName string) string {
-func testAccAWSS3BucketWebsiteConfig(randInt int) string {
-func testAccAWSS3BucketWebsiteConfigWithError(randInt int) string {
-func testAccAWSS3BucketWebsiteConfigWithRedirect(randInt int) string {
-func testAccAWSS3BucketWebsiteConfigWithHttpsRedirect(randInt int) string {
-func testAccAWSS3BucketWebsiteConfigWithRoutingRules(randInt int) string {
-func testAccAWSS3BucketConfigWithAcceleration(randInt int) string {
-func testAccAWSS3BucketConfigWithoutAcceleration(randInt int) string {
-func testAccAWSS3BucketConfigRequestPayerBucketOwner(randInt int) string {
-func testAccAWSS3BucketConfigRequestPayerRequester(randInt int) string {
-func testAccAWSS3BucketConfigWithPolicy(randInt int, partition string) string {
-func testAccAWSS3BucketDestroyedConfig(randInt int) string {
-func testAccAWSS3BucketEnableDefaultEncryption(randInt int) string {
-func testAccAWSS3BucketEnableDefaultEncryptionWithAES256(randInt int) string {
-func testAccAWSS3BucketEnableDefaultEncryptionWithDefaultKey(randInt int) string {
-func testAccAWSS3BucketDisableDefaultEncryption(randInt int) string {
-func testAccAWSS3BucketConfigWithEmptyPolicy(randInt int) string {
-func testAccAWSS3BucketConfigWithVersioning(randInt int) string {
-func testAccAWSS3BucketConfigWithDisableVersioning(randInt int) string {
-func testAccAWSS3BucketConfigWithCORS(randInt int) string {
-func testAccAWSS3BucketConfigWithCORSEmptyOrigin(randInt int) string {
-func testAccAWSS3BucketConfigWithAcl(randInt int) string {
-func testAccAWSS3BucketConfigWithAclUpdate(randInt int) string {
-func testAccAWSS3BucketConfigWithGrants(randInt int) string {
-func testAccAWSS3BucketConfigWithGrantsUpdate(randInt int) string {
-func testAccAWSS3BucketConfigWithLogging(randInt int) string {
-func testAccAWSS3BucketConfigWithLifecycle(randInt int) string {
-func testAccAWSS3BucketConfigWithLifecycleExpireMarker(randInt int) string {
-func testAccAWSS3BucketConfigWithVersioningLifecycle(randInt int) string {
+func testAccAWSS3BucketWebsiteConfig(bucketName string) string {
+func testAccAWSS3BucketWebsiteConfigWithError(bucketName string) string {
+func testAccAWSS3BucketWebsiteConfigWithRedirect(bucketName string) string {
+func testAccAWSS3BucketWebsiteConfigWithHttpsRedirect(bucketName string) string {
+func testAccAWSS3BucketWebsiteConfigWithRoutingRules(bucketName string) string {
+func testAccAWSS3BucketConfigWithAcceleration(bucketName string) string {
+func testAccAWSS3BucketConfigWithoutAcceleration(bucketName string) string {
+func testAccAWSS3BucketConfigRequestPayerBucketOwner(bucketName string) string {
+func testAccAWSS3BucketConfigRequestPayerRequester(bucketName string) string {
+func testAccAWSS3BucketConfigWithPolicy(bucketName, partition string) string {
+func testAccAWSS3BucketDestroyedConfig(bucketName string) string {
+func testAccAWSS3BucketEnableDefaultEncryption(bucketName string) string {
+func testAccAWSS3BucketEnableDefaultEncryptionWithAES256(bucketName string) string {
+func testAccAWSS3BucketEnableDefaultEncryptionWithDefaultKey(bucketName string) string {
+func testAccAWSS3BucketDisableDefaultEncryption(bucketName string) string {
+func testAccAWSS3BucketConfigWithEmptyPolicy(bucketName string) string {
+func testAccAWSS3BucketConfigWithVersioning(bucketName string) string {
+func testAccAWSS3BucketConfigWithDisableVersioning(bucketName string) string {
+func testAccAWSS3BucketConfigWithCORS(bucketName string) string {
+func testAccAWSS3BucketConfigWithCORSEmptyOrigin(bucketName string) string {
+func testAccAWSS3BucketConfigWithAcl(bucketName string) string {
+func testAccAWSS3BucketConfigWithAclUpdate(bucketName string) string {
+func testAccAWSS3BucketConfigWithGrants(bucketName string) string {
+func testAccAWSS3BucketConfigWithGrantsUpdate(bucketName string) string {
+func testAccAWSS3BucketConfigWithLogging(bucketName string) string {
+func testAccAWSS3BucketConfigWithLifecycle(bucketName string) string {
+func testAccAWSS3BucketConfigWithLifecycleExpireMarker(bucketName string) string {
+func testAccAWSS3BucketConfigWithVersioningLifecycle(bucketName string) string {
 func testAccAWSS3BucketConfigLifecycleRuleExpirationEmptyConfigurationBlock(rName string) string {
 func testAccAWSS3BucketConfigReplicationBasic(randInt int) string {
 func testAccAWSS3BucketConfigReplication(randInt int) string {
@@ -3002,8 +3009,8 @@ func testAccAWSS3BucketConfigReplicationWithV2ConfigurationNoTags(randInt int) s
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationOnlyOneTag(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationPrefixAndTags(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationMultipleTags(randInt int) string {
-func testAccAWSS3BucketObjectLockEnabledNoDefaultRetention(randInt int) string {
-func testAccAWSS3BucketObjectLockEnabledWithDefaultRetention(randInt int) string {
+func testAccAWSS3BucketObjectLockEnabledNoDefaultRetention(bucketName string) string {
+func testAccAWSS3BucketObjectLockEnabledWithDefaultRetention(bucketName string) string {
 func testAccAWSS3BucketConfig_forceDestroy(bucketName string) string {
 func testAccAWSS3BucketConfig_forceDestroyWithObjectLockEnabled(bucketName string) string {
 func testAccSagemakerEndpointConfigurationConfig_Base(rName string) string {
@@ -3306,6 +3313,7 @@ func testAccAWSStorageGatewayGatewayConfig_Log_Group(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Stored(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(rName, gatewayTimezone string) string {
+func testAccAWSStorageGatewayGatewayConfig_GatewayVpcEndpoint(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettings(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(rName, smbGuestPassword string) string {
 func testAccAWSStorageGatewayGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -3346,6 +3354,7 @@ func testAccAWSStorageGatewaySmbFileShareConfigTags1(rName, tagKey1, tagValue1 s
 func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayUploadBufferConfig_Basic(rName string) string {
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(rName string) string {
+func testAccSubnetConfigOutpost(outpostArn string) string {
 func testAccAWSSwfDomainConfig_Description(rName, description string) string {
 func testAccAWSSwfDomainConfig_Name(rName string) string {
 func testAccAWSSwfDomainConfigTags1(rName, tagKey1, tagValue1 string) string {

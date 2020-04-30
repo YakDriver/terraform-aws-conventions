@@ -73,7 +73,8 @@ func TestAccAWSAmiDataSource_instanceStore(
 func TestAccAWSAmiDataSource_localNameFilter(
 func TestAccDataSourceAwsApiGatewayApiKey(
 func TestAccDataSourceAwsApiGatewayResource(
-func TestAccDataSourceAwsApiGatewayRestApi(
+func TestAccDataSourceAwsApiGatewayRestApi_basic(
+func TestAccDataSourceAwsApiGatewayRestApi_EndpointConfiguration_VpcEndpointIds(
 func TestAccDataSourceAwsApiGatewayVpcLink(
 func TestAccDataSourceAwsArn_basic(
 func TestAccAWSAutoscalingGroups_basic(
@@ -576,6 +577,7 @@ func TestAccAWSAPIGatewayRestApi_api_key_source(
 func TestAccAWSAPIGatewayRestApi_policy(
 func TestAccAWSAPIGatewayRestApi_openapi(
 func TestAccAWSAPIGatewayStage_basic(
+func TestAccAWSAPIGatewayStage_disappears_ReferencingDeployment(
 func TestAccAWSAPIGatewayStage_accessLogSettings(
 func TestAccAWSAPIGatewayStage_accessLogSettings_kinesis(
 func TestAccAWSAPIGatewayUsagePlanKey_basic(
@@ -1086,7 +1088,7 @@ func TestAWSCodeDeployDeploymentGroup_flattenBlueGreenDeploymentConfig(
 func TestAWSCodeDeployDeploymentGroup_buildAlarmConfig(
 func TestAWSCodeDeployDeploymentGroup_alarmConfigToMap(
 func TestAccAWSCodePipeline_basic(
-func TestAccAWSCodePipeline_emptyArtifacts(
+func TestAccAWSCodePipeline_emptyStageArtifacts(
 func TestAccAWSCodePipeline_deployWithServiceRole(
 func TestAccAWSCodePipeline_tags(
 func TestAccAWSCodePipeline_multiregion_basic(
@@ -1375,6 +1377,8 @@ func TestAccAwsDmsEndpoint_DynamoDb(
 func TestAccAwsDmsEndpoint_Elasticsearch(
 func TestAccAwsDmsEndpoint_Elasticsearch_ErrorRetryDuration(
 func TestAccAwsDmsEndpoint_Elasticsearch_FullLoadErrorPercentage(
+func TestAccAwsDmsEndpoint_Kafka_Broker(
+func TestAccAwsDmsEndpoint_Kafka_Topic(
 func TestAccAwsDmsEndpoint_Kinesis(
 func TestAccAwsDmsEndpoint_MongoDb(
 func TestAccAwsDmsEndpoint_DocDB(
@@ -1512,6 +1516,7 @@ func TestAccAWSEBSVolume_updateIops(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_NoIops(
 func TestAccAWSEBSVolume_withTags(
+func TestAccAWSEBSVolume_outpost(
 func TestAccAWSEc2AvailabilityZoneGroup_OptInStatus(
 func TestAccAWSEc2CapacityReservation_basic(
 func TestAccAWSEc2CapacityReservation_ebsOptimized(
@@ -2174,6 +2179,7 @@ func TestAccAWSInstance_noAMIEphemeralDevices(
 func TestAccAWSInstance_sourceDestCheck(
 func TestAccAWSInstance_disableApiTermination(
 func TestAccAWSInstance_vpc(
+func TestAccAWSInstance_outpost(
 func TestAccAWSInstance_placementGroup(
 func TestAccAWSInstance_ipv6_supportAddressCount(
 func TestAccAWSInstance_ipv6AddressCountAndSingleAddressCausesError(
@@ -2355,6 +2361,8 @@ func TestAccAWSKmsKey_basic(
 func TestAccAWSKmsKey_asymmetricKey(
 func TestAccAWSKmsKey_disappears(
 func TestAccAWSKmsKey_policy(
+func TestAccAWSKmsKey_Policy_IamRole(
+func TestAccAWSKmsKey_Policy_IamServiceLinkedRole(
 func TestAccAWSKmsKey_isEnabled(
 func TestAccAWSKmsKey_tags(
 func TestAccAWSLambdaAlias_basic(
@@ -3052,6 +3060,7 @@ func TestAccAWSRouteTable_Route_TransitGatewayID(
 func TestAccAWSRouteTable_vpcPeering(
 func TestAccAWSRouteTable_vgwRoutePropagation(
 func TestAccAWSRoute_basic(
+func TestAccAWSRoute_disappears(
 func TestAccAWSRoute_ipv6Support(
 func TestAccAWSRoute_ipv6ToInternetGateway(
 func TestAccAWSRoute_ipv6ToInstance(
@@ -3343,6 +3352,7 @@ func TestAccAWSShieldProtection_Cloudfront(
 func TestAccAWSShieldProtection_Route53(
 func TestAccAWSSimpleDBDomain_basic(
 func TestAccAWSSnapshotCreateVolumePermission_Basic(
+func TestAccAWSSnapshotCreateVolumePermission_disappears(
 func TestDecodeResourceAwsSnsPlatformApplicationID(
 func TestAccAWSSnsPlatformApplication_basic(
 func TestAccAWSSnsPlatformApplication_basicAttributes(
@@ -3521,6 +3531,7 @@ func TestAccAWSStorageGatewayGateway_tags(
 func TestAccAWSStorageGatewayGateway_GatewayName(
 func TestAccAWSStorageGatewayGateway_CloudWatchLogs(
 func TestAccAWSStorageGatewayGateway_GatewayTimezone(
+func TestAccAWSStorageGatewayGateway_GatewayVpcEndpoint(
 func TestAccAWSStorageGatewayGateway_SmbActiveDirectorySettings(
 func TestAccAWSStorageGatewayGateway_SmbGuestPassword(
 func TestAccAWSStorageGatewayNfsFileShare_basic(
@@ -3557,6 +3568,7 @@ func TestAccAWSSubnet_ignoreTags(
 func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
 func TestAccAWSSubnet_availabilityZoneId(
+func TestAccAWSSubnet_outpost(
 func TestAccAWSSwfDomain_basic(
 func TestAccAWSSwfDomain_tags(
 func TestAccAWSSwfDomain_NamePrefix(

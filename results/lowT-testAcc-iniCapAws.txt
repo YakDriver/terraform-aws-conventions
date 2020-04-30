@@ -88,6 +88,7 @@ func testAccAwsEbsSnapshotConfigBasicTags1(
 func testAccAwsEbsSnapshotConfigBasicTags2(
 func testAccAwsEbsSnapshotConfigWithDescription(
 func testAccAwsEbsSnapshotConfigWithKms(
+func testAccAwsEbsVolumeConfigOutpost(
 func testAccAwsElasticTranscoderPresetConfig(
 func testAccAwsElasticTranscoderPresetConfigDescription(
 func testAccAwsElasticTranscoderPresetConfigFull1(
@@ -128,6 +129,8 @@ func testAccAwsGuardDutyMember_basic(
 func testAccAwsGuardDutyMember_invite_disassociate(
 func testAccAwsGuardDutyMember_invite_onUpdate(
 func testAccAwsGuardDutyMember_invitationMessage(
+func testAccAwsGuardDutyOrganizationAdminAccount_basic(
+func testAccAwsGuardDutyOrganizationConfiguration_basic(
 func testAccAwsGuardDutyThreatintelset_basic(
 func testAccAwsGuardDutyThreatintelset_import(
 func testAccAwsIamInstanceProfileConfig(
@@ -139,6 +142,7 @@ func testAccAwsEc2InstanceRootBlockDevice(
 func testAccAwsEc2InstanceRootBlockDeviceWithIOPS(
 func testAccAwsEc2InstanceConfigBlockDevices(
 func testAccAwsEc2InstanceConfigBlockDevicesWithDeleteOnTerminate(
+func testAccAwsInstanceOutpostConfig(
 func testAccAwsInstanceVpcConfig(
 func testAccAwsInstanceVpcSecurityGroupConfig(
 func testAccAwsInstanceVpcIpv6Config(

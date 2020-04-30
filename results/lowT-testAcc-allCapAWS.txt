@@ -213,6 +213,8 @@ func testAccAWSAPIGatewayRestAPIConfigOpenAPI(
 func testAccAWSAPIGatewayRestAPIUpdateConfigOpenAPI(
 func testAccAWSAPIGatewayStageImportStateIdFunc(
 func testAccAWSAPIGatewayStageConfig_base(
+func testAccAWSAPIGatewayStageConfigBaseDeploymentStageName(
+func testAccAWSAPIGatewayStageConfigReferencingDeployment(
 func testAccAWSAPIGatewayStageConfig_basic(
 func testAccAWSAPIGatewayStageConfig_updated(
 func testAccAWSAPIGatewayStageConfig_accessLogSettings(
@@ -652,7 +654,7 @@ func testAccAWSCodePipelineServiceIAMRole(
 func testAccAWSCodePipelineServiceIAMRoleWithAssumeRole(
 func testAccAWSCodePipelineConfig_basic(
 func testAccAWSCodePipelineConfig_basicUpdated(
-func testAccAWSCodePipelineConfig_emptyArtifacts(
+func testAccAWSCodePipelineConfig_emptyStageArtifacts(
 func testAccAWSCodePipelineDeployActionIAMRole(
 func testAccAWSCodePipelineConfig_deployWithServiceRole(
 func testAccAWSCodePipelineConfigWithTags(
@@ -1448,6 +1450,8 @@ func testAccAWSKmsGrant_ARN(
 func testAccAWSKmsKey(
 func testAccAWSKmsKey_asymmetric(
 func testAccAWSKmsKey_policy(
+func testAccAWSKmsKeyConfigPolicyIamRole(
+func testAccAWSKmsKeyConfigPolicyIamServiceLinkedRole(
 func testAccAWSKmsKey_removedPolicy(
 func testAccAWSKmsKey_enabledRotation(
 func testAccAWSKmsKey_disabled(
@@ -2000,8 +2004,7 @@ func testAccAWSS3BucketPolicyConfig(
 func testAccAWSS3BucketPolicyConfig_updated(
 func testAccAWSS3BucketPublicAccessBlockConfig(
 func testAccAWSS3BucketPolicy(
-func testAccAWSS3BucketConfig(
-func testAccAWSS3BucketBasic(
+func testAccAWSS3BucketConfig_Basic(
 func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(
 func testAccAWSS3BucketConfig_withUpdatedTags(
@@ -2298,6 +2301,7 @@ func testAccAWSStorageGatewayGatewayConfig_Log_Group(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Stored(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(
+func testAccAWSStorageGatewayGatewayConfig_GatewayVpcEndpoint(
 func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettings(
 func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(
 func testAccAWSStorageGatewayGatewayConfigTags1(

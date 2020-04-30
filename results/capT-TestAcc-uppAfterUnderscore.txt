@@ -1,5 +1,6 @@
 func TestAccAWSAcmCertificateDataSource_KeyTypes(
 func TestAccDataSourceAwsAcmpcaCertificateAuthority_Basic(
+func TestAccDataSourceAwsApiGatewayRestApi_EndpointConfiguration_VpcEndpointIds(
 func TestAccAWSAvailabilityZones_AllAvailabilityZones(
 func TestAccAWSAvailabilityZones_BlacklistedNames(
 func TestAccAWSAvailabilityZones_BlacklistedZoneIds(
@@ -518,6 +519,8 @@ func TestAccAwsDmsEndpoint_DynamoDb(
 func TestAccAwsDmsEndpoint_Elasticsearch(
 func TestAccAwsDmsEndpoint_Elasticsearch_ErrorRetryDuration(
 func TestAccAwsDmsEndpoint_Elasticsearch_FullLoadErrorPercentage(
+func TestAccAwsDmsEndpoint_Kafka_Broker(
+func TestAccAwsDmsEndpoint_Kafka_Topic(
 func TestAccAwsDmsEndpoint_Kinesis(
 func TestAccAwsDmsEndpoint_MongoDb(
 func TestAccAwsDmsEndpoint_DocDB(
@@ -880,6 +883,8 @@ func TestAccAWSKmsExternalKey_Tags(
 func TestAccAWSKmsExternalKey_ValidTo(
 func TestAccAWSKmsGrant_Basic(
 func TestAccAWSKmsGrant_ARN(
+func TestAccAWSKmsKey_Policy_IamRole(
+func TestAccAWSKmsKey_Policy_IamServiceLinkedRole(
 func TestAccAWSLambdaEventSourceMapping_StartingPositionTimestamp(
 func TestAccAWSLambdaEventSourceMapping_BatchWindow(
 func TestAccAWSLambdaEventSourceMapping_ParallelizationFactor(
@@ -1241,6 +1246,7 @@ func TestAccAWSStorageGatewayGateway_GatewayType_Vtl(
 func TestAccAWSStorageGatewayGateway_GatewayName(
 func TestAccAWSStorageGatewayGateway_CloudWatchLogs(
 func TestAccAWSStorageGatewayGateway_GatewayTimezone(
+func TestAccAWSStorageGatewayGateway_GatewayVpcEndpoint(
 func TestAccAWSStorageGatewayGateway_SmbActiveDirectorySettings(
 func TestAccAWSStorageGatewayGateway_SmbGuestPassword(
 func TestAccAWSStorageGatewayNfsFileShare_ClientList(

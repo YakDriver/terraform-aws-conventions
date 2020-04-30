@@ -11,7 +11,7 @@ func testAccDataSourceAwsAmiIdsConfig_sorted(
 func testAccCheckAwsAmiDataSourceID(
 func testAccDataSourceAwsApiGatewayApiKeyConfig(
 func testAccDataSourceAwsApiGatewayResourceConfig(
-func testAccDataSourceAwsApiGatewayRestApiConfig(
+func testAccDataSourceAwsApiGatewayRestApiConfigName(
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(
 func testAccDataSourceAwsArn(
 func testAccCheckAwsAutoscalingGroups(
@@ -149,7 +149,6 @@ func testAccAWSIotEndpointConfigEndpointType(
 func testAccAWSIPRangesCheckAttributes(
 func testAccAWSIPRangesCheckCidrBlocksAttribute(
 func testAccDataSourceAwsKmsAliasCheckExists(
-func testAccDataSourceAwsKmsAliasCheckCMKAttributes(
 func testAccDataSourceAwsKmsAlias_name(
 func testAccDataSourceAwsKmsAlias_CMK(
 func testAccDataSourceAwsKmsKeyCheck(
@@ -376,6 +375,7 @@ func testAccProviderConfigIgnoreTagsKeyPrefixes1(
 func testAccProviderConfigIgnoreTagsKeys1(
 func testAccUsEast1RegionProviderConfig(
 func testAccAwsRegionProviderFunc(region string, providers *[]*schema.Provider) func(
+func testAccCheckResourceDisappears(
 func testAccCheckWithProviders(f func(
 func testAccPreCheckSkipError(
 func testAccCheckAWSProviderDnsSuffix(
@@ -655,6 +655,8 @@ func testAccCheckAWSAPIGatewayStageExists(
 func testAccCheckAWSAPIGatewayStageDestroy(
 func testAccAWSAPIGatewayStageImportStateIdFunc(
 func testAccAWSAPIGatewayStageConfig_base(
+func testAccAWSAPIGatewayStageConfigBaseDeploymentStageName(
+func testAccAWSAPIGatewayStageConfigReferencingDeployment(
 func testAccAWSAPIGatewayStageConfig_basic(
 func testAccAWSAPIGatewayStageConfig_updated(
 func testAccAWSAPIGatewayStageConfig_accessLogSettings(
@@ -1054,7 +1056,6 @@ func testAccAWSAutoscalingScheduleConfig_recurrence(
 func testAccAWSAutoscalingScheduleConfig_zeroValues(
 func testAccAWSAutoscalingScheduleConfig_negativeOne(
 func testAccCheckAwsBackupPlanDestroy(
-func testAccCheckAwsBackupPlanDisappears(
 func testAccCheckAwsBackupPlanExists(
 func testAccCheckAwsBackupPlanRuleAttr(
 func testAccAwsBackupPlanConfig_basic(
@@ -1072,7 +1073,6 @@ func testAccAwsBackupPlanConfigRuleCopyActionMultiple(
 func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(
 func testAccCheckAwsBackupSelectionDestroy(
 func testAccCheckAwsBackupSelectionExists(
-func testAccCheckAwsBackupSelectionDisappears(
 func testAccCheckAwsBackupSelectionRecreated(
 func testAccAWSBackupSelectionImportStateIDFunc(
 func testAccBackupSelectionConfigBase(
@@ -1082,7 +1082,6 @@ func testAccBackupSelectionConfigWithResources(
 func testAccBackupSelectionConfigUpdateTag(
 func testAccCheckAwsBackupVaultDestroy(
 func testAccCheckAwsBackupVaultExists(
-func testAccCheckAwsBackupVaultDisappears(
 func testAccPreCheckAWSBackup(
 func testAccBackupVaultConfig(
 func testAccBackupVaultWithKmsKey(
@@ -1498,7 +1497,7 @@ func testAccAWSCodePipelineServiceIAMRole(
 func testAccAWSCodePipelineServiceIAMRoleWithAssumeRole(
 func testAccAWSCodePipelineConfig_basic(
 func testAccAWSCodePipelineConfig_basicUpdated(
-func testAccAWSCodePipelineConfig_emptyArtifacts(
+func testAccAWSCodePipelineConfig_emptyStageArtifacts(
 func testAccAWSCodePipelineDeployActionIAMRole(
 func testAccAWSCodePipelineConfig_deployWithServiceRole(
 func testAccAWSCodePipelineConfigWithTags(
@@ -2241,6 +2240,7 @@ func testAccAwsEbsSnapshotConfigWithDescription(
 func testAccAwsEbsSnapshotConfigWithKms(
 func testAccCheckVolumeDestroy(
 func testAccCheckVolumeExists(
+func testAccAwsEbsVolumeConfigOutpost(
 func testAccPreCheckAWSEc2AvailabilityZoneGroup(
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(
 func testAccCheckEc2CapacityReservationExists(
@@ -3034,6 +3034,12 @@ func testAccCheckAwsGuardDutyMemberExists(
 func testAccGuardDutyMemberConfig_basic(
 func testAccGuardDutyMemberConfig_invite(
 func testAccGuardDutyMemberConfig_invitationMessage(
+func testAccAwsGuardDutyOrganizationAdminAccount_basic(
+func testAccCheckAwsGuardDutyOrganizationAdminAccountDestroy(
+func testAccCheckAwsGuardDutyOrganizationAdminAccountExists(
+func testAccGuardDutyOrganizationAdminAccountConfigSelf(
+func testAccAwsGuardDutyOrganizationConfiguration_basic(
+func testAccGuardDutyOrganizationConfigurationConfigAutoEnable(
 func testAccAWSGuardDutyMemberFromEnv(t *testing.T) (
 func testAccAwsGuardDutyThreatintelset_basic(
 func testAccAwsGuardDutyThreatintelset_import(
@@ -3245,6 +3251,8 @@ func testAccInstanceConfigSourceDestEnable(
 func testAccInstanceConfigSourceDestDisable(
 func testAccInstanceConfigDisableAPITermination(
 func testAccInstanceConfigVPC(
+func testAccInstanceConfigOutpost(
+func testAccAwsInstanceOutpostConfig(
 func testAccInstanceConfigPlacementGroup(
 func testAccInstanceConfigIpv6ErrorConfig(
 func testAccInstanceConfigIpv6Support(
@@ -3455,6 +3463,8 @@ func testAccCheckAWSKmsKeyDisappears(
 func testAccAWSKmsKey(
 func testAccAWSKmsKey_asymmetric(
 func testAccAWSKmsKey_policy(
+func testAccAWSKmsKeyConfigPolicyIamRole(
+func testAccAWSKmsKeyConfigPolicyIamServiceLinkedRole(
 func testAccAWSKmsKey_removedPolicy(
 func testAccAWSKmsKey_enabledRotation(
 func testAccAWSKmsKey_disabled(
@@ -4609,13 +4619,11 @@ func testAccCheckAWSS3BucketLogging(
 func testAccCheckAWSS3BucketReplicationRules(n string, providerF func(
 func testAccCheckAWSS3BucketUpdateGrantSingle(resourceName string) func(
 func testAccCheckAWSS3BucketUpdateGrantMulti(resourceName string) func(
-func testAccBucketName(
 func testAccCheckS3BucketDomainName(
 func testAccBucketRegionalDomainName(
 func testAccCheckS3BucketWebsiteEndpoint(
 func testAccAWSS3BucketPolicy(
-func testAccAWSS3BucketConfig(
-func testAccAWSS3BucketBasic(
+func testAccAWSS3BucketConfig_Basic(
 func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(
 func testAccAWSS3BucketConfig_withUpdatedTags(
@@ -5161,6 +5169,7 @@ func testAccAWSStorageGatewayGatewayConfig_Log_Group(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Stored(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(
+func testAccAWSStorageGatewayGatewayConfig_GatewayVpcEndpoint(
 func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettings(
 func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(
 func testAccAWSStorageGatewayGatewayConfigTags1(
@@ -5213,6 +5222,7 @@ func testAccCheckAwsSubnetNotRecreated(
 func testAccCheckSubnetDestroy(
 func testAccCheckSubnetExists(
 func testAccCheckSubnetUpdateTags(
+func testAccSubnetConfigOutpost(
 func testAccPreCheckSwfDomainTestingEnabled(
 func testAccCheckAwsSwfDomainDestroy(
 func testAccCheckAwsSwfDomainExists(
