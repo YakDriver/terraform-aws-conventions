@@ -8,7 +8,7 @@ func testAccAwsAcmCertificateDataSourceConfigKeyTypes(
 func testAccDataSourceAwsAmiIdsConfig_sorted(
 func testAccDataSourceAwsApiGatewayApiKeyConfig(
 func testAccDataSourceAwsApiGatewayResourceConfig(
-func testAccDataSourceAwsApiGatewayRestApiConfig(
+func testAccDataSourceAwsApiGatewayRestApiConfigName(
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(
 func testAccCheckAwsAutoscalingGroupsConfig(
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(
@@ -422,6 +422,8 @@ func testAccAWSAPIGatewayRestAPIDisableCompressionConfig(
 func testAccAWSAPIGatewayRestAPIConfigOpenAPI(
 func testAccAWSAPIGatewayRestAPIUpdateConfigOpenAPI(
 func testAccAWSAPIGatewayStageConfig_base(
+func testAccAWSAPIGatewayStageConfigBaseDeploymentStageName(
+func testAccAWSAPIGatewayStageConfigReferencingDeployment(
 func testAccAWSAPIGatewayStageConfig_basic(
 func testAccAWSAPIGatewayStageConfig_updated(
 func testAccAWSAPIGatewayStageConfig_accessLogSettings(
@@ -916,7 +918,7 @@ func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(
 func testAccAWSCodePipelineConfig_basic(
 func testAccAWSCodePipelineConfig_basicUpdated(
-func testAccAWSCodePipelineConfig_emptyArtifacts(
+func testAccAWSCodePipelineConfig_emptyStageArtifacts(
 func testAccAWSCodePipelineConfig_deployWithServiceRole(
 func testAccAWSCodePipelineConfigWithTags(
 func testAccAWSCodePipelineConfig_multiregion(
@@ -1422,6 +1424,7 @@ func testAccAwsEbsSnapshotConfigBasicTags1(
 func testAccAwsEbsSnapshotConfigBasicTags2(
 func testAccAwsEbsSnapshotConfigWithDescription(
 func testAccAwsEbsSnapshotConfigWithKms(
+func testAccAwsEbsVolumeConfigOutpost(
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(
 func testAccEc2CapacityReservationConfig_ebsOptimized(
 func testAccEc2CapacityReservationConfig_endDate(
@@ -1879,6 +1882,9 @@ func testAccGuardDutyIpsetConfig_basic(
 func testAccGuardDutyMemberConfig_basic(
 func testAccGuardDutyMemberConfig_invite(
 func testAccGuardDutyMemberConfig_invitationMessage(
+func testAccGuardDutyOrganizationAdminAccountConfigSelf(
+func testAccAwsGuardDutyOrganizationConfiguration_basic(
+func testAccGuardDutyOrganizationConfigurationConfigAutoEnable(
 func testAccGuardDutyThreatintelsetConfig_basic(
 func testAccAWSAccessKeyConfig(
 func testAccAWSAccessKeyConfig_encrypted(
@@ -1972,6 +1978,8 @@ func testAccInstanceConfigSourceDestEnable(
 func testAccInstanceConfigSourceDestDisable(
 func testAccInstanceConfigDisableAPITermination(
 func testAccInstanceConfigVPC(
+func testAccInstanceConfigOutpost(
+func testAccAwsInstanceOutpostConfig(
 func testAccInstanceConfigPlacementGroup(
 func testAccInstanceConfigIpv6ErrorConfig(
 func testAccInstanceConfigIpv6Support(
@@ -2083,6 +2091,8 @@ func testAccAWSKmsExternalKeyConfigTags1(
 func testAccAWSKmsExternalKeyConfigTags2(
 func testAccAWSKmsExternalKeyConfigValidTo(
 func testAccAWSKmsGrantConfigBase(
+func testAccAWSKmsKeyConfigPolicyIamRole(
+func testAccAWSKmsKeyConfigPolicyIamServiceLinkedRole(
 func testAccCheckAwsLambdaAliasRoutingConfigExists(
 func testAccCheckAwsLambdaAliasRoutingConfigDoesNotExist(
 func testAccAwsLambdaAliasBaseConfig(
@@ -2811,7 +2821,7 @@ func testAccAWSS3BucketObjectConfig_NonVersioned(
 func testAccAWSS3BucketPolicyConfig(
 func testAccAWSS3BucketPolicyConfig_updated(
 func testAccAWSS3BucketPublicAccessBlockConfig(
-func testAccAWSS3BucketConfig(
+func testAccAWSS3BucketConfig_Basic(
 func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(
 func testAccAWSS3BucketConfig_withUpdatedTags(
@@ -3144,6 +3154,7 @@ func testAccAWSStorageGatewayGatewayConfig_Log_Group(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Stored(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(
+func testAccAWSStorageGatewayGatewayConfig_GatewayVpcEndpoint(
 func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettings(
 func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(
 func testAccAWSStorageGatewayGatewayConfigTags1(
@@ -3181,6 +3192,7 @@ func testAccAWSStorageGatewaySmbFileShareConfigTags1(
 func testAccAWSStorageGatewaySmbFileShareConfigTags2(
 func testAccAWSStorageGatewayUploadBufferConfig_Basic(
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(
+func testAccSubnetConfigOutpost(
 func testAccAWSSwfDomainConfig_Description(
 func testAccAWSSwfDomainConfig_Name(
 func testAccAWSSwfDomainConfigTags1(

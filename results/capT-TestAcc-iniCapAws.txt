@@ -60,6 +60,8 @@ func TestAccAwsDmsEndpoint_DynamoDb(
 func TestAccAwsDmsEndpoint_Elasticsearch(
 func TestAccAwsDmsEndpoint_Elasticsearch_ErrorRetryDuration(
 func TestAccAwsDmsEndpoint_Elasticsearch_FullLoadErrorPercentage(
+func TestAccAwsDmsEndpoint_Kafka_Broker(
+func TestAccAwsDmsEndpoint_Kafka_Topic(
 func TestAccAwsDmsEndpoint_Kinesis(
 func TestAccAwsDmsEndpoint_MongoDb(
 func TestAccAwsDmsEndpoint_DocDB(

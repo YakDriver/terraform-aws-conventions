@@ -9,6 +9,7 @@ func TestAccAWSAmiDataSource_natInstance(
 func TestAccAWSAmiDataSource_windowsInstance(
 func TestAccAWSAmiDataSource_instanceStore(
 func TestAccAWSAmiDataSource_localNameFilter(
+func TestAccDataSourceAwsApiGatewayRestApi_basic(
 func TestAccDataSourceAwsArn_basic(
 func TestAccAWSAutoscalingGroups_basic(
 func TestAccAwsAutoScalingGroupDataSource_basic(
@@ -426,6 +427,7 @@ func TestAccAWSAPIGatewayRestApi_api_key_source(
 func TestAccAWSAPIGatewayRestApi_policy(
 func TestAccAWSAPIGatewayRestApi_openapi(
 func TestAccAWSAPIGatewayStage_basic(
+func TestAccAWSAPIGatewayStage_disappears_ReferencingDeployment(
 func TestAccAWSAPIGatewayStage_accessLogSettings(
 func TestAccAWSAPIGatewayStage_accessLogSettings_kinesis(
 func testAccAWSAPIGatewayStageConfig_base(
@@ -881,7 +883,7 @@ func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_update(
 func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_createMultiple(
 func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_updateMultiple(
 func TestAccAWSCodePipeline_basic(
-func TestAccAWSCodePipeline_emptyArtifacts(
+func TestAccAWSCodePipeline_emptyStageArtifacts(
 func TestAccAWSCodePipeline_deployWithServiceRole(
 func TestAccAWSCodePipeline_tags(
 func TestAccAWSCodePipeline_multiregion_basic(
@@ -889,7 +891,7 @@ func TestAccAWSCodePipeline_multiregion_Update(
 func TestAccAWSCodePipeline_multiregion_ConvertSingleRegion(
 func testAccAWSCodePipelineConfig_basic(
 func testAccAWSCodePipelineConfig_basicUpdated(
-func testAccAWSCodePipelineConfig_emptyArtifacts(
+func testAccAWSCodePipelineConfig_emptyStageArtifacts(
 func testAccAWSCodePipelineConfig_deployWithServiceRole(
 func testAccAWSCodePipelineConfig_multiregion(
 func testAccAWSCodePipelineConfig_multiregionUpdated(
@@ -1297,6 +1299,7 @@ func TestAccAWSEBSVolume_updateType(
 func TestAccAWSEBSVolume_updateIops(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_withTags(
+func TestAccAWSEBSVolume_outpost(
 func TestAccAWSEc2CapacityReservation_basic(
 func TestAccAWSEc2CapacityReservation_ebsOptimized(
 func TestAccAWSEc2CapacityReservation_endDate(
@@ -1650,6 +1653,8 @@ func testAccAwsGuardDutyMember_invitationMessage(
 func testAccGuardDutyMemberConfig_basic(
 func testAccGuardDutyMemberConfig_invite(
 func testAccGuardDutyMemberConfig_invitationMessage(
+func testAccAwsGuardDutyOrganizationAdminAccount_basic(
+func testAccAwsGuardDutyOrganizationConfiguration_basic(
 func testAccAwsGuardDutyThreatintelset_basic(
 func testAccAwsGuardDutyThreatintelset_import(
 func testAccGuardDutyThreatintelsetConfig_basic(
@@ -1764,6 +1769,7 @@ func TestAccAWSInstance_noAMIEphemeralDevices(
 func TestAccAWSInstance_sourceDestCheck(
 func TestAccAWSInstance_disableApiTermination(
 func TestAccAWSInstance_vpc(
+func TestAccAWSInstance_outpost(
 func TestAccAWSInstance_placementGroup(
 func TestAccAWSInstance_ipv6_supportAddressCount(
 func TestAccAWSInstance_ipv6AddressCountAndSingleAddressCausesError(
@@ -2669,6 +2675,7 @@ func TestAccAWSRouteTable_panicEmptyRoute(
 func TestAccAWSRouteTable_vpcPeering(
 func TestAccAWSRouteTable_vgwRoutePropagation(
 func TestAccAWSRoute_basic(
+func TestAccAWSRoute_disappears(
 func TestAccAWSRoute_ipv6Support(
 func TestAccAWSRoute_ipv6ToInternetGateway(
 func TestAccAWSRoute_ipv6ToInstance(
@@ -2867,6 +2874,7 @@ func TestAccAWSSESReceiptRule_actions(
 func TestAccAWSSfnActivity_basic(
 func TestAccAWSSfnStateMachine_createUpdate(
 func TestAccAWSSimpleDBDomain_basic(
+func TestAccAWSSnapshotCreateVolumePermission_disappears(
 func TestAccAWSSnsPlatformApplication_basic(
 func TestAccAWSSnsPlatformApplication_basicAttributes(
 func TestAccAWSSnsPlatformApplication_iamRoleAttributes(
@@ -3025,6 +3033,7 @@ func TestAccAWSSubnet_ignoreTags(
 func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
 func TestAccAWSSubnet_availabilityZoneId(
+func TestAccAWSSubnet_outpost(
 func TestAccAWSSwfDomain_basic(
 func TestAccAWSSwfDomain_tags(
 func TestAccAWSTransferServer_basic(
