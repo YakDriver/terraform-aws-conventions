@@ -34,7 +34,7 @@ Analysis Tallies
 245	Test Constants:TestAcc (any case) with config (any case) and no underscores
 196	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
 Resource Tallies
-3949	Capital-T Test Functions:All
+	0
 3600	Capital-T Test Functions:TestAcc
 3260	Capital-T Test Functions:TestAccAWS
 155	Capital-T Test Functions:TestAccAws
@@ -68,8 +68,8 @@ Resource Tallies
 443	Test Constants:TestAcc (any case) with config (any case)
 245	Test Constants:TestAcc (any case) with config (any case) and no underscores
 196	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
-4710	Resource Functions:All
-353	Resource Functions:All:Multi caps
-2909	Resource Functions:resourceAws
-164	Resource Functions:resourceAws:Multi Caps
-10577	Resource Functions:non-resourceAws:All
+4674	Resource Functions:All
+353	Resource Functions:All Multi caps
+2909	Resource Functions:resourceAws All
+164	Resource Functions:resourceAws Multi Caps
+0	Resource Functions:non-resourceAws All

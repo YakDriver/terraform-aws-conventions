@@ -682,13 +682,6 @@ func resourceAwsCloudWatchEventPermissionDelete(
 func validateCloudWatchEventPermissionAction(
 func validateCloudWatchEventPermissionPrincipal(
 func validateCloudWatchEventPermissionStatementID(
-func (
-func (
-func (
-func (
-func (
-func (
-func (
 func findCloudWatchEventPermissionPolicyStatementByID(
 func expandCloudWatchEventsCondition(
 func flattenCloudWatchEventPermissionPolicyStatementCondition(
@@ -748,7 +741,6 @@ func resourceAwsCloudWatchLogMetricFilterRead(
 func lookupCloudWatchLogMetricFilter(
 func resourceAwsCloudWatchLogMetricFilterDelete(
 func resourceAwsCloudWatchLogMetricFilterImport(
-func := testAccCheckCloudWatchLogMetricFilterExists(
 func resourceAwsCloudWatchLogResourcePolicy(
 func resourceAwsCloudWatchLogResourcePolicyPut(
 func resourceAwsCloudWatchLogResourcePolicyRead(
@@ -777,7 +769,6 @@ func resourceAwsCloudWatchMetricAlarmUpdate(
 func resourceAwsCloudWatchMetricAlarmDelete(
 func getAwsCloudWatchPutMetricAlarmInput(
 func getAwsCloudWatchMetricAlarm(
-func _strArrPtrToList(
 func flattenDimensions(
 func resourceAwsCloudWatchMetricAlarmMigrateState(
 func migrateCloudWatchMetricAlarmStateV0toV1(
@@ -1095,9 +1086,6 @@ func resourceAwsDaxClusterCreate(
 func resourceAwsDaxClusterRead(
 func resourceAwsDaxClusterUpdate(
 func setDaxClusterNodeData(
-func (
-func (
-func (
 func resourceAwsDaxClusterDelete(
 func daxClusterStateRefreshFunc(
 func init(
@@ -1852,9 +1840,6 @@ func resourceAwsElasticacheClusterRead(
 func resourceAwsElasticacheClusterUpdate(
 func getCacheNodesToRemove(
 func setCacheNodeData(
-func (
-func (
-func (
 func resourceAwsElasticacheClusterDelete(
 func cacheClusterStateRefreshFunc(
 func createElasticacheCacheCluster(
@@ -1931,10 +1916,6 @@ func optionSettingKeyHash(
 func sortValues(
 func extractOptionSettings(
 func dropGeneratedSecurityGroup(
-func (
-func (
-func (
-func (
 func getBeanstalkEnvironmentErrors(
 func resourceAwsElasticBeanstalkEnvironmentMigrateState(
 func migrateBeanstalkEnvironmentStateV0toV1(
@@ -2125,7 +2106,6 @@ func flattenGameliftResourceCreationLimitPolicy(
 func expandGameliftRuntimeConfiguration(
 func expandGameliftServerProcesses(
 func getGameliftFleetFailures(
-func _getGameliftFleetFailures(
 func isGameliftEventFailure(
 func diffGameliftPortSettings(
 func init(
@@ -2139,7 +2119,6 @@ func resourceAwsGameliftGameSessionQueueDelete(
 func expandGameliftGameSessionQueueDestinations(
 func expandGameliftGameSessionPlayerLatencyPolicies(
 func init(
-func (
 func resourceAwsGlacierVault(
 func resourceAwsGlacierVaultCreate(
 func resourceAwsGlacierVaultUpdate(
@@ -3895,10 +3874,6 @@ func resourceAwsSecurityGroupRuleRead(
 func resourceAwsSecurityGroupRuleUpdate(
 func resourceAwsSecurityGroupRuleDelete(
 func findResourceSecurityGroup(
-func (
-func (
-func (
-func (
 func findRuleMatch(
 func ipPermissionIDHash(
 func expandIPPerm(
@@ -4097,14 +4072,6 @@ func findSubscriptionByNonID(
 func subscriptionHasPendingConfirmation(
 func obfuscateEndpoint(
 func snsSubscriptionAttributeUpdate(
-func (
-func (
-func (
-func (
-func (
-func (
-func (
-func (
 func suppressEquivalentSnsTopicSubscriptionDeliveryPolicy(
 func resourceAwsSpotDataFeedSubscription(
 func resourceAwsSpotDataFeedSubscriptionCreate(
@@ -4437,9 +4404,6 @@ func resourceAwsVpcPeeringConnectionOptionsUpdate(
 func resourceAwsVpcPeeringConnectionOptionsDelete(
 func init(
 func init(
-func (
-func (
-func (
 func resourceAwsVpnConnection(
 func resourceAwsVpnConnectionCreate(
 func vpnConnectionRefreshFunc(
