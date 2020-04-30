@@ -5,6 +5,7 @@ if [ "${TF_AWS_PATH}" = "" ]; then
 fi
 
 rm ./results/*txt || echo "Nothing to delete"
+mkdir results || echo "Results directory already exists"
 
 declare -a descriptions
 declare -a filenames
