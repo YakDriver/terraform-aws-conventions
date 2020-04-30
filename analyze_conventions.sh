@@ -162,53 +162,8 @@ filenames+=( "./results/const-anyT-TestAcc-underscoreAfterAnyConfig.txt" )
 perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*[cC]onfig.*_.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
 
 ###################
-# get tallies     #
-###################
-
-talliesFile="./results/tallies.txt"
-printf "Analysis Tallies\n" > ${talliesFile}
-
-for i in "${!descriptions[@]}"; do
-    count=$(< "${filenames[$i]}" wc -l)
-    printf "%s\t%s\n" "$count" "${descriptions[$i]}" >> ${talliesFile}
-done
-
-###################
-# create readme   #
-###################
-
-readmeFile="README.md"
-cat README_header.md > ${readmeFile}
-
-printf "# %s\n" "Acceptance Tests" >> ${readmeFile}
-
-lastTitle=""
-for i in "${!descriptions[@]}"; do
-    IFS=':'
-    read -ra titleDesc <<< "${descriptions[$i]}"
-    title="${titleDesc[0]}"
-    description="${titleDesc[1]}"
-
-    if [ "${title}" != "${lastTitle}" ]; then
-        printf "## %s\n\n" "${title}" >> ${readmeFile}
-        lastTitle="${title}"
-    fi
-
-    count=$(< "${filenames[$i]}" wc -l)
-    example=$(shuf -n 1 "${filenames[$i]}")
-    printf "### %s\nCount: %s\n" "${description}" "${count}" >> ${readmeFile}
-    printf "[List matches](%s)\n\n" "${filenames[$i]}" >> ${readmeFile}
-    printf "Example: \`%s\`\n\n" "${example}" >> ${readmeFile}
-done
-
-###################
 # Resources       #
 ###################
-
-unset descriptions
-unset filenames
-declare -a descriptions
-declare -a filenames
 
 descriptions+=( "Resource Functions:All" )
 filenames+=( "./results/Resource-funcs-all.txt" )
@@ -231,49 +186,8 @@ filenames+=( "./results/Resource-funcs-non-resAws-all.txt" )
 perl -nle'print $& while m{(func\s+(?![rR]esourceAws|[tT]est)[^(]*\()}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
 
 ###################
-# get tallies     #
-###################
-
-printf "Resource Tallies\n" >> ${talliesFile}
-
-for i in "${!descriptions[@]}"; do
-    count=$(< "${filenames[$i]}" wc -l)
-    printf "%s\t%s\n" "$count" "${descriptions[$i]}" >> ${talliesFile}
-done
-
-###################
-# update readme   #
-###################
-
-printf "# %s\n" "Resources" >> ${readmeFile}
-
-lastTitle=""
-for i in "${!descriptions[@]}"; do
-    IFS=':'
-    read -ra titleDesc <<< "${descriptions[$i]}"
-    title="${titleDesc[0]}"
-    description="${titleDesc[1]}"
-
-    if [ "${title}" != "${lastTitle}" ]; then
-        printf "## %s\n\n" "${title}" >> ${readmeFile}
-        lastTitle="${title}"
-    fi
-
-    count=$(< "${filenames[$i]}" wc -l)
-    example=$(shuf -n 1 "${filenames[$i]}")
-    printf "### %s\nCount: %s\n" "${description}" "${count}" >> ${readmeFile}
-    printf "[List matches](%s)\n\n" "${filenames[$i]}" >> ${readmeFile}
-    printf "Example: \`%s\`\n\n" "${example}" >> ${readmeFile}
-done
-
-###################
 # Capitalization  #
 ###################
-
-unset descriptions
-unset filenames
-declare -a descriptions
-declare -a filenames
 
 descriptions+=( "Capitalization:AWS" )
 filenames+=( "./results/Capitalization-AWS.txt" )
@@ -375,7 +289,8 @@ perl -nle'print $& while m{(func\s+[^(]*Ami[^(]*)\(}g' ${TF_AWS_PATH}/resource_a
 # get tallies     #
 ###################
 
-printf "Capitalization Tallies\n" >> ${talliesFile}
+talliesFile="./results/tallies.txt"
+printf "Analysis Tallies\n" > ${talliesFile}
 
 for i in "${!descriptions[@]}"; do
     count=$(< "${filenames[$i]}" wc -l)
@@ -383,10 +298,13 @@ for i in "${!descriptions[@]}"; do
 done
 
 ###################
-# update readme   #
+# create readme   #
 ###################
 
-printf "# %s\n" "Capitalization" >> ${readmeFile}
+readmeFile="README.md"
+cat README_header.md > ${readmeFile}
+
+printf "# %s\n" "Acceptance Tests" >> ${readmeFile}
 
 lastTitle=""
 for i in "${!descriptions[@]}"; do
