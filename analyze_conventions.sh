@@ -226,9 +226,9 @@ descriptions+=( "Resource Functions:resourceAws Multi Caps" )
 filenames+=( "./results/Resource-funcs-resAws-multicaps.txt" )
 perl -nle'print $& while m{(func\s+[rR]esourceA[wW][sS][^(]*[A-Z][A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
 
-descriptions+=( "Resource Functions:non-resourceAws All" )
+descriptions+=( "Resource Functions:not test, not resourceAws" )
 filenames+=( "./results/Resource-funcs-non-resAws-all.txt" )
-perl -nle'print $& while m{(func\s+(?!resourceAws|[tT]est)[^(]\s*\()}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+perl -nle'print $& while m{(func\s+(?![rR]esourceAws|[tT]est)[^(]*\()}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
 
 descriptions+=( "Resource Functions:ID" )
 filenames+=( "./results/Resource-funcs-ID.txt" )
