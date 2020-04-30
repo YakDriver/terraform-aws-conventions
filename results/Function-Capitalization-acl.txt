@@ -1,0 +1,6 @@
+func TestAccAWSDBInstance_EnabledCloudwatchLogsExports_Oracle(
+func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Oracle(
+func TestAccAWSDBOptionGroup_OracleOptionsUpdate(
+func testAccAWSDBOptionGroupOracleEEOptionSettings(
+func TestAccAWSS3BucketObject_acl(
+func testAccAWSS3BucketObjectConfig_acl(

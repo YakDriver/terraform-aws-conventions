@@ -1,0 +1,8 @@
+func expandApiGateway2CorsConfiguration(
+func flattenApiGateway2CorsConfiguration(
+func TestAccAWSAPIGatewayV2Api_CorsConfiguration(
+func resourceAwsS3BucketCorsUpdate(
+func TestAccAWSS3Bucket_Cors_Update(
+func TestAccAWSS3Bucket_Cors_Delete(
+func TestAccAWSS3Bucket_Cors_EmptyOrigin(
+func testAccCheckAWSS3BucketCors(

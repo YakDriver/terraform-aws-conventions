@@ -1,0 +1,2 @@
+func testAccAWSAPIGatewayV2ApiConfig_corsConfiguration(
+func testAccAWSAPIGatewayV2ApiConfig_corsConfigurationUpdated(

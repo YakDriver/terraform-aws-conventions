@@ -1,0 +1,9 @@
+func awsElasticTranscoderPipelineConfigBasic(
+func awsElasticTranscoderPipelineConfigKmsKey(
+func awsElasticTranscoderPipelineWithContentConfig(
+func awsElasticTranscoderPipelineWithContentConfigUpdate(
+func awsElasticTranscoderPipelineWithPerms(
+func awsElasticTranscoderNotifications(
+func awsElasticTranscoderNotifications_update(
+func awsTerminateInstance(
+func awsVpcDescribeVpcAttribute(

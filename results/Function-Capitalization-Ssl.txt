@@ -1,0 +1,4 @@
+func customOriginSslProtocolsConf(
+func testAccSslNegotiationPolicyConfig(
+func resourceAwsOpsworksApplicationSsl(
+func resourceAwsOpsworksSetApplicationSsl(
