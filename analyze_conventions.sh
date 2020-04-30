@@ -209,12 +209,28 @@ declare -a descriptions
 declare -a filenames
 
 ###################
-# Resource Test   #
+# Resources       #
 ###################
 
 descriptions+=( "Resource Functions:All" )
-filenames+=( "./results/Resource-funcs.txt" )
+filenames+=( "./results/Resource-funcs-all.txt" )
+perl -nle'print $& while m{(func\s+(?![tT]est)[^)]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Resource Functions:All:Multi caps" )
+filenames+=( "./results/Resource-funcs-all-multicaps.txt" )
+perl -nle'print $& while m{(func\s+(?![tT]est)[^)]*[A-Z][A-Z][^)]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Resource Functions:resourceAws" )
+filenames+=( "./results/Resource-funcs-resAws-all.txt" )
 perl -nle'print $& while m{(func\s+[rR]esourceA[wW][sS][^)]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Resource Functions:resourceAws:Multi Caps" )
+filenames+=( "./results/Resource-funcs-resAws-multicaps.txt" )
+perl -nle'print $& while m{(func\s+[rR]esourceA[wW][sS][^)]*[A-Z][A-Z][^)]*)\s*\(}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Resource Functions:non-resourceAws:All" )
+filenames+=( "./results/Resource-funcs-non-resAws-all.txt" )
+perl -nle'print $& while m{(func\s+(?!resourceAws).*\s*\()}g' ${TF_AWS_PATH}/resource_aws*.go > ${filenames[${#filenames[@]}-1]}
 
 ###################
 # get tallies     #
