@@ -3055,6 +3055,7 @@ func testAccAWSGlueConnectionConfig_MatchCriteria_Second(
 func testAccAWSGlueConnectionConfig_MatchCriteria_Third(
 func testAccAWSGlueConnectionConfig_PhysicalConnectionRequirements(
 func testAccAWSGlueConnectionConfig_Required(
+func testAccAWSGlueConnectionConfig_MongoDB(
 func testSweepGlueCrawlers(
 func testAccCheckAWSGlueCrawlerExists(
 func testAccCheckAWSGlueCrawlerDestroy(

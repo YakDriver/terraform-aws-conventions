@@ -2005,6 +2005,7 @@ func TestAccAWSGlueClassifier_JsonClassifier(
 func TestAccAWSGlueClassifier_TypeChange(
 func TestAccAWSGlueClassifier_XmlClassifier(
 func TestAccAWSGlueConnection_Basic(
+func TestAccAWSGlueConnection_MongoDB(
 func TestAccAWSGlueConnection_Description(
 func TestAccAWSGlueConnection_MatchCriteria(
 func TestAccAWSGlueConnection_PhysicalConnectionRequirements(
