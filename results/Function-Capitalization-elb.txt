@@ -1,0 +1,4 @@
+func TestAccAWSAutoscalingAttachment_elb(
+func testAccAWSAutoscalingAttachment_elb(
+func testAccAWSAutoscalingAttachment_elb_associated(
+func testAccAWSAutoscalingAttachment_elb_double_associated(

@@ -1,0 +1,4 @@
+func deleteAwsIamUserVirtualMFADevices(
+func deactivateAwsIamUserMFADevices(
+func TestAccAWSUser_ForceDestroy_MFADevice(
+func testAccCheckAWSUserCreatesMFADevice(
