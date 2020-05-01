@@ -14,25 +14,39 @@ declare -a filenames
 # Functions       #
 ###################
 
-descriptions+=( "All Functions:All Exported" )
-filenames+=( "./results/functions-all-exported.txt" )
+descriptions+=( "All Functions:Exported" )
+filenames+=( "./results/functions-exported.txt" )
 perl -nle'print $& while m{(func\s+[A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
-descriptions+=( "All Functions:All Non-Exported" )
-filenames+=( "./results/functions-all-non-exported.txt" )
+descriptions+=( "All Functions:Non-Exported" )
+filenames+=( "./results/functions-non-exported.txt" )
 perl -nle'print $& while m{(func\s+[a-z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
-descriptions+=( "All Functions:All Multi caps" )
-filenames+=( "./results/functions-all-multicaps.txt" )
+descriptions+=( "All Functions:Multicaps" )
+filenames+=( "./results/functions-multicaps.txt" )
 perl -nle'print $& while m{(func\s+[^(]*[A-Z][A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
+descriptions+=( "All Functions:Non-AWS Multicaps" )
+filenames+=( "./results/functions-non-aws-multicaps.txt" )
+perl -nle'print $& while m{(func\s+[^(]*[A-Z][A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
+sed -i 's/AWS/A--W--S/g' ${filenames[${#filenames[@]}-1]}
+cat ${filenames[${#filenames[@]}-1]} | grep "[A-Z][A-Z]" > temp.txt
+rm ${filenames[${#filenames[@]}-1]}
+mv temp.txt ${filenames[${#filenames[@]}-1]}
+sed -i 's/A--W--S/AWS/g' ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "All Functions:Any underscores" )
+filenames+=( "./results/functions-any-underscores.txt" )
+perl -nle'print $& while m{(func\s+[^(_]*_[^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
 descriptions+=( "All Functions:Multiple underscores" )
-filenames+=( "./results/anyT-TestAcc-multipleUnderscores.txt" )
+filenames+=( "./results/functions-multiple-underscores.txt" )
 perl -nle'print $& while m{(func\s+[^(]*_[^(]*_[^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
-descriptions+=( "All Functions:Uppercase after first underscore" )
-filenames+=( "./results/capT-TestAcc-uppAfterUnderscore.txt" )
-perl -nle'print $& while m{(func\s+[^(_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+descriptions+=( "All Functions:Upper after first underscore" )
+filenames+=( "./results/functions-upper-after-first-underscore.txt" )
+perl -nle'print $& while m{(func\s+[^(_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
 ###################
 # capT Test       #
