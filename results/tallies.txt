@@ -107,7 +107,7 @@ Analysis Tallies
 0	Function Capitalization:icmp
 0	Function Capitalization:Icmp
 6	Function Capitalization:ICMP
-752	Function Capitalization:id
+22	Function Capitalization:id
 333	Function Capitalization:Id
 173	Function Capitalization:ID
 1	Function Capitalization:igw
