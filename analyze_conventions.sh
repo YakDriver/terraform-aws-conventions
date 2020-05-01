@@ -272,9 +272,9 @@ declare -a bad_Ids
 bad_Ids+=( "Identi:I---denti" )
 
 fix_file() {
-  local bad_arr=$1
-  local term=$2
-  local filename=$3
+  local bad_arr="$1"
+  local term="$2"
+  local filename="$3"
   for baddie in ${bad_arr[@]}; do
     IFS=':'
     read -ra bad_parts <<< "${baddie}"
