@@ -11,6 +11,26 @@ declare -a descriptions
 declare -a filenames
 
 ###################
+# Functions       #
+###################
+
+descriptions+=( "All Functions:All Exported" )
+filenames+=( "./results/functions-all-exported.txt" )
+perl -nle'print $& while m{(func\s+[A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "All Functions:All Non-Exported" )
+filenames+=( "./results/functions-all-non-exported.txt" )
+perl -nle'print $& while m{(func\s+[a-z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "All Functions:All Multi caps" )
+filenames+=( "./results/functions-all-multicaps.txt" )
+perl -nle'print $& while m{(func\s+[^(]*[A-Z][A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "All Functions:Multiple underscores" )
+filenames+=( "./results/anyT-TestAcc-multipleUnderscores.txt" )
+perl -nle'print $& while m{(func\s+[^(]*_[^(]*_[^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
+###################
 # capT Test       #
 ###################
 
@@ -161,22 +181,6 @@ perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*[cC]onfig[^_]*)\s*=}g' ${TF_A
 descriptions+=( "Test Constants:TestAcc (any case) with underscore anywhere after config (any case)" )
 filenames+=( "./results/const-anyT-TestAcc-underscoreAfterAnyConfig.txt" )
 perl -nle'print $& while m{(const\s+[tT]estAcc[^_]*[cC]onfig.*_.*)\s*=}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
-
-###################
-# Functions       #
-###################
-
-descriptions+=( "Functions:All Exported" )
-filenames+=( "./results/functions-all-exported.txt" )
-perl -nle'print $& while m{(func\s+[A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Functions:All Non-Exported" )
-filenames+=( "./results/functions-all-non-exported.txt" )
-perl -nle'print $& while m{(func\s+[a-z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
-
-descriptions+=( "Functions:All Multi caps" )
-filenames+=( "./results/functions-all-multicaps.txt" )
-perl -nle'print $& while m{(func\s+[^(]*[A-Z][A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
 ############################
 # Resource Functions       #
