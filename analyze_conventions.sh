@@ -296,11 +296,11 @@ caps() {
   perl -nle'print $& while m{(func\s+[^(]*'${term}'[^(]*)\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
   if [ "${term}" == "id" ]; then
-    fix_file bad_ids "${term}" ${filenames[${#filenames[@]}-1]}
+    fix_file "${bad_ids[@]}" "${term}" ${filenames[${#filenames[@]}-1]}
   fi
 
   if [ "${term}" == "Id" ]; then
-    fix_file bad_Ids "${term}" ${filenames[${#filenames[@]}-1]}
+    fix_file "${bad_Ids[@]}" "${term}" ${filenames[${#filenames[@]}-1]}
   fi  
 }
 
