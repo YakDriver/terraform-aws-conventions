@@ -30,6 +30,10 @@ descriptions+=( "All Functions:Multiple underscores" )
 filenames+=( "./results/anyT-TestAcc-multipleUnderscores.txt" )
 perl -nle'print $& while m{(func\s+[^(]*_[^(]*_[^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
+descriptions+=( "All Functions:Uppercase after first underscore" )
+filenames+=( "./results/capT-TestAcc-uppAfterUnderscore.txt" )
+perl -nle'print $& while m{(func\s+[^(_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
 ###################
 # capT Test       #
 ###################
