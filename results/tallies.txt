@@ -2,7 +2,7 @@ Analysis Tallies
 3989	All Functions:Exported
 11509	All Functions:Non-Exported
 7799	All Functions:Multicaps
-7799	All Functions:Non-AWS Multicaps
+2993	All Functions:Non-AWS Multicaps
 5493	All Functions:Any underscores
 1193	All Functions:Multiple underscores
 2012	All Functions:Upper after first underscore
