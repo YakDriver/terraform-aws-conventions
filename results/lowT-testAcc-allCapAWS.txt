@@ -1140,6 +1140,7 @@ func testAccAWSEIPAssociationConfig_spotInstance(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
 func testAccAWSEIP_Instance(
+func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
 func testAccAWSEksClusterConfig_Base(
 func testAccAWSEksClusterConfig_Required(
 func testAccAWSEksClusterConfig_Version(

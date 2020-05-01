@@ -53,11 +53,23 @@ func testAccDataSourceAwsDxGatewayConfig_Name(rName string, rBgpAsn int) string 
 func testAccDataSourceAwsDynamoDbTableConfigBasic(tableName string) string {
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted1(rName string) string {
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted2(rName string) string {
+func testAccDataSourceAwsEc2CoipPoolsConfig() string {
+func testAccDataSourceAwsEc2CoipPoolsConfigFilter() string {
+func testAccDataSourceAwsEc2CoipPoolDataSourceConfigFilter() string {
+func testAccDataSourceAwsEc2CoipPoolDataSourceConfigId() string {
 func testAccAWSEc2InstanceTypeOfferingsDataSourceConfigFilter() string {
 func testAccAWSEc2InstanceTypeOfferingsDataSourceConfigLocationType() string {
 func testAccAWSEc2InstanceTypeOfferingDataSourceConfigFilter() string {
 func testAccAWSEc2InstanceTypeOfferingDataSourceConfigLocationType() string {
 func testAccAWSEc2InstanceTypeOfferingDataSourceConfigPreferredInstanceTypes() string {
+func testAccDataSourceAwsEc2LocalGatewayRouteTablesConfig() string {
+func testAccDataSourceAwsEc2LocalGatewayRouteTablesConfigFilter() string {
+func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigFilter(outpostArn string) string {
+func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigLocalGatewayId() string {
+func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigLocalGatewayRouteTableId() string {
+func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigOutpostArn(outpostArn string) string {
+func testAccDataSourceAwsEc2LocalGatewaysConfig() string {
+func testAccDataSourceAwsEc2LocalGatewayConfigId() string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfig(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfigFilter(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigFilter_sameAccount(rName string) string {
@@ -79,6 +91,7 @@ func testAccCheckAwsEcrRepositoryDataSourceConfig(rName string) string {
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(clusterName, tdName, svcName string) string {
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(rName string) string {
 func testAccAwsEfsMountTargetConfigByMountTargetId(ct string) string {
+func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(customerOwnedIpv4Pool string) string {
 func testAccDataSourceAwsEipConfigFilter(rName string) string {
 func testAccDataSourceAwsEipConfigTags(rName string) string {
 func testAccAWSEksClusterDataSourceConfig_Basic(rName string) string {
@@ -1495,6 +1508,7 @@ func testAccAWSEgressOnlyInternetGatewayConfigTags2(tagKey1, tagValue1, tagKey2,
 func testAccAWSEIPAssociationConfig_spotInstance(rInt int) string {
 func testAccAWSEIPConfig_tags(rName, testName string) string {
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(poolName string) string {
+func testAccAWSEIPConfigCustomerOwnedIpv4Pool(customerOwnedIpv4Pool string) string {
 func testAccAWSEksClusterConfig_Base(rName string) string {
 func testAccAWSEksClusterConfig_Required(rName string) string {
 func testAccAWSEksClusterConfig_Version(rName, version string) string {

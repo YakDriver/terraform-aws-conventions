@@ -131,6 +131,8 @@ func TestAccAWSEcsServiceDataSource_basic(
 func TestAccAWSEcsDataSource_ecsTaskDefinition(
 func TestAccDataSourceAwsEip_PublicIP_EC2Classic(
 func TestAccDataSourceAwsEip_PublicIP_VPC(
+func TestAccDataSourceAWSEIP_CustomerOwnedIpv4Pool(
+func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(
 func TestAccAWSEksClusterAuthDataSource_basic(
 func TestAccAWSEksClusterDataSource_basic(
 func testAccAWSEksClusterDataSourceConfig_Basic(
@@ -3236,6 +3238,7 @@ func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func testAccCheckAWSEIPDisappears(
 func testAccCheckAWSEIPDestroy(
+func TestAccAWSEIP_CustomerOwnedIpv4Pool(
 func testAccCheckAWSEIPAttributes(
 func testAccCheckAWSEIPAssociated(
 func testAccCheckAWSEIPExists(
@@ -3244,6 +3247,7 @@ func testAccCheckAWSEIPPublicDNS(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
 func testAccAWSEIP_Instance(
+func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
 func TestAccAWSEksCluster_basic(
 func TestAccAWSEksCluster_EncryptionConfig(
 func TestAccAWSEksCluster_Version(

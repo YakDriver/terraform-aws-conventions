@@ -2,6 +2,8 @@ func dataSourceAwsArn(
 func dataSourceAwsArnRead(
 func TestAccDataSourceAwsArn_basic(
 func testAccDataSourceAwsArn(
+func TestAccDataSourceAwsEc2LocalGatewayRouteTable_OutpostArn(
+func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigOutpostArn(
 func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityArn(
 func testAccCheckAWSAPIGatewayAccountCloudwatchRoleArn(
 func TestAccAWSAPIGatewayDomainName_CertificateArn(

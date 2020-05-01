@@ -1,5 +1,7 @@
 func TestAccDataSourceAwsEip_PublicIP_EC2Classic(
 func TestAccDataSourceAwsEip_PublicIP_VPC(
+func TestAccDataSourceAWSEIP_CustomerOwnedIpv4Pool(
+func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(
 func TestAccAWSInstanceDataSource_privateIP(
 func testAccInstanceDataSourceConfig_privateIP(
 func dataSourceAwsIPRanges(
@@ -40,6 +42,7 @@ func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func testAccCheckAWSEIPDisappears(
 func testAccCheckAWSEIPDestroy(
+func TestAccAWSEIP_CustomerOwnedIpv4Pool(
 func testAccCheckAWSEIPAttributes(
 func testAccCheckAWSEIPAssociated(
 func testAccCheckAWSEIPExists(
@@ -48,6 +51,7 @@ func testAccCheckAWSEIPPublicDNS(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
 func testAccAWSEIP_Instance(
+func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
 func TestAccAWSInstance_privateIP(
 func TestAccAWSInstance_associatePublicIPAndPrivateIP(
 func testAccInstanceConfigPrivateIP(

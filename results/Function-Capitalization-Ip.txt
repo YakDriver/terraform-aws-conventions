@@ -1,3 +1,5 @@
+func TestAccDataSourceAWSEIP_CustomerOwnedIpv4Pool(
+func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(
 func testAccAWSLaunchTemplateDataSourceConfig_associatePublicIpAddress(
 func TestAccDataSourceAwsSubnet_ipv6ByIpv6Filter(
 func TestAccDataSourceAwsSubnet_ipv6ByIpv6CidrBlock(
@@ -19,7 +21,9 @@ func testAccAWSEcsTaskDefinitionWithIpcMode(
 func testAccCheckAWSEIPAssociationHasIpBasedId(
 func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
+func TestAccAWSEIP_CustomerOwnedIpv4Pool(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
+func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
 func expandGameliftIpPermissions(
 func expandGameliftIpPermission(
 func resourceAwsGlobalAcceleratorAcceleratorFlattenIpSets(
