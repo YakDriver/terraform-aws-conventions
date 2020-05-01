@@ -258,7 +258,7 @@ bad_ids+=( "alidat:ali---dat" )
 bad_ids+=( "nvalid:nvali---d" )
 bad_ids+=( "Valid:Vali---d" )
 bad_ids+=( "valid:vali---d" )
-bad_ids+=( "verride:verri---de" )
+bad_ids+=( "verrid:verri---d" )
 bad_ids+=( "rovide:rovi---de" )
 bad_ids+=( "Bid:Bi---d" )
 bad_ids+=( "Side:Si---de" )
@@ -268,6 +268,26 @@ bad_ids+=( "Cidr:Ci---dr" )
 bad_ids+=( "Inside:Insi---de" )
 bad_ids+=( "Width:Wi---dth" )
 
+declare -a bad_Ids
+bad_Ids+=( "Identi:I---denti" )
+
+fix_file() {
+  local bad_arr=$1
+  local term=$2
+  local filename=$3
+  for baddie in ${bad_arr[@]}; do
+    IFS=':'
+    read -ra bad_parts <<< "${baddie}"
+    search="${bad_parts[0]}"
+    replace="${bad_parts[1]}"
+    sed -i 's/'${search}'/'${replace}'/g' ${filename}
+  done
+  cat ${filename} | grep "${term}" > temp.txt
+  rm ${filename}
+  mv temp.txt ${filename}
+  sed -i 's/i---d/id/g' ${filename}
+}
+
 caps() {
   local term=$1
 
@@ -276,18 +296,12 @@ caps() {
   perl -nle'print $& while m{(func\s+[^(]*'${term}'[^(]*)\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
   if [ "${term}" == "id" ]; then
-    for baddie in ${bad_ids[@]}; do
-      IFS=':'
-      read -ra bad_parts <<< "${baddie}"
-      search="${bad_parts[0]}"
-      replace="${bad_parts[1]}"
-      sed -i 's/'${search}'/'${replace}'/g' ${filenames[${#filenames[@]}-1]}
-    done
-    cat ${filenames[${#filenames[@]}-1]} | grep "${term}" > temp.txt
-    rm ${filenames[${#filenames[@]}-1]}
-    mv temp.txt ${filenames[${#filenames[@]}-1]}
-    sed -i 's/i---d/id/g' ${filenames[${#filenames[@]}-1]}
+    fix_file bad_ids "${term}" ${filenames[${#filenames[@]}-1]}
   fi
+
+  if [ "${term}" == "Id" ]; then
+    fix_file bad_Ids "${term}" ${filenames[${#filenames[@]}-1]}
+  fi  
 }
 
 for lower in ${abbrevs[@]}; do
