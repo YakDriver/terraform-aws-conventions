@@ -36,6 +36,10 @@ rm ${filenames[${#filenames[@]}-1]}
 mv temp.txt ${filenames[${#filenames[@]}-1]}
 sed -i 's/--A--W--S--/AWS/g' ${filenames[${#filenames[@]}-1]}
 
+descriptions+=( "All Functions:Mixed case AWS" )
+filenames+=( "./results/functions-mixed-case-aws.txt" )
+perl -nle'print $& while m{(func\s+[^(]*Aws[^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
 descriptions+=( "All Functions:Any underscores" )
 filenames+=( "./results/functions-any-underscores.txt" )
 perl -nle'print $& while m{(func\s+[^(_]*_[^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
