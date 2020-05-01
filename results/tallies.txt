@@ -7,7 +7,8 @@ Analysis Tallies
 4539	All Functions:Mixed case AWS
 5493	All Functions:Any underscores
 1193	All Functions:Multiple underscores
-2012	All Functions:Upper after first underscore
+3481	All Functions:Lowercase after first underscore
+2012	All Functions:Uppercase after first underscore
 3964	Capital-T Test Functions:All
 3615	Capital-T Test Functions:TestAcc
 3262	Capital-T Test Functions:TestAccAWS
