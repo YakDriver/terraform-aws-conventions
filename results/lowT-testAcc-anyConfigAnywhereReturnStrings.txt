@@ -357,7 +357,7 @@ func testAccAWSAPIGatewayBasePathConfigBasePath(domainName, key, certificate, ba
 func testAccAWSAPIGatewayClientCertificateConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayClientCertificateConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayDeploymentConfigBase(uri string) string {
-func testAccAWSAPIGatewayDeploymentConfigCreateBeforeDestroy(description string, url string) string {
+func testAccAWSAPIGatewayDeploymentConfigTriggers(description string, url string) string {
 func testAccAWSAPIGatewayDeploymentConfigDescription(description string) string {
 func testAccAWSAPIGatewayDeploymentConfigRequired() string {
 func testAccAWSAPIGatewayDeploymentConfigStageDescription(stageDescription string) string {
@@ -473,6 +473,7 @@ func testAccAWSAPIGatewayV2AuthorizerConfig_credentialsUpdated(rName string) str
 func testAccAWSAPIGatewayV2AuthorizerConfig_jwt(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_jwtUpdated(rName string) string {
 func testAccAWSAPIGatewayV2DeploymentConfig_basic(rName, description string) string {
+func testAccAWSAPIGatewayV2DeploymentConfigTriggers(rName string, apiKeyRequired bool) string {
 func testAccAWSAPIGatewayV2DomainNameConfig_base(rName, certificate, key string, count int) string {
 func testAccAWSAPIGatewayV2DomainNameConfig_basic(rName, certificate, key string, count, index int) string {
 func testAccAWSAPIGatewayV2DomainNameConfig_tags(rName, certificate, key string, count, index int) string {

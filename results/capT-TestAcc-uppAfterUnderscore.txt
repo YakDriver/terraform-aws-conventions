@@ -150,6 +150,7 @@ func TestAccAWSAPIGatewayApiKey_Description(
 func TestAccAWSAPIGatewayApiKey_Enabled(
 func TestAccAWSAPIGatewayApiKey_Value(
 func TestAccAWSAPIGatewayBasePathMapping_BasePath_Empty(
+func TestAccAWSAPIGatewayDeployment_Triggers(
 func TestAccAWSAPIGatewayDeployment_Description(
 func TestAccAWSAPIGatewayDeployment_StageDescription(
 func TestAccAWSAPIGatewayDeployment_StageName(
@@ -182,6 +183,7 @@ func TestAccAWSAPIGatewayV2Api_CorsConfiguration(
 func TestAccAWSAPIGatewayV2Api_QuickCreate(
 func TestAccAWSAPIGatewayV2Authorizer_Credentials(
 func TestAccAWSAPIGatewayV2Authorizer_JWT(
+func TestAccAWSAPIGatewayV2Deployment_Triggers(
 func TestAccAWSAPIGatewayV2DomainName_Tags(
 func TestAccAWSAPIGatewayV2DomainName_UpdateCertificate(
 func TestAccAWSAPIGatewayV2IntegrationResponse_AllAttributes(

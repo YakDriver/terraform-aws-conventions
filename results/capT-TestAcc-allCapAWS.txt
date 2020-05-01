@@ -246,7 +246,7 @@ func TestAccAWSAPIGatewayClientCertificate_basic(
 func TestAccAWSAPIGatewayClientCertificate_tags(
 func TestAccAWSAPIGatewayDeployment_basic(
 func TestAccAWSAPIGatewayDeployment_disappears_RestApi(
-func TestAccAWSAPIGatewayDeployment_createBeforeDestoryUpdate(
+func TestAccAWSAPIGatewayDeployment_Triggers(
 func TestAccAWSAPIGatewayDeployment_Description(
 func TestAccAWSAPIGatewayDeployment_StageDescription(
 func TestAccAWSAPIGatewayDeployment_StageName(
@@ -328,6 +328,7 @@ func TestAccAWSAPIGatewayV2Authorizer_Credentials(
 func TestAccAWSAPIGatewayV2Authorizer_JWT(
 func TestAccAWSAPIGatewayV2Deployment_basic(
 func TestAccAWSAPIGatewayV2Deployment_disappears(
+func TestAccAWSAPIGatewayV2Deployment_Triggers(
 func TestAccAWSAPIGatewayV2DomainName_basic(
 func TestAccAWSAPIGatewayV2DomainName_disappears(
 func TestAccAWSAPIGatewayV2DomainName_Tags(

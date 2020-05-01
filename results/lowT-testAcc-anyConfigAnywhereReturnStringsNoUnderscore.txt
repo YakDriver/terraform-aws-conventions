@@ -216,7 +216,7 @@ func testAccAWSAPIGatewayBasePathConfigBasePath(domainName, key, certificate, ba
 func testAccAWSAPIGatewayClientCertificateConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayClientCertificateConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayDeploymentConfigBase(uri string) string {
-func testAccAWSAPIGatewayDeploymentConfigCreateBeforeDestroy(description string, url string) string {
+func testAccAWSAPIGatewayDeploymentConfigTriggers(description string, url string) string {
 func testAccAWSAPIGatewayDeploymentConfigDescription(description string) string {
 func testAccAWSAPIGatewayDeploymentConfigRequired() string {
 func testAccAWSAPIGatewayDeploymentConfigStageDescription(stageDescription string) string {
@@ -294,6 +294,7 @@ func testAccAWSApiGatewayUsagePlanQuotaConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanQuotaModifiedConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesModifiedConfig(rName string) string {
+func testAccAWSAPIGatewayV2DeploymentConfigTriggers(rName string, apiKeyRequired bool) string {
 func testAccAPIGatewayVpcLinkConfig(rName, description string) string {
 func testAccAPIGatewayVpcLinkConfigTags1(rName, description, tagKey1, tagValue1 string) string {
 func testAccAPIGatewayVpcLinkConfigTags2(rName, description, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
