@@ -1,8 +1,0 @@
-func TestAccAWSDataSourceIAMPolicyDocument_duplicateSid(
-func TestAccAWSEc2TransitGateway_AmazonSideASN(
-func testAccAWSEc2TransitGatewayConfigAmazonSideASN(
-func resourceAwsS3BucketServerSideEncryptionConfigurationUpdate(
-func flattenAwsS3ServerSideEncryptionConfiguration(
-func TestAccAWSVpnGateway_withAmazonSideAsnSetToState(
-func validateAmazonSideAsn(
-func TestValidateAmazonSideAsn(

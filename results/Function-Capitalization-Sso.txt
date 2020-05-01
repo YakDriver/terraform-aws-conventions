@@ -1,5 +1,0 @@
-func enableDirectoryServiceSso(
-func TestAccAWSDirectoryServiceDirectory_withAliasAndSso(
-func testAccCheckServiceDirectorySso(
-func testAccDirectoryServiceDirectoryConfig_withSso(
-func testAccDirectoryServiceDirectoryConfig_withSso_modified(

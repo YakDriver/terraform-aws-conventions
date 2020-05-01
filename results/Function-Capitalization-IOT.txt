@@ -1,4 +1,0 @@
-func TestAccAWSIotEndpointDataSource_EndpointType_IOTCredentialProvider(
-func TestAccAWSIotEndpointDataSource_EndpointType_IOTData(
-func TestAccAWSIotEndpointDataSource_EndpointType_IOTDataATS(
-func TestAccAWSIotEndpointDataSource_EndpointType_IOTJobs(

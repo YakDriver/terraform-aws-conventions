@@ -1,2 +1,0 @@
-func TestAccAWSVPNGatewayRoutePropagation_basic(
-func testSweepVPNGateways(

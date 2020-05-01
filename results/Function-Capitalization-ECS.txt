@@ -1,4 +1,0 @@
-func TestAccAWSAppautoscalingScheduledAction_ECS(
-func testAccAppautoscalingScheduledActionConfig_ECS(
-func TestAccAWSCodeDeployApp_computePlatform_ECS(
-func TestAccAWSCodeDeployDeploymentGroup_ECS_BlueGreen(

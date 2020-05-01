@@ -1,6 +1,0 @@
-func validateICMPArgumentValue(
-func TestAccAWSNetworkAclRule_ipv6ICMP(
-func TestResourceAWSNetworkAclRule_validateICMPArgumentValue(
-func testAccAWSNetworkAclRuleConfigIpv6ICMP(
-func TestAccAWSNetworkAcl_ipv6ICMPRules(
-func testAccAWSNetworkAclConfigIpv6ICMP(
