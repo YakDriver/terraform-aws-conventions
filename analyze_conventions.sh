@@ -52,8 +52,12 @@ descriptions+=( "All Functions:Multiple underscores" )
 filenames+=( "./results/functions-multiple-underscores.txt" )
 perl -nle'print $& while m{(func\s+[^(]*_[^(]*_[^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
-descriptions+=( "All Functions:Upper after first underscore" )
-filenames+=( "./results/functions-upper-after-first-underscore.txt" )
+descriptions+=( "All Functions:Lowercase after first underscore" )
+filenames+=( "./results/functions-lowercase-after-first-underscore.txt" )
+perl -nle'print $& while m{(func\s+[^(_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "All Functions:Uppercase after first underscore" )
+filenames+=( "./results/functions-uppercase-after-first-underscore.txt" )
 perl -nle'print $& while m{(func\s+[^(_]*_[A-Z].*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
 ###################
