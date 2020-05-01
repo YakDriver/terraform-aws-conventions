@@ -275,17 +275,6 @@ fix_file() {
   local bad_arr="$1"
   local term="$2"
   local filename="$3"
-  for baddie in ${bad_arr[@]}; do
-    IFS=':'
-    read -ra bad_parts <<< "${baddie}"
-    search="${bad_parts[0]}"
-    replace="${bad_parts[1]}"
-    sed -i 's/'${search}'/'${replace}'/g' ${filename}
-  done
-  cat ${filename} | grep "${term}" > temp.txt
-  rm ${filename}
-  mv temp.txt ${filename}
-  sed -i 's/i---d/id/g' ${filename}
 }
 
 caps() {
@@ -296,11 +285,31 @@ caps() {
   perl -nle'print $& while m{(func\s+[^(]*'${term}'[^(]*)\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
   if [ "${term}" == "id" ]; then
-    fix_file "${bad_ids[@]}" "${term}" ${filenames[${#filenames[@]}-1]}
+    for baddie in ${bad_ids[@]}; do
+      IFS=':'
+      read -ra bad_parts <<< "${baddie}"
+      search="${bad_parts[0]}"
+      replace="${bad_parts[1]}"
+      sed -i 's/'${search}'/'${replace}'/g' ${filenames[${#filenames[@]}-1]}
+    done
+    cat ${filenames[${#filenames[@]}-1]} | grep "${term}" > temp.txt
+    rm ${filenames[${#filenames[@]}-1]}
+    mv temp.txt ${filenames[${#filenames[@]}-1]}
+    sed -i 's/i---d/id/g' ${filenames[${#filenames[@]}-1]}
   fi
 
   if [ "${term}" == "Id" ]; then
-    fix_file "${bad_Ids[@]}" "${term}" ${filenames[${#filenames[@]}-1]}
+    for baddie in ${bad_Ids[@]}; do
+      IFS=':'
+      read -ra bad_parts <<< "${baddie}"
+      search="${bad_parts[0]}"
+      replace="${bad_parts[1]}"
+      sed -i 's/'${search}'/'${replace}'/g' ${filenames[${#filenames[@]}-1]}
+    done
+    cat ${filenames[${#filenames[@]}-1]} | grep "${term}" > temp.txt
+    rm ${filenames[${#filenames[@]}-1]}
+    mv temp.txt ${filenames[${#filenames[@]}-1]}
+    sed -i 's/i---d/id/g' ${filenames[${#filenames[@]}-1]}
   fi  
 }
 
