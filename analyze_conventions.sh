@@ -30,11 +30,11 @@ descriptions+=( "All Functions:Non-AWS Multicaps" )
 filenames+=( "./results/functions-non-aws-multicaps.txt" )
 perl -nle'print $& while m{(func\s+[^(]*[A-Z][A-Z][^(]*)\s*\(}g' ${TF_AWS_PATH}/*.go > ${filenames[${#filenames[@]}-1]}
 
-sed -i 's/AWS/A--W--S/g' ${filenames[${#filenames[@]}-1]}
+sed -i 's/AWS/--A--W--S--/g' ${filenames[${#filenames[@]}-1]}
 cat ${filenames[${#filenames[@]}-1]} | grep "[A-Z][A-Z]" > temp.txt
 rm ${filenames[${#filenames[@]}-1]}
 mv temp.txt ${filenames[${#filenames[@]}-1]}
-sed -i 's/A--W--S/AWS/g' ${filenames[${#filenames[@]}-1]}
+sed -i 's/--A--W--S--/AWS/g' ${filenames[${#filenames[@]}-1]}
 
 descriptions+=( "All Functions:Any underscores" )
 filenames+=( "./results/functions-any-underscores.txt" )
