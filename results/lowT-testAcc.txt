@@ -2976,6 +2976,7 @@ func testAccAWSGlueConnectionConfig_MatchCriteria_Third(
 func testAccAWSGlueConnectionConfig_PhysicalConnectionRequirements(
 func testAccAWSGlueConnectionConfig_Required(
 func testAccAWSGlueConnectionConfig_MongoDB(
+func testAccAWSGlueConnectionConfig_Kafka(
 func testAccCheckAWSGlueCrawlerExists(
 func testAccCheckAWSGlueCrawlerDestroy(
 func testAccCheckAWSGlueCrawlerConfiguration(

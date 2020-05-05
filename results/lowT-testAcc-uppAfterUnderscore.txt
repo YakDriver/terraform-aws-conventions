@@ -427,6 +427,7 @@ func testAccAWSGlueConnectionConfig_MatchCriteria_Third(
 func testAccAWSGlueConnectionConfig_PhysicalConnectionRequirements(
 func testAccAWSGlueConnectionConfig_Required(
 func testAccAWSGlueConnectionConfig_MongoDB(
+func testAccAWSGlueConnectionConfig_Kafka(
 func testAccGlueCrawlerConfig_Base(
 func testAccGlueCrawlerConfig_Classifiers_Single(
 func testAccGlueCrawlerConfig_Classifiers_Multiple(
