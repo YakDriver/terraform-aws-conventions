@@ -3409,6 +3409,8 @@ func testAccWorkspacesDirectoryConfigA(
 func testAccWorkspacesDirectoryConfigB(
 func testAccWorkspacesDirectoryConfigC(
 func testAccWorkspacesDirectoryConfig_subnetIds(
+func testAccWorkspacesDirectoryConfigTags1(
+func testAccWorkspacesDirectoryConfigTags2(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
 func testAccAWSXraySamplingRuleConfig_basic(

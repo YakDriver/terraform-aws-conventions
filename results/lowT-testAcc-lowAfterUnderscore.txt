@@ -1095,6 +1095,7 @@ func testAccAWSWafXssMatchSetConfig_noTuples(
 func testAccAwsWorkspacesDirectory_basic(
 func testAccAwsWorkspacesDirectory_disappears(
 func testAccAwsWorkspacesDirectory_subnetIds(
+func testAccAwsWorkspacesDirectory_tags(
 func testAccWorkspacesDirectoryConfig_subnetIds(
 func testAccAWSXraySamplingRuleConfig_basic(
 func testAccAWSXraySamplingRuleConfig_update(

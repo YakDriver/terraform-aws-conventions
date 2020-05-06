@@ -5840,10 +5840,6 @@ func testAccCheckAWSRedshiftClusterSnapshot(
 func testAccCheckAWSRedshiftClusterExists(
 func testAccCheckAWSRedshiftClusterMasterUsername(
 func testAccCheckAWSRedshiftClusterAvailabilityZone(
-func TestResourceAWSRedshiftClusterIdentifierValidation(
-func TestResourceAWSRedshiftClusterFinalSnapshotIdentifierValidation(
-func TestResourceAWSRedshiftClusterMasterUsernameValidation(
-func TestResourceAWSRedshiftClusterMasterPasswordValidation(
 func testAccCheckAWSRedshiftClusterNotRecreated(
 func testAccAWSRedshiftClusterConfig_updateNodeCount(
 func testAccAWSRedshiftClusterConfig_updateNodeType(
@@ -5883,7 +5879,6 @@ func TestAccAWSRedshiftParameterGroup_basic(
 func TestAccAWSRedshiftParameterGroup_withParameters(
 func TestAccAWSRedshiftParameterGroup_withoutParameters(
 func TestAccAWSRedshiftParameterGroup_withTags(
-func TestResourceAWSRedshiftParameterGroupNameValidation(
 func testAccCheckAWSRedshiftParameterGroupDestroy(
 func testAccCheckAWSRedshiftParameterGroupExists(
 func testAccAWSRedshiftParameterGroupOnlyConfig(
@@ -5899,7 +5894,6 @@ func TestAccAWSRedshiftSecurityGroup_ingressSecurityGroup(
 func TestAccAWSRedshiftSecurityGroup_updateIngressSecurityGroup(
 func testAccCheckAWSRedshiftSecurityGroupExists(
 func testAccCheckAWSRedshiftSecurityGroupDestroy(
-func TestResourceAWSRedshiftSecurityGroupNameValidation(
 func testAccAWSRedshiftSecurityGroupConfig_ingressCidr(
 func testAccAWSRedshiftSecurityGroupConfig_ingressCidrAdd(
 func testAccAWSRedshiftSecurityGroupConfig_ingressCidrReduce(
@@ -5936,7 +5930,6 @@ func TestAccAWSRedshiftSubnetGroup_basic(
 func TestAccAWSRedshiftSubnetGroup_updateDescription(
 func TestAccAWSRedshiftSubnetGroup_updateSubnetIds(
 func TestAccAWSRedshiftSubnetGroup_tags(
-func TestResourceAWSRedshiftSubnetGroupNameValidation(
 func TestAccAWSResourceGroup_basic(
 func TestAccAWSResourceGroup_tags(
 func testAccCheckAWSResourceGroupExists(
@@ -6897,6 +6890,7 @@ func testAccAWSSSMAssociationConfigWithAssociationNameAndScheduleExpression(
 func testAccAWSSSMAssociationBasicConfigWithComplianceSeverity(
 func testAccAWSSSMAssociationRateControlConfig(
 func updateAwsSSMDocument(
+func validateSSMDocumentPermissions(
 func TestAccAWSSSMDocument_basic(
 func TestAccAWSSSMDocument_target_type(
 func TestAccAWSSSMDocument_update(
@@ -6911,6 +6905,7 @@ func TestAccAWSSSMDocument_SchemaVersion_1(
 func TestAccAWSSSMDocument_session(
 func TestAccAWSSSMDocument_DocumentFormat_YAML(
 func TestAccAWSSSMDocument_Tags(
+func TestValidateSSMDocumentPermissions(
 func testAccCheckAWSSSMDocumentExists(
 func testAccCheckAWSSSMDocumentDestroy(
 func testAccAWSSSMDocumentBasicConfig(

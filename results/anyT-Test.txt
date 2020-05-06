@@ -7482,7 +7482,6 @@ func testAccAWSRdsGlobalClusterConfigEngine(
 func testAccAWSRdsGlobalClusterConfigEngineVersion(
 func testAccAWSRdsGlobalClusterConfigStorageEncrypted(
 func testSweepRedshiftClusters(
-func TestValidateRedshiftClusterDbName(
 func TestAccAWSRedshiftCluster_basic(
 func TestAccAWSRedshiftCluster_withFinalSnapshot(
 func TestAccAWSRedshiftCluster_kmsKey(
@@ -7503,10 +7502,6 @@ func testAccCheckAWSRedshiftClusterSnapshot(
 func testAccCheckAWSRedshiftClusterExists(
 func testAccCheckAWSRedshiftClusterMasterUsername(
 func testAccCheckAWSRedshiftClusterAvailabilityZone(
-func TestResourceAWSRedshiftClusterIdentifierValidation(
-func TestResourceAWSRedshiftClusterFinalSnapshotIdentifierValidation(
-func TestResourceAWSRedshiftClusterMasterUsernameValidation(
-func TestResourceAWSRedshiftClusterMasterPasswordValidation(
 func testAccCheckAWSRedshiftClusterNotRecreated(
 func testAccAWSRedshiftClusterConfig_updateNodeCount(
 func testAccAWSRedshiftClusterConfig_updateNodeType(
@@ -7546,7 +7541,6 @@ func TestAccAWSRedshiftParameterGroup_basic(
 func TestAccAWSRedshiftParameterGroup_withParameters(
 func TestAccAWSRedshiftParameterGroup_withoutParameters(
 func TestAccAWSRedshiftParameterGroup_withTags(
-func TestResourceAWSRedshiftParameterGroupNameValidation(
 func testAccCheckAWSRedshiftParameterGroupDestroy(
 func testAccCheckAWSRedshiftParameterGroupExists(
 func testAccAWSRedshiftParameterGroupOnlyConfig(
@@ -7560,7 +7554,6 @@ func TestAccAWSRedshiftSecurityGroup_ingressSecurityGroup(
 func TestAccAWSRedshiftSecurityGroup_updateIngressSecurityGroup(
 func testAccCheckAWSRedshiftSecurityGroupExists(
 func testAccCheckAWSRedshiftSecurityGroupDestroy(
-func TestResourceAWSRedshiftSecurityGroupNameValidation(
 func testAccAWSRedshiftSecurityGroupConfig_ingressCidr(
 func testAccAWSRedshiftSecurityGroupConfig_ingressCidrAdd(
 func testAccAWSRedshiftSecurityGroupConfig_ingressCidrReduce(
@@ -7598,7 +7591,6 @@ func TestAccAWSRedshiftSubnetGroup_basic(
 func TestAccAWSRedshiftSubnetGroup_updateDescription(
 func TestAccAWSRedshiftSubnetGroup_updateSubnetIds(
 func TestAccAWSRedshiftSubnetGroup_tags(
-func TestResourceAWSRedshiftSubnetGroupNameValidation(
 func testAccCheckRedshiftSubnetGroupDestroy(
 func testAccCheckRedshiftSubnetGroupExists(
 func testAccRedshiftSubnetGroupConfig(
@@ -8777,6 +8769,7 @@ func TestAccAWSSSMDocument_SchemaVersion_1(
 func TestAccAWSSSMDocument_session(
 func TestAccAWSSSMDocument_DocumentFormat_YAML(
 func TestAccAWSSSMDocument_Tags(
+func TestValidateSSMDocumentPermissions(
 func testAccCheckAWSSSMDocumentExists(
 func testAccCheckAWSSSMDocumentDestroy(
 func testAccAWSSSMDocumentBasicConfig(
@@ -9639,6 +9632,7 @@ func TestAccAwsWorkspacesDirectory(
 func testAccAwsWorkspacesDirectory_basic(
 func testAccAwsWorkspacesDirectory_disappears(
 func testAccAwsWorkspacesDirectory_subnetIds(
+func testAccAwsWorkspacesDirectory_tags(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryDisappears(
 func testAccCheckAwsWorkspacesDirectoryExists(
@@ -9649,6 +9643,8 @@ func testAccWorkspacesDirectoryConfigA(
 func testAccWorkspacesDirectoryConfigB(
 func testAccWorkspacesDirectoryConfigC(
 func testAccWorkspacesDirectoryConfig_subnetIds(
+func testAccWorkspacesDirectoryConfigTags1(
+func testAccWorkspacesDirectoryConfigTags2(
 func TestAccAwsWorkspacesIpGroup_basic(
 func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(

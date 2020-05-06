@@ -4498,6 +4498,7 @@ func TestAccAwsWorkspacesDirectory(
 func testAccAwsWorkspacesDirectory_basic(
 func testAccAwsWorkspacesDirectory_disappears(
 func testAccAwsWorkspacesDirectory_subnetIds(
+func testAccAwsWorkspacesDirectory_tags(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryDisappears(
 func testAccCheckAwsWorkspacesDirectoryExists(

@@ -312,6 +312,7 @@ func testAccAwsVpnConnectionConfigTunnelOptions(
 func testAccAwsWorkspacesDirectory_basic(
 func testAccAwsWorkspacesDirectory_disappears(
 func testAccAwsWorkspacesDirectory_subnetIds(
+func testAccAwsWorkspacesDirectory_tags(
 func testAccAwsWorkspacesDirectoryConfig_Prerequisites(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(

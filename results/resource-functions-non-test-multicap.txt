@@ -302,6 +302,7 @@ func findSubscriptionByNonID(
 func expandSSMDocumentParameters(
 func expandSSMAssociationOutputLocation(
 func updateAwsSSMDocument(
+func validateSSMDocumentPermissions(
 func parseStorageGatewayVolumeGatewayARNAndTargetNameFromARN(
 func decodeStorageGatewayCacheID(
 func isAWSErrStorageGatewayGatewayNotFound(

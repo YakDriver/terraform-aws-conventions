@@ -8628,11 +8628,6 @@ func enableRedshiftSnapshotCopy(
 func resourceAwsRedshiftClusterDelete(
 func deleteAwsRedshiftCluster(
 func resourceAwsRedshiftClusterStateRefreshFunc(
-func validateRedshiftClusterIdentifier(
-func validateRedshiftClusterDbName(
-func validateRedshiftClusterFinalSnapshotIdentifier(
-func validateRedshiftClusterMasterUsername(
-func validateRedshiftClusterMasterPassword(
 func init(
 func testSweepRedshiftClusters(
 func testAccCheckAWSRedshiftClusterDestroy(
@@ -8682,7 +8677,6 @@ func resourceAwsRedshiftParameterGroupRead(
 func resourceAwsRedshiftParameterGroupUpdate(
 func resourceAwsRedshiftParameterGroupDelete(
 func resourceAwsRedshiftParameterHash(
-func validateRedshiftParamGroupName(
 func testAccCheckAWSRedshiftParameterGroupDestroy(
 func testAccCheckAWSRedshiftParameterGroupExists(
 func testAccAWSRedshiftParameterGroupOnlyConfig(
@@ -8695,7 +8689,6 @@ func resourceAwsRedshiftSecurityGroupRead(
 func resourceAwsRedshiftSecurityGroupUpdate(
 func resourceAwsRedshiftSecurityGroupDelete(
 func resourceAwsRedshiftSecurityGroupRetrieve(
-func validateRedshiftSecurityGroupName(
 func resourceAwsRedshiftSecurityGroupIngressHash(
 func resourceAwsRedshiftSecurityGroupAuthorizeRule(
 func resourceAwsRedshiftSecurityGroupStateRefreshFunc(
@@ -8754,7 +8747,6 @@ func resourceAwsRedshiftSubnetGroupRead(
 func resourceAwsRedshiftSubnetGroupUpdate(
 func resourceAwsRedshiftSubnetGroupDelete(
 func subnetIdsToSlice(
-func validateRedshiftSubnetGroupName(
 func testAccCheckRedshiftSubnetGroupDestroy(
 func testAccCheckRedshiftSubnetGroupExists(
 func testAccRedshiftSubnetGroupConfig(
@@ -10022,6 +10014,7 @@ func getDocumentPermissions(
 func deleteDocumentPermissions(
 func modifyDocumentPermissions(
 func updateAwsSSMDocument(
+func validateSSMDocumentPermissions(
 func testAccCheckAWSSSMDocumentExists(
 func testAccCheckAWSSSMDocumentDestroy(
 func testAccAWSSSMDocumentBasicConfig(
@@ -11062,6 +11055,7 @@ func testSweepWorkspacesDirectories(
 func testAccAwsWorkspacesDirectory_basic(
 func testAccAwsWorkspacesDirectory_disappears(
 func testAccAwsWorkspacesDirectory_subnetIds(
+func testAccAwsWorkspacesDirectory_tags(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryDisappears(
 func testAccCheckAwsWorkspacesDirectoryExists(
@@ -11070,6 +11064,8 @@ func testAccWorkspacesDirectoryConfigA(
 func testAccWorkspacesDirectoryConfigB(
 func testAccWorkspacesDirectoryConfigC(
 func testAccWorkspacesDirectoryConfig_subnetIds(
+func testAccWorkspacesDirectoryConfigTags1(
+func testAccWorkspacesDirectoryConfigTags2(
 func resourceAwsWorkspacesIpGroup(
 func resourceAwsWorkspacesIpGroupCreate(
 func resourceAwsWorkspacesIpGroupRead(

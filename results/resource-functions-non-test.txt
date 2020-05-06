@@ -3495,11 +3495,6 @@ func enableRedshiftSnapshotCopy(
 func resourceAwsRedshiftClusterDelete(
 func deleteAwsRedshiftCluster(
 func resourceAwsRedshiftClusterStateRefreshFunc(
-func validateRedshiftClusterIdentifier(
-func validateRedshiftClusterDbName(
-func validateRedshiftClusterFinalSnapshotIdentifier(
-func validateRedshiftClusterMasterUsername(
-func validateRedshiftClusterMasterPassword(
 func init(
 func resourceAwsRedshiftEventSubscription(
 func resourceAwsRedshiftEventSubscriptionCreate(
@@ -3513,14 +3508,12 @@ func resourceAwsRedshiftParameterGroupRead(
 func resourceAwsRedshiftParameterGroupUpdate(
 func resourceAwsRedshiftParameterGroupDelete(
 func resourceAwsRedshiftParameterHash(
-func validateRedshiftParamGroupName(
 func resourceAwsRedshiftSecurityGroup(
 func resourceAwsRedshiftSecurityGroupCreate(
 func resourceAwsRedshiftSecurityGroupRead(
 func resourceAwsRedshiftSecurityGroupUpdate(
 func resourceAwsRedshiftSecurityGroupDelete(
 func resourceAwsRedshiftSecurityGroupRetrieve(
-func validateRedshiftSecurityGroupName(
 func resourceAwsRedshiftSecurityGroupIngressHash(
 func resourceAwsRedshiftSecurityGroupAuthorizeRule(
 func resourceAwsRedshiftSecurityGroupStateRefreshFunc(
@@ -3554,7 +3547,6 @@ func resourceAwsRedshiftSubnetGroupRead(
 func resourceAwsRedshiftSubnetGroupUpdate(
 func resourceAwsRedshiftSubnetGroupDelete(
 func subnetIdsToSlice(
-func validateRedshiftSubnetGroupName(
 func resourceAwsResourceGroupsGroup(
 func extractResourceGroupResourceQuery(
 func resourceAwsResourceGroupsGroupCreate(
@@ -4150,6 +4142,7 @@ func getDocumentPermissions(
 func deleteDocumentPermissions(
 func modifyDocumentPermissions(
 func updateAwsSSMDocument(
+func validateSSMDocumentPermissions(
 func resourceAwsSsmMaintenanceWindow(
 func resourceAwsSsmMaintenanceWindowCreate(
 func resourceAwsSsmMaintenanceWindowUpdate(

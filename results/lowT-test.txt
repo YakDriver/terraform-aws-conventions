@@ -5816,6 +5816,7 @@ func testSweepWorkspacesDirectories(
 func testAccAwsWorkspacesDirectory_basic(
 func testAccAwsWorkspacesDirectory_disappears(
 func testAccAwsWorkspacesDirectory_subnetIds(
+func testAccAwsWorkspacesDirectory_tags(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryDisappears(
 func testAccCheckAwsWorkspacesDirectoryExists(
@@ -5824,6 +5825,8 @@ func testAccWorkspacesDirectoryConfigA(
 func testAccWorkspacesDirectoryConfigB(
 func testAccWorkspacesDirectoryConfigC(
 func testAccWorkspacesDirectoryConfig_subnetIds(
+func testAccWorkspacesDirectoryConfigTags1(
+func testAccWorkspacesDirectoryConfigTags2(
 func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(

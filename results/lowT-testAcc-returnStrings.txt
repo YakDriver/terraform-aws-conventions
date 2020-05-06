@@ -3574,6 +3574,8 @@ func testAccWorkspacesDirectoryConfigA(booster string) string {
 func testAccWorkspacesDirectoryConfigB(booster string) string {
 func testAccWorkspacesDirectoryConfigC(booster string) string {
 func testAccWorkspacesDirectoryConfig_subnetIds(booster string) string {
+func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
 func testAccAWSXraySamplingRuleConfig_basic(ruleName string) string {

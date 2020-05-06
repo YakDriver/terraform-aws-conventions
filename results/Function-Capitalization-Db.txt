@@ -327,8 +327,6 @@ func testAccAwsOpsworksRdsDbInstanceForceNew(
 func TestAccAWSRDSCluster_DbSubnetGroupName(
 func testAccAWSClusterConfig_DbSubnetGroupName(
 func rdsDescribeGlobalClusterFromDbClusterARN(
-func validateRedshiftClusterDbName(
-func TestValidateRedshiftClusterDbName(
 func flattenIoTRuleDynamoDbActions(
 func diffDynamoDbGSI(
 func flattenDynamoDbTtl(

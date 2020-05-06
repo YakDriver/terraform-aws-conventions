@@ -1376,14 +1376,7 @@ func init(
 func enableRedshiftClusterLogging(
 func enableRedshiftSnapshotCopy(
 func deleteAwsRedshiftCluster(
-func validateRedshiftClusterIdentifier(
-func validateRedshiftClusterDbName(
-func validateRedshiftClusterFinalSnapshotIdentifier(
-func validateRedshiftClusterMasterUsername(
-func validateRedshiftClusterMasterPassword(
 func init(
-func validateRedshiftParamGroupName(
-func validateRedshiftSecurityGroupName(
 func expandRedshiftSGAuthorizeIngress(
 func expandRedshiftSGRevokeIngress(
 func waitForAwsRedshiftSnapshotCopyGrantToBeDeleted(
@@ -1392,7 +1385,6 @@ func waitForRedshiftSnapshotScheduleAssociationActive(
 func waitForRedshiftSnapshotScheduleAssociationDestroy(
 func init(
 func subnetIdsToSlice(
-func validateRedshiftSubnetGroupName(
 func extractResourceGroupResourceQuery(
 func expandNameServers(
 func cleanDelegationSetId(
@@ -1614,6 +1606,7 @@ func getDocumentPermissions(
 func deleteDocumentPermissions(
 func modifyDocumentPermissions(
 func updateAwsSSMDocument(
+func validateSSMDocumentPermissions(
 func expandAwsSsmMaintenanceWindowLoggingInfo(
 func flattenAwsSsmMaintenanceWindowLoggingInfo(
 func expandAwsSsmTaskParameters(
