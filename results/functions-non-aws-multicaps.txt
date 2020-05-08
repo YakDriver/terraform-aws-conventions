@@ -1232,7 +1232,9 @@ func TestAccAWSEBSVolume_updateIops(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_NoIops(
 func TestAccAWSEBSVolume_withTags(
+func TestAccAWSEBSVolume_multiAttach(
 func TestAccAWSEBSVolume_outpost(
+func TestAccAWSEBSVolume_disappears(
 func TestAccAwsEc2ClientVpnEndpoint_msAD(
 func TestAccAwsEc2ClientVpnEndpoint_mutualAuthAndMsAD(
 func TestAccAwsEc2ClientVpnEndpoint_withDNSServers(

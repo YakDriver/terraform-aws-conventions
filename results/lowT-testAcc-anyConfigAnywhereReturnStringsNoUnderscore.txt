@@ -692,6 +692,7 @@ func testAccAwsEbsSnapshotConfigBasicTags2(rName, tagKey1, tagValue1, tagKey2, t
 func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
 func testAccAwsEbsVolumeConfigOutpost(outpostArn string) string {
+func testAccAwsEbsVolumeConfigMultiAttach(rName string) string {
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(optInStatus string) string {
 func testAccEc2ClientVpnEndpointConfigAcmCertificateBase() string {
 func testAccEc2ClientVpnEndpointConfig(rName string) string {
@@ -718,6 +719,7 @@ func testAccTrafficMirrorTargetConfigNlb(rName, description string) string {
 func testAccTrafficMirrorTargetConfigEni(rName, description string) string {
 func testAccTrafficMirrorTargetConfigTags1(rName, description, tagKey1, tagValue1 string) string {
 func testAccTrafficMirrorTargetConfigTags2(rName, description, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentAccepterConfigBase(rName string) string {
 func testAccAWSEc2TransitGatewayRouteTableAssociationConfig() string {
 func testAccAWSEc2TransitGatewayRouteTablePropagationConfig() string {
 func testAccAWSEc2TransitGatewayRouteTableConfig() string {
@@ -1152,6 +1154,7 @@ func testAccAWSLaunchConfigurationWithEncryptionUpdated() string {
 func testAccAWSLaunchConfigurationConfigEbsNoDevice(rInt int) string {
 func testAccAWSLaunchTemplateConfigElasticInferenceAccelerator(rName, elasticInferenceAcceleratorType string) string {
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(rName string) string {
+func testAccAWSLaunchTemplateConfigPartition(rName string, partNum int) string {
 func testAccAWSLaunchTemplateConfigHibernation(rName string, enabled bool) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {

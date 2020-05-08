@@ -1360,6 +1360,7 @@ func testAccAwsEbsSnapshotConfigBasicTags2(rName, tagKey1, tagValue1, tagKey2, t
 func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
 func testAccAwsEbsVolumeConfigOutpost(outpostArn string) string {
+func testAccAwsEbsVolumeConfigMultiAttach(rName string) string {
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(optInStatus string) string {
 func testAccEc2CapacityReservationConfig_ebsOptimized(ebsOptimized bool) string {
 func testAccEc2CapacityReservationConfig_endDate(endDate string) string {
@@ -1422,6 +1423,11 @@ func testAccTrafficMirrorTargetConfigNlb(rName, description string) string {
 func testAccTrafficMirrorTargetConfigEni(rName, description string) string {
 func testAccTrafficMirrorTargetConfigTags1(rName, description, tagKey1, tagValue1 string) string {
 func testAccTrafficMirrorTargetConfigTags2(rName, description, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentAccepterConfigBase(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentAccepterConfig_basic_sameAccount(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentAccepterConfig_tags_sameAccount(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentAccepterConfig_tagsUpdated_sameAccount(rName string) string {
+func testAccAWSEc2TransitGatewayPeeringAttachmentAccepterConfig_basic_differentAccount(rName string) string {
 func testAccAWSEc2TransitGatewayPeeringAttachmentConfig_base(rName string) string {
 func testAccAWSEc2TransitGatewayPeeringAttachmentConfig_sameAccount_base(rName string) string {
 func testAccAWSEc2TransitGatewayPeeringAttachmentConfig_differentAccount_base(rName string) string {
@@ -2136,6 +2142,7 @@ func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(rNa
 func testAccAWSLaunchTemplateConfig_licenseSpecification(rInt int) string {
 func testAccAWSLaunchTemplateConfig_description(rName, description string) string {
 func testAccAWSLaunchTemplateConfig_networkInterface(rName string) string {
+func testAccAWSLaunchTemplateConfigPartition(rName string, partNum int) string {
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
 func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(rName string) string {
 func testAccAWSLaunchTemplateConfig_metadataOptions(rName string) string {

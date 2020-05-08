@@ -89,6 +89,7 @@ func testAccAwsEbsSnapshotConfigBasicTags2(
 func testAccAwsEbsSnapshotConfigWithDescription(
 func testAccAwsEbsSnapshotConfigWithKms(
 func testAccAwsEbsVolumeConfigOutpost(
+func testAccAwsEbsVolumeConfigMultiAttach(
 func testAccAwsElasticTranscoderPresetConfig(
 func testAccAwsElasticTranscoderPresetConfigDescription(
 func testAccAwsElasticTranscoderPresetConfigFull1(
