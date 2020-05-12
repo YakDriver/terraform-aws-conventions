@@ -813,6 +813,7 @@ func testAccAwsProviderAccountID(
 func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARN(
 func testAccCheckResourceAttrRegionalARNNoAccount(
+func testAccCheckResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccMatchResourceAttrRegionalHostname(
@@ -1728,6 +1729,7 @@ func TestAccAwsAppsyncResolver_RequestTemplate(
 func TestAccAwsAppsyncResolver_ResponseTemplate(
 func TestAccAwsAppsyncResolver_multipleResolvers(
 func TestAccAwsAppsyncResolver_PipelineConfig(
+func TestAccAwsAppsyncResolver_CachingConfig(
 func testAccCheckAwsAppsyncResolverDestroy(
 func testAccCheckAwsAppsyncResolverExists(
 func testAccCheckAwsAppsyncResolverDisappears(
@@ -1737,6 +1739,7 @@ func testAccAppsyncResolver_RequestTemplate(
 func testAccAppsyncResolver_ResponseTemplate(
 func testAccAppsyncResolver_multipleResolvers(
 func testAccAppsyncResolver_pipelineConfig(
+func testAccAppsyncResolver_cachingConfig(
 func TestAccAWSAthenaDatabase_basic(
 func TestAccAWSAthenaDatabase_encryption(
 func TestAccAWSAthenaDatabase_nameStartsWithUnderscore(
@@ -2024,6 +2027,7 @@ func testAccCheckBatchJobQueueComputeEnvironmentOrderUpdate(
 func testAccBatchJobQueueConfigBase(
 func testAccBatchJobQueueConfigPriority(
 func testAccBatchJobQueueConfigState(
+func testSweepBudgetsBudgets(
 func TestAccAWSBudgetsBudget_basic(
 func TestAccAWSBudgetsBudget_prefix(
 func TestAccAWSBudgetsBudget_notification(
@@ -2210,6 +2214,7 @@ func TestAccAWSCloudHsmV2Hsm_basic(
 func testAccAWSCloudHsmV2Hsm(
 func testAccCheckAWSCloudHsmV2HsmDestroy(
 func testAccCheckAWSCloudHsmV2HsmExists(
+func testSweepCloudTrails(
 func TestAccAWSCloudTrail(
 func testAccAWSCloudTrail_basic(
 func testAccAWSCloudTrail_cloudwatch(
@@ -3155,6 +3160,7 @@ func testAccCheckDbClusterSnapshotExists(
 func testAccAwsDbClusterSnapshotConfig(
 func testAccAwsDbClusterSnapshotConfigTags1(
 func testAccAwsDbClusterSnapshotConfigTags2(
+func testSweepDbEventSubscriptions(
 func TestAccAWSDBEventSubscription_basicUpdate(
 func TestAccAWSDBEventSubscription_disappears(
 func TestAccAWSDBEventSubscription_withPrefix(
@@ -4172,6 +4178,7 @@ func testAccCheckAWSEcrRepositoryPolicyDestroy(
 func testAccCheckAWSEcrRepositoryPolicyExists(
 func testAccAWSEcrRepositoryPolicy(
 func testAccAWSEcrRepositoryPolicyWithIAMRole(
+func testSweepEcrRepositories(
 func TestAccAWSEcrRepository_basic(
 func TestAccAWSEcrRepository_tags(
 func TestAccAWSEcrRepository_immutability(
@@ -4911,6 +4918,7 @@ func testAccAWSEmrInstanceGroupConfig_zeroCount(
 func TestAccAWSEmrSecurityConfiguration_basic(
 func testAccCheckEmrSecurityConfigurationDestroy(
 func testAccCheckEmrSecurityConfigurationExists(
+func testSweepFlowLogs(
 func TestAccAWSFlowLog_VPCID(
 func TestAccAWSFlowLog_LogFormat(
 func TestAccAWSFlowLog_SubnetID(
@@ -5055,6 +5063,7 @@ func TestAccAWSGlacierVaultLock_CompleteLock(
 func testAccCheckGlacierVaultLockExists(
 func testAccCheckGlacierVaultLockDestroy(
 func testAccGlacierVaultLockConfigCompleteLock(
+func testSweepGlacierVaults(
 func TestAccAWSGlacierVault_basic(
 func TestAccAWSGlacierVault_full(
 func TestAccAWSGlacierVault_RemoveNotifications(
@@ -5355,7 +5364,6 @@ func testAccIAMGroupPolicyConfig(
 func testAccIAMGroupPolicyConfig_namePrefix(
 func testAccIAMGroupPolicyConfig_generatedName(
 func testAccIAMGroupPolicyConfigUpdate(
-func TestValidateIamGroupName(
 func TestAccAWSIAMGroup_basic(
 func TestAccAWSIAMGroup_nameChange(
 func testAccCheckAWSGroupDestroy(
@@ -5468,6 +5476,7 @@ func testAccAWSIAMRoleConfig_force_detach_policies(
 func testAccAWSIAMRoleConfig_tags(
 func testAccAWSIAMRoleConfig_tagsUpdate(
 func TestAccAWSIAMSamlProvider_basic(
+func TestAccAWSIAMSamlProvider_disappears(
 func testAccCheckIAMSamlProviderDestroy(
 func testAccCheckIAMSamlProviderExists(
 func testAccIAMSamlProviderConfig(
@@ -5541,7 +5550,6 @@ func TestAccAWSUserSSHKey_pemEncoding(
 func testAccCheckAWSUserSSHKeyDestroy(
 func testAccCheckAWSUserSSHKeyExists(
 func testAccAWSUserSSHKeyImportStateIdFunc(
-func TestValidateIamUserName(
 func testSweepIamUsers(
 func TestAccAWSUser_basic(
 func TestAccAWSUser_disappears(
@@ -5801,6 +5809,7 @@ func testAccCheckAWSIotThingTypeDestroy(
 func testAccAWSIotThingTypeConfig_basic(
 func testAccAWSIotThingTypeConfig_full(
 func testAccAWSIotThingTypeConfig_fullUpdated(
+func testSweepIotTopicRules(
 func TestAccAWSIoTTopicRule_basic(
 func TestAccAWSIoTTopicRule_cloudwatchalarm(
 func TestAccAWSIoTTopicRule_cloudwatchmetric(
@@ -5845,6 +5854,7 @@ func testAccCheckAWSKeyPairExists(
 func testAccAWSKeyPairConfig(
 func testAccAWSKeyPairConfigTags1(
 func testAccAWSKeyPairConfigTags2(
+func testSweepKinesisAnalyticsApplications(
 func TestAccAWSKinesisAnalyticsApplication_basic(
 func TestAccAWSKinesisAnalyticsApplication_update(
 func TestAccAWSKinesisAnalyticsApplication_addCloudwatchLoggingOptions(
@@ -6050,7 +6060,8 @@ func TestAccAWSLambdaAlias_nameupdate(
 func TestAccAWSLambdaAlias_routingconfig(
 func testAccCheckAwsLambdaAliasDestroy(
 func testAccCheckAwsLambdaAliasExists(
-func testAccCheckAwsLambdaAttributes(
+func testAccCheckAwsLambdaAliasAttributes(
+func testAccCheckAwsLambdaAliasInvokeArn(
 func testAccCheckAwsLambdaAliasRoutingConfigExists(
 func testAccCheckAwsLambdaAliasRoutingConfigDoesNotExist(
 func testAccAwsLambdaAliasBaseConfig(
@@ -6164,10 +6175,10 @@ func TestAccAWSLambdaFunction_runtimeValidation_dotnetcore31(
 func testAccCheckLambdaFunctionDestroy(
 func testAccCheckAwsLambdaFunctionDisappears(
 func testAccCheckAwsLambdaFunctionExists(
+func testAccCheckAwsLambdaFunctionInvokeArn(
 func testAccAwsInvokeLambdaFunction(
 func testAccCheckAwsLambdaFunctionName(
 func testAccCheckAWSLambdaFunctionVersion(
-func testAccCheckAwsLambdaFunctionArnHasSuffix(
 func testAccCheckAwsLambdaSourceCodeHash(
 func testAccCheckAttributeIsDateAfter(
 func testAccCreateZipFromFiles(
@@ -6824,6 +6835,7 @@ func TestAccAWSNeptuneClusterInstance_generatedName(
 func TestAccAWSNeptuneClusterInstance_kmsKey(
 func testAccCheckAWSNeptuneClusterInstanceExists(
 func testAccCheckAWSNeptuneClusterInstanceAttributes(
+func testAccCheckNeptuneClusterAddress(
 func testAccAWSNeptuneClusterInstanceConfig(
 func testAccAWSNeptuneClusterInstanceConfigModified(
 func testAccAWSNeptuneClusterInstanceConfig_az(
@@ -6879,6 +6891,7 @@ func testAccAWSNeptuneClusterConfig_backups(
 func testAccAWSNeptuneClusterConfig_backupsUpdate(
 func testAccAWSNeptuneClusterConfig_iamAuth(
 func testAccAWSNeptuneClusterConfig_cloudwatchLogsExports(
+func testSweepNeptuneEventSubscriptions(
 func TestAccAWSNeptuneEventSubscription_basic(
 func TestAccAWSNeptuneEventSubscription_withPrefix(
 func TestAccAWSNeptuneEventSubscription_withSourceIds(
@@ -7537,6 +7550,7 @@ func testAccAWSRedshiftClusterConfig_iamRoles(
 func testAccAWSRedshiftClusterConfig_updateIamRoles(
 func testAccAWSRedshiftClusterConfig_updatedUsername(
 func testAccAWSRedshiftClusterConfig_updatedAvailabilityZone(
+func testSweepRedshiftEventSubscriptions(
 func TestAccAWSRedshiftEventSubscription_basicUpdate(
 func TestAccAWSRedshiftEventSubscription_withPrefix(
 func TestAccAWSRedshiftEventSubscription_withSourceIds(
@@ -7640,6 +7654,7 @@ func testAccCheckRoute53HealthCheckExists(
 func testAccCheckRoute53HealthCheckDisappears(
 func testAccRoute53HealthCheckConfigTags1(
 func testAccRoute53HealthCheckConfigTags2(
+func testSweepRoute53QueryLogs(
 func TestAccAWSRoute53QueryLog_Basic(
 func testAccCheckRoute53QueryLogExists(
 func testAccCheckRoute53QueryLogDestroy(
@@ -8400,6 +8415,7 @@ func testAccAwsServiceQuotasServiceQuotaConfigValue(
 func TestAccAWSSESActiveReceiptRuleSet_basic(
 func testAccCheckSESActiveReceiptRuleSetDestroy(
 func testAccCheckAwsSESActiveReceiptRuleSetExists(
+func testSweepSesConfigurationSets(
 func TestAccAWSSESConfigurationSet_basic(
 func testAccCheckSESConfigurationSetDestroy(
 func testAccCheckAwsSESConfigurationSetExists(
@@ -8407,6 +8423,7 @@ func TestAccAWSSESDomainDkim_basic(
 func testAccCheckAwsSESDomainDkimDestroy(
 func testAccCheckAwsSESDomainDkimExists(
 func testAccCheckAwsSESDomainDkimTokens(
+func testSweepSesIdentities(
 func TestAccAWSSESDomainIdentity_basic(
 func TestAccAWSSESDomainIdentity_disappears(
 func TestAccAWSSESDomainIdentity_trailingPeriod(
@@ -8458,6 +8475,7 @@ func TestAccAWSSESReceiptFilter_basic(
 func testAccCheckSESReceiptFilterDestroy(
 func testAccCheckAwsSESReceiptFilterExists(
 func testAccAWSSESReceiptFilterConfig(
+func testSweepSesReceiptRuleSets(
 func TestAccAWSSESReceiptRuleSet_basic(
 func testAccCheckSESReceiptRuleSetDestroy(
 func testAccCheckAwsSESReceiptRuleSetExists(
@@ -8521,6 +8539,7 @@ func testAccAWSSnapshotCreateVolumePermissionDestroy(
 func testAccAWSSnapshotCreateVolumePermissionExists(
 func testAccAWSSnapshotCreateVolumePermissionDestroyed(
 func testAccAWSSnapshotCreateVolumePermissionConfig(
+func testSweepSnsPlatformApplications(
 func testAccAwsSnsPlatformApplicationPlatformFromEnv(
 func TestDecodeResourceAwsSnsPlatformApplicationID(
 func TestAccAWSSnsPlatformApplication_basic(
@@ -9663,6 +9682,26 @@ func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
+func testSweepWorkspaces(
+func TestAccAwsWorkspacesWorkspace_basic(
+func TestAccAwsWorkspacesWorkspace_Tags(
+func TestAccAwsWorkspacesWorkspace_WorkspaceProperties(
+func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
+func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
+func testAccCheckAwsWorkspacesWorkspaceDestroy(
+func testAccCheckAwsWorkspacesWorkspaceExists(
+func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(
+func testAccWorkspacesWorkspaceConfig(
+func testAccWorkspacesWorkspaceConfig_TagsA(
+func testAccWorkspacesWorkspaceConfig_TagsB(
+func testAccWorkspacesWorkspaceConfig_TagsC(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesA(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesB(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesC(
+func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(
+func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(
+func TestExpandWorkspaceProperties(
+func TestFlattenWorkspaceProperties(
 func TestAccAWSXraySamplingRule_basic(
 func TestAccAWSXraySamplingRule_update(
 func testAccCheckXraySamplingRuleExists(

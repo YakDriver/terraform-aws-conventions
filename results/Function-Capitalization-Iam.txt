@@ -36,7 +36,6 @@ func resourceAwsIamGroupRead(
 func resourceAwsIamGroupReadResult(
 func resourceAwsIamGroupUpdate(
 func resourceAwsIamGroupDelete(
-func validateAwsIamGroupName(
 func resourceAwsIamGroupMembership(
 func resourceAwsIamGroupMembershipCreate(
 func resourceAwsIamGroupMembershipRead(
@@ -52,7 +51,6 @@ func resourceAwsIamGroupPolicyPut(
 func resourceAwsIamGroupPolicyRead(
 func resourceAwsIamGroupPolicyDelete(
 func resourceAwsIamGroupPolicyParseId(
-func TestValidateIamGroupName(
 func resourceAwsIamInstanceProfile(
 func resourceAwsIamInstanceProfileCreate(
 func resourceAwsIamInstanceProfileUpdate(
@@ -121,7 +119,6 @@ func resourceAwsIamUserCreate(
 func resourceAwsIamUserRead(
 func resourceAwsIamUserUpdate(
 func resourceAwsIamUserDelete(
-func validateAwsIamUserName(
 func deleteAwsIamUserGroupMemberships(
 func deleteAwsIamUserSSHKeys(
 func deleteAwsIamUserVirtualMFADevices(
@@ -156,7 +153,6 @@ func resourceAwsIamUserSshKeyRead(
 func resourceAwsIamUserSshKeyUpdate(
 func resourceAwsIamUserSshKeyDelete(
 func resourceAwsIamUserSshKeyImport(
-func TestValidateIamUserName(
 func testSweepIamUsers(
 func TestAccAWSInstance_withIamInstanceProfile(
 func TestAccAWSKmsKey_Policy_IamRole(

@@ -240,6 +240,7 @@ func testAccAppsyncDatasourceConfig_base_Lambda(
 func testAccAppsyncResolver_basic(
 func testAccAppsyncResolver_multipleResolvers(
 func testAccAppsyncResolver_pipelineConfig(
+func testAccAppsyncResolver_cachingConfig(
 func testAccAWSAutoscalingAttachment_alb(
 func testAccAWSAutoscalingAttachment_elb(
 func testAccAWSAutoscalingAttachment_elb_associated(
@@ -1101,5 +1102,7 @@ func testAccAwsWorkspacesDirectory_disappears(
 func testAccAwsWorkspacesDirectory_subnetIds(
 func testAccAwsWorkspacesDirectory_tags(
 func testAccWorkspacesDirectoryConfig_subnetIds(
+func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(
+func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(
 func testAccAWSXraySamplingRuleConfig_basic(
 func testAccAWSXraySamplingRuleConfig_update(

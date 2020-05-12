@@ -100,6 +100,9 @@ func flattenAppsyncGraphqlApiAdditionalAuthenticationProviders(
 func flattenAppsyncGraphqlApiCognitoUserPoolConfig(
 func init(
 func decodeAppsyncResolverID(
+func expandAppsyncResolverCachingConfig(
+func flattenAppsyncPipelineConfig(
+func flattenAppsyncCachingConfig(
 func expandAthenaResultConfiguration(
 func executeAndExpectNoRowsWhenCreate(
 func executeAndExpectMatchingRow(
@@ -187,6 +190,7 @@ func convertCostFiltersToStringMap(
 func expandBudgetsBudgetUnmarshal(
 func decodeBudgetsBudgetID(
 func expandBudgetsCostTypesUnmarshal(
+func init(
 func getLastCfEventTimestamp(
 func getCloudFormationRollbackReasons(
 func getCloudFormationDeletionReasons(
@@ -223,6 +227,7 @@ func expandAwsCloudTrailEventSelector(
 func expandAwsCloudTrailEventSelectorDataResource(
 func flattenAwsCloudTrailEventSelector(
 func flattenAwsCloudTrailEventSelectorDataResource(
+func init(
 func isCloudWatchDashboardNotFoundErr(
 func getPolicyStatement(
 func validateCloudWatchEventPermissionAction(
@@ -408,6 +413,7 @@ func (
 func daxClusterStateRefreshFunc(
 func init(
 func waitForRdsEventSubscriptionDeletion(
+func init(
 func waitUntilAwsDbInstanceIsAvailableAfterUpdate(
 func waitUntilAwsDbInstanceIsDeleted(
 func buildCloudwatchLogsExportConfiguration(
@@ -595,6 +601,7 @@ func init(
 func init(
 func init(
 func flattenImageScanningConfiguration(
+func init(
 func expandAutoScalingGroupProvider(
 func flattenAutoScalingGroupProvider(
 func waitForEcsClusterActive(
@@ -799,6 +806,7 @@ func fetchEMRInstanceGroup(
 func readEmrEBSConfig(
 func marshalWithoutNil(
 func waitForEmrInstanceGroupStateRunning(
+func init(
 func associateFmsAdminAccountRefreshFunc(
 func waitForFmsAdminAccountDeletion(
 func init(
@@ -834,6 +842,7 @@ func buildGlacierVaultLocation(
 func getGlacierVaultNotification(
 func glacierVaultLockRefreshFunc(
 func waitForGlacierVaultLockCompletion(
+func init(
 func init(
 func sweepGlobalAcceleratorListeners(
 func sweepGlobalAcceleratorEndpointGroups(
@@ -933,7 +942,6 @@ func decodeGuardDutyThreatintelsetID(
 func hmacSignature(
 func sesSmtpPasswordFromSecretKeySigV4(
 func sesSmtpPasswordFromSecretKeySigV2(
-func validateAwsIamGroupName(
 func removeUsersFromGroup(
 func addUsersToGroup(
 func attachPolicyToGroup(
@@ -974,7 +982,6 @@ func deleteIamServiceLinkedRole(
 func deleteIamServiceLinkedRoleWaiter(
 func deleteIamServiceLinkedRoleRefreshFunc(
 func init(
-func validateAwsIamUserName(
 func deleteAwsIamUserGroupMemberships(
 func deleteAwsIamUserSSHKeys(
 func deleteAwsIamUserVirtualMFADevices(
@@ -1036,6 +1043,7 @@ func getIotPolicyAttachment(
 func getIotRoleAliasDescription(
 func getIoTThingPricipalAttachment(
 func createTopicRulePayload(
+func init(
 func migrateKeyPairStateV0toV1(
 func init(
 func expandKinesisAnalyticsCloudwatchLoggingOption(
@@ -1053,6 +1061,7 @@ func flattenKinesisAnalyticsOutputs(
 func flattenKinesisAnalyticsReferenceDataSources(
 func waitForDeleteKinesisAnalyticsApplication(
 func refreshKinesisAnalyticsApplicationStatus(
+func init(
 func cloudWatchLoggingOptionsSchema(
 func s3ConfigurationSchema(
 func processingConfigurationSchema(
@@ -1307,6 +1316,7 @@ func init(
 func flattenAwsNeptuneClusterResource(
 func setIamRoleToNeptuneCluster(
 func removeIamRoleFromNeptuneCluster(
+func init(
 func updateNetworkAclEntries(
 func cleanUpDependencyViolations(
 func getDefaultNetworkAcl(
@@ -1377,6 +1387,7 @@ func enableRedshiftClusterLogging(
 func enableRedshiftSnapshotCopy(
 func deleteAwsRedshiftCluster(
 func init(
+func init(
 func expandRedshiftSGAuthorizeIngress(
 func expandRedshiftSGRevokeIngress(
 func waitForAwsRedshiftSnapshotCopyGrantToBeDeleted(
@@ -1388,6 +1399,7 @@ func subnetIdsToSlice(
 func extractResourceGroupResourceQuery(
 func expandNameServers(
 func cleanDelegationSetId(
+func init(
 func changeRoute53RecordSet(
 func waitForRoute53RecordSetToSync(
 func findRecord(
@@ -1544,14 +1556,19 @@ func expandServiceDiscoveryHealthCheckCustomConfig(
 func flattenServiceDiscoveryHealthCheckCustomConfig(
 func init(
 func findConfigurationSet(
+func init(
+func init(
 func getAwsSesIdentityVerificationAttributes(
+func init(
 func generateCloudWatchDestination(
 func decodeSesIdentityNotificationTopicId(
 func buildReceiptRule(
+func init(
 func hasCreateVolumePermission(
 func decodeResourceAwsSnsPlatformApplicationID(
 func hashSum(
 func validateAwsSnsPlatformApplication(
+func init(
 func validateMonthlySpend(
 func validateDeliverySamplingRate(
 func updateAwsSnsTopicAttribute(
@@ -1795,4 +1812,10 @@ func flattenSelfServicePermissions(
 func init(
 func expandIpGroupRules(
 func flattenIpGroupRules(
+func workspaceDelete(
+func workspacePropertyUpdate(
+func workspaceRefreshStateFunc(
+func expandWorkspaceProperties(
+func flattenWorkspaceProperties(
+func init(
 func getXraySamplingRule(

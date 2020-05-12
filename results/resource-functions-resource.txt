@@ -2912,6 +2912,11 @@ func resourceAwsWorkspacesIpGroupCreate(
 func resourceAwsWorkspacesIpGroupRead(
 func resourceAwsWorkspacesIpGroupUpdate(
 func resourceAwsWorkspacesIpGroupDelete(
+func resourceAwsWorkspacesWorkspace(
+func resourceAwsWorkspacesWorkspaceCreate(
+func resourceAwsWorkspacesWorkspaceRead(
+func resourceAwsWorkspacesWorkspaceUpdate(
+func resourceAwsWorkspacesWorkspaceDelete(
 func resourceAwsXraySamplingRule(
 func resourceAwsXraySamplingRuleCreate(
 func resourceAwsXraySamplingRuleRead(

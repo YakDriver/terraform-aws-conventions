@@ -402,6 +402,9 @@ func resourceAwsAppsyncResolverRead(
 func resourceAwsAppsyncResolverUpdate(
 func resourceAwsAppsyncResolverDelete(
 func decodeAppsyncResolverID(
+func expandAppsyncResolverCachingConfig(
+func flattenAppsyncPipelineConfig(
+func flattenAppsyncCachingConfig(
 func resourceAwsAthenaDatabase(
 func expandAthenaResultConfiguration(
 func resourceAwsAthenaDatabaseCreate(
@@ -576,6 +579,7 @@ func convertCostFiltersToStringMap(
 func expandBudgetsBudgetUnmarshal(
 func decodeBudgetsBudgetID(
 func expandBudgetsCostTypesUnmarshal(
+func init(
 func resourceAwsCloud9EnvironmentEc2(
 func resourceAwsCloud9EnvironmentEc2Create(
 func resourceAwsCloud9EnvironmentEc2Read(
@@ -668,6 +672,7 @@ func expandAwsCloudTrailEventSelector(
 func expandAwsCloudTrailEventSelectorDataResource(
 func flattenAwsCloudTrailEventSelector(
 func flattenAwsCloudTrailEventSelectorDataResource(
+func init(
 func resourceAwsCloudWatchDashboard(
 func resourceAwsCloudWatchDashboardRead(
 func resourceAwsCloudWatchDashboardPut(
@@ -1113,6 +1118,7 @@ func resourceAwsDbEventSubscriptionUpdate(
 func resourceAwsDbEventSubscriptionDelete(
 func resourceAwsDbEventSubscriptionRefreshFunc(
 func waitForRdsEventSubscriptionDeletion(
+func init(
 func resourceAwsDbInstance(
 func resourceAwsDbInstanceCreate(
 func resourceAwsDbInstanceRead(
@@ -1691,6 +1697,7 @@ func resourceAwsEcrRepositoryPolicyCreate(
 func resourceAwsEcrRepositoryPolicyRead(
 func resourceAwsEcrRepositoryPolicyUpdate(
 func resourceAwsEcrRepositoryPolicyDelete(
+func init(
 func resourceAwsEcsCapacityProvider(
 func resourceAwsEcsCapacityProviderCreate(
 func resourceAwsEcsCapacityProviderRead(
@@ -2061,6 +2068,7 @@ func resourceAwsLogFlowCreate(
 func resourceAwsLogFlowRead(
 func resourceAwsLogFlowUpdate(
 func resourceAwsLogFlowDelete(
+func init(
 func resourceAwsFmsAdminAccount(
 func resourceAwsFmsAdminAccountCreate(
 func associateFmsAdminAccountRefreshFunc(
@@ -2139,6 +2147,7 @@ func resourceAwsGlacierVaultLockRead(
 func resourceAwsGlacierVaultLockDelete(
 func glacierVaultLockRefreshFunc(
 func waitForGlacierVaultLockCompletion(
+func init(
 func resourceAwsGlobalAcceleratorAccelerator(
 func resourceAwsGlobalAcceleratorAcceleratorCreate(
 func resourceAwsGlobalAcceleratorAcceleratorRead(
@@ -2364,7 +2373,6 @@ func resourceAwsIamGroupRead(
 func resourceAwsIamGroupReadResult(
 func resourceAwsIamGroupUpdate(
 func resourceAwsIamGroupDelete(
-func validateAwsIamGroupName(
 func resourceAwsIamGroupMembership(
 func resourceAwsIamGroupMembershipCreate(
 func resourceAwsIamGroupMembershipRead(
@@ -2476,7 +2484,6 @@ func resourceAwsIamUserCreate(
 func resourceAwsIamUserRead(
 func resourceAwsIamUserUpdate(
 func resourceAwsIamUserDelete(
-func validateAwsIamUserName(
 func deleteAwsIamUserGroupMemberships(
 func deleteAwsIamUserSSHKeys(
 func deleteAwsIamUserVirtualMFADevices(
@@ -2628,6 +2635,7 @@ func resourceAwsIotTopicRuleCreate(
 func resourceAwsIotTopicRuleRead(
 func resourceAwsIotTopicRuleUpdate(
 func resourceAwsIotTopicRuleDelete(
+func init(
 func resourceAwsKeyPair(
 func resourceAwsKeyPairCreate(
 func resourceAwsKeyPairRead(
@@ -2656,6 +2664,7 @@ func flattenKinesisAnalyticsOutputs(
 func flattenKinesisAnalyticsReferenceDataSources(
 func waitForDeleteKinesisAnalyticsApplication(
 func refreshKinesisAnalyticsApplicationStatus(
+func init(
 func cloudWatchLoggingOptionsSchema(
 func s3ConfigurationSchema(
 func processingConfigurationSchema(
@@ -3179,6 +3188,7 @@ func resourceAwsNeptuneEventSubscriptionUpdate(
 func resourceAwsNeptuneEventSubscriptionDelete(
 func resourceAwsNeptuneEventSubscriptionRefreshFunc(
 func resourceAwsNeptuneEventSubscriptionRetrieve(
+func init(
 func resourceAwsNeptuneParameterGroup(
 func resourceAwsNeptuneParameterGroupCreate(
 func resourceAwsNeptuneParameterGroupRead(
@@ -3507,6 +3517,7 @@ func resourceAwsRedshiftEventSubscriptionRead(
 func resourceAwsRedshiftEventSubscriptionRetrieve(
 func resourceAwsRedshiftEventSubscriptionUpdate(
 func resourceAwsRedshiftEventSubscriptionDelete(
+func init(
 func resourceAwsRedshiftParameterGroup(
 func resourceAwsRedshiftParameterGroupCreate(
 func resourceAwsRedshiftParameterGroupRead(
@@ -3573,6 +3584,7 @@ func resourceAwsRoute53QueryLog(
 func resourceAwsRoute53QueryLogCreate(
 func resourceAwsRoute53QueryLogRead(
 func resourceAwsRoute53QueryLogDelete(
+func init(
 func resourceAwsRoute53Record(
 func resourceAwsRoute53RecordUpdate(
 func resourceAwsRoute53RecordCreate(
@@ -3951,6 +3963,7 @@ func resourceAwsSesConfigurationSetCreate(
 func resourceAwsSesConfigurationSetRead(
 func resourceAwsSesConfigurationSetDelete(
 func findConfigurationSet(
+func init(
 func resourceAwsSesDomainDkim(
 func resourceAwsSesDomainDkimCreate(
 func resourceAwsSesDomainDkimRead(
@@ -3959,6 +3972,7 @@ func resourceAwsSesDomainIdentity(
 func resourceAwsSesDomainIdentityCreate(
 func resourceAwsSesDomainIdentityRead(
 func resourceAwsSesDomainIdentityDelete(
+func init(
 func resourceAwsSesDomainIdentityVerification(
 func getAwsSesIdentityVerificationAttributes(
 func resourceAwsSesDomainIdentityVerificationCreate(
@@ -3972,6 +3986,7 @@ func resourceAwsSesEmailIdentity(
 func resourceAwsSesEmailIdentityCreate(
 func resourceAwsSesEmailIdentityRead(
 func resourceAwsSesEmailIdentityDelete(
+func init(
 func resourceAwsSesEventDestination(
 func resourceAwsSesEventDestinationCreate(
 func resourceAwsSesEventDestinationRead(
@@ -4003,6 +4018,7 @@ func resourceAwsSesReceiptRuleSet(
 func resourceAwsSesReceiptRuleSetCreate(
 func resourceAwsSesReceiptRuleSetRead(
 func resourceAwsSesReceiptRuleSetDelete(
+func init(
 func resourceAwsSesTemplate(
 func resourceAwsSesTemplateCreate(
 func resourceAwsSesTemplateRead(
@@ -4041,6 +4057,7 @@ func resourceAwsSnsPlatformApplicationDelete(
 func decodeResourceAwsSnsPlatformApplicationID(
 func hashSum(
 func validateAwsSnsPlatformApplication(
+func init(
 func validateMonthlySpend(
 func validateDeliverySamplingRate(
 func resourceAwsSnsSmsPreferences(
@@ -4664,6 +4681,17 @@ func resourceAwsWorkspacesIpGroupUpdate(
 func resourceAwsWorkspacesIpGroupDelete(
 func expandIpGroupRules(
 func flattenIpGroupRules(
+func resourceAwsWorkspacesWorkspace(
+func resourceAwsWorkspacesWorkspaceCreate(
+func resourceAwsWorkspacesWorkspaceRead(
+func resourceAwsWorkspacesWorkspaceUpdate(
+func resourceAwsWorkspacesWorkspaceDelete(
+func workspaceDelete(
+func workspacePropertyUpdate(
+func workspaceRefreshStateFunc(
+func expandWorkspaceProperties(
+func flattenWorkspaceProperties(
+func init(
 func resourceAwsXraySamplingRule(
 func resourceAwsXraySamplingRuleCreate(
 func resourceAwsXraySamplingRuleRead(

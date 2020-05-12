@@ -92,6 +92,7 @@ func TestAccAwsAppsyncFunction_description(
 func testAccAWSAppsyncFunctionConfigDescription(
 func TestAccAWSAppsyncGraphqlApi_AdditionalAuthentication_Multiple(
 func testAccAppsyncGraphqlApiConfig_AdditionalAuth_Multiple(
+func flattenAppsyncPipelineConfig(
 func TestAccAwsAppsyncResolver_multipleResolvers(
 func TestAccAwsAppsyncResolver_PipelineConfig(
 func testAccAppsyncResolver_multipleResolvers(
@@ -247,6 +248,7 @@ func resourceAwsDbEventSubscriptionUpdate(
 func resourceAwsDbEventSubscriptionDelete(
 func resourceAwsDbEventSubscriptionRefreshFunc(
 func waitForRdsEventSubscriptionDeletion(
+func testSweepDbEventSubscriptions(
 func TestAccAWSDBEventSubscription_basicUpdate(
 func TestAccAWSDBEventSubscription_disappears(
 func TestAccAWSDBEventSubscription_withPrefix(
@@ -506,6 +508,7 @@ func resourceAwsNeptuneEventSubscriptionUpdate(
 func resourceAwsNeptuneEventSubscriptionDelete(
 func resourceAwsNeptuneEventSubscriptionRefreshFunc(
 func resourceAwsNeptuneEventSubscriptionRetrieve(
+func testSweepNeptuneEventSubscriptions(
 func TestAccAWSNeptuneEventSubscription_basic(
 func TestAccAWSNeptuneEventSubscription_withPrefix(
 func TestAccAWSNeptuneEventSubscription_withSourceIds(
@@ -586,6 +589,7 @@ func resourceAwsRedshiftEventSubscriptionRead(
 func resourceAwsRedshiftEventSubscriptionRetrieve(
 func resourceAwsRedshiftEventSubscriptionUpdate(
 func resourceAwsRedshiftEventSubscriptionDelete(
+func testSweepRedshiftEventSubscriptions(
 func TestAccAWSRedshiftEventSubscription_basicUpdate(
 func TestAccAWSRedshiftEventSubscription_withPrefix(
 func TestAccAWSRedshiftEventSubscription_withSourceIds(
@@ -697,6 +701,7 @@ func resourceAwsSesReceiptRuleSet(
 func resourceAwsSesReceiptRuleSetCreate(
 func resourceAwsSesReceiptRuleSetRead(
 func resourceAwsSesReceiptRuleSetDelete(
+func testSweepSesReceiptRuleSets(
 func TestAccAWSSESReceiptRuleSet_basic(
 func testAccCheckSESReceiptRuleSetDestroy(
 func testAccCheckAwsSESReceiptRuleSetExists(
@@ -814,7 +819,6 @@ func TestAccAWSWafRegionalWebAclAssociation_multipleAssociations(
 func testAccAWSWafWebAclConfig_Rules_Multiple(
 func stripCapacityAttributes(
 func flattenAwsDynamoDbReplicaDescriptions(
-func flattenAppsyncPipelineConfig(
 func ec2TagsFromTagDescriptions(
 func validateDbEventSubscriptionName(
 func validateIamRoleDescription(

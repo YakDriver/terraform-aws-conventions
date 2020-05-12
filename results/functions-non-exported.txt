@@ -968,6 +968,7 @@ func testAccAwsProviderAccountID(
 func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARN(
 func testAccCheckResourceAttrRegionalARNNoAccount(
+func testAccCheckResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccMatchResourceAttrRegionalHostname(
@@ -1995,6 +1996,9 @@ func resourceAwsAppsyncResolverRead(
 func resourceAwsAppsyncResolverUpdate(
 func resourceAwsAppsyncResolverDelete(
 func decodeAppsyncResolverID(
+func expandAppsyncResolverCachingConfig(
+func flattenAppsyncPipelineConfig(
+func flattenAppsyncCachingConfig(
 func testAccCheckAwsAppsyncResolverDestroy(
 func testAccCheckAwsAppsyncResolverExists(
 func testAccCheckAwsAppsyncResolverDisappears(
@@ -2004,6 +2008,7 @@ func testAccAppsyncResolver_RequestTemplate(
 func testAccAppsyncResolver_ResponseTemplate(
 func testAccAppsyncResolver_multipleResolvers(
 func testAccAppsyncResolver_pipelineConfig(
+func testAccAppsyncResolver_cachingConfig(
 func resourceAwsAthenaDatabase(
 func expandAthenaResultConfiguration(
 func resourceAwsAthenaDatabaseCreate(
@@ -2348,6 +2353,8 @@ func convertCostFiltersToStringMap(
 func expandBudgetsBudgetUnmarshal(
 func decodeBudgetsBudgetID(
 func expandBudgetsCostTypesUnmarshal(
+func init(
+func testSweepBudgetsBudgets(
 func testAccAWSBudgetsBudgetExists(
 func testAccAWSBudgetsBudgetCheckTimePeriod(
 func testAccAWSBudgetsBudgetCheckCostTypes(
@@ -2560,6 +2567,8 @@ func expandAwsCloudTrailEventSelector(
 func expandAwsCloudTrailEventSelectorDataResource(
 func flattenAwsCloudTrailEventSelector(
 func flattenAwsCloudTrailEventSelectorDataResource(
+func init(
+func testSweepCloudTrails(
 func testAccAWSCloudTrail_basic(
 func testAccAWSCloudTrail_cloudwatch(
 func testAccAWSCloudTrail_enable_logging(
@@ -3642,6 +3651,8 @@ func resourceAwsDbEventSubscriptionUpdate(
 func resourceAwsDbEventSubscriptionDelete(
 func resourceAwsDbEventSubscriptionRefreshFunc(
 func waitForRdsEventSubscriptionDeletion(
+func init(
+func testSweepDbEventSubscriptions(
 func testAccCheckAWSDBEventSubscriptionExists(
 func testAccCheckAWSDBEventSubscriptionDestroy(
 func testAccCheckAWSDBEventSubscriptionDisappears(
@@ -4827,6 +4838,8 @@ func testAccCheckAWSEcrRepositoryPolicyDestroy(
 func testAccCheckAWSEcrRepositoryPolicyExists(
 func testAccAWSEcrRepositoryPolicy(
 func testAccAWSEcrRepositoryPolicyWithIAMRole(
+func init(
+func testSweepEcrRepositories(
 func testAccCheckAWSEcrRepositoryDestroy(
 func testAccCheckAWSEcrRepositoryExists(
 func testAccCheckAWSEcrRepositoryRegistryID(
@@ -5620,6 +5633,8 @@ func resourceAwsLogFlowCreate(
 func resourceAwsLogFlowRead(
 func resourceAwsLogFlowUpdate(
 func resourceAwsLogFlowDelete(
+func init(
+func testSweepFlowLogs(
 func testAccCheckFlowLogExists(
 func testAccCheckFlowLogDisappears(
 func testAccCheckAWSFlowLogAttributes(
@@ -5793,6 +5808,8 @@ func waitForGlacierVaultLockCompletion(
 func testAccCheckGlacierVaultLockExists(
 func testAccCheckGlacierVaultLockDestroy(
 func testAccGlacierVaultLockConfigCompleteLock(
+func init(
+func testSweepGlacierVaults(
 func testAccCheckGlacierVaultExists(
 func testAccCheckVaultNotificationsMissing(
 func testAccCheckGlacierVaultDestroy(
@@ -6196,7 +6213,6 @@ func resourceAwsIamGroupRead(
 func resourceAwsIamGroupReadResult(
 func resourceAwsIamGroupUpdate(
 func resourceAwsIamGroupDelete(
-func validateAwsIamGroupName(
 func resourceAwsIamGroupMembership(
 func resourceAwsIamGroupMembershipCreate(
 func resourceAwsIamGroupMembershipRead(
@@ -6421,7 +6437,6 @@ func resourceAwsIamUserCreate(
 func resourceAwsIamUserRead(
 func resourceAwsIamUserUpdate(
 func resourceAwsIamUserDelete(
-func validateAwsIamUserName(
 func deleteAwsIamUserGroupMemberships(
 func deleteAwsIamUserSSHKeys(
 func deleteAwsIamUserVirtualMFADevices(
@@ -6742,6 +6757,8 @@ func resourceAwsIotTopicRuleCreate(
 func resourceAwsIotTopicRuleRead(
 func resourceAwsIotTopicRuleUpdate(
 func resourceAwsIotTopicRuleDelete(
+func init(
+func testSweepIotTopicRules(
 func testAccCheckAWSIoTTopicRuleDestroy(
 func testAccCheckAWSIoTTopicRuleExists_basic(
 func testAccAWSIoTTopicRule_basic(
@@ -6795,6 +6812,8 @@ func flattenKinesisAnalyticsOutputs(
 func flattenKinesisAnalyticsReferenceDataSources(
 func waitForDeleteKinesisAnalyticsApplication(
 func refreshKinesisAnalyticsApplicationStatus(
+func init(
+func testSweepKinesisAnalyticsApplications(
 func testAccCheckKinesisAnalyticsApplicationDestroy(
 func testAccCheckKinesisAnalyticsApplicationExists(
 func testAccPreCheckAWSKinesisAnalytics(
@@ -7060,7 +7079,8 @@ func expandLambdaAliasRoutingConfiguration(
 func resourceAwsLambdaAliasImport(
 func testAccCheckAwsLambdaAliasDestroy(
 func testAccCheckAwsLambdaAliasExists(
-func testAccCheckAwsLambdaAttributes(
+func testAccCheckAwsLambdaAliasAttributes(
+func testAccCheckAwsLambdaAliasInvokeArn(
 func testAccCheckAwsLambdaAliasRoutingConfigExists(
 func testAccCheckAwsLambdaAliasRoutingConfigDoesNotExist(
 func testAccAwsLambdaAliasBaseConfig(
@@ -7138,10 +7158,10 @@ func testSweepLambdaFunctions(
 func testAccCheckLambdaFunctionDestroy(
 func testAccCheckAwsLambdaFunctionDisappears(
 func testAccCheckAwsLambdaFunctionExists(
+func testAccCheckAwsLambdaFunctionInvokeArn(
 func testAccAwsInvokeLambdaFunction(
 func testAccCheckAwsLambdaFunctionName(
 func testAccCheckAWSLambdaFunctionVersion(
-func testAccCheckAwsLambdaFunctionArnHasSuffix(
 func testAccCheckAwsLambdaSourceCodeHash(
 func testAccCheckAttributeIsDateAfter(
 func testAccCreateZipFromFiles(
@@ -7873,6 +7893,7 @@ func resourceAwsNeptuneInstanceStateRefreshFunc(
 func resourceAwsNeptuneInstanceRetrieve(
 func testAccCheckAWSNeptuneClusterInstanceExists(
 func testAccCheckAWSNeptuneClusterInstanceAttributes(
+func testAccCheckNeptuneClusterAddress(
 func testAccAWSNeptuneClusterInstanceConfig(
 func testAccAWSNeptuneClusterInstanceConfigModified(
 func testAccAWSNeptuneClusterInstanceConfig_az(
@@ -7927,6 +7948,8 @@ func resourceAwsNeptuneEventSubscriptionUpdate(
 func resourceAwsNeptuneEventSubscriptionDelete(
 func resourceAwsNeptuneEventSubscriptionRefreshFunc(
 func resourceAwsNeptuneEventSubscriptionRetrieve(
+func init(
+func testSweepNeptuneEventSubscriptions(
 func testAccCheckAWSNeptuneEventSubscriptionExists(
 func testAccCheckAWSNeptuneEventSubscriptionDestroy(
 func testAccAWSNeptuneEventSubscriptionConfig(
@@ -8676,6 +8699,8 @@ func resourceAwsRedshiftEventSubscriptionRead(
 func resourceAwsRedshiftEventSubscriptionRetrieve(
 func resourceAwsRedshiftEventSubscriptionUpdate(
 func resourceAwsRedshiftEventSubscriptionDelete(
+func init(
+func testSweepRedshiftEventSubscriptions(
 func testAccCheckAWSRedshiftEventSubscriptionExists(
 func testAccCheckAWSRedshiftEventSubscriptionDestroy(
 func testAccAWSRedshiftEventSubscriptionConfig(
@@ -8803,6 +8828,8 @@ func resourceAwsRoute53QueryLog(
 func resourceAwsRoute53QueryLogCreate(
 func resourceAwsRoute53QueryLogRead(
 func resourceAwsRoute53QueryLogDelete(
+func init(
+func testSweepRoute53QueryLogs(
 func testAccCheckRoute53QueryLogExists(
 func testAccCheckRoute53QueryLogDestroy(
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(
@@ -9606,6 +9633,8 @@ func resourceAwsSesConfigurationSetCreate(
 func resourceAwsSesConfigurationSetRead(
 func resourceAwsSesConfigurationSetDelete(
 func findConfigurationSet(
+func init(
+func testSweepSesConfigurationSets(
 func testAccCheckSESConfigurationSetDestroy(
 func testAccCheckAwsSESConfigurationSetExists(
 func resourceAwsSesDomainDkim(
@@ -9619,6 +9648,8 @@ func resourceAwsSesDomainIdentity(
 func resourceAwsSesDomainIdentityCreate(
 func resourceAwsSesDomainIdentityRead(
 func resourceAwsSesDomainIdentityDelete(
+func init(
+func testSweepSesIdentities(
 func testAccCheckAwsSESDomainIdentityDestroy(
 func testAccCheckAwsSESDomainIdentityExists(
 func testAccCheckAwsSESDomainIdentityDisappears(
@@ -9648,6 +9679,7 @@ func resourceAwsSesEmailIdentity(
 func resourceAwsSesEmailIdentityCreate(
 func resourceAwsSesEmailIdentityRead(
 func resourceAwsSesEmailIdentityDelete(
+func init(
 func testAccCheckAwsSESEmailIdentityDestroy(
 func testAccCheckAwsSESEmailIdentityExists(
 func testAccAwsSESEmailIdentityConfig(
@@ -9696,6 +9728,8 @@ func resourceAwsSesReceiptRuleSet(
 func resourceAwsSesReceiptRuleSetCreate(
 func resourceAwsSesReceiptRuleSetRead(
 func resourceAwsSesReceiptRuleSetDelete(
+func init(
+func testSweepSesReceiptRuleSets(
 func testAccCheckSESReceiptRuleSetDestroy(
 func testAccCheckAwsSESReceiptRuleSetExists(
 func testAccAWSSESReceiptRuleSetConfig(
@@ -9777,6 +9811,8 @@ func resourceAwsSnsPlatformApplicationDelete(
 func decodeResourceAwsSnsPlatformApplicationID(
 func hashSum(
 func validateAwsSnsPlatformApplication(
+func init(
+func testSweepSnsPlatformApplications(
 func testAccAwsSnsPlatformApplicationPlatformFromEnv(
 func testAccCheckAwsSnsPlatformApplicationExists(
 func testAccCheckAWSSNSPlatformApplicationDestroy(
@@ -11090,6 +11126,30 @@ func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
+func resourceAwsWorkspacesWorkspace(
+func resourceAwsWorkspacesWorkspaceCreate(
+func resourceAwsWorkspacesWorkspaceRead(
+func resourceAwsWorkspacesWorkspaceUpdate(
+func resourceAwsWorkspacesWorkspaceDelete(
+func workspaceDelete(
+func workspacePropertyUpdate(
+func workspaceRefreshStateFunc(
+func expandWorkspaceProperties(
+func flattenWorkspaceProperties(
+func init(
+func testSweepWorkspaces(
+func testAccCheckAwsWorkspacesWorkspaceDestroy(
+func testAccCheckAwsWorkspacesWorkspaceExists(
+func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(
+func testAccWorkspacesWorkspaceConfig(
+func testAccWorkspacesWorkspaceConfig_TagsA(
+func testAccWorkspacesWorkspaceConfig_TagsB(
+func testAccWorkspacesWorkspaceConfig_TagsC(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesA(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesB(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesC(
+func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(
+func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(
 func resourceAwsXraySamplingRule(
 func resourceAwsXraySamplingRuleCreate(
 func resourceAwsXraySamplingRuleRead(
@@ -11331,7 +11391,6 @@ func expandAppmeshVirtualServiceSpec(
 func flattenAppmeshVirtualServiceSpec(
 func expandAppmeshRouteSpec(
 func flattenAppmeshRouteSpec(
-func flattenAppsyncPipelineConfig(
 func expandRoute53ResolverEndpointIpAddresses(
 func flattenRoute53ResolverEndpointIpAddresses(
 func expandRoute53ResolverEndpointIpAddressUpdate(

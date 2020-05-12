@@ -746,6 +746,7 @@ func TestAccAwsAppsyncResolver_RequestTemplate(
 func TestAccAwsAppsyncResolver_ResponseTemplate(
 func TestAccAwsAppsyncResolver_multipleResolvers(
 func TestAccAwsAppsyncResolver_PipelineConfig(
+func TestAccAwsAppsyncResolver_CachingConfig(
 func TestAccAWSAthenaDatabase_basic(
 func TestAccAWSAthenaDatabase_encryption(
 func TestAccAWSAthenaDatabase_nameStartsWithUnderscore(
@@ -2112,7 +2113,6 @@ func TestAccAWSIAMGroupPolicy_basic(
 func TestAccAWSIAMGroupPolicy_disappears(
 func TestAccAWSIAMGroupPolicy_namePrefix(
 func TestAccAWSIAMGroupPolicy_generatedName(
-func TestValidateIamGroupName(
 func TestAccAWSIAMGroup_basic(
 func TestAccAWSIAMGroup_nameChange(
 func TestAccAWSIAMInstanceProfile_basic(
@@ -2152,6 +2152,7 @@ func TestAccAWSIAMRole_MaxSessionDuration(
 func TestAccAWSIAMRole_PermissionsBoundary(
 func TestAccAWSIAMRole_tags(
 func TestAccAWSIAMSamlProvider_basic(
+func TestAccAWSIAMSamlProvider_disappears(
 func TestAccAWSIAMServerCertificate_basic(
 func TestAccAWSIAMServerCertificate_name_prefix(
 func TestAccAWSIAMServerCertificate_disappears(
@@ -2178,7 +2179,6 @@ func TestAccAWSIAMUserPolicy_generatedName(
 func TestAccAWSIAMUserPolicy_multiplePolicies(
 func TestAccAWSUserSSHKey_basic(
 func TestAccAWSUserSSHKey_pemEncoding(
-func TestValidateIamUserName(
 func TestAccAWSUser_basic(
 func TestAccAWSUser_disappears(
 func TestAccAWSUser_ForceDestroy_AccessKey(
@@ -3848,6 +3848,13 @@ func TestAccAwsWorkspacesDirectory(
 func TestExpandSelfServicePermissions(
 func TestFlattenSelfServicePermissions(
 func TestAccAwsWorkspacesIpGroup_basic(
+func TestAccAwsWorkspacesWorkspace_basic(
+func TestAccAwsWorkspacesWorkspace_Tags(
+func TestAccAwsWorkspacesWorkspace_WorkspaceProperties(
+func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
+func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
+func TestExpandWorkspaceProperties(
+func TestFlattenWorkspaceProperties(
 func TestAccAWSXraySamplingRule_basic(
 func TestAccAWSXraySamplingRule_update(
 func TestDiffStringMaps(

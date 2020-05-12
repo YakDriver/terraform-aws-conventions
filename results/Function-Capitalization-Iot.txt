@@ -85,6 +85,7 @@ func resourceAwsIotTopicRuleCreate(
 func resourceAwsIotTopicRuleRead(
 func resourceAwsIotTopicRuleUpdate(
 func resourceAwsIotTopicRuleDelete(
+func testSweepIotTopicRules(
 func expandIotThingTypeProperties(
 func flattenIotThingTypeProperties(
 func validateIotThingTypeName(

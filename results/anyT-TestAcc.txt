@@ -726,6 +726,7 @@ func testAccAwsProviderAccountID(
 func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARN(
 func testAccCheckResourceAttrRegionalARNNoAccount(
+func testAccCheckResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccMatchResourceAttrRegionalHostname(
@@ -1620,6 +1621,7 @@ func TestAccAwsAppsyncResolver_RequestTemplate(
 func TestAccAwsAppsyncResolver_ResponseTemplate(
 func TestAccAwsAppsyncResolver_multipleResolvers(
 func TestAccAwsAppsyncResolver_PipelineConfig(
+func TestAccAwsAppsyncResolver_CachingConfig(
 func testAccCheckAwsAppsyncResolverDestroy(
 func testAccCheckAwsAppsyncResolverExists(
 func testAccCheckAwsAppsyncResolverDisappears(
@@ -1629,6 +1631,7 @@ func testAccAppsyncResolver_RequestTemplate(
 func testAccAppsyncResolver_ResponseTemplate(
 func testAccAppsyncResolver_multipleResolvers(
 func testAccAppsyncResolver_pipelineConfig(
+func testAccAppsyncResolver_cachingConfig(
 func TestAccAWSAthenaDatabase_basic(
 func TestAccAWSAthenaDatabase_encryption(
 func TestAccAWSAthenaDatabase_nameStartsWithUnderscore(
@@ -5216,6 +5219,7 @@ func testAccAWSIAMRoleConfig_force_detach_policies(
 func testAccAWSIAMRoleConfig_tags(
 func testAccAWSIAMRoleConfig_tagsUpdate(
 func TestAccAWSIAMSamlProvider_basic(
+func TestAccAWSIAMSamlProvider_disappears(
 func testAccCheckIAMSamlProviderDestroy(
 func testAccCheckIAMSamlProviderExists(
 func testAccIAMSamlProviderConfig(
@@ -5771,7 +5775,8 @@ func TestAccAWSLambdaAlias_nameupdate(
 func TestAccAWSLambdaAlias_routingconfig(
 func testAccCheckAwsLambdaAliasDestroy(
 func testAccCheckAwsLambdaAliasExists(
-func testAccCheckAwsLambdaAttributes(
+func testAccCheckAwsLambdaAliasAttributes(
+func testAccCheckAwsLambdaAliasInvokeArn(
 func testAccCheckAwsLambdaAliasRoutingConfigExists(
 func testAccCheckAwsLambdaAliasRoutingConfigDoesNotExist(
 func testAccAwsLambdaAliasBaseConfig(
@@ -5884,10 +5889,10 @@ func TestAccAWSLambdaFunction_runtimeValidation_dotnetcore31(
 func testAccCheckLambdaFunctionDestroy(
 func testAccCheckAwsLambdaFunctionDisappears(
 func testAccCheckAwsLambdaFunctionExists(
+func testAccCheckAwsLambdaFunctionInvokeArn(
 func testAccAwsInvokeLambdaFunction(
 func testAccCheckAwsLambdaFunctionName(
 func testAccCheckAWSLambdaFunctionVersion(
-func testAccCheckAwsLambdaFunctionArnHasSuffix(
 func testAccCheckAwsLambdaSourceCodeHash(
 func testAccCheckAttributeIsDateAfter(
 func testAccCreateZipFromFiles(
@@ -6520,6 +6525,7 @@ func TestAccAWSNeptuneClusterInstance_generatedName(
 func TestAccAWSNeptuneClusterInstance_kmsKey(
 func testAccCheckAWSNeptuneClusterInstanceExists(
 func testAccCheckAWSNeptuneClusterInstanceAttributes(
+func testAccCheckNeptuneClusterAddress(
 func testAccAWSNeptuneClusterInstanceConfig(
 func testAccAWSNeptuneClusterInstanceConfigModified(
 func testAccAWSNeptuneClusterInstanceConfig_az(
@@ -9254,6 +9260,23 @@ func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
+func TestAccAwsWorkspacesWorkspace_basic(
+func TestAccAwsWorkspacesWorkspace_Tags(
+func TestAccAwsWorkspacesWorkspace_WorkspaceProperties(
+func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
+func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
+func testAccCheckAwsWorkspacesWorkspaceDestroy(
+func testAccCheckAwsWorkspacesWorkspaceExists(
+func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(
+func testAccWorkspacesWorkspaceConfig(
+func testAccWorkspacesWorkspaceConfig_TagsA(
+func testAccWorkspacesWorkspaceConfig_TagsB(
+func testAccWorkspacesWorkspaceConfig_TagsC(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesA(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesB(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesC(
+func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(
+func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(
 func TestAccAWSXraySamplingRule_basic(
 func TestAccAWSXraySamplingRule_update(
 func testAccCheckXraySamplingRuleExists(

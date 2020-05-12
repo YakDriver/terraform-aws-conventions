@@ -317,3 +317,4 @@ func testAccAwsWorkspacesDirectory_tags(
 func testAccAwsWorkspacesDirectoryConfig_Prerequisites(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
+func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(

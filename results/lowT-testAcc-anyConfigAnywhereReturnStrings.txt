@@ -598,6 +598,7 @@ func testAccAppsyncGraphqlApiConfig_AdditionalAuth_OpenIdConnect(rName, issuer s
 func testAccAppsyncGraphqlApiConfig_AdditionalAuth_Multiple(rName, issuer string) string {
 func testAccAppsyncGraphqlApiConfig_XrayEnabled(rName string, xrayEnabled bool) string {
 func testAccAppsyncResolver_pipelineConfig(rName string) string {
+func testAccAppsyncResolver_cachingConfig(rName string) string {
 func testAccAthenaDatabaseConfig(randInt int, dbName string, forceDestroy bool) string {
 func testAccAthenaDatabaseWithKMSConfig(randInt int, dbName string, forceDestroy bool) string {
 func testAccAthenaNamedQueryConfig(rInt int, rName string) string {
@@ -2334,11 +2335,11 @@ func testAccMskConfigurationConfigKafkaVersions(rName string) string {
 func testAccMskConfigurationConfigServerProperties(rName string) string {
 func testAccNatGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccNatGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSNeptuneClusterInstanceConfig(n int) string {
-func testAccAWSNeptuneClusterInstanceConfigModified(n int) string {
+func testAccAWSNeptuneClusterInstanceConfig(instanceName string, n int) string {
+func testAccAWSNeptuneClusterInstanceConfigModified(instanceName string, n int) string {
 func testAccAWSNeptuneClusterInstanceConfig_az(n int) string {
 func testAccAWSNeptuneClusterInstanceConfig_withSubnetGroup(n int) string {
-func testAccAWSNeptuneClusterInstanceConfig_namePrefix(n int) string {
+func testAccAWSNeptuneClusterInstanceConfig_namePrefix(namePrefix string, n int) string {
 func testAccAWSNeptuneClusterInstanceConfig_generatedName(n int) string {
 func testAccAWSNeptuneClusterInstanceConfigKmsKey(n int) string {
 func testAccAWSNeptuneClusterParameterGroupConfig_Description(name, description string) string {
@@ -2361,12 +2362,12 @@ func testAccAWSNeptuneClusterConfig_backups(rName string) string {
 func testAccAWSNeptuneClusterConfig_backupsUpdate(rName string) string {
 func testAccAWSNeptuneClusterConfig_iamAuth(rName string) string {
 func testAccAWSNeptuneClusterConfig_cloudwatchLogsExports(rName string) string {
-func testAccAWSNeptuneEventSubscriptionConfig(rInt int) string {
-func testAccAWSNeptuneEventSubscriptionConfigUpdate(rInt int) string {
+func testAccAWSNeptuneEventSubscriptionConfig(subscriptionName string, rInt int) string {
+func testAccAWSNeptuneEventSubscriptionConfigUpdate(subscriptionName string, rInt int) string {
 func testAccAWSNeptuneEventSubscriptionConfigWithPrefix(rInt int) string {
 func testAccAWSNeptuneEventSubscriptionConfigWithSourceIds(rInt int) string {
 func testAccAWSNeptuneEventSubscriptionConfigUpdateSourceIds(rInt int) string {
-func testAccAWSNeptuneEventSubscriptionConfigUpdateCategories(rInt int) string {
+func testAccAWSNeptuneEventSubscriptionConfigUpdateCategories(subscriptionName string, rInt int) string {
 func testAccAWSNeptuneParameterGroupConfig_Parameter(rName, pName, pValue, pApplyMethod string) string {
 func testAccAWSNeptuneParameterGroupConfig_Description(rName, description string) string {
 func testAccAWSNeptuneParameterGroupConfig_Required(rName string) string {
@@ -3272,5 +3273,15 @@ func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) str
 func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
+func testAccAwsWorkspacesWorkspaceConfig_Prerequisites() string {
+func testAccWorkspacesWorkspaceConfig() string {
+func testAccWorkspacesWorkspaceConfig_TagsA() string {
+func testAccWorkspacesWorkspaceConfig_TagsB() string {
+func testAccWorkspacesWorkspaceConfig_TagsC() string {
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesA() string {
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesB() string {
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesC() string {
+func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize() string {
+func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize() string {
 func testAccAWSXraySamplingRuleConfig_basic(ruleName string) string {
 func testAccAWSXraySamplingRuleConfig_update(ruleName string, priority int, reservoirSize int) string {

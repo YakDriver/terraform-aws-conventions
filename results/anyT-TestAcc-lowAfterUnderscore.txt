@@ -619,6 +619,7 @@ func TestAccAwsAppsyncResolver_multipleResolvers(
 func testAccAppsyncResolver_basic(
 func testAccAppsyncResolver_multipleResolvers(
 func testAccAppsyncResolver_pipelineConfig(
+func testAccAppsyncResolver_cachingConfig(
 func TestAccAWSAthenaDatabase_basic(
 func TestAccAWSAthenaDatabase_encryption(
 func TestAccAWSAthenaDatabase_nameStartsWithUnderscore(
@@ -1744,6 +1745,7 @@ func testAccAWSIAMRoleConfig_force_detach_policies(
 func testAccAWSIAMRoleConfig_tags(
 func testAccAWSIAMRoleConfig_tagsUpdate(
 func TestAccAWSIAMSamlProvider_basic(
+func TestAccAWSIAMSamlProvider_disappears(
 func TestAccAWSIAMServerCertificate_basic(
 func TestAccAWSIAMServerCertificate_name_prefix(
 func TestAccAWSIAMServerCertificate_disappears(
@@ -3348,6 +3350,11 @@ func testAccAwsWorkspacesDirectory_subnetIds(
 func testAccAwsWorkspacesDirectory_tags(
 func testAccWorkspacesDirectoryConfig_subnetIds(
 func TestAccAwsWorkspacesIpGroup_basic(
+func TestAccAwsWorkspacesWorkspace_basic(
+func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
+func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
+func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(
+func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(
 func TestAccAWSXraySamplingRule_basic(
 func TestAccAWSXraySamplingRule_update(
 func testAccAWSXraySamplingRuleConfig_basic(

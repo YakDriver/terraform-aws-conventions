@@ -1215,8 +1215,8 @@ func testAccMskConfigurationConfigKafkaVersions(rName string) string {
 func testAccMskConfigurationConfigServerProperties(rName string) string {
 func testAccNatGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccNatGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSNeptuneClusterInstanceConfig(n int) string {
-func testAccAWSNeptuneClusterInstanceConfigModified(n int) string {
+func testAccAWSNeptuneClusterInstanceConfig(instanceName string, n int) string {
+func testAccAWSNeptuneClusterInstanceConfigModified(instanceName string, n int) string {
 func testAccAWSNeptuneClusterInstanceConfigKmsKey(n int) string {
 func testAccAWSNeptuneClusterParameterGroupConfig(name string) string {
 func testAccAwsNeptuneClusterSnapshotConfig(rName string) string {
@@ -1228,12 +1228,12 @@ func testAccAWSNeptuneClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tag
 func testAccAWSNeptuneClusterConfigIncludingIamRoles(rName string) string {
 func testAccAWSNeptuneClusterConfigAddIamRoles(rName string) string {
 func testAccAWSNeptuneClusterConfigRemoveIamRoles(rName string) string {
-func testAccAWSNeptuneEventSubscriptionConfig(rInt int) string {
-func testAccAWSNeptuneEventSubscriptionConfigUpdate(rInt int) string {
+func testAccAWSNeptuneEventSubscriptionConfig(subscriptionName string, rInt int) string {
+func testAccAWSNeptuneEventSubscriptionConfigUpdate(subscriptionName string, rInt int) string {
 func testAccAWSNeptuneEventSubscriptionConfigWithPrefix(rInt int) string {
 func testAccAWSNeptuneEventSubscriptionConfigWithSourceIds(rInt int) string {
 func testAccAWSNeptuneEventSubscriptionConfigUpdateSourceIds(rInt int) string {
-func testAccAWSNeptuneEventSubscriptionConfigUpdateCategories(rInt int) string {
+func testAccAWSNeptuneEventSubscriptionConfigUpdateCategories(subscriptionName string, rInt int) string {
 func testAccNeptuneSubnetGroupConfig(rName string) string {
 func testAccAWSNetworkAclRuleConfigIpv6ICMP(rName string) string {
 func testAccAWSNetworkAclRuleConfigIpv6VpcAssignGeneratedIpv6CidrBlockUpdate(ipv6Enabled bool) string {
@@ -1795,3 +1795,4 @@ func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) str
 func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
+func testAccWorkspacesWorkspaceConfig() string {

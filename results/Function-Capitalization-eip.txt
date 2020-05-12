@@ -24,6 +24,7 @@ func resourceAwsSesReceiptRuleSet(
 func resourceAwsSesReceiptRuleSetCreate(
 func resourceAwsSesReceiptRuleSetRead(
 func resourceAwsSesReceiptRuleSetDelete(
+func testSweepSesReceiptRuleSets(
 func TestAccAWSSESReceiptRuleSet_basic(
 func testAccCheckSESReceiptRuleSetDestroy(
 func testAccCheckAwsSESReceiptRuleSetExists(

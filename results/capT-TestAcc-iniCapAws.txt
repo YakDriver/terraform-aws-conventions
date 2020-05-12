@@ -33,6 +33,7 @@ func TestAccAwsAppsyncResolver_RequestTemplate(
 func TestAccAwsAppsyncResolver_ResponseTemplate(
 func TestAccAwsAppsyncResolver_multipleResolvers(
 func TestAccAwsAppsyncResolver_PipelineConfig(
+func TestAccAwsAppsyncResolver_CachingConfig(
 func TestAccAwsBackupPlan_basic(
 func TestAccAwsBackupPlan_withTags(
 func TestAccAwsBackupPlan_withRules(
@@ -153,3 +154,8 @@ func TestAccAwsSESIdentityNotificationTopic_basic(
 func TestAccAwsVpcIpv4CidrBlockAssociation_basic(
 func TestAccAwsWorkspacesDirectory(
 func TestAccAwsWorkspacesIpGroup_basic(
+func TestAccAwsWorkspacesWorkspace_basic(
+func TestAccAwsWorkspacesWorkspace_Tags(
+func TestAccAwsWorkspacesWorkspace_WorkspaceProperties(
+func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
+func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(

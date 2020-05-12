@@ -47,6 +47,7 @@ func resourceAwsDbEventSubscriptionRetrieve(
 func resourceAwsDbEventSubscriptionUpdate(
 func resourceAwsDbEventSubscriptionDelete(
 func resourceAwsDbEventSubscriptionRefreshFunc(
+func testSweepDbEventSubscriptions(
 func resourceAwsDbInstance(
 func resourceAwsDbInstanceCreate(
 func resourceAwsDbInstanceRead(

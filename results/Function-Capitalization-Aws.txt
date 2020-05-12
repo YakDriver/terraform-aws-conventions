@@ -1133,6 +1133,7 @@ func TestAccAwsAppsyncResolver_RequestTemplate(
 func TestAccAwsAppsyncResolver_ResponseTemplate(
 func TestAccAwsAppsyncResolver_multipleResolvers(
 func TestAccAwsAppsyncResolver_PipelineConfig(
+func TestAccAwsAppsyncResolver_CachingConfig(
 func testAccCheckAwsAppsyncResolverDestroy(
 func testAccCheckAwsAppsyncResolverExists(
 func testAccCheckAwsAppsyncResolverDisappears(
@@ -2626,7 +2627,6 @@ func resourceAwsIamGroupRead(
 func resourceAwsIamGroupReadResult(
 func resourceAwsIamGroupUpdate(
 func resourceAwsIamGroupDelete(
-func validateAwsIamGroupName(
 func resourceAwsIamGroupMembership(
 func resourceAwsIamGroupMembershipCreate(
 func resourceAwsIamGroupMembershipRead(
@@ -2705,7 +2705,6 @@ func resourceAwsIamUserCreate(
 func resourceAwsIamUserRead(
 func resourceAwsIamUserUpdate(
 func resourceAwsIamUserDelete(
-func validateAwsIamUserName(
 func deleteAwsIamUserGroupMemberships(
 func deleteAwsIamUserSSHKeys(
 func deleteAwsIamUserVirtualMFADevices(
@@ -2887,7 +2886,8 @@ func resourceAwsLambdaAliasUpdate(
 func resourceAwsLambdaAliasImport(
 func testAccCheckAwsLambdaAliasDestroy(
 func testAccCheckAwsLambdaAliasExists(
-func testAccCheckAwsLambdaAttributes(
+func testAccCheckAwsLambdaAliasAttributes(
+func testAccCheckAwsLambdaAliasInvokeArn(
 func testAccCheckAwsLambdaAliasRoutingConfigExists(
 func testAccCheckAwsLambdaAliasRoutingConfigDoesNotExist(
 func testAccAwsLambdaAliasBaseConfig(
@@ -2915,9 +2915,9 @@ func resourceAwsLambdaFunctionDelete(
 func resourceAwsLambdaFunctionUpdate(
 func testAccCheckAwsLambdaFunctionDisappears(
 func testAccCheckAwsLambdaFunctionExists(
+func testAccCheckAwsLambdaFunctionInvokeArn(
 func testAccAwsInvokeLambdaFunction(
 func testAccCheckAwsLambdaFunctionName(
-func testAccCheckAwsLambdaFunctionArnHasSuffix(
 func testAccCheckAwsLambdaSourceCodeHash(
 func resourceAwsLambdaLayerVersion(
 func resourceAwsLambdaLayerVersionPublish(
@@ -4519,6 +4519,19 @@ func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
+func resourceAwsWorkspacesWorkspace(
+func resourceAwsWorkspacesWorkspaceCreate(
+func resourceAwsWorkspacesWorkspaceRead(
+func resourceAwsWorkspacesWorkspaceUpdate(
+func resourceAwsWorkspacesWorkspaceDelete(
+func TestAccAwsWorkspacesWorkspace_basic(
+func TestAccAwsWorkspacesWorkspace_Tags(
+func TestAccAwsWorkspacesWorkspace_WorkspaceProperties(
+func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
+func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
+func testAccCheckAwsWorkspacesWorkspaceDestroy(
+func testAccCheckAwsWorkspacesWorkspaceExists(
+func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(
 func resourceAwsXraySamplingRule(
 func resourceAwsXraySamplingRuleCreate(
 func resourceAwsXraySamplingRuleRead(

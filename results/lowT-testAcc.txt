@@ -362,6 +362,7 @@ func testAccAwsProviderAccountID(
 func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARN(
 func testAccCheckResourceAttrRegionalARNNoAccount(
+func testAccCheckResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccMatchResourceAttrRegionalHostname(
@@ -978,6 +979,7 @@ func testAccAppsyncResolver_RequestTemplate(
 func testAccAppsyncResolver_ResponseTemplate(
 func testAccAppsyncResolver_multipleResolvers(
 func testAccAppsyncResolver_pipelineConfig(
+func testAccAppsyncResolver_cachingConfig(
 func testAccCheckAWSAthenaDatabaseDestroy(
 func testAccCheckAWSAthenaDatabaseExists(
 func testAccAWSAthenaDatabaseCreateTables(
@@ -3514,7 +3516,8 @@ func testAccAWSKmsKey_enabled(
 func testAccAWSKmsKey_tags(
 func testAccCheckAwsLambdaAliasDestroy(
 func testAccCheckAwsLambdaAliasExists(
-func testAccCheckAwsLambdaAttributes(
+func testAccCheckAwsLambdaAliasAttributes(
+func testAccCheckAwsLambdaAliasInvokeArn(
 func testAccCheckAwsLambdaAliasRoutingConfigExists(
 func testAccCheckAwsLambdaAliasRoutingConfigDoesNotExist(
 func testAccAwsLambdaAliasBaseConfig(
@@ -3558,10 +3561,10 @@ func testAccAWSLambdaFunctionEventInvokeConfigQualifierLatest(
 func testAccCheckLambdaFunctionDestroy(
 func testAccCheckAwsLambdaFunctionDisappears(
 func testAccCheckAwsLambdaFunctionExists(
+func testAccCheckAwsLambdaFunctionInvokeArn(
 func testAccAwsInvokeLambdaFunction(
 func testAccCheckAwsLambdaFunctionName(
 func testAccCheckAWSLambdaFunctionVersion(
-func testAccCheckAwsLambdaFunctionArnHasSuffix(
 func testAccCheckAwsLambdaSourceCodeHash(
 func testAccCheckAttributeIsDateAfter(
 func testAccCreateZipFromFiles(
@@ -3962,6 +3965,7 @@ func testAccNatGatewayConfigTags1(
 func testAccNatGatewayConfigTags2(
 func testAccCheckAWSNeptuneClusterInstanceExists(
 func testAccCheckAWSNeptuneClusterInstanceAttributes(
+func testAccCheckNeptuneClusterAddress(
 func testAccAWSNeptuneClusterInstanceConfig(
 func testAccAWSNeptuneClusterInstanceConfigModified(
 func testAccAWSNeptuneClusterInstanceConfig_az(
@@ -5634,6 +5638,18 @@ func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
+func testAccCheckAwsWorkspacesWorkspaceDestroy(
+func testAccCheckAwsWorkspacesWorkspaceExists(
+func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(
+func testAccWorkspacesWorkspaceConfig(
+func testAccWorkspacesWorkspaceConfig_TagsA(
+func testAccWorkspacesWorkspaceConfig_TagsB(
+func testAccWorkspacesWorkspaceConfig_TagsC(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesA(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesB(
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesC(
+func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(
+func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(
 func testAccCheckXraySamplingRuleExists(
 func testAccCheckAWSXraySamplingRuleDestroy(
 func testAccPreCheckAWSXray(
