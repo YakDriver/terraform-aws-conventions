@@ -314,6 +314,10 @@ func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(
 func testAccAWSDynamoDbConfigTimeToLive(
 func testAccAWSDynamoDbConfigOneAttribute(
 func testAccAWSDynamoDbConfigTwoAttributes(
+func flattenIotDynamoDbActions(
+func flattenIotDynamoDbv2Actions(
+func TestAccAWSIoTTopicRule_dynamoDbv2(
+func testAccAWSIoTTopicRule_dynamoDbv2(
 func resourceAwsOpsworksRdsDbInstance(
 func resourceAwsOpsworksRdsDbInstanceUpdate(
 func resourceAwsOpsworksRdsDbInstanceDeregister(
@@ -328,7 +332,6 @@ func testAccAwsOpsworksRdsDbInstanceForceNew(
 func TestAccAWSRDSCluster_DbSubnetGroupName(
 func testAccAWSClusterConfig_DbSubnetGroupName(
 func rdsDescribeGlobalClusterFromDbClusterARN(
-func flattenIoTRuleDynamoDbActions(
 func diffDynamoDbGSI(
 func flattenDynamoDbTtl(
 func flattenDynamoDbPitr(

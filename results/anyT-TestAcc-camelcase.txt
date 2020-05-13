@@ -763,6 +763,8 @@ func TestAccAWSInstance_metadataOptions(
 func testAccInstanceConfig_getPasswordData(
 func TestAccAWSIoTPolicy_invalidJson(
 func testAccAWSIotThingTypeConfig_fullUpdated(
+func TestAccAWSIoTTopicRule_dynamoDbv2(
+func testAccAWSIoTTopicRule_dynamoDbv2(
 func TestAccAWSKeyPair_generatedName(
 func TestAccAWSKeyPair_namePrefix(
 func TestAccAWSKinesisAnalyticsApplication_addCloudwatchLoggingOptions(

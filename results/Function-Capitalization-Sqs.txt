@@ -8,6 +8,9 @@ func testAccDataSourceAwsSqsQueueConfigTags(
 func expandAwsCloudWatchEventTargetSqsParameters(
 func flattenAwsCloudWatchEventTargetSqsParameters(
 func testAccAWSCloudWatchEventTargetConfigSqs(
+func expandIotSqsAction(
+func flattenIotSqsActions(
+func flattenIotSqsAction(
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSqsQueue(
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnSuccessDestinationSqsQueue(
 func resourceAwsSqsQueue(
@@ -23,5 +26,5 @@ func resourceAwsSqsQueuePolicyDelete(
 func resourceAwsSqsQueuePolicyMigrateState(
 func migrateSqsQueuePolicyStateV0toV1(
 func TestAWSSqsQueuePolicyMigrateState(
+func testSweepSqsQueues(
 func flattenBeanstalkSqs(
-func flattenIoTRuleSqsActions(

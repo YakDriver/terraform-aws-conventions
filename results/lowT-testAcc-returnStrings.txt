@@ -2191,6 +2191,7 @@ func testAccAWSIotThingTypeConfig_fullUpdated(rName int) string {
 func testAccAWSIoTTopicRule_basic(rName string) string {
 func testAccAWSIoTTopicRule_cloudwatchalarm(rName string) string {
 func testAccAWSIoTTopicRule_cloudwatchmetric(rName string) string {
+func testAccAWSIoTTopicRule_dynamoDbv2(rName string) string {
 func testAccAWSIoTTopicRule_dynamodb(rName string) string {
 func testAccAWSIoTTopicRule_dynamodb_rangekeys(rName string) string {
 func testAccAWSIoTTopicRule_elasticsearch(rName string) string {
@@ -2199,9 +2200,12 @@ func testAccAWSIoTTopicRule_firehose_separator(rName, separator string) string {
 func testAccAWSIoTTopicRule_kinesis(rName string) string {
 func testAccAWSIoTTopicRule_lambda(rName string) string {
 func testAccAWSIoTTopicRule_republish(rName string) string {
+func testAccAWSIoTTopicRule_republish_with_qos(rName string) string {
 func testAccAWSIoTTopicRule_s3(rName string) string {
 func testAccAWSIoTTopicRule_sns(rName string) string {
 func testAccAWSIoTTopicRule_sqs(rName string) string {
+func testAccAWSIoTTopicRule_iot_analytics(rName string) string {
+func testAccAWSIoTTopicRule_iot_events(rName string) string {
 func testAccAWSKeyPairConfig(rName string) string {
 func testAccAWSKeyPairConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSKeyPairConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

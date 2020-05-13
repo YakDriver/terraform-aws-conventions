@@ -633,10 +633,10 @@ func testAccAWSIotThingConfig_full(
 func testAccAWSIotThingTypeConfig_basic(
 func testAccAWSIotThingTypeConfig_full(
 func testAccAWSIotThingTypeConfig_fullUpdated(
-func testAccCheckAWSIoTTopicRuleExists_basic(
 func testAccAWSIoTTopicRule_basic(
 func testAccAWSIoTTopicRule_cloudwatchalarm(
 func testAccAWSIoTTopicRule_cloudwatchmetric(
+func testAccAWSIoTTopicRule_dynamoDbv2(
 func testAccAWSIoTTopicRule_dynamodb(
 func testAccAWSIoTTopicRule_dynamodb_rangekeys(
 func testAccAWSIoTTopicRule_elasticsearch(
@@ -645,9 +645,12 @@ func testAccAWSIoTTopicRule_firehose_separator(
 func testAccAWSIoTTopicRule_kinesis(
 func testAccAWSIoTTopicRule_lambda(
 func testAccAWSIoTTopicRule_republish(
+func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_iot_analytics(
+func testAccAWSIoTTopicRule_iot_events(
 func testAccKinesisAnalyticsApplication_basic(
 func testAccKinesisAnalyticsApplication_update(
 func testAccKinesisAnalyticsApplication_cloudwatchLoggingOptions(

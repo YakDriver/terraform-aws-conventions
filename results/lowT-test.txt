@@ -3521,10 +3521,11 @@ func testAccAWSIotThingTypeConfig_full(
 func testAccAWSIotThingTypeConfig_fullUpdated(
 func testSweepIotTopicRules(
 func testAccCheckAWSIoTTopicRuleDestroy(
-func testAccCheckAWSIoTTopicRuleExists_basic(
+func testAccCheckAWSIoTTopicRuleExists(
 func testAccAWSIoTTopicRule_basic(
 func testAccAWSIoTTopicRule_cloudwatchalarm(
 func testAccAWSIoTTopicRule_cloudwatchmetric(
+func testAccAWSIoTTopicRule_dynamoDbv2(
 func testAccAWSIoTTopicRule_dynamodb(
 func testAccAWSIoTTopicRule_dynamodb_rangekeys(
 func testAccAWSIoTTopicRule_elasticsearch(
@@ -3533,9 +3534,12 @@ func testAccAWSIoTTopicRule_firehose_separator(
 func testAccAWSIoTTopicRule_kinesis(
 func testAccAWSIoTTopicRule_lambda(
 func testAccAWSIoTTopicRule_republish(
+func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_iot_analytics(
+func testAccAWSIoTTopicRule_iot_events(
 func testSweepKeyPairs(
 func testAccCheckAWSKeyPairDestroy(
 func testAccCheckAWSKeyPairDisappears(
@@ -5181,6 +5185,7 @@ func testAccAWSSNSTopicSubscriptionConfig_deliveryPolicy(
 func testAccAWSSNSTopicSubscriptionConfig_rawMessageDelivery(
 func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingEndpoint(
 func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingSecuredEndpoint(
+func testSweepSnsTopics(
 func testAccCheckAWSNSTopicHasPolicy(
 func testAccCheckAWSNSTopicHasDeliveryPolicy(
 func testAccCheckAWSSNSTopicDestroy(
@@ -5263,6 +5268,7 @@ func testAccAWSSpotInstanceRequestConfig_SubnetAndSGAndPublicIpAddress(
 func testAccAWSSpotInstanceRequestConfig_getPasswordData(
 func testAccAWSSpotInstanceRequestInterruptConfig(
 func testAccAWSSQSPolicyConfig_basic(
+func testSweepSqsQueues(
 func testAccCheckAWSSQSQueueDestroy(
 func testAccCheckAWSSQSQueuePolicyAttribute(
 func testAccCheckAWSSQSQueueExists(

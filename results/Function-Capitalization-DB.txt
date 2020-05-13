@@ -396,6 +396,10 @@ func testAccAWSGlueConnectionConfig_MongoDB(
 func expandGlueDynamoDBTargets(
 func expandGlueDynamoDBTarget(
 func flattenGlueDynamoDBTargets(
+func expandIotDynamoDBAction(
+func expandIotDynamoDBv2Action(
+func flattenIotDynamoDBAction(
+func flattenIotDynamoDBv2Action(
 func resourceAwsQLDBLedger(
 func resourceAwsQLDBLedgerCreate(
 func resourceAwsQLDBLedgerRead(

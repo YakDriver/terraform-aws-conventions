@@ -153,6 +153,10 @@ func findPublicNetworkInterfacesForVpcID(
 func IGStateRefreshFunc(
 func IGAttachStateRefreshFunc(
 func getIoTThingPricipalAttachment(
+func expandIotDynamoDBAction(
+func expandIotDynamoDBv2Action(
+func flattenIotDynamoDBAction(
+func flattenIotDynamoDBv2Action(
 func flattenFirehoseOpenXJsonSerDe(
 func expandFirehoseOpenXJsonSerDe(
 func firehoseDeliveryStreamSSEStateRefreshFunc(
