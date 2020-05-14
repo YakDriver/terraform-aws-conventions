@@ -3352,8 +3352,6 @@ func resourceAwsOrganizationsAccountRead(
 func resourceAwsOrganizationsAccountUpdate(
 func resourceAwsOrganizationsAccountDelete(
 func resourceAwsOrganizationsAccountStateRefreshFunc(
-func validateAwsOrganizationsAccountEmail(
-func validateAwsOrganizationsAccountRoleName(
 func resourceAwsOrganizationsAccountGetParentId(
 func resourceAwsOrganizationsOrganizationalUnit(
 func resourceAwsOrganizationsOrganizationalUnitCreate(

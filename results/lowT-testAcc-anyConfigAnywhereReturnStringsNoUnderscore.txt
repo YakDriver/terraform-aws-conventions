@@ -1695,6 +1695,11 @@ func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, 
 func testAccSubnetConfigOutpost(outpostArn string) string {
 func testAccAWSSwfDomainConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSwfDomainConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccVolumeAttachmentInstanceOnlyConfigBase(rName string) string {
+func testAccVolumeAttachmentConfigBase(rName string) string {
+func testAccVolumeAttachmentConfig(rName string) string {
+func testAccVolumeAttachmentConfigSkipDestroy(rName string) string {
+func testAccVolumeAttachmentUpdateConfig(rName string, detach bool) string {
 func testAccDHCPOptionsConfig(rName string) string {
 func testAccDHCPOptionsConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDHCPOptionsConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

@@ -3228,7 +3228,7 @@ func TestAccAWSVolumeAttachment_basic(
 func TestAccAWSVolumeAttachment_skipDestroy(
 func TestAccAWSVolumeAttachment_attachStopped(
 func TestAccAWSVolumeAttachment_update(
-func testAccVolumeAttachmentConfig_update(
+func TestAccAWSVolumeAttachment_disappears(
 func TestAccAWSDHCPOptionsAssociation_basic(
 func TestAccAWSDHCPOptions_basic(
 func TestAccAWSDHCPOptions_deleteOptions(

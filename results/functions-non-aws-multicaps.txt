@@ -2551,7 +2551,6 @@ func TestAccAWSSNSTopic_tags(
 func testAccCheckAWSNSTopicHasPolicy(
 func testAccCheckAWSNSTopicHasDeliveryPolicy(
 func testAccCheckAWSSNSTopicDestroy(
-func testAccCheckAWSSNSTopicAttributes(
 func testAccCheckAWSSNSTopicExists(
 func testAccAWSSNSTopicConfig_withName(
 func testAccAWSSNSTopicConfig_withNamePrefix(

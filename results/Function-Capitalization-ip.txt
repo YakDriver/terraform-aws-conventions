@@ -781,6 +781,7 @@ func TestAccAWSSubnet_ipv6(
 func TestAccAWSSwfDomain_Description(
 func testAccAWSSwfDomainConfig_Description(
 func TestAccAWSVolumeAttachment_skipDestroy(
+func testAccVolumeAttachmentConfigSkipDestroy(
 func resourceAwsVpcEndpointServiceAllowedPrincipal(
 func resourceAwsVpcEndpointServiceAllowedPrincipalCreate(
 func resourceAwsVpcEndpointServiceAllowedPrincipalRead(

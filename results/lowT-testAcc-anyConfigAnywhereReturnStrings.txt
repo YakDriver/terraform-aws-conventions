@@ -850,8 +850,8 @@ func testAccAWSCodeBuildProjectConfig_LocalCache(rName, modeType string) string 
 func testAccAWSCodeBuildProjectConfig_Description(rName, description string) string {
 func testAccAWSCodeBuildProjectConfig_SourceVersion(rName, sourceVersion string) string {
 func testAccAWSCodeBuildProjectConfig_EncryptionKey(rName string) string {
-func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_One(rName string) string {
-func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_Two(rName string) string {
+func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_One(rName, key1, value1 string) string {
+func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_Two(rName, key1, value1, key2, value2 string) string {
 func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_Zero(rName string) string {
 func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_Type(rName, environmentVariableType string) string {
 func testAccAWSCodeBuildProjectConfig_Environment_Certificate(rName string, bName string, oName string) string {
@@ -861,8 +861,12 @@ func testAccAWSCodeBuildProjectConfig_LogsConfig_CloudWatchLogs(rName, status, g
 func testAccAWSCodeBuildProjectConfig_LogsConfig_S3Logs(rName, bName, status, location string, encryptionDisabled bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_Auth(rName, authResource, authType string) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitCloneDepth(rName string, gitCloneDepth int) string {
-func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig(rName string, fetchSubmodules bool) string {
-func testAccAWSCodeBuildProjectConfig_SecondarySources_GitSubmodulesConfig(rName string, fetchSubmodules bool) string {
+func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_CodeCommit(rName string, fetchSubmodules bool) string {
+func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_GitHub(rName string, fetchSubmodules bool) string {
+func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_GitHubEnterprise(rName string, fetchSubmodules bool) string {
+func testAccAWSCodeBuildProjectConfig_SecondarySources_GitSubmodulesConfig_CodeCommit(rName string, fetchSubmodules bool) string {
+func testAccAWSCodeBuildProjectConfig_SecondarySources_GitSubmodulesConfig_GitHub(rName string, fetchSubmodules bool) string {
+func testAccAWSCodeBuildProjectConfig_SecondarySources_GitSubmodulesConfig_GitHubEnterprise(rName string, fetchSubmodules bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_InsecureSSL(rName string, insecureSSL bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_ReportBuildStatus_Bitbucket(rName string, reportBuildStatus bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_ReportBuildStatus_GitHub(rName string, reportBuildStatus bool) string {
@@ -3095,7 +3099,11 @@ func testAccAWSTransferUserConfig_basic(rName string) string {
 func testAccAWSTransferUserConfig_options(rName string) string {
 func testAccAWSTransferUserConfig_modify(rName string) string {
 func testAccAWSTransferUserConfig_forceNew(rName string) string {
-func testAccVolumeAttachmentConfig_update(detach bool) string {
+func testAccVolumeAttachmentInstanceOnlyConfigBase(rName string) string {
+func testAccVolumeAttachmentConfigBase(rName string) string {
+func testAccVolumeAttachmentConfig(rName string) string {
+func testAccVolumeAttachmentConfigSkipDestroy(rName string) string {
+func testAccVolumeAttachmentUpdateConfig(rName string, detach bool) string {
 func testAccDHCPOptionsConfig(rName string) string {
 func testAccDHCPOptionsConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDHCPOptionsConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

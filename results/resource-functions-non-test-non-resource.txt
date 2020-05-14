@@ -1384,8 +1384,6 @@ func stopOpsworksInstance(
 func readOpsworksBlockDevices(
 func OpsworksInstanceStateRefreshFunc(
 func opsworksConnForRegion(
-func validateAwsOrganizationsAccountEmail(
-func validateAwsOrganizationsAccountRoleName(
 func flattenOrganizationsOrganizationalUnitAccounts(
 func flattenOrganizationsAccounts(
 func flattenOrganizationsRoots(
