@@ -338,6 +338,7 @@ func testAccAWSAutoScalingGroupConfigUpdate(name string) string {
 func testAccAWSAutoScalingGroupWithHookConfig(name string) string {
 func testAccAWSAutoScalingGroupConfigWithSuspendedProcesses(name string) string {
 func testAccAWSAutoScalingGroupConfigWithSuspendedProcessesUpdated(name string) string {
+func testAccAWSAutoScalingGroupPartitionConfig(rName string) string {
 func testAccAWSAutoscalingLifecycleHookConfig(name string) string {
 func testAccAWSAutoscalingScheduleConfig(r, start, end string) string {
 func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter int, deleteAfter int) string {

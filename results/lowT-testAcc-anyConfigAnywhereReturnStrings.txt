@@ -638,6 +638,7 @@ func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_Launch
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_LaunchTemplateSpecification_Version(rName, version string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_Override_InstanceType(rName, instanceType string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_Override_WeightedCapacity(rName string) string {
+func testAccAWSAutoScalingGroupPartitionConfig(rName string) string {
 func testAccAWSAutoscalingLifecycleHookConfig(name string) string {
 func testAccAWSAutoscalingLifecycleHookConfig_omitDefaultResult(name string, rInt int) string {
 func testAccASGNotificationConfig_basic(rName string) string {
