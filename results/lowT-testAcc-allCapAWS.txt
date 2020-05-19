@@ -2513,6 +2513,7 @@ func testAccAWSWafSqlInjectionMatchSetConfig(
 func testAccAWSWafSqlInjectionMatchSetConfigChangeName(
 func testAccAWSWafSqlInjectionMatchSetConfig_changeTuples(
 func testAccAWSWafSqlInjectionMatchSetConfig_noTuples(
+func testAccAWSWafv2IPSetImportStateIdFunc(
 func testAccAWSWafWebAclConfig_Required(
 func testAccAWSWafWebAclConfig_DefaultAction(
 func testAccAWSWafWebAclConfig_Rules_Single_Rule(

@@ -301,6 +301,7 @@ func testAccCheckAWSWafGeoMatchSetIdDiffers(
 func testAccCheckAWSWafRateBasedRuleIdDiffers(
 func resourceAwsWafRegionalWebAclAssociationParseId(
 func computeWafActivatedRuleWithRuleId(
+func testAccAWSWafv2IPSetImportStateIdFunc(
 func testAccAwsWorkspacesDirectory_subnetIds(
 func testAccWorkspacesDirectoryConfig_subnetIds(
 func flattenElastiCacheSecurityGroupIds(

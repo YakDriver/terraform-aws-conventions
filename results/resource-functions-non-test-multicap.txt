@@ -351,6 +351,11 @@ func expandWAFRegionalRedactedFields(
 func flattenWAFRegionalLoggingConfiguration(
 func flattenWAFRegionalRedactedFields(
 func updateXssMatchSetResourceWR(
+func resourceAwsWafv2IPSet(
+func resourceAwsWafv2IPSetCreate(
+func resourceAwsWafv2IPSetRead(
+func resourceAwsWafv2IPSetUpdate(
+func resourceAwsWafv2IPSetDelete(
 func expandWAFLoggingConfiguration(
 func expandWAFRedactedFields(
 func flattenWAFLoggingConfiguration(

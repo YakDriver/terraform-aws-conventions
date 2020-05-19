@@ -2000,6 +2000,12 @@ func TestAccAWSWafRegionalWebAclAssociation_ResourceArn_ApiGatewayStage(
 func TestAccAWSWafRegionalWebAcl_LoggingConfiguration(
 func TestAccAWSWafRuleGroup_Tags(
 func TestAccAWSWafRule_Tags(
+func TestAccAwsWafv2IPSet_Basic(
+func TestAccAwsWafv2IPSet_Disappears(
+func TestAccAwsWafv2IPSet_IPv6(
+func TestAccAwsWafv2IPSet_Minimal(
+func TestAccAwsWafv2IPSet_ChangeNameForceNew(
+func TestAccAwsWafv2IPSet_Tags(
 func TestAccAWSWafWebAcl_DefaultAction(
 func TestAccAWSWafWebAcl_Rules(
 func TestAccAWSWafWebAcl_LoggingConfiguration(

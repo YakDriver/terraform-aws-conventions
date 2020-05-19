@@ -6951,6 +6951,9 @@ func testAccAWSWafSqlInjectionMatchSetConfig(
 func testAccAWSWafSqlInjectionMatchSetConfigChangeName(
 func testAccAWSWafSqlInjectionMatchSetConfig_changeTuples(
 func testAccAWSWafSqlInjectionMatchSetConfig_noTuples(
+func testAccCheckAWSWafv2IPSetDestroy(
+func testAccCheckAWSWafv2IPSetExists(
+func testAccAWSWafv2IPSetImportStateIdFunc(
 func TestAccAWSWafWebAcl_basic(
 func TestAccAWSWafWebAcl_changeNameForceNew(
 func TestAccAWSWafWebAcl_DefaultAction(

@@ -5597,6 +5597,15 @@ func testAccAWSWafSqlInjectionMatchSetConfig(
 func testAccAWSWafSqlInjectionMatchSetConfigChangeName(
 func testAccAWSWafSqlInjectionMatchSetConfig_changeTuples(
 func testAccAWSWafSqlInjectionMatchSetConfig_noTuples(
+func testAccCheckAWSWafv2IPSetDestroy(
+func testAccCheckAWSWafv2IPSetExists(
+func testAccAwsWafv2IPSetConfig(
+func testAccAwsWafv2IPSetConfigUpdate(
+func testAccAwsWafv2IPSetConfigIPv6(
+func testAccAwsWafv2IPSetConfigMinimal(
+func testAccAwsWafv2IPSetConfigOneTag(
+func testAccAwsWafv2IPSetConfigTwoTags(
+func testAccAWSWafv2IPSetImportStateIdFunc(
 func testAccCheckAWSWafWebAclDisappears(
 func testAccCheckAWSWafWebAclDestroy(
 func testAccCheckAWSWafWebAclExists(

@@ -168,3 +168,8 @@ func resourceAwsWafRegionalIPSetCreate(
 func resourceAwsWafRegionalIPSetRead(
 func resourceAwsWafRegionalIPSetUpdate(
 func resourceAwsWafRegionalIPSetDelete(
+func resourceAwsWafv2IPSet(
+func resourceAwsWafv2IPSetCreate(
+func resourceAwsWafv2IPSetRead(
+func resourceAwsWafv2IPSetUpdate(
+func resourceAwsWafv2IPSetDelete(

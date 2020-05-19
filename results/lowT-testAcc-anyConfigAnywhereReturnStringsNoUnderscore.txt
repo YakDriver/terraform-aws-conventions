@@ -1781,6 +1781,12 @@ func testAccAWSWafSizeConstraintSetConfig(name string) string {
 func testAccAWSWafSizeConstraintSetConfigChangeName(name string) string {
 func testAccAWSWafSqlInjectionMatchSetConfig(name string) string {
 func testAccAWSWafSqlInjectionMatchSetConfigChangeName(name string) string {
+func testAccAwsWafv2IPSetConfig(name string) string {
+func testAccAwsWafv2IPSetConfigUpdate(name string) string {
+func testAccAwsWafv2IPSetConfigIPv6(name string) string {
+func testAccAwsWafv2IPSetConfigMinimal(name string) string {
+func testAccAwsWafv2IPSetConfigOneTag(name, tagKey, tagValue string) string {
+func testAccAwsWafv2IPSetConfigTwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafWebAclConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSWafWebAclConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafXssMatchSetConfig(name string) string {

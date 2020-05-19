@@ -152,6 +152,12 @@ func TestAccAwsSesDomainIdentityVerification_timeout(
 func TestAccAwsSesDomainIdentityVerification_nonexistent(
 func TestAccAwsSESIdentityNotificationTopic_basic(
 func TestAccAwsVpcIpv4CidrBlockAssociation_basic(
+func TestAccAwsWafv2IPSet_Basic(
+func TestAccAwsWafv2IPSet_Disappears(
+func TestAccAwsWafv2IPSet_IPv6(
+func TestAccAwsWafv2IPSet_Minimal(
+func TestAccAwsWafv2IPSet_ChangeNameForceNew(
+func TestAccAwsWafv2IPSet_Tags(
 func TestAccAwsWorkspacesDirectory(
 func TestAccAwsWorkspacesIpGroup_basic(
 func TestAccAwsWorkspacesWorkspace_basic(

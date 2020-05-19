@@ -2883,6 +2883,11 @@ func resourceAwsWafSqlInjectionMatchSetCreate(
 func resourceAwsWafSqlInjectionMatchSetRead(
 func resourceAwsWafSqlInjectionMatchSetUpdate(
 func resourceAwsWafSqlInjectionMatchSetDelete(
+func resourceAwsWafv2IPSet(
+func resourceAwsWafv2IPSetCreate(
+func resourceAwsWafv2IPSetRead(
+func resourceAwsWafv2IPSetUpdate(
+func resourceAwsWafv2IPSetDelete(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(
 func resourceAwsWafWebAclRead(
