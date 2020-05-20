@@ -90,6 +90,7 @@ func testAccCheckAwsEcrImageDataSourceConfig(reg, repo, tag string) string {
 func testAccCheckAwsEcrRepositoryDataSourceConfig(rName string) string {
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(clusterName, tdName, svcName string) string {
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(rName string) string {
+func testAccDataSourceAWSEFSAccessPointConfig(rName string) string {
 func testAccAwsEfsMountTargetConfigByMountTargetId(ct string) string {
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(customerOwnedIpv4Pool string) string {
 func testAccDataSourceAwsEipConfigFilter(rName string) string {
@@ -1601,11 +1602,11 @@ func testAccAWSEcsClusterCapacityProviderConfig(rName string) string {
 func testAccAWSEcsClusterSingleCapacityProvider(rName, providerName string) string {
 func testAccAWSEcsClusterCapacityProviders(rName string) string {
 func testAccAWSEcsClusterCapacityProvidersReOrdered(rName string) string {
-func testAccAWSEcsClusterCapacityProvidersFargate(rName, providerName string) string {
-func testAccAWSEcsClusterCapacityProvidersFargateSpot(rName, providerName string) string {
-func testAccAWSEcsClusterCapacityProvidersFargateBoth(rName, providerName string) string {
-func testAccAWSEcsClusterCapacityProvidersFargateNoStrategy(rName, providerName string) string {
-func testAccAWSEcsClusterCapacityProvidersFargateSpotNoStrategy(rName, providerName string) string {
+func testAccAWSEcsClusterCapacityProvidersFargate(rName string) string {
+func testAccAWSEcsClusterCapacityProvidersFargateSpot(rName string) string {
+func testAccAWSEcsClusterCapacityProvidersFargateBoth(rName string) string {
+func testAccAWSEcsClusterCapacityProvidersFargateNoStrategy(rName string) string {
+func testAccAWSEcsClusterCapacityProvidersFargateSpotNoStrategy(rName string) string {
 func testAccAWSEcsClusterConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSEcsClusterConfigContainerInsights(rName string) string {
 func testAccAWSEcsClusterConfigContainerInsightsDisable(rName string) string {
@@ -1614,6 +1615,7 @@ func testAccAWSEcsServiceModified(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithInterchangeablePlacementStrategy(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithCapacityProviderStrategy(providerName, clusterName, tdName, svcName string, weight, base int) string {
 func testAccAWSEcsServiceWithMultipleCapacityProviderStrategies(clusterName, tdName, svcName, sgName string) string {
+func testAccAWSEcsServiceWithForceNewDeployment(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithPlacementStrategy(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithRandomPlacementStrategy(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithMultiPlacementStrategy(clusterName, tdName, svcName string) string {
@@ -1666,6 +1668,13 @@ func testAccAWSEcsTaskDefinitionModified(tdName string) string {
 func testAccAWSEcsTaskDefinitionConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSEcsTaskDefinitionConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSEcsTaskDefinitionConfigInferenceAccelerator(tdName string) string {
+func testAccAWSEFSAccessPointConfig(rName string) string {
+func testAccAWSEFSAccessPointConfigRootDirectory(rName, dir string) string {
+func testAccAWSEFSAccessPointConfigRootDirectoryCreationInfo(rName, dir string) string {
+func testAccAWSEFSAccessPointConfigPosixUser(rName string) string {
+func testAccAWSEFSAccessPointConfigPosixUserSecondaryGids(rName string) string {
+func testAccAWSEFSAccessPointConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSEFSAccessPointConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEFSFileSystemConfig(rName string) string {
 func testAccAWSEFSFileSystemConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEFSFileSystemConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1701,14 +1710,16 @@ func testAccAWSEksFargateProfileConfigFargateProfileName(rName string) string {
 func testAccAWSEksFargateProfileConfigSelectorLabels1(rName, labelKey1, labelValue1 string) string {
 func testAccAWSEksFargateProfileConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksFargateProfileConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEksNodeGroupConfigBaseIamAndVpc(rName string) string {
 func testAccAWSEksNodeGroupConfigBase(rName string) string {
+func testAccAWSEksNodeGroupConfigBaseVersion(rName string, version string) string {
 func testAccAWSEksNodeGroupConfigNodeGroupName(rName string) string {
 func testAccAWSEksNodeGroupConfigAmiType(rName, amiType string) string {
 func testAccAWSEksNodeGroupConfigDiskSize(rName string, diskSize int) string {
 func testAccAWSEksNodeGroupConfigInstanceTypes1(rName, instanceType1 string) string {
 func testAccAWSEksNodeGroupConfigLabels1(rName, labelKey1, labelValue1 string) string {
 func testAccAWSEksNodeGroupConfigLabels2(rName, labelKey1, labelValue1, labelKey2, labelValue2 string) string {
-func testAccAWSEksNodeGroupConfigReleaseVersion(rName, releaseVersion string) string {
+func testAccAWSEksNodeGroupConfigReleaseVersion(rName string) string {
 func testAccAWSEksNodeGroupConfigRemoteAccessEc2SshKey(rName string) string {
 func testAccAWSEksNodeGroupConfigRemoteAccessSourceSecurityGroupIds1(rName string) string {
 func testAccAWSEksNodeGroupConfigScalingConfigSizes(rName string, desiredSize, maxSize, minSize int) string {
@@ -2211,6 +2222,8 @@ func testAccAWSIoTTopicRule_sns(rName string) string {
 func testAccAWSIoTTopicRule_sqs(rName string) string {
 func testAccAWSIoTTopicRule_iot_analytics(rName string) string {
 func testAccAWSIoTTopicRule_iot_events(rName string) string {
+func testAccAWSIoTTopicRuleTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSIoTTopicRuleTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSKeyPairConfig(rName string) string {
 func testAccAWSKeyPairConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSKeyPairConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -2532,7 +2545,7 @@ func testAccAWSLightsailInstanceConfig_basic(lightsailName string) string {
 func testAccAWSLightsailInstanceConfig_tags1(lightsailName string) string {
 func testAccAWSLightsailInstanceConfig_tags2(lightsailName string) string {
 func testAccAWSLightsailKeyPairConfig_basic(lightsailName string) string {
-func testAccAWSLightsailKeyPairConfig_imported(lightsailName, key string) string {
+func testAccAWSLightsailKeyPairConfig_imported(lightsailName, publicKey string) string {
 func testAccAWSLightsailKeyPairConfig_encrypted(lightsailName, key string) string {
 func testAccAWSLightsailKeyPairConfig_prefixed() string {
 func testAccAWSLightsailStaticIpAttachmentConfig_basic(staticIpName, instanceName, keypairName string) string {

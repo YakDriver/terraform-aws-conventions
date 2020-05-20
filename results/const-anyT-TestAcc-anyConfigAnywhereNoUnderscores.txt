@@ -55,6 +55,7 @@ const testAccDataSourceAwsSnsTopicConfig =
 const testAccDataSourceAwsVpcEndpointServiceGatewayConfig =
 const testAccDataSourceAwsVpcEndpointServiceInterfaceConfig =
 const testAccDataSourceAwsVpcPeeringConnectionConfig =
+const testAccCheckAWSProviderConfigAssumeRoleEmpty =
 const testAccAWSAutoScalingGroupConfigWithLoadBalancer =
 const testAccAWSAutoScalingGroupConfigWithTargetGroup =
 const testAccAWSAutoScalingGroupConfigWithAZ =

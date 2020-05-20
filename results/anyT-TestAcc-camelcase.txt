@@ -607,6 +607,7 @@ func TestAccAWSEcsService_withLbChanges(
 func TestAccAWSEcsService_withEcsClusterName(
 func TestAccAWSEcsService_withAlb(
 func TestAccAWSEcsService_withMultipleTargetGroups(
+func TestAccAWSEcsService_withForceNewDeployment(
 func TestAccAWSEcsService_withPlacementStrategy(
 func TestAccAWSEcsService_withPlacementConstraints(
 func TestAccAWSEcsService_withLaunchTypeFargate(

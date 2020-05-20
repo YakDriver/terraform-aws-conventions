@@ -116,6 +116,7 @@ func testAccCheckAwsEcrImageDataSourceConfig(
 func testAccCheckAwsEcrRepositoryDataSourceConfig(
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(
+func testAccDataSourceAWSEFSAccessPointConfig(
 func testAccDataSourceAwsEfsFileSystemCheck(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(
@@ -2485,11 +2486,13 @@ func testAccAWSEcsClusterConfigContainerInsightsDisable(
 func testAccCheckAWSEcsServiceDestroy(
 func testAccCheckAWSEcsServiceExists(
 func testAccCheckAWSEcsServiceDisappears(
+func testAccCheckAWSEcsServiceNotRecreated(
 func testAccAWSEcsService(
 func testAccAWSEcsServiceModified(
 func testAccAWSEcsServiceWithInterchangeablePlacementStrategy(
 func testAccAWSEcsServiceWithCapacityProviderStrategy(
 func testAccAWSEcsServiceWithMultipleCapacityProviderStrategies(
+func testAccAWSEcsServiceWithForceNewDeployment(
 func testAccAWSEcsServiceWithPlacementStrategy(
 func testAccAWSEcsServiceWithRandomPlacementStrategy(
 func testAccAWSEcsServiceWithMultiPlacementStrategy(
@@ -2551,6 +2554,15 @@ func testAccAWSEcsTaskDefinitionConfigTags1(
 func testAccAWSEcsTaskDefinitionConfigTags2(
 func testAccAWSEcsTaskDefinitionConfigInferenceAccelerator(
 func testAccAWSEcsTaskDefinitionImportStateIdFunc(
+func testAccCheckEfsAccessPointDestroy(
+func testAccCheckEfsAccessPointExists(
+func testAccAWSEFSAccessPointConfig(
+func testAccAWSEFSAccessPointConfigRootDirectory(
+func testAccAWSEFSAccessPointConfigRootDirectoryCreationInfo(
+func testAccAWSEFSAccessPointConfigPosixUser(
+func testAccAWSEFSAccessPointConfigPosixUserSecondaryGids(
+func testAccAWSEFSAccessPointConfigTags1(
+func testAccAWSEFSAccessPointConfigTags2(
 func testAccCheckEfsFileSystemDestroy(
 func testAccCheckEfsFileSystem(
 func testAccCheckEfsFileSystemDisappears(
@@ -2619,7 +2631,9 @@ func testAccAWSEksFargateProfileConfigTags2(
 func testAccCheckAWSEksNodeGroupExists(
 func testAccCheckAWSEksNodeGroupDestroy(
 func testAccCheckAWSEksNodeGroupDisappears(
+func testAccAWSEksNodeGroupConfigBaseIamAndVpc(
 func testAccAWSEksNodeGroupConfigBase(
+func testAccAWSEksNodeGroupConfigBaseVersion(
 func testAccAWSEksNodeGroupConfigNodeGroupName(
 func testAccAWSEksNodeGroupConfigAmiType(
 func testAccAWSEksNodeGroupConfigDiskSize(
@@ -3409,6 +3423,8 @@ func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
+func testAccAWSIoTTopicRuleTags1(
+func testAccAWSIoTTopicRuleTags2(
 func testAccCheckAWSKeyPairDestroy(
 func testAccCheckAWSKeyPairDisappears(
 func testAccCheckAWSKeyPairFingerprint(

@@ -1133,6 +1133,11 @@ func resourceAwsEcsTaskDefinitionUpdate(
 func resourceAwsEcsTaskDefinitionDelete(
 func resourceAwsEcsTaskDefinitionVolumeHash(
 func resourceAwsEcsTaskDefinitionMigrateState(
+func resourceAwsEfsAccessPoint(
+func resourceAwsEfsAccessPointCreate(
+func resourceAwsEfsAccessPointUpdate(
+func resourceAwsEfsAccessPointRead(
+func resourceAwsEfsAccessPointDelete(
 func resourceAwsEfsFileSystem(
 func resourceAwsEfsFileSystemCreate(
 func resourceAwsEfsFileSystemUpdate(

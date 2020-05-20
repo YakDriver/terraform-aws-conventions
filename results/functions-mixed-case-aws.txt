@@ -249,6 +249,8 @@ func dataSourceAwsEcsServiceRead(
 func dataSourceAwsEcsTaskDefinition(
 func dataSourceAwsEcsTaskDefinitionRead(
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(
+func dataSourceAwsEfsAccessPoint(
+func dataSourceAwsEfsAccessPointRead(
 func dataSourceAwsEfsFileSystem(
 func dataSourceAwsEfsFileSystemRead(
 func TestAccDataSourceAwsEfsFileSystem_id(
@@ -2236,6 +2238,11 @@ func resourceAwsEcsTaskDefinitionDelete(
 func resourceAwsEcsTaskDefinitionVolumeHash(
 func resourceAwsEcsTaskDefinitionMigrateState(
 func TestValidateAwsEcsTaskDefinitionContainerDefinitions(
+func resourceAwsEfsAccessPoint(
+func resourceAwsEfsAccessPointCreate(
+func resourceAwsEfsAccessPointUpdate(
+func resourceAwsEfsAccessPointRead(
+func resourceAwsEfsAccessPointDelete(
 func resourceAwsEfsFileSystem(
 func resourceAwsEfsFileSystemCreate(
 func resourceAwsEfsFileSystemUpdate(

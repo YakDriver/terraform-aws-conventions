@@ -412,6 +412,7 @@ func (
 func (
 func daxClusterStateRefreshFunc(
 func init(
+func init(
 func waitForRdsEventSubscriptionDeletion(
 func init(
 func waitUntilAwsDbInstanceIsAvailableAfterUpdate(
@@ -615,6 +616,7 @@ func flattenEcsNetworkConfiguration(
 func expandEcsNetworkConfiguration(
 func expandEcsCapacityProviderStrategy(
 func flattenEcsCapacityProviderStrategy(
+func expandPlacementConstraints(
 func flattenServicePlacementConstraints(
 func expandPlacementStrategy(
 func flattenPlacementStrategy(
@@ -630,6 +632,15 @@ func flattenProxyConfiguration(
 func flattenEcsInferenceAccelerators(
 func expandEcsInferenceAccelerators(
 func migrateEcsTaskDefinitionStateV0toV1(
+func init(
+func waitForDeleteEfsAccessPoint(
+func hasEmptyAccessPoints(
+func expandEfsAccessPointPosixUser(
+func expandEfsAccessPointRootDirectory(
+func expandEfsAccessPointRootDirectoryCreationInfo(
+func flattenEfsAccessPointPosixUser(
+func flattenEfsAccessPointRootDirectory(
+func flattenEfsAccessPointRootDirectoryCreationInfo(
 func init(
 func waitForDeleteEfsFileSystem(
 func hasEmptyFileSystems(
@@ -1109,7 +1120,6 @@ func init(
 func cloudWatchLoggingOptionsSchema(
 func s3ConfigurationSchema(
 func processingConfigurationSchema(
-func cloudwatchLoggingOptionsHash(
 func flattenCloudwatchLoggingOptions(
 func flattenFirehoseElasticsearchConfiguration(
 func flattenFirehoseExtendedS3Configuration(

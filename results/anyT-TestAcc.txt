@@ -75,7 +75,6 @@ func testAccDataSourceAwsBatchJobQueueCheck(
 func testAccDataSourceAwsBatchJobQueueConfig(
 func TestAccAWSBillingServiceAccount_basic(
 func TestAccAWSCallerIdentity_basic(
-func TestAccAWSCallerIdentity_basic_panic(
 func testAccCheckAwsCallerIdentityAccountId(
 func TestAccDataSourceAwsCanonicalUserId_basic(
 func testAccDataSourceAwsCanonicalUserIdCheckExists(
@@ -233,6 +232,8 @@ func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(
 func TestAccAWSEcsServiceDataSource_basic(
 func TestAccAWSEcsDataSource_ecsTaskDefinition(
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(
+func TestAccDataSourceAWSEFSAccessPoint_basic(
+func testAccDataSourceAWSEFSAccessPointConfig(
 func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
 func testAccDataSourceAwsEfsFileSystemCheck(
@@ -773,6 +774,7 @@ func TestAccAWSProvider_IgnoreTags_Keys_Multiple(
 func TestAccAWSProvider_Region_AwsChina(
 func TestAccAWSProvider_Region_AwsCommercial(
 func TestAccAWSProvider_Region_AwsGovCloudUs(
+func TestAccAWSProvider_AssumeRole_Empty(
 func testAccCheckAWSProviderDnsSuffix(
 func testAccCheckAWSProviderEndpoints(
 func testAccCheckAWSProviderEndpointsDeprecated(
@@ -4053,6 +4055,7 @@ func TestAccAWSEcsService_withLbChanges(
 func TestAccAWSEcsService_withEcsClusterName(
 func TestAccAWSEcsService_withAlb(
 func TestAccAWSEcsService_withMultipleTargetGroups(
+func TestAccAWSEcsService_withForceNewDeployment(
 func TestAccAWSEcsService_withPlacementStrategy(
 func TestAccAWSEcsService_withPlacementConstraints(
 func TestAccAWSEcsService_withPlacementConstraints_emptyExpression(
@@ -4070,11 +4073,13 @@ func TestAccAWSEcsService_PropagateTags(
 func testAccCheckAWSEcsServiceDestroy(
 func testAccCheckAWSEcsServiceExists(
 func testAccCheckAWSEcsServiceDisappears(
+func testAccCheckAWSEcsServiceNotRecreated(
 func testAccAWSEcsService(
 func testAccAWSEcsServiceModified(
 func testAccAWSEcsServiceWithInterchangeablePlacementStrategy(
 func testAccAWSEcsServiceWithCapacityProviderStrategy(
 func testAccAWSEcsServiceWithMultipleCapacityProviderStrategies(
+func testAccAWSEcsServiceWithForceNewDeployment(
 func testAccAWSEcsServiceWithPlacementStrategy(
 func testAccAWSEcsServiceWithRandomPlacementStrategy(
 func testAccAWSEcsServiceWithMultiPlacementStrategy(
@@ -4157,6 +4162,22 @@ func testAccAWSEcsTaskDefinitionConfigTags1(
 func testAccAWSEcsTaskDefinitionConfigTags2(
 func testAccAWSEcsTaskDefinitionConfigInferenceAccelerator(
 func testAccAWSEcsTaskDefinitionImportStateIdFunc(
+func TestAccAWSEFSAccessPoint_basic(
+func TestAccAWSEFSAccessPoint_root_directory(
+func TestAccAWSEFSAccessPoint_root_directory_creation_info(
+func TestAccAWSEFSAccessPoint_posix_user(
+func TestAccAWSEFSAccessPoint_posix_user_secondary_gids(
+func TestAccAWSEFSAccessPoint_tags(
+func TestAccAWSEFSAccessPoint_disappears(
+func testAccCheckEfsAccessPointDestroy(
+func testAccCheckEfsAccessPointExists(
+func testAccAWSEFSAccessPointConfig(
+func testAccAWSEFSAccessPointConfigRootDirectory(
+func testAccAWSEFSAccessPointConfigRootDirectoryCreationInfo(
+func testAccAWSEFSAccessPointConfigPosixUser(
+func testAccAWSEFSAccessPointConfigPosixUserSecondaryGids(
+func testAccAWSEFSAccessPointConfigTags1(
+func testAccAWSEFSAccessPointConfigTags2(
 func TestAccAWSEFSFileSystem_basic(
 func TestAccAWSEFSFileSystem_tags(
 func TestAccAWSEFSFileSystem_pagedTags(
@@ -4286,7 +4307,9 @@ func TestAccAWSEksNodeGroup_Version(
 func testAccCheckAWSEksNodeGroupExists(
 func testAccCheckAWSEksNodeGroupDestroy(
 func testAccCheckAWSEksNodeGroupDisappears(
+func testAccAWSEksNodeGroupConfigBaseIamAndVpc(
 func testAccAWSEksNodeGroupConfigBase(
+func testAccAWSEksNodeGroupConfigBaseVersion(
 func testAccAWSEksNodeGroupConfigNodeGroupName(
 func testAccAWSEksNodeGroupConfigAmiType(
 func testAccAWSEksNodeGroupConfigDiskSize(
@@ -5564,6 +5587,7 @@ func TestAccAWSIoTTopicRule_sns(
 func TestAccAWSIoTTopicRule_sqs(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
+func TestAccAWSIoTTopicRule_Tags(
 func testAccCheckAWSIoTTopicRuleDestroy(
 func testAccCheckAWSIoTTopicRuleExists(
 func testAccAWSIoTTopicRule_basic(
@@ -5584,6 +5608,8 @@ func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
+func testAccAWSIoTTopicRuleTags1(
+func testAccAWSIoTTopicRuleTags2(
 func TestAccAWSKeyPair_basic(
 func TestAccAWSKeyPair_tags(
 func TestAccAWSKeyPair_generatedName(

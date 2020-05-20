@@ -1,3 +1,5 @@
+func dataSourceAwsEfsAccessPoint(
+func dataSourceAwsEfsAccessPointRead(
 func dataSourceAwsEfsFileSystem(
 func dataSourceAwsEfsFileSystemRead(
 func TestAccDataSourceAwsEfsFileSystem_id(
@@ -26,6 +28,21 @@ func testAccAWSDataSyncLocationEfsConfig(
 func testAccAWSDataSyncLocationEfsConfigSubdirectory(
 func testAccAWSDataSyncLocationEfsConfigTags1(
 func testAccAWSDataSyncLocationEfsConfigTags2(
+func resourceAwsEfsAccessPoint(
+func resourceAwsEfsAccessPointCreate(
+func resourceAwsEfsAccessPointUpdate(
+func resourceAwsEfsAccessPointRead(
+func resourceAwsEfsAccessPointDelete(
+func waitForDeleteEfsAccessPoint(
+func expandEfsAccessPointPosixUser(
+func expandEfsAccessPointRootDirectory(
+func expandEfsAccessPointRootDirectoryCreationInfo(
+func flattenEfsAccessPointPosixUser(
+func flattenEfsAccessPointRootDirectory(
+func flattenEfsAccessPointRootDirectoryCreationInfo(
+func testSweepEfsAccessPoints(
+func testAccCheckEfsAccessPointDestroy(
+func testAccCheckEfsAccessPointExists(
 func resourceAwsEfsFileSystem(
 func resourceAwsEfsFileSystemCreate(
 func resourceAwsEfsFileSystemUpdate(

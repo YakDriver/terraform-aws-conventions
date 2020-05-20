@@ -12,6 +12,8 @@ func testAccAWSDataSyncTaskConfigDefaultSyncOptionsGid(
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsUid(
 func TestAccAWSEcsTaskDefinition_withPidMode(
 func testAccAWSEcsTaskDefinitionWithPidMode(
+func TestAccAWSEFSAccessPoint_posix_user_secondary_gids(
+func testAccAWSEFSAccessPointConfigPosixUserSecondaryGids(
 func flattenEksOidc(
 func TestAccAWSEMRCluster_custom_ami_id(
 func TestAccAWSLBListenerRule_oidc(

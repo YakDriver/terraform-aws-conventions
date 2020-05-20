@@ -112,7 +112,9 @@ func TestAccAWSEksNodeGroup_Version(
 func testAccCheckAWSEksNodeGroupExists(
 func testAccCheckAWSEksNodeGroupDestroy(
 func testAccCheckAWSEksNodeGroupDisappears(
+func testAccAWSEksNodeGroupConfigBaseIamAndVpc(
 func testAccAWSEksNodeGroupConfigBase(
+func testAccAWSEksNodeGroupConfigBaseVersion(
 func testAccAWSEksNodeGroupConfigNodeGroupName(
 func testAccAWSEksNodeGroupConfigAmiType(
 func testAccAWSEksNodeGroupConfigDiskSize(

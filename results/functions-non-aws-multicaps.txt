@@ -33,6 +33,8 @@ func TestAccAWSEc2TransitGatewayDataSource_ID(
 func testAccAWSEc2TransitGatewayDataSourceConfigID(
 func TestAccAWSEc2TransitGatewayVpcAttachmentDataSource_ID(
 func testAccAWSEc2TransitGatewayVpcAttachmentDataSourceConfigID(
+func TestAccDataSourceAWSEFSAccessPoint_basic(
+func testAccDataSourceAWSEFSAccessPointConfig(
 func TestAccDataSourceAwsEip_PublicIP_EC2Classic(
 func TestAccDataSourceAwsEip_PublicIP_VPC(
 func TestAccDataSourceAWSEIP_CustomerOwnedIpv4Pool(
@@ -1258,6 +1260,20 @@ func TestAccAWSEcsTaskDefinition_withEFSVolume(
 func TestAccAWSEcsTaskDefinition_withIPCMode(
 func testAccAWSEcsTaskDefinitionWithEFSVolumeMinimal(
 func testAccAWSEcsTaskDefinitionWithEFSVolume(
+func TestAccAWSEFSAccessPoint_basic(
+func TestAccAWSEFSAccessPoint_root_directory(
+func TestAccAWSEFSAccessPoint_root_directory_creation_info(
+func TestAccAWSEFSAccessPoint_posix_user(
+func TestAccAWSEFSAccessPoint_posix_user_secondary_gids(
+func TestAccAWSEFSAccessPoint_tags(
+func TestAccAWSEFSAccessPoint_disappears(
+func testAccAWSEFSAccessPointConfig(
+func testAccAWSEFSAccessPointConfigRootDirectory(
+func testAccAWSEFSAccessPointConfigRootDirectoryCreationInfo(
+func testAccAWSEFSAccessPointConfigPosixUser(
+func testAccAWSEFSAccessPointConfigPosixUserSecondaryGids(
+func testAccAWSEFSAccessPointConfigTags1(
+func testAccAWSEFSAccessPointConfigTags2(
 func TestResourceAWSEFSFileSystem_hasEmptyFileSystems(
 func TestAccAWSEFSFileSystem_basic(
 func TestAccAWSEFSFileSystem_tags(
@@ -1760,6 +1776,7 @@ func TestAccAWSIoTTopicRule_sns(
 func TestAccAWSIoTTopicRule_sqs(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
+func TestAccAWSIoTTopicRule_Tags(
 func testAccCheckAWSIoTTopicRuleDestroy(
 func testAccCheckAWSIoTTopicRuleExists(
 func testAccAWSIoTTopicRule_basic(
@@ -1780,6 +1797,8 @@ func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
+func testAccAWSIoTTopicRuleTags1(
+func testAccAWSIoTTopicRuleTags2(
 func flattenFirehoseOpenXJsonSerDe(
 func expandFirehoseOpenXJsonSerDe(
 func firehoseDeliveryStreamSSEStateRefreshFunc(

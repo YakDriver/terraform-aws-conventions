@@ -35,7 +35,6 @@ func TestAccDataSourceAwsBatchComputeEnvironment(
 func TestAccDataSourceAwsBatchJobQueue(
 func TestAccAWSBillingServiceAccount_basic(
 func TestAccAWSCallerIdentity_basic(
-func TestAccAWSCallerIdentity_basic_panic(
 func TestAccDataSourceAwsCanonicalUserId_basic(
 func TestAccAWSCloudformationExportDataSource_basic(
 func TestAccAWSCloudformationExportDataSource_ResourceReference(
@@ -115,6 +114,7 @@ func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
 func TestAccAWSEcsDataSource_ecsContainerDefinition(
 func TestAccAWSEcsServiceDataSource_basic(
 func TestAccAWSEcsDataSource_ecsTaskDefinition(
+func TestAccDataSourceAWSEFSAccessPoint_basic(
 func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
 func TestAccDataSourceAwsEfsMountTargetByMountTargetId(
@@ -374,6 +374,7 @@ func TestAccAWSProvider_IgnoreTags_Keys_Multiple(
 func TestAccAWSProvider_Region_AwsChina(
 func TestAccAWSProvider_Region_AwsCommercial(
 func TestAccAWSProvider_Region_AwsGovCloudUs(
+func TestAccAWSProvider_AssumeRole_Empty(
 func TestAccAWSAccessAnalyzer(
 func TestAccAWSAcmCertificate_emailValidation(
 func TestAccAWSAcmCertificate_dnsValidation(
@@ -1569,6 +1570,7 @@ func TestAccAWSEcsService_withLbChanges(
 func TestAccAWSEcsService_withEcsClusterName(
 func TestAccAWSEcsService_withAlb(
 func TestAccAWSEcsService_withMultipleTargetGroups(
+func TestAccAWSEcsService_withForceNewDeployment(
 func TestAccAWSEcsService_withPlacementStrategy(
 func TestAccAWSEcsService_withPlacementConstraints(
 func TestAccAWSEcsService_withPlacementConstraints_emptyExpression(
@@ -1604,6 +1606,13 @@ func TestAccAWSEcsTaskDefinition_Inactive(
 func TestAccAWSEcsTaskDefinition_Tags(
 func TestAccAWSEcsTaskDefinition_ProxyConfiguration(
 func TestAccAWSEcsTaskDefinition_inferenceAccelerator(
+func TestAccAWSEFSAccessPoint_basic(
+func TestAccAWSEFSAccessPoint_root_directory(
+func TestAccAWSEFSAccessPoint_root_directory_creation_info(
+func TestAccAWSEFSAccessPoint_posix_user(
+func TestAccAWSEFSAccessPoint_posix_user_secondary_gids(
+func TestAccAWSEFSAccessPoint_tags(
+func TestAccAWSEFSAccessPoint_disappears(
 func TestAccAWSEFSFileSystem_basic(
 func TestAccAWSEFSFileSystem_tags(
 func TestAccAWSEFSFileSystem_pagedTags(
@@ -2173,6 +2182,7 @@ func TestAccAWSIoTTopicRule_sns(
 func TestAccAWSIoTTopicRule_sqs(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
+func TestAccAWSIoTTopicRule_Tags(
 func TestAccAWSKeyPair_basic(
 func TestAccAWSKeyPair_tags(
 func TestAccAWSKeyPair_generatedName(

@@ -35,6 +35,7 @@ func resourceAwsDbClusterSnapshotCreate(
 func resourceAwsDbClusterSnapshotRead(
 func resourceAwsDbClusterSnapshotDelete(
 func resourceAwsDbClusterSnapshotStateRefreshFunc(
+func testSweepDbClusterSnapshots(
 func testAccCheckDbClusterSnapshotDestroy(
 func testAccCheckDbClusterSnapshotExists(
 func testAccAwsDbClusterSnapshotConfig(

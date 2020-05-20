@@ -126,6 +126,7 @@ func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
 func TestAccAWSEcsDataSource_ecsContainerDefinition(
 func TestAccAWSEcsServiceDataSource_basic(
 func TestAccAWSEcsDataSource_ecsTaskDefinition(
+func TestAccDataSourceAWSEFSAccessPoint_basic(
 func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
 func TestAccDataSourceAwsEip_Filter(
@@ -1834,6 +1835,7 @@ func TestAccAWSEcsService_withLbChanges(
 func TestAccAWSEcsService_withEcsClusterName(
 func TestAccAWSEcsService_withAlb(
 func TestAccAWSEcsService_withMultipleTargetGroups(
+func TestAccAWSEcsService_withForceNewDeployment(
 func TestAccAWSEcsService_withPlacementStrategy(
 func TestAccAWSEcsService_withPlacementConstraints(
 func TestAccAWSEcsService_withLaunchTypeFargate(
@@ -1873,6 +1875,9 @@ func TestAccAWSEcsTaskDefinition_Tags(
 func TestAccAWSEcsTaskDefinition_ProxyConfiguration(
 func TestAccAWSEcsTaskDefinition_inferenceAccelerator(
 func testAccAWSEcsTaskDefinition_constraint(
+func TestAccAWSEFSAccessPoint_basic(
+func TestAccAWSEFSAccessPoint_tags(
+func TestAccAWSEFSAccessPoint_disappears(
 func TestAccAWSEFSFileSystem_basic(
 func TestAccAWSEFSFileSystem_tags(
 func TestAccAWSEFSFileSystem_pagedTags(
@@ -2454,6 +2459,7 @@ func TestAccAWSIoTTopicRule_republish(
 func TestAccAWSIoTTopicRule_s3(
 func TestAccAWSIoTTopicRule_sns(
 func TestAccAWSIoTTopicRule_sqs(
+func TestAccAWSIoTTopicRule_Tags(
 func testAccAWSIoTTopicRule_basic(
 func testAccAWSIoTTopicRule_cloudwatchalarm(
 func testAccAWSIoTTopicRule_cloudwatchmetric(

@@ -1110,6 +1110,7 @@ func resourceAwsDbClusterSnapshotRead(
 func resourceAwsdbClusterSnapshotUpdate(
 func resourceAwsDbClusterSnapshotDelete(
 func resourceAwsDbClusterSnapshotStateRefreshFunc(
+func init(
 func resourceAwsDbEventSubscription(
 func resourceAwsDbEventSubscriptionCreate(
 func resourceAwsDbEventSubscriptionRead(
@@ -1727,6 +1728,7 @@ func flattenEcsNetworkConfiguration(
 func expandEcsNetworkConfiguration(
 func expandEcsCapacityProviderStrategy(
 func flattenEcsCapacityProviderStrategy(
+func expandPlacementConstraints(
 func flattenServicePlacementConstraints(
 func expandPlacementStrategy(
 func flattenPlacementStrategy(
@@ -1752,6 +1754,20 @@ func flattenEcsInferenceAccelerators(
 func expandEcsInferenceAccelerators(
 func resourceAwsEcsTaskDefinitionMigrateState(
 func migrateEcsTaskDefinitionStateV0toV1(
+func init(
+func resourceAwsEfsAccessPoint(
+func resourceAwsEfsAccessPointCreate(
+func resourceAwsEfsAccessPointUpdate(
+func resourceAwsEfsAccessPointRead(
+func resourceAwsEfsAccessPointDelete(
+func waitForDeleteEfsAccessPoint(
+func hasEmptyAccessPoints(
+func expandEfsAccessPointPosixUser(
+func expandEfsAccessPointRootDirectory(
+func expandEfsAccessPointRootDirectoryCreationInfo(
+func flattenEfsAccessPointPosixUser(
+func flattenEfsAccessPointRootDirectory(
+func flattenEfsAccessPointRootDirectoryCreationInfo(
 func init(
 func resourceAwsEfsFileSystem(
 func resourceAwsEfsFileSystemCreate(
@@ -2712,7 +2728,6 @@ func init(
 func cloudWatchLoggingOptionsSchema(
 func s3ConfigurationSchema(
 func processingConfigurationSchema(
-func cloudwatchLoggingOptionsHash(
 func flattenCloudwatchLoggingOptions(
 func flattenFirehoseElasticsearchConfiguration(
 func flattenFirehoseExtendedS3Configuration(
