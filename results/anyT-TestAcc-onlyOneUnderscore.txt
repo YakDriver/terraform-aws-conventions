@@ -431,6 +431,12 @@ func TestAccDataSourceAwsWafRegionalWebAcl_Basic(
 func testAccDataSourceAwsWafRegionalWebAclConfig_Name(
 func TestAccDataSourceAwsWafRule_Basic(
 func testAccDataSourceAwsWafRuleConfig_Name(
+func TestAccDataSourceAwsWafv2IPSet_Basic(
+func testAccDataSourceAwsWafv2IPSet_Name(
+func testAccDataSourceAwsWafv2IPSet_NonExistent(
+func TestAccDataSourceAwsWafv2RegexPatternSet_Basic(
+func testAccDataSourceAwsWafv2RegexPatternSet_Name(
+func testAccDataSourceAwsWafv2RegexPatternSet_NonExistent(
 func TestAccDataSourceAwsWafWebAcl_Basic(
 func testAccDataSourceAwsWafWebAclConfig_Name(
 func TestAccDataSourceAwsWorkspaceBundle_basic(
@@ -1878,6 +1884,8 @@ func testAccAWSEcsTaskDefinition_constraint(
 func TestAccAWSEFSAccessPoint_basic(
 func TestAccAWSEFSAccessPoint_tags(
 func TestAccAWSEFSAccessPoint_disappears(
+func TestAccAWSEFSFileSystemPolicy_basic(
+func TestAccAWSEFSFileSystemPolicy_disappears(
 func TestAccAWSEFSFileSystem_basic(
 func TestAccAWSEFSFileSystem_tags(
 func TestAccAWSEFSFileSystem_pagedTags(
@@ -1928,6 +1936,7 @@ func TestAccAWSEksNodeGroup_basic(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
 func TestAccAWSEksNodeGroup_DiskSize(
+func TestAccAWSEksNodeGroup_ForceUpdateVersion(
 func TestAccAWSEksNodeGroup_InstanceTypes(
 func TestAccAWSEksNodeGroup_Labels(
 func TestAccAWSEksNodeGroup_ReleaseVersion(
@@ -4180,6 +4189,15 @@ func TestAccAwsWafv2IPSet_IPv6(
 func TestAccAwsWafv2IPSet_Minimal(
 func TestAccAwsWafv2IPSet_ChangeNameForceNew(
 func TestAccAwsWafv2IPSet_Tags(
+func TestAccAwsWafv2RegexPatternSet_Basic(
+func TestAccAwsWafv2RegexPatternSet_Disappears(
+func TestAccAwsWafv2RegexPatternSet_Minimal(
+func TestAccAwsWafv2RegexPatternSet_ChangeNameForceNew(
+func TestAccAwsWafv2RegexPatternSet_Tags(
+func testAccAwsWafv2RegexPatternSetConfig_Update(
+func testAccAwsWafv2RegexPatternSetConfig_Minimal(
+func testAccAwsWafv2RegexPatternSetConfig_OneTag(
+func testAccAwsWafv2RegexPatternSetConfig_TwoTags(
 func TestAccAWSWafWebAcl_basic(
 func TestAccAWSWafWebAcl_changeNameForceNew(
 func TestAccAWSWafWebAcl_DefaultAction(

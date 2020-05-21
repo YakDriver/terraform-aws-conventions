@@ -15,6 +15,11 @@ func TestAccDataSourceAwsWafIPSet_Basic(
 func testAccDataSourceAwsWafIPSet_Name(
 func TestAccDataSourceAwsWafRegionalIPSet_Basic(
 func testAccDataSourceAwsWafRegionalIPSet_Name(
+func dataSourceAwsWafv2IPSet(
+func dataSourceAwsWafv2IPSetRead(
+func TestAccDataSourceAwsWafv2IPSet_Basic(
+func testAccDataSourceAwsWafv2IPSet_Name(
+func testAccDataSourceAwsWafv2IPSet_NonExistent(
 func TestAccAWSCloudFrontDistribution_IsIPV6EnabledConfig(
 func TestAccAWSEcsTaskDefinition_withIPCMode(
 func TestAccAWSEIPAssociation_instance(

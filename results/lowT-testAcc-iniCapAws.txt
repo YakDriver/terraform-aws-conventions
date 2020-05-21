@@ -316,6 +316,11 @@ func testAccAwsWafv2IPSetConfigIPv6(
 func testAccAwsWafv2IPSetConfigMinimal(
 func testAccAwsWafv2IPSetConfigOneTag(
 func testAccAwsWafv2IPSetConfigTwoTags(
+func testAccAwsWafv2RegexPatternSetConfig(
+func testAccAwsWafv2RegexPatternSetConfig_Update(
+func testAccAwsWafv2RegexPatternSetConfig_Minimal(
+func testAccAwsWafv2RegexPatternSetConfig_OneTag(
+func testAccAwsWafv2RegexPatternSetConfig_TwoTags(
 func testAccAwsWorkspacesDirectory_basic(
 func testAccAwsWorkspacesDirectory_disappears(
 func testAccAwsWorkspacesDirectory_subnetIds(

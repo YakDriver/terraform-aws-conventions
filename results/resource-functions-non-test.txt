@@ -331,7 +331,6 @@ func resourceAwsAppmeshVirtualNodeUpdate(
 func resourceAwsAppmeshVirtualNodeDelete(
 func resourceAwsAppmeshVirtualNodeImport(
 func appmeshVirtualNodeBackendHash(
-func appmeshVirtualNodeListenerHash(
 func resourceAwsAppmeshVirtualNodeMigrateState(
 func migrateAppmeshVirtualNodeStateV0toV1(
 func init(
@@ -341,7 +340,6 @@ func resourceAwsAppmeshVirtualRouterRead(
 func resourceAwsAppmeshVirtualRouterUpdate(
 func resourceAwsAppmeshVirtualRouterDelete(
 func resourceAwsAppmeshVirtualRouterImport(
-func appmeshVirtualRouterListenerHash(
 func resourceAwsAppmeshVirtualRouterMigrateState(
 func migrateAppmeshVirtualRouterStateV0toV1(
 func init(
@@ -553,6 +551,7 @@ func expandJobDefinitionRetryStrategy(
 func flattenBatchRetryStrategy(
 func expandJobDefinitionTimeout(
 func flattenBatchJobTimeout(
+func init(
 func resourceAwsBatchJobQueue(
 func resourceAwsBatchJobQueueCreate(
 func resourceAwsBatchJobQueueRead(
@@ -1779,6 +1778,10 @@ func hasEmptyFileSystems(
 func resourceEfsFileSystemCreateUpdateRefreshFunc(
 func flattenEfsFileSystemLifecyclePolicies(
 func expandEfsFileSystemLifecyclePolicies(
+func resourceAwsEfsFileSystemPolicy(
+func resourceAwsEfsFileSystemPolicyPut(
+func resourceAwsEfsFileSystemPolicyRead(
+func resourceAwsEfsFileSystemPolicyDelete(
 func init(
 func resourceAwsEfsMountTarget(
 func resourceAwsEfsMountTargetCreate(
@@ -4694,6 +4697,14 @@ func resourceAwsWafv2IPSetCreate(
 func resourceAwsWafv2IPSetRead(
 func resourceAwsWafv2IPSetUpdate(
 func resourceAwsWafv2IPSetDelete(
+func resourceAwsWafv2RegexPatternSet(
+func resourceAwsWafv2RegexPatternSetCreate(
+func resourceAwsWafv2RegexPatternSetRead(
+func resourceAwsWafv2RegexPatternSetUpdate(
+func resourceAwsWafv2RegexPatternSetDelete(
+func expandWafv2RegexPatternSet(
+func expandWafv2Regex(
+func flattenWafv2RegexPatternSet(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(
 func resourceAwsWafWebAclRead(

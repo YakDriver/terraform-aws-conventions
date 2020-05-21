@@ -1311,6 +1311,8 @@ func TestAccAWSEFSAccessPoint_posix_user(
 func TestAccAWSEFSAccessPoint_posix_user_secondary_gids(
 func TestAccAWSEFSAccessPoint_tags(
 func TestAccAWSEFSAccessPoint_disappears(
+func TestAccAWSEFSFileSystemPolicy_basic(
+func TestAccAWSEFSFileSystemPolicy_disappears(
 func TestAccAWSEFSFileSystem_basic(
 func TestAccAWSEFSFileSystem_tags(
 func TestAccAWSEFSFileSystem_pagedTags(
@@ -1362,6 +1364,7 @@ func TestAccAWSEksNodeGroup_basic(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
 func TestAccAWSEksNodeGroup_DiskSize(
+func TestAccAWSEksNodeGroup_ForceUpdateVersion(
 func TestAccAWSEksNodeGroup_InstanceTypes(
 func TestAccAWSEksNodeGroup_Labels(
 func TestAccAWSEksNodeGroup_ReleaseVersion(

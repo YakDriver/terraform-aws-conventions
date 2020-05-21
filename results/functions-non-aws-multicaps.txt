@@ -142,6 +142,11 @@ func TestAccDataSourceAwsWafIPSet_Basic(
 func testAccDataSourceAwsWafIPSet_Name(
 func TestAccDataSourceAwsWafRegionalIPSet_Basic(
 func testAccDataSourceAwsWafRegionalIPSet_Name(
+func dataSourceAwsWafv2IPSet(
+func dataSourceAwsWafv2IPSetRead(
+func TestAccDataSourceAwsWafv2IPSet_Basic(
+func testAccDataSourceAwsWafv2IPSet_Name(
+func testAccDataSourceAwsWafv2IPSet_NonExistent(
 func dataSyncParseLocationURI(
 func TestDataSyncParseLocationURI(
 func suppressOpenIdURL(
@@ -1274,6 +1279,10 @@ func testAccAWSEFSAccessPointConfigPosixUser(
 func testAccAWSEFSAccessPointConfigPosixUserSecondaryGids(
 func testAccAWSEFSAccessPointConfigTags1(
 func testAccAWSEFSAccessPointConfigTags2(
+func TestAccAWSEFSFileSystemPolicy_basic(
+func TestAccAWSEFSFileSystemPolicy_disappears(
+func testAccAWSEFSFileSystemPolicyConfig(
+func testAccAWSEFSFileSystemPolicyConfigUpdated(
 func TestResourceAWSEFSFileSystem_hasEmptyFileSystems(
 func TestAccAWSEFSFileSystem_basic(
 func TestAccAWSEFSFileSystem_tags(

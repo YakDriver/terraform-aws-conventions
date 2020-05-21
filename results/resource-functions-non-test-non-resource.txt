@@ -69,10 +69,8 @@ func appmeshHttpRouteHeaderHash(
 func appmeshWeightedTargetHash(
 func init(
 func appmeshVirtualNodeBackendHash(
-func appmeshVirtualNodeListenerHash(
 func migrateAppmeshVirtualNodeStateV0toV1(
 func init(
-func appmeshVirtualRouterListenerHash(
 func migrateAppmeshVirtualRouterStateV0toV1(
 func init(
 func init(
@@ -177,6 +175,7 @@ func expandJobDefinitionRetryStrategy(
 func flattenBatchRetryStrategy(
 func expandJobDefinitionTimeout(
 func flattenBatchJobTimeout(
+func init(
 func createComputeEnvironmentOrder(
 func deleteBatchJobQueue(
 func disableBatchJobQueue(
@@ -1844,6 +1843,9 @@ func updateSizeConstraintSetResource(
 func updateSqlInjectionMatchSetResource(
 func flattenWafSqlInjectionMatchTuples(
 func diffWafSqlInjectionMatchTuples(
+func expandWafv2RegexPatternSet(
+func expandWafv2Regex(
+func flattenWafv2RegexPatternSet(
 func expandWAFLoggingConfiguration(
 func expandWAFRedactedFields(
 func flattenWAFLoggingConfiguration(

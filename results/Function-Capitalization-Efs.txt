@@ -52,6 +52,12 @@ func waitForDeleteEfsFileSystem(
 func resourceEfsFileSystemCreateUpdateRefreshFunc(
 func flattenEfsFileSystemLifecyclePolicies(
 func expandEfsFileSystemLifecyclePolicies(
+func resourceAwsEfsFileSystemPolicy(
+func resourceAwsEfsFileSystemPolicyPut(
+func resourceAwsEfsFileSystemPolicyRead(
+func resourceAwsEfsFileSystemPolicyDelete(
+func testAccCheckEfsFileSystemPolicyDestroy(
+func testAccCheckEfsFileSystemPolicy(
 func testSweepEfsFileSystems(
 func testAccCheckEfsFileSystemDestroy(
 func testAccCheckEfsFileSystem(

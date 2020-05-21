@@ -99,6 +99,7 @@ func TestAccAWSEksNodeGroup_basic(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
 func TestAccAWSEksNodeGroup_DiskSize(
+func TestAccAWSEksNodeGroup_ForceUpdateVersion(
 func TestAccAWSEksNodeGroup_InstanceTypes(
 func TestAccAWSEksNodeGroup_Labels(
 func TestAccAWSEksNodeGroup_ReleaseVersion(
@@ -118,6 +119,7 @@ func testAccAWSEksNodeGroupConfigBaseVersion(
 func testAccAWSEksNodeGroupConfigNodeGroupName(
 func testAccAWSEksNodeGroupConfigAmiType(
 func testAccAWSEksNodeGroupConfigDiskSize(
+func testAccAWSEksNodeGroupConfigForceUpdateVersion(
 func testAccAWSEksNodeGroupConfigInstanceTypes1(
 func testAccAWSEksNodeGroupConfigLabels1(
 func testAccAWSEksNodeGroupConfigLabels2(

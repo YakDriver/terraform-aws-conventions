@@ -1144,6 +1144,10 @@ func resourceAwsEfsFileSystemUpdate(
 func resourceAwsEfsFileSystemRead(
 func resourceAwsEfsFileSystemDelete(
 func resourceEfsFileSystemCreateUpdateRefreshFunc(
+func resourceAwsEfsFileSystemPolicy(
+func resourceAwsEfsFileSystemPolicyPut(
+func resourceAwsEfsFileSystemPolicyRead(
+func resourceAwsEfsFileSystemPolicyDelete(
 func resourceAwsEfsMountTarget(
 func resourceAwsEfsMountTargetCreate(
 func resourceAwsEfsMountTargetUpdate(
@@ -2893,6 +2897,11 @@ func resourceAwsWafv2IPSetCreate(
 func resourceAwsWafv2IPSetRead(
 func resourceAwsWafv2IPSetUpdate(
 func resourceAwsWafv2IPSetDelete(
+func resourceAwsWafv2RegexPatternSet(
+func resourceAwsWafv2RegexPatternSetCreate(
+func resourceAwsWafv2RegexPatternSetRead(
+func resourceAwsWafv2RegexPatternSetUpdate(
+func resourceAwsWafv2RegexPatternSetDelete(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(
 func resourceAwsWafWebAclRead(

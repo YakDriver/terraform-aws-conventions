@@ -1140,6 +1140,8 @@ func testAccAWSEFSAccessPointConfigPosixUser(
 func testAccAWSEFSAccessPointConfigPosixUserSecondaryGids(
 func testAccAWSEFSAccessPointConfigTags1(
 func testAccAWSEFSAccessPointConfigTags2(
+func testAccAWSEFSFileSystemPolicyConfig(
+func testAccAWSEFSFileSystemPolicyConfigUpdated(
 func testAccAWSEFSFileSystemConfig(
 func testAccAWSEFSFileSystemConfigTags1(
 func testAccAWSEFSFileSystemConfigTags2(
@@ -1182,6 +1184,7 @@ func testAccAWSEksNodeGroupConfigBaseVersion(
 func testAccAWSEksNodeGroupConfigNodeGroupName(
 func testAccAWSEksNodeGroupConfigAmiType(
 func testAccAWSEksNodeGroupConfigDiskSize(
+func testAccAWSEksNodeGroupConfigForceUpdateVersion(
 func testAccAWSEksNodeGroupConfigInstanceTypes1(
 func testAccAWSEksNodeGroupConfigLabels1(
 func testAccAWSEksNodeGroupConfigLabels2(
@@ -2526,6 +2529,7 @@ func testAccAWSWafSqlInjectionMatchSetConfigChangeName(
 func testAccAWSWafSqlInjectionMatchSetConfig_changeTuples(
 func testAccAWSWafSqlInjectionMatchSetConfig_noTuples(
 func testAccAWSWafv2IPSetImportStateIdFunc(
+func testAccAWSWafv2RegexPatternSetImportStateIdFunc(
 func testAccAWSWafWebAclConfig_Required(
 func testAccAWSWafWebAclConfig_DefaultAction(
 func testAccAWSWafWebAclConfig_Rules_Single_Rule(

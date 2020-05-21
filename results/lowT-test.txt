@@ -355,6 +355,10 @@ func testAccDataSourceAwsWafRegionalRateBasedRuleConfig_Name(
 func testAccDataSourceAwsWafRegionalRuleConfig_Name(
 func testAccDataSourceAwsWafRegionalWebAclConfig_Name(
 func testAccDataSourceAwsWafRuleConfig_Name(
+func testAccDataSourceAwsWafv2IPSet_Name(
+func testAccDataSourceAwsWafv2IPSet_NonExistent(
+func testAccDataSourceAwsWafv2RegexPatternSet_Name(
+func testAccDataSourceAwsWafv2RegexPatternSet_NonExistent(
 func testAccDataSourceAwsWafWebAclConfig_Name(
 func testAccDataSourceAwsWorkspaceBundleConfig(
 func testAccCheckAwsPolicyMatch(
@@ -1154,6 +1158,7 @@ func testAccAWSBatchComputeEnvironmentConfigSpotWithAllocationStrategy(
 func testAccAWSBatchComputeEnvironmentConfigSpotWithoutBidPercentage(
 func testAccAWSBatchComputeEnvironmentConfigLaunchTemplate(
 func testAccAWSBatchComputeEnvironmentUpdateLaunchTemplateInExistingComputeEnvironment(
+func testSweepBatchJobDefinitions(
 func testAccCheckBatchJobDefinitionExists(
 func testAccCheckBatchJobDefinitionAttributes(
 func testAccCheckJobDefinitionRecreated(
@@ -2660,6 +2665,10 @@ func testAccAWSEFSAccessPointConfigPosixUser(
 func testAccAWSEFSAccessPointConfigPosixUserSecondaryGids(
 func testAccAWSEFSAccessPointConfigTags1(
 func testAccAWSEFSAccessPointConfigTags2(
+func testAccCheckEfsFileSystemPolicyDestroy(
+func testAccCheckEfsFileSystemPolicy(
+func testAccAWSEFSFileSystemPolicyConfig(
+func testAccAWSEFSFileSystemPolicyConfigUpdated(
 func testSweepEfsFileSystems(
 func testAccCheckEfsFileSystemDestroy(
 func testAccCheckEfsFileSystem(
@@ -2741,6 +2750,7 @@ func testAccAWSEksNodeGroupConfigBaseVersion(
 func testAccAWSEksNodeGroupConfigNodeGroupName(
 func testAccAWSEksNodeGroupConfigAmiType(
 func testAccAWSEksNodeGroupConfigDiskSize(
+func testAccAWSEksNodeGroupConfigForceUpdateVersion(
 func testAccAWSEksNodeGroupConfigInstanceTypes1(
 func testAccAWSEksNodeGroupConfigLabels1(
 func testAccAWSEksNodeGroupConfigLabels2(
@@ -5843,6 +5853,14 @@ func testAccAwsWafv2IPSetConfigMinimal(
 func testAccAwsWafv2IPSetConfigOneTag(
 func testAccAwsWafv2IPSetConfigTwoTags(
 func testAccAWSWafv2IPSetImportStateIdFunc(
+func testAccCheckAWSWafv2RegexPatternSetDestroy(
+func testAccCheckAWSWafv2RegexPatternSetExists(
+func testAccAwsWafv2RegexPatternSetConfig(
+func testAccAwsWafv2RegexPatternSetConfig_Update(
+func testAccAwsWafv2RegexPatternSetConfig_Minimal(
+func testAccAwsWafv2RegexPatternSetConfig_OneTag(
+func testAccAwsWafv2RegexPatternSetConfig_TwoTags(
+func testAccAWSWafv2RegexPatternSetImportStateIdFunc(
 func testSweepWafWebAcls(
 func testAccCheckAWSWafWebAclDisappears(
 func testAccCheckAWSWafWebAclDestroy(

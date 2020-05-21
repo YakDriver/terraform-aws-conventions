@@ -425,6 +425,8 @@ func TestAccDataSourceAwsWafRegionalRateBasedRule_Basic(
 func TestAccDataSourceAwsWafRegionalRule_Basic(
 func TestAccDataSourceAwsWafRegionalWebAcl_Basic(
 func TestAccDataSourceAwsWafRule_Basic(
+func TestAccDataSourceAwsWafv2IPSet_Basic(
+func TestAccDataSourceAwsWafv2RegexPatternSet_Basic(
 func TestAccDataSourceAwsWafWebAcl_Basic(
 func TestAccDataSourceAwsWorkspaceBundle_basic(
 func TestDataSyncParseLocationURI(
@@ -1726,6 +1728,8 @@ func TestAccAWSEFSAccessPoint_posix_user(
 func TestAccAWSEFSAccessPoint_posix_user_secondary_gids(
 func TestAccAWSEFSAccessPoint_tags(
 func TestAccAWSEFSAccessPoint_disappears(
+func TestAccAWSEFSFileSystemPolicy_basic(
+func TestAccAWSEFSFileSystemPolicy_disappears(
 func TestResourceAWSEFSFileSystem_hasEmptyFileSystems(
 func TestAccAWSEFSFileSystem_basic(
 func TestAccAWSEFSFileSystem_tags(
@@ -1779,6 +1783,7 @@ func TestAccAWSEksNodeGroup_basic(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
 func TestAccAWSEksNodeGroup_DiskSize(
+func TestAccAWSEksNodeGroup_ForceUpdateVersion(
 func TestAccAWSEksNodeGroup_InstanceTypes(
 func TestAccAWSEksNodeGroup_Labels(
 func TestAccAWSEksNodeGroup_ReleaseVersion(
@@ -3824,6 +3829,11 @@ func TestAccAwsWafv2IPSet_IPv6(
 func TestAccAwsWafv2IPSet_Minimal(
 func TestAccAwsWafv2IPSet_ChangeNameForceNew(
 func TestAccAwsWafv2IPSet_Tags(
+func TestAccAwsWafv2RegexPatternSet_Basic(
+func TestAccAwsWafv2RegexPatternSet_Disappears(
+func TestAccAwsWafv2RegexPatternSet_Minimal(
+func TestAccAwsWafv2RegexPatternSet_ChangeNameForceNew(
+func TestAccAwsWafv2RegexPatternSet_Tags(
 func TestAccAWSWafWebAcl_basic(
 func TestAccAWSWafWebAcl_changeNameForceNew(
 func TestAccAWSWafWebAcl_DefaultAction(

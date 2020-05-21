@@ -286,6 +286,10 @@ func testAccDataSourceAwsWafRegionalRateBasedRuleConfig_Name(name string) string
 func testAccDataSourceAwsWafRegionalRuleConfig_Name(name string) string {
 func testAccDataSourceAwsWafRegionalWebAclConfig_Name(name string) string {
 func testAccDataSourceAwsWafRuleConfig_Name(name string) string {
+func testAccDataSourceAwsWafv2IPSet_Name(name string) string {
+func testAccDataSourceAwsWafv2IPSet_NonExistent(name string) string {
+func testAccDataSourceAwsWafv2RegexPatternSet_Name(name string) string {
+func testAccDataSourceAwsWafv2RegexPatternSet_NonExistent(name string) string {
 func testAccDataSourceAwsWafWebAclConfig_Name(name string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
 func testAccAwsProviderAccountID(provider *schema.Provider) string {
@@ -1675,6 +1679,8 @@ func testAccAWSEFSAccessPointConfigPosixUser(rName string) string {
 func testAccAWSEFSAccessPointConfigPosixUserSecondaryGids(rName string) string {
 func testAccAWSEFSAccessPointConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEFSAccessPointConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEFSFileSystemPolicyConfig(rName string) string {
+func testAccAWSEFSFileSystemPolicyConfigUpdated(rName string) string {
 func testAccAWSEFSFileSystemConfig(rName string) string {
 func testAccAWSEFSFileSystemConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEFSFileSystemConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1716,10 +1722,11 @@ func testAccAWSEksNodeGroupConfigBaseVersion(rName string, version string) strin
 func testAccAWSEksNodeGroupConfigNodeGroupName(rName string) string {
 func testAccAWSEksNodeGroupConfigAmiType(rName, amiType string) string {
 func testAccAWSEksNodeGroupConfigDiskSize(rName string, diskSize int) string {
+func testAccAWSEksNodeGroupConfigForceUpdateVersion(rName, version string) string {
 func testAccAWSEksNodeGroupConfigInstanceTypes1(rName, instanceType1 string) string {
 func testAccAWSEksNodeGroupConfigLabels1(rName, labelKey1, labelValue1 string) string {
 func testAccAWSEksNodeGroupConfigLabels2(rName, labelKey1, labelValue1, labelKey2, labelValue2 string) string {
-func testAccAWSEksNodeGroupConfigReleaseVersion(rName string) string {
+func testAccAWSEksNodeGroupConfigReleaseVersion(rName string, version string) string {
 func testAccAWSEksNodeGroupConfigRemoteAccessEc2SshKey(rName string) string {
 func testAccAWSEksNodeGroupConfigRemoteAccessSourceSecurityGroupIds1(rName string) string {
 func testAccAWSEksNodeGroupConfigScalingConfigSizes(rName string, desiredSize, maxSize, minSize int) string {
@@ -3587,6 +3594,11 @@ func testAccAwsWafv2IPSetConfigIPv6(name string) string {
 func testAccAwsWafv2IPSetConfigMinimal(name string) string {
 func testAccAwsWafv2IPSetConfigOneTag(name, tagKey, tagValue string) string {
 func testAccAwsWafv2IPSetConfigTwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAwsWafv2RegexPatternSetConfig(name string) string {
+func testAccAwsWafv2RegexPatternSetConfig_Update(name string) string {
+func testAccAwsWafv2RegexPatternSetConfig_Minimal(name string) string {
+func testAccAwsWafv2RegexPatternSetConfig_OneTag(name, tagKey, tagValue string) string {
+func testAccAwsWafv2RegexPatternSetConfig_TwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafWebAclConfig_Required(rName string) string {
 func testAccAWSWafWebAclConfig_DefaultAction(rName, defaultAction string) string {
 func testAccAWSWafWebAclConfig_Rules_Single_Rule(rName string) string {

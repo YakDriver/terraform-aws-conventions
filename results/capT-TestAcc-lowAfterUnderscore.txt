@@ -937,6 +937,8 @@ func TestAccAWSEFSAccessPoint_posix_user(
 func TestAccAWSEFSAccessPoint_posix_user_secondary_gids(
 func TestAccAWSEFSAccessPoint_tags(
 func TestAccAWSEFSAccessPoint_disappears(
+func TestAccAWSEFSFileSystemPolicy_basic(
+func TestAccAWSEFSFileSystemPolicy_disappears(
 func TestAccAWSEFSFileSystem_basic(
 func TestAccAWSEFSFileSystem_tags(
 func TestAccAWSEFSFileSystem_pagedTags(

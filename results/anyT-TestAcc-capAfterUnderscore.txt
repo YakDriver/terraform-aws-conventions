@@ -166,6 +166,12 @@ func TestAccDataSourceAwsWafRegionalWebAcl_Basic(
 func testAccDataSourceAwsWafRegionalWebAclConfig_Name(
 func TestAccDataSourceAwsWafRule_Basic(
 func testAccDataSourceAwsWafRuleConfig_Name(
+func TestAccDataSourceAwsWafv2IPSet_Basic(
+func testAccDataSourceAwsWafv2IPSet_Name(
+func testAccDataSourceAwsWafv2IPSet_NonExistent(
+func TestAccDataSourceAwsWafv2RegexPatternSet_Basic(
+func testAccDataSourceAwsWafv2RegexPatternSet_Name(
+func testAccDataSourceAwsWafv2RegexPatternSet_NonExistent(
 func TestAccDataSourceAwsWafWebAcl_Basic(
 func testAccDataSourceAwsWafWebAclConfig_Name(
 func TestAccAWSProvider_Endpoints(
@@ -1032,6 +1038,7 @@ func TestAccAWSEksFargateProfile_Selector_Labels(
 func TestAccAWSEksFargateProfile_Tags(
 func TestAccAWSEksNodeGroup_AmiType(
 func TestAccAWSEksNodeGroup_DiskSize(
+func TestAccAWSEksNodeGroup_ForceUpdateVersion(
 func TestAccAWSEksNodeGroup_InstanceTypes(
 func TestAccAWSEksNodeGroup_Labels(
 func TestAccAWSEksNodeGroup_ReleaseVersion(
@@ -2008,6 +2015,15 @@ func TestAccAwsWafv2IPSet_IPv6(
 func TestAccAwsWafv2IPSet_Minimal(
 func TestAccAwsWafv2IPSet_ChangeNameForceNew(
 func TestAccAwsWafv2IPSet_Tags(
+func TestAccAwsWafv2RegexPatternSet_Basic(
+func TestAccAwsWafv2RegexPatternSet_Disappears(
+func TestAccAwsWafv2RegexPatternSet_Minimal(
+func TestAccAwsWafv2RegexPatternSet_ChangeNameForceNew(
+func TestAccAwsWafv2RegexPatternSet_Tags(
+func testAccAwsWafv2RegexPatternSetConfig_Update(
+func testAccAwsWafv2RegexPatternSetConfig_Minimal(
+func testAccAwsWafv2RegexPatternSetConfig_OneTag(
+func testAccAwsWafv2RegexPatternSetConfig_TwoTags(
 func TestAccAWSWafWebAcl_DefaultAction(
 func TestAccAWSWafWebAcl_Rules(
 func TestAccAWSWafWebAcl_LoggingConfiguration(
