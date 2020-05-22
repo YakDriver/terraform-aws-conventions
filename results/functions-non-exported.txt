@@ -956,7 +956,6 @@ func waitForFsxFileSystemDeletion(
 func iamPolicyDecodeConfigStringList(
 func resourceAwsCloudFrontDistributionImport(
 func resourceAwsDbEventSubscriptionImport(
-func resourceAwsNetworkAclImportState(
 func resourceAwsS3BucketImportState(
 func resourceAwsSecurityGroupImportState(
 func resourceAwsSecurityGroupImportStatePerm(

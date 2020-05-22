@@ -17,7 +17,6 @@ func dataSourceAwsWafWebAcl(
 func dataSourceAwsWafWebAclRead(
 func TestAccDataSourceAwsWafWebAcl_Basic(
 func testAccDataSourceAwsWafWebAclConfig_Name(
-func resourceAwsNetworkAclImportState(
 func expandNetworkAclEntries(
 func resourceAwsDefaultNetworkAcl(
 func resourceAwsDefaultNetworkAclCreate(

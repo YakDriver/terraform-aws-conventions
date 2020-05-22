@@ -747,7 +747,6 @@ func TestAwsEcsContainerDefinitionsAreEquivalent_negative(
 func TestAwsEcsContainerDefinitionsAreEquivalent_missingEnvironmentName(
 func resourceAwsCloudFrontDistributionImport(
 func resourceAwsDbEventSubscriptionImport(
-func resourceAwsNetworkAclImportState(
 func resourceAwsS3BucketImportState(
 func resourceAwsSecurityGroupImportState(
 func resourceAwsSecurityGroupImportStatePerm(
