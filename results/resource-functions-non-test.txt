@@ -4051,7 +4051,11 @@ func resourceAwsSesEventDestination(
 func resourceAwsSesEventDestinationCreate(
 func resourceAwsSesEventDestinationRead(
 func resourceAwsSesEventDestinationDelete(
+func resourceAwsSesEventDestinationImport(
 func generateCloudWatchDestination(
+func flattenSesCloudWatchDestination(
+func flattenSesKinesisFirehoseDestination(
+func flattenSesSnsDestination(
 func resourceAwsSesNotificationTopic(
 func resourceAwsSesNotificationTopicSet(
 func resourceAwsSesNotificationTopicRead(

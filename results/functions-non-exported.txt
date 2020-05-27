@@ -981,6 +981,7 @@ func testAccCheckResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
+func testAccMatchResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalHostname(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
@@ -9790,7 +9791,11 @@ func resourceAwsSesEventDestination(
 func resourceAwsSesEventDestinationCreate(
 func resourceAwsSesEventDestinationRead(
 func resourceAwsSesEventDestinationDelete(
+func resourceAwsSesEventDestinationImport(
 func generateCloudWatchDestination(
+func flattenSesCloudWatchDestination(
+func flattenSesKinesisFirehoseDestination(
+func flattenSesSnsDestination(
 func testAccCheckSESEventDestinationDestroy(
 func testAccCheckAwsSESEventDestinationExists(
 func testAccAWSSESEventDestinationConfig(

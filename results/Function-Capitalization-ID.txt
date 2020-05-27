@@ -38,6 +38,7 @@ func Test_validateCIDRBlock(
 func testAccAwsProviderAccountID(
 func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARNAccountID(
+func testAccMatchResourceAttrRegionalARNAccountID(
 func testAccGetAccountID(
 func testAccAWSAMIDisappears(
 func testAccCheckAWSAPIGatewayRestAPIDescriptionAttribute(

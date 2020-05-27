@@ -3181,6 +3181,7 @@ func testAccAwsSesDomainIdentityVerification_nonexistent(domain string) string {
 func testAccAwsSESDomainMailFromConfig(domain, mailFromDomain string) string {
 func testAccAwsSESDomainMailFromConfig_behaviorOnMxFailure(domain, behaviorOnMxFailure string) string {
 func testAccAwsSESEmailIdentityConfig(email string) string {
+func testAccAWSSESEventDestinationConfig(rName1, rName2, rName3 string) string {
 func testAccAWSSESIdentityPolicyConfigIdentityDomain(domain string) string {
 func testAccAWSSESIdentityPolicyConfigIdentityEmail(email string) string {
 func testAccAWSSESIdentityPolicyConfigPolicy1(domain string) string {

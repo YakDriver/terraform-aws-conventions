@@ -104,8 +104,13 @@ func resourceAwsSesEventDestination(
 func resourceAwsSesEventDestinationCreate(
 func resourceAwsSesEventDestinationRead(
 func resourceAwsSesEventDestinationDelete(
+func resourceAwsSesEventDestinationImport(
 func generateCloudWatchDestination(
+func flattenSesCloudWatchDestination(
+func flattenSesKinesisFirehoseDestination(
+func flattenSesSnsDestination(
 func TestAccAWSSESEventDestination_basic(
+func TestAccAWSSESEventDestination_disappears(
 func testAccCheckSESEventDestinationDestroy(
 func testAccCheckAwsSESEventDestinationExists(
 func testAccAWSSESEventDestinationConfig(

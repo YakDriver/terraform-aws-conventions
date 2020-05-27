@@ -2470,6 +2470,7 @@ func resourceAwsSesEventDestination(
 func resourceAwsSesEventDestinationCreate(
 func resourceAwsSesEventDestinationRead(
 func resourceAwsSesEventDestinationDelete(
+func resourceAwsSesEventDestinationImport(
 func resourceAwsSesNotificationTopic(
 func resourceAwsSesNotificationTopicSet(
 func resourceAwsSesNotificationTopicRead(

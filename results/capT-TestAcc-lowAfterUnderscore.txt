@@ -1934,6 +1934,7 @@ func TestAccAWSSESDomainMailFrom_behaviorOnMxFailure(
 func TestAccAWSSESEmailIdentity_basic(
 func TestAccAWSSESEmailIdentity_trailingPeriod(
 func TestAccAWSSESEventDestination_basic(
+func TestAccAWSSESEventDestination_disappears(
 func TestAccAwsSESIdentityNotificationTopic_basic(
 func TestAccAWSSESIdentityPolicy_basic(
 func TestAccAWSSESReceiptFilter_basic(

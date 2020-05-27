@@ -823,6 +823,7 @@ func testAccCheckResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
+func testAccMatchResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalHostname(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
@@ -8521,6 +8522,7 @@ func testAccCheckAwsSESEmailIdentityDestroy(
 func testAccCheckAwsSESEmailIdentityExists(
 func testAccAwsSESEmailIdentityConfig(
 func TestAccAWSSESEventDestination_basic(
+func TestAccAWSSESEventDestination_disappears(
 func testAccCheckSESEventDestinationDestroy(
 func testAccCheckAwsSESEventDestinationExists(
 func testAccAWSSESEventDestinationConfig(

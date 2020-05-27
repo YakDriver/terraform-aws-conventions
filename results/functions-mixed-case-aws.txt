@@ -3996,6 +3996,7 @@ func resourceAwsSesEventDestination(
 func resourceAwsSesEventDestinationCreate(
 func resourceAwsSesEventDestinationRead(
 func resourceAwsSesEventDestinationDelete(
+func resourceAwsSesEventDestinationImport(
 func testAccCheckAwsSESEventDestinationExists(
 func resourceAwsSesNotificationTopic(
 func resourceAwsSesNotificationTopicSet(

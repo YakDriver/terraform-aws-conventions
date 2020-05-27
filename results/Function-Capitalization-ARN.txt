@@ -5,6 +5,7 @@ func testAccCheckResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
+func testAccMatchResourceAttrRegionalARNAccountID(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
 func testAccMatchResourceAttrGlobalARN(

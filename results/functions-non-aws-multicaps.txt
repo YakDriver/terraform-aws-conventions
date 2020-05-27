@@ -171,6 +171,7 @@ func testAccCheckResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
+func testAccMatchResourceAttrRegionalARNAccountID(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
 func testAccMatchResourceAttrGlobalARN(
@@ -2493,6 +2494,7 @@ func testAccCheckAwsSESEmailIdentityDestroy(
 func testAccCheckAwsSESEmailIdentityExists(
 func testAccAwsSESEmailIdentityConfig(
 func TestAccAWSSESEventDestination_basic(
+func TestAccAWSSESEventDestination_disappears(
 func testAccCheckSESEventDestinationDestroy(
 func testAccCheckAwsSESEventDestinationExists(
 func testAccAWSSESEventDestinationConfig(
