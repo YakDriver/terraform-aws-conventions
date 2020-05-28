@@ -23,6 +23,7 @@ func expandApiGatewayDocumentationPartLocation(
 func flattenApiGatewayDocumentationPartLocation(
 func decodeApiGatewayDocumentationPartId(
 func decodeApiGatewayDocumentationVersionId(
+func flattenAwsApiGatewayMethodSettings(
 func expandApiGatewayEndpointConfiguration(
 func flattenApiGatewayEndpointConfiguration(
 func init(
@@ -1067,6 +1068,7 @@ func expandIotRepublishAction(
 func expandIotS3Action(
 func expandIotSnsAction(
 func expandIotSqsAction(
+func expandIotStepFunctionsAction(
 func expandIotTopicRulePayload(
 func flattenIotCloudwatchAlarmAction(
 func flattenIotCloudWatchAlarmActions(
@@ -1097,6 +1099,8 @@ func flattenIotSnsActions(
 func flattenIotSnsAction(
 func flattenIotSqsActions(
 func flattenIotSqsAction(
+func flattenIotStepFunctionsActions(
+func flattenIotStepFunctionsAction(
 func init(
 func migrateKeyPairStateV0toV1(
 func init(
@@ -1865,7 +1869,6 @@ func updateIdentityProviderConfiguration(
 func worklinkWebsiteCertificateAuthorityAssociationStateRefresh(
 func decodeWorkLinkWebsiteCertificateAuthorityAssociationResourceID(
 func workspacesDirectoryDelete(
-func workspacesDirectoryRefreshStateFunc(
 func expandSelfServicePermissions(
 func flattenSelfServicePermissions(
 func init(
@@ -1873,7 +1876,6 @@ func expandIpGroupRules(
 func flattenIpGroupRules(
 func workspaceDelete(
 func workspacePropertyUpdate(
-func workspaceRefreshStateFunc(
 func expandWorkspaceProperties(
 func flattenWorkspaceProperties(
 func init(

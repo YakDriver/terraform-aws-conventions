@@ -1548,6 +1548,7 @@ func testAccServiceDiscoveryPrivateDnsNamespaceConfigOverlapping(topDomain strin
 func testAccServiceDiscoveryPublicDnsNamespaceConfig(rName string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigSameValue(quotaCode, serviceCode string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigValue(quotaCode, serviceCode, value string) string {
+func testAccAWSSESActiveReceiptRuleSetConfig(name string) string {
 func testAccAwsSESDomainIdentityConfig(domain string) string {
 func testAccAwsSESDomainMailFromConfig(domain, mailFromDomain string) string {
 func testAccAwsSESEmailIdentityConfig(email string) string {
@@ -1815,11 +1816,11 @@ func testAccAWSWorkLinkFleetConfigDeviceCaCertificate(r string, fName string) st
 func testAccAWSWorkLinkFleetConfigIdentityProvider(r string, fName string) string {
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfig(r string) string {
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfigDisplayName(r, displayName string) string {
-func testAccWorkspacesDirectoryConfigA(booster string) string {
-func testAccWorkspacesDirectoryConfigB(booster string) string {
-func testAccWorkspacesDirectoryConfigC(booster string) string {
+func testAccWorkspacesDirectoryConfigA(rName string) string {
+func testAccWorkspacesDirectoryConfigB(rName string) string {
+func testAccWorkspacesDirectoryConfigC(rName string) string {
 func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
-func testAccWorkspacesWorkspaceConfig() string {
+func testAccWorkspacesWorkspaceConfig(rName string) string {

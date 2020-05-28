@@ -107,6 +107,7 @@ func resourceAwsApiGatewayMethodResponseRead(
 func resourceAwsApiGatewayMethodResponseUpdate(
 func resourceAwsApiGatewayMethodResponseDelete(
 func resourceAwsApiGatewayMethodSettings(
+func flattenAwsApiGatewayMethodSettings(
 func resourceAwsApiGatewayMethodSettingsRead(
 func resourceAwsApiGatewayMethodSettingsUpdate(
 func resourceAwsApiGatewayMethodSettingsDelete(

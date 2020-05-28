@@ -102,6 +102,7 @@ func TestAccAWSDbInstanceDataSource_basic(
 func TestAccAWSDbInstanceDataSource_ec2Classic(
 func testAccAWSDBInstanceDataSourceConfig_ec2Classic(
 func TestAccAWSDbSnapshotDataSource_basic(
+func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
 func TestAccDataSourceAwsDynamoDbTable_basic(
 func TestAccDataSourceAwsEBSDefaultKmsKey_basic(
 func TestAccDataSourceAwsEBSEncryptionByDefault_basic(
@@ -2025,6 +2026,7 @@ func TestAccAWSIoTTopicRule_republish_with_qos(
 func TestAccAWSIoTTopicRule_s3(
 func TestAccAWSIoTTopicRule_sns(
 func TestAccAWSIoTTopicRule_sqs(
+func TestAccAWSIoTTopicRule_step_functions(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRule_basic(
@@ -2043,6 +2045,7 @@ func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_step_functions(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func TestAccAWSKeyPair_basic(
@@ -3024,6 +3027,7 @@ func testAccServiceDiscoveryServiceConfig_public(
 func testAccServiceDiscoveryServiceConfig_http(
 func TestAccAwsServiceQuotasServiceQuota_basic(
 func TestAccAWSSESActiveReceiptRuleSet_basic(
+func TestAccAWSSESActiveReceiptRuleSet_disappears(
 func TestAccAWSSESConfigurationSet_basic(
 func TestAccAWSSESDomainDkim_basic(
 func TestAccAWSSESDomainIdentity_basic(
@@ -3048,10 +3052,13 @@ func TestAccAwsSESIdentityNotificationTopic_basic(
 func TestAccAWSSESIdentityPolicy_basic(
 func TestAccAWSSESReceiptFilter_basic(
 func TestAccAWSSESReceiptRuleSet_basic(
+func TestAccAWSSESReceiptRuleSet_disappears(
 func TestAccAWSSESReceiptRule_basic(
 func TestAccAWSSESReceiptRule_s3Action(
 func TestAccAWSSESReceiptRule_order(
 func TestAccAWSSESReceiptRule_actions(
+func TestAccAWSSESReceiptRule_disappears(
+func TestAccAWSSesTemplate_disappears(
 func TestAccAWSSfnActivity_basic(
 func TestAccAWSSfnStateMachine_createUpdate(
 func TestAccAWSSimpleDBDomain_basic(
@@ -3495,13 +3502,15 @@ func TestAccAWSWafXssMatchSet_changeTuples(
 func TestAccAWSWafXssMatchSet_noTuples(
 func testAccAWSWafXssMatchSetConfig_changeTuples(
 func testAccAWSWafXssMatchSetConfig_noTuples(
-func testAccAwsWorkspacesDirectory_basic(
-func testAccAwsWorkspacesDirectory_disappears(
-func testAccAwsWorkspacesDirectory_subnetIds(
-func testAccAwsWorkspacesDirectory_tags(
+func TestAccAwsWorkspacesDirectory_basic(
+func TestAccAwsWorkspacesDirectory_disappears(
+func TestAccAwsWorkspacesDirectory_subnetIds(
+func TestAccAwsWorkspacesDirectory_tags(
 func testAccWorkspacesDirectoryConfig_subnetIds(
 func TestAccAwsWorkspacesIpGroup_basic(
 func TestAccAwsWorkspacesWorkspace_basic(
+func TestAccAwsWorkspacesWorkspace_tags(
+func TestAccAwsWorkspacesWorkspace_workspaceProperties(
 func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
 func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
 func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(

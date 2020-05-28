@@ -5,6 +5,7 @@ const testAccAwsBackupPlanDataSourceConfig_nonExistent =
 const testAccAwsBackupSelectionDataSourceConfig_nonExistent =
 const testAccAwsBackupVaultDataSourceConfig_nonExistent =
 const testAccCheckAwsCallerIdentityConfig_basic =
+const testAccDataSourceDirectoryServiceDirectoryConfig_connector =
 const testAccDataSourceAwsDxGatewayConfig_NonExistent =
 const testAccDataSourceAwsEbsSnapshotIdsConfig_basic =
 const testAccDataSourceAwsEbsSnapshotIdsConfig_empty =

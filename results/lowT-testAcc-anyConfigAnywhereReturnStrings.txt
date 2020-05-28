@@ -2869,6 +2869,7 @@ func testAccServiceDiscoveryServiceConfig_public(rName string, th int, path stri
 func testAccServiceDiscoveryServiceConfig_http(rName string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigSameValue(quotaCode, serviceCode string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigValue(quotaCode, serviceCode, value string) string {
+func testAccAWSSESActiveReceiptRuleSetConfig(name string) string {
 func testAccAwsSESDomainIdentityConfig(domain string) string {
 func testAccAwsSESDomainMailFromConfig(domain, mailFromDomain string) string {
 func testAccAwsSESDomainMailFromConfig_behaviorOnMxFailure(domain, behaviorOnMxFailure string) string {
@@ -3298,24 +3299,24 @@ func testAccAWSWorkLinkFleetConfigDeviceCaCertificate(r string, fName string) st
 func testAccAWSWorkLinkFleetConfigIdentityProvider(r string, fName string) string {
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfig(r string) string {
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfigDisplayName(r, displayName string) string {
-func testAccAwsWorkspacesDirectoryConfig_Prerequisites(booster string) string {
-func testAccWorkspacesDirectoryConfigA(booster string) string {
-func testAccWorkspacesDirectoryConfigB(booster string) string {
-func testAccWorkspacesDirectoryConfigC(booster string) string {
-func testAccWorkspacesDirectoryConfig_subnetIds(booster string) string {
+func testAccAwsWorkspacesDirectoryConfig_Prerequisites(rName string) string {
+func testAccWorkspacesDirectoryConfigA(rName string) string {
+func testAccWorkspacesDirectoryConfigB(rName string) string {
+func testAccWorkspacesDirectoryConfigC(rName string) string {
+func testAccWorkspacesDirectoryConfig_subnetIds(rName string) string {
 func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
-func testAccAwsWorkspacesWorkspaceConfig_Prerequisites() string {
-func testAccWorkspacesWorkspaceConfig() string {
-func testAccWorkspacesWorkspaceConfig_TagsA() string {
-func testAccWorkspacesWorkspaceConfig_TagsB() string {
-func testAccWorkspacesWorkspaceConfig_TagsC() string {
-func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesA() string {
-func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesB() string {
-func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesC() string {
-func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize() string {
-func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize() string {
+func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(rName string) string {
+func testAccWorkspacesWorkspaceConfig(rName string) string {
+func testAccWorkspacesWorkspaceConfig_TagsA(rName string) string {
+func testAccWorkspacesWorkspaceConfig_TagsB(rName string) string {
+func testAccWorkspacesWorkspaceConfig_TagsC(rName string) string {
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesA(rName string) string {
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesB(rName string) string {
+func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesC(rName string) string {
+func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(rName string) string {
+func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(rName string) string {
 func testAccAWSXraySamplingRuleConfig_basic(ruleName string) string {
 func testAccAWSXraySamplingRuleConfig_update(ruleName string, priority int, reservoirSize int) string {

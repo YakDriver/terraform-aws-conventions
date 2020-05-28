@@ -1784,6 +1784,7 @@ func TestAccAWSIoTTopicRule_republish_with_qos(
 func TestAccAWSIoTTopicRule_s3(
 func TestAccAWSIoTTopicRule_sns(
 func TestAccAWSIoTTopicRule_sqs(
+func TestAccAWSIoTTopicRule_step_functions(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
 func TestAccAWSIoTTopicRule_Tags(
@@ -1805,6 +1806,7 @@ func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_step_functions(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
@@ -2461,8 +2463,10 @@ func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAccCheckAWSSecurityGroupSGandCidrAttributes(
 func resourceAwsServiceQuotasServiceQuotaParseID(
 func TestAccAWSSESActiveReceiptRuleSet_basic(
+func TestAccAWSSESActiveReceiptRuleSet_disappears(
 func testAccCheckSESActiveReceiptRuleSetDestroy(
 func testAccCheckAwsSESActiveReceiptRuleSetExists(
+func testAccAWSSESActiveReceiptRuleSetConfig(
 func TestAccAWSSESConfigurationSet_basic(
 func testAccCheckSESConfigurationSetDestroy(
 func testAccCheckAwsSESConfigurationSetExists(
@@ -2516,6 +2520,7 @@ func testAccCheckSESReceiptFilterDestroy(
 func testAccCheckAwsSESReceiptFilterExists(
 func testAccAWSSESReceiptFilterConfig(
 func TestAccAWSSESReceiptRuleSet_basic(
+func TestAccAWSSESReceiptRuleSet_disappears(
 func testAccCheckSESReceiptRuleSetDestroy(
 func testAccCheckAwsSESReceiptRuleSetExists(
 func testAccAWSSESReceiptRuleSetConfig(
@@ -2523,6 +2528,7 @@ func TestAccAWSSESReceiptRule_basic(
 func TestAccAWSSESReceiptRule_s3Action(
 func TestAccAWSSESReceiptRule_order(
 func TestAccAWSSESReceiptRule_actions(
+func TestAccAWSSESReceiptRule_disappears(
 func testAccCheckSESReceiptRuleDestroy(
 func testAccCheckAwsSESReceiptRuleExists(
 func testAccCheckAwsSESReceiptRuleOrder(
@@ -2976,6 +2982,7 @@ func expandWAFRedactedFields(
 func flattenWAFLoggingConfiguration(
 func flattenWAFRedactedFields(
 func decodeWorkLinkWebsiteCertificateAuthorityAssociationResourceID(
+func testAccPreCheckHasIAMRole(
 func expandIPPerms(
 func expandDocDBParameters(
 func flattenEFSVolumeConfiguration(

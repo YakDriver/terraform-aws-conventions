@@ -303,7 +303,7 @@ func resourceAwsWafRegionalWebAclAssociationParseId(
 func computeWafActivatedRuleWithRuleId(
 func testAccAWSWafv2IPSetImportStateIdFunc(
 func testAccAWSWafv2RegexPatternSetImportStateIdFunc(
-func testAccAwsWorkspacesDirectory_subnetIds(
+func TestAccAwsWorkspacesDirectory_subnetIds(
 func testAccWorkspacesDirectoryConfig_subnetIds(
 func flattenElastiCacheSecurityGroupIds(
 func flattenDaxSecurityGroupIds(

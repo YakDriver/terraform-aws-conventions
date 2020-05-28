@@ -649,6 +649,7 @@ func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_step_functions(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccKinesisAnalyticsApplication_basic(
@@ -1099,10 +1100,6 @@ func testAccAWSWafSqlInjectionMatchSetConfig_changeTuples(
 func testAccAWSWafSqlInjectionMatchSetConfig_noTuples(
 func testAccAWSWafXssMatchSetConfig_changeTuples(
 func testAccAWSWafXssMatchSetConfig_noTuples(
-func testAccAwsWorkspacesDirectory_basic(
-func testAccAwsWorkspacesDirectory_disappears(
-func testAccAwsWorkspacesDirectory_subnetIds(
-func testAccAwsWorkspacesDirectory_tags(
 func testAccWorkspacesDirectoryConfig_subnetIds(
 func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(
 func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(

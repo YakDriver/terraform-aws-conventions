@@ -321,10 +321,6 @@ func testAccAwsWafv2RegexPatternSetConfig_Update(
 func testAccAwsWafv2RegexPatternSetConfig_Minimal(
 func testAccAwsWafv2RegexPatternSetConfig_OneTag(
 func testAccAwsWafv2RegexPatternSetConfig_TwoTags(
-func testAccAwsWorkspacesDirectory_basic(
-func testAccAwsWorkspacesDirectory_disappears(
-func testAccAwsWorkspacesDirectory_subnetIds(
-func testAccAwsWorkspacesDirectory_tags(
 func testAccAwsWorkspacesDirectoryConfig_Prerequisites(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(

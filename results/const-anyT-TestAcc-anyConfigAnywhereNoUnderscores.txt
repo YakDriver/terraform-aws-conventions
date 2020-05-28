@@ -215,7 +215,6 @@ const testAccAWSSecurityGroupConfigClassic =
 const testAccAWSSecurityGroupConfigIpv4andIpv6Egress =
 const testAccAWSSecurityGroupConfigPrefixListEgress =
 const testAccAWSSecurityGroupConfigPrefixListIngress =
-const testAccAWSSESActiveReceiptRuleSetConfig =
 const testAccAwsSESDomainDkimConfig =
 const testAccSubnetConfig =
 const testAccSubnetConfigPreIpv6 =

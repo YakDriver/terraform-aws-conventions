@@ -192,6 +192,7 @@ func testAccCheckAwsDbSnapshotDataSourceID(
 func testAccCheckAwsDbSnapshotDataSourceConfig(
 func TestAccDataSourceAwsDirectoryServiceDirectory_SimpleAD(
 func TestAccDataSourceAwsDirectoryServiceDirectory_MicrosoftAD(
+func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_SimpleAD(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_MicrosoftAD(
@@ -5878,6 +5879,7 @@ func TestAccAWSIoTTopicRule_republish_with_qos(
 func TestAccAWSIoTTopicRule_s3(
 func TestAccAWSIoTTopicRule_sns(
 func TestAccAWSIoTTopicRule_sqs(
+func TestAccAWSIoTTopicRule_step_functions(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
 func TestAccAWSIoTTopicRule_Tags(
@@ -5899,6 +5901,7 @@ func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_step_functions(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
@@ -8479,8 +8482,10 @@ func testAccPreCheckAWSServiceQuotas(
 func testAccAwsServiceQuotasServiceQuotaConfigSameValue(
 func testAccAwsServiceQuotasServiceQuotaConfigValue(
 func TestAccAWSSESActiveReceiptRuleSet_basic(
+func TestAccAWSSESActiveReceiptRuleSet_disappears(
 func testAccCheckSESActiveReceiptRuleSetDestroy(
 func testAccCheckAwsSESActiveReceiptRuleSetExists(
+func testAccAWSSESActiveReceiptRuleSetConfig(
 func testSweepSesConfigurationSets(
 func TestAccAWSSESConfigurationSet_basic(
 func testAccCheckSESConfigurationSetDestroy(
@@ -8544,6 +8549,7 @@ func testAccCheckAwsSESReceiptFilterExists(
 func testAccAWSSESReceiptFilterConfig(
 func testSweepSesReceiptRuleSets(
 func TestAccAWSSESReceiptRuleSet_basic(
+func TestAccAWSSESReceiptRuleSet_disappears(
 func testAccCheckSESReceiptRuleSetDestroy(
 func testAccCheckAwsSESReceiptRuleSetExists(
 func testAccAWSSESReceiptRuleSetConfig(
@@ -8551,6 +8557,7 @@ func TestAccAWSSESReceiptRule_basic(
 func TestAccAWSSESReceiptRule_s3Action(
 func TestAccAWSSESReceiptRule_order(
 func TestAccAWSSESReceiptRule_actions(
+func TestAccAWSSESReceiptRule_disappears(
 func testAccCheckSESReceiptRuleDestroy(
 func testAccCheckAwsSESReceiptRuleExists(
 func testAccAwsSesReceiptRuleImportStateIdFunc(
@@ -8562,7 +8569,8 @@ func testAccAWSSESReceiptRuleOrderConfig(
 func testAccAWSSESReceiptRuleActionsConfig(
 func TestAccAWSSesTemplate_Basic(
 func TestAccAWSSesTemplate_Update(
-func testAccCheckSesTemplate(
+func TestAccAWSSesTemplate_disappears(
+func testAccCheckSesTemplateExists(
 func testAccCheckSesTemplateDestroy(
 func testAccCheckAwsSesTemplateResourceConfigBasic1(
 func testAccCheckAwsSesTemplateResourceConfigBasic2(
@@ -9761,11 +9769,11 @@ func testAccCheckAWSWorkLinkWebsiteCertificateAuthorityAssociationExists(
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfig(
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfigDisplayName(
 func testSweepWorkspacesDirectories(
-func TestAccAwsWorkspacesDirectory(
-func testAccAwsWorkspacesDirectory_basic(
-func testAccAwsWorkspacesDirectory_disappears(
-func testAccAwsWorkspacesDirectory_subnetIds(
-func testAccAwsWorkspacesDirectory_tags(
+func TestAccAwsWorkspacesDirectory_basic(
+func TestAccAwsWorkspacesDirectory_disappears(
+func TestAccAwsWorkspacesDirectory_subnetIds(
+func TestAccAwsWorkspacesDirectory_tags(
+func testAccPreCheckHasIAMRole(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryDisappears(
 func testAccCheckAwsWorkspacesDirectoryExists(
@@ -9785,8 +9793,8 @@ func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
 func testSweepWorkspaces(
 func TestAccAwsWorkspacesWorkspace_basic(
-func TestAccAwsWorkspacesWorkspace_Tags(
-func TestAccAwsWorkspacesWorkspace_WorkspaceProperties(
+func TestAccAwsWorkspacesWorkspace_tags(
+func TestAccAwsWorkspacesWorkspace_workspaceProperties(
 func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
 func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
 func testAccCheckAwsWorkspacesWorkspaceDestroy(

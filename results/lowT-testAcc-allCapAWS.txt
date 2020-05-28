@@ -1465,6 +1465,7 @@ func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_step_functions(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
@@ -2153,6 +2154,7 @@ func testAccAWSSecurityHubMemberConfig_basic(
 func testAccAWSSecurityHubMemberConfig_invite(
 func testAccAWSSecurityHubProductSubscription_basic(
 func testAccAWSSecurityHubStandardsSubscription_basic(
+func testAccAWSSESActiveReceiptRuleSetConfig(
 func testAccAWSSESEventDestinationConfig(
 func testAccAWSSESIdentityPolicyConfigIdentityDomain(
 func testAccAWSSESIdentityPolicyConfigIdentityEmail(

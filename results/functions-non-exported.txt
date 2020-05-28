@@ -1359,6 +1359,7 @@ func testAccAWSAPIGatewayMethodResponseImportStateIdFunc(
 func testAccAWSAPIGatewayMethodResponseConfig(
 func testAccAWSAPIGatewayMethodResponseConfigUpdate(
 func resourceAwsApiGatewayMethodSettings(
+func flattenAwsApiGatewayMethodSettings(
 func resourceAwsApiGatewayMethodSettingsRead(
 func resourceAwsApiGatewayMethodSettingsUpdate(
 func resourceAwsApiGatewayMethodSettingsDelete(
@@ -6827,6 +6828,7 @@ func expandIotRepublishAction(
 func expandIotS3Action(
 func expandIotSnsAction(
 func expandIotSqsAction(
+func expandIotStepFunctionsAction(
 func expandIotTopicRulePayload(
 func flattenIotCloudwatchAlarmAction(
 func flattenIotCloudWatchAlarmActions(
@@ -6857,6 +6859,8 @@ func flattenIotSnsActions(
 func flattenIotSnsAction(
 func flattenIotSqsActions(
 func flattenIotSqsAction(
+func flattenIotStepFunctionsActions(
+func flattenIotStepFunctionsAction(
 func init(
 func testSweepIotTopicRules(
 func testAccCheckAWSIoTTopicRuleDestroy(
@@ -6877,6 +6881,7 @@ func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_step_functions(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
@@ -8171,6 +8176,7 @@ func resourceAwsOpsworksApplicationRead(
 func resourceAwsOpsworksApplicationCreate(
 func resourceAwsOpsworksApplicationUpdate(
 func resourceAwsOpsworksApplicationDelete(
+func resourceAwsOpsworksFindEnvironmentVariable(
 func resourceAwsOpsworksSetApplicationEnvironmentVariable(
 func resourceAwsOpsworksApplicationEnvironmentVariable(
 func resourceAwsOpsworksApplicationSource(
@@ -9732,6 +9738,7 @@ func resourceAwsSesActiveReceiptRuleSetRead(
 func resourceAwsSesActiveReceiptRuleSetDelete(
 func testAccCheckSESActiveReceiptRuleSetDestroy(
 func testAccCheckAwsSESActiveReceiptRuleSetExists(
+func testAccAWSSESActiveReceiptRuleSetConfig(
 func resourceAwsSesConfigurationSet(
 func resourceAwsSesConfigurationSetCreate(
 func resourceAwsSesConfigurationSetRead(
@@ -9855,7 +9862,7 @@ func resourceAwsSesTemplateCreate(
 func resourceAwsSesTemplateRead(
 func resourceAwsSesTemplateUpdate(
 func resourceAwsSesTemplateDelete(
-func testAccCheckSesTemplate(
+func testAccCheckSesTemplateExists(
 func testAccCheckSesTemplateDestroy(
 func testAccCheckAwsSesTemplateResourceConfigBasic1(
 func testAccCheckAwsSesTemplateResourceConfigBasic2(
@@ -11241,15 +11248,11 @@ func resourceAwsWorkspacesDirectoryRead(
 func resourceAwsWorkspacesDirectoryUpdate(
 func resourceAwsWorkspacesDirectoryDelete(
 func workspacesDirectoryDelete(
-func workspacesDirectoryRefreshStateFunc(
 func expandSelfServicePermissions(
 func flattenSelfServicePermissions(
 func init(
 func testSweepWorkspacesDirectories(
-func testAccAwsWorkspacesDirectory_basic(
-func testAccAwsWorkspacesDirectory_disappears(
-func testAccAwsWorkspacesDirectory_subnetIds(
-func testAccAwsWorkspacesDirectory_tags(
+func testAccPreCheckHasIAMRole(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryDisappears(
 func testAccCheckAwsWorkspacesDirectoryExists(
@@ -11278,7 +11281,6 @@ func resourceAwsWorkspacesWorkspaceUpdate(
 func resourceAwsWorkspacesWorkspaceDelete(
 func workspaceDelete(
 func workspacePropertyUpdate(
-func workspaceRefreshStateFunc(
 func expandWorkspaceProperties(
 func flattenWorkspaceProperties(
 func init(

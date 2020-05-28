@@ -100,6 +100,7 @@ func expandIotRepublishAction(
 func expandIotS3Action(
 func expandIotSnsAction(
 func expandIotSqsAction(
+func expandIotStepFunctionsAction(
 func expandIotTopicRulePayload(
 func flattenIotCloudwatchAlarmAction(
 func flattenIotCloudWatchAlarmActions(
@@ -130,6 +131,8 @@ func flattenIotSnsActions(
 func flattenIotSnsAction(
 func flattenIotSqsActions(
 func flattenIotSqsAction(
+func flattenIotStepFunctionsActions(
+func flattenIotStepFunctionsAction(
 func testSweepIotTopicRules(
 func expandIotThingTypeProperties(
 func flattenIotThingTypeProperties(

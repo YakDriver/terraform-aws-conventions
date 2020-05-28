@@ -134,6 +134,7 @@ func resourceAwsApiGatewayMethodResponseRead(
 func resourceAwsApiGatewayMethodResponseUpdate(
 func resourceAwsApiGatewayMethodResponseDelete(
 func resourceAwsApiGatewayMethodSettings(
+func flattenAwsApiGatewayMethodSettings(
 func resourceAwsApiGatewayMethodSettingsRead(
 func resourceAwsApiGatewayMethodSettingsUpdate(
 func resourceAwsApiGatewayMethodSettingsDelete(
@@ -2668,6 +2669,7 @@ func expandIotRepublishAction(
 func expandIotS3Action(
 func expandIotSnsAction(
 func expandIotSqsAction(
+func expandIotStepFunctionsAction(
 func expandIotTopicRulePayload(
 func flattenIotCloudwatchAlarmAction(
 func flattenIotCloudWatchAlarmActions(
@@ -2698,6 +2700,8 @@ func flattenIotSnsActions(
 func flattenIotSnsAction(
 func flattenIotSqsActions(
 func flattenIotSqsAction(
+func flattenIotStepFunctionsActions(
+func flattenIotStepFunctionsAction(
 func init(
 func resourceAwsKeyPair(
 func resourceAwsKeyPairCreate(
@@ -3310,6 +3314,7 @@ func resourceAwsOpsworksApplicationRead(
 func resourceAwsOpsworksApplicationCreate(
 func resourceAwsOpsworksApplicationUpdate(
 func resourceAwsOpsworksApplicationDelete(
+func resourceAwsOpsworksFindEnvironmentVariable(
 func resourceAwsOpsworksSetApplicationEnvironmentVariable(
 func resourceAwsOpsworksApplicationEnvironmentVariable(
 func resourceAwsOpsworksApplicationSource(
@@ -4749,7 +4754,6 @@ func resourceAwsWorkspacesDirectoryRead(
 func resourceAwsWorkspacesDirectoryUpdate(
 func resourceAwsWorkspacesDirectoryDelete(
 func workspacesDirectoryDelete(
-func workspacesDirectoryRefreshStateFunc(
 func expandSelfServicePermissions(
 func flattenSelfServicePermissions(
 func init(
@@ -4767,7 +4771,6 @@ func resourceAwsWorkspacesWorkspaceUpdate(
 func resourceAwsWorkspacesWorkspaceDelete(
 func workspaceDelete(
 func workspacePropertyUpdate(
-func workspaceRefreshStateFunc(
 func expandWorkspaceProperties(
 func flattenWorkspaceProperties(
 func init(

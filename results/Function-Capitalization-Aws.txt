@@ -887,6 +887,7 @@ func resourceAwsApiGatewayMethodResponseRead(
 func resourceAwsApiGatewayMethodResponseUpdate(
 func resourceAwsApiGatewayMethodResponseDelete(
 func resourceAwsApiGatewayMethodSettings(
+func flattenAwsApiGatewayMethodSettings(
 func resourceAwsApiGatewayMethodSettingsRead(
 func resourceAwsApiGatewayMethodSettingsUpdate(
 func resourceAwsApiGatewayMethodSettingsDelete(
@@ -3226,6 +3227,7 @@ func resourceAwsOpsworksApplicationRead(
 func resourceAwsOpsworksApplicationCreate(
 func resourceAwsOpsworksApplicationUpdate(
 func resourceAwsOpsworksApplicationDelete(
+func resourceAwsOpsworksFindEnvironmentVariable(
 func resourceAwsOpsworksSetApplicationEnvironmentVariable(
 func resourceAwsOpsworksApplicationEnvironmentVariable(
 func resourceAwsOpsworksApplicationSource(
@@ -4551,11 +4553,10 @@ func resourceAwsWorkspacesDirectoryCreate(
 func resourceAwsWorkspacesDirectoryRead(
 func resourceAwsWorkspacesDirectoryUpdate(
 func resourceAwsWorkspacesDirectoryDelete(
-func TestAccAwsWorkspacesDirectory(
-func testAccAwsWorkspacesDirectory_basic(
-func testAccAwsWorkspacesDirectory_disappears(
-func testAccAwsWorkspacesDirectory_subnetIds(
-func testAccAwsWorkspacesDirectory_tags(
+func TestAccAwsWorkspacesDirectory_basic(
+func TestAccAwsWorkspacesDirectory_disappears(
+func TestAccAwsWorkspacesDirectory_subnetIds(
+func TestAccAwsWorkspacesDirectory_tags(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryDisappears(
 func testAccCheckAwsWorkspacesDirectoryExists(
@@ -4576,8 +4577,8 @@ func resourceAwsWorkspacesWorkspaceRead(
 func resourceAwsWorkspacesWorkspaceUpdate(
 func resourceAwsWorkspacesWorkspaceDelete(
 func TestAccAwsWorkspacesWorkspace_basic(
-func TestAccAwsWorkspacesWorkspace_Tags(
-func TestAccAwsWorkspacesWorkspace_WorkspaceProperties(
+func TestAccAwsWorkspacesWorkspace_tags(
+func TestAccAwsWorkspacesWorkspace_workspaceProperties(
 func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
 func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
 func testAccCheckAwsWorkspacesWorkspaceDestroy(

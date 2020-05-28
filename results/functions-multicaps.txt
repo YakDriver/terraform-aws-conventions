@@ -65,6 +65,7 @@ func TestAccAWSDbSnapshotDataSource_basic(
 func testAccCheckAwsDbSnapshotDataSourceID(
 func TestAccDataSourceAwsDirectoryServiceDirectory_SimpleAD(
 func TestAccDataSourceAwsDirectoryServiceDirectory_MicrosoftAD(
+func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_SimpleAD(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_MicrosoftAD(
 func TestAccDataSourceAwsEBSDefaultKmsKey_basic(
@@ -4461,6 +4462,7 @@ func TestAccAWSIoTTopicRule_republish_with_qos(
 func TestAccAWSIoTTopicRule_s3(
 func TestAccAWSIoTTopicRule_sns(
 func TestAccAWSIoTTopicRule_sqs(
+func TestAccAWSIoTTopicRule_step_functions(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
 func TestAccAWSIoTTopicRule_Tags(
@@ -4482,6 +4484,7 @@ func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_step_functions(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
@@ -6615,8 +6618,10 @@ func TestAccAWSServiceDiscoveryService_http(
 func resourceAwsServiceQuotasServiceQuotaParseID(
 func testAccPreCheckAWSServiceQuotas(
 func TestAccAWSSESActiveReceiptRuleSet_basic(
+func TestAccAWSSESActiveReceiptRuleSet_disappears(
 func testAccCheckSESActiveReceiptRuleSetDestroy(
 func testAccCheckAwsSESActiveReceiptRuleSetExists(
+func testAccAWSSESActiveReceiptRuleSetConfig(
 func TestAccAWSSESConfigurationSet_basic(
 func testAccCheckSESConfigurationSetDestroy(
 func testAccCheckAwsSESConfigurationSetExists(
@@ -6670,6 +6675,7 @@ func testAccCheckSESReceiptFilterDestroy(
 func testAccCheckAwsSESReceiptFilterExists(
 func testAccAWSSESReceiptFilterConfig(
 func TestAccAWSSESReceiptRuleSet_basic(
+func TestAccAWSSESReceiptRuleSet_disappears(
 func testAccCheckSESReceiptRuleSetDestroy(
 func testAccCheckAwsSESReceiptRuleSetExists(
 func testAccAWSSESReceiptRuleSetConfig(
@@ -6677,6 +6683,7 @@ func TestAccAWSSESReceiptRule_basic(
 func TestAccAWSSESReceiptRule_s3Action(
 func TestAccAWSSESReceiptRule_order(
 func TestAccAWSSESReceiptRule_actions(
+func TestAccAWSSESReceiptRule_disappears(
 func testAccCheckSESReceiptRuleDestroy(
 func testAccCheckAwsSESReceiptRuleExists(
 func testAccCheckAwsSESReceiptRuleOrder(
@@ -6687,6 +6694,7 @@ func testAccAWSSESReceiptRuleOrderConfig(
 func testAccAWSSESReceiptRuleActionsConfig(
 func TestAccAWSSesTemplate_Basic(
 func TestAccAWSSesTemplate_Update(
+func TestAccAWSSesTemplate_disappears(
 func TestAccAWSSfnActivity_basic(
 func TestAccAWSSfnActivity_Tags(
 func testAccCheckAWSSfnActivityExists(
@@ -7805,6 +7813,7 @@ func testAccCheckAWSWorkLinkWebsiteCertificateAuthorityAssociationDisappears(
 func testAccCheckAWSWorkLinkWebsiteCertificateAuthorityAssociationExists(
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfig(
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfigDisplayName(
+func testAccPreCheckHasIAMRole(
 func TestAccAWSXraySamplingRule_basic(
 func TestAccAWSXraySamplingRule_update(
 func testAccCheckAWSXraySamplingRuleDestroy(

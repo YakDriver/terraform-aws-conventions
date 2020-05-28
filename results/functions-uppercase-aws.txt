@@ -53,6 +53,7 @@ func TestAccAWSDbInstanceDataSource_ec2Classic(
 func testAccAWSDBInstanceDataSourceConfig(
 func testAccAWSDBInstanceDataSourceConfig_ec2Classic(
 func TestAccAWSDbSnapshotDataSource_basic(
+func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
 func TestAccAWSEbsSnapshotDataSource_basic(
 func TestAccAWSEbsSnapshotDataSource_Filter(
 func TestAccAWSEbsSnapshotDataSource_MostRecent(
@@ -4021,6 +4022,7 @@ func TestAccAWSIoTTopicRule_republish_with_qos(
 func TestAccAWSIoTTopicRule_s3(
 func TestAccAWSIoTTopicRule_sns(
 func TestAccAWSIoTTopicRule_sqs(
+func TestAccAWSIoTTopicRule_step_functions(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
 func TestAccAWSIoTTopicRule_Tags(
@@ -4042,6 +4044,7 @@ func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_step_functions(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
@@ -5995,6 +5998,8 @@ func TestAccAWSServiceDiscoveryService_public(
 func TestAccAWSServiceDiscoveryService_http(
 func testAccPreCheckAWSServiceQuotas(
 func TestAccAWSSESActiveReceiptRuleSet_basic(
+func TestAccAWSSESActiveReceiptRuleSet_disappears(
+func testAccAWSSESActiveReceiptRuleSetConfig(
 func TestAccAWSSESConfigurationSet_basic(
 func TestAccAWSSESDomainDkim_basic(
 func TestAccAWSSESDomainIdentity_basic(
@@ -6020,17 +6025,20 @@ func testAccAWSSESIdentityPolicyConfigPolicy2(
 func TestAccAWSSESReceiptFilter_basic(
 func testAccAWSSESReceiptFilterConfig(
 func TestAccAWSSESReceiptRuleSet_basic(
+func TestAccAWSSESReceiptRuleSet_disappears(
 func testAccAWSSESReceiptRuleSetConfig(
 func TestAccAWSSESReceiptRule_basic(
 func TestAccAWSSESReceiptRule_s3Action(
 func TestAccAWSSESReceiptRule_order(
 func TestAccAWSSESReceiptRule_actions(
+func TestAccAWSSESReceiptRule_disappears(
 func testAccAWSSESReceiptRuleBasicConfig(
 func testAccAWSSESReceiptRuleS3ActionConfig(
 func testAccAWSSESReceiptRuleOrderConfig(
 func testAccAWSSESReceiptRuleActionsConfig(
 func TestAccAWSSesTemplate_Basic(
 func TestAccAWSSesTemplate_Update(
+func TestAccAWSSesTemplate_disappears(
 func TestAccAWSSfnActivity_basic(
 func TestAccAWSSfnActivity_Tags(
 func testAccCheckAWSSfnActivityExists(

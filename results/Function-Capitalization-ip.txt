@@ -680,8 +680,10 @@ func resourceAwsSesActiveReceiptRuleSetUpdate(
 func resourceAwsSesActiveReceiptRuleSetRead(
 func resourceAwsSesActiveReceiptRuleSetDelete(
 func TestAccAWSSESActiveReceiptRuleSet_basic(
+func TestAccAWSSESActiveReceiptRuleSet_disappears(
 func testAccCheckSESActiveReceiptRuleSetDestroy(
 func testAccCheckAwsSESActiveReceiptRuleSetExists(
+func testAccAWSSESActiveReceiptRuleSetConfig(
 func resourceAwsSesReceiptFilter(
 func resourceAwsSesReceiptFilterCreate(
 func resourceAwsSesReceiptFilterRead(
@@ -703,6 +705,7 @@ func resourceAwsSesReceiptRuleSetRead(
 func resourceAwsSesReceiptRuleSetDelete(
 func testSweepSesReceiptRuleSets(
 func TestAccAWSSESReceiptRuleSet_basic(
+func TestAccAWSSESReceiptRuleSet_disappears(
 func testAccCheckSESReceiptRuleSetDestroy(
 func testAccCheckAwsSESReceiptRuleSetExists(
 func testAccAWSSESReceiptRuleSetConfig(
@@ -710,6 +713,7 @@ func TestAccAWSSESReceiptRule_basic(
 func TestAccAWSSESReceiptRule_s3Action(
 func TestAccAWSSESReceiptRule_order(
 func TestAccAWSSESReceiptRule_actions(
+func TestAccAWSSESReceiptRule_disappears(
 func testAccCheckSESReceiptRuleDestroy(
 func testAccCheckAwsSESReceiptRuleExists(
 func testAccAwsSesReceiptRuleImportStateIdFunc(

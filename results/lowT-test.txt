@@ -3570,6 +3570,7 @@ func testAccAWSIoTTopicRule_republish_with_qos(
 func testAccAWSIoTTopicRule_s3(
 func testAccAWSIoTTopicRule_sns(
 func testAccAWSIoTTopicRule_sqs(
+func testAccAWSIoTTopicRule_step_functions(
 func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
@@ -5114,6 +5115,7 @@ func testAccAwsServiceQuotasServiceQuotaConfigSameValue(
 func testAccAwsServiceQuotasServiceQuotaConfigValue(
 func testAccCheckSESActiveReceiptRuleSetDestroy(
 func testAccCheckAwsSESActiveReceiptRuleSetExists(
+func testAccAWSSESActiveReceiptRuleSetConfig(
 func testSweepSesConfigurationSets(
 func testAccCheckSESConfigurationSetDestroy(
 func testAccCheckAwsSESConfigurationSetExists(
@@ -5167,7 +5169,7 @@ func testAccAWSSESReceiptRuleBasicConfig(
 func testAccAWSSESReceiptRuleS3ActionConfig(
 func testAccAWSSESReceiptRuleOrderConfig(
 func testAccAWSSESReceiptRuleActionsConfig(
-func testAccCheckSesTemplate(
+func testAccCheckSesTemplateExists(
 func testAccCheckSesTemplateDestroy(
 func testAccCheckAwsSesTemplateResourceConfigBasic1(
 func testAccCheckAwsSesTemplateResourceConfigBasic2(
@@ -5900,10 +5902,7 @@ func testAccCheckAWSWorkLinkWebsiteCertificateAuthorityAssociationExists(
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfig(
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfigDisplayName(
 func testSweepWorkspacesDirectories(
-func testAccAwsWorkspacesDirectory_basic(
-func testAccAwsWorkspacesDirectory_disappears(
-func testAccAwsWorkspacesDirectory_subnetIds(
-func testAccAwsWorkspacesDirectory_tags(
+func testAccPreCheckHasIAMRole(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryDisappears(
 func testAccCheckAwsWorkspacesDirectoryExists(

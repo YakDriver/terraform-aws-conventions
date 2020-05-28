@@ -217,5 +217,6 @@ func TestAccAWSSNSTopic_withIAMRole(
 func TestAccAWSSNSTopic_withFakeIAMRole(
 func testAccAWSSNSTopicConfig_withIAMRole(
 func testAccAWSSNSTopicConfig_withFakeIAMRole(
+func testAccPreCheckHasIAMRole(
 func validateIAMPolicyJson(
 func TestValidateIAMPolicyJsonString(
