@@ -1446,9 +1446,6 @@ func flattenAwsCodeBuildProjectSourceData(
 func flattenAwsCodebuildProjectGitSubmodulesConfig(
 func flattenAwsCodeBuildVpcConfig(
 func resourceAwsCodeBuildProjectArtifactsHash(
-func resourceAwsCodeBuildProjectEnvironmentHash(
-func resourceAwsCodeBuildProjectSourceHash(
-func resourceAwsCodeBuildProjectSourceAuthHash(
 func validateAwsCodeBuildProjectName(
 func validateAwsCodeBuildProjectS3LogsLocation(
 func resourceAwsCodeBuildSourceCredential(

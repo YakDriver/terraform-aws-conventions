@@ -507,9 +507,6 @@ func resourceAwsCodeBuildProjectRead(
 func resourceAwsCodeBuildProjectUpdate(
 func resourceAwsCodeBuildProjectDelete(
 func resourceAwsCodeBuildProjectArtifactsHash(
-func resourceAwsCodeBuildProjectEnvironmentHash(
-func resourceAwsCodeBuildProjectSourceHash(
-func resourceAwsCodeBuildProjectSourceAuthHash(
 func resourceAwsCodeBuildSourceCredential(
 func resourceAwsCodeBuildSourceCredentialCreate(
 func resourceAwsCodeBuildSourceCredentialRead(
