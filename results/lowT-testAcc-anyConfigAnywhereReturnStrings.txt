@@ -211,7 +211,13 @@ func testAccAWSDataSourceS3ObjectsConfigEncoded(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigMaxKeys(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigStartAfter(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigOwners(randInt int) string {
+func testAccAWSDataSourceS3ObjectConfig_basic(randInt int) string {
 func testAccAWSDataSourceS3ObjectConfig_basicViaAccessPoint(rName string) string {
+func testAccAWSDataSourceS3ObjectConfig_readableBody(randInt int) string {
+func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(randInt int) string {
+func testAccAWSDataSourceS3ObjectConfig_allParams(randInt int) string {
+func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOff(randInt int) string {
+func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOn(randInt int, retainUntilDate string) string {
 func testAccAWSDataSourceS3BucketConfig_basic(bucketName string) string {
 func testAccAWSDataSourceS3BucketWebsiteConfig(bucketName string) string {
 func testAccDataSourceAwsSecretsManagerSecretConfig_ARN(rName string) string {
@@ -2870,6 +2876,7 @@ func testAccServiceDiscoveryServiceConfig_http(rName string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigSameValue(quotaCode, serviceCode string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigValue(quotaCode, serviceCode, value string) string {
 func testAccAWSSESActiveReceiptRuleSetConfig(name string) string {
+func testAccAWSSESConfigurationSetConfig(escRandomInteger int) string {
 func testAccAwsSESDomainIdentityConfig(domain string) string {
 func testAccAwsSESDomainMailFromConfig(domain, mailFromDomain string) string {
 func testAccAwsSESDomainMailFromConfig_behaviorOnMxFailure(domain, behaviorOnMxFailure string) string {

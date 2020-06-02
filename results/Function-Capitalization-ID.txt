@@ -39,6 +39,7 @@ func testAccAwsProviderAccountID(
 func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalARNAccountID(
+func testAccCheckResourceAttrGlobalARNAccountID(
 func testAccGetAccountID(
 func testAccAWSAMIDisappears(
 func testAccCheckAWSAPIGatewayRestAPIDescriptionAttribute(

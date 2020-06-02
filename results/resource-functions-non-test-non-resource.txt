@@ -1610,7 +1610,6 @@ func flattenServiceDiscoveryHealthCheckConfig(
 func expandServiceDiscoveryHealthCheckCustomConfig(
 func flattenServiceDiscoveryHealthCheckCustomConfig(
 func init(
-func findConfigurationSet(
 func init(
 func init(
 func getAwsSesIdentityVerificationAttributes(

@@ -1549,6 +1549,7 @@ func testAccServiceDiscoveryPublicDnsNamespaceConfig(rName string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigSameValue(quotaCode, serviceCode string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigValue(quotaCode, serviceCode, value string) string {
 func testAccAWSSESActiveReceiptRuleSetConfig(name string) string {
+func testAccAWSSESConfigurationSetConfig(escRandomInteger int) string {
 func testAccAwsSESDomainIdentityConfig(domain string) string {
 func testAccAwsSESDomainMailFromConfig(domain, mailFromDomain string) string {
 func testAccAwsSESEmailIdentityConfig(email string) string {

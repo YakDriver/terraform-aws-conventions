@@ -4024,7 +4024,6 @@ func resourceAwsSesConfigurationSet(
 func resourceAwsSesConfigurationSetCreate(
 func resourceAwsSesConfigurationSetRead(
 func resourceAwsSesConfigurationSetDelete(
-func findConfigurationSet(
 func init(
 func resourceAwsSesDomainDkim(
 func resourceAwsSesDomainDkimCreate(

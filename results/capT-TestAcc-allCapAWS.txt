@@ -83,6 +83,7 @@ func TestAccAWSDataElasticsearchDomain_basic(
 func TestAccAWSDataElasticsearchDomain_advanced(
 func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
+func TestAccAWSElbServiceAccount_Region(
 func TestAccAWSDataSourceIAMGroup_basic(
 func TestAccAWSDataSourceIAMGroup_users(
 func TestAccAWSDataSourceIAMInstanceProfile_basic(
@@ -151,6 +152,7 @@ func TestAccAWSDataSourceRedshiftCluster_basic(
 func TestAccAWSDataSourceRedshiftCluster_vpc(
 func TestAccAWSDataSourceRedshiftCluster_logging(
 func TestAccAWSRedshiftServiceAccount_basic(
+func TestAccAWSRedshiftServiceAccount_Region(
 func TestAccAWSRouteDataSource_basic(
 func TestAccAWSRouteDataSource_TransitGatewayID(
 func TestAccAWSStepFunctionsActivityDataSource(
@@ -1030,6 +1032,7 @@ func TestAccAWSDirectoryServiceDirectory_microsoft(
 func TestAccAWSDirectoryServiceDirectory_microsoftStandard(
 func TestAccAWSDirectoryServiceDirectory_connector(
 func TestAccAWSDirectoryServiceDirectory_withAliasAndSso(
+func TestAccAWSDirectoryServiceDirectory_disappears(
 func TestAccAWSDirectoryServiceLogSubscription_basic(
 func TestAccAWSDlmLifecyclePolicy_Basic(
 func TestAccAWSDlmLifecyclePolicy_Full(

@@ -6,6 +6,7 @@ func TestAccAWSElbHostedZoneId_basic(
 func dataSourceAwsElbServiceAccount(
 func dataSourceAwsElbServiceAccountRead(
 func TestAccAWSElbServiceAccount_basic(
+func TestAccAWSElbServiceAccount_Region(
 func testAccCheckAWSAutocalingElbAttachmentExists(
 func expandCodeDeployElbInfo(
 func flattenCodeDeployElbInfo(

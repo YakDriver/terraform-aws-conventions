@@ -338,6 +338,7 @@ func testAccAWSElasticsearchDomainConfigWithDataSource(
 func testAccAWSElasticsearchDomainConfigAdvancedWithDataSource(
 func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
+func TestAccAWSElbServiceAccount_Region(
 func TestAccDataSourceAWSELB_basic(
 func testAccDataSourceAWSELBConfigBasic(
 func TestAccDataSourceAWSGlueScript_Language_Python(
@@ -559,6 +560,7 @@ func testAccAWSDataSourceRedshiftClusterConfig(
 func testAccAWSDataSourceRedshiftClusterConfigWithVpc(
 func testAccAWSDataSourceRedshiftClusterConfigWithLogging(
 func TestAccAWSRedshiftServiceAccount_basic(
+func TestAccAWSRedshiftServiceAccount_Region(
 func TestAccDataSourceAwsRegions_Basic(
 func TestAccDataSourceAwsRegions_Filter(
 func TestAccDataSourceAwsRegions_AllRegions(
@@ -637,13 +639,13 @@ func TestAccDataSourceAWSS3BucketObject_ObjectLockLegalHoldOn(
 func TestAccDataSourceAWSS3BucketObject_LeadingSlash(
 func TestAccDataSourceAWSS3BucketObject_MultipleSlashes(
 func testAccCheckAwsS3ObjectDataSourceExists(
-func testAccAWSDataSourceS3ObjectConfig_basic(randInt int) (
+func testAccAWSDataSourceS3ObjectConfig_basic(
 func testAccAWSDataSourceS3ObjectConfig_basicViaAccessPoint(
-func testAccAWSDataSourceS3ObjectConfig_readableBody(randInt int) (
-func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(randInt int) (
-func testAccAWSDataSourceS3ObjectConfig_allParams(randInt int) (
-func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOff(randInt int) (
-func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOn(randInt int, retainUntilDate string) (
+func testAccAWSDataSourceS3ObjectConfig_readableBody(
+func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(
+func testAccAWSDataSourceS3ObjectConfig_allParams(
+func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOff(
+func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOn(
 func testAccAWSDataSourceS3ObjectConfig_leadingSlash(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_multipleSlashes(randInt int) (
 func TestAccDataSourceS3Bucket_basic(
@@ -828,6 +830,7 @@ func testAccMatchResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalHostname(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
+func testAccCheckResourceAttrGlobalARNAccountID(
 func testAccMatchResourceAttrGlobalARN(
 func testAccCheckResourceAttrRfc3339(
 func testAccCheckListHasSomeElementAttrPair(
@@ -1064,13 +1067,6 @@ func TestAccAWSAPIGatewayAuthorizer_switchAuthorizerTTL(
 func TestAccAWSAPIGatewayAuthorizer_authTypeValidation(
 func TestAccAWSAPIGatewayAuthorizer_disappears(
 func testAccCheckAWSAPIGatewayAuthorizerDisappears(
-func testAccCheckAWSAPIGatewayAuthorizerAuthorizerUri(
-func testAccCheckAWSAPIGatewayAuthorizerIdentitySource(
-func testAccCheckAWSAPIGatewayAuthorizerName(
-func testAccCheckAWSAPIGatewayAuthorizerType(
-func testAccCheckAWSAPIGatewayAuthorizerAuthorizerCredentials(
-func testAccCheckAWSAPIGatewayAuthorizerAuthorizerResultTtlInSeconds(
-func testAccCheckAWSAPIGatewayAuthorizerIdentityValidationExpression(
 func testAccCheckAWSAPIGatewayAuthorizerExists(
 func testAccCheckAWSAPIGatewayAuthorizerDestroy(
 func testAccAWSAPIGatewayAuthorizerImportStateIdFunc(
@@ -2242,7 +2238,6 @@ func testAccAWSCloudTrail_event_selector(
 func testAccCheckCloudTrailExists(
 func testAccCheckCloudTrailLoggingEnabled(
 func testAccCheckCloudTrailLogValidationEnabled(
-func testAccCheckCloudTrailKmsKeyIdEquals(
 func testAccCheckAWSCloudTrailDestroy(
 func testAccCheckCloudTrailLoadTags(
 func testAccAWSCloudTrailConfig(
@@ -2952,7 +2947,6 @@ func testAccConfigConfigurationRecorder_basic(
 func testAccConfigConfigurationRecorder_allParams(
 func testAccConfigConfigurationRecorder_importBasic(
 func testAccCheckConfigConfigurationRecorderName(
-func testAccCheckConfigConfigurationRecorderRoleArn(
 func testAccCheckConfigConfigurationRecorderExists(
 func testAccCheckConfigConfigurationRecorderDestroy(
 func testAccConfigConfigurationRecorderConfig_basic(
@@ -3527,6 +3521,7 @@ func TestAccAWSDirectoryServiceDirectory_microsoftStandard(
 func TestAccAWSDirectoryServiceDirectory_connector(
 func TestAccAWSDirectoryServiceDirectory_withAliasAndSso(
 func testAccCheckDirectoryServiceDirectoryDestroy(
+func TestAccAWSDirectoryServiceDirectory_disappears(
 func testAccCheckServiceDirectoryExists(
 func testAccCheckServiceDirectoryAlias(
 func testAccCheckServiceDirectorySso(
@@ -8488,8 +8483,9 @@ func testAccCheckAwsSESActiveReceiptRuleSetExists(
 func testAccAWSSESActiveReceiptRuleSetConfig(
 func testSweepSesConfigurationSets(
 func TestAccAWSSESConfigurationSet_basic(
-func testAccCheckSESConfigurationSetDestroy(
 func testAccCheckAwsSESConfigurationSetExists(
+func testAccCheckSESConfigurationSetDestroy(
+func testAccAWSSESConfigurationSetConfig(
 func TestAccAWSSESDomainDkim_basic(
 func testAccCheckAwsSESDomainDkimDestroy(
 func testAccCheckAwsSESDomainDkimExists(

@@ -168,6 +168,7 @@ const testAccAWSDefaultSubnetConfigPublicIp =
 const testAccAWSDefaultSubnetConfigNoPublicIp =
 const testAccAWSDefaultVpcDhcpOptionsConfigBasic =
 const testAccAWSDefaultVpcConfigBasic =
+const testAccDirectoryServiceDirectoryConfigBase =
 const testAccDirectoryServiceDirectoryConfig =
 const testAccDirectoryServiceDirectoryTagsConfig =
 const testAccDirectoryServiceDirectoryUpdateTagsConfig =

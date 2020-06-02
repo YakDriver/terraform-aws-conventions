@@ -8,6 +8,7 @@ func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccMatchResourceAttrRegionalARNAccountID(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
+func testAccCheckResourceAttrGlobalARNAccountID(
 func testAccMatchResourceAttrGlobalARN(
 func testAccAssumeRoleARNPreCheck(
 func TestALBTargetGroupCloudwatchSuffixFromARN(

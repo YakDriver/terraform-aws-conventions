@@ -985,6 +985,7 @@ func testAccMatchResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalHostname(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
+func testAccCheckResourceAttrGlobalARNAccountID(
 func testAccMatchResourceAttrGlobalARN(
 func testAccCheckResourceAttrRfc3339(
 func testAccCheckListHasSomeElementAttrPair(
@@ -1210,13 +1211,6 @@ func resourceAwsApiGatewayAuthorizerDelete(
 func resourceAwsApiGatewayAuthorizerCustomizeDiff(
 func validateAuthorizerType(
 func testAccCheckAWSAPIGatewayAuthorizerDisappears(
-func testAccCheckAWSAPIGatewayAuthorizerAuthorizerUri(
-func testAccCheckAWSAPIGatewayAuthorizerIdentitySource(
-func testAccCheckAWSAPIGatewayAuthorizerName(
-func testAccCheckAWSAPIGatewayAuthorizerType(
-func testAccCheckAWSAPIGatewayAuthorizerAuthorizerCredentials(
-func testAccCheckAWSAPIGatewayAuthorizerAuthorizerResultTtlInSeconds(
-func testAccCheckAWSAPIGatewayAuthorizerIdentityValidationExpression(
 func testAccCheckAWSAPIGatewayAuthorizerExists(
 func testAccCheckAWSAPIGatewayAuthorizerDestroy(
 func testAccAWSAPIGatewayAuthorizerImportStateIdFunc(
@@ -2595,7 +2589,6 @@ func testAccAWSCloudTrail_event_selector(
 func testAccCheckCloudTrailExists(
 func testAccCheckCloudTrailLoggingEnabled(
 func testAccCheckCloudTrailLogValidationEnabled(
-func testAccCheckCloudTrailKmsKeyIdEquals(
 func testAccCheckAWSCloudTrailDestroy(
 func testAccCheckCloudTrailLoadTags(
 func testAccAWSCloudTrailConfig(
@@ -3379,7 +3372,6 @@ func testAccConfigConfigurationRecorder_basic(
 func testAccConfigConfigurationRecorder_allParams(
 func testAccConfigConfigurationRecorder_importBasic(
 func testAccCheckConfigConfigurationRecorderName(
-func testAccCheckConfigConfigurationRecorderRoleArn(
 func testAccCheckConfigConfigurationRecorderExists(
 func testAccCheckConfigConfigurationRecorderDestroy(
 func testAccConfigConfigurationRecorderConfig_basic(
@@ -9740,11 +9732,11 @@ func resourceAwsSesConfigurationSet(
 func resourceAwsSesConfigurationSetCreate(
 func resourceAwsSesConfigurationSetRead(
 func resourceAwsSesConfigurationSetDelete(
-func findConfigurationSet(
 func init(
 func testSweepSesConfigurationSets(
-func testAccCheckSESConfigurationSetDestroy(
 func testAccCheckAwsSESConfigurationSetExists(
+func testAccCheckSESConfigurationSetDestroy(
+func testAccAWSSESConfigurationSetConfig(
 func resourceAwsSesDomainDkim(
 func resourceAwsSesDomainDkimCreate(
 func resourceAwsSesDomainDkimRead(

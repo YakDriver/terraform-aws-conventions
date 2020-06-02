@@ -272,13 +272,13 @@ func testAccAWSDataSourceS3ObjectsConfigMaxKeys(
 func testAccAWSDataSourceS3ObjectsConfigStartAfter(
 func testAccAWSDataSourceS3ObjectsConfigOwners(
 func testAccCheckAwsS3ObjectDataSourceExists(
-func testAccAWSDataSourceS3ObjectConfig_basic(randInt int) (
+func testAccAWSDataSourceS3ObjectConfig_basic(
 func testAccAWSDataSourceS3ObjectConfig_basicViaAccessPoint(
-func testAccAWSDataSourceS3ObjectConfig_readableBody(randInt int) (
-func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(randInt int) (
-func testAccAWSDataSourceS3ObjectConfig_allParams(randInt int) (
-func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOff(randInt int) (
-func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOn(randInt int, retainUntilDate string) (
+func testAccAWSDataSourceS3ObjectConfig_readableBody(
+func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(
+func testAccAWSDataSourceS3ObjectConfig_allParams(
+func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOff(
+func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOn(
 func testAccAWSDataSourceS3ObjectConfig_leadingSlash(randInt int) (
 func testAccAWSDataSourceS3ObjectConfig_multipleSlashes(randInt int) (
 func testAccAWSDataSourceS3BucketConfig_basic(
@@ -374,6 +374,7 @@ func testAccMatchResourceAttrRegionalARNAccountID(
 func testAccMatchResourceAttrRegionalHostname(
 func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
+func testAccCheckResourceAttrGlobalARNAccountID(
 func testAccMatchResourceAttrGlobalARN(
 func testAccCheckResourceAttrRfc3339(
 func testAccCheckListHasSomeElementAttrPair(
@@ -518,13 +519,6 @@ func testAccAWSAPIGatewayApiKeyConfigDescription(
 func testAccAWSAPIGatewayApiKeyConfigEnabled(
 func testAccAWSAPIGatewayApiKeyConfigValue(
 func testAccCheckAWSAPIGatewayAuthorizerDisappears(
-func testAccCheckAWSAPIGatewayAuthorizerAuthorizerUri(
-func testAccCheckAWSAPIGatewayAuthorizerIdentitySource(
-func testAccCheckAWSAPIGatewayAuthorizerName(
-func testAccCheckAWSAPIGatewayAuthorizerType(
-func testAccCheckAWSAPIGatewayAuthorizerAuthorizerCredentials(
-func testAccCheckAWSAPIGatewayAuthorizerAuthorizerResultTtlInSeconds(
-func testAccCheckAWSAPIGatewayAuthorizerIdentityValidationExpression(
 func testAccCheckAWSAPIGatewayAuthorizerExists(
 func testAccCheckAWSAPIGatewayAuthorizerDestroy(
 func testAccAWSAPIGatewayAuthorizerImportStateIdFunc(
@@ -1281,7 +1275,6 @@ func testAccAWSCloudTrail_event_selector(
 func testAccCheckCloudTrailExists(
 func testAccCheckCloudTrailLoggingEnabled(
 func testAccCheckCloudTrailLogValidationEnabled(
-func testAccCheckCloudTrailKmsKeyIdEquals(
 func testAccCheckAWSCloudTrailDestroy(
 func testAccCheckCloudTrailLoadTags(
 func testAccAWSCloudTrailConfig(
@@ -1691,7 +1684,6 @@ func testAccConfigConfigurationRecorder_basic(
 func testAccConfigConfigurationRecorder_allParams(
 func testAccConfigConfigurationRecorder_importBasic(
 func testAccCheckConfigConfigurationRecorderName(
-func testAccCheckConfigConfigurationRecorderRoleArn(
 func testAccCheckConfigConfigurationRecorderExists(
 func testAccCheckConfigConfigurationRecorderDestroy(
 func testAccConfigConfigurationRecorderConfig_basic(
@@ -4921,8 +4913,9 @@ func testAccAwsServiceQuotasServiceQuotaConfigValue(
 func testAccCheckSESActiveReceiptRuleSetDestroy(
 func testAccCheckAwsSESActiveReceiptRuleSetExists(
 func testAccAWSSESActiveReceiptRuleSetConfig(
-func testAccCheckSESConfigurationSetDestroy(
 func testAccCheckAwsSESConfigurationSetExists(
+func testAccCheckSESConfigurationSetDestroy(
+func testAccAWSSESConfigurationSetConfig(
 func testAccCheckAwsSESDomainDkimDestroy(
 func testAccCheckAwsSESDomainDkimExists(
 func testAccCheckAwsSESDomainDkimTokens(

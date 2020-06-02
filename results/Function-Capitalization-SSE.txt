@@ -20,6 +20,7 @@ func TestAccAWSSESActiveReceiptRuleSet_basic(
 func TestAccAWSSESActiveReceiptRuleSet_disappears(
 func testAccAWSSESActiveReceiptRuleSetConfig(
 func TestAccAWSSESConfigurationSet_basic(
+func testAccAWSSESConfigurationSetConfig(
 func TestAccAWSSESDomainDkim_basic(
 func TestAccAWSSESDomainIdentity_basic(
 func TestAccAWSSESDomainIdentity_disappears(

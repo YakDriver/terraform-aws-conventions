@@ -216,6 +216,7 @@ func TestAccAWSDataElasticsearchDomain_basic(
 func TestAccAWSDataElasticsearchDomain_advanced(
 func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
+func TestAccAWSElbServiceAccount_Region(
 func TestAccDataSourceAWSELB_basic(
 func TestAccDataSourceAWSGlueScript_Language_Python(
 func TestAccDataSourceAWSGlueScript_Language_Scala(
@@ -370,6 +371,7 @@ func TestAccAWSDataSourceRedshiftCluster_basic(
 func TestAccAWSDataSourceRedshiftCluster_vpc(
 func TestAccAWSDataSourceRedshiftCluster_logging(
 func TestAccAWSRedshiftServiceAccount_basic(
+func TestAccAWSRedshiftServiceAccount_Region(
 func TestAccDataSourceAwsRegions_Basic(
 func TestAccDataSourceAwsRegions_Filter(
 func TestAccDataSourceAwsRegions_AllRegions(
@@ -2098,6 +2100,7 @@ func TestAccAWSDirectoryServiceDirectory_microsoft(
 func TestAccAWSDirectoryServiceDirectory_microsoftStandard(
 func TestAccAWSDirectoryServiceDirectory_connector(
 func TestAccAWSDirectoryServiceDirectory_withAliasAndSso(
+func TestAccAWSDirectoryServiceDirectory_disappears(
 func testAccDirectoryServiceDirectoryConfig_withAlias(
 func testAccDirectoryServiceDirectoryConfig_withSso(
 func testAccDirectoryServiceDirectoryConfig_withSso_modified(
