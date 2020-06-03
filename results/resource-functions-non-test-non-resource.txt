@@ -1306,6 +1306,7 @@ func validateAwsLbListenerRulePriority(
 func lbListenerARNFromRuleARN(
 func highestListenerRulePriority(
 func lbListenerRuleConditions(
+func lbListenerRuleActionForward(
 func policyAttributesToMap(
 func suppressIfTargetType(
 func validateAwsLbTargetGroupHealthCheckPath(

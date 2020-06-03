@@ -3030,6 +3030,7 @@ func validateAwsLbListenerRulePriority(
 func lbListenerARNFromRuleARN(
 func highestListenerRulePriority(
 func lbListenerRuleConditions(
+func lbListenerRuleActionForward(
 func resourceAwsLBSSLNegotiationPolicy(
 func resourceAwsLBSSLNegotiationPolicyCreate(
 func resourceAwsLBSSLNegotiationPolicyRead(

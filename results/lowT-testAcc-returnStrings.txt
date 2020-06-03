@@ -542,8 +542,11 @@ func testAccAWSAPIGatewayV2RouteConfig_jwtAuthorizationUpdated(rName string) str
 func testAccAWSAPIGatewayV2RouteConfig_model(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_simpleAttributes(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_target(rName string) string {
-func testAccAWSAPIGatewayV2StageConfig_api(rName string) string {
-func testAccAWSAPIGatewayV2StageConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_apiWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_apiHttp(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_basicWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_basicHttp(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_defaultHttpStage(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_accessLogSettings(rName, format string) string {
 func testAccAWSAPIGatewayV2StageConfig_clientCertificateIdAndDescription(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_clientCertificateIdAndDescriptionUpdated(rName string) string {
@@ -2449,6 +2452,9 @@ func testAccLbListenerCertificateConfigMultiple(rName string, keys, certificates
 func testAccLbListenerCertificateConfigMultipleAddNew(rName string, keys, certificates []string) string {
 func testAccAWSLBListenerRuleConfig_multipleConditions(lbName, targetGroupName string) string {
 func testAccAWSLBListenerRuleConfig_basic(lbName, targetGroupName string) string {
+func testAccAWSLBListenerRuleConfig_forwardWeighted(lbName, targetGroupName1 string, targetGroupName2 string) string {
+func testAccAWSLBListenerRuleConfig_changeForwardWeightedStickiness(lbName, targetGroupName1 string, targetGroupName2 string) string {
+func testAccAWSLBListenerRuleConfig_changeForwardWeightedToBasic(lbName, targetGroupName1 string, targetGroupName2 string) string {
 func testAccAWSLBListenerRuleConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccAWSLBListenerRuleConfig_redirect(lbName string) string {
 func testAccAWSLBListenerRuleConfig_fixedResponse(lbName, response string) string {
@@ -2493,6 +2499,9 @@ func testAccAWSLBListenerRuleConfig_conditionMixed_updated2(lbName string) strin
 func testAccAWSLBListenerRuleConfig_conditionMultiple(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionMultiple_updated(lbName string) string {
 func testAccAWSLBListenerConfig_basic(lbName, targetGroupName string) string {
+func testAccAWSLBListenerConfig_forwardWeighted(lbName, targetGroupName1 string, targetGroupName2 string) string {
+func testAccAWSLBListenerConfig_changeForwardWeightedStickiness(lbName, targetGroupName1 string, targetGroupName2 string) string {
+func testAccAWSLBListenerConfig_changeForwardWeightedToBasic(lbName, targetGroupName1 string, targetGroupName2 string) string {
 func testAccAWSLBListenerConfig_basicUdp(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfig_https(rName, key, certificate string) string {

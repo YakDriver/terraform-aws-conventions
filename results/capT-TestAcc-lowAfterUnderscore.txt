@@ -344,7 +344,9 @@ func TestAccAWSAPIGatewayV2RouteResponse_basic(
 func TestAccAWSAPIGatewayV2RouteResponse_disappears(
 func TestAccAWSAPIGatewayV2Route_basic(
 func TestAccAWSAPIGatewayV2Route_disappears(
-func TestAccAWSAPIGatewayV2Stage_basic(
+func TestAccAWSAPIGatewayV2Stage_basicWebSocket(
+func TestAccAWSAPIGatewayV2Stage_basicHttp(
+func TestAccAWSAPIGatewayV2Stage_defaultHttpStage(
 func TestAccAWSAPIGatewayV2Stage_disappears(
 func TestAccAWSAPIGatewayV2VpcLink_basic(
 func TestAccAWSAPIGatewayV2VpcLink_disappears(
@@ -1436,6 +1438,7 @@ func TestAccAWSLBCookieStickinessPolicy_missingLB(
 func TestAccAwsLbListenerCertificate_basic(
 func TestAccAwsLbListenerCertificate_multiple(
 func TestAccAWSLBListenerRule_basic(
+func TestAccAWSLBListenerRule_forwardWeighted(
 func TestAccAWSLBListenerRule_redirect(
 func TestAccAWSLBListenerRule_fixedResponse(
 func TestAccAWSLBListenerRule_updateFixedResponse(
@@ -1460,6 +1463,7 @@ func TestAccAWSLBListenerRule_conditionUpdateMixed(
 func TestAccAWSLBListenerRule_conditionMultiple(
 func TestAccAWSLBListenerRule_conditionUpdateMultiple(
 func TestAccAWSLBListener_basic(
+func TestAccAWSLBListener_forwardWeighted(
 func TestAccAWSLBListener_basicUdp(
 func TestAccAWSLBListener_https(
 func TestAccAWSLBListener_redirect(
