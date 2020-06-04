@@ -838,14 +838,17 @@ func testAccCheckResourceAttrEquivalentJSON(
 func testAccGetAccountID(
 func testAccGetRegion(
 func testAccGetAlternateRegion(
+func testAccGetThirdRegion(
 func testAccGetPartition(
 func testAccGetPartitionDNSSuffix(
 func testAccGetAlternateRegionPartition(
+func testAccGetThirdRegionPartition(
 func testAccAlternateAccountPreCheck(
 func testAccAlternateRegionPreCheck(
 func testAccEC2ClassicPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func testAccPartitionHasServicePreCheck(
+func testAccMultipleRegionPreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccOrganizationsAccountPreCheck(
 func testAccOrganizationsEnabledPreCheck(
@@ -853,6 +856,7 @@ func testAccAlternateAccountProviderConfig(
 func testAccAlternateAccountAlternateRegionProviderConfig(
 func testAccAlternateAccountAndAlternateRegionProviderConfig(
 func testAccAlternateRegionProviderConfig(
+func testAccMultipleRegionProviderConfig(
 func testAccProviderConfigIgnoreTagsKeyPrefixes1(
 func testAccProviderConfigIgnoreTagsKeys1(
 func testAccUsEast1RegionProviderConfig(
@@ -1597,8 +1601,10 @@ func testAccCheckAppmeshRouteExists(
 func testAccAppmeshRouteConfigBase(
 func testAccAppmeshRouteConfig_httpRoute(
 func testAccAppmeshRouteConfig_httpRouteUpdated(
+func testAccAppmeshRouteConfig_httpRouteUpdatedWithZeroWeight(
 func testAccAppmeshRouteConfig_tcpRoute(
 func testAccAppmeshRouteConfig_tcpRouteUpdated(
+func testAccAppmeshRouteConfig_tcpRouteUpdatedWithZeroWeight(
 func testAccAppmeshRouteConfigWithTags(
 func testAccAwsAppmeshRouteConfig_httpHeader(
 func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(
@@ -3850,9 +3856,8 @@ func testAccCheckDynamoDbTableHasBilling_PayPerRequest(
 func testAccCheckDynamoDbTableHasBilling_Provisioned(
 func testAccCheckDynamoDbTableWasUpdated(
 func testAccCheckAWSDynamoDbTableDisappears(
-func TestAccAWSDynamoDbTable_Replica(
-func testAccAWSDynamoDbReplicaUpdates(
-func testAccAWSDynamoDbReplicaDeletes(
+func TestAccAWSDynamoDbTable_Replica_Multiple(
+func TestAccAWSDynamoDbTable_Replica_Single(
 func testAccAWSDynamoDbConfig_basic(
 func testAccAWSDynamoDbConfig_backup(
 func testAccAWSDynamoDbBilling_PayPerRequest(
@@ -3872,6 +3877,9 @@ func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(
 func testAccAWSDynamoDbConfigTimeToLive(
 func testAccAWSDynamoDbConfigOneAttribute(
 func testAccAWSDynamoDbConfigTwoAttributes(
+func testAccAWSDynamoDbTableConfigReplica0(
+func testAccAWSDynamoDbTableConfigReplica1(
+func testAccAWSDynamoDbTableConfigReplica2(
 func TestAccAWSEBSDefaultKmsKey_basic(
 func testAccCheckAwsEbsDefaultKmsKeyDestroy(
 func testAccCheckEbsDefaultKmsKey(
@@ -5700,6 +5708,7 @@ func TestAccAWSInstance_EbsRootDevice_ModifyDeleteOnTermination(
 func TestAccAWSInstance_EbsRootDevice_ModifyAll(
 func TestAccAWSInstance_EbsRootDevice_MultipleBlockDevices_ModifySize(
 func TestAccAWSInstance_EbsRootDevice_MultipleBlockDevices_ModifyDeleteOnTermination(
+func TestAccAWSInstance_EbsRootDevice_MultipleDynamicEBSBlockDevices(
 func TestAccAWSInstance_primaryNetworkInterface(
 func TestAccAWSInstance_primaryNetworkInterfaceSourceDestCheck(
 func TestAccAWSInstance_addSecondaryInterface(

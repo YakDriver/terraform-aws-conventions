@@ -778,8 +778,10 @@ func testAccAwsAppmeshRoute_httpHeader(
 func testAccAwsAppmeshRoute_routePriority(
 func testAccAppmeshRouteConfig_httpRoute(
 func testAccAppmeshRouteConfig_httpRouteUpdated(
+func testAccAppmeshRouteConfig_httpRouteUpdatedWithZeroWeight(
 func testAccAppmeshRouteConfig_tcpRoute(
 func testAccAppmeshRouteConfig_tcpRouteUpdated(
+func testAccAppmeshRouteConfig_tcpRouteUpdatedWithZeroWeight(
 func testAccAwsAppmeshRouteConfig_httpHeader(
 func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(
 func testAccAwsAppmeshRouteConfig_routePriority(
@@ -1682,7 +1684,6 @@ func TestAccAWSDynamoDbTable_attributeUpdateValidation(
 func TestAccAWSDynamoDbTable_encryption(
 func testAccCheckDynamoDbTableHasBilling_PayPerRequest(
 func testAccCheckDynamoDbTableHasBilling_Provisioned(
-func TestAccAWSDynamoDbTable_Replica(
 func testAccAWSDynamoDbConfig_basic(
 func testAccAWSDynamoDbConfig_backup(
 func testAccAWSDynamoDbBilling_PayPerRequest(

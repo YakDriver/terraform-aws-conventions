@@ -284,6 +284,7 @@ func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
 func testAccAlternateRegionProviderConfig() string {
+func testAccMultipleRegionProviderConfig(regions int) string {
 func testAccProviderConfigIgnoreTagsKeyPrefixes1(keyPrefix1 string) string {
 func testAccProviderConfigIgnoreTagsKeys1(key1 string) string {
 func testAccUsEast1RegionProviderConfig() string {
@@ -551,8 +552,10 @@ func testAccAppmeshMeshConfigWithRemoveTags(name string) string {
 func testAccAppmeshRouteConfigBase(meshName, vrName, vn1Name, vn2Name string) string {
 func testAccAppmeshRouteConfig_httpRoute(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_httpRouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAppmeshRouteConfig_httpRouteUpdatedWithZeroWeight(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_tcpRoute(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_tcpRouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAppmeshRouteConfig_tcpRouteUpdatedWithZeroWeight(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfigWithTags(meshName, vrName, vn1Name, vn2Name, rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsAppmeshRouteConfig_httpHeader(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
@@ -1367,6 +1370,9 @@ func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(name string) string {
 func testAccAWSDynamoDbConfigTimeToLive(rName string, ttlEnabled bool) string {
 func testAccAWSDynamoDbConfigOneAttribute(rName, hashKey, attrName, attrType string) string {
 func testAccAWSDynamoDbConfigTwoAttributes(rName, hashKey, rangeKey, attrName1, attrType1, attrName2, attrType2 string) string {
+func testAccAWSDynamoDbTableConfigReplica0(rName string) string {
+func testAccAWSDynamoDbTableConfigReplica1(rName string) string {
+func testAccAWSDynamoDbTableConfigReplica2(rName string) string {
 func testAccAwsEbsEncryptionByDefaultConfig(enabled bool) string {
 func testAccAwsEbsSnapshotCopyConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAwsEbsSnapshotCopyConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {

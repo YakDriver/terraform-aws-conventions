@@ -957,8 +957,6 @@ func testAccAWSDocDBClusterParameterGroupConfig_Tags(
 func testAccAWSDynamoDbItemConfigBasic(
 func testAccAWSDynamoDbItemConfigWithRangeKey(
 func testAccAWSDynamoDbItemConfigWithMultipleItems(
-func testAccAWSDynamoDbReplicaUpdates(
-func testAccAWSDynamoDbReplicaDeletes(
 func testAccAWSDynamoDbConfig_basic(
 func testAccAWSDynamoDbConfig_backup(
 func testAccAWSDynamoDbBilling_PayPerRequest(
@@ -978,6 +976,9 @@ func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(
 func testAccAWSDynamoDbConfigTimeToLive(
 func testAccAWSDynamoDbConfigOneAttribute(
 func testAccAWSDynamoDbConfigTwoAttributes(
+func testAccAWSDynamoDbTableConfigReplica0(
+func testAccAWSDynamoDbTableConfigReplica1(
+func testAccAWSDynamoDbTableConfigReplica2(
 func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(
 func testAccAWSEc2FleetConfig_BaseLaunchTemplate(
 func testAccAWSEc2FleetConfig_ExcessCapacityTerminationPolicy(

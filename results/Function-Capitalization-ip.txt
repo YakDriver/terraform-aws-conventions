@@ -55,7 +55,9 @@ func TestAccDataSourceAwsVpc_ipv6Associated(
 func TestAccDataSourceAwsVpc_multipleCidr(
 func testAccDataSourceAwsVpcConfigMultipleCidr(
 func resourceAwsDbEventSubscriptionImport(
+func testAccMultipleRegionPreCheck(
 func testAccMultipleRegionsPreCheck(
+func testAccMultipleRegionProviderConfig(
 func testAccPreCheckSkipError(
 func testSweepSkipSweepError(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_Multiple(
@@ -310,6 +312,7 @@ func testAccDynamoDbGlobalTableConfig_multipleRegions1(
 func testAccDynamoDbGlobalTableConfig_multipleRegions2(
 func TestAccAWSDynamoDbTableItem_withMultipleItems(
 func testAccAWSDynamoDbItemConfigWithMultipleItems(
+func TestAccAWSDynamoDbTable_Replica_Multiple(
 func TestAccAWSEbsSnapshotCopy_withDescription(
 func TestAccAWSEBSSnapshot_withDescription(
 func testAccAwsEbsSnapshotConfigWithDescription(
@@ -439,6 +442,7 @@ func TestAccAWSInstance_ipv6_supportAddressCountWithIpv4(
 func TestAccAWSInstance_multipleRegions(
 func TestAccAWSInstance_EbsRootDevice_MultipleBlockDevices_ModifySize(
 func TestAccAWSInstance_EbsRootDevice_MultipleBlockDevices_ModifyDeleteOnTermination(
+func TestAccAWSInstance_EbsRootDevice_MultipleDynamicEBSBlockDevices(
 func getIotRoleAliasDescription(
 func resourceAwsIotThingPrincipalAttachment(
 func resourceAwsIotThingPrincipalAttachmentCreate(

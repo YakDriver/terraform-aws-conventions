@@ -994,14 +994,17 @@ func primaryInstanceState(
 func testAccGetAccountID(
 func testAccGetRegion(
 func testAccGetAlternateRegion(
+func testAccGetThirdRegion(
 func testAccGetPartition(
 func testAccGetPartitionDNSSuffix(
 func testAccGetAlternateRegionPartition(
+func testAccGetThirdRegionPartition(
 func testAccAlternateAccountPreCheck(
 func testAccAlternateRegionPreCheck(
 func testAccEC2ClassicPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func testAccPartitionHasServicePreCheck(
+func testAccMultipleRegionPreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccOrganizationsAccountPreCheck(
 func testAccOrganizationsEnabledPreCheck(
@@ -1009,6 +1012,7 @@ func testAccAlternateAccountProviderConfig(
 func testAccAlternateAccountAlternateRegionProviderConfig(
 func testAccAlternateAccountAndAlternateRegionProviderConfig(
 func testAccAlternateRegionProviderConfig(
+func testAccMultipleRegionProviderConfig(
 func testAccProviderConfigIgnoreTagsKeyPrefixes1(
 func testAccProviderConfigIgnoreTagsKeys1(
 func testAccUsEast1RegionProviderConfig(
@@ -1838,8 +1842,10 @@ func testAccCheckAppmeshRouteExists(
 func testAccAppmeshRouteConfigBase(
 func testAccAppmeshRouteConfig_httpRoute(
 func testAccAppmeshRouteConfig_httpRouteUpdated(
+func testAccAppmeshRouteConfig_httpRouteUpdatedWithZeroWeight(
 func testAccAppmeshRouteConfig_tcpRoute(
 func testAccAppmeshRouteConfig_tcpRouteUpdated(
+func testAccAppmeshRouteConfig_tcpRouteUpdatedWithZeroWeight(
 func testAccAppmeshRouteConfigWithTags(
 func testAccAwsAppmeshRouteConfig_httpHeader(
 func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(
@@ -4460,8 +4466,6 @@ func testAccCheckDynamoDbTableHasBilling_PayPerRequest(
 func testAccCheckDynamoDbTableHasBilling_Provisioned(
 func testAccCheckDynamoDbTableWasUpdated(
 func testAccCheckAWSDynamoDbTableDisappears(
-func testAccAWSDynamoDbReplicaUpdates(
-func testAccAWSDynamoDbReplicaDeletes(
 func dynamoDbGetGSIIndex(
 func dynamoDbAttributesToMap(
 func testAccAWSDynamoDbConfig_basic(
@@ -4483,6 +4487,9 @@ func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(
 func testAccAWSDynamoDbConfigTimeToLive(
 func testAccAWSDynamoDbConfigOneAttribute(
 func testAccAWSDynamoDbConfigTwoAttributes(
+func testAccAWSDynamoDbTableConfigReplica0(
+func testAccAWSDynamoDbTableConfigReplica1(
+func testAccAWSDynamoDbTableConfigReplica2(
 func resourceAwsEbsDefaultKmsKey(
 func resourceAwsEbsDefaultKmsKeyCreate(
 func resourceAwsEbsDefaultKmsKeyRead(
@@ -9201,7 +9208,6 @@ func removeNil(
 func normalizeRegion(
 func validateS3BucketName(
 func grantHash(
-func expirationHash(
 func transitionHash(
 func rulesHash(
 func replicationRuleFilterHash(

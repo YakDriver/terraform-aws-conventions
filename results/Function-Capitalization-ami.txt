@@ -10,4 +10,5 @@ func TestAccAWSEcsService_withFamilyAndRevision(
 func testAccAWSEcsServiceWithFamilyAndRevision(
 func testAccAWSEcsServiceWithFamilyAndRevisionModified(
 func TestAccAWSEMRCluster_custom_ami_id(
+func TestAccAWSInstance_EbsRootDevice_MultipleDynamicEBSBlockDevices(
 func testAccAWSLaunchConfigurationConfig_ami(

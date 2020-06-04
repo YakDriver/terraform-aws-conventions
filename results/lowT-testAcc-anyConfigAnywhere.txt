@@ -286,6 +286,7 @@ func testAccAlternateAccountProviderConfig(
 func testAccAlternateAccountAlternateRegionProviderConfig(
 func testAccAlternateAccountAndAlternateRegionProviderConfig(
 func testAccAlternateRegionProviderConfig(
+func testAccMultipleRegionProviderConfig(
 func testAccProviderConfigIgnoreTagsKeyPrefixes1(
 func testAccProviderConfigIgnoreTagsKeys1(
 func testAccUsEast1RegionProviderConfig(
@@ -556,8 +557,10 @@ func testAccAppmeshMeshConfigWithRemoveTags(
 func testAccAppmeshRouteConfigBase(
 func testAccAppmeshRouteConfig_httpRoute(
 func testAccAppmeshRouteConfig_httpRouteUpdated(
+func testAccAppmeshRouteConfig_httpRouteUpdatedWithZeroWeight(
 func testAccAppmeshRouteConfig_tcpRoute(
 func testAccAppmeshRouteConfig_tcpRouteUpdated(
+func testAccAppmeshRouteConfig_tcpRouteUpdatedWithZeroWeight(
 func testAccAppmeshRouteConfigWithTags(
 func testAccAwsAppmeshRouteConfig_httpHeader(
 func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(
@@ -1444,6 +1447,9 @@ func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(
 func testAccAWSDynamoDbConfigTimeToLive(
 func testAccAWSDynamoDbConfigOneAttribute(
 func testAccAWSDynamoDbConfigTwoAttributes(
+func testAccAWSDynamoDbTableConfigReplica0(
+func testAccAWSDynamoDbTableConfigReplica1(
+func testAccAWSDynamoDbTableConfigReplica2(
 func testAccAwsEbsEncryptionByDefaultConfig(
 func testAccAwsEbsSnapshotCopyConfigTags1(
 func testAccAwsEbsSnapshotCopyConfigTags2(

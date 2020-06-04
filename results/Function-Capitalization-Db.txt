@@ -291,9 +291,8 @@ func testAccCheckDynamoDbTableHasBilling_PayPerRequest(
 func testAccCheckDynamoDbTableHasBilling_Provisioned(
 func testAccCheckDynamoDbTableWasUpdated(
 func testAccCheckAWSDynamoDbTableDisappears(
-func TestAccAWSDynamoDbTable_Replica(
-func testAccAWSDynamoDbReplicaUpdates(
-func testAccAWSDynamoDbReplicaDeletes(
+func TestAccAWSDynamoDbTable_Replica_Multiple(
+func TestAccAWSDynamoDbTable_Replica_Single(
 func dynamoDbGetGSIIndex(
 func dynamoDbAttributesToMap(
 func testAccAWSDynamoDbConfig_basic(
@@ -315,6 +314,9 @@ func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(
 func testAccAWSDynamoDbConfigTimeToLive(
 func testAccAWSDynamoDbConfigOneAttribute(
 func testAccAWSDynamoDbConfigTwoAttributes(
+func testAccAWSDynamoDbTableConfigReplica0(
+func testAccAWSDynamoDbTableConfigReplica1(
+func testAccAWSDynamoDbTableConfigReplica2(
 func flattenIotDynamoDbActions(
 func flattenIotDynamoDbv2Actions(
 func TestAccAWSIoTTopicRule_dynamoDbv2(

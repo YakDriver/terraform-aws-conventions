@@ -243,6 +243,7 @@ const testAccCheckInstanceConfigNoVolumeTags =
 const testAccCheckInstanceConfigWithVolumeTags =
 const testAccCheckInstanceConfigWithVolumeTagsUpdate =
 const testAccCheckInstanceConfigTagsUpdate =
+const testAccAwsEc2InstanceConfigDynamicEBSBlockDevices =
 const testAccNoInternetGatewayConfig =
 const testAccInternetGatewayConfig =
 const testAccInternetGatewayConfigChangeVPC =

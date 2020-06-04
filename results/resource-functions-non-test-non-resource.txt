@@ -1519,7 +1519,6 @@ func removeNil(
 func normalizeRegion(
 func validateS3BucketName(
 func grantHash(
-func expirationHash(
 func transitionHash(
 func rulesHash(
 func replicationRuleFilterHash(
