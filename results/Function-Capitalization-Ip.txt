@@ -126,10 +126,14 @@ func resourceAwsWorkspacesIpGroupDelete(
 func expandIpGroupRules(
 func flattenIpGroupRules(
 func TestAccAwsWorkspacesIpGroup_basic(
+func TestAccAwsWorkspacesIpGroup_tags(
+func TestAccAwsWorkspacesIpGroup_disappears(
 func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
+func testAccAwsWorkspacesIpGroupConfigTags1(
+func testAccAwsWorkspacesIpGroupConfigTags2(
 func flattenEc2NetworkInterfaceIpv6Address(
 func expandRoute53ResolverEndpointIpAddresses(
 func flattenRoute53ResolverEndpointIpAddresses(

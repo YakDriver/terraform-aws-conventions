@@ -1140,6 +1140,7 @@ func flattenFirehoseOrcSerDe(
 func flattenFirehoseParquetSerDe(
 func flattenFirehoseSchemaConfiguration(
 func flattenProcessingConfiguration(
+func flattenFirehoseKinesisSourceConfiguration(
 func flattenKinesisFirehoseDeliveryStream(
 func createSourceConfig(
 func createS3Config(

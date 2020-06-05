@@ -768,7 +768,7 @@ func resourceAwsAcmCertificateCreate(
 func resourceAwsAcmCertificateCreateImported(
 func resourceAwsAcmCertificateCreateRequested(
 func resourceAwsAcmCertificateRead(
-func resourceAwsAcmCertificateGuessValidationMethod(
+func resourceAwsAcmCertificateValidationMethod(
 func resourceAwsAcmCertificateUpdate(
 func resourceAwsAcmCertificateDelete(
 func resourceAwsAcmCertificateImport(
@@ -2122,7 +2122,6 @@ func TestAccAwsEc2ClientVpnEndpoint_withDNSServers(
 func TestAccAwsEc2ClientVpnEndpoint_tags(
 func TestAccAwsEc2ClientVpnEndpoint_splitTunnel(
 func testAccCheckAwsEc2ClientVpnEndpointDestroy(
-func testAccCheckAwsEc2ClientVpnEndpointDisappears(
 func testAccCheckAwsEc2ClientVpnEndpointExists(
 func resourceAwsEc2ClientVpnNetworkAssociation(
 func resourceAwsEc2ClientVpnNetworkAssociationCreate(
@@ -4564,10 +4563,14 @@ func resourceAwsWorkspacesIpGroupRead(
 func resourceAwsWorkspacesIpGroupUpdate(
 func resourceAwsWorkspacesIpGroupDelete(
 func TestAccAwsWorkspacesIpGroup_basic(
+func TestAccAwsWorkspacesIpGroup_tags(
+func TestAccAwsWorkspacesIpGroup_disappears(
 func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
+func testAccAwsWorkspacesIpGroupConfigTags1(
+func testAccAwsWorkspacesIpGroupConfigTags2(
 func resourceAwsWorkspacesWorkspace(
 func resourceAwsWorkspacesWorkspaceCreate(
 func resourceAwsWorkspacesWorkspaceRead(

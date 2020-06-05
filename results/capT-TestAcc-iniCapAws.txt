@@ -168,6 +168,8 @@ func TestAccAwsWorkspacesDirectory_disappears(
 func TestAccAwsWorkspacesDirectory_subnetIds(
 func TestAccAwsWorkspacesDirectory_tags(
 func TestAccAwsWorkspacesIpGroup_basic(
+func TestAccAwsWorkspacesIpGroup_tags(
+func TestAccAwsWorkspacesIpGroup_disappears(
 func TestAccAwsWorkspacesWorkspace_basic(
 func TestAccAwsWorkspacesWorkspace_tags(
 func TestAccAwsWorkspacesWorkspace_workspaceProperties(

@@ -8,7 +8,7 @@ func resourceAwsAcmCertificateCreate(
 func resourceAwsAcmCertificateCreateImported(
 func resourceAwsAcmCertificateCreateRequested(
 func resourceAwsAcmCertificateRead(
-func resourceAwsAcmCertificateGuessValidationMethod(
+func resourceAwsAcmCertificateValidationMethod(
 func resourceAwsAcmCertificateUpdate(
 func resourceAwsAcmCertificateDelete(
 func resourceAwsAcmCertificateImport(

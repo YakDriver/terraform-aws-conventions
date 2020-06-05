@@ -2034,6 +2034,9 @@ func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_DataFormatConversionC
 func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_DataFormatConversionConfiguration_ParquetSerDe_Empty(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_ErrorOutputPrefix(rName string, rInt int, errorOutputPrefix string) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_ProcessingConfiguration_Empty(rName string, rInt int) string {
+func testAccKinesisFirehoseDeliveryStreamRedshiftConfigBase(rName string, rInt int) string {
+func testAccKinesisFirehoseDeliveryStreamRedshiftConfig(rName string, rInt int) string {
+func testAccKinesisFirehoseDeliveryStreamRedshiftConfigUpdates(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_missingProcessingConfiguration(rInt int) string {
 func testAccKinesisStreamConfig(rInt int) string {
 func testAccKinesisStreamConfigConcurrent(rInt int) string {
@@ -3330,6 +3333,8 @@ func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) str
 func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
+func testAccAwsWorkspacesIpGroupConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsWorkspacesIpGroupConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(rName string) string {
 func testAccWorkspacesWorkspaceConfig(rName string) string {
 func testAccWorkspacesWorkspaceConfig_TagsA(rName string) string {

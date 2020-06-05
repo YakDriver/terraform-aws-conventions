@@ -324,4 +324,6 @@ func testAccAwsWafv2RegexPatternSetConfig_TwoTags(
 func testAccAwsWorkspacesDirectoryConfig_Prerequisites(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
+func testAccAwsWorkspacesIpGroupConfigTags1(
+func testAccAwsWorkspacesIpGroupConfigTags2(
 func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(

@@ -1067,6 +1067,9 @@ func testAccAWSKeyPairConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSKeyPairConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsApplicationConfigOutputsLambda(rInt int) string {
 func testAccFirehoseAWSLambdaConfigBasic(funcName, policyName, roleName string) string {
+func testAccKinesisFirehoseDeliveryStreamRedshiftConfigBase(rName string, rInt int) string {
+func testAccKinesisFirehoseDeliveryStreamRedshiftConfig(rName string, rInt int) string {
+func testAccKinesisFirehoseDeliveryStreamRedshiftConfigUpdates(rName string, rInt int) string {
 func testAccKinesisStreamConfig(rInt int) string {
 func testAccKinesisStreamConfigConcurrent(rInt int) string {
 func testAccKinesisStreamConfigWithEncryptionAndNoKmsKey(rInt int) string {
@@ -1828,4 +1831,6 @@ func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) str
 func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
+func testAccAwsWorkspacesIpGroupConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsWorkspacesIpGroupConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccWorkspacesWorkspaceConfig(rName string) string {

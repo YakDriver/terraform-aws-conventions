@@ -1061,7 +1061,7 @@ func resourceAwsAcmCertificateCreate(
 func resourceAwsAcmCertificateCreateImported(
 func resourceAwsAcmCertificateCreateRequested(
 func resourceAwsAcmCertificateRead(
-func resourceAwsAcmCertificateGuessValidationMethod(
+func resourceAwsAcmCertificateValidationMethod(
 func resourceAwsAcmCertificateUpdate(
 func cleanUpSubjectAlternativeNames(
 func convertValidationOptions(
@@ -4582,7 +4582,6 @@ func expandEc2ClientVpnAuthenticationRequest(
 func init(
 func testSweepEc2ClientVpnEndpoints(
 func testAccCheckAwsEc2ClientVpnEndpointDestroy(
-func testAccCheckAwsEc2ClientVpnEndpointDisappears(
 func testAccCheckAwsEc2ClientVpnEndpointExists(
 func testAccEc2ClientVpnEndpointConfigAcmCertificateBase(
 func testAccEc2ClientVpnEndpointMsADBase(
@@ -6962,6 +6961,7 @@ func flattenFirehoseOrcSerDe(
 func flattenFirehoseParquetSerDe(
 func flattenFirehoseSchemaConfiguration(
 func flattenProcessingConfiguration(
+func flattenFirehoseKinesisSourceConfiguration(
 func flattenKinesisFirehoseDeliveryStream(
 func resourceAwsKinesisFirehoseDeliveryStream(
 func createSourceConfig(
@@ -7035,6 +7035,9 @@ func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_DataFormatConversionC
 func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_DataFormatConversionConfiguration_ParquetSerDe_Empty(
 func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_ErrorOutputPrefix(
 func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_ProcessingConfiguration_Empty(
+func testAccKinesisFirehoseDeliveryStreamRedshiftConfigBase(
+func testAccKinesisFirehoseDeliveryStreamRedshiftConfig(
+func testAccKinesisFirehoseDeliveryStreamRedshiftConfigUpdates(
 func testAccKinesisFirehoseDeliveryStreamConfig_missingProcessingConfiguration(
 func resourceAwsKinesisStream(
 func resourceAwsKinesisStreamImport(
@@ -11279,6 +11282,8 @@ func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
+func testAccAwsWorkspacesIpGroupConfigTags1(
+func testAccAwsWorkspacesIpGroupConfigTags2(
 func resourceAwsWorkspacesWorkspace(
 func resourceAwsWorkspacesWorkspaceCreate(
 func resourceAwsWorkspacesWorkspaceRead(

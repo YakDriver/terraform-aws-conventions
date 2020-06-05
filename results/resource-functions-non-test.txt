@@ -8,7 +8,7 @@ func resourceAwsAcmCertificateCreate(
 func resourceAwsAcmCertificateCreateImported(
 func resourceAwsAcmCertificateCreateRequested(
 func resourceAwsAcmCertificateRead(
-func resourceAwsAcmCertificateGuessValidationMethod(
+func resourceAwsAcmCertificateValidationMethod(
 func resourceAwsAcmCertificateUpdate(
 func cleanUpSubjectAlternativeNames(
 func convertValidationOptions(
@@ -2749,6 +2749,7 @@ func flattenFirehoseOrcSerDe(
 func flattenFirehoseParquetSerDe(
 func flattenFirehoseSchemaConfiguration(
 func flattenProcessingConfiguration(
+func flattenFirehoseKinesisSourceConfiguration(
 func flattenKinesisFirehoseDeliveryStream(
 func resourceAwsKinesisFirehoseDeliveryStream(
 func createSourceConfig(
