@@ -2120,6 +2120,7 @@ func TestAccAWSInstance_instanceProfileChange(
 func TestAccAWSInstance_withIamInstanceProfile(
 func TestAccAWSInstance_privateIP(
 func TestAccAWSInstance_associatePublicIPAndPrivateIP(
+func TestAccAWSInstance_Empty_PrivateIP(
 func TestAccAWSInstance_keyPairCheck(
 func TestAccAWSInstance_rootBlockDeviceMismatch(
 func TestAccAWSInstance_forceNewAndTagsDrift(

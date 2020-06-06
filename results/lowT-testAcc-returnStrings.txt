@@ -2161,6 +2161,7 @@ func testAccInstanceConfigIpv6SupportWithIpv4(rName string) string {
 func testAccInstanceConfigWithoutInstanceProfile(rName string) string {
 func testAccInstanceConfigWithInstanceProfile(rName string) string {
 func testAccInstanceConfigPrivateIP(rName string) string {
+func testAccInstanceConfigEmptyPrivateIP(rName string) string {
 func testAccInstanceConfigAssociatePublicIPAndPrivateIP(rName string) string {
 func testAccInstanceNetworkInstanceSecurityGroups(rName string) string {
 func testAccInstanceNetworkInstanceVPCSecurityGroupIDs(rName string) string {

@@ -2049,6 +2049,7 @@ func testAccInstanceConfigIpv6SupportWithIpv4(
 func testAccInstanceConfigWithoutInstanceProfile(
 func testAccInstanceConfigWithInstanceProfile(
 func testAccInstanceConfigPrivateIP(
+func testAccInstanceConfigEmptyPrivateIP(
 func testAccInstanceConfigAssociatePublicIPAndPrivateIP(
 func testAccInstanceConfigKeyPair(
 func testAccInstanceConfigRootBlockDeviceMismatch(

@@ -59,7 +59,9 @@ func testAccAWSEIP_Instance(
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
 func TestAccAWSInstance_privateIP(
 func TestAccAWSInstance_associatePublicIPAndPrivateIP(
+func TestAccAWSInstance_Empty_PrivateIP(
 func testAccInstanceConfigPrivateIP(
+func testAccInstanceConfigEmptyPrivateIP(
 func testAccInstanceConfigAssociatePublicIPAndPrivateIP(
 func TestAccAWSLaunchTemplate_associatePublicIPAddress(
 func TestAccAWSLB_networkLoadbalancerEIP(

@@ -1742,6 +1742,7 @@ func TestAccAWSInstance_noAMIEphemeralDevices(
 func TestAccAWSInstance_NetworkInstanceVPCSecurityGroupIDs(
 func TestAccAWSInstance_privateIP(
 func TestAccAWSInstance_associatePublicIPAndPrivateIP(
+func TestAccAWSInstance_Empty_PrivateIP(
 func TestAccAWSInstance_EbsRootDevice_ModifyIOPS(
 func TestAccAWSInstance_EbsRootDevice_MultipleDynamicEBSBlockDevices(
 func TestInstanceHostIDSchema(
@@ -1749,6 +1750,7 @@ func testAccAwsEc2InstanceRootBlockDeviceWithIOPS(
 func testAccInstanceConfigDisableAPITermination(
 func testAccInstanceConfigVPC(
 func testAccInstanceConfigPrivateIP(
+func testAccInstanceConfigEmptyPrivateIP(
 func testAccInstanceConfigAssociatePublicIPAndPrivateIP(
 func testAccInstanceNetworkInstanceVPCSecurityGroupIDs(
 func testAccInstanceNetworkInstanceVPCRemoveSecurityGroupIDs(
