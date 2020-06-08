@@ -3628,6 +3628,38 @@ func testAccAwsWafv2RegexPatternSetConfig_Update(name string) string {
 func testAccAwsWafv2RegexPatternSetConfig_Minimal(name string) string {
 func testAccAwsWafv2RegexPatternSetConfig_OneTag(name, tagKey, tagValue string) string {
 func testAccAwsWafv2RegexPatternSetConfig_TwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAwsWafv2RuleGroupConfig_Basic(name string) string {
+func testAccAwsWafv2RuleGroupConfig_BasicUpdate(name string) string {
+func testAccAwsWafv2RuleGroupConfig_UpdateCapacity(name string) string {
+func testAccAwsWafv2RuleGroupConfig_UpdateMetricName(name string) string {
+func testAccAwsWafv2RuleGroupConfig_Minimal(name string) string {
+func testAccAwsWafv2RuleGroupConfig_RuleActionAllow(name string) string {
+func testAccAwsWafv2RuleGroupConfig_RuleActionBlock(name string) string {
+func testAccAwsWafv2RuleGroupConfig_RuleActionCount(name string) string {
+func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement(name string) string {
+func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_Update(name string) string {
+func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchAllQueryArguments(name string) string {
+func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchBody(name string) string {
+func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchMethod(name string) string {
+func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchQueryString(name string) string {
+func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchSingleHeader(name string) string {
+func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchSingleQueryArgument(name string) string {
+func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchUriPath(name string) string {
+func testAccAwsWafv2RuleGroupConfig_IpSetReferenceStatement(name string) string {
+func testAccAwsWafv2RuleGroupConfig_GeoMatchStatement(name string) string {
+func testAccAwsWafv2RuleGroupConfig_GeoMatchStatement_Update(name string) string {
+func testAccAwsWafv2RuleGroupConfig_LogicalRuleStatement_And(name string) string {
+func testAccAwsWafv2RuleGroupConfig_LogicalRuleStatement_NotAnd(name string) string {
+func testAccAwsWafv2RuleGroupConfig_LogicalRuleStatement_OrNotAnd(name string) string {
+func testAccAwsWafv2RuleGroupConfig_RegexPatternSetReferenceStatement(name string) string {
+func testAccAwsWafv2RuleGroupConfig_SizeConstraintStatement(name string) string {
+func testAccAwsWafv2RuleGroupConfig_SizeConstraintStatement_Update(name string) string {
+func testAccAwsWafv2RuleGroupConfig_SqliMatchStatement(name string) string {
+func testAccAwsWafv2RuleGroupConfig_SqliMatchStatement_Update(name string) string {
+func testAccAwsWafv2RuleGroupConfig_XssMatchStatement(name string) string {
+func testAccAwsWafv2RuleGroupConfig_XssMatchStatement_Update(name string) string {
+func testAccAwsWafv2RuleGroupConfig_OneTag(name, tagKey, tagValue string) string {
+func testAccAwsWafv2RuleGroupConfig_TwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafWebAclConfig_Required(rName string) string {
 func testAccAWSWafWebAclConfig_DefaultAction(rName, defaultAction string) string {
 func testAccAWSWafWebAclConfig_Rules_Single_Rule(rName string) string {

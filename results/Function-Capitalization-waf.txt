@@ -1,1 +1,14 @@
+func wafv2EmptySchema(
+func wafv2RootStatementSchema(
+func wafv2StatementSchema(
+func wafv2ByteMatchStatementSchema(
+func wafv2GeoMatchStatementSchema(
+func wafv2IpSetReferenceStatementSchema(
+func wafv2RegexPatternSetReferenceStatementSchema(
+func wafv2SizeConstraintSchema(
+func wafv2SqliMatchStatementSchema(
+func wafv2XssMatchStatementSchema(
+func wafv2FieldToMatchSchema(
+func wafv2TextTransformationSchema(
+func wafv2VisibilityConfigSchema(
 func wafSizeConstraintSetSchema(

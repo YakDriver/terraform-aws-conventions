@@ -118,6 +118,12 @@ func TestDiffWafRegionalIpSetDescriptors(
 func testAccAWSWafRegionalIPSetConfig_IpSetDescriptors(
 func computeWafRegionalRateBasedRulePredicateWithIpSet(
 func computeWafRulePredicateWithIpSet(
+func wafv2IpSetReferenceStatementSchema(
+func expandWafv2IpSetReferenceStatement(
+func flattenWafv2IpSetReferenceStatement(
+func TestAccAwsWafv2RuleGroup_IpSetReferenceStatement(
+func computeWafv2IpSetRefStatementIndex(
+func testAccAwsWafv2RuleGroupConfig_IpSetReferenceStatement(
 func resourceAwsWorkspacesIpGroup(
 func resourceAwsWorkspacesIpGroupCreate(
 func resourceAwsWorkspacesIpGroupRead(
