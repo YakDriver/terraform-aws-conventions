@@ -296,6 +296,8 @@ func testAccDataSourceAwsWafv2IPSet_Name(name string) string {
 func testAccDataSourceAwsWafv2IPSet_NonExistent(name string) string {
 func testAccDataSourceAwsWafv2RegexPatternSet_Name(name string) string {
 func testAccDataSourceAwsWafv2RegexPatternSet_NonExistent(name string) string {
+func testAccDataSourceAwsWafv2RuleGroup_Name(name string) string {
+func testAccDataSourceAwsWafv2RuleGroup_NonExistent(name string) string {
 func testAccDataSourceAwsWafWebAclConfig_Name(name string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
 func testAccAwsProviderAccountID(provider *schema.Provider) string {

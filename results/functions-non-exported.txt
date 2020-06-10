@@ -879,6 +879,10 @@ func dataSourceAwsWafv2RegexPatternSet(
 func dataSourceAwsWafv2RegexPatternSetRead(
 func testAccDataSourceAwsWafv2RegexPatternSet_Name(
 func testAccDataSourceAwsWafv2RegexPatternSet_NonExistent(
+func dataSourceAwsWafv2RuleGroup(
+func dataSourceAwsWafv2RuleGroupRead(
+func testAccDataSourceAwsWafv2RuleGroup_Name(
+func testAccDataSourceAwsWafv2RuleGroup_NonExistent(
 func dataSourceAwsWafWebAcl(
 func dataSourceAwsWafWebAclRead(
 func testAccDataSourceAwsWafWebAclConfig_Name(

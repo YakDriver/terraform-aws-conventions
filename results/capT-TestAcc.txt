@@ -365,6 +365,7 @@ func TestAccDataSourceAwsWafRegionalWebAcl_Basic(
 func TestAccDataSourceAwsWafRule_Basic(
 func TestAccDataSourceAwsWafv2IPSet_Basic(
 func TestAccDataSourceAwsWafv2RegexPatternSet_Basic(
+func TestAccDataSourceAwsWafv2RuleGroup_Basic(
 func TestAccDataSourceAwsWafWebAcl_Basic(
 func TestAccDataSourceAwsWorkspaceBundle_basic(
 func TestAccAWSProvider_Endpoints(
