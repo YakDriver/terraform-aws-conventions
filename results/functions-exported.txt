@@ -1612,6 +1612,9 @@ func TestAccAWSEc2Fleet_TargetCapacitySpecification_TotalTargetCapacity(
 func TestAccAWSEc2Fleet_TerminateInstancesWithExpiration(
 func TestAccAWSEc2Fleet_Type(
 func TestAccAWSEc2Fleet_TemplateMultipleNetworkInterfaces(
+func TestAccAWSEc2Tag_basic(
+func TestAccAWSEc2Tag_disappears(
+func TestAccAWSEc2Tag_Value(
 func TestAccAWSEc2TrafficMirrorFilterRule_basic(
 func TestAccAWSEc2TrafficMirrorFilter_basic(
 func TestAccAWSEc2TrafficMirrorFilter_tags(
@@ -3897,6 +3900,14 @@ func TestAccAwsWafv2RuleGroup_SizeConstraintStatement(
 func TestAccAwsWafv2RuleGroup_SqliMatchStatement(
 func TestAccAwsWafv2RuleGroup_Tags(
 func TestAccAwsWafv2RuleGroup_XssMatchStatement(
+func TestAccAwsWafv2WebACL_Basic(
+func TestAccAwsWafv2WebACL_ChangeNameForceNew(
+func TestAccAwsWafv2WebACL_Disappears(
+func TestAccAwsWafv2WebACL_ManagedRuleGroupStatement(
+func TestAccAwsWafv2WebACL_Minimal(
+func TestAccAwsWafv2WebACL_RateBasedStatement(
+func TestAccAwsWafv2WebACL_RuleGroupReferenceStatement(
+func TestAccAwsWafv2WebACL_Tags(
 func TestAccAWSWafWebAcl_basic(
 func TestAccAWSWafWebAcl_changeNameForceNew(
 func TestAccAWSWafWebAcl_DefaultAction(

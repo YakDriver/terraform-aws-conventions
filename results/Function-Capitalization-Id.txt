@@ -303,6 +303,7 @@ func computeWafActivatedRuleWithRuleId(
 func testAccAWSWafv2IPSetImportStateIdFunc(
 func testAccAWSWafv2RegexPatternSetImportStateIdFunc(
 func testAccAwsWafv2RuleGroupImportStateIdFunc(
+func testAccAwsWafv2WebACLImportStateIdFunc(
 func TestAccAwsWorkspacesDirectory_subnetIds(
 func testAccWorkspacesDirectoryConfig_subnetIds(
 func flattenElastiCacheSecurityGroupIds(

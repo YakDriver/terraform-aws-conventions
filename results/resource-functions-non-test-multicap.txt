@@ -70,6 +70,7 @@ func waitForDynamoDbSSEUpdateToBeCompleted(
 func migrateDynamoDBStateV0toV1(
 func dynamoDbGetGSIIndex(
 func resourceAWSEbsVolumeUpdate(
+func extractResourceIDAndKeyFromEc2TagID(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
 func tpl_testAccAWSEcsService_withLbChanges(
@@ -356,6 +357,19 @@ func resourceAwsWafv2IPSetCreate(
 func resourceAwsWafv2IPSetRead(
 func resourceAwsWafv2IPSetUpdate(
 func resourceAwsWafv2IPSetDelete(
+func resourceAwsWafv2WebACL(
+func resourceAwsWafv2WebACLCreate(
+func resourceAwsWafv2WebACLRead(
+func resourceAwsWafv2WebACLUpdate(
+func resourceAwsWafv2WebACLDelete(
+func wafv2WebACLRootStatementSchema(
+func expandWafv2WebACLRules(
+func expandWafv2WebACLRule(
+func expandWafv2WebACLRootStatement(
+func expandWafv2WebACLStatement(
+func flattenWafv2WebACLRootStatement(
+func flattenWafv2WebACLStatement(
+func flattenWafv2WebACLRules(
 func expandWAFLoggingConfiguration(
 func expandWAFRedactedFields(
 func flattenWAFLoggingConfiguration(

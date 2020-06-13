@@ -709,6 +709,7 @@ func testAccEc2ClientVpnEndpointConfigWithMutualAuthAndMicrosoftAD(rName string)
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
 func testAccEc2ClientVpnNetworkAssociationConfigAcmCertificateBase() string {
 func testAccEc2ClientVpnNetworkAssociationConfig(rName string) string {
+func testAccEc2TagConfig(rBgpAsn int, key string, value string) string {
 func testAccEc2TrafficMirrorFilterRuleConfig(dstCidr, srcCidr, action, dir string, num int) string {
 func testAccEc2TrafficMirrorFilterRuleConfigFull(dstCidr, srcCidr, action, dir, description string, ruleNum, srcPortFrom, srcPortTo, dstPortFrom, dstPortTo, protocol int) string {
 func testAccTrafficMirrorFilterConfig(description string) string {

@@ -1462,6 +1462,8 @@ func TestAccAwsEc2ClientVpnNetworkAssociation_disappears(
 func TestAccAWSEc2Fleet_basic(
 func TestAccAWSEc2Fleet_disappears(
 func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(
+func TestAccAWSEc2Tag_basic(
+func TestAccAWSEc2Tag_disappears(
 func TestAccAWSEc2TrafficMirrorFilterRule_basic(
 func TestAccAWSEc2TrafficMirrorFilter_basic(
 func TestAccAWSEc2TrafficMirrorFilter_tags(

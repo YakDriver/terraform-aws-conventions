@@ -180,6 +180,14 @@ func TestAccAwsWafv2RuleGroup_SizeConstraintStatement(
 func TestAccAwsWafv2RuleGroup_SqliMatchStatement(
 func TestAccAwsWafv2RuleGroup_Tags(
 func TestAccAwsWafv2RuleGroup_XssMatchStatement(
+func TestAccAwsWafv2WebACL_Basic(
+func TestAccAwsWafv2WebACL_ChangeNameForceNew(
+func TestAccAwsWafv2WebACL_Disappears(
+func TestAccAwsWafv2WebACL_ManagedRuleGroupStatement(
+func TestAccAwsWafv2WebACL_Minimal(
+func TestAccAwsWafv2WebACL_RateBasedStatement(
+func TestAccAwsWafv2WebACL_RuleGroupReferenceStatement(
+func TestAccAwsWafv2WebACL_Tags(
 func TestAccAwsWorkspacesDirectory_basic(
 func TestAccAwsWorkspacesDirectory_disappears(
 func TestAccAwsWorkspacesDirectory_subnetIds(

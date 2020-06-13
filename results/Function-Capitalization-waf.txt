@@ -1,3 +1,10 @@
+func wafv2WebACLRootStatementSchema(
+func wafv2ManagedRuleGroupStatementSchema(
+func wafv2ExcludedRuleSchema(
+func wafv2RateBasedStatementSchema(
+func wafv2ScopeDownStatementSchema(
+func wafv2RuleGroupReferenceStatementSchema(
+func wafSizeConstraintSetSchema(
 func wafv2EmptySchema(
 func wafv2RootStatementSchema(
 func wafv2StatementSchema(
@@ -11,4 +18,3 @@ func wafv2XssMatchStatementSchema(
 func wafv2FieldToMatchSchema(
 func wafv2TextTransformationSchema(
 func wafv2VisibilityConfigSchema(
-func wafSizeConstraintSetSchema(

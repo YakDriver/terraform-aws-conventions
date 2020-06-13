@@ -1542,6 +1542,7 @@ func testAccAWSEc2FleetConfig_TargetCapacitySpecification_DefaultTargetCapacityT
 func testAccAWSEc2FleetConfig_TargetCapacitySpecification_TotalTargetCapacity(rName string, totalTargetCapacity int) string {
 func testAccAWSEc2FleetConfig_TerminateInstancesWithExpiration(rName string, terminateInstancesWithExpiration bool) string {
 func testAccAWSEc2FleetConfig_Type(rName, fleetType string) string {
+func testAccEc2TagConfig(rBgpAsn int, key string, value string) string {
 func testAccEc2TrafficMirrorFilterRuleConfig(dstCidr, srcCidr, action, dir string, num int) string {
 func testAccEc2TrafficMirrorFilterRuleConfigFull(dstCidr, srcCidr, action, dir, description string, ruleNum, srcPortFrom, srcPortTo, dstPortFrom, dstPortTo, protocol int) string {
 func testAccTrafficMirrorFilterConfig(description string) string {
@@ -3662,6 +3663,17 @@ func testAccAwsWafv2RuleGroupConfig_XssMatchStatement(name string) string {
 func testAccAwsWafv2RuleGroupConfig_XssMatchStatement_Update(name string) string {
 func testAccAwsWafv2RuleGroupConfig_OneTag(name, tagKey, tagValue string) string {
 func testAccAwsWafv2RuleGroupConfig_TwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAwsWafv2WebACLConfig_Basic(name string) string {
+func testAccAwsWafv2WebACLConfig_BasicUpdate(name string) string {
+func testAccAwsWafv2WebACLConfig_ManagedRuleGroupStatement(name string) string {
+func testAccAwsWafv2WebACLConfig_ManagedRuleGroupStatement_Update(name string) string {
+func testAccAwsWafv2WebACLConfig_RateBasedStatement(name string) string {
+func testAccAwsWafv2WebACLConfig_RateBasedStatement_Update(name string) string {
+func testAccAwsWafv2WebACLConfig_RuleGroupReferenceStatement(name string) string {
+func testAccAwsWafv2WebACLConfig_RuleGroupReferenceStatement_Update(name string) string {
+func testAccAwsWafv2WebACLConfig_Minimal(name string) string {
+func testAccAwsWafv2WebACLConfig_OneTag(name, tagKey, tagValue string) string {
+func testAccAwsWafv2WebACLConfig_TwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafWebAclConfig_Required(rName string) string {
 func testAccAWSWafWebAclConfig_DefaultAction(rName, defaultAction string) string {
 func testAccAWSWafWebAclConfig_Rules_Single_Rule(rName string) string {

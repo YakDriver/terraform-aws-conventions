@@ -1025,6 +1025,11 @@ func resourceAwsEc2FleetCreate(
 func resourceAwsEc2FleetRead(
 func resourceAwsEc2FleetUpdate(
 func resourceAwsEc2FleetDelete(
+func resourceAwsEc2Tag(
+func resourceAwsEc2TagCreate(
+func resourceAwsEc2TagRead(
+func resourceAwsEc2TagUpdate(
+func resourceAwsEc2TagDelete(
 func resourceAwsEc2TrafficMirrorFilter(
 func resourceAwsEc2TrafficMirrorFilterCreate(
 func resourceAwsEc2TrafficMirrorFilterUpdate(
@@ -2906,6 +2911,11 @@ func resourceAwsWafv2RuleGroupCreate(
 func resourceAwsWafv2RuleGroupRead(
 func resourceAwsWafv2RuleGroupUpdate(
 func resourceAwsWafv2RuleGroupDelete(
+func resourceAwsWafv2WebACL(
+func resourceAwsWafv2WebACLCreate(
+func resourceAwsWafv2WebACLRead(
+func resourceAwsWafv2WebACLUpdate(
+func resourceAwsWafv2WebACLDelete(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(
 func resourceAwsWafWebAclRead(
