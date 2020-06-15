@@ -1552,9 +1552,19 @@ func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, ta
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccServiceDiscoveryHttpNamespaceConfig(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigDescription(rName, description string) string {
+func testAccServiceDiscoveryHttpNamespaceConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccServiceDiscoveryHttpNamespaceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccServiceDiscoveryPrivateDnsNamespaceConfig(rName string) string {
-func testAccServiceDiscoveryPrivateDnsNamespaceConfigOverlapping(topDomain string) string {
+func testAccServiceDiscoveryPrivateDnsNamespaceConfigDescription(rName, description string) string {
+func testAccServiceDiscoveryPrivateDnsNamespaceConfigOverlapping(rName string) string {
+func testAccServiceDiscoveryPrivateDnsNamespaceConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccServiceDiscoveryPrivateDnsNamespaceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccServiceDiscoveryPublicDnsNamespaceConfig(rName string) string {
+func testAccServiceDiscoveryPublicDnsNamespaceConfigDescription(rName, description string) string {
+func testAccServiceDiscoveryPublicDnsNamespaceConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccServiceDiscoveryPublicDnsNamespaceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccServiceDiscoveryServiceConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccServiceDiscoveryServiceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigSameValue(quotaCode, serviceCode string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigValue(quotaCode, serviceCode, value string) string {
 func testAccAWSSESActiveReceiptRuleSetConfig(name string) string {
