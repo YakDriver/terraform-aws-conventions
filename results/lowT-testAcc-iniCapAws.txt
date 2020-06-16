@@ -316,6 +316,7 @@ func testAccAwsWafv2IPSetConfigIPv6(
 func testAccAwsWafv2IPSetConfigMinimal(
 func testAccAwsWafv2IPSetConfigOneTag(
 func testAccAwsWafv2IPSetConfigTwoTags(
+func testAccAwsWafv2IPSetConfigLarge(
 func testAccAwsWafv2RegexPatternSetConfig(
 func testAccAwsWafv2RegexPatternSetConfig_Update(
 func testAccAwsWafv2RegexPatternSetConfig_Minimal(

@@ -34,6 +34,8 @@ func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {
 func testAccAWSDBInstanceDataSourceConfig(rInt int) string {
 func testAccCheckAwsDbSnapshotDataSourceConfig(rInt int) string {
 func testAccDataSourceAwsDynamoDbTableConfigBasic(tableName string) string {
+func testAccDataSourceAwsEbsVolumeIDsConfigWithDataSource(rInt int) string {
+func testAccDataSourceAwsEbsVolumeIDsConfig(rInt int) string {
 func testAccDataSourceAwsEc2CoipPoolsConfig() string {
 func testAccDataSourceAwsEc2CoipPoolsConfigFilter() string {
 func testAccDataSourceAwsEc2CoipPoolDataSourceConfigFilter() string {
@@ -1822,6 +1824,7 @@ func testAccAwsWafv2IPSetConfigIPv6(name string) string {
 func testAccAwsWafv2IPSetConfigMinimal(name string) string {
 func testAccAwsWafv2IPSetConfigOneTag(name, tagKey, tagValue string) string {
 func testAccAwsWafv2IPSetConfigTwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAwsWafv2IPSetConfigLarge(name string) string {
 func testAccAwsWafv2RegexPatternSetConfig(name string) string {
 func testAccAWSWafWebAclConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSWafWebAclConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
