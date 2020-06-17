@@ -397,6 +397,11 @@ func dataSourceAwsWafv2IPSetRead(
 func TestAccDataSourceAwsWafv2IPSet_Basic(
 func testAccDataSourceAwsWafv2IPSet_Name(
 func testAccDataSourceAwsWafv2IPSet_NonExistent(
+func dataSourceAwsWafv2WebACL(
+func dataSourceAwsWafv2WebACLRead(
+func TestAccDataSourceAwsWafv2WebACL_Basic(
+func testAccDataSourceAwsWafv2WebACL_Name(
+func testAccDataSourceAwsWafv2WebACL_NonExistent(
 func dataSyncParseLocationURI(
 func TestDataSyncParseLocationURI(
 func suppressOpenIdURL(
@@ -3068,6 +3073,7 @@ func testAccAWSEcrRepositoryConfig_tagsChanged(
 func testAccAWSEcrRepositoryConfig_immutability(
 func testAccAWSEcrRepositoryConfig_image_scanning_configuration(
 func TestAccAWSEcsCapacityProvider_basic(
+func TestAccAWSEcsCapacityProvider_disappears(
 func TestAccAWSEcsCapacityProvider_ManagedScaling(
 func TestAccAWSEcsCapacityProvider_ManagedScalingPartial(
 func TestAccAWSEcsCapacityProvider_Tags(

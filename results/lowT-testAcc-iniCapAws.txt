@@ -122,10 +122,11 @@ func testAccAwsFsxWindowsFileSystemConfigTags2(
 func testAccAwsFsxWindowsFileSystemConfigThroughputCapacity(
 func testAccAwsFsxWindowsFileSystemConfigWeeklyMaintenanceStartTime(
 func testAccAwsGuardDutyDetector_basic(
+func testAccAwsGuardDutyDetector_tags(
 func testAccAwsGuardDutyInviteAccepter_basic(
 func testAccAwsGuardDutyInviteAccepterConfig_basic(
 func testAccAwsGuardDutyIpset_basic(
-func testAccAwsGuardDutyIpset_import(
+func testAccAwsGuardDutyIpset_tags(
 func testAccAwsGuardDutyMember_basic(
 func testAccAwsGuardDutyMember_invite_disassociate(
 func testAccAwsGuardDutyMember_invite_onUpdate(
@@ -133,7 +134,7 @@ func testAccAwsGuardDutyMember_invitationMessage(
 func testAccAwsGuardDutyOrganizationAdminAccount_basic(
 func testAccAwsGuardDutyOrganizationConfiguration_basic(
 func testAccAwsGuardDutyThreatintelset_basic(
-func testAccAwsGuardDutyThreatintelset_import(
+func testAccAwsGuardDutyThreatintelset_tags(
 func testAccAwsIamInstanceProfileConfig(
 func testAccAwsIamInstanceProfileConfigWithoutRole(
 func testAccAwsIamRolePolicyConfig(

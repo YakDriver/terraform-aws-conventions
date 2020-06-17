@@ -37,7 +37,9 @@ func resourceAwsEcsCapacityProviderRead(
 func resourceAwsEcsCapacityProviderUpdate(
 func resourceAwsEcsCapacityProviderDelete(
 func resourceAwsEcsCapacityProviderImport(
+func testSweepEcsCapacityProviders(
 func TestAccAWSEcsCapacityProvider_basic(
+func TestAccAWSEcsCapacityProvider_disappears(
 func TestAccAWSEcsCapacityProvider_ManagedScaling(
 func TestAccAWSEcsCapacityProvider_ManagedScalingPartial(
 func TestAccAWSEcsCapacityProvider_Tags(

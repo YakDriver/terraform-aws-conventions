@@ -1,3 +1,8 @@
+func dataSourceAwsWafv2WebACL(
+func dataSourceAwsWafv2WebACLRead(
+func TestAccDataSourceAwsWafv2WebACL_Basic(
+func testAccDataSourceAwsWafv2WebACL_Name(
+func testAccDataSourceAwsWafv2WebACL_NonExistent(
 func Test_expandNetworkACLEntry(
 func revokeAllNetworkACLEntries(
 func testAccCheckAWSDefaultACLAttributes(

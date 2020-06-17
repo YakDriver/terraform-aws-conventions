@@ -41,6 +41,11 @@ func dataSourceAwsWafv2RuleGroupRead(
 func TestAccDataSourceAwsWafv2RuleGroup_Basic(
 func testAccDataSourceAwsWafv2RuleGroup_Name(
 func testAccDataSourceAwsWafv2RuleGroup_NonExistent(
+func dataSourceAwsWafv2WebACL(
+func dataSourceAwsWafv2WebACLRead(
+func TestAccDataSourceAwsWafv2WebACL_Basic(
+func testAccDataSourceAwsWafv2WebACL_Name(
+func testAccDataSourceAwsWafv2WebACL_NonExistent(
 func dataSourceAwsWafWebAcl(
 func dataSourceAwsWafWebAclRead(
 func TestAccDataSourceAwsWafWebAcl_Basic(

@@ -1710,6 +1710,7 @@ func resourceAwsEcsCapacityProviderDelete(
 func resourceAwsEcsCapacityProviderImport(
 func expandAutoScalingGroupProvider(
 func flattenAutoScalingGroupProvider(
+func init(
 func resourceAwsEcsCluster(
 func resourceAwsEcsClusterImport(
 func resourceAwsEcsClusterCreate(

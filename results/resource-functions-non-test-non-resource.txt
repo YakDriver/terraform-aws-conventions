@@ -606,6 +606,7 @@ func flattenImageScanningConfiguration(
 func init(
 func expandAutoScalingGroupProvider(
 func flattenAutoScalingGroupProvider(
+func init(
 func waitForEcsClusterActive(
 func refreshEcsClusterStatus(
 func expandEcsSettings(

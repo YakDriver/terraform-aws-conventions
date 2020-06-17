@@ -72,6 +72,12 @@ func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigLocalGatewayRouteTableId
 func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigOutpostArn(outpostArn string) string {
 func testAccDataSourceAwsEc2LocalGatewaysConfig() string {
 func testAccDataSourceAwsEc2LocalGatewayConfigId() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupsConfig() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupsConfigFilter() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupsConfigTags(rName string) string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigFilter() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigLocalGatewayId() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigTags(rName string) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfig(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfigFilter(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigFilter_sameAccount(rName string) string {
@@ -1851,14 +1857,20 @@ func testAccAWSGlueTriggerConfig_WorkflowName(rName string) string {
 func testAccAWSGlueWorkflowConfig_DefaultRunProperties(rName, firstPropValue, secondPropValue string) string {
 func testAccAWSGlueWorkflowConfig_Description(rName, description string) string {
 func testAccAWSGlueWorkflowConfig_Required(rName string) string {
+func testAccGuardDutyDetectorConfigTags1(tagKey1, tagValue1 string) string {
+func testAccGuardDutyDetectorConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsGuardDutyInviteAccepterConfig_basic(email string) string {
 func testAccGuardDutyIpsetConfig_basic(bucketName, keyName, ipsetName string, activate bool) string {
+func testAccGuardDutyIpsetConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccGuardDutyIpsetConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGuardDutyMemberConfig_basic(accountID, email string) string {
 func testAccGuardDutyMemberConfig_invite(accountID, email string, invite bool) string {
 func testAccGuardDutyMemberConfig_invitationMessage(accountID, email, invitationMessage string) string {
 func testAccGuardDutyOrganizationAdminAccountConfigSelf() string {
 func testAccGuardDutyOrganizationConfigurationConfigAutoEnable(autoEnable bool) string {
 func testAccGuardDutyThreatintelsetConfig_basic(bucketName, keyName, threatintelsetName string, activate bool) string {
+func testAccGuardDutyThreatintelsetConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccGuardDutyThreatintelsetConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAccessKeyConfig(rName string) string {
 func testAccAWSAccessKeyConfig_encrypted(rName, key string) string {
 func testAccAWSAccessKeyConfig_inactive(rName string) string {

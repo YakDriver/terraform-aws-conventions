@@ -53,6 +53,7 @@ func TestAccDataSourceAwsEc2LocalGatewayRouteTables_basic(
 func TestAccDataSourceAwsEc2LocalGatewayRouteTable_basic(
 func TestAccDataSourceAwsEc2LocalGateways_basic(
 func TestAccDataSourceAwsEc2LocalGateway_basic(
+func TestAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroups_basic(
 func TestAccAWSEc2TransitGatewayDxGatewayAttachmentDataSource_filter(
 func TestAccAWSEc2TransitGatewayVpnAttachmentDataSource_filter(
 func TestAccAWSEcrDataSource_ecrImage(
@@ -889,6 +890,7 @@ func TestAccAWSEcrRepository_tags(
 func TestAccAWSEcrRepository_immutability(
 func TestAccAWSEcrRepository_image_scanning_configuration(
 func TestAccAWSEcsCapacityProvider_basic(
+func TestAccAWSEcsCapacityProvider_disappears(
 func TestAccAWSEcsCluster_basic(
 func TestAccAWSEcsCluster_disappears(
 func TestAccAWSEcsCluster_containerInsights(

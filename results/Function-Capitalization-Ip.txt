@@ -35,10 +35,12 @@ func resourceAwsGuardDutyIpsetDelete(
 func guardDutyIpsetRefreshStatusFunc(
 func decodeGuardDutyIpsetID(
 func testAccAwsGuardDutyIpset_basic(
-func testAccAwsGuardDutyIpset_import(
+func testAccAwsGuardDutyIpset_tags(
 func testAccCheckAwsGuardDutyIpsetDestroy(
 func testAccCheckAwsGuardDutyIpsetExists(
 func testAccGuardDutyIpsetConfig_basic(
+func testAccGuardDutyIpsetConfigTags1(
+func testAccGuardDutyIpsetConfigTags2(
 func TestAccAWSInstance_ipv6_supportAddressCountWithIpv4(
 func testAccInstanceConfigIpv6ErrorConfig(
 func testAccInstanceConfigIpv6Support(

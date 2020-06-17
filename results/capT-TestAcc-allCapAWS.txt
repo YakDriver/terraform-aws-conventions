@@ -1251,6 +1251,7 @@ func TestAccAWSEcrRepository_tags(
 func TestAccAWSEcrRepository_immutability(
 func TestAccAWSEcrRepository_image_scanning_configuration(
 func TestAccAWSEcsCapacityProvider_basic(
+func TestAccAWSEcsCapacityProvider_disappears(
 func TestAccAWSEcsCapacityProvider_ManagedScaling(
 func TestAccAWSEcsCapacityProvider_ManagedScalingPartial(
 func TestAccAWSEcsCapacityProvider_Tags(

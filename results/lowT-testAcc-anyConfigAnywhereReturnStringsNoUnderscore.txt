@@ -53,6 +53,12 @@ func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigLocalGatewayRouteTableId
 func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigOutpostArn(outpostArn string) string {
 func testAccDataSourceAwsEc2LocalGatewaysConfig() string {
 func testAccDataSourceAwsEc2LocalGatewayConfigId() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupsConfig() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupsConfigFilter() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupsConfigTags(rName string) string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigFilter() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigLocalGatewayId() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigTags(rName string) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfig(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfigFilter(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayRouteTableDataSourceConfigFilter() string {
@@ -959,8 +965,14 @@ func testAccAWSGlueJobConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueJobConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGlueTriggerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueTriggerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccGuardDutyDetectorConfigTags1(tagKey1, tagValue1 string) string {
+func testAccGuardDutyDetectorConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccGuardDutyIpsetConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccGuardDutyIpsetConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGuardDutyOrganizationAdminAccountConfigSelf() string {
 func testAccGuardDutyOrganizationConfigurationConfigAutoEnable(autoEnable bool) string {
+func testAccGuardDutyThreatintelsetConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccGuardDutyThreatintelsetConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAccessKeyConfig(rName string) string {
 func testAccAWSIAMAccountAliasConfig(rstring string) string {
 func testAccAWSGroupMemberConfig(groupName, userName, membershipName string) string {

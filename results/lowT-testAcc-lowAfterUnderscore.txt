@@ -572,10 +572,11 @@ func testAccGlueCatalogTable_basic(
 func testAccGlueCatalogTable_full(
 func testAccGlueCatalogTable_full_replacedValues(
 func testAccAwsGuardDutyDetector_basic(
+func testAccAwsGuardDutyDetector_tags(
 func testAccAwsGuardDutyInviteAccepter_basic(
 func testAccAwsGuardDutyInviteAccepterConfig_basic(
 func testAccAwsGuardDutyIpset_basic(
-func testAccAwsGuardDutyIpset_import(
+func testAccAwsGuardDutyIpset_tags(
 func testAccGuardDutyIpsetConfig_basic(
 func testAccAwsGuardDutyMember_basic(
 func testAccAwsGuardDutyMember_invite_disassociate(
@@ -587,7 +588,7 @@ func testAccGuardDutyMemberConfig_invitationMessage(
 func testAccAwsGuardDutyOrganizationAdminAccount_basic(
 func testAccAwsGuardDutyOrganizationConfiguration_basic(
 func testAccAwsGuardDutyThreatintelset_basic(
-func testAccAwsGuardDutyThreatintelset_import(
+func testAccAwsGuardDutyThreatintelset_tags(
 func testAccGuardDutyThreatintelsetConfig_basic(
 func testAccAWSAccessKeyConfig_encrypted(
 func testAccAWSAccessKeyConfig_inactive(
