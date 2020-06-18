@@ -595,6 +595,9 @@ func flattenEc2FleetLaunchTemplateSpecification(
 func flattenEc2OnDemandOptions(
 func flattenEc2SpotOptions(
 func flattenEc2TargetCapacitySpecification(
+func decodeEc2LocalGatewayRouteID(
+func getEc2LocalGatewayRoute(
+func getEc2LocalGatewayRouteTableVpcAssociation(
 func extractResourceIDAndKeyFromEc2TagID(
 func findEc2TrafficMirrorFilterRule(
 func buildTrafficMirrorPortRangeRequest(
@@ -743,6 +746,10 @@ func esCognitoOptionsDiffSuppress(
 func isDedicatedMasterDisabled(
 func expandESNodeToNodeEncryptionOptions(
 func flattenESNodeToNodeEncryptionOptions(
+func expandESClusterConfig(
+func expandElasticsearchZoneAwarenessConfig(
+func flattenESClusterConfig(
+func flattenElasticsearchZoneAwarenessConfig(
 func buildESDomainArn(
 func init(
 func expandETNotifications(

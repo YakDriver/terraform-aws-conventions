@@ -59,6 +59,9 @@ func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupsConfigTags(rName s
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigFilter() string {
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigLocalGatewayId() string {
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigTags(rName string) string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigFilter() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigId() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigTags(rName string) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfig(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfigFilter(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayRouteTableDataSourceConfigFilter() string {
@@ -70,6 +73,7 @@ func testAccAWSEc2TransitGatewayVpcAttachmentDataSourceConfigID() string {
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigBase(rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigTransitGatewayIdAndVpnConnectionId(rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigFilter(rBgpAsn int) string {
+func testAccCheckAwsEcrAuthorizationTokenDataSourceRepositoryConfig(rName string) string {
 func testAccCheckAwsEcrImageDataSourceConfig(reg, repo, tag string) string {
 func testAccCheckAwsEcrRepositoryDataSourceConfig(rName string) string {
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(clusterName, tdName, svcName string) string {
@@ -124,6 +128,9 @@ func testAccDataSourceAWSLBConfigBackardsCompatibility(albName string) string {
 func testAccMskClusterDataSourceConfigName(rName string) string {
 func testAccMskConfigurationDataSourceConfigName(rName string) string {
 func testAccDataSourceAwsNatGatewayConfig(rInt int) string {
+func testAccAWSOutpostsOutpostsDataSourceConfig() string {
+func testAccAWSOutpostsOutpostDataSourceConfigId() string {
+func testAccAWSOutpostsOutpostDataSourceConfigName() string {
 func testAccDataSourceAwsPricingProductConfigEc2(dataName string, instanceType string) string {
 func testAccDataSourceAwsPricingProductConfigRedshift() string {
 func testAccDataSourceAwsQLDBLedgerConfig(rName string) string {
@@ -651,7 +658,7 @@ func testAccDefaultRouteTableConfigRequired() string {
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
 func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccDeviceFarmProjectConfig(rInt int) string {
+func testAccDeviceFarmProjectConfig(rName string) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {
 func testAccDirectoryServiceLogSubscriptionConfig(logGroupName string) string {
 func testAccDmsEventSubscriptionConfigBase(rName string) string {
@@ -717,6 +724,11 @@ func testAccEc2ClientVpnEndpointConfigWithMutualAuthAndMicrosoftAD(rName string)
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
 func testAccEc2ClientVpnNetworkAssociationConfigAcmCertificateBase() string {
 func testAccEc2ClientVpnNetworkAssociationConfig(rName string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigBase(rName, outpostArn string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfig(rName, outpostArn string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags1(rName, outpostArn, tagKey1, tagValue1 string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags2(rName, outpostArn, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEc2LocalGatewayRouteConfigDestinationCidrBlock(destinationCidrBlock string) string {
 func testAccEc2TagConfig(rBgpAsn int, key string, value string) string {
 func testAccEc2TrafficMirrorFilterRuleConfig(dstCidr, srcCidr, action, dir string, num int) string {
 func testAccEc2TrafficMirrorFilterRuleConfigFull(dstCidr, srcCidr, action, dir, description string, ruleNum, srcPortFrom, srcPortTo, dstPortFrom, dstPortTo, protocol int) string {
@@ -865,6 +877,7 @@ func testAccBeanstalkEnvApplicationVersionConfig(rName string) string {
 func testAccBeanstalkEnvApplicationVersionConfigUpdate(rName string) string {
 func testAccESDomainPolicyConfig(randInt int, policy string) string {
 func testAccESDomainConfig(randInt int) string {
+func testAccESDomainConfigWarm(rName, warmType string, enabled bool, warmCnt int) string {
 func testAccESDomainConfigWithPolicy(randESId int, randRoleId int) string {
 func testAccESDomainConfigWithEncryptAtRestDefaultKey(randESId int) string {
 func testAccESDomainConfigWithEncryptAtRestWithKey(randESId int) string {
@@ -1838,6 +1851,7 @@ func testAccAwsWafv2IPSetConfigOneTag(name, tagKey, tagValue string) string {
 func testAccAwsWafv2IPSetConfigTwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAwsWafv2IPSetConfigLarge(name string) string {
 func testAccAwsWafv2RegexPatternSetConfig(name string) string {
+func testAccAwsWafv2WebACLAssociationConfig(name string) string {
 func testAccAWSWafWebAclConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSWafWebAclConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafXssMatchSetConfig(name string) string {

@@ -47,7 +47,6 @@ func testAccAWSEFSFileSystemConfigWithLifecyclePolicy(
 func TestAccAWSEFSMountTarget_basic(
 func TestAccAWSEFSMountTarget_disappears(
 func TestResourceAWSEFSMountTarget_hasEmptyMountTargets(
-func testAccAWSEFSMountTargetDisappears(
 func testAccAWSEFSMountTargetConfig(
 func testAccAWSEFSMountTargetConfigModified(
 func flattenEFSVolumeConfiguration(

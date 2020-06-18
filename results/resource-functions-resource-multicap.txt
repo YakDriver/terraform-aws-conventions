@@ -173,6 +173,11 @@ func resourceAwsWafv2IPSetCreate(
 func resourceAwsWafv2IPSetRead(
 func resourceAwsWafv2IPSetUpdate(
 func resourceAwsWafv2IPSetDelete(
+func resourceAwsWafv2WebACLAssociation(
+func resourceAwsWafv2WebACLAssociationCreate(
+func resourceAwsWafv2WebACLAssociationRead(
+func resourceAwsWafv2WebACLAssociationDelete(
+func resourceAwsWafv2ACLAssociationDecodeId(
 func resourceAwsWafv2WebACL(
 func resourceAwsWafv2WebACLCreate(
 func resourceAwsWafv2WebACLRead(

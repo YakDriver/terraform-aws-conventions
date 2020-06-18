@@ -78,6 +78,9 @@ func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupsConfigTags(rName s
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigFilter() string {
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigLocalGatewayId() string {
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigTags(rName string) string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigFilter() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigId() string {
+func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigTags(rName string) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfig(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfigFilter(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigFilter_sameAccount(rName string) string {
@@ -94,6 +97,7 @@ func testAccAWSEc2TransitGatewayVpcAttachmentDataSourceConfigID() string {
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigBase(rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigTransitGatewayIdAndVpnConnectionId(rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigFilter(rBgpAsn int) string {
+func testAccCheckAwsEcrAuthorizationTokenDataSourceRepositoryConfig(rName string) string {
 func testAccCheckAwsEcrImageDataSourceConfig(reg, repo, tag string) string {
 func testAccCheckAwsEcrRepositoryDataSourceConfig(rName string) string {
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(clusterName, tdName, svcName string) string {
@@ -185,6 +189,9 @@ func testAccDataSourceAwsNetworkAclsConfig_VpcID(rName string) string {
 func testAccDataSourceAwsNetworkInterfacesConfig_Base(rName string) string {
 func testAccDataSourceAwsNetworkInterfacesConfig_Filter(rName string) string {
 func testAccDataSourceAwsNetworkInterfacesConfig_Tags(rName string) string {
+func testAccAWSOutpostsOutpostsDataSourceConfig() string {
+func testAccAWSOutpostsOutpostDataSourceConfigId() string {
+func testAccAWSOutpostsOutpostDataSourceConfigName() string {
 func testAccDataSourceAwsPricingProductConfigEc2(dataName string, instanceType string) string {
 func testAccDataSourceAwsPricingProductConfigRedshift() string {
 func testAccDataSourceAwsQLDBLedgerConfig(rName string) string {
@@ -1251,7 +1258,7 @@ func testAccDefaultRouteTableConfigRequired() string {
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
 func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccDeviceFarmProjectConfig(rInt int) string {
+func testAccDeviceFarmProjectConfig(rName string) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {
 func testAccDirectoryServiceDirectoryConfig_withAlias(alias string) string {
 func testAccDirectoryServiceDirectoryConfig_withSso(alias string) string {
@@ -1437,6 +1444,11 @@ func testAccAWSEc2FleetConfig_TargetCapacitySpecification_DefaultTargetCapacityT
 func testAccAWSEc2FleetConfig_TargetCapacitySpecification_TotalTargetCapacity(rName string, totalTargetCapacity int) string {
 func testAccAWSEc2FleetConfig_TerminateInstancesWithExpiration(rName string, terminateInstancesWithExpiration bool) string {
 func testAccAWSEc2FleetConfig_Type(rName, fleetType string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigBase(rName, outpostArn string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfig(rName, outpostArn string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags1(rName, outpostArn, tagKey1, tagValue1 string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags2(rName, outpostArn, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEc2LocalGatewayRouteConfigDestinationCidrBlock(destinationCidrBlock string) string {
 func testAccEc2TagConfig(rBgpAsn int, key string, value string) string {
 func testAccEc2TrafficMirrorFilterRuleConfig(dstCidr, srcCidr, action, dir string, num int) string {
 func testAccEc2TrafficMirrorFilterRuleConfigFull(dstCidr, srcCidr, action, dir, description string, ruleNum, srcPortFrom, srcPortTo, dstPortFrom, dstPortTo, protocol int) string {
@@ -1650,6 +1662,7 @@ func testAccESDomainConfig(randInt int) string {
 func testAccESDomainConfig_DomainEndpointOptions(randInt int, enforceHttps bool, tlsSecurityPolicy string) string {
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(rName string, availabilityZoneCount int) string {
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(rName string, zoneAwarenessEnabled bool) string {
+func testAccESDomainConfigWarm(rName, warmType string, enabled bool, warmCnt int) string {
 func testAccESDomainConfig_WithDedicatedClusterMaster(randInt int, enabled bool) string {
 func testAccESDomainConfig_ClusterUpdate(randInt, instanceInt, snapshotInt int) string {
 func testAccESDomainConfig_ClusterUpdateEBSVolume(randInt, volumeSize int) string {
@@ -3361,6 +3374,7 @@ func testAccAwsWafv2RuleGroupConfig_XssMatchStatement(name string) string {
 func testAccAwsWafv2RuleGroupConfig_XssMatchStatement_Update(name string) string {
 func testAccAwsWafv2RuleGroupConfig_OneTag(name, tagKey, tagValue string) string {
 func testAccAwsWafv2RuleGroupConfig_TwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAwsWafv2WebACLAssociationConfig(name string) string {
 func testAccAwsWafv2WebACLConfig_Basic(name string) string {
 func testAccAwsWafv2WebACLConfig_BasicUpdate(name string) string {
 func testAccAwsWafv2WebACLConfig_ManagedRuleGroupStatement(name string) string {

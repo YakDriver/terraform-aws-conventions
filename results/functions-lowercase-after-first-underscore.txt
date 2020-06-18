@@ -127,6 +127,7 @@ func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigTags_sameAccoun
 func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigFilter_differentAccount(
 func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigID_differentAccount(
 func TestAccAWSEc2TransitGatewayVpnAttachmentDataSource_filter(
+func TestAccAWSEcrAuthorizationTokenDataSource_basic(
 func TestAccAWSEcrDataSource_ecrImage(
 func TestAccAWSEcrDataSource_ecrRepository(
 func TestAccAWSEcsDataSource_ecsCluster(
@@ -245,6 +246,7 @@ func TestAccDataSourceAwsNetworkInterface_filters(
 func testAccDataSourceAwsNetworkInterface_filters(
 func testAccDataSourceAwsOrganizationsOrganizationalUnits_basic(
 func testAccDataSourceAwsOrganizationsOrganization_basic(
+func TestAccAWSOutpostsOutpostsDataSource_basic(
 func TestAccAWSPartition_basic(
 func TestAccDataSourceAwsPrefixList_basic(
 func TestAccDataSourceAwsPrefixList_filter(
@@ -832,6 +834,7 @@ func TestAccAWSCloudFrontDistribution_noOptionalItemsConfig(
 func TestAccAWSCloudFrontDistribution_noCustomErrorResponseConfig(
 func TestAccAWSCloudFrontOriginAccessIdentity_basic(
 func TestAccAWSCloudFrontOriginAccessIdentity_noComment(
+func TestAccAWSCloudFrontOriginAccessIdentity_disappears(
 func TestAccAWSCloudFrontPublicKey_basic(
 func TestAccAWSCloudFrontPublicKey_namePrefix(
 func TestAccAWSCloudFrontPublicKey_update(
@@ -1253,6 +1256,7 @@ func TestAccAWSDefaultSubnet_publicIp(
 func TestAccAWSDefaultVpcDhcpOptions_basic(
 func TestAccAWSDefaultVpc_basic(
 func TestAccAWSDeviceFarmProject_basic(
+func TestAccAWSDeviceFarmProject_disappears(
 func TestAccAWSDirectoryServiceConditionForwarder_basic(
 func TestAccAWSDirectoryServiceDirectory_basic(
 func TestAccAWSDirectoryServiceDirectory_tags(
@@ -1437,6 +1441,7 @@ func TestAccAWSEc2CapacityReservation_instanceCount(
 func TestAccAWSEc2CapacityReservation_instanceMatchCriteria(
 func TestAccAWSEc2CapacityReservation_instanceType(
 func TestAccAWSEc2CapacityReservation_tags(
+func TestAccAWSEc2CapacityReservation_disappears(
 func TestAccAWSEc2CapacityReservation_tenancy(
 func testAccEc2CapacityReservationConfig_ebsOptimized(
 func testAccEc2CapacityReservationConfig_endDate(
@@ -1463,6 +1468,10 @@ func TestAccAwsEc2ClientVpnNetworkAssociation_disappears(
 func TestAccAWSEc2Fleet_basic(
 func TestAccAWSEc2Fleet_disappears(
 func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(
+func TestAccAwsEc2LocalGatewayRouteTableVpcAssociation_basic(
+func TestAccAwsEc2LocalGatewayRouteTableVpcAssociation_disappears(
+func TestAccAWSEc2LocalGatewayRoute_basic(
+func TestAccAWSEc2LocalGatewayRoute_disappears(
 func TestAccAWSEc2Tag_basic(
 func TestAccAWSEc2Tag_disappears(
 func TestAccAWSEc2TrafficMirrorFilterRule_basic(
@@ -1677,6 +1686,7 @@ func testAccBeanstalkEnvConfig_platform_arn(
 func testAccBeanstalkEnvConfig_settings(
 func TestAccAWSElasticSearchDomainPolicy_basic(
 func TestAccAWSElasticSearchDomain_basic(
+func TestAccAWSElasticSearchDomain_warm(
 func TestAccAWSElasticSearchDomain_withDedicatedMaster(
 func TestAccAWSElasticSearchDomain_duplicate(
 func TestAccAWSElasticSearchDomain_v23(
@@ -1806,6 +1816,7 @@ func TestAccAWSGlueCatalogTable_basic(
 func TestAccAWSGlueCatalogTable_full(
 func TestAccAWSGlueCatalogTable_update_addValues(
 func TestAccAWSGlueCatalogTable_update_replaceValues(
+func TestAccAWSGlueCatalogTable_disappears(
 func testAccGlueCatalogTable_basic(
 func testAccGlueCatalogTable_full(
 func testAccGlueCatalogTable_full_replacedValues(
@@ -2006,6 +2017,7 @@ func testAccInstanceConfig_creditSpecification_unknownCpuCredits(
 func TestAccAWSInternetGateway_basic(
 func TestAccAWSInternetGateway_delete(
 func TestAccAWSInternetGateway_tags(
+func TestAccAWSInternetGateway_disappears(
 func TestAccAWSIoTCertificate_csr(
 func TestAccAWSIoTCertificate_keys_certificate(
 func testAccCheckAWSIoTCertificateDestroy_basic(
@@ -3278,6 +3290,7 @@ func TestAccAWSDHCPOptionsAssociation_basic(
 func TestAccAWSDHCPOptions_basic(
 func TestAccAWSDHCPOptions_deleteOptions(
 func TestAccAWSDHCPOptions_tags(
+func TestAccAWSDHCPOptions_disappears(
 func TestAccAWSVpcEndpointConnectionNotification_basic(
 func TestAccAWSVpcEndpointRouteTableAssociation_basic(
 func TestAccAWSVpcEndpointServiceAllowedPrincipal_basic(

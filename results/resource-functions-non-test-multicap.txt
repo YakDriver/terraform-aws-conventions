@@ -70,6 +70,7 @@ func waitForDynamoDbSSEUpdateToBeCompleted(
 func migrateDynamoDBStateV0toV1(
 func dynamoDbGetGSIIndex(
 func resourceAWSEbsVolumeUpdate(
+func decodeEc2LocalGatewayRouteID(
 func extractResourceIDAndKeyFromEc2TagID(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
@@ -77,6 +78,8 @@ func tpl_testAccAWSEcsService_withLbChanges(
 func tpl_testAccAWSEcsServiceWithNetworkConfiguration(
 func expandESNodeToNodeEncryptionOptions(
 func flattenESNodeToNodeEncryptionOptions(
+func expandESClusterConfig(
+func flattenESClusterConfig(
 func buildESDomainArn(
 func expandETNotifications(
 func flattenETNotifications(
@@ -357,6 +360,11 @@ func resourceAwsWafv2IPSetCreate(
 func resourceAwsWafv2IPSetRead(
 func resourceAwsWafv2IPSetUpdate(
 func resourceAwsWafv2IPSetDelete(
+func resourceAwsWafv2WebACLAssociation(
+func resourceAwsWafv2WebACLAssociationCreate(
+func resourceAwsWafv2WebACLAssociationRead(
+func resourceAwsWafv2WebACLAssociationDelete(
+func resourceAwsWafv2ACLAssociationDecodeId(
 func resourceAwsWafv2WebACL(
 func resourceAwsWafv2WebACLCreate(
 func resourceAwsWafv2WebACLRead(

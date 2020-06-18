@@ -1257,6 +1257,7 @@ func testAccEc2ClientVpnEndpointMsADBase(
 func testAccEc2ClientVpnEndpointConfigWithDNSServers(
 func testAccEc2ClientVpnEndpointConfigWithMicrosoftAD(
 func testAccEc2ClientVpnEndpointConfigWithMutualAuthAndMicrosoftAD(
+func decodeEc2LocalGatewayRouteID(
 func extractResourceIDAndKeyFromEc2TagID(
 func testAccTrafficMirrorFilterConfigWithoutDNS(
 func TestAccAWSEc2TransitGateway_AmazonSideASN(
@@ -1316,7 +1317,6 @@ func testAccAWSEFSFileSystemConfigWithLifecyclePolicy(
 func TestAccAWSEFSMountTarget_basic(
 func TestAccAWSEFSMountTarget_disappears(
 func TestResourceAWSEFSMountTarget_hasEmptyMountTargets(
-func testAccAWSEFSMountTargetDisappears(
 func testAccAWSEFSMountTargetConfig(
 func testAccAWSEFSMountTargetConfigModified(
 func TestAccAWSEIPAssociation_instance(
@@ -1371,6 +1371,8 @@ func TestAccAWSBeanstalkConfigurationTemplate_VPC(
 func testAccBeanstalkConfigurationTemplateConfig_VPC(
 func expandESNodeToNodeEncryptionOptions(
 func flattenESNodeToNodeEncryptionOptions(
+func expandESClusterConfig(
+func flattenESClusterConfig(
 func buildESDomainArn(
 func testAccESDomainPolicyConfig(
 func TestAccAWSElasticSearchDomain_RequireHTTPS(
@@ -1390,6 +1392,7 @@ func testAccESDomainConfig(
 func testAccESDomainConfig_DomainEndpointOptions(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(
+func testAccESDomainConfigWarm(
 func testAccESDomainConfig_WithDedicatedClusterMaster(
 func testAccESDomainConfig_ClusterUpdate(
 func testAccESDomainConfig_ClusterUpdateEBSVolume(
@@ -2882,6 +2885,7 @@ func isNoSuchDhcpOptionIDErr(
 func TestAccAWSDHCPOptions_basic(
 func TestAccAWSDHCPOptions_deleteOptions(
 func TestAccAWSDHCPOptions_tags(
+func TestAccAWSDHCPOptions_disappears(
 func testAccCheckDHCPOptionsDestroy(
 func testAccCheckDHCPOptionsExists(
 func testAccCheckDHCPOptionsDelete(
@@ -2998,6 +3002,17 @@ func testAccAwsWafv2IPSetConfigOneTag(
 func testAccAwsWafv2IPSetConfigTwoTags(
 func testAccAwsWafv2IPSetConfigLarge(
 func testAccAWSWafv2IPSetImportStateIdFunc(
+func resourceAwsWafv2WebACLAssociation(
+func resourceAwsWafv2WebACLAssociationCreate(
+func resourceAwsWafv2WebACLAssociationRead(
+func resourceAwsWafv2WebACLAssociationDelete(
+func resourceAwsWafv2ACLAssociationDecodeId(
+func TestAccAwsWafv2WebACLAssociation_Basic(
+func TestAccAwsWafv2WebACLAssociation_Disappears(
+func testAccCheckAWSWafv2WebACLAssociationDestroy(
+func testAccCheckAWSWafv2WebACLAssociationExists(
+func testAccAwsWafv2WebACLAssociationConfig(
+func testAccAWSWafv2WebACLAssociationImportStateIdFunc(
 func resourceAwsWafv2WebACL(
 func resourceAwsWafv2WebACLCreate(
 func resourceAwsWafv2WebACLRead(
@@ -3045,8 +3060,6 @@ func flattenEFSVolumeConfiguration(
 func flattenDocDBParameters(
 func flattenNetworkInterfacesPrivateIPAddresses(
 func expandPrivateIPAddresses(
-func expandESClusterConfig(
-func flattenESClusterConfig(
 func expandESCognitoOptions(
 func flattenESCognitoOptions(
 func expandESDomainEndpointOptions(

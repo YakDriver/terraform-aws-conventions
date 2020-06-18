@@ -124,6 +124,7 @@ func TestAccAWSEc2TransitGatewayVpnAttachmentDataSource_filter(
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigBase(
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigTransitGatewayIdAndVpnConnectionId(
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigFilter(
+func TestAccAWSEcrAuthorizationTokenDataSource_basic(
 func TestAccAWSEcrDataSource_ecrImage(
 func TestAccAWSEcrDataSource_ecrRepository(
 func TestAccAWSEcsDataSource_ecsCluster(
@@ -301,6 +302,13 @@ func TestAccAWSMskClusterDataSource_Name(
 func TestAccAWSMskConfigurationDataSource_Name(
 func TestAccDataSourceAwsNetworkAcls_VpcID(
 func testAccDataSourceAwsNetworkAclsConfig_VpcID(
+func TestAccAWSOutpostsOutpostsDataSource_basic(
+func testAccPreCheckAWSOutpostsOutposts(
+func testAccAWSOutpostsOutpostsDataSourceConfig(
+func TestAccAWSOutpostsOutpostDataSource_Id(
+func TestAccAWSOutpostsOutpostDataSource_Name(
+func testAccAWSOutpostsOutpostDataSourceConfigId(
+func testAccAWSOutpostsOutpostDataSourceConfigName(
 func TestAccAWSPartition_basic(
 func testAccPricingCheckValueIsJSON(
 func dataSourceAwsQLDBLedger(
@@ -1494,6 +1502,7 @@ func testAccAWSCloudFrontDistributionConfigViewerCertificateAcmCertificateArnCon
 func testAccAWSCloudFrontDistributionConfigWaitForDeployment(
 func TestAccAWSCloudFrontOriginAccessIdentity_basic(
 func TestAccAWSCloudFrontOriginAccessIdentity_noComment(
+func TestAccAWSCloudFrontOriginAccessIdentity_disappears(
 func TestAccAWSCloudFrontPublicKey_basic(
 func TestAccAWSCloudFrontPublicKey_namePrefix(
 func TestAccAWSCloudFrontPublicKey_update(
@@ -1632,6 +1641,7 @@ func TestAccAWSCloudWatchLogStream_basic(
 func TestAccAWSCloudWatchLogStream_disappears(
 func TestAccAWSCloudWatchLogStream_disappears_LogGroup(
 func testAccCheckAWSCloudWatchLogStreamDestroy(
+func testAccAWSCloudWatchLogStreamImportStateIdFunc(
 func testAccAWSCloudWatchLogStreamConfig(
 func TestAccAWSCloudwatchLogSubscriptionFilter_basic(
 func TestAccAWSCloudwatchLogSubscriptionFilter_disappears(
@@ -2562,6 +2572,7 @@ func testAccCheckAWSDefaultVpcDhcpOptionsDestroy(
 func TestAccAWSDefaultVpc_basic(
 func testAccCheckAWSDefaultVpcDestroy(
 func TestAccAWSDeviceFarmProject_basic(
+func TestAccAWSDeviceFarmProject_disappears(
 func parseDSConditionalForwarderId(
 func TestAccAWSDirectoryServiceConditionForwarder_basic(
 func TestAccAWSDirectoryServiceDirectory_basic(
@@ -2837,6 +2848,7 @@ func TestAccAWSEc2CapacityReservation_instanceCount(
 func TestAccAWSEc2CapacityReservation_instanceMatchCriteria(
 func TestAccAWSEc2CapacityReservation_instanceType(
 func TestAccAWSEc2CapacityReservation_tags(
+func TestAccAWSEc2CapacityReservation_disappears(
 func TestAccAWSEc2CapacityReservation_tenancy(
 func testAccPreCheckAWSEc2CapacityReservation(
 func TestAccAwsEc2ClientVpnEndpoint_msAD(
@@ -2904,6 +2916,12 @@ func testAccAWSEc2FleetConfig_TargetCapacitySpecification_DefaultTargetCapacityT
 func testAccAWSEc2FleetConfig_TargetCapacitySpecification_TotalTargetCapacity(
 func testAccAWSEc2FleetConfig_TerminateInstancesWithExpiration(
 func testAccAWSEc2FleetConfig_Type(
+func decodeEc2LocalGatewayRouteID(
+func TestAccAWSEc2LocalGatewayRoute_basic(
+func TestAccAWSEc2LocalGatewayRoute_disappears(
+func testAccCheckAWSEc2LocalGatewayRouteExists(
+func testAccCheckAWSEc2LocalGatewayRouteDestroy(
+func testAccAWSEc2LocalGatewayRouteConfigDestinationCidrBlock(
 func extractResourceIDAndKeyFromEc2TagID(
 func TestAccAWSEc2Tag_basic(
 func TestAccAWSEc2Tag_disappears(
@@ -2933,7 +2951,6 @@ func TestAccAWSEc2TrafficMirrorTarget_eni(
 func TestAccAWSEc2TrafficMirrorTarget_tags(
 func TestAccAWSEc2TrafficMirrorTarget_disappears(
 func testAccCheckAWSEc2TrafficMirrorTargetExists(
-func testAccCheckAWSEc2TrafficMirrorTargetDisappears(
 func testAccPreCheckAWSEc2TrafficMirrorTarget(
 func testAccCheckAWSEc2TrafficMirrorTargetDestroy(
 func TestAccAWSEc2TransitGatewayPeeringAttachmentAccepter_basic_sameAccount(
@@ -3280,7 +3297,6 @@ func testAccAWSEFSFileSystemConfigWithLifecyclePolicy(
 func TestAccAWSEFSMountTarget_basic(
 func TestAccAWSEFSMountTarget_disappears(
 func TestResourceAWSEFSMountTarget_hasEmptyMountTargets(
-func testAccAWSEFSMountTargetDisappears(
 func testAccAWSEFSMountTargetConfig(
 func testAccAWSEFSMountTargetConfigModified(
 func TestAccAWSEgressOnlyInternetGateway_basic(
@@ -3526,12 +3542,15 @@ func TestAccAWSBeanstalkEnv_settingWithJsonValue(
 func TestAccAWSBeanstalkEnv_platformArn(
 func expandESNodeToNodeEncryptionOptions(
 func flattenESNodeToNodeEncryptionOptions(
+func expandESClusterConfig(
+func flattenESClusterConfig(
 func TestAccAWSElasticSearchDomainPolicy_basic(
 func buildESDomainArn(
 func testAccESDomainPolicyConfig(
 func TestAccAWSElasticSearchDomain_basic(
 func TestAccAWSElasticSearchDomain_RequireHTTPS(
 func TestAccAWSElasticSearchDomain_ClusterConfig_ZoneAwarenessConfig(
+func TestAccAWSElasticSearchDomain_warm(
 func TestAccAWSElasticSearchDomain_withDedicatedMaster(
 func TestAccAWSElasticSearchDomain_duplicate(
 func TestAccAWSElasticSearchDomain_v23(
@@ -3566,6 +3585,7 @@ func testAccESDomainConfig(
 func testAccESDomainConfig_DomainEndpointOptions(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(
+func testAccESDomainConfigWarm(
 func testAccESDomainConfig_WithDedicatedClusterMaster(
 func testAccESDomainConfig_ClusterUpdate(
 func testAccESDomainConfig_ClusterUpdateEBSVolume(
@@ -3886,6 +3906,7 @@ func TestAccAWSGlueCatalogTable_update_replaceValues(
 func TestAccAWSGlueCatalogTable_StorageDescriptor_EmptyConfigurationBlock(
 func TestAccAWSGlueCatalogTable_StorageDescriptor_SerDeInfo_EmptyConfigurationBlock(
 func TestAccAWSGlueCatalogTable_StorageDescriptor_SkewedInfo_EmptyConfigurationBlock(
+func TestAccAWSGlueCatalogTable_disappears(
 func TestAccAWSGlueClassifier_CsvClassifier(
 func TestAccAWSGlueClassifier_GrokClassifier(
 func TestAccAWSGlueClassifier_GrokClassifier_CustomPatterns(
@@ -4417,6 +4438,7 @@ func IGAttachStateRefreshFunc(
 func TestAccAWSInternetGateway_basic(
 func TestAccAWSInternetGateway_delete(
 func TestAccAWSInternetGateway_tags(
+func TestAccAWSInternetGateway_disappears(
 func TestAccAWSIoTCertificate_csr(
 func TestAccAWSIoTCertificate_keys_certificate(
 func testAccCheckAWSIoTCertificateDestroy_basic(
@@ -4516,7 +4538,6 @@ func TestAccAWSKeyPair_generatedName(
 func TestAccAWSKeyPair_namePrefix(
 func TestAccAWSKeyPair_disappears(
 func testAccCheckAWSKeyPairDestroy(
-func testAccCheckAWSKeyPairDisappears(
 func testAccCheckAWSKeyPairFingerprint(
 func testAccCheckAWSKeyPairKeyNamePrefix(
 func testAccCheckAWSKeyPairExists(
@@ -7343,6 +7364,7 @@ func isNoSuchDhcpOptionIDErr(
 func TestAccAWSDHCPOptions_basic(
 func TestAccAWSDHCPOptions_deleteOptions(
 func TestAccAWSDHCPOptions_tags(
+func TestAccAWSDHCPOptions_disappears(
 func testAccCheckDHCPOptionsDestroy(
 func testAccCheckDHCPOptionsExists(
 func testAccCheckDHCPOptionsDelete(
@@ -7790,6 +7812,17 @@ func testAccAWSWafv2IPSetImportStateIdFunc(
 func testAccCheckAWSWafv2RegexPatternSetDestroy(
 func testAccCheckAWSWafv2RegexPatternSetExists(
 func testAccAWSWafv2RegexPatternSetImportStateIdFunc(
+func resourceAwsWafv2WebACLAssociation(
+func resourceAwsWafv2WebACLAssociationCreate(
+func resourceAwsWafv2WebACLAssociationRead(
+func resourceAwsWafv2WebACLAssociationDelete(
+func resourceAwsWafv2ACLAssociationDecodeId(
+func TestAccAwsWafv2WebACLAssociation_Basic(
+func TestAccAwsWafv2WebACLAssociation_Disappears(
+func testAccCheckAWSWafv2WebACLAssociationDestroy(
+func testAccCheckAWSWafv2WebACLAssociationExists(
+func testAccAwsWafv2WebACLAssociationConfig(
+func testAccAWSWafv2WebACLAssociationImportStateIdFunc(
 func resourceAwsWafv2WebACL(
 func resourceAwsWafv2WebACLCreate(
 func resourceAwsWafv2WebACLRead(
@@ -7902,8 +7935,6 @@ func flattenEFSVolumeConfiguration(
 func flattenDocDBParameters(
 func flattenNetworkInterfacesPrivateIPAddresses(
 func expandPrivateIPAddresses(
-func expandESClusterConfig(
-func flattenESClusterConfig(
 func expandESCognitoOptions(
 func flattenESCognitoOptions(
 func expandESDomainEndpointOptions(
