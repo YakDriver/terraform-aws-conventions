@@ -154,6 +154,8 @@ func dataSourceAwsWafv2WebACLRead(
 func TestAccDataSourceAwsWafv2WebACL_Basic(
 func testAccDataSourceAwsWafv2WebACL_Name(
 func testAccDataSourceAwsWafv2WebACL_NonExistent(
+func TestAccDataSourceAwsWorkspaceBundle_bundleIDAndNameConflict(
+func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(
 func dataSyncParseLocationURI(
 func TestDataSyncParseLocationURI(
 func suppressOpenIdURL(

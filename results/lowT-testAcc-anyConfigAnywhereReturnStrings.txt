@@ -66,10 +66,10 @@ func testAccAWSEc2InstanceTypeOfferingDataSourceConfigLocationType() string {
 func testAccAWSEc2InstanceTypeOfferingDataSourceConfigPreferredInstanceTypes() string {
 func testAccDataSourceAwsEc2LocalGatewayRouteTablesConfig() string {
 func testAccDataSourceAwsEc2LocalGatewayRouteTablesConfigFilter() string {
-func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigFilter(outpostArn string) string {
+func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigFilter() string {
 func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigLocalGatewayId() string {
 func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigLocalGatewayRouteTableId() string {
-func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigOutpostArn(outpostArn string) string {
+func testAccDataSourceAwsEc2LocalGatewayRouteTableConfigOutpostArn() string {
 func testAccDataSourceAwsEc2LocalGatewaysConfig() string {
 func testAccDataSourceAwsEc2LocalGatewayConfigId() string {
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupsConfig() string {
@@ -104,7 +104,7 @@ func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(clusterName, tdName, 
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(rName string) string {
 func testAccDataSourceAWSEFSAccessPointConfig(rName string) string {
 func testAccAwsEfsMountTargetConfigByMountTargetId(ct string) string {
-func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(customerOwnedIpv4Pool string) string {
+func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool() string {
 func testAccDataSourceAwsEipConfigFilter(rName string) string {
 func testAccDataSourceAwsEipConfigTags(rName string) string {
 func testAccAWSEksClusterDataSourceConfig_Basic(rName string) string {
@@ -154,6 +154,7 @@ func testAccDataSourceAWSLambdaFunctionConfigAlias(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigLayers(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigVPC(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigEnvironment(rName string) string {
+func testAccDataSourceAWSLambdaFunctionConfigFileSystemConfigs(rName string) string {
 func testAccDataSourceAwsLambdaInvocation_base_config(roleName string) string {
 func testAccDataSourceAwsLambdaInvocation_basic_config(rName, testData string) string {
 func testAccDataSourceAwsLambdaInvocation_qualifier_config(rName, testData string) string {
@@ -189,9 +190,15 @@ func testAccDataSourceAwsNetworkAclsConfig_VpcID(rName string) string {
 func testAccDataSourceAwsNetworkInterfacesConfig_Base(rName string) string {
 func testAccDataSourceAwsNetworkInterfacesConfig_Filter(rName string) string {
 func testAccDataSourceAwsNetworkInterfacesConfig_Tags(rName string) string {
+func testAccAWSOutpostsOutpostInstanceTypesDataSourceConfig() string {
+func testAccAWSOutpostsOutpostInstanceTypeDataSourceConfigInstanceType() string {
+func testAccAWSOutpostsOutpostInstanceTypeDataSourceConfigPreferredInstanceTypes() string {
 func testAccAWSOutpostsOutpostsDataSourceConfig() string {
 func testAccAWSOutpostsOutpostDataSourceConfigId() string {
 func testAccAWSOutpostsOutpostDataSourceConfigName() string {
+func testAccAWSOutpostsSitesDataSourceConfig() string {
+func testAccAWSOutpostsSiteDataSourceConfigId() string {
+func testAccAWSOutpostsSiteDataSourceConfigName() string {
 func testAccDataSourceAwsPricingProductConfigEc2(dataName string, instanceType string) string {
 func testAccDataSourceAwsPricingProductConfigRedshift() string {
 func testAccDataSourceAwsQLDBLedgerConfig(rName string) string {
@@ -235,6 +242,7 @@ func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOff(randInt int) stri
 func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOn(randInt int, retainUntilDate string) string {
 func testAccAWSDataSourceS3BucketConfig_basic(bucketName string) string {
 func testAccAWSDataSourceS3BucketWebsiteConfig(bucketName string) string {
+func testAccDataSourceAwsSecretsManagerSecretRotationConfig_Default(rName string, automaticallyAfterDays int) string {
 func testAccDataSourceAwsSecretsManagerSecretConfig_ARN(rName string) string {
 func testAccDataSourceAwsSecretsManagerSecretConfig_Name(rName string) string {
 func testAccDataSourceAwsSecretsManagerSecretConfig_Policy(rName string) string {
@@ -295,6 +303,8 @@ func testAccDataSourceAwsWafRegionalWebAclConfig_Name(name string) string {
 func testAccDataSourceAwsWafRuleConfig_Name(name string) string {
 func testAccDataSourceAwsWafWebAclConfig_Name(name string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
+func testAccDataSourceAwsWorkspaceBundleConfig_byOwnerName(owner, name string) string {
+func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(bundleID, owner, name string) string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
@@ -1396,7 +1406,7 @@ func testAccAwsEbsSnapshotConfigBasicTags1(rName, tagKey1, tagValue1 string) str
 func testAccAwsEbsSnapshotConfigBasicTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
-func testAccAwsEbsVolumeConfigOutpost(outpostArn string) string {
+func testAccAwsEbsVolumeConfigOutpost() string {
 func testAccAwsEbsVolumeConfigMultiAttach(rName string) string {
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(optInStatus string) string {
 func testAccEc2CapacityReservationConfig_ebsOptimized(ebsOptimized bool) string {
@@ -1444,10 +1454,10 @@ func testAccAWSEc2FleetConfig_TargetCapacitySpecification_DefaultTargetCapacityT
 func testAccAWSEc2FleetConfig_TargetCapacitySpecification_TotalTargetCapacity(rName string, totalTargetCapacity int) string {
 func testAccAWSEc2FleetConfig_TerminateInstancesWithExpiration(rName string, terminateInstancesWithExpiration bool) string {
 func testAccAWSEc2FleetConfig_Type(rName, fleetType string) string {
-func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigBase(rName, outpostArn string) string {
-func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfig(rName, outpostArn string) string {
-func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags1(rName, outpostArn, tagKey1, tagValue1 string) string {
-func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags2(rName, outpostArn, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigBase(rName string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfig(rName string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEc2LocalGatewayRouteConfigDestinationCidrBlock(destinationCidrBlock string) string {
 func testAccEc2TagConfig(rBgpAsn int, key string, value string) string {
 func testAccEc2TrafficMirrorFilterRuleConfig(dstCidr, srcCidr, action, dir string, num int) string {
@@ -1567,7 +1577,7 @@ func testAccAWSEgressOnlyInternetGatewayConfigTags2(tagKey1, tagValue1, tagKey2,
 func testAccAWSEIPAssociationConfig_spotInstance(rInt int) string {
 func testAccAWSEIPConfig_tags(rName, testName string) string {
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(poolName string) string {
-func testAccAWSEIPConfigCustomerOwnedIpv4Pool(customerOwnedIpv4Pool string) string {
+func testAccAWSEIPConfigCustomerOwnedIpv4Pool() string {
 func testAccAWSEksClusterConfig_Base(rName string) string {
 func testAccAWSEksClusterConfig_Required(rName string) string {
 func testAccAWSEksClusterConfig_Version(rName, version string) string {
@@ -1975,8 +1985,7 @@ func testAccInstanceConfigSourceDestEnable(rName string) string {
 func testAccInstanceConfigSourceDestDisable(rName string) string {
 func testAccInstanceConfigDisableAPITermination(rName string, val bool) string {
 func testAccInstanceConfigVPC(rName string) string {
-func testAccInstanceConfigOutpost(outpostArn string) string {
-func testAccAwsInstanceOutpostConfig(outpostArn string) string {
+func testAccInstanceConfigOutpost() string {
 func testAccInstanceConfigPlacementGroup(rName string) string {
 func testAccInstanceConfigIpv6ErrorConfig(rName string) string {
 func testAccInstanceConfigIpv6Support(rName string) string {
@@ -2130,6 +2139,8 @@ func testAccAWSLambdaConfigEnvVariablesModifiedWithoutEnvironment(funcName, poli
 func testAccAWSLambdaConfigEncryptedEnvVariables(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariablesModified(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVersioned(fileName, funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaFileSystemConfig(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaFileSystemUpdateConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVersionedNodeJs10xRuntime(fileName, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVpcConfigProperIamDependencies(rName string) string {
 func testAccAWSLambdaConfigWithTracingConfig(funcName, policyName, roleName, sgName string) string {
@@ -2863,6 +2874,7 @@ func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(rName string) 
 func testAccAWSSagemakerNotebookInstanceTagsConfig(notebookName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(notebookName string) string {
 func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(notebookName string, directInternetAccess string) string {
+func testAccAwsSecretsManagerSecretRotationConfig(rName string, automaticallyAfterDays int) string {
 func testAccAwsSecretsManagerSecretConfig_Description(rName, description string) string {
 func testAccAwsSecretsManagerSecretConfig_Name(rName string) string {
 func testAccAwsSecretsManagerSecretConfig_withNamePrefix(rName string) string {
@@ -3166,7 +3178,7 @@ func testAccAWSStorageGatewaySmbFileShareConfigTags1(rName, tagKey1, tagValue1 s
 func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayUploadBufferConfig_Basic(rName string) string {
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(rName string) string {
-func testAccSubnetConfigOutpost(outpostArn string) string {
+func testAccSubnetConfigOutpost() string {
 func testAccAWSSwfDomainConfig_Description(rName, description string) string {
 func testAccAWSSwfDomainConfig_Name(rName string) string {
 func testAccAWSSwfDomainConfigTags1(rName, tagKey1, tagValue1 string) string {

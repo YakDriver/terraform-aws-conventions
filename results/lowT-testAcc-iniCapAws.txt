@@ -148,7 +148,6 @@ func testAccAwsEc2InstanceRootBlockDevice(
 func testAccAwsEc2InstanceRootBlockDeviceWithIOPS(
 func testAccAwsEc2InstanceConfigBlockDevices(
 func testAccAwsEc2InstanceConfigBlockDevicesWithDeleteOnTerminate(
-func testAccAwsInstanceOutpostConfig(
 func testAccAwsInstanceVpcConfig(
 func testAccAwsInstanceVpcSecurityGroupConfig(
 func testAccAwsInstanceVpcIpv6Config(
@@ -266,6 +265,7 @@ func testAccAwsRamResourceShareConfigAllowExternalPrincipals(
 func testAccAwsRamResourceShareConfigName(
 func testAccAwsRamResourceShareConfigTags1(
 func testAccAwsRamResourceShareConfigTags2(
+func testAccAwsSecretsManagerSecretRotationConfig(
 func testAccAwsSecretsManagerSecretConfig_Description(
 func testAccAwsSecretsManagerSecretConfig_Name(
 func testAccAwsSecretsManagerSecretConfig_withNamePrefix(

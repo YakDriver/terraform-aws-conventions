@@ -1247,6 +1247,8 @@ func refreshLambdaFunctionLastUpdateStatus(
 func refreshLambdaFunctionState(
 func waitForLambdaFunctionCreation(
 func waitForLambdaFunctionUpdate(
+func flattenLambdaFileSystemConfigs(
+func expandLambdaFileSystemConfigs(
 func init(
 func createTempFile(
 func baseAccAWSLambdaConfig(

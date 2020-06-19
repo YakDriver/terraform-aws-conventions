@@ -126,6 +126,7 @@ func TestAccDataSourceAWSLambdaFunction_alias(
 func TestAccDataSourceAWSLambdaFunction_layers(
 func TestAccDataSourceAWSLambdaFunction_vpc(
 func TestAccDataSourceAWSLambdaFunction_environment(
+func TestAccDataSourceAWSLambdaFunction_fileSystemConfig(
 func TestAccDataSourceAwsLambdaInvocation_basic(
 func TestAccDataSourceAwsLambdaInvocation_qualifier(
 func TestAccDataSourceAwsLambdaInvocation_complex(
@@ -147,7 +148,9 @@ func TestAccDataSourceAWSMqBroker_basic(
 func TestAccDataSourceAwsNetworkAcls_basic(
 func TestAccDataSourceAwsNetworkInterface_basic(
 func TestAccDataSourceAwsNetworkInterface_filters(
+func TestAccAWSOutpostsOutpostInstanceTypesDataSource_basic(
 func TestAccAWSOutpostsOutpostsDataSource_basic(
+func TestAccAWSOutpostsSitesDataSource_basic(
 func TestAccAWSPartition_basic(
 func TestAccDataSourceAwsPrefixList_basic(
 func TestAccDataSourceAwsPrefixList_filter(
@@ -227,6 +230,8 @@ func TestAccDataSourceAwsVpc_multipleCidr(
 func TestAccDataSourceAwsVpnGateway_unattached(
 func TestAccDataSourceAwsVpnGateway_attached(
 func TestAccDataSourceAwsWorkspaceBundle_basic(
+func TestAccDataSourceAwsWorkspaceBundle_byOwnerName(
+func TestAccDataSourceAwsWorkspaceBundle_bundleIDAndNameConflict(
 func TestAccAWSAcmCertificate_emailValidation(
 func TestAccAWSAcmCertificate_dnsValidation(
 func TestAccAWSAcmCertificate_root(

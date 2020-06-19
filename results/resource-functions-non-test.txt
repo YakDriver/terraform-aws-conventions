@@ -2937,6 +2937,8 @@ func refreshLambdaFunctionLastUpdateStatus(
 func refreshLambdaFunctionState(
 func waitForLambdaFunctionCreation(
 func waitForLambdaFunctionUpdate(
+func flattenLambdaFileSystemConfigs(
+func expandLambdaFileSystemConfigs(
 func init(
 func createTempFile(
 func baseAccAWSLambdaConfig(
@@ -3931,6 +3933,11 @@ func resourceAwsSecretsManagerSecretCreate(
 func resourceAwsSecretsManagerSecretRead(
 func resourceAwsSecretsManagerSecretUpdate(
 func resourceAwsSecretsManagerSecretDelete(
+func resourceAwsSecretsManagerSecretRotation(
+func resourceAwsSecretsManagerSecretRotationCreate(
+func resourceAwsSecretsManagerSecretRotationRead(
+func resourceAwsSecretsManagerSecretRotationUpdate(
+func resourceAwsSecretsManagerSecretRotationDelete(
 func expandSecretsManagerRotationRules(
 func flattenSecretsManagerRotationRules(
 func init(
