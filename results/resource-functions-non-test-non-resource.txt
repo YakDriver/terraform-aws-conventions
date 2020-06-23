@@ -1109,6 +1109,7 @@ func flattenIotSnsAction(
 func flattenIotSqsActions(
 func flattenIotSqsAction(
 func flattenIotStepFunctionsActions(
+func flattenIotErrorAction(
 func flattenIotStepFunctionsAction(
 func init(
 func migrateKeyPairStateV0toV1(

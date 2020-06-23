@@ -388,7 +388,6 @@ func TestAccAWSEc2TrafficMirrorSession_basic(
 func TestAccAWSEc2TrafficMirrorSession_tags(
 func TestAccAWSEc2TrafficMirrorSession_disappears(
 func testAccCheckAWSEc2TrafficMirrorSessionExists(
-func testAccCheckAWSEc2TrafficMirrorSessionDisappears(
 func testAccPreCheckAWSEc2TrafficMirrorSession(
 func testAccCheckAWSEc2TrafficMirrorSessionDestroy(
 func resourceAwsEc2TrafficMirrorTarget(
@@ -499,7 +498,6 @@ func TestAccAWSEc2TransitGateway_Description(
 func TestAccAWSEc2TransitGateway_Tags(
 func testAccCheckAWSEc2TransitGatewayExists(
 func testAccCheckAWSEc2TransitGatewayDestroy(
-func testAccCheckAWSEc2TransitGatewayDisappears(
 func testAccCheckAWSEc2TransitGatewayNotRecreated(
 func testAccCheckAWSEc2TransitGatewayRecreated(
 func testAccCheckAWSEc2TransitGatewayAssociationDefaultRouteTableVpcAttachmentAssociated(

@@ -1230,6 +1230,7 @@ func TestAccAWSConfigConfigurationAggregator_tags(
 func TestAccAWSConfig(
 func TestAccAwsCurReportDefinition_basic(
 func TestAccAWSCustomerGateway_basic(
+func TestAccAWSCustomerGateway_tags(
 func TestAccAWSCustomerGateway_similarAlreadyExists(
 func TestAccAWSCustomerGateway_disappears(
 func TestAccAWSDataPipelinePipeline_basic(
@@ -1574,6 +1575,7 @@ func TestAccAWSEBSSnapshot_basic(
 func TestAccAWSEBSSnapshot_tags(
 func TestAccAWSEBSSnapshot_withDescription(
 func TestAccAWSEBSSnapshot_withKms(
+func TestAccAWSEBSSnapshot_disappears(
 func TestAccAWSEBSVolume_basic(
 func TestAccAWSEBSVolume_updateAttachedEbsVolume(
 func TestAccAWSEBSVolume_updateSize(
@@ -2087,7 +2089,7 @@ func TestAccAwsGlobalAcceleratorEndpointGroup_update(
 func TestAccAwsGlobalAcceleratorListener_basic(
 func TestAccAwsGlobalAcceleratorListener_update(
 func TestAccAWSGlueCatalogDatabase_full(
-func TestAccAWSGlueCatalogDatabase_recreates(
+func TestAccAWSGlueCatalogDatabase_disappears(
 func TestAccAWSGlueCatalogTable_recreates(
 func TestAccAWSGlueCatalogTable_basic(
 func TestAccAWSGlueCatalogTable_full(
@@ -2352,6 +2354,7 @@ func TestAccAWSIoTCertificate_csr(
 func TestAccAWSIoTCertificate_keys_certificate(
 func TestAccAWSIotPolicyAttachment_basic(
 func TestAccAWSIoTPolicy_basic(
+func TestAccAWSIoTPolicy_disappears(
 func TestAccAWSIoTPolicy_invalidJson(
 func TestAccAWSIotRoleAlias_basic(
 func TestAccAWSIotThingPrincipalAttachment_basic(
@@ -2378,6 +2381,7 @@ func TestAccAWSIoTTopicRule_step_functions(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
 func TestAccAWSIoTTopicRule_Tags(
+func TestAccAWSIoTTopicRule_errorAction(
 func TestAWSKeyPairMigrateState(
 func TestAccAWSKeyPair_basic(
 func TestAccAWSKeyPair_tags(
@@ -3452,6 +3456,7 @@ func TestAccAWSSESIdentityPolicy_basic(
 func TestAccAWSSESIdentityPolicy_Identity_Email(
 func TestAccAWSSESIdentityPolicy_Policy(
 func TestAccAWSSESReceiptFilter_basic(
+func TestAccAWSSESReceiptFilter_disappears(
 func TestAccAWSSESReceiptRuleSet_basic(
 func TestAccAWSSESReceiptRuleSet_disappears(
 func TestAccAWSSESReceiptRule_basic(
@@ -3722,17 +3727,19 @@ func TestAccAWSVpcEndpointConnectionNotification_basic(
 func TestAccAWSVpcEndpointRouteTableAssociation_basic(
 func TestAccAWSVpcEndpointServiceAllowedPrincipal_basic(
 func TestAccAWSVpcEndpointService_basic(
-func TestAccAWSVpcEndpointService_AllowedPrincipalsAndTags(
-func TestAccAWSVpcEndpointService_removed(
+func TestAccAWSVpcEndpointService_AllowedPrincipals(
+func TestAccAWSVpcEndpointService_disappears(
+func TestAccAWSVpcEndpointService_tags(
 func TestAccAWSVpcEndpointSubnetAssociation_basic(
 func TestAccAWSVpcEndpointSubnetAssociation_multiple(
 func TestAccAWSVpcEndpoint_gatewayBasic(
-func TestAccAWSVpcEndpoint_gatewayWithRouteTableAndPolicyAndTags(
+func TestAccAWSVpcEndpoint_gatewayWithRouteTableAndPolicy(
 func TestAccAWSVpcEndpoint_gatewayPolicy(
 func TestAccAWSVpcEndpoint_interfaceBasic(
 func TestAccAWSVpcEndpoint_interfaceWithSubnetAndSecurityGroup(
 func TestAccAWSVpcEndpoint_interfaceNonAWSService(
-func TestAccAWSVpcEndpoint_removed(
+func TestAccAWSVpcEndpoint_disappears(
+func TestAccAWSVpcEndpoint_tags(
 func TestAccAwsVpcIpv4CidrBlockAssociation_basic(
 func TestAWSVpcMigrateState(
 func TestAccAWSVPCPeeringConnectionAccepter_sameRegionSameAccount(

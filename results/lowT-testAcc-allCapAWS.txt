@@ -781,7 +781,6 @@ func testAccAWSConfigAggregateAuthorizationConfig_tags(
 func testAccAWSConfigConfigurationAggregatorConfig_account(
 func testAccAWSConfigConfigurationAggregatorConfig_organization(
 func testAccAWSConfigConfigurationAggregatorConfig_tags(
-func testAccAWSCustomerGatewayDisappears(
 func testAccAWSDataPipelinePipelineConfig(
 func testAccAWSDataPipelinePipelineConfigWithDescription(
 func testAccAWSDataPipelinePipelineConfigWithTags(
@@ -1484,6 +1483,7 @@ func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
 func testAccAWSIoTTopicRuleTags2(
+func testAccAWSIoTTopicRule_errorAction(
 func testAccAWSKeyPairConfig(
 func testAccAWSKeyPairConfigTags1(
 func testAccAWSKeyPairConfigTags2(
@@ -2431,7 +2431,6 @@ func testAccAWSTransferUserConfig_forceNew(
 func testAccAWSVolumeAttachmentImportStateIDFunc(
 func testAccAWSVpcEndpointRouteTableAssociationImportStateIdFunc(
 func testAccAWSVpnConnectionDisappears(
-func testAccAWSVpnGatewayDisappears(
 func testAccAWSWafByteMatchSetConfig(
 func testAccAWSWafByteMatchSetConfigChangeName(
 func testAccAWSWafByteMatchSetConfig_changeTuples(

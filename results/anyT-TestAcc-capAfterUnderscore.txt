@@ -2033,7 +2033,7 @@ func TestAccAWSSwfDomain_Description(
 func testAccAWSSwfDomainConfig_Description(
 func testAccAWSSwfDomainConfig_Name(
 func TestAccAWSTransferUser_UserName_Validation(
-func TestAccAWSVpcEndpointService_AllowedPrincipalsAndTags(
+func TestAccAWSVpcEndpointService_AllowedPrincipals(
 func TestAccAWSVpc_AssignGeneratedIpv6CidrBlock(
 func TestAccAWSVpc_Tenancy(
 func TestAccAWSVpc_DisabledDnsSupport(

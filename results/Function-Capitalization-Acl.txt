@@ -81,7 +81,6 @@ func TestAccAWSNetworkAcl_ipv6ICMPRules(
 func TestAccAWSNetworkAcl_ipv6VpcRules(
 func TestAccAWSNetworkAcl_espProtocol(
 func testAccCheckAWSNetworkAclDestroy(
-func testAccCheckAWSNetworkAclDisappears(
 func testAccCheckAWSNetworkAclExists(
 func testAccCheckAWSNetworkAclEgressRuleLength(
 func testAccCheckSubnetIsAssociatedWithAcl(

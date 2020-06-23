@@ -1241,6 +1241,7 @@ func TestAccAWSEBSSnapshot_basic(
 func TestAccAWSEBSSnapshot_tags(
 func TestAccAWSEBSSnapshot_withDescription(
 func TestAccAWSEBSSnapshot_withKms(
+func TestAccAWSEBSSnapshot_disappears(
 func TestAccAWSEBSVolume_basic(
 func TestAccAWSEBSVolume_updateAttachedEbsVolume(
 func TestAccAWSEBSVolume_updateSize(
@@ -1775,8 +1776,10 @@ func TestAccAWSIoTCertificate_csr(
 func TestAccAWSIoTCertificate_keys_certificate(
 func testAccCheckAWSIoTCertificateDestroy_basic(
 func TestAccAWSIoTPolicy_basic(
+func TestAccAWSIoTPolicy_disappears(
 func TestAccAWSIoTPolicy_invalidJson(
 func testAccCheckAWSIoTPolicyDestroy_basic(
+func testAccCheckAWSIoTPolicyExists(
 func testAccAWSIoTPolicyConfigInitialState(
 func testAccAWSIoTPolicyInvalidJsonConfig(
 func getIoTThingPricipalAttachment(
@@ -1803,6 +1806,7 @@ func TestAccAWSIoTTopicRule_step_functions(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
 func TestAccAWSIoTTopicRule_Tags(
+func TestAccAWSIoTTopicRule_errorAction(
 func testAccCheckAWSIoTTopicRuleDestroy(
 func testAccCheckAWSIoTTopicRuleExists(
 func testAccAWSIoTTopicRule_basic(
@@ -1826,6 +1830,7 @@ func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
 func testAccAWSIoTTopicRuleTags2(
+func testAccAWSIoTTopicRule_errorAction(
 func flattenFirehoseOpenXJsonSerDe(
 func expandFirehoseOpenXJsonSerDe(
 func firehoseDeliveryStreamSSEStateRefreshFunc(
@@ -2540,6 +2545,7 @@ func testAccAWSSESIdentityPolicyConfigIdentityEmail(
 func testAccAWSSESIdentityPolicyConfigPolicy1(
 func testAccAWSSESIdentityPolicyConfigPolicy2(
 func TestAccAWSSESReceiptFilter_basic(
+func TestAccAWSSESReceiptFilter_disappears(
 func testAccCheckSESReceiptFilterDestroy(
 func testAccCheckAwsSESReceiptFilterExists(
 func testAccAWSSESReceiptFilterConfig(

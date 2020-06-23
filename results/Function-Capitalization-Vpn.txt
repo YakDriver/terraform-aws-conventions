@@ -127,6 +127,7 @@ func TestAccAWSVpnGateway_disappears(
 func TestAccAWSVpnGateway_reattach(
 func TestAccAWSVpnGateway_delete(
 func TestAccAWSVpnGateway_tags(
-func testAccAWSVpnGatewayDisappears(
 func testAccCheckVpnGatewayDestroy(
 func testAccCheckVpnGatewayExists(
+func testAccCheckVpnGatewayConfigTags1(
+func testAccCheckVpnGatewayConfigTags2(

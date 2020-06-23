@@ -1103,10 +1103,11 @@ func testAccConfigOrganizationManagedRuleConfigRuleIdentifier(rName, ruleIdentif
 func testAccConfigOrganizationManagedRuleConfigTagKeyScope(rName, tagKeyScope string) string {
 func testAccConfigOrganizationManagedRuleConfigTagValueScope(rName, tagValueScope string) string {
 func testAccAwsCurReportDefinitionConfig_basic(reportName string, bucketName string, bucketRegion string) string {
-func testAccCustomerGatewayConfig(rInt, rBgpAsn int) string {
-func testAccCustomerGatewayConfigIdentical(randInt, rBgpAsn int) string {
-func testAccCustomerGatewayConfigUpdateTags(rInt, rBgpAsn int) string {
-func testAccCustomerGatewayConfigForceReplace(rInt, rBgpAsn int) string {
+func testAccCustomerGatewayConfig(rBgpAsn int) string {
+func testAccCustomerGatewayConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
+func testAccCustomerGatewayConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccCustomerGatewayConfigIdentical(rBgpAsn int) string {
+func testAccCustomerGatewayConfigForceReplace(rBgpAsn int) string {
 func testAccAWSDataPipelinePipelineConfig(rName string) string {
 func testAccAWSDataPipelinePipelineConfigWithDescription(rName, description string) string {
 func testAccAWSDataPipelinePipelineConfigWithTags(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -3206,16 +3207,20 @@ func testAccVpcEndpointRouteTableAssociationConfig(rName string) string {
 func testAccVpcEndpointServiceAllowedPrincipalBasicConfig(lbName string) string {
 func testAccVpcEndpointServiceConfig_base(rName1, rName2 string) string {
 func testAccVpcEndpointServiceConfig_basic(rName1, rName2 string) string {
-func testAccVpcEndpointServiceConfig_allowedPrincipalsAndTags(rName1, rName2 string) string {
-func testAccVpcEndpointServiceConfig_allowedPrincipalsAndTagsUpdated(rName1, rName2 string) string {
-func testAccVpcEndpointConfig_gatewayWithoutRouteTableOrPolicyOrTags(rName string) string {
-func testAccVpcEndpointConfig_gatewayWithRouteTableAndPolicyAndTags(rName string) string {
-func testAccVpcEndpointConfig_gatewayWithRouteTableAndPolicyAndTagsModified(rName string) string {
-func testAccVpcEndpointConfig_interfaceWithoutSubnet(rName string) string {
+func testAccVpcEndpointServiceConfig_allowedPrincipals(rName1, rName2 string) string {
+func testAccVpcEndpointServiceConfig_allowedPrincipalsUpdated(rName1, rName2 string) string {
+func testAccVpcEndpointServiceConfigTags1(rName1, rName2, tagKey1, tagValue1 string) string {
+func testAccVpcEndpointServiceConfigTags2(rName1, rName2, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccVpcEndpointConfig_gatewayBasic(rName string) string {
+func testAccVpcEndpointConfig_gatewayWithRouteTableAndPolicy(rName string) string {
+func testAccVpcEndpointConfig_gatewayWithRouteTableAndPolicyModified(rName string) string {
+func testAccVpcEndpointConfig_interfaceBasic(rName string) string {
 func testAccVpcEndpointConfigGatewayPolicy(rName, policy string) string {
 func testAccVpcEndpointConfig_interfaceWithSubnet(rName string) string {
 func testAccVpcEndpointConfig_interfaceWithSubnetModified(rName string) string {
 func testAccVpcEndpointConfig_interfaceNonAWSService(rName string) string {
+func testAccVpcEndpointConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccVpcEndpointConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsVPCPeeringConnectionAccepterConfigSameRegionSameAccount(rName string) string {
 func testAccAwsVPCPeeringConnectionAccepterConfigDifferentRegionSameAccount(rName string) string {
 func testAccAwsVPCPeeringConnectionAccepterConfigSameRegionDifferentAccount(rName string) string {
@@ -3238,6 +3243,8 @@ func testAccAwsVpnConnectionConfigUpdate(rInt, rBgpAsn int) string {
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(rBgpAsn int, psk string, tunnelCidr string) string {
 func testAccAwsVpnConnectionConfigTransitGatewayID(rBgpAsn int) string {
 func testAccAwsVpnConnectionConfigTunnelOptions(rBgpAsn int, psk string, tunnelCidr string, psk2 string, tunnelCidr2 string) string {
+func testAccCheckVpnGatewayConfigTags1(tagKey1, tagValue1 string) string {
+func testAccCheckVpnGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafByteMatchSetConfig(name string) string {
 func testAccAWSWafByteMatchSetConfigChangeName(name string) string {
 func testAccAWSWafByteMatchSetConfig_changeTuples(name string) string {

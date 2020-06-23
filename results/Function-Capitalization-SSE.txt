@@ -43,6 +43,7 @@ func testAccAWSSESIdentityPolicyConfigIdentityEmail(
 func testAccAWSSESIdentityPolicyConfigPolicy1(
 func testAccAWSSESIdentityPolicyConfigPolicy2(
 func TestAccAWSSESReceiptFilter_basic(
+func TestAccAWSSESReceiptFilter_disappears(
 func testAccAWSSESReceiptFilterConfig(
 func TestAccAWSSESReceiptRuleSet_basic(
 func TestAccAWSSESReceiptRuleSet_disappears(

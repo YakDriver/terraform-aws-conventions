@@ -2165,9 +2165,9 @@ func testAccAWSConfigConfigurationAggregatorConfig_tags(
 func TestAccAWSConfig(
 func testAccPreCheckAWSCur(
 func TestAccAWSCustomerGateway_basic(
+func TestAccAWSCustomerGateway_tags(
 func TestAccAWSCustomerGateway_similarAlreadyExists(
 func TestAccAWSCustomerGateway_disappears(
-func testAccAWSCustomerGatewayDisappears(
 func TestAccAWSDataPipelinePipeline_basic(
 func TestAccAWSDataPipelinePipeline_description(
 func TestAccAWSDataPipelinePipeline_disappears(
@@ -2841,6 +2841,7 @@ func TestAccAWSEBSSnapshot_basic(
 func TestAccAWSEBSSnapshot_tags(
 func TestAccAWSEBSSnapshot_withDescription(
 func TestAccAWSEBSSnapshot_withKms(
+func TestAccAWSEBSSnapshot_disappears(
 func testAccCheckAWSEbsSnapshotDestroy(
 func resourceAWSEbsVolumeUpdate(
 func TestAccAWSEBSVolume_basic(
@@ -2960,7 +2961,6 @@ func TestAccAWSEc2TrafficMirrorSession_basic(
 func TestAccAWSEc2TrafficMirrorSession_tags(
 func TestAccAWSEc2TrafficMirrorSession_disappears(
 func testAccCheckAWSEc2TrafficMirrorSessionExists(
-func testAccCheckAWSEc2TrafficMirrorSessionDisappears(
 func testAccPreCheckAWSEc2TrafficMirrorSession(
 func testAccCheckAWSEc2TrafficMirrorSessionDestroy(
 func TestAccAWSEc2TrafficMirrorTarget_nlb(
@@ -3032,7 +3032,6 @@ func TestAccAWSEc2TransitGateway_Description(
 func TestAccAWSEc2TransitGateway_Tags(
 func testAccCheckAWSEc2TransitGatewayExists(
 func testAccCheckAWSEc2TransitGatewayDestroy(
-func testAccCheckAWSEc2TransitGatewayDisappears(
 func testAccCheckAWSEc2TransitGatewayNotRecreated(
 func testAccCheckAWSEc2TransitGatewayRecreated(
 func testAccCheckAWSEc2TransitGatewayAssociationDefaultRouteTableVpcAttachmentAssociated(
@@ -3913,7 +3912,7 @@ func TestAccAWSGlacierVault_RemoveNotifications(
 func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
 func TestAccAWSGlueCatalogDatabase_full(
-func TestAccAWSGlueCatalogDatabase_recreates(
+func TestAccAWSGlueCatalogDatabase_disappears(
 func readAwsGlueTableID(
 func TestAccAWSGlueCatalogTable_recreates(
 func TestAccAWSGlueCatalogTable_basic(
@@ -4468,8 +4467,10 @@ func testAccAWSIotPolicyAttachmentConfigUpdate1(
 func testAccAWSIotPolicyAttachmentConfigUpdate2(
 func testAccAWSIotPolicyAttachmentConfigUpdate3(
 func TestAccAWSIoTPolicy_basic(
+func TestAccAWSIoTPolicy_disappears(
 func TestAccAWSIoTPolicy_invalidJson(
 func testAccCheckAWSIoTPolicyDestroy_basic(
+func testAccCheckAWSIoTPolicyExists(
 func testAccAWSIoTPolicyConfigInitialState(
 func testAccAWSIoTPolicyInvalidJsonConfig(
 func TestAccAWSIotRoleAlias_basic(
@@ -4525,6 +4526,7 @@ func TestAccAWSIoTTopicRule_step_functions(
 func TestAccAWSIoTTopicRule_iot_analytics(
 func TestAccAWSIoTTopicRule_iot_events(
 func TestAccAWSIoTTopicRule_Tags(
+func TestAccAWSIoTTopicRule_errorAction(
 func testAccCheckAWSIoTTopicRuleDestroy(
 func testAccCheckAWSIoTTopicRuleExists(
 func testAccAWSIoTTopicRule_basic(
@@ -4548,6 +4550,7 @@ func testAccAWSIoTTopicRule_iot_analytics(
 func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
 func testAccAWSIoTTopicRuleTags2(
+func testAccAWSIoTTopicRule_errorAction(
 func TestAWSKeyPairMigrateState(
 func TestAccAWSKeyPair_basic(
 func TestAccAWSKeyPair_tags(
@@ -5499,7 +5502,6 @@ func TestAccAWSNetworkAcl_ipv6ICMPRules(
 func TestAccAWSNetworkAcl_ipv6VpcRules(
 func TestAccAWSNetworkAcl_espProtocol(
 func testAccCheckAWSNetworkAclDestroy(
-func testAccCheckAWSNetworkAclDisappears(
 func testAccCheckAWSNetworkAclExists(
 func testAccCheckAWSNetworkAclEgressRuleLength(
 func testAccAWSNetworkAclConfigIpv6ICMP(
@@ -5706,7 +5708,6 @@ func TestAccAWSPlacementGroup_basic(
 func TestAccAWSPlacementGroup_tags(
 func TestAccAWSPlacementGroup_disappears(
 func testAccCheckAWSPlacementGroupDestroy(
-func testAccCheckAWSPlacementGroupDisappears(
 func testAccCheckAWSPlacementGroupExists(
 func testAccAWSPlacementGroupConfig(
 func testAccAWSPlacementGroupConfigTags1(
@@ -6751,6 +6752,7 @@ func testAccAWSSESIdentityPolicyConfigIdentityEmail(
 func testAccAWSSESIdentityPolicyConfigPolicy1(
 func testAccAWSSESIdentityPolicyConfigPolicy2(
 func TestAccAWSSESReceiptFilter_basic(
+func TestAccAWSSESReceiptFilter_disappears(
 func testAccCheckSESReceiptFilterDestroy(
 func testAccCheckAwsSESReceiptFilterExists(
 func testAccAWSSESReceiptFilterConfig(
@@ -7396,17 +7398,19 @@ func TestAccAWSVpcEndpointRouteTableAssociation_basic(
 func testAccAWSVpcEndpointRouteTableAssociationImportStateIdFunc(
 func TestAccAWSVpcEndpointServiceAllowedPrincipal_basic(
 func TestAccAWSVpcEndpointService_basic(
-func TestAccAWSVpcEndpointService_AllowedPrincipalsAndTags(
-func TestAccAWSVpcEndpointService_removed(
+func TestAccAWSVpcEndpointService_AllowedPrincipals(
+func TestAccAWSVpcEndpointService_disappears(
+func TestAccAWSVpcEndpointService_tags(
 func TestAccAWSVpcEndpointSubnetAssociation_basic(
 func TestAccAWSVpcEndpointSubnetAssociation_multiple(
 func TestAccAWSVpcEndpoint_gatewayBasic(
-func TestAccAWSVpcEndpoint_gatewayWithRouteTableAndPolicyAndTags(
+func TestAccAWSVpcEndpoint_gatewayWithRouteTableAndPolicy(
 func TestAccAWSVpcEndpoint_gatewayPolicy(
 func TestAccAWSVpcEndpoint_interfaceBasic(
 func TestAccAWSVpcEndpoint_interfaceWithSubnetAndSecurityGroup(
 func TestAccAWSVpcEndpoint_interfaceNonAWSService(
-func TestAccAWSVpcEndpoint_removed(
+func TestAccAWSVpcEndpoint_disappears(
+func TestAccAWSVpcEndpoint_tags(
 func testAccVpcEndpointConfig_interfaceNonAWSService(
 func VPCStateRefreshFunc(
 func TestAWSVpcMigrateState(
@@ -7476,7 +7480,6 @@ func TestAccAWSVpnGateway_disappears(
 func TestAccAWSVpnGateway_reattach(
 func TestAccAWSVpnGateway_delete(
 func TestAccAWSVpnGateway_tags(
-func testAccAWSVpnGatewayDisappears(
 func TestAccAWSWafByteMatchSet_basic(
 func TestAccAWSWafByteMatchSet_changeNameForceNew(
 func TestAccAWSWafByteMatchSet_changeTuples(

@@ -1342,7 +1342,7 @@ func TestAccAWSSwfDomain_NamePrefix(
 func TestAccAWSSwfDomain_GeneratedName(
 func TestAccAWSSwfDomain_Description(
 func TestAccAWSTransferUser_UserName_Validation(
-func TestAccAWSVpcEndpointService_AllowedPrincipalsAndTags(
+func TestAccAWSVpcEndpointService_AllowedPrincipals(
 func TestAccAWSVpc_AssignGeneratedIpv6CidrBlock(
 func TestAccAWSVpc_Tenancy(
 func TestAccAWSVpc_DisabledDnsSupport(
