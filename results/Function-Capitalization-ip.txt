@@ -65,6 +65,7 @@ func TestAccAWSProvider_IgnoreTags_Keys_Multiple(
 func TestAccAWSAcmCertificate_san_multiple(
 func TestAccAWSAMICopy_Description(
 func testAccAWSAMICopyConfigDescription(
+func TestAccAWSAMI_description(
 func TestAccAWSAPIGatewayApiKey_Description(
 func testAccAWSAPIGatewayApiKeyConfigDescription(
 func TestAccAWSAPIGatewayDeployment_Description(

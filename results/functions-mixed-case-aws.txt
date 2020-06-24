@@ -4460,6 +4460,8 @@ func testAccAwsVpnConnectionConfigUpdate(
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func testAccAwsVpnConnectionConfigTunnelOptions(
+func testAccAwsVpnConnectionConfigTags1(
+func testAccAwsVpnConnectionConfigTags2(
 func resourceAwsVpnGatewayAttachment(
 func resourceAwsVpnGatewayAttachmentCreate(
 func resourceAwsVpnGatewayAttachmentRead(

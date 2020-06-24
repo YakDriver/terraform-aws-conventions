@@ -91,8 +91,8 @@ func TestAccAWSVpnConnection_basic(
 func TestAccAWSVpnConnection_TransitGatewayID(
 func TestAccAWSVpnConnection_tunnelOptions(
 func TestAccAWSVpnConnection_withoutStaticRoutes(
+func TestAccAWSVpnConnection_tags(
 func TestAccAWSVpnConnection_disappears(
-func testAccAWSVpnConnectionDisappears(
 func testAccAwsVpnConnectionDestroy(
 func testAccAwsVpnConnectionExists(
 func TestAWSVpnConnection_xmlconfig(
@@ -101,6 +101,8 @@ func testAccAwsVpnConnectionConfigUpdate(
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func testAccAwsVpnConnectionConfigTunnelOptions(
+func testAccAwsVpnConnectionConfigTags1(
+func testAccAwsVpnConnectionConfigTags2(
 func resourceAwsVpnGatewayAttachment(
 func resourceAwsVpnGatewayAttachmentCreate(
 func resourceAwsVpnGatewayAttachmentRead(

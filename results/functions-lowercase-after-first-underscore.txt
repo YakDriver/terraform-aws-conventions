@@ -450,11 +450,10 @@ func TestAccAWSAMICopy_tags(
 func TestAccAWSAMIFromInstance_basic(
 func TestAccAWSAMIFromInstance_tags(
 func TestAccAWSAMI_basic(
+func TestAccAWSAMI_description(
 func TestAccAWSAMI_disappears(
 func TestAccAWSAMI_tags(
 func TestAccAWSAMI_snapshotSize(
-func testAccAmiConfig_base(
-func testAccAmiConfig_basic(
 func TestAccAWSAPIGatewayAccount_basic(
 func testAccAWSAPIGatewayAccountConfig_updated(
 func testAccAWSAPIGatewayAccountConfig_updated2(
@@ -1556,6 +1555,7 @@ func TestAccAWSEcsService_withRenamedCluster(
 func TestAccAWSEcsService_healthCheckGracePeriodSeconds(
 func TestAccAWSEcsService_withIamRole(
 func TestAccAWSEcsService_withDeploymentController_Type_CodeDeploy(
+func TestAccAWSEcsService_withDeploymentController_Type_External(
 func TestAccAWSEcsService_withDeploymentValues(
 func TestAccAWSEcsService_withDeploymentMinimumZeroMaximumOneHundred(
 func TestAccAWSEcsService_withLbChanges(
@@ -1589,6 +1589,8 @@ func TestAccAWSEcsTaskDefinition_withDockerVolume(
 func TestAccAWSEcsTaskDefinition_withDockerVolumeMinimalConfig(
 func TestAccAWSEcsTaskDefinition_withEFSVolumeMinimal(
 func TestAccAWSEcsTaskDefinition_withEFSVolume(
+func TestAccAWSEcsTaskDefinition_withTransitEncryptionEFSVolume(
+func TestAccAWSEcsTaskDefinition_withEFSAccessPoint(
 func TestAccAWSEcsTaskDefinition_withTaskScopedDockerVolume(
 func TestAccAWSEcsTaskDefinition_withEcsService(
 func TestAccAWSEcsTaskDefinition_withTaskRoleArn(
@@ -3321,7 +3323,8 @@ func TestAccAWSVpcEndpoint_gatewayWithRouteTableAndPolicy(
 func TestAccAWSVpcEndpoint_gatewayPolicy(
 func TestAccAWSVpcEndpoint_interfaceBasic(
 func TestAccAWSVpcEndpoint_interfaceWithSubnetAndSecurityGroup(
-func TestAccAWSVpcEndpoint_interfaceNonAWSService(
+func TestAccAWSVpcEndpoint_interfaceNonAWSServiceAcceptOnCreate(
+func TestAccAWSVpcEndpoint_interfaceNonAWSServiceAcceptOnUpdate(
 func TestAccAWSVpcEndpoint_disappears(
 func TestAccAWSVpcEndpoint_tags(
 func testAccVpcEndpointConfig_gatewayBasic(
@@ -3370,6 +3373,7 @@ func TestAccAWSVpnConnectionRoute_basic(
 func TestAccAWSVpnConnection_basic(
 func TestAccAWSVpnConnection_tunnelOptions(
 func TestAccAWSVpnConnection_withoutStaticRoutes(
+func TestAccAWSVpnConnection_tags(
 func TestAccAWSVpnConnection_disappears(
 func TestAWSVpnConnection_xmlconfig(
 func TestAccAWSVpnGatewayAttachment_basic(

@@ -315,6 +315,8 @@ func testAccAwsVpnConnectionConfigUpdate(
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func testAccAwsVpnConnectionConfigTunnelOptions(
+func testAccAwsVpnConnectionConfigTags1(
+func testAccAwsVpnConnectionConfigTags2(
 func testAccAwsWafv2IPSetConfig(
 func testAccAwsWafv2IPSetConfigUpdate(
 func testAccAwsWafv2IPSetConfigIPv6(

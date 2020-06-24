@@ -366,8 +366,9 @@ func testAccAWSAMIFromInstanceConfig(
 func testAccAWSAMIFromInstanceConfigTags1(
 func testAccAWSAMIFromInstanceConfigTags2(
 func testAccAWSAMILaunchPermissionConfig(
-func testAccAmiConfig_base(
-func testAccAmiConfig_basic(
+func testAccAmiConfigBase(
+func testAccAmiConfigBasic(
+func testAccAmiConfigDesc(
 func testAccAmiConfigTags1(
 func testAccAmiConfigTags2(
 func testAccAWSAPIGatewayAccountConfig_updated(
@@ -1620,6 +1621,7 @@ func testAccAWSEcsClusterConfigContainerInsightsDisable(
 func testAccAWSEcsServiceWithNetworkConfiguration(
 func testAccAWSEcsServiceWithNetworkConfiguration_modified(
 func testAccAWSEcsServiceConfigDeploymentControllerTypeCodeDeploy(
+func testAccAWSEcsServiceConfigDeploymentControllerTypeExternal(
 func testAccAWSEcsServiceConfigDeploymentPercents(
 func testAccAWSEcsServiceConfigTags1(
 func testAccAWSEcsServiceConfigTags2(
@@ -3383,6 +3385,8 @@ func testAccAwsVpnConnectionConfigUpdate(
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func testAccAwsVpnConnectionConfigTunnelOptions(
+func testAccAwsVpnConnectionConfigTags1(
+func testAccAwsVpnConnectionConfigTags2(
 func testAccCheckVpnGatewayConfigTags1(
 func testAccCheckVpnGatewayConfigTags2(
 func testAccAWSWafByteMatchSetConfig(

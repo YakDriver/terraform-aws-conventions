@@ -591,6 +591,7 @@ func testAccAWSAMIDisappears(
 func testAccAWSAMILaunchPermissionConfig(
 func testAccAWSAMILaunchPermissionImportStateIdFunc(
 func TestAccAWSAMI_basic(
+func TestAccAWSAMI_description(
 func TestAccAWSAMI_disappears(
 func TestAccAWSAMI_tags(
 func TestAccAWSAMI_snapshotSize(
@@ -3156,6 +3157,7 @@ func TestAccAWSEcsService_withRenamedCluster(
 func TestAccAWSEcsService_healthCheckGracePeriodSeconds(
 func TestAccAWSEcsService_withIamRole(
 func TestAccAWSEcsService_withDeploymentController_Type_CodeDeploy(
+func TestAccAWSEcsService_withDeploymentController_Type_External(
 func TestAccAWSEcsService_withDeploymentValues(
 func TestAccAWSEcsService_withDeploymentMinimumZeroMaximumOneHundred(
 func TestAccAWSEcsService_withLbChanges(
@@ -3214,6 +3216,7 @@ func testAccAWSEcsService_withServiceRegistries_container(
 func testAccAWSEcsServiceWithDaemonSchedulingStrategy(
 func testAccAWSEcsServiceWithDaemonSchedulingStrategySetDeploymentMinimum(
 func testAccAWSEcsServiceConfigDeploymentControllerTypeCodeDeploy(
+func testAccAWSEcsServiceConfigDeploymentControllerTypeExternal(
 func testAccAWSEcsServiceConfigDeploymentPercents(
 func testAccAWSEcsServiceConfigTags1(
 func testAccAWSEcsServiceConfigTags2(
@@ -3226,6 +3229,8 @@ func TestAccAWSEcsTaskDefinition_withDockerVolume(
 func TestAccAWSEcsTaskDefinition_withDockerVolumeMinimalConfig(
 func TestAccAWSEcsTaskDefinition_withEFSVolumeMinimal(
 func TestAccAWSEcsTaskDefinition_withEFSVolume(
+func TestAccAWSEcsTaskDefinition_withTransitEncryptionEFSVolume(
+func TestAccAWSEcsTaskDefinition_withEFSAccessPoint(
 func TestAccAWSEcsTaskDefinition_withTaskScopedDockerVolume(
 func TestAccAWSEcsTaskDefinition_withEcsService(
 func TestAccAWSEcsTaskDefinition_withTaskRoleArn(
@@ -3259,6 +3264,8 @@ func testAccAWSEcsTaskDefinitionWithDockerVolumesMinimalConfig(
 func testAccAWSEcsTaskDefinitionWithTaskScopedDockerVolume(
 func testAccAWSEcsTaskDefinitionWithEFSVolumeMinimal(
 func testAccAWSEcsTaskDefinitionWithEFSVolume(
+func testAccAWSEcsTaskDefinitionWithTransitEncryptionEFSVolume(
+func testAccAWSEcsTaskDefinitionWithEFSAccessPoint(
 func testAccAWSEcsTaskDefinitionWithTaskRoleArn(
 func testAccAWSEcsTaskDefinitionWithIpcMode(
 func testAccAWSEcsTaskDefinitionWithPidMode(
@@ -7408,7 +7415,8 @@ func TestAccAWSVpcEndpoint_gatewayWithRouteTableAndPolicy(
 func TestAccAWSVpcEndpoint_gatewayPolicy(
 func TestAccAWSVpcEndpoint_interfaceBasic(
 func TestAccAWSVpcEndpoint_interfaceWithSubnetAndSecurityGroup(
-func TestAccAWSVpcEndpoint_interfaceNonAWSService(
+func TestAccAWSVpcEndpoint_interfaceNonAWSServiceAcceptOnCreate(
+func TestAccAWSVpcEndpoint_interfaceNonAWSServiceAcceptOnUpdate(
 func TestAccAWSVpcEndpoint_disappears(
 func TestAccAWSVpcEndpoint_tags(
 func testAccVpcEndpointConfig_interfaceNonAWSService(
@@ -7465,8 +7473,8 @@ func TestAccAWSVpnConnection_basic(
 func TestAccAWSVpnConnection_TransitGatewayID(
 func TestAccAWSVpnConnection_tunnelOptions(
 func TestAccAWSVpnConnection_withoutStaticRoutes(
+func TestAccAWSVpnConnection_tags(
 func TestAccAWSVpnConnection_disappears(
-func testAccAWSVpnConnectionDisappears(
 func TestAWSVpnConnection_xmlconfig(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func TestAccAWSVpnGatewayAttachment_basic(
@@ -7955,6 +7963,7 @@ func testAccAWSXraySamplingRuleConfig_update(
 func expandIPPerms(
 func expandDocDBParameters(
 func flattenEFSVolumeConfiguration(
+func flattenEFSVolumeAuthorizationConfig(
 func flattenDocDBParameters(
 func flattenNetworkInterfacesPrivateIPAddresses(
 func expandPrivateIPAddresses(

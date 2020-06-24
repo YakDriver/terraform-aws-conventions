@@ -35,6 +35,7 @@ func testAccAWSAMIDisappears(
 func testAccAWSAMILaunchPermissionConfig(
 func testAccAWSAMILaunchPermissionImportStateIdFunc(
 func TestAccAWSAMI_basic(
+func TestAccAWSAMI_description(
 func TestAccAWSAMI_disappears(
 func TestAccAWSAMI_tags(
 func TestAccAWSAMI_snapshotSize(

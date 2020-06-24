@@ -353,7 +353,7 @@ func testAccAWSALBTargetGroupConfig_lambdaMultiValueHeadersEnabled(rName string,
 func testAccAWSALBTargetGroupConfig_missing_port(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_missing_protocol(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_missing_vpc(targetGroupName string) string {
-func testAccAWSAMICopyConfigBase() string {
+func testAccAWSAMICopyConfigBase(rName string) string {
 func testAccAWSAMICopyConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAMICopyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAMICopyConfig(rName string) string {
@@ -364,8 +364,9 @@ func testAccAWSAMIFromInstanceConfig(rName string) string {
 func testAccAWSAMIFromInstanceConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAMIFromInstanceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAMILaunchPermissionConfig(rName string) string {
-func testAccAmiConfig_base(rName string, size int) string {
-func testAccAmiConfig_basic(rName string, size int) string {
+func testAccAmiConfigBase(rName string, size int) string {
+func testAccAmiConfigBasic(rName string, size int) string {
+func testAccAmiConfigDesc(rName, desc string, size int) string {
 func testAccAmiConfigTags1(rName, tagKey1, tagValue1 string, size int) string {
 func testAccAmiConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string, size int) string {
 func testAccAWSAPIGatewayAccountConfig_updated(randName string) string {
@@ -1543,6 +1544,7 @@ func testAccAWSEcsClusterConfigContainerInsightsDisable(rName string) string {
 func testAccAWSEcsServiceWithNetworkConfiguration(sg1Name, sg2Name, clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithNetworkConfiguration_modified(sg1Name, sg2Name, clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceConfigDeploymentControllerTypeCodeDeploy(rName string) string {
+func testAccAWSEcsServiceConfigDeploymentControllerTypeExternal(rName string) string {
 func testAccAWSEcsServiceConfigDeploymentPercents(rName string, deploymentMinimumHealthyPercent, deploymentMaximumPercent int) string {
 func testAccAWSEcsServiceConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSEcsServiceConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
@@ -3218,7 +3220,7 @@ func testAccVpcEndpointConfig_interfaceBasic(rName string) string {
 func testAccVpcEndpointConfigGatewayPolicy(rName, policy string) string {
 func testAccVpcEndpointConfig_interfaceWithSubnet(rName string) string {
 func testAccVpcEndpointConfig_interfaceWithSubnetModified(rName string) string {
-func testAccVpcEndpointConfig_interfaceNonAWSService(rName string) string {
+func testAccVpcEndpointConfig_interfaceNonAWSService(rName string, autoAccept bool) string {
 func testAccVpcEndpointConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccVpcEndpointConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsVPCPeeringConnectionAccepterConfigSameRegionSameAccount(rName string) string {
@@ -3243,6 +3245,8 @@ func testAccAwsVpnConnectionConfigUpdate(rInt, rBgpAsn int) string {
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(rBgpAsn int, psk string, tunnelCidr string) string {
 func testAccAwsVpnConnectionConfigTransitGatewayID(rBgpAsn int) string {
 func testAccAwsVpnConnectionConfigTunnelOptions(rBgpAsn int, psk string, tunnelCidr string, psk2 string, tunnelCidr2 string) string {
+func testAccAwsVpnConnectionConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
+func testAccAwsVpnConnectionConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccCheckVpnGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccCheckVpnGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafByteMatchSetConfig(name string) string {

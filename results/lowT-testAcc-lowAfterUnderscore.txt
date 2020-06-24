@@ -108,8 +108,6 @@ func testAccAWSALBTargetGroupConfig_lambdaMultiValueHeadersEnabled(
 func testAccAWSALBTargetGroupConfig_missing_port(
 func testAccAWSALBTargetGroupConfig_missing_protocol(
 func testAccAWSALBTargetGroupConfig_missing_vpc(
-func testAccAmiConfig_base(
-func testAccAmiConfig_basic(
 func testAccAWSAPIGatewayAccountConfig_updated(
 func testAccAWSAPIGatewayAccountConfig_updated2(
 func testAccAWSAPIGatewayAuthorizerConfig_baseLambda(

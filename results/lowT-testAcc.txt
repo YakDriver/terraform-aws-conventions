@@ -534,12 +534,12 @@ func testAccAWSAMIDisappears(
 func testAccAWSAMILaunchPermissionConfig(
 func testAccAWSAMILaunchPermissionImportStateIdFunc(
 func testAccCheckAmiDestroy(
-func testAccCheckAmiDisappears(
 func testAccCheckAmiExists(
 func testAccCheckAmiBlockDevice(
 func testAccCheckAmiEbsBlockDevice(
-func testAccAmiConfig_base(
-func testAccAmiConfig_basic(
+func testAccAmiConfigBase(
+func testAccAmiConfigBasic(
+func testAccAmiConfigDesc(
 func testAccAmiConfigTags1(
 func testAccAmiConfigTags2(
 func testAccCheckAWSAPIGatewayAccountCloudwatchRoleArn(
@@ -2565,6 +2565,7 @@ func testAccAWSEcsService_withServiceRegistries_container(
 func testAccAWSEcsServiceWithDaemonSchedulingStrategy(
 func testAccAWSEcsServiceWithDaemonSchedulingStrategySetDeploymentMinimum(
 func testAccAWSEcsServiceConfigDeploymentControllerTypeCodeDeploy(
+func testAccAWSEcsServiceConfigDeploymentControllerTypeExternal(
 func testAccAWSEcsServiceConfigDeploymentPercents(
 func testAccAWSEcsServiceConfigTags1(
 func testAccAWSEcsServiceConfigTags2(
@@ -2590,6 +2591,8 @@ func testAccAWSEcsTaskDefinitionWithDockerVolumesMinimalConfig(
 func testAccAWSEcsTaskDefinitionWithTaskScopedDockerVolume(
 func testAccAWSEcsTaskDefinitionWithEFSVolumeMinimal(
 func testAccAWSEcsTaskDefinitionWithEFSVolume(
+func testAccAWSEcsTaskDefinitionWithTransitEncryptionEFSVolume(
+func testAccAWSEcsTaskDefinitionWithEFSAccessPoint(
 func testAccAWSEcsTaskDefinitionWithTaskRoleArn(
 func testAccAWSEcsTaskDefinitionWithIpcMode(
 func testAccAWSEcsTaskDefinitionWithPidMode(
@@ -5494,7 +5497,6 @@ func testAccAwsVpnConnectionRouteDestroy(
 func testAccAwsVpnConnectionRoute(
 func testAccAwsVpnConnectionRouteConfig(
 func testAccAwsVpnConnectionRouteConfigUpdate(
-func testAccAWSVpnConnectionDisappears(
 func testAccAwsVpnConnectionDestroy(
 func testAccAwsVpnConnectionExists(
 func testAccAwsVpnConnectionConfig(
@@ -5502,6 +5504,8 @@ func testAccAwsVpnConnectionConfigUpdate(
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func testAccAwsVpnConnectionConfigTunnelOptions(
+func testAccAwsVpnConnectionConfigTags1(
+func testAccAwsVpnConnectionConfigTags2(
 func testAccCheckVpnGatewayAttachmentExists(
 func testAccCheckVpnGatewayAttachmentDestroy(
 func testAccCheckVpnGatewayDestroy(

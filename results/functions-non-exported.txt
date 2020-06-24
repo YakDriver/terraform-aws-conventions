@@ -1237,12 +1237,12 @@ func testAccAWSAMIDisappears(
 func testAccAWSAMILaunchPermissionConfig(
 func testAccAWSAMILaunchPermissionImportStateIdFunc(
 func testAccCheckAmiDestroy(
-func testAccCheckAmiDisappears(
 func testAccCheckAmiExists(
 func testAccCheckAmiBlockDevice(
 func testAccCheckAmiEbsBlockDevice(
-func testAccAmiConfig_base(
-func testAccAmiConfig_basic(
+func testAccAmiConfigBase(
+func testAccAmiConfigBasic(
+func testAccAmiConfigDesc(
 func testAccAmiConfigTags1(
 func testAccAmiConfigTags2(
 func resourceAwsApiGatewayAccount(
@@ -5060,6 +5060,7 @@ func testAccAWSEcsService_withServiceRegistries_container(
 func testAccAWSEcsServiceWithDaemonSchedulingStrategy(
 func testAccAWSEcsServiceWithDaemonSchedulingStrategySetDeploymentMinimum(
 func testAccAWSEcsServiceConfigDeploymentControllerTypeCodeDeploy(
+func testAccAWSEcsServiceConfigDeploymentControllerTypeExternal(
 func testAccAWSEcsServiceConfigDeploymentPercents(
 func testAccAWSEcsServiceConfigTags1(
 func testAccAWSEcsServiceConfigTags2(
@@ -5100,6 +5101,8 @@ func testAccAWSEcsTaskDefinitionWithDockerVolumesMinimalConfig(
 func testAccAWSEcsTaskDefinitionWithTaskScopedDockerVolume(
 func testAccAWSEcsTaskDefinitionWithEFSVolumeMinimal(
 func testAccAWSEcsTaskDefinitionWithEFSVolume(
+func testAccAWSEcsTaskDefinitionWithTransitEncryptionEFSVolume(
+func testAccAWSEcsTaskDefinitionWithEFSAccessPoint(
 func testAccAWSEcsTaskDefinitionWithTaskRoleArn(
 func testAccAWSEcsTaskDefinitionWithIpcMode(
 func testAccAWSEcsTaskDefinitionWithPidMode(
@@ -10871,7 +10874,6 @@ func testAccAwsVpnConnectionRouteConfig(
 func testAccAwsVpnConnectionRouteConfigUpdate(
 func init(
 func testSweepEc2VpnConnections(
-func testAccAWSVpnConnectionDisappears(
 func testAccAwsVpnConnectionDestroy(
 func testAccAwsVpnConnectionExists(
 func testAccAwsVpnConnectionConfig(
@@ -10879,6 +10881,8 @@ func testAccAwsVpnConnectionConfigUpdate(
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func testAccAwsVpnConnectionConfigTunnelOptions(
+func testAccAwsVpnConnectionConfigTags1(
+func testAccAwsVpnConnectionConfigTags2(
 func resourceAwsVpnGatewayAttachment(
 func resourceAwsVpnGatewayAttachmentCreate(
 func resourceAwsVpnGatewayAttachmentRead(
@@ -11570,6 +11574,7 @@ func flattenListeners(
 func flattenEcsVolumes(
 func flattenDockerVolumeConfiguration(
 func flattenEFSVolumeConfiguration(
+func flattenEFSVolumeAuthorizationConfig(
 func flattenEcsLoadBalancers(
 func flattenEcsContainerDefinitions(
 func flattenOptions(

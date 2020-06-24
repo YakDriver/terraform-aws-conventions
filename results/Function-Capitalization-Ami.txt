@@ -26,12 +26,12 @@ func resourceAwsAmiLaunchPermissionCreate(
 func resourceAwsAmiLaunchPermissionRead(
 func resourceAwsAmiLaunchPermissionDelete(
 func testAccCheckAmiDestroy(
-func testAccCheckAmiDisappears(
 func testAccCheckAmiExists(
 func testAccCheckAmiBlockDevice(
 func testAccCheckAmiEbsBlockDevice(
-func testAccAmiConfig_base(
-func testAccAmiConfig_basic(
+func testAccAmiConfigBase(
+func testAccAmiConfigBasic(
+func testAccAmiConfigDesc(
 func testAccAmiConfigTags1(
 func testAccAmiConfigTags2(
 func TestAccAWSEksNodeGroup_AmiType(
