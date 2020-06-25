@@ -718,7 +718,7 @@ func testAccAWSBatchComputeEnvironmentConfigNamePrefix(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2WithTags(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigSpot(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigUnmanaged(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigEC2UpdateMaxvCpus(rInt int) string {
+func testAccAWSBatchComputeEnvironmentConfigComputeResourcesMaxVcpusMinVcpus(rInt int, maxVcpus int, minVcpus int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2UpdateInstanceType(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2UpdateState(rInt int, state string) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2UpdateComputeEnvironmentName(rInt int) string {
@@ -811,6 +811,7 @@ func testAccAWSCloudTrailConfig_tags(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_tagsModified(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_tagsModifiedAgain(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_eventSelector(cloudTrailRandInt int) string {
+func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_eventSelectorModified(cloudTrailRandInt int) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
 func testAccAWSCloudWatchDashboardConfig_updateBody(rInt int) string {
@@ -1270,6 +1271,7 @@ func testAccDefaultRouteTableConfigRequired() string {
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
 func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSDefaultRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
 func testAccDeviceFarmProjectConfig(rName string) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {
 func testAccDirectoryServiceDirectoryConfig_withAlias(alias string) string {
@@ -1672,6 +1674,7 @@ func testAccBeanstalkEnvApplicationVersionConfig(rName string) string {
 func testAccBeanstalkEnvApplicationVersionConfigUpdate(rName string) string {
 func testAccESDomainPolicyConfig(randInt int, policy string) string {
 func testAccESDomainConfig(randInt int) string {
+func testAccESDomainConfigWithDisabledEBSAndVolumeType(rName, volumeType string) string {
 func testAccESDomainConfig_DomainEndpointOptions(randInt int, enforceHttps bool, tlsSecurityPolicy string) string {
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(rName string, availabilityZoneCount int) string {
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(rName string, zoneAwarenessEnabled bool) string {
@@ -2738,7 +2741,9 @@ func testAccAWSRouteTableConfigRouteConfigModeBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeNoBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeZeroed() string {
 func testAccAWSRouteTableConfigRouteTransitGatewayID() string {
+func testAccAWSRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
 func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock() string {
+func testAccAWSRouteConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
 func testAccAWSS3AccessPointConfig_basic(bucketName, accessPointName string) string {
 func testAccAWSS3AccessPointConfig_policy(rName string) string {
 func testAccAWSS3AccessPointConfig_policyUpdated(rName string) string {
@@ -3398,6 +3403,12 @@ func testAccAwsWafv2RuleGroupConfig_XssMatchStatement_Update(name string) string
 func testAccAwsWafv2RuleGroupConfig_OneTag(name, tagKey, tagValue string) string {
 func testAccAwsWafv2RuleGroupConfig_TwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAwsWafv2WebACLAssociationConfig(name string) string {
+func testAccWebACLLoggingConfigurationDependenciesConfig(rName string) string {
+func testAccWebACLLoggingConfigurationKinesisDependencyConfig(rName string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_basic(rName string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_updateLogDestination(rName, rNameNew string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_updateTwoRedactedFields(rName string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_updateOneRedactedField(rName string) string {
 func testAccAwsWafv2WebACLConfig_Basic(name string) string {
 func testAccAwsWafv2WebACLConfig_BasicUpdate(name string) string {
 func testAccAwsWafv2WebACLConfig_ManagedRuleGroupStatement(name string) string {

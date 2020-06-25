@@ -240,3 +240,6 @@ const testAccCheckVpnGatewayConfigReattach =
 const testAccCheckVpnGatewayConfigReattachChange =
 const testAccVpnGatewayConfigWithAZ =
 const testAccVpnGatewayConfigWithASN =
+const testAccWebACLLoggingConfigurationResourceConfig =
+const testAccWebACLLoggingConfigurationResourceUpdateTwoRedactedFieldsConfig =
+const testAccWebACLLoggingConfigurationResourceUpdateOneRedactedFieldConfig =

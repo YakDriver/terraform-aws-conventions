@@ -378,6 +378,10 @@ func expandWafv2WebACLStatement(
 func flattenWafv2WebACLRootStatement(
 func flattenWafv2WebACLStatement(
 func flattenWafv2WebACLRules(
+func resourceAwsWafv2WebACLLoggingConfiguration(
+func resourceAwsWafv2WebACLLoggingConfigurationPut(
+func resourceAwsWafv2WebACLLoggingConfigurationRead(
+func resourceAwsWafv2WebACLLoggingConfigurationDelete(
 func expandWAFLoggingConfiguration(
 func expandWAFRedactedFields(
 func flattenWAFLoggingConfiguration(

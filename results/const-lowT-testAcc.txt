@@ -498,3 +498,6 @@ const testAccVpnGatewayConfigWithAZ =
 const testAccVpnGatewayConfigWithASN =
 const testAccCheckWafRegionalWebAclAssociationConfig_basic =
 const testAccCheckWafRegionalWebAclAssociationConfig_multipleAssociations =
+const testAccWebACLLoggingConfigurationResourceConfig =
+const testAccWebACLLoggingConfigurationResourceUpdateTwoRedactedFieldsConfig =
+const testAccWebACLLoggingConfigurationResourceUpdateOneRedactedFieldConfig =

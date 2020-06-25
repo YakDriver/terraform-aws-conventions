@@ -1,5 +1,4 @@
-func validateCIDRBlock(
-func Test_validateCIDRBlock(
+func suppressEqualCIDRBlockDiffs(
 func TestAccAWSSecurityGroupRule_ExpectInvalidCIDR(
 func testAccAWSSecurityGroupRuleInvalidIPv4CIDR(
 func testAccAWSSecurityGroupRuleInvalidIPv6CIDR(
@@ -7,4 +6,12 @@ func TestAccAWSSecurityGroup_invalidCIDRBlock(
 func TestAccAWSSecurityGroup_CIDRandGroups(
 func validateVpnConnectionTunnelInsideCIDR(
 func validateCIDRNetworkAddress(
+func validateIpv4CIDRNetworkAddress(
+func validateIpv6CIDRNetworkAddress(
+func validateCIDRBlock(
+func validateIpv4CIDRBlock(
+func validateIpv6CIDRBlock(
 func TestValidateCIDRNetworkAddress(
+func Test_validateCIDRBlock(
+func Test_validateIpv4CIDRBlock(
+func Test_validateIpv6CIDRBlock(

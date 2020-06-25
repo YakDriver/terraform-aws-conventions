@@ -32,13 +32,12 @@ func testAccDataSourceAwsSubnetIDsConfig(
 func testAccDataSourceAwsSubnetIDs_filter(
 func TestAccDataSourceAwsWorkspaceBundle_bundleIDAndNameConflict(
 func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(
+func suppressEqualCIDRBlockDiffs(
 func decodeEc2TransitGatewayRouteID(
 func decodeEc2TransitGatewayRouteTableAssociationID(
 func decodeEc2TransitGatewayRouteTablePropagationID(
 func HostedZoneIDForRegion(
 func TestHostedZoneIDForRegion(
-func validateCIDRBlock(
-func Test_validateCIDRBlock(
 func testAccAwsProviderAccountID(
 func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARNAccountID(
@@ -179,4 +178,12 @@ func testAccAwsVpnConnectionConfigTransitGatewayID(
 func decodeWorkLinkWebsiteCertificateAuthorityAssociationResourceID(
 func validateTransferServerID(
 func validateCIDRNetworkAddress(
+func validateIpv4CIDRNetworkAddress(
+func validateIpv6CIDRNetworkAddress(
+func validateCIDRBlock(
+func validateIpv4CIDRBlock(
+func validateIpv6CIDRBlock(
 func TestValidateCIDRNetworkAddress(
+func Test_validateCIDRBlock(
+func Test_validateIpv4CIDRBlock(
+func Test_validateIpv6CIDRBlock(

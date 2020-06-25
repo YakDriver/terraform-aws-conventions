@@ -968,6 +968,7 @@ func suppressOpenIdURL(
 func suppressAutoscalingGroupAvailabilityZoneDiffs(
 func suppressCloudFormationTemplateBodyDiffs(
 func suppressRoute53ZoneNameWithTrailingDot(
+func suppressEqualCIDRBlockDiffs(
 func dxVirtualInterfaceRead(
 func dxVirtualInterfaceUpdate(
 func dxVirtualInterfaceDelete(
@@ -1028,7 +1029,6 @@ func expandNetworkAclEntries(
 func protocolStrings(
 func protocolIntegers(
 func validatePorts(
-func validateCIDRBlock(
 func init(
 func providerConfigure(
 func assumeRoleSchema(
@@ -2365,7 +2365,7 @@ func testAccAWSBatchComputeEnvironmentConfigNamePrefix(
 func testAccAWSBatchComputeEnvironmentConfigEC2WithTags(
 func testAccAWSBatchComputeEnvironmentConfigSpot(
 func testAccAWSBatchComputeEnvironmentConfigUnmanaged(
-func testAccAWSBatchComputeEnvironmentConfigEC2UpdateMaxvCpus(
+func testAccAWSBatchComputeEnvironmentConfigComputeResourcesMaxVcpusMinVcpus(
 func testAccAWSBatchComputeEnvironmentConfigEC2UpdateInstanceType(
 func testAccAWSBatchComputeEnvironmentConfigEC2UpdateState(
 func testAccAWSBatchComputeEnvironmentConfigEC2UpdateComputeEnvironmentName(
@@ -2676,6 +2676,7 @@ func testAccAWSCloudTrailConfig_tags(
 func testAccAWSCloudTrailConfig_tagsModified(
 func testAccAWSCloudTrailConfig_tagsModifiedAgain(
 func testAccAWSCloudTrailConfig_eventSelector(
+func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(
 func testAccAWSCloudTrailConfig_eventSelectorModified(
 func resourceAwsCloudWatchDashboard(
 func resourceAwsCloudWatchDashboardRead(
@@ -3980,6 +3981,7 @@ func testAccDefaultRouteTableConfigRequired(
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID(
 func testAccDefaultRouteTableConfigTags1(
 func testAccDefaultRouteTableConfigTags2(
+func testAccAWSDefaultRouteTableConfigConditionalIpv4Ipv6(
 func testAccAWSDefaultRouteTableImportStateIdFunc(
 func resourceAwsDefaultSecurityGroup(
 func resourceAwsDefaultSecurityGroupCreate(
@@ -5034,6 +5036,7 @@ func testAccAWSEcsServiceWithCapacityProviderStrategy(
 func testAccAWSEcsServiceWithMultipleCapacityProviderStrategies(
 func testAccAWSEcsServiceWithForceNewDeployment(
 func testAccAWSEcsServiceWithPlacementStrategy(
+func testAccAWSEcsServiceWithPlacementStrategyType(
 func testAccAWSEcsServiceWithRandomPlacementStrategy(
 func testAccAWSEcsServiceWithMultiPlacementStrategy(
 func testAccAWSEcsServiceWithPlacementConstraint(
@@ -5554,6 +5557,7 @@ func testAccCheckAWSESDomainNotRecreated(
 func testAccCheckESDomainDestroy(
 func testAccPreCheckIamServiceLinkedRoleEs(
 func testAccESDomainConfig(
+func testAccESDomainConfigWithDisabledEBSAndVolumeType(
 func testAccESDomainConfig_DomainEndpointOptions(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(
@@ -9184,7 +9188,6 @@ func testAccRoute53ZoneConfigVPCMultiple(
 func resourceAwsRoute(
 func resourceAwsRouteCreate(
 func resourceAwsRouteRead(
-func resourceAwsRouteSetResourceData(
 func resourceAwsRouteUpdate(
 func resourceAwsRouteDelete(
 func resourceAwsRouteID(
@@ -9214,10 +9217,12 @@ func testAccAWSRouteTableConfigRouteConfigModeBlocks(
 func testAccAWSRouteTableConfigRouteConfigModeNoBlocks(
 func testAccAWSRouteTableConfigRouteConfigModeZeroed(
 func testAccAWSRouteTableConfigRouteTransitGatewayID(
+func testAccAWSRouteTableConfigConditionalIpv4Ipv6(
 func testAccCheckAWSRouteExists(
 func testAccCheckAWSRouteDestroy(
 func testAccAWSRouteImportStateIdFunc(
 func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock(
+func testAccAWSRouteConfigConditionalIpv4Ipv6(
 func resourceAwsS3AccessPoint(
 func resourceAwsS3AccessPointCreate(
 func resourceAwsS3AccessPointRead(
@@ -11397,6 +11402,20 @@ func flattenWafv2ManagedRuleGroupStatement(
 func flattenWafv2RateBasedStatement(
 func flattenWafv2RuleGroupReferenceStatement(
 func flattenWafv2ExcludedRules(
+func resourceAwsWafv2WebACLLoggingConfiguration(
+func resourceAwsWafv2WebACLLoggingConfigurationPut(
+func resourceAwsWafv2WebACLLoggingConfigurationRead(
+func resourceAwsWafv2WebACLLoggingConfigurationDelete(
+func flattenWafv2RedactedFields(
+func expandWafv2RedactedFields(
+func testAccCheckAwsWafv2WebACLLoggingConfigurationDestroy(
+func testAccCheckAwsWafv2WebACLLoggingConfigurationExists(
+func testAccWebACLLoggingConfigurationDependenciesConfig(
+func testAccWebACLLoggingConfigurationKinesisDependencyConfig(
+func testAccAwsWafv2WebACLLoggingConfiguration_basic(
+func testAccAwsWafv2WebACLLoggingConfiguration_updateLogDestination(
+func testAccAwsWafv2WebACLLoggingConfiguration_updateTwoRedactedFields(
+func testAccAwsWafv2WebACLLoggingConfiguration_updateOneRedactedField(
 func computeWafv2RuleGroupRefStatementIndex(
 func testAccCheckAwsWafv2WebACLDestroy(
 func testAccCheckAwsWafv2WebACLExists(
@@ -11774,7 +11793,6 @@ func flattenRoute53ResolverEndpointIpAddresses(
 func expandRoute53ResolverEndpointIpAddressUpdate(
 func expandRoute53ResolverRuleTargetIps(
 func flattenRoute53ResolverRuleTargetIps(
-func isIpv6CidrsEquals(
 func checkFlattenResourceRecords(
 func tagsSchema(
 func tagsSchemaComputed(
@@ -11833,6 +11851,12 @@ func validateArn(
 func validateEC2AutomateARN(
 func validatePolicyStatementId(
 func validateCIDRNetworkAddress(
+func validateIpv4CIDRNetworkAddress(
+func validateIpv6CIDRNetworkAddress(
+func validateCIDRBlock(
+func validateIpv4CIDRBlock(
+func validateIpv6CIDRBlock(
+func cidrBlocksEqual(
 func validateHTTPMethod(
 func validateLogMetricFilterName(
 func validateLogMetricFilterTransformationName(
@@ -11964,6 +11988,7 @@ func wafv2RegexPatternSetReferenceStatementSchema(
 func wafv2SizeConstraintSchema(
 func wafv2SqliMatchStatementSchema(
 func wafv2XssMatchStatementSchema(
+func wafv2FieldToMatchBaseSchema(
 func wafv2FieldToMatchSchema(
 func wafv2TextTransformationSchema(
 func wafv2VisibilityConfigSchema(

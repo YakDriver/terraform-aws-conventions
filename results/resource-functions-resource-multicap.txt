@@ -183,3 +183,7 @@ func resourceAwsWafv2WebACLCreate(
 func resourceAwsWafv2WebACLRead(
 func resourceAwsWafv2WebACLUpdate(
 func resourceAwsWafv2WebACLDelete(
+func resourceAwsWafv2WebACLLoggingConfiguration(
+func resourceAwsWafv2WebACLLoggingConfigurationPut(
+func resourceAwsWafv2WebACLLoggingConfigurationRead(
+func resourceAwsWafv2WebACLLoggingConfigurationDelete(

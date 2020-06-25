@@ -383,7 +383,7 @@ func testAccAWSBatchComputeEnvironmentConfigNamePrefix(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2WithTags(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigSpot(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigUnmanaged(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigEC2UpdateMaxvCpus(rInt int) string {
+func testAccAWSBatchComputeEnvironmentConfigComputeResourcesMaxVcpusMinVcpus(rInt int, maxVcpus int, minVcpus int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2UpdateInstanceType(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2UpdateState(rInt int, state string) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2UpdateComputeEnvironmentName(rInt int) string {
@@ -669,6 +669,7 @@ func testAccDefaultRouteTableConfigRequired() string {
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
 func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSDefaultRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
 func testAccDeviceFarmProjectConfig(rName string) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {
 func testAccDirectoryServiceLogSubscriptionConfig(logGroupName string) string {
@@ -889,6 +890,7 @@ func testAccBeanstalkEnvApplicationVersionConfig(rName string) string {
 func testAccBeanstalkEnvApplicationVersionConfigUpdate(rName string) string {
 func testAccESDomainPolicyConfig(randInt int, policy string) string {
 func testAccESDomainConfig(randInt int) string {
+func testAccESDomainConfigWithDisabledEBSAndVolumeType(rName, volumeType string) string {
 func testAccESDomainConfigWarm(rName, warmType string, enabled bool, warmCnt int) string {
 func testAccESDomainConfigWithPolicy(randESId int, randRoleId int) string {
 func testAccESDomainConfigWithEncryptAtRestDefaultKey(randESId int) string {
@@ -1468,7 +1470,9 @@ func testAccAWSRouteTableConfigRouteConfigModeBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeNoBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeZeroed() string {
 func testAccAWSRouteTableConfigRouteTransitGatewayID() string {
+func testAccAWSRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
 func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock() string {
+func testAccAWSRouteConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
 func testAccAWSS3AccountPublicAccessBlockConfig() string {
 func testAccAWSS3AccountPublicAccessBlockConfigAccountId() string {
 func testAccAWSS3AccountPublicAccessBlockConfigBlockPublicAcls(blockPublicAcls bool) string {
@@ -1874,6 +1878,8 @@ func testAccAwsWafv2IPSetConfigTwoTags(name, tag1Key, tag1Value, tag2Key, tag2Va
 func testAccAwsWafv2IPSetConfigLarge(name string) string {
 func testAccAwsWafv2RegexPatternSetConfig(name string) string {
 func testAccAwsWafv2WebACLAssociationConfig(name string) string {
+func testAccWebACLLoggingConfigurationDependenciesConfig(rName string) string {
+func testAccWebACLLoggingConfigurationKinesisDependencyConfig(rName string) string {
 func testAccAWSWafWebAclConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSWafWebAclConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSWafXssMatchSetConfig(name string) string {

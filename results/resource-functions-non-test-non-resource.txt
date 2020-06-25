@@ -1893,6 +1893,8 @@ func flattenWafv2ManagedRuleGroupStatement(
 func flattenWafv2RateBasedStatement(
 func flattenWafv2RuleGroupReferenceStatement(
 func flattenWafv2ExcludedRules(
+func flattenWafv2RedactedFields(
+func expandWafv2RedactedFields(
 func computeWafv2RuleGroupRefStatementIndex(
 func expandWAFLoggingConfiguration(
 func expandWAFRedactedFields(

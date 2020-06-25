@@ -479,7 +479,6 @@ func HostedZoneIDForRegion(
 func TestHostedZoneIDForRegion(
 func Test_expandNetworkACLEntry(
 func Test_validatePorts(
-func Test_validateCIDRBlock(
 func Provider(
 func TestProvider(
 func TestProvider_impl(
@@ -883,7 +882,9 @@ func TestAccAWSBatchComputeEnvironment_createWithNamePrefix(
 func TestAccAWSBatchComputeEnvironment_createEc2WithTags(
 func TestAccAWSBatchComputeEnvironment_createSpot(
 func TestAccAWSBatchComputeEnvironment_createUnmanaged(
-func TestAccAWSBatchComputeEnvironment_updateMaxvCpus(
+func TestAccAWSBatchComputeEnvironment_ComputeResources_DesiredVcpus_Computed(
+func TestAccAWSBatchComputeEnvironment_ComputeResources_MinVcpus(
+func TestAccAWSBatchComputeEnvironment_ComputeResources_MaxVcpus(
 func TestAccAWSBatchComputeEnvironment_updateInstanceType(
 func TestAccAWSBatchComputeEnvironment_updateComputeEnvironmentName(
 func TestAccAWSBatchComputeEnvironment_createEc2WithoutComputeResources(
@@ -1423,6 +1424,7 @@ func TestAccAWSDefaultRouteTable_swap(
 func TestAccAWSDefaultRouteTable_Route_TransitGatewayID(
 func TestAccAWSDefaultRouteTable_vpc_endpoint(
 func TestAccAWSDefaultRouteTable_tags(
+func TestAccAWSDefaultRouteTable_ConditionalCidrBlock(
 func TestAccAWSDefaultSecurityGroup_basic(
 func TestAccAWSDefaultSecurityGroup_classic(
 func TestAccAWSDefaultSubnet_basic(
@@ -1743,6 +1745,7 @@ func TestAccAWSEcsService_withAlb(
 func TestAccAWSEcsService_withMultipleTargetGroups(
 func TestAccAWSEcsService_withForceNewDeployment(
 func TestAccAWSEcsService_withPlacementStrategy(
+func TestAccAWSEcsService_withPlacementStrategy_Type_Missing(
 func TestAccAWSEcsService_withPlacementConstraints(
 func TestAccAWSEcsService_withPlacementConstraints_emptyExpression(
 func TestAccAWSEcsService_withLaunchTypeFargate(
@@ -1951,6 +1954,7 @@ func TestAccAWSElasticSearchDomain_NodeToNodeEncryption(
 func TestAccAWSElasticSearchDomain_tags(
 func TestAccAWSElasticSearchDomain_update(
 func TestAccAWSElasticSearchDomain_update_volume_type(
+func TestAccAWSElasticSearchDomain_WithVolumeType_Missing(
 func TestAccAWSElasticSearchDomain_update_version(
 func TestAccAWSElasticTranscoderPipeline_basic(
 func TestAccAWSElasticTranscoderPipeline_kmsKey(
@@ -3188,6 +3192,7 @@ func TestAccAWSRouteTable_Route_ConfigMode(
 func TestAccAWSRouteTable_Route_TransitGatewayID(
 func TestAccAWSRouteTable_vpcPeering(
 func TestAccAWSRouteTable_vgwRoutePropagation(
+func TestAccAWSRouteTable_ConditionalCidrBlock(
 func TestAccAWSRoute_basic(
 func TestAccAWSRoute_disappears(
 func TestAccAWSRoute_ipv6Support(
@@ -3200,6 +3205,7 @@ func TestAccAWSRoute_changeCidr(
 func TestAccAWSRoute_noopdiff(
 func TestAccAWSRoute_doesNotCrashWithVPCEndpoint(
 func TestAccAWSRoute_TransitGatewayID_DestinationCidrBlock(
+func TestAccAWSRoute_ConditionalCidrBlock(
 func TestAccAWSS3AccessPoint_basic(
 func TestAccAWSS3AccessPoint_disappears(
 func TestAccAWSS3AccessPoint_bucketDisappears(
@@ -3964,6 +3970,12 @@ func TestAccAwsWafv2RuleGroup_Tags(
 func TestAccAwsWafv2RuleGroup_XssMatchStatement(
 func TestAccAwsWafv2WebACLAssociation_Basic(
 func TestAccAwsWafv2WebACLAssociation_Disappears(
+func TestAccAwsWafv2WebACLLoggingConfiguration_basic(
+func TestAccAwsWafv2WebACLLoggingConfiguration_update(
+func TestAccAwsWafv2WebACLLoggingConfiguration_changeResourceARNForceNew(
+func TestAccAwsWafv2WebACLLoggingConfiguration_changeLogDestinationConfigsForceNew(
+func TestAccAwsWafv2WebACLLoggingConfiguration_disappears(
+func TestAccAwsWafv2WebACLLoggingConfiguration_webACLDisappears(
 func TestAccAwsWafv2WebACL_Basic(
 func TestAccAwsWafv2WebACL_ChangeNameForceNew(
 func TestAccAwsWafv2WebACL_Disappears(
@@ -4074,6 +4086,10 @@ func TestValidateArn(
 func TestValidateEC2AutomateARN(
 func TestValidatePolicyStatementId(
 func TestValidateCIDRNetworkAddress(
+func Test_validateCIDRBlock(
+func Test_validateIpv4CIDRBlock(
+func Test_validateIpv6CIDRBlock(
+func Test_cidrBlocksEqual(
 func TestValidateLogMetricFilterName(
 func TestValidateLogMetricTransformationName(
 func TestValidateLogGroupName(

@@ -3748,7 +3748,6 @@ func route53WaitForChangeSynchronization(
 func resourceAwsRoute(
 func resourceAwsRouteCreate(
 func resourceAwsRouteRead(
-func resourceAwsRouteSetResourceData(
 func resourceAwsRouteUpdate(
 func resourceAwsRouteDelete(
 func resourceAwsRouteID(
@@ -4789,6 +4788,12 @@ func flattenWafv2ManagedRuleGroupStatement(
 func flattenWafv2RateBasedStatement(
 func flattenWafv2RuleGroupReferenceStatement(
 func flattenWafv2ExcludedRules(
+func resourceAwsWafv2WebACLLoggingConfiguration(
+func resourceAwsWafv2WebACLLoggingConfigurationPut(
+func resourceAwsWafv2WebACLLoggingConfigurationRead(
+func resourceAwsWafv2WebACLLoggingConfigurationDelete(
+func flattenWafv2RedactedFields(
+func expandWafv2RedactedFields(
 func computeWafv2RuleGroupRefStatementIndex(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(

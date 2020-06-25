@@ -14,6 +14,7 @@ func dataSourceAWSWafRegionalIpSetRead(
 func TestAccAWSAcmCertificate_imported_IpAddress(
 func TestAccAWSDefaultNetworkAcl_basicIpv6Vpc(
 func TestAccAWSDefaultNetworkAcl_withIpv6Ingress(
+func testAccAWSDefaultRouteTableConfigConditionalIpv4Ipv6(
 func TestAccAWSDefaultSubnet_publicIp(
 func TestAccAWSEc2TransitGatewayVpcAttachment_Ipv6Support(
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigIpv6Support(
@@ -83,6 +84,8 @@ func TestAccAWSRoute53HealthCheck_Ipv6Config(
 func route53ResolverEndpointHashIpAddress(
 func route53ResolverRuleHashTargetIp(
 func testAccRoute53ResolverRuleConfig_forwardTargetIpChanged(
+func testAccAWSRouteTableConfigConditionalIpv4Ipv6(
+func testAccAWSRouteConfigConditionalIpv4Ipv6(
 func TestIpPermissionIDHash(
 func TestAccAWSSecurityGroupRule_Ingress_Ipv6(
 func cycleIpPermForGroup(
@@ -145,7 +148,12 @@ func flattenRoute53ResolverEndpointIpAddresses(
 func expandRoute53ResolverEndpointIpAddressUpdate(
 func expandRoute53ResolverRuleTargetIps(
 func flattenRoute53ResolverRuleTargetIps(
-func isIpv6CidrsEquals(
+func validateIpv4CIDRNetworkAddress(
+func validateIpv6CIDRNetworkAddress(
+func validateIpv4CIDRBlock(
+func validateIpv6CIDRBlock(
+func Test_validateIpv4CIDRBlock(
+func Test_validateIpv6CIDRBlock(
 func wafv2IpSetReferenceStatementSchema(
 func expandWafv2IpSetReferenceStatement(
 func flattenWafv2IpSetReferenceStatement(

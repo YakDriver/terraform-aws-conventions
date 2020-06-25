@@ -22,3 +22,5 @@ func TestAccAWSLBListener_oidc(
 func testAccAWSLBListenerConfig_oidc(
 func idCollapseHash(
 func idHash(
+func cidrBlocksEqual(
+func Test_cidrBlocksEqual(
