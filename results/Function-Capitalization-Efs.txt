@@ -1,5 +1,7 @@
 func dataSourceAwsEfsAccessPoint(
 func dataSourceAwsEfsAccessPointRead(
+func dataSourceAwsEfsAccessPoints(
+func dataSourceAwsEfsAccessPointsRead(
 func dataSourceAwsEfsFileSystem(
 func dataSourceAwsEfsFileSystemRead(
 func TestAccDataSourceAwsEfsFileSystem_id(

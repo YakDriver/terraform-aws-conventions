@@ -319,6 +319,8 @@ func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(
 func TestAccAWSEcsServiceDataSource_basic(
 func TestAccAWSEcsDataSource_ecsTaskDefinition(
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(
+func TestAccDataSourceAWSEFSAccessPoints_basic(
+func testAccDataSourceAWSEFSAccessPointsConfig(
 func TestAccDataSourceAWSEFSAccessPoint_basic(
 func testAccDataSourceAWSEFSAccessPointConfig(
 func TestAccDataSourceAwsEfsFileSystem_id(
@@ -2050,6 +2052,7 @@ func testAccBackupVaultWithTags(
 func testAccBackupVaultWithUpdateTags(
 func testAccBackupVaultWithRemoveTags(
 func testSweepBatchComputeEnvironments(
+func TestAccAWSBatchComputeEnvironment_disappears(
 func TestAccAWSBatchComputeEnvironment_createEc2(
 func TestAccAWSBatchComputeEnvironment_createWithNamePrefix(
 func TestAccAWSBatchComputeEnvironment_createEc2WithTags(

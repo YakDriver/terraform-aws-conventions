@@ -129,6 +129,7 @@ func testCheckTagInImageTags(
 func testAccCheckAwsEcrRepositoryDataSourceConfig(
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(
+func testAccDataSourceAWSEFSAccessPointsConfig(
 func testAccDataSourceAWSEFSAccessPointConfig(
 func testAccDataSourceAwsEfsFileSystemCheck(
 func testAccAwsEfsMountTargetConfigByMountTargetId(

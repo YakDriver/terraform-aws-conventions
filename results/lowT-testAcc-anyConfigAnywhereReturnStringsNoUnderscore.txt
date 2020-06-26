@@ -78,6 +78,7 @@ func testAccCheckAwsEcrImageDataSourceConfig(reg, repo, tag string) string {
 func testAccCheckAwsEcrRepositoryDataSourceConfig(rName string) string {
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(clusterName, tdName, svcName string) string {
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(rName string) string {
+func testAccDataSourceAWSEFSAccessPointsConfig() string {
 func testAccDataSourceAWSEFSAccessPointConfig(rName string) string {
 func testAccAwsEfsMountTargetConfigByMountTargetId(ct string) string {
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool() string {

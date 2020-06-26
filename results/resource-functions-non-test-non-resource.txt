@@ -313,7 +313,6 @@ func environmentVariablesToMap(
 func sourceAuthToMap(
 func validateAwsCodeBuildProjectName(
 func validateAwsCodeBuildProjectS3LogsLocation(
-func artifactHash(
 func expandWebhookFilterGroups(
 func expandWebhookFilterData(
 func flattenAwsCodeBuildWebhookFilterGroups(

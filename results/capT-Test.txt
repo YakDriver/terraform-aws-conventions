@@ -188,6 +188,7 @@ func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
 func TestAccAWSEcsDataSource_ecsContainerDefinition(
 func TestAccAWSEcsServiceDataSource_basic(
 func TestAccAWSEcsDataSource_ecsTaskDefinition(
+func TestAccDataSourceAWSEFSAccessPoints_basic(
 func TestAccDataSourceAWSEFSAccessPoint_basic(
 func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
@@ -871,6 +872,7 @@ func TestAccAwsBackupVault_basic(
 func TestAccAwsBackupVault_withKmsKey(
 func TestAccAwsBackupVault_withTags(
 func TestAccAwsBackupVault_disappears(
+func TestAccAWSBatchComputeEnvironment_disappears(
 func TestAccAWSBatchComputeEnvironment_createEc2(
 func TestAccAWSBatchComputeEnvironment_createWithNamePrefix(
 func TestAccAWSBatchComputeEnvironment_createEc2WithTags(

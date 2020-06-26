@@ -814,7 +814,6 @@ func environmentVariablesToMap(
 func sourceAuthToMap(
 func validateAwsCodeBuildProjectName(
 func validateAwsCodeBuildProjectS3LogsLocation(
-func artifactHash(
 func resourceAwsCodeBuildSourceCredential(
 func resourceAwsCodeBuildSourceCredentialCreate(
 func resourceAwsCodeBuildSourceCredentialRead(

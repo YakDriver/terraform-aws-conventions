@@ -1,3 +1,5 @@
+func TestAccDataSourceAWSEFSAccessPoints_basic(
+func testAccDataSourceAWSEFSAccessPointsConfig(
 func TestAccDataSourceAWSEFSAccessPoint_basic(
 func testAccDataSourceAWSEFSAccessPointConfig(
 func TestAccAWSEcsTaskDefinition_withEFSVolumeMinimal(

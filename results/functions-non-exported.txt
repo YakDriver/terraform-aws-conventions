@@ -422,6 +422,9 @@ func dataSourceAwsEcsTaskDefinitionRead(
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(
 func dataSourceAwsEfsAccessPoint(
 func dataSourceAwsEfsAccessPointRead(
+func dataSourceAwsEfsAccessPoints(
+func dataSourceAwsEfsAccessPointsRead(
+func testAccDataSourceAWSEFSAccessPointsConfig(
 func testAccDataSourceAWSEFSAccessPointConfig(
 func dataSourceAwsEfsFileSystem(
 func dataSourceAwsEfsFileSystemRead(
@@ -3001,7 +3004,6 @@ func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Packaging(
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Path(
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Type(
 func testAccAWSCodeBuildProjectConfig_SecondarySources_CodeCommit(
-func artifactHash(
 func resourceAwsCodeBuildSourceCredential(
 func resourceAwsCodeBuildSourceCredentialCreate(
 func resourceAwsCodeBuildSourceCredentialRead(
