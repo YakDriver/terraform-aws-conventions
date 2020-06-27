@@ -23,6 +23,8 @@ func TestAccAWSAvailabilityZones_AllAvailabilityZones(
 func TestAccAWSAvailabilityZones_BlacklistedNames(
 func TestAccAWSAvailabilityZones_BlacklistedZoneIds(
 func TestAccAWSAvailabilityZones_Filter(
+func TestAccAWSAvailabilityZones_ExcludeNames(
+func TestAccAWSAvailabilityZones_ExcludeZoneIds(
 func TestAccAWSAvailabilityZones_stateFilter(
 func TestAccDataSourceAwsAvailabilityZone_AllAvailabilityZones(
 func TestAccDataSourceAwsAvailabilityZone_Filter(
@@ -1689,6 +1691,8 @@ func TestAccAWSEFSFileSystem_lifecyclePolicy_removal(
 func TestAccAWSEFSFileSystem_disappears(
 func TestAccAWSEFSMountTarget_basic(
 func TestAccAWSEFSMountTarget_disappears(
+func TestAccAWSEFSMountTarget_IpAddress(
+func TestAccAWSEFSMountTarget_IpAddress_EmptyString(
 func TestAccAWSEgressOnlyInternetGateway_basic(
 func TestAccAWSEgressOnlyInternetGateway_Tags(
 func TestAccAWSEIPAssociation_instance(

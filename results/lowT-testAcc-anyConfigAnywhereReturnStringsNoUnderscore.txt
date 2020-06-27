@@ -16,6 +16,8 @@ func testAccCheckAwsAvailabilityZonesConfigAllAvailabilityZones() string {
 func testAccCheckAwsAvailabilityZonesConfigBlacklistedNames() string {
 func testAccCheckAwsAvailabilityZonesConfigBlacklistedZoneIds() string {
 func testAccCheckAwsAvailabilityZonesConfigFilter() string {
+func testAccCheckAwsAvailabilityZonesConfigExcludeNames() string {
+func testAccCheckAwsAvailabilityZonesConfigExcludeZoneIds() string {
 func testAccDataSourceAwsAvailabilityZoneConfigAllAvailabilityZones() string {
 func testAccDataSourceAwsAvailabilityZoneConfigFilter() string {
 func testAccDataSourceAwsAvailabilityZoneConfigName() string {
@@ -833,6 +835,7 @@ func testAccAWSEFSFileSystemConfigWithKmsKeyNoEncryption(rInt int) string {
 func testAccAWSEFSFileSystemConfigWithLifecyclePolicy(lpName string, lpVal string) string {
 func testAccAWSEFSMountTargetConfig(ct string) string {
 func testAccAWSEFSMountTargetConfigModified(ct string) string {
+func testAccAWSEFSMountTargetConfigIpAddress(ipAddress string) string {
 func testAccAWSEgressOnlyInternetGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSEgressOnlyInternetGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool() string {

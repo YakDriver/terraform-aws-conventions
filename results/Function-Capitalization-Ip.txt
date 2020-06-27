@@ -19,6 +19,9 @@ func TestAccAWSDefaultSubnet_publicIp(
 func TestAccAWSEc2TransitGatewayVpcAttachment_Ipv6Support(
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigIpv6Support(
 func testAccAWSEcsTaskDefinitionWithIpcMode(
+func TestAccAWSEFSMountTarget_IpAddress(
+func TestAccAWSEFSMountTarget_IpAddress_EmptyString(
+func testAccAWSEFSMountTargetConfigIpAddress(
 func testAccCheckAWSEIPAssociationHasIpBasedId(
 func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_PublicIpv4Pool_custom(

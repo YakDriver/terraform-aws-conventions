@@ -5,6 +5,8 @@ func TestAccAWSAvailabilityZones_AllAvailabilityZones(
 func TestAccAWSAvailabilityZones_BlacklistedNames(
 func TestAccAWSAvailabilityZones_BlacklistedZoneIds(
 func TestAccAWSAvailabilityZones_Filter(
+func TestAccAWSAvailabilityZones_ExcludeNames(
+func TestAccAWSAvailabilityZones_ExcludeZoneIds(
 func TestAccDataSourceAwsAvailabilityZone_AllAvailabilityZones(
 func TestAccDataSourceAwsAvailabilityZone_Filter(
 func TestAccDataSourceAwsAvailabilityZone_Name(
@@ -677,6 +679,8 @@ func TestAccAWSEcsTaskDefinition_Tags(
 func TestAccAWSEcsTaskDefinition_ProxyConfiguration(
 func TestAccAWSEFSFileSystem_ProvisionedThroughputInMibps(
 func TestAccAWSEFSFileSystem_ThroughputMode(
+func TestAccAWSEFSMountTarget_IpAddress(
+func TestAccAWSEFSMountTarget_IpAddress_EmptyString(
 func TestAccAWSEgressOnlyInternetGateway_Tags(
 func TestAccAWSEIP_Ec2Classic(
 func TestAccAWSEIP_Instance_Reassociate(

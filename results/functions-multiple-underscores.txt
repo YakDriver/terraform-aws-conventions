@@ -638,6 +638,7 @@ func TestAccAWSEFSAccessPoint_posix_user(
 func TestAccAWSEFSAccessPoint_posix_user_secondary_gids(
 func TestAccAWSEFSFileSystem_lifecyclePolicy_update(
 func TestAccAWSEFSFileSystem_lifecyclePolicy_removal(
+func TestAccAWSEFSMountTarget_IpAddress_EmptyString(
 func TestAccAWSEIP_associated_user_private_ip(
 func TestAccAWSEIP_Instance_Reassociate(
 func TestAccAWSEIP_PublicIpv4Pool_default(

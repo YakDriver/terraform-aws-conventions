@@ -61,8 +61,6 @@ func resourceAwsDbInstanceImport(
 func resourceAwsDbInstanceStateRefreshFunc(
 func resourceAwsDbInstanceResourceV0(
 func resourceAwsDbInstanceStateUpgradeV0(
-func testResourceAwsDbInstanceStateDataV0(
-func testResourceAwsDbInstanceStateDataV1(
 func TestResourceAwsDbInstanceStateUpgradeV0(
 func resourceAwsDbInstanceRoleAssociation(
 func resourceAwsDbInstanceRoleAssociationCreate(
