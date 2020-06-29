@@ -438,6 +438,7 @@ func TestAccAwsBackupPlan_withRecoveryPointTags(
 func TestAccAwsBackupPlan_disappears(
 func TestAccAwsBackupSelection_basic(
 func TestAccAwsBackupSelection_disappears(
+func TestAccAwsBackupSelection_backupPlanDisappears(
 func TestAccAwsBackupSelection_withTags(
 func TestAccAwsBackupSelection_withResources(
 func TestAccAwsBackupSelection_updateTag(

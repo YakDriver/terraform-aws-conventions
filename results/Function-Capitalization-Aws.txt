@@ -1307,6 +1307,7 @@ func resourceAwsBackupSelectionDelete(
 func resourceAwsBackupSelectionImportState(
 func TestAccAwsBackupSelection_basic(
 func TestAccAwsBackupSelection_disappears(
+func TestAccAwsBackupSelection_backupPlanDisappears(
 func TestAccAwsBackupSelection_withTags(
 func TestAccAwsBackupSelection_withResources(
 func TestAccAwsBackupSelection_updateTag(
@@ -4722,6 +4723,8 @@ func TestAccAwsWafv2WebACL_Minimal(
 func TestAccAwsWafv2WebACL_RateBasedStatement(
 func TestAccAwsWafv2WebACL_RuleGroupReferenceStatement(
 func TestAccAwsWafv2WebACL_Tags(
+func TestAccAwsWafv2WebACL_MaxNestedRateBasedStatements(
+func TestAccAwsWafv2WebACL_MaxNestedOperatorStatements(
 func testAccCheckAwsWafv2WebACLDestroy(
 func testAccCheckAwsWafv2WebACLExists(
 func testAccAwsWafv2WebACLConfig_Basic(
@@ -4735,6 +4738,8 @@ func testAccAwsWafv2WebACLConfig_RuleGroupReferenceStatement_Update(
 func testAccAwsWafv2WebACLConfig_Minimal(
 func testAccAwsWafv2WebACLConfig_OneTag(
 func testAccAwsWafv2WebACLConfig_TwoTags(
+func testAccAwsWafv2WebACLConfig_multipleNestedRateBasedStatements(
+func testAccAwsWafv2WebACLConfig_multipleNestedOperatorStatements(
 func testAccAwsWafv2WebACLImportStateIdFunc(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(

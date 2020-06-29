@@ -11433,6 +11433,8 @@ func testAccAwsWafv2WebACLConfig_RuleGroupReferenceStatement_Update(
 func testAccAwsWafv2WebACLConfig_Minimal(
 func testAccAwsWafv2WebACLConfig_OneTag(
 func testAccAwsWafv2WebACLConfig_TwoTags(
+func testAccAwsWafv2WebACLConfig_multipleNestedRateBasedStatements(
+func testAccAwsWafv2WebACLConfig_multipleNestedOperatorStatements(
 func testAccAwsWafv2WebACLImportStateIdFunc(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(

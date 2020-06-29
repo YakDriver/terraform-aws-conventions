@@ -1404,6 +1404,8 @@ func TestAccAwsWafv2WebACL_Minimal(
 func TestAccAwsWafv2WebACL_RateBasedStatement(
 func TestAccAwsWafv2WebACL_RuleGroupReferenceStatement(
 func TestAccAwsWafv2WebACL_Tags(
+func TestAccAwsWafv2WebACL_MaxNestedRateBasedStatements(
+func TestAccAwsWafv2WebACL_MaxNestedOperatorStatements(
 func TestAccAWSWafWebAcl_DefaultAction(
 func TestAccAWSWafWebAcl_Rules(
 func TestAccAWSWafWebAcl_LoggingConfiguration(

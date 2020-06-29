@@ -374,11 +374,11 @@ func testAccAWSAutoscalingScheduleConfig(r, start, end string) string {
 func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter int, deleteAfter int) string {
 func testAccAwsBackupPlanConfigRuleCopyActionMultiple(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
-func testAccBackupSelectionConfigBase(rInt int) string {
-func testAccBackupSelectionConfigBasic(rInt int) string {
-func testAccBackupSelectionConfigWithTags(rInt int) string {
-func testAccBackupSelectionConfigWithResources(rInt int) string {
-func testAccBackupSelectionConfigUpdateTag(rInt int) string {
+func testAccBackupSelectionConfigBase(rName string) string {
+func testAccBackupSelectionConfigBasic(rName string) string {
+func testAccBackupSelectionConfigWithTags(rName string) string {
+func testAccBackupSelectionConfigWithResources(rName string) string {
+func testAccBackupSelectionConfigUpdateTag(rName string) string {
 func testAccBackupVaultConfig(randInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigBase(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2(rInt int) string {
