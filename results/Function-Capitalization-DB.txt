@@ -391,6 +391,7 @@ func testAccDocDBSubnetGroupConfig(
 func testAccDocDBSubnetGroupConfig_updatedDescription(
 func migrateDynamoDBStateV0toV1(
 func testAccEc2ClientVpnEndpointMsADBase(
+func TestAccAWSElasticSearchDomain_AdvancedSecurityOptions_UserDB(
 func TestAccAWSGlueConnection_MongoDB(
 func testAccAWSGlueConnectionConfig_MongoDB(
 func expandGlueDynamoDBTargets(

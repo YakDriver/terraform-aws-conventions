@@ -1782,6 +1782,9 @@ func testAccESDomainConfigV23(
 func testAccESDomainConfig_vpc(
 func testAccESDomainConfig_vpc_update(
 func testAccESDomainConfig_internetToVpcEndpoint(
+func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(
+func testAccESDomainConfig_AdvancedSecurityOptionsIAM(
+func testAccESDomainConfig_AdvancedSecurityOptionsDisabled(
 func testAccESDomainConfig_LogPublishingOptions(
 func testAccESDomainConfig_CognitoOptions(
 func testAccAwsElasticTranscoderPresetConfig(

@@ -2097,6 +2097,9 @@ func testAccESDomainConfig_TagUpdate(
 func testAccESDomainConfig_complex(
 func testAccESDomainConfig_vpc(
 func testAccESDomainConfig_internetToVpcEndpoint(
+func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(
+func testAccESDomainConfig_AdvancedSecurityOptionsIAM(
+func testAccESDomainConfig_AdvancedSecurityOptionsDisabled(
 func testAccESDomainConfig_LogPublishingOptions(
 func testAccESDomainConfig_CognitoOptions(
 func TestAccAWSElasticTranscoderPipeline_basic(

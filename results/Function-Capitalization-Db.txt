@@ -315,6 +315,7 @@ func testAccAWSDynamoDbConfigTwoAttributes(
 func testAccAWSDynamoDbTableConfigReplica0(
 func testAccAWSDynamoDbTableConfigReplica1(
 func testAccAWSDynamoDbTableConfigReplica2(
+func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(
 func flattenIotDynamoDbActions(
 func flattenIotDynamoDbv2Actions(
 func TestAccAWSIoTTopicRule_dynamoDbv2(

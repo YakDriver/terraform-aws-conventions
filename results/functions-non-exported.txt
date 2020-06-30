@@ -1017,6 +1017,8 @@ func waitForEc2TransitGatewayVpcAttachmentAcceptance(
 func waitForEc2TransitGatewayVpcAttachmentCreation(
 func waitForEc2TransitGatewayVpcAttachmentDeletion(
 func waitForEc2TransitGatewayVpcAttachmentUpdate(
+func expandAdvancedSecurityOptions(
+func flattenAdvancedSecurityOptions(
 func describeFsxFileSystem(
 func refreshFsxFileSystemLifecycle(
 func waitForFsxFileSystemCreation(
@@ -5554,6 +5556,7 @@ func testAccCheckESSnapshotHour(
 func testAccCheckESNumberOfInstances(
 func testAccCheckESEncrypted(
 func testAccCheckESNodetoNodeEncrypted(
+func testAccCheckAdvancedSecurityOptions(
 func testAccCheckESCognitoOptions(
 func testAccCheckESDomainExists(
 func testAccCheckAWSESDomainNotRecreated(
@@ -5580,6 +5583,9 @@ func testAccESDomainConfigV23(
 func testAccESDomainConfig_vpc(
 func testAccESDomainConfig_vpc_update(
 func testAccESDomainConfig_internetToVpcEndpoint(
+func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(
+func testAccESDomainConfig_AdvancedSecurityOptionsIAM(
+func testAccESDomainConfig_AdvancedSecurityOptionsDisabled(
 func testAccESDomainConfig_LogPublishingOptions(
 func testAccESDomainConfig_CognitoOptions(
 func resourceAwsElasticTranscoderPipeline(

@@ -1880,6 +1880,9 @@ func testAccESDomainConfigV23(randInt int) string {
 func testAccESDomainConfig_vpc(randInt int) string {
 func testAccESDomainConfig_vpc_update(randInt int, update bool) string {
 func testAccESDomainConfig_internetToVpcEndpoint(randInt int) string {
+func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(domainName string) string {
+func testAccESDomainConfig_AdvancedSecurityOptionsIAM(domainName string) string {
+func testAccESDomainConfig_AdvancedSecurityOptionsDisabled(domainName string) string {
 func testAccESDomainConfig_LogPublishingOptions(randInt int) string {
 func testAccESDomainConfig_CognitoOptions(randInt int, includeCognitoOptions bool) string {
 func testAccAwsElasticTranscoderPresetConfig(rName string) string {

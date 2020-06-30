@@ -1387,6 +1387,8 @@ func flattenESClusterConfig(
 func buildESDomainArn(
 func testAccESDomainPolicyConfig(
 func TestAccAWSElasticSearchDomain_RequireHTTPS(
+func TestAccAWSElasticSearchDomain_AdvancedSecurityOptions_UserDB(
+func TestAccAWSElasticSearchDomain_AdvancedSecurityOptions_IAM(
 func testAccCheckESDomainEndpointOptions(
 func testAccCheckESNumberOfSecurityGroups(
 func testAccCheckESEBSVolumeSize(
@@ -1420,6 +1422,9 @@ func testAccESDomainConfigV23(
 func testAccESDomainConfig_vpc(
 func testAccESDomainConfig_vpc_update(
 func testAccESDomainConfig_internetToVpcEndpoint(
+func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(
+func testAccESDomainConfig_AdvancedSecurityOptionsIAM(
+func testAccESDomainConfig_AdvancedSecurityOptionsDisabled(
 func testAccESDomainConfig_LogPublishingOptions(
 func testAccESDomainConfig_CognitoOptions(
 func expandETNotifications(

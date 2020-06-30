@@ -4858,6 +4858,9 @@ func TestAccAWSElasticSearchDomain_complex(
 func TestAccAWSElasticSearchDomain_vpc(
 func TestAccAWSElasticSearchDomain_vpc_update(
 func TestAccAWSElasticSearchDomain_internetToVpcEndpoint(
+func TestAccAWSElasticSearchDomain_AdvancedSecurityOptions_UserDB(
+func TestAccAWSElasticSearchDomain_AdvancedSecurityOptions_IAM(
+func TestAccAWSElasticSearchDomain_AdvancedSecurityOptions_Disabled(
 func TestAccAWSElasticSearchDomain_LogPublishingOptions(
 func TestAccAWSElasticSearchDomain_CognitoOptionsCreateAndRemove(
 func TestAccAWSElasticSearchDomain_CognitoOptionsUpdate(
@@ -4878,6 +4881,7 @@ func testAccCheckESSnapshotHour(
 func testAccCheckESNumberOfInstances(
 func testAccCheckESEncrypted(
 func testAccCheckESNodetoNodeEncrypted(
+func testAccCheckAdvancedSecurityOptions(
 func testAccCheckESCognitoOptions(
 func testAccCheckESDomainExists(
 func testAccCheckAWSESDomainNotRecreated(
@@ -4904,6 +4908,9 @@ func testAccESDomainConfigV23(
 func testAccESDomainConfig_vpc(
 func testAccESDomainConfig_vpc_update(
 func testAccESDomainConfig_internetToVpcEndpoint(
+func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(
+func testAccESDomainConfig_AdvancedSecurityOptionsIAM(
+func testAccESDomainConfig_AdvancedSecurityOptionsDisabled(
 func testAccESDomainConfig_LogPublishingOptions(
 func testAccESDomainConfig_CognitoOptions(
 func TestAccAWSElasticTranscoderPipeline_basic(
