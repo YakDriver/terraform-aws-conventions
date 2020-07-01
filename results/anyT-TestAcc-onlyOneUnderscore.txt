@@ -1077,6 +1077,7 @@ func testAccAWSCloudTrailConfig_tagsModifiedAgain(
 func testAccAWSCloudTrailConfig_eventSelector(
 func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(
 func testAccAWSCloudTrailConfig_eventSelectorModified(
+func testAccAWSCloudTrailConfig_eventSelectorNone(
 func TestAccAWSCloudWatchDashboard_basic(
 func TestAccAWSCloudWatchDashboard_update(
 func TestAccAWSCloudWatchDashboard_updateName(
@@ -3393,6 +3394,7 @@ func TestAccAWSRoute53Record_generatesSuffix(
 func TestAccAWSRoute53Record_wildcard(
 func TestAccAWSRoute53Record_failover(
 func TestAccAWSRoute53Record_TypeChange(
+func TestAccAWSRoute53Record_NameChange(
 func TestAccAWSRoute53Record_SetIdentifierChange(
 func TestAccAWSRoute53Record_AliasChange(
 func TestAccAWSRoute53Record_empty(

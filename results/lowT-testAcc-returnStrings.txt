@@ -887,6 +887,7 @@ func testAccAWSCloudTrailConfig_tagsModifiedAgain(cloudTrailRandInt int) string 
 func testAccAWSCloudTrailConfig_eventSelector(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_eventSelectorModified(cloudTrailRandInt int) string {
+func testAccAWSCloudTrailConfig_eventSelectorNone(cloudTrailRandInt int) string {
 func testAccAWSCloudWatchDashboardName(rInt int) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
 func testAccAWSCloudWatchDashboardConfig_updateBody(rInt int) string {
@@ -3013,6 +3014,9 @@ func testAccRoute53HealthCheckConfigTags2(tag1Key, tag1Value, tagKey2, tagValue2
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(rName string) string {
 func testAccRoute53RecordConfig_allowOverwrite(allowOverwrite bool) string {
 func testAccRoute53RecordConfigAliasS3(rName string) string {
+func testAccRoute53RecordConfigHealthCheckIdSetIdentifier(setIdentifier string) string {
+func testAccRoute53RecordConfigHealthCheckIdTypeA() string {
+func testAccRoute53RecordConfigHealthCheckIdTypeCname() string {
 func testAccRoute53CustomVpcEndpointBase(rName string) string {
 func testAccRoute53RecordConfigAliasCustomVpcEndpointSwappedAliasAttributes(rName string) string {
 func testAccRoute53RecordConfigCustomVpcEndpoint(rName string) string {

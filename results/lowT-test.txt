@@ -1368,6 +1368,7 @@ func testAccAWSCloudTrailConfig_tagsModifiedAgain(
 func testAccAWSCloudTrailConfig_eventSelector(
 func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(
 func testAccAWSCloudTrailConfig_eventSelectorModified(
+func testAccAWSCloudTrailConfig_eventSelectorNone(
 func testAccCheckCloudWatchDashboardExists(
 func testAccCheckAWSCloudWatchDashboardDestroy(
 func testAccCheckAWSCloudWatchDashboardDestroyPrevious(
@@ -3349,6 +3350,7 @@ func testAccIAMGroupPolicyConfig(
 func testAccIAMGroupPolicyConfig_namePrefix(
 func testAccIAMGroupPolicyConfig_generatedName(
 func testAccIAMGroupPolicyConfigUpdate(
+func testSweepIamGroups(
 func testAccCheckAWSGroupDestroy(
 func testAccCheckAWSGroupExists(
 func testAccCheckAWSGroupAttributes(
@@ -3375,6 +3377,7 @@ func testAccAWSPolicyPaginatedAttachConfig(
 func testAccAWSIamPolicyAttachmentConfigGroupsRenamedGroup(
 func testAccAWSIamPolicyAttachmentConfigRolesRenamedRole(
 func testAccAWSIamPolicyAttachmentConfigUsersRenamedUser(
+func testSweepIamPolicies(
 func testAccCheckAWSIAMPolicyExists(
 func testAccCheckAWSIAMPolicyDestroy(
 func testAccCheckAWSIAMPolicyDisappears(
@@ -4762,8 +4765,12 @@ func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(
 func testAccCheckRoute53RecordDestroy(
 func testAccCheckRoute53RecordDisappears(
 func testAccCheckRoute53RecordExists(
+func testAccCheckRoute53RecordDoesNotExist(
 func testAccRoute53RecordConfig_allowOverwrite(
 func testAccRoute53RecordConfigAliasS3(
+func testAccRoute53RecordConfigHealthCheckIdSetIdentifier(
+func testAccRoute53RecordConfigHealthCheckIdTypeA(
+func testAccRoute53RecordConfigHealthCheckIdTypeCname(
 func testAccRoute53CustomVpcEndpointBase(
 func testAccRoute53RecordConfigAliasCustomVpcEndpointSwappedAliasAttributes(
 func testAccRoute53RecordConfigCustomVpcEndpoint(
@@ -5337,7 +5344,6 @@ func testSweepSpotFleetRequests(
 func testAccCheckAWSSpotFleetRequest_IamInstanceProfileArn(
 func testAccCheckAWSSpotFleetRequestConfigRecreated(
 func testAccCheckAWSSpotFleetRequestExists(
-func testAccCheckAWSSpotFleetRequestDisappears(
 func testAccCheckAWSSpotFleetRequestDestroy(
 func testAccCheckAWSSpotFleetRequest_EBSAttributes(
 func testAccCheckAWSSpotFleetRequest_PlacementAttributes(

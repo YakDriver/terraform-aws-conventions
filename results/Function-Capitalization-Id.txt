@@ -263,6 +263,11 @@ func testAccRedshiftSubnetGroupConfig_updateSubnetIds(
 func cleanDelegationSetId(
 func parseRecordId(
 func TestParseRecordId(
+func TestAccAWSRoute53Record_HealthCheckId_SetfierChange(
+func TestAccAWSRoute53Record_HealthCheckId_TypeChange(
+func testAccRoute53RecordConfigHealthCheckIdSetfier(
+func testAccRoute53RecordConfigHealthCheckIdTypeA(
+func testAccRoute53RecordConfigHealthCheckIdTypeCname(
 func resourceAwsRoute53ZoneAssociationParseId(
 func deleteAllRecordsInHostedZoneId(
 func testAccCreateRandomRoute53RecordsInZoneId(

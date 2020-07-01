@@ -1394,6 +1394,7 @@ func testAccAWSCloudTrailConfig_tagsModifiedAgain(
 func testAccAWSCloudTrailConfig_eventSelector(
 func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(
 func testAccAWSCloudTrailConfig_eventSelectorModified(
+func testAccAWSCloudTrailConfig_eventSelectorNone(
 func TestAccAWSCloudWatchDashboard_basic(
 func TestAccAWSCloudWatchDashboard_update(
 func TestAccAWSCloudWatchDashboard_updateName(
@@ -5548,8 +5549,11 @@ func TestAccAWSRoute53Record_Alias_VpcEndpoint(
 func TestAccAWSRoute53Record_Alias_Uppercase(
 func TestAccAWSRoute53Record_weighted_alias(
 func TestAccAWSRoute53Record_geolocation_basic(
+func TestAccAWSRoute53Record_HealthCheckId_SetIdentifierChange(
+func TestAccAWSRoute53Record_HealthCheckId_TypeChange(
 func TestAccAWSRoute53Record_latency_basic(
 func TestAccAWSRoute53Record_TypeChange(
+func TestAccAWSRoute53Record_NameChange(
 func TestAccAWSRoute53Record_SetIdentifierChange(
 func TestAccAWSRoute53Record_AliasChange(
 func TestAccAWSRoute53Record_empty(
@@ -6263,7 +6267,6 @@ func TestAccAWSSpotFleetRequest_WithInstanceStoreAmi(
 func TestAccAWSSpotFleetRequest_disappears(
 func testAccCheckAWSSpotFleetRequestConfigRecreated(
 func testAccCheckAWSSpotFleetRequestExists(
-func testAccCheckAWSSpotFleetRequestDisappears(
 func testAccCheckAWSSpotFleetRequestDestroy(
 func testAccCheckAWSSpotFleetRequest_EBSAttributes(
 func testAccCheckAWSSpotFleetRequest_PlacementAttributes(

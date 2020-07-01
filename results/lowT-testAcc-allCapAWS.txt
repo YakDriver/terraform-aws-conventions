@@ -516,6 +516,7 @@ func testAccAWSCloudTrailConfig_tagsModifiedAgain(
 func testAccAWSCloudTrailConfig_eventSelector(
 func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(
 func testAccAWSCloudTrailConfig_eventSelectorModified(
+func testAccAWSCloudTrailConfig_eventSelectorNone(
 func testAccAWSCloudWatchDashboardName(
 func testAccAWSCloudWatchDashboardConfig(
 func testAccAWSCloudWatchDashboardConfig_updateBody(

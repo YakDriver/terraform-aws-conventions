@@ -2413,6 +2413,8 @@ func resourceAwsIamGroupRead(
 func resourceAwsIamGroupReadResult(
 func resourceAwsIamGroupUpdate(
 func resourceAwsIamGroupDelete(
+func deleteAwsIamGroupPolicyAttachments(
+func deleteAwsIamGroupPolicies(
 func resourceAwsIamGroupMembership(
 func resourceAwsIamGroupMembershipCreate(
 func resourceAwsIamGroupMembershipRead(
@@ -2432,6 +2434,7 @@ func resourceAwsIamGroupPolicyPut(
 func resourceAwsIamGroupPolicyRead(
 func resourceAwsIamGroupPolicyDelete(
 func resourceAwsIamGroupPolicyParseId(
+func init(
 func resourceAwsIamInstanceProfile(
 func resourceAwsIamInstanceProfileCreate(
 func instanceProfileAddRole(
@@ -2471,6 +2474,7 @@ func iamPolicyPruneVersions(
 func iamPolicyDeleteNondefaultVersions(
 func iamPolicyDeleteVersion(
 func iamPolicyListVersions(
+func init(
 func resourceAwsIamRole(
 func resourceAwsIamRoleImport(
 func resourceAwsIamRoleCreate(

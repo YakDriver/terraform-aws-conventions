@@ -2685,6 +2685,7 @@ func testAccAWSCloudTrailConfig_tagsModifiedAgain(
 func testAccAWSCloudTrailConfig_eventSelector(
 func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(
 func testAccAWSCloudTrailConfig_eventSelectorModified(
+func testAccAWSCloudTrailConfig_eventSelectorNone(
 func resourceAwsCloudWatchDashboard(
 func resourceAwsCloudWatchDashboardRead(
 func resourceAwsCloudWatchDashboardPut(
@@ -6384,6 +6385,8 @@ func resourceAwsIamGroupRead(
 func resourceAwsIamGroupReadResult(
 func resourceAwsIamGroupUpdate(
 func resourceAwsIamGroupDelete(
+func deleteAwsIamGroupPolicyAttachments(
+func deleteAwsIamGroupPolicies(
 func resourceAwsIamGroupMembership(
 func resourceAwsIamGroupMembershipCreate(
 func resourceAwsIamGroupMembershipRead(
@@ -6425,6 +6428,8 @@ func testAccIAMGroupPolicyConfig(
 func testAccIAMGroupPolicyConfig_namePrefix(
 func testAccIAMGroupPolicyConfig_generatedName(
 func testAccIAMGroupPolicyConfigUpdate(
+func init(
+func testSweepIamGroups(
 func testAccCheckAWSGroupDestroy(
 func testAccCheckAWSGroupExists(
 func testAccCheckAWSGroupAttributes(
@@ -6490,6 +6495,8 @@ func iamPolicyPruneVersions(
 func iamPolicyDeleteNondefaultVersions(
 func iamPolicyDeleteVersion(
 func iamPolicyListVersions(
+func init(
+func testSweepIamPolicies(
 func testAccCheckAWSIAMPolicyExists(
 func testAccCheckAWSIAMPolicyDestroy(
 func testAccCheckAWSIAMPolicyDisappears(
@@ -9093,8 +9100,12 @@ func migrateRoute53RecordStateV1toV2(
 func testAccCheckRoute53RecordDestroy(
 func testAccCheckRoute53RecordDisappears(
 func testAccCheckRoute53RecordExists(
+func testAccCheckRoute53RecordDoesNotExist(
 func testAccRoute53RecordConfig_allowOverwrite(
 func testAccRoute53RecordConfigAliasS3(
+func testAccRoute53RecordConfigHealthCheckIdSetIdentifier(
+func testAccRoute53RecordConfigHealthCheckIdTypeA(
+func testAccRoute53RecordConfigHealthCheckIdTypeCname(
 func testAccRoute53CustomVpcEndpointBase(
 func testAccRoute53RecordConfigAliasCustomVpcEndpointSwappedAliasAttributes(
 func testAccRoute53RecordConfigCustomVpcEndpoint(
@@ -10189,7 +10200,6 @@ func testSweepSpotFleetRequests(
 func testAccCheckAWSSpotFleetRequest_IamInstanceProfileArn(
 func testAccCheckAWSSpotFleetRequestConfigRecreated(
 func testAccCheckAWSSpotFleetRequestExists(
-func testAccCheckAWSSpotFleetRequestDisappears(
 func testAccCheckAWSSpotFleetRequestDestroy(
 func testAccCheckAWSSpotFleetRequest_EBSAttributes(
 func testAccCheckAWSSpotFleetRequest_PlacementAttributes(

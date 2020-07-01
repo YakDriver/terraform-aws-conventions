@@ -961,10 +961,13 @@ func decodeGuardDutyThreatintelsetID(
 func hmacSignature(
 func sesSmtpPasswordFromSecretKeySigV4(
 func sesSmtpPasswordFromSecretKeySigV2(
+func deleteAwsIamGroupPolicyAttachments(
+func deleteAwsIamGroupPolicies(
 func removeUsersFromGroup(
 func addUsersToGroup(
 func attachPolicyToGroup(
 func detachPolicyFromGroup(
+func init(
 func instanceProfileAddRole(
 func instanceProfileRemoveRole(
 func instanceProfileSetRoles(
@@ -984,6 +987,7 @@ func iamPolicyPruneVersions(
 func iamPolicyDeleteNondefaultVersions(
 func iamPolicyDeleteVersion(
 func iamPolicyListVersions(
+func init(
 func deleteAwsIamRoleInstanceProfiles(
 func deleteAwsIamRolePolicyAttachments(
 func deleteAwsIamRolePolicies(

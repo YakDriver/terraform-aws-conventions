@@ -1729,7 +1729,10 @@ func TestAccAWSRoute53Record_Alias_Elb(
 func TestAccAWSRoute53Record_Alias_S3(
 func TestAccAWSRoute53Record_Alias_VpcEndpoint(
 func TestAccAWSRoute53Record_Alias_Uppercase(
+func TestAccAWSRoute53Record_HealthCheckId_SetIdentifierChange(
+func TestAccAWSRoute53Record_HealthCheckId_TypeChange(
 func TestAccAWSRoute53Record_TypeChange(
+func TestAccAWSRoute53Record_NameChange(
 func TestAccAWSRoute53Record_SetIdentifierChange(
 func TestAccAWSRoute53Record_AliasChange(
 func TestAccAWSRoute53Zone_Comment(
