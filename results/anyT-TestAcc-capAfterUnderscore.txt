@@ -1910,7 +1910,6 @@ func TestAccAWSSESIdentityPolicy_Policy(
 func TestAccAWSSesTemplate_Basic(
 func TestAccAWSSesTemplate_Update(
 func TestAccAWSSfnActivity_Tags(
-func TestAccAWSSfnStateMachine_Tags(
 func TestAccAWSShieldProtection_GlobalAccelerator(
 func TestAccAWSShieldProtection_ElasticIPAddress(
 func TestAccAWSShieldProtection_Alb(

@@ -2988,6 +2988,8 @@ func TestAccAWSSESReceiptRule_disappears(
 func TestAccAWSSesTemplate_disappears(
 func TestAccAWSSfnActivity_basic(
 func TestAccAWSSfnStateMachine_createUpdate(
+func TestAccAWSSfnStateMachine_tags(
+func TestAccAWSSfnStateMachine_disappears(
 func TestAccAWSSimpleDBDomain_basic(
 func TestAccAWSSnapshotCreateVolumePermission_disappears(
 func TestAccAWSSnsPlatformApplication_basic(

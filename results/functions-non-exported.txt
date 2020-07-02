@@ -10046,6 +10046,7 @@ func resourceAwsSfnStateMachineUpdate(
 func resourceAwsSfnStateMachineDelete(
 func testAccCheckAWSSfnExists(
 func testAccCheckAWSSfnStateMachineDestroy(
+func testAccAWSSfnStateMachineConfigBase(
 func testAccAWSSfnStateMachineConfig(
 func testAccAWSSfnStateMachineConfigTags1(
 func testAccAWSSfnStateMachineConfigTags2(

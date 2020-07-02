@@ -3747,7 +3747,8 @@ func TestAccAWSSesTemplate_disappears(
 func TestAccAWSSfnActivity_basic(
 func TestAccAWSSfnActivity_Tags(
 func TestAccAWSSfnStateMachine_createUpdate(
-func TestAccAWSSfnStateMachine_Tags(
+func TestAccAWSSfnStateMachine_tags(
+func TestAccAWSSfnStateMachine_disappears(
 func TestAccAWSShieldProtection_GlobalAccelerator(
 func TestAccAWSShieldProtection_ElasticIPAddress(
 func TestAccAWSShieldProtection_Alb(

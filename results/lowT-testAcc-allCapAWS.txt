@@ -2202,6 +2202,7 @@ func testAccAWSSESReceiptRuleActionsConfig(
 func testAccAWSSfnActivityBasicConfig(
 func testAccAWSSfnActivityBasicConfigTags1(
 func testAccAWSSfnActivityBasicConfigTags2(
+func testAccAWSSfnStateMachineConfigBase(
 func testAccAWSSfnStateMachineConfig(
 func testAccAWSSfnStateMachineConfigTags1(
 func testAccAWSSfnStateMachineConfigTags2(

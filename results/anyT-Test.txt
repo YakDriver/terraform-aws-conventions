@@ -8770,9 +8770,11 @@ func testAccAWSSfnActivityBasicConfig(
 func testAccAWSSfnActivityBasicConfigTags1(
 func testAccAWSSfnActivityBasicConfigTags2(
 func TestAccAWSSfnStateMachine_createUpdate(
-func TestAccAWSSfnStateMachine_Tags(
+func TestAccAWSSfnStateMachine_tags(
+func TestAccAWSSfnStateMachine_disappears(
 func testAccCheckAWSSfnExists(
 func testAccCheckAWSSfnStateMachineDestroy(
+func testAccAWSSfnStateMachineConfigBase(
 func testAccAWSSfnStateMachineConfig(
 func testAccAWSSfnStateMachineConfigTags1(
 func testAccAWSSfnStateMachineConfigTags2(

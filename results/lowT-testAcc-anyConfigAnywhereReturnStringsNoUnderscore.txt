@@ -1641,9 +1641,10 @@ func testAccCheckAwsSesTemplateResourceConfigBasic3(name string) string {
 func testAccAWSSfnActivityBasicConfig(rName string) string {
 func testAccAWSSfnActivityBasicConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSSfnActivityBasicConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAWSSfnStateMachineConfigBase(rName string) string {
 func testAccAWSSfnStateMachineConfig(rName string, rMaxAttempts int) string {
-func testAccAWSSfnStateMachineConfigTags1(rName string, tag1Key, tag1Value string) string {
-func testAccAWSSfnStateMachineConfigTags2(rName string, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAWSSfnStateMachineConfigTags1(rName, tag1Key, tag1Value string) string {
+func testAccAWSSfnStateMachineConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccShieldProtectionCloudfrontRetainConfig() string {
 func testAccShieldProtectionRoute53HostedZoneConfig(rName string) string {
 func testAccShieldProtectionElbConfig(rName string) string {
