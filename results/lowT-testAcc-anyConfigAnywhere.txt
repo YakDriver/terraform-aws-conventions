@@ -1191,6 +1191,7 @@ func testAccCustomerGatewayConfigTags1(
 func testAccCustomerGatewayConfigTags2(
 func testAccCustomerGatewayConfigIdentical(
 func testAccCustomerGatewayConfigForceReplace(
+func testAccCustomerGatewayConfig4ByteAsn(
 func testAccAWSDataPipelinePipelineConfig(
 func testAccAWSDataPipelinePipelineConfigWithDescription(
 func testAccAWSDataPipelinePipelineConfigWithTags(

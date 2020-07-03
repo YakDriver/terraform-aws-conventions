@@ -1114,6 +1114,7 @@ func testAccCustomerGatewayConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) s
 func testAccCustomerGatewayConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccCustomerGatewayConfigIdentical(rBgpAsn int) string {
 func testAccCustomerGatewayConfigForceReplace(rBgpAsn int) string {
+func testAccCustomerGatewayConfig4ByteAsn(rBgpAsn string) string {
 func testAccAWSDataPipelinePipelineConfig(rName string) string {
 func testAccAWSDataPipelinePipelineConfigWithDescription(rName, description string) string {
 func testAccAWSDataPipelinePipelineConfigWithTags(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

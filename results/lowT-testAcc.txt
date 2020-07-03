@@ -1815,6 +1815,7 @@ func testAccCustomerGatewayConfigTags1(
 func testAccCustomerGatewayConfigTags2(
 func testAccCustomerGatewayConfigIdentical(
 func testAccCustomerGatewayConfigForceReplace(
+func testAccCustomerGatewayConfig4ByteAsn(
 func testAccCheckAWSDataPipelinePipelineDisappears(
 func testAccCheckAWSDataPipelinePipelineDestroy(
 func testAccCheckAWSDataPipelinePipelineExists(

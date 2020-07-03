@@ -1240,6 +1240,7 @@ func TestAccAWSCustomerGateway_basic(
 func TestAccAWSCustomerGateway_tags(
 func TestAccAWSCustomerGateway_similarAlreadyExists(
 func TestAccAWSCustomerGateway_disappears(
+func TestAccAWSCustomerGateway_4ByteAsn(
 func TestAccAWSDataPipelinePipeline_basic(
 func TestAccAWSDataPipelinePipeline_description(
 func TestAccAWSDataPipelinePipeline_disappears(
@@ -4145,6 +4146,7 @@ func TestResourceAWSElastiCacheReplicationGroupAuthTokenValidation(
 func TestValidateCognitoUserGroupName(
 func TestValidateCognitoUserPoolId(
 func TestValidateAmazonSideAsn(
+func TestValidate4ByteAsn(
 func TestValidateLaunchTemplateName(
 func TestValidateLaunchTemplateId(
 func TestValidateNeptuneParamGroupName(
