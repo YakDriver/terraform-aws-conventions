@@ -121,7 +121,6 @@ const testAccAWSKeyPairConfig_generatedName =
 const testAccResourceAwsKmsCiphertextConfig_basic =
 const testAccResourceAwsKmsCiphertextConfig_validate =
 const testAccResourceAwsKmsCiphertextConfig_validate_withContext =
-const testAccAWSLaunchTemplateConfig_networkInterfaceAddresses =
 const testAccAWSLaunchTemplateConfig_asg_basic =
 const testAccAWSLaunchTemplateConfig_asg_update =
 const testAccAWSLaunchTemplateConfig_instanceMarketOptions_basic =

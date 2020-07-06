@@ -2494,27 +2494,30 @@ func testAccAWSLaunchConfigurationConfig_withIAMProfile(rInt int) string {
 func testAccAWSLaunchConfigurationConfigEbsNoDevice(rInt int) string {
 func testAccAWSLaunchConfigurationConfig_userData() string {
 func testAccAWSLaunchConfigurationConfig_userDataBase64() string {
-func testAccAWSLaunchTemplateConfig_basic(rInt int) string {
-func testAccAWSLaunchTemplateConfig_ipv6_count(rInt int) string {
+func testAccAWSLaunchTemplateConfig_basic(rName string) string {
+func testAccAWSLaunchTemplateConfig_ipv6_count(rName string) string {
 func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS(rName string) string {
 func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS_DeleteOnTermination(rName string, deleteOnTermination bool) string {
 func testAccAWSLaunchTemplateConfig_EbsOptimized(rName, ebsOptimized string) string {
 func testAccAWSLaunchTemplateConfigElasticInferenceAccelerator(rName, elasticInferenceAcceleratorType string) string {
-func testAccAWSLaunchTemplateConfig_data(rInt int) string {
-func testAccAWSLaunchTemplateConfig_tagsUpdate(rInt int) string {
-func testAccAWSLaunchTemplateConfig_capacityReservation_preference(rInt int, preference string) string {
-func testAccAWSLaunchTemplateConfig_capacityReservation_target(rInt int) string {
+func testAccAWSLaunchTemplateConfig_data(rName string) string {
+func testAccAWSLaunchTemplateConfig_tagsUpdate(rName string) string {
+func testAccAWSLaunchTemplateConfig_capacityReservation_preference(rName string, preference string) string {
+func testAccAWSLaunchTemplateConfig_capacityReservation_target(rName string) string {
 func testAccAWSLaunchTemplateConfig_cpuOptions(rName string, coreCount, threadsPerCore int) string {
 func testAccAWSLaunchTemplateConfig_creditSpecification(rName, instanceType, cpuCredits string) string {
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(rName string) string {
-func testAccAWSLaunchTemplateConfig_licenseSpecification(rInt int) string {
+func testAccAWSLaunchTemplateConfig_licenseSpecification(rName string) string {
 func testAccAWSLaunchTemplateConfig_description(rName, description string) string {
 func testAccAWSLaunchTemplateConfig_networkInterface(rName string) string {
 func testAccAWSLaunchTemplateConfigPartition(rName string, partNum int) string {
+func testAccAWSLaunchTemplateConfig_networkInterfaceAddresses(rName string) string {
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
 func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(rName string) string {
 func testAccAWSLaunchTemplateConfig_metadataOptions(rName string) string {
 func testAccAWSLaunchTemplateConfigHibernation(rName string, enabled bool) string {
+func testAccAWSLaunchTemplateConfig_descriptionDefaultVersion(rName, description string, version int) string {
+func testAccAWSLaunchTemplateconfig_descriptionUpdateDefaultVersion(rName, description string, update bool) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccLBCookieStickinessPolicyConfigDestroy(rName string) string {

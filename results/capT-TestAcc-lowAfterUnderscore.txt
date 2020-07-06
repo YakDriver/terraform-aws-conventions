@@ -1465,6 +1465,8 @@ func TestAccAWSLaunchTemplate_instanceMarketOptions(
 func TestAccAWSLaunchTemplate_licenseSpecification(
 func TestAccAWSLaunchTemplate_metadataOptions(
 func TestAccAWSLaunchTemplate_hibernation(
+func TestAccAWSLaunchTemplate_defaultVersion(
+func TestAccAWSLaunchTemplate_updateDefaultVersion(
 func TestAccAWSLBCookieStickinessPolicy_basic(
 func TestAccAWSLBCookieStickinessPolicy_drift(
 func TestAccAWSLBCookieStickinessPolicy_missingLB(
