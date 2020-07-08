@@ -7073,7 +7073,9 @@ func testAccAwsOrganizationsPolicyAttachmentConfig_Root(
 func testAccAwsOrganizationsPolicy_basic(
 func testAccAwsOrganizationsPolicy_concurrent(
 func testAccAwsOrganizationsPolicy_description(
-func testAccAwsOrganizationsPolicy_type(
+func testAccAwsOrganizationsPolicy_type_Backup(
+func testAccAwsOrganizationsPolicy_type_SCP(
+func testAccAwsOrganizationsPolicy_type_Tag(
 func testAccCheckAwsOrganizationsPolicyDestroy(
 func testAccCheckAwsOrganizationsPolicyExists(
 func testAccAwsOrganizationsPolicyConfig_Description(
@@ -8595,7 +8597,9 @@ func testAccAWSSpotInstanceRequestConfig_SubnetAndSGAndPublicIpAddress(
 func testAccAWSSpotInstanceRequestConfig_getPasswordData(
 func testAccAWSSpotInstanceRequestInterruptConfig(
 func TestAccAWSSQSQueuePolicy_basic(
-func testAccAWSSQSPolicyConfig_basic(
+func TestAccAWSSQSQueuePolicy_disappears_queue(
+func TestAccAWSSQSQueuePolicy_disappears(
+func testAccAWSSQSPolicyConfigBasic(
 func TestAccAWSSQSQueue_basic(
 func TestAccAWSSQSQueue_tags(
 func TestAccAWSSQSQueue_namePrefix(

@@ -5640,6 +5640,7 @@ func TestAccAWSOpsworksStaticWebLayer_tags(
 func TestAccAWSOpsworksUserProfile(
 func testAccCheckAWSOpsworksUserProfileExists(
 func decodeAwsOrganizationsPolicyAttachmentID(
+func testAccAwsOrganizationsPolicy_type_SCP(
 func TestAccAWSOrganizations(
 func resourceAwsPinpointADMChannel(
 func resourceAwsPinpointADMChannelUpsert(
@@ -7026,7 +7027,9 @@ func testAccAWSSpotInstanceRequestConfig_getPasswordData(
 func testAccAWSSpotInstanceRequestInterruptConfig(
 func TestAWSSqsQueuePolicyMigrateState(
 func TestAccAWSSQSQueuePolicy_basic(
-func testAccAWSSQSPolicyConfig_basic(
+func TestAccAWSSQSQueuePolicy_disappears_queue(
+func TestAccAWSSQSQueuePolicy_disappears(
+func testAccAWSSQSPolicyConfigBasic(
 func TestAccAWSSQSQueue_basic(
 func TestAccAWSSQSQueue_tags(
 func TestAccAWSSQSQueue_namePrefix(

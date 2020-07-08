@@ -2187,6 +2187,7 @@ func testAccAwsOpsworksHAProxyLayerConfigVpcCreate(
 func testAccAwsOpsworksHAProxyLayerConfigTags1(
 func testAccAwsOpsworksHAProxyLayerConfigTags2(
 func decodeAwsOrganizationsPolicyAttachmentID(
+func testAccAwsOrganizationsPolicy_type_SCP(
 func resourceAwsPinpointADMChannel(
 func resourceAwsPinpointADMChannelUpsert(
 func resourceAwsPinpointADMChannelRead(
@@ -2653,7 +2654,9 @@ func testAccCheckAWSSpotInstanceRequestAttributesVPC(
 func testAccAWSSpotInstanceRequestConfigVPC(
 func testAccAWSSpotInstanceRequestConfig_SubnetAndSGAndPublicIpAddress(
 func TestAccAWSSQSQueuePolicy_basic(
-func testAccAWSSQSPolicyConfig_basic(
+func TestAccAWSSQSQueuePolicy_disappears_queue(
+func TestAccAWSSQSQueuePolicy_disappears(
+func testAccAWSSQSPolicyConfigBasic(
 func TestAccAWSSQSQueue_basic(
 func TestAccAWSSQSQueue_tags(
 func TestAccAWSSQSQueue_namePrefix(

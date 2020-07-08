@@ -1687,6 +1687,7 @@ func testAccAWSSpotFleetRequestTenancyGroupConfig(rName string, rInt int, validU
 func testAccAWSSpotInstanceRequestConfig(rInt int) string {
 func testAccAWSSpotInstanceRequestConfigValidUntil(rInt int, validUntil string) string {
 func testAccAWSSpotInstanceRequestConfigVPC(rInt int) string {
+func testAccAWSSQSPolicyConfigBasic(rName string) string {
 func testAccAWSSQSConfigWithDefaults(r string) string {
 func testAccAWSSQSConfigWithNamePrefix(r string) string {
 func testAccAWSSQSFifoConfigWithNamePrefix(r string) string {

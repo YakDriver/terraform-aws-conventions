@@ -3016,6 +3016,8 @@ func TestAccAWSSpotInstanceRequest_getPasswordData(
 func TestAccAWSSpotInstanceRequestInterruptStop(
 func TestAccAWSSpotInstanceRequestInterruptHibernate(
 func TestAccAWSSQSQueuePolicy_basic(
+func TestAccAWSSQSQueuePolicy_disappears_queue(
+func TestAccAWSSQSQueuePolicy_disappears(
 func TestAccAWSSQSQueue_basic(
 func TestAccAWSSQSQueue_tags(
 func TestAccAWSSQSQueue_namePrefix(

@@ -3163,7 +3163,6 @@ func testAccAwsOrganizationsPolicyAttachmentConfig_Root(
 func testAccAwsOrganizationsPolicy_basic(
 func testAccAwsOrganizationsPolicy_concurrent(
 func testAccAwsOrganizationsPolicy_description(
-func testAccAwsOrganizationsPolicy_type(
 func testAccAwsOrganizationsPolicyConfig_Description(
 func testAccAwsOrganizationsPolicyConfig_Required(
 func testAccAwsOrganizationsPolicyConfig_Type(
@@ -3858,7 +3857,7 @@ func testAccAWSSpotInstanceRequestConfig_withBlockDuration(
 func testAccAWSSpotInstanceRequestConfig_SubnetAndSGAndPublicIpAddress(
 func testAccAWSSpotInstanceRequestConfig_getPasswordData(
 func TestAccAWSSQSQueuePolicy_basic(
-func testAccAWSSQSPolicyConfig_basic(
+func TestAccAWSSQSQueuePolicy_disappears(
 func TestAccAWSSQSQueue_basic(
 func TestAccAWSSQSQueue_tags(
 func TestAccAWSSQSQueue_namePrefix(

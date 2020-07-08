@@ -3382,7 +3382,7 @@ func testAccAWSSpotInstanceRequestConfigVPC(rInt int) string {
 func testAccAWSSpotInstanceRequestConfig_SubnetAndSGAndPublicIpAddress(rInt int) string {
 func testAccAWSSpotInstanceRequestConfig_getPasswordData(rInt int) string {
 func testAccAWSSpotInstanceRequestInterruptConfig(interruption_behavior string) string {
-func testAccAWSSQSPolicyConfig_basic(r string) string {
+func testAccAWSSQSPolicyConfigBasic(rName string) string {
 func testAccAWSSQSConfigWithDefaults(r string) string {
 func testAccAWSSQSConfigWithNamePrefix(r string) string {
 func testAccAWSSQSFifoConfigWithNamePrefix(r string) string {

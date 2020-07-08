@@ -40,4 +40,3 @@ const testAccAWSSecurityGroupConfig_revoke_true =
 const testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic =
 const testAccAWSSecurityGroupConfig_rulesDropOnError_Init =
 const testAccAWSSecurityGroupConfig_rulesDropOnError_AddBadRule =
-const testAccAWSSQSPolicyConfig_basic_tpl =

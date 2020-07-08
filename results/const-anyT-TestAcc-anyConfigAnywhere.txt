@@ -403,7 +403,6 @@ const testAccAWSSNSSMSPreferencesConfig_almostAll =
 const testAccAWSSNSSMSPreferencesConfig_deliveryRole =
 const testAccAWSSNSTopicConfig_withPolicy =
 const testAccAWSSNSTopicConfig_withGeneratedName =
-const testAccAWSSQSPolicyConfig_basic_tpl =
 const testAccSubnetConfig =
 const testAccSubnetConfigPreIpv6 =
 const testAccSubnetConfigIpv6 =
