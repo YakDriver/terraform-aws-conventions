@@ -1428,6 +1428,9 @@ func testAccEc2CapacityReservationConfig_instanceType(instanceType string) strin
 func testAccEc2CapacityReservationConfig_tags_single(tag1Key, tag1Value string) string {
 func testAccEc2CapacityReservationConfig_tags_multiple(tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccEc2CapacityReservationConfig_tenancy(tenancy string) string {
+func testAccEc2ClientVpnAuthorizationRuleConfigBasic(rName string) string {
+func testAccEc2ClientVpnAuthorizationRuleConfigGroups(rName string, groupNames map[string]string) string {
+func testAccEc2ClientVpnAuthorizationRuleConfigSubnets(rName string, subnetCount int, groupNames map[string]int) string {
 func testAccEc2ClientVpnEndpointConfigAcmCertificateBase() string {
 func testAccEc2ClientVpnEndpointConfig(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithLogGroup(rName string) string {
@@ -1437,8 +1440,7 @@ func testAccEc2ClientVpnEndpointConfigWithMutualAuthAndMicrosoftAD(rName string)
 func testAccEc2ClientVpnEndpointConfig_tags(rName string) string {
 func testAccEc2ClientVpnEndpointConfig_tagsChanged(rName string) string {
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
-func testAccEc2ClientVpnNetworkAssociationConfigAcmCertificateBase() string {
-func testAccEc2ClientVpnNetworkAssociationConfig(rName string) string {
+func testAccEc2ClientVpnNetworkAssociationConfigBasic(rName string) string {
 func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(rInt int) string {
 func testAccAWSEc2FleetConfig_BaseLaunchTemplate(rName string) string {
 func testAccAWSEc2FleetConfig_ExcessCapacityTerminationPolicy(rName, excessCapacityTerminationPolicy string) string {

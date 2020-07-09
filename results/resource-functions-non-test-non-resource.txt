@@ -574,9 +574,12 @@ func ec2DescribeAvailabilityZoneGroup(
 func ec2AvailabilityZoneGroupOptInStatusRefreshFunc(
 func waitForEc2AvailabilityZoneGroupOptInStatus(
 func init(
+func deleteClientVpnAuthorizationRule(
 func flattenConnLoggingConfig(
 func flattenAuthOptsConfig(
 func expandEc2ClientVpnAuthenticationRequest(
+func deleteClientVpnEndpoint(
+func init(
 func init(
 func clientVpnNetworkAssociationRefreshFunc(
 func ec2FleetRefreshFunc(

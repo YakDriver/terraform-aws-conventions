@@ -731,6 +731,9 @@ func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
 func testAccAwsEbsVolumeConfigOutpost() string {
 func testAccAwsEbsVolumeConfigMultiAttach(rName string) string {
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(optInStatus string) string {
+func testAccEc2ClientVpnAuthorizationRuleConfigBasic(rName string) string {
+func testAccEc2ClientVpnAuthorizationRuleConfigGroups(rName string, groupNames map[string]string) string {
+func testAccEc2ClientVpnAuthorizationRuleConfigSubnets(rName string, subnetCount int, groupNames map[string]int) string {
 func testAccEc2ClientVpnEndpointConfigAcmCertificateBase() string {
 func testAccEc2ClientVpnEndpointConfig(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithLogGroup(rName string) string {
@@ -738,8 +741,7 @@ func testAccEc2ClientVpnEndpointConfigWithDNSServers(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithMicrosoftAD(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithMutualAuthAndMicrosoftAD(rName string) string {
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
-func testAccEc2ClientVpnNetworkAssociationConfigAcmCertificateBase() string {
-func testAccEc2ClientVpnNetworkAssociationConfig(rName string) string {
+func testAccEc2ClientVpnNetworkAssociationConfigBasic(rName string) string {
 func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigBase(rName string) string {
 func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfig(rName string) string {
 func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags1(rName, tagKey1, tagValue1 string) string {

@@ -1575,6 +1575,12 @@ func resourceAwsEc2CapacityReservationRead(
 func resourceAwsEc2CapacityReservationUpdate(
 func resourceAwsEc2CapacityReservationDelete(
 func init(
+func resourceAwsEc2ClientVpnAuthorizationRule(
+func resourceAwsEc2ClientVpnAuthorizationRuleCreate(
+func resourceAwsEc2ClientVpnAuthorizationRuleRead(
+func resourceAwsEc2ClientVpnAuthorizationRuleDelete(
+func resourceAwsEc2ClientVpnAuthorizationRuleImport(
+func deleteClientVpnAuthorizationRule(
 func resourceAwsEc2ClientVpnEndpoint(
 func resourceAwsEc2ClientVpnEndpointCreate(
 func resourceAwsEc2ClientVpnEndpointRead(
@@ -1583,6 +1589,8 @@ func resourceAwsEc2ClientVpnEndpointUpdate(
 func flattenConnLoggingConfig(
 func flattenAuthOptsConfig(
 func expandEc2ClientVpnAuthenticationRequest(
+func deleteClientVpnEndpoint(
+func init(
 func init(
 func resourceAwsEc2ClientVpnNetworkAssociation(
 func resourceAwsEc2ClientVpnNetworkAssociationCreate(
