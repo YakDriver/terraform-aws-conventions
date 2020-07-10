@@ -1560,6 +1560,10 @@ func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool
 func testAccEc2ClientVpnNetworkAssociationConfigBasic(rName string) string {
 func testAccEc2ClientVpnNetworkAssociationVpcBase(rName string, subnetCount int) string {
 func testAccEc2ClientVpnNetworkAssociationAcmCertificateBase() string {
+func testAccEc2ClientVpnRouteConfigBasic(rName string) string {
+func testAccEc2ClientVpnRouteConfigDescription(rName string) string {
+func testAccEc2ClientVpnRouteVpcBase(rName string, subnetCount int) string {
+func testAccEc2ClientVpnRouteAcmCertificateBase() string {
 func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(rInt int) string {
 func testAccAWSEc2FleetConfig_BaseLaunchTemplate(rName string) string {
 func testAccAWSEc2FleetConfig_ExcessCapacityTerminationPolicy(rName, excessCapacityTerminationPolicy string) string {

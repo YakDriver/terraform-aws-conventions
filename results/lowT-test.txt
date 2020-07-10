@@ -2461,6 +2461,15 @@ func testAccCheckAwsEc2ClientVpnNetworkAssociationExists(
 func testAccEc2ClientVpnNetworkAssociationConfigBasic(
 func testAccEc2ClientVpnNetworkAssociationVpcBase(
 func testAccEc2ClientVpnNetworkAssociationAcmCertificateBase(
+func testAccAwsEc2ClientVpnRoute_basic(
+func testAccAwsEc2ClientVpnRoute_description(
+func testAccAwsEc2ClientVpnRoute_disappears(
+func testAccCheckAwsEc2ClientVpnRouteDestroy(
+func testAccCheckAwsEc2ClientVpnRouteExists(
+func testAccEc2ClientVpnRouteConfigBasic(
+func testAccEc2ClientVpnRouteConfigDescription(
+func testAccEc2ClientVpnRouteVpcBase(
+func testAccEc2ClientVpnRouteAcmCertificateBase(
 func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(
 func testAccCheckAWSEc2FleetHistory(
 func testAccCheckAWSEc2FleetExists(
@@ -5950,7 +5959,6 @@ func testAccAWSWafRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRuleGroupConfig_noActivatedRules(
 func testAccAWSWafRuleGroupConfigTags1(
 func testAccAWSWafRuleGroupConfigTags2(
-func testCheckResourceAttrWithIndexesAddr(
 func testAccCheckAWSWafRuleDisappears(
 func testAccCheckAWSWafRuleDestroy(
 func testAccCheckAWSWafRuleExists(

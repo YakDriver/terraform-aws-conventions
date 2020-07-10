@@ -1026,6 +1026,11 @@ func resourceAwsEc2ClientVpnNetworkAssociation(
 func resourceAwsEc2ClientVpnNetworkAssociationCreate(
 func resourceAwsEc2ClientVpnNetworkAssociationRead(
 func resourceAwsEc2ClientVpnNetworkAssociationDelete(
+func resourceAwsEc2ClientVpnRoute(
+func resourceAwsEc2ClientVpnRouteCreate(
+func resourceAwsEc2ClientVpnRouteRead(
+func resourceAwsEc2ClientVpnRouteDelete(
+func resourceAwsEc2ClientVpnRouteImport(
 func resourceAwsEc2Fleet(
 func resourceAwsEc2FleetCreate(
 func resourceAwsEc2FleetRead(

@@ -1441,6 +1441,8 @@ func testAccEc2ClientVpnEndpointConfig_tags(rName string) string {
 func testAccEc2ClientVpnEndpointConfig_tagsChanged(rName string) string {
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
 func testAccEc2ClientVpnNetworkAssociationConfigBasic(rName string) string {
+func testAccEc2ClientVpnRouteConfigBasic(rName string) string {
+func testAccEc2ClientVpnRouteConfigDescription(rName string) string {
 func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(rInt int) string {
 func testAccAWSEc2FleetConfig_BaseLaunchTemplate(rName string) string {
 func testAccAWSEc2FleetConfig_ExcessCapacityTerminationPolicy(rName, excessCapacityTerminationPolicy string) string {

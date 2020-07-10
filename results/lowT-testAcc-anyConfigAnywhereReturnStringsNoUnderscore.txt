@@ -742,6 +742,8 @@ func testAccEc2ClientVpnEndpointConfigWithMicrosoftAD(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithMutualAuthAndMicrosoftAD(rName string) string {
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
 func testAccEc2ClientVpnNetworkAssociationConfigBasic(rName string) string {
+func testAccEc2ClientVpnRouteConfigBasic(rName string) string {
+func testAccEc2ClientVpnRouteConfigDescription(rName string) string {
 func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigBase(rName string) string {
 func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfig(rName string) string {
 func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags1(rName, tagKey1, tagValue1 string) string {

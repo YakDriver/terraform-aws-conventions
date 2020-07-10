@@ -4072,6 +4072,15 @@ func testAccCheckAwsEc2ClientVpnNetworkAssociationExists(
 func testAccEc2ClientVpnNetworkAssociationConfigBasic(
 func testAccEc2ClientVpnNetworkAssociationVpcBase(
 func testAccEc2ClientVpnNetworkAssociationAcmCertificateBase(
+func testAccAwsEc2ClientVpnRoute_basic(
+func testAccAwsEc2ClientVpnRoute_description(
+func testAccAwsEc2ClientVpnRoute_disappears(
+func testAccCheckAwsEc2ClientVpnRouteDestroy(
+func testAccCheckAwsEc2ClientVpnRouteExists(
+func testAccEc2ClientVpnRouteConfigBasic(
+func testAccEc2ClientVpnRouteConfigDescription(
+func testAccEc2ClientVpnRouteVpcBase(
+func testAccEc2ClientVpnRouteAcmCertificateBase(
 func TestAccAWSEc2Fleet_basic(
 func TestAccAWSEc2Fleet_disappears(
 func TestAccAWSEc2Fleet_ExcessCapacityTerminationPolicy(
@@ -9864,7 +9873,6 @@ func TestAccAWSWafRule_changeNameForceNew(
 func TestAccAWSWafRule_disappears(
 func TestAccAWSWafRule_changePredicates(
 func TestAccAWSWafRule_geoMatchSetPredicate(
-func testCheckResourceAttrWithIndexesAddr(
 func TestAccAWSWafRule_noPredicates(
 func TestAccAWSWafRule_Tags(
 func testAccCheckAWSWafRuleDisappears(

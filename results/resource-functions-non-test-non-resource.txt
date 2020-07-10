@@ -582,6 +582,7 @@ func deleteClientVpnEndpoint(
 func init(
 func init(
 func clientVpnNetworkAssociationRefreshFunc(
+func deleteClientVpnRoute(
 func ec2FleetRefreshFunc(
 func expandEc2FleetLaunchTemplateConfigRequests(
 func expandEc2FleetLaunchTemplateConfigRequest(

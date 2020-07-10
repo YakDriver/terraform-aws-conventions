@@ -1376,6 +1376,9 @@ func testAccEc2ClientVpnEndpointConfig_tags(
 func testAccEc2ClientVpnEndpointConfig_tagsChanged(
 func testAccAwsEc2ClientVpnNetworkAssociation_basic(
 func testAccAwsEc2ClientVpnNetworkAssociation_disappears(
+func testAccAwsEc2ClientVpnRoute_basic(
+func testAccAwsEc2ClientVpnRoute_description(
+func testAccAwsEc2ClientVpnRoute_disappears(
 func TestAccAWSEc2Fleet_basic(
 func TestAccAWSEc2Fleet_disappears(
 func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(
