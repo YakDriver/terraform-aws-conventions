@@ -3122,7 +3122,6 @@ func flattenESVPCDerivedInfo(
 func expandESVPCOptions(
 func flattenDSVpcSettings(
 func flattenDSConnectSettings(
-func deprecatedExpandApiGatewayMethodParametersJSONOperations(
 func sortListBasedonTFFile(
 func buildApiGatewayInvokeURL(
 func canonicalXML(

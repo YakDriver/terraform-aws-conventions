@@ -299,7 +299,6 @@ func flattenDocDBParameters(
 func expandCloudFormationParameters(
 func flattenCloudFormationParameters(
 func flattenAllCloudFormationParameters(
-func deprecatedExpandApiGatewayMethodParametersJSONOperations(
 func expandApiGatewayMethodParametersOperations(
 func expandDaxParameterGroupParameterNameValue(
 func flattenDaxParameterGroupParameters(

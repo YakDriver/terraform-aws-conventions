@@ -1,8 +1,8 @@
 Analysis Tallies
 4181	All Functions:Exported
-12109	All Functions:Non-Exported
-8104	All Functions:Multicaps
-3182	All Functions:Non-AWS Multicaps
+12108	All Functions:Non-Exported
+8103	All Functions:Multicaps
+3181	All Functions:Non-AWS Multicaps
 7180	All Functions:Uppercase AWS
 4852	All Functions:Mixed case AWS
 5812	All Functions:Any underscores
@@ -55,7 +55,7 @@ Analysis Tallies
 50	Function Capitalization:Ami
 52	Function Capitalization:AMI
 17	Function Capitalization:api
-395	Function Capitalization:Api
+394	Function Capitalization:Api
 463	Function Capitalization:API
 2	Function Capitalization:arn
 124	Function Capitalization:Arn
@@ -116,7 +116,7 @@ Analysis Tallies
 152	Function Capitalization:IP
 1	Function Capitalization:json
 36	Function Capitalization:Json
-6	Function Capitalization:JSON
+5	Function Capitalization:JSON
 24	Function Capitalization:kms
 219	Function Capitalization:Kms
 21	Function Capitalization:KMS
@@ -126,7 +126,7 @@ Analysis Tallies
 126	Function Capitalization:nat
 18	Function Capitalization:Nat
 0	Function Capitalization:NAT
-320	Function Capitalization:ram
+319	Function Capitalization:ram
 68	Function Capitalization:Ram
 1	Function Capitalization:RAM
 41	Function Capitalization:rds

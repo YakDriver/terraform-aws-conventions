@@ -11731,7 +11731,6 @@ func flattenAsgSuspendedProcesses(
 func flattenAsgEnabledMetrics(
 func flattenKinesisShardLevelMetrics(
 func expandApiGatewayRequestResponseModelOperations(
-func deprecatedExpandApiGatewayMethodParametersJSONOperations(
 func expandApiGatewayMethodParametersOperations(
 func expandCloudWatchLogMetricTransformations(
 func flattenCloudWatchLogMetricTransformations(
