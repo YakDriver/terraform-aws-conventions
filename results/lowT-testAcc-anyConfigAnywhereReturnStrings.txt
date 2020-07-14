@@ -1713,6 +1713,7 @@ func testAccAwsElasticTranscoderPresetConfig(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigDescription(rName string, description string) string {
 func testAccAwsElasticTranscoderPresetConfigFull1(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigFull2(rName string) string {
+func testAccAwsElasticTranscoderPresetConfigVideoFrameRate(rName string, frameRate string) string {
 func testAccAWSELBConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSELBConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccELBConfig_Listener_IAMServerCertificate(certName, certificate, key, lbProtocol string) string {
@@ -1737,20 +1738,11 @@ func testAccAWSEmrClusterConfigCoreInstanceGroupBidPrice(rName, bidPrice string)
 func testAccAWSEmrClusterConfigCoreInstanceGroupInstanceCount(rName string, instanceCount int) string {
 func testAccAWSEmrClusterConfigCoreInstanceGroupInstanceType(rName, instanceType string) string {
 func testAccAWSEmrClusterConfigCoreInstanceGroupName(rName, instanceGroupName string) string {
-func testAccAWSEmrClusterConfigCoreInstanceType(rName, coreInstanceType string) string {
-func testAccAWSEmrClusterConfigInstanceGroupCoreInstanceType(rName, coreInstanceType string) string {
-func testAccAWSEmrClusterConfigInstanceGroupMasterInstanceType(rName, masterInstanceType string) string {
-func testAccAWSEmrClusterConfigInstanceGroups(r string) string {
-func testAccAWSEmrClusterConfigInstanceGroupsName(r string) string {
-func testAccAWSEmrClusterConfigInstanceGroupsUpdate(r string) string {
-func testAccAWSEmrClusterConfigInstanceGroups_st1(r string) string {
-func testAccAWSEmrClusterConfigInstanceGroups_updateAutoScalingPolicy(r string) string {
 func testAccAWSEmrClusterConfigEc2AttributesDefaultManagedSecurityGroups(rName string) string {
 func testAccAWSEmrClusterConfigMasterInstanceGroupBidPrice(rName, bidPrice string) string {
 func testAccAWSEmrClusterConfigMasterInstanceGroupInstanceCount(rName string, instanceCount int) string {
 func testAccAWSEmrClusterConfigMasterInstanceGroupInstanceType(rName, instanceType string) string {
 func testAccAWSEmrClusterConfigMasterInstanceGroupName(rName, instanceGroupName string) string {
-func testAccAWSEmrClusterConfigMasterInstanceType(rName, masterInstanceType string) string {
 func testAccAWSEmrClusterConfigTerminationPolicy(r string, term string) string {
 func testAccAWSEmrClusterConfig_keepJob(r string, keepJob string) string {
 func testAccAWSEmrClusterConfigVisibleToAllUsersUpdated(r string) string {

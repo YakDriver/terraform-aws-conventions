@@ -37,7 +37,6 @@ func resourceAwsEMRClusterRead(
 func resourceAwsEMRClusterUpdate(
 func resourceAwsEMRClusterDelete(
 func resourceAwsEMRClusterStateRefreshFunc(
-func resourceAwsEMRClusterInstanceGroupHash(
 func resourceAwsEMRClusterEBSConfigHash(
 func resourceAwsEMRInstanceGroup(
 func resourceAwsEMRInstanceGroupCreate(

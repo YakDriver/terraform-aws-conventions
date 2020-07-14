@@ -108,7 +108,6 @@ func resourceAwsEMRClusterDelete(
 func countEMRRemainingInstances(
 func flattenEBSConfig(
 func resourceAwsEMRClusterStateRefreshFunc(
-func resourceAwsEMRClusterInstanceGroupHash(
 func resourceAwsEMRClusterEBSConfigHash(
 func fetchAllEMRInstanceGroups(
 func resourceAwsEMRInstanceGroup(

@@ -813,7 +813,6 @@ func TestAwsEcsContainerDefinitionsAreEquivalent_negative(
 func TestAwsEcsContainerDefinitionsAreEquivalent_missingEnvironmentName(
 func resourceAwsCloudFrontDistributionImport(
 func resourceAwsDbEventSubscriptionImport(
-func resourceAwsS3BucketImportState(
 func resourceAwsSecurityGroupImportState(
 func resourceAwsSecurityGroupImportStatePerm(
 func resourceAwsSecurityGroupImportStatePermPair(
@@ -2005,7 +2004,6 @@ func resourceAwsDxGateway(
 func resourceAwsDxGatewayCreate(
 func resourceAwsDxGatewayRead(
 func resourceAwsDxGatewayDelete(
-func resourceAwsDxGatewayImportState(
 func TestAccAwsDxGateway_basic(
 func TestAccAwsDxGateway_complex(
 func testAccCheckAwsDxGatewayDestroy(
@@ -2485,6 +2483,7 @@ func testAccAwsElasticTranscoderPresetConfig(
 func testAccAwsElasticTranscoderPresetConfigDescription(
 func testAccAwsElasticTranscoderPresetConfigFull1(
 func testAccAwsElasticTranscoderPresetConfigFull2(
+func testAccAwsElasticTranscoderPresetConfigVideoFrameRate(
 func resourceAwsElbAttachment(
 func resourceAwsElbAttachmentCreate(
 func resourceAwsElbAttachmentRead(
@@ -2503,7 +2502,6 @@ func resourceAwsEMRClusterRead(
 func resourceAwsEMRClusterUpdate(
 func resourceAwsEMRClusterDelete(
 func resourceAwsEMRClusterStateRefreshFunc(
-func resourceAwsEMRClusterInstanceGroupHash(
 func resourceAwsEMRClusterEBSConfigHash(
 func resourceAwsEMRInstanceGroup(
 func resourceAwsEMRInstanceGroupCreate(

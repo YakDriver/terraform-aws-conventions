@@ -1407,7 +1407,6 @@ func resourceAwsDxGateway(
 func resourceAwsDxGatewayCreate(
 func resourceAwsDxGatewayRead(
 func resourceAwsDxGatewayDelete(
-func resourceAwsDxGatewayImportState(
 func dxGatewayStateRefresh(
 func waitForDirectConnectGatewayDeletion(
 func init(
@@ -2076,8 +2075,6 @@ func flattenEmrKerberosAttributes(
 func flattenEmrHadoopStepConfig(
 func flattenEmrStepSummaries(
 func flattenEmrStepSummary(
-func flattenInstanceGroup(
-func flattenInstanceGroups(
 func flattenEBSConfig(
 func flattenBootstrapArguments(
 func emrCoreInstanceGroup(
@@ -2087,8 +2084,6 @@ func expandEmrKeyValues(
 func expandEmrKerberosAttributes(
 func expandEmrStepConfig(
 func expandEmrStepConfigs(
-func expandInstanceGroupConfigs(
-func expandBidPrice(
 func expandEbsConfig(
 func expandConfigurationJson(
 func flattenConfigurationJson(
@@ -2098,7 +2093,6 @@ func readLocalJson(
 func readBodyJson(
 func resourceAwsEMRClusterStateRefreshFunc(
 func findMasterGroup(
-func resourceAwsEMRClusterInstanceGroupHash(
 func resourceAwsEMRClusterEBSConfigHash(
 func getEmrCoreInstanceGroupAutoscalingPolicy(
 func fetchAllEMRInstanceGroups(
@@ -4172,7 +4166,7 @@ func resourceAwsSnsPlatformApplicationUpdate(
 func resourceAwsSnsPlatformApplicationRead(
 func resourceAwsSnsPlatformApplicationDelete(
 func decodeResourceAwsSnsPlatformApplicationID(
-func hashSum(
+func isChangeSha256Removal(
 func validateAwsSnsPlatformApplication(
 func init(
 func validateMonthlySpend(

@@ -147,6 +147,8 @@ func expandETAudioParams(
 func expandETVideoParams(
 func flattenETAudioParameters(
 func flattenETVideoParams(
+func TestAccAWSElasticTranscoderPreset_Video_FrameRate(
+func testAccAwsElasticTranscoderPresetConfigVideoFrameRate(
 func extractProcessorParameters(
 func extractProcessorParameter(
 func resourceAwsNeptuneClusterParameterGroup(

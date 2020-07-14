@@ -900,7 +900,6 @@ func resourceAwsDxGateway(
 func resourceAwsDxGatewayCreate(
 func resourceAwsDxGatewayRead(
 func resourceAwsDxGatewayDelete(
-func resourceAwsDxGatewayImportState(
 func resourceAwsDxHostedPrivateVirtualInterfaceAccepter(
 func resourceAwsDxHostedPrivateVirtualInterfaceAccepterCreate(
 func resourceAwsDxHostedPrivateVirtualInterfaceAccepterRead(
@@ -1296,7 +1295,6 @@ func resourceAwsEMRClusterRead(
 func resourceAwsEMRClusterUpdate(
 func resourceAwsEMRClusterDelete(
 func resourceAwsEMRClusterStateRefreshFunc(
-func resourceAwsEMRClusterInstanceGroupHash(
 func resourceAwsEMRClusterEBSConfigHash(
 func resourceAwsEMRInstanceGroup(
 func resourceAwsEMRInstanceGroupCreate(

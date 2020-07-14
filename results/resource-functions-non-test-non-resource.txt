@@ -800,8 +800,6 @@ func flattenEmrKerberosAttributes(
 func flattenEmrHadoopStepConfig(
 func flattenEmrStepSummaries(
 func flattenEmrStepSummary(
-func flattenInstanceGroup(
-func flattenInstanceGroups(
 func flattenEBSConfig(
 func flattenBootstrapArguments(
 func emrCoreInstanceGroup(
@@ -811,8 +809,6 @@ func expandEmrKeyValues(
 func expandEmrKerberosAttributes(
 func expandEmrStepConfig(
 func expandEmrStepConfigs(
-func expandInstanceGroupConfigs(
-func expandBidPrice(
 func expandEbsConfig(
 func expandConfigurationJson(
 func flattenConfigurationJson(
@@ -1643,7 +1639,7 @@ func buildReceiptRule(
 func init(
 func hasCreateVolumePermission(
 func decodeResourceAwsSnsPlatformApplicationID(
-func hashSum(
+func isChangeSha256Removal(
 func validateAwsSnsPlatformApplication(
 func init(
 func validateMonthlySpend(

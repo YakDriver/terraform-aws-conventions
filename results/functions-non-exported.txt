@@ -970,7 +970,6 @@ func suppressMissingOptionalConfigurationBlock(
 func suppressAwsDbEngineVersionDiffs(
 func suppressEquivalentJsonDiffs(
 func suppressOpenIdURL(
-func suppressAutoscalingGroupAvailabilityZoneDiffs(
 func suppressCloudFormationTemplateBodyDiffs(
 func suppressRoute53ZoneNameWithTrailingDot(
 func suppressEqualCIDRBlockDiffs(
@@ -1026,7 +1025,6 @@ func waitForFsxFileSystemDeletion(
 func iamPolicyDecodeConfigStringList(
 func resourceAwsCloudFrontDistributionImport(
 func resourceAwsDbEventSubscriptionImport(
-func resourceAwsS3BucketImportState(
 func resourceAwsSecurityGroupImportState(
 func resourceAwsSecurityGroupImportStatePerm(
 func resourceAwsSecurityGroupImportStatePermPair(
@@ -4338,7 +4336,6 @@ func resourceAwsDxGateway(
 func resourceAwsDxGatewayCreate(
 func resourceAwsDxGatewayRead(
 func resourceAwsDxGatewayDelete(
-func resourceAwsDxGatewayImportState(
 func dxGatewayStateRefresh(
 func waitForDirectConnectGatewayDeletion(
 func init(
@@ -5679,6 +5676,7 @@ func testAccAwsElasticTranscoderPresetConfig(
 func testAccAwsElasticTranscoderPresetConfigDescription(
 func testAccAwsElasticTranscoderPresetConfigFull1(
 func testAccAwsElasticTranscoderPresetConfigFull2(
+func testAccAwsElasticTranscoderPresetConfigVideoFrameRate(
 func resourceAwsElbAttachment(
 func resourceAwsElbAttachmentCreate(
 func resourceAwsElbAttachmentRead(
@@ -5729,8 +5727,6 @@ func flattenEmrKerberosAttributes(
 func flattenEmrHadoopStepConfig(
 func flattenEmrStepSummaries(
 func flattenEmrStepSummary(
-func flattenInstanceGroup(
-func flattenInstanceGroups(
 func flattenEBSConfig(
 func flattenBootstrapArguments(
 func emrCoreInstanceGroup(
@@ -5740,8 +5736,6 @@ func expandEmrKeyValues(
 func expandEmrKerberosAttributes(
 func expandEmrStepConfig(
 func expandEmrStepConfigs(
-func expandInstanceGroupConfigs(
-func expandBidPrice(
 func expandEbsConfig(
 func expandConfigurationJson(
 func flattenConfigurationJson(
@@ -5751,7 +5745,6 @@ func readLocalJson(
 func readBodyJson(
 func resourceAwsEMRClusterStateRefreshFunc(
 func findMasterGroup(
-func resourceAwsEMRClusterInstanceGroupHash(
 func resourceAwsEMRClusterEBSConfigHash(
 func getEmrCoreInstanceGroupAutoscalingPolicy(
 func fetchAllEMRInstanceGroups(
@@ -5786,20 +5779,11 @@ func testAccAWSEmrClusterConfigCoreInstanceGroupBidPrice(
 func testAccAWSEmrClusterConfigCoreInstanceGroupInstanceCount(
 func testAccAWSEmrClusterConfigCoreInstanceGroupInstanceType(
 func testAccAWSEmrClusterConfigCoreInstanceGroupName(
-func testAccAWSEmrClusterConfigCoreInstanceType(
-func testAccAWSEmrClusterConfigInstanceGroupCoreInstanceType(
-func testAccAWSEmrClusterConfigInstanceGroupMasterInstanceType(
-func testAccAWSEmrClusterConfigInstanceGroups(
-func testAccAWSEmrClusterConfigInstanceGroupsName(
-func testAccAWSEmrClusterConfigInstanceGroupsUpdate(
-func testAccAWSEmrClusterConfigInstanceGroups_st1(
-func testAccAWSEmrClusterConfigInstanceGroups_updateAutoScalingPolicy(
 func testAccAWSEmrClusterConfigEc2AttributesDefaultManagedSecurityGroups(
 func testAccAWSEmrClusterConfigMasterInstanceGroupBidPrice(
 func testAccAWSEmrClusterConfigMasterInstanceGroupInstanceCount(
 func testAccAWSEmrClusterConfigMasterInstanceGroupInstanceType(
 func testAccAWSEmrClusterConfigMasterInstanceGroupName(
-func testAccAWSEmrClusterConfigMasterInstanceType(
 func testAccAWSEmrClusterConfigTerminationPolicy(
 func testAccAWSEmrClusterConfig_keepJob(
 func testAccAWSEmrClusterConfigVisibleToAllUsersUpdated(
@@ -10138,7 +10122,7 @@ func resourceAwsSnsPlatformApplicationUpdate(
 func resourceAwsSnsPlatformApplicationRead(
 func resourceAwsSnsPlatformApplicationDelete(
 func decodeResourceAwsSnsPlatformApplicationID(
-func hashSum(
+func isChangeSha256Removal(
 func validateAwsSnsPlatformApplication(
 func init(
 func testSweepSnsPlatformApplications(
