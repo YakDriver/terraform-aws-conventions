@@ -6,6 +6,7 @@ func dataSourceAwsEfsFileSystem(
 func dataSourceAwsEfsFileSystemRead(
 func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
+func TestAccDataSourceAwsEfsFileSystem_NonExistent(
 func testAccDataSourceAwsEfsFileSystemCheck(
 func dataSourceAwsEfsMountTarget(
 func dataSourceAwsEfsMountTargetRead(

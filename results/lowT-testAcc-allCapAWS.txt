@@ -2082,7 +2082,6 @@ func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(
 func testAccAWSS3BucketConfig_withUpdatedTags(
 func testAccAWSS3MultiBucketConfigWithTags(
-func testAccAWSS3BucketConfigWithRegion(
 func testAccAWSS3BucketWebsiteConfig(
 func testAccAWSS3BucketWebsiteConfigWithError(
 func testAccAWSS3BucketWebsiteConfigWithRedirect(

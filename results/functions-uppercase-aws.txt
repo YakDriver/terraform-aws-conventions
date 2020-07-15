@@ -14,8 +14,6 @@ func TestAccAWSAmiDataSource_localNameFilter(
 func TestAccAWSAutoscalingGroups_basic(
 func TestAccAWSAvailabilityZones_basic(
 func TestAccAWSAvailabilityZones_AllAvailabilityZones(
-func TestAccAWSAvailabilityZones_BlacklistedNames(
-func TestAccAWSAvailabilityZones_BlacklistedZoneIds(
 func TestAccAWSAvailabilityZones_Filter(
 func TestAccAWSAvailabilityZones_ExcludeNames(
 func TestAccAWSAvailabilityZones_ExcludeZoneIds(
@@ -5782,7 +5780,6 @@ func TestAccAWSS3Bucket_tagsWithSystemTags(
 func TestAccAWSS3MultiBucket_withTags(
 func TestAccAWSS3Bucket_namePrefix(
 func TestAccAWSS3Bucket_generatedName(
-func TestAccAWSS3Bucket_region(
 func TestAccAWSS3Bucket_acceleration(
 func TestAccAWSS3Bucket_RequestPayer(
 func TestAccAWSS3Bucket_Policy(
@@ -5842,7 +5839,6 @@ func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(
 func testAccAWSS3BucketConfig_withUpdatedTags(
 func testAccAWSS3MultiBucketConfigWithTags(
-func testAccAWSS3BucketConfigWithRegion(
 func testAccAWSS3BucketWebsiteConfig(
 func testAccAWSS3BucketWebsiteConfigWithError(
 func testAccAWSS3BucketWebsiteConfigWithRedirect(

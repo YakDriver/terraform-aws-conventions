@@ -41,8 +41,6 @@ func TestAccAwsAutoScalingGroupDataSource_basic(
 func testAccAutoScalingGroupDataResourceConfig(
 func TestAccAWSAvailabilityZones_basic(
 func TestAccAWSAvailabilityZones_AllAvailabilityZones(
-func TestAccAWSAvailabilityZones_BlacklistedNames(
-func TestAccAWSAvailabilityZones_BlacklistedZoneIds(
 func TestAccAWSAvailabilityZones_Filter(
 func TestAccAWSAvailabilityZones_ExcludeNames(
 func TestAccAWSAvailabilityZones_ExcludeZoneIds(
@@ -52,8 +50,6 @@ func testAccCheckAwsAvailabilityZonesExcluded(
 func testAccCheckAwsAvailabilityZoneState(
 func testAccCheckAwsAvailabilityZonesBuildAvailable(attrs map[string]string) (
 func testAccCheckAwsAvailabilityZonesConfigAllAvailabilityZones(
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedNames(
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedZoneIds(
 func testAccCheckAwsAvailabilityZonesConfigFilter(
 func testAccCheckAwsAvailabilityZonesConfigExcludeNames(
 func testAccCheckAwsAvailabilityZonesConfigExcludeZoneIds(
@@ -132,6 +128,7 @@ func testAccAWSDBInstanceDataSourceConfig_ec2Classic(
 func TestAccAWSDbSnapshotDataSource_basic(
 func testAccCheckAwsDbSnapshotDataSourceID(
 func testAccCheckAwsDbSnapshotDataSourceConfig(
+func TestAccDataSourceAwsDirectoryServiceDirectory_NonExistent(
 func TestAccDataSourceAwsDirectoryServiceDirectory_SimpleAD(
 func TestAccDataSourceAwsDirectoryServiceDirectory_MicrosoftAD(
 func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
@@ -266,6 +263,7 @@ func TestAccDataSourceAWSEFSAccessPoint_basic(
 func testAccDataSourceAWSEFSAccessPointConfig(
 func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
+func TestAccDataSourceAwsEfsFileSystem_NonExistent(
 func testAccDataSourceAwsEfsFileSystemCheck(
 func TestAccDataSourceAwsEfsMountTargetByMountTargetId(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
@@ -794,6 +792,8 @@ func TestAccDataSourceAwsWorkspaceBundle_bundleIDAndNameConflict(
 func testAccDataSourceAwsWorkspaceBundleConfig(
 func testAccDataSourceAwsWorkspaceBundleConfig_byOwnerName(
 func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(
+func TestAccDataSourceAwsWorkspacesDirectory_basic(
+func testAccDataSourceAwsWorkspacesDirectoryConfig(
 func testAccCheckAwsPolicyMatch(
 func testAccCheckDxVirtualInterfaceExists(
 func testAccCheckDxVirtualInterfaceDestroy(
@@ -908,6 +908,7 @@ func testAccAcmCertificateConfig_privateCert(
 func testAccAcmCertificateConfig_subjectAlternativeNames(
 func testAccAcmCertificateConfig_oneTag(
 func testAccAcmCertificateConfig_twoTags(
+func testAccAcmCertificateConfigPrivateKeyWithoutChain(
 func testAccAcmCertificateConfigPrivateKey(
 func testAccAcmCertificateConfig_disableCTLogging(
 func testAccCheckAcmCertificateDestroy(
@@ -7895,7 +7896,6 @@ func TestAccAWSS3Bucket_tagsWithSystemTags(
 func TestAccAWSS3MultiBucket_withTags(
 func TestAccAWSS3Bucket_namePrefix(
 func TestAccAWSS3Bucket_generatedName(
-func TestAccAWSS3Bucket_region(
 func TestAccAWSS3Bucket_acceleration(
 func TestAccAWSS3Bucket_RequestPayer(
 func TestAccAWSS3Bucket_Policy(
@@ -7957,7 +7957,6 @@ func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(
 func testAccAWSS3BucketConfig_withUpdatedTags(
 func testAccAWSS3MultiBucketConfigWithTags(
-func testAccAWSS3BucketConfigWithRegion(
 func testAccAWSS3BucketWebsiteConfig(
 func testAccAWSS3BucketWebsiteConfigWithError(
 func testAccAWSS3BucketWebsiteConfigWithRedirect(

@@ -16,6 +16,7 @@ func resourceAwsAcmCertificateDelete(
 func resourceAwsAcmCertificateImport(
 func expandAcmCertificateOptions(
 func flattenAcmCertificateOptions(
+func isChangeNormalizeCertRemoval(
 func init(
 func resourceAwsAcmCertificateValidation(
 func resourceAwsAcmCertificateValidationCreate(

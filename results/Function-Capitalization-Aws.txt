@@ -60,8 +60,6 @@ func testAccCheckAwsAvailabilityZonesExcluded(
 func testAccCheckAwsAvailabilityZoneState(
 func testAccCheckAwsAvailabilityZonesBuildAvailable(
 func testAccCheckAwsAvailabilityZonesConfigAllAvailabilityZones(
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedNames(
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedZoneIds(
 func testAccCheckAwsAvailabilityZonesConfigFilter(
 func testAccCheckAwsAvailabilityZonesConfigExcludeNames(
 func testAccCheckAwsAvailabilityZonesConfigExcludeZoneIds(
@@ -149,6 +147,7 @@ func testAccCheckAwsDbSnapshotDataSourceID(
 func testAccCheckAwsDbSnapshotDataSourceConfig(
 func dataSourceAwsDirectoryServiceDirectory(
 func dataSourceAwsDirectoryServiceDirectoryRead(
+func TestAccDataSourceAwsDirectoryServiceDirectory_NonExistent(
 func TestAccDataSourceAwsDirectoryServiceDirectory_SimpleAD(
 func TestAccDataSourceAwsDirectoryServiceDirectory_MicrosoftAD(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(
@@ -291,6 +290,7 @@ func dataSourceAwsEfsFileSystem(
 func dataSourceAwsEfsFileSystemRead(
 func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
+func TestAccDataSourceAwsEfsFileSystem_NonExistent(
 func testAccDataSourceAwsEfsFileSystemCheck(
 func dataSourceAwsEfsMountTarget(
 func dataSourceAwsEfsMountTargetRead(
@@ -794,7 +794,7 @@ func dataSourceAwsWafWebAcl(
 func dataSourceAwsWafWebAclRead(
 func TestAccDataSourceAwsWafWebAcl_Basic(
 func testAccDataSourceAwsWafWebAclConfig_Name(
-func dataSourceAwsWorkspaceBundle(
+func dataSourceAwsWorkspacesBundle(
 func dataSourceAwsWorkspaceBundleRead(
 func TestAccDataSourceAwsWorkspaceBundle_basic(
 func TestAccDataSourceAwsWorkspaceBundle_byOwnerName(
@@ -802,6 +802,10 @@ func TestAccDataSourceAwsWorkspaceBundle_bundleIDAndNameConflict(
 func testAccDataSourceAwsWorkspaceBundleConfig(
 func testAccDataSourceAwsWorkspaceBundleConfig_byOwnerName(
 func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(
+func dataSourceAwsWorkspacesDirectory(
+func dataSourceAwsWorkspacesDirectoryRead(
+func TestAccDataSourceAwsWorkspacesDirectory_basic(
+func testAccDataSourceAwsWorkspacesDirectoryConfig(
 func testAccCheckAwsPolicyMatch(
 func suppressEquivalentAwsPolicyDiffs(
 func suppressAwsDbEngineVersionDiffs(

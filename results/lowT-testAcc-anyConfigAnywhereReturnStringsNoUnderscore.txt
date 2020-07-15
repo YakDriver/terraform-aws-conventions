@@ -13,8 +13,6 @@ func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(rInt1, rInt2, rInt3 int) string {
 func testAccAutoScalingGroupDataResourceConfig(rName string) string {
 func testAccCheckAwsAvailabilityZonesConfigAllAvailabilityZones() string {
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedNames() string {
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedZoneIds() string {
 func testAccCheckAwsAvailabilityZonesConfigFilter() string {
 func testAccCheckAwsAvailabilityZonesConfigExcludeNames() string {
 func testAccCheckAwsAvailabilityZonesConfigExcludeZoneIds() string {
@@ -195,6 +193,7 @@ func testAccDataSourceAwsVpcConfigMultipleCidr(octet int) string {
 func testAccDataSourceAwsVpnGatewayUnattachedConfig(rInt int) string {
 func testAccDataSourceAwsVpnGatewayAttachedConfig(rInt int) string {
 func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
+func testAccDataSourceAwsWorkspacesDirectoryConfig(rName string) string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
@@ -217,7 +216,8 @@ func testAccAWSAccessAnalyzerAnalyzerConfigAnalyzerName(rName string) string {
 func testAccAWSAccessAnalyzerAnalyzerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAccessAnalyzerAnalyzerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAcmCertificateConfig(domainName, validationMethod string) string {
-func testAccAcmCertificateConfigPrivateKey(commonName string) string {
+func testAccAcmCertificateConfigPrivateKeyWithoutChain(commonName string) string {
+func testAccAcmCertificateConfigPrivateKey(certificate, privateKey, chain string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfigType(certificateAuthorityType string) string {
 func testAccAWSAMICopyConfigBase(rName string) string {
 func testAccAWSAMICopyConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -1520,7 +1520,6 @@ func testAccAWSS3BucketObjectConfigContentBase64(randInt int, contentBase64 stri
 func testAccAWSS3BucketPolicyConfig(bucketName string) string {
 func testAccAWSS3BucketPublicAccessBlockConfig(bucketName, blockPublicAcls, blockPublicPolicy, ignorePublicAcls, restrictPublicBuckets string) string {
 func testAccAWSS3MultiBucketConfigWithTags(randInt int) string {
-func testAccAWSS3BucketConfigWithRegion(bucketName string) string {
 func testAccAWSS3BucketWebsiteConfig(bucketName string) string {
 func testAccAWSS3BucketWebsiteConfigWithError(bucketName string) string {
 func testAccAWSS3BucketWebsiteConfigWithRedirect(bucketName string) string {

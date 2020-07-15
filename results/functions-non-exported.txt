@@ -196,8 +196,6 @@ func testAccCheckAwsAvailabilityZonesExcluded(
 func testAccCheckAwsAvailabilityZoneState(
 func testAccCheckAwsAvailabilityZonesBuildAvailable(
 func testAccCheckAwsAvailabilityZonesConfigAllAvailabilityZones(
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedNames(
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedZoneIds(
 func testAccCheckAwsAvailabilityZonesConfigFilter(
 func testAccCheckAwsAvailabilityZonesConfigExcludeNames(
 func testAccCheckAwsAvailabilityZonesConfigExcludeZoneIds(
@@ -947,11 +945,14 @@ func testAccDataSourceAwsWafv2WebACL_NonExistent(
 func dataSourceAwsWafWebAcl(
 func dataSourceAwsWafWebAclRead(
 func testAccDataSourceAwsWafWebAclConfig_Name(
-func dataSourceAwsWorkspaceBundle(
+func dataSourceAwsWorkspacesBundle(
 func dataSourceAwsWorkspaceBundleRead(
 func testAccDataSourceAwsWorkspaceBundleConfig(
 func testAccDataSourceAwsWorkspaceBundleConfig_byOwnerName(
 func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(
+func dataSourceAwsWorkspacesDirectory(
+func dataSourceAwsWorkspacesDirectoryRead(
+func testAccDataSourceAwsWorkspacesDirectoryConfig(
 func dataSyncParseLocationURI(
 func expandDataSyncEc2Config(
 func expandDataSyncSmbMountOptions(
@@ -1136,6 +1137,7 @@ func resourceAwsAcmCertificateDelete(
 func resourceAwsAcmCertificateImport(
 func expandAcmCertificateOptions(
 func flattenAcmCertificateOptions(
+func isChangeNormalizeCertRemoval(
 func init(
 func testSweepAcmCertificates(
 func testAccAwsAcmCertificateDomainFromEnv(
@@ -1145,6 +1147,7 @@ func testAccAcmCertificateConfig_privateCert(
 func testAccAcmCertificateConfig_subjectAlternativeNames(
 func testAccAcmCertificateConfig_oneTag(
 func testAccAcmCertificateConfig_twoTags(
+func testAccAcmCertificateConfigPrivateKeyWithoutChain(
 func testAccAcmCertificateConfigPrivateKey(
 func testAccAcmCertificateConfig_disableCTLogging(
 func testAccCheckAcmCertificateDestroy(
@@ -9531,7 +9534,6 @@ func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(
 func testAccAWSS3BucketConfig_withUpdatedTags(
 func testAccAWSS3MultiBucketConfigWithTags(
-func testAccAWSS3BucketConfigWithRegion(
 func testAccAWSS3BucketWebsiteConfig(
 func testAccAWSS3BucketWebsiteConfigWithError(
 func testAccAWSS3BucketWebsiteConfigWithRedirect(

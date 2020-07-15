@@ -24,8 +24,6 @@ func testAccCheckAwsAvailabilityZonesExcluded(
 func testAccCheckAwsAvailabilityZoneState(
 func testAccCheckAwsAvailabilityZonesBuildAvailable(attrs map[string]string) (
 func testAccCheckAwsAvailabilityZonesConfigAllAvailabilityZones(
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedNames(
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedZoneIds(
 func testAccCheckAwsAvailabilityZonesConfigFilter(
 func testAccCheckAwsAvailabilityZonesConfigExcludeNames(
 func testAccCheckAwsAvailabilityZonesConfigExcludeZoneIds(
@@ -396,6 +394,7 @@ func testAccDataSourceAwsWafWebAclConfig_Name(
 func testAccDataSourceAwsWorkspaceBundleConfig(
 func testAccDataSourceAwsWorkspaceBundleConfig_byOwnerName(
 func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(
+func testAccDataSourceAwsWorkspacesDirectoryConfig(
 func testAccCheckAwsPolicyMatch(
 func testAccCheckDxVirtualInterfaceExists(
 func testAccCheckDxVirtualInterfaceDestroy(
@@ -481,6 +480,7 @@ func testAccAcmCertificateConfig_privateCert(
 func testAccAcmCertificateConfig_subjectAlternativeNames(
 func testAccAcmCertificateConfig_oneTag(
 func testAccAcmCertificateConfig_twoTags(
+func testAccAcmCertificateConfigPrivateKeyWithoutChain(
 func testAccAcmCertificateConfigPrivateKey(
 func testAccAcmCertificateConfig_disableCTLogging(
 func testAccCheckAcmCertificateDestroy(
@@ -4820,7 +4820,6 @@ func testAccAWSS3BucketConfig_withNoTags(
 func testAccAWSS3BucketConfig_withTags(
 func testAccAWSS3BucketConfig_withUpdatedTags(
 func testAccAWSS3MultiBucketConfigWithTags(
-func testAccAWSS3BucketConfigWithRegion(
 func testAccAWSS3BucketWebsiteConfig(
 func testAccAWSS3BucketWebsiteConfigWithError(
 func testAccAWSS3BucketWebsiteConfigWithRedirect(

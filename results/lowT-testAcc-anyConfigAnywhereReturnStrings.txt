@@ -14,8 +14,6 @@ func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(rInt1, rInt2, rInt3 int) string {
 func testAccAutoScalingGroupDataResourceConfig(rName string) string {
 func testAccCheckAwsAvailabilityZonesConfigAllAvailabilityZones() string {
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedNames() string {
-func testAccCheckAwsAvailabilityZonesConfigBlacklistedZoneIds() string {
 func testAccCheckAwsAvailabilityZonesConfigFilter() string {
 func testAccCheckAwsAvailabilityZonesConfigExcludeNames() string {
 func testAccCheckAwsAvailabilityZonesConfigExcludeZoneIds() string {
@@ -39,7 +37,7 @@ func testAccCheckAWSCloudwatchLogGroupDataSourceConfigRetention(rName string) st
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_basic(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_notFound(rName string) string {
-func testAccDataSourceAwsCurReportDefinitionConfig_basic(reportName string, bucketName string, bucketRegion string) string {
+func testAccDataSourceAwsCurReportDefinitionConfig_basic(reportName string, bucketName string) string {
 func testAccAWSCustomerGatewayDataSourceConfigFilter(asn, hostOctet int) string {
 func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {
 func testAccCheckAwsDbClusterSnapshotDataSourceConfig_DbClusterSnapshotIdentifier(rName string) string {
@@ -308,6 +306,7 @@ func testAccDataSourceAwsWafWebAclConfig_Name(name string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig_byOwnerName(owner, name string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(bundleID, owner, name string) string {
+func testAccDataSourceAwsWorkspacesDirectoryConfig(rName string) string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
@@ -334,7 +333,8 @@ func testAccAcmCertificateConfig_privateCert(rName string) string {
 func testAccAcmCertificateConfig_subjectAlternativeNames(domainName, subjectAlternativeNames, validationMethod string) string {
 func testAccAcmCertificateConfig_oneTag(domainName, validationMethod, tag1Key, tag1Value string) string {
 func testAccAcmCertificateConfig_twoTags(domainName, validationMethod, tag1Key, tag1Value, tag2Key, tag2Value string) string {
-func testAccAcmCertificateConfigPrivateKey(commonName string) string {
+func testAccAcmCertificateConfigPrivateKeyWithoutChain(commonName string) string {
+func testAccAcmCertificateConfigPrivateKey(certificate, privateKey, chain string) string {
 func testAccAcmCertificateConfig_disableCTLogging(domainName, validationMethod string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_Enabled(enabled bool) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_CustomCname(rName, customCname string) string {
@@ -1108,7 +1108,7 @@ func testAccConfigOrganizationManagedRuleConfigResourceTypesScope2(rName string)
 func testAccConfigOrganizationManagedRuleConfigRuleIdentifier(rName, ruleIdentifier string) string {
 func testAccConfigOrganizationManagedRuleConfigTagKeyScope(rName, tagKeyScope string) string {
 func testAccConfigOrganizationManagedRuleConfigTagValueScope(rName, tagValueScope string) string {
-func testAccAwsCurReportDefinitionConfig_basic(reportName string, bucketName string, bucketRegion string) string {
+func testAccAwsCurReportDefinitionConfig_basic(reportName string, bucketName string) string {
 func testAccCustomerGatewayConfig(rBgpAsn int) string {
 func testAccCustomerGatewayConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
 func testAccCustomerGatewayConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -2824,7 +2824,6 @@ func testAccAWSS3BucketConfig_withNoTags(bucketName string) string {
 func testAccAWSS3BucketConfig_withTags(bucketName string) string {
 func testAccAWSS3BucketConfig_withUpdatedTags(bucketName string) string {
 func testAccAWSS3MultiBucketConfigWithTags(randInt int) string {
-func testAccAWSS3BucketConfigWithRegion(bucketName string) string {
 func testAccAWSS3BucketWebsiteConfig(bucketName string) string {
 func testAccAWSS3BucketWebsiteConfigWithError(bucketName string) string {
 func testAccAWSS3BucketWebsiteConfigWithRedirect(bucketName string) string {

@@ -2,6 +2,7 @@ func cleanUpSubjectAlternativeNames(
 func convertValidationOptions(
 func expandAcmCertificateOptions(
 func flattenAcmCertificateOptions(
+func isChangeNormalizeCertRemoval(
 func init(
 func acmpcaCertificateAuthorityRefreshFunc(
 func expandAcmpcaASN1Subject(
