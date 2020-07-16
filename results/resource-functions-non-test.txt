@@ -2624,6 +2624,7 @@ func userDataHashSum(
 func getAwsInstanceVolumeIds(
 func getCreditSpecifications(
 func expandEc2InstanceMetadataOptions(
+func expandSecondaryPrivateIPAddresses(
 func flattenEc2InstanceMetadataOptions(
 func resourceAwsInstanceFindByID(
 func resourceAwsInstanceFind(

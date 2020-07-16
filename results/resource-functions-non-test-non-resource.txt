@@ -1051,6 +1051,7 @@ func userDataHashSum(
 func getAwsInstanceVolumeIds(
 func getCreditSpecifications(
 func expandEc2InstanceMetadataOptions(
+func expandSecondaryPrivateIPAddresses(
 func flattenEc2InstanceMetadataOptions(
 func migrateAwsInstanceStateV0toV1(
 func readV0BlockDevices(

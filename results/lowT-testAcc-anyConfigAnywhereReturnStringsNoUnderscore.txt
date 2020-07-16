@@ -1081,6 +1081,8 @@ func testAccInstanceConfigAddSecondaryNetworkInterfaceBefore(rName string) strin
 func testAccInstanceConfigAddSecondaryNetworkInterfaceAfter(rName string) string {
 func testAccInstanceConfigAddSecurityGroupBefore(rName string) string {
 func testAccInstanceConfigAddSecurityGroupAfter(rName string) string {
+func testAccInstanceConfigPublicAndPrivateSecondaryIPs(rName string, isPublic bool) string {
+func testAccInstanceConfigPrivateIPAndSecondaryIPs(rName, privateIP, secondaryIPs string) string {
 func testAccLatestAmazonLinuxHvmEbsAmiConfig() string {
 func testAccLatestAmazonLinuxPvEbsAmiConfig() string {
 func testAccLatestWindowsServer2016CoreAmiConfig() string {

@@ -528,6 +528,7 @@ func testAccInstancesDataSourceConfig_tags(
 func testAccInstancesDataSourceConfig_instance_state_names(
 func testAccInstanceDataSourceConfig_Tags(
 func testAccInstanceDataSourceConfig_privateIP(
+func testAccInstanceDataSourceConfig_secondaryPrivateIPs(
 func testAccInstanceDataSourceConfig_keyPair(
 func testAccInstanceDataSourceConfig_VPC(
 func testAccInstanceDataSourceConfig_PlacementGroup(
@@ -1026,9 +1027,6 @@ func waitForFsxFileSystemDeletion(
 func iamPolicyDecodeConfigStringList(
 func resourceAwsCloudFrontDistributionImport(
 func resourceAwsDbEventSubscriptionImport(
-func resourceAwsSecurityGroupImportState(
-func resourceAwsSecurityGroupImportStatePerm(
-func resourceAwsSecurityGroupImportStatePermPair(
 func expandMediaConvertReservationPlanSettings(
 func flattenMediaConvertReservationPlan(
 func expandNetworkAclEntries(
@@ -6792,6 +6790,7 @@ func userDataHashSum(
 func getAwsInstanceVolumeIds(
 func getCreditSpecifications(
 func expandEc2InstanceMetadataOptions(
+func expandSecondaryPrivateIPAddresses(
 func flattenEc2InstanceMetadataOptions(
 func resourceAwsInstanceFindByID(
 func resourceAwsInstanceFind(
@@ -6848,6 +6847,8 @@ func testAccInstanceConfigAddSecondaryNetworkInterfaceBefore(
 func testAccInstanceConfigAddSecondaryNetworkInterfaceAfter(
 func testAccInstanceConfigAddSecurityGroupBefore(
 func testAccInstanceConfigAddSecurityGroupAfter(
+func testAccInstanceConfigPublicAndPrivateSecondaryIPs(
+func testAccInstanceConfigPrivateIPAndSecondaryIPs(
 func testAccInstanceConfig_associatePublic_defaultPrivate(
 func testAccInstanceConfig_associatePublic_defaultPublic(
 func testAccInstanceConfig_associatePublic_explicitPublic(
@@ -7353,6 +7354,7 @@ func testAccCheckAwsLambdaAliasAttributes(
 func testAccCheckAwsLambdaAliasInvokeArn(
 func testAccCheckAwsLambdaAliasRoutingConfigExists(
 func testAccCheckAwsLambdaAliasRoutingConfigDoesNotExist(
+func testAccAwsLambdaAliasImportStateIdFunc(
 func testAccAwsLambdaAliasBaseConfig(
 func testAccAwsLambdaAliasConfig(
 func testAccAwsLambdaAliasConfigUsingFunctionName(
@@ -7618,6 +7620,7 @@ func testAccAWSLaunchTemplateConfig_basic(
 func testAccAWSLaunchTemplateConfig_ipv6_count(
 func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS(
 func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS_DeleteOnTermination(
+func testAccAWSLaunchTemplateConfig_NetworkInterfaces_DeleteOnTermination(
 func testAccAWSLaunchTemplateConfig_EbsOptimized(
 func testAccAWSLaunchTemplateConfigElasticInferenceAccelerator(
 func testAccAWSLaunchTemplateConfig_data(
@@ -9783,7 +9786,6 @@ func testAccAWSSecurityGroupRuleInvalidIPv6CIDR(
 func init(
 func testSweepSecurityGroups(
 func calcSecurityGroupChecksum(
-func testAccAWSSecurityGroupImportStateCheckFunc(
 func testAccAWSSecurityGroupCheckVPCIDExists(
 func cycleIpPermForGroup(
 func testAddRuleCycle(
@@ -11604,7 +11606,7 @@ func workspacePropertyUpdate(
 func expandWorkspaceProperties(
 func flattenWorkspaceProperties(
 func init(
-func testSweepWorkspaces(
+func testSweepWorkspacesWorkspace(
 func testAccCheckAwsWorkspacesWorkspaceDestroy(
 func testAccCheckAwsWorkspacesWorkspaceExists(
 func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(

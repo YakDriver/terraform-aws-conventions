@@ -134,6 +134,7 @@ func testAccInstancesDataSourceConfig_tags(rInt int) string {
 func testAccInstancesDataSourceConfig_instance_state_names(rInt int) string {
 func testAccInstanceDataSourceConfig_Tags(rInt int) string {
 func testAccInstanceDataSourceConfig_privateIP(rName string) string {
+func testAccInstanceDataSourceConfig_secondaryPrivateIPs(rName string) string {
 func testAccInstanceDataSourceConfig_keyPair(rName string) string {
 func testAccInstanceDataSourceConfig_VPC(rName string) string {
 func testAccInstanceDataSourceConfig_PlacementGroup(rName string) string {
@@ -2016,6 +2017,8 @@ func testAccInstanceConfigAddSecondaryNetworkInterfaceBefore(rName string) strin
 func testAccInstanceConfigAddSecondaryNetworkInterfaceAfter(rName string) string {
 func testAccInstanceConfigAddSecurityGroupBefore(rName string) string {
 func testAccInstanceConfigAddSecurityGroupAfter(rName string) string {
+func testAccInstanceConfigPublicAndPrivateSecondaryIPs(rName string, isPublic bool) string {
+func testAccInstanceConfigPrivateIPAndSecondaryIPs(rName, privateIP, secondaryIPs string) string {
 func testAccInstanceConfig_associatePublic_defaultPrivate(rName string) string {
 func testAccInstanceConfig_associatePublic_defaultPublic(rName string) string {
 func testAccInstanceConfig_associatePublic_explicitPublic(rName string) string {
@@ -2218,6 +2221,7 @@ func testAccAWSLaunchTemplateConfig_basic(rName string) string {
 func testAccAWSLaunchTemplateConfig_ipv6_count(rName string) string {
 func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS(rName string) string {
 func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS_DeleteOnTermination(rName string, deleteOnTermination bool) string {
+func testAccAWSLaunchTemplateConfig_NetworkInterfaces_DeleteOnTermination(rName string, deleteOnTermination string) string {
 func testAccAWSLaunchTemplateConfig_EbsOptimized(rName, ebsOptimized string) string {
 func testAccAWSLaunchTemplateConfigElasticInferenceAccelerator(rName, elasticInferenceAcceleratorType string) string {
 func testAccAWSLaunchTemplateConfig_data(rName string) string {

@@ -200,6 +200,7 @@ func getKmsGrantById(
 func findKmsGrantByIdWithRetry(
 func findKmsGrantById(
 func decodeKmsGrantId(
+func testAccAwsLambdaAliasImportStateIdFunc(
 func resourceAwsLambdaFunctionEventInvokeConfigParseId(
 func resourceAwsLambdaLayerVersionParseId(
 func findLambdaPolicyStatementById(

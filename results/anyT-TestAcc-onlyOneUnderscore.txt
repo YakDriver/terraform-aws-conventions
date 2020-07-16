@@ -199,6 +199,7 @@ func TestAccAWSInstanceDataSource_gp2IopsDevice(
 func TestAccAWSInstanceDataSource_blockDevices(
 func TestAccAWSInstanceDataSource_rootInstanceStore(
 func TestAccAWSInstanceDataSource_privateIP(
+func TestAccAWSInstanceDataSource_secondaryPrivateIPs(
 func TestAccAWSInstanceDataSource_keyPair(
 func TestAccAWSInstanceDataSource_VPC(
 func TestAccAWSInstanceDataSource_PlacementGroup(
@@ -209,6 +210,7 @@ func TestAccAWSInstanceDataSource_creditSpecification(
 func TestAccAWSInstanceDataSource_metadataOptions(
 func testAccInstanceDataSourceConfig_Tags(
 func testAccInstanceDataSourceConfig_privateIP(
+func testAccInstanceDataSourceConfig_secondaryPrivateIPs(
 func testAccInstanceDataSourceConfig_keyPair(
 func testAccInstanceDataSourceConfig_VPC(
 func testAccInstanceDataSourceConfig_PlacementGroup(

@@ -22,6 +22,7 @@ func testAccAwsIAMRoleConfig_tags(
 func testAccInstancesDataSourceConfig_tags(
 func testAccInstancesDataSourceConfig_instance_state_names(
 func testAccInstanceDataSourceConfig_privateIP(
+func testAccInstanceDataSourceConfig_secondaryPrivateIPs(
 func testAccInstanceDataSourceConfig_keyPair(
 func testAccInstanceDataSourceConfig_getPasswordData(
 func testAccInstanceDataSourceConfig_creditSpecification(

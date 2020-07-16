@@ -817,9 +817,6 @@ func TestAwsEcsContainerDefinitionsAreEquivalent_negative(
 func TestAwsEcsContainerDefinitionsAreEquivalent_missingEnvironmentName(
 func resourceAwsCloudFrontDistributionImport(
 func resourceAwsDbEventSubscriptionImport(
-func resourceAwsSecurityGroupImportState(
-func resourceAwsSecurityGroupImportStatePerm(
-func resourceAwsSecurityGroupImportStatePermPair(
 func testAccAwsProviderAccountID(
 func testAccAwsRegionProviderFunc(
 func TestAccAWSProvider_Region_AwsChina(
@@ -3021,6 +3018,7 @@ func testAccCheckAwsLambdaAliasAttributes(
 func testAccCheckAwsLambdaAliasInvokeArn(
 func testAccCheckAwsLambdaAliasRoutingConfigExists(
 func testAccCheckAwsLambdaAliasRoutingConfigDoesNotExist(
+func testAccAwsLambdaAliasImportStateIdFunc(
 func testAccAwsLambdaAliasBaseConfig(
 func testAccAwsLambdaAliasConfig(
 func testAccAwsLambdaAliasConfigUsingFunctionName(
