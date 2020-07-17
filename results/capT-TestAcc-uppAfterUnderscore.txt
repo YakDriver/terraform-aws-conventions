@@ -88,6 +88,7 @@ func TestAccAWSIotEndpointDataSource_EndpointType_IOTJobs(
 func TestAccAWSIPRanges_Url(
 func TestAccDataSourceAwsKmsAlias_AwsService(
 func TestAccDataSourceAwsKmsAlias_CMK(
+func TestAccAWSLaunchTemplateDataSource_NonExistent(
 func TestAccDataSourceAWSLBListener_BackwardsCompatibility(
 func TestAccAWSMskClusterDataSource_Name(
 func TestAccAWSMskConfigurationDataSource_Name(

@@ -312,6 +312,7 @@ func TestAccAWSEcrDataSource_ecrImage(
 func testAccCheckAwsEcrImageDataSourceConfig(
 func testCheckTagInImageTags(
 func TestAccAWSEcrDataSource_ecrRepository(
+func TestAccAWSEcrDataSource_nonExistent(
 func testAccCheckAwsEcrRepositoryDataSourceConfig(
 func TestAccAWSEcsDataSource_ecsCluster(
 func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
@@ -516,6 +517,7 @@ func TestAccAWSLaunchTemplateDataSource_filter_basic(
 func TestAccAWSLaunchTemplateDataSource_filter_tags(
 func TestAccAWSLaunchTemplateDataSource_metadataOptions(
 func TestAccAWSLaunchTemplateDataSource_associatePublicIPAddress(
+func TestAccAWSLaunchTemplateDataSource_NonExistent(
 func testAccAWSLaunchTemplateDataSourceConfig_Basic(
 func testAccAWSLaunchTemplateDataSourceConfigBasicFilter(
 func testAccAWSLaunchTemplateDataSourceConfigFilterTags(

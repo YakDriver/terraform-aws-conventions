@@ -105,6 +105,7 @@ func TestAccAWSIPRanges_Url(
 func TestAccDataSourceAwsKmsAlias_AwsService(
 func TestAccDataSourceAwsKmsAlias_CMK(
 func testAccDataSourceAwsKmsAlias_CMK(
+func TestAccAWSLaunchTemplateDataSource_NonExistent(
 func testAccAWSLaunchTemplateDataSourceConfig_Basic(
 func TestAccDataSourceAWSLBListener_BackwardsCompatibility(
 func TestAccAWSMskClusterDataSource_Name(

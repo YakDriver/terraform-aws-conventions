@@ -59,6 +59,7 @@ func TestAccAWSEc2TransitGatewayVpnAttachmentDataSource_filter(
 func TestAccAWSEcrAuthorizationTokenDataSource_basic(
 func TestAccAWSEcrDataSource_ecrImage(
 func TestAccAWSEcrDataSource_ecrRepository(
+func TestAccAWSEcrDataSource_nonExistent(
 func TestAccAWSEcsDataSource_ecsCluster(
 func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
 func TestAccAWSEcsDataSource_ecsContainerDefinition(
