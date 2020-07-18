@@ -5,16 +5,16 @@ Analysis Tallies
 3181	All Functions:Non-AWS Multicaps
 7168	All Functions:Uppercase AWS
 4852	All Functions:Mixed case AWS
-5813	All Functions:Any underscores
+5862	All Functions:Any underscores
 1267	All Functions:Multiple underscores
-3617	All Functions:Lowercase after first underscore
-2195	All Functions:Uppercase after first underscore
+3709	All Functions:Lowercase after first underscore
+2152	All Functions:Uppercase after first underscore
 4157	Capital-T Test Functions:All
 3812	Capital-T Test Functions:TestAcc
 3381	Capital-T Test Functions:TestAccAWS
 209	Capital-T Test Functions:TestAccAws
-2329	Capital-T Test Functions:TestAcc and lowercase after first underscore
-1433	Capital-T Test Functions:TestAcc and uppercase after first underscore
+2421	Capital-T Test Functions:TestAcc and lowercase after first underscore
+1390	Capital-T Test Functions:TestAcc and uppercase after first underscore
 6136	Lowercase-t test Functions:All
 5911	Lowercase-t test Functions:testAcc
 2585	Lowercase-t test Functions:testAccAWS
@@ -27,9 +27,9 @@ Analysis Tallies
 1914	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
 10293	Any case-t Test Functions:All
 9723	Any case-t Test Functions:TestAcc
-3477	Any case-t Test Functions:TestAcc with lowercase after first underscore
-2194	Any case-t Test Functions:TestAcc with uppercase after first underscore
-4444	Any case-t Test Functions:TestAcc with only one underscore
+3569	Any case-t Test Functions:TestAcc with lowercase after first underscore
+2151	Any case-t Test Functions:TestAcc with uppercase after first underscore
+4493	Any case-t Test Functions:TestAcc with only one underscore
 1562	Any case-t Test Functions:TestAcc with camel case after first underscore
 1228	Any case-t Test Functions:TestAcc with multiple underscores
 515	Test Constants:All
@@ -106,7 +106,7 @@ Analysis Tallies
 193	Function Capitalization:Iam
 224	Function Capitalization:IAM
 26	Function Capitalization:id
-355	Function Capitalization:Id
+354	Function Capitalization:Id
 189	Function Capitalization:ID
 4	Function Capitalization:iot
 142	Function Capitalization:Iot

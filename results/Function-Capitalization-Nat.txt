@@ -1,6 +1,6 @@
 func dataSourceAwsNatGateway(
 func dataSourceAwsNatGatewayRead(
-func TestAccDataSourceAwsNatGateway(
+func TestAccDataSourceAwsNatGateway_basic(
 func testAccDataSourceAwsNatGatewayConfig(
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterErrorConfig(
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterConfig(

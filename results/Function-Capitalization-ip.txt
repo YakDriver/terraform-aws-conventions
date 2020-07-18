@@ -177,7 +177,7 @@ func TestAccAWSCodePipeline_tags(
 func TestAccAWSCodePipeline_multiregion_basic(
 func TestAccAWSCodePipeline_multiregion_Update(
 func TestAccAWSCodePipeline_multiregion_ConvertSingleRegion(
-func TestAccAWSCodePipelineWithNamespace(
+func TestAccAWSCodePipeline_WithNamespace(
 func testAccCheckAWSCodePipelineExists(
 func testAccCheckAWSCodePipelineDestroy(
 func testAccPreCheckAWSCodePipeline(
@@ -766,7 +766,7 @@ func resourceAwsSpotDataFeedSubscription(
 func resourceAwsSpotDataFeedSubscriptionCreate(
 func resourceAwsSpotDataFeedSubscriptionRead(
 func resourceAwsSpotDataFeedSubscriptionDelete(
-func TestAccAWSSpotDatafeedSubscription(
+func TestAccAWSSpotDatafeedSubscription_serial(
 func testAccAWSSpotDatafeedSubscription_importBasic(
 func testAccAWSSpotDatafeedSubscription_basic(
 func testAccCheckAWSSpotDatafeedSubscriptionDisappears(

@@ -25,7 +25,7 @@ func TestAccDataSourceAwsSecretsManagerSecretVersion_VersionID(
 func testAccDataSourceAwsSecretsManagerSecretVersionConfig_VersionID(
 func dataSourceAwsSubnetIDs(
 func dataSourceAwsSubnetIDsRead(
-func TestAccDataSourceAwsSubnetIDs(
+func TestAccDataSourceAwsSubnetIDs_basic(
 func TestAccDataSourceAwsSubnetIDs_filter(
 func testAccDataSourceAwsSubnetIDsConfigWithDataSource(
 func testAccDataSourceAwsSubnetIDsConfig(

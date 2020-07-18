@@ -1,10 +1,10 @@
 func dataSourceAwsApiGatewayApiKey(
 func dataSourceAwsApiGatewayApiKeyRead(
-func TestAccDataSourceAwsApiGatewayApiKey(
+func TestAccDataSourceAwsApiGatewayApiKey_basic(
 func testAccDataSourceAwsApiGatewayApiKeyConfig(
 func dataSourceAwsApiGatewayResource(
 func dataSourceAwsApiGatewayResourceRead(
-func TestAccDataSourceAwsApiGatewayResource(
+func TestAccDataSourceAwsApiGatewayResource_basic(
 func testAccDataSourceAwsApiGatewayResourceConfig(
 func dataSourceAwsApiGatewayRestApi(
 func dataSourceAwsApiGatewayRestApiRead(
@@ -13,7 +13,7 @@ func TestAccDataSourceAwsApiGatewayRestApi_EndpointConfiguration_VpcEndpointIds(
 func testAccDataSourceAwsApiGatewayRestApiConfigName(
 func dataSourceAwsApiGatewayVpcLink(
 func dataSourceAwsApiGatewayVpcLinkRead(
-func TestAccDataSourceAwsApiGatewayVpcLink(
+func TestAccDataSourceAwsApiGatewayVpcLink_basic(
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(
 func resourceAwsApiGatewayAccount(
 func resourceAwsApiGatewayAccountRead(
@@ -189,7 +189,7 @@ func resourceAwsApiGatewayV2ApiMappingRead(
 func resourceAwsApiGatewayV2ApiMappingUpdate(
 func resourceAwsApiGatewayV2ApiMappingDelete(
 func resourceAwsApiGatewayV2ApiMappingImport(
-func TestAccAWSAPIGatewayV2ApiMapping(
+func TestAccAWSAPIGatewayV2ApiMapping_basic(
 func testAccAWSAPIGatewayV2ApiMapping_createCertificate(
 func testAccAWSAPIGatewayV2ApiMapping_basic(
 func testAccAWSAPIGatewayV2ApiMapping_disappears(

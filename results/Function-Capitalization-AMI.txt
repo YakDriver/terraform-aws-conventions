@@ -23,7 +23,7 @@ func testAccAWSAMIFromInstanceConfig(
 func testAccAWSAMIFromInstanceConfigTags1(
 func testAccAWSAMIFromInstanceConfigTags2(
 func AMIStateRefreshFunc(
-func TestAccAWSAMILaunchPermission_Basic(
+func TestAccAWSAMILaunchPermission_basic(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission_Public(
 func TestAccAWSAMILaunchPermission_Disappears_AMI(

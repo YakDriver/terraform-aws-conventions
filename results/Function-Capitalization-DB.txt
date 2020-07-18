@@ -2,7 +2,7 @@ func testAccAWSDBInstanceDataSourceConfig(
 func testAccAWSDBInstanceDataSourceConfig_ec2Classic(
 func dataSourceAwsQLDBLedger(
 func dataSourceAwsQLDBLedgerRead(
-func TestAccDataSourceAwsQLDBLedger(
+func TestAccDataSourceAwsQLDBLedger_basic(
 func testAccDataSourceAwsQLDBLedgerConfig(
 func testAccAWSAppautoscalingPolicyDynamoDB(
 func testAccAWSAppautoscalingPolicyDynamoDBIndex(

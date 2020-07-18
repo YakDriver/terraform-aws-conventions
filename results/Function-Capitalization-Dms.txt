@@ -3,7 +3,7 @@ func resourceAwsDmsCertificateCreate(
 func resourceAwsDmsCertificateRead(
 func resourceAwsDmsCertificateDelete(
 func resourceAwsDmsCertificateSetState(
-func TestAccAWSDmsCertificateBasic(
+func TestAccAWSDmsCertificate_basic(
 func checkDmsCertificateExists(
 func checkDmsCertificateExistsWithProviders(
 func resourceAwsDmsEndpoint(
@@ -17,7 +17,7 @@ func flattenDmsKafkaSettings(
 func flattenDmsKinesisSettings(
 func flattenDmsMongoDbSettings(
 func flattenDmsS3Settings(
-func TestAccAwsDmsEndpoint_Basic(
+func TestAccAwsDmsEndpoint_basic(
 func TestAccAwsDmsEndpoint_S3(
 func TestAccAwsDmsEndpoint_DynamoDb(
 func TestAccAwsDmsEndpoint_Elasticsearch(
@@ -56,7 +56,7 @@ func resourceAwsDmsReplicationInstanceUpdate(
 func resourceAwsDmsReplicationInstanceDelete(
 func resourceAwsDmsReplicationInstanceStateRefreshFunc(
 func testSweepDmsReplicationInstances(
-func TestAccAWSDmsReplicationInstance_Basic(
+func TestAccAWSDmsReplicationInstance_basic(
 func TestAccAWSDmsReplicationInstance_AllocatedStorage(
 func TestAccAWSDmsReplicationInstance_AutoMinorVersionUpgrade(
 func TestAccAWSDmsReplicationInstance_AvailabilityZone(
@@ -91,7 +91,7 @@ func resourceAwsDmsReplicationSubnetGroupRead(
 func resourceAwsDmsReplicationSubnetGroupUpdate(
 func resourceAwsDmsReplicationSubnetGroupDelete(
 func resourceAwsDmsReplicationSubnetGroupSetState(
-func TestAccAWSDmsReplicationSubnetGroupBasic(
+func TestAccAWSDmsReplicationSubnetGroup_basic(
 func checkDmsReplicationSubnetGroupExists(
 func checkDmsReplicationSubnetGroupExistsWithProviders(
 func resourceAwsDmsReplicationTask(
@@ -101,7 +101,7 @@ func resourceAwsDmsReplicationTaskUpdate(
 func resourceAwsDmsReplicationTaskDelete(
 func resourceAwsDmsReplicationTaskSetState(
 func resourceAwsDmsReplicationTaskStateRefreshFunc(
-func TestAccAWSDmsReplicationTaskBasic(
+func TestAccAWSDmsReplicationTask_basic(
 func checkDmsReplicationTaskExists(
 func validateDmsCertificateId(
 func validateDmsEndpointId(

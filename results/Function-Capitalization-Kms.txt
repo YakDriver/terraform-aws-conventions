@@ -134,7 +134,7 @@ func expandKmsGrantConstraints(
 func resourceKmsGrantConstraintsHash(
 func flattenKmsGrantConstraints(
 func decodeKmsGrantId(
-func TestAccAWSKmsGrant_Basic(
+func TestAccAWSKmsGrant_basic(
 func TestAccAWSKmsGrant_withConstraints(
 func TestAccAWSKmsGrant_withRetiringPrincipal(
 func TestAccAWSKmsGrant_bare(

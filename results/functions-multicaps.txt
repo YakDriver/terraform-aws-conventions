@@ -148,7 +148,7 @@ func TestAccAWSDataElasticacheCluster_basic(
 func testAccAWSElastiCacheClusterConfigWithDataSource(
 func TestAccAWSDataSourceElasticBeanstalkHostedZone_basic(
 func TestAccAWSDataSourceElasticBeanstalkHostedZone_Region(
-func TestAccAWSElasticBeanstalkSolutionStackDataSource(
+func TestAccAWSElasticBeanstalkSolutionStackDataSource_basic(
 func testAccCheckAwsElasticBeanstalkSolutionStackDataSourceID(
 func TestAccAWSDataElasticsearchDomain_basic(
 func TestAccAWSDataElasticsearchDomain_advanced(
@@ -245,7 +245,7 @@ func TestAccAWSIPRanges_basic(
 func TestAccAWSIPRanges_Url(
 func testAccAWSIPRangesCheckAttributes(
 func testAccAWSIPRangesCheckCidrBlocksAttribute(
-func TestAccAWSKinesisStreamDataSource(
+func TestAccAWSKinesisStreamDataSource_basic(
 func TestAccDataSourceAwsKmsAlias_CMK(
 func testAccDataSourceAwsKmsAlias_CMK(
 func TestAccAWSKmsSecretsDataSource_basic(
@@ -294,11 +294,11 @@ func testAccDataSourceAWSLBListenerConfigBasic(
 func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(
 func testAccDataSourceAWSLBListenerConfigHTTPS(
 func TestAccDataSourceAWSALBTargetGroup_basic(
-func TestAccDataSourceAWSLBTargetGroupBackwardsCompatibility(
+func TestAccDataSourceAWSLBTargetGroup_BackwardsCompatibility(
 func testAccDataSourceAWSLBTargetGroupConfigBasic(
 func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(
 func TestAccDataSourceAWSLB_basic(
-func TestAccDataSourceAWSLBBackwardsCompatibility(
+func TestAccDataSourceAWSLB_BackwardsCompatibility(
 func testAccDataSourceAWSLBConfigBasic(
 func testAccDataSourceAWSLBConfigBackardsCompatibility(
 func dataSourceAwsmQBrokerRead(
@@ -334,7 +334,7 @@ func TestAccAWSPartition_basic(
 func testAccPricingCheckValueIsJSON(
 func dataSourceAwsQLDBLedger(
 func dataSourceAwsQLDBLedgerRead(
-func TestAccDataSourceAwsQLDBLedger(
+func TestAccDataSourceAwsQLDBLedger_basic(
 func testAccDataSourceAwsQLDBLedgerConfig(
 func buildRAMTagFilters(
 func TestAccDataSourceAWSRDSCluster_basic(
@@ -392,7 +392,7 @@ func TestAccDataSourceAwsSecretsManagerSecret_ARN(
 func testAccDataSourceAwsSecretsManagerSecretConfig_ARN(
 func TestAccDataSourceAwsSecretsManagerSecretVersion_VersionID(
 func testAccDataSourceAwsSecretsManagerSecretVersionConfig_VersionID(
-func TestAccAWSStepFunctionsActivityDataSource(
+func TestAccAWSStepFunctionsActivityDataSource_basic(
 func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityArn(
 func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityName(
 func TestAccAWSSsmDocumentDataSource_basic(
@@ -410,25 +410,25 @@ func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskPath(
 func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskPath_NonExistent(
 func dataSourceAwsSubnetIDs(
 func dataSourceAwsSubnetIDsRead(
-func TestAccDataSourceAwsSubnetIDs(
+func TestAccDataSourceAwsSubnetIDs_basic(
 func TestAccDataSourceAwsSubnetIDs_filter(
 func testAccDataSourceAwsSubnetIDsConfigWithDataSource(
 func testAccDataSourceAwsSubnetIDsConfig(
 func testAccDataSourceAwsSubnetIDs_filter(
 func dataSourceAWSWafIpSetRead(
-func TestAccDataSourceAwsWafIPSet_Basic(
+func TestAccDataSourceAwsWafIPSet_basic(
 func testAccDataSourceAwsWafIPSet_Name(
 func dataSourceAWSWafRegionalIpSetRead(
-func TestAccDataSourceAwsWafRegionalIPSet_Basic(
+func TestAccDataSourceAwsWafRegionalIPSet_basic(
 func testAccDataSourceAwsWafRegionalIPSet_Name(
 func dataSourceAwsWafv2IPSet(
 func dataSourceAwsWafv2IPSetRead(
-func TestAccDataSourceAwsWafv2IPSet_Basic(
+func TestAccDataSourceAwsWafv2IPSet_basic(
 func testAccDataSourceAwsWafv2IPSet_Name(
 func testAccDataSourceAwsWafv2IPSet_NonExistent(
 func dataSourceAwsWafv2WebACL(
 func dataSourceAwsWafv2WebACLRead(
-func TestAccDataSourceAwsWafv2WebACL_Basic(
+func TestAccDataSourceAwsWafv2WebACL_basic(
 func testAccDataSourceAwsWafv2WebACL_Name(
 func testAccDataSourceAwsWafv2WebACL_NonExistent(
 func TestAccDataSourceAwsWorkspaceBundle_bundleIDAndNameConflict(
@@ -501,7 +501,7 @@ func testAccAWSAccessAnalyzerAnalyzer_Tags(
 func testAccAWSAccessAnalyzerAnalyzerConfigAnalyzerName(
 func testAccAWSAccessAnalyzerAnalyzerConfigTags1(
 func testAccAWSAccessAnalyzerAnalyzerConfigTags2(
-func TestAccAWSAccessAnalyzer(
+func TestAccAWSAccessAnalyzer_serial(
 func testAccPreCheckAWSAccessAnalyzer(
 func TestAccAWSAcmCertificate_emailValidation(
 func TestAccAWSAcmCertificate_dnsValidation(
@@ -584,7 +584,7 @@ func testAccAWSAMIFromInstanceConfig(
 func testAccAWSAMIFromInstanceConfigTags1(
 func testAccAWSAMIFromInstanceConfigTags2(
 func AMIStateRefreshFunc(
-func TestAccAWSAMILaunchPermission_Basic(
+func TestAccAWSAMILaunchPermission_basic(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission_Public(
 func TestAccAWSAMILaunchPermission_Disappears_AMI(
@@ -888,7 +888,7 @@ func testAccAWSApiGatewayUsagePlanQuotaConfig(
 func testAccAWSApiGatewayUsagePlanQuotaModifiedConfig(
 func testAccAWSApiGatewayUsagePlanApiStagesConfig(
 func testAccAWSApiGatewayUsagePlanApiStagesModifiedConfig(
-func TestAccAWSAPIGatewayV2ApiMapping(
+func TestAccAWSAPIGatewayV2ApiMapping_basic(
 func testAccAWSAPIGatewayV2ApiMapping_createCertificate(
 func testAccAWSAPIGatewayV2ApiMapping_basic(
 func testAccAWSAPIGatewayV2ApiMapping_disappears(
@@ -1124,7 +1124,7 @@ func resourceAwsELBSticknessPolicyAssigned(
 func TestAccAWSAppCookieStickinessPolicy_basic(
 func TestAccAWSAppCookieStickinessPolicy_missingLB(
 func TestAccAWSAppCookieStickinessPolicy_drift(
-func TestAccAWSAppmesh(
+func TestAccAWSAppmesh_serial(
 func TestAWSAppmeshVirtualNodeMigrateState(
 func TestAWSAppmeshVirtualRouterMigrateState(
 func TestAccAWSAppsyncApiKey_basic(
@@ -1546,7 +1546,7 @@ func TestAccAWSCloudHsmV2Hsm_basic(
 func testAccAWSCloudHsmV2Hsm(
 func testAccCheckAWSCloudHsmV2HsmDestroy(
 func testAccCheckAWSCloudHsmV2HsmExists(
-func TestAccAWSCloudTrail(
+func TestAccAWSCloudTrail_serial(
 func testAccAWSCloudTrail_basic(
 func testAccAWSCloudTrail_cloudwatch(
 func testAccAWSCloudTrail_enable_logging(
@@ -1585,7 +1585,7 @@ func testAccAWSCloudWatchDashboardConfig(
 func testAccAWSCloudWatchDashboardConfig_updateBody(
 func validateCloudWatchEventPermissionStatementID(
 func findCloudWatchEventPermissionPolicyStatementByID(
-func TestAccAWSCloudWatchEventPermission_Basic(
+func TestAccAWSCloudWatchEventPermission_basic(
 func TestAccAWSCloudWatchEventPermission_Action(
 func TestAccAWSCloudWatchEventPermission_Condition(
 func TestAccAWSCloudWatchEventPermission_Multiple(
@@ -1846,7 +1846,7 @@ func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Packaging(
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Path(
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Type(
 func testAccAWSCodeBuildProjectConfig_SecondarySources_CodeCommit(
-func TestAccAWSCodeBuildSourceCredential_Basic(
+func TestAccAWSCodeBuildSourceCredential_basic(
 func TestAccAWSCodeBuildSourceCredential_BasicAuth(
 func testAccCheckAWSCodeBuildSourceCredentialDestroy(
 func testAccCheckAWSCodeBuildSourceCredentialExists(
@@ -1962,7 +1962,7 @@ func TestAccAWSCodePipeline_tags(
 func TestAccAWSCodePipeline_multiregion_basic(
 func TestAccAWSCodePipeline_multiregion_Update(
 func TestAccAWSCodePipeline_multiregion_ConvertSingleRegion(
-func TestAccAWSCodePipelineWithNamespace(
+func TestAccAWSCodePipeline_WithNamespace(
 func testAccCheckAWSCodePipelineExists(
 func testAccCheckAWSCodePipelineDestroy(
 func testAccPreCheckAWSCodePipeline(
@@ -1994,7 +1994,7 @@ func testAccAWSCodePipelineWebhookConfig_unauthenticated(
 func testAccAWSCodePipelineWebhookConfigWithTags(
 func testAccAWSCodePipelineWebhookConfig_secretTokenUpdated(
 func testAccAWSCodePipelineWebhookConfig_codePipeline(
-func TestAccAWSCodeStarNotificationsNotificationRule_Basic(
+func TestAccAWSCodeStarNotificationsNotificationRule_basic(
 func TestAccAWSCodeStarNotificationsNotificationRule_Status(
 func TestAccAWSCodeStarNotificationsNotificationRule_Targets(
 func TestAccAWSCodeStarNotificationsNotificationRule_Tags(
@@ -2172,7 +2172,7 @@ func testAccCheckAWSConfigConfigurationAggregatorDestroy(
 func testAccAWSConfigConfigurationAggregatorConfig_account(
 func testAccAWSConfigConfigurationAggregatorConfig_organization(
 func testAccAWSConfigConfigurationAggregatorConfig_tags(
-func TestAccAWSConfig(
+func TestAccAWSConfig_serial(
 func testAccPreCheckAWSCur(
 func TestAccAWSCustomerGateway_basic(
 func TestAccAWSCustomerGateway_tags(
@@ -2615,11 +2615,11 @@ func TestAccAWSDirectoryServiceDirectory_disappears(
 func testAccPreCheckAWSDirectoryService(
 func testAccPreCheckAWSDirectoryServiceSimpleDirectory(
 func TestAccAWSDirectoryServiceLogSubscription_basic(
-func TestAccAWSDlmLifecyclePolicy_Basic(
+func TestAccAWSDlmLifecyclePolicy_basic(
 func TestAccAWSDlmLifecyclePolicy_Full(
 func TestAccAWSDlmLifecyclePolicy_Tags(
 func testAccPreCheckAWSDlm(
-func TestAccAWSDmsCertificateBasic(
+func TestAccAWSDmsCertificate_basic(
 func TestAccAwsDmsEndpoint_DocDB(
 func dmsEndpointDocDBConfig(
 func dmsEndpointDocDBConfigUpdate(
@@ -2628,7 +2628,7 @@ func TestAccAWSDmsEventSubscription_disappears(
 func TestAccAWSDmsEventSubscription_Enabled(
 func TestAccAWSDmsEventSubscription_EventCategories(
 func TestAccAWSDmsEventSubscription_Tags(
-func TestAccAWSDmsReplicationInstance_Basic(
+func TestAccAWSDmsReplicationInstance_basic(
 func TestAccAWSDmsReplicationInstance_AllocatedStorage(
 func TestAccAWSDmsReplicationInstance_AutoMinorVersionUpgrade(
 func TestAccAWSDmsReplicationInstance_AvailabilityZone(
@@ -2657,8 +2657,8 @@ func testAccAWSDmsReplicationInstanceConfig_ReplicationSubnetGroupId(
 func testAccAWSDmsReplicationInstanceConfig_Tags_One(
 func testAccAWSDmsReplicationInstanceConfig_Tags_Two(
 func testAccAWSDmsReplicationInstanceConfig_VpcSecurityGroupIds(
-func TestAccAWSDmsReplicationSubnetGroupBasic(
-func TestAccAWSDmsReplicationTaskBasic(
+func TestAccAWSDmsReplicationSubnetGroup_basic(
+func TestAccAWSDmsReplicationTask_basic(
 func resourceAwsDocDBCluster(
 func resourceAwsDocDBClusterImport(
 func resourceAwsDocDBClusterCreate(
@@ -3952,7 +3952,7 @@ func testAccAWSGlueClassifierConfig_GrokClassifier_CustomPatterns(
 func testAccAWSGlueClassifierConfig_JsonClassifier(
 func testAccAWSGlueClassifierConfig_XmlClassifier(
 func decodeGlueConnectionID(
-func TestAccAWSGlueConnection_Basic(
+func TestAccAWSGlueConnection_basic(
 func TestAccAWSGlueConnection_MongoDB(
 func TestAccAWSGlueConnection_Kafka(
 func TestAccAWSGlueConnection_Description(
@@ -3997,7 +3997,7 @@ func testAccCheckAWSGlueCrawlerDestroy(
 func testAccCheckAWSGlueCrawlerConfiguration(
 func testAccGlueCrawlerConfig_Role_ARN_NoPath(
 func testAccGlueCrawlerConfig_Role_ARN_Path(
-func TestAccAWSGlueJob_Basic(
+func TestAccAWSGlueJob_basic(
 func TestAccAWSGlueJob_AllocatedCapacity(
 func TestAccAWSGlueJob_Command(
 func TestAccAWSGlueJob_DefaultArguments(
@@ -4032,7 +4032,7 @@ func testAccAWSGlueJobConfig_WorkerType(
 func testAccAWSGlueJobConfig_PythonShell(
 func testAccAWSGlueJobConfig_PythonShellWithVersion(
 func testAccAWSGlueJobConfig_MaxCapacity(
-func TestAccAWSGlueSecurityConfiguration_Basic(
+func TestAccAWSGlueSecurityConfiguration_basic(
 func TestAccAWSGlueSecurityConfiguration_CloudWatchEncryption_CloudWatchEncryptionMode_SSEKMS(
 func TestAccAWSGlueSecurityConfiguration_JobBookmarksEncryption_JobBookmarksEncryptionMode_CSEKMS(
 func TestAccAWSGlueSecurityConfiguration_S3Encryption_S3EncryptionMode_SSEKMS(
@@ -4044,7 +4044,7 @@ func testAccAWSGlueSecurityConfigurationConfig_CloudWatchEncryption_CloudWatchEn
 func testAccAWSGlueSecurityConfigurationConfig_JobBookmarksEncryption_JobBookmarksEncryptionMode_CSEKMS(
 func testAccAWSGlueSecurityConfigurationConfig_S3Encryption_S3EncryptionMode_SSEKMS(
 func testAccAWSGlueSecurityConfigurationConfig_S3Encryption_S3EncryptionMode_SSES3(
-func TestAccAWSGlueTrigger_Basic(
+func TestAccAWSGlueTrigger_basic(
 func TestAccAWSGlueTrigger_Crawler(
 func TestAccAWSGlueTrigger_Description(
 func TestAccAWSGlueTrigger_Enabled(
@@ -4063,7 +4063,7 @@ func testAccAWSGlueTriggerConfig_Schedule(
 func testAccAWSGlueTriggerConfigTags1(
 func testAccAWSGlueTriggerConfigTags2(
 func testAccAWSGlueTriggerConfig_WorkflowName(
-func TestAccAWSGlueWorkflow_Basic(
+func TestAccAWSGlueWorkflow_basic(
 func TestAccAWSGlueWorkflow_DefaultRunProperties(
 func TestAccAWSGlueWorkflow_Description(
 func testAccPreCheckAWSGlueWorkflow(
@@ -4074,7 +4074,7 @@ func testAccAWSGlueWorkflowConfig_Description(
 func testAccAWSGlueWorkflowConfig_Required(
 func decodeGuardDutyIpsetID(
 func decodeGuardDutyMemberID(
-func TestAccAWSGuardDuty(
+func TestAccAWSGuardDuty_serial(
 func testAccAWSGuardDutyMemberFromEnv(
 func decodeGuardDutyThreatintelsetID(
 func TestAccAWSAccessKey_basic(
@@ -4086,7 +4086,7 @@ func testAccCheckAWSAccessKeyAttributes(
 func testAccAWSAccessKeyConfig(
 func testAccAWSAccessKeyConfig_encrypted(
 func testAccAWSAccessKeyConfig_inactive(
-func TestAccAWSIAMAccountAlias(
+func TestAccAWSIAMAccountAlias_serial(
 func testAccAWSIAMAccountAlias_importBasic(
 func testAccAWSIAMAccountAlias_basic_with_datasource(
 func testAccCheckAWSIAMAccountAliasDestroy(
@@ -4695,7 +4695,7 @@ func testAccAWSKmsExternalKeyConfigPolicy(
 func testAccAWSKmsExternalKeyConfigTags1(
 func testAccAWSKmsExternalKeyConfigTags2(
 func testAccAWSKmsExternalKeyConfigValidTo(
-func TestAccAWSKmsGrant_Basic(
+func TestAccAWSKmsGrant_basic(
 func TestAccAWSKmsGrant_withConstraints(
 func TestAccAWSKmsGrant_withRetiringPrincipal(
 func TestAccAWSKmsGrant_bare(
@@ -5046,7 +5046,7 @@ func lbListenerARNFromRuleARN(
 func TestLBListenerARNFromRuleARN(
 func TestAccAWSLBListenerRule_basic(
 func TestAccAWSLBListenerRule_forwardWeighted(
-func TestAccAWSLBListenerRuleBackwardsCompatibility(
+func TestAccAWSLBListenerRule_BackwardsCompatibility(
 func TestAccAWSLBListenerRule_redirect(
 func TestAccAWSLBListenerRule_fixedResponse(
 func TestAccAWSLBListenerRule_updateFixedResponse(
@@ -5187,7 +5187,7 @@ func TestAccAWSLBTargetGroup_Protocol_Tcp_HealthCheck_Protocol(
 func TestAccAWSLBTargetGroup_Protocol_Tls(
 func TestAccAWSLBTargetGroup_networkLB_TargetGroupWithProxy(
 func TestAccAWSLBTargetGroup_TCP_HTTPHealthCheck(
-func TestAccAWSLBTargetGroupBackwardsCompatibility(
+func TestAccAWSLBTargetGroup_BackwardsCompatibility(
 func TestAccAWSLBTargetGroup_namePrefix(
 func TestAccAWSLBTargetGroup_generatedName(
 func TestAccAWSLBTargetGroup_changeNameForceNew(
@@ -5238,7 +5238,7 @@ func TestLBCloudwatchSuffixFromARN(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_networkLoadbalancerEIP(
-func TestAccAWSLBBackwardsCompatibility(
+func TestAccAWSLB_BackwardsCompatibility(
 func TestAccAWSLB_generatedName(
 func TestAccAWSLB_generatesNameForZeroValue(
 func TestAccAWSLB_namePrefix(
@@ -5614,7 +5614,7 @@ func TestAccAWSOpsworksPhpAppLayer_basic(
 func TestAccAWSOpsworksPhpAppLayer_tags(
 func TestAccAWSOpsworksRailsAppLayer_basic(
 func TestAccAWSOpsworksRailsAppLayer_tags(
-func TestAccAWSOpsworksRdsDbInstance(
+func TestAccAWSOpsworksRdsDbInstance_basic(
 func testAccCheckAWSOpsworksRdsDbExists(
 func testAccCheckAWSOpsworksCreateRdsDbAttributes(
 func TestAccAWSOpsworksStack_noVpcBasic(
@@ -5632,11 +5632,11 @@ func testAccAWSOpsworksStackConfigVpcUpdate(
 func testAccAWSOpsworksStackConfig_CustomCookbooks_Set(
 func TestAccAWSOpsworksStaticWebLayer_basic(
 func TestAccAWSOpsworksStaticWebLayer_tags(
-func TestAccAWSOpsworksUserProfile(
+func TestAccAWSOpsworksUserProfile_basic(
 func testAccCheckAWSOpsworksUserProfileExists(
 func decodeAwsOrganizationsPolicyAttachmentID(
 func testAccAwsOrganizationsPolicy_type_SCP(
-func TestAccAWSOrganizations(
+func TestAccAWSOrganizations_serial(
 func resourceAwsPinpointADMChannel(
 func resourceAwsPinpointADMChannelUpsert(
 func resourceAwsPinpointADMChannelRead(
@@ -6081,7 +6081,7 @@ func testAccAWSRedshiftSecurityGroupConfig_ingressCidrReduce(
 func testAccAWSRedshiftSecurityGroupConfig_ingressSgId(
 func testAccAWSRedshiftSecurityGroupConfig_ingressSgIdAdd(
 func testAccAWSRedshiftSecurityGroupConfig_ingressSgIdReduce(
-func TestAccAWSRedshiftSnapshotCopyGrant_Basic(
+func TestAccAWSRedshiftSnapshotCopyGrant_basic(
 func TestAccAWSRedshiftSnapshotCopyGrant_Update(
 func TestAccAWSRedshiftSnapshotCopyGrant_disappears(
 func testAccCheckAWSRedshiftSnapshotCopyGrantDestroy(
@@ -6130,7 +6130,7 @@ func TestAccAWSRoute53HealthCheck_Ipv6Config(
 func TestAccAWSRoute53HealthCheck_CloudWatchAlarmCheck(
 func TestAccAWSRoute53HealthCheck_withSNI(
 func TestAccAWSRoute53HealthCheck_disappears(
-func TestAccAWSRoute53QueryLog_Basic(
+func TestAccAWSRoute53QueryLog_basic(
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(
 func FQDN(
 func TestAWSRoute53RecordMigrateState(
@@ -6253,7 +6253,7 @@ func testAccAWSS3AccessPointConfig_policyUpdated(
 func testAccAWSS3AccessPointConfig_noPolicy(
 func testAccAWSS3AccessPointConfig_publicAccessBlock(
 func testAccAWSS3AccessPointConfig_vpc(
-func TestAccAWSS3Account(
+func TestAccAWSS3Account_serial(
 func testAccAWSS3AccountPublicAccessBlock_basic(
 func testAccAWSS3AccountPublicAccessBlock_disappears(
 func testAccAWSS3AccountPublicAccessBlock_AccountId(
@@ -6523,7 +6523,7 @@ func testAccAWSS3BucketObjectLockEnabledNoDefaultRetention(
 func testAccAWSS3BucketObjectLockEnabledWithDefaultRetention(
 func testAccAWSS3BucketConfig_forceDestroy(
 func testAccAWSS3BucketConfig_forceDestroyWithObjectLockEnabled(
-func TestAccAWSSagemakerEndpointConfiguration_Basic(
+func TestAccAWSSagemakerEndpointConfiguration_basic(
 func TestAccAWSSagemakerEndpointConfiguration_ProductionVariants_InitialVariantWeight(
 func TestAccAWSSagemakerEndpointConfiguration_ProductionVariants_AcceleratorType(
 func TestAccAWSSagemakerEndpointConfiguration_KmsKeyId(
@@ -6539,7 +6539,7 @@ func TestAccAWSSagemakerModel_primaryContainerEnvironment(
 func TestAccAWSSagemakerModel_containers(
 func TestAccAWSSagemakerModel_vpcConfig(
 func TestAccAWSSagemakerModel_networkIsolation(
-func TestAccAWSSagemakerNotebookInstanceLifecycleConfiguration_Basic(
+func TestAccAWSSagemakerNotebookInstanceLifecycleConfiguration_basic(
 func TestAccAWSSagemakerNotebookInstanceLifecycleConfiguration_Update(
 func testAccCheckAWSSagemakerNotebookInstanceLifecycleConfigurationExists(
 func testAccCheckAWSSagemakerNotebookInstanceLifecycleConfigurationDestroy(
@@ -6708,8 +6708,8 @@ func testAccCheckAWSSecurityHubProductSubscriptionDestroy(
 func testAccAWSSecurityHubStandardsSubscription_basic(
 func testAccCheckAWSSecurityHubStandardsSubscriptionExists(
 func testAccCheckAWSSecurityHubStandardsSubscriptionDestroy(
-func TestAccAWSSecurityHub(
-func TestAccAWSServiceCatalogPortfolio_Basic(
+func TestAccAWSSecurityHub_serial(
+func TestAccAWSServiceCatalogPortfolio_basic(
 func TestAccAWSServiceCatalogPortfolio_Disappears(
 func TestAccAWSServiceCatalogPortfolio_Tags(
 func TestAccAWSServiceDiscoveryHttpNamespace_basic(
@@ -6810,7 +6810,7 @@ func testAccAWSSESReceiptRuleBasicConfig(
 func testAccAWSSESReceiptRuleS3ActionConfig(
 func testAccAWSSESReceiptRuleOrderConfig(
 func testAccAWSSESReceiptRuleActionsConfig(
-func TestAccAWSSesTemplate_Basic(
+func TestAccAWSSesTemplate_basic(
 func TestAccAWSSesTemplate_Update(
 func TestAccAWSSesTemplate_disappears(
 func TestAccAWSSfnActivity_basic(
@@ -6847,7 +6847,7 @@ func TestAccAWSSimpleDBDomain_basic(
 func testAccCheckAWSSimpleDBDomainDestroy(
 func testAccCheckAWSSimpleDBDomainExists(
 func resourceAwsSnapshotCreateVolumePermissionParseID(
-func TestAccAWSSnapshotCreateVolumePermission_Basic(
+func TestAccAWSSnapshotCreateVolumePermission_basic(
 func TestAccAWSSnapshotCreateVolumePermission_disappears(
 func testAccAWSSnapshotCreateVolumePermissionDestroy(
 func testAccAWSSnapshotCreateVolumePermissionExists(
@@ -6860,7 +6860,7 @@ func TestAccAWSSnsPlatformApplication_basicAttributes(
 func TestAccAWSSnsPlatformApplication_iamRoleAttributes(
 func TestAccAWSSnsPlatformApplication_snsTopicAttributes(
 func testAccCheckAWSSNSPlatformApplicationDestroy(
-func TestAccAWSSNSSMSPreferences(
+func TestAccAWSSNSSMSPreferences_serial(
 func testAccAWSSNSSMSPreferences_empty(
 func testAccAWSSNSSMSPreferences_defaultSMSType(
 func testAccAWSSNSSMSPreferences_almostAll(
@@ -6908,7 +6908,7 @@ func testAccAWSSNSTopicConfig_deliveryStatus(
 func testAccAWSSNSTopicConfig_withEncryption(
 func testAccAWSSNSTopicConfigTags1(
 func testAccAWSSNSTopicConfigTags2(
-func TestAccAWSSpotDatafeedSubscription(
+func TestAccAWSSpotDatafeedSubscription_serial(
 func testAccAWSSpotDatafeedSubscription_importBasic(
 func testAccAWSSpotDatafeedSubscription_basic(
 func testAccCheckAWSSpotDatafeedSubscriptionDisappears(
@@ -7006,8 +7006,8 @@ func testAccCheckAWSSpotInstanceRequestAttributesCheckSIRWithoutSpot(
 func testAccCheckAWSSpotInstanceRequest_InstanceAttributes(
 func testAccCheckAWSSpotInstanceRequest_NetworkInterfaceAttributes(
 func testAccCheckAWSSpotInstanceRequestAttributesVPC(
-func TestAccAWSSpotInstanceRequestInterruptStop(
-func TestAccAWSSpotInstanceRequestInterruptHibernate(
+func TestAccAWSSpotInstanceRequest_InterruptStop(
+func TestAccAWSSpotInstanceRequest_InterruptHibernate(
 func testAccAWSSpotInstanceRequestConfig(
 func testAccAWSSpotInstanceRequestConfigValidUntil(
 func testAccAWSSpotInstanceRequestConfig_withoutSpotPrice(
@@ -7241,7 +7241,7 @@ func testAccCheckAWSSsmResourceDataSyncDestroy(
 func testAccCheckAWSSsmResourceDataSyncExists(
 func parseStorageGatewayVolumeGatewayARNAndTargetNameFromARN(
 func TestParseStorageGatewayVolumeGatewayARNAndTargetNameFromARN(
-func TestAccAWSStorageGatewayCachedIscsiVolume_Basic(
+func TestAccAWSStorageGatewayCachedIscsiVolume_basic(
 func TestAccAWSStorageGatewayCachedIscsiVolume_Tags(
 func TestAccAWSStorageGatewayCachedIscsiVolume_SnapshotId(
 func TestAccAWSStorageGatewayCachedIscsiVolume_SourceVolumeArn(
@@ -7352,12 +7352,12 @@ func testAccAWSStorageGatewaySmbFileShareConfigTags1(
 func testAccAWSStorageGatewaySmbFileShareConfigTags2(
 func decodeStorageGatewayUploadBufferID(
 func TestDecodeStorageGatewayUploadBufferID(
-func TestAccAWSStorageGatewayUploadBuffer_Basic(
+func TestAccAWSStorageGatewayUploadBuffer_basic(
 func testAccCheckAWSStorageGatewayUploadBufferExists(
 func testAccAWSStorageGatewayUploadBufferConfig_Basic(
 func decodeStorageGatewayWorkingStorageID(
 func TestDecodeStorageGatewayWorkingStorageID(
-func TestAccAWSStorageGatewayWorkingStorage_Basic(
+func TestAccAWSStorageGatewayWorkingStorage_basic(
 func testAccCheckAWSStorageGatewayWorkingStorageExists(
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(
 func TestAWSSubnetMigrateState(
@@ -7580,7 +7580,7 @@ func testAccAWSWafRateBasedRuleConfig_changePredicates(
 func testAccAWSWafRateBasedRuleConfig_noPredicates(
 func testAccAWSWafRateBasedRuleConfigTags1(
 func testAccAWSWafRateBasedRuleConfigTags2(
-func TestAccAWSWafRegexMatchSet(
+func TestAccAWSWafRegexMatchSet_serial(
 func testAccAWSWafRegexMatchSet_basic(
 func testAccAWSWafRegexMatchSet_changePatterns(
 func testAccAWSWafRegexMatchSet_noPatterns(
@@ -7591,7 +7591,7 @@ func testAccCheckAWSWafRegexMatchSetDestroy(
 func testAccAWSWafRegexMatchSetConfig(
 func testAccAWSWafRegexMatchSetConfig_changePatterns(
 func testAccAWSWafRegexMatchSetConfig_noPatterns(
-func TestAccAWSWafRegexPatternSet(
+func TestAccAWSWafRegexPatternSet_serial(
 func testAccAWSWafRegexPatternSet_basic(
 func testAccAWSWafRegexPatternSet_changePatterns(
 func testAccAWSWafRegexPatternSet_noPatterns(
@@ -7671,7 +7671,7 @@ func testAccAWSWafRegionalRateBasedRuleConfig_changePredicates(
 func testAccAWSWafRegionalRateBasedRuleConfig_noPredicates(
 func testAccAWSWafRegionalRateBasedRuleWithRateLimitConfig(
 func updateRegexMatchSetResourceWR(
-func TestAccAWSWafRegionalRegexMatchSet(
+func TestAccAWSWafRegionalRegexMatchSet_serial(
 func testAccAWSWafRegionalRegexMatchSet_basic(
 func testAccAWSWafRegionalRegexMatchSet_changePatterns(
 func testAccAWSWafRegionalRegexMatchSet_noPatterns(
@@ -7683,7 +7683,7 @@ func testAccAWSWafRegionalRegexMatchSetConfig(
 func testAccAWSWafRegionalRegexMatchSetConfig_changePatterns(
 func testAccAWSWafRegionalRegexMatchSetConfig_noPatterns(
 func updateWafRegionalRegexPatternSetPatternStringsWR(
-func TestAccAWSWafRegionalRegexPatternSet(
+func TestAccAWSWafRegionalRegexPatternSet_serial(
 func testAccAWSWafRegionalRegexPatternSet_basic(
 func testAccAWSWafRegionalRegexPatternSet_changePatterns(
 func testAccAWSWafRegionalRegexPatternSet_noPatterns(
@@ -7855,7 +7855,7 @@ func resourceAwsWafv2IPSetCreate(
 func resourceAwsWafv2IPSetRead(
 func resourceAwsWafv2IPSetUpdate(
 func resourceAwsWafv2IPSetDelete(
-func TestAccAwsWafv2IPSet_Basic(
+func TestAccAwsWafv2IPSet_basic(
 func TestAccAwsWafv2IPSet_Disappears(
 func TestAccAwsWafv2IPSet_IPv6(
 func TestAccAwsWafv2IPSet_Minimal(
@@ -7880,7 +7880,7 @@ func resourceAwsWafv2WebACLAssociationCreate(
 func resourceAwsWafv2WebACLAssociationRead(
 func resourceAwsWafv2WebACLAssociationDelete(
 func resourceAwsWafv2ACLAssociationDecodeId(
-func TestAccAwsWafv2WebACLAssociation_Basic(
+func TestAccAwsWafv2WebACLAssociation_basic(
 func TestAccAwsWafv2WebACLAssociation_Disappears(
 func testAccCheckAWSWafv2WebACLAssociationDestroy(
 func testAccCheckAWSWafv2WebACLAssociationExists(
@@ -7917,7 +7917,7 @@ func testAccAwsWafv2WebACLLoggingConfiguration_basic(
 func testAccAwsWafv2WebACLLoggingConfiguration_updateLogDestination(
 func testAccAwsWafv2WebACLLoggingConfiguration_updateTwoRedactedFields(
 func testAccAwsWafv2WebACLLoggingConfiguration_updateOneRedactedField(
-func TestAccAwsWafv2WebACL_Basic(
+func TestAccAwsWafv2WebACL_basic(
 func TestAccAwsWafv2WebACL_ChangeNameForceNew(
 func TestAccAwsWafv2WebACL_Disappears(
 func TestAccAwsWafv2WebACL_ManagedRuleGroupStatement(
@@ -7978,7 +7978,7 @@ func testAccAWSWafXssMatchSetConfig(
 func testAccAWSWafXssMatchSetConfigChangeName(
 func testAccAWSWafXssMatchSetConfig_changeTuples(
 func testAccAWSWafXssMatchSetConfig_noTuples(
-func TestAccAWSWorkLinkFleet_Basic(
+func TestAccAWSWorkLinkFleet_basic(
 func TestAccAWSWorkLinkFleet_DisplayName(
 func TestAccAWSWorkLinkFleet_OptimizeForEndUserLocation(
 func TestAccAWSWorkLinkFleet_AuditStreamArn(
@@ -7999,7 +7999,7 @@ func testAccAWSWorkLinkFleetConfigAuditStreamArn(
 func testAccAWSWorkLinkFleetConfigDeviceCaCertificate(
 func testAccAWSWorkLinkFleetConfigIdentityProvider(
 func decodeWorkLinkWebsiteCertificateAuthorityAssociationResourceID(
-func TestAccAWSWorkLinkWorkLinkWebsiteCertificateAuthorityAssociation_Basic(
+func TestAccAWSWorkLinkWorkLinkWebsiteCertificateAuthorityAssociation_basic(
 func TestAccAWSWorkLinkWorkLinkWebsiteCertificateAuthorityAssociation_DisplayName(
 func TestAccAWSWorkLinkWorkLinkWebsiteCertificateAuthorityAssociation_Disappears(
 func testAccCheckAWSWorkLinkWebsiteCertificateAuthorityAssociationDestroy(

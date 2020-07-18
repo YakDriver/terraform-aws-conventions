@@ -270,7 +270,7 @@ func TestAccAWSAPIGatewayUsagePlan_apiStages(
 func testAccCheckAWSAPIGatewayUsagePlanExists(
 func testAccCheckAWSAPIGatewayUsagePlanDestroy(
 func testAccAWSAPIGatewayUsagePlanConfig(
-func TestAccAWSAPIGatewayV2ApiMapping(
+func TestAccAWSAPIGatewayV2ApiMapping_basic(
 func testAccAWSAPIGatewayV2ApiMapping_createCertificate(
 func testAccAWSAPIGatewayV2ApiMapping_basic(
 func testAccAWSAPIGatewayV2ApiMapping_disappears(

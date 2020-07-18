@@ -1,6 +1,6 @@
 func dataSourceAwsWafv2WebACL(
 func dataSourceAwsWafv2WebACLRead(
-func TestAccDataSourceAwsWafv2WebACL_Basic(
+func TestAccDataSourceAwsWafv2WebACL_basic(
 func testAccDataSourceAwsWafv2WebACL_Name(
 func testAccDataSourceAwsWafv2WebACL_NonExistent(
 func Test_expandNetworkACLEntry(
@@ -15,7 +15,7 @@ func resourceAwsWafv2WebACLAssociationCreate(
 func resourceAwsWafv2WebACLAssociationRead(
 func resourceAwsWafv2WebACLAssociationDelete(
 func resourceAwsWafv2ACLAssociationDecodeId(
-func TestAccAwsWafv2WebACLAssociation_Basic(
+func TestAccAwsWafv2WebACLAssociation_basic(
 func TestAccAwsWafv2WebACLAssociation_Disappears(
 func testAccCheckAWSWafv2WebACLAssociationDestroy(
 func testAccCheckAWSWafv2WebACLAssociationExists(
@@ -52,7 +52,7 @@ func testAccAwsWafv2WebACLLoggingConfiguration_basic(
 func testAccAwsWafv2WebACLLoggingConfiguration_updateLogDestination(
 func testAccAwsWafv2WebACLLoggingConfiguration_updateTwoRedactedFields(
 func testAccAwsWafv2WebACLLoggingConfiguration_updateOneRedactedField(
-func TestAccAwsWafv2WebACL_Basic(
+func TestAccAwsWafv2WebACL_basic(
 func TestAccAwsWafv2WebACL_ChangeNameForceNew(
 func TestAccAwsWafv2WebACL_Disappears(
 func TestAccAwsWafv2WebACL_ManagedRuleGroupStatement(

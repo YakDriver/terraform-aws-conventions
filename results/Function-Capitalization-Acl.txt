@@ -11,11 +11,11 @@ func testAccDataSourceAwsNetworkAclsConfig_Tags(
 func testAccDataSourceAwsNetworkAclsConfig_VpcID(
 func dataSourceAwsWafRegionalWebAcl(
 func dataSourceAwsWafRegionalWebAclRead(
-func TestAccDataSourceAwsWafRegionalWebAcl_Basic(
+func TestAccDataSourceAwsWafRegionalWebAcl_basic(
 func testAccDataSourceAwsWafRegionalWebAclConfig_Name(
 func dataSourceAwsWafWebAcl(
 func dataSourceAwsWafWebAclRead(
-func TestAccDataSourceAwsWafWebAcl_Basic(
+func TestAccDataSourceAwsWafWebAcl_basic(
 func testAccDataSourceAwsWafWebAclConfig_Name(
 func expandNetworkAclEntries(
 func resourceAwsDefaultNetworkAcl(

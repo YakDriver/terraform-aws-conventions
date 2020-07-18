@@ -223,7 +223,7 @@ func resourceAwsEc2ClientVpnEndpointDelete(
 func resourceAwsEc2ClientVpnEndpointUpdate(
 func expandEc2ClientVpnAuthenticationRequest(
 func testSweepEc2ClientVpnEndpoints(
-func TestAccAwsEc2ClientVpn(
+func TestAccAwsEc2ClientVpn_serial(
 func testAccAwsEc2ClientVpnEndpoint_basic(
 func testAccAwsEc2ClientVpnEndpoint_disappears(
 func testAccAwsEc2ClientVpnEndpoint_msAD(

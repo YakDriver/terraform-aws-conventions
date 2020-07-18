@@ -1,6 +1,6 @@
 func dataSourceAwsRamResourceShare(
 func dataSourceAwsRamResourceShareRead(
-func TestAccDataSourceAwsRamResourceShare_Basic(
+func TestAccDataSourceAwsRamResourceShare_basic(
 func TestAccDataSourceAwsRamResourceShare_Tags(
 func testAccDataSourceAwsRamResourceShareConfig_Name(
 func testAccDataSourceAwsRamResourceShareConfig_Tags(

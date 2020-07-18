@@ -10,7 +10,7 @@ func TestAccDataSourceAwsEfsFileSystem_NonExistent(
 func testAccDataSourceAwsEfsFileSystemCheck(
 func dataSourceAwsEfsMountTarget(
 func dataSourceAwsEfsMountTargetRead(
-func TestAccDataSourceAwsEfsMountTargetByMountTargetId(
+func TestAccDataSourceAwsEfsMountTarget_basic(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
 func resourceAwsDataSyncLocationEfs(
 func resourceAwsDataSyncLocationEfsCreate(

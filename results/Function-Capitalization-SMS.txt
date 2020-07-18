@@ -7,7 +7,7 @@ func TestAccAWSPinpointSMSChannel_full(
 func testAccCheckAWSPinpointSMSChannelExists(
 func testAccAWSPinpointSMSChannelConfig_full(
 func testAccCheckAWSPinpointSMSChannelDestroy(
-func TestAccAWSSNSSMSPreferences(
+func TestAccAWSSNSSMSPreferences_serial(
 func testAccAWSSNSSMSPreferences_empty(
 func testAccAWSSNSSMSPreferences_defaultSMSType(
 func testAccAWSSNSSMSPreferences_almostAll(

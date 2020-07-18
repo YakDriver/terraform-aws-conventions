@@ -60,7 +60,7 @@ func testAccAWSEmrClusterConfigIAMServiceRoleCustomAmiID(
 func testAccAWSEmrClusterConfigIAMInstanceProfileBase(
 func testAccAWSEmrClusterConfigIAMAutoscalingRole(
 func testAccAWSGameLiftFleetIAMRole(
-func TestAccAWSIAMAccountAlias(
+func TestAccAWSIAMAccountAlias_serial(
 func testAccAWSIAMAccountAlias_importBasic(
 func testAccAWSIAMAccountAlias_basic_with_datasource(
 func testAccCheckAWSIAMAccountAliasDestroy(

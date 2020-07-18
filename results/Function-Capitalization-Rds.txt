@@ -11,7 +11,7 @@ func resourceAwsOpsworksRdsDbInstanceUpdate(
 func resourceAwsOpsworksRdsDbInstanceDeregister(
 func resourceAwsOpsworksRdsDbInstanceRead(
 func resourceAwsOpsworksRdsDbInstanceRegister(
-func TestAccAWSOpsworksRdsDbInstance(
+func TestAccAWSOpsworksRdsDbInstance_basic(
 func testAccCheckAWSOpsworksRdsDbExists(
 func testAccCheckAWSOpsworksCreateRdsDbAttributes(
 func testAccCheckAwsOpsworksRdsDbDestroy(
