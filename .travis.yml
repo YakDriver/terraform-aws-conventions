@@ -12,5 +12,5 @@ script:
   - git add ./results/*
   - git add README.md
   - git commit -m "Update analysis with build $TRAVIS_BUILD_NUMBER"
-  - git remote add commit-origin https://${GH_TOKEN}@github.com/YakDriver/terraform-test-conventions.git > /dev/null 2>&1
+  - git remote add commit-origin https://${GH_TOKEN}@github.com/YakDriver/terraform-aws-conventions.git > /dev/null 2>&1
   - git push --quiet --set-upstream commit-origin main 
