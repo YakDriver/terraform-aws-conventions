@@ -1,0 +1,15 @@
+func resourceAwsPinpointSMSChannel(
+func resourceAwsPinpointSMSChannelUpsert(
+func resourceAwsPinpointSMSChannelRead(
+func resourceAwsPinpointSMSChannelDelete(
+func TestAccAWSPinpointSMSChannel_basic(
+func TestAccAWSPinpointSMSChannel_full(
+func testAccCheckAWSPinpointSMSChannelExists(
+func testAccAWSPinpointSMSChannelConfig_full(
+func testAccCheckAWSPinpointSMSChannelDestroy(
+func TestAccAWSSNSSMSPreferences_serial(
+func testAccAWSSNSSMSPreferences_empty(
+func testAccAWSSNSSMSPreferences_defaultSMSType(
+func testAccAWSSNSSMSPreferences_almostAll(
+func testAccAWSSNSSMSPreferences_deliveryRole(
+func testAccCheckAWSSNSSMSPrefsDestroy(

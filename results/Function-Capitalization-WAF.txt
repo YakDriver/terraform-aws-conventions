@@ -1,0 +1,8 @@
+func expandWAFRegionalLoggingConfiguration(
+func expandWAFRegionalRedactedFields(
+func flattenWAFRegionalLoggingConfiguration(
+func flattenWAFRegionalRedactedFields(
+func expandWAFLoggingConfiguration(
+func expandWAFRedactedFields(
+func flattenWAFLoggingConfiguration(
+func flattenWAFRedactedFields(
