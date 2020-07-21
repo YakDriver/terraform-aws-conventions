@@ -29,7 +29,6 @@ func dataSourceAwsDynamoDbTableRead(
 func TestAccDataSourceAwsDynamoDbTable_basic(
 func testAccDataSourceAwsDynamoDbTableConfigBasic(
 func suppressAwsDbEngineVersionDiffs(
-func resourceAwsDbEventSubscriptionImport(
 func resourceAwsDbClusterSnapshot(
 func resourceAwsDbClusterSnapshotCreate(
 func resourceAwsDbClusterSnapshotRead(

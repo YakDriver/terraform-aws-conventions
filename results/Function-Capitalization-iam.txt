@@ -14,6 +14,7 @@ func TestAccAWSRDSCluster_iamAuth(
 func testAccAWSClusterConfig_iamAuth(
 func TestAccAWSRedshiftCluster_iamRoles(
 func testAccAWSRedshiftClusterConfig_iamRoles(
+func testAccAWSS3BucketReplicationConfig_iamPolicy(
 func TestAccAWSSnsPlatformApplication_iamRoleAttributes(
 func testAccAwsSnsPlatformApplicationConfig_iamRoleAttribute(
 func TestAccAWSSpotFleetRequest_iamInstanceProfileArn(

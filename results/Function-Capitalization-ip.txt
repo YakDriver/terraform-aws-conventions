@@ -54,7 +54,6 @@ func TestAccDataSourceAwsSubnet_ipv6ByIpv6CidrBlock(
 func TestAccDataSourceAwsVpc_ipv6Associated(
 func TestAccDataSourceAwsVpc_multipleCidr(
 func testAccDataSourceAwsVpcConfigMultipleCidr(
-func resourceAwsDbEventSubscriptionImport(
 func testAccMultipleRegionPreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccMultipleRegionProviderConfig(

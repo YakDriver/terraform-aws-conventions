@@ -13,6 +13,7 @@ const testAccDataSourceAwsEbsSnapshotIdsConfig_empty =
 const testAccCheckAwsEcrRepositoryDataSourceConfig_NonExistent =
 const testAccDataSourceAwsEfsFileSystemIDConfig_NonExistent =
 const testAccCheckAwsEksClusterAuthConfig_basic =
+const testAccDataSourceAwsElasticacheReplicationGroupConfig_NonExistent =
 const testAccCheckAwsElasticBeanstalkHostedZoneDataSource_currentRegion =
 const testAccInstancesDataSourceConfig_ids =
 const testAccInstanceDataSourceConfig_AzUserData =

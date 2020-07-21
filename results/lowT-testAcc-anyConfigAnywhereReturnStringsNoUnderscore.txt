@@ -1557,6 +1557,7 @@ func testAccAWSS3BucketConfigReplicationWithSseKmsEncryptedObjectsAndAccessContr
 func testAccAWSS3BucketConfigReplicationWithoutStorageClass(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithoutPrefix(randInt int) string {
 func testAccAWSS3BucketConfigReplicationNoVersioning(randInt int) string {
+func testAccAWSS3BucketConfigSameRegionReplicationWithV2ConfigurationNoTags(rName, rNameDestination string) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationNoTags(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationOnlyOneTag(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationPrefixAndTags(randInt int) string {

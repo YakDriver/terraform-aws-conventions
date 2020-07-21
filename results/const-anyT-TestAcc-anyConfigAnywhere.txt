@@ -38,6 +38,7 @@ const testAccDataSourceAwsEipConfigPublicIpVpc =
 const testAccDataSourceAwsEipConfigNetworkInterface =
 const testAccDataSourceAwsEipConfigInstance =
 const testAccCheckAwsEksClusterAuthConfig_basic =
+const testAccDataSourceAwsElasticacheReplicationGroupConfig_NonExistent =
 const testAccCheckAwsElasticBeanstalkSolutionStackDataSourceConfig =
 const testAccCheckAwsElbHostedZoneIdConfig =
 const testAccCheckAwsElbHostedZoneIdExplicitRegionConfig =

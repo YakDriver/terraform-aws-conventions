@@ -519,10 +519,12 @@ func testAccAWSAPIGatewayV2IntegrationResponseConfig_basic(rName string) string 
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributes(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributesUpdated(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_apiWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_apiHttp(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttp(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttpUpdated(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_lambda(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_httpProxy(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLink(rName string) string {
 func testAccAWSAPIGatewayV2ModelConfig_api(rName string) string {
 func testAccAWSAPIGatewayV2ModelConfig_basic(rName, schema string) string {
@@ -2863,12 +2865,14 @@ func testAccAWSS3BucketConfigReplicationWithSseKmsEncryptedObjectsAndAccessContr
 func testAccAWSS3BucketConfigReplicationWithoutStorageClass(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithoutPrefix(randInt int) string {
 func testAccAWSS3BucketConfigReplicationNoVersioning(randInt int) string {
+func testAccAWSS3BucketConfigSameRegionReplicationWithV2ConfigurationNoTags(rName, rNameDestination string) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationNoTags(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationOnlyOneTag(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationPrefixAndTags(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationMultipleTags(randInt int) string {
 func testAccAWSS3BucketConfig_forceDestroy(bucketName string) string {
 func testAccAWSS3BucketConfig_forceDestroyWithObjectLockEnabled(bucketName string) string {
+func testAccAWSS3BucketReplicationConfig_iamPolicy(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_Base(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_Basic(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_ProductionVariants_InitialVariantWeight(rName string) string {
