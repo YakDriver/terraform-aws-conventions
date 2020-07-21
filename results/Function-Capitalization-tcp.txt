@@ -1,5 +1,0 @@
-func testAccAwsAppmeshRoute_tcpRoute(
-func testAccAppmeshRouteConfig_tcpRoute(
-func testAccAppmeshRouteConfig_tcpRouteUpdated(
-func testAccAppmeshRouteConfig_tcpRouteUpdatedWithZeroWeight(
-func TestAccAWSNetworkAclRule_tcpProtocol(

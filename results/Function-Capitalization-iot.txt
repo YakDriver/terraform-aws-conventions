@@ -1,4 +1,0 @@
-func TestAccAWSIoTTopicRule_iot_analytics(
-func TestAccAWSIoTTopicRule_iot_events(
-func testAccAWSIoTTopicRule_iot_analytics(
-func testAccAWSIoTTopicRule_iot_events(

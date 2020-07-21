@@ -1,5 +1,0 @@
-func testAccPricingCheckValueIsJSON(
-func testAccCheckResourceAttrEquivalentJSON(
-func TestAccAWSIAMRolePolicy_invalidJSON(
-func testAccIAMRolePolicyConfig_invalidJSON(
-func TestAccAWSIAMRole_badJSON(

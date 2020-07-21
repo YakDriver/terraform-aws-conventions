@@ -1,7 +1,0 @@
-func TestAccAWSEcsDataSource_ecsCluster(
-func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
-func TestAccAWSEcsDataSource_ecsContainerDefinition(
-func TestAccAWSEcsDataSource_ecsTaskDefinition(
-func TestAccAWSCloudWatchEventTarget_ecs(
-func TestAccAWSCloudWatchEventTarget_ecsWithBlankTaskCount(
-func launchSpecsToSet(
