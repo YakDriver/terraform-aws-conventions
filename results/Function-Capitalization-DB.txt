@@ -4,6 +4,7 @@ func dataSourceAwsQLDBLedger(
 func dataSourceAwsQLDBLedgerRead(
 func TestAccDataSourceAwsQLDBLedger_basic(
 func testAccDataSourceAwsQLDBLedgerConfig(
+func getUserDBEnabled(
 func testAccAWSAppautoscalingPolicyDynamoDB(
 func testAccAWSAppautoscalingPolicyDynamoDBIndex(
 func testAccAppautoscalingScheduledActionConfig_DynamoDB(

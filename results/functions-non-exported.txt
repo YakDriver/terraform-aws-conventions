@@ -1020,6 +1020,8 @@ func waitForEc2TransitGatewayVpcAttachmentDeletion(
 func waitForEc2TransitGatewayVpcAttachmentUpdate(
 func expandAdvancedSecurityOptions(
 func flattenAdvancedSecurityOptions(
+func getMasterUserOptions(
+func getUserDBEnabled(
 func describeFsxFileSystem(
 func refreshFsxFileSystemLifecycle(
 func waitForFsxFileSystemCreation(
@@ -1427,10 +1429,12 @@ func flattenAwsApiGatewayMethodSettings(
 func resourceAwsApiGatewayMethodSettingsRead(
 func resourceAwsApiGatewayMethodSettingsUpdate(
 func resourceAwsApiGatewayMethodSettingsDelete(
+func resourceAwsApiGatewayMethodSettingsImport(
 func testAccCheckAWSAPIGatewayMethodSettings_metricsEnabled(
 func testAccCheckAWSAPIGatewayMethodSettings_loggingLevel(
 func testAccCheckAWSAPIGatewayMethodSettingsExists(
 func testAccCheckAWSAPIGatewayMethodSettingsDestroy(
+func testAccAWSAPIGatewayMethodSettingsImportStateIdFunc(
 func testAccAWSAPIGatewayMethodSettingsConfigBase(
 func testAccAWSAPIGatewayMethodSettingsConfigSettingsCacheDataEncrypted(
 func testAccAWSAPIGatewayMethodSettingsConfigSettingsCacheTtlInSeconds(
@@ -5887,7 +5891,6 @@ func init(
 func testSweepFSXWindowsFileSystems(
 func testAccCheckFsxWindowsFileSystemExists(
 func testAccCheckFsxWindowsFileSystemDestroy(
-func testAccCheckFsxWindowsFileSystemDisappears(
 func testAccCheckFsxWindowsFileSystemNotRecreated(
 func testAccCheckFsxWindowsFileSystemRecreated(
 func testAccAwsFsxWindowsFileSystemConfigBase(
@@ -5902,6 +5905,8 @@ func testAccAwsFsxWindowsFileSystemConfigSelfManagedActiveDirectory(
 func testAccAwsFsxWindowsFileSystemConfigSelfManagedActiveDirectoryUsername(
 func testAccAwsFsxWindowsFileSystemConfigStorageCapacity(
 func testAccAwsFsxWindowsFileSystemConfigSubnetIds1(
+func testAccAwsFsxWindowsFileSystemConfigSubnetIds1WithSingleType(
+func testAccAwsFsxWindowsFileSystemConfigSubnetIds2(
 func testAccAwsFsxWindowsFileSystemConfigTags1(
 func testAccAwsFsxWindowsFileSystemConfigTags2(
 func testAccAwsFsxWindowsFileSystemConfigThroughputCapacity(
@@ -11777,6 +11782,7 @@ func expandCognitoUserPoolVerificationMessageTemplate(
 func flattenCognitoUserPoolVerificationMessageTemplate(
 func sliceContainsMap(
 func expandAwsSsmTargets(
+func flattenAwsSsmParameters(
 func flattenAwsSsmTargets(
 func expandFieldToMatch(
 func flattenFieldToMatch(

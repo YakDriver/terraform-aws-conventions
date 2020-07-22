@@ -714,6 +714,8 @@ func testAccAWSEmrClusterConfig_bootstrapReorder(
 func testAccAWSEmrClusterConfig_keepJob(
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(
 func testAccAWSEmrInstanceGroupConfig_zeroCount(
+func TestAccAWSFsxWindowsFileSystem_singleAz2(
+func TestAccAWSFsxWindowsFileSystem_multiAz(
 func TestAccAWSGameliftAlias_fleetRouting(
 func TestAccAWSGameliftFleet_allFields(
 func testAccGlacierVault_withoutNotification(

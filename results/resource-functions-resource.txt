@@ -112,6 +112,7 @@ func resourceAwsApiGatewayMethodSettings(
 func resourceAwsApiGatewayMethodSettingsRead(
 func resourceAwsApiGatewayMethodSettingsUpdate(
 func resourceAwsApiGatewayMethodSettingsDelete(
+func resourceAwsApiGatewayMethodSettingsImport(
 func resourceAwsApiGatewayModel(
 func resourceAwsApiGatewayModelCreate(
 func resourceAwsApiGatewayModelRead(

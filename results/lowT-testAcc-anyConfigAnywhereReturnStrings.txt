@@ -1799,6 +1799,8 @@ func testAccAwsFsxWindowsFileSystemConfigSelfManagedActiveDirectory() string {
 func testAccAwsFsxWindowsFileSystemConfigSelfManagedActiveDirectoryUsername(username string) string {
 func testAccAwsFsxWindowsFileSystemConfigStorageCapacity(storageCapacity int) string {
 func testAccAwsFsxWindowsFileSystemConfigSubnetIds1() string {
+func testAccAwsFsxWindowsFileSystemConfigSubnetIds1WithSingleType(azType string) string {
+func testAccAwsFsxWindowsFileSystemConfigSubnetIds2() string {
 func testAccAwsFsxWindowsFileSystemConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAwsFsxWindowsFileSystemConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsFsxWindowsFileSystemConfigThroughputCapacity(throughputCapacity int) string {

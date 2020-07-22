@@ -302,6 +302,7 @@ func expandCloudFormationParameters(
 func flattenCloudFormationParameters(
 func flattenAllCloudFormationParameters(
 func expandApiGatewayMethodParametersOperations(
+func flattenAwsSsmParameters(
 func expandDaxParameterGroupParameterNameValue(
 func flattenDaxParameterGroupParameters(
 func TestExpandParameters(

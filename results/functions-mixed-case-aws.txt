@@ -956,6 +956,7 @@ func flattenAwsApiGatewayMethodSettings(
 func resourceAwsApiGatewayMethodSettingsRead(
 func resourceAwsApiGatewayMethodSettingsUpdate(
 func resourceAwsApiGatewayMethodSettingsDelete(
+func resourceAwsApiGatewayMethodSettingsImport(
 func resourceAwsApiGatewayModel(
 func resourceAwsApiGatewayModelCreate(
 func resourceAwsApiGatewayModelRead(
@@ -2555,6 +2556,8 @@ func testAccAwsFsxWindowsFileSystemConfigSelfManagedActiveDirectory(
 func testAccAwsFsxWindowsFileSystemConfigSelfManagedActiveDirectoryUsername(
 func testAccAwsFsxWindowsFileSystemConfigStorageCapacity(
 func testAccAwsFsxWindowsFileSystemConfigSubnetIds1(
+func testAccAwsFsxWindowsFileSystemConfigSubnetIds1WithSingleType(
+func testAccAwsFsxWindowsFileSystemConfigSubnetIds2(
 func testAccAwsFsxWindowsFileSystemConfigTags1(
 func testAccAwsFsxWindowsFileSystemConfigTags2(
 func testAccAwsFsxWindowsFileSystemConfigThroughputCapacity(
@@ -4830,6 +4833,7 @@ func resourceAwsXraySamplingRuleRead(
 func resourceAwsXraySamplingRuleUpdate(
 func resourceAwsXraySamplingRuleDelete(
 func expandAwsSsmTargets(
+func flattenAwsSsmParameters(
 func flattenAwsSsmTargets(
 func flattenAwsDynamoDbReplicaDescriptions(
 func flattenAwsDynamoDbTableResource(
