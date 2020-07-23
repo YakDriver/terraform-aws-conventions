@@ -254,6 +254,8 @@ func resourceAwsApiGatewayV2IntegrationRead(
 func resourceAwsApiGatewayV2IntegrationUpdate(
 func resourceAwsApiGatewayV2IntegrationDelete(
 func resourceAwsApiGatewayV2IntegrationImport(
+func expandApiGateway2TlsConfig(
+func flattenApiGateway2TlsConfig(
 func resourceAwsApiGatewayV2IntegrationResponse(
 func resourceAwsApiGatewayV2IntegrationResponseCreate(
 func resourceAwsApiGatewayV2IntegrationResponseRead(

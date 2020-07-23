@@ -520,24 +520,29 @@ func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributes(rName string)
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributesUpdated(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_apiWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_apiHttp(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpBase(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttp(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttpUpdated(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_lambda(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_httpProxy(rName string) string {
-func testAccAWSAPIGatewayV2IntegrationConfig_vpcLink(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttp(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpUpdated(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2ModelConfig_api(rName string) string {
 func testAccAWSAPIGatewayV2ModelConfig_basic(rName, schema string) string {
 func testAccAWSAPIGatewayV2ModelConfig_allAttributes(rName, schema string) string {
 func testAccAWSAPIGatewayV2RouteResponseConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2RouteResponseConfig_model(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_apiWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_apiHttp(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_authorizer(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_authorizerUpdated(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_jwtAuthorization(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_jwtAuthorizationUpdated(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_model(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_routeKey(rName, routeKey string) string {
 func testAccAWSAPIGatewayV2RouteConfig_simpleAttributes(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_target(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_apiWebSocket(rName string) string {
@@ -545,6 +550,7 @@ func testAccAWSAPIGatewayV2StageConfig_apiHttp(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_basicWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_basicHttp(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_defaultHttpStage(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_autoDeployHttp(rName string, autoDeploy bool) string {
 func testAccAWSAPIGatewayV2StageConfig_accessLogSettings(rName, format string) string {
 func testAccAWSAPIGatewayV2StageConfig_clientCertificateIdAndDescription(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_clientCertificateIdAndDescriptionUpdated(rName string) string {

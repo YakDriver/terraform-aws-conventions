@@ -41,6 +41,8 @@ func waitForApiGatewayV2DomainNameAvailabilityOnUpdate(
 func expandApiGatewayV2DomainNameConfiguration(
 func flattenApiGatewayV2DomainNameConfiguration(
 func init(
+func expandApiGateway2TlsConfig(
+func flattenApiGateway2TlsConfig(
 func expandApiGatewayV2AccessLogSettings(
 func flattenApiGatewayV2AccessLogSettings(
 func expandApiGatewayV2DefaultRouteSettings(

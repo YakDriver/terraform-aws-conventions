@@ -10,6 +10,7 @@ func testAccAWSAPIGatewayV2IntegrationConfig_apiWebSocket(
 func testAccAWSAPIGatewayV2IntegrationConfig_apiHttp(
 func testAccAWSAPIGatewayV2ModelConfig_api(
 func testAccAWSAPIGatewayV2RouteConfig_apiWebSocket(
+func testAccAWSAPIGatewayV2RouteConfig_apiHttp(
 func apiGatewayV2RouteSettingsHash(
 func testAccAWSAPIGatewayV2StageConfig_apiWebSocket(
 func testAccAWSAPIGatewayV2StageConfig_apiHttp(

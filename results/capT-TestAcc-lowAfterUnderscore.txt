@@ -400,6 +400,7 @@ func TestAccAWSAPIGatewayV2Route_disappears(
 func TestAccAWSAPIGatewayV2Stage_basicWebSocket(
 func TestAccAWSAPIGatewayV2Stage_basicHttp(
 func TestAccAWSAPIGatewayV2Stage_defaultHttpStage(
+func TestAccAWSAPIGatewayV2Stage_autoDeployHttp(
 func TestAccAWSAPIGatewayV2Stage_disappears(
 func TestAccAWSAPIGatewayV2VpcLink_basic(
 func TestAccAWSAPIGatewayV2VpcLink_disappears(
