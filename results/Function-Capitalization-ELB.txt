@@ -7,6 +7,10 @@ func testAccAWSAutoScalingGroupConfig_ALB_TargetGroup_ELBCapacity(
 func isELBCapacitySatisfied(
 func TestAccAWSELBAttachment_basic(
 func TestAccAWSELBAttachment_drift(
+func testAccAWSELBAttachmentConfig1(
+func testAccAWSELBAttachmentConfig2(
+func testAccAWSELBAttachmentConfig3(
+func testAccAWSELBAttachmentConfig4(
 func cleanupELBNetworkInterfaces(
 func testSweepELBs(
 func TestAccAWSELB_basic(

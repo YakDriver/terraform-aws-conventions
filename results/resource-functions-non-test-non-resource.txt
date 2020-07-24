@@ -1,5 +1,6 @@
 func cleanUpSubjectAlternativeNames(
 func convertValidationOptions(
+func acmDomainValidationOptionsHash(
 func expandAcmCertificateOptions(
 func flattenAcmCertificateOptions(
 func isChangeNormalizeCertRemoval(
@@ -1319,8 +1320,6 @@ func flattenAwsLbResource(
 func customizeDiffNLBSubnets(
 func findAwsLbListenerCertificate(
 func suppressIfDefaultActionTypeNot(
-func lbListenerRuleConditionSetHash(
-func lbListenerRuleConditionQueryStringHash(
 func suppressIfActionTypeNot(
 func validateAwsLbListenerRulePriority(
 func lbListenerARNFromRuleARN(
@@ -1703,10 +1702,6 @@ func deleteDocumentPermissions(
 func modifyDocumentPermissions(
 func updateAwsSSMDocument(
 func validateSSMDocumentPermissions(
-func expandAwsSsmMaintenanceWindowLoggingInfo(
-func flattenAwsSsmMaintenanceWindowLoggingInfo(
-func expandAwsSsmTaskParameters(
-func flattenAwsSsmTaskParameters(
 func expandAwsSsmTaskInvocationParameters(
 func flattenAwsSsmTaskInvocationParameters(
 func expandAwsSsmTaskInvocationAutomationParameters(

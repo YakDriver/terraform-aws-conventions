@@ -104,6 +104,7 @@ func waitForApiGatewayVpcLinkDeletion(
 func testSweepAPIGatewayVpcLinks(
 func TestAccAWSAPIGatewayVpcLink_basic(
 func TestAccAWSAPIGatewayVpcLink_tags(
+func TestAccAWSAPIGatewayVpcLink_disappears(
 func testAccCheckAwsAPIGatewayVpcLinkDestroy(
 func testAccCheckAwsAPIGatewayVpcLinkExists(
 func testAccAPIGatewayVpcLinkConfig_basis(

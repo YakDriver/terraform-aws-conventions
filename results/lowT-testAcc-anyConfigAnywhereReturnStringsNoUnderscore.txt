@@ -911,6 +911,10 @@ func testAccAwsElasticTranscoderPresetConfigDescription(rName string, descriptio
 func testAccAwsElasticTranscoderPresetConfigFull1(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigFull2(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigVideoFrameRate(rName string, frameRate string) string {
+func testAccAWSELBAttachmentConfig1() string {
+func testAccAWSELBAttachmentConfig2() string {
+func testAccAWSELBAttachmentConfig3() string {
+func testAccAWSELBAttachmentConfig4() string {
 func testAccAWSELBConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSELBConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEmrComposeConfig(mapPublicIPOnLaunch bool, config ...string) string {
@@ -1746,7 +1750,6 @@ func testAccAWSSSMMaintenanceWindowTaskLambdaConfig(funcName, policyName, roleNa
 func testAccAWSSSMMaintenanceWindowTaskRunCommandConfig(rName, comment string, timeoutSeconds int) string {
 func testAccAWSSSMMaintenanceWindowTaskRunCommandConfigUpdate(rName, comment string, timeoutSeconds int) string {
 func testAccAWSSSMMaintenanceWindowTaskStepFunctionConfig(rName string) string {
-func testAccAWSSSMMaintenanceWindowTaskConfigTaskParametersMultiple(rName string) string {
 func testAccAWSSSMMaintenanceWindowConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowConfigDescription(rName, desc string) string {
 func testAccAWSSSMMaintenanceWindowConfigTags1(rName, tagKey1, tagValue1 string) string {

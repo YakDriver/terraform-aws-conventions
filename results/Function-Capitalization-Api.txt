@@ -30,6 +30,7 @@ func TestAccAWSAPIGatewayApiKey_Tags(
 func TestAccAWSAPIGatewayApiKey_Description(
 func TestAccAWSAPIGatewayApiKey_Enabled(
 func TestAccAWSAPIGatewayApiKey_Value(
+func TestAccAWSAPIGatewayApiKey_disappears(
 func testAccCheckAWSAPIGatewayApiKeyExists(
 func testAccCheckAWSAPIGatewayApiKeyDestroy(
 func testAccCheckAWSAPIGatewayApiKeyNotRecreated(

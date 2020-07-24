@@ -4279,10 +4279,6 @@ func resourceAwsSsmMaintenanceWindowTargetRead(
 func resourceAwsSsmMaintenanceWindowTargetUpdate(
 func resourceAwsSsmMaintenanceWindowTargetDelete(
 func resourceAwsSsmMaintenanceWindowTask(
-func expandAwsSsmMaintenanceWindowLoggingInfo(
-func flattenAwsSsmMaintenanceWindowLoggingInfo(
-func expandAwsSsmTaskParameters(
-func flattenAwsSsmTaskParameters(
 func expandAwsSsmTaskInvocationParameters(
 func flattenAwsSsmTaskInvocationParameters(
 func expandAwsSsmTaskInvocationAutomationParameters(

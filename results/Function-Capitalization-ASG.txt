@@ -11,5 +11,6 @@ func testAccCheckASGNDestroy(
 func testAccCheckAWSASGNotificationAttributes(
 func testAccASGNotificationConfig_basic(
 func testAccASGNotificationConfig_update(
+func testAccASGNotificationConfig_pagination(
 func resourceAwsASGScheduledActionRetrieve(
 func validateASGScheduleTimestamp(

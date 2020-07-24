@@ -595,9 +595,15 @@ func testAccAWSAPIGatewayV2StageConfig_autoDeployHttp(rName string, autoDeploy b
 func testAccAWSAPIGatewayV2StageConfig_accessLogSettings(rName, format string) string {
 func testAccAWSAPIGatewayV2StageConfig_clientCertificateIdAndDescription(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_clientCertificateIdAndDescriptionUpdated(rName string) string {
-func testAccAWSAPIGatewayV2StageConfig_defaultRouteSettings(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_defaultRouteSettingsWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_defaultRouteSettingsWebSocketUpdated(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_defaultRouteSettingsHttp(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_defaultRouteSettingsHttpUpdated(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_deployment(rName string) string {
-func testAccAWSAPIGatewayV2StageConfig_routeSettings(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_routeSettingsWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_routeSettingsWebSocketUpdated(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_routeSettingsHttp(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_routeSettingsHttpUpdated(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_stageVariables(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_tags(rName string) string {
 func testAccAWSAPIGatewayV2VpcLinkConfig_base(rName string) string {
@@ -751,6 +757,7 @@ func testAccAWSAutoscalingLifecycleHookConfig(name string) string {
 func testAccAWSAutoscalingLifecycleHookConfig_omitDefaultResult(name string, rInt int) string {
 func testAccASGNotificationConfig_basic(rName string) string {
 func testAccASGNotificationConfig_update(rName string) string {
+func testAccASGNotificationConfig_pagination() string {
 func testAccAWSAutoscalingPolicyConfig_base(name string) string {
 func testAccAWSAutoscalingPolicyConfig_basic(name string) string {
 func testAccAWSAutoscalingPolicyConfig_basicUpdate(name string) string {
@@ -1779,6 +1786,7 @@ func testAccAWSEFSMountTargetConfigIpAddress(ipAddress string) string {
 func testAccAWSEgressOnlyInternetGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSEgressOnlyInternetGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEIPAssociationConfig_spotInstance(rInt int) string {
+func testAccAWSEIPAssociationConfig_instance() string {
 func testAccAWSEIPConfig_tags(rName, testName string) string {
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(poolName string) string {
 func testAccAWSEIP_Instance() string {
@@ -1911,6 +1919,10 @@ func testAccAwsElasticTranscoderPresetConfigDescription(rName string, descriptio
 func testAccAwsElasticTranscoderPresetConfigFull1(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigFull2(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigVideoFrameRate(rName string, frameRate string) string {
+func testAccAWSELBAttachmentConfig1() string {
+func testAccAWSELBAttachmentConfig2() string {
+func testAccAWSELBAttachmentConfig3() string {
+func testAccAWSELBAttachmentConfig4() string {
 func testAccAWSELBConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSELBConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSELBAccessLogsOn(r string) string {
@@ -2541,7 +2553,6 @@ func testAccLbListenerCertificateConfigLbListenerBase(rName, key, certificate st
 func testAccLbListenerCertificateConfig(rName, key, certificate string) string {
 func testAccLbListenerCertificateConfigMultiple(rName string, keys, certificates []string) string {
 func testAccLbListenerCertificateConfigMultipleAddNew(rName string, keys, certificates []string) string {
-func testAccAWSLBListenerRuleConfig_multipleConditions(lbName, targetGroupName string) string {
 func testAccAWSLBListenerRuleConfig_basic(lbName, targetGroupName string) string {
 func testAccAWSLBListenerRuleConfig_forwardWeighted(lbName, targetGroupName1 string, targetGroupName2 string) string {
 func testAccAWSLBListenerRuleConfig_changeForwardWeightedStickiness(lbName, targetGroupName1 string, targetGroupName2 string) string {
@@ -2563,25 +2574,17 @@ func testAccAWSLBListenerRuleConfig_cognito(rName, key, certificate string) stri
 func testAccAWSLBListenerRuleConfig_oidc(rName, key, certificate string) string {
 func testAccAWSLBListenerRuleConfig_Action_Order(rName, key, certificate string) string {
 func testAccAWSLBListenerRuleConfig_condition_error(condition string) string {
-func testAccAWSLBListenerRuleConfig_conditionAttributesCount_empty() string {
-func testAccAWSLBListenerRuleConfig_conditionAttributesCount_field() string {
-func testAccAWSLBListenerRuleConfig_conditionAttributesCount_values() string {
 func testAccAWSLBListenerRuleConfig_conditionAttributesCount_http_header() string {
 func testAccAWSLBListenerRuleConfig_conditionAttributesCount_http_request_method() string {
 func testAccAWSLBListenerRuleConfig_conditionAttributesCount_path_pattern() string {
 func testAccAWSLBListenerRuleConfig_conditionAttributesCount_query_string() string {
 func testAccAWSLBListenerRuleConfig_conditionAttributesCount_source_ip() string {
-func testAccAWSLBListenerRuleConfig_conditionAttributesCount_classic() string {
 func testAccAWSLBListenerRuleConfig_condition_base(condition, name, lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionHostHeader(lbName string) string {
-func testAccAWSLBListenerRuleConfig_conditionHostHeader_deprecated(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionHttpHeader(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionHttpHeader_invalid() string {
 func testAccAWSLBListenerRuleConfig_conditionHttpRequestMethod(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionPathPattern(lbName string) string {
-func testAccAWSLBListenerRuleConfig_conditionPathPattern_deprecated(lbName string) string {
-func testAccAWSLBListenerRuleConfig_conditionPathPattern_deprecatedUpdated(lbName string) string {
-func testAccAWSLBListenerRuleConfig_conditionPathPattern_migrated(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionQueryString(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionSourceIp(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionMixed(lbName string) string {
@@ -3463,7 +3466,6 @@ func testAccAWSSSMMaintenanceWindowTaskLambdaConfig(funcName, policyName, roleNa
 func testAccAWSSSMMaintenanceWindowTaskRunCommandConfig(rName, comment string, timeoutSeconds int) string {
 func testAccAWSSSMMaintenanceWindowTaskRunCommandConfigUpdate(rName, comment string, timeoutSeconds int) string {
 func testAccAWSSSMMaintenanceWindowTaskStepFunctionConfig(rName string) string {
-func testAccAWSSSMMaintenanceWindowTaskConfigTaskParametersMultiple(rName string) string {
 func testAccAWSSSMMaintenanceWindowConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowConfigDescription(rName, desc string) string {
 func testAccAWSSSMMaintenanceWindowConfigTags1(rName, tagKey1, tagValue1 string) string {

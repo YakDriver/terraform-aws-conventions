@@ -47,7 +47,6 @@ func testAccGetAccountID(
 func testAccAWSAMIDisappears(
 func testAccCheckAWSAPIGatewayRestAPIDescriptionAttribute(
 func testAccCheckAWSAPIGatewayRestAPIDestroy(
-func testAccCheckAWSAPIGatewayRestAPIDisappears(
 func testAccAWSAPIGatewayRestAPIDisableCompressionConfig(
 func decodeAppsyncDataSourceID(
 func decodeAppsyncFunctionID(

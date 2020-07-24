@@ -35,6 +35,7 @@ func testAccCheckAWSEIPAssociationExists(
 func testAccCheckAWSEIPAssociationHasIpBasedId(
 func testAccCheckAWSEIPAssociationDestroy(
 func testAccAWSEIPAssociationConfig_spotInstance(
+func testAccAWSEIPAssociationConfig_instance(
 func TestAccAWSEIP_Ec2Classic(
 func TestAccAWSEIP_basic(
 func TestAccAWSEIP_instance(
