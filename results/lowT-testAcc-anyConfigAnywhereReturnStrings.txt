@@ -1047,7 +1047,6 @@ func testAccAWSCognitoUserPoolDomainConfig_custom(customSubDomainName, poolName,
 func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(rName string, externalID string) string {
 func testAccAWSCognitoUserPoolConfig_Name(rName string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfiguration(name string) string {
-func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdatedError(name string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_AdvancedSecurityMode(rName string, advancedSecurityMode string) string {
 func testAccAWSCognitoUserPoolConfig_withDeviceConfiguration(name string) string {
@@ -1350,14 +1349,12 @@ func testAccDxConnectionConfig(n string) string {
 func testAccDxConnectionConfig_tags(n string) string {
 func testAccDxConnectionConfig_tagsChanged(n string) string {
 func testAccDxGatewayAssociationProposalConfigBase_vpnGateway(rName string, rBgpAsn int) string {
-func testAccDxGatewayAssociationProposalConfig_vpnGatewayId(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationProposalConfig_basicVpnGateway(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationProposalConfig_basicTransitGateway(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationProposalConfigAllowedPrefixes1(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationProposalConfigAllowedPrefixes2(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationConfigBase_vpnGatewaySingleAccount(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationConfigBase_vpnGatewayCrossAccount(rName string, rBgpAsn int) string {
-func testAccDxGatewayAssociationConfig_deprecatedSingleAccount(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationConfig_basicVpnGatewaySingleAccount(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationConfig_basicVpnGatewayCrossAccount(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationConfig_basicTransitGatewaySingleAccount(rName string, rBgpAsn int) string {
@@ -1880,7 +1877,6 @@ func testAccGlueCrawlerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlueCrawlerConfig_SecurityConfiguration(rName, securityConfiguration string) string {
 func testAccAWSGlueJobConfig_Base(rName string) string {
-func testAccAWSGlueJobConfig_AllocatedCapacity(rName string, allocatedCapacity int) string {
 func testAccAWSGlueJobConfig_Command(rName, scriptLocation string) string {
 func testAccAWSGlueJobConfig_DefaultArguments(rName, jobBookmarkOption, jobLanguage string) string {
 func testAccAWSGlueJobConfig_Description(rName, description string) string {
@@ -2502,6 +2498,12 @@ func testAccAwsNetworkInterfaceSGAttachmentConfig(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaInstance(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaDataSource(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigMultiple(rName string) string {
+func testAccAWSENIConfig() string {
+func testAccAWSENIConfigUpdatedDescription() string {
+func testAccAWSENIConfigWithSourceDestCheck() string {
+func testAccAWSENIConfigWithNoPrivateIPs() string {
+func testAccAWSENIConfigWithAttachment() string {
+func testAccAWSENIConfigExternalAttachment() string {
 func testAccAWSENIConfigPrivateIpsCount(privateIpsCount int) string {
 func testAccAwsOpsworksCustomLayerConfigNoVpcCreate(name string) string {
 func testAccAwsOpsworksCustomLayerConfigVpcCreate(name string) string {

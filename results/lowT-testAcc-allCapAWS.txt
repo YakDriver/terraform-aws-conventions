@@ -762,7 +762,6 @@ func testAccAWSCognitoUserPoolDomainConfig_custom(
 func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(
 func testAccAWSCognitoUserPoolConfig_Name(
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfiguration(
-func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdatedError(
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdated(
 func testAccAWSCognitoUserPoolConfig_AdvancedSecurityMode(
 func testAccAWSCognitoUserPoolConfig_withDeviceConfiguration(
@@ -1356,7 +1355,6 @@ func testAccAWSGlueConnectionConfig_Required(
 func testAccAWSGlueConnectionConfig_MongoDB(
 func testAccAWSGlueConnectionConfig_Kafka(
 func testAccAWSGlueJobConfig_Base(
-func testAccAWSGlueJobConfig_AllocatedCapacity(
 func testAccAWSGlueJobConfig_Command(
 func testAccAWSGlueJobConfig_DefaultArguments(
 func testAccAWSGlueJobConfig_Description(
@@ -1408,7 +1406,6 @@ func testAccAWSIAMGroupPolicyAttachmentImportStateIdFunc(
 func testAccAWSGroupConfig(
 func testAccAWSGroupConfig2(
 func testAccAWSInstanceProfilePrefixNameConfig(
-func testAccAWSInstanceProfileWithRoleSpecified(
 func testAccAWSPolicyAttachConfig(
 func testAccAWSPolicyAttachConfigUpdate(
 func testAccAWSPolicyPaginatedAttachConfig(
@@ -1844,6 +1841,12 @@ func testAccAWSNetworkAclConfigIngressConfigModeBlocks(
 func testAccAWSNetworkAclConfigIngressConfigModeNoBlocks(
 func testAccAWSNetworkAclConfigIngressConfigModeZeroed(
 func testAccAWSNetworkInterfaceAttachmentConfig_basic(
+func testAccAWSENIConfig(
+func testAccAWSENIConfigUpdatedDescription(
+func testAccAWSENIConfigWithSourceDestCheck(
+func testAccAWSENIConfigWithNoPrivateIPs(
+func testAccAWSENIConfigWithAttachment(
+func testAccAWSENIConfigExternalAttachment(
 func testAccAWSENIConfigPrivateIpsCount(
 func testAccAWSOpsworksStackConfigVpcUpdate(
 func testAccAWSOpsworksStackConfig_CustomCookbooks_Set(

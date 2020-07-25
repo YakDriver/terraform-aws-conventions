@@ -1324,6 +1324,12 @@ func testAccAwsNetworkInterfaceSGAttachmentConfig(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaInstance(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaDataSource(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigMultiple(rName string) string {
+func testAccAWSENIConfig() string {
+func testAccAWSENIConfigUpdatedDescription() string {
+func testAccAWSENIConfigWithSourceDestCheck() string {
+func testAccAWSENIConfigWithNoPrivateIPs() string {
+func testAccAWSENIConfigWithAttachment() string {
+func testAccAWSENIConfigExternalAttachment() string {
 func testAccAWSENIConfigPrivateIpsCount(privateIpsCount int) string {
 func testAccAwsOpsworksCustomLayerConfigNoVpcCreate(name string) string {
 func testAccAwsOpsworksCustomLayerConfigVpcCreate(name string) string {

@@ -2411,7 +2411,6 @@ func resourceAwsIamAccessKeyDelete(
 func resourceAwsIamAccessKeyStatusUpdate(
 func hmacSignature(
 func sesSmtpPasswordFromSecretKeySigV4(
-func sesSmtpPasswordFromSecretKeySigV2(
 func resourceAwsIamAccountAlias(
 func resourceAwsIamAccountAliasCreate(
 func resourceAwsIamAccountAliasRead(
@@ -2452,7 +2451,6 @@ func resourceAwsIamInstanceProfile(
 func resourceAwsIamInstanceProfileCreate(
 func instanceProfileAddRole(
 func instanceProfileRemoveRole(
-func instanceProfileSetRoles(
 func instanceProfileRemoveAllRoles(
 func resourceAwsIamInstanceProfileUpdate(
 func resourceAwsIamInstanceProfileRead(

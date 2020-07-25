@@ -486,7 +486,6 @@ func Test_validatePorts(
 func TestProvider(
 func TestProvider_impl(
 func TestAccAWSProvider_Endpoints(
-func TestAccAWSProvider_Endpoints_Deprecated(
 func TestAccAWSProvider_IgnoreTags_EmptyConfigurationBlock(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_None(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_One(
@@ -1544,12 +1543,11 @@ func TestAccAWSDxConnectionAssociation_basic(
 func TestAccAWSDxConnectionAssociation_multiConns(
 func TestAccAWSDxConnection_basic(
 func TestAccAWSDxConnection_tags(
-func TestAccAwsDxGatewayAssociationProposal_VpnGatewayId(
 func TestAccAwsDxGatewayAssociationProposal_basicVpnGateway(
 func TestAccAwsDxGatewayAssociationProposal_basicTransitGateway(
 func TestAccAwsDxGatewayAssociationProposal_disappears(
 func TestAccAwsDxGatewayAssociationProposal_AllowedPrefixes(
-func TestAccAwsDxGatewayAssociation_deprecatedSingleAccount(
+func TestAccAwsDxGatewayAssociation_V0StateUpgrade(
 func TestAccAwsDxGatewayAssociation_basicVpnGatewaySingleAccount(
 func TestAccAwsDxGatewayAssociation_basicVpnGatewayCrossAccount(
 func TestAccAwsDxGatewayAssociation_basicTransitGatewaySingleAccount(
@@ -2168,7 +2166,6 @@ func TestAccAWSGlueCrawler_TablePrefix(
 func TestAccAWSGlueCrawler_Tags(
 func TestAccAWSGlueCrawler_SecurityConfiguration(
 func TestAccAWSGlueJob_basic(
-func TestAccAWSGlueJob_AllocatedCapacity(
 func TestAccAWSGlueJob_Command(
 func TestAccAWSGlueJob_DefaultArguments(
 func TestAccAWSGlueJob_Description(
@@ -2203,7 +2200,6 @@ func TestAccAWSAccessKey_basic(
 func TestAccAWSAccessKey_encrypted(
 func TestAccAWSAccessKey_inactive(
 func TestSesSmtpPasswordFromSecretKeySigV4(
-func TestSesSmtpPasswordFromSecretKeySigV2(
 func TestAccAWSIAMAccountAlias_serial(
 func TestAccAWSIAMAccountPasswordPolicy_basic(
 func TestAccAWSGroupMembership_basic(
@@ -2216,7 +2212,6 @@ func TestAccAWSIAMGroupPolicy_generatedName(
 func TestAccAWSIAMGroup_basic(
 func TestAccAWSIAMGroup_nameChange(
 func TestAccAWSIAMInstanceProfile_basic(
-func TestAccAWSIAMInstanceProfile_withRoleNotRoles(
 func TestAccAWSIAMInstanceProfile_withoutRole(
 func TestAccAWSIAMInstanceProfile_namePrefix(
 func TestAccAWSIAMOpenIDConnectProvider_basic(

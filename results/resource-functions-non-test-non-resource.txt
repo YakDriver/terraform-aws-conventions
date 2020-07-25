@@ -964,7 +964,6 @@ func guardDutyThreatintelsetRefreshStatusFunc(
 func decodeGuardDutyThreatintelsetID(
 func hmacSignature(
 func sesSmtpPasswordFromSecretKeySigV4(
-func sesSmtpPasswordFromSecretKeySigV2(
 func deleteAwsIamGroupPolicyAttachments(
 func deleteAwsIamGroupPolicies(
 func removeUsersFromGroup(
@@ -974,7 +973,6 @@ func detachPolicyFromGroup(
 func init(
 func instanceProfileAddRole(
 func instanceProfileRemoveRole(
-func instanceProfileSetRoles(
 func instanceProfileRemoveAllRoles(
 func instanceProfileReadResult(
 func composeErrors(

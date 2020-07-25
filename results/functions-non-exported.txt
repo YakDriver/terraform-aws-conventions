@@ -1089,7 +1089,6 @@ func testAccPreCheckSkipError(
 func testSweepSkipSweepError(
 func testAccCheckAWSProviderDnsSuffix(
 func testAccCheckAWSProviderEndpoints(
-func testAccCheckAWSProviderEndpointsDeprecated(
 func testAccCheckAWSProviderIgnoreTagsKeyPrefixes(
 func testAccCheckAWSProviderIgnoreTagsKeys(
 func testAccCheckAWSProviderPartition(
@@ -3366,7 +3365,6 @@ func testAccPreCheckAWSCognitoIdentityProvider(
 func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(
 func testAccAWSCognitoUserPoolConfig_Name(
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfiguration(
-func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdatedError(
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdated(
 func testAccAWSCognitoUserPoolConfig_AdvancedSecurityMode(
 func testAccAWSCognitoUserPoolConfig_withDeviceConfiguration(
@@ -4326,7 +4324,6 @@ func testAccCheckAwsDxGatewayAssociationProposalExists(
 func testAccCheckAwsDxGatewayAssociationProposalDisappears(
 func testAccCheckAwsDxGatewayAssociationProposalRecreated(
 func testAccDxGatewayAssociationProposalConfigBase_vpnGateway(
-func testAccDxGatewayAssociationProposalConfig_vpnGatewayId(
 func testAccDxGatewayAssociationProposalConfig_basicVpnGateway(
 func testAccDxGatewayAssociationProposalConfig_basicTransitGateway(
 func testAccDxGatewayAssociationProposalConfigAllowedPrefixes1(
@@ -4338,7 +4335,6 @@ func testAccCheckAwsDxGatewayAssociationExists(
 func testAccCheckAwsDxGatewayAssociationStateUpgradeV0(
 func testAccDxGatewayAssociationConfigBase_vpnGatewaySingleAccount(
 func testAccDxGatewayAssociationConfigBase_vpnGatewayCrossAccount(
-func testAccDxGatewayAssociationConfig_deprecatedSingleAccount(
 func testAccDxGatewayAssociationConfig_basicVpnGatewaySingleAccount(
 func testAccDxGatewayAssociationConfig_basicVpnGatewayCrossAccount(
 func testAccDxGatewayAssociationConfig_basicTransitGatewaySingleAccount(
@@ -6235,7 +6231,6 @@ func testSweepGlueJobs(
 func testAccCheckAWSGlueJobExists(
 func testAccCheckAWSGlueJobDestroy(
 func testAccAWSGlueJobConfig_Base(
-func testAccAWSGlueJobConfig_AllocatedCapacity(
 func testAccAWSGlueJobConfig_Command(
 func testAccAWSGlueJobConfig_DefaultArguments(
 func testAccAWSGlueJobConfig_Description(
@@ -6406,7 +6401,6 @@ func resourceAwsIamAccessKeyDelete(
 func resourceAwsIamAccessKeyStatusUpdate(
 func hmacSignature(
 func sesSmtpPasswordFromSecretKeySigV4(
-func sesSmtpPasswordFromSecretKeySigV2(
 func testAccCheckAWSAccessKeyDestroy(
 func testAccCheckAWSAccessKeyExists(
 func testAccCheckAWSAccessKeyAttributes(
@@ -6491,7 +6485,6 @@ func resourceAwsIamInstanceProfile(
 func resourceAwsIamInstanceProfileCreate(
 func instanceProfileAddRole(
 func instanceProfileRemoveRole(
-func instanceProfileSetRoles(
 func instanceProfileRemoveAllRoles(
 func resourceAwsIamInstanceProfileUpdate(
 func resourceAwsIamInstanceProfileRead(
@@ -6503,7 +6496,6 @@ func testAccCheckAWSInstanceProfileExists(
 func testAccAwsIamInstanceProfileConfig(
 func testAccAwsIamInstanceProfileConfigWithoutRole(
 func testAccAWSInstanceProfilePrefixNameConfig(
-func testAccAWSInstanceProfileWithRoleSpecified(
 func resourceAwsIamOpenIDConnectProvider(
 func resourceAwsIamOpenIDConnectProviderCreate(
 func resourceAwsIamOpenIDConnectProviderRead(
@@ -8351,10 +8343,17 @@ func init(
 func testSweepEc2NetworkInterfaces(
 func testAccCheckAWSENIExists(
 func testAccCheckAWSENIAttributes(
+func testAccCheckAWSENIAvailabilityZone(
 func testAccCheckAWSENIAttributesWithAttachment(
 func testAccCheckAWSENIDestroy(
 func testAccCheckAWSENIDisappears(
 func testAccCheckAWSENIMakeExternalAttachment(
+func testAccAWSENIConfig(
+func testAccAWSENIConfigUpdatedDescription(
+func testAccAWSENIConfigWithSourceDestCheck(
+func testAccAWSENIConfigWithNoPrivateIPs(
+func testAccAWSENIConfigWithAttachment(
+func testAccAWSENIConfigExternalAttachment(
 func testAccAWSENIConfigPrivateIpsCount(
 func resourceAwsOpsworksApplication(
 func resourceAwsOpsworksApplicationValidate(

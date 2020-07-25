@@ -10,9 +10,16 @@ func TestAccAWSENI_computedIPs(
 func TestAccAWSENI_PrivateIpsCount(
 func testAccCheckAWSENIExists(
 func testAccCheckAWSENIAttributes(
+func testAccCheckAWSENIAvailabilityZone(
 func testAccCheckAWSENIAttributesWithAttachment(
 func testAccCheckAWSENIDestroy(
 func testAccCheckAWSENIDisappears(
 func testAccCheckAWSENIMakeExternalAttachment(
+func testAccAWSENIConfig(
+func testAccAWSENIConfigUpdatedDescription(
+func testAccAWSENIConfigWithSourceDestCheck(
+func testAccAWSENIConfigWithNoPrivateIPs(
+func testAccAWSENIConfigWithAttachment(
+func testAccAWSENIConfigExternalAttachment(
 func testAccAWSENIConfigPrivateIpsCount(
 func deleteLingeringLambdaENIs(

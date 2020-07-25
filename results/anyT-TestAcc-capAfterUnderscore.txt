@@ -186,7 +186,6 @@ func testAccDataSourceAwsWafv2WebACL_Name(
 func testAccDataSourceAwsWafv2WebACL_NonExistent(
 func testAccDataSourceAwsWafWebAclConfig_Name(
 func TestAccAWSProvider_Endpoints(
-func TestAccAWSProvider_Endpoints_Deprecated(
 func TestAccAWSProvider_IgnoreTags_EmptyConfigurationBlock(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_None(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_One(
@@ -911,8 +910,8 @@ func testAccAWSDocDBClusterParameterGroupConfig_Parameter(
 func testAccAWSDocDBClusterParameterGroupConfig_Tags(
 func TestAccAWSDocDBCluster_Port(
 func testAccDocDBClusterConfig_Port(
-func TestAccAwsDxGatewayAssociationProposal_VpnGatewayId(
 func TestAccAwsDxGatewayAssociationProposal_AllowedPrefixes(
+func TestAccAwsDxGatewayAssociation_V0StateUpgrade(
 func TestAccAwsDxHostedPrivateVirtualInterface_AccepterTags(
 func TestAccAwsDxHostedPublicVirtualInterface_AccepterTags(
 func TestAccAwsDxPrivateVirtualInterface_Tags(
@@ -1300,7 +1299,6 @@ func testAccGlueCrawlerConfig_Schedule(
 func testAccGlueCrawlerConfig_SchemaChangePolicy(
 func testAccGlueCrawlerConfig_TablePrefix(
 func testAccGlueCrawlerConfig_SecurityConfiguration(
-func TestAccAWSGlueJob_AllocatedCapacity(
 func TestAccAWSGlueJob_Command(
 func TestAccAWSGlueJob_DefaultArguments(
 func TestAccAWSGlueJob_Description(
@@ -1315,7 +1313,6 @@ func TestAccAWSGlueJob_WorkerType(
 func TestAccAWSGlueJob_PythonShell(
 func TestAccAWSGlueJob_MaxCapacity(
 func testAccAWSGlueJobConfig_Base(
-func testAccAWSGlueJobConfig_AllocatedCapacity(
 func testAccAWSGlueJobConfig_Command(
 func testAccAWSGlueJobConfig_DefaultArguments(
 func testAccAWSGlueJobConfig_Description(

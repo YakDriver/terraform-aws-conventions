@@ -468,7 +468,6 @@ func testAccGetPartitionDNSSuffix(
 func testAccEC2ClassicPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func TestAccAWSProvider_Endpoints(
-func TestAccAWSProvider_Endpoints_Deprecated(
 func TestAccAWSProvider_IgnoreTags_EmptyConfigurationBlock(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_None(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_One(
@@ -482,7 +481,6 @@ func TestAccAWSProvider_Region_AwsGovCloudUs(
 func TestAccAWSProvider_AssumeRole_Empty(
 func testAccCheckAWSProviderDnsSuffix(
 func testAccCheckAWSProviderEndpoints(
-func testAccCheckAWSProviderEndpointsDeprecated(
 func testAccCheckAWSProviderIgnoreTagsKeyPrefixes(
 func testAccCheckAWSProviderIgnoreTagsKeys(
 func testAccCheckAWSProviderPartition(
@@ -2163,7 +2161,6 @@ func testAccPreCheckAWSCognitoIdentityProvider(
 func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(
 func testAccAWSCognitoUserPoolConfig_Name(
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfiguration(
-func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdatedError(
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdated(
 func testAccAWSCognitoUserPoolConfig_AdvancedSecurityMode(
 func testAccAWSCognitoUserPoolConfig_withDeviceConfiguration(
@@ -4044,7 +4041,6 @@ func testAccCheckAWSGlueCrawlerConfiguration(
 func testAccGlueCrawlerConfig_Role_ARN_NoPath(
 func testAccGlueCrawlerConfig_Role_ARN_Path(
 func TestAccAWSGlueJob_basic(
-func TestAccAWSGlueJob_AllocatedCapacity(
 func TestAccAWSGlueJob_Command(
 func TestAccAWSGlueJob_DefaultArguments(
 func TestAccAWSGlueJob_Description(
@@ -4061,7 +4057,6 @@ func TestAccAWSGlueJob_MaxCapacity(
 func testAccCheckAWSGlueJobExists(
 func testAccCheckAWSGlueJobDestroy(
 func testAccAWSGlueJobConfig_Base(
-func testAccAWSGlueJobConfig_AllocatedCapacity(
 func testAccAWSGlueJobConfig_Command(
 func testAccAWSGlueJobConfig_DefaultArguments(
 func testAccAWSGlueJobConfig_Description(
@@ -4180,14 +4175,12 @@ func testAccCheckAWSGroupAttributes(
 func testAccAWSGroupConfig(
 func testAccAWSGroupConfig2(
 func TestAccAWSIAMInstanceProfile_basic(
-func TestAccAWSIAMInstanceProfile_withRoleNotRoles(
 func TestAccAWSIAMInstanceProfile_withoutRole(
 func TestAccAWSIAMInstanceProfile_namePrefix(
 func testAccCheckAWSInstanceProfileGeneratedNamePrefix(
 func testAccCheckAWSInstanceProfileDestroy(
 func testAccCheckAWSInstanceProfileExists(
 func testAccAWSInstanceProfilePrefixNameConfig(
-func testAccAWSInstanceProfileWithRoleSpecified(
 func resourceAwsIamOpenIDConnectProvider(
 func resourceAwsIamOpenIDConnectProviderCreate(
 func resourceAwsIamOpenIDConnectProviderRead(
@@ -5606,10 +5599,17 @@ func TestAccAWSENI_computedIPs(
 func TestAccAWSENI_PrivateIpsCount(
 func testAccCheckAWSENIExists(
 func testAccCheckAWSENIAttributes(
+func testAccCheckAWSENIAvailabilityZone(
 func testAccCheckAWSENIAttributesWithAttachment(
 func testAccCheckAWSENIDestroy(
 func testAccCheckAWSENIDisappears(
 func testAccCheckAWSENIMakeExternalAttachment(
+func testAccAWSENIConfig(
+func testAccAWSENIConfigUpdatedDescription(
+func testAccAWSENIConfigWithSourceDestCheck(
+func testAccAWSENIConfigWithNoPrivateIPs(
+func testAccAWSENIConfigWithAttachment(
+func testAccAWSENIConfigExternalAttachment(
 func testAccAWSENIConfigPrivateIpsCount(
 func TestAccAWSOpsworksApplication_basic(
 func testAccCheckAWSOpsworksApplicationExists(

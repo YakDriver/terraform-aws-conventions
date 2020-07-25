@@ -78,6 +78,7 @@ func TestAccAWSLaunchTemplate_associatePublicIPAddress(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
 func TestAccAWSENI_computedIPs(
+func testAccAWSENIConfigWithNoPrivateIPs(
 func resourceAwsSecurityGroupIPPermGather(
 func expandIPPerm(
 func setFromIPPerm(

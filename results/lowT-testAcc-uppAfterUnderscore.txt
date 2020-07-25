@@ -469,7 +469,6 @@ func testAccGlueCrawlerConfig_SchemaChangePolicy(
 func testAccGlueCrawlerConfig_TablePrefix(
 func testAccGlueCrawlerConfig_SecurityConfiguration(
 func testAccAWSGlueJobConfig_Base(
-func testAccAWSGlueJobConfig_AllocatedCapacity(
 func testAccAWSGlueJobConfig_Command(
 func testAccAWSGlueJobConfig_DefaultArguments(
 func testAccAWSGlueJobConfig_Description(

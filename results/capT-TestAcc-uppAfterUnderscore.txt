@@ -129,7 +129,6 @@ func TestAccAWSStorageGatewayLocalDiskDataSource_DiskNode(
 func TestAccAWSStorageGatewayLocalDiskDataSource_DiskPath(
 func TestAccDataSourceAwsVpcDhcpOptions_Filter(
 func TestAccAWSProvider_Endpoints(
-func TestAccAWSProvider_Endpoints_Deprecated(
 func TestAccAWSProvider_IgnoreTags_EmptyConfigurationBlock(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_None(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_One(
@@ -579,8 +578,8 @@ func TestAccAWSDocDBClusterParameterGroup_Description(
 func TestAccAWSDocDBClusterParameterGroup_Parameter(
 func TestAccAWSDocDBClusterParameterGroup_Tags(
 func TestAccAWSDocDBCluster_Port(
-func TestAccAwsDxGatewayAssociationProposal_VpnGatewayId(
 func TestAccAwsDxGatewayAssociationProposal_AllowedPrefixes(
+func TestAccAwsDxGatewayAssociation_V0StateUpgrade(
 func TestAccAwsDxHostedPrivateVirtualInterface_AccepterTags(
 func TestAccAwsDxHostedPublicVirtualInterface_AccepterTags(
 func TestAccAwsDxPrivateVirtualInterface_Tags(
@@ -830,7 +829,6 @@ func TestAccAWSGlueCrawler_SchemaChangePolicy(
 func TestAccAWSGlueCrawler_TablePrefix(
 func TestAccAWSGlueCrawler_Tags(
 func TestAccAWSGlueCrawler_SecurityConfiguration(
-func TestAccAWSGlueJob_AllocatedCapacity(
 func TestAccAWSGlueJob_Command(
 func TestAccAWSGlueJob_DefaultArguments(
 func TestAccAWSGlueJob_Description(

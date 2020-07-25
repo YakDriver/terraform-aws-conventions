@@ -1656,7 +1656,6 @@ func testAccIAMGroupPolicyConfigUpdate(
 func TestAccAWSIAMGroup_basic(
 func TestAccAWSIAMGroup_nameChange(
 func TestAccAWSIAMInstanceProfile_basic(
-func TestAccAWSIAMInstanceProfile_withRoleNotRoles(
 func TestAccAWSIAMInstanceProfile_withoutRole(
 func TestAccAWSIAMInstanceProfile_namePrefix(
 func resourceAwsIamOpenIDConnectProvider(
@@ -2206,10 +2205,17 @@ func TestAccAWSENI_computedIPs(
 func TestAccAWSENI_PrivateIpsCount(
 func testAccCheckAWSENIExists(
 func testAccCheckAWSENIAttributes(
+func testAccCheckAWSENIAvailabilityZone(
 func testAccCheckAWSENIAttributesWithAttachment(
 func testAccCheckAWSENIDestroy(
 func testAccCheckAWSENIDisappears(
 func testAccCheckAWSENIMakeExternalAttachment(
+func testAccAWSENIConfig(
+func testAccAWSENIConfigUpdatedDescription(
+func testAccAWSENIConfigWithSourceDestCheck(
+func testAccAWSENIConfigWithNoPrivateIPs(
+func testAccAWSENIConfigWithAttachment(
+func testAccAWSENIConfigExternalAttachment(
 func testAccAWSENIConfigPrivateIpsCount(
 func TestAccAWSOpsworksCustomLayer_noVPC(
 func TestAccAWSOpsworksHAProxyLayer_basic(
