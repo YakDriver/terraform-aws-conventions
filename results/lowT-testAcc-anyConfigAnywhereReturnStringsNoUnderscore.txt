@@ -241,6 +241,7 @@ func testAccAWSAPIGatewayApiKeyConfigTags2(rName, tagKey1, tagValue1, tagKey2, t
 func testAccAWSAPIGatewayApiKeyConfigDescription(rName, description string) string {
 func testAccAWSAPIGatewayApiKeyConfigEnabled(rName string, enabled bool) string {
 func testAccAWSAPIGatewayApiKeyConfigValue(rName, value string) string {
+func testAccAWSAPIGatewayAuthorizerConfigBase(rName string) string {
 func testAccAWSAPIGatewayBasePathConfigBase(domainName, key, certificate string) string {
 func testAccAWSAPIGatewayBasePathConfigBasePath(domainName, key, certificate, basePath string) string {
 func testAccAWSAPIGatewayClientCertificateConfigTags1(tagKey1, tagValue1 string) string {

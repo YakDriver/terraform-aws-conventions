@@ -420,15 +420,15 @@ func testAccAWSAPIGatewayApiKeyConfigTags2(rName, tagKey1, tagValue1, tagKey2, t
 func testAccAWSAPIGatewayApiKeyConfigDescription(rName, description string) string {
 func testAccAWSAPIGatewayApiKeyConfigEnabled(rName string, enabled bool) string {
 func testAccAWSAPIGatewayApiKeyConfigValue(rName, value string) string {
-func testAccAWSAPIGatewayAuthorizerConfig_baseLambda(apiGatewayName, lambdaName string) string {
-func testAccAWSAPIGatewayAuthorizerConfig_lambda(apiGatewayName, authorizerName, lambdaName string) string {
-func testAccAWSAPIGatewayAuthorizerConfig_lambdaUpdate(apiGatewayName, authorizerName, lambdaName string) string {
-func testAccAWSAPIGatewayAuthorizerConfig_lambdaNoCache(apiGatewayName, authorizerName, lambdaName string) string {
-func testAccAWSAPIGatewayAuthorizerConfig_cognito(apiGatewayName, authorizerName, cognitoName string) string {
-func testAccAWSAPIGatewayAuthorizerConfig_cognitoUpdate(apiGatewayName, authorizerName, cognitoName string) string {
-func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationDefaultToken(apiGatewayName, authorizerName, lambdaName string) string {
-func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationRequest(apiGatewayName, authorizerName, lambdaName string) string {
-func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationCognito(apiGatewayName, authorizerName, cognitoName string) string {
+func testAccAWSAPIGatewayAuthorizerConfigBase(rName string) string {
+func testAccAWSAPIGatewayAuthorizerConfig_lambda(rName string) string {
+func testAccAWSAPIGatewayAuthorizerConfig_lambdaUpdate(rName string) string {
+func testAccAWSAPIGatewayAuthorizerConfig_lambdaNoCache(rName string) string {
+func testAccAWSAPIGatewayAuthorizerConfig_cognito(rName string) string {
+func testAccAWSAPIGatewayAuthorizerConfig_cognitoUpdate(rName string) string {
+func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationDefaultToken(rName string) string {
+func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationRequest(rName string) string {
+func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationCognito(rName string) string {
 func testAccAWSAPIGatewayBasePathConfigBase(domainName, key, certificate string) string {
 func testAccAWSAPIGatewayBasePathConfigBasePath(domainName, key, certificate, basePath string) string {
 func testAccAWSAPIGatewayClientCertificateConfigTags1(tagKey1, tagValue1 string) string {
