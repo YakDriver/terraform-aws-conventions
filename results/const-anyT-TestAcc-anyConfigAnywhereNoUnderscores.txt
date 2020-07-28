@@ -36,7 +36,6 @@ const testAccAWSIAMPolicyDocumentDataSourceConfigVersion20081017ConversionNotRes
 const testAccAWSIAMPolicyDocumentDataSourceConfigVersion20081017ConversionPrincipal =
 const testAccAWSIAMPolicyDocumentDataSourceConfigVersion20081017ConversionResources =
 const testAccCheckAWSInspectorRulesPackagesConfig =
-const testAccInstanceDataSourceConfig =
 const testAccDataSourceAwsInternetGatewayConfig =
 const testAccAWSIotEndpointConfig =
 const testAccAWSIPRangesConfig =
@@ -122,7 +121,6 @@ const testAccCheckInstanceConfigNoVolumeTags =
 const testAccCheckInstanceConfigWithVolumeTags =
 const testAccCheckInstanceConfigWithVolumeTagsUpdate =
 const testAccCheckInstanceConfigTagsUpdate =
-const testAccAwsEc2InstanceConfigDynamicEBSBlockDevices =
 const testAccNoInternetGatewayConfig =
 const testAccInternetGatewayConfig =
 const testAccInternetGatewayConfigChangeVPC =

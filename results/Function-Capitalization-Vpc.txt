@@ -237,6 +237,7 @@ func TestAccAWSInstance_inDefaultVpcBySgId(
 func testAccInstanceConfigInDefaultVpcBySgName(
 func testAccInstanceConfigInDefaultVpcBySgId(
 func testAccAwsInstanceVpcConfig(
+func testAccAwsInstanceVpcConfigBasic(
 func testAccAwsInstanceVpcSecurityGroupConfig(
 func testAccAwsInstanceVpcIpv6Config(
 func findPublicNetworkInterfacesForVpcID(

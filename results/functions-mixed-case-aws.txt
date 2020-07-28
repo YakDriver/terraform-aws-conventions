@@ -2898,8 +2898,10 @@ func testAccAwsEc2InstanceRootBlockDeviceWithIOPS(
 func testAccAwsEc2InstanceConfigBlockDevices(
 func testAccAwsEc2InstanceConfigBlockDevicesWithDeleteOnTerminate(
 func testAccAwsInstanceVpcConfig(
+func testAccAwsInstanceVpcConfigBasic(
 func testAccAwsInstanceVpcSecurityGroupConfig(
 func testAccAwsInstanceVpcIpv6Config(
+func testAccAwsEc2InstanceConfigDynamicEBSBlockDevices(
 func resourceAwsInternetGateway(
 func resourceAwsInternetGatewayCreate(
 func resourceAwsInternetGatewayRead(

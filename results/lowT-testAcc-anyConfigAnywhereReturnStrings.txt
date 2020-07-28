@@ -363,7 +363,7 @@ func testAccAWSAMICopyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 
 func testAccAWSAMICopyConfig(rName string) string {
 func testAccAWSAMICopyConfigDescription(rName, description string) string {
 func testAccAWSAMICopyConfigENASupport(rName string) string {
-func testAccAWSAMIFromInstanceConfigBase() string {
+func testAccAWSAMIFromInstanceConfigBase(rName string) string {
 func testAccAWSAMIFromInstanceConfig(rName string) string {
 func testAccAWSAMIFromInstanceConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAMIFromInstanceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -524,7 +524,8 @@ func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpBase(rName string) strin
 func testAccAWSAPIGatewayV2IntegrationConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttp(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttpUpdated(rName string) string {
-func testAccAWSAPIGatewayV2IntegrationConfig_lambda(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_lambdaWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_lambdaHttp(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_httpProxy(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttp(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpUpdated(rName string) string {
@@ -2003,6 +2004,8 @@ func testAccAWSUserConfig_tags(rName string) string {
 func testAccAWSUserConfig_tagsUpdate(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfig(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfigResourceGroupArn(rName, inspectorResourceGroupResourceName string) string {
+func testAccCurrentAvailableAZsNoOptInDefaultExcludeConfig() string {
+func testAccCurrentAvailableAZsNoOptInExcludeConfig(exclude string) string {
 func testAccInstanceConfigInDefaultVpcBySgName(rName string) string {
 func testAccInstanceConfigInDefaultVpcBySgId(rName string) string {
 func testAccInstanceConfigInEc2Classic(rInt int) string {
@@ -2057,14 +2060,17 @@ func testAccInstanceConfig_creditSpecification_unknownCpuCredits(rName, instance
 func testAccInstanceConfig_UserData_Unspecified(rName string) string {
 func testAccInstanceConfig_UserData_EmptyString(rName string) string {
 func testAccLatestAmazonLinuxHvmEbsAmiConfig() string {
+func testAccLatestAmazonLinuxHvmInstanceStoreAmiConfig() string {
 func testAccLatestAmazonLinuxPvEbsAmiConfig() string {
 func testAccLatestWindowsServer2016CoreAmiConfig() string {
 func testAccAwsInstanceVpcConfig(rName string, mapPublicIpOnLaunch bool) string {
+func testAccAwsInstanceVpcConfigBasic(rName string) string {
 func testAccAwsInstanceVpcSecurityGroupConfig(rName string) string {
 func testAccAwsInstanceVpcIpv6Config(rName string) string {
 func testAccInstanceConfigHibernation(hibernation bool) string {
 func testAccInstanceConfigMetadataOptions(rName string) string {
 func testAccInstanceConfigMetadataOptionsUpdated(rName string) string {
+func testAccAwsEc2InstanceConfigDynamicEBSBlockDevices() string {
 func testAccAWSIotPolicyAttachmentConfig(policyName string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate1(policyName, policyName2 string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate2(policyName2 string) string {
@@ -3039,33 +3045,33 @@ func testAccAWSSNSTopicConfig_deliveryStatus(r string) string {
 func testAccAWSSNSTopicConfig_withEncryption(r string) string {
 func testAccAWSSNSTopicConfigTags1(r, tag1Key, tag1Value string) string {
 func testAccAWSSNSTopicConfigTags2(r, tag1Key, tag1Value, tag2Key, tag2Value string) string {
-func testAccAWSSpotFleetRequestConfigBase(rName string, rInt int) string {
-func testAccAWSSpotFleetRequestConfig(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigTags1(rName, validUntil, tagKey1, tagValue1 string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigTags2(rName, validUntil, tagKey1, tagValue1, tagKey2, tagValue2 string, rInt int) string {
-func testAccAWSSpotFleetRequestConfigAssociatePublicIpAddress(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigTargetCapacity(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestLaunchTemplateConfig(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestLaunchTemplateMultipleConfig(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestLaunchTemplateConfigWithOverrides(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigExcessCapacityTermination(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigFleetType(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigIamInstanceProfileArn(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigChangeSpotBidPrice(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigWithAzs(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigWithSubnet(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigWithELBs(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigWithTargetGroups(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigMultipleInstanceTypesinSameAz(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigMultipleInstanceTypesinSameSubnet(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigOverridingSpotPrice(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigWithoutSpotPrice(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigMultipleInstancePools(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigDiversifiedAllocation(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestConfigWithWeightedCapacity(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestEBSConfig(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestTagsConfig(rName string, rInt int, validUntil string) string {
-func testAccAWSSpotFleetRequestTenancyGroupConfig(rName string, rInt int, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigBase(rName string) string {
+func testAccAWSSpotFleetRequestConfig(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigTags1(rName, validUntil, tagKey1, tagValue1 string) string {
+func testAccAWSSpotFleetRequestConfigTags2(rName, validUntil, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSpotFleetRequestConfigAssociatePublicIpAddress(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigTargetCapacity(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchTemplateConfig(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchTemplateMultipleConfig(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchTemplateConfigWithOverrides(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigExcessCapacityTermination(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigFleetType(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigIamInstanceProfileArn(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigChangeSpotBidPrice(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithAzs(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithSubnet(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithELBs(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithTargetGroups(rName string, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigMultipleInstanceTypesinSameAz(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigMultipleInstanceTypesinSameSubnet(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigOverridingSpotPrice(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithoutSpotPrice(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigMultipleInstancePools(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigDiversifiedAllocation(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestConfigWithWeightedCapacity(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestEBSConfig(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestTagsConfig(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestTenancyGroupConfig(rName, validUntil string) string {
 func testAccAWSSpotInstanceRequestConfig(rInt int) string {
 func testAccAWSSpotInstanceRequestConfigValidUntil(rInt int, validUntil string) string {
 func testAccAWSSpotInstanceRequestConfig_withoutSpotPrice(rInt int) string {

@@ -1,5 +1,3 @@
-const testAccInstanceDataSourceConfig_EbsBlockDevice_KmsKeyId =
-const testAccInstanceDataSourceConfig_RootBlockDevice_KmsKeyId =
 const testAccDataSourceAwsKmsCiphertextConfig_validate_withContext =
 const testAccAwsAcmpcaCertificateAuthorityConfig_Tags_Single =
 const testAccAwsAcmpcaCertificateAuthorityConfig_Tags_SingleUpdated =
