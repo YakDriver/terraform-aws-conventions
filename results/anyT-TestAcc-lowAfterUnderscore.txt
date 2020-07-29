@@ -1761,6 +1761,7 @@ func TestAccAWSFsxLustreFileSystem_basic(
 func TestAccAWSFsxLustreFileSystem_disappears(
 func TestAccAWSFsxWindowsFileSystem_basic(
 func TestAccAWSFsxWindowsFileSystem_singleAz2(
+func TestAccAWSFsxWindowsFileSystem_storageTypeHdd(
 func TestAccAWSFsxWindowsFileSystem_multiAz(
 func TestAccAWSFsxWindowsFileSystem_disappears(
 func TestAccAWSGameliftAlias_basic(

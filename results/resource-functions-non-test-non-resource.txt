@@ -1001,6 +1001,7 @@ func extractNameFromIAMSamlProviderArn(
 func currentlyInUseBy(
 func normalizeCert(
 func stripCR(
+func suppressNormalizeCertRemoval(
 func init(
 func decodeIamServiceLinkedRoleID(
 func deleteIamServiceLinkedRole(

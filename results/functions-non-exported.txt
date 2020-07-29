@@ -5892,6 +5892,8 @@ func testAccAwsFsxLustreFileSystemConfigSubnetIds1(
 func testAccAwsFsxLustreFileSystemConfigTags1(
 func testAccAwsFsxLustreFileSystemConfigTags2(
 func testAccAwsFsxLustreFileSystemConfigWeeklyMaintenanceStartTime(
+func testAccAwsFsxLustreFileSystemDeploymentType(
+func testAccAwsFsxLustreFileSystemPersistentDeploymentType(
 func resourceAwsFsxWindowsFileSystem(
 func resourceAwsFsxWindowsFileSystemCreate(
 func resourceAwsFsxWindowsFileSystemUpdate(
@@ -5919,6 +5921,7 @@ func testAccAwsFsxWindowsFileSystemConfigSelfManagedActiveDirectoryUsername(
 func testAccAwsFsxWindowsFileSystemConfigStorageCapacity(
 func testAccAwsFsxWindowsFileSystemConfigSubnetIds1(
 func testAccAwsFsxWindowsFileSystemConfigSubnetIds1WithSingleType(
+func testAccAwsFsxWindowsFileSystemConfigSubnetIds1WithStorageType(
 func testAccAwsFsxWindowsFileSystemConfigSubnetIds2(
 func testAccAwsFsxWindowsFileSystemConfigTags1(
 func testAccAwsFsxWindowsFileSystemConfigTags2(
@@ -6630,6 +6633,7 @@ func resourceAwsIAMServerCertificateImport(
 func currentlyInUseBy(
 func normalizeCert(
 func stripCR(
+func suppressNormalizeCertRemoval(
 func init(
 func testSweepIamServerCertificates(
 func testAccCheckCertExists(

@@ -1816,6 +1816,7 @@ func testAccAwsFsxWindowsFileSystemConfigSelfManagedActiveDirectoryUsername(user
 func testAccAwsFsxWindowsFileSystemConfigStorageCapacity(storageCapacity int) string {
 func testAccAwsFsxWindowsFileSystemConfigSubnetIds1() string {
 func testAccAwsFsxWindowsFileSystemConfigSubnetIds1WithSingleType(azType string) string {
+func testAccAwsFsxWindowsFileSystemConfigSubnetIds1WithStorageType(azType, storageType string) string {
 func testAccAwsFsxWindowsFileSystemConfigSubnetIds2() string {
 func testAccAwsFsxWindowsFileSystemConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAwsFsxWindowsFileSystemConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
