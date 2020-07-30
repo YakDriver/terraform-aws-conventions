@@ -3751,6 +3751,7 @@ func deleteAllRecordsInHostedZoneId(
 func resourceAwsGoRoute53Wait(
 func cleanChangeID(
 func cleanZoneID(
+func trimTrailingPeriod(
 func getNameServers(
 func expandRoute53VPCs(
 func expandRoute53VPC(

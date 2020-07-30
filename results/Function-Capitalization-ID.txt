@@ -128,6 +128,7 @@ func resourceAwsQuickSightGroupParseID(
 func resourceAwsQuickSightUserParseID(
 func decodeRamResourceAssociationID(
 func resourceAwsRamResourceShareGetIDFromARN(
+func TestAccAWSRoute53Record_basic_trailingPeriodAndZoneID(
 func cleanChangeID(
 func cleanZoneID(
 func TestCleanZoneID(

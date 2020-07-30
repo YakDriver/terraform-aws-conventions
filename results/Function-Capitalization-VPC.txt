@@ -9,6 +9,7 @@ func TestAccAWSAPIGatewayRestApi_EndpointConfiguration_VPCEndpoint(
 func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration2(
 func testAccCheckAWSAutoScalingGroupAttributesVPCZoneIdentifier(
+func testAccAWSAutoScalingGroupConfigWithVPCIdent(
 func TestAccAWSBeanstalkConfigurationTemplate_VPC(
 func testAccBeanstalkConfigurationTemplateConfig_VPC(
 func TestAccAWSFlowLog_VPCID(
@@ -37,6 +38,7 @@ func TestAccAWSRoute53Zone_VPC_Updates(
 func testAccRoute53ZoneConfigVPCSingle(
 func testAccRoute53ZoneConfigVPCMultiple(
 func TestAccAWSRoute_doesNotCrashWithVPCEndpoint(
+func testAccAWSRouteWithVPCEndpoint(
 func TestAccAWSSecurityGroupRule_Ingress_VPC(
 func TestAccAWSSecurityGroup_defaultEgressVPC(
 func TestAccAWSSecurityGroup_ingressWithCidrAndSGsVPC(

@@ -13,6 +13,7 @@ func testAccMatchResourceAttrGlobalARN(
 func testAccAssumeRoleARNPreCheck(
 func TestALBTargetGroupCloudwatchSuffixFromARN(
 func TestAccAWSAutoScalingGroup_serviceLinkedRoleARN(
+func testAccAWSAutoScalingGroupConfig_withServiceLinkedRoleARN(
 func TestAccAWSDataSyncLocationNfs_AgentARNs_Multple(
 func TestAccAWSDataSyncTask_CloudWatchLogGroupARN(
 func buildFamilyAndRevisionFromARN(

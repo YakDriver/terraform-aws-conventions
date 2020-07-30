@@ -454,7 +454,6 @@ func TestAccAWSAPIGatewayV2Stage_Tags(
 func testAccCheckAWSAPIGatewayV2StageDestroy(
 func testAccCheckAWSAPIGatewayV2StageExists(
 func testAccAWSAPIGatewayV2StageImportStateIdFunc(
-func testAccCheckAWSAPIGatewayV2StageAccessLogDestinationArn(
 func testAccAWSAPIGatewayV2StageConfig_apiWebSocket(
 func testAccAWSAPIGatewayV2StageConfig_apiHttp(
 func testAccAWSAPIGatewayV2StageConfig_basicWebSocket(

@@ -470,7 +470,6 @@ func TestDataSyncParseLocationURI(
 func TestSuppressEquivalentJsonDiffsWhitespaceAndNoWhitespace(
 func TestSuppressEquivalentTypeStringBoolean(
 func TestSuppressCloudFormationTemplateBodyDiffs(
-func TestSuppressRoute53ZoneNameWithTrailingDot(
 func TestBuildEC2AttributeFilterList(
 func TestBuildEC2TagFilterList(
 func TestBuildEC2CustomFilterList(
@@ -3149,6 +3148,7 @@ func TestAccAWSRoute53Record_underscored(
 func TestAccAWSRoute53Record_disappears(
 func TestAccAWSRoute53Record_disappears_MultipleRecords(
 func TestAccAWSRoute53Record_basic_fqdn(
+func TestAccAWSRoute53Record_basic_trailingPeriodAndZoneID(
 func TestAccAWSRoute53Record_txtSupport(
 func TestAccAWSRoute53Record_spfSupport(
 func TestAccAWSRoute53Record_caaSupport(
@@ -3189,6 +3189,7 @@ func TestAccAWSRoute53ZoneAssociation_disappears_Zone(
 func TestAccAWSRoute53ZoneAssociation_region(
 func TestCleanZoneID(
 func TestCleanChangeID(
+func TestTrimTrailingPeriod(
 func TestAccAWSRoute53Zone_basic(
 func TestAccAWSRoute53Zone_disappears(
 func TestAccAWSRoute53Zone_multiple(

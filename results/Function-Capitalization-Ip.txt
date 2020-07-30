@@ -88,6 +88,13 @@ func route53ResolverEndpointHashIpAddress(
 func route53ResolverRuleHashTargetIp(
 func testAccRoute53ResolverRuleConfig_forwardTargetIpChanged(
 func testAccAWSRouteTableConfigConditionalIpv4Ipv6(
+func testAccAWSRouteConfigIpv6InternetGateway(
+func testAccAWSRouteConfigIpv6NetworkInterface(
+func testAccAWSRouteConfigIpv6Instance(
+func testAccAWSRouteConfigIpv6InstanceExpanded(
+func testAccAWSRouteConfigIpv6PeeringConnection(
+func testAccAWSRouteConfigIpv6(
+func testAccAWSRouteConfigIpv6Expanded(
 func testAccAWSRouteConfigConditionalIpv4Ipv6(
 func TestIpPermissionIDHash(
 func TestAccAWSSecurityGroupRule_Ingress_Ipv6(

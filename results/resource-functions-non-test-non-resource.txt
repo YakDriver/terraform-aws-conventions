@@ -1501,6 +1501,7 @@ func route53GetZoneAssociation(
 func deleteAllRecordsInHostedZoneId(
 func cleanChangeID(
 func cleanZoneID(
+func trimTrailingPeriod(
 func getNameServers(
 func expandRoute53VPCs(
 func expandRoute53VPC(

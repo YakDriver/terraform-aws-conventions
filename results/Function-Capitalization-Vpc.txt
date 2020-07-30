@@ -115,6 +115,7 @@ func testAccAPIGatewayVpcLinkConfig_Update(
 func expandVpcZoneIdentifiers(
 func TestAccAWSAutoScalingGroup_VpcUpdates(
 func TestAccAWSAutoScalingGroup_classicVpcZoneIdentifier(
+func testAccAWSAutoScalingGroupConfig_classicVpcZoneIdentifier(
 func testAccAWSCloudFormationStackSetTemplateBodyVpc(
 func expandCodeBuildVpcConfig(
 func flattenAwsCodeBuildVpcConfig(

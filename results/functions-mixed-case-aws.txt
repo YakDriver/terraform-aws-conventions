@@ -583,6 +583,7 @@ func testAccDataSourceAwsRouteTablesConfig(
 func TestAccDataSourceAwsRouteTable_basic(
 func TestAccDataSourceAwsRouteTable_main(
 func testAccDataSourceAwsRouteCheck(
+func testAccDataSourceAwsRouteGroupConfig(
 func dataSourceAwsS3Bucket(
 func dataSourceAwsS3BucketRead(
 func dataSourceAwsS3BucketObject(
