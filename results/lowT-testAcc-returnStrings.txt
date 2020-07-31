@@ -81,6 +81,8 @@ func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigTags(rName st
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigFilter() string {
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigId() string {
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigTags(rName string) string {
+func testAccAwsEc2SpotPriceDataSourceConfig() string {
+func testAccAwsEc2SpotPriceDataSourceFilterConfig() string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfig(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfigFilter(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayPeeringAttachmentDataSourceConfigFilter_sameAccount(rName string) string {
@@ -1093,25 +1095,25 @@ func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string 
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) string {
 func testAccAWSCodePipelineServiceIAMRole(rName string) string {
 func testAccAWSCodePipelineServiceIAMRoleWithAssumeRole(rName string) string {
-func testAccAWSCodePipelineConfig_basic(rName string) string {
-func testAccAWSCodePipelineConfig_basicUpdated(rName string) string {
-func testAccAWSCodePipelineConfig_emptyStageArtifacts(rName string) string {
+func testAccAWSCodePipelineConfig_basic(rName, githubToken string) string {
+func testAccAWSCodePipelineConfig_basicUpdated(rName, githubToken string) string {
+func testAccAWSCodePipelineConfig_emptyStageArtifacts(rName, githubToken string) string {
 func testAccAWSCodePipelineDeployActionIAMRole(rName string) string {
-func testAccAWSCodePipelineConfig_deployWithServiceRole(rName string) string {
-func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
-func testAccAWSCodePipelineConfig_multiregion(rName string) string {
-func testAccAWSCodePipelineConfig_multiregionUpdated(rName string) string {
-func testAccAWSCodePipelineConfig_backToBasic(rName string) string {
+func testAccAWSCodePipelineConfig_deployWithServiceRole(rName, githubToken string) string {
+func testAccAWSCodePipelineConfigWithTags(rName, githubToken, tag1, tag2 string) string {
+func testAccAWSCodePipelineConfig_multiregion(rName, githubToken string) string {
+func testAccAWSCodePipelineConfig_multiregionUpdated(rName, githubToken string) string {
+func testAccAWSCodePipelineConfig_backToBasic(rName, githubToken string) string {
 func testAccAWSCodePipelineS3DefaultBucket(rName string) string {
 func testAccAWSCodePipelineS3Bucket(bucket, rName string) string {
 func testAccAWSCodePipelineS3BucketWithProvider(bucket, rName, provider string) string {
-func testAccAWSCodePipelineConfigWithNamespace(rName string) string {
-func testAccAWSCodePipelineWebhookConfig_basic(rName string) string {
-func testAccAWSCodePipelineWebhookConfig_ipAuth(rName string) string {
-func testAccAWSCodePipelineWebhookConfig_unauthenticated(rName string) string {
-func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2 string) string {
-func testAccAWSCodePipelineWebhookConfig_secretTokenUpdated(rName string) string {
-func testAccAWSCodePipelineWebhookConfig_codePipeline(rName string) string {
+func testAccAWSCodePipelineConfigWithNamespace(rName, githubToken string) string {
+func testAccAWSCodePipelineWebhookConfig_basic(rName, githubToken string) string {
+func testAccAWSCodePipelineWebhookConfig_ipAuth(rName, githubToken string) string {
+func testAccAWSCodePipelineWebhookConfig_unauthenticated(rName, githubToken string) string {
+func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2, githubToken string) string {
+func testAccAWSCodePipelineWebhookConfig_secretTokenUpdated(rName, githubToken string) string {
+func testAccAWSCodePipelineWebhookConfig_codePipeline(rName, githubToken string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBase(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBasic(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigStatus(rName, status string) string {
@@ -1936,6 +1938,7 @@ func testAccESDomainConfig_AdvancedSecurityOptionsDisabled(domainName string) st
 func testAccESDomainConfig_LogPublishingOptions(randInt int) string {
 func testAccESDomainConfig_CognitoOptions(randInt int, includeCognitoOptions bool) string {
 func testAccAwsElasticTranscoderPresetConfig(rName string) string {
+func testAccAwsElasticTranscoderPresetConfigAudioCodecOptionsEmpty(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigDescription(rName string, description string) string {
 func testAccAwsElasticTranscoderPresetConfigFull1(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigFull2(rName string) string {
@@ -2671,6 +2674,7 @@ func testAccAWSLBConfig_enableDeletionProtection(lbName string, deletion_protect
 func testAccAWSLBConfig_networkLoadbalancer_subnets(lbName string) string {
 func testAccAWSLBConfig_networkLoadbalancer(lbName string, cz bool) string {
 func testAccAWSLBConfig_networkLoadBalancerEIP(lbName string) string {
+func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(lbName string) string {
 func testAccAWSLBConfigBackwardsCompatibility(lbName string) string {
 func testAccAWSLBConfig_updateSubnets(lbName string) string {
 func testAccAWSLBConfig_generatedName() string {
@@ -3526,6 +3530,7 @@ func testAccAWSSSMMaintenanceWindowConfigScheduleTimezone(rName, scheduleTimezon
 func testAccAWSSSMMaintenanceWindowConfigStartDate(rName, startDate string) string {
 func testAccAWSSSMParameterBasicConfig(rName, pType, value string) string {
 func testAccAWSSSMParameterConfigTier(rName, tier string) string {
+func testAccAWSSSMParameterConfigDataTypeAwsEc2Image(rName string) string {
 func testAccAWSSSMParameterBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSSMParameterBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSSMParameterBasicConfigOverwrite(rName, pType, value string) string {

@@ -269,6 +269,7 @@ func TestAccAWSSSMParameter_updateDescription(
 func TestAccAWSSSMParameter_changeNameForcesNew(
 func TestAccAWSSSMParameter_fullPath(
 func TestAccAWSSSMParameter_secure(
+func TestAccAWSSSMParameter_DataType_AwsEc2Image(
 func TestAccAWSSSMParameter_secure_with_key(
 func TestAccAWSSSMParameter_secure_keyUpdate(
 func testAccCheckAWSSSMParameterRecreated(
@@ -277,6 +278,7 @@ func testAccCheckAWSSSMParameterDisappears(
 func testAccCheckAWSSSMParameterDestroy(
 func testAccAWSSSMParameterBasicConfig(
 func testAccAWSSSMParameterConfigTier(
+func testAccAWSSSMParameterConfigDataTypeAwsEc2Image(
 func testAccAWSSSMParameterBasicConfigTags1(
 func testAccAWSSSMParameterBasicConfigTags2(
 func testAccAWSSSMParameterBasicConfigOverwrite(

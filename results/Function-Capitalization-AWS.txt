@@ -104,8 +104,8 @@ func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigTransitGatewayIdAnd
 func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigFilter(
 func TestAccAWSEcrAuthorizationTokenDataSource_basic(
 func TestAccAWSEcrDataSource_ecrImage(
-func TestAccAWSEcrDataSource_ecrRepository(
-func TestAccAWSEcrDataSource_nonExistent(
+func TestAccAWSEcrRepositoryDataSource_basic(
+func TestAccAWSEcrRepositoryDataSource_nonExistent(
 func TestAccAWSEcsDataSource_ecsCluster(
 func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
 func TestAccAWSEcsDataSource_ecsContainerDefinition(
@@ -1831,6 +1831,7 @@ func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(
 func TestAccAWSCodePipeline_basic(
+func TestAccAWSCodePipeline_disappears(
 func TestAccAWSCodePipeline_emptyStageArtifacts(
 func TestAccAWSCodePipeline_deployWithServiceRole(
 func TestAccAWSCodePipeline_tags(
@@ -3403,6 +3404,7 @@ func testAccCheckAWSElasticTranscoderPipelineDisappears(
 func testAccPreCheckAWSElasticTranscoder(
 func TestAccAWSElasticTranscoderPreset_basic(
 func TestAccAWSElasticTranscoderPreset_disappears(
+func TestAccAWSElasticTranscoderPreset_AudioCodecOptions_empty(
 func TestAccAWSElasticTranscoderPreset_Description(
 func TestAccAWSElasticTranscoderPreset_Full(
 func TestAccAWSElasticTranscoderPreset_Video_FrameRate(
@@ -4788,6 +4790,7 @@ func testAccAWSLBTargetGroupConfig_stickinessWithTCP(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_networkLoadbalancerEIP(
+func TestAccAWSLB_NLB_privateipv4address(
 func TestAccAWSLB_BackwardsCompatibility(
 func TestAccAWSLB_generatedName(
 func TestAccAWSLB_generatesNameForZeroValue(
@@ -4819,6 +4822,7 @@ func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
+func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func testAccAWSLBConfigBackwardsCompatibility(
 func testAccAWSLBConfig_updateSubnets(
 func testAccAWSLBConfig_generatedName(
@@ -6584,6 +6588,7 @@ func TestAccAWSSSMParameter_updateDescription(
 func TestAccAWSSSMParameter_changeNameForcesNew(
 func TestAccAWSSSMParameter_fullPath(
 func TestAccAWSSSMParameter_secure(
+func TestAccAWSSSMParameter_DataType_AwsEc2Image(
 func TestAccAWSSSMParameter_secure_with_key(
 func TestAccAWSSSMParameter_secure_keyUpdate(
 func testAccCheckAWSSSMParameterRecreated(
@@ -6592,6 +6597,7 @@ func testAccCheckAWSSSMParameterDisappears(
 func testAccCheckAWSSSMParameterDestroy(
 func testAccAWSSSMParameterBasicConfig(
 func testAccAWSSSMParameterConfigTier(
+func testAccAWSSSMParameterConfigDataTypeAwsEc2Image(
 func testAccAWSSSMParameterBasicConfigTags1(
 func testAccAWSSSMParameterBasicConfigTags2(
 func testAccAWSSSMParameterBasicConfigOverwrite(
@@ -6788,6 +6794,8 @@ func TestAccAWSVolumeAttachment_update(
 func TestAccAWSVolumeAttachment_disappears(
 func testAccAWSVolumeAttachmentImportStateIDFunc(
 func TestAccAWSDHCPOptionsAssociation_basic(
+func TestAccAWSDHCPOptionsAssociation_disappears_vpc(
+func TestAccAWSDHCPOptionsAssociation_disappears_dhcp(
 func TestAccAWSDHCPOptions_basic(
 func TestAccAWSDHCPOptions_deleteOptions(
 func TestAccAWSDHCPOptions_tags(

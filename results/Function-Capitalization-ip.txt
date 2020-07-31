@@ -169,7 +169,10 @@ func flattenAwsCodePipelineActionsInputArtifacts(
 func resourceAwsCodePipelineRead(
 func resourceAwsCodePipelineUpdate(
 func resourceAwsCodePipelineDelete(
+func suppressCodePipelineStageActionConfiguration(
+func hashCodePipelineGitHubToken(
 func TestAccAWSCodePipeline_basic(
+func TestAccAWSCodePipeline_disappears(
 func TestAccAWSCodePipeline_emptyStageArtifacts(
 func TestAccAWSCodePipeline_deployWithServiceRole(
 func TestAccAWSCodePipeline_tags(
@@ -498,6 +501,7 @@ func testAccAWSLBListenerRuleConfig_conditionAttributesCount_source_ip(
 func testAccAWSLBListenerRuleConfig_conditionMultiple(
 func testAccAWSLBListenerRuleConfig_conditionMultiple_updated(
 func TestAccAWSLBTargetGroupAttachment_ipAddress(
+func TestAccAWSLB_NLB_privateipv4address(
 func TestAccAWSMediaConvertQueue_withDescription(
 func testAccMediaConvertQueueConfig_withDescription(
 func TestAccAWSMediaPackageChannel_description(

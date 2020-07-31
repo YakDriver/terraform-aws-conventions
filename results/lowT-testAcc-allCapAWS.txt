@@ -1778,6 +1778,7 @@ func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
+func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func testAccAWSLBConfigBackwardsCompatibility(
 func testAccAWSLBConfig_updateSubnets(
 func testAccAWSLBConfig_generatedName(
@@ -2398,6 +2399,7 @@ func testAccAWSSSMMaintenanceWindowConfigScheduleTimezone(
 func testAccAWSSSMMaintenanceWindowConfigStartDate(
 func testAccAWSSSMParameterBasicConfig(
 func testAccAWSSSMParameterConfigTier(
+func testAccAWSSSMParameterConfigDataTypeAwsEc2Image(
 func testAccAWSSSMParameterBasicConfigTags1(
 func testAccAWSSSMParameterBasicConfigTags2(
 func testAccAWSSSMParameterBasicConfigOverwrite(

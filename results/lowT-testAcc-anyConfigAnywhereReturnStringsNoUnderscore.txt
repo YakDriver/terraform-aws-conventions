@@ -62,6 +62,8 @@ func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigTags(rName st
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigFilter() string {
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigId() string {
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigTags(rName string) string {
+func testAccAwsEc2SpotPriceDataSourceConfig() string {
+func testAccAwsEc2SpotPriceDataSourceFilterConfig() string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfig(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfigFilter(rName string, rBgpAsn int) string {
 func testAccAWSEc2TransitGatewayRouteTableDataSourceConfigFilter() string {
@@ -534,9 +536,9 @@ func testAccAWSCodeDeployDeploymentConfigTrafficLinear(rName string, interval, p
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) string {
-func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
-func testAccAWSCodePipelineConfigWithNamespace(rName string) string {
-func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2 string) string {
+func testAccAWSCodePipelineConfigWithTags(rName, githubToken, tag1, tag2 string) string {
+func testAccAWSCodePipelineConfigWithNamespace(rName, githubToken string) string {
+func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2, githubToken string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBase(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBasic(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigStatus(rName, status string) string {
@@ -913,6 +915,7 @@ func testAccESDomainConfigWithEncryptAtRestWithKey(randESId int) string {
 func testAccESDomainConfigwithNodeToNodeEncryption(randInt int) string {
 func testAccESDomainConfigV23(randInt int) string {
 func testAccAwsElasticTranscoderPresetConfig(rName string) string {
+func testAccAwsElasticTranscoderPresetConfigAudioCodecOptionsEmpty(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigDescription(rName string, description string) string {
 func testAccAwsElasticTranscoderPresetConfigFull1(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigFull2(rName string) string {
@@ -1791,6 +1794,7 @@ func testAccAWSSSMMaintenanceWindowConfigScheduleTimezone(rName, scheduleTimezon
 func testAccAWSSSMMaintenanceWindowConfigStartDate(rName, startDate string) string {
 func testAccAWSSSMParameterBasicConfig(rName, pType, value string) string {
 func testAccAWSSSMParameterConfigTier(rName, tier string) string {
+func testAccAWSSSMParameterConfigDataTypeAwsEc2Image(rName string) string {
 func testAccAWSSSMParameterBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSSMParameterBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSSMParameterBasicConfigOverwrite(rName, pType, value string) string {

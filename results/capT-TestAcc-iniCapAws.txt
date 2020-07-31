@@ -1,4 +1,6 @@
 func TestAccAwsAutoScalingGroupDataSource_basic(
+func TestAccAwsEc2SpotPriceDataSource_basic(
+func TestAccAwsEc2SpotPriceDataSource_Filter(
 func TestAccAwsElasticBeanstalkApplicationDataSource_basic(
 func TestAccAwsServiceQuotasServiceQuotaDataSource_QuotaCode(
 func TestAccAwsServiceQuotasServiceQuotaDataSource_QuotaName(

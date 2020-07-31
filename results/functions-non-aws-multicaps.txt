@@ -2134,6 +2134,7 @@ func TestLBCloudwatchSuffixFromARN(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_networkLoadbalancerEIP(
+func TestAccAWSLB_NLB_privateipv4address(
 func TestAccAWSLB_BackwardsCompatibility(
 func TestAccAWSLB_generatedName(
 func TestAccAWSLB_generatesNameForZeroValue(
@@ -2165,6 +2166,7 @@ func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
+func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func testAccAWSLBConfigBackwardsCompatibility(
 func testAccAWSLBConfig_updateSubnets(
 func testAccAWSLBConfig_generatedName(
@@ -2888,6 +2890,7 @@ func TestAccAWSSSMParameter_updateDescription(
 func TestAccAWSSSMParameter_changeNameForcesNew(
 func TestAccAWSSSMParameter_fullPath(
 func TestAccAWSSSMParameter_secure(
+func TestAccAWSSSMParameter_DataType_AwsEc2Image(
 func TestAccAWSSSMParameter_secure_with_key(
 func TestAccAWSSSMParameter_secure_keyUpdate(
 func testAccCheckAWSSSMParameterRecreated(
@@ -2896,6 +2899,7 @@ func testAccCheckAWSSSMParameterDisappears(
 func testAccCheckAWSSSMParameterDestroy(
 func testAccAWSSSMParameterBasicConfig(
 func testAccAWSSSMParameterConfigTier(
+func testAccAWSSSMParameterConfigDataTypeAwsEc2Image(
 func testAccAWSSSMParameterBasicConfigTags1(
 func testAccAWSSSMParameterBasicConfigTags2(
 func testAccAWSSSMParameterBasicConfigOverwrite(
@@ -2952,6 +2956,8 @@ func TestDecodeStorageGatewayWorkingStorageID(
 func volumeAttachmentID(
 func testAccAWSVolumeAttachmentImportStateIDFunc(
 func TestAccAWSDHCPOptionsAssociation_basic(
+func TestAccAWSDHCPOptionsAssociation_disappears_vpc(
+func TestAccAWSDHCPOptionsAssociation_disappears_dhcp(
 func testAccDHCPOptionsAssociationVPCImportIdFunc(
 func testAccCheckDHCPOptionsAssociationDestroy(
 func testAccCheckDHCPOptionsAssociationExist(

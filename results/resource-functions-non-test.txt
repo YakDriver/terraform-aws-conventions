@@ -921,6 +921,8 @@ func flattenAwsCodePipelineActionsInputArtifacts(
 func resourceAwsCodePipelineRead(
 func resourceAwsCodePipelineUpdate(
 func resourceAwsCodePipelineDelete(
+func suppressCodePipelineStageActionConfiguration(
+func hashCodePipelineGitHubToken(
 func resourceAwsCodePipelineWebhook(
 func extractCodePipelineWebhookRules(
 func extractCodePipelineWebhookAuthConfig(

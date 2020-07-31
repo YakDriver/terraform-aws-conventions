@@ -251,6 +251,13 @@ func TestAccDataSourceAwsEc2LocalGatewayVirtualInterface_Tags(
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigFilter(
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigId(
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigTags(
+func dataSourceAwsEc2SpotPrice(
+func dataSourceAwsEc2SpotPriceRead(
+func TestAccAwsEc2SpotPriceDataSource_basic(
+func TestAccAwsEc2SpotPriceDataSource_Filter(
+func testAccPreCheckAwsEc2SpotPrice(
+func testAccAwsEc2SpotPriceDataSourceConfig(
+func testAccAwsEc2SpotPriceDataSourceFilterConfig(
 func dataSourceAwsEc2TransitGatewayDxGatewayAttachment(
 func dataSourceAwsEc2TransitGatewayDxGatewayAttachmentRead(
 func dataSourceAwsEc2TransitGateway(
@@ -2481,6 +2488,7 @@ func resourceAwsElasticTranscoderPresetCreate(
 func resourceAwsElasticTranscoderPresetRead(
 func resourceAwsElasticTranscoderPresetDelete(
 func testAccAwsElasticTranscoderPresetConfig(
+func testAccAwsElasticTranscoderPresetConfigAudioCodecOptionsEmpty(
 func testAccAwsElasticTranscoderPresetConfigDescription(
 func testAccAwsElasticTranscoderPresetConfigFull1(
 func testAccAwsElasticTranscoderPresetConfigFull2(
@@ -4309,6 +4317,8 @@ func resourceAwsSsmParameter(
 func resourceAwsSsmParameterRead(
 func resourceAwsSsmParameterDelete(
 func resourceAwsSsmParameterPut(
+func TestAccAWSSSMParameter_DataType_AwsEc2Image(
+func testAccAWSSSMParameterConfigDataTypeAwsEc2Image(
 func resourceAwsSsmPatchBaseline(
 func resourceAwsSsmPatchBaselineCreate(
 func resourceAwsSsmPatchBaselineUpdate(

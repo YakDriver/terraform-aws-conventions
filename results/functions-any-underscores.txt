@@ -177,6 +177,8 @@ func TestAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroup_Tags(
 func TestAccDataSourceAwsEc2LocalGatewayVirtualInterface_Filter(
 func TestAccDataSourceAwsEc2LocalGatewayVirtualInterface_Id(
 func TestAccDataSourceAwsEc2LocalGatewayVirtualInterface_Tags(
+func TestAccAwsEc2SpotPriceDataSource_basic(
+func TestAccAwsEc2SpotPriceDataSource_Filter(
 func TestAccAWSEc2TransitGatewayDxGatewayAttachmentDataSource_TransitGatewayIdAndDxGatewayId(
 func TestAccAWSEc2TransitGatewayDxGatewayAttachmentDataSource_filter(
 func TestAccAWSEc2TransitGatewayPeeringAttachmentDataSource_Filter_sameAccount(
@@ -199,8 +201,8 @@ func TestAccAWSEc2TransitGatewayVpnAttachmentDataSource_TransitGatewayIdAndVpnCo
 func TestAccAWSEc2TransitGatewayVpnAttachmentDataSource_filter(
 func TestAccAWSEcrAuthorizationTokenDataSource_basic(
 func TestAccAWSEcrDataSource_ecrImage(
-func TestAccAWSEcrDataSource_ecrRepository(
-func TestAccAWSEcrDataSource_nonExistent(
+func TestAccAWSEcrRepositoryDataSource_basic(
+func TestAccAWSEcrRepositoryDataSource_nonExistent(
 func TestAccAWSEcsDataSource_ecsCluster(
 func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
 func TestAccAWSEcsDataSource_ecsContainerDefinition(
@@ -1749,6 +1751,7 @@ func test_config_blue_green_deployment_config_update_no_asg(
 func test_config_blue_green_deployment_complete(
 func test_config_blue_green_deployment_complete_updated(
 func TestAccAWSCodePipeline_basic(
+func TestAccAWSCodePipeline_disappears(
 func TestAccAWSCodePipeline_emptyStageArtifacts(
 func TestAccAWSCodePipeline_deployWithServiceRole(
 func TestAccAWSCodePipeline_tags(
@@ -2998,6 +3001,7 @@ func TestAccAWSElasticTranscoderPipeline_disappears(
 func awsElasticTranscoderNotifications_update(
 func TestAccAWSElasticTranscoderPreset_basic(
 func TestAccAWSElasticTranscoderPreset_disappears(
+func TestAccAWSElasticTranscoderPreset_AudioCodecOptions_empty(
 func TestAccAWSElasticTranscoderPreset_Description(
 func TestAccAWSElasticTranscoderPreset_Full(
 func TestAccAWSElasticTranscoderPreset_Video_FrameRate(
@@ -4099,6 +4103,7 @@ func testAccAWSLBTargetGroupConfig_stickinessWithTCP(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_networkLoadbalancerEIP(
+func TestAccAWSLB_NLB_privateipv4address(
 func TestAccAWSLB_BackwardsCompatibility(
 func TestAccAWSLB_generatedName(
 func TestAccAWSLB_generatesNameForZeroValue(
@@ -4124,6 +4129,7 @@ func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
+func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func testAccAWSLBConfig_updateSubnets(
 func testAccAWSLBConfig_generatedName(
 func testAccAWSLBConfig_zeroValueName(
@@ -5337,6 +5343,7 @@ func TestAccAWSSSMParameter_updateDescription(
 func TestAccAWSSSMParameter_changeNameForcesNew(
 func TestAccAWSSSMParameter_fullPath(
 func TestAccAWSSSMParameter_secure(
+func TestAccAWSSSMParameter_DataType_AwsEc2Image(
 func TestAccAWSSSMParameter_secure_with_key(
 func TestAccAWSSSMParameter_secure_keyUpdate(
 func TestAccAWSSSMPatchBaseline_basic(
@@ -5478,6 +5485,8 @@ func TestAccAWSVolumeAttachment_attachStopped(
 func TestAccAWSVolumeAttachment_update(
 func TestAccAWSVolumeAttachment_disappears(
 func TestAccAWSDHCPOptionsAssociation_basic(
+func TestAccAWSDHCPOptionsAssociation_disappears_vpc(
+func TestAccAWSDHCPOptionsAssociation_disappears_dhcp(
 func TestAccAWSDHCPOptions_basic(
 func TestAccAWSDHCPOptions_deleteOptions(
 func TestAccAWSDHCPOptions_tags(

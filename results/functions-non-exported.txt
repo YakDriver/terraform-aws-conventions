@@ -373,6 +373,11 @@ func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceGroupConfigTags(
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigFilter(
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigId(
 func testAccDataSourceAwsEc2LocalGatewayVirtualInterfaceConfigTags(
+func dataSourceAwsEc2SpotPrice(
+func dataSourceAwsEc2SpotPriceRead(
+func testAccPreCheckAwsEc2SpotPrice(
+func testAccAwsEc2SpotPriceDataSourceConfig(
+func testAccAwsEc2SpotPriceDataSourceFilterConfig(
 func dataSourceAwsEc2TransitGatewayDxGatewayAttachment(
 func dataSourceAwsEc2TransitGatewayDxGatewayAttachmentRead(
 func testAccAWSEc2TransitGatewayDxAttachmentDataSourceConfig(
@@ -3222,6 +3227,8 @@ func flattenAwsCodePipelineActionsInputArtifacts(
 func resourceAwsCodePipelineRead(
 func resourceAwsCodePipelineUpdate(
 func resourceAwsCodePipelineDelete(
+func suppressCodePipelineStageActionConfiguration(
+func hashCodePipelineGitHubToken(
 func testAccCheckAWSCodePipelineExists(
 func testAccCheckAWSCodePipelineDestroy(
 func testAccPreCheckAWSCodePipeline(
@@ -5708,6 +5715,7 @@ func testAccCheckElasticTranscoderPresetExists(
 func testAccCheckElasticTranscoderPresetDisappears(
 func testAccCheckElasticTranscoderPresetDestroy(
 func testAccAwsElasticTranscoderPresetConfig(
+func testAccAwsElasticTranscoderPresetConfigAudioCodecOptionsEmpty(
 func testAccAwsElasticTranscoderPresetConfigDescription(
 func testAccAwsElasticTranscoderPresetConfigFull1(
 func testAccAwsElasticTranscoderPresetConfigFull2(
@@ -7881,6 +7889,7 @@ func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
+func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func testAccAWSLBConfigBackwardsCompatibility(
 func testAccAWSLBConfig_updateSubnets(
 func testAccAWSLBConfig_generatedName(
@@ -10540,6 +10549,7 @@ func testAccCheckAWSSSMParameterDisappears(
 func testAccCheckAWSSSMParameterDestroy(
 func testAccAWSSSMParameterBasicConfig(
 func testAccAWSSSMParameterConfigTier(
+func testAccAWSSSMParameterConfigDataTypeAwsEc2Image(
 func testAccAWSSSMParameterBasicConfigTags1(
 func testAccAWSSSMParameterBasicConfigTags2(
 func testAccAWSSSMParameterBasicConfigOverwrite(
