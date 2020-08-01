@@ -3321,6 +3321,7 @@ func TestAccAWSSpotFleetRequest_withWeightedCapacity(
 func TestAccAWSSpotFleetRequest_withEBSDisk(
 func TestAccAWSSpotFleetRequest_withTags(
 func TestAccAWSSpotFleetRequest_placementTenancyAndGroup(
+func TestAccAWSSpotFleetRequest_zero_capacity(
 func TestAccAWSSpotFleetRequest_disappears(
 func TestAccAWSSpotInstanceRequest_basic(
 func TestAccAWSSpotInstanceRequest_withLaunchGroup(

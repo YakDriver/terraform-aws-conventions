@@ -1,37 +1,37 @@
 Analysis Tallies
-4220	All Functions:Exported
-12159	All Functions:Non-Exported
-8183	All Functions:Multicaps
-3237	All Functions:Non-AWS Multicaps
-7252	All Functions:Uppercase AWS
+4223	All Functions:Exported
+12161	All Functions:Non-Exported
+8188	All Functions:Multicaps
+3239	All Functions:Non-AWS Multicaps
+7257	All Functions:Uppercase AWS
 4866	All Functions:Mixed case AWS
-5924	All Functions:Any underscores
-1274	All Functions:Multiple underscores
-3753	All Functions:Lowercase after first underscore
-2170	All Functions:Uppercase after first underscore
-4194	Capital-T Test Functions:All
-3851	Capital-T Test Functions:TestAcc
-3418	Capital-T Test Functions:TestAccAWS
+5928	All Functions:Any underscores
+1277	All Functions:Multiple underscores
+3754	All Functions:Lowercase after first underscore
+2173	All Functions:Uppercase after first underscore
+4197	Capital-T Test Functions:All
+3854	Capital-T Test Functions:TestAcc
+3421	Capital-T Test Functions:TestAccAWS
 210	Capital-T Test Functions:TestAccAws
-2445	Capital-T Test Functions:TestAcc and lowercase after first underscore
-1405	Capital-T Test Functions:TestAcc and uppercase after first underscore
-6197	Lowercase-t test Functions:All
-5972	Lowercase-t test Functions:testAcc
-2638	Lowercase-t test Functions:testAccAWS
+2446	Capital-T Test Functions:TestAcc and lowercase after first underscore
+1407	Capital-T Test Functions:TestAcc and uppercase after first underscore
+6199	Lowercase-t test Functions:All
+5974	Lowercase-t test Functions:testAcc
+2640	Lowercase-t test Functions:testAccAWS
 420	Lowercase-t test Functions:testAccAws
 1169	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
-764	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
-3688	Lowercase-t test Functions:testAcc functions with config (any case)
-3891	Lowercase-t test Functions:testAcc functions returning strings
-3546	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
-1951	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-10391	Any case-t Test Functions:All
-9823	Any case-t Test Functions:TestAcc
-3614	Any case-t Test Functions:TestAcc with lowercase after first underscore
-2169	Any case-t Test Functions:TestAcc with uppercase after first underscore
-4549	Any case-t Test Functions:TestAcc with only one underscore
+765	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
+3690	Lowercase-t test Functions:testAcc functions with config (any case)
+3893	Lowercase-t test Functions:testAcc functions returning strings
+3548	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
+1952	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
+10396	Any case-t Test Functions:All
+9828	Any case-t Test Functions:TestAcc
+3615	Any case-t Test Functions:TestAcc with lowercase after first underscore
+2172	Any case-t Test Functions:TestAcc with uppercase after first underscore
+4550	Any case-t Test Functions:TestAcc with only one underscore
 1588	Any case-t Test Functions:TestAcc with camel case after first underscore
-1235	Any case-t Test Functions:TestAcc with multiple underscores
+1238	Any case-t Test Functions:TestAcc with multiple underscores
 475	Test Constants:All
 466	Test Constants:TestAcc (any case)
 466	Test Constants:testAcc (lowercase)
@@ -65,7 +65,7 @@ Analysis Tallies
 16	Function Capitalization:ASG
 9	Function Capitalization:aws
 4866	Function Capitalization:Aws
-7252	Function Capitalization:AWS
+7257	Function Capitalization:AWS
 2	Function Capitalization:cidr
 44	Function Capitalization:Cidr
 17	Function Capitalization:CIDR
@@ -131,7 +131,7 @@ Analysis Tallies
 1	Function Capitalization:RAM
 41	Function Capitalization:rds
 55	Function Capitalization:Rds
-137	Function Capitalization:RDS
+139	Function Capitalization:RDS
 0	Function Capitalization:sms
 28	Function Capitalization:Sms
 15	Function Capitalization:SMS
