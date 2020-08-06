@@ -2,8 +2,8 @@ language: sh
 
 stage: test
 install:
-  - git config --global user.email "travis@travis-ci.org"
-  - git config --global user.name "Travis CI"
+  - git config --global user.email "${GH_EMAIL}"
+  - git config --global user.name "YakDriver"
   - git clone https://github.com/terraform-providers/terraform-provider-aws.git
   - export TF_AWS_PATH=./terraform-provider-aws/aws
 script:
