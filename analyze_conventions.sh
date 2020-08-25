@@ -80,6 +80,30 @@ descriptions+=( "Capital-T Test Functions:TestAccAws" )
 filenames+=( "./results/capT-TestAcc-iniCapAws.txt" )
 perl -nle'print $& while m{(func\s+TestAccAws.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
 
+descriptions+=( "Capital-T Test Functions:TestAccDataSourceAWS" )
+filenames+=( "./results/capT-TestAccDataSourceAWS.txt" )
+perl -nle'print $& while m{(func\s+TestAccDataSourceAWS.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Capital-T Test Functions:TestAccDataSourceAws" )
+filenames+=( "./results/capT-TestAccDataSourceAws.txt" )
+perl -nle'print $& while m{(func\s+TestAccDataSourceAws.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Capital-T Test Functions:TestAccAWS+DataSource" )
+filenames+=( "./results/capT-TestAccAWS-plus-DataSource.txt" )
+perl -nle'print $& while m{(func\s+TestAccAWS.+DataSource.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Capital-T Test Functions:TestAccResourceAWS" )
+filenames+=( "./results/capT-TestAccResourceAWS.txt" )
+perl -nle'print $& while m{(func\s+TestAccResourceAWS.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Capital-T Test Functions:TestAccResourceAws" )
+filenames+=( "./results/capT-TestAccResourceAws.txt" )
+perl -nle'print $& while m{(func\s+TestAccResourceAws.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Capital-T Test Functions:TestAccAWS+Resource" )
+filenames+=( "./results/capT-TestAccAWS-plus-Resource.txt" )
+perl -nle'print $& while m{(func\s+TestAccAWS.+Resource.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
 descriptions+=( "Capital-T Test Functions:TestAcc and lowercase after first underscore" )
 filenames+=( "./results/capT-TestAcc-lowAfterUnderscore.txt" )
 perl -nle'print $& while m{(func\s+TestAcc[^_]*_[a-z].*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
