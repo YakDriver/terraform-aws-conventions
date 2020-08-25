@@ -96,6 +96,22 @@ descriptions+=( "Capital-T Test Functions:TestAccAws+DataSource" )
 filenames+=( "./results/capT-TestAccAws-plus-DataSource.txt" )
 perl -nle'print $& while m{(func\s+TestAccAws.+DataSource.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
 
+descriptions+=( "Capital-T Test Functions:TestAccAWSDataSource" )
+filenames+=( "./results/capT-TestAccAWSDataSource.txt" )
+perl -nle'print $& while m{(func\s+TestAccAWSDataSource.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Capital-T Test Functions:TestAccAwsDataSource" )
+filenames+=( "./results/capT-TestAccAwsDataSource.txt" )
+perl -nle'print $& while m{(func\s+TestAccAwsDataSource.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Capital-T Test Functions:TestAccAWSData" )
+filenames+=( "./results/capT-TestAccAWSData.txt" )
+perl -nle'print $& while m{(func\s+TestAccAWSData.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Capital-T Test Functions:TestAccAwsData" )
+filenames+=( "./results/capT-TestAccAwsData.txt" )
+perl -nle'print $& while m{(func\s+TestAccAwsData.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
 descriptions+=( "Capital-T Test Functions:TestAccResourceAWS" )
 filenames+=( "./results/capT-TestAccResourceAWS.txt" )
 perl -nle'print $& while m{(func\s+TestAccResourceAWS.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
