@@ -92,6 +92,10 @@ descriptions+=( "Capital-T Test Functions:TestAccAWS+DataSource" )
 filenames+=( "./results/capT-TestAccAWS-plus-DataSource.txt" )
 perl -nle'print $& while m{(func\s+TestAccAWS.+DataSource.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
 
+descriptions+=( "Capital-T Test Functions:TestAccAws+DataSource" )
+filenames+=( "./results/capT-TestAccAws-plus-DataSource.txt" )
+perl -nle'print $& while m{(func\s+TestAccAws.+DataSource.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
 descriptions+=( "Capital-T Test Functions:TestAccResourceAWS" )
 filenames+=( "./results/capT-TestAccResourceAWS.txt" )
 perl -nle'print $& while m{(func\s+TestAccResourceAWS.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
@@ -103,6 +107,10 @@ perl -nle'print $& while m{(func\s+TestAccResourceAws.*)\s*\(}g' ${TF_AWS_PATH}/
 descriptions+=( "Capital-T Test Functions:TestAccAWS+Resource" )
 filenames+=( "./results/capT-TestAccAWS-plus-Resource.txt" )
 perl -nle'print $& while m{(func\s+TestAccAWS.+Resource.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
+
+descriptions+=( "Capital-T Test Functions:TestAccAws+Resource" )
+filenames+=( "./results/capT-TestAccAws-plus-Resource.txt" )
+perl -nle'print $& while m{(func\s+TestAccAws.+Resource.*)\s*\(}g' ${TF_AWS_PATH}/*_test.go > ${filenames[${#filenames[@]}-1]}
 
 descriptions+=( "Capital-T Test Functions:TestAcc and lowercase after first underscore" )
 filenames+=( "./results/capT-TestAcc-lowAfterUnderscore.txt" )
