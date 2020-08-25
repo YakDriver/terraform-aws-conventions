@@ -333,6 +333,8 @@ func testAccAwsOpsworksRdsDbInstanceForceNew(
 func TestAccAWSRDSCluster_DbSubnetGroupName(
 func testAccAWSClusterConfig_DbSubnetGroupName(
 func rdsDescribeGlobalClusterFromDbClusterARN(
+func TestAccAWSRdsGlobalCluster_SourceDbClusterIdentifier(
+func testAccAWSRdsGlobalClusterConfigSourceDbClusterIdentifier(
 func diffDynamoDbGSI(
 func flattenDynamoDbTtl(
 func flattenDynamoDbPitr(

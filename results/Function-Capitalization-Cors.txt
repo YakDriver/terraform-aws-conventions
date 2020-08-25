@@ -1,5 +1,6 @@
 func expandApiGateway2CorsConfiguration(
 func flattenApiGateway2CorsConfiguration(
+func TestAccAWSAPIGatewayV2Api_Openapi_WithCorsConfiguration(
 func TestAccAWSAPIGatewayV2Api_CorsConfiguration(
 func resourceAwsS3BucketCorsUpdate(
 func TestAccAWSS3Bucket_Cors_Update(

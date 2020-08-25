@@ -12,10 +12,13 @@ func testAccCheckResourceAttrGlobalARNAccountID(
 func testAccMatchResourceAttrGlobalARN(
 func testAccAssumeRoleARNPreCheck(
 func TestALBTargetGroupCloudwatchSuffixFromARN(
+func testAccCheckAWSAPIGatewayV2StageARN(
+func testAccCheckAWSAPIGatewayV2StageExecutionARN(
 func TestAccAWSAutoScalingGroup_serviceLinkedRoleARN(
 func testAccAWSAutoScalingGroupConfig_withServiceLinkedRoleARN(
 func TestAccAWSDataSyncLocationNfs_AgentARNs_Multple(
 func TestAccAWSDataSyncTask_CloudWatchLogGroupARN(
+func testAccCheckAWSDefaultSecurityGroupARN(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
 func TestAccAWSEcsService_withARN(

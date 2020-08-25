@@ -82,10 +82,12 @@ func resourceAwsEksNodeGroupCreate(
 func resourceAwsEksNodeGroupRead(
 func resourceAwsEksNodeGroupUpdate(
 func resourceAwsEksNodeGroupDelete(
+func expandEksLaunchTemplateSpecification(
 func expandEksNodegroupScalingConfig(
 func expandEksRemoteAccessConfig(
 func expandEksUpdateLabelsPayload(
 func flattenEksAutoScalingGroups(
+func flattenEksLaunchTemplateSpecification(
 func flattenEksNodeGroupResources(
 func flattenEksNodeGroupScalingConfig(
 func flattenEksRemoteAccessConfig(
@@ -102,6 +104,9 @@ func TestAccAWSEksNodeGroup_DiskSize(
 func TestAccAWSEksNodeGroup_ForceUpdateVersion(
 func TestAccAWSEksNodeGroup_InstanceTypes(
 func TestAccAWSEksNodeGroup_Labels(
+func TestAccAWSEksNodeGroup_LaunchTemplate_Id(
+func TestAccAWSEksNodeGroup_LaunchTemplate_Name(
+func TestAccAWSEksNodeGroup_LaunchTemplate_Version(
 func TestAccAWSEksNodeGroup_ReleaseVersion(
 func TestAccAWSEksNodeGroup_RemoteAccess_Ec2SshKey(
 func TestAccAWSEksNodeGroup_RemoteAccess_SourceSecurityGroupIds(
@@ -113,6 +118,8 @@ func TestAccAWSEksNodeGroup_Version(
 func testAccCheckAWSEksNodeGroupExists(
 func testAccCheckAWSEksNodeGroupDestroy(
 func testAccCheckAWSEksNodeGroupDisappears(
+func testAccCheckAWSEksNodeGroupNotRecreated(
+func testAccCheckAWSEksNodeGroupRecreated(
 func testAccAWSEksNodeGroupConfigBaseIamAndVpc(
 func testAccAWSEksNodeGroupConfigBase(
 func testAccAWSEksNodeGroupConfigBaseVersion(
@@ -123,6 +130,12 @@ func testAccAWSEksNodeGroupConfigForceUpdateVersion(
 func testAccAWSEksNodeGroupConfigInstanceTypes1(
 func testAccAWSEksNodeGroupConfigLabels1(
 func testAccAWSEksNodeGroupConfigLabels2(
+func testAccAWSEksNodeGroupConfigLaunchTemplateId1(
+func testAccAWSEksNodeGroupConfigLaunchTemplateId2(
+func testAccAWSEksNodeGroupConfigLaunchTemplateName1(
+func testAccAWSEksNodeGroupConfigLaunchTemplateName2(
+func testAccAWSEksNodeGroupConfigLaunchTemplateVersion1(
+func testAccAWSEksNodeGroupConfigLaunchTemplateVersion2(
 func testAccAWSEksNodeGroupConfigReleaseVersion(
 func testAccAWSEksNodeGroupConfigRemoteAccessEc2SshKey(
 func testAccAWSEksNodeGroupConfigRemoteAccessSourceSecurityGroupIds1(

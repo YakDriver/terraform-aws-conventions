@@ -4,3 +4,4 @@ func TestAccAWSDBOptionGroup_OracleOptionsUpdate(
 func testAccAWSDBOptionGroupOracleEEOptionSettings(
 func TestAccAWSS3BucketObject_acl(
 func testAccAWSS3BucketObjectConfig_acl(
+func TestAccAWSStorageGatewaySmbFileShare_smb_acl(

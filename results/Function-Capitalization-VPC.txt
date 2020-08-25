@@ -25,6 +25,14 @@ func TestAccAWSLambdaFunction_VPC_withInvocation(
 func testAccAWSLambdaConfigWithVPC(
 func testAccAWSLambdaConfigWithVPCUpdated(
 func TestAccAWSOpsworksCustomLayer_noVPC(
+func resourceAwsRoute53VPCAssociationAuthorization(
+func resourceAwsRoute53VPCAssociationAuthorizationCreate(
+func resourceAwsRoute53VPCAssociationAuthorizationRead(
+func resourceAwsRoute53VPCAssociationAuthorizationDelete(
+func resourceAwsRoute53VPCAssociationAuthorizationParseId(
+func testAccCheckRoute53VPCAssociationAuthorizationDestroy(
+func testAccCheckRoute53VPCAssociationAuthorizationExists(
+func testAccRoute53VPCAssociationAuthorizationConfig(
 func TestAccAWSRoute53ZoneAssociation_disappears_VPC(
 func expandRoute53VPCs(
 func expandRoute53VPC(
@@ -75,6 +83,8 @@ func TestAccAWSVPCPeeringConnection_region(
 func TestAccAWSVPCPeeringConnection_accept(
 func TestAccAWSVPCPeeringConnection_optionsNoAutoAccept(
 func testSweepVPCs(
+func testAccAWSVPCConfigTags1(
+func testAccAWSVPCConfigTags2(
 func flattenESVPCDerivedInfo(
 func expandESVPCOptions(
 func TestExpandIPPerms_nonVPC(

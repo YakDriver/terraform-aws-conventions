@@ -60,6 +60,8 @@ func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
 func testAccAWSEIP_Instance(
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
+func TestAccAwsGlobalAcceleratorEndpointGroup_ALBEndpoint_ClientIP(
+func testAccGlobalAcceleratorEndpointGroupConfigALBEndpointClientIP(
 func expandSecondaryPrivateIPAddresses(
 func TestAccAWSInstance_privateIP(
 func TestAccAWSInstance_associatePublicIPAndPrivateIP(
@@ -155,6 +157,12 @@ func testAccAwsWafv2IPSetConfigOneTag(
 func testAccAwsWafv2IPSetConfigTwoTags(
 func testAccAwsWafv2IPSetConfigLarge(
 func testAccAWSWafv2IPSetImportStateIdFunc(
+func TestAccAwsWafv2RuleGroup_GeoMatchStatement_ForwardedIPConfig(
+func testAccAwsWafv2RuleGroupConfig_GeoMatchStatement_ForwardedIPConfig(
+func TestAccAwsWafv2WebACL_GeoMatchStatement_ForwardedIPConfig(
+func TestAccAwsWafv2WebACL_RateBasedStatement_ForwardedIPConfig(
+func testAccAwsWafv2WebACLConfig_GeoMatchStatement_ForwardedIPConfig(
+func testAccAwsWafv2WebACLConfig_RateBasedStatement_ForwardedIPConfig(
 func expandIPPerms(
 func flattenNetworkInterfacesPrivateIPAddresses(
 func expandPrivateIPAddresses(
@@ -163,3 +171,6 @@ func TestExpandIPPerms_NegOneProtocol(
 func TestExpandIPPerms_nonVPC(
 func TestFlattenNetworkInterfacesPrivateIPAddresses(
 func TestExpandPrivateIPAddresses(
+func wafv2ForwardedIPConfig(
+func expandWafv2ForwardedIPConfig(
+func flattenWafv2ForwardedIPConfig(

@@ -65,6 +65,7 @@ func testAccAWSNetworkAclRuleConfigIpv6VpcAssignGeneratedIpv6CidrBlockUpdate(
 func testAccAWSNetworkAclRuleImportStateIdFunc(
 func testSweepNetworkAcls(
 func TestAccAWSNetworkAcl_basic(
+func TestAccAWSNetworkAcl_tags(
 func TestAccAWSNetworkAcl_disappears(
 func TestAccAWSNetworkAcl_Egress_ConfigMode(
 func TestAccAWSNetworkAcl_Ingress_ConfigMode(
@@ -92,6 +93,8 @@ func testAccAWSNetworkAclConfigEgressConfigModeZeroed(
 func testAccAWSNetworkAclConfigIngressConfigModeBlocks(
 func testAccAWSNetworkAclConfigIngressConfigModeNoBlocks(
 func testAccAWSNetworkAclConfigIngressConfigModeZeroed(
+func testAccAWSNetworkAclConfigTags1(
+func testAccAWSNetworkAclConfigTags2(
 func testAccAWSS3AccountPublicAccessBlock_BlockPublicAcls(
 func testAccAWSS3AccountPublicAccessBlock_IgnorePublicAcls(
 func testAccAWSS3AccountPublicAccessBlockConfigBlockPublicAcls(

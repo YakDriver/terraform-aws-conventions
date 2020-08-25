@@ -17,5 +17,6 @@ func wafv2SqliMatchStatementSchema(
 func wafv2XssMatchStatementSchema(
 func wafv2FieldToMatchBaseSchema(
 func wafv2FieldToMatchSchema(
+func wafv2ForwardedIPConfig(
 func wafv2TextTransformationSchema(
 func wafv2VisibilityConfigSchema(

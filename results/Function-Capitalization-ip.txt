@@ -836,6 +836,7 @@ func testAccAWSWafRegionalIPSetConfigChangeIPSetDescriptors(
 func testAccAWSWafRegionalIPSetConfig_IpSetDescriptors(
 func testAccAWSWafRegionalIPSetConfig_noDescriptors(
 func TestAccAWSWafRegionalWebAclAssociation_multipleAssociations(
+func testAccAwsWafv2RuleGroupConfig_UpdateMultipleRules(
 func testAccAwsWafv2WebACLConfig_multipleNestedRateBasedStatements(
 func testAccAwsWafv2WebACLConfig_multipleNestedOperatorStatements(
 func testAccAWSWafWebAclConfig_Rules_Multiple(
@@ -843,7 +844,6 @@ func stripCapacityAttributes(
 func flattenAwsDynamoDbReplicaDescriptions(
 func ec2TagsFromTagDescriptions(
 func validateDbEventSubscriptionName(
-func validateIamRoleDescription(
 func validateSecurityGroupRuleDescription(
 func validateIotThingTypeDescription(
 func validateNeptuneEventSubscriptionName(
@@ -851,5 +851,4 @@ func validateNeptuneEventSubscriptionNamePrefix(
 func TestValidateDbEventSubscriptionName(
 func TestValidateNeptuneEventSubscriptionName(
 func TestValidateNeptuneEventSubscriptionNamePrefix(
-func TestValidateIamRoleDescription(
 func TestValidateSecurityGroupRuleDescription(

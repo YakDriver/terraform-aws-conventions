@@ -1,6 +1,7 @@
 func delSGFromENI(
 func sgExistsInENI(
 func TestAccAWSENI_basic(
+func TestAccAWSENI_tags(
 func TestAccAWSENI_disappears(
 func TestAccAWSENI_updatedDescription(
 func TestAccAWSENI_attached(
@@ -22,4 +23,6 @@ func testAccAWSENIConfigWithNoPrivateIPs(
 func testAccAWSENIConfigWithAttachment(
 func testAccAWSENIConfigExternalAttachment(
 func testAccAWSENIConfigPrivateIpsCount(
+func testAccAWSENITagsConfig1(
+func testAccAWSENITagsConfig2(
 func deleteLingeringLambdaENIs(

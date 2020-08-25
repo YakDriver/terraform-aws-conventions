@@ -187,7 +187,5 @@ func testAccCheckAWSSpotFleetRequest_IamInstanceProfileArn(
 func testAccAWSSpotFleetRequestConfigIamInstanceProfileArn(
 func validateIamRolePolicyName(
 func validateIamRolePolicyNamePrefix(
-func validateIamRoleDescription(
 func TestValidateIamRoleProfileName(
 func TestValidateIamRoleProfileNamePrefix(
-func TestValidateIamRoleDescription(

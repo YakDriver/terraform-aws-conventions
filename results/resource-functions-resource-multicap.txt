@@ -1,3 +1,4 @@
+func resourceAwsAPIGatewayV2ImportOpenAPI(
 func resourceAwsELBSticknessPolicyAssigned(
 func resourceAwsASGScheduledActionRetrieve(
 func resourceAwsConfigAggregateAuthorizationParseID(
@@ -43,6 +44,10 @@ func resourceAwsEMRInstanceGroupCreate(
 func resourceAwsEMRInstanceGroupRead(
 func resourceAwsEMRInstanceGroupUpdate(
 func resourceAwsEMRInstanceGroupDelete(
+func resourceAwsEMRManagedScalingPolicy(
+func resourceAwsEMRManagedScalingPolicyCreate(
+func resourceAwsEMRManagedScalingPolicyRead(
+func resourceAwsEMRManagedScalingPolicyDelete(
 func resourceAwsEMRSecurityConfiguration(
 func resourceAwsIamOpenIDConnectProvider(
 func resourceAwsIamOpenIDConnectProviderCreate(
@@ -137,6 +142,11 @@ func resourceAwsRDSGlobalClusterCreate(
 func resourceAwsRDSGlobalClusterRead(
 func resourceAwsRDSGlobalClusterUpdate(
 func resourceAwsRDSGlobalClusterDelete(
+func resourceAwsRoute53VPCAssociationAuthorization(
+func resourceAwsRoute53VPCAssociationAuthorizationCreate(
+func resourceAwsRoute53VPCAssociationAuthorizationRead(
+func resourceAwsRoute53VPCAssociationAuthorizationDelete(
+func resourceAwsRoute53VPCAssociationAuthorizationParseId(
 func resourceAwsRouteID(
 func resourceAwsS3BucketAnalyticsConfigurationParseID(
 func resourceAwsS3BucketInventoryParseID(

@@ -1,0 +1,3 @@
+func TestAccResourceAwsKmsCiphertext_basic(
+func TestAccResourceAwsKmsCiphertext_validate(
+func TestAccResourceAwsKmsCiphertext_validate_withContext(

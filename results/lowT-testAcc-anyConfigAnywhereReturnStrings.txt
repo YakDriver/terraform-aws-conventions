@@ -102,6 +102,7 @@ func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigFilter(rBgpAsn int)
 func testAccCheckAwsEcrAuthorizationTokenDataSourceRepositoryConfig(rName string) string {
 func testAccCheckAwsEcrImageDataSourceConfig(reg, repo, tag string) string {
 func testAccCheckAwsEcrRepositoryDataSourceConfig(rName string) string {
+func testAccCheckAwsEcrRepositoryDataSourceConfig_encryption(rName string) string {
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(clusterName, tdName, svcName string) string {
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(rName string) string {
 func testAccDataSourceAWSEFSAccessPointsConfig() string {
@@ -166,13 +167,15 @@ func testAccDataSourceAwsLambdaInvocation_complex_config(rName, testData string)
 func testAccDataSourceAWSLambdaLayerVersionConfigBasic(rName string) string {
 func testAccDataSourceAWSLambdaLayerVersionConfigVersion(rName string) string {
 func testAccDataSourceAWSLambdaLayerVersionConfigRuntimes(rName string) string {
-func testAccLaunchConfigurationDataSourceConfig_basic(rInt int) string {
+func testAccLaunchConfigurationDataSourceConfig_basic(rName string) string {
 func testAccLaunchConfigurationDataSourceConfig_securityGroups(rInt int) string {
+func testAccLaunchConfigurationDataSourceConfigEbsNoDevice(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfig_Basic(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfigBasicFilter(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfigFilterTags(rName string, rInt int) string {
 func testAccAWSLaunchTemplateDataSourceConfig_metadataOptions(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
+func testAccAWSLaunchTemplateDataSourceConfigNetworkInterfacesDeleteOnTermination(rName, deleteOnTermination string) string {
 func testAccDataSourceAWSLBListenerConfigBasic(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigHTTPS(lbName, targetGroupName, certificate, key string) string {
@@ -332,6 +335,7 @@ func testAccProviderConfigAssumeRolePolicy(policy string) string {
 func testAccAWSAccessAnalyzerAnalyzerConfigAnalyzerName(rName string) string {
 func testAccAWSAccessAnalyzerAnalyzerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAccessAnalyzerAnalyzerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSAccessAnalyzerAnalyzerConfigTypeOrganization(rName string) string {
 func testAccAcmCertificateConfig(domainName, validationMethod string) string {
 func testAccAcmCertificateConfig_privateCert(rName string) string {
 func testAccAcmCertificateConfig_subjectAlternativeNames(domainName, subjectAlternativeNames, validationMethod string) string {
@@ -340,12 +344,11 @@ func testAccAcmCertificateConfig_twoTags(domainName, validationMethod, tag1Key, 
 func testAccAcmCertificateConfigPrivateKeyWithoutChain(commonName string) string {
 func testAccAcmCertificateConfigPrivateKey(certificate, privateKey, chain string) string {
 func testAccAcmCertificateConfig_disableCTLogging(domainName, validationMethod string) string {
-func testAccAwsAcmpcaCertificateAuthorityConfig_Enabled(enabled bool) string {
+func testAccAwsAcmpcaCertificateAuthorityConfig_Enabled(rName, certificateAuthorityType string, enabled bool) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_CustomCname(rName, customCname string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_Enabled(rName string, enabled bool) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_ExpirationInDays(rName string, expirationInDays int) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_S3Bucket(rName string) string {
-func testAccAwsAcmpcaCertificateAuthorityConfigType(certificateAuthorityType string) string {
 func testAccAWSALBTargetGroupConfig_basic(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_updatedPort(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_updatedProtocol(targetGroupName string) string {
@@ -506,6 +509,15 @@ func testAccAWSAPIGatewayV2ApiConfig_tags(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_corsConfiguration(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_corsConfigurationUpdated(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_quickCreate(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_OpenAPI(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_corsConfiguration(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_corsConfigurationUpdated(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_corsConfigurationUpdated2(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_tags(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_tagsUpdated(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_UpdatedOpenAPIYaml(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_UpdatedOpenAPI2(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_baseWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_baseHttp(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_basic(rName string) string {
@@ -592,11 +604,11 @@ func testAccAWSAppautoscalingTargetSpotFleetRequestConfig(validUntil string) str
 func testAccAppCookieStickinessPolicyConfig(rName string) string {
 func testAccAppCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccAppCookieStickinessPolicyConfigDestroy(rName string) string {
-func testAccAppmeshMeshConfig_basic(name string) string {
-func testAccAppmeshMeshConfig_egressFilter(name, egressFilterType string) string {
-func testAccAppmeshMeshConfigWithTags(name string) string {
-func testAccAppmeshMeshConfigWithUpdateTags(name string) string {
-func testAccAppmeshMeshConfigWithRemoveTags(name string) string {
+func testAccAppmeshMeshConfig_basic(rName string) string {
+func testAccAppmeshMeshConfig_egressFilter(rName, egressFilterType string) string {
+func testAccAppmeshMeshConfigWithTags(rName string) string {
+func testAccAppmeshMeshConfigWithUpdateTags(rName string) string {
+func testAccAppmeshMeshConfigWithRemoveTags(rName string) string {
 func testAccAppmeshRouteConfigBase(meshName, vrName, vn1Name, vn2Name string) string {
 func testAccAppmeshRouteConfig_httpRoute(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_httpRouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
@@ -968,6 +980,7 @@ func testAccAWSCodeBuildProjectConfig_Tags(rName, tagKey, tagValue string) strin
 func testAccAWSCodeBuildProjectConfig_VpcConfig1(rName string) string {
 func testAccAWSCodeBuildProjectConfig_VpcConfig2(rName string) string {
 func testAccAWSCodeBuildProjectConfig_WindowsContainer(rName string) string {
+func testAccAWSCodeBuildProjectConfig_WindowsServer2019Container(rName string) string {
 func testAccAWSCodeBuildProjectConfig_ARMContainer(rName string) string {
 func testAccAWSCodebuildProjectConfig_Artifacts_ArtifactIdentifier(rName string, bName string, artifactIdentifier string) string {
 func testAccAWSCodebuildProjectConfig_Artifacts_EncryptionDisabled(rName string, bName string, encryptionDisabled bool) string {
@@ -1305,6 +1318,8 @@ func testAccAWSDBParameterGroupConfigWithApplyMethod(n string) string {
 func testAccAWSDBParameterGroupAddParametersConfig(n string) string {
 func testAccAWSDBParameterGroupOnlyConfig(n string) string {
 func testAccAWSDBParameterGroupIncludeDefaultConfig(n string) string {
+func testAccAWSDBParameterGroupUpdateParametersInitialConfig(n string) string {
+func testAccAWSDBParameterGroupUpdateParametersUpdatedConfig(n string) string {
 func testAccAWSDBSecurityGroupConfig(name string) string {
 func testAccAwsDbSnapshotConfigBase(rName string) string {
 func testAccAwsDbSnapshotConfig(rName string) string {
@@ -1579,6 +1594,9 @@ func testAccAWSEcrRepositoryConfig_tags(rName string) string {
 func testAccAWSEcrRepositoryConfig_tagsChanged(rName string) string {
 func testAccAWSEcrRepositoryConfig_immutability(rName string) string {
 func testAccAWSEcrRepositoryConfig_image_scanning_configuration(rName string, scanOnPush bool) string {
+func testAccAWSEcrRepositoryConfig_encryption_kms_defaultkey(rName string) string {
+func testAccAWSEcrRepositoryConfig_encryption_kms_customkey(rName string) string {
+func testAccAWSEcrRepositoryConfig_encryption_aes256(rName string) string {
 func testAccAWSEcsCapacityProviderConfigBase(rName string) string {
 func testAccAWSEcsCapacityProviderConfig(rName string) string {
 func testAccAWSEcsCapacityProviderConfigManagedScaling(rName string) string {
@@ -1659,6 +1677,12 @@ func testAccAWSEksNodeGroupConfigForceUpdateVersion(rName, version string) strin
 func testAccAWSEksNodeGroupConfigInstanceTypes1(rName, instanceType1 string) string {
 func testAccAWSEksNodeGroupConfigLabels1(rName, labelKey1, labelValue1 string) string {
 func testAccAWSEksNodeGroupConfigLabels2(rName, labelKey1, labelValue1, labelKey2, labelValue2 string) string {
+func testAccAWSEksNodeGroupConfigLaunchTemplateId1(rName string) string {
+func testAccAWSEksNodeGroupConfigLaunchTemplateId2(rName string) string {
+func testAccAWSEksNodeGroupConfigLaunchTemplateName1(rName string) string {
+func testAccAWSEksNodeGroupConfigLaunchTemplateName2(rName string) string {
+func testAccAWSEksNodeGroupConfigLaunchTemplateVersion1(rName string) string {
+func testAccAWSEksNodeGroupConfigLaunchTemplateVersion2(rName string) string {
 func testAccAWSEksNodeGroupConfigReleaseVersion(rName string, version string) string {
 func testAccAWSEksNodeGroupConfigRemoteAccessEc2SshKey(rName string) string {
 func testAccAWSEksNodeGroupConfigRemoteAccessSourceSecurityGroupIds1(rName string) string {
@@ -1863,6 +1887,11 @@ func testAccAWSGameliftFleetAllFieldsUpdatedConfig(fleetName, desc, launchPath s
 func testAccAWSGameliftGameSessionQueueBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGameliftGameSessionQueueBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlacierVaultLockConfigCompleteLock(rName string, completeLock bool) string {
+func testAccGlobalAcceleratorEndpointGroupConfigBasic(rName string) string {
+func testAccGlobalAcceleratorEndpointGroupConfigBaseVpc(rName string) string {
+func testAccGlobalAcceleratorEndpointGroupConfigALBEndpointClientIP(rName string, clientIP bool) string {
+func testAccGlobalAcceleratorEndpointGroupConfigInstanceEndpoint(rName string) string {
+func testAccGlobalAcceleratorEndpointGroupConfigUpdated(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorEmptyConfigurationBlock(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoEmptyConfigurationBlock(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationBlock(rName string) string {
@@ -2032,13 +2061,18 @@ func testAccAWSUserConfig_tagsUpdate(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfig(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfigResourceGroupArn(rName, inspectorResourceGroupResourceName string) string {
 func testAccAvailableAZsNoOptInDefaultExcludeConfig() string {
-func testAccAvailableAZsNoOptInExcludeConfig(exclude string) string {
+func testAccAvailableAZsNoOptInExcludeConfig(excludeZoneIds ...string) string {
+func testAccAvailableAZsNoOptInConfig() string {
 func testAccInstanceConfigInDefaultVpcBySgName(rName string) string {
 func testAccInstanceConfigInDefaultVpcBySgId(rName string) string {
 func testAccInstanceConfigInEc2Classic(rInt int) string {
-func testAccInstanceConfig_pre(rInt int) string {
-func testAccInstanceConfig(rInt int) string {
-func testAccInstanceConfigWithUserDataBase64(rInt int) string {
+func testAccInstanceConfigBasic() string {
+func testAccInstanceConfigAtLeastOneOtherEbsVolume(rName string) string {
+func testAccInstanceConfigWithUserDataBase64(rName string) string {
+func testAccInstanceConfigWithSmallInstanceType(rName string) string {
+func testAccInstanceConfigUpdateInstanceType(rName string) string {
+func testAccInstanceConfigRootInstanceStore() string {
+func testAccInstanceConfigNoAMIEphemeralDevices() string {
 func testAccAwsEc2InstanceConfigBlockDevices(size string) string {
 func testAccAwsEc2InstanceConfigBlockDevicesWithDeleteOnTerminate(size, delete string) string {
 func testAccInstanceConfigSourceDestEnable(rName string) string {
@@ -2050,6 +2084,14 @@ func testAccInstanceConfigPlacementGroup(rName string) string {
 func testAccInstanceConfigIpv6ErrorConfig(rName string) string {
 func testAccInstanceConfigIpv6Support(rName string) string {
 func testAccInstanceConfigIpv6SupportWithIpv4(rName string) string {
+func testAccCheckInstanceConfigTags() string {
+func testAccInstanceConfigEbsBlockDeviceKmsKeyArn() string {
+func testAccInstanceConfigRootBlockDeviceKmsKeyArn(rName string) string {
+func testAccCheckInstanceConfigWithAttachedVolume() string {
+func testAccCheckInstanceConfigNoVolumeTags() string {
+func testAccCheckInstanceConfigWithVolumeTags() string {
+func testAccCheckInstanceConfigWithVolumeTagsUpdate() string {
+func testAccCheckInstanceConfigTagsUpdate() string {
 func testAccInstanceConfigWithoutInstanceProfile(rName string) string {
 func testAccInstanceConfigWithInstanceProfile(rName string) string {
 func testAccInstanceConfigPrivateIP(rName string) string {
@@ -2098,6 +2140,8 @@ func testAccInstanceConfigHibernation(hibernation bool) string {
 func testAccInstanceConfigMetadataOptions(rName string) string {
 func testAccInstanceConfigMetadataOptionsUpdated(rName string) string {
 func testAccAwsEc2InstanceConfigDynamicEBSBlockDevices() string {
+func testAccAWSInternetGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSInternetGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSIotPolicyAttachmentConfig(policyName string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate1(policyName, policyName2 string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate2(policyName2 string) string {
@@ -2196,7 +2240,6 @@ func testAccAWSLambdaFunctionEventInvokeConfigQualifierLatest(rName string) stri
 func testAccAWSLambdaConfigBasic(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigBasicConcurrency(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigConcurrencyUpdate(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigBasicUpdateRuntime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithoutFilenameAndS3Attributes(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEnvVariables(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEnvVariablesModified(funcName, policyName, roleName, sgName string) string {
@@ -2219,23 +2262,11 @@ func testAccAWSLambdaConfigWithVPC(funcName, policyName, roleName, sgName string
 func testAccAWSLambdaConfigWithVPCUpdated(funcName, policyName, roleName, sgName, sgName2 string) string {
 func testAccAWSLambdaConfigWithEmptyVpcConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigS3(bucketName, roleName, funcName string) string {
-func testAccAWSLambdaConfigNoRuntime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigNodeJs10xRuntime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigNodeJs12xRuntime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigPython27Runtime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigJava8Runtime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigJava11Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigTags(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigTagsModified(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigProvidedRuntime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigPython36Runtime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigPython37Runtime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigPython38Runtime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigRuby25Runtime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigRuby27Runtime(funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigDotNetCore31Runtime(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaFunctionConfig_local_name_only_tpl(filePath, roleName, funcName string) string {
 func testAccAWSLambdaFunctionConfig_s3_unversioned_tpl(bucketName, roleName, funcName, key, path string) string {
+func testAccAWSLambdaConfigRuntime(rName, runtime string) string {
 func testAccAWSLambdaPermissionConfig(funcName, roleName string) string {
 func testAccAWSLambdaPermissionConfigStatementIdDuplicate(rName string) string {
 func testAccAWSLambdaPermissionConfig_withRawFunctionName(funcName, roleName string) string {
@@ -2527,6 +2558,8 @@ func testAccAWSNetworkAclConfigEgressConfigModeZeroed() string {
 func testAccAWSNetworkAclConfigIngressConfigModeBlocks() string {
 func testAccAWSNetworkAclConfigIngressConfigModeNoBlocks() string {
 func testAccAWSNetworkAclConfigIngressConfigModeZeroed() string {
+func testAccAWSNetworkAclConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSNetworkAclConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSNetworkInterfaceAttachmentConfig_basic(rInt int) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfig(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaInstance(rName string) string {
@@ -2539,6 +2572,8 @@ func testAccAWSENIConfigWithNoPrivateIPs() string {
 func testAccAWSENIConfigWithAttachment() string {
 func testAccAWSENIConfigExternalAttachment() string {
 func testAccAWSENIConfigPrivateIpsCount(privateIpsCount int) string {
+func testAccAWSENITagsConfig1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSENITagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOpsworksCustomLayerConfigNoVpcCreate(name string) string {
 func testAccAwsOpsworksCustomLayerConfigVpcCreate(name string) string {
 func testAccAwsOpsworksCustomLayerConfigUpdate(name string) string {
@@ -2662,6 +2697,8 @@ func testAccAWSDBClusterParameterGroupConfig(name string) string {
 func testAccAWSDBClusterParameterGroupConfigWithApplyMethod(name string) string {
 func testAccAWSDBClusterParameterGroupAddParametersConfig(name string) string {
 func testAccAWSDBClusterParameterGroupOnlyConfig(name string) string {
+func testAccAWSDBClusterParameterGroupUpdateParametersInitialConfig(name string) string {
+func testAccAWSDBClusterParameterGroupUpdateParametersUpdatedConfig(name string) string {
 func testAccAWSClusterConfig(rName string) string {
 func testAccAWSClusterConfig_AvailabilityZones(rName string) string {
 func testAccAWSClusterConfig_BacktrackWindow(backtrackWindow int) string {
@@ -2687,7 +2724,7 @@ func testAccAWSClusterConfig_Port(rInt, port int) string {
 func testAccAWSClusterConfigIncludingIamRoles(n int) string {
 func testAccAWSClusterConfigAddIamRoles(n int) string {
 func testAccAWSClusterConfigRemoveIamRoles(n int) string {
-func testAccAWSClusterConfigEncryptedCrossRegionReplica(n int) string {
+func testAccAWSClusterConfigReplicationSourceIdentifierKmsKeyId(rName string) string {
 func testAccAWSRDSClusterConfig_DeletionProtection(rName string, deletionProtection bool) string {
 func testAccAWSRDSClusterConfig_EngineMode(rName, engineMode string) string {
 func testAccAWSRDSClusterConfig_EngineMode_Multimaster(rName string) string {
@@ -2695,6 +2732,7 @@ func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_EngineMode_Global(rName 
 func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_EngineMode_Global_Update(rName, globalClusterIdentifierResourceName string) string {
 func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_EngineMode_Provisioned(rName string) string {
 func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_PrimarySecondaryClusters(rNameGlobal, rNamePrimary, rNameSecondary string) string {
+func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_ReplicationSourceIdentifier(rName string) string {
 func testAccAWSRDSClusterConfig_ScalingConfiguration(rName string, autoPause bool, maxCapacity, minCapacity, secondsUntilAutoPause int, timeoutAction string) string {
 func testAccAWSRDSClusterConfig_ScalingConfiguration_DefaultMinCapacity(rName string, autoPause bool, maxCapacity, secondsUntilAutoPause int, timeoutAction string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier(rName string) string {
@@ -2716,6 +2754,7 @@ func testAccAWSRdsGlobalClusterConfigDatabaseName(rName, databaseName string) st
 func testAccAWSRdsGlobalClusterConfigDeletionProtection(rName string, deletionProtection bool) string {
 func testAccAWSRdsGlobalClusterConfigEngine(rName, engine string) string {
 func testAccAWSRdsGlobalClusterConfigEngineVersion(rName, engine, engineVersion string) string {
+func testAccAWSRdsGlobalClusterConfigSourceDbClusterIdentifier(rName string) string {
 func testAccAWSRdsGlobalClusterConfigStorageEncrypted(rName string, storageEncrypted bool) string {
 func testAccAWSRedshiftClusterConfig_updateNodeCount(rInt int) string {
 func testAccAWSRedshiftClusterConfig_updateNodeType(rInt int) string {
@@ -2772,6 +2811,7 @@ func testAccRoute53DelegationSetConfig(refName string) string {
 func testAccRoute53DelegationSetWithZonesConfig(refName, zoneName1, zoneName2 string) string {
 func testAccRoute53HealthCheckConfigTags1(tag1Key, tag1Value string) string {
 func testAccRoute53HealthCheckConfigTags2(tag1Key, tag1Value, tagKey2, tagValue2 string) string {
+func testAccRoute53HealthCheckConfigDisabled(disabled bool) string {
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(rName string) string {
 func testAccRoute53RecordConfig_allowOverwrite(allowOverwrite bool) string {
 func testAccRoute53RecordConfigAliasS3(rName string) string {
@@ -2792,6 +2832,8 @@ func testAccRoute53ResolverRuleConfig_forwardEndpointRecreate(name string) strin
 func testAccRoute53ResolverRuleConfig_resolverVpc(name string) string {
 func testAccRoute53ResolverRuleConfig_resolverEndpoint(name string) string {
 func testAccRoute53ResolverRuleConfig_resolverEndpointRecreate(name string) string {
+func testAccRoute53VPCAssociationAuthorizationConfig() string {
+func testAccRoute53ZoneAssociationCrossAccountConfig() string {
 func testAccRoute53ZoneAssociationRegionConfig() string {
 func testAccRoute53ZoneConfig(zoneName string) string {
 func testAccRoute53ZoneConfigMultiple() string {
@@ -2803,6 +2845,8 @@ func testAccRoute53ZoneConfigTagsSingle(zoneName, tag1Key, tag1Value string) str
 func testAccRoute53ZoneConfigTagsMultiple(zoneName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccRoute53ZoneConfigVPCSingle(rName, zoneName string) string {
 func testAccRoute53ZoneConfigVPCMultiple(rName, zoneName string) string {
+func testAccAWSRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSRouteTableConfigRouteConfigModeBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeNoBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeZeroed() string {
@@ -2991,6 +3035,8 @@ func testAccAWSSecurityGroupRuleConfigMultipleRuleSearchingAllProtocolCrash(rNam
 func testAccAWSSecurityGroupConfigRuleLimit(egressStartIndex, egressRulesCount int) string {
 func testAccAWSSecurityGroupConfigCidrBlockRuleLimit(egressStartIndex, egressRulesCount int) string {
 func testAccAWSSecurityGroupConfigRuleDescription(egressDescription, ingressDescription string) string {
+func testAccAWSAWSSecurityGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAWSSecurityGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSecurityGroupPrefixNameConfig(namePrefix string) string {
 func testAccAWSSecurityGroupConfig_drift() string {
 func testAccAWSSecurityGroupConfig_drift_complex() string {
@@ -3112,6 +3158,8 @@ func testAccAWSSpotFleetRequestTagsConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestTenancyGroupConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestZeroCapacityConfig(rName string, validUntil string) string {
 func testAccAWSSpotInstanceRequestConfig(rInt int) string {
+func testAccAWSSpotInstanceRequestTagsConfig1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSpotInstanceRequestTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSpotInstanceRequestConfigValidUntil(rInt int, validUntil string) string {
 func testAccAWSSpotInstanceRequestConfig_withoutSpotPrice(rInt int) string {
 func testAccAWSSpotInstanceRequestConfig_withLaunchGroup(rInt int) string {
@@ -3214,6 +3262,7 @@ func testAccSsmResourceDataSyncConfig(rInt int, rName string) string {
 func testAccSsmResourceDataSyncConfigUpdate(rInt int, rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigBase(rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_Basic(rName string) string {
+func testAccAWSStorageGatewayCachedIscsiVolumeConfigKMSEncrypted(rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_SnapshotId(rName string) string {
@@ -3229,8 +3278,12 @@ func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(rName, gatewayTimezon
 func testAccAWSStorageGatewayGatewayConfig_GatewayVpcEndpoint(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettings(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(rName, smbGuestPassword string) string {
+func testAccAWSStorageGatewayGatewayConfigSMBSecurityStrategy(rName, strategy string) string {
 func testAccAWSStorageGatewayGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSStorageGatewayGatewayBandwidthConfigUpload(rName string, rate int) string {
+func testAccAWSStorageGatewayGatewayBandwidthConfigDownload(rName string, rate int) string {
+func testAccAWSStorageGatewayGatewayBandwidthConfigAll(rName string, rate int) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_Required(rName string) string {
 func testAccAWSStorageGatewayNfsFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -3246,6 +3299,7 @@ func testAccAWSStorageGatewayNfsFileShareConfig_ObjectACL(rName, objectACL strin
 func testAccAWSStorageGatewayNfsFileShareConfig_ReadOnly(rName string, readOnly bool) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_RequesterPays(rName string, requesterPays bool) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_Squash(rName, squash string) string {
+func testAccAWSStorageGatewayNfsFileShareConfigCacheAttributes(rName string, timeout int) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_Authentication_ActiveDirectory(rName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_Authentication_GuestAccess(rName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_DefaultStorageClass(rName, defaultStorageClass string) string {
@@ -3262,8 +3316,16 @@ func testAccAWSStorageGatewaySmbFileShareConfig_ValidUserList_Single(rName, vali
 func testAccAWSStorageGatewaySmbFileShareConfig_ValidUserList_Multiple(rName, validUser1, validUser2 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSStorageGatewaySmbFileShareSMBACLConfig(rName string, enabled bool) string {
+func testAccAWSStorageGatewaySmbFileShareAuditDestinationConfig(rName string) string {
+func testAccAWSStorageGatewaySmbFileShareAuditDestinationUpdatedConfig(rName string) string {
+func testAccAWSStorageGatewaySmbFileShareCacheAttributesConfig(rName string, timeout int) string {
+func testAccAWSStorageGatewaySmbFileShareCaseSensitivityConfig(rName, option string) string {
 func testAccAWSStorageGatewayUploadBufferConfig_Basic(rName string) string {
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(rName string) string {
+func testAccSubnetTagsConfig1(rName, tagKey1, tagValue1 string) string {
+func testAccSubnetTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccSubnetConfigAvailabilityZoneId() string {
 func testAccSubnetConfigOutpost() string {
 func testAccAWSSwfDomainConfig_Description(rName, description string) string {
 func testAccAWSSwfDomainConfig_Name(rName string) string {
@@ -3314,13 +3376,16 @@ func testAccVpcPeeringConnectionOptionsConfig_sameRegion_sameAccount(rName strin
 func testAccVpcPeeringConnectionOptionsConfig_differentRegion_sameAccount(rName string) string {
 func testAccVpcPeeringConnectionOptionsConfig_sameRegion_differentAccount(rName string) string {
 func testAccVpcPeeringConfig_basic(rName string) string {
-func testAccVpcPeeringConfig_tags(rName string) string {
+func testAccVpcPeeringTagsConfig1(rName, tagKey1, tagValue1 string) string {
+func testAccVpcPeeringTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccVpcPeeringConfig_options(rName string) string {
 func testAccVpcPeeringConfig_failedState(rName string) string {
 func testAccVpcPeeringConfig_region_autoAccept(rName string, autoAccept bool) string {
 func testAccVpcPeeringConfig_autoAccept(rName string, autoAccept bool) string {
 func testAccVpcPeeringConfig_options_noAutoAccept(rName string) string {
 func testAccVpcConfigAssignGeneratedIpv6CidrBlock(assignGeneratedIpv6CidrBlock bool) string {
+func testAccAWSVPCConfigTags1(tagKey1, tagValue1 string) string {
+func testAccAWSVPCConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsVpnConnectionRouteConfig(rBgpAsn int) string {
 func testAccAwsVpnConnectionRouteConfigUpdate(rBgpAsn int) string {
 func testAccAwsVpnConnectionConfig(rBgpAsn int) string {
@@ -3450,6 +3515,7 @@ func testAccAwsWafv2RegexPatternSetConfig_OneTag(name, tagKey, tagValue string) 
 func testAccAwsWafv2RegexPatternSetConfig_TwoTags(name, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAwsWafv2RuleGroupConfig_Basic(name string) string {
 func testAccAwsWafv2RuleGroupConfig_BasicUpdate(name string) string {
+func testAccAwsWafv2RuleGroupConfig_UpdateMultipleRules(name string, ruleName1, ruleName2 string, priority1, priority2 int) string {
 func testAccAwsWafv2RuleGroupConfig_UpdateCapacity(name string) string {
 func testAccAwsWafv2RuleGroupConfig_UpdateMetricName(name string) string {
 func testAccAwsWafv2RuleGroupConfig_Minimal(name string) string {
@@ -3467,6 +3533,7 @@ func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchSingleQueryAr
 func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchUriPath(name string) string {
 func testAccAwsWafv2RuleGroupConfig_IpSetReferenceStatement(name string) string {
 func testAccAwsWafv2RuleGroupConfig_GeoMatchStatement(name string) string {
+func testAccAwsWafv2RuleGroupConfig_GeoMatchStatement_ForwardedIPConfig(name, fallbackBehavior, headerName string) string {
 func testAccAwsWafv2RuleGroupConfig_GeoMatchStatement_Update(name string) string {
 func testAccAwsWafv2RuleGroupConfig_LogicalRuleStatement_And(name string) string {
 func testAccAwsWafv2RuleGroupConfig_LogicalRuleStatement_NotAnd(name string) string {
@@ -3488,10 +3555,14 @@ func testAccAwsWafv2WebACLLoggingConfiguration_updateLogDestination(rName, rName
 func testAccAwsWafv2WebACLLoggingConfiguration_updateTwoRedactedFields(rName string) string {
 func testAccAwsWafv2WebACLLoggingConfiguration_updateOneRedactedField(rName string) string {
 func testAccAwsWafv2WebACLConfig_Basic(name string) string {
-func testAccAwsWafv2WebACLConfig_BasicUpdate(name string) string {
+func testAccAwsWafv2WebACLConfig_BasicRule(name string) string {
+func testAccAwsWafv2WebACLConfig_UpdateRuleNamePriorityMetric(name, ruleName1, ruleName2 string, priority1, priority2 int) string {
+func testAccAwsWafv2WebACLConfig_GeoMatchStatement(name, countryCodes string) string {
+func testAccAwsWafv2WebACLConfig_GeoMatchStatement_ForwardedIPConfig(name, fallbackBehavior, headerName string) string {
 func testAccAwsWafv2WebACLConfig_ManagedRuleGroupStatement(name string) string {
 func testAccAwsWafv2WebACLConfig_ManagedRuleGroupStatement_Update(name string) string {
 func testAccAwsWafv2WebACLConfig_RateBasedStatement(name string) string {
+func testAccAwsWafv2WebACLConfig_RateBasedStatement_ForwardedIPConfig(name, fallbackBehavior, headerName string) string {
 func testAccAwsWafv2WebACLConfig_RateBasedStatement_Update(name string) string {
 func testAccAwsWafv2WebACLConfig_RuleGroupReferenceStatement(name string) string {
 func testAccAwsWafv2WebACLConfig_RuleGroupReferenceStatement_Update(name string) string {
@@ -3546,3 +3617,5 @@ func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(rName string) strin
 func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(rName string) string {
 func testAccAWSXraySamplingRuleConfig_basic(ruleName string) string {
 func testAccAWSXraySamplingRuleConfig_update(ruleName string, priority int, reservoirSize int) string {
+func testAccAWSXraySamplingRuleConfigTags1(ruleName, tagKey1, tagValue1 string) string {
+func testAccAWSXraySamplingRuleConfigTags2(ruleName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

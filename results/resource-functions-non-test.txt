@@ -29,7 +29,6 @@ func resourceAwsAcmpcaCertificateAuthorityCreate(
 func resourceAwsAcmpcaCertificateAuthorityRead(
 func resourceAwsAcmpcaCertificateAuthorityUpdate(
 func resourceAwsAcmpcaCertificateAuthorityDelete(
-func acmpcaCertificateAuthorityRefreshFunc(
 func expandAcmpcaASN1Subject(
 func expandAcmpcaCertificateAuthorityConfiguration(
 func expandAcmpcaCrlConfiguration(
@@ -184,6 +183,7 @@ func resourceAwsApiGatewayUsagePlanKeyCreate(
 func resourceAwsApiGatewayUsagePlanKeyRead(
 func resourceAwsApiGatewayUsagePlanKeyDelete(
 func resourceAwsApiGatewayV2Api(
+func resourceAwsAPIGatewayV2ImportOpenAPI(
 func resourceAwsApiGatewayV2ApiCreate(
 func resourceAwsApiGatewayV2ApiRead(
 func resourceAwsApiGatewayV2ApiUpdate(
@@ -982,6 +982,7 @@ func resourceAwsCognitoUserPoolDomain(
 func resourceAwsCognitoUserPoolDomainCreate(
 func resourceAwsCognitoUserPoolDomainRead(
 func resourceAwsCognitoUserPoolDomainDelete(
+func init(
 func resourceAwsCognitoUserPool(
 func resourceAwsCognitoUserPoolCreate(
 func resourceAwsCognitoUserPoolRead(
@@ -1201,8 +1202,13 @@ func resourceAwsDefaultRouteTableDelete(
 func revokeAllRouteTableRules(
 func resourceAwsDefaultSecurityGroup(
 func resourceAwsDefaultSecurityGroupCreate(
+func resourceAwsDefaultSecurityGroupRead(
+func resourceAwsDefaultSecurityGroupUpdate(
 func resourceAwsDefaultSecurityGroupDelete(
 func revokeDefaultSecurityGroupRules(
+func resourceAwsDefaultSecurityGroupRuleHash(
+func resourceAwsDefaultSecurityGroupMigrateState(
+func migrateAwsDefaultSecurityGroupStateV0toV1(
 func resourceAwsDefaultSubnet(
 func resourceAwsDefaultSubnetCreate(
 func resourceAwsDefaultSubnetDelete(
@@ -1417,7 +1423,6 @@ func resourceAwsDxGatewayDelete(
 func dxGatewayStateRefresh(
 func waitForDirectConnectGatewayDeletion(
 func init(
-func randIntRange(
 func resourceAwsDxHostedPrivateVirtualInterfaceAccepter(
 func resourceAwsDxHostedPrivateVirtualInterfaceAccepterCreate(
 func resourceAwsDxHostedPrivateVirtualInterfaceAccepterRead(
@@ -1600,9 +1605,12 @@ func init(
 func init(
 func resourceAwsEc2ClientVpnNetworkAssociation(
 func resourceAwsEc2ClientVpnNetworkAssociationCreate(
+func resourceAwsEc2ClientVpnNetworkAssociationUpdate(
 func resourceAwsEc2ClientVpnNetworkAssociationRead(
 func resourceAwsEc2ClientVpnNetworkAssociationDelete(
-func clientVpnNetworkAssociationRefreshFunc(
+func deleteClientVpnNetworkAssociation(
+func resourceAwsEc2ClientVpnNetworkAssociationImport(
+func init(
 func resourceAwsEc2ClientVpnRoute(
 func resourceAwsEc2ClientVpnRouteCreate(
 func resourceAwsEc2ClientVpnRouteRead(
@@ -1724,6 +1732,8 @@ func resourceAwsEcrRepository(
 func resourceAwsEcrRepositoryCreate(
 func resourceAwsEcrRepositoryRead(
 func flattenImageScanningConfiguration(
+func expandEcrRepositoryEncryptionConfiguration(
+func flattenEcrRepositoryEncryptionConfiguration(
 func resourceAwsEcrRepositoryUpdate(
 func resourceAwsEcrRepositoryDelete(
 func resourceAwsEcrRepositoryUpdateImageTagMutability(
@@ -1889,10 +1899,12 @@ func resourceAwsEksNodeGroupCreate(
 func resourceAwsEksNodeGroupRead(
 func resourceAwsEksNodeGroupUpdate(
 func resourceAwsEksNodeGroupDelete(
+func expandEksLaunchTemplateSpecification(
 func expandEksNodegroupScalingConfig(
 func expandEksRemoteAccessConfig(
 func expandEksUpdateLabelsPayload(
 func flattenEksAutoScalingGroups(
+func flattenEksLaunchTemplateSpecification(
 func flattenEksNodeGroupResources(
 func flattenEksNodeGroupScalingConfig(
 func flattenEksRemoteAccessConfig(
@@ -2114,6 +2126,10 @@ func fetchEMRInstanceGroup(
 func readEmrEBSConfig(
 func marshalWithoutNil(
 func waitForEmrInstanceGroupStateRunning(
+func resourceAwsEMRManagedScalingPolicy(
+func resourceAwsEMRManagedScalingPolicyCreate(
+func resourceAwsEMRManagedScalingPolicyRead(
+func resourceAwsEMRManagedScalingPolicyDelete(
 func resourceAwsEMRSecurityConfiguration(
 func resourceAwsEmrSecurityConfigurationCreate(
 func resourceAwsEmrSecurityConfigurationRead(
@@ -3600,12 +3616,14 @@ func resourceAwsRDSGlobalClusterCreate(
 func resourceAwsRDSGlobalClusterRead(
 func resourceAwsRDSGlobalClusterUpdate(
 func resourceAwsRDSGlobalClusterDelete(
+func flattenRdsGlobalClusterMembers(
 func rdsDescribeGlobalCluster(
 func rdsDescribeGlobalClusterFromDbClusterARN(
 func rdsGlobalClusterRefreshFunc(
 func waitForRdsGlobalClusterCreation(
 func waitForRdsGlobalClusterUpdate(
 func waitForRdsGlobalClusterDeletion(
+func waitForRdsGlobalClusterRemoval(
 func init(
 func resourceAwsRedshiftCluster(
 func resourceAwsRedshiftClusterImport(
@@ -3617,6 +3635,7 @@ func enableRedshiftSnapshotCopy(
 func resourceAwsRedshiftClusterDelete(
 func deleteAwsRedshiftCluster(
 func resourceAwsRedshiftClusterStateRefreshFunc(
+func init(
 func init(
 func resourceAwsRedshiftEventSubscription(
 func resourceAwsRedshiftEventSubscriptionCreate(
@@ -3670,6 +3689,7 @@ func resourceAwsRedshiftSubnetGroupRead(
 func resourceAwsRedshiftSubnetGroupUpdate(
 func resourceAwsRedshiftSubnetGroupDelete(
 func subnetIdsToSlice(
+func init(
 func resourceAwsResourceGroupsGroup(
 func extractResourceGroupResourceQuery(
 func resourceAwsResourceGroupsGroupCreate(
@@ -3738,11 +3758,17 @@ func route53ResolverRuleRefresh(
 func route53ResolverRuleWaitUntilTargetState(
 func route53ResolverRuleHashTargetIp(
 func init(
+func resourceAwsRoute53VPCAssociationAuthorization(
+func resourceAwsRoute53VPCAssociationAuthorizationCreate(
+func resourceAwsRoute53VPCAssociationAuthorizationRead(
+func resourceAwsRoute53VPCAssociationAuthorizationDelete(
+func resourceAwsRoute53VPCAssociationAuthorizationParseId(
 func resourceAwsRoute53ZoneAssociation(
 func resourceAwsRoute53ZoneAssociationCreate(
 func resourceAwsRoute53ZoneAssociationRead(
 func resourceAwsRoute53ZoneAssociationDelete(
 func resourceAwsRoute53ZoneAssociationParseId(
+func resourceAwsRoute53ZoneAssociationRefreshFunc(
 func route53GetZoneAssociation(
 func resourceAwsRoute53Zone(
 func resourceAwsRoute53ZoneCreate(
@@ -4367,6 +4393,8 @@ func resourceAwsStorageGatewayNfsFileShareDelete(
 func storageGatewayNfsFileShareRefreshFunc(
 func expandStorageGatewayNfsFileShareDefaults(
 func flattenStorageGatewayNfsFileShareDefaults(
+func expandStorageGatewayNfsFileShareCacheAttributes(
+func flattenStorageGatewayNfsFileShareCacheAttributes(
 func resourceAwsStorageGatewaySmbFileShare(
 func resourceAwsStorageGatewaySmbFileShareCreate(
 func resourceAwsStorageGatewaySmbFileShareRead(
@@ -4763,8 +4791,6 @@ func resourceAwsWafv2RuleGroupCreate(
 func resourceAwsWafv2RuleGroupRead(
 func resourceAwsWafv2RuleGroupUpdate(
 func resourceAwsWafv2RuleGroupDelete(
-func computeWafv2IpSetRefStatementIndex(
-func computeWafv2RegexSetRefStatementIndex(
 func resourceAwsWafv2WebACLAssociation(
 func resourceAwsWafv2WebACLAssociationCreate(
 func resourceAwsWafv2WebACLAssociationRead(
@@ -4807,7 +4833,6 @@ func resourceAwsWafv2WebACLLoggingConfigurationRead(
 func resourceAwsWafv2WebACLLoggingConfigurationDelete(
 func flattenWafv2RedactedFields(
 func expandWafv2RedactedFields(
-func computeWafv2RuleGroupRefStatementIndex(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(
 func resourceAwsWafWebAclRead(

@@ -22,9 +22,11 @@ func setIamRoleToRdsCluster(
 func removeIamRoleFromRdsCluster(
 func testSweepRdsClusterParameterGroups(
 func testSweepRdsClusters(
+func flattenRdsGlobalClusterMembers(
 func waitForRdsGlobalClusterCreation(
 func waitForRdsGlobalClusterUpdate(
 func waitForRdsGlobalClusterDeletion(
+func waitForRdsGlobalClusterRemoval(
 func testSweepRdsGlobalClusters(
 func TestAccAWSRdsGlobalCluster_basic(
 func TestAccAWSRdsGlobalCluster_disappears(
@@ -34,6 +36,7 @@ func TestAccAWSRdsGlobalCluster_Engine_Aurora(
 func TestAccAWSRdsGlobalCluster_EngineVersion_Aurora(
 func TestAccAWSRdsGlobalCluster_EngineVersion_AuroraMySQL(
 func TestAccAWSRdsGlobalCluster_EngineVersion_AuroraPostgresql(
+func TestAccAWSRdsGlobalCluster_SourceDbClusterIdentifier(
 func TestAccAWSRdsGlobalCluster_StorageEncrypted(
 func testAccCheckAWSRdsGlobalClusterExists(
 func testAccCheckAWSRdsGlobalClusterDestroy(
@@ -46,6 +49,7 @@ func testAccAWSRdsGlobalClusterConfigDatabaseName(
 func testAccAWSRdsGlobalClusterConfigDeletionProtection(
 func testAccAWSRdsGlobalClusterConfigEngine(
 func testAccAWSRdsGlobalClusterConfigEngineVersion(
+func testAccAWSRdsGlobalClusterConfigSourceDbClusterIdentifier(
 func testAccAWSRdsGlobalClusterConfigStorageEncrypted(
 func expandRdsClusterScalingConfiguration(
 func flattenRdsScalingConfigurationInfo(

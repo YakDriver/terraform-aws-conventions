@@ -9,6 +9,9 @@ func TestAccAWSDocDBClusterInstance_kmsKey(
 func TestAccAWSDocDBCluster_kmsKey(
 func testAccDocDBClusterConfig_kmsKey(
 func TestAccAWSEBSVolume_kmsKey(
+func TestAccAWSEcrRepository_encryption_kms(
+func testAccAWSEcrRepositoryConfig_encryption_kms_defaultkey(
+func testAccAWSEcrRepositoryConfig_encryption_kms_customkey(
 func TestAccAWSEFSFileSystem_kmsKey(
 func TestAccAWSEFSFileSystem_kmsConfigurationWithoutEncryption(
 func TestAccAWSElasticTranscoderPipeline_kmsKey(
@@ -22,3 +25,4 @@ func testAccAWSClusterConfig_kmsKey(
 func TestAccAWSRedshiftCluster_kmsKey(
 func testAccAWSRedshiftClusterConfig_kmsKey(
 func TestAccAWSS3BucketObject_kms(
+func TestAccAWSStorageGatewayCachedIscsiVolume_kms(

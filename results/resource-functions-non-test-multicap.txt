@@ -1,6 +1,7 @@
 func expandAcmpcaASN1Subject(
 func flattenAcmpcaASN1Subject(
 func AMIStateRefreshFunc(
+func resourceAwsAPIGatewayV2ImportOpenAPI(
 func resourceAwsELBSticknessPolicyAssigned(
 func decodeAppsyncDataSourceID(
 func expandAppsyncHTTPDataSourceConfig(
@@ -117,6 +118,10 @@ func resourceAwsEMRInstanceGroupUpdate(
 func resourceAwsEMRInstanceGroupDelete(
 func fetchEMRInstanceGroup(
 func readEmrEBSConfig(
+func resourceAwsEMRManagedScalingPolicy(
+func resourceAwsEMRManagedScalingPolicyCreate(
+func resourceAwsEMRManagedScalingPolicyRead(
+func resourceAwsEMRManagedScalingPolicyDelete(
 func resourceAwsEMRSecurityConfiguration(
 func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
@@ -275,6 +280,11 @@ func rdsDescribeGlobalClusterFromDbClusterARN(
 func expandRedshiftSGAuthorizeIngress(
 func expandRedshiftSGRevokeIngress(
 func FQDN(
+func resourceAwsRoute53VPCAssociationAuthorization(
+func resourceAwsRoute53VPCAssociationAuthorizationCreate(
+func resourceAwsRoute53VPCAssociationAuthorizationRead(
+func resourceAwsRoute53VPCAssociationAuthorizationDelete(
+func resourceAwsRoute53VPCAssociationAuthorizationParseId(
 func cleanChangeID(
 func cleanZoneID(
 func expandRoute53VPCs(

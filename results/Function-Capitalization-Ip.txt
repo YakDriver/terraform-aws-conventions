@@ -134,7 +134,6 @@ func testAccAWSWafRegionalIPSetConfig_IpSetDescriptors(
 func computeWafRegionalRateBasedRulePredicateWithIpSet(
 func computeWafRulePredicateWithIpSet(
 func TestAccAwsWafv2RuleGroup_IpSetReferenceStatement(
-func computeWafv2IpSetRefStatementIndex(
 func testAccAwsWafv2RuleGroupConfig_IpSetReferenceStatement(
 func resourceAwsWorkspacesIpGroup(
 func resourceAwsWorkspacesIpGroupCreate(

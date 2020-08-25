@@ -22,5 +22,11 @@ func TestAccAWSLBListener_oidc(
 func testAccAWSLBListenerConfig_oidc(
 func idCollapseHash(
 func idHash(
+func TestAccAWSStorageGatewayGateway_bandwidthUpload(
+func TestAccAWSStorageGatewayGateway_bandwidthDownload(
+func TestAccAWSStorageGatewayGateway_bandwidthAll(
+func testAccAWSStorageGatewayGatewayBandwidthConfigUpload(
+func testAccAWSStorageGatewayGatewayBandwidthConfigDownload(
+func testAccAWSStorageGatewayGatewayBandwidthConfigAll(
 func cidrBlocksEqual(
 func Test_cidrBlocksEqual(
