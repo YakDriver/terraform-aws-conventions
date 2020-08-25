@@ -1,6 +1,12 @@
+![Travis CI Status](https://travis-ci.org/YakDriver/terraform-aws-conventions.svg?branch=main)
 # terraform-aws-conventions
 
-What is the current state of naming conventions in the Terraform AWS provider Go code? I dunno. This repo performs analysis and rebuilds daily. Take a look below :point_down:. Good ol' fashioned Perl and RegExes gone awry.
+Automatic daily builds :coffee:! Data below :point_down:. The current state of naming conventions in the Terraform AWS provider Go code.
 
-See the [provider linter](https://github.com/terraform-providers/terraform-provider-aws/tree/master/awsproviderlint).
+Find out more:
+* [AWS provider](https://github.com/terraform-providers/terraform-provider-aws)
+* [AWS provider stats](https://github.com/YakDriver/terraform-aws-provider-stats)
+* [AWS provider linter](https://github.com/terraform-providers/terraform-provider-aws/tree/master/awsproviderlint)
+* [AWS provider conventions](https://github.com/YakDriver/terraform-aws-conventions)
+* [AWS provider static checks](https://github.com/YakDriver/terraform-aws-provider-static-checks)
 
