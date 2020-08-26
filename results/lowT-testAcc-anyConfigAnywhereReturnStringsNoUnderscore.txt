@@ -1668,6 +1668,9 @@ func testAccAWSSecurityGroupConfigIngressConfigModeBlocks() string {
 func testAccAWSSecurityGroupConfigIngressConfigModeNoBlocks() string {
 func testAccAWSSecurityGroupConfigIngressConfigModeZeroed() string {
 func testAccAWSSecurityHubAccountConfig() string {
+func testAccAwsSecurityHubActionTargetConfigDescription(description string) string {
+func testAccAwsSecurityHubActionTargetConfigIdentifier(identifier string) string {
+func testAccAwsSecurityHubActionTargetConfigName(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

@@ -1978,6 +1978,7 @@ func testAccGuardDutyMemberConfig_invite(accountID, email string, invite bool) s
 func testAccGuardDutyMemberConfig_invitationMessage(accountID, email, invitationMessage string) string {
 func testAccGuardDutyOrganizationAdminAccountConfigSelf() string {
 func testAccGuardDutyOrganizationConfigurationConfigAutoEnable(autoEnable bool) string {
+func testAccAwsGuardDutyPublishingDestinationConfig_basic(bucketName string) string {
 func testAccGuardDutyThreatintelsetConfig_basic(bucketName, keyName, threatintelsetName string, activate bool) string {
 func testAccGuardDutyThreatintelsetConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGuardDutyThreatintelsetConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -3048,6 +3049,9 @@ func testAccAWSSecurityGroupConfigIngressConfigModeBlocks() string {
 func testAccAWSSecurityGroupConfigIngressConfigModeNoBlocks() string {
 func testAccAWSSecurityGroupConfigIngressConfigModeZeroed() string {
 func testAccAWSSecurityHubAccountConfig() string {
+func testAccAwsSecurityHubActionTargetConfigDescription(description string) string {
+func testAccAwsSecurityHubActionTargetConfigIdentifier(identifier string) string {
+func testAccAwsSecurityHubActionTargetConfigName(name string) string {
 func testAccAWSSecurityHubMemberConfig_basic(accountId, email string) string {
 func testAccAWSSecurityHubMemberConfig_invite(accountId, email string, invite bool) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {

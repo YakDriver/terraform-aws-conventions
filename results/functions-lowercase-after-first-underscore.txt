@@ -1983,6 +1983,9 @@ func testAccGuardDutyMemberConfig_invite(
 func testAccGuardDutyMemberConfig_invitationMessage(
 func testAccAwsGuardDutyOrganizationAdminAccount_basic(
 func testAccAwsGuardDutyOrganizationConfiguration_basic(
+func testAccAwsGuardDutyPublishingDestination_basic(
+func testAccAwsGuardDutyPublishingDestination_disappears(
+func testAccAwsGuardDutyPublishingDestinationConfig_basic(
 func TestAccAWSGuardDuty_serial(
 func testAccAwsGuardDutyThreatintelset_basic(
 func testAccAwsGuardDutyThreatintelset_tags(
@@ -3190,6 +3193,8 @@ func testAccAWSSecurityGroupConfig_drift(
 func testAccAWSSecurityGroupConfig_drift_complex(
 func testAccAWSSecurityGroupConfig_ruleGathering(
 func testAccAWSSecurityHubAccount_basic(
+func testAccAwsSecurityHubActionTarget_basic(
+func testAccAwsSecurityHubActionTarget_disappears(
 func testAccAWSSecurityHubMember_basic(
 func testAccAWSSecurityHubMember_invite(
 func testAccAWSSecurityHubMemberConfig_basic(

@@ -101,6 +101,7 @@ func readAwsGlueTableID(
 func decodeGlueConnectionID(
 func decodeGuardDutyIpsetID(
 func decodeGuardDutyMemberID(
+func decodeGuardDutyPublishDestinationID(
 func decodeGuardDutyThreatintelsetID(
 func resourceAwsIamOpenIDConnectProvider(
 func resourceAwsIamOpenIDConnectProviderCreate(

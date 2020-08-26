@@ -4208,6 +4208,7 @@ func testAccAWSGlueWorkflowConfig_Description(
 func testAccAWSGlueWorkflowConfig_Required(
 func decodeGuardDutyIpsetID(
 func decodeGuardDutyMemberID(
+func decodeGuardDutyPublishDestinationID(
 func TestAccAWSGuardDuty_serial(
 func testAccAWSGuardDutyMemberFromEnv(
 func decodeGuardDutyThreatintelsetID(

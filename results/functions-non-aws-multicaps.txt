@@ -1663,6 +1663,7 @@ func testAccAWSGlueSecurityConfigurationConfig_S3Encryption_S3EncryptionMode_SSE
 func testAccAWSGlueSecurityConfigurationConfig_S3Encryption_S3EncryptionMode_SSES3(
 func decodeGuardDutyIpsetID(
 func decodeGuardDutyMemberID(
+func decodeGuardDutyPublishDestinationID(
 func decodeGuardDutyThreatintelsetID(
 func TestAccAWSIAMAccountAlias_serial(
 func testAccAWSIAMAccountAlias_importBasic(

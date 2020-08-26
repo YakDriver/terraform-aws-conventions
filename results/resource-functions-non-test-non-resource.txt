@@ -967,6 +967,8 @@ func inviteGuardDutyMemberWaiter(
 func guardDutyMemberInvited(
 func decodeGuardDutyMemberID(
 func getGuardDutyOrganizationAdminAccount(
+func decodeGuardDutyPublishDestinationID(
+func init(
 func guardDutyThreatintelsetRefreshStatusFunc(
 func decodeGuardDutyThreatintelsetID(
 func hmacSignature(
