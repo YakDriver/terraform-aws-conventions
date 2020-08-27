@@ -3014,6 +3014,14 @@ func resourceAwsWorkspacesWorkspaceCreate(
 func resourceAwsWorkspacesWorkspaceRead(
 func resourceAwsWorkspacesWorkspaceUpdate(
 func resourceAwsWorkspacesWorkspaceDelete(
+func resourceAwsXrayEncryptionConfig(
+func resourceAwsXrayEncryptionConfigPut(
+func resourceAwsXrayEncryptionConfigRead(
+func resourceAwsXrayGroup(
+func resourceAwsXrayGroupCreate(
+func resourceAwsXrayGroupRead(
+func resourceAwsXrayGroupUpdate(
+func resourceAwsXrayGroupDelete(
 func resourceAwsXraySamplingRule(
 func resourceAwsXraySamplingRuleCreate(
 func resourceAwsXraySamplingRuleRead(

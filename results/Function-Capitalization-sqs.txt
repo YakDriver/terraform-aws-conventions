@@ -1,3 +1,4 @@
+func testAccAWSAPIGatewayV2IntegrationConfig_sqsIntegration(
 func TestAccAWSCloudWatchEventTarget_sqs(
 func TestAccAWSIoTTopicRule_sqs(
 func testAccAWSIoTTopicRule_sqs(

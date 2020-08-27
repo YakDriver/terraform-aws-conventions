@@ -898,6 +898,8 @@ func testAccAWSElasticacheReplicationGroupConfigUpdatedMaintenanceWindow(rName s
 func testAccAWSElasticacheReplicationGroupConfigUpdatedNodeSize(rName string) string {
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterErrorConfig(rInt int, rName string) string {
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterConfig(rName string, numNodeGroups, replicasPerNodeGroup int) string {
+func testAccAWSElasticacheReplicationGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSElasticacheReplicationGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccBeanstalkAppImportConfig(name string) string {
 func testAccBeanstalkAppConfig(rName string) string {
 func testAccBeanstalkAppConfigWithMaxAge(rName string) string {
@@ -2005,5 +2007,10 @@ func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccAwsWorkspacesIpGroupConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccWorkspacesWorkspaceConfig(rName string) string {
+func testAccAWSXrayEncryptionConfigBasicConfig() string {
+func testAccAWSXrayEncryptionConfigWithKeyConfig() string {
+func testAccAWSXrayGroupBasicConfig(rName, expression string) string {
+func testAccAWSXrayGroupBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSXrayGroupBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSXraySamplingRuleConfigTags1(ruleName, tagKey1, tagValue1 string) string {
 func testAccAWSXraySamplingRuleConfigTags2(ruleName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

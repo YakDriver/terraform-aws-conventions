@@ -4907,6 +4907,14 @@ func workspacePropertyUpdate(
 func expandWorkspaceProperties(
 func flattenWorkspaceProperties(
 func init(
+func resourceAwsXrayEncryptionConfig(
+func resourceAwsXrayEncryptionConfigPut(
+func resourceAwsXrayEncryptionConfigRead(
+func resourceAwsXrayGroup(
+func resourceAwsXrayGroupCreate(
+func resourceAwsXrayGroupRead(
+func resourceAwsXrayGroupUpdate(
+func resourceAwsXrayGroupDelete(
 func resourceAwsXraySamplingRule(
 func resourceAwsXraySamplingRuleCreate(
 func resourceAwsXraySamplingRuleRead(

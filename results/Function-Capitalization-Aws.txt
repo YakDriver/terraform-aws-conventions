@@ -1043,6 +1043,7 @@ func resourceAwsApiGatewayV2IntegrationResponseRead(
 func resourceAwsApiGatewayV2IntegrationResponseUpdate(
 func resourceAwsApiGatewayV2IntegrationResponseDelete(
 func resourceAwsApiGatewayV2IntegrationResponseImport(
+func TestAccAWSAPIGatewayV2Integration_AwsServiceIntegration(
 func resourceAwsApiGatewayV2Model(
 func resourceAwsApiGatewayV2ModelCreate(
 func resourceAwsApiGatewayV2ModelRead(
@@ -4908,6 +4909,14 @@ func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
 func testAccCheckAwsWorkspacesWorkspaceDestroy(
 func testAccCheckAwsWorkspacesWorkspaceExists(
 func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(
+func resourceAwsXrayEncryptionConfig(
+func resourceAwsXrayEncryptionConfigPut(
+func resourceAwsXrayEncryptionConfigRead(
+func resourceAwsXrayGroup(
+func resourceAwsXrayGroupCreate(
+func resourceAwsXrayGroupRead(
+func resourceAwsXrayGroupUpdate(
+func resourceAwsXrayGroupDelete(
 func resourceAwsXraySamplingRule(
 func resourceAwsXraySamplingRuleCreate(
 func resourceAwsXraySamplingRuleRead(

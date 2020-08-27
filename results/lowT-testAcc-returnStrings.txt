@@ -586,6 +586,7 @@ func testAccAWSAPIGatewayV2IntegrationConfig_httpProxy(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttp(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpUpdated(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_sqsIntegration(rName string) string {
 func testAccAWSAPIGatewayV2ModelConfig_api(rName string) string {
 func testAccAWSAPIGatewayV2ModelConfig_basic(rName, schema string) string {
 func testAccAWSAPIGatewayV2ModelConfig_allAttributes(rName, schema string) string {
@@ -1908,6 +1909,8 @@ func testAccAWSElasticacheReplicationGroup_UseCmkKmsKeyId(rInt int, rString stri
 func testAccAWSElasticacheReplicationGroup_EnableAtRestEncryptionConfig(rInt int, rString string) string {
 func testAccAWSElasticacheReplicationGroup_EnableAuthTokenTransitEncryptionConfig(rInt int, rString10 string, rString16 string) string {
 func testAccAWSElasticacheReplicationGroupConfig_NumberCacheClusters(rName string, numberCacheClusters int, autoFailover bool) string {
+func testAccAWSElasticacheReplicationGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSElasticacheReplicationGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccBeanstalkAppImportConfig(name string) string {
 func testAccBeanstalkAppConfig(rName string) string {
 func testAccBeanstalkAppServiceRole(rName string) string {
@@ -3970,6 +3973,11 @@ func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesB(rName string) string 
 func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesC(rName string) string {
 func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(rName string) string {
 func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(rName string) string {
+func testAccAWSXrayEncryptionConfigBasicConfig() string {
+func testAccAWSXrayEncryptionConfigWithKeyConfig() string {
+func testAccAWSXrayGroupBasicConfig(rName, expression string) string {
+func testAccAWSXrayGroupBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSXrayGroupBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSXraySamplingRuleConfig_basic(ruleName string) string {
 func testAccAWSXraySamplingRuleConfig_update(ruleName string, priority int, reservoirSize int) string {
 func testAccAWSXraySamplingRuleConfigTags1(ruleName, tagKey1, tagValue1 string) string {
