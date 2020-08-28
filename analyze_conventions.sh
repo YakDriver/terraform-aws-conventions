@@ -434,3 +434,5 @@ for i in "${!descriptions[@]}"; do
     printf "Example: \`%s\`\n\n" "${example}" >> ${readmeFile}
   fi
 done
+
+printf "\n\n\n[%s](%s)\n" "AWS EC2 Instance Types/Prices" "https://github.com/YakDriver/aws-ec2-instance-types"  >> "${readmeFile}"
