@@ -24,6 +24,8 @@ func TestAccAWSDbClusterSnapshotDataSource_MostRecent(
 func TestAccAWSDbInstanceDataSource_basic(
 func TestAccAWSDbInstanceDataSource_ec2Classic(
 func TestAccAWSDbSnapshotDataSource_basic(
+func TestAccAWSDbSubnetGroupDataSource_basic(
+func TestAccAWSDbSubnetGroupDataSource_nonexistent(
 func TestAccAWSEbsSnapshotDataSource_basic(
 func TestAccAWSEbsSnapshotDataSource_Filter(
 func TestAccAWSEbsSnapshotDataSource_MostRecent(

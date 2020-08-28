@@ -61,6 +61,8 @@ func TestAccAWSDbEventCategories_sourceType(
 func TestAccAWSDbInstanceDataSource_basic(
 func TestAccAWSDbInstanceDataSource_ec2Classic(
 func TestAccAWSDbSnapshotDataSource_basic(
+func TestAccAWSDbSubnetGroupDataSource_basic(
+func TestAccAWSDbSubnetGroupDataSource_nonexistent(
 func TestAccDataSourceAwsDirectoryServiceDirectory_NonExistent(
 func TestAccDataSourceAwsDirectoryServiceDirectory_SimpleAD(
 func TestAccDataSourceAwsDirectoryServiceDirectory_MicrosoftAD(
@@ -425,6 +427,7 @@ func TestAccAWSAcmCertificate_root(
 func TestAccAWSAcmCertificate_privateCert(
 func TestAccAWSAcmCertificate_root_TrailingPeriod(
 func TestAccAWSAcmCertificate_rootAndWildcardSan(
+func TestAccAWSAcmCertificate_SubjectAlternativeNames_EmptyString(
 func TestAccAWSAcmCertificate_san_single(
 func TestAccAWSAcmCertificate_san_multiple(
 func TestAccAWSAcmCertificate_san_TrailingPeriod(
@@ -2699,6 +2702,7 @@ func TestAccAWSMskCluster_OpenMonitoring(
 func TestAccAWSMskCluster_LoggingInfo(
 func TestAccAWSMskCluster_Tags(
 func TestAccAWSMskConfiguration_basic(
+func TestAccAWSMskConfiguration_disappears(
 func TestAccAWSMskConfiguration_Description(
 func TestAccAWSMskConfiguration_KafkaVersions(
 func TestAccAWSMskConfiguration_ServerProperties(

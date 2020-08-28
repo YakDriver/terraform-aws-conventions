@@ -46,6 +46,7 @@ func testAccCheckAwsDbClusterSnapshotDataSourceConfig_MostRecent(rName string) s
 func testAccAWSDBInstanceDataSourceConfig(rInt int) string {
 func testAccAWSDBInstanceDataSourceConfig_ec2Classic(rInt int) string {
 func testAccCheckAwsDbSnapshotDataSourceConfig(rInt int) string {
+func testAccAWSDBSubnetGroupDataSourceConfig(rName string) string {
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(adType string) string {
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_SimpleAD(alias string) string {
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_MicrosoftAD(alias string) string {
@@ -2802,7 +2803,7 @@ func testAccMskClusterConfigTags2(rName string) string {
 func testAccMskConfigurationConfig(rName string) string {
 func testAccMskConfigurationConfigDescription(rName, description string) string {
 func testAccMskConfigurationConfigKafkaVersions(rName string) string {
-func testAccMskConfigurationConfigServerProperties(rName string) string {
+func testAccMskConfigurationConfigServerProperties(rName string, serverProperty string) string {
 func testAccNatGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccNatGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSNeptuneClusterInstanceConfig(instanceName string, n int) string {

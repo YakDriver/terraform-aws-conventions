@@ -145,6 +145,8 @@ func dataSourceAwsDbSnapshot(
 func dataSourceAwsDbSnapshotRead(
 func testAccCheckAwsDbSnapshotDataSourceID(
 func testAccCheckAwsDbSnapshotDataSourceConfig(
+func dataSourceAwsDbSubnetGroup(
+func dataSourceAwsDbSubnetGroupRead(
 func dataSourceAwsDirectoryServiceDirectory(
 func dataSourceAwsDirectoryServiceDirectoryRead(
 func TestAccDataSourceAwsDirectoryServiceDirectory_NonExistent(
@@ -3302,6 +3304,8 @@ func resourceAwsMskClusterDeleteWaiter(
 func resourceAwsMskConfiguration(
 func resourceAwsMskConfigurationCreate(
 func resourceAwsMskConfigurationRead(
+func resourceAwsMskConfigurationUpdate(
+func resourceAwsMskConfigurationDelete(
 func resourceAwsNatGateway(
 func resourceAwsNatGatewayCreate(
 func resourceAwsNatGatewayRead(
@@ -3487,8 +3491,6 @@ func resourceAwsOpsworksStackUpdate(
 func resourceAwsOpsworksStackDelete(
 func testAccAwsOpsWorksStack_classic_endpoint(
 func testAccAwsOpsWorksStack_regional_endpoint(
-func testAccAwsOpsworksStackCheckResourceAttrsCreate(
-func testAccAwsOpsworksStackCheckResourceAttrsUpdate(
 func testAccCheckAwsOpsworksStackDestroy(
 func testAccAwsOpsworksStackConfigNoVpcCreate(
 func testAccAwsOpsworksStackConfigNoVpcCreateTags(

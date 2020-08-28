@@ -1396,6 +1396,7 @@ func flattenMskLoggingInfoBrokerLogsS3(
 func mskClusterOperationRefreshFunc(
 func waitForMskClusterOperation(
 func init(
+func init(
 func NGStateRefreshFunc(
 func init(
 func flattenAwsNeptuneClusterResource(

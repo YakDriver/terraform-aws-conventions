@@ -71,6 +71,8 @@ func TestAccAWSDbInstanceDataSource_basic(
 func TestAccAWSDbInstanceDataSource_ec2Classic(
 func testAccAWSDBInstanceDataSourceConfig_ec2Classic(
 func TestAccAWSDbSnapshotDataSource_basic(
+func TestAccAWSDbSubnetGroupDataSource_basic(
+func TestAccAWSDbSubnetGroupDataSource_nonexistent(
 func TestAccDataSourceAwsDirectoryServiceDirectory_NonExistent(
 func TestAccDataSourceAwsDirectoryServiceDirectory_SimpleAD(
 func TestAccDataSourceAwsDirectoryServiceDirectory_MicrosoftAD(
@@ -3142,6 +3144,7 @@ func TestAccAWSMskCluster_LoggingInfo(
 func TestAccAWSMskCluster_Tags(
 func testAccMskClusterConfig_basic(
 func TestAccAWSMskConfiguration_basic(
+func TestAccAWSMskConfiguration_disappears(
 func TestAccAWSMskConfiguration_Description(
 func TestAccAWSMskConfiguration_KafkaVersions(
 func TestAccAWSMskConfiguration_ServerProperties(

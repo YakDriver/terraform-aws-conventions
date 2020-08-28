@@ -63,6 +63,7 @@ func TestAccAWSProvider_Region_AwsGovCloudUs(
 func TestAccAWSProvider_AssumeRole_Empty(
 func testAccAWSAccessAnalyzerAnalyzer_Type_Organization(
 func TestAccAWSAcmCertificate_root_TrailingPeriod(
+func TestAccAWSAcmCertificate_SubjectAlternativeNames_EmptyString(
 func TestAccAWSAcmCertificate_san_single(
 func TestAccAWSAcmCertificate_san_multiple(
 func TestAccAWSAcmCertificate_san_TrailingPeriod(

@@ -3279,6 +3279,9 @@ func init(
 func resourceAwsMskConfiguration(
 func resourceAwsMskConfigurationCreate(
 func resourceAwsMskConfigurationRead(
+func resourceAwsMskConfigurationUpdate(
+func resourceAwsMskConfigurationDelete(
+func init(
 func resourceAwsNatGateway(
 func resourceAwsNatGatewayCreate(
 func resourceAwsNatGatewayRead(

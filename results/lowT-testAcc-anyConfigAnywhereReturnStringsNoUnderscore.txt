@@ -33,6 +33,7 @@ func testAccAWSCustomerGatewayDataSourceConfigFilter(asn, hostOctet int) string 
 func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {
 func testAccAWSDBInstanceDataSourceConfig(rInt int) string {
 func testAccCheckAwsDbSnapshotDataSourceConfig(rInt int) string {
+func testAccAWSDBSubnetGroupDataSourceConfig(rName string) string {
 func testAccDataSourceAwsDynamoDbTableConfigBasic(tableName string) string {
 func testAccDataSourceAwsEbsVolumeIDsConfigWithDataSource(rInt int) string {
 func testAccDataSourceAwsEbsVolumeIDsConfig(rInt int) string {
@@ -1323,7 +1324,7 @@ func testAccMskClusterConfigTags2(rName string) string {
 func testAccMskConfigurationConfig(rName string) string {
 func testAccMskConfigurationConfigDescription(rName, description string) string {
 func testAccMskConfigurationConfigKafkaVersions(rName string) string {
-func testAccMskConfigurationConfigServerProperties(rName string) string {
+func testAccMskConfigurationConfigServerProperties(rName string, serverProperty string) string {
 func testAccNatGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccNatGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSNeptuneClusterInstanceConfig(instanceName string, n int) string {

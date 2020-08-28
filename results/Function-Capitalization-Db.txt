@@ -24,6 +24,10 @@ func mostRecentDbSnapshot(
 func TestAccAWSDbSnapshotDataSource_basic(
 func testAccCheckAwsDbSnapshotDataSourceID(
 func testAccCheckAwsDbSnapshotDataSourceConfig(
+func dataSourceAwsDbSubnetGroup(
+func dataSourceAwsDbSubnetGroupRead(
+func TestAccAWSDbSubnetGroupDataSource_basic(
+func TestAccAWSDbSubnetGroupDataSource_nonexistent(
 func dataSourceAwsDynamoDbTable(
 func dataSourceAwsDynamoDbTableRead(
 func TestAccDataSourceAwsDynamoDbTable_basic(

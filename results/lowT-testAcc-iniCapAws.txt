@@ -237,8 +237,6 @@ func testAccAwsOpsworksRdsDbInstance(
 func testAccAwsOpsworksRdsDbInstanceForceNew(
 func testAccAwsOpsWorksStack_classic_endpoint(
 func testAccAwsOpsWorksStack_regional_endpoint(
-func testAccAwsOpsworksStackCheckResourceAttrsCreate(
-func testAccAwsOpsworksStackCheckResourceAttrsUpdate(
 func testAccAwsOpsworksStackConfigNoVpcCreate(
 func testAccAwsOpsworksStackConfigNoVpcCreateTags(
 func testAccAwsOpsworksStackConfigNoVpcUpdateTags(

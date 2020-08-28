@@ -17,6 +17,7 @@ const testAccCheckAwsCallerIdentityConfig_basic =
 const testAccDataSourceAwsCanonicalUserIdConfig =
 const testAccCheckAwsCloudTrailServiceAccountConfig =
 const testAccCheckAwsCloudTrailServiceAccountConfigRegion =
+const testAccAWSDBSubnetGroupDataSourceConfig_NonExistent =
 const testAccDataSourceAwsDirectoryServiceDirectoryConfig_NonExistent =
 const testAccDataSourceAwsDxGatewayConfig_NonExistent =
 const testAccDataSourceAwsEBSDefaultKmsKeyConfig =

@@ -44,6 +44,8 @@ func TestAccAWSDbEventCategories_sourceType(
 func TestAccAWSDbInstanceDataSource_basic(
 func TestAccAWSDbInstanceDataSource_ec2Classic(
 func TestAccAWSDbSnapshotDataSource_basic(
+func TestAccAWSDbSubnetGroupDataSource_basic(
+func TestAccAWSDbSubnetGroupDataSource_nonexistent(
 func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
 func TestAccDataSourceAwsDxGateway_basic(
 func TestAccDataSourceAwsDynamoDbTable_basic(
@@ -1661,6 +1663,7 @@ func TestAccAWSMqConfiguration_withData(
 func TestAccAWSMqConfiguration_updateTags(
 func TestAccAWSMskCluster_basic(
 func TestAccAWSMskConfiguration_basic(
+func TestAccAWSMskConfiguration_disappears(
 func TestAccAWSNatGateway_basic(
 func TestAccAWSNatGateway_tags(
 func TestAccAWSNeptuneClusterInstance_basic(

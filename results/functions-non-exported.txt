@@ -288,6 +288,9 @@ func mostRecentDbSnapshot(
 func dbSnapshotDescriptionAttributes(
 func testAccCheckAwsDbSnapshotDataSourceID(
 func testAccCheckAwsDbSnapshotDataSourceConfig(
+func dataSourceAwsDbSubnetGroup(
+func dataSourceAwsDbSubnetGroupRead(
+func testAccAWSDBSubnetGroupDataSourceConfig(
 func dataSourceAwsDirectoryServiceDirectory(
 func dataSourceAwsDirectoryServiceDirectoryRead(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(
@@ -8275,6 +8278,10 @@ func testAccMskClusterConfigTags2(
 func resourceAwsMskConfiguration(
 func resourceAwsMskConfigurationCreate(
 func resourceAwsMskConfigurationRead(
+func resourceAwsMskConfigurationUpdate(
+func resourceAwsMskConfigurationDelete(
+func init(
+func testSweepMskConfigurations(
 func testAccCheckMskConfigurationDestroy(
 func testAccCheckMskConfigurationExists(
 func testAccMskConfigurationConfig(
@@ -8611,12 +8618,8 @@ func resourceAwsOpsworksStackDelete(
 func testAccCheckAWSOpsworksStackRecreated(
 func testAccAwsOpsWorksStack_classic_endpoint(
 func testAccAwsOpsWorksStack_regional_endpoint(
-func testAccAwsOpsworksStackCheckResourceAttrsCreate(
-func testAccAwsOpsworksStackCheckResourceAttrsUpdate(
-func testAccCheckAWSOpsworksStackExists(
 func testAccCheckAWSOpsworksCreateStackAttributes(
-func testAccCheckAWSOpsworksCreateStackAttributesWithCookbooks(
-func testAccCheckAWSOpsworksUpdateStackAttributes(
+func testAccCheckAWSOpsworksStackExists(
 func testAccCheckAwsOpsworksStackDestroy(
 func testAccAwsOpsworksStackConfigNoVpcCreate(
 func testAccAwsOpsworksStackConfigNoVpcCreateTags(

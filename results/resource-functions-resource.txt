@@ -1908,6 +1908,8 @@ func resourceAwsMskClusterDeleteWaiter(
 func resourceAwsMskConfiguration(
 func resourceAwsMskConfigurationCreate(
 func resourceAwsMskConfigurationRead(
+func resourceAwsMskConfigurationUpdate(
+func resourceAwsMskConfigurationDelete(
 func resourceAwsNatGateway(
 func resourceAwsNatGatewayCreate(
 func resourceAwsNatGatewayRead(
