@@ -258,6 +258,8 @@ func TestAccDataSourceAWSALBTargetGroup_basic(
 func TestAccDataSourceAWSLBTargetGroup_BackwardsCompatibility(
 func TestAccDataSourceAWSLB_basic(
 func TestAccDataSourceAWSLB_BackwardsCompatibility(
+func TestAccDataSourceAwsLexSlotType_basic(
+func TestAccDataSourceAwsLexSlotType_withVersion(
 func TestAccDataSourceAWSMqBroker_basic(
 func TestAccAWSMskClusterDataSource_Name(
 func TestAccAWSMskConfigurationDataSource_Name(
@@ -1039,6 +1041,10 @@ func TestAccAWSCodeBuildProject_SecondaryArtifacts_Path(
 func TestAccAWSCodeBuildProject_SecondaryArtifacts_Type(
 func TestAccAWSCodeBuildProject_SecondarySources_CodeCommit(
 func TestAccAWSCodeBuildProject_Environment_RegistryCredential(
+func TestAccAWSCodeBuildReportGroup_basic(
+func TestAccAWSCodeBuildReportGroup_export_s3(
+func TestAccAWSCodeBuildReportGroup_tags(
+func TestAccAWSCodeBuildReportGroup_disappears(
 func TestAccAWSCodeBuildSourceCredential_basic(
 func TestAccAWSCodeBuildSourceCredential_BasicAuth(
 func TestAccAWSCodeBuildWebhook_Bitbucket(
@@ -1528,7 +1534,8 @@ func TestAccAWSEBSVolume_basic(
 func TestAccAWSEBSVolume_updateAttachedEbsVolume(
 func TestAccAWSEBSVolume_updateSize(
 func TestAccAWSEBSVolume_updateType(
-func TestAccAWSEBSVolume_updateIops(
+func TestAccAWSEBSVolume_updateIops_Io1(
+func TestAccAWSEBSVolume_updateIops_Io2(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_NoIops(
 func TestAccAWSEBSVolume_InvalidIopsForType(
@@ -1955,6 +1962,7 @@ func TestAccAWSEMRCluster_s3Logging(
 func TestAccAWSEMRCluster_tags(
 func TestAccAWSEMRCluster_root_volume_size(
 func TestAccAWSEMRCluster_step_concurrency_level(
+func TestAccAWSEMRCluster_ebs_config(
 func TestAccAWSEMRCluster_custom_ami_id(
 func TestAccAWSEMRInstanceGroup_basic(
 func TestAccAWSEMRInstanceGroup_BidPrice(
@@ -2637,6 +2645,13 @@ func TestAccAWSLB_ALB_AccessLogs_Prefix(
 func TestAccAWSLB_NLB_AccessLogs(
 func TestAccAWSLB_NLB_AccessLogs_Prefix(
 func TestAccAWSLB_networkLoadbalancer_subnet_change(
+func TestAccAwsLexSlotType_basic(
+func TestAccAwsLexSlotType_createVersion(
+func TestAccAwsLexSlotType_description(
+func TestAccAwsLexSlotType_enumerationValues(
+func TestAccAwsLexSlotType_name(
+func TestAccAwsLexSlotType_valueSelectionStrategy(
+func TestAccAwsLexSlotType_disappears(
 func TestAccAWSLicenseManagerAssociation_basic(
 func TestAccAWSLicenseManagerLicenseConfiguration_basic(
 func TestAccAWSLicenseManagerLicenseConfiguration_update(

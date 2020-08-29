@@ -510,6 +510,11 @@ func resourceAwsCodeBuildProjectRead(
 func resourceAwsCodeBuildProjectUpdate(
 func resourceAwsCodeBuildProjectDelete(
 func resourceAwsCodeBuildProjectArtifactsHash(
+func resourceAwsCodeBuildReportGroup(
+func resourceAwsCodeBuildReportGroupCreate(
+func resourceAwsCodeBuildReportGroupRead(
+func resourceAwsCodeBuildReportGroupUpdate(
+func resourceAwsCodeBuildReportGroupDelete(
 func resourceAwsCodeBuildSourceCredential(
 func resourceAwsCodeBuildSourceCredentialCreate(
 func resourceAwsCodeBuildSourceCredentialRead(
@@ -1804,6 +1809,11 @@ func resourceAwsLbTargetGroupRead(
 func resourceAwsLbTargetGroupUpdate(
 func resourceAwsLbTargetGroupDelete(
 func resourceAwsLbTargetGroupCustomizeDiff(
+func resourceAwsLexSlotType(
+func resourceAwsLexSlotTypeCreate(
+func resourceAwsLexSlotTypeRead(
+func resourceAwsLexSlotTypeUpdate(
+func resourceAwsLexSlotTypeDelete(
 func resourceAwsLicenseManagerAssociation(
 func resourceAwsLicenseManagerAssociationCreate(
 func resourceAwsLicenseManagerAssociationRead(

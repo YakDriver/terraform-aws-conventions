@@ -119,6 +119,13 @@ func TestAccAwsGlobalAcceleratorListener_basic(
 func TestAccAwsGlobalAcceleratorListener_update(
 func TestAccAwsLbListenerCertificate_basic(
 func TestAccAwsLbListenerCertificate_multiple(
+func TestAccAwsLexSlotType_basic(
+func TestAccAwsLexSlotType_createVersion(
+func TestAccAwsLexSlotType_description(
+func TestAccAwsLexSlotType_enumerationValues(
+func TestAccAwsLexSlotType_name(
+func TestAccAwsLexSlotType_valueSelectionStrategy(
+func TestAccAwsLexSlotType_disappears(
 func TestAccAwsRamPrincipalAssociation_basic(
 func TestAccAwsRamPrincipalAssociation_disappears(
 func TestAccAwsRamResourceAssociation_basic(

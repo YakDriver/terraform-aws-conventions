@@ -316,6 +316,10 @@ func environmentVariablesToMap(
 func sourceAuthToMap(
 func validateAwsCodeBuildProjectName(
 func validateAwsCodeBuildProjectS3LogsLocation(
+func expandAwsCodeBuildReportGroupExportConfig(
+func flattenAwsCodeBuildReportGroupExportConfig(
+func expandAwsCodeBuildReportGroupS3ReportExportConfig(
+func flattenAwsCodeBuildReportGroupS3ReportExportConfig(
 func expandWebhookFilterGroups(
 func expandWebhookFilterData(
 func flattenAwsCodeBuildWebhookFilterGroups(
@@ -1344,6 +1348,9 @@ func flattenAwsLbTargetGroupResource(
 func flattenAwsLbTargetGroupStickiness(
 func init(
 func init(
+func getLatestLexSlotTypeVersion(
+func flattenLexEnumerationValues(
+func expandLexEnumerationValues(
 func init(
 func init(
 func init(

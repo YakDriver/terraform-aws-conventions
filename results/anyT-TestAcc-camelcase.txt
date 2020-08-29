@@ -51,6 +51,8 @@ func TestAccAWSLaunchTemplateDataSource_metadataOptions(
 func TestAccAWSLaunchTemplateDataSource_associatePublicIPAddress(
 func testAccAWSLaunchTemplateDataSourceConfig_metadataOptions(
 func testAccAWSLaunchTemplateDataSourceConfig_associatePublicIpAddress(
+func TestAccDataSourceAwsLexSlotType_withVersion(
+func testAccDataSourceAwsLexSlotTypeConfig_withVersion(
 func testAccDataSourceAWSMqBrokerConfig_byId(
 func testAccDataSourceAWSMqBrokerConfig_byName(
 func testAccDataSourceAwsRegionsConfig_allRegions(
@@ -603,7 +605,6 @@ func TestAccAWSEBSSnapshot_withKms(
 func TestAccAWSEBSVolume_updateAttachedEbsVolume(
 func TestAccAWSEBSVolume_updateSize(
 func TestAccAWSEBSVolume_updateType(
-func TestAccAWSEBSVolume_updateIops(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_withTags(
 func TestAccAWSEBSVolume_multiAttach(
@@ -1016,6 +1017,12 @@ func testAccAWSLBConfig_zeroValueName(
 func testAccAWSLBConfig_namePrefix(
 func testAccAWSLBConfig_updatedTags(
 func testAccAWSLBConfig_updateSecurityGroups(
+func TestAccAwsLexSlotType_createVersion(
+func TestAccAwsLexSlotType_enumerationValues(
+func TestAccAwsLexSlotType_valueSelectionStrategy(
+func testAccAwsLexSlotTypeConfig_withVersion(
+func testAccAwsLexSlotTypeConfig_enumerationValues(
+func testAccAwsLexSlotTypeConfig_valueSelectionStrategy(
 func TestAccAWSLightsailKeyPair_publicKey(
 func TestAccAWSLoadBalancerPolicy_updateWhileAssigned(
 func testAccAWSLoadBalancerPolicyConfig_updateWhileAssigned0(

@@ -528,6 +528,12 @@ func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSNSTopic(rName string) str
 func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSWFAction(rName string) string {
 func testAccAWSCloudWatchMetricAlarmConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSCloudWatchMetricAlarmConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCodeBuildReportGroupBasicConfig(rName string) string {
+func testAccAWSCodeBuildReportGroupBasicConfigS3ExportBase(rName string) string {
+func testAccAWSCodeBuildReportGroupS3ExportConfig(rName string) string {
+func testAccAWSCodeBuildReportGroupS3ExportUpdatedConfig(rName string) string {
+func testAccAWSCodeBuildReportGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCodeBuildReportGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCodeCommitRepositoryConfigTags1(r, tag1Key, tag1Value string) string {
 func testAccAWSCodeCommitRepositoryConfigTags2(r, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSCodeDeployAppConfigComputePlatform(rName string, computePlatform string) string {
@@ -687,6 +693,9 @@ func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
 func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSDefaultRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
+func testAccAWSDefaultSubnetConfigBasic(rInt int) string {
+func testAccAWSDefaultSubnetConfigPublicIp(rInt int) string {
+func testAccAWSDefaultSubnetConfigNoPublicIp(rInt int) string {
 func testAccDeviceFarmProjectConfig(rName string) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {
 func testAccDirectoryServiceLogSubscriptionConfig(logGroupName string) string {
@@ -967,6 +976,7 @@ func testAccAWSEmrClusterConfigIAMServiceRoleCustomAmiID(r string) string {
 func testAccAWSEmrClusterConfigIAMInstanceProfileBase(r string) string {
 func testAccAWSEmrClusterConfigIAMAutoscalingRole(r string) string {
 func testAccAWSEmrClusterConfigBootstrapActionBucket(r string) string {
+func testAccAWSEmrEbsConfig(rName string, volumesPerInstance int) string {
 func testAccFlowLogConfigBase(rName string) string {
 func testAccFlowLogConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccFlowLogConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

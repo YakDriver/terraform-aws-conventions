@@ -282,6 +282,10 @@ func TestAccDataSourceAWSALBTargetGroup_basic(
 func TestAccDataSourceAWSLBTargetGroup_BackwardsCompatibility(
 func TestAccDataSourceAWSLB_basic(
 func TestAccDataSourceAWSLB_BackwardsCompatibility(
+func TestAccDataSourceAwsLexSlotType_basic(
+func TestAccDataSourceAwsLexSlotType_withVersion(
+func testAccDataSourceAwsLexSlotTypeConfig_basic(
+func testAccDataSourceAwsLexSlotTypeConfig_withVersion(
 func TestAccDataSourceAWSMqBroker_basic(
 func testAccDataSourceAWSMqBrokerConfig_base(
 func testAccDataSourceAWSMqBrokerConfig_byId(
@@ -1258,6 +1262,9 @@ func testAccAWSCodeBuildProjectConfig_WindowsContainer(
 func testAccAWSCodeBuildProjectConfig_WindowsServer2019Container(
 func testAccAWSCodeBuildProjectConfig_ARMContainer(
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts(
+func TestAccAWSCodeBuildReportGroup_basic(
+func TestAccAWSCodeBuildReportGroup_tags(
+func TestAccAWSCodeBuildReportGroup_disappears(
 func TestAccAWSCodeBuildSourceCredential_basic(
 func TestAccAWSCodeBuildSourceCredential_BasicAuth(
 func testAccAWSCodeBuildSourceCredential_Basic(
@@ -1850,7 +1857,6 @@ func TestAccAWSEBSVolume_basic(
 func TestAccAWSEBSVolume_updateAttachedEbsVolume(
 func TestAccAWSEBSVolume_updateSize(
 func TestAccAWSEBSVolume_updateType(
-func TestAccAWSEBSVolume_updateIops(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_NoIops(
 func TestAccAWSEBSVolume_InvalidIopsForType(
@@ -3044,6 +3050,18 @@ func testAccAWSLBConfig_namePrefix(
 func testAccAWSLBConfig_updatedTags(
 func testAccAWSLBConfig_nosg(
 func testAccAWSLBConfig_updateSecurityGroups(
+func TestAccAwsLexSlotType_basic(
+func TestAccAwsLexSlotType_createVersion(
+func TestAccAwsLexSlotType_description(
+func TestAccAwsLexSlotType_enumerationValues(
+func TestAccAwsLexSlotType_name(
+func TestAccAwsLexSlotType_valueSelectionStrategy(
+func TestAccAwsLexSlotType_disappears(
+func testAccAwsLexSlotTypeConfig_basic(
+func testAccAwsLexSlotTypeConfig_withVersion(
+func testAccAwsLexSlotTypeUpdateConfig_description(
+func testAccAwsLexSlotTypeConfig_enumerationValues(
+func testAccAwsLexSlotTypeConfig_valueSelectionStrategy(
 func TestAccAWSLicenseManagerAssociation_basic(
 func TestAccAWSLicenseManagerLicenseConfiguration_basic(
 func TestAccAWSLicenseManagerLicenseConfiguration_update(

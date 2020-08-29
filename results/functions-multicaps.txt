@@ -1938,6 +1938,18 @@ func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Packaging(
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Path(
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Type(
 func testAccAWSCodeBuildProjectConfig_SecondarySources_CodeCommit(
+func TestAccAWSCodeBuildReportGroup_basic(
+func TestAccAWSCodeBuildReportGroup_export_s3(
+func TestAccAWSCodeBuildReportGroup_tags(
+func TestAccAWSCodeBuildReportGroup_disappears(
+func testAccCheckAWSCodeBuildReportGroupDestroy(
+func testAccCheckAWSCodeBuildReportGroupExists(
+func testAccAWSCodeBuildReportGroupBasicConfig(
+func testAccAWSCodeBuildReportGroupBasicConfigS3ExportBase(
+func testAccAWSCodeBuildReportGroupS3ExportConfig(
+func testAccAWSCodeBuildReportGroupS3ExportUpdatedConfig(
+func testAccAWSCodeBuildReportGroupConfigTags1(
+func testAccAWSCodeBuildReportGroupConfigTags2(
 func TestAccAWSCodeBuildSourceCredential_basic(
 func TestAccAWSCodeBuildSourceCredential_BasicAuth(
 func testAccCheckAWSCodeBuildSourceCredentialDestroy(
@@ -2697,6 +2709,9 @@ func TestAWSDefaultSecurityGroupMigrateState_empty(
 func TestAccAWSDefaultSubnet_basic(
 func TestAccAWSDefaultSubnet_publicIp(
 func testAccCheckAWSDefaultSubnetDestroy(
+func testAccAWSDefaultSubnetConfigBasic(
+func testAccAWSDefaultSubnetConfigPublicIp(
+func testAccAWSDefaultSubnetConfigNoPublicIp(
 func TestAccAWSDefaultVpcDhcpOptions_basic(
 func testAccCheckAWSDefaultVpcDhcpOptionsDestroy(
 func TestAccAWSDefaultVpc_basic(
@@ -2961,7 +2976,8 @@ func TestAccAWSEBSVolume_basic(
 func TestAccAWSEBSVolume_updateAttachedEbsVolume(
 func TestAccAWSEBSVolume_updateSize(
 func TestAccAWSEBSVolume_updateType(
-func TestAccAWSEBSVolume_updateIops(
+func TestAccAWSEBSVolume_updateIops_Io1(
+func TestAccAWSEBSVolume_updateIops_Io2(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_NoIops(
 func TestAccAWSEBSVolume_InvalidIopsForType(
@@ -3895,6 +3911,7 @@ func TestAccAWSEMRCluster_s3Logging(
 func TestAccAWSEMRCluster_tags(
 func TestAccAWSEMRCluster_root_volume_size(
 func TestAccAWSEMRCluster_step_concurrency_level(
+func TestAccAWSEMRCluster_ebs_config(
 func TestAccAWSEMRCluster_custom_ami_id(
 func testAccCheckAWSEmrDestroy(
 func testAccCheckAWSEmrClusterExists(
@@ -3940,6 +3957,7 @@ func testAccAWSEmrClusterConfigIAMServiceRoleCustomAmiID(
 func testAccAWSEmrClusterConfigIAMInstanceProfileBase(
 func testAccAWSEmrClusterConfigIAMAutoscalingRole(
 func testAccAWSEmrClusterConfigBootstrapActionBucket(
+func testAccAWSEmrEbsConfig(
 func resourceAwsEMRInstanceGroup(
 func resourceAwsEMRInstanceGroupCreate(
 func resourceAwsEMRInstanceGroupRead(

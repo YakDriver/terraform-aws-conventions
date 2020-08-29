@@ -188,6 +188,8 @@ func testAccDataSourceAWSLBTargetGroupConfigBasic(lbName string, targetGroupName
 func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(lbName string, targetGroupName string) string {
 func testAccDataSourceAWSLBConfigBasic(lbName string) string {
 func testAccDataSourceAWSLBConfigBackardsCompatibility(albName string) string {
+func testAccDataSourceAwsLexSlotTypeConfig_basic() string {
+func testAccDataSourceAwsLexSlotTypeConfig_withVersion() string {
 func testAccDataSourceAWSMqBrokerConfig_base(brokerName, prefix string) string {
 func testAccDataSourceAWSMqBrokerConfig_byId(brokerName, prefix string) string {
 func testAccDataSourceAWSMqBrokerConfig_byName(brokerName, prefix string) string {
@@ -1079,6 +1081,12 @@ func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Packaging(rName, packag
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Path(rName, path string) string {
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Type(rName string, bName string, artifactType string) string {
 func testAccAWSCodeBuildProjectConfig_SecondarySources_CodeCommit(rName string) string {
+func testAccAWSCodeBuildReportGroupBasicConfig(rName string) string {
+func testAccAWSCodeBuildReportGroupBasicConfigS3ExportBase(rName string) string {
+func testAccAWSCodeBuildReportGroupS3ExportConfig(rName string) string {
+func testAccAWSCodeBuildReportGroupS3ExportUpdatedConfig(rName string) string {
+func testAccAWSCodeBuildReportGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCodeBuildReportGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCodeBuildSourceCredential_Basic(authType, serverType, token string) string {
 func testAccAWSCodeBuildSourceCredential_BasicAuth(token, userName string) string {
 func testAccAWSCodeBuildWebhookConfig_Bitbucket(rName string) string {
@@ -1444,6 +1452,9 @@ func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
 func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSDefaultRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
+func testAccAWSDefaultSubnetConfigBasic(rInt int) string {
+func testAccAWSDefaultSubnetConfigPublicIp(rInt int) string {
+func testAccAWSDefaultSubnetConfigNoPublicIp(rInt int) string {
 func testAccDeviceFarmProjectConfig(rName string) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {
 func testAccDirectoryServiceDirectoryConfig_withAlias(alias string) string {
@@ -2023,6 +2034,7 @@ func testAccAWSEmrClusterConfigIAMServiceRoleCustomAmiID(r string) string {
 func testAccAWSEmrClusterConfigIAMInstanceProfileBase(r string) string {
 func testAccAWSEmrClusterConfigIAMAutoscalingRole(r string) string {
 func testAccAWSEmrClusterConfigBootstrapActionBucket(r string) string {
+func testAccAWSEmrEbsConfig(rName string, volumesPerInstance int) string {
 func testAccAWSEmrInstanceGroupConfig_basic(r int) string {
 func testAccAWSEmrInstanceGroupConfig_BidPrice(r int) string {
 func testAccAWSEmrInstanceGroupConfig_ConfigurationsJson(r int, name string) string {
@@ -2731,6 +2743,11 @@ func testAccAWSLBConfigNLBAccessLogs(enabled bool, lbName, bucketName, bucketPre
 func testAccAWSLBConfigNLBAccessLogsNoBlocks(lbName, bucketName string) string {
 func testAccAWSLBConfig_nosg(lbName string) string {
 func testAccAWSLBConfig_updateSecurityGroups(lbName string) string {
+func testAccAwsLexSlotTypeConfig_basic(rName string) string {
+func testAccAwsLexSlotTypeConfig_withVersion(rName string) string {
+func testAccAwsLexSlotTypeUpdateConfig_description(rName string) string {
+func testAccAwsLexSlotTypeConfig_enumerationValues(rName string) string {
+func testAccAwsLexSlotTypeConfig_valueSelectionStrategy(rName string) string {
 func testAccAWSLightsailDomainConfig_basic(lightsailDomainName string) string {
 func testAccAWSLightsailInstanceConfig_basic(lightsailName string) string {
 func testAccAWSLightsailInstanceConfig_tags1(lightsailName string) string {

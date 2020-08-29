@@ -72,6 +72,8 @@ func TestAccDataSourceAwsKmsKey_basic(
 func TestAccDataSourceAwsLambdaInvocation_basic(
 func TestAccDataSourceAwsLambdaInvocation_qualifier(
 func TestAccDataSourceAwsLambdaInvocation_complex(
+func TestAccDataSourceAwsLexSlotType_basic(
+func TestAccDataSourceAwsLexSlotType_withVersion(
 func TestAccDataSourceAwsNatGateway_basic(
 func TestAccDataSourceAwsNetworkAcls_basic(
 func TestAccDataSourceAwsNetworkAcls_Filter(
