@@ -111,6 +111,8 @@ func flattenEBSConfig(
 func resourceAwsEMRClusterStateRefreshFunc(
 func resourceAwsEMRClusterEBSConfigHash(
 func fetchAllEMRInstanceGroups(
+func fetchAllEMRInstanceFleets(
+func resourceAwsEMRInstanceTypeConfigHash(
 func resourceAwsEMRInstanceGroup(
 func resourceAwsEMRInstanceGroupCreate(
 func resourceAwsEMRInstanceGroupRead(
@@ -130,6 +132,7 @@ func decodeGlueConnectionID(
 func expandGlueDynamoDBTargets(
 func expandGlueDynamoDBTarget(
 func flattenGlueDynamoDBTargets(
+func readAwsGlueUDFID(
 func decodeGuardDutyIpsetID(
 func decodeGuardDutyMemberID(
 func decodeGuardDutyPublishDestinationID(

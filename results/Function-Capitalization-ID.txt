@@ -99,6 +99,7 @@ func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
 func readAwsGlueTableID(
 func decodeGlueConnectionID(
+func readAwsGlueUDFID(
 func decodeGuardDutyIpsetID(
 func decodeGuardDutyMemberID(
 func decodeGuardDutyPublishDestinationID(

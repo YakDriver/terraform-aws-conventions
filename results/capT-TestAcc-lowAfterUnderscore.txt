@@ -1183,6 +1183,8 @@ func TestAccAWSEMRCluster_root_volume_size(
 func TestAccAWSEMRCluster_step_concurrency_level(
 func TestAccAWSEMRCluster_ebs_config(
 func TestAccAWSEMRCluster_custom_ami_id(
+func TestAccAWSEMRCluster_instance_fleet(
+func TestAccAWSEMRCluster_instance_fleet_master_only(
 func TestAccAWSEMRInstanceGroup_basic(
 func TestAccAwsEmrManagedScalingPolicy_basic(
 func TestAccAwsEmrManagedScalingPolicy_disappears(
@@ -1237,6 +1239,9 @@ func TestAccAWSGlueCrawler_disappears(
 func TestAccAWSGlueJob_basic(
 func TestAccAWSGlueSecurityConfiguration_basic(
 func TestAccAWSGlueTrigger_basic(
+func TestAccAWSGlueUserDefinedFunction_basic(
+func TestAccAWSGlueUserDefinedFunction_resource_uri(
+func TestAccAWSGlueUserDefinedFunction_disappears(
 func TestAccAWSGlueWorkflow_basic(
 func TestAccAWSGuardDuty_serial(
 func TestAccAWSAccessKey_basic(

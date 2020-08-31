@@ -804,6 +804,7 @@ func cleanupELBNetworkInterfaces(
 func detachNetworkInterfaces(
 func deleteNetworkInterfaces(
 func init(
+func InstanceFleetConfigSchema(
 func countEMRRemainingInstances(
 func expandApplications(
 func flattenApplications(
@@ -834,6 +835,18 @@ func readBodyJson(
 func findMasterGroup(
 func getEmrCoreInstanceGroupAutoscalingPolicy(
 func fetchAllEMRInstanceGroups(
+func readInstanceFleetConfig(
+func fetchAllEMRInstanceFleets(
+func findInstanceFleet(
+func flattenInstanceFleet(
+func flatteninstanceTypeConfigs(
+func flattenLaunchSpecifications(
+func flattenOnDemandSpecification(
+func flattenSpotSpecification(
+func expandEbsConfiguration(
+func expandInstanceTypeConfigs(
+func expandLaunchSpecification(
+func expandConfigurations(
 func init(
 func instanceGroupStateRefresh(
 func fetchEMRInstanceGroup(
@@ -962,6 +975,10 @@ func flattenGlueActions(
 func flattenGlueConditions(
 func flattenGluePredicate(
 func init(
+func readAwsGlueUDFID(
+func expandAwsGlueUserDefinedFunctionInput(
+func expandAwsGlueUserDefinedFunctionResourceUri(
+func flattenAwsGlueUserDefinedFunctionResourceUri(
 func deleteWorkflow(
 func init(
 func init(
@@ -1155,6 +1172,7 @@ func s3ConfigurationSchema(
 func processingConfigurationSchema(
 func flattenCloudwatchLoggingOptions(
 func flattenFirehoseElasticsearchConfiguration(
+func flattenVpcConfiguration(
 func flattenFirehoseExtendedS3Configuration(
 func flattenFirehoseRedshiftConfiguration(
 func flattenFirehoseSplunkConfiguration(
@@ -1196,6 +1214,7 @@ func extractProcessorParameters(
 func extractProcessorParameter(
 func extractEncryptionConfiguration(
 func extractCloudWatchLoggingConfiguration(
+func extractVpcConfiguration(
 func extractPrefixConfiguration(
 func createRedshiftConfig(
 func updateRedshiftConfig(

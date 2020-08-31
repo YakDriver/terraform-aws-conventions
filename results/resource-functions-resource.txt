@@ -1309,6 +1309,7 @@ func resourceAwsEMRClusterUpdate(
 func resourceAwsEMRClusterDelete(
 func resourceAwsEMRClusterStateRefreshFunc(
 func resourceAwsEMRClusterEBSConfigHash(
+func resourceAwsEMRInstanceTypeConfigHash(
 func resourceAwsEMRInstanceGroup(
 func resourceAwsEMRInstanceGroupCreate(
 func resourceAwsEMRInstanceGroupRead(
@@ -1441,6 +1442,11 @@ func resourceAwsGlueTriggerRead(
 func resourceAwsGlueTriggerUpdate(
 func resourceAwsGlueTriggerDelete(
 func resourceAwsGlueTriggerRefreshFunc(
+func resourceAwsGlueUserDefinedFunction(
+func resourceAwsGlueUserDefinedFunctionCreate(
+func resourceAwsGlueUserDefinedFunctionUpdate(
+func resourceAwsGlueUserDefinedFunctionRead(
+func resourceAwsGlueUserDefinedFunctionDelete(
 func resourceAwsGlueWorkflow(
 func resourceAwsGlueWorkflowCreate(
 func resourceAwsGlueWorkflowRead(

@@ -1375,6 +1375,8 @@ func testAccAWSEmrClusterConfigIAMInstanceProfileBase(
 func testAccAWSEmrClusterConfigIAMAutoscalingRole(
 func testAccAWSEmrClusterConfigBootstrapActionBucket(
 func testAccAWSEmrEbsConfig(
+func testAccAWSEmrClusterConfigInstanceFleets(
+func testAccAWSEmrClusterConfigInstanceFleetsMasterOnly(
 func testAccAWSEMRInstanceGroupResourceImportStateIdFunc(
 func testAccAWSEMRInstanceGroupRecreated(
 func testAccAWSEmrInstanceGroupConfig_basic(

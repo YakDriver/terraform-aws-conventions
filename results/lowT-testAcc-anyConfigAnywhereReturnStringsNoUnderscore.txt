@@ -977,6 +977,8 @@ func testAccAWSEmrClusterConfigIAMInstanceProfileBase(r string) string {
 func testAccAWSEmrClusterConfigIAMAutoscalingRole(r string) string {
 func testAccAWSEmrClusterConfigBootstrapActionBucket(r string) string {
 func testAccAWSEmrEbsConfig(rName string, volumesPerInstance int) string {
+func testAccAWSEmrClusterConfigInstanceFleets(r string) string {
+func testAccAWSEmrClusterConfigInstanceFleetsMasterOnly(r string) string {
 func testAccFlowLogConfigBase(rName string) string {
 func testAccFlowLogConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccFlowLogConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1039,6 +1041,9 @@ func testAccAWSGlueJobConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueJobConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGlueTriggerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueTriggerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccGlueUserDefinedFunctionBasicConfig(rName string, name string) string {
+func testAccGlueUserDefinedFunctionResourceURIConfig1(rName string) string {
+func testAccGlueUserDefinedFunctionResourceURIConfig2(rName string) string {
 func testAccGuardDutyDetectorConfigTags1(tagKey1, tagValue1 string) string {
 func testAccGuardDutyDetectorConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGuardDutyIpsetConfigTags1(rName, tagKey1, tagValue1 string) string {

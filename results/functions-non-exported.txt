@@ -1060,6 +1060,8 @@ func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARN(
 func testAccCheckResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrRegionalARNAccountID(
+func testAccCheckResourceAttrRegionalHostname(
+func testAccCheckResourceAttrHostnameWithPort(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccMatchResourceAttrRegionalARNAccountID(
@@ -5879,6 +5881,19 @@ func findMasterGroup(
 func resourceAwsEMRClusterEBSConfigHash(
 func getEmrCoreInstanceGroupAutoscalingPolicy(
 func fetchAllEMRInstanceGroups(
+func readInstanceFleetConfig(
+func fetchAllEMRInstanceFleets(
+func findInstanceFleet(
+func flattenInstanceFleet(
+func flatteninstanceTypeConfigs(
+func flattenLaunchSpecifications(
+func flattenOnDemandSpecification(
+func flattenSpotSpecification(
+func expandEbsConfiguration(
+func expandInstanceTypeConfigs(
+func expandLaunchSpecification(
+func expandConfigurations(
+func resourceAwsEMRInstanceTypeConfigHash(
 func init(
 func testSweepEmrClusters(
 func testAccCheckAWSEmrDestroy(
@@ -5930,6 +5945,8 @@ func testAccAWSEmrClusterConfigIAMInstanceProfileBase(
 func testAccAWSEmrClusterConfigIAMAutoscalingRole(
 func testAccAWSEmrClusterConfigBootstrapActionBucket(
 func testAccAWSEmrEbsConfig(
+func testAccAWSEmrClusterConfigInstanceFleets(
+func testAccAWSEmrClusterConfigInstanceFleetsMasterOnly(
 func resourceAwsEMRInstanceGroup(
 func resourceAwsEMRInstanceGroupCreate(
 func resourceAwsEMRInstanceGroupRead(
@@ -6429,6 +6446,20 @@ func testAccAWSGlueTriggerConfig_Schedule(
 func testAccAWSGlueTriggerConfigTags1(
 func testAccAWSGlueTriggerConfigTags2(
 func testAccAWSGlueTriggerConfig_WorkflowName(
+func resourceAwsGlueUserDefinedFunction(
+func resourceAwsGlueUserDefinedFunctionCreate(
+func resourceAwsGlueUserDefinedFunctionUpdate(
+func resourceAwsGlueUserDefinedFunctionRead(
+func resourceAwsGlueUserDefinedFunctionDelete(
+func readAwsGlueUDFID(
+func expandAwsGlueUserDefinedFunctionInput(
+func expandAwsGlueUserDefinedFunctionResourceUri(
+func flattenAwsGlueUserDefinedFunctionResourceUri(
+func testAccCheckGlueUDFDestroy(
+func testAccCheckGlueUserDefinedFunctionExists(
+func testAccGlueUserDefinedFunctionBasicConfig(
+func testAccGlueUserDefinedFunctionResourceURIConfig1(
+func testAccGlueUserDefinedFunctionResourceURIConfig2(
 func resourceAwsGlueWorkflow(
 func resourceAwsGlueWorkflowCreate(
 func resourceAwsGlueWorkflowRead(
@@ -7286,6 +7317,7 @@ func s3ConfigurationSchema(
 func processingConfigurationSchema(
 func flattenCloudwatchLoggingOptions(
 func flattenFirehoseElasticsearchConfiguration(
+func flattenVpcConfiguration(
 func flattenFirehoseExtendedS3Configuration(
 func flattenFirehoseRedshiftConfiguration(
 func flattenFirehoseSplunkConfiguration(
@@ -7328,6 +7360,7 @@ func extractProcessorParameters(
 func extractProcessorParameter(
 func extractEncryptionConfiguration(
 func extractCloudWatchLoggingConfiguration(
+func extractVpcConfiguration(
 func extractPrefixConfiguration(
 func createRedshiftConfig(
 func updateRedshiftConfig(
@@ -11663,6 +11696,7 @@ func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchSingleHeader(
 func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchSingleQueryArgument(
 func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchUriPath(
 func testAccAwsWafv2RuleGroupConfig_IpSetReferenceStatement(
+func testAccAwsWafv2RuleGroupConfig_IpSetReferenceStatement_IPSetForwardedIPConfig(
 func testAccAwsWafv2RuleGroupConfig_GeoMatchStatement(
 func testAccAwsWafv2RuleGroupConfig_GeoMatchStatement_ForwardedIPConfig(
 func testAccAwsWafv2RuleGroupConfig_GeoMatchStatement_Update(
@@ -11740,6 +11774,8 @@ func testAccAwsWafv2WebACLConfig_BasicRule(
 func testAccAwsWafv2WebACLConfig_UpdateRuleNamePriorityMetric(
 func testAccAwsWafv2WebACLConfig_GeoMatchStatement(
 func testAccAwsWafv2WebACLConfig_GeoMatchStatement_ForwardedIPConfig(
+func testAccAwsWafv2WebACLConfig_IPSetReferenceStatement(
+func testAccAwsWafv2WebACLConfig_IPSetReferenceStatement_IPSetForwardedIPConfig(
 func testAccAwsWafv2WebACLConfig_ManagedRuleGroupStatement(
 func testAccAwsWafv2WebACLConfig_ManagedRuleGroupStatement_Update(
 func testAccAwsWafv2WebACLConfig_RateBasedStatement(
@@ -12343,6 +12379,7 @@ func expandWafv2AndStatement(
 func expandWafv2ByteMatchStatement(
 func expandWafv2FieldToMatch(
 func expandWafv2ForwardedIPConfig(
+func expandWafv2IPSetForwardedIPConfig(
 func expandWafv2SingleHeader(
 func expandWafv2SingleQueryArgument(
 func expandWafv2TextTransformations(
@@ -12364,6 +12401,7 @@ func flattenWafv2AndStatement(
 func flattenWafv2ByteMatchStatement(
 func flattenWafv2FieldToMatch(
 func flattenWafv2ForwardedIPConfig(
+func flattenWafv2IPSetForwardedIPConfig(
 func flattenWafv2SingleHeader(
 func flattenWafv2SingleQueryArgument(
 func flattenWafv2TextTransformations(

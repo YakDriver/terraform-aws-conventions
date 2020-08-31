@@ -1787,6 +1787,8 @@ func TestAccAWSEMRCluster_root_volume_size(
 func TestAccAWSEMRCluster_step_concurrency_level(
 func TestAccAWSEMRCluster_ebs_config(
 func TestAccAWSEMRCluster_custom_ami_id(
+func TestAccAWSEMRCluster_instance_fleet(
+func TestAccAWSEMRCluster_instance_fleet_master_only(
 func testAccAWSEmrClusterConfig_bootstrap(
 func testAccAWSEmrClusterConfig_bootstrapAdd(
 func testAccAWSEmrClusterConfig_bootstrapReorder(
@@ -1863,6 +1865,9 @@ func TestAccAWSGlueCrawler_disappears(
 func TestAccAWSGlueJob_basic(
 func TestAccAWSGlueSecurityConfiguration_basic(
 func TestAccAWSGlueTrigger_basic(
+func TestAccAWSGlueUserDefinedFunction_basic(
+func TestAccAWSGlueUserDefinedFunction_resource_uri(
+func TestAccAWSGlueUserDefinedFunction_disappears(
 func TestAccAWSGlueWorkflow_basic(
 func testAccAwsGuardDutyDetector_basic(
 func testAccAwsGuardDutyDetector_tags(
