@@ -40,6 +40,11 @@ func resourceAwsEMRClusterDelete(
 func resourceAwsEMRClusterStateRefreshFunc(
 func resourceAwsEMRClusterEBSConfigHash(
 func resourceAwsEMRInstanceTypeConfigHash(
+func resourceAwsEMRInstanceFleet(
+func resourceAwsEMRInstanceFleetCreate(
+func resourceAwsEMRInstanceFleetRead(
+func resourceAwsEMRInstanceFleetUpdate(
+func resourceAwsEMRInstanceFleetDelete(
 func resourceAwsEMRInstanceGroup(
 func resourceAwsEMRInstanceGroupCreate(
 func resourceAwsEMRInstanceGroupRead(

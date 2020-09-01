@@ -34,6 +34,8 @@ func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {
 func testAccAWSDBInstanceDataSourceConfig(rInt int) string {
 func testAccCheckAwsDbSnapshotDataSourceConfig(rInt int) string {
 func testAccAWSDBSubnetGroupDataSourceConfig(rName string) string {
+func testAccAWSDocdbOrderableDbInstanceDataSourceConfigBasic(class, engine, version, license string) string {
+func testAccAWSDocdbOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, preferredOption string) string {
 func testAccDataSourceAwsDynamoDbTableConfigBasic(tableName string) string {
 func testAccDataSourceAwsEbsVolumeIDsConfigWithDataSource(rInt int) string {
 func testAccDataSourceAwsEbsVolumeIDsConfig(rInt int) string {
@@ -148,6 +150,8 @@ func testAccDataSourceAwsPricingProductConfigEc2(dataName string, instanceType s
 func testAccDataSourceAwsPricingProductConfigRedshift() string {
 func testAccDataSourceAwsQLDBLedgerConfig(rName string) string {
 func testAccDataSourceAwsRdsClusterConfigBasic(clusterName string) string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfigBasic(class, engine, version, license, storage string) string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, storage, preferredOption string) string {
 func testAccAWSDataSourceRedshiftClusterConfig(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithVpc(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithLogging(rInt int) string {
@@ -160,6 +164,7 @@ func testAccDataSourceAwsRouteTablesConfigWithDataSource(rInt int) string {
 func testAccDataSourceAwsRouteTablesConfig(rInt int) string {
 func testAccDataSourceAwsRouteGroupConfig() string {
 func testAccAWSRouteDataSourceConfigTransitGatewayID() string {
+func testAccAWSRouteDataSourceConfigLocalGatewayID() string {
 func testAccAWSDataSourceS3ObjectsConfigResources(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigResourcesPlusAccessPoint(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigBasic(randInt int) string {
@@ -681,6 +686,18 @@ func testAccAWSDBParameterGroupOnlyConfig(n string) string {
 func testAccAWSDBParameterGroupIncludeDefaultConfig(n string) string {
 func testAccAWSDBParameterGroupUpdateParametersInitialConfig(n string) string {
 func testAccAWSDBParameterGroupUpdateParametersUpdatedConfig(n string) string {
+func testAccAWSDBProxyConfigBase(rName string) string {
+func testAccAWSDBProxyConfig(rName string) string {
+func testAccAWSDBProxyConfigName(rName, nName string) string {
+func testAccAWSDBProxyConfigDebugLogging(rName string, debugLogging bool) string {
+func testAccAWSDBProxyConfigIdleClientTimeout(rName string, idleClientTimeout int) string {
+func testAccAWSDBProxyConfigRequireTls(rName string, requireTls bool) string {
+func testAccAWSDBProxyConfigRoleArn(rName, nName string) string {
+func testAccAWSDBProxyConfigVpcSecurityGroupIds(rName, nName string) string {
+func testAccAWSDBProxyConfigAuthDescription(rName, description string) string {
+func testAccAWSDBProxyConfigAuthIamAuth(rName, iamAuth string) string {
+func testAccAWSDBProxyConfigAuthSecretArn(rName, nName string) string {
+func testAccAWSDBProxyConfigTags(rName, key, value string) string {
 func testAccAWSDBSecurityGroupConfig(name string) string {
 func testAccAwsDbSnapshotConfigBase(rName string) string {
 func testAccAwsDbSnapshotConfig(rName string) string {
@@ -762,6 +779,7 @@ func testAccEc2ClientVpnEndpointConfigWithLogGroup(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithDNSServers(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithMicrosoftAD(rName string) string {
 func testAccEc2ClientVpnEndpointConfigWithMutualAuthAndMicrosoftAD(rName string) string {
+func testAccEc2ClientVpnEndpointConfigWithFederatedAuth(rName string) string {
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
 func testAccEc2ClientVpnNetworkAssociationConfigBasic(rName string) string {
 func testAccEc2ClientVpnRouteConfigBasic(rName string) string {
@@ -979,6 +997,10 @@ func testAccAWSEmrClusterConfigBootstrapActionBucket(r string) string {
 func testAccAWSEmrEbsConfig(rName string, volumesPerInstance int) string {
 func testAccAWSEmrClusterConfigInstanceFleets(r string) string {
 func testAccAWSEmrClusterConfigInstanceFleetsMasterOnly(r string) string {
+func testAccAWSEmrInstanceFleetConfig(r string) string {
+func testAccAWSEmrInstanceFleetConfigZeroCount(r string) string {
+func testAccAWSEmrInstanceFleetConfigEbsBasic(r string) string {
+func testAccAWSEmrInstanceFleetConfigFull(r string) string {
 func testAccFlowLogConfigBase(rName string) string {
 func testAccFlowLogConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccFlowLogConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1229,6 +1251,7 @@ func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnSuccessDestinat
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnSuccessDestinationSqsQueue(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigFunctionName(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigFunctionNameArn(rName string) string {
+func testAccAWSLambdaFunctionEventInvokeConfigQualifierFunctionNameArn(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigMaximumEventAgeInSeconds(rName string, maximumEventAgeInSeconds int) string {
 func testAccAWSLambdaFunctionEventInvokeConfigMaximumRetryAttempts(rName string, maximumRetryAttempts int) string {
 func testAccAWSLambdaFunctionEventInvokeConfigQualifierAliasName(rName string) string {
@@ -1553,6 +1576,7 @@ func testAccAWSRouteTableConfigRouteConfigModeBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeNoBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeZeroed() string {
 func testAccAWSRouteTableConfigRouteTransitGatewayID() string {
+func testAccAWSRouteTableConfigRouteLocalGatewayID() string {
 func testAccAWSRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
 func testAccAWSRouteBasicConfig() string {
 func testAccAWSRouteConfigIpv6InternetGateway() string {
@@ -1565,6 +1589,7 @@ func testAccAWSRouteConfigIpv6Expanded() string {
 func testAccAWSRouteBasicConfigChangeCidr() string {
 func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock() string {
 func testAccAWSRouteConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
+func testAccAWSRouteResourceConfigLocalGatewayID() string {
 func testAccAWSS3AccountPublicAccessBlockConfig() string {
 func testAccAWSS3AccountPublicAccessBlockConfigAccountId() string {
 func testAccAWSS3AccountPublicAccessBlockConfigBlockPublicAcls(blockPublicAcls bool) string {

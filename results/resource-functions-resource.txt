@@ -747,6 +747,12 @@ func resourceAwsDbParameterGroupRead(
 func resourceAwsDbParameterGroupUpdate(
 func resourceAwsDbParameterGroupDelete(
 func resourceAwsDbParameterHash(
+func resourceAwsDbProxy(
+func resourceAwsDbProxyCreate(
+func resourceAwsDbProxyRefreshFunc(
+func resourceAwsDbProxyRead(
+func resourceAwsDbProxyUpdate(
+func resourceAwsDbProxyDelete(
 func resourceAwsDbSecurityGroup(
 func resourceAwsDbSecurityGroupCreate(
 func resourceAwsDbSecurityGroupRead(
@@ -1310,6 +1316,11 @@ func resourceAwsEMRClusterDelete(
 func resourceAwsEMRClusterStateRefreshFunc(
 func resourceAwsEMRClusterEBSConfigHash(
 func resourceAwsEMRInstanceTypeConfigHash(
+func resourceAwsEMRInstanceFleet(
+func resourceAwsEMRInstanceFleetCreate(
+func resourceAwsEMRInstanceFleetRead(
+func resourceAwsEMRInstanceFleetUpdate(
+func resourceAwsEMRInstanceFleetDelete(
 func resourceAwsEMRInstanceGroup(
 func resourceAwsEMRInstanceGroupCreate(
 func resourceAwsEMRInstanceGroupRead(

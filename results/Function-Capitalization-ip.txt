@@ -1,5 +1,3 @@
-func autoscalingTagDescriptionsToSlice(
-func autoscalingTagDescriptionsToMap(
 func TestAccAWSAcmCertificateDataSource_multipleIssued(
 func amiDescriptionAttributes(
 func groupDescriptionAttributes(
@@ -101,6 +99,7 @@ func testAccAppsyncResolver_multipleResolvers(
 func testAccAppsyncResolver_pipelineConfig(
 func TestAccAWSAthenaWorkGroup_Description(
 func testAccAthenaWorkGroupConfigDescription(
+func autoscalingTagDescriptionsToMap(
 func TestAccAwsBackupPlan_Rule_CopyAction_Multiple(
 func testAccAwsBackupPlanConfigRuleCopyActionMultiple(
 func testAccAWSBudgetsBudgetConfigNotificationSnippet(
@@ -276,6 +275,8 @@ func TestAccAWSDBOptionGroup_multipleOptions(
 func testAccAWSDBOptionGroupMultipleOptions(
 func testAccAWSDBOptionGroupConfigOptionGroupDescription(
 func testAccAWSDBOptionGroupConfigOptionOptionSettingsMultiple(
+func TestAccAWSDBProxy_AuthDescription(
+func testAccAWSDBProxyConfigAuthDescription(
 func TestAccAWSDBSubnetGroup_updateDescription(
 func testAccDBSubnetGroupConfig_updatedDescription(
 func resourceAwsDirectoryServiceLogSubscription(

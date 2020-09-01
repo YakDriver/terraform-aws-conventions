@@ -57,6 +57,8 @@ func TestAccAWSDbSnapshotDataSource_basic(
 func TestAccAWSDbSubnetGroupDataSource_basic(
 func TestAccAWSDbSubnetGroupDataSource_nonexistent(
 func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
+func TestAccAWSDocdbOrderableDbInstanceDataSource_basic(
+func TestAccAWSDocdbOrderableDbInstanceDataSource_preferred(
 func TestAccDataSourceAwsDxGateway_basic(
 func TestAccDataSourceAwsDynamoDbTable_basic(
 func TestAccDataSourceAwsEBSDefaultKmsKey_basic(
@@ -231,6 +233,8 @@ func TestAccDataSourceAwsPricingProduct_redshift(
 func TestAccDataSourceAwsQLDBLedger_basic(
 func TestAccDataSourceAwsRamResourceShare_basic(
 func TestAccDataSourceAWSRDSCluster_basic(
+func TestAccAWSRdsOrderableDbInstanceDataSource_basic(
+func TestAccAWSRdsOrderableDbInstanceDataSource_preferred(
 func TestAccAWSDataSourceRedshiftCluster_basic(
 func TestAccAWSDataSourceRedshiftCluster_vpc(
 func TestAccAWSDataSourceRedshiftCluster_logging(
@@ -337,6 +341,7 @@ func testAccDataSourceAwsVpcEndpointConfig_byFilter(
 func testAccDataSourceAwsVpcEndpointConfig_byTags(
 func testAccDataSourceAwsVpcEndpointConfig_gatewayWithRouteTableAndTags(
 func testAccDataSourceAwsVpcEndpointConfig_interface(
+func TestAccDataSourceAwsVpcPeeringConnections_basic(
 func TestAccDataSourceAwsVpcPeeringConnection_basic(
 func TestAccDataSourceAwsVpcs_basic(
 func TestAccDataSourceAwsVpcs_tags(
@@ -1256,6 +1261,8 @@ func TestAccAWSDBParameterGroup_namePrefix(
 func TestAccAWSDBParameterGroup_generatedName(
 func TestAccAWSDBParameterGroup_withApplyMethod(
 func TestAccAWSDBParameterGroup_updateParameters(
+func TestAccAWSDBProxy_basic(
+func TestAccAWSDBProxy_disappears(
 func TestAccAWSDBSecurityGroup_basic(
 func TestAccAWSDBSnapshot_basic(
 func TestAccAWSDBSnapshot_tags(
@@ -1492,6 +1499,7 @@ func testAccAwsEc2ClientVpnEndpoint_basic(
 func testAccAwsEc2ClientVpnEndpoint_disappears(
 func testAccAwsEc2ClientVpnEndpoint_msAD(
 func testAccAwsEc2ClientVpnEndpoint_mutualAuthAndMsAD(
+func testAccAwsEc2ClientVpnEndpoint_federated(
 func testAccAwsEc2ClientVpnEndpoint_withLogGroup(
 func testAccAwsEc2ClientVpnEndpoint_withDNSServers(
 func testAccAwsEc2ClientVpnEndpoint_tags(
@@ -1793,6 +1801,11 @@ func testAccAWSEmrClusterConfig_bootstrap(
 func testAccAWSEmrClusterConfig_bootstrapAdd(
 func testAccAWSEmrClusterConfig_bootstrapReorder(
 func testAccAWSEmrClusterConfig_keepJob(
+func TestAccAWSEMRInstanceFleet_basic(
+func TestAccAWSEMRInstanceFleet_zero_count(
+func TestAccAWSEMRInstanceFleet_ebsBasic(
+func TestAccAWSEMRInstanceFleet_full(
+func TestAccAWSEMRInstanceFleet_disappears(
 func TestAccAWSEMRInstanceGroup_basic(
 func testAccAWSEmrInstanceGroupConfig_basic(
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(
@@ -3668,6 +3681,7 @@ func TestAccAwsWorkspacesIpGroup_disappears(
 func TestAccAwsWorkspacesWorkspace_basic(
 func TestAccAwsWorkspacesWorkspace_tags(
 func TestAccAwsWorkspacesWorkspace_workspaceProperties(
+func TestAccAwsWorkspacesWorkspace_workspaceProperties_runningModeAlwaysOn(
 func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
 func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
 func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(

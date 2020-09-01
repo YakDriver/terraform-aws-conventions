@@ -46,6 +46,7 @@ const testAccDataSourceAwsRouteTableGroupConfig =
 const testAccDataSourceAwsSnsTopicConfig =
 const testAccDataSourceAwsVpcEndpointServiceGatewayConfig =
 const testAccDataSourceAwsVpcEndpointServiceInterfaceConfig =
+const testAccDataSourceAwsVpcPeeringConnectionsConfig =
 const testAccDataSourceAwsVpcPeeringConnectionConfig =
 const testAccCheckAWSProviderConfigAssumeRoleEmpty =
 const testAccAWSCloudFrontOriginAccessIdentityConfig =

@@ -1,5 +1,3 @@
-func TestDiffAutoscalingTags(
-func TestIgnoringTagsAutoscaling(
 func RetryOnAwsCodes(
 func TestIsAwsErr(
 func TestMain(
@@ -131,6 +129,8 @@ func TestAccDataSourceAwsDirectoryServiceDirectory_NonExistent(
 func TestAccDataSourceAwsDirectoryServiceDirectory_SimpleAD(
 func TestAccDataSourceAwsDirectoryServiceDirectory_MicrosoftAD(
 func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
+func TestAccAWSDocdbOrderableDbInstanceDataSource_basic(
+func TestAccAWSDocdbOrderableDbInstanceDataSource_preferred(
 func TestAccDataSourceAwsDxGateway_basic(
 func TestAccDataSourceAwsDynamoDbTable_basic(
 func TestAccDataSourceAwsEBSDefaultKmsKey_basic(
@@ -355,6 +355,8 @@ func TestAccDataSourceAwsQLDBLedger_basic(
 func TestAccDataSourceAwsRamResourceShare_basic(
 func TestAccDataSourceAwsRamResourceShare_Tags(
 func TestAccDataSourceAWSRDSCluster_basic(
+func TestAccAWSRdsOrderableDbInstanceDataSource_basic(
+func TestAccAWSRdsOrderableDbInstanceDataSource_preferred(
 func TestAccAWSDataSourceRedshiftCluster_basic(
 func TestAccAWSDataSourceRedshiftCluster_vpc(
 func TestAccAWSDataSourceRedshiftCluster_logging(
@@ -386,6 +388,7 @@ func TestAccDataSourceAwsRouteTable_basic(
 func TestAccDataSourceAwsRouteTable_main(
 func TestAccAWSRouteDataSource_basic(
 func TestAccAWSRouteDataSource_TransitGatewayID(
+func TestAccAWSRouteDataSource_LocalGatewayID(
 func TestAccDataSourceAWSS3BucketObjects_basic(
 func TestAccDataSourceAWSS3BucketObjects_basicViaAccessPoint(
 func TestAccDataSourceAWSS3BucketObjects_all(
@@ -452,6 +455,7 @@ func TestAccDataSourceAwsVpcEndpoint_byFilter(
 func TestAccDataSourceAwsVpcEndpoint_byTags(
 func TestAccDataSourceAwsVpcEndpoint_gatewayWithRouteTableAndTags(
 func TestAccDataSourceAwsVpcEndpoint_interface(
+func TestAccDataSourceAwsVpcPeeringConnections_basic(
 func TestAccDataSourceAwsVpcPeeringConnection_basic(
 func TestAccDataSourceAwsVpcs_basic(
 func TestAccDataSourceAwsVpcs_tags(
@@ -1462,6 +1466,18 @@ func TestAccAWSDBParameterGroup_withApplyMethod(
 func TestAccAWSDBParameterGroup_Only(
 func TestAccAWSDBParameterGroup_MatchDefault(
 func TestAccAWSDBParameterGroup_updateParameters(
+func TestAccAWSDBProxy_basic(
+func TestAccAWSDBProxy_Name(
+func TestAccAWSDBProxy_DebugLogging(
+func TestAccAWSDBProxy_IdleClientTimeout(
+func TestAccAWSDBProxy_RequireTls(
+func TestAccAWSDBProxy_RoleArn(
+func TestAccAWSDBProxy_VpcSecurityGroupIds(
+func TestAccAWSDBProxy_AuthDescription(
+func TestAccAWSDBProxy_AuthIamAuth(
+func TestAccAWSDBProxy_AuthSecretArn(
+func TestAccAWSDBProxy_Tags(
+func TestAccAWSDBProxy_disappears(
 func TestAccAWSDBSecurityGroup_basic(
 func TestAccAWSDBSnapshot_basic(
 func TestAccAWSDBSnapshot_tags(
@@ -2098,6 +2114,11 @@ func TestAccAWSEMRCluster_ebs_config(
 func TestAccAWSEMRCluster_custom_ami_id(
 func TestAccAWSEMRCluster_instance_fleet(
 func TestAccAWSEMRCluster_instance_fleet_master_only(
+func TestAccAWSEMRInstanceFleet_basic(
+func TestAccAWSEMRInstanceFleet_zero_count(
+func TestAccAWSEMRInstanceFleet_ebsBasic(
+func TestAccAWSEMRInstanceFleet_full(
+func TestAccAWSEMRInstanceFleet_disappears(
 func TestAccAWSEMRInstanceGroup_basic(
 func TestAccAWSEMRInstanceGroup_BidPrice(
 func TestAccAWSEMRInstanceGroup_ConfigurationsJson(
@@ -2610,6 +2631,7 @@ func TestAccAWSLambdaFunctionEventInvokeConfig_DestinationConfig_OnSuccess_Desti
 func TestAccAWSLambdaFunctionEventInvokeConfig_DestinationConfig_Remove(
 func TestAccAWSLambdaFunctionEventInvokeConfig_DestinationConfig_Swap(
 func TestAccAWSLambdaFunctionEventInvokeConfig_FunctionName_Arn(
+func TestAccAWSLambdaFunctionEventInvokeConfig_Qualifier_FunctionName_Arn(
 func TestAccAWSLambdaFunctionEventInvokeConfig_MaximumEventAgeInSeconds(
 func TestAccAWSLambdaFunctionEventInvokeConfig_MaximumRetryAttempts(
 func TestAccAWSLambdaFunctionEventInvokeConfig_Qualifier_AliasName(
@@ -3290,6 +3312,7 @@ func TestAccAWSRouteTable_tags(
 func TestAccAWSRouteTable_panicEmptyRoute(
 func TestAccAWSRouteTable_Route_ConfigMode(
 func TestAccAWSRouteTable_Route_TransitGatewayID(
+func TestAccAWSRouteTable_Route_LocalGatewayID(
 func TestAccAWSRouteTable_vpcPeering(
 func TestAccAWSRouteTable_vgwRoutePropagation(
 func TestAccAWSRouteTable_ConditionalCidrBlock(
@@ -3305,6 +3328,7 @@ func TestAccAWSRoute_changeCidr(
 func TestAccAWSRoute_noopdiff(
 func TestAccAWSRoute_doesNotCrashWithVPCEndpoint(
 func TestAccAWSRoute_TransitGatewayID_DestinationCidrBlock(
+func TestAccAWSRoute_LocalGatewayID(
 func TestAccAWSRoute_ConditionalCidrBlock(
 func TestAccAWSS3AccessPoint_basic(
 func TestAccAWSS3AccessPoint_disappears(
@@ -4155,6 +4179,7 @@ func TestAccAwsWorkspacesIpGroup_disappears(
 func TestAccAwsWorkspacesWorkspace_basic(
 func TestAccAwsWorkspacesWorkspace_tags(
 func TestAccAwsWorkspacesWorkspace_workspaceProperties(
+func TestAccAwsWorkspacesWorkspace_workspaceProperties_runningModeAlwaysOn(
 func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
 func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
 func TestExpandWorkspaceProperties(

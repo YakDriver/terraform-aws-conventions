@@ -145,6 +145,7 @@ func flattenAutoScalingMixedInstancesPolicy(
 func waitUntilAutoscalingGroupLoadBalancersAdded(
 func waitUntilAutoscalingGroupLoadBalancersRemoved(
 func init(
+func autoscalingTagDescriptionsToMap(
 func waitForASGCapacity(
 func isELBCapacitySatisfied(
 func capacitySatisfiedCreate(
@@ -438,6 +439,10 @@ func init(
 func init(
 func createAwsDbParameterGroupsExceedDefaultAwsLimit(
 func updateAwsDbParameterGroupsExceedDefaultAwsLimit(
+func expandDbProxyAuth(
+func flattenDbProxyAuth(
+func flattenDbProxyAuths(
+func init(
 func init(
 func init(
 func revokeAllNetworkACLEntries(
@@ -848,6 +853,8 @@ func expandInstanceTypeConfigs(
 func expandLaunchSpecification(
 func expandConfigurations(
 func init(
+func findInstanceFleetById(
+func instanceFleetStateRefresh(
 func instanceGroupStateRefresh(
 func fetchEMRInstanceGroup(
 func readEmrEBSConfig(

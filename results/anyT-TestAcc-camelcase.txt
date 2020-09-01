@@ -737,6 +737,7 @@ func TestAccAWSEMRCluster_s3Logging(
 func testAccAWSEmrClusterConfig_bootstrapAdd(
 func testAccAWSEmrClusterConfig_bootstrapReorder(
 func testAccAWSEmrClusterConfig_keepJob(
+func TestAccAWSEMRInstanceFleet_ebsBasic(
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(
 func testAccAWSEmrInstanceGroupConfig_zeroCount(
 func TestAccAWSFsxWindowsFileSystem_singleAz2(

@@ -99,6 +99,7 @@ func testAccAwsEc2ClientVpnEndpoint_basic(
 func testAccAwsEc2ClientVpnEndpoint_disappears(
 func testAccAwsEc2ClientVpnEndpoint_msAD(
 func testAccAwsEc2ClientVpnEndpoint_mutualAuthAndMsAD(
+func testAccAwsEc2ClientVpnEndpoint_federated(
 func testAccAwsEc2ClientVpnEndpoint_withLogGroup(
 func testAccAwsEc2ClientVpnEndpoint_withDNSServers(
 func testAccAwsEc2ClientVpnEndpoint_tags(

@@ -155,6 +155,8 @@ func TestAccDataSourceAwsDirectoryServiceDirectory_MicrosoftAD(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_SimpleAD(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_MicrosoftAD(
+func dataSourceAwsDocdbOrderableDbInstance(
+func dataSourceAwsDocdbOrderableDbInstanceRead(
 func dataSourceAwsDxGateway(
 func dataSourceAwsDxGatewayRead(
 func TestAccDataSourceAwsDxGateway_basic(
@@ -535,6 +537,8 @@ func testAccDataSourceAwsRamResourceShareConfig_Tags(
 func dataSourceAwsRdsCluster(
 func dataSourceAwsRdsClusterRead(
 func testAccDataSourceAwsRdsClusterConfigBasic(
+func dataSourceAwsRdsOrderableDbInstance(
+func dataSourceAwsRdsOrderableDbInstanceRead(
 func dataSourceAwsRedshiftCluster(
 func dataSourceAwsRedshiftClusterRead(
 func dataSourceAwsRedshiftServiceAccount(
@@ -739,6 +743,9 @@ func dataSourceAwsVpc(
 func dataSourceAwsVpcRead(
 func dataSourceAwsVpcPeeringConnection(
 func dataSourceAwsVpcPeeringConnectionRead(
+func dataSourceAwsVpcPeeringConnections(
+func dataSourceAwsVpcPeeringConnectionsRead(
+func TestAccDataSourceAwsVpcPeeringConnections_basic(
 func TestAccDataSourceAwsVpcPeeringConnection_basic(
 func testAccDataSourceAwsVpcPeeringConnectionCheck(
 func dataSourceAwsVpcs(
@@ -1305,7 +1312,6 @@ func TestAccAwsBackupPlan_Rule_CopyAction_CrossRegion(
 func TestAccAwsBackupPlan_disappears(
 func testAccCheckAwsBackupPlanDestroy(
 func testAccCheckAwsBackupPlanExists(
-func testAccCheckAwsBackupPlanRuleAttr(
 func testAccAwsBackupPlanConfig_basic(
 func testAccAwsBackupPlanConfig_tags(
 func testAccAwsBackupPlanConfig_tagsUpdated(
@@ -1825,6 +1831,12 @@ func resourceAwsDbParameterGroupDelete(
 func resourceAwsDbParameterHash(
 func createAwsDbParameterGroupsExceedDefaultAwsLimit(
 func updateAwsDbParameterGroupsExceedDefaultAwsLimit(
+func resourceAwsDbProxy(
+func resourceAwsDbProxyCreate(
+func resourceAwsDbProxyRefreshFunc(
+func resourceAwsDbProxyRead(
+func resourceAwsDbProxyUpdate(
+func resourceAwsDbProxyDelete(
 func resourceAwsDbSecurityGroup(
 func resourceAwsDbSecurityGroupCreate(
 func resourceAwsDbSecurityGroupRead(
@@ -2226,6 +2238,7 @@ func testAccAwsEc2ClientVpnEndpoint_basic(
 func testAccAwsEc2ClientVpnEndpoint_disappears(
 func testAccAwsEc2ClientVpnEndpoint_msAD(
 func testAccAwsEc2ClientVpnEndpoint_mutualAuthAndMsAD(
+func testAccAwsEc2ClientVpnEndpoint_federated(
 func testAccAwsEc2ClientVpnEndpoint_withLogGroup(
 func testAccAwsEc2ClientVpnEndpoint_withDNSServers(
 func testAccAwsEc2ClientVpnEndpoint_tags(
@@ -2543,6 +2556,11 @@ func resourceAwsEMRClusterDelete(
 func resourceAwsEMRClusterStateRefreshFunc(
 func resourceAwsEMRClusterEBSConfigHash(
 func resourceAwsEMRInstanceTypeConfigHash(
+func resourceAwsEMRInstanceFleet(
+func resourceAwsEMRInstanceFleetCreate(
+func resourceAwsEMRInstanceFleetRead(
+func resourceAwsEMRInstanceFleetUpdate(
+func resourceAwsEMRInstanceFleetDelete(
 func resourceAwsEMRInstanceGroup(
 func resourceAwsEMRInstanceGroupCreate(
 func resourceAwsEMRInstanceGroupRead(
@@ -4958,6 +4976,7 @@ func resourceAwsWorkspacesWorkspaceDelete(
 func TestAccAwsWorkspacesWorkspace_basic(
 func TestAccAwsWorkspacesWorkspace_tags(
 func TestAccAwsWorkspacesWorkspace_workspaceProperties(
+func TestAccAwsWorkspacesWorkspace_workspaceProperties_runningModeAlwaysOn(
 func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
 func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
 func testAccCheckAwsWorkspacesWorkspaceDestroy(
