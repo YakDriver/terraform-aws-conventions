@@ -467,6 +467,8 @@ func dataSourceAwsNatGateway(
 func dataSourceAwsNatGatewayRead(
 func TestAccDataSourceAwsNatGateway_basic(
 func testAccDataSourceAwsNatGatewayConfig(
+func dataSourceAwsNeptuneOrderableDbInstance(
+func dataSourceAwsNeptuneOrderableDbInstanceRead(
 func dataSourceAwsNetworkAcls(
 func dataSourceAwsNetworkAclsRead(
 func TestAccDataSourceAwsNetworkAcls_basic(
@@ -1212,7 +1214,6 @@ func TestAccAwsAppsyncFunction_responseMappingTemplate(
 func TestAccAwsAppsyncFunction_disappears(
 func testAccCheckAwsAppsyncFunctionDestroy(
 func testAccCheckAwsAppsyncFunctionExists(
-func testAccCheckAwsAppsyncFunctionDisappears(
 func resourceAwsAppsyncGraphqlApi(
 func resourceAwsAppsyncGraphqlApiCreate(
 func resourceAwsAppsyncGraphqlApiRead(
@@ -1222,7 +1223,6 @@ func resourceAwsAppsyncSchemaPut(
 func TestAccAWSAppsyncGraphqlApi_UserPoolConfig_AwsRegion(
 func testAccCheckAwsAppsyncGraphqlApiDestroy(
 func testAccCheckAwsAppsyncGraphqlApiExists(
-func testAccCheckAwsAppsyncGraphqlApiDisappears(
 func testAccCheckAwsAppsyncTypeExists(
 func testAccAppsyncGraphqlApiConfig_UserPoolConfig_AwsRegion(
 func resourceAwsAppsyncResolver(
@@ -1240,7 +1240,6 @@ func TestAccAwsAppsyncResolver_PipelineConfig(
 func TestAccAwsAppsyncResolver_CachingConfig(
 func testAccCheckAwsAppsyncResolverDestroy(
 func testAccCheckAwsAppsyncResolverExists(
-func testAccCheckAwsAppsyncResolverDisappears(
 func resourceAwsAthenaDatabase(
 func resourceAwsAthenaDatabaseCreate(
 func resourceAwsAthenaDatabaseRead(

@@ -639,6 +639,11 @@ func testAccMskConfigurationDataSourceConfigName(
 func dataSourceAwsNatGateway(
 func dataSourceAwsNatGatewayRead(
 func testAccDataSourceAwsNatGatewayConfig(
+func dataSourceAwsNeptuneOrderableDbInstance(
+func dataSourceAwsNeptuneOrderableDbInstanceRead(
+func testAccPreCheckAWSNeptuneOrderableDbInstance(
+func testAccAWSNeptuneOrderableDbInstanceDataSourceConfigBasic(
+func testAccAWSNeptuneOrderableDbInstanceDataSourceConfigPreferred(
 func dataSourceAwsNetworkAcls(
 func dataSourceAwsNetworkAclsRead(
 func testAccDataSourceAwsNetworkAclsConfig_Base(
@@ -679,6 +684,7 @@ func testAccPreCheckAWSOutpostsOutposts(
 func testAccAWSOutpostsOutpostsDataSourceConfig(
 func testAccAWSOutpostsOutpostDataSourceConfigId(
 func testAccAWSOutpostsOutpostDataSourceConfigName(
+func testAccAWSOutpostsOutpostDataSourceConfigArn(
 func dataSourceAwsOutpostsSite(
 func dataSourceAwsOutpostsSiteRead(
 func dataSourceAwsOutpostsSites(
@@ -2073,7 +2079,6 @@ func resourceAwsAppsyncFunctionDelete(
 func decodeAppsyncFunctionID(
 func testAccCheckAwsAppsyncFunctionDestroy(
 func testAccCheckAwsAppsyncFunctionExists(
-func testAccCheckAwsAppsyncFunctionDisappears(
 func testAccAWSAppsyncFunctionConfig(
 func testAccAWSAppsyncFunctionConfigDescription(
 func testAccAWSAppsyncFunctionConfigResponseMappingTemplate(
@@ -2097,7 +2102,6 @@ func init(
 func testSweepAppsyncGraphqlApis(
 func testAccCheckAwsAppsyncGraphqlApiDestroy(
 func testAccCheckAwsAppsyncGraphqlApiExists(
-func testAccCheckAwsAppsyncGraphqlApiDisappears(
 func testAccCheckAwsAppsyncTypeExists(
 func testAccPreCheckAWSAppSync(
 func testAccAppsyncGraphqlApiConfig_AuthenticationType(
@@ -2129,7 +2133,6 @@ func flattenAppsyncPipelineConfig(
 func flattenAppsyncCachingConfig(
 func testAccCheckAwsAppsyncResolverDestroy(
 func testAccCheckAwsAppsyncResolverExists(
-func testAccCheckAwsAppsyncResolverDisappears(
 func testAccAppsyncResolver_basic(
 func testAccAppsyncResolver_DataSource(
 func testAccAppsyncResolver_RequestTemplate(
@@ -3581,7 +3584,6 @@ func testAccConfigOrganizationCustomRule_TagValueScope(
 func testAccConfigOrganizationCustomRule_TriggerTypes(
 func testAccCheckConfigOrganizationCustomRuleExists(
 func testAccCheckConfigOrganizationCustomRuleDestroy(
-func testAccCheckConfigOrganizationCustomRuleDisappears(
 func testAccConfigOrganizationCustomRuleConfigBase(
 func testAccConfigOrganizationCustomRuleConfigDescription(
 func testAccConfigOrganizationCustomRuleConfigErrorHandling(
@@ -3617,7 +3619,6 @@ func testAccConfigOrganizationManagedRule_TagKeyScope(
 func testAccConfigOrganizationManagedRule_TagValueScope(
 func testAccCheckConfigOrganizationManagedRuleExists(
 func testAccCheckConfigOrganizationManagedRuleDestroy(
-func testAccCheckConfigOrganizationManagedRuleDisappears(
 func testAccConfigOrganizationManagedRuleConfigBase(
 func testAccConfigOrganizationManagedRuleConfigDescription(
 func testAccConfigOrganizationManagedRuleConfigErrorHandling(
@@ -11362,12 +11363,10 @@ func resourceAwsWafRateBasedRuleRead(
 func resourceAwsWafRateBasedRuleUpdate(
 func resourceAwsWafRateBasedRuleDelete(
 func updateWafRateBasedRuleResource(
-func computeWafRateBasedRulePredicateWithIpSet(
-func computeWafRateBasedRulePredicateWithByteMatchSet(
-func testAccCheckAWSWafRateBasedRuleDisappears(
 func testAccCheckAWSWafRateBasedRuleDestroy(
 func testAccCheckAWSWafRateBasedRuleExists(
 func testAccAWSWafRateBasedRuleConfig(
+func testAccAWSWafRateBasedRuleConfig_changeRateLimit(
 func testAccAWSWafRateBasedRuleConfigChangeName(
 func testAccAWSWafRateBasedRuleConfig_changePredicates(
 func testAccAWSWafRateBasedRuleConfig_noPredicates(
@@ -11460,10 +11459,7 @@ func resourceAwsWafRegionalRateBasedRuleDelete(
 func updateWafRateBasedRuleResourceWR(
 func init(
 func testSweepWafRegionalRateBasedRules(
-func computeWafRegionalRateBasedRulePredicateWithIpSet(
-func computeWafRegionalRateBasedRulePredicateWithByteMatchSet(
 func testAccCheckAWSWafRateBasedRuleIdDiffers(
-func testAccCheckAWSWafRegionalRateBasedRuleDisappears(
 func testAccCheckAWSWafRegionalRateBasedRuleDestroy(
 func testAccCheckAWSWafRegionalRateBasedRuleExists(
 func testAccAWSWafRegionalRateBasedRuleConfig(
@@ -11611,7 +11607,6 @@ func resourceAwsWafRegionalXssMatchSetRead(
 func resourceAwsWafRegionalXssMatchSetUpdate(
 func resourceAwsWafRegionalXssMatchSetDelete(
 func updateXssMatchSetResourceWR(
-func testAccCheckAWSWafRegionalXssMatchSetDisappears(
 func testAccCheckAWSWafRegionalXssMatchSetExists(
 func testAccCheckAWSWafRegionalXssMatchSetDestroy(
 func testAccAWSWafRegionalXssMatchSetConfig(
@@ -11865,7 +11860,6 @@ func resourceAwsWafXssMatchSetDelete(
 func updateXssMatchSetResource(
 func flattenWafXssMatchTuples(
 func diffWafXssMatchSetTuples(
-func testAccCheckAWSWafXssMatchSetDisappears(
 func testAccCheckAWSWafXssMatchSetExists(
 func testAccCheckAWSWafXssMatchSetDestroy(
 func testAccAWSWafXssMatchSetConfig(

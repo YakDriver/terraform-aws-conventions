@@ -194,6 +194,8 @@ func testAccDataSourceAWSMqBrokerConfig_byName(brokerName, prefix string) string
 func testAccMskClusterDataSourceConfigName(rName string) string {
 func testAccMskConfigurationDataSourceConfigName(rName string) string {
 func testAccDataSourceAwsNatGatewayConfig(rInt int) string {
+func testAccAWSNeptuneOrderableDbInstanceDataSourceConfigBasic(class, engine, version, license string) string {
+func testAccAWSNeptuneOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, preferredOption string) string {
 func testAccDataSourceAwsNetworkAclsConfig_Base(rName string) string {
 func testAccDataSourceAwsNetworkAclsConfig_basic(rName string) string {
 func testAccDataSourceAwsNetworkAclsConfig_Filter(rName string) string {
@@ -208,6 +210,7 @@ func testAccAWSOutpostsOutpostInstanceTypeDataSourceConfigPreferredInstanceTypes
 func testAccAWSOutpostsOutpostsDataSourceConfig() string {
 func testAccAWSOutpostsOutpostDataSourceConfigId() string {
 func testAccAWSOutpostsOutpostDataSourceConfigName() string {
+func testAccAWSOutpostsOutpostDataSourceConfigArn() string {
 func testAccAWSOutpostsSitesDataSourceConfig() string {
 func testAccAWSOutpostsSiteDataSourceConfigId() string {
 func testAccAWSOutpostsSiteDataSourceConfigName() string {
@@ -3467,6 +3470,7 @@ func testAccAWSWafIPSetConfig_IpSetDescriptors(name, ipSetDescriptors string) st
 func testAccAWSWafIPSetConfig_noDescriptors(name string) string {
 func testAccAWSWafIPSetIPV6Config(name string) string {
 func testAccAWSWafRateBasedRuleConfig(name string) string {
+func testAccAWSWafRateBasedRuleConfig_changeRateLimit(name string, rateLimit int) string {
 func testAccAWSWafRateBasedRuleConfigChangeName(name string) string {
 func testAccAWSWafRateBasedRuleConfig_changePredicates(name string) string {
 func testAccAWSWafRateBasedRuleConfig_noPredicates(name string) string {

@@ -295,6 +295,8 @@ func testAccDataSourceAWSMqBrokerConfig_byName(
 func TestAccAWSMskClusterDataSource_Name(
 func TestAccAWSMskConfigurationDataSource_Name(
 func TestAccDataSourceAwsNatGateway_basic(
+func TestAccAWSNeptuneOrderableDbInstanceDataSource_basic(
+func TestAccAWSNeptuneOrderableDbInstanceDataSource_preferred(
 func TestAccDataSourceAwsNetworkAcls_basic(
 func TestAccDataSourceAwsNetworkAcls_Filter(
 func TestAccDataSourceAwsNetworkAcls_Tags(
@@ -321,6 +323,7 @@ func TestAccAWSOutpostsOutpostInstanceTypeDataSource_PreferredInstanceTypes(
 func TestAccAWSOutpostsOutpostsDataSource_basic(
 func TestAccAWSOutpostsOutpostDataSource_Id(
 func TestAccAWSOutpostsOutpostDataSource_Name(
+func TestAccAWSOutpostsOutpostDataSource_Arn(
 func TestAccAWSOutpostsSitesDataSource_basic(
 func TestAccAWSOutpostsSiteDataSource_Id(
 func TestAccAWSOutpostsSiteDataSource_Name(
@@ -4363,8 +4366,10 @@ func TestAccAWSWafRateBasedRule_basic(
 func TestAccAWSWafRateBasedRule_changeNameForceNew(
 func TestAccAWSWafRateBasedRule_disappears(
 func TestAccAWSWafRateBasedRule_changePredicates(
+func TestAccAWSWafRateBasedRule_changeRateLimit(
 func TestAccAWSWafRateBasedRule_noPredicates(
 func TestAccAWSWafRateBasedRule_Tags(
+func testAccAWSWafRateBasedRuleConfig_changeRateLimit(
 func testAccAWSWafRateBasedRuleConfig_changePredicates(
 func testAccAWSWafRateBasedRuleConfig_noPredicates(
 func TestAccAWSWafRegexMatchSet_serial(

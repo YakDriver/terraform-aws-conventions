@@ -4706,8 +4706,6 @@ func resourceAwsWafRateBasedRuleRead(
 func resourceAwsWafRateBasedRuleUpdate(
 func resourceAwsWafRateBasedRuleDelete(
 func updateWafRateBasedRuleResource(
-func computeWafRateBasedRulePredicateWithIpSet(
-func computeWafRateBasedRulePredicateWithByteMatchSet(
 func resourceAwsWafRegexMatchSet(
 func resourceAwsWafRegexMatchSetCreate(
 func resourceAwsWafRegexMatchSetRead(
@@ -4750,8 +4748,6 @@ func resourceAwsWafRegionalRateBasedRuleUpdate(
 func resourceAwsWafRegionalRateBasedRuleDelete(
 func updateWafRateBasedRuleResourceWR(
 func init(
-func computeWafRegionalRateBasedRulePredicateWithIpSet(
-func computeWafRegionalRateBasedRulePredicateWithByteMatchSet(
 func resourceAwsWafRegionalRegexMatchSet(
 func resourceAwsWafRegionalRegexMatchSetCreate(
 func resourceAwsWafRegionalRegexMatchSetRead(

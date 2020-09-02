@@ -170,6 +170,8 @@ func TestAccDataSourceAwsLexSlotType_basic(
 func TestAccDataSourceAwsLexSlotType_withVersion(
 func TestAccDataSourceAWSMqBroker_basic(
 func TestAccDataSourceAwsNatGateway_basic(
+func TestAccAWSNeptuneOrderableDbInstanceDataSource_basic(
+func TestAccAWSNeptuneOrderableDbInstanceDataSource_preferred(
 func TestAccDataSourceAwsNetworkAcls_basic(
 func TestAccDataSourceAwsNetworkInterface_basic(
 func TestAccDataSourceAwsNetworkInterface_filters(
@@ -2377,6 +2379,7 @@ func TestAccAWSWafRateBasedRule_basic(
 func TestAccAWSWafRateBasedRule_changeNameForceNew(
 func TestAccAWSWafRateBasedRule_disappears(
 func TestAccAWSWafRateBasedRule_changePredicates(
+func TestAccAWSWafRateBasedRule_changeRateLimit(
 func TestAccAWSWafRateBasedRule_noPredicates(
 func TestAccAWSWafRegexMatchSet_serial(
 func TestAccAWSWafRegexPatternSet_serial(

@@ -1865,8 +1865,6 @@ func updateGeoMatchSetResource(
 func updateWafIpSetDescriptors(
 func diffWafIpSetDescriptors(
 func updateWafRateBasedRuleResource(
-func computeWafRateBasedRulePredicateWithIpSet(
-func computeWafRateBasedRulePredicateWithByteMatchSet(
 func updateRegexMatchSetResource(
 func init(
 func computeWafRegexMatchSetTuple(
@@ -1879,8 +1877,6 @@ func flattenWafIpSetDescriptorWR(
 func updateIPSetResourceWR(
 func updateWafRateBasedRuleResourceWR(
 func init(
-func computeWafRegionalRateBasedRulePredicateWithIpSet(
-func computeWafRegionalRateBasedRulePredicateWithByteMatchSet(
 func updateRegexMatchSetResourceWR(
 func init(
 func updateWafRegionalRegexPatternSetPatternStringsWR(

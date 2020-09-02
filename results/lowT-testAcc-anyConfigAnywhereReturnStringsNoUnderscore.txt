@@ -137,12 +137,15 @@ func testAccDataSourceAWSLBConfigBackardsCompatibility(albName string) string {
 func testAccMskClusterDataSourceConfigName(rName string) string {
 func testAccMskConfigurationDataSourceConfigName(rName string) string {
 func testAccDataSourceAwsNatGatewayConfig(rInt int) string {
+func testAccAWSNeptuneOrderableDbInstanceDataSourceConfigBasic(class, engine, version, license string) string {
+func testAccAWSNeptuneOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, preferredOption string) string {
 func testAccAWSOutpostsOutpostInstanceTypesDataSourceConfig() string {
 func testAccAWSOutpostsOutpostInstanceTypeDataSourceConfigInstanceType() string {
 func testAccAWSOutpostsOutpostInstanceTypeDataSourceConfigPreferredInstanceTypes() string {
 func testAccAWSOutpostsOutpostsDataSourceConfig() string {
 func testAccAWSOutpostsOutpostDataSourceConfigId() string {
 func testAccAWSOutpostsOutpostDataSourceConfigName() string {
+func testAccAWSOutpostsOutpostDataSourceConfigArn() string {
 func testAccAWSOutpostsSitesDataSourceConfig() string {
 func testAccAWSOutpostsSiteDataSourceConfigId() string {
 func testAccAWSOutpostsSiteDataSourceConfigName() string {
