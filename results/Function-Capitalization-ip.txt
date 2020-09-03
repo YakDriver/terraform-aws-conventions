@@ -317,6 +317,7 @@ func testAccDynamoDbGlobalTableConfig_multipleRegions2(
 func TestAccAWSDynamoDbTableItem_withMultipleItems(
 func testAccAWSDynamoDbItemConfigWithMultipleItems(
 func TestAccAWSDynamoDbTable_Replica_Multiple(
+func testAccAWSDynamoDbConfigGsiMultipleNonKeyAttributes(
 func TestAccAWSEbsSnapshotCopy_withDescription(
 func TestAccAWSEBSSnapshot_withDescription(
 func testAccAwsEbsSnapshotConfigWithDescription(
@@ -410,6 +411,7 @@ func TestAccAWSGlueTrigger_Description(
 func testAccAWSGlueTriggerConfig_Description(
 func TestAccAWSGlueWorkflow_Description(
 func testAccAWSGlueWorkflowConfig_Description(
+func testAccGuardDutyFilterConfig_multipleTags(
 func resourceAwsIamGroupMembership(
 func resourceAwsIamGroupMembershipCreate(
 func resourceAwsIamGroupMembershipRead(
@@ -845,6 +847,7 @@ func testAccAwsWafv2RuleGroupConfig_UpdateMultipleRules(
 func testAccAwsWafv2WebACLConfig_multipleNestedRateBasedStatements(
 func testAccAwsWafv2WebACLConfig_multipleNestedOperatorStatements(
 func testAccAWSWafWebAclConfig_Rules_Multiple(
+func stripNonKeyAttributes(
 func stripCapacityAttributes(
 func flattenAwsDynamoDbReplicaDescriptions(
 func ec2TagsFromTagDescriptions(

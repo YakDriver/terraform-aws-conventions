@@ -68,6 +68,7 @@ func testAccAwsBackupPlanConfigRuleCopyAction(
 func testAccAwsBackupPlanConfigRuleCopyActionMultiple(
 func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(
 func testAccAwsCurReportDefinitionConfig_basic(
+func testAccAwsCurReportDefinitionConfig_additional(
 func testAccAwsDbClusterSnapshotConfig(
 func testAccAwsDbClusterSnapshotConfigTags1(
 func testAccAwsDbClusterSnapshotConfigTags2(
@@ -155,6 +156,10 @@ func testAccAwsFsxWindowsFileSystemConfigThroughputCapacity(
 func testAccAwsFsxWindowsFileSystemConfigWeeklyMaintenanceStartTime(
 func testAccAwsGuardDutyDetector_basic(
 func testAccAwsGuardDutyDetector_tags(
+func testAccAwsGuardDutyFilter_basic(
+func testAccAwsGuardDutyFilter_update(
+func testAccAwsGuardDutyFilter_tags(
+func testAccAwsGuardDutyFilter_disappears(
 func testAccAwsGuardDutyInviteAccepter_basic(
 func testAccAwsGuardDutyInviteAccepterConfig_basic(
 func testAccAwsGuardDutyIpset_basic(

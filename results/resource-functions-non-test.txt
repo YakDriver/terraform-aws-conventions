@@ -678,6 +678,9 @@ func expandAwsCloudTrailEventSelector(
 func expandAwsCloudTrailEventSelectorDataResource(
 func flattenAwsCloudTrailEventSelector(
 func flattenAwsCloudTrailEventSelectorDataResource(
+func cloudTrailSetInsightSelectors(
+func expandAwsCloudTrailInsightSelector(
+func flattenAwsCloudTrailInsightSelector(
 func init(
 func resourceAwsCloudWatchDashboard(
 func resourceAwsCloudWatchDashboardRead(
@@ -1050,6 +1053,7 @@ func resourceAwsCurReportDefinitionCreate(
 func resourceAwsCurReportDefinitionRead(
 func resourceAwsCurReportDefinitionDelete(
 func describeCurReportDefinition(
+func checkAwsCurReportDefinitionPropertyCombination(
 func resourceAwsCustomerGateway(
 func resourceAwsCustomerGatewayCreate(
 func customerGatewayRefreshFunc(
@@ -1562,8 +1566,6 @@ func buildDynamoDbTableItemQueryKey(
 func resourceAwsDynamoDbTableMigrateState(
 func migrateDynamoDBStateV0toV1(
 func init(
-func dynamoDbGetGSIIndex(
-func dynamoDbAttributesToMap(
 func resourceAwsEbsDefaultKmsKey(
 func resourceAwsEbsDefaultKmsKeyCreate(
 func resourceAwsEbsDefaultKmsKeyRead(
@@ -2436,6 +2438,17 @@ func resourceAwsGuardDutyDetectorRead(
 func resourceAwsGuardDutyDetectorUpdate(
 func resourceAwsGuardDutyDetectorDelete(
 func init(
+func resourceAwsGuardDutyFilter(
+func resourceAwsGuardDutyFilterCreate(
+func resourceAwsGuardDutyFilterRead(
+func resourceAwsGuardDutyFilterUpdate(
+func resourceAwsGuardDutyFilterDelete(
+func guardDutyFilterCreateID(
+func guardDutyFilterParseID(
+func expandFindingCriteria(
+func expandConditionIntField(
+func flattenFindingCriteria(
+func flattenConditionIntField(
 func resourceAwsGuardDutyInviteAccepter(
 func resourceAwsGuardDutyInviteAccepterCreate(
 func resourceAwsGuardDutyInviteAccepterRead(
@@ -2680,6 +2693,8 @@ func resourceAwsInstanceRead(
 func resourceAwsInstanceUpdate(
 func resourceAwsInstanceDelete(
 func InstanceStateRefreshFunc(
+func MetadataOptionsRefreshFunc(
+func RootBlockDeviceDeleteOnTerminationRefreshFunc(
 func VolumeStateRefreshFunc(
 func stringifyStateReason(
 func readBlockDevices(

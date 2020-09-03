@@ -69,7 +69,6 @@ func waitForDynamoDbGSIToBeActive(
 func waitForDynamoDbGSIToBeDeleted(
 func waitForDynamoDbSSEUpdateToBeCompleted(
 func migrateDynamoDBStateV0toV1(
-func dynamoDbGetGSIIndex(
 func resourceAWSEbsVolumeUpdate(
 func decodeEc2LocalGatewayRouteID(
 func extractResourceIDAndKeyFromEc2TagID(
@@ -138,6 +137,8 @@ func expandGlueDynamoDBTargets(
 func expandGlueDynamoDBTarget(
 func flattenGlueDynamoDBTargets(
 func readAwsGlueUDFID(
+func guardDutyFilterCreateID(
+func guardDutyFilterParseID(
 func decodeGuardDutyIpsetID(
 func decodeGuardDutyMemberID(
 func decodeGuardDutyPublishDestinationID(

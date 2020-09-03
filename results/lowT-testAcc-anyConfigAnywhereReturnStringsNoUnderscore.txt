@@ -153,8 +153,6 @@ func testAccDataSourceAwsPricingProductConfigEc2(dataName string, instanceType s
 func testAccDataSourceAwsPricingProductConfigRedshift() string {
 func testAccDataSourceAwsQLDBLedgerConfig(rName string) string {
 func testAccDataSourceAwsRdsClusterConfigBasic(clusterName string) string {
-func testAccAWSRdsOrderableDbInstanceDataSourceConfigBasic(class, engine, version, license, storage string) string {
-func testAccAWSRdsOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, storage, preferredOption string) string {
 func testAccAWSDataSourceRedshiftClusterConfig(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithVpc(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithLogging(rInt int) string {
@@ -756,6 +754,7 @@ func testAccAWSDynamoDbConfigGsiUpdate(name string) string {
 func testAccAWSDynamoDbConfigGsiUpdatedCapacity(name string) string {
 func testAccAWSDynamoDbConfigGsiUpdatedOtherAttributes(name string) string {
 func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(name string) string {
+func testAccAWSDynamoDbConfigGsiMultipleNonKeyAttributes(name, attributes string) string {
 func testAccAWSDynamoDbConfigTimeToLive(rName string, ttlEnabled bool) string {
 func testAccAWSDynamoDbConfigOneAttribute(rName, hashKey, attrName, attrType string) string {
 func testAccAWSDynamoDbConfigTwoAttributes(rName, hashKey, rangeKey, attrName1, attrType1, attrName2, attrType2 string) string {

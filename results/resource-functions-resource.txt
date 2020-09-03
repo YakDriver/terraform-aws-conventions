@@ -1468,6 +1468,11 @@ func resourceAwsGuardDutyDetectorCreate(
 func resourceAwsGuardDutyDetectorRead(
 func resourceAwsGuardDutyDetectorUpdate(
 func resourceAwsGuardDutyDetectorDelete(
+func resourceAwsGuardDutyFilter(
+func resourceAwsGuardDutyFilterCreate(
+func resourceAwsGuardDutyFilterRead(
+func resourceAwsGuardDutyFilterUpdate(
+func resourceAwsGuardDutyFilterDelete(
 func resourceAwsGuardDutyInviteAccepter(
 func resourceAwsGuardDutyInviteAccepterCreate(
 func resourceAwsGuardDutyInviteAccepterRead(

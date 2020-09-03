@@ -102,6 +102,8 @@ func createAwsGlueCatalogID(
 func readAwsGlueTableID(
 func decodeGlueConnectionID(
 func readAwsGlueUDFID(
+func guardDutyFilterCreateID(
+func guardDutyFilterParseID(
 func decodeGuardDutyIpsetID(
 func decodeGuardDutyMemberID(
 func decodeGuardDutyPublishDestinationID(

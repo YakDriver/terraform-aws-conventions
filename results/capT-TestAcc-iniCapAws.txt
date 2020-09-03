@@ -56,6 +56,11 @@ func TestAccAwsBackupVault_withKmsKey(
 func TestAccAwsBackupVault_withTags(
 func TestAccAwsBackupVault_disappears(
 func TestAccAwsCurReportDefinition_basic(
+func TestAccAwsCurReportDefinition_textOrCsv(
+func TestAccAwsCurReportDefinition_parquet(
+func TestAccAwsCurReportDefinition_athena(
+func TestAccAwsCurReportDefinition_refresh(
+func TestAccAwsCurReportDefinition_overwrite(
 func TestAccAwsDaxParameterGroup_basic(
 func TestAccAwsDaxSubnetGroup_basic(
 func TestAccAwsDmsEndpoint_basic(

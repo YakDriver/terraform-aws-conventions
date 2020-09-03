@@ -38,6 +38,7 @@ func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_basic(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_notFound(rName string) string {
 func testAccDataSourceAwsCurReportDefinitionConfig_basic(reportName string, bucketName string) string {
+func testAccDataSourceAwsCurReportDefinitionConfig_additional(reportName string, bucketName string) string {
 func testAccAWSCustomerGatewayDataSourceConfigFilter(asn, hostOctet int) string {
 func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {
 func testAccCheckAwsDbClusterSnapshotDataSourceConfig_DbClusterSnapshotIdentifier(rName string) string {
@@ -226,8 +227,17 @@ func testAccDataSourceAwsQLDBLedgerConfig(rName string) string {
 func testAccDataSourceAwsRamResourceShareConfig_Name(rName string) string {
 func testAccDataSourceAwsRamResourceShareConfig_Tags(rName string) string {
 func testAccDataSourceAwsRdsClusterConfigBasic(clusterName string) string {
-func testAccAWSRdsOrderableDbInstanceDataSourceConfigBasic(class, engine, version, license, storage string) string {
-func testAccAWSRdsOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, storage, preferredOption string) string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_basic(class, engine, version, license, storage string) string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_preferredClass(preferredClass string) string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_preferredVersion(preferredVersion string) string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_preferredClassAndVersion(preferredClass, preferredVersion string) string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_supportsEnhancedMonitoring() string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_supportsIAMDatabaseAuthentication() string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_supportsIops() string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_supportsKerberosAuthentication() string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_supportsPerformanceInsights() string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_supportsStorageAutoscaling() string {
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_supportsStorageEncryption() string {
 func testAccAWSDataSourceRedshiftClusterConfig(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithVpc(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithLogging(rInt int) string {
@@ -954,6 +964,7 @@ func testAccAWSCloudTrailConfig_eventSelector(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_eventSelectorModified(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_eventSelectorNone(cloudTrailRandInt int) string {
+func testAccAWSCloudTrailConfig_insightSelector(rName string) string {
 func testAccAWSCloudWatchDashboardName(rInt int) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
 func testAccAWSCloudWatchDashboardConfig_updateBody(rInt int) string {
@@ -1271,6 +1282,7 @@ func testAccConfigOrganizationManagedRuleConfigRuleIdentifier(rName, ruleIdentif
 func testAccConfigOrganizationManagedRuleConfigTagKeyScope(rName, tagKeyScope string) string {
 func testAccConfigOrganizationManagedRuleConfigTagValueScope(rName, tagValueScope string) string {
 func testAccAwsCurReportDefinitionConfig_basic(reportName string, bucketName string) string {
+func testAccAwsCurReportDefinitionConfig_additional(reportName string, bucketName string, bucketPrefix string, format string, compression string, additionalArtifacts []string, refreshClosedReports bool, reportVersioning string) string {
 func testAccCustomerGatewayConfig(rBgpAsn int) string {
 func testAccCustomerGatewayConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
 func testAccCustomerGatewayConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1602,6 +1614,7 @@ func testAccAWSDynamoDbConfigGsiUpdate(name string) string {
 func testAccAWSDynamoDbConfigGsiUpdatedCapacity(name string) string {
 func testAccAWSDynamoDbConfigGsiUpdatedOtherAttributes(name string) string {
 func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(name string) string {
+func testAccAWSDynamoDbConfigGsiMultipleNonKeyAttributes(name, attributes string) string {
 func testAccAWSDynamoDbConfigTimeToLive(rName string, ttlEnabled bool) string {
 func testAccAWSDynamoDbConfigOneAttribute(rName, hashKey, attrName, attrType string) string {
 func testAccAWSDynamoDbConfigTwoAttributes(rName, hashKey, rangeKey, attrName1, attrType1, attrName2, attrType2 string) string {
@@ -2229,6 +2242,11 @@ func testAccAWSGlueWorkflowConfig_Description(rName, description string) string 
 func testAccAWSGlueWorkflowConfig_Required(rName string) string {
 func testAccGuardDutyDetectorConfigTags1(tagKey1, tagValue1 string) string {
 func testAccGuardDutyDetectorConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccGuardDutyFilterConfig_full(startDate, endDate string) string {
+func testAccGuardDutyFilterConfigNoop_full(startDate, endDate string) string {
+func testAccGuardDutyFilterConfig_multipleTags() string {
+func testAccGuardDutyFilterConfig_update() string {
+func testAccGuardDutyFilterConfig_updateTags() string {
 func testAccAwsGuardDutyInviteAccepterConfig_basic(email string) string {
 func testAccGuardDutyIpsetConfig_basic(bucketName, keyName, ipsetName string, activate bool) string {
 func testAccGuardDutyIpsetConfigTags1(rName, tagKey1, tagValue1 string) string {

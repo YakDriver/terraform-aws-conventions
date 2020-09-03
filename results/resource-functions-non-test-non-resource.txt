@@ -231,6 +231,9 @@ func expandAwsCloudTrailEventSelector(
 func expandAwsCloudTrailEventSelectorDataResource(
 func flattenAwsCloudTrailEventSelector(
 func flattenAwsCloudTrailEventSelectorDataResource(
+func cloudTrailSetInsightSelectors(
+func expandAwsCloudTrailInsightSelector(
+func flattenAwsCloudTrailInsightSelector(
 func init(
 func isCloudWatchDashboardNotFoundErr(
 func getPolicyStatement(
@@ -407,6 +410,7 @@ func init(
 func init(
 func init(
 func describeCurReportDefinition(
+func checkAwsCurReportDefinitionPropertyCombination(
 func customerGatewayRefreshFunc(
 func checkGatewayDeleteResponse(
 func waitForDataPipelineDeletion(
@@ -579,8 +583,6 @@ func buildDynamoDbTableItemId(
 func buildDynamoDbTableItemQueryKey(
 func migrateDynamoDBStateV0toV1(
 func init(
-func dynamoDbGetGSIIndex(
-func dynamoDbAttributesToMap(
 func setEbsEncryptionByDefault(
 func resourceAWSEbsVolumeUpdate(
 func volumeStateRefreshFunc(
@@ -989,6 +991,12 @@ func flattenAwsGlueUserDefinedFunctionResourceUri(
 func deleteWorkflow(
 func init(
 func init(
+func guardDutyFilterCreateID(
+func guardDutyFilterParseID(
+func expandFindingCriteria(
+func expandConditionIntField(
+func flattenFindingCriteria(
+func flattenConditionIntField(
 func guardDutyIpsetRefreshStatusFunc(
 func decodeGuardDutyIpsetID(
 func inviteGuardDutyMemberWaiter(
@@ -1068,6 +1076,8 @@ func expandInspectorResourceGroupTags(
 func flattenInspectorResourceGroupTags(
 func iopsDiffSuppressFunc(
 func InstanceStateRefreshFunc(
+func MetadataOptionsRefreshFunc(
+func RootBlockDeviceDeleteOnTerminationRefreshFunc(
 func VolumeStateRefreshFunc(
 func stringifyStateReason(
 func readBlockDevices(

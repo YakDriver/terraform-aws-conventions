@@ -132,6 +132,8 @@ func TestAccDataSourceAwsQLDBLedger_basic(
 func testAccDataSourceAwsQLDBLedgerConfig(
 func buildRAMTagFilters(
 func TestAccDataSourceAWSRDSCluster_basic(
+func TestAccAWSRdsOrderableDbInstanceDataSource_supportsIAMDatabaseAuthentication(
+func testAccAWSRdsOrderableDbInstanceDataSourceConfig_supportsIAMDatabaseAuthentication(
 func TestAccAWSRouteDataSource_TransitGatewayID(
 func TestAccAWSRouteDataSource_LocalGatewayID(
 func testAccAWSRouteDataSourceConfigTransitGatewayID(
@@ -1331,7 +1333,6 @@ func TestDiffDynamoDbGSI(
 func TestAccAWSDynamoDbTable_disappears_PayPerRequestWithGSI(
 func TestAccAWSDynamoDbTable_BillingMode_GSI_PayPerRequestToProvisioned(
 func TestAccAWSDynamoDbTable_BillingMode_GSI_ProvisionedToPayPerRequest(
-func dynamoDbGetGSIIndex(
 func testAccAWSDynamoDbBilling_PayPerRequestWithGSI(
 func testAccAWSDynamoDbBilling_ProvisionedWithGSI(
 func testAccAWSDynamoDbConfigInitialStateWithEncryptionAmazonCMK(
@@ -1713,6 +1714,8 @@ func readAwsGlueUDFID(
 func testAccCheckGlueUDFDestroy(
 func testAccGlueUserDefinedFunctionResourceURIConfig1(
 func testAccGlueUserDefinedFunctionResourceURIConfig2(
+func guardDutyFilterCreateID(
+func guardDutyFilterParseID(
 func decodeGuardDutyIpsetID(
 func decodeGuardDutyMemberID(
 func decodeGuardDutyPublishDestinationID(
