@@ -9502,6 +9502,7 @@ func testAccCheckRoute53ResolverRulesSame(
 func testAccCheckRoute53ResolverRulesDifferent(
 func testAccCheckRoute53ResolverRuleDestroy(
 func testAccCheckRoute53ResolverRuleExists(
+func testAccRoute53ResolverRuleConfig(
 func testAccRoute53ResolverRuleConfig_basicName(
 func testAccRoute53ResolverRuleConfig_forward(
 func testAccRoute53ResolverRuleConfig_forwardTargetIpChanged(

@@ -1559,6 +1559,7 @@ func testAccRoute53RecordConfigHealthCheckIdTypeA() string {
 func testAccRoute53RecordConfigHealthCheckIdTypeCname() string {
 func testAccRoute53RecordConfigAliasCustomVpcEndpointSwappedAliasAttributes(rName string) string {
 func testAccRoute53RecordConfigCustomVpcEndpoint(rName string) string {
+func testAccRoute53ResolverRuleConfig(domainName string) string {
 func testAccRoute53VPCAssociationAuthorizationConfig() string {
 func testAccRoute53ZoneAssociationCrossAccountConfig() string {
 func testAccRoute53ZoneAssociationRegionConfig() string {

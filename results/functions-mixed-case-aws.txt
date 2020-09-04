@@ -3933,6 +3933,8 @@ func resourceAwsRoute53ResolverRuleUpdate(
 func resourceAwsRoute53ResolverRuleDelete(
 func resourceAwsRoute53ResolverRuleCustomizeDiff(
 func TestAccAwsRoute53ResolverRule_basic(
+func TestAccAwsRoute53ResolverRule_justDotDomainName(
+func TestAccAwsRoute53ResolverRule_trailingDotDomainName(
 func TestAccAwsRoute53ResolverRule_tags(
 func TestAccAwsRoute53ResolverRule_updateName(
 func TestAccAwsRoute53ResolverRule_forward(

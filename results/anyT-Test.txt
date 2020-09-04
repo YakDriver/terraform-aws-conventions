@@ -8304,6 +8304,8 @@ func testAccCheckRoute53ResolverRuleAssociationExists(
 func testAccRoute53ResolverRuleAssociationConfig_basic(
 func testSweepRoute53ResolverRules(
 func TestAccAwsRoute53ResolverRule_basic(
+func TestAccAwsRoute53ResolverRule_justDotDomainName(
+func TestAccAwsRoute53ResolverRule_trailingDotDomainName(
 func TestAccAwsRoute53ResolverRule_tags(
 func TestAccAwsRoute53ResolverRule_updateName(
 func TestAccAwsRoute53ResolverRule_forward(
@@ -8312,6 +8314,7 @@ func testAccCheckRoute53ResolverRulesSame(
 func testAccCheckRoute53ResolverRulesDifferent(
 func testAccCheckRoute53ResolverRuleDestroy(
 func testAccCheckRoute53ResolverRuleExists(
+func testAccRoute53ResolverRuleConfig(
 func testAccRoute53ResolverRuleConfig_basicName(
 func testAccRoute53ResolverRuleConfig_forward(
 func testAccRoute53ResolverRuleConfig_forwardTargetIpChanged(

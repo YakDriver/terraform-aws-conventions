@@ -3204,6 +3204,7 @@ func testAccRoute53ResolverEndpointConfig_base(rInt int) string {
 func testAccRoute53ResolverEndpointConfig_initial(rInt int, direction, name string) string {
 func testAccRoute53ResolverEndpointConfig_updated(rInt int, direction, name string) string {
 func testAccRoute53ResolverRuleAssociationConfig_basic(name string) string {
+func testAccRoute53ResolverRuleConfig(domainName string) string {
 func testAccRoute53ResolverRuleConfig_basicName(name string) string {
 func testAccRoute53ResolverRuleConfig_forward(name string) string {
 func testAccRoute53ResolverRuleConfig_forwardTargetIpChanged(name string) string {
