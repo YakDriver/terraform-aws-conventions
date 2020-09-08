@@ -68,6 +68,7 @@ func TestAccDataSourceAwsEBSEncryptionByDefault_basic(
 func TestAccDataSourceAwsEbsSnapshotIds_basic(
 func TestAccDataSourceAwsEbsSnapshotIds_sorted(
 func TestAccDataSourceAwsEbsSnapshotIds_empty(
+func testAccDataSourceAwsEbsSnapshotIdsConfig_basic(
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted1(
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted2(
 func TestAccAWSEbsSnapshotDataSource_basic(
@@ -1377,6 +1378,8 @@ func TestAccAWSDocDBSubnetGroup_namePrefix(
 func TestAccAWSDocDBSubnetGroup_generatedName(
 func TestAccAWSDocDBSubnetGroup_updateDescription(
 func testAccDocDBSubnetGroupConfig_updatedDescription(
+func testAccDocDBSubnetGroupConfig_namePrefix(
+func testAccDocDBSubnetGroupConfig_generatedName(
 func TestAccAwsDxBgpPeer_basic(
 func TestAccAWSDxConnectionAssociation_basic(
 func TestAccAWSDxConnectionAssociation_multiConns(
@@ -2693,6 +2696,8 @@ func TestAccAWSNeptuneSubnetGroup_namePrefix(
 func TestAccAWSNeptuneSubnetGroup_generatedName(
 func TestAccAWSNeptuneSubnetGroup_updateDescription(
 func testAccNeptuneSubnetGroupConfig_updatedDescription(
+func testAccNeptuneSubnetGroupConfig_namePrefix(
+func testAccNeptuneSubnetGroupConfig_generatedName(
 func TestAccAWSNetworkAclRule_basic(
 func TestAccAWSNetworkAclRule_disappears(
 func TestAccAWSNetworkAclRule_ingressEgressSameNumberDisappears(

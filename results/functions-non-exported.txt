@@ -305,6 +305,7 @@ func dataSourceAwsEbsSnapshotRead(
 func snapshotDescriptionAttributes(
 func dataSourceAwsEbsSnapshotIds(
 func dataSourceAwsEbsSnapshotIdsRead(
+func testAccDataSourceAwsEbsSnapshotIdsConfig_basic(
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted1(
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted2(
 func testAccCheckAwsEbsSnapshotDataSourceID(
@@ -4402,6 +4403,8 @@ func testAccCheckAWSDocDBSubnetGroupDisappears(
 func testAccCheckDocDBSubnetGroupExists(
 func testAccDocDBSubnetGroupConfig(
 func testAccDocDBSubnetGroupConfig_updatedDescription(
+func testAccDocDBSubnetGroupConfig_namePrefix(
+func testAccDocDBSubnetGroupConfig_generatedName(
 func resourceAwsDxBgpPeer(
 func resourceAwsDxBgpPeerCreate(
 func resourceAwsDxBgpPeerRead(
@@ -5645,6 +5648,9 @@ func resourceAwsElasticacheSubnetGroupDelete(
 func testAccCheckAWSElasticacheSubnetGroupDestroy(
 func testAccCheckAWSElasticacheSubnetGroupExists(
 func testAccCheckAWSElastiCacheSubnetGroupAttrs(
+func testAccAWSElasticacheSubnetGroupConfig(
+func testAccAWSElasticacheSubnetGroupUpdateConfigPre(
+func testAccAWSElasticacheSubnetGroupUpdateConfigPost(
 func resourceAwsElasticBeanstalkApplication(
 func resourceAwsElasticBeanstalkApplicationCreate(
 func resourceAwsElasticBeanstalkApplicationUpdate(
@@ -8503,6 +8509,7 @@ func testAccCheckAWSNeptuneClusterDestroyWithProvider(
 func testAccCheckAWSNeptuneClusterExists(
 func testAccCheckAWSNeptuneClusterExistsWithProvider(
 func testAccCheckAWSNeptuneClusterSnapshot(
+func testAccAWSNeptuneClusterConfigBase(
 func testAccAWSNeptuneClusterConfig(
 func testAccAWSNeptuneClusterConfigDeleteProtection(
 func testAccAWSNeptuneClusterConfig_namePrefix(
@@ -8557,6 +8564,8 @@ func testAccCheckNeptuneSubnetGroupDestroy(
 func testAccCheckNeptuneSubnetGroupExists(
 func testAccNeptuneSubnetGroupConfig(
 func testAccNeptuneSubnetGroupConfig_updatedDescription(
+func testAccNeptuneSubnetGroupConfig_namePrefix(
+func testAccNeptuneSubnetGroupConfig_generatedName(
 func resourceAwsNetworkAcl(
 func resourceAwsNetworkAclCreate(
 func resourceAwsNetworkAclRead(

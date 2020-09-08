@@ -2948,6 +2948,8 @@ func testAccCheckAWSDocDBSubnetGroupDisappears(
 func testAccCheckDocDBSubnetGroupExists(
 func testAccDocDBSubnetGroupConfig(
 func testAccDocDBSubnetGroupConfig_updatedDescription(
+func testAccDocDBSubnetGroupConfig_namePrefix(
+func testAccDocDBSubnetGroupConfig_generatedName(
 func TestAccAWSDxConnectionAssociation_basic(
 func TestAccAWSDxConnectionAssociation_multiConns(
 func TestAccAWSDxConnection_basic(
@@ -3764,6 +3766,9 @@ func TestAccAWSElasticacheSubnetGroup_update(
 func testAccCheckAWSElasticacheSubnetGroupDestroy(
 func testAccCheckAWSElasticacheSubnetGroupExists(
 func testAccCheckAWSElastiCacheSubnetGroupAttrs(
+func testAccAWSElasticacheSubnetGroupConfig(
+func testAccAWSElasticacheSubnetGroupUpdateConfigPre(
+func testAccAWSElasticacheSubnetGroupUpdateConfigPost(
 func TestAccAWSElasticBeanstalkApplication_basic(
 func TestAccAWSBeanstalkApp_basic(
 func TestAccAWSBeanstalkApp_appversionlifecycle(
@@ -5694,6 +5699,7 @@ func testAccCheckAWSNeptuneClusterDestroyWithProvider(
 func testAccCheckAWSNeptuneClusterExists(
 func testAccCheckAWSNeptuneClusterExistsWithProvider(
 func testAccCheckAWSNeptuneClusterSnapshot(
+func testAccAWSNeptuneClusterConfigBase(
 func testAccAWSNeptuneClusterConfig(
 func testAccAWSNeptuneClusterConfigDeleteProtection(
 func testAccAWSNeptuneClusterConfig_namePrefix(

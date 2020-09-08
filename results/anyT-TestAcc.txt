@@ -154,6 +154,7 @@ func testAccCheckDataSourceAwsEBSEncryptionByDefault(
 func TestAccDataSourceAwsEbsSnapshotIds_basic(
 func TestAccDataSourceAwsEbsSnapshotIds_sorted(
 func TestAccDataSourceAwsEbsSnapshotIds_empty(
+func testAccDataSourceAwsEbsSnapshotIdsConfig_basic(
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted1(
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted2(
 func TestAccAWSEbsSnapshotDataSource_basic(
@@ -3769,6 +3770,8 @@ func testAccCheckAWSDocDBSubnetGroupDisappears(
 func testAccCheckDocDBSubnetGroupExists(
 func testAccDocDBSubnetGroupConfig(
 func testAccDocDBSubnetGroupConfig_updatedDescription(
+func testAccDocDBSubnetGroupConfig_namePrefix(
+func testAccDocDBSubnetGroupConfig_generatedName(
 func TestAccAwsDxBgpPeer_basic(
 func testAccCheckAwsDxBgpPeerDestroy(
 func testAccCheckAwsDxBgpPeerExists(
@@ -4808,6 +4811,9 @@ func TestAccAWSElasticacheSubnetGroup_update(
 func testAccCheckAWSElasticacheSubnetGroupDestroy(
 func testAccCheckAWSElasticacheSubnetGroupExists(
 func testAccCheckAWSElastiCacheSubnetGroupAttrs(
+func testAccAWSElasticacheSubnetGroupConfig(
+func testAccAWSElasticacheSubnetGroupUpdateConfigPre(
+func testAccAWSElasticacheSubnetGroupUpdateConfigPost(
 func TestAccAWSElasticBeanstalkApplication_basic(
 func testAccBeanstalkAppImportConfig(
 func TestAccAWSBeanstalkApp_basic(
@@ -7115,6 +7121,7 @@ func testAccCheckAWSNeptuneClusterDestroyWithProvider(
 func testAccCheckAWSNeptuneClusterExists(
 func testAccCheckAWSNeptuneClusterExistsWithProvider(n string, v *neptune.DBCluster, providerF func(
 func testAccCheckAWSNeptuneClusterSnapshot(
+func testAccAWSNeptuneClusterConfigBase(
 func testAccAWSNeptuneClusterConfig(
 func testAccAWSNeptuneClusterConfigDeleteProtection(
 func testAccAWSNeptuneClusterConfig_namePrefix(
@@ -7162,6 +7169,8 @@ func testAccCheckNeptuneSubnetGroupDestroy(
 func testAccCheckNeptuneSubnetGroupExists(
 func testAccNeptuneSubnetGroupConfig(
 func testAccNeptuneSubnetGroupConfig_updatedDescription(
+func testAccNeptuneSubnetGroupConfig_namePrefix(
+func testAccNeptuneSubnetGroupConfig_generatedName(
 func TestAccAWSNetworkAclRule_basic(
 func TestAccAWSNetworkAclRule_disappears(
 func TestAccAWSNetworkAclRule_ingressEgressSameNumberDisappears(

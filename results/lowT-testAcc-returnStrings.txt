@@ -55,6 +55,7 @@ func testAccAWSDocdbOrderableDbInstanceDataSourceConfigBasic(class, engine, vers
 func testAccAWSDocdbOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, preferredOption string) string {
 func testAccDataSourceAwsDxGatewayConfig_Name(rName string, rBgpAsn int) string {
 func testAccDataSourceAwsDynamoDbTableConfigBasic(tableName string) string {
+func testAccDataSourceAwsEbsSnapshotIdsConfig_basic() string {
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted1(rName string) string {
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted2(rName string) string {
 func testAccDataSourceAwsEbsVolumeIDsConfigWithDataSource(rInt int) string {
@@ -1538,6 +1539,8 @@ func testAccDocDBClusterConfig_Port(rInt, port int) string {
 func testAccDocDBClusterConfigDeleteProtection(isProtected bool) string {
 func testAccDocDBSubnetGroupConfig(rName string) string {
 func testAccDocDBSubnetGroupConfig_updatedDescription(rName string) string {
+func testAccDocDBSubnetGroupConfig_namePrefix() string {
+func testAccDocDBSubnetGroupConfig_generatedName() string {
 func testAccDxBgpPeerConfig(vifId string, bgpAsn int) string {
 func testAccDxConnectionAssociationConfig(rName string) string {
 func testAccDxConnectionAssociationConfig_multiConns(rName string) string {
@@ -1957,6 +1960,9 @@ func testAccAWSElasticacheReplicationGroup_EnableAuthTokenTransitEncryptionConfi
 func testAccAWSElasticacheReplicationGroupConfig_NumberCacheClusters(rName string, numberCacheClusters int, autoFailover bool) string {
 func testAccAWSElasticacheReplicationGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSElasticacheReplicationGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSElasticacheSubnetGroupConfig(rInt int) string {
+func testAccAWSElasticacheSubnetGroupUpdateConfigPre(rInt int) string {
+func testAccAWSElasticacheSubnetGroupUpdateConfigPost(rInt int) string {
 func testAccBeanstalkAppImportConfig(name string) string {
 func testAccBeanstalkAppConfig(rName string) string {
 func testAccBeanstalkAppServiceRole(rName string) string {
@@ -2884,6 +2890,7 @@ func testAccAWSNeptuneClusterParameterGroupConfig_Parameter(name, pName, pValue 
 func testAccAWSNeptuneClusterParameterGroupConfig_Tags(name, tKey, tValue string) string {
 func testAccAWSNeptuneClusterParameterGroupConfig(name string) string {
 func testAccAwsNeptuneClusterSnapshotConfig(rName string) string {
+func testAccAWSNeptuneClusterConfigBase() string {
 func testAccAWSNeptuneClusterConfig(rName string) string {
 func testAccAWSNeptuneClusterConfigDeleteProtection(rName string, isProtected bool) string {
 func testAccAWSNeptuneClusterConfig_namePrefix(rName string) string {
@@ -2912,6 +2919,8 @@ func testAccAWSNeptuneParameterGroupConfig_Tags_SingleTag(name, tKey, tValue str
 func testAccAWSNeptuneParameterGroupConfig_Tags_MultipleTags(name, tKey1, tValue1, tKey2, tValue2 string) string {
 func testAccNeptuneSubnetGroupConfig(rName string) string {
 func testAccNeptuneSubnetGroupConfig_updatedDescription(rName string) string {
+func testAccNeptuneSubnetGroupConfig_namePrefix() string {
+func testAccNeptuneSubnetGroupConfig_generatedName() string {
 func testAccAWSNetworkAclRuleConfigIpv6ICMP(rName string) string {
 func testAccAWSNetworkAclRuleConfigIpv6VpcAssignGeneratedIpv6CidrBlockUpdate(ipv6Enabled bool) string {
 func testAccAWSNetworkAclConfigIpv6ICMP(rName string) string {

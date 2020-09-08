@@ -182,6 +182,7 @@ func dataSourceAwsEbsSnapshotIdsRead(
 func TestAccDataSourceAwsEbsSnapshotIds_basic(
 func TestAccDataSourceAwsEbsSnapshotIds_sorted(
 func TestAccDataSourceAwsEbsSnapshotIds_empty(
+func testAccDataSourceAwsEbsSnapshotIdsConfig_basic(
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted1(
 func testAccDataSourceAwsEbsSnapshotIdsConfig_sorted2(
 func testAccCheckAwsEbsSnapshotDataSourceID(

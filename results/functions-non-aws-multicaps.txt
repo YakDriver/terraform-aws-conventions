@@ -1324,6 +1324,8 @@ func testAccCheckAWSDocDBSubnetGroupDisappears(
 func testAccCheckDocDBSubnetGroupExists(
 func testAccDocDBSubnetGroupConfig(
 func testAccDocDBSubnetGroupConfig_updatedDescription(
+func testAccDocDBSubnetGroupConfig_namePrefix(
+func testAccDocDBSubnetGroupConfig_generatedName(
 func updateDynamoDbPITR(
 func waitForDynamoDbGSIToBeActive(
 func waitForDynamoDbGSIToBeDeleted(

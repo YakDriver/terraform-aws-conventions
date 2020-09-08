@@ -930,6 +930,9 @@ func testAccAWSElasticacheReplicationGroupNativeRedisClusterErrorConfig(rInt int
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterConfig(rName string, numNodeGroups, replicasPerNodeGroup int) string {
 func testAccAWSElasticacheReplicationGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSElasticacheReplicationGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSElasticacheSubnetGroupConfig(rInt int) string {
+func testAccAWSElasticacheSubnetGroupUpdateConfigPre(rInt int) string {
+func testAccAWSElasticacheSubnetGroupUpdateConfigPost(rInt int) string {
 func testAccBeanstalkAppImportConfig(name string) string {
 func testAccBeanstalkAppConfig(rName string) string {
 func testAccBeanstalkAppConfigWithMaxAge(rName string) string {
@@ -1372,6 +1375,7 @@ func testAccAWSNeptuneClusterInstanceConfigModified(instanceName string, n int) 
 func testAccAWSNeptuneClusterInstanceConfigKmsKey(n int) string {
 func testAccAWSNeptuneClusterParameterGroupConfig(name string) string {
 func testAccAwsNeptuneClusterSnapshotConfig(rName string) string {
+func testAccAWSNeptuneClusterConfigBase() string {
 func testAccAWSNeptuneClusterConfig(rName string) string {
 func testAccAWSNeptuneClusterConfigDeleteProtection(rName string, isProtected bool) string {
 func testAccAWSNeptuneClusterConfigWithFinalSnapshot(rName string) string {
