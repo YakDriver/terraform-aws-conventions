@@ -62,6 +62,7 @@ func testAccCheckAWSNetworkAclRuleExists(
 func testAccCheckAWSNetworkAclRuleDelete(
 func testAccAWSNetworkAclRuleConfigIpv6ICMP(
 func testAccAWSNetworkAclRuleConfigIpv6VpcAssignGeneratedIpv6CidrBlockUpdate(
+func testAccAWSNetworkAclRuleConfigIpv6VpcNotAssignGeneratedIpv6CidrBlockUpdate(
 func testAccAWSNetworkAclRuleImportStateIdFunc(
 func testSweepNetworkAcls(
 func TestAccAWSNetworkAcl_basic(

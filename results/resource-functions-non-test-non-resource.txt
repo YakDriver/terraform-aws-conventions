@@ -443,6 +443,8 @@ func init(
 func init(
 func createAwsDbParameterGroupsExceedDefaultAwsLimit(
 func updateAwsDbParameterGroupsExceedDefaultAwsLimit(
+func expandDbProxyConnectionPoolConfig(
+func flattenDbProxyTargetGroupConnectionPoolConfig(
 func expandDbProxyAuth(
 func flattenDbProxyAuth(
 func flattenDbProxyAuths(

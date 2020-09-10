@@ -1180,6 +1180,15 @@ func resourceAwsDbParameterHash(
 func init(
 func createAwsDbParameterGroupsExceedDefaultAwsLimit(
 func updateAwsDbParameterGroupsExceedDefaultAwsLimit(
+func resourceAwsDbProxyDefaultTargetGroup(
+func resourceAwsDbProxyDefaultTargetGroupRead(
+func resourceAwsDbProxyDefaultTargetGroupCreate(
+func resourceAwsDbProxyDefaultTargetGroupUpdate(
+func resourceAwsDbProxyDefaultTargetGroupCreateUpdate(
+func expandDbProxyConnectionPoolConfig(
+func flattenDbProxyTargetGroupConnectionPoolConfig(
+func resourceAwsDbProxyDefaultTargetGroupGet(
+func resourceAwsDbProxyDefaultTargetGroupRefreshFunc(
 func resourceAwsDbProxy(
 func resourceAwsDbProxyCreate(
 func resourceAwsDbProxyRefreshFunc(

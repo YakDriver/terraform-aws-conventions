@@ -1460,6 +1460,13 @@ func testAccAWSDBParameterGroupOnlyConfig(n string) string {
 func testAccAWSDBParameterGroupIncludeDefaultConfig(n string) string {
 func testAccAWSDBParameterGroupUpdateParametersInitialConfig(n string) string {
 func testAccAWSDBParameterGroupUpdateParametersUpdatedConfig(n string) string {
+func testAccAWSDBProxyDefaultTargetGroupConfigBase(rName string) string {
+func testAccAWSDBProxyDefaultTargetGroupConfig_Basic(rName string) string {
+func testAccAWSDBProxyDefaultTargetGroupConfig_ConnectionBorrowTimeout(rName string, connectionBorrowTimeout int) string {
+func testAccAWSDBProxyDefaultTargetGroupConfig_InitQuery(rName, initQuery string) string {
+func testAccAWSDBProxyDefaultTargetGroupConfig_MaxConnectionsPercent(rName string, maxConnectionsPercent int) string {
+func testAccAWSDBProxyDefaultTargetGroupConfig_MaxIdleConnectionsPercent(rName string, maxIdleConnectionsPercent int) string {
+func testAccAWSDBProxyDefaultTargetGroupConfig_SessionPinningFilters(rName, sessionPinningFilters string) string {
 func testAccAWSDBProxyConfigBase(rName string) string {
 func testAccAWSDBProxyConfig(rName string) string {
 func testAccAWSDBProxyConfigName(rName, nName string) string {
@@ -2922,7 +2929,8 @@ func testAccNeptuneSubnetGroupConfig_updatedDescription(rName string) string {
 func testAccNeptuneSubnetGroupConfig_namePrefix() string {
 func testAccNeptuneSubnetGroupConfig_generatedName() string {
 func testAccAWSNetworkAclRuleConfigIpv6ICMP(rName string) string {
-func testAccAWSNetworkAclRuleConfigIpv6VpcAssignGeneratedIpv6CidrBlockUpdate(ipv6Enabled bool) string {
+func testAccAWSNetworkAclRuleConfigIpv6VpcAssignGeneratedIpv6CidrBlockUpdate() string {
+func testAccAWSNetworkAclRuleConfigIpv6VpcNotAssignGeneratedIpv6CidrBlockUpdate() string {
 func testAccAWSNetworkAclConfigIpv6ICMP(rName string) string {
 func testAccAWSNetworkAclConfigEgressConfigModeBlocks() string {
 func testAccAWSNetworkAclConfigEgressConfigModeNoBlocks() string {

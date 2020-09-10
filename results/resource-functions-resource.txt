@@ -747,6 +747,13 @@ func resourceAwsDbParameterGroupRead(
 func resourceAwsDbParameterGroupUpdate(
 func resourceAwsDbParameterGroupDelete(
 func resourceAwsDbParameterHash(
+func resourceAwsDbProxyDefaultTargetGroup(
+func resourceAwsDbProxyDefaultTargetGroupRead(
+func resourceAwsDbProxyDefaultTargetGroupCreate(
+func resourceAwsDbProxyDefaultTargetGroupUpdate(
+func resourceAwsDbProxyDefaultTargetGroupCreateUpdate(
+func resourceAwsDbProxyDefaultTargetGroupGet(
+func resourceAwsDbProxyDefaultTargetGroupRefreshFunc(
 func resourceAwsDbProxy(
 func resourceAwsDbProxyCreate(
 func resourceAwsDbProxyRefreshFunc(

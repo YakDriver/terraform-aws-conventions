@@ -1294,6 +1294,7 @@ func TestAccAWSDBParameterGroup_namePrefix(
 func TestAccAWSDBParameterGroup_generatedName(
 func TestAccAWSDBParameterGroup_withApplyMethod(
 func TestAccAWSDBParameterGroup_updateParameters(
+func TestAccAWSDBProxyDefaultTargetGroup_disappears(
 func TestAccAWSDBProxy_basic(
 func TestAccAWSDBProxy_disappears(
 func TestAccAWSDBSecurityGroup_basic(

@@ -687,6 +687,7 @@ func testAccAWSDBParameterGroupOnlyConfig(n string) string {
 func testAccAWSDBParameterGroupIncludeDefaultConfig(n string) string {
 func testAccAWSDBParameterGroupUpdateParametersInitialConfig(n string) string {
 func testAccAWSDBParameterGroupUpdateParametersUpdatedConfig(n string) string {
+func testAccAWSDBProxyDefaultTargetGroupConfigBase(rName string) string {
 func testAccAWSDBProxyConfigBase(rName string) string {
 func testAccAWSDBProxyConfig(rName string) string {
 func testAccAWSDBProxyConfigName(rName, nName string) string {
@@ -1392,7 +1393,8 @@ func testAccAWSNeptuneEventSubscriptionConfigUpdateSourceIds(rInt int) string {
 func testAccAWSNeptuneEventSubscriptionConfigUpdateCategories(subscriptionName string, rInt int) string {
 func testAccNeptuneSubnetGroupConfig(rName string) string {
 func testAccAWSNetworkAclRuleConfigIpv6ICMP(rName string) string {
-func testAccAWSNetworkAclRuleConfigIpv6VpcAssignGeneratedIpv6CidrBlockUpdate(ipv6Enabled bool) string {
+func testAccAWSNetworkAclRuleConfigIpv6VpcAssignGeneratedIpv6CidrBlockUpdate() string {
+func testAccAWSNetworkAclRuleConfigIpv6VpcNotAssignGeneratedIpv6CidrBlockUpdate() string {
 func testAccAWSNetworkAclConfigIpv6ICMP(rName string) string {
 func testAccAWSNetworkAclConfigEgressConfigModeBlocks() string {
 func testAccAWSNetworkAclConfigEgressConfigModeNoBlocks() string {
