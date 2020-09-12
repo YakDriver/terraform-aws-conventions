@@ -438,6 +438,7 @@ func testAccDocDBSubnetGroupConfig(
 func testAccDocDBSubnetGroupConfig_updatedDescription(
 func testAccDocDBSubnetGroupConfig_namePrefix(
 func testAccDocDBSubnetGroupConfig_generatedName(
+func testAccDynamoDBGlobalTablePreCheck(
 func migrateDynamoDBStateV0toV1(
 func testAccEc2ClientVpnEndpointMsADBase(
 func TestAccAWSElasticSearchDomain_AdvancedSecurityOptions_UserDB(

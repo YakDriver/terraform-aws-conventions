@@ -2975,6 +2975,7 @@ func TestAccAWSDxLag_tags(
 func TestAccAWSDynamoDbGlobalTable_basic(
 func TestAccAWSDynamoDbGlobalTable_multipleRegions(
 func testAccPreCheckAWSDynamodbGlobalTable(
+func testAccDynamoDBGlobalTablePreCheck(
 func updateDynamoDbPITR(
 func waitForDynamoDbGSIToBeActive(
 func waitForDynamoDbGSIToBeDeleted(
