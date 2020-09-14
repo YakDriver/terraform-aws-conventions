@@ -240,6 +240,7 @@ func testAccCheckAWSAPIGatewayRestAPIMinimumCompressionSizeAttributeIsNil(
 func testAccCheckAWSAPIGatewayRestAPIRoutes(
 func testAccCheckAWSAPIGatewayRestAPIExists(
 func testAccCheckAWSAPIGatewayRestAPIDestroy(
+func testAccAPIGatewayTypeEDGEPreCheck(
 func testAccAWSAPIGatewayRestAPIConfig(
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfig_Name(

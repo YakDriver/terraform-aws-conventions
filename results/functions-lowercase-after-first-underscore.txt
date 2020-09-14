@@ -1825,9 +1825,15 @@ func TestAccAWSEIP_networkInterface(
 func TestAccAWSEIP_twoEIPsOneNetworkInterface(
 func TestAccAWSEIP_associated_user_private_ip(
 func TestAccAWSEIP_disappears(
-func TestAccAWSEIPAssociate_notAssociated(
-func TestAccAWSEIP_tags(
+func TestAccAWSEIP_notAssociated(
+func TestAccAWSEIP_tags_Vpc(
+func TestAccAWSEIP_tags_Ec2Classic(
 func testAccAWSEIPConfig_tags(
+func testAccAWSEIPConfig_tags_Ec2Classic(
+func testAccAWSEIPInstanceConfig_associated(
+func testAccAWSEIPInstanceConfig_associated_switch(
+func testAccAWSEIPAssociate_not_associated(
+func testAccAWSEIPAssociate_associated(
 func TestAccAWSEksCluster_basic(
 func TestAccAWSEksFargateProfile_basic(
 func TestAccAWSEksFargateProfile_disappears(

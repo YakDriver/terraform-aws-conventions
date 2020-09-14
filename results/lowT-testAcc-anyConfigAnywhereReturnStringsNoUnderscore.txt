@@ -886,6 +886,9 @@ func testAccAWSEFSMountTargetConfigModified(ct string) string {
 func testAccAWSEFSMountTargetConfigIpAddress(ipAddress string) string {
 func testAccAWSEgressOnlyInternetGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSEgressOnlyInternetGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEIPAssociationConfig() string {
+func testAccAWSEIPAssociationConfigDisappears() string {
+func testAccAWSEIPInstanceConfig() string {
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool() string {
 func testAccAWSEksClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1179,6 +1182,7 @@ func testAccInstanceConfigPrivateIPAndSecondaryIPs(rName, privateIP, secondaryIP
 func testAccLatestAmazonLinuxHvmEbsAmiConfig() string {
 func testAccLatestAmazonLinuxHvmInstanceStoreAmiConfig() string {
 func testAccLatestAmazonLinuxPvEbsAmiConfig() string {
+func testAccLatestAmazonLinuxPvInstanceStoreAmiConfig() string {
 func testAccLatestWindowsServer2016CoreAmiConfig() string {
 func testAccAwsInstanceVpcConfig(rName string, mapPublicIpOnLaunch bool) string {
 func testAccAwsInstanceVpcConfigBasic(rName string) string {

@@ -1421,6 +1421,7 @@ func testAccCheckAWSAPIGatewayRestAPIMinimumCompressionSizeAttributeIsNil(
 func testAccCheckAWSAPIGatewayRestAPIRoutes(
 func testAccCheckAWSAPIGatewayRestAPIExists(
 func testAccCheckAWSAPIGatewayRestAPIDestroy(
+func testAccAPIGatewayTypeEDGEPreCheck(
 func testAccAWSAPIGatewayRestAPIConfig(
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(
 func testAccAWSAPIGatewayRestAPIConfig_Name(
@@ -4825,10 +4826,11 @@ func TestAccAWSEIPAssociation_basic(
 func TestAccAWSEIPAssociation_ec2Classic(
 func TestAccAWSEIPAssociation_spotInstance(
 func TestAccAWSEIPAssociation_disappears(
-func testAccCheckEIPAssociationDisappears(
 func testAccCheckAWSEIPAssociationExists(
 func testAccCheckAWSEIPAssociationHasIpBasedId(
 func testAccCheckAWSEIPAssociationDestroy(
+func testAccAWSEIPAssociationConfig(
+func testAccAWSEIPAssociationConfigDisappears(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func testAccAWSEIPAssociationConfig_instance(
 func testSweepEc2Eips(
@@ -4840,11 +4842,11 @@ func TestAccAWSEIP_twoEIPsOneNetworkInterface(
 func TestAccAWSEIP_associated_user_private_ip(
 func TestAccAWSEIP_Instance_Reassociate(
 func TestAccAWSEIP_disappears(
-func TestAccAWSEIPAssociate_notAssociated(
-func TestAccAWSEIP_tags(
+func TestAccAWSEIP_notAssociated(
+func TestAccAWSEIP_tags_Vpc(
+func TestAccAWSEIP_tags_Ec2Classic(
 func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
-func testAccCheckAWSEIPDisappears(
 func testAccCheckAWSEIPDestroy(
 func TestAccAWSEIP_CustomerOwnedIpv4Pool(
 func testAccCheckAWSEIPAttributes(
@@ -4853,8 +4855,15 @@ func testAccCheckAWSEIPExists(
 func testAccCheckAWSEIPPrivateDNS(
 func testAccCheckAWSEIPPublicDNS(
 func testAccAWSEIPConfig_tags(
+func testAccAWSEIPConfig_tags_Ec2Classic(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
+func testAccAWSEIPInstanceEc2Classic(
+func testAccAWSEIPInstanceConfig(
+func testAccAWSEIPInstanceConfig_associated(
+func testAccAWSEIPInstanceConfig_associated_switch(
 func testAccAWSEIP_Instance(
+func testAccAWSEIPAssociate_not_associated(
+func testAccAWSEIPAssociate_associated(
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
 func testSweepEksClusters(
 func TestAccAWSEksCluster_basic(
@@ -4948,7 +4957,7 @@ func TestAccAWSElasticacheCluster_Engine_Redis(
 func TestAccAWSElasticacheCluster_Port_Redis_Default(
 func TestAccAWSElasticacheCluster_ParameterGroupName_Default(
 func TestAccAWSElasticacheCluster_Port(
-func TestAccAWSElasticacheCluster_SecurityGroup(
+func TestAccAWSElasticacheCluster_SecurityGroup_Ec2Classic(
 func TestAccAWSElasticacheCluster_snapshotsWithUpdates(
 func TestAccAWSElasticacheCluster_NumCacheNodes_Decrease(
 func TestAccAWSElasticacheCluster_NumCacheNodes_Increase(
@@ -4962,7 +4971,6 @@ func TestAccAWSElasticacheCluster_EngineVersion_Redis(
 func TestAccAWSElasticacheCluster_NodeTypeResize_Memcached(
 func TestAccAWSElasticacheCluster_NodeTypeResize_Redis(
 func TestAccAWSElasticacheCluster_NumCacheNodes_Redis(
-func TestAccAWSElasticacheCluster_ReplicationGroupID_InvalidAttributes(
 func TestAccAWSElasticacheCluster_ReplicationGroupID_AvailabilityZone(
 func TestAccAWSElasticacheCluster_ReplicationGroupID_SingleReplica(
 func TestAccAWSElasticacheCluster_ReplicationGroupID_MultipleReplica(
@@ -4987,7 +4995,6 @@ func testAccAWSElasticacheClusterConfig_EngineVersion_Redis(
 func testAccAWSElasticacheClusterConfig_NodeType_Memcached(
 func testAccAWSElasticacheClusterConfig_NodeType_Redis(
 func testAccAWSElasticacheClusterConfig_NumCacheNodes_Redis(
-func testAccAWSElasticacheClusterConfig_ReplicationGroupID_InvalidAttribute(
 func testAccAWSElasticacheClusterConfig_ReplicationGroupID_AvailabilityZone(
 func testAccAWSElasticacheClusterConfig_ReplicationGroupID_Replica(
 func TestAccAWSElasticacheParameterGroup_basic(
@@ -5218,6 +5225,7 @@ func testAccAwsElasticTranscoderPresetConfigFull2(
 func testAccAwsElasticTranscoderPresetConfigVideoFrameRate(
 func TestAccAWSELBAttachment_basic(
 func TestAccAWSELBAttachment_drift(
+func testAccAWSELBAttachmentCheckInstanceCount(
 func testAccAWSELBAttachmentConfig1(
 func testAccAWSELBAttachmentConfig2(
 func testAccAWSELBAttachmentConfig3(
@@ -6294,6 +6302,7 @@ func testAccInstanceConfig_UserData_EmptyString(
 func testAccLatestAmazonLinuxHvmEbsAmiConfig(
 func testAccLatestAmazonLinuxHvmInstanceStoreAmiConfig(
 func testAccLatestAmazonLinuxPvEbsAmiConfig(
+func testAccLatestAmazonLinuxPvInstanceStoreAmiConfig(
 func testAccLatestWindowsServer2016CoreAmiConfig(
 func testAccAwsInstanceVpcConfig(
 func testAccAwsInstanceVpcConfigBasic(

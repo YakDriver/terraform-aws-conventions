@@ -717,7 +717,7 @@ func TestAccAWSEIPAssociation_spotInstance(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func TestAccAWSEIP_networkInterface(
 func TestAccAWSEIP_twoEIPsOneNetworkInterface(
-func TestAccAWSEIPAssociate_notAssociated(
+func TestAccAWSEIP_notAssociated(
 func TestAccAWSElasticacheCluster_snapshotsWithUpdates(
 func TestAccAWSElasticacheCluster_multiAZInVpc(
 func testAccAWSElasticacheClusterConfig_snapshotsUpdated(

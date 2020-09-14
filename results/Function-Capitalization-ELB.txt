@@ -7,6 +7,7 @@ func testAccAWSAutoScalingGroupConfig_ALB_TargetGroup_ELBCapacity(
 func isELBCapacitySatisfied(
 func TestAccAWSELBAttachment_basic(
 func TestAccAWSELBAttachment_drift(
+func testAccAWSELBAttachmentCheckInstanceCount(
 func testAccAWSELBAttachmentConfig1(
 func testAccAWSELBAttachmentConfig2(
 func testAccAWSELBAttachmentConfig3(

@@ -1703,10 +1703,16 @@ func testAccAWSEFSMountTargetConfigModified(ct string) string {
 func testAccAWSEFSMountTargetConfigIpAddress(ipAddress string) string {
 func testAccAWSEgressOnlyInternetGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSEgressOnlyInternetGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEIPAssociationConfig() string {
+func testAccAWSEIPAssociationConfigDisappears() string {
 func testAccAWSEIPAssociationConfig_spotInstance(rInt int) string {
 func testAccAWSEIPAssociationConfig_instance() string {
 func testAccAWSEIPConfig_tags(rName, testName string) string {
+func testAccAWSEIPConfig_tags_Ec2Classic(rName, testName string) string {
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(poolName string) string {
+func testAccAWSEIPInstanceConfig() string {
+func testAccAWSEIPInstanceConfig_associated() string {
+func testAccAWSEIPInstanceConfig_associated_switch() string {
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool() string {
 func testAccAWSEksClusterConfig_Base(rName string) string {
 func testAccAWSEksClusterConfig_Required(rName string) string {
@@ -1762,7 +1768,6 @@ func testAccAWSElasticacheClusterConfig_EngineVersion_Redis(rName, engineVersion
 func testAccAWSElasticacheClusterConfig_NodeType_Memcached(rName, nodeType string) string {
 func testAccAWSElasticacheClusterConfig_NodeType_Redis(rName, nodeType string) string {
 func testAccAWSElasticacheClusterConfig_NumCacheNodes_Redis(rName string, numCacheNodes int) string {
-func testAccAWSElasticacheClusterConfig_ReplicationGroupID_InvalidAttribute(rName, attrName, attrValue string) string {
 func testAccAWSElasticacheClusterConfig_ReplicationGroupID_AvailabilityZone(rName string) string {
 func testAccAWSElasticacheClusterConfig_ReplicationGroupID_Replica(rName string, count int) string {
 func testAccAWSElasticacheParameterGroupConfig(rName string) string {
@@ -2209,6 +2214,7 @@ func testAccInstanceConfig_UserData_EmptyString(rName string) string {
 func testAccLatestAmazonLinuxHvmEbsAmiConfig() string {
 func testAccLatestAmazonLinuxHvmInstanceStoreAmiConfig() string {
 func testAccLatestAmazonLinuxPvEbsAmiConfig() string {
+func testAccLatestAmazonLinuxPvInstanceStoreAmiConfig() string {
 func testAccLatestWindowsServer2016CoreAmiConfig() string {
 func testAccAwsInstanceVpcConfig(rName string, mapPublicIpOnLaunch bool) string {
 func testAccAwsInstanceVpcConfigBasic(rName string) string {

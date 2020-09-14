@@ -2164,11 +2164,12 @@ func TestAccAWSEIP_instance(
 func TestAccAWSEIP_networkInterface(
 func TestAccAWSEIP_twoEIPsOneNetworkInterface(
 func TestAccAWSEIP_disappears(
-func TestAccAWSEIPAssociate_notAssociated(
-func TestAccAWSEIP_tags(
+func TestAccAWSEIP_notAssociated(
 func TestAccAWSEIP_CustomerOwnedIpv4Pool(
 func testAccAWSEIPConfig_tags(
+func testAccAWSEIPInstanceConfig_associated(
 func testAccAWSEIP_Instance(
+func testAccAWSEIPAssociate_associated(
 func TestAccAWSEksCluster_basic(
 func TestAccAWSEksCluster_EncryptionConfig(
 func TestAccAWSEksCluster_Version(
@@ -2193,7 +2194,6 @@ func TestAccAWSEksNodeGroup_ReleaseVersion(
 func TestAccAWSEksNodeGroup_Tags(
 func TestAccAWSEksNodeGroup_Version(
 func TestAccAWSElasticacheCluster_Port(
-func TestAccAWSElasticacheCluster_SecurityGroup(
 func TestAccAWSElasticacheCluster_snapshotsWithUpdates(
 func TestAccAWSElasticacheCluster_vpc(
 func TestAccAWSElasticacheCluster_multiAZInVpc(
