@@ -364,6 +364,7 @@ func testAccAcmCertificateConfig_subjectAlternativeNames(domainName, subjectAlte
 func testAccAcmCertificateConfig_oneTag(domainName, validationMethod, tag1Key, tag1Value string) string {
 func testAccAcmCertificateConfig_twoTags(domainName, validationMethod, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAcmCertificateConfigPrivateKeyWithoutChain(commonName string) string {
+func testAccAcmCertificateConfigPrivateKeyTags(commonName string) string {
 func testAccAcmCertificateConfigPrivateKey(certificate, privateKey, chain string) string {
 func testAccAcmCertificateConfig_disableCTLogging(domainName, validationMethod string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_Enabled(rName, certificateAuthorityType string, enabled bool) string {
@@ -1410,12 +1411,12 @@ func testAccAWSDmsReplicationInstanceConfig_ReplicationSubnetGroupId(rName strin
 func testAccAWSDmsReplicationInstanceConfig_Tags_One(rName, key1, value1 string) string {
 func testAccAWSDmsReplicationInstanceConfig_Tags_Two(rName, key1, value1, key2, value2 string) string {
 func testAccAWSDmsReplicationInstanceConfig_VpcSecurityGroupIds(rName string) string {
-func testAccAWSDocDBClusterInstanceConfig(n int) string {
-func testAccAWSDocDBClusterInstanceConfigModified(n int) string {
-func testAccAWSDocDBClusterInstanceConfig_az(n int) string {
-func testAccAWSDocDBClusterInstanceConfig_namePrefix(n int) string {
-func testAccAWSDocDBClusterInstanceConfig_generatedName(n int) string {
-func testAccAWSDocDBClusterInstanceConfigKmsKey(n int) string {
+func testAccAWSDocDBClusterInstanceConfig(rName string) string {
+func testAccAWSDocDBClusterInstanceConfigModified(rName string) string {
+func testAccAWSDocDBClusterInstanceConfig_az(rName string) string {
+func testAccAWSDocDBClusterInstanceConfig_namePrefix(rName, rNamePrefix string) string {
+func testAccAWSDocDBClusterInstanceConfig_generatedName(rName string) string {
+func testAccAWSDocDBClusterInstanceConfigKmsKey(rName string) string {
 func testAccAWSDocDBClusterParameterGroupConfig(name string) string {
 func testAccAWSDocDBClusterParameterGroupConfig_Description(name, description string) string {
 func testAccAWSDocDBClusterParameterGroupConfig_Parameter(name, pName, pValue string) string {

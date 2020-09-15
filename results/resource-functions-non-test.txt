@@ -13,7 +13,6 @@ func resourceAwsAcmCertificateUpdate(
 func cleanUpSubjectAlternativeNames(
 func convertValidationOptions(
 func resourceAwsAcmCertificateDelete(
-func resourceAwsAcmCertificateImport(
 func acmDomainValidationOptionsHash(
 func expandAcmCertificateOptions(
 func flattenAcmCertificateOptions(

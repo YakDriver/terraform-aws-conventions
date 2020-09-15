@@ -865,7 +865,6 @@ func resourceAwsAcmCertificateRead(
 func resourceAwsAcmCertificateValidationMethod(
 func resourceAwsAcmCertificateUpdate(
 func resourceAwsAcmCertificateDelete(
-func resourceAwsAcmCertificateImport(
 func testAccAwsAcmCertificateDomainFromEnv(
 func testAccAwsAcmCertificateRandomSubDomain(
 func resourceAwsAcmCertificateValidation(

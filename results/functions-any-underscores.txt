@@ -682,6 +682,7 @@ func TestAccAWSAcmCertificate_disableCTLogging(
 func TestAccAWSAcmCertificate_tags(
 func TestAccAWSAcmCertificate_imported_DomainName(
 func TestAccAWSAcmCertificate_imported_IpAddress(
+func TestAccAWSAcmCertificate_PrivateKey_Tags(
 func testAccAcmCertificateConfig_privateCert(
 func testAccAcmCertificateConfig_subjectAlternativeNames(
 func testAccAcmCertificateConfig_oneTag(

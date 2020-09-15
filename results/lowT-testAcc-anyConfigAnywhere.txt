@@ -366,6 +366,7 @@ func testAccAcmCertificateConfig_subjectAlternativeNames(
 func testAccAcmCertificateConfig_oneTag(
 func testAccAcmCertificateConfig_twoTags(
 func testAccAcmCertificateConfigPrivateKeyWithoutChain(
+func testAccAcmCertificateConfigPrivateKeyTags(
 func testAccAcmCertificateConfigPrivateKey(
 func testAccAcmCertificateConfig_disableCTLogging(
 func testAccAwsAcmpcaCertificateAuthorityConfig_Enabled(

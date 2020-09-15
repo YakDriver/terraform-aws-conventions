@@ -230,6 +230,7 @@ func testAccAWSAccessAnalyzerAnalyzerConfigTags2(rName, tagKey1, tagValue1, tagK
 func testAccAWSAccessAnalyzerAnalyzerConfigTypeOrganization(rName string) string {
 func testAccAcmCertificateConfig(domainName, validationMethod string) string {
 func testAccAcmCertificateConfigPrivateKeyWithoutChain(commonName string) string {
+func testAccAcmCertificateConfigPrivateKeyTags(commonName string) string {
 func testAccAcmCertificateConfigPrivateKey(certificate, privateKey, chain string) string {
 func testAccAWSAMICopyConfigBase(rName string) string {
 func testAccAWSAMICopyConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -723,9 +724,9 @@ func testAccDmsEventSubscriptionConfigEnabled(rName string, enabled bool) string
 func testAccDmsEventSubscriptionConfigEventCategories2(rName string, eventCategory1 string, eventCategory2 string) string {
 func testAccDmsEventSubscriptionConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDmsEventSubscriptionConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSDocDBClusterInstanceConfig(n int) string {
-func testAccAWSDocDBClusterInstanceConfigModified(n int) string {
-func testAccAWSDocDBClusterInstanceConfigKmsKey(n int) string {
+func testAccAWSDocDBClusterInstanceConfig(rName string) string {
+func testAccAWSDocDBClusterInstanceConfigModified(rName string) string {
+func testAccAWSDocDBClusterInstanceConfigKmsKey(rName string) string {
 func testAccAWSDocDBClusterParameterGroupConfig(name string) string {
 func testAccAwsDocDBClusterSnapshotConfig(rName string) string {
 func testAccDocDBClusterConfig(n int) string {
