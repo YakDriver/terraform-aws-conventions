@@ -189,7 +189,6 @@ const testAccAWSUserGroupMembershipConfigRemoveGroup =
 const testAccAWSUserGroupMembershipConfigDeleteResource =
 const testAccAWSSSHKeyConfig_sshEncoding =
 const testAccAWSSSHKeyConfig_pemEncoding =
-const testAccInstanceConfigMultipleRegions =
 const testAccNoInternetGatewayConfig =
 const testAccInternetGatewayConfig =
 const testAccInternetGatewayConfigChangeVPC =

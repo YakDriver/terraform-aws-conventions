@@ -94,7 +94,6 @@ const testAccAWSUserGroupMembershipConfigAddOne =
 const testAccAWSUserGroupMembershipConfigAddAll =
 const testAccAWSUserGroupMembershipConfigRemoveGroup =
 const testAccAWSUserGroupMembershipConfigDeleteResource =
-const testAccInstanceConfigMultipleRegions =
 const testAccNoInternetGatewayConfig =
 const testAccInternetGatewayConfig =
 const testAccInternetGatewayConfigChangeVPC =

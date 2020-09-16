@@ -1503,12 +1503,12 @@ func testAccAWSClusterInstanceConfigKmsKey(n int) string {
 func testAccAWSClusterInstanceConfigMonitoringInterval(rName string, monitoringInterval int) string {
 func testAccAWSClusterInstanceConfigMonitoringRoleArnRemoved(rName string) string {
 func testAccAWSClusterInstanceConfigMonitoringRoleArn(rName string) string {
-func testAccAWSClusterInstanceConfigPerformanceInsightsEnabledAuroraMysql1(rName string) string {
-func testAccAWSClusterInstanceConfigPerformanceInsightsEnabledAuroraMysql2(rName string) string {
-func testAccAWSClusterInstanceConfigPerformanceInsightsEnabledAuroraPostgresql(rName string) string {
-func testAccAWSClusterInstanceConfigPerformanceInsightsKmsKeyIdAuroraMysql1(rName string) string {
-func testAccAWSClusterInstanceConfigPerformanceInsightsKmsKeyIdAuroraMysql2(rName string) string {
-func testAccAWSClusterInstanceConfigPerformanceInsightsKmsKeyIdAuroraPostgresql(rName string) string {
+func testAccAWSClusterInstanceConfigPerformanceInsightsEnabledAuroraMysql1(rName, engine string) string {
+func testAccAWSClusterInstanceConfigPerformanceInsightsEnabledAuroraMysql2(rName, engine, engineVersion string) string {
+func testAccAWSClusterInstanceConfigPerformanceInsightsEnabledAuroraPostgresql(rName, engine string) string {
+func testAccAWSClusterInstanceConfigPerformanceInsightsKmsKeyIdAuroraMysql1(rName, engine string) string {
+func testAccAWSClusterInstanceConfigPerformanceInsightsKmsKeyIdAuroraMysql2(rName, engine, engineVersion string) string {
+func testAccAWSClusterInstanceConfigPerformanceInsightsKmsKeyIdAuroraPostgresql(rName, engine string) string {
 func testAccAWSDBClusterParameterGroupConfig(name string) string {
 func testAccAWSDBClusterParameterGroupConfigWithApplyMethod(name string) string {
 func testAccAWSDBClusterParameterGroupAddParametersConfig(name string) string {

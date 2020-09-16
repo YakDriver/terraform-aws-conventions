@@ -823,7 +823,6 @@ func TestAccAWSInstance_sourceDestCheck(
 func TestAccAWSInstance_disableApiTermination(
 func TestAccAWSInstance_placementGroup(
 func TestAccAWSInstance_ipv6AddressCountAndSingleAddressCausesError(
-func TestAccAWSInstance_multipleRegions(
 func TestAccAWSInstance_volumeTags(
 func TestAccAWSInstance_volumeTagsComputed(
 func TestAccAWSInstance_instanceProfileChange(

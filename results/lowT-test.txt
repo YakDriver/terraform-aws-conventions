@@ -467,7 +467,6 @@ func testAccPartitionHasServicePreCheck(
 func testAccMultipleRegionPreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccRegionPreCheck(
-func testAccPartitionPreCheck(
 func testAccOrganizationsAccountPreCheck(
 func testAccOrganizationsEnabledPreCheck(
 func testAccAlternateAccountProviderConfig(
@@ -2230,6 +2229,7 @@ func testAccAWSDBProxyDefaultTargetGroupConfig_MaxConnectionsPercent(
 func testAccAWSDBProxyDefaultTargetGroupConfig_MaxIdleConnectionsPercent(
 func testAccAWSDBProxyDefaultTargetGroupConfig_SessionPinningFilters(
 func testSweepRdsDbProxies(
+func testAccDBProxyPreCheck(
 func testAccCheckAWSDBProxyDestroy(
 func testAccCheckAWSDBProxyExists(
 func testAccAWSDBProxyConfigBase(
@@ -4833,6 +4833,8 @@ func testAccAWSClusterEndpointConfigTags2(
 func testAccCheckAWSDBClusterInstanceAttributes(
 func testAccAWSClusterInstanceDisappears(
 func testAccCheckAWSClusterInstanceExists(
+func testAccRDSPerformanceInsightsDefaultVersionPreCheck(
+func testAccRDSPerformanceInsightsPreCheck(
 func testAccAWSClusterInstanceConfig(
 func testAccAWSClusterInstanceConfigModified(
 func testAccAWSClusterInstanceConfig_az(

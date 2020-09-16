@@ -215,7 +215,6 @@ const testAccAWSUserGroupMembershipConfigDeleteResource =
 const testAccAWSSSHKeyConfig_sshEncoding =
 const testAccAWSSSHKeyConfig_pemEncoding =
 const testAccAwsEc2InstanceAmiWithEbsRootVolume =
-const testAccInstanceConfigMultipleRegions =
 const testAccNoInternetGatewayConfig =
 const testAccInternetGatewayConfig =
 const testAccInternetGatewayConfigChangeVPC =

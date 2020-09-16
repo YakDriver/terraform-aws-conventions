@@ -2692,7 +2692,6 @@ func TestAccAWSInstance_vpc(
 func TestAccAWSInstance_outpost(
 func TestAccAWSInstance_placementGroup(
 func TestAccAWSInstance_ipv6AddressCountAndSingleAddressCausesError(
-func TestAccAWSInstance_multipleRegions(
 func TestAccAWSInstance_NetworkInstanceSecurityGroups(
 func TestAccAWSInstance_NetworkInstanceRemovingAllSecurityGroups(
 func TestAccAWSInstance_NetworkInstanceVPCSecurityGroupIDs(

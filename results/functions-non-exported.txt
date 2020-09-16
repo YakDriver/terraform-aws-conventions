@@ -1107,7 +1107,6 @@ func testAccPartitionHasServicePreCheck(
 func testAccMultipleRegionPreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccRegionPreCheck(
-func testAccPartitionPreCheck(
 func testAccOrganizationsAccountPreCheck(
 func testAccOrganizationsEnabledPreCheck(
 func testAccAlternateAccountProviderConfig(
@@ -4070,6 +4069,7 @@ func resourceAwsDbProxyUpdate(
 func resourceAwsDbProxyDelete(
 func init(
 func testSweepRdsDbProxies(
+func testAccDBProxyPreCheck(
 func testAccCheckAWSDBProxyDestroy(
 func testAccCheckAWSDBProxyExists(
 func testAccAWSDBProxyConfigBase(
@@ -9161,6 +9161,8 @@ func resourceAwsRDSClusterInstanceDelete(
 func testAccCheckAWSDBClusterInstanceAttributes(
 func testAccAWSClusterInstanceDisappears(
 func testAccCheckAWSClusterInstanceExists(
+func testAccRDSPerformanceInsightsDefaultVersionPreCheck(
+func testAccRDSPerformanceInsightsPreCheck(
 func testAccAWSClusterInstanceConfig(
 func testAccAWSClusterInstanceConfigModified(
 func testAccAWSClusterInstanceConfig_az(

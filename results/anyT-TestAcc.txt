@@ -896,7 +896,6 @@ func testAccPartitionHasServicePreCheck(
 func testAccMultipleRegionPreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccRegionPreCheck(
-func testAccPartitionPreCheck(
 func testAccOrganizationsAccountPreCheck(
 func testAccOrganizationsEnabledPreCheck(
 func testAccAlternateAccountProviderConfig(
@@ -3544,6 +3543,7 @@ func TestAccAWSDBProxy_AuthIamAuth(
 func TestAccAWSDBProxy_AuthSecretArn(
 func TestAccAWSDBProxy_Tags(
 func TestAccAWSDBProxy_disappears(
+func testAccDBProxyPreCheck(
 func testAccCheckAWSDBProxyDestroy(
 func testAccCheckAWSDBProxyExists(
 func testAccAWSDBProxyConfigBase(
@@ -5878,7 +5878,6 @@ func TestAccAWSInstance_placementGroup(
 func TestAccAWSInstance_ipv6_supportAddressCount(
 func TestAccAWSInstance_ipv6AddressCountAndSingleAddressCausesError(
 func TestAccAWSInstance_ipv6_supportAddressCountWithIpv4(
-func TestAccAWSInstance_multipleRegions(
 func TestAccAWSInstance_NetworkInstanceSecurityGroups(
 func TestAccAWSInstance_NetworkInstanceRemovingAllSecurityGroups(
 func TestAccAWSInstance_NetworkInstanceVPCSecurityGroupIDs(
@@ -7625,6 +7624,8 @@ func TestAccAWSRDSClusterInstance_PerformanceInsightsKmsKeyId_AuroraMysql2_Defau
 func TestAccAWSRDSClusterInstance_PerformanceInsightsKmsKeyId_AuroraPostgresql(
 func TestAccAWSRDSClusterInstance_PerformanceInsightsKmsKeyId_AuroraPostgresql_DefaultKeyToCustomKey(
 func TestAccAWSRDSClusterInstance_CACertificateIdentifier(
+func testAccRDSPerformanceInsightsDefaultVersionPreCheck(
+func testAccRDSPerformanceInsightsPreCheck(
 func testAccAWSClusterInstanceConfig(
 func testAccAWSClusterInstanceConfigModified(
 func testAccAWSClusterInstanceConfig_az(

@@ -2075,7 +2075,6 @@ func TestAccAWSInstance_placementGroup(
 func TestAccAWSInstance_ipv6_supportAddressCount(
 func TestAccAWSInstance_ipv6AddressCountAndSingleAddressCausesError(
 func TestAccAWSInstance_ipv6_supportAddressCountWithIpv4(
-func TestAccAWSInstance_multipleRegions(
 func TestAccAWSInstance_tags(
 func TestAccAWSInstance_volumeTags(
 func TestAccAWSInstance_volumeTagsComputed(

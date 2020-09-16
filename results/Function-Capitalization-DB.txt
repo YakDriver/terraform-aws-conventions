@@ -294,6 +294,7 @@ func TestAccAWSDBProxy_AuthIamAuth(
 func TestAccAWSDBProxy_AuthSecretArn(
 func TestAccAWSDBProxy_Tags(
 func TestAccAWSDBProxy_disappears(
+func testAccDBProxyPreCheck(
 func testAccCheckAWSDBProxyDestroy(
 func testAccCheckAWSDBProxyExists(
 func testAccAWSDBProxyConfigBase(
