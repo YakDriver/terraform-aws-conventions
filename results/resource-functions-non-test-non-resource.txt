@@ -409,6 +409,8 @@ func configRuleSourceDetailsHash(
 func init(
 func init(
 func init(
+func expandConfigRemediationConfigurationParameters(
+func flattenRemediationConfigurationParameters(
 func describeCurReportDefinition(
 func checkAwsCurReportDefinitionPropertyCombination(
 func customerGatewayRefreshFunc(
@@ -1254,6 +1256,7 @@ func waitForKinesisFirehoseDeliveryStreamDeletion(
 func waitForKinesisFirehoseDeliveryStreamSSEEnabled(
 func waitForKinesisFirehoseDeliveryStreamSSEDisabled(
 func isKinesisFirehoseDeliveryStreamOptionDisabled(
+func expandFirehoseDeliveryStreamEncryptionConfigurationInput(
 func migrateKinesisFirehoseV0toV1(
 func init(
 func baseAccFirehoseAWSLambdaConfig(

@@ -51,6 +51,7 @@ func testAccAWSDBSubnetGroupDataSourceConfig(rName string) string {
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(adType string) string {
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_SimpleAD(alias string) string {
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_MicrosoftAD(alias string) string {
+func testAccDataSourceDirectoryServiceDirectoryConfig_connector() string {
 func testAccAWSDocdbOrderableDbInstanceDataSourceConfigBasic(class, engine, version, license string) string {
 func testAccAWSDocdbOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, preferredOption string) string {
 func testAccDataSourceAwsDxGatewayConfig_Name(rName string, rBgpAsn int) string {
@@ -1193,6 +1194,7 @@ func testAccConfigOrganizationManagedRuleConfigResourceTypesScope2(rName string)
 func testAccConfigOrganizationManagedRuleConfigRuleIdentifier(rName, ruleIdentifier string) string {
 func testAccConfigOrganizationManagedRuleConfigTagKeyScope(rName, tagKeyScope string) string {
 func testAccConfigOrganizationManagedRuleConfigTagValueScope(rName, tagValueScope string) string {
+func testAccConfigRemediationConfigurationConfig(namePrefix, sseAlgorithm string, randInt int) string {
 func testAccAwsCurReportDefinitionConfig_basic(reportName string, bucketName string) string {
 func testAccAwsCurReportDefinitionConfig_additional(reportName string, bucketName string, bucketPrefix string, format string, compression string, additionalArtifacts []string, refreshClosedReports bool, reportVersioning string) string {
 func testAccCustomerGatewayConfig(rBgpAsn int) string {
@@ -2256,6 +2258,8 @@ func testAccKinesisAnalyticsApplicationConfigOutputsLambda(rInt int) string {
 func testAccFirehoseAWSLambdaConfigBasic(funcName, policyName, roleName string) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_s3WithCloudwatchLogging(rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_s3basicWithSSE(rName string, rInt int, sseEnabled bool) string {
+func testAccKinesisFirehoseDeliveryStreamConfig_s3basicWithSSEAndKeyArn(rName string, rInt int, sseEnabled bool) string {
+func testAccKinesisFirehoseDeliveryStreamConfig_s3basicWithSSEAndKeyType(rName string, rInt int, sseEnabled bool, keyType string) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_s3basicWithTags(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_s3basicWithTagsChanged(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_DataFormatConversionConfiguration_Enabled(rName string, rInt int, enabled bool) string {

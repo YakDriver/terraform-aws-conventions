@@ -599,6 +599,7 @@ func testAccConfigOrganizationManagedRuleConfigResourceTypesScope2(rName string)
 func testAccConfigOrganizationManagedRuleConfigRuleIdentifier(rName, ruleIdentifier string) string {
 func testAccConfigOrganizationManagedRuleConfigTagKeyScope(rName, tagKeyScope string) string {
 func testAccConfigOrganizationManagedRuleConfigTagValueScope(rName, tagValueScope string) string {
+func testAccConfigRemediationConfigurationConfig(namePrefix, sseAlgorithm string, randInt int) string {
 func testAccCustomerGatewayConfig(rBgpAsn int) string {
 func testAccCustomerGatewayConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
 func testAccCustomerGatewayConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
