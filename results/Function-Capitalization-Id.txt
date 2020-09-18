@@ -329,7 +329,6 @@ func vpcEndpointSubnetAssociationId(
 func testAccCheckVpcIdsEqual(
 func testAccCheckVpcIdsNotEqual(
 func resourceAwsVpnConnectionRouteParseId(
-func vpnGatewayAttachmentId(
 func testAccCheckAWSWafGeoMatchSetIdDiffers(
 func testAccCheckAWSWafRateBasedRuleIdDiffers(
 func resourceAwsWafRegionalWebAclAssociationParseId(

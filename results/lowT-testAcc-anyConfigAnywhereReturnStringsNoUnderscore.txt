@@ -133,6 +133,7 @@ func testAccDataSourceAWSLBListenerConfigHTTPS(lbName, targetGroupName, certific
 func testAccDataSourceAWSLBTargetGroupConfigBasic(lbName string, targetGroupName string) string {
 func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(lbName string, targetGroupName string) string {
 func testAccDataSourceAWSLBConfigBasic(lbName string) string {
+func testAccDataSourceAWSLBConfigOutpost(lbName string) string {
 func testAccDataSourceAWSLBConfigBackardsCompatibility(albName string) string {
 func testAccMskClusterDataSourceConfigName(rName string) string {
 func testAccMskConfigurationDataSourceConfigName(rName string) string {
@@ -758,12 +759,14 @@ func testAccAWSDynamoDbConfigGsiUpdatedCapacity(name string) string {
 func testAccAWSDynamoDbConfigGsiUpdatedOtherAttributes(name string) string {
 func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(name string) string {
 func testAccAWSDynamoDbConfigGsiMultipleNonKeyAttributes(name, attributes string) string {
+func testAccAWSDynamoDbConfigLsiNonKeyAttributes(name string) string {
 func testAccAWSDynamoDbConfigTimeToLive(rName string, ttlEnabled bool) string {
 func testAccAWSDynamoDbConfigOneAttribute(rName, hashKey, attrName, attrType string) string {
 func testAccAWSDynamoDbConfigTwoAttributes(rName, hashKey, rangeKey, attrName1, attrType1, attrName2, attrType2 string) string {
 func testAccAWSDynamoDbTableConfigReplica0(rName string) string {
 func testAccAWSDynamoDbTableConfigReplica1(rName string) string {
 func testAccAWSDynamoDbTableConfigReplica2(rName string) string {
+func testAccAWSDynamoDbConfigLSI(rName, lsiName string) string {
 func testAccAwsEbsEncryptionByDefaultConfig(enabled bool) string {
 func testAccAwsEbsSnapshotCopyConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAwsEbsSnapshotCopyConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1967,6 +1970,7 @@ func testAccAwsVpnConnectionConfigTransitGatewayID(rBgpAsn int) string {
 func testAccAwsVpnConnectionConfigTunnelOptions(rBgpAsn int, psk string, tunnelCidr string, psk2 string, tunnelCidr2 string) string {
 func testAccAwsVpnConnectionConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
 func testAccAwsVpnConnectionConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccVpnGatewayAttachmentConfig(rName string) string {
 func testAccCheckVpnGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccCheckVpnGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafByteMatchSetConfig(name string) string {

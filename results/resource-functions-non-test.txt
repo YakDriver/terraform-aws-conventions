@@ -4693,9 +4693,6 @@ func resourceAwsVpnGatewayAttachment(
 func resourceAwsVpnGatewayAttachmentCreate(
 func resourceAwsVpnGatewayAttachmentRead(
 func resourceAwsVpnGatewayAttachmentDelete(
-func vpnGatewayAttachmentStateRefresh(
-func vpnGatewayGetAttachmentState(
-func vpnGatewayAttachmentId(
 func resourceAwsVpnGateway(
 func resourceAwsVpnGatewayCreate(
 func resourceAwsVpnGatewayRead(

@@ -188,6 +188,7 @@ func testAccDataSourceAWSLBListenerConfigHTTPS(lbName, targetGroupName, certific
 func testAccDataSourceAWSLBTargetGroupConfigBasic(lbName string, targetGroupName string) string {
 func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(lbName string, targetGroupName string) string {
 func testAccDataSourceAWSLBConfigBasic(lbName string) string {
+func testAccDataSourceAWSLBConfigOutpost(lbName string) string {
 func testAccDataSourceAWSLBConfigBackardsCompatibility(albName string) string {
 func testAccDataSourceAwsLexSlotTypeConfig_basic() string {
 func testAccDataSourceAwsLexSlotTypeConfig_withVersion() string {
@@ -1514,12 +1515,14 @@ func testAccAWSDynamoDbConfigGsiUpdatedCapacity(name string) string {
 func testAccAWSDynamoDbConfigGsiUpdatedOtherAttributes(name string) string {
 func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(name string) string {
 func testAccAWSDynamoDbConfigGsiMultipleNonKeyAttributes(name, attributes string) string {
+func testAccAWSDynamoDbConfigLsiNonKeyAttributes(name string) string {
 func testAccAWSDynamoDbConfigTimeToLive(rName string, ttlEnabled bool) string {
 func testAccAWSDynamoDbConfigOneAttribute(rName, hashKey, attrName, attrType string) string {
 func testAccAWSDynamoDbConfigTwoAttributes(rName, hashKey, rangeKey, attrName1, attrType1, attrName2, attrType2 string) string {
 func testAccAWSDynamoDbTableConfigReplica0(rName string) string {
 func testAccAWSDynamoDbTableConfigReplica1(rName string) string {
 func testAccAWSDynamoDbTableConfigReplica2(rName string) string {
+func testAccAWSDynamoDbConfigLSI(rName, lsiName string) string {
 func testAccAwsEbsEncryptionByDefaultConfig(enabled bool) string {
 func testAccAwsEbsSnapshotCopyConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAwsEbsSnapshotCopyConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1836,7 +1839,8 @@ func testAccESDomainConfigwithNodeToNodeEncryption(randInt int) string {
 func testAccESDomainConfig_complex(randInt int) string {
 func testAccESDomainConfigV23(randInt int) string {
 func testAccESDomainConfig_vpc(randInt int) string {
-func testAccESDomainConfig_vpc_update(randInt int, update bool) string {
+func testAccESDomainConfig_vpc_update1(randInt int) string {
+func testAccESDomainConfig_vpc_update2(randInt int) string {
 func testAccESDomainConfig_internetToVpcEndpoint(randInt int) string {
 func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(domainName string) string {
 func testAccESDomainConfig_AdvancedSecurityOptionsIAM(domainName string) string {
@@ -2503,6 +2507,7 @@ func testAccAWSLBTargetGroupConfig_stickinessWithTCP(enabled bool) string {
 func testAccAWSLBConfigWithIpAddressTypeUpdated(lbName string) string {
 func testAccAWSLBConfigWithIpAddressType(lbName string) string {
 func testAccAWSLBConfig_basic(lbName string) string {
+func testAccAWSLBConfig_outpost(lbName string) string {
 func testAccAWSLBConfig_enableHttp2(lbName string, http2 bool) string {
 func testAccAWSLBConfig_enableDropInvalidHeaderFields(lbName string, dropInvalid bool) string {
 func testAccAWSLBConfig_enableDeletionProtection(lbName string, deletion_protection bool) string {
@@ -3500,6 +3505,7 @@ func testAccAwsVpnConnectionConfigTransitGatewayID(rBgpAsn int) string {
 func testAccAwsVpnConnectionConfigTunnelOptions(rBgpAsn int, psk string, tunnelCidr string, psk2 string, tunnelCidr2 string) string {
 func testAccAwsVpnConnectionConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
 func testAccAwsVpnConnectionConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccVpnGatewayAttachmentConfig(rName string) string {
 func testAccCheckVpnGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccCheckVpnGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSWafByteMatchSetConfig(name string) string {

@@ -287,6 +287,7 @@ func TestAccDataSourceAWSLBListener_https(
 func TestAccDataSourceAWSALBTargetGroup_basic(
 func TestAccDataSourceAWSLBTargetGroup_BackwardsCompatibility(
 func TestAccDataSourceAWSLB_basic(
+func TestAccDataSourceAWSLB_outpost(
 func TestAccDataSourceAWSLB_BackwardsCompatibility(
 func TestAccDataSourceAwsLexSlotType_basic(
 func TestAccDataSourceAwsLexSlotType_withVersion(
@@ -1899,8 +1900,10 @@ func TestAccAWSDynamoDbTable_streamSpecificationValidation(
 func TestAccAWSDynamoDbTable_tags(
 func TestAccAWSDynamoDbTable_gsiUpdateCapacity(
 func TestAccAWSDynamoDbTable_gsiUpdateOtherAttributes(
+func TestAccAWSDynamoDbTable_lsiNonKeyAttributes(
 func TestAccAWSDynamoDbTable_gsiUpdateNonKeyAttributes(
 func TestAccAWSDynamoDbTable_attributeUpdate(
+func TestAccAWSDynamoDbTable_lsiUpdate(
 func TestAccAWSDynamoDbTable_attributeUpdateValidation(
 func TestAccAWSDynamoDbTable_encryption(
 func testAccAWSDynamoDbConfig_basic(
@@ -3127,6 +3130,7 @@ func TestAccAWSLB_updatedSubnets(
 func TestAccAWSLB_updatedIpAddressType(
 func TestAccAWSLB_noSecurityGroup(
 func testAccAWSLBConfig_basic(
+func testAccAWSLBConfig_outpost(
 func testAccAWSLBConfig_enableHttp2(
 func testAccAWSLBConfig_enableDropInvalidHeaderFields(
 func testAccAWSLBConfig_enableDeletionProtection(
@@ -3971,8 +3975,9 @@ func testAccServiceDiscoveryServiceConfig_private(
 func testAccServiceDiscoveryServiceConfig_public(
 func testAccServiceDiscoveryServiceConfig_http(
 func TestAccAwsServiceQuotasServiceQuota_basic(
-func TestAccAWSSESActiveReceiptRuleSet_basic(
-func TestAccAWSSESActiveReceiptRuleSet_disappears(
+func TestAccAWSSESActiveReceiptRuleSet_serial(
+func testAccAWSSESActiveReceiptRuleSet_basic(
+func testAccAWSSESActiveReceiptRuleSet_disappears(
 func TestAccAWSSESConfigurationSet_basic(
 func TestAccAWSSESDomainDkim_basic(
 func TestAccAWSSESDomainIdentity_basic(
@@ -4395,7 +4400,7 @@ func TestAccAWSVpnConnection_withoutStaticRoutes(
 func TestAccAWSVpnConnection_tags(
 func TestAccAWSVpnConnection_disappears(
 func TestAccAWSVpnGatewayAttachment_basic(
-func TestAccAWSVpnGatewayAttachment_deleted(
+func TestAccAWSVpnGatewayAttachment_disappears(
 func TestAccAWSVPNGatewayRoutePropagation_basic(
 func TestAccAWSVpnGateway_basic(
 func TestAccAWSVpnGateway_withAvailabilityZoneSetToState(

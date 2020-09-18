@@ -167,6 +167,7 @@ func TestAccDataSourceAWSLBListener_basic(
 func TestAccDataSourceAWSLBListener_https(
 func TestAccDataSourceAWSALBTargetGroup_basic(
 func TestAccDataSourceAWSLB_basic(
+func TestAccDataSourceAWSLB_outpost(
 func TestAccDataSourceAwsLexSlotType_basic(
 func TestAccDataSourceAwsLexSlotType_withVersion(
 func TestAccDataSourceAWSMqBroker_basic(
@@ -930,9 +931,11 @@ func TestAccAWSDynamoDbTable_streamSpecificationValidation(
 func TestAccAWSDynamoDbTable_tags(
 func TestAccAWSDynamoDbTable_gsiUpdateCapacity(
 func TestAccAWSDynamoDbTable_gsiUpdateOtherAttributes(
+func TestAccAWSDynamoDbTable_lsiNonKeyAttributes(
 func TestAccAWSDynamoDbTable_gsiUpdateNonKeyAttributes(
 func TestAccAWSDynamoDbTable_gsiUpdateNonKeyAttributes_emptyPlan(
 func TestAccAWSDynamoDbTable_attributeUpdate(
+func TestAccAWSDynamoDbTable_lsiUpdate(
 func TestAccAWSDynamoDbTable_attributeUpdateValidation(
 func TestAccAWSDynamoDbTable_encryption(
 func TestAccAWSEBSDefaultKmsKey_basic(
@@ -2106,8 +2109,7 @@ func TestAccAWSServiceDiscoveryService_public(
 func TestAccAWSServiceDiscoveryService_http(
 func TestAccAWSServiceDiscoveryService_disappears(
 func TestAccAwsServiceQuotasServiceQuota_basic(
-func TestAccAWSSESActiveReceiptRuleSet_basic(
-func TestAccAWSSESActiveReceiptRuleSet_disappears(
+func TestAccAWSSESActiveReceiptRuleSet_serial(
 func TestAccAWSSESConfigurationSet_basic(
 func TestAccAWSSESDomainDkim_basic(
 func TestAccAWSSESDomainIdentity_basic(
@@ -2371,7 +2373,7 @@ func TestAccAWSVpnConnection_withoutStaticRoutes(
 func TestAccAWSVpnConnection_tags(
 func TestAccAWSVpnConnection_disappears(
 func TestAccAWSVpnGatewayAttachment_basic(
-func TestAccAWSVpnGatewayAttachment_deleted(
+func TestAccAWSVpnGatewayAttachment_disappears(
 func TestAccAWSVPNGatewayRoutePropagation_basic(
 func TestAccAWSVpnGateway_basic(
 func TestAccAWSVpnGateway_withAvailabilityZoneSetToState(

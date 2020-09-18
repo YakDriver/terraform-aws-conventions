@@ -374,6 +374,7 @@ func TestAccDataSourceAWSLBListener_https(
 func TestAccDataSourceAWSALBTargetGroup_basic(
 func TestAccDataSourceAWSLBTargetGroup_BackwardsCompatibility(
 func TestAccDataSourceAWSLB_basic(
+func TestAccDataSourceAWSLB_outpost(
 func TestAccDataSourceAWSLB_BackwardsCompatibility(
 func TestAccDataSourceAwsLexSlotType_basic(
 func TestAccDataSourceAwsLexSlotType_withVersion(
@@ -2561,11 +2562,13 @@ func TestAccAWSDynamoDbTable_streamSpecificationValidation(
 func TestAccAWSDynamoDbTable_tags(
 func TestAccAWSDynamoDbTable_gsiUpdateCapacity(
 func TestAccAWSDynamoDbTable_gsiUpdateOtherAttributes(
+func TestAccAWSDynamoDbTable_lsiNonKeyAttributes(
 func TestAccAWSDynamoDbTable_gsiUpdateNonKeyAttributes(
 func TestAccAWSDynamoDbTable_gsiUpdateNonKeyAttributes_emptyPlan(
 func TestAccAWSDynamoDbTable_Ttl_Enabled(
 func TestAccAWSDynamoDbTable_Ttl_Disabled(
 func TestAccAWSDynamoDbTable_attributeUpdate(
+func TestAccAWSDynamoDbTable_lsiUpdate(
 func TestAccAWSDynamoDbTable_attributeUpdateValidation(
 func TestAccAWSDynamoDbTable_encryption(
 func TestAccAWSDynamoDbTable_Replica_Multiple(
@@ -3110,7 +3113,8 @@ func testAccESDomainConfig_ClusterUpdateInstanceStore(
 func testAccESDomainConfig_TagUpdate(
 func testAccESDomainConfig_complex(
 func testAccESDomainConfig_vpc(
-func testAccESDomainConfig_vpc_update(
+func testAccESDomainConfig_vpc_update1(
+func testAccESDomainConfig_vpc_update2(
 func testAccESDomainConfig_internetToVpcEndpoint(
 func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(
 func testAccESDomainConfig_AdvancedSecurityOptionsIAM(
@@ -4256,6 +4260,7 @@ func testAccAWSLBTargetGroupConfig_stickiness(
 func testAccAWSLBTargetGroupConfig_stickinessWithTCP(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
+func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func TestAccAWSLB_NLB_privateipv4address(
 func TestAccAWSLB_BackwardsCompatibility(
@@ -4277,6 +4282,7 @@ func TestAccAWSLB_NLB_AccessLogs(
 func TestAccAWSLB_NLB_AccessLogs_Prefix(
 func TestAccAWSLB_networkLoadbalancer_subnet_change(
 func testAccAWSLBConfig_basic(
+func testAccAWSLBConfig_outpost(
 func testAccAWSLBConfig_enableHttp2(
 func testAccAWSLBConfig_enableDropInvalidHeaderFields(
 func testAccAWSLBConfig_enableDeletionProtection(
@@ -5297,8 +5303,9 @@ func testAccServiceDiscoveryServiceConfig_http(
 func TestAccAwsServiceQuotasServiceQuota_basic(
 func TestAccAwsServiceQuotasServiceQuota_Value_IncreaseOnCreate(
 func TestAccAwsServiceQuotasServiceQuota_Value_IncreaseOnUpdate(
-func TestAccAWSSESActiveReceiptRuleSet_basic(
-func TestAccAWSSESActiveReceiptRuleSet_disappears(
+func TestAccAWSSESActiveReceiptRuleSet_serial(
+func testAccAWSSESActiveReceiptRuleSet_basic(
+func testAccAWSSESActiveReceiptRuleSet_disappears(
 func TestAccAWSSESConfigurationSet_basic(
 func TestAccAWSSESDomainDkim_basic(
 func TestAccAWSSESDomainIdentity_basic(
@@ -5775,7 +5782,7 @@ func TestAccAWSVpnConnection_tags(
 func TestAccAWSVpnConnection_disappears(
 func TestAWSVpnConnection_xmlconfig(
 func TestAccAWSVpnGatewayAttachment_basic(
-func TestAccAWSVpnGatewayAttachment_deleted(
+func TestAccAWSVpnGatewayAttachment_disappears(
 func TestAccAWSVPNGatewayRoutePropagation_basic(
 func TestAccAWSVpnGateway_basic(
 func TestAccAWSVpnGateway_withAvailabilityZoneSetToState(

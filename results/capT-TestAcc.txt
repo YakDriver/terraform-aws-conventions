@@ -260,6 +260,7 @@ func TestAccDataSourceAWSLBListener_https(
 func TestAccDataSourceAWSALBTargetGroup_basic(
 func TestAccDataSourceAWSLBTargetGroup_BackwardsCompatibility(
 func TestAccDataSourceAWSLB_basic(
+func TestAccDataSourceAWSLB_outpost(
 func TestAccDataSourceAWSLB_BackwardsCompatibility(
 func TestAccDataSourceAwsLexSlotType_basic(
 func TestAccDataSourceAwsLexSlotType_withVersion(
@@ -1553,11 +1554,13 @@ func TestAccAWSDynamoDbTable_streamSpecificationValidation(
 func TestAccAWSDynamoDbTable_tags(
 func TestAccAWSDynamoDbTable_gsiUpdateCapacity(
 func TestAccAWSDynamoDbTable_gsiUpdateOtherAttributes(
+func TestAccAWSDynamoDbTable_lsiNonKeyAttributes(
 func TestAccAWSDynamoDbTable_gsiUpdateNonKeyAttributes(
 func TestAccAWSDynamoDbTable_gsiUpdateNonKeyAttributes_emptyPlan(
 func TestAccAWSDynamoDbTable_Ttl_Enabled(
 func TestAccAWSDynamoDbTable_Ttl_Disabled(
 func TestAccAWSDynamoDbTable_attributeUpdate(
+func TestAccAWSDynamoDbTable_lsiUpdate(
 func TestAccAWSDynamoDbTable_attributeUpdateValidation(
 func TestAccAWSDynamoDbTable_encryption(
 func TestAccAWSDynamoDbTable_Replica_Multiple(
@@ -2685,6 +2688,7 @@ func TestAccAWSLBTargetGroup_stickinessWithTCPDisabled(
 func TestAccAWSLBTargetGroup_stickinessWithTCPEnabledShouldError(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
+func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func TestAccAWSLB_NLB_privateipv4address(
 func TestAccAWSLB_BackwardsCompatibility(
@@ -3416,8 +3420,7 @@ func TestAccAWSServiceDiscoveryService_Tags(
 func TestAccAwsServiceQuotasServiceQuota_basic(
 func TestAccAwsServiceQuotasServiceQuota_Value_IncreaseOnCreate(
 func TestAccAwsServiceQuotasServiceQuota_Value_IncreaseOnUpdate(
-func TestAccAWSSESActiveReceiptRuleSet_basic(
-func TestAccAWSSESActiveReceiptRuleSet_disappears(
+func TestAccAWSSESActiveReceiptRuleSet_serial(
 func TestAccAWSSESConfigurationSet_basic(
 func TestAccAWSSESDomainDkim_basic(
 func TestAccAWSSESDomainIdentity_basic(
@@ -3770,7 +3773,7 @@ func TestAccAWSVpnConnection_withoutStaticRoutes(
 func TestAccAWSVpnConnection_tags(
 func TestAccAWSVpnConnection_disappears(
 func TestAccAWSVpnGatewayAttachment_basic(
-func TestAccAWSVpnGatewayAttachment_deleted(
+func TestAccAWSVpnGatewayAttachment_disappears(
 func TestAccAWSVPNGatewayRoutePropagation_basic(
 func TestAccAWSVpnGateway_basic(
 func TestAccAWSVpnGateway_withAvailabilityZoneSetToState(

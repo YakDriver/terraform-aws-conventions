@@ -3,7 +3,4 @@ func testAccDxGatewayAssociationConfigBase_vpnGatewaySingleAccount(
 func testAccDxGatewayAssociationConfigBase_vpnGatewayCrossAccount(
 func testAccDxPrivateVirtualInterfaceConfig_vpnGateway(
 func vpnConnectionRefreshFunc(
-func vpnGatewayAttachmentStateRefresh(
-func vpnGatewayGetAttachmentState(
-func vpnGatewayAttachmentId(
 func vpnGatewayGetAttachment(

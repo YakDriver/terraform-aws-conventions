@@ -151,9 +151,10 @@ func resourceAwsVpnGatewayAttachmentCreate(
 func resourceAwsVpnGatewayAttachmentRead(
 func resourceAwsVpnGatewayAttachmentDelete(
 func TestAccAWSVpnGatewayAttachment_basic(
-func TestAccAWSVpnGatewayAttachment_deleted(
+func TestAccAWSVpnGatewayAttachment_disappears(
 func testAccCheckVpnGatewayAttachmentExists(
 func testAccCheckVpnGatewayAttachmentDestroy(
+func testAccVpnGatewayAttachmentConfig(
 func resourceAwsVpnGateway(
 func resourceAwsVpnGatewayCreate(
 func resourceAwsVpnGatewayRead(

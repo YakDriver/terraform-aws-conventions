@@ -1868,9 +1868,6 @@ func validateVpnConnectionTunnelPreSharedKey(
 func validateVpnConnectionTunnelInsideCIDR(
 func findConnectionRoute(
 func init(
-func vpnGatewayAttachmentStateRefresh(
-func vpnGatewayGetAttachmentState(
-func vpnGatewayAttachmentId(
 func vpnGatewayGetAttachment(
 func init(
 func updateByteMatchSetResource(

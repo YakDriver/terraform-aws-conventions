@@ -1590,6 +1590,7 @@ func TestAccAWSLBTargetGroup_BackwardsCompatibility(
 func testAccAWSLBTargetGroupConfig_Protocol_Tls(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
+func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_NLB_privateipv4address(
 func TestAccAWSLB_BackwardsCompatibility(
 func TestAccAWSLB_ALB_AccessLogs(

@@ -119,8 +119,10 @@ func TestAccDataSourceAWSLBTargetGroup_BackwardsCompatibility(
 func testAccDataSourceAWSLBTargetGroupConfigBasic(
 func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(
 func TestAccDataSourceAWSLB_basic(
+func TestAccDataSourceAWSLB_outpost(
 func TestAccDataSourceAWSLB_BackwardsCompatibility(
 func testAccDataSourceAWSLBConfigBasic(
+func testAccDataSourceAWSLBConfigOutpost(
 func testAccDataSourceAWSLBConfigBackardsCompatibility(
 func dataSourceAwsmQBrokerRead(
 func TestAccDataSourceAwsNetworkAcls_VpcID(
@@ -1359,6 +1361,7 @@ func testAccAWSDynamoDbBilling_ProvisionedWithGSI(
 func testAccAWSDynamoDbConfigInitialStateWithEncryptionAmazonCMK(
 func testAccAWSDynamoDbConfigInitialStateWithEncryptionBYOK(
 func testAccAWSDynamoDbConfigAddSecondaryGSI(
+func testAccAWSDynamoDbConfigLSI(
 func TestAccAWSEBSDefaultKmsKey_basic(
 func TestAccAWSEBSEncryptionByDefault_basic(
 func TestAccAWSEBSSnapshot_basic(
@@ -1554,7 +1557,8 @@ func testAccESDomainConfigwithNodeToNodeEncryption(
 func testAccESDomainConfig_complex(
 func testAccESDomainConfigV23(
 func testAccESDomainConfig_vpc(
-func testAccESDomainConfig_vpc_update(
+func testAccESDomainConfig_vpc_update1(
+func testAccESDomainConfig_vpc_update2(
 func testAccESDomainConfig_internetToVpcEndpoint(
 func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(
 func testAccESDomainConfig_AdvancedSecurityOptionsIAM(
@@ -2255,6 +2259,7 @@ func testSweepLBs(
 func TestLBCloudwatchSuffixFromARN(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
+func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func TestAccAWSLB_NLB_privateipv4address(
 func TestAccAWSLB_BackwardsCompatibility(
@@ -2282,6 +2287,7 @@ func testAccCheckAWSLBDestroy(
 func testAccAWSLBConfigWithIpAddressTypeUpdated(
 func testAccAWSLBConfigWithIpAddressType(
 func testAccAWSLBConfig_basic(
+func testAccAWSLBConfig_outpost(
 func testAccAWSLBConfig_enableHttp2(
 func testAccAWSLBConfig_enableDropInvalidHeaderFields(
 func testAccAWSLBConfig_enableDeletionProtection(
@@ -2707,8 +2713,9 @@ func TestAccAWSSecurityGroup_ingressWithCidrAndSGsClassic(
 func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAccCheckAWSSecurityGroupSGandCidrAttributes(
 func resourceAwsServiceQuotasServiceQuotaParseID(
-func TestAccAWSSESActiveReceiptRuleSet_basic(
-func TestAccAWSSESActiveReceiptRuleSet_disappears(
+func TestAccAWSSESActiveReceiptRuleSet_serial(
+func testAccAWSSESActiveReceiptRuleSet_basic(
+func testAccAWSSESActiveReceiptRuleSet_disappears(
 func testAccCheckSESActiveReceiptRuleSetDestroy(
 func testAccCheckAwsSESActiveReceiptRuleSetExists(
 func testAccAWSSESActiveReceiptRuleSetConfig(

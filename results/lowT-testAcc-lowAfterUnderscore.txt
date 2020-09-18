@@ -628,7 +628,8 @@ func testAccBeanstalkEnvConfig_platform_arn(
 func testAccBeanstalkEnvConfig_settings(
 func testAccESDomainConfig_complex(
 func testAccESDomainConfig_vpc(
-func testAccESDomainConfig_vpc_update(
+func testAccESDomainConfig_vpc_update1(
+func testAccESDomainConfig_vpc_update2(
 func testAccESDomainConfig_internetToVpcEndpoint(
 func testAccCheckAWSElasticTranscoderPipeline_notifications(
 func testAccAWSEmrClusterConfig_bootstrap(
@@ -887,6 +888,7 @@ func testAccAWSLBTargetGroupConfig_typeTCP_HTTPHealthCheck(
 func testAccAWSLBTargetGroupConfig_stickiness(
 func testAccAWSLBTargetGroupConfig_stickinessWithTCP(
 func testAccAWSLBConfig_basic(
+func testAccAWSLBConfig_outpost(
 func testAccAWSLBConfig_enableHttp2(
 func testAccAWSLBConfig_enableDropInvalidHeaderFields(
 func testAccAWSLBConfig_enableDeletionProtection(
@@ -1091,6 +1093,8 @@ func testAccServiceDiscoveryServiceConfig_private_update(
 func testAccServiceDiscoveryServiceConfig_public(
 func testAccServiceDiscoveryServiceConfig_public_update_noHealthCheckConfig(
 func testAccServiceDiscoveryServiceConfig_http(
+func testAccAWSSESActiveReceiptRuleSet_basic(
+func testAccAWSSESActiveReceiptRuleSet_disappears(
 func testAccAwsSesDomainIdentityVerification_basic(
 func testAccAwsSesDomainIdentityVerification_timeout(
 func testAccAwsSesDomainIdentityVerification_nonexistent(
