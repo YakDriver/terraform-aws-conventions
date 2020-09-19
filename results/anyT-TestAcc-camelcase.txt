@@ -766,6 +766,7 @@ func testAccAWSEmrClusterConfig_keepJob(
 func TestAccAWSEMRInstanceFleet_ebsBasic(
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(
 func testAccAWSEmrInstanceGroupConfig_zeroCount(
+func TestAccAWSFsxLustreFileSystem_automaticBackupRetentionDays(
 func TestAccAWSFsxWindowsFileSystem_singleAz2(
 func TestAccAWSFsxWindowsFileSystem_storageTypeHdd(
 func TestAccAWSFsxWindowsFileSystem_multiAz(

@@ -422,6 +422,7 @@ func init(
 func init(
 func init(
 func init(
+func init(
 func setDaxClusterNodeData(
 func (
 func (

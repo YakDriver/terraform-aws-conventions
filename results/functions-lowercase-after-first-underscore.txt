@@ -1345,6 +1345,10 @@ func TestAccAWSDataSyncAgent_basic(
 func TestAccAWSDataSyncAgent_disappears(
 func TestAccAWSDataSyncLocationEfs_basic(
 func TestAccAWSDataSyncLocationEfs_disappears(
+func TestAccAWSDataSyncLocationFsxWindows_basic(
+func TestAccAWSDataSyncLocationFsxWindows_disappears(
+func TestAccAWSDataSyncLocationFsxWindows_subdirectory(
+func TestAccAWSDataSyncLocationFsxWindows_tags(
 func TestAccAWSDataSyncLocationNfs_basic(
 func TestAccAWSDataSyncLocationNfs_disappears(
 func TestAccAWSDataSyncLocationS3_basic(
@@ -1987,6 +1991,7 @@ func TestAccAWSFlowLog_disappears(
 func TestAccAwsFmsAdminAccount_basic(
 func TestAccAWSFsxLustreFileSystem_basic(
 func TestAccAWSFsxLustreFileSystem_disappears(
+func TestAccAWSFsxLustreFileSystem_automaticBackupRetentionDays(
 func TestAccAWSFsxWindowsFileSystem_basic(
 func TestAccAWSFsxWindowsFileSystem_singleAz2(
 func TestAccAWSFsxWindowsFileSystem_storageTypeHdd(

@@ -620,6 +620,10 @@ func testAccAWSDataSyncLocationEfsConfig() string {
 func testAccAWSDataSyncLocationEfsConfigSubdirectory(subdirectory string) string {
 func testAccAWSDataSyncLocationEfsConfigTags1(key1, value1 string) string {
 func testAccAWSDataSyncLocationEfsConfigTags2(key1, value1, key2, value2 string) string {
+func testAccAWSDataSyncLocationFsxWindowsConfig() string {
+func testAccAWSDataSyncLocationFsxWindowsConfigSubdirectory(subdirectory string) string {
+func testAccAWSDataSyncLocationFsxWindowsConfigTags1(key1, value1 string) string {
+func testAccAWSDataSyncLocationFsxWindowsConfigTags2(key1, value1, key2, value2 string) string {
 func testAccAWSDataSyncLocationNfsConfigBase(rName string) string {
 func testAccAWSDataSyncLocationNfsConfig(rName string) string {
 func testAccAWSDataSyncLocationNfsConfigAgentArnsMultiple(rName string) string {
@@ -1029,6 +1033,7 @@ func testAccAwsFsxLustreFileSystemConfigSubnetIds1() string {
 func testAccAwsFsxLustreFileSystemConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAwsFsxLustreFileSystemConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsFsxLustreFileSystemConfigWeeklyMaintenanceStartTime(weeklyMaintenanceStartTime string) string {
+func testAccAwsFsxLustreFileSystemConfigAutomaticBackupRetentionDays(retention int) string {
 func testAccAwsFsxWindowsFileSystemConfigBase() string {
 func testAccAwsFsxWindowsFileSystemConfigAutomaticBackupRetentionDays(automaticBackupRetentionDays int) string {
 func testAccAwsFsxWindowsFileSystemConfigCopyTagsToBackups(copyTagsToBackups bool) string {

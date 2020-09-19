@@ -904,6 +904,7 @@ func decodeCognitoIdentityProviderID(
 func decodeCognitoResourceServerID(
 func testAccAWSCognitoUserPoolClientImportStateIDFunc(
 func resourceAwsConfigAggregateAuthorizationParseID(
+func testAccWSDataSyncLocationFsxWindowsImportStateIdFunc(
 func TestAccAWSDataSyncLocationNfs_AgentARNs_Multple(
 func TestAccAWSDataSyncTask_CloudWatchLogGroupARN(
 func testSweepDAXClusters(

@@ -1086,6 +1086,12 @@ func resourceAwsDataSyncLocationEfsRead(
 func resourceAwsDataSyncLocationEfsUpdate(
 func resourceAwsDataSyncLocationEfsDelete(
 func init(
+func resourceAwsDataSyncLocationFsxWindowsFileSystem(
+func resourceAwsDataSyncLocationFsxWindowsFileSystemCreate(
+func resourceAwsDataSyncLocationFsxWindowsFileSystemRead(
+func resourceAwsDataSyncLocationFsxWindowsFileSystemUpdate(
+func resourceAwsDataSyncLocationFsxWindowsFileSystemDelete(
+func init(
 func resourceAwsDataSyncLocationNfs(
 func resourceAwsDataSyncLocationNfsCreate(
 func resourceAwsDataSyncLocationNfsRead(

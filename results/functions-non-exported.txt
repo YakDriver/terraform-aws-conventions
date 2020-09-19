@@ -1060,6 +1060,7 @@ func describeFsxFileSystem(
 func refreshFsxFileSystemLifecycle(
 func waitForFsxFileSystemCreation(
 func waitForFsxFileSystemDeletion(
+func waitForFsxFileSystemUpdate(
 func iamPolicyDecodeConfigStringList(
 func expandMediaConvertReservationPlanSettings(
 func flattenMediaConvertReservationPlan(
@@ -3740,6 +3741,20 @@ func testAccAWSDataSyncLocationEfsConfig(
 func testAccAWSDataSyncLocationEfsConfigSubdirectory(
 func testAccAWSDataSyncLocationEfsConfigTags1(
 func testAccAWSDataSyncLocationEfsConfigTags2(
+func resourceAwsDataSyncLocationFsxWindowsFileSystem(
+func resourceAwsDataSyncLocationFsxWindowsFileSystemCreate(
+func resourceAwsDataSyncLocationFsxWindowsFileSystemRead(
+func resourceAwsDataSyncLocationFsxWindowsFileSystemUpdate(
+func resourceAwsDataSyncLocationFsxWindowsFileSystemDelete(
+func init(
+func testSweepDataSyncLocationFsxWindows(
+func testAccCheckAWSDataSyncLocationFsxWindowsDestroy(
+func testAccCheckAWSDataSyncLocationFsxWindowsExists(
+func testAccWSDataSyncLocationFsxWindowsImportStateIdFunc(
+func testAccAWSDataSyncLocationFsxWindowsConfig(
+func testAccAWSDataSyncLocationFsxWindowsConfigSubdirectory(
+func testAccAWSDataSyncLocationFsxWindowsConfigTags1(
+func testAccAWSDataSyncLocationFsxWindowsConfigTags2(
 func resourceAwsDataSyncLocationNfs(
 func resourceAwsDataSyncLocationNfsCreate(
 func resourceAwsDataSyncLocationNfsRead(
@@ -6126,7 +6141,6 @@ func init(
 func testSweepFSXLustreFileSystems(
 func testAccCheckFsxLustreFileSystemExists(
 func testAccCheckFsxLustreFileSystemDestroy(
-func testAccCheckFsxLustreFileSystemDisappears(
 func testAccCheckFsxLustreFileSystemNotRecreated(
 func testAccCheckFsxLustreFileSystemRecreated(
 func testAccAwsFsxLustreFileSystemConfigBase(
@@ -6140,6 +6154,7 @@ func testAccAwsFsxLustreFileSystemConfigSubnetIds1(
 func testAccAwsFsxLustreFileSystemConfigTags1(
 func testAccAwsFsxLustreFileSystemConfigTags2(
 func testAccAwsFsxLustreFileSystemConfigWeeklyMaintenanceStartTime(
+func testAccAwsFsxLustreFileSystemConfigAutomaticBackupRetentionDays(
 func testAccAwsFsxLustreFileSystemDeploymentType(
 func testAccAwsFsxLustreFileSystemPersistentDeploymentType(
 func resourceAwsFsxWindowsFileSystem(
@@ -8831,6 +8846,7 @@ func resourceAwsOpsworksStackCreate(
 func resourceAwsOpsworksStackUpdate(
 func resourceAwsOpsworksStackDelete(
 func testAccCheckAWSOpsworksStackRecreated(
+func testAccPreCheckAWSOpsWorksStacks(
 func testAccAwsOpsWorksStack_classic_endpoint(
 func testAccAwsOpsWorksStack_regional_endpoint(
 func testAccCheckAWSOpsworksCreateStackAttributes(
