@@ -1388,6 +1388,7 @@ func TestAccAWSStorageGatewaySmbFileShare_ObjectACL(
 func TestAccAWSStorageGatewaySmbFileShare_ReadOnly(
 func TestAccAWSStorageGatewaySmbFileShare_RequesterPays(
 func TestAccAWSStorageGatewaySmbFileShare_ValidUserList(
+func TestAccAWSStorageGatewaySmbFileShare_AdminUserList(
 func TestAccAWSSwfDomain_NamePrefix(
 func TestAccAWSSwfDomain_GeneratedName(
 func TestAccAWSSwfDomain_Description(

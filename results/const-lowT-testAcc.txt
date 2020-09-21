@@ -399,6 +399,7 @@ const testAccAWSSwfDomainConfig_GeneratedName =
 const testAccAWSSwfDomainConfig_NamePrefix =
 const testAccAWSTransferServerConfig_basic =
 const testAccAWSTransferServerConfig_VpcEndPoint =
+const testAccAWSTransferUserConfig_base =
 const testAccDHCPOptionsAssociationConfig =
 const testAccVpcEndpointSubnetAssociationConfig_basic =
 const testAccVpcEndpointSubnetAssociationConfig_multiple =

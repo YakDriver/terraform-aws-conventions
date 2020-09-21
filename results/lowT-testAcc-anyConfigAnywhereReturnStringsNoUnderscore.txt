@@ -1579,6 +1579,10 @@ func testAccRoute53RecordConfigHealthCheckIdTypeA() string {
 func testAccRoute53RecordConfigHealthCheckIdTypeCname() string {
 func testAccRoute53RecordConfigAliasCustomVpcEndpointSwappedAliasAttributes(rName string) string {
 func testAccRoute53RecordConfigCustomVpcEndpoint(rName string) string {
+func testAccRoute53ResolverQueryLogConfigAssociationConfig(rName string) string {
+func testAccRoute53ResolverQueryLogConfigConfig(rName string) string {
+func testAccRoute53ResolverQueryLogConfigConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccRoute53ResolverQueryLogConfigConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccRoute53ResolverRuleConfig(domainName string) string {
 func testAccRoute53VPCAssociationAuthorizationConfig() string {
 func testAccRoute53ZoneAssociationCrossAccountConfig() string {

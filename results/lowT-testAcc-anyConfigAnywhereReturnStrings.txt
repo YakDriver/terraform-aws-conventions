@@ -2932,6 +2932,10 @@ func testAccRoute53RecordConfigCustomVpcEndpoint(rName string) string {
 func testAccRoute53ResolverEndpointConfig_base(rInt int) string {
 func testAccRoute53ResolverEndpointConfig_initial(rInt int, direction, name string) string {
 func testAccRoute53ResolverEndpointConfig_updated(rInt int, direction, name string) string {
+func testAccRoute53ResolverQueryLogConfigAssociationConfig(rName string) string {
+func testAccRoute53ResolverQueryLogConfigConfig(rName string) string {
+func testAccRoute53ResolverQueryLogConfigConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccRoute53ResolverQueryLogConfigConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccRoute53ResolverRuleAssociationConfig_basic(name string) string {
 func testAccRoute53ResolverRuleConfig(domainName string) string {
 func testAccRoute53ResolverRuleConfig_basicName(name string) string {
@@ -3429,6 +3433,8 @@ func testAccAWSStorageGatewaySmbFileShareConfig_ReadOnly(rName string, readOnly 
 func testAccAWSStorageGatewaySmbFileShareConfig_RequesterPays(rName string, requesterPays bool) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_ValidUserList_Single(rName, validUser1 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_ValidUserList_Multiple(rName, validUser1, validUser2 string) string {
+func testAccAWSStorageGatewaySmbFileShareConfig_AdminUserList_Single(rName, adminUser1 string) string {
+func testAccAWSStorageGatewaySmbFileShareConfig_AdminUserList_Multiple(rName, adminUser1, adminUser2 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewaySmbFileShareSMBACLConfig(rName string, enabled bool) string {
@@ -3455,6 +3461,8 @@ func testAccAWSTransferUserConfig_basic(rName string) string {
 func testAccAWSTransferUserConfig_options(rName string) string {
 func testAccAWSTransferUserConfig_modify(rName string) string {
 func testAccAWSTransferUserConfig_forceNew(rName string) string {
+func testAccAWSTransferUserConfig_homeDirectoryMappings(rName string) string {
+func testAccAWSTransferUserConfig_homeDirectoryMappingsUpdate(rName string) string {
 func testAccVolumeAttachmentInstanceOnlyConfigBase(rName string) string {
 func testAccVolumeAttachmentConfigBase(rName string) string {
 func testAccVolumeAttachmentConfig(rName string) string {

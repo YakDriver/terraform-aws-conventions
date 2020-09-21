@@ -127,6 +127,7 @@ const testAccAWSSNSSMSPreferencesConfig_deliveryRole =
 const testAccAWSSNSTopicConfig_withPolicy =
 const testAccAWSSNSTopicConfig_withGeneratedName =
 const testAccAWSTransferServerConfig_basic =
+const testAccAWSTransferUserConfig_base =
 const testAccVpcEndpointSubnetAssociationConfig_basic =
 const testAccVpcEndpointSubnetAssociationConfig_multiple =
 const testAccAWSVPNGatewayRoutePropagation_basic =

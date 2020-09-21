@@ -1553,6 +1553,8 @@ func route53ResolverEndpointRefresh(
 func route53ResolverEndpointWaitUntilTargetState(
 func route53ResolverEndpointHashIpAddress(
 func init(
+func init(
+func init(
 func route53ResolverRuleAssociationRefresh(
 func route53ResolverRuleAssociationWaitUntilTargetState(
 func init(
@@ -1814,6 +1816,8 @@ func init(
 func decodeTransferSshKeyId(
 func decodeTransferUserId(
 func waitForTransferUserDeletion(
+func expandAwsTransferHomeDirectoryMappings(
+func flattenAwsTransferHomeDirectoryMappings(
 func volumeAttachmentStateRefreshFunc(
 func volumeAttachmentID(
 func findVPCsByDHCPOptionsID(

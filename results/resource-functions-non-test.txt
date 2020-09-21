@@ -3847,6 +3847,17 @@ func route53ResolverEndpointRefresh(
 func route53ResolverEndpointWaitUntilTargetState(
 func route53ResolverEndpointHashIpAddress(
 func init(
+func resourceAwsRoute53ResolverQueryLogConfigAssociation(
+func resourceAwsRoute53ResolverQueryLogConfigAssociationCreate(
+func resourceAwsRoute53ResolverQueryLogConfigAssociationRead(
+func resourceAwsRoute53ResolverQueryLogConfigAssociationDelete(
+func init(
+func resourceAwsRoute53ResolverQueryLogConfig(
+func resourceAwsRoute53ResolverQueryLogConfigCreate(
+func resourceAwsRoute53ResolverQueryLogConfigRead(
+func resourceAwsRoute53ResolverQueryLogConfigUpdate(
+func resourceAwsRoute53ResolverQueryLogConfigDelete(
+func init(
 func resourceAwsRoute53ResolverRuleAssociation(
 func resourceAwsRoute53ResolverRuleAssociationCreate(
 func resourceAwsRoute53ResolverRuleAssociationRead(
@@ -4559,6 +4570,8 @@ func resourceAwsTransferUserUpdate(
 func resourceAwsTransferUserDelete(
 func decodeTransferUserId(
 func waitForTransferUserDeletion(
+func expandAwsTransferHomeDirectoryMappings(
+func flattenAwsTransferHomeDirectoryMappings(
 func resourceAwsVolumeAttachment(
 func resourceAwsVolumeAttachmentCreate(
 func volumeAttachmentStateRefreshFunc(

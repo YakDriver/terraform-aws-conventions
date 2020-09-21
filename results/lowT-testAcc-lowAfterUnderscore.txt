@@ -1137,6 +1137,8 @@ func testAccAWSTransferUserName_validation(
 func testAccAWSTransferUserConfig_options(
 func testAccAWSTransferUserConfig_modify(
 func testAccAWSTransferUserConfig_forceNew(
+func testAccAWSTransferUserConfig_homeDirectoryMappings(
+func testAccAWSTransferUserConfig_homeDirectoryMappingsUpdate(
 func testAccVpcEndpointServiceConfig_base(
 func testAccVpcEndpointServiceConfig_basic(
 func testAccVpcEndpointServiceConfig_allowedPrincipals(
