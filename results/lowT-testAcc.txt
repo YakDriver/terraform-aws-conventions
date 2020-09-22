@@ -3182,6 +3182,8 @@ func testAccAwsFsxLustreFileSystemConfigWeeklyMaintenanceStartTime(
 func testAccAwsFsxLustreFileSystemConfigAutomaticBackupRetentionDays(
 func testAccAwsFsxLustreFileSystemDeploymentType(
 func testAccAwsFsxLustreFileSystemPersistentDeploymentType(
+func testAccAwsFsxLustreFileSystemConfigKmsKeyId1(
+func testAccAwsFsxLustreFileSystemConfigKmsKeyId2(
 func testAccCheckFsxWindowsFileSystemExists(
 func testAccCheckFsxWindowsFileSystemDestroy(
 func testAccCheckFsxWindowsFileSystemNotRecreated(
@@ -4725,6 +4727,7 @@ func testAccCheckAWSClusterExists(
 func testAccCheckAWSClusterExistsWithProvider(n string, v *rds.DBCluster, providerF func(
 func testAccCheckAWSClusterRecreated(
 func testAccAWSClusterConfig(
+func testAccAWSClusterConfig_AllowMajorVersionUpgrade(
 func testAccAWSClusterConfig_AvailabilityZones(
 func testAccAWSClusterConfig_BacktrackWindow(
 func testAccAWSClusterConfig_ClusterIdentifierPrefix(

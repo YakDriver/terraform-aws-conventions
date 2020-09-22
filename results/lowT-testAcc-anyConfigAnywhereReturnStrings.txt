@@ -1939,6 +1939,8 @@ func testAccAwsFsxLustreFileSystemConfigTags1(tagKey1, tagValue1 string) string 
 func testAccAwsFsxLustreFileSystemConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsFsxLustreFileSystemConfigWeeklyMaintenanceStartTime(weeklyMaintenanceStartTime string) string {
 func testAccAwsFsxLustreFileSystemConfigAutomaticBackupRetentionDays(retention int) string {
+func testAccAwsFsxLustreFileSystemConfigKmsKeyId1() string {
+func testAccAwsFsxLustreFileSystemConfigKmsKeyId2() string {
 func testAccAwsFsxWindowsFileSystemConfigBase() string {
 func testAccAwsFsxWindowsFileSystemConfigAutomaticBackupRetentionDays(automaticBackupRetentionDays int) string {
 func testAccAwsFsxWindowsFileSystemConfigCopyTagsToBackups(copyTagsToBackups bool) string {
@@ -2809,6 +2811,7 @@ func testAccAWSDBClusterParameterGroupOnlyConfig(name string) string {
 func testAccAWSDBClusterParameterGroupUpdateParametersInitialConfig(name string) string {
 func testAccAWSDBClusterParameterGroupUpdateParametersUpdatedConfig(name string) string {
 func testAccAWSClusterConfig(rName string) string {
+func testAccAWSClusterConfig_AllowMajorVersionUpgrade(rName string, allowMajorVersionUpgrade bool, engine string, engineVersion string) string {
 func testAccAWSClusterConfig_AvailabilityZones(rName string) string {
 func testAccAWSClusterConfig_BacktrackWindow(backtrackWindow int) string {
 func testAccAWSClusterConfig_ClusterIdentifierPrefix(clusterIdentifierPrefix string) string {

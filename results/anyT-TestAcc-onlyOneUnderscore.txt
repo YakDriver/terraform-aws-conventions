@@ -2386,6 +2386,7 @@ func TestAccAWSFsxLustreFileSystem_Tags(
 func TestAccAWSFsxLustreFileSystem_WeeklyMaintenanceStartTime(
 func TestAccAWSFsxLustreFileSystem_automaticBackupRetentionDays(
 func TestAccAWSFsxLustreFileSystem_DeploymentTypePersistent1(
+func TestAccAWSFsxLustreFileSystem_KmsKeyId(
 func TestAccAWSFsxLustreFileSystem_DeploymentTypeScratch2(
 func TestAccAWSFsxWindowsFileSystem_basic(
 func TestAccAWSFsxWindowsFileSystem_singleAz2(
@@ -3503,6 +3504,7 @@ func TestAccAWSDBClusterParameterGroup_disappears(
 func TestAccAWSDBClusterParameterGroup_only(
 func TestAccAWSDBClusterParameterGroup_updateParameters(
 func TestAccAWSRDSCluster_basic(
+func TestAccAWSRDSCluster_AllowMajorVersionUpgrade(
 func TestAccAWSRDSCluster_AvailabilityZones(
 func TestAccAWSRDSCluster_BacktrackWindow(
 func TestAccAWSRDSCluster_ClusterIdentifierPrefix(
@@ -3527,6 +3529,7 @@ func TestAccAWSRDSCluster_Port(
 func TestAccAWSRDSCluster_ScalingConfiguration(
 func TestAccAWSRDSCluster_SnapshotIdentifier(
 func TestAccAWSRDSCluster_EnableHttpEndpoint(
+func testAccAWSClusterConfig_AllowMajorVersionUpgrade(
 func testAccAWSClusterConfig_AvailabilityZones(
 func testAccAWSClusterConfig_BacktrackWindow(
 func testAccAWSClusterConfig_ClusterIdentifierPrefix(
