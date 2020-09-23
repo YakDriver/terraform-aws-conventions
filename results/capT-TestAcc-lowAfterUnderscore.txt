@@ -1277,6 +1277,8 @@ func TestAccAWSGlueCatalogTable_disappears(
 func TestAccAWSGlueConnection_basic(
 func TestAccAWSGlueCrawler_disappears(
 func TestAccAWSGlueJob_basic(
+func TestAccAWSGlueJob_nonOverridableArguments(
+func TestAccAWSGlueJob_disappears(
 func TestAccAWSGlueSecurityConfiguration_basic(
 func TestAccAWSGlueTrigger_basic(
 func TestAccAWSGlueUserDefinedFunction_basic(

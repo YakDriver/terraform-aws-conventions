@@ -584,13 +584,16 @@ func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_tags(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_tagsUpdated(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_UpdatedOpenAPIYaml(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_UpdatedOpenAPI2(rName string) string {
-func testAccAWSAPIGatewayV2AuthorizerConfig_baseWebSocket(rName string) string {
-func testAccAWSAPIGatewayV2AuthorizerConfig_baseHttp(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_apiWebSocket(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_apiHttp(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_baseLambda(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_credentials(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_credentialsUpdated(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_jwt(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_jwtUpdated(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_httpApiLambdaRequestAuthorizer(rName string) string {
+func testAccAWSAPIGatewayV2AuthorizerConfig_httpApiLambdaRequestAuthorizerUpdated(rName string, authorizerResultTtl int) string {
 func testAccAWSAPIGatewayV2DeploymentConfig_basic(rName, description string) string {
 func testAccAWSAPIGatewayV2DeploymentConfigTriggers(rName string, apiKeyRequired bool) string {
 func testAccAWSAPIGatewayV2DomainNameConfig_base(rName, certificate, key string, count int) string {
@@ -2241,6 +2244,7 @@ func testAccGlueCrawlerConfig_SecurityConfiguration(rName, securityConfiguration
 func testAccAWSGlueJobConfig_Base(rName string) string {
 func testAccAWSGlueJobConfig_Command(rName, scriptLocation string) string {
 func testAccAWSGlueJobConfig_DefaultArguments(rName, jobBookmarkOption, jobLanguage string) string {
+func testAccAWSGlueJobnonOverridableArgumentsConfig(rName, jobBookmarkOption, jobLanguage string) string {
 func testAccAWSGlueJobConfig_Description(rName, description string) string {
 func testAccAWSGlueJobConfig_GlueVersion(rName, glueVersion string) string {
 func testAccAWSGlueJobConfig_ExecutionProperty(rName string, maxConcurrentRuns int) string {
