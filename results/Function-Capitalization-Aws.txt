@@ -157,6 +157,8 @@ func TestAccDataSourceAwsDirectoryServiceDirectory_MicrosoftAD(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_SimpleAD(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_MicrosoftAD(
+func dataSourceAwsDocdbEngineVersion(
+func dataSourceAwsDocdbEngineVersionRead(
 func dataSourceAwsDocdbOrderableDbInstance(
 func dataSourceAwsDocdbOrderableDbInstanceRead(
 func dataSourceAwsDxGateway(
@@ -470,6 +472,8 @@ func dataSourceAwsNatGateway(
 func dataSourceAwsNatGatewayRead(
 func TestAccDataSourceAwsNatGateway_basic(
 func testAccDataSourceAwsNatGatewayConfig(
+func dataSourceAwsNeptuneEngineVersion(
+func dataSourceAwsNeptuneEngineVersionRead(
 func dataSourceAwsNeptuneOrderableDbInstance(
 func dataSourceAwsNeptuneOrderableDbInstanceRead(
 func dataSourceAwsNetworkAcls(
@@ -542,6 +546,8 @@ func testAccDataSourceAwsRamResourceShareConfig_Tags(
 func dataSourceAwsRdsCluster(
 func dataSourceAwsRdsClusterRead(
 func testAccDataSourceAwsRdsClusterConfigBasic(
+func dataSourceAwsRdsEngineVersion(
+func dataSourceAwsRdsEngineVersionRead(
 func dataSourceAwsRdsOrderableDbInstance(
 func dataSourceAwsRdsOrderableDbInstanceRead(
 func dataSourceAwsRedshiftCluster(
@@ -836,6 +842,10 @@ func dataSourceAwsWorkspacesDirectory(
 func dataSourceAwsWorkspacesDirectoryRead(
 func TestAccDataSourceAwsWorkspacesDirectory_basic(
 func testAccDataSourceAwsWorkspacesDirectoryConfig(
+func dataSourceAwsWorkspacesImage(
+func dataSourceAwsWorkspacesImageRead(
+func TestAccDataSourceAwsWorkspacesImage_basic(
+func testAccDataSourceAwsWorkspacesImageConfig(
 func testAccCheckAwsPolicyMatch(
 func suppressEquivalentAwsPolicyDiffs(
 func suppressAwsDbEngineVersionDiffs(
@@ -3679,6 +3689,7 @@ func resourceAwsOrganizationsPolicyDelete(
 func testAccAwsOrganizationsPolicy_basic(
 func testAccAwsOrganizationsPolicy_concurrent(
 func testAccAwsOrganizationsPolicy_description(
+func testAccAwsOrganizationsPolicy_tags(
 func testAccAwsOrganizationsPolicy_type_AI_OPT_OUT(
 func testAccAwsOrganizationsPolicy_type_Backup(
 func testAccAwsOrganizationsPolicy_type_SCP(
@@ -3686,6 +3697,10 @@ func testAccAwsOrganizationsPolicy_type_Tag(
 func testAccCheckAwsOrganizationsPolicyDestroy(
 func testAccCheckAwsOrganizationsPolicyExists(
 func testAccAwsOrganizationsPolicyConfig_Description(
+func testAccAwsOrganizationsPolicyConfig_TagA(
+func testAccAwsOrganizationsPolicyConfig_TagB(
+func testAccAwsOrganizationsPolicyConfig_TagC(
+func testAccAwsOrganizationsPolicyConfig_NoTag(
 func testAccAwsOrganizationsPolicyConfig_Required(
 func testAccAwsOrganizationsPolicyConfigConcurrent(
 func testAccAwsOrganizationsPolicyConfig_Type(

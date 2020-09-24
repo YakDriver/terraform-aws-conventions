@@ -52,6 +52,9 @@ func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(adType st
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_SimpleAD(alias string) string {
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_MicrosoftAD(alias string) string {
 func testAccDataSourceDirectoryServiceDirectoryConfig_connector() string {
+func testAccAWSDocDBEngineVersionDataSourceBasicConfig(engine, version string) string {
+func testAccAWSDocDBEngineVersionDataSourcePreferredConfig() string {
+func testAccAWSDocDBEngineVersionDataSourceDefaultOnlyConfig() string {
 func testAccAWSDocdbOrderableDbInstanceDataSourceConfigBasic(class, engine, version, license string) string {
 func testAccAWSDocdbOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, preferredOption string) string {
 func testAccDataSourceAwsDxGatewayConfig_Name(rName string, rBgpAsn int) string {
@@ -198,6 +201,9 @@ func testAccDataSourceAWSMqBrokerConfig_byName(brokerName, prefix string) string
 func testAccMskClusterDataSourceConfigName(rName string) string {
 func testAccMskConfigurationDataSourceConfigName(rName string) string {
 func testAccDataSourceAwsNatGatewayConfig(rInt int) string {
+func testAccAWSNeptuneEngineVersionDataSourceBasicConfig(version string) string {
+func testAccAWSNeptuneEngineVersionDataSourcePreferredConfig() string {
+func testAccAWSNeptuneEngineVersionDataSourceDefaultOnlyConfig() string {
 func testAccAWSNeptuneOrderableDbInstanceDataSourceConfigBasic(class, engine, version, license string) string {
 func testAccAWSNeptuneOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, preferredOption string) string {
 func testAccDataSourceAwsNetworkAclsConfig_Base(rName string) string {
@@ -224,6 +230,10 @@ func testAccDataSourceAwsQLDBLedgerConfig(rName string) string {
 func testAccDataSourceAwsRamResourceShareConfig_Name(rName string) string {
 func testAccDataSourceAwsRamResourceShareConfig_Tags(rName string) string {
 func testAccDataSourceAwsRdsClusterConfigBasic(clusterName string) string {
+func testAccAWSRDSEngineVersionDataSourceBasicConfig(engine, version, paramGroup string) string {
+func testAccAWSRDSEngineVersionDataSourceUpgradeTargetsConfig() string {
+func testAccAWSRDSEngineVersionDataSourcePreferredConfig() string {
+func testAccAWSRDSEngineVersionDataSourceDefaultOnlyConfig() string {
 func testAccAWSRdsOrderableDbInstanceDataSourceConfig_basic(class, engine, version, license, storage string) string {
 func testAccAWSRdsOrderableDbInstanceDataSourceConfig_preferredClass(preferredClass string) string {
 func testAccAWSRdsOrderableDbInstanceDataSourceConfig_preferredVersion(preferredVersion string) string {
@@ -338,6 +348,7 @@ func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig_byOwnerName(owner, name string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(bundleID, owner, name string) string {
 func testAccDataSourceAwsWorkspacesDirectoryConfig(rName string) string {
+func testAccDataSourceAwsWorkspacesImageConfig(imageID string) string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
@@ -1852,7 +1863,8 @@ func testAccESDomainConfig_internetToVpcEndpoint(randInt int) string {
 func testAccESDomainConfig_AdvancedSecurityOptionsUserDb(domainName string) string {
 func testAccESDomainConfig_AdvancedSecurityOptionsIAM(domainName string) string {
 func testAccESDomainConfig_AdvancedSecurityOptionsDisabled(domainName string) string {
-func testAccESDomainConfig_LogPublishingOptions(randInt int) string {
+func testAccESDomain_LogPublishingOptions_BaseConfig(randInt int) string {
+func testAccESDomainConfig_LogPublishingOptions(randInt int, logType string) string {
 func testAccESDomainConfig_CognitoOptions(randInt int, includeCognitoOptions bool) string {
 func testAccAwsElasticTranscoderPresetConfig(rName string) string {
 func testAccAwsElasticTranscoderPresetConfigAudioCodecOptionsEmpty(rName string) string {
@@ -2005,6 +2017,8 @@ func testAccGlueCrawlerConfig_Classifiers_Multiple(rName string) string {
 func testAccGlueCrawlerConfig_Configuration(rName, configuration string) string {
 func testAccGlueCrawlerConfig_Description(rName, description string) string {
 func testAccGlueCrawlerConfig_DynamodbTarget(rName, path string) string {
+func testAccGlueCrawlerConfig_DynamodbTargetScanAll(rName, path string, scanAll bool) string {
+func testAccGlueCrawlerConfig_DynamodbTargetScanRate(rName, path string, scanRate float64) string {
 func testAccGlueCrawlerConfig_JdbcTarget(rName, path string) string {
 func testAccGlueCrawlerConfig_JdbcTarget_Exclusions1(rName, exclusion1 string) string {
 func testAccGlueCrawlerConfig_JdbcTarget_Exclusions2(rName, exclusion1, exclusion2 string) string {
@@ -2029,7 +2043,8 @@ func testAccAWSGlueJobConfig_Command(rName, scriptLocation string) string {
 func testAccAWSGlueJobConfig_DefaultArguments(rName, jobBookmarkOption, jobLanguage string) string {
 func testAccAWSGlueJobnonOverridableArgumentsConfig(rName, jobBookmarkOption, jobLanguage string) string {
 func testAccAWSGlueJobConfig_Description(rName, description string) string {
-func testAccAWSGlueJobConfig_GlueVersion(rName, glueVersion string) string {
+func testAccAWSGlueJobConfig_GlueVersion_MaxCapacity(rName, glueVersion string) string {
+func testAccAWSGlueJobConfig_GlueVersion_NumberOfWorkers(rName, glueVersion string) string {
 func testAccAWSGlueJobConfig_ExecutionProperty(rName string, maxConcurrentRuns int) string {
 func testAccAWSGlueJobConfig_MaxRetries(rName string, maxRetries int) string {
 func testAccAWSGlueJobConfig_NotificationProperty(rName string, notifyDelayAfter int) string {
@@ -2062,6 +2077,9 @@ func testAccGlueUserDefinedFunctionResourceURIConfig2(rName string) string {
 func testAccAWSGlueWorkflowConfig_DefaultRunProperties(rName, firstPropValue, secondPropValue string) string {
 func testAccAWSGlueWorkflowConfig_Description(rName, description string) string {
 func testAccAWSGlueWorkflowConfig_Required(rName string) string {
+func testAccAWSGlueWorkflowConfigMaxConcurrentRuns(rName string, runs int) string {
+func testAccAWSGlueWorkflowConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGlueWorkflowConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGuardDutyDetectorConfigTags1(tagKey1, tagValue1 string) string {
 func testAccGuardDutyDetectorConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGuardDutyFilterConfig_full(startDate, endDate string) string {
@@ -2746,6 +2764,10 @@ func testAccAwsOrganizationsPolicyAttachmentConfig_Account(rName, policyType, po
 func testAccAwsOrganizationsPolicyAttachmentConfig_OrganizationalUnit(rName string) string {
 func testAccAwsOrganizationsPolicyAttachmentConfig_Root(rName string) string {
 func testAccAwsOrganizationsPolicyConfig_Description(rName, description string) string {
+func testAccAwsOrganizationsPolicyConfig_TagA(rName string) string {
+func testAccAwsOrganizationsPolicyConfig_TagB(rName string) string {
+func testAccAwsOrganizationsPolicyConfig_TagC(rName string) string {
+func testAccAwsOrganizationsPolicyConfig_NoTag(rName string) string {
 func testAccAwsOrganizationsPolicyConfig_Required(rName, content string) string {
 func testAccAwsOrganizationsPolicyConfigConcurrent(rName string) string {
 func testAccAwsOrganizationsPolicyConfig_Type(rName, content, policyType string) string {

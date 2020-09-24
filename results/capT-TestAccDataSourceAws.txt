@@ -174,3 +174,4 @@ func TestAccDataSourceAwsWorkspaceBundle_basic(
 func TestAccDataSourceAwsWorkspaceBundle_byOwnerName(
 func TestAccDataSourceAwsWorkspaceBundle_bundleIDAndNameConflict(
 func TestAccDataSourceAwsWorkspacesDirectory_basic(
+func TestAccDataSourceAwsWorkspacesImage_basic(
