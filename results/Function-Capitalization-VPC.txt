@@ -15,7 +15,6 @@ func testAccBeanstalkConfigurationTemplateConfig_VPC(
 func TestAccAWSFlowLog_VPCID(
 func testAccFlowLogConfig_VPCID(
 func TestAccAWSInstance_NetworkInstanceVPCSecurityGroupIDs(
-func testAccInstanceConfigVPC(
 func testAccInstanceNetworkInstanceVPCSecurityGroupIDs(
 func testAccInstanceNetworkInstanceVPCRemoveSecurityGroupIDs(
 func TestAccAWSLambdaFunction_VPC(

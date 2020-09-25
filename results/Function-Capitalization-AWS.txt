@@ -4272,7 +4272,7 @@ func TestAccAWSInstance_rootInstanceStore(
 func TestAccAWSInstance_noAMIEphemeralDevices(
 func TestAccAWSInstance_sourceDestCheck(
 func TestAccAWSInstance_disableApiTermination(
-func TestAccAWSInstance_vpc(
+func TestAccAWSInstance_dedicatedInstance(
 func TestAccAWSInstance_outpost(
 func TestAccAWSInstance_placementGroup(
 func TestAccAWSInstance_ipv6_supportAddressCount(
@@ -6283,7 +6283,9 @@ func testAccCheckAWSSagemakerNotebookInstanceDestroy(
 func testAccCheckAWSSagemakerNotebookInstanceExists(
 func testAccCheckAWSSagemakerNotebookInstanceDisappears(
 func testAccCheckAWSSagemakerNotebookInstanceName(
+func TestAccAWSSagemakerNotebookInstance_root_access(
 func TestAccAWSSagemakerNotebookInstance_direct_internet_access(
+func testAccCheckAWSSagemakerNotebookRootAccess(
 func testAccCheckAWSSagemakerNotebookDirectInternetAccess(
 func testAccCheckAWSSagemakerNotebookInstanceTags(
 func testAccAWSSagemakerNotebookInstanceConfig(
@@ -6291,6 +6293,7 @@ func testAccAWSSagemakerNotebookInstanceUpdateConfig(
 func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(
 func testAccAWSSagemakerNotebookInstanceTagsConfig(
 func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(
+func testAccAWSSagemakerNotebookInstanceConfigRootAccess(
 func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(
 func testAccPreCheckAWSSecretsManager(
 func TestAWSSecurityGroupMigrateState(
@@ -7069,6 +7072,7 @@ func testAccAWSSwfDomainConfig_Name(
 func testAccAWSSwfDomainConfigTags1(
 func testAccAWSSwfDomainConfigTags2(
 func TestAccAWSTransferServer_basic(
+func TestAccAWSTransferServer_Vpc(
 func TestAccAWSTransferServer_apigateway(
 func TestAccAWSTransferServer_disappears(
 func TestAccAWSTransferServer_forcedestroy(
@@ -7328,7 +7332,6 @@ func testAccAWSWafRegionalRegexMatchSet_basic(
 func testAccAWSWafRegionalRegexMatchSet_changePatterns(
 func testAccAWSWafRegionalRegexMatchSet_noPatterns(
 func testAccAWSWafRegionalRegexMatchSet_disappears(
-func testAccCheckAWSWafRegionalRegexMatchSetDisappears(
 func testAccCheckAWSWafRegionalRegexMatchSetExists(
 func testAccCheckAWSWafRegionalRegexMatchSetDestroy(
 func testAccAWSWafRegionalRegexMatchSetConfig(

@@ -2220,7 +2220,7 @@ func TestAccAWSInstance_rootInstanceStore(
 func TestAccAWSInstance_noAMIEphemeralDevices(
 func TestAccAWSInstance_sourceDestCheck(
 func TestAccAWSInstance_disableApiTermination(
-func TestAccAWSInstance_vpc(
+func TestAccAWSInstance_dedicatedInstance(
 func TestAccAWSInstance_outpost(
 func TestAccAWSInstance_placementGroup(
 func TestAccAWSInstance_ipv6_supportAddressCount(
@@ -3289,6 +3289,7 @@ func TestAccAWSSagemakerNotebookInstance_basic(
 func TestAccAWSSagemakerNotebookInstance_update(
 func TestAccAWSSagemakerNotebookInstance_tags(
 func TestAccAWSSagemakerNotebookInstance_disappears(
+func TestAccAWSSagemakerNotebookInstance_root_access(
 func TestAccAWSSagemakerNotebookInstance_direct_internet_access(
 func TestAccAwsSecretsManagerSecretRotation_basic(
 func TestAccAwsSecretsManagerSecret_basic(

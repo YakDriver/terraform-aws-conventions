@@ -259,7 +259,6 @@ func testAccAWSWafRegionalRegexMatchSet_basic(
 func testAccAWSWafRegionalRegexMatchSet_changePatterns(
 func testAccAWSWafRegionalRegexMatchSet_noPatterns(
 func testAccAWSWafRegionalRegexMatchSet_disappears(
-func testAccCheckAWSWafRegionalRegexMatchSetDisappears(
 func testAccCheckAWSWafRegionalRegexMatchSetExists(
 func testAccCheckAWSWafRegionalRegexMatchSetDestroy(
 func testAccAWSWafRegionalRegexMatchSetConfig(
@@ -771,6 +770,7 @@ func diffWafRuleGroupActivatedRules(
 func flattenWafActivatedRules(
 func expandWafActivatedRule(
 func flattenWafRegexMatchTuples(
+func expandWafRegexMatchTuple(
 func diffWafRegexMatchSetTuples(
 func resourceAwsWafRegexMatchSetTupleHash(
 func newWafRegionalRetryer(

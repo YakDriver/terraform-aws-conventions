@@ -1403,6 +1403,7 @@ func TestAccAWSStorageGatewaySmbFileShare_AdminUserList(
 func TestAccAWSSwfDomain_NamePrefix(
 func TestAccAWSSwfDomain_GeneratedName(
 func TestAccAWSSwfDomain_Description(
+func TestAccAWSTransferServer_Vpc(
 func TestAccAWSTransferUser_UserName_Validation(
 func TestAccAWSVpcEndpointService_AllowedPrincipals(
 func TestAccAWSVpc_AssignGeneratedIpv6CidrBlock(

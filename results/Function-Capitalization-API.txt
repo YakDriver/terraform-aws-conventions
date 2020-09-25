@@ -522,3 +522,4 @@ func TestAccAWSAppsyncGraphqlApi_AuthenticationType_APIKey(
 func TestAccAWSAppsyncGraphqlApi_AdditionalAuthentication_APIKey(
 func testAccCheckCloudFrontDistributionExistsAPIOnly(
 func testAccInstanceConfigDisableAPITermination(
+func getRegexMatchTuplesFromAPIResource(

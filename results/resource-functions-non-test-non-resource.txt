@@ -1812,6 +1812,10 @@ func waitForTransferServerDeletion(
 func deleteTransferUsers(
 func expandTransferServerEndpointDetails(
 func flattenTransferServerEndpointDetails(
+func stopAndWaitForTransferServer(
+func startAndWaitForTransferServer(
+func refreshTransferServerStatus(
+func describeTransferServer(
 func init(
 func decodeTransferSshKeyId(
 func decodeTransferUserId(
@@ -1894,8 +1898,14 @@ func flattenWafIpSetDescriptorWR(
 func updateIPSetResourceWR(
 func updateWafRateBasedRuleResourceWR(
 func init(
+func getRegexMatchTuplesFromResourceData(
+func getRegexMatchTuplesFromAPIResource(
+func clearRegexMatchTuples(
+func deleteRegexMatchSet(
+func deleteRegexMatchSetResource(
 func updateRegexMatchSetResourceWR(
 func init(
+func ListRegexMatchSetsPages(
 func updateWafRegionalRegexPatternSetPatternStringsWR(
 func updateWafRegionalRuleResource(
 func flattenWafPredicates(

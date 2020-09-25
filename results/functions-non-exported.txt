@@ -7201,7 +7201,7 @@ func testAccAwsEc2InstanceConfigBlockDevicesWithDeleteOnTerminate(
 func testAccInstanceConfigSourceDestEnable(
 func testAccInstanceConfigSourceDestDisable(
 func testAccInstanceConfigDisableAPITermination(
-func testAccInstanceConfigVPC(
+func testAccEc2InstanceConfigDedicatedInstance(
 func testAccInstanceConfigOutpost(
 func testAccInstanceConfigPlacementGroup(
 func testAccInstanceConfigIpv6ErrorConfig(
@@ -7595,6 +7595,8 @@ func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_ProcessingConfigurati
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfigBase(
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfig(
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfigUpdates(
+func testAccKinesisFirehoseDeliveryStreamConfig_ElasticsearchVpcBasic(
+func testAccKinesisFirehoseDeliveryStreamConfig_ElasticsearchVpcUpdate(
 func testAccKinesisFirehoseDeliveryStreamConfig_missingProcessingConfiguration(
 func resourceAwsKinesisStream(
 func resourceAwsKinesisStreamImport(
@@ -10146,6 +10148,7 @@ func testAccCheckAWSSagemakerNotebookInstanceDestroy(
 func testAccCheckAWSSagemakerNotebookInstanceExists(
 func testAccCheckAWSSagemakerNotebookInstanceDisappears(
 func testAccCheckAWSSagemakerNotebookInstanceName(
+func testAccCheckAWSSagemakerNotebookRootAccess(
 func testAccCheckAWSSagemakerNotebookDirectInternetAccess(
 func testAccCheckAWSSagemakerNotebookInstanceTags(
 func testAccAWSSagemakerNotebookInstanceConfig(
@@ -10153,6 +10156,7 @@ func testAccAWSSagemakerNotebookInstanceUpdateConfig(
 func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(
 func testAccAWSSagemakerNotebookInstanceTagsConfig(
 func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(
+func testAccAWSSagemakerNotebookInstanceConfigRootAccess(
 func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(
 func resourceAwsSecretsManagerSecret(
 func resourceAwsSecretsManagerSecretCreate(
@@ -11194,6 +11198,10 @@ func waitForTransferServerDeletion(
 func deleteTransferUsers(
 func expandTransferServerEndpointDetails(
 func flattenTransferServerEndpointDetails(
+func stopAndWaitForTransferServer(
+func startAndWaitForTransferServer(
+func refreshTransferServerStatus(
+func describeTransferServer(
 func init(
 func testSweepTransferServers(
 func testAccCheckAWSTransferServerExists(
@@ -11657,6 +11665,11 @@ func resourceAwsWafRegionalRegexMatchSetCreate(
 func resourceAwsWafRegionalRegexMatchSetRead(
 func resourceAwsWafRegionalRegexMatchSetUpdate(
 func resourceAwsWafRegionalRegexMatchSetDelete(
+func getRegexMatchTuplesFromResourceData(
+func getRegexMatchTuplesFromAPIResource(
+func clearRegexMatchTuples(
+func deleteRegexMatchSet(
+func deleteRegexMatchSetResource(
 func updateRegexMatchSetResourceWR(
 func init(
 func testSweepWafRegionalRegexMatchSet(
@@ -11664,7 +11677,6 @@ func testAccAWSWafRegionalRegexMatchSet_basic(
 func testAccAWSWafRegionalRegexMatchSet_changePatterns(
 func testAccAWSWafRegionalRegexMatchSet_noPatterns(
 func testAccAWSWafRegionalRegexMatchSet_disappears(
-func testAccCheckAWSWafRegionalRegexMatchSetDisappears(
 func testAccCheckAWSWafRegionalRegexMatchSetExists(
 func testAccCheckAWSWafRegionalRegexMatchSetDestroy(
 func testAccAWSWafRegionalRegexMatchSetConfig(
@@ -12574,6 +12586,7 @@ func diffWafRuleGroupActivatedRules(
 func flattenWafActivatedRules(
 func expandWafActivatedRule(
 func flattenWafRegexMatchTuples(
+func expandWafRegexMatchTuple(
 func diffWafRegexMatchSetTuples(
 func resourceAwsWafRegexMatchSetTupleHash(
 func newWafRegionalRetryer(

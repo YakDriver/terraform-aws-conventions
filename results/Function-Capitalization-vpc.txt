@@ -14,7 +14,6 @@ func TestAccAWSElasticSearchDomain_vpc_update(
 func testAccESDomainConfig_vpc(
 func testAccESDomainConfig_vpc_update1(
 func testAccESDomainConfig_vpc_update2(
-func TestAccAWSInstance_vpc(
 func TestAccAWSOpsworksStack_vpc(
 func TestAccAWSRouteTable_vpcPeering(
 func testAccAWSS3AccessPointConfig_vpc(

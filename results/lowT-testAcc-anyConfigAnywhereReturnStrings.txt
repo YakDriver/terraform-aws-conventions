@@ -2197,7 +2197,7 @@ func testAccAwsEc2InstanceConfigBlockDevicesWithDeleteOnTerminate(size, delete s
 func testAccInstanceConfigSourceDestEnable(rName string) string {
 func testAccInstanceConfigSourceDestDisable(rName string) string {
 func testAccInstanceConfigDisableAPITermination(rName string, val bool) string {
-func testAccInstanceConfigVPC(rName string) string {
+func testAccEc2InstanceConfigDedicatedInstance(rName string) string {
 func testAccInstanceConfigOutpost() string {
 func testAccInstanceConfigPlacementGroup(rName string) string {
 func testAccInstanceConfigIpv6ErrorConfig(rName string) string {
@@ -2306,6 +2306,8 @@ func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_ProcessingConfigurati
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfigBase(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfig(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfigUpdates(rName string, rInt int) string {
+func testAccKinesisFirehoseDeliveryStreamConfig_ElasticsearchVpcBasic(ri int) string {
+func testAccKinesisFirehoseDeliveryStreamConfig_ElasticsearchVpcUpdate(funcName, policyName, roleName string, ri int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_missingProcessingConfiguration(rInt int) string {
 func testAccKinesisStreamConfig(rInt int) string {
 func testAccKinesisStreamConfigConcurrent(rInt int) string {
@@ -3146,6 +3148,7 @@ func testAccAWSSagemakerNotebookInstanceUpdateConfig(notebookName string) string
 func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(rName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsConfig(notebookName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(notebookName string) string {
+func testAccAWSSagemakerNotebookInstanceConfigRootAccess(notebookName string, rootAccess string) string {
 func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(notebookName string, directInternetAccess string) string {
 func testAccAwsSecretsManagerSecretRotationConfig(rName string, automaticallyAfterDays int) string {
 func testAccAwsSecretsManagerSecretConfig_Description(rName, description string) string {

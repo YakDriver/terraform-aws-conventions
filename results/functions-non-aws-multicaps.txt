@@ -1971,7 +1971,6 @@ func testAccInstanceGP2WithIopsValue(
 func testAccInstanceConfigNoAMIEphemeralDevices(
 func testAccAwsEc2InstanceRootBlockDeviceWithIOPS(
 func testAccInstanceConfigDisableAPITermination(
-func testAccInstanceConfigVPC(
 func testAccInstanceConfigPrivateIP(
 func testAccInstanceConfigEmptyPrivateIP(
 func testAccInstanceConfigAssociatePublicIPAndPrivateIP(
@@ -3234,6 +3233,7 @@ func testAccAWSWafRegionalIPSetConfigChangeIPSetDescriptors(
 func testAccAWSWafRegionalIPSetConfig_IpSetDescriptors(
 func testAccAWSWafRegionalIPSetConfig_noDescriptors(
 func updateWafRateBasedRuleResourceWR(
+func getRegexMatchTuplesFromAPIResource(
 func updateRegexMatchSetResourceWR(
 func updateWafRegionalRegexPatternSetPatternStringsWR(
 func updateWafRuleGroupResourceWR(

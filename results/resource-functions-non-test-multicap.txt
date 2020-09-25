@@ -365,6 +365,7 @@ func resourceAwsWafRegionalIPSetUpdate(
 func resourceAwsWafRegionalIPSetDelete(
 func updateIPSetResourceWR(
 func updateWafRateBasedRuleResourceWR(
+func getRegexMatchTuplesFromAPIResource(
 func updateRegexMatchSetResourceWR(
 func updateWafRegionalRegexPatternSetPatternStringsWR(
 func updateWafRuleGroupResourceWR(

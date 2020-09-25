@@ -4557,6 +4557,10 @@ func waitForTransferServerDeletion(
 func deleteTransferUsers(
 func expandTransferServerEndpointDetails(
 func flattenTransferServerEndpointDetails(
+func stopAndWaitForTransferServer(
+func startAndWaitForTransferServer(
+func refreshTransferServerStatus(
+func describeTransferServer(
 func init(
 func resourceAwsTransferSshKey(
 func resourceAwsTransferSshKeyCreate(
@@ -4799,8 +4803,14 @@ func resourceAwsWafRegionalRegexMatchSetCreate(
 func resourceAwsWafRegionalRegexMatchSetRead(
 func resourceAwsWafRegionalRegexMatchSetUpdate(
 func resourceAwsWafRegionalRegexMatchSetDelete(
+func getRegexMatchTuplesFromResourceData(
+func getRegexMatchTuplesFromAPIResource(
+func clearRegexMatchTuples(
+func deleteRegexMatchSet(
+func deleteRegexMatchSetResource(
 func updateRegexMatchSetResourceWR(
 func init(
+func ListRegexMatchSetsPages(
 func resourceAwsWafRegionalRegexPatternSet(
 func resourceAwsWafRegionalRegexPatternSetCreate(
 func resourceAwsWafRegionalRegexPatternSetRead(
