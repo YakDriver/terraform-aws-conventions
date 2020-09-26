@@ -48,5 +48,4 @@ func TestAccAWSIAMInstanceProfile_namePrefix(
 func TestAccAWSInstance_noAMIEphemeralDevices(
 func testAccInstanceConfigNoAMIEphemeralDevices(
 func TestAccAWSLaunchConfiguration_withInstanceStoreAMI(
-func testAccAWSLaunchConfigurationConfig_instanceStoreAMI(
 func testAccAWSLaunchConfigurationConfigWithInstanceStoreAMI(

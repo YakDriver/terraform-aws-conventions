@@ -2028,6 +2028,7 @@ func testAccGlueCrawlerConfig_Role_ARN_Path(rName string) string {
 func testAccGlueCrawlerConfig_Role_Name_Path(rName string) string {
 func testAccGlueCrawlerConfig_S3Target(rName, path string) string {
 func testAccGlueCrawlerConfig_S3Target_Exclusions1(rName, exclusion1 string) string {
+func testAccGlueCrawlerConfig_S3Target_ConnectionName(rName string) string {
 func testAccGlueCrawlerConfig_S3Target_Exclusions2(rName, exclusion1, exclusion2 string) string {
 func testAccGlueCrawlerConfig_S3Target_Multiple(rName, path1, path2 string) string {
 func testAccGlueCrawlerConfig_CatalogTarget(rName string, tableCount int) string {
@@ -2408,7 +2409,6 @@ func testAccAWSLambdaProvisionedConcurrencyConfigQualifierAliasName(rName string
 func testAccAWSLambdaProvisionedConcurrencyConfigQualifierFunctionVersion(rName string) string {
 func testAccAWSLaunchConfigurationConfig_ami() string {
 func testAccAWSLaunchConfigurationConfig_HvmEbsAmi() string {
-func testAccAWSLaunchConfigurationConfig_instanceStoreAMI() string {
 func testAccAWSLaunchConfigurationConfigWithInstanceStoreAMI(rName string) string {
 func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceCopiedAmi(rName string) string {
 func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceVolumeSize(rName string, volumeSize int) string {

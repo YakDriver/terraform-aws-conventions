@@ -2277,6 +2277,7 @@ func TestAccAWSGlueCrawler_JdbcTarget(
 func TestAccAWSGlueCrawler_JdbcTarget_Exclusions(
 func TestAccAWSGlueCrawler_JdbcTarget_Multiple(
 func TestAccAWSGlueCrawler_S3Target(
+func TestAccAWSGlueCrawler_S3Target_ConnectionName(
 func TestAccAWSGlueCrawler_S3Target_Exclusions(
 func TestAccAWSGlueCrawler_S3Target_Multiple(
 func TestAccAWSGlueCrawler_CatalogTarget(

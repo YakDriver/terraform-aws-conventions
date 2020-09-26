@@ -482,6 +482,7 @@ func testAccGlueCrawlerConfig_Role_ARN_Path(
 func testAccGlueCrawlerConfig_Role_Name_Path(
 func testAccGlueCrawlerConfig_S3Target(
 func testAccGlueCrawlerConfig_S3Target_Exclusions1(
+func testAccGlueCrawlerConfig_S3Target_ConnectionName(
 func testAccGlueCrawlerConfig_S3Target_Exclusions2(
 func testAccGlueCrawlerConfig_S3Target_Multiple(
 func testAccGlueCrawlerConfig_CatalogTarget(
