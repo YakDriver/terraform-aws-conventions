@@ -13,6 +13,7 @@ func TestAccAWSAppautoScalingPolicy_dynamodb_index(
 func expandAppsyncDynamodbDataSourceConfig(
 func flattenAppsyncDynamodbDataSourceConfig(
 func resourceAwsdbClusterSnapshotUpdate(
+func testAccAWSDBInstanceConfig_orderableClassMariadb(
 func testAccPreCheckAWSDynamodbGlobalTable(
 func testAccDynamoDbGlobalTableConfig_multipleRegions_dynamodb_tables(
 func waitForDynamodbTableDeletion(

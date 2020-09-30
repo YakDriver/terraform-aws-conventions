@@ -51,6 +51,8 @@ func TestAccAwsBackupSelection_backupPlanDisappears(
 func TestAccAwsBackupSelection_withTags(
 func TestAccAwsBackupSelection_withResources(
 func TestAccAwsBackupSelection_updateTag(
+func TestAccAwsBackupVaultNotification_basic(
+func TestAccAwsBackupVaultNotification_disappears(
 func TestAccAwsBackupVault_basic(
 func TestAccAwsBackupVault_withKmsKey(
 func TestAccAwsBackupVault_withTags(
@@ -124,6 +126,18 @@ func TestAccAwsGlobalAcceleratorListener_basic(
 func TestAccAwsGlobalAcceleratorListener_update(
 func TestAccAwsLbListenerCertificate_basic(
 func TestAccAwsLbListenerCertificate_multiple(
+func TestAccAwsLexIntent_basic(
+func TestAccAwsLexIntent_createVersion(
+func TestAccAwsLexIntent_conclusionStatement(
+func TestAccAwsLexIntent_confirmationPromptAndRejectionStatement(
+func TestAccAwsLexIntent_dialogCodeHook(
+func TestAccAwsLexIntent_followUpPrompt(
+func TestAccAwsLexIntent_fulfillmentActivity(
+func TestAccAwsLexIntent_sampleUtterances(
+func TestAccAwsLexIntent_slots(
+func TestAccAwsLexIntent_slotsCustom(
+func TestAccAwsLexIntent_disappears(
+func TestAccAwsLexIntent_updateWithExternalChange(
 func TestAccAwsLexSlotType_basic(
 func TestAccAwsLexSlotType_createVersion(
 func TestAccAwsLexSlotType_description(

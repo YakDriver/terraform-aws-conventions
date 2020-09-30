@@ -168,7 +168,7 @@ func testAccAWSCloud9EnvironmentEc2Config(
 func testAccAWSCloud9EnvironmentEc2AllFieldsConfig(
 func testAccAWSCloud9EnvironmentEc2ConfigTags1(
 func testAccAWSCloud9EnvironmentEc2ConfigTags2(
-func testAccAWSDBInstanceConfigEc2Classic(
+func testAccAWSDBInstanceConfig_Ec2Classic(
 func resourceAwsEc2AvailabilityZoneGroup(
 func resourceAwsEc2AvailabilityZoneGroupCreate(
 func resourceAwsEc2AvailabilityZoneGroupRead(

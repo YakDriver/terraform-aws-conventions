@@ -193,6 +193,8 @@ func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(lbName string
 func testAccDataSourceAWSLBConfigBasic(lbName string) string {
 func testAccDataSourceAWSLBConfigOutpost(lbName string) string {
 func testAccDataSourceAWSLBConfigBackardsCompatibility(albName string) string {
+func testAccDataSourceAwsLexIntentConfig_basic() string {
+func testAccDataSourceAwsLexIntentConfig_withVersion() string {
 func testAccDataSourceAwsLexSlotTypeConfig_basic() string {
 func testAccDataSourceAwsLexSlotTypeConfig_withVersion() string {
 func testAccDataSourceAWSMqBrokerConfig_base(brokerName, prefix string) string {
@@ -660,6 +662,8 @@ func testAccAppmeshRouteConfigWithTags(meshName, vrName, vn1Name, vn2Name, rName
 func testAccAwsAppmeshRouteConfig_httpHeader(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_routePriority(meshName, vrName, vn1Name, vn2Name, rName string, priority int) string {
+func testAccAwsAppmeshRouteConfig_httpRetryPolicy(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_httpRetryPolicyUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshVirtualNodeConfig_mesh(rName string) string {
 func testAccAppmeshVirtualNodeConfig_basic(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_cloudMapServiceDiscovery(meshName, vnName, rName, attrKey, attrValue string) string {
@@ -808,6 +812,7 @@ func testAccBackupSelectionConfigBasic(rName string) string {
 func testAccBackupSelectionConfigWithTags(rName string) string {
 func testAccBackupSelectionConfigWithResources(rName string) string {
 func testAccBackupSelectionConfigUpdateTag(rName string) string {
+func testAccBackupVaultNotificationConfig(rName string) string {
 func testAccBackupVaultConfig(randInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigBase(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2(rInt int) string {
@@ -1281,24 +1286,41 @@ func testAccAWSDBEventSubscriptionConfigWithSourceIds(rInt int) string {
 func testAccAWSDBEventSubscriptionConfigUpdateSourceIds(rInt int) string {
 func testAccAWSDBEventSubscriptionConfigUpdateCategories(rInt int) string {
 func testAccAWSDbInstanceRoleAssociationConfig(rName string) string {
-func testAccAWSDBInstanceConfigWithOptionGroup(rName string) string {
+func testAccAWSDBInstanceConfig_orderableClass(engine, version, license string) string {
+func testAccAWSDBInstanceConfig_orderableClassMysql() string {
+func testAccAWSDBInstanceConfig_orderableClassMariadb() string {
+func testAccAWSDBInstanceConfig_orderableClassSQLServerEx() string {
+func testAccAWSDBInstanceConfig_basic() string {
+func testAccAWSDBInstanceConfig_namePrefix() string {
+func testAccAWSDBInstanceConfig_generatedName() string {
+func testAccAWSDBInstanceConfig_KmsKeyId(rInt int) string {
+func testAccAWSDBInstanceConfig_WithCACertificateIdentifier(cacID string) string {
+func testAccAWSDBInstanceConfig_WithOptionGroup(rName string) string {
+func testAccAWSDBInstanceConfig_IAMAuth(n int) string {
 func testAccAWSDBInstanceConfig_FinalSnapshotIdentifier_SkipFinalSnapshot() string {
 func testAccAWSDBInstanceConfig_S3Import(bucketName string, bucketPrefix string, uniqueId string) string {
 func testAccAWSDBInstanceConfig_FinalSnapshotIdentifier(rInt int) string {
-func testAccDbInstanceConfigMonitoringInterval(rName string, monitoringInterval int) string {
-func testAccDbInstanceConfigMonitoringRoleArnRemoved(rName string) string {
-func testAccDbInstanceConfigMonitoringRoleArn(rName string) string {
-func testAccSnapshotInstanceConfig_iopsUpdate(rName string, iops int) string {
-func testAccSnapshotInstanceConfig_mysqlPort(rName string) string {
-func testAccSnapshotInstanceConfig_updateMysqlPort(rName string) string {
-func testAccAWSDBInstanceConfigWithSubnetGroup(rName string) string {
-func testAccAWSDBInstanceConfigWithSubnetGroupUpdated(rName string) string {
-func testAccAWSDBInstanceConfigAllowMajorVersionUpgrade(rName string, allowMajorVersionUpgrade bool) string {
-func testAccAWSDBInstanceConfigCloudwatchLogsExportConfiguration(rInt int) string {
-func testAccAWSDBInstanceConfigCloudwatchLogsExportConfigurationAdd(rInt int) string {
-func testAccAWSDBInstanceConfigCloudwatchLogsExportConfigurationModify(rInt int) string {
-func testAccAWSDBInstanceConfigCloudwatchLogsExportConfigurationDelete(rInt int) string {
-func testAccAWSDBInstanceConfigEc2Classic(rInt int) string {
+func testAccAWSDbInstanceConfig_MonitoringInterval(rName string, monitoringInterval int) string {
+func testAccAWSDbInstanceConfig_MonitoringRoleArnRemoved(rName string) string {
+func testAccAWSDbInstanceConfig_MonitoringRoleArn(rName string) string {
+func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_iopsUpdate(rName string, iops int) string {
+func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_mysqlPort(rName string) string {
+func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_updateMysqlPort(rName string) string {
+func testAccAWSDBInstanceConfig_WithSubnetGroup(rName string) string {
+func testAccAWSDBInstanceConfig_WithSubnetGroupUpdated(rName string) string {
+func testAccAWSDBInstanceConfig_MSSQL_timezone(rInt int) string {
+func testAccAWSDBInstanceConfig_MSSQL_timezone_AKST(rInt int) string {
+func testAccAWSDBInstanceConfig_MSSQLDomain(rInt int) string {
+func testAccAWSDBInstanceConfig_MSSQLUpdateDomain(rInt int) string {
+func testAccAWSDBInstanceConfig_MSSQLDomainSnapshotRestore(rInt int) string {
+func testAccAWSDBInstanceConfig_MySQLSnapshotRestoreWithEngineVersion(rInt int) string {
+func testAccAWSDBInstanceConfig_AllowMajorVersionUpgrade(rName string, allowMajorVersionUpgrade bool) string {
+func testAccAWSDBInstanceConfig_AutoMinorVersion() string {
+func testAccAWSDBInstanceConfig_CloudwatchLogsExportConfiguration(rInt int) string {
+func testAccAWSDBInstanceConfig_CloudwatchLogsExportConfigurationAdd(rInt int) string {
+func testAccAWSDBInstanceConfig_CloudwatchLogsExportConfigurationModify(rInt int) string {
+func testAccAWSDBInstanceConfig_CloudwatchLogsExportConfigurationDelete(rInt int) string {
+func testAccAWSDBInstanceConfig_Ec2Classic(rInt int) string {
 func testAccAWSDBInstanceConfig_MariaDB(rName string) string {
 func testAccAWSDBInstanceConfig_DbSubnetGroupName(rName string) string {
 func testAccAWSDBInstanceConfig_DbSubnetGroupName_RamShared(rName string) string {
@@ -1354,6 +1376,11 @@ func testAccAWSDBInstanceConfig_SnapshotIdentifier_Tags(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_Tags_Unset(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_VpcSecurityGroupIds(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_VpcSecurityGroupIds_Tags(rName string) string {
+func testAccAWSDBInstanceConfig_PerformanceInsightsDisabled(rName string) string {
+func testAccAWSDBInstanceConfig_PerformanceInsightsEnabled(rName string) string {
+func testAccAWSDBInstanceConfig_PerformanceInsightsKmsKeyIdDisabled(rName string) string {
+func testAccAWSDBInstanceConfig_PerformanceInsightsKmsKeyId(rName string) string {
+func testAccAWSDBInstanceConfig_PerformanceInsightsRetentionPeriod(rName string, performanceInsightsRetentionPeriod int) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_PerformanceInsightsEnabled(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_PerformanceInsightsEnabled(rName string) string {
 func testAccAWSDBInstanceConfig_NoDeleteAutomatedBackups(rName string) string {
@@ -2058,6 +2085,17 @@ func testAccAWSGlueJobConfig_WorkerType(rName string, workerType string) string 
 func testAccAWSGlueJobConfig_PythonShell(rName string) string {
 func testAccAWSGlueJobConfig_PythonShellWithVersion(rName string, pythonVersion string) string {
 func testAccAWSGlueJobConfig_MaxCapacity(rName string, maxCapacity float64) string {
+func testAccAWSGlueMLTransformConfigBase(rName string) string {
+func testAccAWSGlueMLTransformBasicConfig(rName string) string {
+func testAccAWSGlueMLTransformTypeFindMatchesFullConfig(rName string, enforce bool, tradeOff float64) string {
+func testAccAWSGlueMLTransformConfigDescription(rName, description string) string {
+func testAccAWSGlueMLTransformConfigGlueVersion(rName, glueVersion string) string {
+func testAccAWSGlueMLTransformConfigMaxRetries(rName string, maxRetries int) string {
+func testAccAWSGlueMLTransformConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGlueMLTransformConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSGlueMLTransformConfigTimeout(rName string, timeout int) string {
+func testAccAWSGlueMLTransformConfigWorkerType(rName, workerType string, numOfWorkers int) string {
+func testAccAWSGlueMLTransformConfigMaxCapacity(rName string, maxCapacity float64) string {
 func testAccAWSGlueSecurityConfigurationConfig_Basic(rName string) string {
 func testAccAWSGlueSecurityConfigurationConfig_CloudWatchEncryption_CloudWatchEncryptionMode_SSEKMS(rName string) string {
 func testAccAWSGlueSecurityConfigurationConfig_JobBookmarksEncryption_JobBookmarksEncryptionMode_CSEKMS(rName string) string {
@@ -2560,6 +2598,22 @@ func testAccAWSLBConfigNLBAccessLogs(enabled bool, lbName, bucketName, bucketPre
 func testAccAWSLBConfigNLBAccessLogsNoBlocks(lbName, bucketName string) string {
 func testAccAWSLBConfig_nosg(lbName string) string {
 func testAccAWSLBConfig_updateSecurityGroups(lbName string) string {
+func testAccAwsLexIntentConfig_lambda(rName string) string {
+func testAccAwsLexIntentConfig_basic(rName string) string {
+func testAccAwsLexIntentConfig_createVersion(rName string) string {
+func testAccAwsLexIntentConfig_conclusionStatement(rName string) string {
+func testAccAwsLexIntentConfig_conclusionStatementUpdate(rName string) string {
+func testAccAwsLexIntentConfig_confirmationPromptAndRejectionStatement(rName string) string {
+func testAccAwsLexIntentConfig_confirmationPromptAndRejectionStatementUpdate(rName string) string {
+func testAccAwsLexIntentConfig_dialogCodeHook(rName string) string {
+func testAccAwsLexIntentConfig_followUpPrompt(rName string) string {
+func testAccAwsLexIntentConfig_followUpPromptUpdate(rName string) string {
+func testAccAwsLexIntentConfig_fulfillmentActivity(rName string) string {
+func testAccAwsLexIntentConfig_sampleUtterances(rName string) string {
+func testAccAwsLexIntentConfig_sampleUtterancesUpdate(rName string) string {
+func testAccAwsLexIntentConfig_slots(rName string) string {
+func testAccAwsLexIntentConfig_slotsUpdate(rName string) string {
+func testAccAwsLexIntentConfig_slotsCustom(rName string) string {
 func testAccAwsLexSlotTypeConfig_basic(rName string) string {
 func testAccAwsLexSlotTypeConfig_withVersion(rName string) string {
 func testAccAwsLexSlotTypeUpdateConfig_description(rName string) string {
@@ -2990,8 +3044,10 @@ func testAccRoute53ZoneConfigTagsSingle(zoneName, tag1Key, tag1Value string) str
 func testAccRoute53ZoneConfigTagsMultiple(zoneName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccRoute53ZoneConfigVPCSingle(rName, zoneName string) string {
 func testAccRoute53ZoneConfigVPCMultiple(rName, zoneName string) string {
+func testAccRouteTableConfigInstance() string {
 func testAccAWSRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccRouteTableConfigNoDestination() string {
 func testAccAWSRouteTableConfigRouteConfigModeBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeNoBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeZeroed() string {

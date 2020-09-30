@@ -364,6 +364,10 @@ func resourceAwsBackupVaultCreate(
 func resourceAwsBackupVaultRead(
 func resourceAwsBackupVaultUpdate(
 func resourceAwsBackupVaultDelete(
+func resourceAwsBackupVaultNotifications(
+func resourceAwsBackupVaultNotificationsCreate(
+func resourceAwsBackupVaultNotificationsRead(
+func resourceAwsBackupVaultNotificationsDelete(
 func resourceAwsBatchComputeEnvironment(
 func resourceAwsBatchComputeEnvironmentCreate(
 func resourceAwsBatchComputeEnvironmentRead(
@@ -1458,6 +1462,11 @@ func resourceAwsGlueJobCreate(
 func resourceAwsGlueJobRead(
 func resourceAwsGlueJobUpdate(
 func resourceAwsGlueJobDelete(
+func resourceAwsGlueMLTransform(
+func resourceAwsGlueMLTransformCreate(
+func resourceAwsGlueMLTransformRead(
+func resourceAwsGlueMLTransformUpdate(
+func resourceAwsGlueMLTransformDelete(
 func resourceAwsGlueSecurityConfiguration(
 func resourceAwsGlueSecurityConfigurationCreate(
 func resourceAwsGlueSecurityConfigurationRead(
@@ -1846,6 +1855,11 @@ func resourceAwsLbTargetGroupRead(
 func resourceAwsLbTargetGroupUpdate(
 func resourceAwsLbTargetGroupDelete(
 func resourceAwsLbTargetGroupCustomizeDiff(
+func resourceAwsLexIntent(
+func resourceAwsLexIntentCreate(
+func resourceAwsLexIntentRead(
+func resourceAwsLexIntentUpdate(
+func resourceAwsLexIntentDelete(
 func resourceAwsLexSlotType(
 func resourceAwsLexSlotTypeCreate(
 func resourceAwsLexSlotTypeRead(

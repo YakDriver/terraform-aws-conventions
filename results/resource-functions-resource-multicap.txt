@@ -55,6 +55,11 @@ func resourceAwsEMRManagedScalingPolicyCreate(
 func resourceAwsEMRManagedScalingPolicyRead(
 func resourceAwsEMRManagedScalingPolicyDelete(
 func resourceAwsEMRSecurityConfiguration(
+func resourceAwsGlueMLTransform(
+func resourceAwsGlueMLTransformCreate(
+func resourceAwsGlueMLTransformRead(
+func resourceAwsGlueMLTransformUpdate(
+func resourceAwsGlueMLTransformDelete(
 func resourceAwsIamOpenIDConnectProvider(
 func resourceAwsIamOpenIDConnectProviderCreate(
 func resourceAwsIamOpenIDConnectProviderRead(

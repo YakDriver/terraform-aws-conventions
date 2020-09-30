@@ -407,6 +407,8 @@ func testAccGlueCrawlerConfig_S3Target_Multiple(
 func testAccGlueCrawlerConfig_CatalogTarget_Multiple(
 func TestAccAWSGlueJob_Description(
 func testAccAWSGlueJobConfig_Description(
+func TestAccAWSGlueMLTransform_description(
+func testAccAWSGlueMLTransformConfigDescription(
 func TestAccAWSGlueTrigger_Description(
 func testAccAWSGlueTriggerConfig_Description(
 func TestAccAWSGlueWorkflow_Description(
