@@ -211,6 +211,11 @@ func flattenDbProxyAuths(
 func resourceAwsDbProxyRead(
 func resourceAwsDbProxyUpdate(
 func resourceAwsDbProxyDelete(
+func resourceAwsDbProxyTarget(
+func resourceAwsDbProxyTargetCreate(
+func resourceAwsDbProxyTargetParseID(
+func resourceAwsDbProxyTargetRead(
+func resourceAwsDbProxyTargetDelete(
 func testSweepRdsDbProxies(
 func resourceAwsDbSecurityGroup(
 func resourceAwsDbSecurityGroupCreate(

@@ -697,7 +697,12 @@ func testAccAppmeshMeshConfig_egressFilter(rName, egressFilterType string) strin
 func testAccAppmeshMeshConfigWithTags(rName string) string {
 func testAccAppmeshMeshConfigWithUpdateTags(rName string) string {
 func testAccAppmeshMeshConfigWithRemoveTags(rName string) string {
-func testAccAppmeshRouteConfigBase(meshName, vrName, vn1Name, vn2Name string) string {
+func testAccAppmeshRouteConfigBase(meshName, vrName, vrProtocol, vn1Name, vn2Name string) string {
+func testAccAwsAppmeshRouteConfig_grpcRoute(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_grpcRouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_grpcRouteUpdatedWithZeroWeight(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_http2Route(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_http2RouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_httpRoute(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_httpRouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_httpRouteUpdatedWithZeroWeight(meshName, vrName, vn1Name, vn2Name, rName string) string {
@@ -711,12 +716,21 @@ func testAccAwsAppmeshRouteConfig_routePriority(meshName, vrName, vn1Name, vn2Na
 func testAccAwsAppmeshRouteConfig_httpRetryPolicy(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_httpRetryPolicyUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshVirtualNodeConfig_mesh(rName string) string {
+func testAccAppmeshVirtualNodeConfigRootCA(rName string) string {
+func testAccAppmeshVirtualNodeConfigPrivateCert(rName string) string {
 func testAccAppmeshVirtualNodeConfig_basic(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_cloudMapServiceDiscovery(meshName, vnName, rName, attrKey, attrValue string) string {
 func testAccAppmeshVirtualNodeConfig_listenerHealthChecks(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_listenerHealthChecksUpdated(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_logging(meshName, vnName, path string) string {
 func testAccAppmeshVirtualNodeConfig_tags(meshName, vnName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAppmeshVirtualNodeConfig_tlsFile(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_tlsAcm(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_clientPolicyFile(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_clientPolicyFileUpdated(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_clientPolicyAcm(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_backendDefaults(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_backendDefaultsUpdated(meshName, vnName string) string {
 func testAccAppmeshVirtualRouterConfig_basic(meshName, vrName string) string {
 func testAccAppmeshVirtualRouterConfig_updated(meshName, vrName string) string {
 func testAccAppmeshVirtualRouterConfig_tags(meshName, vrName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1057,6 +1071,15 @@ func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSNSTopic(rName string) str
 func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSWFAction(rName string) string {
 func testAccAWSCloudWatchMetricAlarmConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSCloudWatchMetricAlarmConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCodeArtifactDomainPermissionsPolicyBasicConfig(rName string) string {
+func testAccAWSCodeArtifactDomainPermissionsPolicyOwnerConfig(rName string) string {
+func testAccAWSCodeArtifactDomainPermissionsPolicyUpdatedConfig(rName string) string {
+func testAccAWSCodeArtifactDomainBasicConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryBasicConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryOwnerConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryDescConfig(rName, desc string) string {
+func testAccAWSCodeArtifactRepositoryUpstreamsConfig1(rName string) string {
+func testAccAWSCodeArtifactRepositoryUpstreamsConfig2(rName string) string {
 func testAccAWSCodeBuildBitbucketSourceLocationFromEnv() string {
 func testAccAWSCodeBuildGitHubSourceLocationFromEnv() string {
 func testAccAWSCodeBuildProjectConfig_Base_Bucket(rName string) string {
@@ -1504,6 +1527,9 @@ func testAccAWSDBProxyDefaultTargetGroupConfig_InitQuery(rName, initQuery string
 func testAccAWSDBProxyDefaultTargetGroupConfig_MaxConnectionsPercent(rName string, maxConnectionsPercent int) string {
 func testAccAWSDBProxyDefaultTargetGroupConfig_MaxIdleConnectionsPercent(rName string, maxIdleConnectionsPercent int) string {
 func testAccAWSDBProxyDefaultTargetGroupConfig_SessionPinningFilters(rName, sessionPinningFilters string) string {
+func testAccAWSDBProxyTargetConfigBase(rName string) string {
+func testAccAWSDBProxyTargetConfig_Instance(rName string) string {
+func testAccAWSDBProxyTargetConfig_Cluster(rName string) string {
 func testAccAWSDBProxyConfigBase(rName string) string {
 func testAccAWSDBProxyConfig(rName string) string {
 func testAccAWSDBProxyConfigName(rName, nName string) string {
@@ -2167,11 +2193,14 @@ func testAccAwsFsxLustreFileSystemConfigSubnetIds1() string {
 func testAccAwsFsxLustreFileSystemConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAwsFsxLustreFileSystemConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsFsxLustreFileSystemConfigWeeklyMaintenanceStartTime(weeklyMaintenanceStartTime string) string {
+func testAccAwsFsxLustreFileSystemConfigDailyAutomaticBackupStartTime(dailyAutomaticBackupStartTime string) string {
 func testAccAwsFsxLustreFileSystemConfigAutomaticBackupRetentionDays(retention int) string {
 func testAccAwsFsxLustreFileSystemDeploymentType(deploymentType string) string {
 func testAccAwsFsxLustreFileSystemPersistentDeploymentType(perUnitStorageThroughput int) string {
 func testAccAwsFsxLustreFileSystemConfigKmsKeyId1() string {
 func testAccAwsFsxLustreFileSystemConfigKmsKeyId2() string {
+func testAccAwsFsxLustreFileSystemHddStorageType(drive_cache_type string) string {
+func testAccAwsFsxLustreFileSystemAutoImportPolicyConfig(rName, exportPrefix, policy string) string {
 func testAccAwsFsxWindowsFileSystemConfigBase() string {
 func testAccAwsFsxWindowsFileSystemConfigAutomaticBackupRetentionDays(automaticBackupRetentionDays int) string {
 func testAccAwsFsxWindowsFileSystemConfigCopyTagsToBackups(copyTagsToBackups bool) string {
@@ -2271,6 +2300,8 @@ func testAccGlueCrawlerConfig_TablePrefix(rName, tablePrefix string) string {
 func testAccGlueCrawlerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlueCrawlerConfig_SecurityConfiguration(rName, securityConfiguration string) string {
+func testAccAWSDataCatalogEncryptionSettingsEncryptedConfig(rName string) string {
+func testAccAWSDataCatalogEncryptionSettingsNonEncryptedConfig() string {
 func testAccAWSGlueJobConfig_Base(rName string) string {
 func testAccAWSGlueJobConfig_Command(rName, scriptLocation string) string {
 func testAccAWSGlueJobConfig_DefaultArguments(rName, jobBookmarkOption, jobLanguage string) string {

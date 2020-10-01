@@ -654,6 +654,17 @@ func TestAccAWSCloudWatchMetricAlarm_extendedStatistic(
 func TestAccAWSCloudWatchMetricAlarm_expression(
 func TestAccAWSCloudWatchMetricAlarm_missingStatistic(
 func TestAccAWSCloudWatchMetricAlarm_tags(
+func TestAccAWSCodeArtifactDomainPermissionsPolicy_basic(
+func TestAccAWSCodeArtifactDomainPermissionsPolicy_owner(
+func TestAccAWSCodeArtifactDomainPermissionsPolicy_disappears(
+func TestAccAWSCodeArtifactDomainPermissionsPolicy_disappears_domain(
+func TestAccAWSCodeArtifactDomain_basic(
+func TestAccAWSCodeArtifactDomain_disappears(
+func TestAccAWSCodeArtifactRepository_basic(
+func TestAccAWSCodeArtifactRepository_owner(
+func TestAccAWSCodeArtifactRepository_description(
+func TestAccAWSCodeArtifactRepository_upstreams(
+func TestAccAWSCodeArtifactRepository_disappears(
 func TestAccAWSCodeBuildProject_basic(
 func TestAccAWSCodeBuildReportGroup_basic(
 func TestAccAWSCodeBuildReportGroup_export_s3(
@@ -823,7 +834,6 @@ func TestAccAWSDBInstance_separateIopsUpdate(
 func TestAccAWSDBInstance_portUpdate(
 func TestAccAWSDBInstance_ec2Classic(
 func TestAccAWSDBInstance_cloudwatchLogsExportConfiguration(
-func TestAccAWSDBInstance_cloudwatchLogsExportConfigurationUpdate(
 func TestAccAWSDBOptionGroup_basic(
 func TestAccAWSDBOptionGroup_timeoutBlock(
 func TestAccAWSDBOptionGroup_namePrefix(
@@ -838,6 +848,7 @@ func TestAccAWSDBParameterGroup_generatedName(
 func TestAccAWSDBParameterGroup_withApplyMethod(
 func TestAccAWSDBParameterGroup_updateParameters(
 func TestAccAWSDBProxyDefaultTargetGroup_disappears(
+func TestAccAWSDBProxyTarget_disappears(
 func TestAccAWSDBProxy_basic(
 func TestAccAWSDBProxy_disappears(
 func TestAccAWSDBSecurityGroup_basic(
@@ -1249,6 +1260,8 @@ func TestAccAwsFmsAdminAccount_basic(
 func TestAccAWSFsxLustreFileSystem_basic(
 func TestAccAWSFsxLustreFileSystem_disappears(
 func TestAccAWSFsxLustreFileSystem_automaticBackupRetentionDays(
+func TestAccAWSFsxLustreFileSystem_dailyAutomaticBackupStartTime(
+func TestAccAWSFsxLustreFileSystem_autoImportPolicy(
 func TestAccAWSFsxWindowsFileSystem_basic(
 func TestAccAWSFsxWindowsFileSystem_singleAz2(
 func TestAccAWSFsxWindowsFileSystem_storageTypeHdd(
@@ -1292,6 +1305,7 @@ func TestAccAWSGlueCatalogTable_disappears(
 func TestAccAWSGlueConnection_basic(
 func TestAccAWSGlueConnection_disappears(
 func TestAccAWSGlueCrawler_disappears(
+func TestAccAWSDataCatalogEncryptionSettings_basic(
 func TestAccAWSGlueJob_basic(
 func TestAccAWSGlueJob_nonOverridableArguments(
 func TestAccAWSGlueJob_disappears(

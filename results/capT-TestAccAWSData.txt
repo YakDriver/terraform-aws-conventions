@@ -66,3 +66,4 @@ func TestAccAWSDataSyncTask_DefaultSyncOptions_PreserveDevices(
 func TestAccAWSDataSyncTask_DefaultSyncOptions_Uid(
 func TestAccAWSDataSyncTask_DefaultSyncOptions_VerifyMode(
 func TestAccAWSDataSyncTask_Tags(
+func TestAccAWSDataCatalogEncryptionSettings_basic(

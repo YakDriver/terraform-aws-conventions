@@ -367,8 +367,10 @@ func testAccAppCookieStickinessPolicyConfigDestroy(rName string) string {
 func testAccAppmeshMeshConfigWithTags(rName string) string {
 func testAccAppmeshMeshConfigWithUpdateTags(rName string) string {
 func testAccAppmeshMeshConfigWithRemoveTags(rName string) string {
-func testAccAppmeshRouteConfigBase(meshName, vrName, vn1Name, vn2Name string) string {
+func testAccAppmeshRouteConfigBase(meshName, vrName, vrProtocol, vn1Name, vn2Name string) string {
 func testAccAppmeshRouteConfigWithTags(meshName, vrName, vn1Name, vn2Name, rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAppmeshVirtualNodeConfigRootCA(rName string) string {
+func testAccAppmeshVirtualNodeConfigPrivateCert(rName string) string {
 func testAccAWSAppsyncFunctionConfig(r1, r2, region string) string {
 func testAccAWSAppsyncFunctionConfigDescription(r1, r2, region, description string) string {
 func testAccAWSAppsyncFunctionConfigResponseMappingTemplate(r1, r2, region string) string {
@@ -548,6 +550,15 @@ func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSNSTopic(rName string) str
 func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSWFAction(rName string) string {
 func testAccAWSCloudWatchMetricAlarmConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSCloudWatchMetricAlarmConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCodeArtifactDomainPermissionsPolicyBasicConfig(rName string) string {
+func testAccAWSCodeArtifactDomainPermissionsPolicyOwnerConfig(rName string) string {
+func testAccAWSCodeArtifactDomainPermissionsPolicyUpdatedConfig(rName string) string {
+func testAccAWSCodeArtifactDomainBasicConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryBasicConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryOwnerConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryDescConfig(rName, desc string) string {
+func testAccAWSCodeArtifactRepositoryUpstreamsConfig1(rName string) string {
+func testAccAWSCodeArtifactRepositoryUpstreamsConfig2(rName string) string {
 func testAccAWSCodeBuildReportGroupBasicConfig(rName string) string {
 func testAccAWSCodeBuildReportGroupBasicConfigS3ExportBase(rName string) string {
 func testAccAWSCodeBuildReportGroupS3ExportConfig(rName string) string {
@@ -695,6 +706,7 @@ func testAccAWSDBParameterGroupIncludeDefaultConfig(n string) string {
 func testAccAWSDBParameterGroupUpdateParametersInitialConfig(n string) string {
 func testAccAWSDBParameterGroupUpdateParametersUpdatedConfig(n string) string {
 func testAccAWSDBProxyDefaultTargetGroupConfigBase(rName string) string {
+func testAccAWSDBProxyTargetConfigBase(rName string) string {
 func testAccAWSDBProxyConfigBase(rName string) string {
 func testAccAWSDBProxyConfig(rName string) string {
 func testAccAWSDBProxyConfigName(rName, nName string) string {
@@ -1033,9 +1045,11 @@ func testAccAwsFsxLustreFileSystemConfigSubnetIds1() string {
 func testAccAwsFsxLustreFileSystemConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAwsFsxLustreFileSystemConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsFsxLustreFileSystemConfigWeeklyMaintenanceStartTime(weeklyMaintenanceStartTime string) string {
+func testAccAwsFsxLustreFileSystemConfigDailyAutomaticBackupStartTime(dailyAutomaticBackupStartTime string) string {
 func testAccAwsFsxLustreFileSystemConfigAutomaticBackupRetentionDays(retention int) string {
 func testAccAwsFsxLustreFileSystemConfigKmsKeyId1() string {
 func testAccAwsFsxLustreFileSystemConfigKmsKeyId2() string {
+func testAccAwsFsxLustreFileSystemAutoImportPolicyConfig(rName, exportPrefix, policy string) string {
 func testAccAwsFsxWindowsFileSystemConfigBase() string {
 func testAccAwsFsxWindowsFileSystemConfigAutomaticBackupRetentionDays(automaticBackupRetentionDays int) string {
 func testAccAwsFsxWindowsFileSystemConfigCopyTagsToBackups(copyTagsToBackups bool) string {
@@ -1080,6 +1094,8 @@ func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoEmptyConfigurationBl
 func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationBlock(rName string) string {
 func testAccGlueCrawlerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSDataCatalogEncryptionSettingsEncryptedConfig(rName string) string {
+func testAccAWSDataCatalogEncryptionSettingsNonEncryptedConfig() string {
 func testAccAWSGlueJobnonOverridableArgumentsConfig(rName, jobBookmarkOption, jobLanguage string) string {
 func testAccAWSGlueJobConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueJobConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

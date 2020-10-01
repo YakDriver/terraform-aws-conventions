@@ -21,12 +21,15 @@ func resourceAwsASGScheduledActionRetrieve(
 func decodeBudgetsBudgetID(
 func validateCloudWatchEventPermissionStatementID(
 func findCloudWatchEventPermissionPolicyStatementByID(
+func decodeCodeArtifactDomainID(
+func decodeCodeArtifactRepositoryID(
 func buildEC2TagFilters(
 func buildEC2TagSet(
 func baseAWSCognitoIdentityPoolRolesAttachmentConfig(
 func decodeCognitoIdentityProviderID(
 func decodeCognitoResourceServerID(
 func resourceAwsConfigAggregateAuthorizationParseID(
+func resourceAwsDbProxyTargetParseID(
 func revokeAllNetworkACLEntries(
 func parseDSConditionalForwarderId(
 func dmsEndpointDocDBConfig(

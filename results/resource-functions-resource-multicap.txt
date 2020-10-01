@@ -2,6 +2,7 @@ func resourceAwsAPIGatewayV2ImportOpenAPI(
 func resourceAwsELBSticknessPolicyAssigned(
 func resourceAwsASGScheduledActionRetrieve(
 func resourceAwsConfigAggregateAuthorizationParseID(
+func resourceAwsDbProxyTargetParseID(
 func resourceAwsDocDBCluster(
 func resourceAwsDocDBClusterImport(
 func resourceAwsDocDBClusterCreate(

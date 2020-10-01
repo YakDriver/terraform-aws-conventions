@@ -69,8 +69,9 @@ func flattenMetricDimensions(
 func flattenPredefinedMetricSpecification(
 func getAwsAppautoscalingTarget(
 func init(
+func appmeshRouteHttpRouteSchema(
 func init(
-func appmeshVirtualNodeBackendHash(
+func appmeshVirtualNodeClientPolicySchema(
 func migrateAppmeshVirtualNodeStateV0toV1(
 func init(
 func migrateAppmeshVirtualRouterStateV0toV1(
@@ -289,6 +290,13 @@ func getAwsCloudWatchMetricAlarm(
 func _strArrPtrToList(
 func flattenDimensions(
 func migrateCloudWatchMetricAlarmStateV0toV1(
+func decodeCodeArtifactDomainID(
+func init(
+func expandCodeArtifactUpstreams(
+func flattenCodeArtifactUpstreams(
+func flattenCodeArtifactExternalConnections(
+func decodeCodeArtifactRepositoryID(
+func init(
 func expandProjectSecondaryArtifacts(
 func expandProjectArtifacts(
 func expandProjectArtifactData(
@@ -433,7 +441,6 @@ func waitForRdsEventSubscriptionDeletion(
 func init(
 func waitUntilAwsDbInstanceIsAvailableAfterUpdate(
 func waitUntilAwsDbInstanceIsDeleted(
-func buildCloudwatchLogsExportConfiguration(
 func diffCloudwatchLogsExportConfiguration(
 func rdsDescribeDbInstanceRole(
 func waitForRdsDbInstanceRoleAssociation(
@@ -959,6 +966,12 @@ func flattenGlueCatalogTargets(
 func flattenGlueDynamoDBTargets(
 func flattenGlueJdbcTargets(
 func init(
+func expandGlueDataCatalogEncryptionSettings(
+func flattenGlueDataCatalogEncryptionSettings(
+func expandGlueDataCatalogConnectionPasswordEncryption(
+func flattenGlueDataCatalogConnectionPasswordEncryption(
+func expandGlueDataCatalogEncryptionAtRest(
+func flattenGlueDataCatalogEncryptionAtRest(
 func deleteGlueJob(
 func expandGlueExecutionProperty(
 func expandGlueJobCommand(

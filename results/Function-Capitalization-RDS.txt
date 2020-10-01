@@ -78,7 +78,8 @@ func TestAccAWSRDSCluster_generatedName(
 func TestAccAWSRDSCluster_takeFinalSnapshot(
 func TestAccAWSRDSCluster_missingUserNameCausesError(
 func TestAccAWSRDSCluster_Tags(
-func TestAccAWSRDSCluster_EnabledCloudwatchLogsExports(
+func TestAccAWSRDSCluster_EnabledCloudwatchLogsExports_MySQL(
+func TestAccAWSRDSCluster_EnabledCloudwatchLogsExports_Postgresql(
 func TestAccAWSRDSCluster_updateIamRoles(
 func TestAccAWSRDSCluster_kmsKey(
 func TestAccAWSRDSCluster_encrypted(
