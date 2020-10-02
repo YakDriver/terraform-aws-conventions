@@ -197,6 +197,8 @@ func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(lbName string
 func testAccDataSourceAWSLBConfigBasic(lbName string) string {
 func testAccDataSourceAWSLBConfigOutpost(lbName string) string {
 func testAccDataSourceAWSLBConfigBackardsCompatibility(albName string) string {
+func testAccDataSourceAwsLexBotConfig_basic() string {
+func testAccDataSourceAwsLexBotConfig_withVersion() string {
 func testAccDataSourceAwsLexIntentConfig_basic() string {
 func testAccDataSourceAwsLexIntentConfig_withVersion() string {
 func testAccDataSourceAwsLexSlotTypeConfig_basic() string {
@@ -2332,6 +2334,11 @@ func testAccAWSGlueMLTransformConfigTags2(rName, tagKey1, tagValue1, tagKey2, ta
 func testAccAWSGlueMLTransformConfigTimeout(rName string, timeout int) string {
 func testAccAWSGlueMLTransformConfigWorkerType(rName, workerType string, numOfWorkers int) string {
 func testAccAWSGlueMLTransformConfigMaxCapacity(rName string, maxCapacity float64) string {
+func testAccGluePartitionConfigBase(rName string) string {
+func testAccGluePartitionBasicConfig(rName, parValue string) string {
+func testAccGluePartitionParametersConfig1(rName, parValue, key1, value1 string) string {
+func testAccGluePartitionParametersConfig2(rName, parValue, key1, value1, key2, value2 string) string {
+func testAccGluePartitionMultiplePartValueConfig(rName, parValue, parValue2 string) string {
 func testAccAWSGlueSecurityConfigurationConfig_Basic(rName string) string {
 func testAccAWSGlueSecurityConfigurationConfig_CloudWatchEncryption_CloudWatchEncryptionMode_SSEKMS(rName string) string {
 func testAccAWSGlueSecurityConfigurationConfig_JobBookmarksEncryption_JobBookmarksEncryptionMode_CSEKMS(rName string) string {
@@ -2912,6 +2919,22 @@ func testAccAWSLBConfigNLBAccessLogs(enabled bool, lbName, bucketName, bucketPre
 func testAccAWSLBConfigNLBAccessLogsNoBlocks(lbName, bucketName string) string {
 func testAccAWSLBConfig_nosg(lbName string) string {
 func testAccAWSLBConfig_updateSecurityGroups(lbName string) string {
+func testAccAwsLexBotConfig_intent(rName string) string {
+func testAccAwsLexBotConfig_intentMultiple(rName string) string {
+func testAccAwsLexBotConfig_basic(rName string) string {
+func testAccAwsLexBotConfig_createVersion(rName string) string {
+func testAccAwsLexBotConfig_abortStatement(rName string) string {
+func testAccAwsLexBotConfig_abortStatementUpdate(rName string) string {
+func testAccAwsLexBotConfig_clarificationPrompt(rName string) string {
+func testAccAwsLexBotConfig_clarificationPromptUpdate(rName string) string {
+func testAccAwsLexBotConfig_childDirectedUpdate(rName string) string {
+func testAccAwsLexBotConfig_descriptionUpdate(rName string) string {
+func testAccAwsLexBotConfig_detectSentimentUpdate(rName string) string {
+func testAccAwsLexBotConfig_enableModelImprovementsUpdate(rName string) string {
+func testAccAwsLexBotConfig_idleSessionTtlInSecondsUpdate(rName string) string {
+func testAccAwsLexBotConfig_intentsUpdate(rName string) string {
+func testAccAwsLexBotConfig_localeUpdate(rName string) string {
+func testAccAwsLexBotConfig_voiceIdUpdate(rName string) string {
 func testAccAwsLexIntentConfig_lambda(rName string) string {
 func testAccAwsLexIntentConfig_basic(rName string) string {
 func testAccAwsLexIntentConfig_createVersion(rName string) string {

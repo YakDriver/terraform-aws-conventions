@@ -158,6 +158,9 @@ func expandGlueMLTransformParameters(
 func flattenGlueMLTransformParameters(
 func expandGlueMLTransformFindMatchesParameters(
 func flattenGlueMLTransformFindMatchesParameters(
+func TestAccAWSGluePartition_parameters(
+func testAccGluePartitionParametersConfig1(
+func testAccGluePartitionParametersConfig2(
 func extractProcessorParameters(
 func extractProcessorParameter(
 func resourceAwsNeptuneClusterParameterGroup(

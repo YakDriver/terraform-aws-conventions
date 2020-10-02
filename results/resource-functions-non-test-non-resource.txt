@@ -989,6 +989,7 @@ func expandGlueMLTransformFindMatchesParameters(
 func flattenGlueMLTransformFindMatchesParameters(
 func flattenGlueMLTransformSchemaColumns(
 func init(
+func expandGluePartitionInput(
 func deleteGlueSecurityConfiguration(
 func expandGlueCloudWatchEncryption(
 func expandGlueEncryptionConfiguration(
@@ -1410,6 +1411,9 @@ func flattenAwsLbTargetGroupResource(
 func flattenAwsLbTargetGroupStickiness(
 func init(
 func init(
+func getLatestLexBotVersion(
+func flattenLexIntents(
+func expandLexIntents(
 func getLatestLexIntentVersion(
 func flattenLexCodeHook(
 func expandLexCodeHook(

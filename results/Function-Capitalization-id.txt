@@ -20,6 +20,8 @@ func TestAccAWSLBListenerRule_oidc(
 func testAccAWSLBListenerRuleConfig_oidc(
 func TestAccAWSLBListener_oidc(
 func testAccAWSLBListenerConfig_oidc(
+func TestAccAwsLexBot_idleSessionTtlInSeconds(
+func testAccAwsLexBotConfig_idleSessionTtlInSecondsUpdate(
 func idCollapseHash(
 func idHash(
 func TestAccAWSStorageGatewayGateway_bandwidthUpload(

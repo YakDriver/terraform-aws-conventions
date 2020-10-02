@@ -1110,6 +1110,11 @@ func testAccAWSGlueMLTransformConfigTags2(rName, tagKey1, tagValue1, tagKey2, ta
 func testAccAWSGlueMLTransformConfigTimeout(rName string, timeout int) string {
 func testAccAWSGlueMLTransformConfigWorkerType(rName, workerType string, numOfWorkers int) string {
 func testAccAWSGlueMLTransformConfigMaxCapacity(rName string, maxCapacity float64) string {
+func testAccGluePartitionConfigBase(rName string) string {
+func testAccGluePartitionBasicConfig(rName, parValue string) string {
+func testAccGluePartitionParametersConfig1(rName, parValue, key1, value1 string) string {
+func testAccGluePartitionParametersConfig2(rName, parValue, key1, value1, key2, value2 string) string {
+func testAccGluePartitionMultiplePartValueConfig(rName, parValue, parValue2 string) string {
 func testAccAWSGlueTriggerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueTriggerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlueUserDefinedFunctionBasicConfig(rName string, name string) string {

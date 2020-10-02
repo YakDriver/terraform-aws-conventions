@@ -73,6 +73,7 @@ func TestAccDataSourceAwsKmsKey_basic(
 func TestAccDataSourceAwsLambdaInvocation_basic(
 func TestAccDataSourceAwsLambdaInvocation_qualifier(
 func TestAccDataSourceAwsLambdaInvocation_complex(
+func TestAccDataSourceAwsLexBot_basic(
 func TestAccDataSourceAwsLexIntent_basic(
 func TestAccDataSourceAwsLexIntent_withVersion(
 func TestAccDataSourceAwsLexSlotType_basic(

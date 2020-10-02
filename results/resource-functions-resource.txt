@@ -1488,6 +1488,11 @@ func resourceAwsGlueMLTransformCreate(
 func resourceAwsGlueMLTransformRead(
 func resourceAwsGlueMLTransformUpdate(
 func resourceAwsGlueMLTransformDelete(
+func resourceAwsGluePartition(
+func resourceAwsGluePartitionCreate(
+func resourceAwsGluePartitionRead(
+func resourceAwsGluePartitionUpdate(
+func resourceAwsGluePartitionDelete(
 func resourceAwsGlueSecurityConfiguration(
 func resourceAwsGlueSecurityConfigurationCreate(
 func resourceAwsGlueSecurityConfigurationRead(
@@ -1876,6 +1881,11 @@ func resourceAwsLbTargetGroupRead(
 func resourceAwsLbTargetGroupUpdate(
 func resourceAwsLbTargetGroupDelete(
 func resourceAwsLbTargetGroupCustomizeDiff(
+func resourceAwsLexBot(
+func resourceAwsLexBotCreate(
+func resourceAwsLexBotRead(
+func resourceAwsLexBotUpdate(
+func resourceAwsLexBotDelete(
 func resourceAwsLexIntent(
 func resourceAwsLexIntentCreate(
 func resourceAwsLexIntentRead(

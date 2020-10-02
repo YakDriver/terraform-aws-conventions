@@ -410,6 +410,8 @@ func TestAccAWSGlueJob_Description(
 func testAccAWSGlueJobConfig_Description(
 func TestAccAWSGlueMLTransform_description(
 func testAccAWSGlueMLTransformConfigDescription(
+func TestAccAWSGluePartition_multipleValues(
+func testAccGluePartitionMultiplePartValueConfig(
 func TestAccAWSGlueTrigger_Description(
 func testAccAWSGlueTriggerConfig_Description(
 func TestAccAWSGlueWorkflow_Description(
@@ -507,6 +509,9 @@ func testAccAWSLBListenerRuleConfig_conditionMultiple(
 func testAccAWSLBListenerRuleConfig_conditionMultiple_updated(
 func TestAccAWSLBTargetGroupAttachment_ipAddress(
 func TestAccAWSLB_NLB_privateipv4address(
+func TestAccAwsLexBot_description(
+func testAccAwsLexBotConfig_intentMultiple(
+func testAccAwsLexBotConfig_descriptionUpdate(
 func TestAccAwsLexSlotType_description(
 func testAccAwsLexSlotTypeUpdateConfig_description(
 func TestAccAWSMediaConvertQueue_withDescription(
