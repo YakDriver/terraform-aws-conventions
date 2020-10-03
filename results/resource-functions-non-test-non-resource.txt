@@ -1754,6 +1754,7 @@ func validateDeliverySamplingRate(
 func updateAwsSnsTopicAttribute(
 func getAccountIdFromSnsTopicArn(
 func buildDefaultSnsTopicPolicy(
+func getResourceAttributes(
 func subscribeToSNSTopic(
 func findSubscriptionByNonID(
 func subscriptionHasPendingConfirmation(

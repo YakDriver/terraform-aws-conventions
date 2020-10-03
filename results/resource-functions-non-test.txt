@@ -4432,6 +4432,7 @@ func resourceAwsSnsTopicSubscriptionCreate(
 func resourceAwsSnsTopicSubscriptionUpdate(
 func resourceAwsSnsTopicSubscriptionRead(
 func resourceAwsSnsTopicSubscriptionDelete(
+func getResourceAttributes(
 func subscribeToSNSTopic(
 func findSubscriptionByNonID(
 func subscriptionHasPendingConfirmation(
