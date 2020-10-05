@@ -1,6 +1,6 @@
 Analysis Tallies
 4482	All Functions:Exported
-12891	All Functions:Non-Exported
+12890	All Functions:Non-Exported
 8689	All Functions:Multicaps
 3503	All Functions:Non-AWS Multicaps
 7672	All Functions:Uppercase AWS
@@ -123,7 +123,7 @@ Analysis Tallies
 4	Function Capitalization:iot
 142	Function Capitalization:Iot
 4	Function Capitalization:IOT
-871	Function Capitalization:ip
+870	Function Capitalization:ip
 171	Function Capitalization:Ip
 192	Function Capitalization:IP
 1	Function Capitalization:json

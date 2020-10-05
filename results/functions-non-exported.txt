@@ -165,7 +165,6 @@ func dataSourceAwsArnRead(
 func testAccDataSourceAwsArn(
 func dataSourceAwsAutoscalingGroup(
 func dataSourceAwsAutoscalingGroupRead(
-func groupDescriptionAttributes(
 func dataSourceAwsAutoscalingGroups(
 func dataSourceAwsAutoscalingGroupsRead(
 func expandAsgTagFilters(

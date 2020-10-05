@@ -1,6 +1,5 @@
 func TestAccAWSAcmCertificateDataSource_multipleIssued(
 func amiDescriptionAttributes(
-func groupDescriptionAttributes(
 func dbSnapshotDescriptionAttributes(
 func snapshotDescriptionAttributes(
 func volumeDescriptionAttributes(
