@@ -1881,6 +1881,12 @@ func resourceAwsLbTargetGroupRead(
 func resourceAwsLbTargetGroupUpdate(
 func resourceAwsLbTargetGroupDelete(
 func resourceAwsLbTargetGroupCustomizeDiff(
+func resourceAwsLexBotAlias(
+func resourceAwsLexBotAliasCreate(
+func resourceAwsLexBotAliasRead(
+func resourceAwsLexBotAliasUpdate(
+func resourceAwsLexBotAliasDelete(
+func resourceAwsLexBotAliasImport(
 func resourceAwsLexBot(
 func resourceAwsLexBotCreate(
 func resourceAwsLexBotRead(

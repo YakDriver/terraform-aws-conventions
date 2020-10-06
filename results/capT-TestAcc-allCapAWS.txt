@@ -2938,6 +2938,8 @@ func TestAccAWSS3BucketObject_ObjectLockLegalHoldStartWithNone(
 func TestAccAWSS3BucketObject_ObjectLockLegalHoldStartWithOn(
 func TestAccAWSS3BucketObject_ObjectLockRetentionStartWithNone(
 func TestAccAWSS3BucketObject_ObjectLockRetentionStartWithSet(
+func TestAccAWSS3BucketObject_defaultBucketSSE(
+func TestAccAWSS3BucketObject_ignoreTags(
 func TestAccAWSS3BucketPolicy_basic(
 func TestAccAWSS3BucketPolicy_policyUpdate(
 func TestAccAWSS3BucketPublicAccessBlock_basic(
@@ -2951,6 +2953,7 @@ func TestAccAWSS3Bucket_basic(
 func TestAccAWSS3Bucket_Bucket_EmptyString(
 func TestAccAWSS3Bucket_tagsWithNoSystemTags(
 func TestAccAWSS3Bucket_tagsWithSystemTags(
+func TestAccAWSS3Bucket_ignoreTags(
 func TestAccAWSS3MultiBucket_withTags(
 func TestAccAWSS3Bucket_namePrefix(
 func TestAccAWSS3Bucket_generatedName(

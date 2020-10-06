@@ -1718,8 +1718,14 @@ func TestAccAWSLB_updatedSubnets(
 func TestAccAWSLB_updatedIpAddressType(
 func TestAccAWSLB_noSecurityGroup(
 func TestAccAWSLB_networkLoadbalancer_subnet_change(
+func TestAccAwsLexBotAlias_basic(
+func TestAccAwsLexBotAlias_conversationLogsText(
+func TestAccAwsLexBotAlias_conversationLogsAudio(
+func TestAccAwsLexBotAlias_conversationLogsBoth(
+func TestAccAwsLexBotAlias_description(
+func TestAccAwsLexBotAlias_disappears(
 func TestAccAwsLexBot_basic(
-func TestAccAwsLexBot_createVersion_serial(
+func TestAccAwsLexBot_version_serial(
 func TestAccAwsLexBot_abortStatement(
 func TestAccAwsLexBot_clarificationPrompt(
 func TestAccAwsLexBot_childDirected(
@@ -2103,6 +2109,8 @@ func TestAccAWSS3BucketObject_metadata(
 func TestAccAWSS3BucketObject_storageClass(
 func TestAccAWSS3BucketObject_tags(
 func TestAccAWSS3BucketObject_tagsLeadingSlash(
+func TestAccAWSS3BucketObject_defaultBucketSSE(
+func TestAccAWSS3BucketObject_ignoreTags(
 func TestAccAWSS3BucketPolicy_basic(
 func TestAccAWSS3BucketPolicy_policyUpdate(
 func TestAccAWSS3BucketPublicAccessBlock_basic(
@@ -2111,6 +2119,7 @@ func TestAccAWSS3BucketPublicAccessBlock_bucketDisappears(
 func TestAccAWSS3Bucket_basic(
 func TestAccAWSS3Bucket_tagsWithNoSystemTags(
 func TestAccAWSS3Bucket_tagsWithSystemTags(
+func TestAccAWSS3Bucket_ignoreTags(
 func TestAccAWSS3MultiBucket_withTags(
 func TestAccAWSS3Bucket_namePrefix(
 func TestAccAWSS3Bucket_generatedName(

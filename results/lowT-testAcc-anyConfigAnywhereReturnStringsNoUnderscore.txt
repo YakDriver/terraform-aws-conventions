@@ -188,6 +188,7 @@ func testAccAWSDataSourceS3ObjectsConfigEncoded(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigMaxKeys(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigStartAfter(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigOwners(randInt int) string {
+func testAccAWSDataSourceS3ObjectConfigSingleSlashAsKey(rName string) string {
 func testAccAWSDataSourceS3BucketWebsiteConfig(bucketName string) string {
 func testAccDataSourceAwsSecurityGroupConfig(rInt int) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(serviceCode, quotaCode string) string {

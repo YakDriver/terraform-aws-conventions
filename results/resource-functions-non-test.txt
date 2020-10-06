@@ -3267,6 +3267,16 @@ func flattenAwsLbTargetGroupStickiness(
 func resourceAwsLbTargetGroupCustomizeDiff(
 func init(
 func init(
+func resourceAwsLexBotAlias(
+func resourceAwsLexBotAliasCreate(
+func resourceAwsLexBotAliasRead(
+func resourceAwsLexBotAliasUpdate(
+func resourceAwsLexBotAliasDelete(
+func resourceAwsLexBotAliasImport(
+func flattenLexConversationLogs(
+func expandLexConversationLogs(
+func flattenLexLogSettings(
+func expandLexLogSettings(
 func resourceAwsLexBot(
 func resourceAwsLexBotCreate(
 func resourceAwsLexBotRead(

@@ -508,6 +508,8 @@ func testAccAWSLBListenerRuleConfig_conditionMultiple(
 func testAccAWSLBListenerRuleConfig_conditionMultiple_updated(
 func TestAccAWSLBTargetGroupAttachment_ipAddress(
 func TestAccAWSLB_NLB_privateipv4address(
+func TestAccAwsLexBotAlias_description(
+func testAccAwsLexBotAliasConfig_descriptionUpdate(
 func TestAccAwsLexBot_description(
 func testAccAwsLexBotConfig_intentMultiple(
 func testAccAwsLexBotConfig_descriptionUpdate(

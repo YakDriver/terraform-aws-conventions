@@ -197,6 +197,7 @@ func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(lbName string
 func testAccDataSourceAWSLBConfigBasic(lbName string) string {
 func testAccDataSourceAWSLBConfigOutpost(lbName string) string {
 func testAccDataSourceAWSLBConfigBackardsCompatibility(albName string) string {
+func testAccDataSourceAwsLexBotAliasConfig_basic() string {
 func testAccDataSourceAwsLexBotConfig_basic() string {
 func testAccDataSourceAwsLexBotConfig_withVersion() string {
 func testAccDataSourceAwsLexIntentConfig_basic() string {
@@ -297,6 +298,7 @@ func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(randInt int) string {
 func testAccAWSDataSourceS3ObjectConfig_allParams(randInt int) string {
 func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOff(randInt int) string {
 func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOn(randInt int, retainUntilDate string) string {
+func testAccAWSDataSourceS3ObjectConfigSingleSlashAsKey(rName string) string {
 func testAccAWSDataSourceS3BucketConfig_basic(bucketName string) string {
 func testAccAWSDataSourceS3BucketWebsiteConfig(bucketName string) string {
 func testAccDataSourceAwsSecretsManagerSecretRotationConfig_Default(rName string, automaticallyAfterDays int) string {
@@ -2919,6 +2921,12 @@ func testAccAWSLBConfigNLBAccessLogs(enabled bool, lbName, bucketName, bucketPre
 func testAccAWSLBConfigNLBAccessLogsNoBlocks(lbName, bucketName string) string {
 func testAccAWSLBConfig_nosg(lbName string) string {
 func testAccAWSLBConfig_updateSecurityGroups(lbName string) string {
+func testAccAwsLexBotAliasConfig_basic(rName string) string {
+func testAccAwsLexBotAliasConfig_botVersionUpdate(rName string) string {
+func testAccAwsLexBotAliasConfig_conversationLogsText(rName string) string {
+func testAccAwsLexBotAliasConfig_conversationLogsAudio(rName string) string {
+func testAccAwsLexBotAliasConfig_conversationLogsBoth(rName string) string {
+func testAccAwsLexBotAliasConfig_descriptionUpdate(rName string) string {
 func testAccAwsLexBotConfig_intent(rName string) string {
 func testAccAwsLexBotConfig_intentMultiple(rName string) string {
 func testAccAwsLexBotConfig_basic(rName string) string {
@@ -3486,6 +3494,7 @@ func testAccAWSS3BucketObjectConfig_withObjectLockLegalHold(randInt int, content
 func testAccAWSS3BucketObjectConfig_noObjectLockRetention(randInt int, content string) string {
 func testAccAWSS3BucketObjectConfig_withObjectLockRetention(randInt int, content, retainUntilDate string) string {
 func testAccAWSS3BucketObjectConfig_NonVersioned(randInt int, source string) string {
+func testAccAWSS3BucketObjectConfig_defaultBucketSSE(randInt int, content string) string {
 func testAccAWSS3BucketPolicyConfig(bucketName string) string {
 func testAccAWSS3BucketPolicyConfig_updated(bucketName string) string {
 func testAccAWSS3BucketPublicAccessBlockConfig(bucketName, blockPublicAcls, blockPublicPolicy, ignorePublicAcls, restrictPublicBuckets string) string {

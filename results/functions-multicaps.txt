@@ -446,6 +446,7 @@ func TestAccDataSourceAWSS3BucketObject_ObjectLockLegalHoldOff(
 func TestAccDataSourceAWSS3BucketObject_ObjectLockLegalHoldOn(
 func TestAccDataSourceAWSS3BucketObject_LeadingSlash(
 func TestAccDataSourceAWSS3BucketObject_MultipleSlashes(
+func TestAccDataSourceAWSS3BucketObject_SingleSlashAsKey(
 func testAccAWSDataSourceS3ObjectConfig_basic(
 func testAccAWSDataSourceS3ObjectConfig_basicViaAccessPoint(
 func testAccAWSDataSourceS3ObjectConfig_readableBody(
@@ -455,6 +456,7 @@ func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOff(
 func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOn(
 func testAccAWSDataSourceS3ObjectConfig_leadingSlash(
 func testAccAWSDataSourceS3ObjectConfig_multipleSlashes(
+func testAccAWSDataSourceS3ObjectConfigSingleSlashAsKey(
 func testAccAWSDataSourceS3BucketConfig_basic(
 func testAccAWSDataSourceS3BucketWebsiteConfig(
 func TestAccDataSourceAwsSecretsManagerSecret_ARN(
@@ -6873,6 +6875,8 @@ func TestAccAWSS3BucketObject_ObjectLockLegalHoldStartWithNone(
 func TestAccAWSS3BucketObject_ObjectLockLegalHoldStartWithOn(
 func TestAccAWSS3BucketObject_ObjectLockRetentionStartWithNone(
 func TestAccAWSS3BucketObject_ObjectLockRetentionStartWithSet(
+func TestAccAWSS3BucketObject_defaultBucketSSE(
+func TestAccAWSS3BucketObject_ignoreTags(
 func testAccCheckAWSS3BucketObjectVersionIdDiffers(
 func testAccCheckAWSS3BucketObjectVersionIdEquals(
 func testAccCheckAWSS3BucketObjectDestroy(
@@ -6882,6 +6886,8 @@ func testAccCheckAWSS3BucketObjectAcl(
 func testAccCheckAWSS3BucketObjectStorageClass(
 func testAccCheckAWSS3BucketObjectSSE(
 func testAccAWSS3BucketObjectCreateTempFile(
+func testAccCheckAWSS3BucketObjectUpdateTags(
+func testAccCheckAWSS3BucketObjectCheckTags(
 func testAccAWSS3BucketObjectConfigBasic(
 func testAccAWSS3BucketObjectConfigEmpty(
 func testAccAWSS3BucketObjectConfigSource(
@@ -6904,6 +6910,7 @@ func testAccAWSS3BucketObjectConfig_withObjectLockLegalHold(
 func testAccAWSS3BucketObjectConfig_noObjectLockRetention(
 func testAccAWSS3BucketObjectConfig_withObjectLockRetention(
 func testAccAWSS3BucketObjectConfig_NonVersioned(
+func testAccAWSS3BucketObjectConfig_defaultBucketSSE(
 func TestAccAWSS3BucketPolicy_basic(
 func TestAccAWSS3BucketPolicy_policyUpdate(
 func testAccCheckAWSS3BucketHasPolicy(
@@ -6923,6 +6930,7 @@ func TestAccAWSS3Bucket_basic(
 func TestAccAWSS3Bucket_Bucket_EmptyString(
 func TestAccAWSS3Bucket_tagsWithNoSystemTags(
 func TestAccAWSS3Bucket_tagsWithSystemTags(
+func TestAccAWSS3Bucket_ignoreTags(
 func TestAccAWSS3MultiBucket_withTags(
 func TestAccAWSS3Bucket_namePrefix(
 func TestAccAWSS3Bucket_generatedName(
@@ -6980,6 +6988,8 @@ func testAccCheckAWSS3BucketLogging(
 func testAccCheckAWSS3BucketReplicationRules(
 func testAccCheckAWSS3BucketUpdateGrantSingle(
 func testAccCheckAWSS3BucketUpdateGrantMulti(
+func testAccCheckAWSS3BucketUpdateTags(
+func testAccCheckAWSS3BucketCheckTags(
 func testAccAWSS3BucketPolicy(
 func testAccAWSS3BucketConfig_Basic(
 func testAccAWSS3BucketConfig_withNoTags(

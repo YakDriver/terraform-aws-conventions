@@ -267,6 +267,8 @@ func TestAccDataSourceAWSLBListener_https(
 func TestAccDataSourceAWSALBTargetGroup_basic(
 func TestAccDataSourceAWSLB_basic(
 func TestAccDataSourceAWSLB_outpost(
+func testAccDataSourceAwsLexBotAlias_basic(
+func testAccDataSourceAwsLexBotAliasConfig_basic(
 func TestAccDataSourceAwsLexBot_basic(
 func testAccDataSourceAwsLexBot_withVersion(
 func testAccDataSourceAwsLexBotConfig_basic(
@@ -2781,8 +2783,21 @@ func testAccAWSLBConfig_namePrefix(
 func testAccAWSLBConfig_updatedTags(
 func testAccAWSLBConfig_nosg(
 func testAccAWSLBConfig_updateSecurityGroups(
+func TestAccAwsLexBotAlias_basic(
+func testAccAwsLexBotAlias_botVersion(
+func TestAccAwsLexBotAlias_conversationLogsText(
+func TestAccAwsLexBotAlias_conversationLogsAudio(
+func TestAccAwsLexBotAlias_conversationLogsBoth(
+func TestAccAwsLexBotAlias_description(
+func TestAccAwsLexBotAlias_disappears(
+func testAccAwsLexBotAliasConfig_basic(
+func testAccAwsLexBotAliasConfig_botVersionUpdate(
+func testAccAwsLexBotAliasConfig_conversationLogsText(
+func testAccAwsLexBotAliasConfig_conversationLogsAudio(
+func testAccAwsLexBotAliasConfig_conversationLogsBoth(
+func testAccAwsLexBotAliasConfig_descriptionUpdate(
 func TestAccAwsLexBot_basic(
-func TestAccAwsLexBot_createVersion_serial(
+func TestAccAwsLexBot_version_serial(
 func testAccAwsLexBot_createVersion(
 func TestAccAwsLexBot_abortStatement(
 func TestAccAwsLexBot_clarificationPrompt(
@@ -3349,6 +3364,8 @@ func TestAccAWSS3BucketObject_metadata(
 func TestAccAWSS3BucketObject_storageClass(
 func TestAccAWSS3BucketObject_tags(
 func TestAccAWSS3BucketObject_tagsLeadingSlash(
+func TestAccAWSS3BucketObject_defaultBucketSSE(
+func TestAccAWSS3BucketObject_ignoreTags(
 func testAccAWSS3BucketObjectConfig_withContentCharacteristics(
 func testAccAWSS3BucketObjectConfig_updateable(
 func testAccAWSS3BucketObjectConfig_updateableViaAccessPoint(
@@ -3364,6 +3381,7 @@ func testAccAWSS3BucketObjectConfig_noObjectLockLegalHold(
 func testAccAWSS3BucketObjectConfig_withObjectLockLegalHold(
 func testAccAWSS3BucketObjectConfig_noObjectLockRetention(
 func testAccAWSS3BucketObjectConfig_withObjectLockRetention(
+func testAccAWSS3BucketObjectConfig_defaultBucketSSE(
 func TestAccAWSS3BucketPolicy_basic(
 func TestAccAWSS3BucketPolicy_policyUpdate(
 func testAccAWSS3BucketPolicyConfig_updated(
@@ -3373,6 +3391,7 @@ func TestAccAWSS3BucketPublicAccessBlock_bucketDisappears(
 func TestAccAWSS3Bucket_basic(
 func TestAccAWSS3Bucket_tagsWithNoSystemTags(
 func TestAccAWSS3Bucket_tagsWithSystemTags(
+func TestAccAWSS3Bucket_ignoreTags(
 func TestAccAWSS3MultiBucket_withTags(
 func TestAccAWSS3Bucket_namePrefix(
 func TestAccAWSS3Bucket_generatedName(

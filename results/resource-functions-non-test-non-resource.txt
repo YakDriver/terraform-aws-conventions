@@ -1411,6 +1411,10 @@ func flattenAwsLbTargetGroupResource(
 func flattenAwsLbTargetGroupStickiness(
 func init(
 func init(
+func flattenLexConversationLogs(
+func expandLexConversationLogs(
+func flattenLexLogSettings(
+func expandLexLogSettings(
 func getLatestLexBotVersion(
 func flattenLexIntents(
 func expandLexIntents(
