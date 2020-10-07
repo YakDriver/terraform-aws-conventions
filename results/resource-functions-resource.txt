@@ -2161,6 +2161,7 @@ func resourceAwsOrganizationsPolicyCreate(
 func resourceAwsOrganizationsPolicyRead(
 func resourceAwsOrganizationsPolicyUpdate(
 func resourceAwsOrganizationsPolicyDelete(
+func resourceAwsOrganizationsPolicyImport(
 func resourceAwsPinpointADMChannel(
 func resourceAwsPinpointADMChannelUpsert(
 func resourceAwsPinpointADMChannelRead(

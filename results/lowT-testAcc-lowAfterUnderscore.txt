@@ -1046,6 +1046,7 @@ func testAccAwsOrganizationsPolicy_basic(
 func testAccAwsOrganizationsPolicy_concurrent(
 func testAccAwsOrganizationsPolicy_description(
 func testAccAwsOrganizationsPolicy_tags(
+func testAccAwsOrganizationsPolicy_disappears(
 func testAccAwsOrganizationsPolicy_type_AI_OPT_OUT(
 func testAccAwsOrganizationsPolicy_type_Backup(
 func testAccAwsOrganizationsPolicy_type_SCP(

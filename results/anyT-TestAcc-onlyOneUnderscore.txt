@@ -3602,6 +3602,8 @@ func testAccAwsOrganizationsPolicy_basic(
 func testAccAwsOrganizationsPolicy_concurrent(
 func testAccAwsOrganizationsPolicy_description(
 func testAccAwsOrganizationsPolicy_tags(
+func testAccAwsOrganizationsPolicy_disappears(
+func testAccAwsOrganizationsPolicy_ImportAwsManagedPolicy(
 func testAccAwsOrganizationsPolicyConfig_Description(
 func testAccAwsOrganizationsPolicyConfig_TagA(
 func testAccAwsOrganizationsPolicyConfig_TagB(
