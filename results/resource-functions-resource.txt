@@ -378,6 +378,7 @@ func resourceAwsBatchComputeEnvironmentDeleteRefreshFunc(
 func resourceAwsBatchJobDefinition(
 func resourceAwsBatchJobDefinitionCreate(
 func resourceAwsBatchJobDefinitionRead(
+func resourceAwsBatchJobDefinitionUpdate(
 func resourceAwsBatchJobDefinitionDelete(
 func resourceAwsBatchJobQueue(
 func resourceAwsBatchJobQueueCreate(
@@ -2483,6 +2484,11 @@ func resourceAwsS3BucketObjectRead(
 func resourceAwsS3BucketObjectUpdate(
 func resourceAwsS3BucketObjectDelete(
 func resourceAwsS3BucketObjectCustomizeDiff(
+func resourceAwsS3BucketOwnershipControls(
+func resourceAwsS3BucketOwnershipControlsCreate(
+func resourceAwsS3BucketOwnershipControlsRead(
+func resourceAwsS3BucketOwnershipControlsUpdate(
+func resourceAwsS3BucketOwnershipControlsDelete(
 func resourceAwsS3BucketPolicy(
 func resourceAwsS3BucketPolicyPut(
 func resourceAwsS3BucketPolicyRead(

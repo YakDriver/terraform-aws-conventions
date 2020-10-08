@@ -873,6 +873,7 @@ func fetchEMRInstanceGroup(
 func readEmrEBSConfig(
 func marshalWithoutNil(
 func waitForEmrInstanceGroupStateRunning(
+func flattenEmrComputeLimits(
 func init(
 func associateFmsAdminAccountRefreshFunc(
 func waitForFmsAdminAccountDeletion(
@@ -1674,6 +1675,10 @@ func deleteS3ObjectVersion(
 func expandS3ObjectLockRetainUntilDate(
 func flattenS3ObjectLockRetainUntilDate(
 func init(
+func expandS3OwnershipControlsRules(
+func expandS3OwnershipControlsRule(
+func flattenS3OwnershipControlsRules(
+func flattenS3OwnershipControlsRule(
 func init(
 func expandSagemakerProductionVariants(
 func flattenProductionVariants(

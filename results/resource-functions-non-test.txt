@@ -551,6 +551,7 @@ func init(
 func resourceAwsBatchJobDefinition(
 func resourceAwsBatchJobDefinitionCreate(
 func resourceAwsBatchJobDefinitionRead(
+func resourceAwsBatchJobDefinitionUpdate(
 func resourceAwsBatchJobDefinitionDelete(
 func getJobDefinition(
 func validateAwsBatchJobContainerProperties(
@@ -2221,6 +2222,7 @@ func resourceAwsEMRManagedScalingPolicy(
 func resourceAwsEMRManagedScalingPolicyCreate(
 func resourceAwsEMRManagedScalingPolicyRead(
 func resourceAwsEMRManagedScalingPolicyDelete(
+func flattenEmrComputeLimits(
 func resourceAwsEMRSecurityConfiguration(
 func resourceAwsEmrSecurityConfigurationCreate(
 func resourceAwsEmrSecurityConfigurationRead(
@@ -4132,6 +4134,15 @@ func deleteS3ObjectVersion(
 func expandS3ObjectLockRetainUntilDate(
 func flattenS3ObjectLockRetainUntilDate(
 func init(
+func resourceAwsS3BucketOwnershipControls(
+func resourceAwsS3BucketOwnershipControlsCreate(
+func resourceAwsS3BucketOwnershipControlsRead(
+func resourceAwsS3BucketOwnershipControlsUpdate(
+func resourceAwsS3BucketOwnershipControlsDelete(
+func expandS3OwnershipControlsRules(
+func expandS3OwnershipControlsRule(
+func flattenS3OwnershipControlsRules(
+func flattenS3OwnershipControlsRule(
 func resourceAwsS3BucketPolicy(
 func resourceAwsS3BucketPolicyPut(
 func resourceAwsS3BucketPolicyRead(

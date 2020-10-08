@@ -28,6 +28,10 @@ func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigKMS(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigRetention(rName string) string {
+func testAccCheckAWSCodeArtifactAuthorizationTokenBaseConfig(rName string) string {
+func testAccCheckAWSCodeArtifactAuthorizationTokenBasicConfig(rName string) string {
+func testAccCheckAWSCodeArtifactAuthorizationTokenOwnerConfig(rName string) string {
+func testAccCheckAWSCodeArtifactAuthorizationTokenDurationConfig(rName string) string {
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(rName string) string {
 func testAccAWSCustomerGatewayDataSourceConfigFilter(asn, hostOctet int) string {
 func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {
@@ -429,12 +433,18 @@ func testAccAWSBatchComputeEnvironmentConfigUnmanagedWithComputeResources(rInt i
 func testAccAWSBatchComputeEnvironmentConfigSpotWithAllocationStrategy(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigSpotWithoutBidPercentage(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigLaunchTemplate(rInt int) string {
+func testAccAWSBatchComputeEnvironmentConfigTags1(rInt int, tagKey1, tagValue1 string) string {
+func testAccAWSBatchComputeEnvironmentConfigTags2(rInt int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvanced(rName string) string {
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvancedUpdate(rName string) string {
 func testAccBatchJobDefinitionConfigName(rName string) string {
+func testAccBatchJobDefinitionConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccBatchJobDefinitionConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccBatchJobQueueConfigBase(rName string) string {
 func testAccBatchJobQueueConfigPriority(rName string, priority int) string {
 func testAccBatchJobQueueConfigState(rName string, state string) string {
+func testAccBatchJobQueueConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccBatchJobQueueConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSBudgetsBudgetConfigNotificationSnippet(notification budgets.Notification, emails []string, topics []string) string {
 func testAccAWSCloud9EnvironmentEc2ConfigBase() string {
 func testAccAWSCloud9EnvironmentEc2Config(name string) string {

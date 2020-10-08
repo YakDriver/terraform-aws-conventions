@@ -34,6 +34,10 @@ func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigKMS(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigRetention(rName string) string {
+func testAccCheckAWSCodeArtifactAuthorizationTokenBaseConfig(rName string) string {
+func testAccCheckAWSCodeArtifactAuthorizationTokenBasicConfig(rName string) string {
+func testAccCheckAWSCodeArtifactAuthorizationTokenOwnerConfig(rName string) string {
+func testAccCheckAWSCodeArtifactAuthorizationTokenDurationConfig(rName string) string {
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_basic(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_notFound(rName string) string {
@@ -253,6 +257,10 @@ func testAccAWSRdsOrderableDbInstanceDataSourceConfig_supportsStorageEncryption(
 func testAccAWSDataSourceRedshiftClusterConfig(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithVpc(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithLogging(rInt int) string {
+func testAccAWSRedshiftOrderableClusterDataSourceConfig_ClusterType(clusterType string) string {
+func testAccAWSRedshiftOrderableClusterDataSourceConfig_ClusterVersion(clusterVersion string) string {
+func testAccAWSRedshiftOrderableClusterDataSourceConfig_NodeType(nodeType string) string {
+func testAccAWSRedshiftOrderableClusterDataSourceConfig_PreferredNodeTypes(preferredNodeType string) string {
 func testAccDataSourceAwsRegionsConfig_empty() string {
 func testAccDataSourceAwsRegionsConfig_allRegions() string {
 func testAccDataSourceAwsRegionsConfig_allRegionsFiltered(filter string) string {
@@ -847,12 +855,18 @@ func testAccAWSBatchComputeEnvironmentConfigUnmanagedWithComputeResources(rInt i
 func testAccAWSBatchComputeEnvironmentConfigSpotWithAllocationStrategy(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigSpotWithoutBidPercentage(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigLaunchTemplate(rInt int) string {
+func testAccAWSBatchComputeEnvironmentConfigTags1(rInt int, tagKey1, tagValue1 string) string {
+func testAccAWSBatchComputeEnvironmentConfigTags2(rInt int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvanced(rName string) string {
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvancedUpdate(rName string) string {
 func testAccBatchJobDefinitionConfigName(rName string) string {
+func testAccBatchJobDefinitionConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccBatchJobDefinitionConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccBatchJobQueueConfigBase(rName string) string {
 func testAccBatchJobQueueConfigPriority(rName string, priority int) string {
 func testAccBatchJobQueueConfigState(rName string, state string) string {
+func testAccBatchJobQueueConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccBatchJobQueueConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSBudgetsBudgetConfig_WithAccountID(budgetConfig budgets.Budget, accountID, costFilterKey string) string {
 func testAccAWSBudgetsBudgetConfig_PrefixDefaults(budgetConfig budgets.Budget, costFilterKey string) string {
 func testAccAWSBudgetsBudgetConfig_Prefix(budgetConfig budgets.Budget, costFilterKey string) string {
@@ -3189,6 +3203,7 @@ func testAccAWSS3BucketObjectConfig_noObjectLockRetention(randInt int, content s
 func testAccAWSS3BucketObjectConfig_withObjectLockRetention(randInt int, content, retainUntilDate string) string {
 func testAccAWSS3BucketObjectConfig_NonVersioned(randInt int, source string) string {
 func testAccAWSS3BucketObjectConfig_defaultBucketSSE(randInt int, content string) string {
+func testAccAWSS3BucketOwnershipControlsConfig_Rule_ObjectOwnership(rName, objectOwnership string) string {
 func testAccAWSS3BucketPolicyConfig(bucketName string) string {
 func testAccAWSS3BucketPolicyConfig_updated(bucketName string) string {
 func testAccAWSS3BucketPublicAccessBlockConfig(bucketName, blockPublicAcls, blockPublicPolicy, ignorePublicAcls, restrictPublicBuckets string) string {

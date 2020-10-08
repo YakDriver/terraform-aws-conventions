@@ -83,12 +83,10 @@ func testAccAwsBackupVaultDataSourceConfig_basic(
 func dataSourceAwsBatchComputeEnvironment(
 func dataSourceAwsBatchComputeEnvironmentRead(
 func TestAccDataSourceAwsBatchComputeEnvironment_basic(
-func testAccDataSourceAwsBatchComputeEnvironmentCheck(
 func testAccDataSourceAwsBatchComputeEnvironmentConfig(
 func dataSourceAwsBatchJobQueue(
 func dataSourceAwsBatchJobQueueRead(
 func TestAccDataSourceAwsBatchJobQueue_basic(
-func testAccDataSourceAwsBatchJobQueueCheck(
 func testAccDataSourceAwsBatchJobQueueConfig(
 func dataSourceAwsBillingServiceAccount(
 func dataSourceAwsBillingServiceAccountRead(
@@ -113,6 +111,8 @@ func dataSourceAwsCloudTrailServiceAccount(
 func dataSourceAwsCloudTrailServiceAccountRead(
 func dataSourceAwsCloudwatchLogGroup(
 func dataSourceAwsCloudwatchLogGroupRead(
+func dataSourceAwsCodeArtifactAuthorizationToken(
+func dataSourceAwsCodeArtifactAuthorizationTokenRead(
 func dataSourceAwsCodeCommitRepository(
 func dataSourceAwsCodeCommitRepositoryRead(
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(
@@ -208,10 +208,16 @@ func TestAccDataSourceAwsEc2CoipPool_Filter(
 func TestAccDataSourceAwsEc2CoipPool_Id(
 func testAccDataSourceAwsEc2CoipPoolDataSourceConfigFilter(
 func testAccDataSourceAwsEc2CoipPoolDataSourceConfigId(
+func dataSourceAwsEc2InstanceType(
+func dataSourceAwsEc2InstanceTypeRead(
 func dataSourceAwsEc2InstanceTypeOffering(
 func dataSourceAwsEc2InstanceTypeOfferingRead(
 func dataSourceAwsEc2InstanceTypeOfferings(
 func dataSourceAwsEc2InstanceTypeOfferingsRead(
+func TestAccDataSourceAwsEc2InstanceType_basic(
+func TestAccDataSourceAwsEc2InstanceType_metal(
+func TestAccDataSourceAwsEc2InstanceType_gpu(
+func TestAccDataSourceAwsEc2InstanceType_fpga(
 func dataSourceAwsEc2LocalGateway(
 func dataSourceAwsEc2LocalGatewayRead(
 func dataSourceAwsEc2LocalGatewayRouteTable(
@@ -568,6 +574,8 @@ func dataSourceAwsRdsOrderableDbInstance(
 func dataSourceAwsRdsOrderableDbInstanceRead(
 func dataSourceAwsRedshiftCluster(
 func dataSourceAwsRedshiftClusterRead(
+func dataSourceAwsRedshiftOrderableCluster(
+func dataSourceAwsRedshiftOrderableClusterRead(
 func dataSourceAwsRedshiftServiceAccount(
 func dataSourceAwsRedshiftServiceAccountRead(
 func dataSourceAwsRegion(
@@ -1411,6 +1419,7 @@ func testAccCheckAwsBatchComputeEnvironmentExists(
 func resourceAwsBatchJobDefinition(
 func resourceAwsBatchJobDefinitionCreate(
 func resourceAwsBatchJobDefinitionRead(
+func resourceAwsBatchJobDefinitionUpdate(
 func resourceAwsBatchJobDefinitionDelete(
 func validateAwsBatchJobContainerProperties(
 func resourceAwsBatchJobQueue(
@@ -4251,6 +4260,11 @@ func resourceAwsS3BucketObjectRead(
 func resourceAwsS3BucketObjectUpdate(
 func resourceAwsS3BucketObjectDelete(
 func resourceAwsS3BucketObjectCustomizeDiff(
+func resourceAwsS3BucketOwnershipControls(
+func resourceAwsS3BucketOwnershipControlsCreate(
+func resourceAwsS3BucketOwnershipControlsRead(
+func resourceAwsS3BucketOwnershipControlsUpdate(
+func resourceAwsS3BucketOwnershipControlsDelete(
 func resourceAwsS3BucketPolicy(
 func resourceAwsS3BucketPolicyPut(
 func resourceAwsS3BucketPolicyRead(
