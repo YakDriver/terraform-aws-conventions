@@ -565,6 +565,9 @@ func testAccAWSCodeArtifactDomainPermissionsPolicyBasicConfig(rName string) stri
 func testAccAWSCodeArtifactDomainPermissionsPolicyOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactDomainPermissionsPolicyUpdatedConfig(rName string) string {
 func testAccAWSCodeArtifactDomainBasicConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryPermissionsPolicyBasicConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryPermissionsPolicyOwnerConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryPermissionsPolicyUpdatedConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryBasicConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryDescConfig(rName, desc string) string {
@@ -1734,6 +1737,7 @@ func testAccAWSS3BucketConfigWithLifecycle(bucketName string) string {
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(bucketName string) string {
 func testAccAWSS3BucketConfigWithVersioningLifecycle(bucketName string) string {
 func testAccAWSS3BucketConfigLifecycleRuleExpirationEmptyConfigurationBlock(rName string) string {
+func testAccAWSS3BucketConfigLifecycleRuleAbortIncompleteMultipartUploadDays(rName string) string {
 func testAccAWSS3BucketConfigReplicationBasic(randInt int) string {
 func testAccAWSS3BucketConfigReplication(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithConfiguration(randInt int, storageClass string) string {

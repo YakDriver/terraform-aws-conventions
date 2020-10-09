@@ -1,4 +1,5 @@
 func testAccGetPartitionDNSSuffix(
+func testAccGetPartitionReverseDNSPrefix(
 func testAccAwsEc2ClientVpnEndpoint_withDNSServers(
 func testAccEc2ClientVpnEndpointConfigWithDNSServers(
 func testAccTrafficMirrorFilterConfigWithoutDNS(

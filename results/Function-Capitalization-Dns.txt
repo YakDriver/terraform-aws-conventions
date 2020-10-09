@@ -1,4 +1,5 @@
 func testAccCheckAwsDnsSuffix(
+func testAccCheckResourceAttrRegionalReverseDnsService(
 func testAccCheckAWSProviderDnsSuffix(
 func TestAccAWSEc2TransitGateway_DnsSupport(
 func testAccAWSEc2TransitGatewayConfigDnsSupport(

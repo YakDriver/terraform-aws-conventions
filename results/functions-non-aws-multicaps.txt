@@ -215,6 +215,7 @@ func testAccMatchResourceAttrGlobalARN(
 func testAccCheckResourceAttrEquivalentJSON(
 func testAccGetAccountID(
 func testAccGetPartitionDNSSuffix(
+func testAccGetPartitionReverseDNSPrefix(
 func testAccEC2ClassicPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func testAccAssumeRoleARNPreCheck(
@@ -2303,8 +2304,12 @@ func TestAccAWSLBTargetGroup_updateHealthCheck(
 func TestAccAWSLBTargetGroup_updateSticknessEnabled(
 func TestAccAWSLBTargetGroup_defaults_application(
 func TestAccAWSLBTargetGroup_defaults_network(
-func TestAccAWSLBTargetGroup_stickinessWithTCPDisabled(
-func TestAccAWSLBTargetGroup_stickinessWithTCPEnabledShouldError(
+func TestAccAWSLBTargetGroup_stickinessDefaultNLB(
+func TestAccAWSLBTargetGroup_stickinessDefaultALB(
+func TestAccAWSLBTargetGroup_stickinessValidNLB(
+func TestAccAWSLBTargetGroup_stickinessValidALB(
+func TestAccAWSLBTargetGroup_stickinessInvalidNLB(
+func TestAccAWSLBTargetGroup_stickinessInvalidALB(
 func testAccCheckAWSLBTargetGroupExists(
 func testAccCheckAWSLBTargetGroupNotRecreated(
 func testAccCheckAWSLBTargetGroupRecreated(
@@ -2335,7 +2340,8 @@ func testAccAWSLBTargetGroupConfig_typeTCPThresholdUpdated(
 func testAccAWSLBTargetGroupConfig_typeTCPIntervalUpdated(
 func testAccAWSLBTargetGroupConfig_typeTCP_HTTPHealthCheck(
 func testAccAWSLBTargetGroupConfig_stickiness(
-func testAccAWSLBTargetGroupConfig_stickinessWithTCP(
+func testAccAWSLBTargetGroupConfig_stickinessDefault(
+func testAccAWSLBTargetGroupConfig_stickinessValidity(
 func testSweepLBs(
 func TestLBCloudwatchSuffixFromARN(
 func TestAccAWSLB_ALB_basic(

@@ -810,6 +810,10 @@ func expandCodeArtifactUpstreams(
 func flattenCodeArtifactUpstreams(
 func flattenCodeArtifactExternalConnections(
 func decodeCodeArtifactRepositoryID(
+func resourceAwsCodeArtifactRepositoryPermissionsPolicy(
+func resourceAwsCodeArtifactRepositoryPermissionsPolicyPut(
+func resourceAwsCodeArtifactRepositoryPermissionsPolicyRead(
+func resourceAwsCodeArtifactRepositoryPermissionsPolicyDelete(
 func init(
 func resourceAwsCodeBuildProject(
 func resourceAwsCodeBuildProjectCreate(

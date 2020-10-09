@@ -346,6 +346,7 @@ func testAccDataSourceAwsSubnetConfigIpv6WithDataSourceIpv6CidrBlock(rInt int) s
 func testAccDataSourceAwsTransferServerConfig_service_managed(rName string) string {
 func testAccDataSourceAwsTransferServerConfig_apigateway(rName string) string {
 func testAccDataSourceAwsVpcDhcpOptionsConfig_Filter(rInt, count int) string {
+func testAccDataSourceAwsVpcEndpointServiceConfig_ServiceType(service string, serviceType string) string {
 func testAccDataSourceAwsVpcEndpointServiceCustomConfigBase(rName string) string {
 func testAccDataSourceAwsVpcEndpointServiceCustomConfig(rName string) string {
 func testAccDataSourceAwsVpcEndpointServiceCustomConfigFilter(rName string) string {
@@ -392,6 +393,7 @@ func testAccGetAlternateRegion() string {
 func testAccGetThirdRegion() string {
 func testAccGetPartition() string {
 func testAccGetPartitionDNSSuffix() string {
+func testAccGetPartitionReverseDNSPrefix() string {
 func testAccGetAlternateRegionPartition() string {
 func testAccGetThirdRegionPartition() string {
 func testAccAlternateAccountProviderConfig() string {
@@ -713,14 +715,22 @@ func testAccAppmeshRouteConfigBase(meshName, vrName, vrProtocol, vn1Name, vn2Nam
 func testAccAwsAppmeshRouteConfig_grpcRoute(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_grpcRouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_grpcRouteUpdatedWithZeroWeight(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_grpcRouteWithTimeout(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_grpcRouteWithTimeoutUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_http2Route(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_http2RouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_http2RouteWithTimeout(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_http2RouteWithTimeoutUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_httpRoute(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_httpRouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_httpRouteUpdatedWithZeroWeight(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAppmeshRouteConfig_httpRouteWithTimeout(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAppmeshRouteConfig_httpRouteWithTimeoutUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_tcpRoute(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_tcpRouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfig_tcpRouteUpdatedWithZeroWeight(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAppmeshRouteConfig_tcpRouteWithTimeout(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAppmeshRouteConfig_tcpRouteWithTimeoutUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAppmeshRouteConfigWithTags(meshName, vrName, vn1Name, vn2Name, rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsAppmeshRouteConfig_httpHeader(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
@@ -734,6 +744,8 @@ func testAccAppmeshVirtualNodeConfig_basic(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_cloudMapServiceDiscovery(meshName, vnName, rName, attrKey, attrValue string) string {
 func testAccAppmeshVirtualNodeConfig_listenerHealthChecks(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_listenerHealthChecksUpdated(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerTimeout(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerTimeoutUpdated(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_logging(meshName, vnName, path string) string {
 func testAccAppmeshVirtualNodeConfig_tags(meshName, vnName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAppmeshVirtualNodeConfig_tlsFile(meshName, vnName string) string {
@@ -1093,6 +1105,9 @@ func testAccAWSCodeArtifactDomainPermissionsPolicyBasicConfig(rName string) stri
 func testAccAWSCodeArtifactDomainPermissionsPolicyOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactDomainPermissionsPolicyUpdatedConfig(rName string) string {
 func testAccAWSCodeArtifactDomainBasicConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryPermissionsPolicyBasicConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryPermissionsPolicyOwnerConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryPermissionsPolicyUpdatedConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryBasicConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryDescConfig(rName, desc string) string {
@@ -2909,7 +2924,8 @@ func testAccAWSLBTargetGroupConfig_typeTCPThresholdUpdated(targetGroupName strin
 func testAccAWSLBTargetGroupConfig_typeTCPIntervalUpdated(targetGroupName string) string {
 func testAccAWSLBTargetGroupConfig_typeTCP_HTTPHealthCheck(targetGroupName, path string, threshold int) string {
 func testAccAWSLBTargetGroupConfig_stickiness(targetGroupName string, addStickinessBlock bool, enabled bool) string {
-func testAccAWSLBTargetGroupConfig_stickinessWithTCP(enabled bool) string {
+func testAccAWSLBTargetGroupConfig_stickinessDefault(protocol string) string {
+func testAccAWSLBTargetGroupConfig_stickinessValidity(protocol, stickyType string, enabled bool) string {
 func testAccAWSLBConfigWithIpAddressTypeUpdated(lbName string) string {
 func testAccAWSLBConfigWithIpAddressType(lbName string) string {
 func testAccAWSLBConfig_basic(lbName string) string {
@@ -3549,6 +3565,7 @@ func testAccAWSS3BucketConfigWithLifecycle(bucketName string) string {
 func testAccAWSS3BucketConfigWithLifecycleExpireMarker(bucketName string) string {
 func testAccAWSS3BucketConfigWithVersioningLifecycle(bucketName string) string {
 func testAccAWSS3BucketConfigLifecycleRuleExpirationEmptyConfigurationBlock(rName string) string {
+func testAccAWSS3BucketConfigLifecycleRuleAbortIncompleteMultipartUploadDays(rName string) string {
 func testAccAWSS3BucketConfigReplicationBasic(randInt int) string {
 func testAccAWSS3BucketConfigReplication(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithConfiguration(randInt int, storageClass string) string {
