@@ -164,8 +164,8 @@ func validateIpv4CIDRNetworkAddress(
 func validateIpv6CIDRNetworkAddress(
 func validateIpv4CIDRBlock(
 func validateIpv6CIDRBlock(
-func Test_validateIpv4CIDRBlock(
-func Test_validateIpv6CIDRBlock(
+func TestValidateIpv4CIDRBlock(
+func TestValidateIpv6CIDRBlock(
 func wafv2IpSetReferenceStatementSchema(
 func expandWafv2IpSetReferenceStatement(
 func flattenWafv2IpSetReferenceStatement(

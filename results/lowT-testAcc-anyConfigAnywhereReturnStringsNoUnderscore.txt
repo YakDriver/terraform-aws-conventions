@@ -32,6 +32,9 @@ func testAccCheckAWSCodeArtifactAuthorizationTokenBaseConfig(rName string) strin
 func testAccCheckAWSCodeArtifactAuthorizationTokenBasicConfig(rName string) string {
 func testAccCheckAWSCodeArtifactAuthorizationTokenOwnerConfig(rName string) string {
 func testAccCheckAWSCodeArtifactAuthorizationTokenDurationConfig(rName string) string {
+func testAccCheckAWSCodeArtifactRepositoryEndpointBaseConfig(rName string) string {
+func testAccCheckAWSCodeArtifactRepositoryEndpointBasicConfig(rName string) string {
+func testAccCheckAWSCodeArtifactRepositoryEndpointOwnerConfig(rName string) string {
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(rName string) string {
 func testAccAWSCustomerGatewayDataSourceConfigFilter(asn, hostOctet int) string {
 func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {

@@ -31,4 +31,3 @@ func testAccAWSStorageGatewayGatewayBandwidthConfigUpload(
 func testAccAWSStorageGatewayGatewayBandwidthConfigDownload(
 func testAccAWSStorageGatewayGatewayBandwidthConfigAll(
 func cidrBlocksEqual(
-func Test_cidrBlocksEqual(

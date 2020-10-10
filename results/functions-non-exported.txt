@@ -238,6 +238,11 @@ func testAccCheckAWSCodeArtifactAuthorizationTokenBaseConfig(
 func testAccCheckAWSCodeArtifactAuthorizationTokenBasicConfig(
 func testAccCheckAWSCodeArtifactAuthorizationTokenOwnerConfig(
 func testAccCheckAWSCodeArtifactAuthorizationTokenDurationConfig(
+func dataSourceAwsCodeArtifactRepositoryEndpoint(
+func dataSourceAwsCodeArtifactRepositoryEndpointRead(
+func testAccCheckAWSCodeArtifactRepositoryEndpointBaseConfig(
+func testAccCheckAWSCodeArtifactRepositoryEndpointBasicConfig(
+func testAccCheckAWSCodeArtifactRepositoryEndpointOwnerConfig(
 func dataSourceAwsCodeCommitRepository(
 func dataSourceAwsCodeCommitRepositoryRead(
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(
@@ -12803,6 +12808,7 @@ func validateCIDRBlock(
 func validateIpv4CIDRBlock(
 func validateIpv6CIDRBlock(
 func cidrBlocksEqual(
+func canonicalCidrBlock(
 func validateHTTPMethod(
 func validateLogMetricFilterName(
 func validateLogMetricFilterTransformationName(

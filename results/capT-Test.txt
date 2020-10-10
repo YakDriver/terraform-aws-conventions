@@ -111,6 +111,8 @@ func TestAccAWSCloudwatchLogGroupDataSource_retention(
 func TestAccAWSCodeArtifactAuthorizationTokenDataSource_basic(
 func TestAccAWSCodeArtifactAuthorizationTokenDataSource_owner(
 func TestAccAWSCodeArtifactAuthorizationTokenDataSource_duration(
+func TestAccAWSCodeArtifactRepositoryEndpointDataSource_basic(
+func TestAccAWSCodeArtifactRepositoryEndpointDataSource_owner(
 func TestAccAWSCodeCommitRepositoryDataSource_basic(
 func TestAccDataSourceAwsCognitoUserPools_basic(
 func TestAccDataSourceAwsCurReportDefinition_basic(
@@ -1832,6 +1834,7 @@ func TestAccAWSEc2TransitGatewayRouteTable_disappears(
 func TestAccAWSEc2TransitGatewayRouteTable_disappears_TransitGateway(
 func TestAccAWSEc2TransitGatewayRouteTable_Tags(
 func TestAccAWSEc2TransitGatewayRoute_basic(
+func TestAccAWSEc2TransitGatewayRoute_basic_ipv6(
 func TestAccAWSEc2TransitGatewayRoute_blackhole(
 func TestAccAWSEc2TransitGatewayRoute_disappears(
 func TestAccAWSEc2TransitGatewayRoute_disappears_TransitGatewayAttachment(
@@ -4408,10 +4411,11 @@ func TestValidateArn(
 func TestValidateEC2AutomateARN(
 func TestValidatePolicyStatementId(
 func TestValidateCIDRNetworkAddress(
-func Test_validateCIDRBlock(
-func Test_validateIpv4CIDRBlock(
-func Test_validateIpv6CIDRBlock(
-func Test_cidrBlocksEqual(
+func TestValidateCIDRBlock(
+func TestValidateIpv4CIDRBlock(
+func TestValidateIpv6CIDRBlock(
+func TestCidrBlocksEqual(
+func TestCanonicalCidrBlock(
 func TestValidateLogMetricFilterName(
 func TestValidateLogMetricTransformationName(
 func TestValidateLogGroupName(

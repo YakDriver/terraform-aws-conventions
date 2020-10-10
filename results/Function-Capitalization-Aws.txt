@@ -113,6 +113,8 @@ func dataSourceAwsCloudwatchLogGroup(
 func dataSourceAwsCloudwatchLogGroupRead(
 func dataSourceAwsCodeArtifactAuthorizationToken(
 func dataSourceAwsCodeArtifactAuthorizationTokenRead(
+func dataSourceAwsCodeArtifactRepositoryEndpoint(
+func dataSourceAwsCodeArtifactRepositoryEndpointRead(
 func dataSourceAwsCodeCommitRepository(
 func dataSourceAwsCodeCommitRepositoryRead(
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(
