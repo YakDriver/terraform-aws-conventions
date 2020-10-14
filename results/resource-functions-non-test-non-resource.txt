@@ -71,6 +71,11 @@ func getAwsAppautoscalingTarget(
 func init(
 func appmeshRouteHttpRouteSchema(
 func init(
+func expandAppmeshVirtualGatewaySpec(
+func expandAppmeshVirtualGatewayClientPolicy(
+func flattenAppmeshVirtualGatewaySpec(
+func flattenAppmeshVirtualGatewayClientPolicy(
+func init(
 func appmeshVirtualNodeClientPolicySchema(
 func migrateAppmeshVirtualNodeStateV0toV1(
 func init(
@@ -159,9 +164,11 @@ func getAwsAutoscalingPolicy(
 func expandTargetTrackingConfiguration(
 func flattenTargetTrackingConfiguration(
 func expandBackupPlanRules(
+func expandBackupPlanAdvancedBackupSettings(
 func expandBackupPlanCopyActions(
 func expandBackupPlanLifecycle(
 func flattenBackupPlanRules(
+func flattenBackupPlanAdvancedBackupSettings(
 func flattenBackupPlanCopyActions(
 func flattenBackupPlanCopyActionLifecycle(
 func backupBackupPlanHash(
@@ -2033,7 +2040,9 @@ func worklinkWebsiteCertificateAuthorityAssociationStateRefresh(
 func decodeWorkLinkWebsiteCertificateAuthorityAssociationResourceID(
 func workspacesDirectoryDelete(
 func expandSelfServicePermissions(
+func expandWorkspaceCreationProperties(
 func flattenSelfServicePermissions(
+func flattenWorkspaceCreationProperties(
 func init(
 func expandIpGroupRules(
 func flattenIpGroupRules(

@@ -740,6 +740,17 @@ func testAccAwsAppmeshRouteConfig_httpHeaderUpdated(meshName, vrName, vn1Name, v
 func testAccAwsAppmeshRouteConfig_routePriority(meshName, vrName, vn1Name, vn2Name, rName string, priority int) string {
 func testAccAwsAppmeshRouteConfig_httpRetryPolicy(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_httpRetryPolicyUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAppmeshVirtualGatewayConfig(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigBackendDefaults(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigBackendDefaultsUpdated(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigListenerHealthChecks(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigListenerHealthChecksUpdated(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigLogging(meshName, vgName, path string) string {
+func testAccAppmeshVirtualGatewayConfigTags1(meshName, vgName, tagKey1, tagValue1 string) string {
+func testAccAppmeshVirtualGatewayConfigTags2(meshName, vgName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAppmeshVirtualGatewayConfigTlsFile(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigRootCA(rName string) string {
+func testAccAppmeshVirtualGatewayConfigTlsAcm(meshName, vgName string) string {
 func testAccAppmeshVirtualNodeConfig_mesh(rName string) string {
 func testAccAppmeshVirtualNodeConfigRootCA(rName string) string {
 func testAccAppmeshVirtualNodeConfigPrivateCert(rName string) string {
@@ -908,6 +919,7 @@ func testAccAwsBackupPlanConfig_recoveryPointTagsUpdated(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter int, deleteAfter int) string {
 func testAccAwsBackupPlanConfigRuleCopyActionMultiple(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
+func testAccAwsBackupPlanConfigAdvancedBackupSetting(rName string) string {
 func testAccBackupSelectionConfigBase(rName string) string {
 func testAccBackupSelectionConfigBasic(rName string) string {
 func testAccBackupSelectionConfigWithTags(rName string) string {
@@ -3613,12 +3625,14 @@ func testAccSagemakerModelVpcConfig(rName string, image string) string {
 func testAccSagemakerNotebookInstanceLifecycleConfigurationConfig_Basic(rName string) string {
 func testAccSagemakerNotebookInstanceLifecycleConfigurationConfig_Update(rName string) string {
 func testAccAWSSagemakerNotebookInstanceConfig(notebookName string) string {
+func testAccAWSSagemakerNotebookInstanceConfigVolume(notebookName string) string {
 func testAccAWSSagemakerNotebookInstanceUpdateConfig(notebookName string) string {
 func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(rName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsConfig(notebookName string) string {
 func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(notebookName string) string {
 func testAccAWSSagemakerNotebookInstanceConfigRootAccess(notebookName string, rootAccess string) string {
 func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(notebookName string, directInternetAccess string) string {
+func testAccAWSSagemakerNotebookInstanceConfigDefaultCodeRepository(notebookName string, defaultCodeRepository string) string {
 func testAccAwsSecretsManagerSecretRotationConfig(rName string, automaticallyAfterDays int) string {
 func testAccAwsSecretsManagerSecretConfig_Description(rName, description string) string {
 func testAccAwsSecretsManagerSecretConfig_Name(rName string) string {
@@ -4251,12 +4265,12 @@ func testAccAWSWorkLinkFleetConfigIdentityProvider(r string, fName string) strin
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfig(r string) string {
 func testAccAWSWorkLinkWebsiteCertificateAuthorityAssociationConfigDisplayName(r, displayName string) string {
 func testAccAwsWorkspacesDirectoryConfig_Prerequisites(rName string) string {
-func testAccWorkspacesDirectoryConfigA(rName string) string {
-func testAccWorkspacesDirectoryConfigB(rName string) string {
-func testAccWorkspacesDirectoryConfigC(rName string) string {
+func testAccWorkspacesDirectoryConfig(rName string) string {
+func testAccWorkspacesDirectory_selfServicePermissions(rName string) string {
 func testAccWorkspacesDirectoryConfig_subnetIds(rName string) string {
 func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccWorkspacesDirectoryConfig_workspaceCreationProperties(rName string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigTags1(name, tagKey1, tagValue1 string) string {

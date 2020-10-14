@@ -44,6 +44,7 @@ func TestAccAwsBackupPlan_withRecoveryPointTags(
 func TestAccAwsBackupPlan_Rule_CopyAction_SameRegion(
 func TestAccAwsBackupPlan_Rule_CopyAction_Multiple(
 func TestAccAwsBackupPlan_Rule_CopyAction_CrossRegion(
+func TestAccAwsBackupPlan_AdvancedBackupSetting(
 func TestAccAwsBackupPlan_disappears(
 func TestAccAwsBackupSelection_basic(
 func TestAccAwsBackupSelection_disappears(
@@ -266,6 +267,8 @@ func TestAccAwsWorkspacesDirectory_basic(
 func TestAccAwsWorkspacesDirectory_disappears(
 func TestAccAwsWorkspacesDirectory_subnetIds(
 func TestAccAwsWorkspacesDirectory_tags(
+func TestAccAwsWorkspacesDirectory_selfServicePermissions(
+func TestAccAwsWorkspacesDirectory_workspaceCreationProperties(
 func TestAccAwsWorkspacesIpGroup_basic(
 func TestAccAwsWorkspacesIpGroup_tags(
 func TestAccAwsWorkspacesIpGroup_disappears(

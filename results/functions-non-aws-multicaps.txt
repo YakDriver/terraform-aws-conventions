@@ -824,6 +824,8 @@ func testAccAppautoscalingScheduledActionConfig_ECS(
 func testAccAppautoscalingScheduledActionConfig_EMR(
 func resourceAwsELBSticknessPolicyAssigned(
 func TestAccAWSAppCookieStickinessPolicy_missingLB(
+func testAccAwsAppmeshVirtualGateway_TLS(
+func testAccAppmeshVirtualGatewayConfigRootCA(
 func testAccAppmeshVirtualNodeConfigRootCA(
 func decodeAppsyncDataSourceID(
 func expandAppsyncHTTPDataSourceConfig(

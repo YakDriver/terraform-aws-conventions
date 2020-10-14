@@ -255,6 +255,12 @@ func resourceAwsAppmeshRouteRead(
 func resourceAwsAppmeshRouteUpdate(
 func resourceAwsAppmeshRouteDelete(
 func resourceAwsAppmeshRouteImport(
+func resourceAwsAppmeshVirtualGateway(
+func resourceAwsAppmeshVirtualGatewayCreate(
+func resourceAwsAppmeshVirtualGatewayRead(
+func resourceAwsAppmeshVirtualGatewayUpdate(
+func resourceAwsAppmeshVirtualGatewayDelete(
+func resourceAwsAppmeshVirtualGatewayImport(
 func resourceAwsAppmeshVirtualNode(
 func resourceAwsAppmeshVirtualNodeCreate(
 func resourceAwsAppmeshVirtualNodeRead(
