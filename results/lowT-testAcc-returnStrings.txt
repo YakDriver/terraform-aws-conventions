@@ -709,6 +709,15 @@ func testAccAWSAppautoscalingTarget_optionalRoleArn(tableName string) string {
 func testAccAppCookieStickinessPolicyConfig(rName string) string {
 func testAccAppCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccAppCookieStickinessPolicyConfigDestroy(rName string) string {
+func testAccAppmeshGatewayRouteConfigBase(meshName, vgName string) string {
+func testAccAppmeshGatewayRouteConfigGrpcRoute(meshName, vgName, grName string) string {
+func testAccAppmeshGatewayRouteConfigGrpcRouteUpdated(meshName, vgName, grName string) string {
+func testAccAppmeshGatewayRouteConfigHttpRoute(meshName, vgName, grName string) string {
+func testAccAppmeshGatewayRouteConfigHttpRouteUpdated(meshName, vgName, grName string) string {
+func testAccAppmeshGatewayRouteConfigHttp2Route(meshName, vgName, grName string) string {
+func testAccAppmeshGatewayRouteConfigHttp2RouteUpdated(meshName, vgName, grName string) string {
+func testAccAppmeshGatewayRouteConfigTags1(meshName, vgName, grName, tagKey1, tagValue1 string) string {
+func testAccAppmeshGatewayRouteConfigTags2(meshName, vgName, grName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAppmeshMeshConfig_basic(rName string) string {
 func testAccAppmeshMeshConfig_egressFilter(rName, egressFilterType string) string {
 func testAccAppmeshMeshConfigWithTags(rName string) string {

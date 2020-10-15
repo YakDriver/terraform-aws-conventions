@@ -1138,6 +1138,12 @@ func testAccAWSAppautoscalingTarget_optionalRoleArn(
 func TestAccAWSAppCookieStickinessPolicy_basic(
 func TestAccAWSAppCookieStickinessPolicy_missingLB(
 func TestAccAWSAppCookieStickinessPolicy_drift(
+func testAccAwsAppmeshGatewayRoute_basic(
+func testAccAwsAppmeshGatewayRoute_disappears(
+func testAccAwsAppmeshGatewayRoute_GrpcRoute(
+func testAccAwsAppmeshGatewayRoute_HttpRoute(
+func testAccAwsAppmeshGatewayRoute_Http2Route(
+func testAccAwsAppmeshGatewayRoute_Tags(
 func testAccAwsAppmeshMesh_basic(
 func testAccAwsAppmeshMesh_egressFilter(
 func testAccAwsAppmeshMesh_tags(

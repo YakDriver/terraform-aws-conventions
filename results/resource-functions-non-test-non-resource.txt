@@ -68,6 +68,15 @@ func flattenCustomizedMetricSpecification(
 func flattenMetricDimensions(
 func flattenPredefinedMetricSpecification(
 func getAwsAppautoscalingTarget(
+func expandAppmeshGatewayRouteSpec(
+func expandAppmeshGatewayRouteTarget(
+func expandAppmeshGrpcGatewayRoute(
+func expandAppmeshHttpGatewayRoute(
+func flattenAppmeshGatewayRouteSpec(
+func flattenAppmeshGatewayRouteTarget(
+func flattenAppmeshGrpcGatewayRoute(
+func flattenAppmeshHttpGatewayRoute(
+func init(
 func init(
 func appmeshRouteHttpRouteSchema(
 func init(

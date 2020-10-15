@@ -240,6 +240,8 @@ func testAccAWSAppautoscalingPolicy_multiplePoliciesSameName(
 func testAccAWSAppautoscalingPolicy_multiplePoliciesSameResource(
 func testAccAWSAppautoscalingTarget_multipleTargets(
 func testAccAWSAppautoscalingTarget_optionalRoleArn(
+func testAccAwsAppmeshGatewayRoute_basic(
+func testAccAwsAppmeshGatewayRoute_disappears(
 func testAccAwsAppmeshMesh_basic(
 func testAccAwsAppmeshMesh_egressFilter(
 func testAccAwsAppmeshMesh_tags(

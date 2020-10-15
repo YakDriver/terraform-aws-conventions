@@ -244,6 +244,12 @@ func resourceAwsAppCookieStickinessPolicyRead(
 func resourceAwsELBSticknessPolicyAssigned(
 func resourceAwsAppCookieStickinessPolicyDelete(
 func resourceAwsAppCookieStickinessPolicyParseId(
+func resourceAwsAppmeshGatewayRoute(
+func resourceAwsAppmeshGatewayRouteCreate(
+func resourceAwsAppmeshGatewayRouteRead(
+func resourceAwsAppmeshGatewayRouteUpdate(
+func resourceAwsAppmeshGatewayRouteDelete(
+func resourceAwsAppmeshGatewayRouteImport(
 func resourceAwsAppmeshMesh(
 func resourceAwsAppmeshMeshCreate(
 func resourceAwsAppmeshMeshRead(
