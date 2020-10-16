@@ -2285,7 +2285,6 @@ func testSweepAppsyncGraphqlApis(
 func testAccCheckAwsAppsyncGraphqlApiDestroy(
 func testAccCheckAwsAppsyncGraphqlApiExists(
 func testAccCheckAwsAppsyncTypeExists(
-func testAccPreCheckAWSAppSync(
 func testAccAppsyncGraphqlApiConfig_AuthenticationType(
 func testAccAppsyncGraphqlApiConfig_LogConfig_FieldLogLevel(
 func testAccAppsyncGraphqlApiConfig_LogConfig_ExcludeVerboseContent(
@@ -2974,6 +2973,20 @@ func testAccAWSCloudWatchDashboardName(
 func testAccAWSCloudWatchDashboardConfig(
 func testAccAWSCloudWatchDashboardConfig_updateBody(
 func testAccCloudWatchCheckDashboardBodyIsExpected(
+func resourceAwsCloudWatchEventBus(
+func resourceAwsCloudWatchEventBusCreate(
+func resourceAwsCloudWatchEventBusRead(
+func resourceAwsCloudWatchEventBusUpdate(
+func resourceAwsCloudWatchEventBusDelete(
+func init(
+func testSweepCloudWatchEventBuses(
+func testAccCheckAWSCloudWatchEventBusDestroy(
+func testAccCheckCloudWatchEventBusExists(
+func testAccCheckCloudWatchEventBusRecreated(
+func testAccCheckCloudWatchEventBusNotRecreated(
+func testAccAWSCloudWatchEventBusConfig(
+func testAccAWSCloudWatchEventBusConfig_Tags1(
+func testAccAWSCloudWatchEventBusConfig_Tags2(
 func resourceAwsCloudWatchEventPermission(
 func resourceAwsCloudWatchEventPermissionCreate(
 func resourceAwsCloudWatchEventPermissionRead(
@@ -6264,6 +6277,7 @@ func testAccEmrDescribeManagedSecurityGroup(
 func testAccEmrRevokeManagedSecurityGroup(
 func testAccEmrDeleteManagedSecurityGroup(
 func testAccAWSEmrComposeConfig(
+func testAccAWSEmrClusterConfigCurrentPartition(
 func testAccAWSEmrClusterConfig_bootstrap(
 func testAccAWSEmrClusterConfig_bootstrapAdd(
 func testAccAWSEmrClusterConfig_bootstrapReorder(
@@ -8224,8 +8238,6 @@ func testAccCheckAWSLaunchConfigurationGeneratedNamePrefix(
 func testAccCheckAWSLaunchConfigurationDestroy(
 func testAccCheckAWSLaunchConfigurationAttributes(
 func testAccCheckAWSLaunchConfigurationExists(
-func testAccAWSLaunchConfigurationConfig_ami(
-func testAccAWSLaunchConfigurationConfig_HvmEbsAmi(
 func testAccAWSLaunchConfigurationConfigWithInstanceStoreAMI(
 func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceCopiedAmi(
 func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceVolumeSize(

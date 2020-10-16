@@ -465,6 +465,11 @@ func resourceAwsCloudWatchDashboard(
 func resourceAwsCloudWatchDashboardRead(
 func resourceAwsCloudWatchDashboardPut(
 func resourceAwsCloudWatchDashboardDelete(
+func resourceAwsCloudWatchEventBus(
+func resourceAwsCloudWatchEventBusCreate(
+func resourceAwsCloudWatchEventBusRead(
+func resourceAwsCloudWatchEventBusUpdate(
+func resourceAwsCloudWatchEventBusDelete(
 func resourceAwsCloudWatchEventPermission(
 func resourceAwsCloudWatchEventPermissionCreate(
 func resourceAwsCloudWatchEventPermissionRead(

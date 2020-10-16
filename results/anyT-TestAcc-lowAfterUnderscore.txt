@@ -1028,6 +1028,10 @@ func TestAccAWSCloudWatchDashboard_basic(
 func TestAccAWSCloudWatchDashboard_update(
 func TestAccAWSCloudWatchDashboard_updateName(
 func testAccAWSCloudWatchDashboardConfig_updateBody(
+func TestAccAWSCloudWatchEventBus_basic(
+func TestAccAWSCloudWatchEventBus_tags(
+func TestAccAWSCloudWatchEventBus_default(
+func TestAccAWSCloudWatchEventBus_disappears(
 func TestAccAWSCloudWatchEventPermission_basic(
 func TestAccAWSCloudWatchEventRule_basic(
 func TestAccAWSCloudWatchEventRule_role(
@@ -2488,7 +2492,6 @@ func TestAccAWSLaunchConfiguration_withEncryption(
 func TestAccAWSLaunchConfiguration_updateEbsBlockDevices(
 func TestAccAWSLaunchConfiguration_ebs_noDevice(
 func TestAccAWSLaunchConfiguration_userData(
-func testAccAWSLaunchConfigurationConfig_ami(
 func testAccAWSLaunchConfigurationConfig_withVpcClassicLink(
 func testAccAWSLaunchConfigurationConfig_withIAMProfile(
 func testAccAWSLaunchConfigurationConfig_userData(

@@ -689,6 +689,10 @@ func TestAccAWSCloudTrail_serial(
 func TestAccAWSCloudWatchDashboard_basic(
 func TestAccAWSCloudWatchDashboard_update(
 func TestAccAWSCloudWatchDashboard_updateName(
+func TestAccAWSCloudWatchEventBus_basic(
+func TestAccAWSCloudWatchEventBus_tags(
+func TestAccAWSCloudWatchEventBus_default(
+func TestAccAWSCloudWatchEventBus_disappears(
 func TestAccAWSCloudWatchEventPermission_basic(
 func TestAccAWSCloudWatchEventPermission_Action(
 func TestAccAWSCloudWatchEventPermission_Condition(

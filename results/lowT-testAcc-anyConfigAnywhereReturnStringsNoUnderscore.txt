@@ -524,6 +524,7 @@ func testAccAWSCloudTrailConfigCloudWatchModified(randInt int) string {
 func testAccAWSCloudTrailConfigMultiRegion(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigOrganization(cloudTrailRandInt int) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
+func testAccAWSCloudWatchEventBusConfig(name string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigBasic(principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigAction(action, principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigConditionOrganization(statementID, value string) string {
@@ -1035,6 +1036,7 @@ func testAccAWSELBAttachmentConfig4() string {
 func testAccAWSELBConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSELBConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEmrComposeConfig(mapPublicIPOnLaunch bool, config ...string) string {
+func testAccAWSEmrClusterConfigCurrentPartition() string {
 func testAccAWSEmrClusterConfig(r string) string {
 func testAccAWSEmrClusterConfigAdditionalInfo(r string) string {
 func testAccAWSEmrClusterConfigConfigurationsJson(r string) string {

@@ -1961,7 +1961,6 @@ func TestAccAWSAppsyncGraphqlApi_XrayEnabled(
 func testAccCheckAwsAppsyncGraphqlApiDestroy(
 func testAccCheckAwsAppsyncGraphqlApiExists(
 func testAccCheckAwsAppsyncTypeExists(
-func testAccPreCheckAWSAppSync(
 func testAccAppsyncGraphqlApiConfig_AuthenticationType(
 func testAccAppsyncGraphqlApiConfig_LogConfig_FieldLogLevel(
 func testAccAppsyncGraphqlApiConfig_LogConfig_ExcludeVerboseContent(
@@ -2546,6 +2545,17 @@ func testAccAWSCloudWatchDashboardName(
 func testAccAWSCloudWatchDashboardConfig(
 func testAccAWSCloudWatchDashboardConfig_updateBody(
 func testAccCloudWatchCheckDashboardBodyIsExpected(
+func TestAccAWSCloudWatchEventBus_basic(
+func TestAccAWSCloudWatchEventBus_tags(
+func TestAccAWSCloudWatchEventBus_default(
+func TestAccAWSCloudWatchEventBus_disappears(
+func testAccCheckAWSCloudWatchEventBusDestroy(
+func testAccCheckCloudWatchEventBusExists(
+func testAccCheckCloudWatchEventBusRecreated(
+func testAccCheckCloudWatchEventBusNotRecreated(
+func testAccAWSCloudWatchEventBusConfig(
+func testAccAWSCloudWatchEventBusConfig_Tags1(
+func testAccAWSCloudWatchEventBusConfig_Tags2(
 func TestAccAWSCloudWatchEventPermission_basic(
 func TestAccAWSCloudWatchEventPermission_Action(
 func TestAccAWSCloudWatchEventPermission_Condition(
@@ -5327,6 +5337,7 @@ func testAccEmrDescribeManagedSecurityGroup(conn *ec2.EC2, vpc *ec2.Vpc, securit
 func testAccEmrRevokeManagedSecurityGroup(
 func testAccEmrDeleteManagedSecurityGroup(
 func testAccAWSEmrComposeConfig(
+func testAccAWSEmrClusterConfigCurrentPartition(
 func testAccAWSEmrClusterConfig_bootstrap(
 func testAccAWSEmrClusterConfig_bootstrapAdd(
 func testAccAWSEmrClusterConfig_bootstrapReorder(
@@ -6890,8 +6901,6 @@ func testAccCheckAWSLaunchConfigurationGeneratedNamePrefix(
 func testAccCheckAWSLaunchConfigurationDestroy(
 func testAccCheckAWSLaunchConfigurationAttributes(
 func testAccCheckAWSLaunchConfigurationExists(
-func testAccAWSLaunchConfigurationConfig_ami(
-func testAccAWSLaunchConfigurationConfig_HvmEbsAmi(
 func testAccAWSLaunchConfigurationConfigWithInstanceStoreAMI(
 func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceCopiedAmi(
 func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceVolumeSize(

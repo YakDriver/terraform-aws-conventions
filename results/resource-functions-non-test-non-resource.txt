@@ -252,6 +252,7 @@ func expandAwsCloudTrailInsightSelector(
 func flattenAwsCloudTrailInsightSelector(
 func init(
 func isCloudWatchDashboardNotFoundErr(
+func init(
 func getPolicyStatement(
 func validateCloudWatchEventPermissionAction(
 func validateCloudWatchEventPermissionPrincipal(
