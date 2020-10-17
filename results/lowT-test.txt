@@ -4868,9 +4868,12 @@ func testAccCheckAWSENIAttributes(
 func testAccCheckAWSENIAvailabilityZone(
 func testAccCheckAWSENIAttributesWithAttachment(
 func testAccCheckAWSENIDestroy(
-func testAccCheckAWSENIDisappears(
 func testAccCheckAWSENIMakeExternalAttachment(
 func testAccAWSENIConfig(
+func testAccAWSENIIPV6ConfigBase(
+func testAccAWSENIIPV6Config(
+func testAccAWSENIIPV6MultipleConfig(
+func testAccAWSENIIPV6CountConfig(
 func testAccAWSENIConfigUpdatedDescription(
 func testAccAWSENIConfigWithSourceDestCheck(
 func testAccAWSENIConfigWithNoPrivateIPs(

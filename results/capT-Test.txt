@@ -3144,7 +3144,9 @@ func TestAccAWSNetworkInterfaceSGAttachment_Instance(
 func TestAccAWSNetworkInterfaceSGAttachment_DataSource(
 func TestAccAWSNetworkInterfaceSGAttachment_Multiple(
 func TestAccAWSENI_basic(
+func TestAccAWSENI_ipv6(
 func TestAccAWSENI_tags(
+func TestAccAWSENI_ipv6_count(
 func TestAccAWSENI_disappears(
 func TestAccAWSENI_updatedDescription(
 func TestAccAWSENI_attached(

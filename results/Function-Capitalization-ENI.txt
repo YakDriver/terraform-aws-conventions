@@ -1,7 +1,9 @@
 func delSGFromENI(
 func sgExistsInENI(
 func TestAccAWSENI_basic(
+func TestAccAWSENI_ipv6(
 func TestAccAWSENI_tags(
+func TestAccAWSENI_ipv6_count(
 func TestAccAWSENI_disappears(
 func TestAccAWSENI_updatedDescription(
 func TestAccAWSENI_attached(
@@ -14,9 +16,12 @@ func testAccCheckAWSENIAttributes(
 func testAccCheckAWSENIAvailabilityZone(
 func testAccCheckAWSENIAttributesWithAttachment(
 func testAccCheckAWSENIDestroy(
-func testAccCheckAWSENIDisappears(
 func testAccCheckAWSENIMakeExternalAttachment(
 func testAccAWSENIConfig(
+func testAccAWSENIIPV6ConfigBase(
+func testAccAWSENIIPV6Config(
+func testAccAWSENIIPV6MultipleConfig(
+func testAccAWSENIIPV6CountConfig(
 func testAccAWSENIConfigUpdatedDescription(
 func testAccAWSENIConfigWithSourceDestCheck(
 func testAccAWSENIConfigWithNoPrivateIPs(

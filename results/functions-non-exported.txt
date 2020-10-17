@@ -9109,6 +9109,7 @@ func deleteNetworkInterface(
 func detachNetworkInterface(
 func networkInterfaceAttachmentStateRefresh(
 func networkInterfaceStateRefresh(
+func waitForNetworkInterfaceCreation(
 func resourceAwsNetworkInterfaceSGAttachment(
 func resourceAwsNetworkInterfaceSGAttachmentCreate(
 func resourceAwsNetworkInterfaceSGAttachmentRead(
@@ -9130,9 +9131,12 @@ func testAccCheckAWSENIAttributes(
 func testAccCheckAWSENIAvailabilityZone(
 func testAccCheckAWSENIAttributesWithAttachment(
 func testAccCheckAWSENIDestroy(
-func testAccCheckAWSENIDisappears(
 func testAccCheckAWSENIMakeExternalAttachment(
 func testAccAWSENIConfig(
+func testAccAWSENIIPV6ConfigBase(
+func testAccAWSENIIPV6Config(
+func testAccAWSENIIPV6MultipleConfig(
+func testAccAWSENIIPV6CountConfig(
 func testAccAWSENIConfigUpdatedDescription(
 func testAccAWSENIConfigWithSourceDestCheck(
 func testAccAWSENIConfigWithNoPrivateIPs(
@@ -12636,6 +12640,7 @@ func flattenInt64Set(
 func flattenNetworkInterfacesPrivateIPAddresses(
 func flattenGroupIdentifiers(
 func expandPrivateIPAddresses(
+func expandIP6Addresses(
 func flattenAttachment(
 func flattenEc2AttributeValues(
 func flattenEc2NetworkInterfaceAssociation(

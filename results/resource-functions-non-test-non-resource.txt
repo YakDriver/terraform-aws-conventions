@@ -1527,6 +1527,7 @@ func deleteNetworkInterface(
 func detachNetworkInterface(
 func networkInterfaceAttachmentStateRefresh(
 func networkInterfaceStateRefresh(
+func waitForNetworkInterfaceCreation(
 func fetchNetworkInterface(
 func delSGFromENI(
 func sgExistsInENI(

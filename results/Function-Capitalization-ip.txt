@@ -558,7 +558,10 @@ func TestAccAWSNetworkAcl_ipv6ICMPRules(
 func TestAccAWSNetworkAcl_ipv6VpcRules(
 func TestAccAWSNetworkInterfaceSGAttachment_Multiple(
 func testAccAwsNetworkInterfaceSGAttachmentConfigMultiple(
+func TestAccAWSENI_ipv6(
+func TestAccAWSENI_ipv6_count(
 func TestAccAWSENI_updatedDescription(
+func testAccAWSENIIPV6MultipleConfig(
 func testAccAWSENIConfigUpdatedDescription(
 func testAccAwsOrganizationsOrganization_AwsServiceAccessPrincipals(
 func testAccAwsOrganizationsOrganizationConfigAwsServiceAccessPrincipals1(

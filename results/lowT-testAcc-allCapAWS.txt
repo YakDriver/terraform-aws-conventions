@@ -2043,6 +2043,10 @@ func testAccAWSNetworkAclConfigTags1(
 func testAccAWSNetworkAclConfigTags2(
 func testAccAWSNetworkInterfaceAttachmentConfig_basic(
 func testAccAWSENIConfig(
+func testAccAWSENIIPV6ConfigBase(
+func testAccAWSENIIPV6Config(
+func testAccAWSENIIPV6MultipleConfig(
+func testAccAWSENIIPV6CountConfig(
 func testAccAWSENIConfigUpdatedDescription(
 func testAccAWSENIConfigWithSourceDestCheck(
 func testAccAWSENIConfigWithNoPrivateIPs(

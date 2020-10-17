@@ -1062,6 +1062,7 @@ func TestAccAWSNetworkAcl_Egress_ConfigMode(
 func TestAccAWSNetworkAcl_Ingress_ConfigMode(
 func TestAccAWSNetworkAcl_OnlyIngressRules_basic(
 func TestAccAWSNetworkAcl_OnlyIngressRules_update(
+func TestAccAWSENI_ipv6_count(
 func TestAccAWSOpsworksStack_CustomCookbooks_SetPrivateProperties(
 func testAccAwsOpsWorksStack_classic_endpoint(
 func testAccAwsOpsWorksStack_regional_endpoint(

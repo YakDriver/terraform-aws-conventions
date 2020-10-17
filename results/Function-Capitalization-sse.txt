@@ -32,6 +32,7 @@ func TestAccAWSS3BucketObject_sse(
 func testAccCheckAwsSesDomainIdentityVerificationPassed(
 func flattenNetworkInterfacesPrivateIPAddresses(
 func expandPrivateIPAddresses(
+func expandIP6Addresses(
 func flattenAsgSuspendedProcesses(
 func expandRoute53ResolverEndpointIpAddresses(
 func flattenRoute53ResolverEndpointIpAddresses(

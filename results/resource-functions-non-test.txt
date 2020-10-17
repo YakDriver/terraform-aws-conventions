@@ -3598,6 +3598,7 @@ func deleteNetworkInterface(
 func detachNetworkInterface(
 func networkInterfaceAttachmentStateRefresh(
 func networkInterfaceStateRefresh(
+func waitForNetworkInterfaceCreation(
 func resourceAwsNetworkInterfaceSGAttachment(
 func resourceAwsNetworkInterfaceSGAttachmentCreate(
 func resourceAwsNetworkInterfaceSGAttachmentRead(

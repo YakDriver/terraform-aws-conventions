@@ -2995,6 +2995,10 @@ func testAccAwsNetworkInterfaceSGAttachmentConfigViaInstance(
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaDataSource(
 func testAccAwsNetworkInterfaceSGAttachmentConfigMultiple(
 func testAccAWSENIConfig(
+func testAccAWSENIIPV6ConfigBase(
+func testAccAWSENIIPV6Config(
+func testAccAWSENIIPV6MultipleConfig(
+func testAccAWSENIIPV6CountConfig(
 func testAccAWSENIConfigUpdatedDescription(
 func testAccAWSENIConfigWithSourceDestCheck(
 func testAccAWSENIConfigWithNoPrivateIPs(

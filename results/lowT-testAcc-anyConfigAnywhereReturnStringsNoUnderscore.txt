@@ -1501,8 +1501,12 @@ func testAccAwsNetworkInterfaceSGAttachmentConfigViaInstance(rName string) strin
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaDataSource(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigMultiple(rName string) string {
 func testAccAWSENIConfig() string {
+func testAccAWSENIIPV6ConfigBase(rName string) string {
+func testAccAWSENIIPV6Config(rName string) string {
+func testAccAWSENIIPV6MultipleConfig(rName string) string {
+func testAccAWSENIIPV6CountConfig(ipCount int, rName string) string {
 func testAccAWSENIConfigUpdatedDescription() string {
-func testAccAWSENIConfigWithSourceDestCheck() string {
+func testAccAWSENIConfigWithSourceDestCheck(enabled bool) string {
 func testAccAWSENIConfigWithNoPrivateIPs() string {
 func testAccAWSENIConfigWithAttachment() string {
 func testAccAWSENIConfigExternalAttachment() string {

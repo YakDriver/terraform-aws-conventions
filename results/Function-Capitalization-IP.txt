@@ -89,6 +89,10 @@ func TestAccAWSLB_networkLoadbalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func TestAccAWSENI_computedIPs(
+func testAccAWSENIIPV6ConfigBase(
+func testAccAWSENIIPV6Config(
+func testAccAWSENIIPV6MultipleConfig(
+func testAccAWSENIIPV6CountConfig(
 func testAccAWSENIConfigWithNoPrivateIPs(
 func resourceAwsSecurityGroupIPPermGather(
 func expandIPPerm(
@@ -180,6 +184,7 @@ func testAccAwsWafv2WebACLConfig_RateBasedStatement_ForwardedIPConfig(
 func expandIPPerms(
 func flattenNetworkInterfacesPrivateIPAddresses(
 func expandPrivateIPAddresses(
+func expandIP6Addresses(
 func TestExpandIPPerms(
 func TestExpandIPPerms_NegOneProtocol(
 func TestExpandIPPerms_nonVPC(
