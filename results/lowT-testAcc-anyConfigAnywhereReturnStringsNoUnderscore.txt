@@ -430,6 +430,9 @@ func testAccAWSAutoScalingGroupConfigWithSuspendedProcesses(name string) string 
 func testAccAWSAutoScalingGroupConfigWithSuspendedProcessesUpdated(name string) string {
 func testAccAWSAutoScalingGroupPartitionConfig(rName string) string {
 func testAccAWSAutoscalingLifecycleHookConfig(name string) string {
+func testAccAutoScalingPlansScalingPlanConfigBase(rName, tagName string) string {
+func testAccAutoScalingPlansScalingPlanConfigBasicDynamicScaling(rName, tagName string) string {
+func testAccAutoScalingPlansScalingPlanConfigBasicPredictiveScaling(rName, tagName string) string {
 func testAccAWSAutoscalingScheduleConfig(r, start, end string) string {
 func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter int, deleteAfter int) string {
 func testAccAwsBackupPlanConfigRuleCopyActionMultiple(rName string) string {
@@ -545,7 +548,7 @@ func testAccAWSCloudWatchEventTargetConfigEcsWithBlankTaskCount(rName string) st
 func testAccAWSCloudWatchEventTargetConfigBatch(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigKinesis(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigSqs(rName string) string {
-func testAccAWSCloudWatchEventTargetConfigInputTransformer(rName string) string {
+func testAccAWSCloudWatchEventTargetConfigInputTransformer(rName string, inputPathCount int) string {
 func testAccAWSCloudwatchLogDestinationPolicyConfig(rstring string) string {
 func testAccAWSCloudwatchLogDestinationConfig(rstring string) string {
 func testAccAWSCloudWatchLogGroupConfig(rInt int) string {
@@ -1131,6 +1134,8 @@ func testAccGlobalAcceleratorEndpointGroupConfigInstanceEndpoint(rName string) s
 func testAccGlobalAcceleratorEndpointGroupConfigUpdated(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorEmptyConfigurationBlock(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoEmptyConfigurationBlock(rName string) string {
+func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfo(rName string) string {
+func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoUpdate(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationBlock(rName string) string {
 func testAccGlueCrawlerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1303,6 +1308,38 @@ func testAccAWSKeyPairConfig(rName string) string {
 func testAccAWSKeyPairConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSKeyPairConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsApplicationConfigOutputsLambda(rInt int) string {
+func testAccKinesisAnalyticsV2ApplicationConfigBaseServiceExecutionIamRole(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigBaseFlinkApplication(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigBaseSQLApplication(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigBaseVPC(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigBasicFlinkApplication(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigBasicSQLApplication(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigBasicSQLApplicationPlusDescription(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigBasicSQLApplicationServiceExecutionRoleUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigApplicationCodeConfiguration(rName, textContent string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigCloudWatchLoggingOptions(rName string, streamIndex int) string {
+func testAccKinesisAnalyticsV2ApplicationConfigEnvironmentProperties(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigEnvironmentPropertiesUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigEnvironmentPropertiesNotSpecified(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfiguration(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfigurationUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfigurationEnvironmentProperties(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfigurationEnvironmentPropertiesUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationNotSpecified(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationInput(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationInputUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationInputProcessingConfiguration(rName string, lambdaIndex int) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationMultiple(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationMultipleUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationOutput(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationOutputUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationReferenceDataSource(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationReferenceDataSourceUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigVPCConfiguration(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigVPCConfigurationUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigVPCConfigurationNotSpecified(rName string) string {
 func testAccFirehoseAWSLambdaConfigBasic(funcName, policyName, roleName string) string {
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfigBase(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfig(rName string, rInt int) string {
@@ -2026,6 +2063,12 @@ func testAccAWSStorageGatewaySmbFileShareAuditDestinationConfig(rName string) st
 func testAccAWSStorageGatewaySmbFileShareAuditDestinationUpdatedConfig(rName string) string {
 func testAccAWSStorageGatewaySmbFileShareCacheAttributesConfig(rName string, timeout int) string {
 func testAccAWSStorageGatewaySmbFileShareCaseSensitivityConfig(rName, option string) string {
+func testAccAWSStorageGatewayStoredIscsiVolumeConfigBase(rName string) string {
+func testAccAWSStorageGatewayStoredIscsiVolumeConfigBasic(rName string) string {
+func testAccAWSStorageGatewayStoredIscsiVolumeConfigKMSEncrypted(rName string) string {
+func testAccAWSStorageGatewayStoredIscsiVolumeConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSStorageGatewayStoredIscsiVolumeConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSStorageGatewayStoredIscsiVolumeConfigSnapshotId(rName string) string {
 func testAccSubnetTagsConfig1(rName, tagKey1, tagValue1 string) string {
 func testAccSubnetTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSubnetConfigAvailabilityZoneId() string {

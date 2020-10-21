@@ -191,6 +191,7 @@ func expandIotDynamoDBAction(
 func expandIotDynamoDBv2Action(
 func flattenIotDynamoDBAction(
 func flattenIotDynamoDBv2Action(
+func kinesisAnalyticsV2RetryIAMEventualConsistency(
 func flattenFirehoseOpenXJsonSerDe(
 func expandFirehoseOpenXJsonSerDe(
 func firehoseDeliveryStreamSSEStateRefreshFunc(

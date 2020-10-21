@@ -5,6 +5,8 @@ func amiRootSnapshotId(
 func amiStateReason(
 func amiBlockDeviceMappingHash(
 func amiProductCodesHash(
+func TestAccAwsAutoScalingPlansScalingPlan_basicDynamicScaling(
+func testAccAutoScalingPlansScalingPlanConfigBasicDynamicScaling(
 func buildFamilyAndRevisionFromARN(
 func TestAccAWSEcsService_withFamilyAndRevision(
 func testAccAWSEcsServiceWithFamilyAndRevision(

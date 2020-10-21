@@ -254,6 +254,8 @@ func testAccAwsInstanceVpcConfigBasic(
 func testAccAwsInstanceVpcSecurityGroupConfig(
 func testAccAwsInstanceVpcIpv6Config(
 func findPublicNetworkInterfacesForVpcID(
+func expandKinesisAnalyticsV2VpcConfiguration(
+func expandKinesisAnalyticsV2VpcConfigurationUpdate(
 func flattenVpcConfiguration(
 func extractVpcConfiguration(
 func TestAccAWSKinesisFirehoseDeliveryStream_ElasticsearchWithVpcConfigUpdates(
