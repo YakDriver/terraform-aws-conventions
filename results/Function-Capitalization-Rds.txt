@@ -1,3 +1,5 @@
+func dataSourceAwsRdsCertificate(
+func dataSourceAwsRdsCertificateRead(
 func dataSourceAwsRdsCluster(
 func dataSourceAwsRdsClusterRead(
 func testAccDataSourceAwsRdsClusterConfigBasic(

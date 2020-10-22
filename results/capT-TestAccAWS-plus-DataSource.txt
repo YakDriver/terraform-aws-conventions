@@ -133,6 +133,8 @@ func TestAccAWSOutpostsOutpostDataSource_Arn(
 func TestAccAWSOutpostsSitesDataSource_basic(
 func TestAccAWSOutpostsSiteDataSource_Id(
 func TestAccAWSOutpostsSiteDataSource_Name(
+func TestAccAWSRDSCertificateDataSource_Id(
+func TestAccAWSRDSCertificateDataSource_LatestValidTill(
 func TestAccAWSRDSEngineVersionDataSource_basic(
 func TestAccAWSRDSEngineVersionDataSource_upgradeTargets(
 func TestAccAWSRDSEngineVersionDataSource_preferred(

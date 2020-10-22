@@ -567,6 +567,8 @@ func TestAccDataSourceAwsRamResourceShare_basic(
 func TestAccDataSourceAwsRamResourceShare_Tags(
 func testAccDataSourceAwsRamResourceShareConfig_Name(
 func testAccDataSourceAwsRamResourceShareConfig_Tags(
+func dataSourceAwsRdsCertificate(
+func dataSourceAwsRdsCertificateRead(
 func dataSourceAwsRdsCluster(
 func dataSourceAwsRdsClusterRead(
 func testAccDataSourceAwsRdsClusterConfigBasic(
@@ -2776,6 +2778,7 @@ func testAccAwsFsxLustreFileSystemConfigKmsKeyId1(
 func testAccAwsFsxLustreFileSystemConfigKmsKeyId2(
 func testAccAwsFsxLustreFileSystemHddStorageType(
 func testAccAwsFsxLustreFileSystemAutoImportPolicyConfig(
+func testAccAwsFsxLustreFileSystemCopyTagsToBackups(
 func resourceAwsFsxWindowsFileSystem(
 func resourceAwsFsxWindowsFileSystemCreate(
 func resourceAwsFsxWindowsFileSystemUpdate(
@@ -5309,6 +5312,7 @@ func TestAccAwsWorkspacesWorkspace_workspaceProperties(
 func TestAccAwsWorkspacesWorkspace_workspaceProperties_runningModeAlwaysOn(
 func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
 func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
+func TestAccAwsWorkspacesWorkspace_recreate(
 func testAccCheckAwsWorkspacesWorkspaceDestroy(
 func testAccCheckAwsWorkspacesWorkspaceExists(
 func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(

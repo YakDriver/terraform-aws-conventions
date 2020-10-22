@@ -166,6 +166,8 @@ func testAccAWSOutpostsSiteDataSourceConfigName() string {
 func testAccDataSourceAwsPricingProductConfigEc2(dataName string, instanceType string) string {
 func testAccDataSourceAwsPricingProductConfigRedshift() string {
 func testAccDataSourceAwsQLDBLedgerConfig(rName string) string {
+func testAccAWSRDSCertificateDataSourceConfigId() string {
+func testAccAWSRDSCertificateDataSourceConfigLatestValidTill() string {
 func testAccDataSourceAwsRdsClusterConfigBasic(clusterName string) string {
 func testAccAWSRDSEngineVersionDataSourceBasicConfig(engine, version, paramGroup string) string {
 func testAccAWSRDSEngineVersionDataSourceUpgradeTargetsConfig() string {
@@ -596,11 +598,13 @@ func testAccAWSCodeArtifactDomainBasicConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyBasicConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyUpdatedConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryBaseConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryBasicConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryDescConfig(rName, desc string) string {
 func testAccAWSCodeArtifactRepositoryUpstreamsConfig1(rName string) string {
 func testAccAWSCodeArtifactRepositoryUpstreamsConfig2(rName string) string {
+func testAccAWSCodeArtifactRepositoryExternalConnectionConfig(rName string) string {
 func testAccAWSCodeBuildReportGroupBasicConfig(rName string) string {
 func testAccAWSCodeBuildReportGroupBasicConfigS3ExportBase(rName string) string {
 func testAccAWSCodeBuildReportGroupS3ExportConfig(rName string) string {
@@ -1831,15 +1835,17 @@ func testAccSagemakerPrimaryContainerModelDataUrlConfig(rName string, image stri
 func testAccSagemakerPrimaryContainerHostnameConfig(rName string, image string) string {
 func testAccSagemakerPrimaryContainerEnvironmentConfig(rName string, image string) string {
 func testAccSagemakerModelVpcConfig(rName string, image string) string {
-func testAccAWSSagemakerNotebookInstanceConfig(notebookName string) string {
-func testAccAWSSagemakerNotebookInstanceConfigVolume(notebookName string) string {
-func testAccAWSSagemakerNotebookInstanceUpdateConfig(notebookName string) string {
+func testAccAWSSagemakerNotebookInstanceBaseConfig(rName string) string {
+func testAccAWSSagemakerNotebookInstanceBasicConfig(rName string) string {
+func testAccAWSSagemakerNotebookInstanceUpdateConfig(rName string) string {
 func testAccAWSSagemakerNotebookInstanceConfigLifecycleConfigName(rName string) string {
-func testAccAWSSagemakerNotebookInstanceTagsConfig(notebookName string) string {
-func testAccAWSSagemakerNotebookInstanceTagsUpdateConfig(notebookName string) string {
-func testAccAWSSagemakerNotebookInstanceConfigRootAccess(notebookName string, rootAccess string) string {
-func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(notebookName string, directInternetAccess string) string {
-func testAccAWSSagemakerNotebookInstanceConfigDefaultCodeRepository(notebookName string, defaultCodeRepository string) string {
+func testAccAWSSagemakerNotebookInstanceConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSagemakerNotebookInstanceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSagemakerNotebookInstanceConfigRootAccess(rName string, rootAccess string) string {
+func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(rName string, directInternetAccess string) string {
+func testAccAWSSagemakerNotebookInstanceConfigVolume(rName string) string {
+func testAccAWSSagemakerNotebookInstanceConfigDefaultCodeRepository(rName string, defaultCodeRepository string) string {
+func testAccAWSSagemakerNotebookInstanceKMSConfig(rName string) string {
 func testAccAwsSecretsManagerSecretRotationConfig(rName string, automaticallyAfterDays int) string {
 func testAccAWSSecurityGroupRuleIngressConfig(rInt int) string {
 func testAccAWSSecurityGroupRuleIngressClassicConfig(rInt int) string {

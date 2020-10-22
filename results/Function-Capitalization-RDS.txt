@@ -1,3 +1,8 @@
+func TestAccAWSRDSCertificateDataSource_Id(
+func TestAccAWSRDSCertificateDataSource_LatestValidTill(
+func testAccAWSRDSCertificatePreCheck(
+func testAccAWSRDSCertificateDataSourceConfigId(
+func testAccAWSRDSCertificateDataSourceConfigLatestValidTill(
 func TestAccDataSourceAWSRDSCluster_basic(
 func TestAccAWSRDSEngineVersionDataSource_basic(
 func TestAccAWSRDSEngineVersionDataSource_upgradeTargets(
