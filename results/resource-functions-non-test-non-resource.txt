@@ -1014,6 +1014,7 @@ func flattenGlueMLTransformFindMatchesParameters(
 func flattenGlueMLTransformSchemaColumns(
 func init(
 func expandGluePartitionInput(
+func CreateTablePolicy(
 func deleteGlueSecurityConfiguration(
 func expandGlueCloudWatchEncryption(
 func expandGlueEncryptionConfiguration(

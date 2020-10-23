@@ -2514,6 +2514,11 @@ func resourceAwsGluePartitionRead(
 func resourceAwsGluePartitionUpdate(
 func resourceAwsGluePartitionDelete(
 func expandGluePartitionInput(
+func resourceAwsGlueResourcePolicy(
+func resourceAwsGlueResourcePolicyPut(
+func resourceAwsGlueResourcePolicyRead(
+func resourceAwsGlueResourcePolicyDelete(
+func CreateTablePolicy(
 func resourceAwsGlueSecurityConfiguration(
 func resourceAwsGlueSecurityConfigurationCreate(
 func resourceAwsGlueSecurityConfigurationRead(

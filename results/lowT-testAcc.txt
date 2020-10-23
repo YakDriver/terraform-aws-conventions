@@ -3559,6 +3559,12 @@ func testAccGluePartitionBasicConfig(
 func testAccGluePartitionParametersConfig1(
 func testAccGluePartitionParametersConfig2(
 func testAccGluePartitionMultiplePartValueConfig(
+func testAccAWSGlueResourcePolicy_basic(
+func testAccAWSGlueResourcePolicy_disappears(
+func testAccAWSGlueResourcePolicy_Required(
+func testAccAWSGlueResourcePolicy_update(
+func testAccAWSGlueResourcePolicy(
+func testAccCheckAWSGlueResourcePolicyDestroy(
 func testAccCheckAWSGlueSecurityConfigurationExists(
 func testAccCheckAWSGlueSecurityConfigurationDestroy(
 func testAccAWSGlueSecurityConfigurationConfig_Basic(

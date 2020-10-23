@@ -6875,6 +6875,16 @@ func testAccGluePartitionBasicConfig(
 func testAccGluePartitionParametersConfig1(
 func testAccGluePartitionParametersConfig2(
 func testAccGluePartitionMultiplePartValueConfig(
+func resourceAwsGlueResourcePolicy(
+func resourceAwsGlueResourcePolicyPut(
+func resourceAwsGlueResourcePolicyRead(
+func resourceAwsGlueResourcePolicyDelete(
+func testAccAWSGlueResourcePolicy_basic(
+func testAccAWSGlueResourcePolicy_disappears(
+func testAccAWSGlueResourcePolicy_Required(
+func testAccAWSGlueResourcePolicy_update(
+func testAccAWSGlueResourcePolicy(
+func testAccCheckAWSGlueResourcePolicyDestroy(
 func resourceAwsGlueSecurityConfiguration(
 func resourceAwsGlueSecurityConfigurationCreate(
 func resourceAwsGlueSecurityConfigurationRead(

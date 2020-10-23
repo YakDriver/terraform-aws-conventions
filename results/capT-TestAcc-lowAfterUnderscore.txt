@@ -1349,6 +1349,7 @@ func TestAccAWSGluePartition_multipleValues(
 func TestAccAWSGluePartition_parameters(
 func TestAccAWSGluePartition_disappears(
 func TestAccAWSGlueSecurityConfiguration_basic(
+func TestAccAWSGlue_serial(
 func TestAccAWSGlueTrigger_basic(
 func TestAccAWSGlueUserDefinedFunction_basic(
 func TestAccAWSGlueUserDefinedFunction_resource_uri(

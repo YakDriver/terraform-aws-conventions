@@ -706,6 +706,9 @@ func testAccGlueCatalogDatabase_full(
 func testAccGlueCatalogTable_basic(
 func testAccGlueCatalogTable_full(
 func testAccGlueCatalogTable_full_replacedValues(
+func testAccAWSGlueResourcePolicy_basic(
+func testAccAWSGlueResourcePolicy_disappears(
+func testAccAWSGlueResourcePolicy_update(
 func testAccAwsGuardDutyDetector_basic(
 func testAccAwsGuardDutyDetector_tags(
 func testAccAwsGuardDutyFilter_basic(

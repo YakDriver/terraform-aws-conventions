@@ -2408,6 +2408,7 @@ func testAccGluePartitionBasicConfig(rName, parValue string) string {
 func testAccGluePartitionParametersConfig1(rName, parValue, key1, value1 string) string {
 func testAccGluePartitionParametersConfig2(rName, parValue, key1, value1, key2, value2 string) string {
 func testAccGluePartitionMultiplePartValueConfig(rName, parValue, parValue2 string) string {
+func testAccAWSGlueResourcePolicy_Required(action string) string {
 func testAccAWSGlueSecurityConfigurationConfig_Basic(rName string) string {
 func testAccAWSGlueSecurityConfigurationConfig_CloudWatchEncryption_CloudWatchEncryptionMode_SSEKMS(rName string) string {
 func testAccAWSGlueSecurityConfigurationConfig_JobBookmarksEncryption_JobBookmarksEncryptionMode_CSEKMS(rName string) string {
