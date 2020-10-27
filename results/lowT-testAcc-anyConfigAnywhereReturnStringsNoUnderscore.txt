@@ -535,12 +535,16 @@ func testAccCheckAwsCloudWatchEventPermissionResourceConfigAction(action, princi
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigConditionOrganization(statementID, value string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigMultiple(principal1, statementID1, principal2, statementID2 string) string {
 func testAccAWSCloudWatchEventRuleConfig(name string) string {
+func testAccAWSCloudWatchEventRuleConfigDefaultEventBusName(name string) string {
+func testAccAWSCloudWatchEventRuleConfigEventBusName(name, eventBusName, description string) string {
 func testAccAWSCloudWatchEventRuleConfigPattern(name, pattern string) string {
+func testAccAWSCloudWatchEventRuleConfigScheduleAndPattern(name, pattern string) string {
 func testAccAWSCloudWatchEventRuleConfigDescription(name, description string) string {
 func testAccAWSCloudWatchEventRuleConfigIsEnabled(name string, enabled bool) string {
-func testAccAWSCloudWatchEventRuleConfigPrefix(name string) string {
+func testAccAWSCloudWatchEventRuleConfigNamePrefix(name string) string {
 func testAccAWSCloudWatchEventRuleConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccAWSCloudWatchEventRuleConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCloudWatchEventRuleConfigTags0(name string) string {
 func testAccAWSCloudWatchEventRuleConfigRole(name string) string {
 func testAccAWSCloudWatchEventTargetConfig(ruleName, snsTopicName, targetID string) string {
 func testAccAWSCloudWatchEventTargetConfigMissingTargetId(ruleName, snsTopicName string) string {

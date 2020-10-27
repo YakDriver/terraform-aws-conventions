@@ -51,6 +51,7 @@ const testAccDataSourceAwsVpcPeeringConnectionConfig =
 const testAccCheckAWSProviderConfigAssumeRoleEmpty =
 const testAccAWSCloudFrontOriginAccessIdentityConfig =
 const testAccAWSCloudFrontOriginAccessIdentityNoCommentConfig =
+const testAccAWSCloudWatchEventRuleConfigNameGenerated =
 const testAccDefaultRouteTableConfig =
 const testAccAWSDefaultVpcDhcpOptionsConfigBasic =
 const testAccAWSDefaultVpcConfigBasic =

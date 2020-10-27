@@ -513,6 +513,7 @@ func resourceAwsWafv2IPSetCreate(
 func resourceAwsWafv2IPSetRead(
 func resourceAwsWafv2IPSetUpdate(
 func resourceAwsWafv2IPSetDelete(
+func testSweepWafv2IpSets(
 func TestAccAwsWafv2IPSet_basic(
 func TestAccAwsWafv2IPSet_Disappears(
 func TestAccAwsWafv2IPSet_IPv6(
@@ -538,6 +539,7 @@ func resourceAwsWafv2RegexPatternSetDelete(
 func expandWafv2RegexPatternSet(
 func expandWafv2Regex(
 func flattenWafv2RegexPatternSet(
+func testSweepWafv2RegexPatternSets(
 func TestAccAwsWafv2RegexPatternSet_basic(
 func TestAccAwsWafv2RegexPatternSet_Disappears(
 func TestAccAwsWafv2RegexPatternSet_Minimal(
@@ -556,6 +558,7 @@ func resourceAwsWafv2RuleGroupCreate(
 func resourceAwsWafv2RuleGroupRead(
 func resourceAwsWafv2RuleGroupUpdate(
 func resourceAwsWafv2RuleGroupDelete(
+func testSweepWafv2RuleGroups(
 func TestAccAwsWafv2RuleGroup_basic(
 func TestAccAwsWafv2RuleGroup_updateRule(
 func TestAccAwsWafv2RuleGroup_updateRuleProperties(
@@ -669,6 +672,7 @@ func testAccAwsWafv2WebACLLoggingConfiguration_basic(
 func testAccAwsWafv2WebACLLoggingConfiguration_updateLogDestination(
 func testAccAwsWafv2WebACLLoggingConfiguration_updateTwoRedactedFields(
 func testAccAwsWafv2WebACLLoggingConfiguration_updateOneRedactedField(
+func testSweepWafv2WebAcls(
 func TestAccAwsWafv2WebACL_basic(
 func TestAccAwsWafv2WebACL_updateRule(
 func TestAccAwsWafv2WebACL_UpdateRuleProperties(

@@ -2036,9 +2036,12 @@ func updateSizeConstraintSetResource(
 func updateSqlInjectionMatchSetResource(
 func flattenWafSqlInjectionMatchTuples(
 func diffWafSqlInjectionMatchTuples(
+func init(
 func expandWafv2RegexPatternSet(
 func expandWafv2Regex(
 func flattenWafv2RegexPatternSet(
+func init(
+func init(
 func wafv2WebACLRootStatementSchema(
 func wafv2ManagedRuleGroupStatementSchema(
 func wafv2ExcludedRuleSchema(
@@ -2067,6 +2070,7 @@ func flattenWafv2RuleGroupReferenceStatement(
 func flattenWafv2ExcludedRules(
 func flattenWafv2RedactedFields(
 func expandWafv2RedactedFields(
+func init(
 func expandWAFLoggingConfiguration(
 func expandWAFRedactedFields(
 func flattenWAFLoggingConfiguration(

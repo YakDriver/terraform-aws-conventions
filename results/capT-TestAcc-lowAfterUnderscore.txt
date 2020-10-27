@@ -633,7 +633,6 @@ func TestAccAWSCloudWatchEventRule_basic(
 func TestAccAWSCloudWatchEventRule_role(
 func TestAccAWSCloudWatchEventRule_description(
 func TestAccAWSCloudWatchEventRule_pattern(
-func TestAccAWSCloudWatchEventRule_prefix(
 func TestAccAWSCloudWatchEventRule_tags(
 func TestAccAWSCloudWatchEventTarget_basic(
 func TestAccAWSCloudWatchEventTarget_missingTargetId(
@@ -2169,6 +2168,8 @@ func TestAccAWSS3Bucket_objectLock(
 func TestAccAWSS3Bucket_forceDestroy(
 func TestAccAWSS3Bucket_forceDestroyWithEmptyPrefixes(
 func TestAccAWSS3Bucket_forceDestroyWithObjectLockEnabled(
+func TestAccAWSS3ControlBucket_basic(
+func TestAccAWSS3ControlBucket_disappears(
 func TestAccAWSSagemakerEndpointConfiguration_basic(
 func TestAccAWSSagemakerEndpoint_basic(
 func TestAccAWSSagemakerModel_basic(
@@ -2176,6 +2177,7 @@ func TestAccAWSSagemakerModel_tags(
 func TestAccAWSSagemakerModel_primaryContainerModelDataUrl(
 func TestAccAWSSagemakerModel_primaryContainerHostname(
 func TestAccAWSSagemakerModel_primaryContainerEnvironment(
+func TestAccAWSSagemakerModel_primaryContainerModeSingle(
 func TestAccAWSSagemakerModel_containers(
 func TestAccAWSSagemakerModel_vpcConfig(
 func TestAccAWSSagemakerModel_networkIsolation(

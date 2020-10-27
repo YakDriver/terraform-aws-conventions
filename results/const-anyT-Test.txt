@@ -109,6 +109,7 @@ const testAccAWSAPIGatewayClientCertificateConfig_basic =
 const testAccAWSAPIGatewayClientCertificateConfig_basic_updated =
 const testAccAWSCloudFrontOriginAccessIdentityConfig =
 const testAccAWSCloudFrontOriginAccessIdentityNoCommentConfig =
+const testAccAWSCloudWatchEventRuleConfigNameGenerated =
 const testAccAWSCloudWatchLogGroup_namePrefix =
 const testAccAWSCloudWatchLogGroup_generatedName =
 const testAccAWSDBOptionGroup_namePrefix =

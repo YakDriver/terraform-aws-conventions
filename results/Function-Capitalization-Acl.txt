@@ -154,6 +154,7 @@ func testAccAWSWafRegionalWebAclConfig_noRules(
 func testAccAWSWafRegionalWebAclConfig_changeRules(
 func testAccAWSWafRegionalWebAclConfigLoggingConfiguration(
 func testAccAWSWafRegionalWebAclConfigLoggingConfigurationUpdate(
+func testSweepWafv2WebAcls(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(
 func resourceAwsWafWebAclRead(

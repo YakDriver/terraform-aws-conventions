@@ -1072,12 +1072,16 @@ func testAccCheckAwsCloudWatchEventPermissionResourceConfigAction(action, princi
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigConditionOrganization(statementID, value string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigMultiple(principal1, statementID1, principal2, statementID2 string) string {
 func testAccAWSCloudWatchEventRuleConfig(name string) string {
+func testAccAWSCloudWatchEventRuleConfigDefaultEventBusName(name string) string {
+func testAccAWSCloudWatchEventRuleConfigEventBusName(name, eventBusName, description string) string {
 func testAccAWSCloudWatchEventRuleConfigPattern(name, pattern string) string {
+func testAccAWSCloudWatchEventRuleConfigScheduleAndPattern(name, pattern string) string {
 func testAccAWSCloudWatchEventRuleConfigDescription(name, description string) string {
 func testAccAWSCloudWatchEventRuleConfigIsEnabled(name string, enabled bool) string {
-func testAccAWSCloudWatchEventRuleConfigPrefix(name string) string {
+func testAccAWSCloudWatchEventRuleConfigNamePrefix(name string) string {
 func testAccAWSCloudWatchEventRuleConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccAWSCloudWatchEventRuleConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCloudWatchEventRuleConfigTags0(name string) string {
 func testAccAWSCloudWatchEventRuleConfigRole(name string) string {
 func testAccAWSCloudWatchEventTargetConfig(ruleName, snsTopicName, targetID string) string {
 func testAccAWSCloudWatchEventTargetConfigMissingTargetId(ruleName, snsTopicName string) string {
@@ -3659,6 +3663,9 @@ func testAccAWSS3BucketObjectLockEnabledWithDefaultRetention(bucketName string) 
 func testAccAWSS3BucketConfig_forceDestroy(bucketName string) string {
 func testAccAWSS3BucketConfig_forceDestroyWithObjectLockEnabled(bucketName string) string {
 func testAccAWSS3BucketReplicationConfig_iamPolicy(rName string) string {
+func testAccAWSS3ControlBucketConfig_Bucket(rName string) string {
+func testAccAWSS3ControlBucketConfig_Tags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSS3ControlBucketConfig_Tags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSagemakerEndpointConfigurationConfig_Base(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_Basic(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_ProductionVariants_InitialVariantWeight(rName string) string {
@@ -3677,6 +3684,7 @@ func testAccSagemakerModelConfigTagsUpdate(rName string, image string) string {
 func testAccSagemakerPrimaryContainerModelDataUrlConfig(rName string, image string, modelDataUrl string) string {
 func testAccSagemakerPrimaryContainerHostnameConfig(rName string, image string) string {
 func testAccSagemakerPrimaryContainerEnvironmentConfig(rName string, image string) string {
+func testAccSagemakerPrimaryContainerModeSingle(rName string, image string) string {
 func testAccSagemakerModelContainers(rName string, image string) string {
 func testAccSagemakerModelNetworkIsolation(rName string, image string) string {
 func testAccSagemakerModelVpcConfig(rName string, image string) string {

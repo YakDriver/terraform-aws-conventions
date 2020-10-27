@@ -2535,6 +2535,11 @@ func resourceAwsS3BucketPublicAccessBlockCreate(
 func resourceAwsS3BucketPublicAccessBlockRead(
 func resourceAwsS3BucketPublicAccessBlockUpdate(
 func resourceAwsS3BucketPublicAccessBlockDelete(
+func resourceAwsS3ControlBucket(
+func resourceAwsS3ControlBucketCreate(
+func resourceAwsS3ControlBucketRead(
+func resourceAwsS3ControlBucketUpdate(
+func resourceAwsS3ControlBucketDelete(
 func resourceAwsSagemakerEndpointConfiguration(
 func resourceAwsSagemakerEndpointConfigurationCreate(
 func resourceAwsSagemakerEndpointConfigurationRead(

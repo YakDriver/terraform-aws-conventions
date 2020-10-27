@@ -103,6 +103,7 @@ func testAccAWSAutoscalingLifecycleHookImportStateIdFunc(
 func autoScalingPlansScalingPlanId(
 func testAccAWSAutoscalingPolicyImportStateIdFunc(
 func resourceAwsCloudFormationStackSetInstanceParseId(
+func testAccAWSCloudWatchEventRuleNoBusNameImportStateIdFunc(
 func findEventTargetById(
 func TestAccAWSCloudWatchEventTarget_missingTargetId(
 func testAccAWSCloudWatchEventTargetImportStateIdFunc(

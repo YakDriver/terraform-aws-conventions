@@ -4241,6 +4241,11 @@ func resourceAwsS3BucketPublicAccessBlockRead(
 func resourceAwsS3BucketPublicAccessBlockUpdate(
 func resourceAwsS3BucketPublicAccessBlockDelete(
 func init(
+func resourceAwsS3ControlBucket(
+func resourceAwsS3ControlBucketCreate(
+func resourceAwsS3ControlBucketRead(
+func resourceAwsS3ControlBucketUpdate(
+func resourceAwsS3ControlBucketDelete(
 func resourceAwsSagemakerEndpointConfiguration(
 func resourceAwsSagemakerEndpointConfigurationCreate(
 func resourceAwsSagemakerEndpointConfigurationRead(
@@ -5107,6 +5112,7 @@ func resourceAwsWafv2IPSetCreate(
 func resourceAwsWafv2IPSetRead(
 func resourceAwsWafv2IPSetUpdate(
 func resourceAwsWafv2IPSetDelete(
+func init(
 func resourceAwsWafv2RegexPatternSet(
 func resourceAwsWafv2RegexPatternSetCreate(
 func resourceAwsWafv2RegexPatternSetRead(
@@ -5115,11 +5121,13 @@ func resourceAwsWafv2RegexPatternSetDelete(
 func expandWafv2RegexPatternSet(
 func expandWafv2Regex(
 func flattenWafv2RegexPatternSet(
+func init(
 func resourceAwsWafv2RuleGroup(
 func resourceAwsWafv2RuleGroupCreate(
 func resourceAwsWafv2RuleGroupRead(
 func resourceAwsWafv2RuleGroupUpdate(
 func resourceAwsWafv2RuleGroupDelete(
+func init(
 func resourceAwsWafv2WebACLAssociation(
 func resourceAwsWafv2WebACLAssociationCreate(
 func resourceAwsWafv2WebACLAssociationRead(
@@ -5162,6 +5170,7 @@ func resourceAwsWafv2WebACLLoggingConfigurationRead(
 func resourceAwsWafv2WebACLLoggingConfigurationDelete(
 func flattenWafv2RedactedFields(
 func expandWafv2RedactedFields(
+func init(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(
 func resourceAwsWafWebAclRead(
