@@ -1,13 +1,13 @@
 func GetSupportedEC2Platforms(
 func TestGetSupportedEC2Platforms(
 func TestAccDataSourceAwsEip_PublicIP_EC2Classic(
+func testAccEC2ClassicPreCheck(
 func buildEC2AttributeFilterList(
 func buildEC2TagFilterList(
 func buildEC2CustomFilterList(
 func TestBuildEC2AttributeFilterList(
 func TestBuildEC2TagFilterList(
 func TestBuildEC2CustomFilterList(
-func testAccEC2ClassicPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func testAccAWSBatchComputeEnvironmentConfigEC2(
 func testAccAWSBatchComputeEnvironmentConfigEC2WithTags(

@@ -1,3 +1,5 @@
+func testAccCloudfrontRegionProviderConfig() string {
+func testAccCurRegionProviderConfig() string {
 func testAccCheckAwsAcmCertificateDataSourceConfig(domain string) string {
 func testAccCheckAwsAcmCertificateDataSourceConfigWithStatus(domain, status string) string {
 func testAccCheckAwsAcmCertificateDataSourceConfigWithTypes(domain, certType string) string {
@@ -228,6 +230,7 @@ func testAccDataSourceAwsVpnGatewayAttachedConfig(rInt int) string {
 func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
 func testAccDataSourceAwsWorkspacesDirectoryConfig(rName string) string {
 func testAccDataSourceAwsWorkspacesImageConfig(imageID string) string {
+func testAccEc2ClassicRegionProviderConfig() string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
@@ -235,7 +238,8 @@ func testAccAlternateRegionProviderConfig() string {
 func testAccMultipleRegionProviderConfig(regions int) string {
 func testAccProviderConfigIgnoreTagsKeyPrefixes1(keyPrefix1 string) string {
 func testAccProviderConfigIgnoreTagsKeys1(key1 string) string {
-func testAccUsEast1RegionProviderConfig() string {
+func testAccNamedRegionalProviderConfig(providerName string, region string) string {
+func testAccRegionalProviderConfig(region string) string {
 func testAccAWSProviderConfigEndpoints(endpoints string) string {
 func testAccAWSProviderConfigIgnoreTagsEmptyConfigurationBlock() string {
 func testAccAWSProviderConfigIgnoreTagsKeyPrefixes0() string {
@@ -1828,6 +1832,7 @@ func testAccAWSS3BucketConfigReplicationWithV2ConfigurationNoTags(randInt int) s
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationOnlyOneTag(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationPrefixAndTags(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationMultipleTags(randInt int) string {
+func testAccAWSS3OutpostsEndpointConfig(rInt int) string {
 func testAccSagemakerEndpointConfig(rName string) string {
 func testAccSagemakerEndpointConfigEndpointConfigNameUpdate(rName string) string {
 func testAccSagemakerEndpointConfigTags(rName string) string {

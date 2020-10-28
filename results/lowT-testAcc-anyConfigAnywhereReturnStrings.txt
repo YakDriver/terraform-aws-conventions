@@ -1,3 +1,5 @@
+func testAccCloudfrontRegionProviderConfig() string {
+func testAccCurRegionProviderConfig() string {
 func testAccCheckAwsAcmCertificateDataSourceConfig(domain string) string {
 func testAccCheckAwsAcmCertificateDataSourceConfigWithStatus(domain, status string) string {
 func testAccCheckAwsAcmCertificateDataSourceConfigWithTypes(domain, certType string) string {
@@ -369,6 +371,7 @@ func testAccDataSourceAwsWorkspaceBundleConfig_byOwnerName(owner, name string) s
 func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(bundleID, owner, name string) string {
 func testAccDataSourceAwsWorkspacesDirectoryConfig(rName string) string {
 func testAccDataSourceAwsWorkspacesImageConfig(imageID string) string {
+func testAccEc2ClassicRegionProviderConfig() string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
@@ -376,7 +379,8 @@ func testAccAlternateRegionProviderConfig() string {
 func testAccMultipleRegionProviderConfig(regions int) string {
 func testAccProviderConfigIgnoreTagsKeyPrefixes1(keyPrefix1 string) string {
 func testAccProviderConfigIgnoreTagsKeys1(key1 string) string {
-func testAccUsEast1RegionProviderConfig() string {
+func testAccNamedRegionalProviderConfig(providerName string, region string) string {
+func testAccRegionalProviderConfig(region string) string {
 func testAccAWSProviderConfigEndpoints(endpoints string) string {
 func testAccAWSProviderConfigIgnoreTagsEmptyConfigurationBlock() string {
 func testAccAWSProviderConfigIgnoreTagsKeyPrefixes0() string {
@@ -1387,7 +1391,7 @@ func testAccAWSDBInstanceConfig_basic() string {
 func testAccAWSDBInstanceConfig_namePrefix() string {
 func testAccAWSDBInstanceConfig_generatedName() string {
 func testAccAWSDBInstanceConfig_KmsKeyId(rInt int) string {
-func testAccAWSDBInstanceConfig_WithCACertificateIdentifier(cacID string) string {
+func testAccAWSDBInstanceConfig_WithCACertificateIdentifier() string {
 func testAccAWSDBInstanceConfig_WithOptionGroup(rName string) string {
 func testAccAWSDBInstanceConfig_IAMAuth(n int) string {
 func testAccAWSDBInstanceConfig_FinalSnapshotIdentifier_SkipFinalSnapshot() string {
@@ -1443,7 +1447,7 @@ func testAccAWSDBInstanceConfig_ReplicateSourceDb_MultiAZ(rName string, multiAz 
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_ParameterGroupName(rName string) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_Port(rName string, port int) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_VpcSecurityGroupIds(rName string) string {
-func testAccAWSDBInstanceConfig_ReplicateSourceDb_CACertificateIdentifier(rName string, caName string) string {
+func testAccAWSDBInstanceConfig_ReplicateSourceDb_CACertificateIdentifier(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_AllocatedStorage(rName string, allocatedStorage int) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_Io1Storage(rName string, iops int) string {
@@ -3050,7 +3054,7 @@ func testAccAWSClusterInstanceConfigPerformanceInsightsKmsKeyIdAuroraMysql2(rNam
 func testAccAWSClusterInstanceConfigPerformanceInsightsKmsKeyIdAuroraPostgresql(rName, engine string) string {
 func testAccAWSRDSClusterInstanceConfig_PubliclyAccessible(rName string, publiclyAccessible bool) string {
 func testAccAWSClusterInstanceConfig_CopyTagsToSnapshot(n int, f bool) string {
-func testAccAWSRDSClusterInstanceConfig_CACertificateIdentifier(rName string, caCertificateIdentifier string) string {
+func testAccAWSRDSClusterInstanceConfig_CACertificateIdentifier(rName string) string {
 func testAccAWSDBClusterParameterGroupConfig(name string) string {
 func testAccAWSDBClusterParameterGroupConfigWithApplyMethod(name string) string {
 func testAccAWSDBClusterParameterGroupAddParametersConfig(name string) string {
@@ -3232,6 +3236,7 @@ func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock() string {
 func testAccAWSRouteConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
 func testAccAWSRouteResourceConfigLocalGatewayID() string {
 func testAccAWSS3AccessPointConfig_basic(bucketName, accessPointName string) string {
+func testAccAWSS3AccessPointConfig_Bucket_Arn(rName string) string {
 func testAccAWSS3AccessPointConfig_policy(rName string) string {
 func testAccAWSS3AccessPointConfig_policyUpdated(rName string) string {
 func testAccAWSS3AccessPointConfig_noPolicy(rName string) string {
@@ -3346,9 +3351,20 @@ func testAccAWSS3BucketConfigReplicationWithV2ConfigurationMultipleTags(randInt 
 func testAccAWSS3BucketConfig_forceDestroy(bucketName string) string {
 func testAccAWSS3BucketConfig_forceDestroyWithObjectLockEnabled(bucketName string) string {
 func testAccAWSS3BucketReplicationConfig_iamPolicy(rName string) string {
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_AbortIncompleteMultipartUpload_DaysAfterInitiation(rName string, daysAfterInitiation int) string {
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Expiration_Date(rName string, date string) string {
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Expiration_Days(rName string, days int) string {
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Expiration_ExpiredObjectDeleteMarker(rName string, expiredObjectDeleteMarker bool) string {
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Filter_Prefix(rName, prefix string) string {
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Filter_Tags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Filter_Tags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Id(rName, id string) string {
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Status(rName, status string) string {
+func testAccAWSS3ControlBucketPolicyConfig_Policy(rName, action string) string {
 func testAccAWSS3ControlBucketConfig_Bucket(rName string) string {
 func testAccAWSS3ControlBucketConfig_Tags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSS3ControlBucketConfig_Tags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSS3OutpostsEndpointConfig(rInt int) string {
 func testAccSagemakerEndpointConfigurationConfig_Base(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_Basic(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_ProductionVariants_InitialVariantWeight(rName string) string {

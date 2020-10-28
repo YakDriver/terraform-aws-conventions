@@ -580,6 +580,7 @@ func TestAccAwsWafv2RuleGroup_SizeConstraintStatement(
 func TestAccAwsWafv2RuleGroup_SqliMatchStatement(
 func TestAccAwsWafv2RuleGroup_Tags(
 func TestAccAwsWafv2RuleGroup_XssMatchStatement(
+func testAccPreCheckAWSWafv2ScopeRegional(
 func testAccCheckAwsWafv2RuleGroupDestroy(
 func testAccCheckAwsWafv2RuleGroupExists(
 func testAccAwsWafv2RuleGroupConfig_Basic(

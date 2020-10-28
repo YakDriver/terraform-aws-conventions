@@ -1,3 +1,8 @@
+func testAccCloudfrontRegionProviderConfig(
+func testAccPreCheckCur(
+func testAccCurRegionProviderConfig(
+func testAccGetCurRegion(
+func testAccProviderFactoriesCur() map[string]func() (
 func testAccCheckAwsAcmCertificateDataSourceConfig(
 func testAccCheckAwsAcmCertificateDataSourceConfigWithStatus(
 func testAccCheckAwsAcmCertificateDataSourceConfigWithTypes(
@@ -175,6 +180,11 @@ func testAccAwsGuarddutyDetectorExplicitConfig(
 func testAccAwsIAMGroupConfig(
 func testAccAwsIAMGroupConfigWithUser(
 func testAccDatasourceAwsIamInstanceProfileConfig(
+func testAccAWSIAMPolicyDocumentExpectedJSON(
+func testAccAWSIAMPolicyDocumentSourceExpectedJSON(
+func testAccAWSIAMPolicyDocumentExpectedJSONStatementPrincipalIdentifiersStringAndSlice(
+func testAccAWSIAMPolicyDocumentExpectedJSONStatementPrincipalIdentifiersMultiplePrincipalsAWS(
+func testAccAWSIAMPolicyDocumentExpectedJSONStatementPrincipalIdentifiersMultiplePrincipalsGov(
 func testAccAwsDataSourceIamPolicyConfig(
 func testAccAwsIAMRoleConfig(
 func testAccAwsIAMRoleConfig_tags(
@@ -470,6 +480,15 @@ func testAccCheckWorkspacesImageAttributes(
 func testAccCheckAwsPolicyMatch(
 func testAccCheckDxVirtualInterfaceExists(
 func testAccCheckDxVirtualInterfaceDestroy(
+func testAccEC2ClassicPreCheck(
+func testAccEc2ClassicRegionProviderConfig(
+func testAccGetEc2ClassicRegion(
+func testAccProviderFactoriesEc2Classic() map[string]func() (
+func testAccProviderFactoriesInit(providers *[]*schema.Provider, providerNames []string) map[string]func() (
+func testAccProviderFactoriesInternal(providers *[]*schema.Provider) map[string]func() (
+func testAccProviderFactoriesAlternate(providers *[]*schema.Provider) map[string]func() (
+func testAccProviderFactoriesAlternateAccountAndAlternateRegion(providers *[]*schema.Provider) map[string]func() (
+func testAccProviderFactoriesMultipleRegion(providers *[]*schema.Provider, regions int) map[string]func() (
 func testAccPreCheck(
 func testAccAwsProviderAccountID(
 func testAccCheckResourceAttrAccountID(
@@ -502,12 +521,12 @@ func testAccGetAlternateRegionPartition(
 func testAccGetThirdRegionPartition(
 func testAccAlternateAccountPreCheck(
 func testAccAlternateRegionPreCheck(
-func testAccEC2ClassicPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func testAccPartitionHasServicePreCheck(
 func testAccMultipleRegionPreCheck(
 func testAccMultipleRegionsPreCheck(
 func testAccRegionPreCheck(
+func testAccPartitionPreCheck(
 func testAccOrganizationsAccountPreCheck(
 func testAccOrganizationsEnabledPreCheck(
 func testAccPreCheckIamServiceLinkedRole(
@@ -518,7 +537,8 @@ func testAccAlternateRegionProviderConfig(
 func testAccMultipleRegionProviderConfig(
 func testAccProviderConfigIgnoreTagsKeyPrefixes1(
 func testAccProviderConfigIgnoreTagsKeys1(
-func testAccUsEast1RegionProviderConfig(
+func testAccNamedRegionalProviderConfig(
+func testAccRegionalProviderConfig(
 func testAccAwsRegionProviderFunc(region string, providers *[]*schema.Provider) func(
 func testAccCheckResourceDisappears(
 func testAccCheckWithProviders(f func(
@@ -2079,7 +2099,6 @@ func testAccCheckConfigRemediationConfigurationNotRecreated(
 func testAccCheckConfigRemediationConfigurationRecreated(
 func testAccCheckAwsCurReportDefinitionDestroy(
 func testAccCheckAwsCurReportDefinitionExists(
-func testAccPreCheckAWSCur(
 func testAccAwsCurReportDefinitionConfig_basic(
 func testAccAwsCurReportDefinitionConfig_additional(
 func testAccCheckCustomerGatewayDestroy(
@@ -5315,6 +5334,7 @@ func testAccCheckAWSS3AccessPointDestroy(
 func testAccCheckAWSS3AccessPointExists(
 func testAccCheckAWSS3AccessPointHasPolicy(n string, fn func(
 func testAccAWSS3AccessPointConfig_basic(
+func testAccAWSS3AccessPointConfig_Bucket_Arn(
 func testAccAWSS3AccessPointConfig_policy(
 func testAccAWSS3AccessPointConfig_policyUpdated(
 func testAccAWSS3AccessPointConfig_noPolicy(
@@ -5498,11 +5518,29 @@ func testAccAWSS3BucketObjectLockEnabledWithDefaultRetention(
 func testAccAWSS3BucketConfig_forceDestroy(
 func testAccAWSS3BucketConfig_forceDestroyWithObjectLockEnabled(
 func testAccAWSS3BucketReplicationConfig_iamPolicy(
+func testAccCheckAWSS3ControlBucketLifecycleConfigurationDestroy(
+func testAccCheckAWSS3ControlBucketLifecycleConfigurationExists(
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_AbortIncompleteMultipartUpload_DaysAfterInitiation(
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Expiration_Date(
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Expiration_Days(
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Expiration_ExpiredObjectDeleteMarker(
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Filter_Prefix(
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Filter_Tags1(
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Filter_Tags2(
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Id(
+func testAccAWSS3ControlBucketLifecycleConfigurationConfig_Rule_Status(
+func testAccCheckAWSS3ControlBucketPolicyDestroy(
+func testAccCheckAWSS3ControlBucketPolicyExists(
+func testAccAWSS3ControlBucketPolicyConfig_Policy(
 func testAccCheckAWSS3ControlBucketDestroy(
 func testAccCheckAWSS3ControlBucketExists(
 func testAccAWSS3ControlBucketConfig_Bucket(
 func testAccAWSS3ControlBucketConfig_Tags1(
 func testAccAWSS3ControlBucketConfig_Tags2(
+func testAccCheckAWSS3OutpostsEndpointDestroy(
+func testAccCheckAWSS3OutpostsEndpointExists(
+func testAccAWSS3OutpostsEndpointImportStateIdFunc(
+func testAccAWSS3OutpostsEndpointConfig(
 func testAccCheckSagemakerEndpointConfigurationDestroy(
 func testAccCheckSagemakerEndpointConfigurationExists(
 func testAccSagemakerEndpointConfigurationConfig_Base(
@@ -6452,6 +6490,7 @@ func testAccAwsWafv2RegexPatternSetConfig_Minimal(
 func testAccAwsWafv2RegexPatternSetConfig_OneTag(
 func testAccAwsWafv2RegexPatternSetConfig_TwoTags(
 func testAccAWSWafv2RegexPatternSetImportStateIdFunc(
+func testAccPreCheckAWSWafv2ScopeRegional(
 func testAccCheckAwsWafv2RuleGroupDestroy(
 func testAccCheckAwsWafv2RuleGroupExists(
 func testAccAwsWafv2RuleGroupConfig_Basic(
