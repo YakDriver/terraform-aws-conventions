@@ -4368,6 +4368,11 @@ func resourceAwsS3OutpostsEndpointCreate(
 func resourceAwsS3OutpostsEndpointRead(
 func resourceAwsS3OutpostsEndpointDelete(
 func resourceAwsS3OutpostsEndpointImportState(
+func resourceAwsSagemakerCodeRepository(
+func resourceAwsSagemakerCodeRepositoryCreate(
+func resourceAwsSagemakerCodeRepositoryRead(
+func resourceAwsSagemakerCodeRepositoryUpdate(
+func resourceAwsSagemakerCodeRepositoryDelete(
 func resourceAwsSagemakerEndpointConfiguration(
 func resourceAwsSagemakerEndpointConfigurationCreate(
 func resourceAwsSagemakerEndpointConfigurationRead(
@@ -4836,6 +4841,11 @@ func resourceAwsStorageGatewayStoredIscsiVolumeCreate(
 func resourceAwsStorageGatewayStoredIscsiVolumeUpdate(
 func resourceAwsStorageGatewayStoredIscsiVolumeRead(
 func resourceAwsStorageGatewayStoredIscsiVolumeDelete(
+func resourceAwsStorageGatewayTapePool(
+func resourceAwsStorageGatewayTapePoolCreate(
+func resourceAwsStorageGatewayTapePoolUpdate(
+func resourceAwsStorageGatewayTapePoolRead(
+func resourceAwsStorageGatewayTapePoolDelete(
 func resourceAwsStorageGatewayUploadBuffer(
 func resourceAwsStorageGatewayUploadBufferCreate(
 func resourceAwsStorageGatewayUploadBufferRead(
@@ -4949,7 +4959,6 @@ func testAccAwsVPCPeeringConnectionAccepterConfigDifferentRegionDifferentAccount
 func resourceAwsVpcPeeringConnection(
 func resourceAwsVPCPeeringCreate(
 func resourceAwsVPCPeeringRead(
-func resourceAwsVpcPeeringConnectionModifyOptions(
 func resourceAwsVPCPeeringUpdate(
 func resourceAwsVPCPeeringDelete(
 func resourceAwsVpcPeeringConnectionOptions(

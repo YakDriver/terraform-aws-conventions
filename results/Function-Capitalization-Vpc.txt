@@ -452,7 +452,6 @@ func migrateVpcStateV0toV1(
 func TestAWSVpcMigrateState(
 func resourceAwsVpcPeeringConnectionAccepter(
 func resourceAwsVpcPeeringConnection(
-func resourceAwsVpcPeeringConnectionModifyOptions(
 func waitForEc2VpcPeeringConnectionDeletion(
 func resourceAwsVpcPeeringConnectionOptions(
 func resourceAwsVpcPeeringConnectionOptionsCreate(

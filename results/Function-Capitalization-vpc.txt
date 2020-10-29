@@ -36,6 +36,7 @@ func vpcEndpointServiceWaitUntilAvailable(
 func vpcEndpointSubnetAssociationId(
 func vpcDescribe(
 func vpcIpv4CidrBlockAssociationStateRefresh(
+func vpcPeeringConnection(
 func vpcPeeringConnectionRefreshState(
 func vpcPeeringConnectionOptionsSchema(
 func vpcPeeringConnectionWaitUntilAvailable(

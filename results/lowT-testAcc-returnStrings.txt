@@ -647,6 +647,7 @@ func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributes(rName string)
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributesUpdated(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_apiWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_apiHttp(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_lambdaBase(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpBase(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttp(rName string) string {
@@ -657,7 +658,7 @@ func testAccAWSAPIGatewayV2IntegrationConfig_httpProxy(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttp(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpUpdated(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkWebSocket(rName string) string {
-func testAccAWSAPIGatewayV2IntegrationConfig_sqsIntegration(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_sqsIntegration(rName string, queueIndex int) string {
 func testAccAWSAPIGatewayV2ModelConfig_api(rName string) string {
 func testAccAWSAPIGatewayV2ModelConfig_basic(rName, schema string) string {
 func testAccAWSAPIGatewayV2ModelConfig_allAttributes(rName, schema string) string {
@@ -1948,6 +1949,8 @@ func testAccAWSEcsClusterConfigContainerInsights(rName string) string {
 func testAccAWSEcsClusterConfigContainerInsightsDisable(rName string) string {
 func testAccAWSEcsService(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceModified(clusterName, tdName, svcName string) string {
+func testAccAWSEcsServiceWithLaunchTypeFargateWithoutWait(rName string) string {
+func testAccAWSEcsServiceWithLaunchTypeFargateAndWait(rName string, desiredCount int, waitForSteadyState bool) string {
 func testAccAWSEcsServiceWithInterchangeablePlacementStrategy(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithCapacityProviderStrategy(providerName, clusterName, tdName, svcName string, weight, base int) string {
 func testAccAWSEcsServiceWithMultipleCapacityProviderStrategies(clusterName, tdName, svcName, sgName string) string {
@@ -3425,6 +3428,7 @@ func testAccAWSRdsGlobalClusterConfigDeletionProtection(rName string, deletionPr
 func testAccAWSRdsGlobalClusterConfigEngine(rName, engine string) string {
 func testAccAWSRdsGlobalClusterConfigEngineVersion(rName, engine, engineVersion string) string {
 func testAccAWSRdsGlobalClusterConfigSourceDbClusterIdentifier(rName string) string {
+func testAccAWSRdsGlobalClusterConfigSourceDbClusterIdentifierStorageEncrypted(rName string) string {
 func testAccAWSRdsGlobalClusterConfigStorageEncrypted(rName string, storageEncrypted bool) string {
 func testAccAWSRedshiftClusterConfig_updateNodeCount(rInt int) string {
 func testAccAWSRedshiftClusterConfig_updateNodeType(rInt int) string {
@@ -3689,6 +3693,10 @@ func testAccAWSS3ControlBucketConfig_Bucket(rName string) string {
 func testAccAWSS3ControlBucketConfig_Tags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSS3ControlBucketConfig_Tags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSS3OutpostsEndpointConfig(rInt int) string {
+func testAccAWSSagemakerCodeRepositoryBasicConfig(rName string) string {
+func testAccAWSSagemakerCodeRepositoryGitConfigBranchConfig(rName string) string {
+func testAccAWSSagemakerCodeRepositoryGitConfigSecretConfig(rName string) string {
+func testAccAWSSagemakerCodeRepositoryGitConfigSecretUpdatedConfig(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_Base(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_Basic(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_ProductionVariants_InitialVariantWeight(rName string) string {
@@ -3723,6 +3731,9 @@ func testAccAWSSagemakerNotebookInstanceConfigRootAccess(rName string, rootAcces
 func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(rName string, directInternetAccess string) string {
 func testAccAWSSagemakerNotebookInstanceConfigVolume(rName string) string {
 func testAccAWSSagemakerNotebookInstanceConfigDefaultCodeRepository(rName string, defaultCodeRepository string) string {
+func testAccAWSSagemakerNotebookInstanceConfigAdditionalCodeRepository1(rName, repo1 string) string {
+func testAccAWSSagemakerNotebookInstanceConfigAdditionalCodeRepository2(rName, repo1, repo2 string) string {
+func testAccAWSSagemakerNotebookInstanceConfigDefaultCodeRepositorySageMakerRepo(rName string) string {
 func testAccAWSSagemakerNotebookInstanceKMSConfig(rName string) string {
 func testAccAwsSecretsManagerSecretRotationConfig(rName string, automaticallyAfterDays int) string {
 func testAccAwsSecretsManagerSecretConfig_Description(rName, description string) string {
@@ -4078,6 +4089,10 @@ func testAccAWSStorageGatewayStoredIscsiVolumeConfigKMSEncrypted(rName string) s
 func testAccAWSStorageGatewayStoredIscsiVolumeConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayStoredIscsiVolumeConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayStoredIscsiVolumeConfigSnapshotId(rName string) string {
+func testAccAWSStorageGatewayTapePoolBasicConfig(rName string) string {
+func testAccAWSStorageGatewayTapePoolRetentionConfig(rName string) string {
+func testAccAWSStorageGatewayTapePoolConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSStorageGatewayTapePoolConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayUploadBufferConfig_Basic(rName string) string {
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(rName string) string {
 func testAccSubnetTagsConfig1(rName, tagKey1, tagValue1 string) string {
@@ -4132,8 +4147,8 @@ func testAccAwsVPCPeeringConnectionAccepterConfigSameRegionSameAccount(rName str
 func testAccAwsVPCPeeringConnectionAccepterConfigDifferentRegionSameAccount(rName string) string {
 func testAccAwsVPCPeeringConnectionAccepterConfigSameRegionDifferentAccount(rName string) string {
 func testAccAwsVPCPeeringConnectionAccepterConfigDifferentRegionDifferentAccount(rName string) string {
-func testAccVpcPeeringConnectionOptionsConfig_sameRegion_sameAccount(rName string) string {
-func testAccVpcPeeringConnectionOptionsConfig_differentRegion_sameAccount(rName string) string {
+func testAccVpcPeeringConnectionOptionsConfig_sameRegion_sameAccount(rName string, accepterDnsResolution, requesterRemoteClassicLink bool) string {
+func testAccVpcPeeringConnectionOptionsConfig_differentRegion_sameAccount(rName string, dnsResolution, dnsResolutionPeer bool) string {
 func testAccVpcPeeringConnectionOptionsConfig_sameRegion_differentAccount(rName string) string {
 func testAccVpcPeeringConfig_basic(rName string) string {
 func testAccVpcPeeringTagsConfig1(rName, tagKey1, tagValue1 string) string {

@@ -45,6 +45,7 @@ func testAccCheckAwsSESReceiptRuleExists(
 func testAccAwsSesReceiptRuleImportStateIdFunc(
 func testAccCheckAwsSESReceiptRuleOrder(
 func testAccCheckAwsSESReceiptRuleActions(
+func testAccPreCheckSESReceiptRule(
 func testAccAWSSESReceiptRuleBasicConfig(
 func testAccAWSSESReceiptRuleS3ActionConfig(
 func testAccAWSSESReceiptRuleOrderConfig(

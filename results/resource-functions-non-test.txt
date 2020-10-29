@@ -1905,6 +1905,7 @@ func resourceAwsEcsServiceDelete(
 func resourceAwsEcsLoadBalancerHash(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
+func waitForSteadyState(
 func init(
 func tpl_testAccAWSEcsService_withLbChanges(
 func tpl_testAccAWSEcsServiceWithNetworkConfiguration(
@@ -4273,6 +4274,15 @@ func resourceAwsS3OutpostsEndpointDelete(
 func resourceAwsS3OutpostsEndpointImportState(
 func flattenS3outpostsNetworkInterfaces(
 func flattenS3outpostsNetworkInterface(
+func resourceAwsSagemakerCodeRepository(
+func resourceAwsSagemakerCodeRepositoryCreate(
+func resourceAwsSagemakerCodeRepositoryRead(
+func resourceAwsSagemakerCodeRepositoryUpdate(
+func resourceAwsSagemakerCodeRepositoryDelete(
+func expandSagemakerCodeRepositoryGitConfig(
+func flattenSagemakerCodeRepositoryGitConfig(
+func expandSagemakerCodeRepositoryUpdateGitConfig(
+func init(
 func resourceAwsSagemakerEndpointConfiguration(
 func resourceAwsSagemakerEndpointConfigurationCreate(
 func resourceAwsSagemakerEndpointConfigurationRead(
@@ -4757,6 +4767,11 @@ func resourceAwsStorageGatewayStoredIscsiVolumeCreate(
 func resourceAwsStorageGatewayStoredIscsiVolumeUpdate(
 func resourceAwsStorageGatewayStoredIscsiVolumeRead(
 func resourceAwsStorageGatewayStoredIscsiVolumeDelete(
+func resourceAwsStorageGatewayTapePool(
+func resourceAwsStorageGatewayTapePoolCreate(
+func resourceAwsStorageGatewayTapePoolUpdate(
+func resourceAwsStorageGatewayTapePoolRead(
+func resourceAwsStorageGatewayTapePoolDelete(
 func resourceAwsStorageGatewayUploadBuffer(
 func resourceAwsStorageGatewayUploadBufferCreate(
 func resourceAwsStorageGatewayUploadBufferRead(
@@ -4910,9 +4925,9 @@ func resourceAwsVpcPeeringConnection(
 func resourceAwsVPCPeeringCreate(
 func resourceAwsVPCPeeringRead(
 func resourceVPCPeeringConnectionAccept(
-func resourceAwsVpcPeeringConnectionModifyOptions(
 func resourceAwsVPCPeeringUpdate(
 func resourceAwsVPCPeeringDelete(
+func vpcPeeringConnection(
 func vpcPeeringConnectionRefreshState(
 func vpcPeeringConnectionOptionsSchema(
 func vpcPeeringConnectionWaitUntilAvailable(

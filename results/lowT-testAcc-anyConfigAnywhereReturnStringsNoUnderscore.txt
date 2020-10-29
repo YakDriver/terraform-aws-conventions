@@ -1674,6 +1674,7 @@ func testAccAWSRdsGlobalClusterConfigDeletionProtection(rName string, deletionPr
 func testAccAWSRdsGlobalClusterConfigEngine(rName, engine string) string {
 func testAccAWSRdsGlobalClusterConfigEngineVersion(rName, engine, engineVersion string) string {
 func testAccAWSRdsGlobalClusterConfigSourceDbClusterIdentifier(rName string) string {
+func testAccAWSRdsGlobalClusterConfigSourceDbClusterIdentifierStorageEncrypted(rName string) string {
 func testAccAWSRdsGlobalClusterConfigStorageEncrypted(rName string, storageEncrypted bool) string {
 func testAccAWSRedshiftClusterConfigWithFinalSnapshot(rInt int) string {
 func testAccAWSRedshiftEventSubscriptionConfig(rInt int) string {
@@ -1833,6 +1834,10 @@ func testAccAWSS3BucketConfigReplicationWithV2ConfigurationOnlyOneTag(randInt in
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationPrefixAndTags(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationMultipleTags(randInt int) string {
 func testAccAWSS3OutpostsEndpointConfig(rInt int) string {
+func testAccAWSSagemakerCodeRepositoryBasicConfig(rName string) string {
+func testAccAWSSagemakerCodeRepositoryGitConfigBranchConfig(rName string) string {
+func testAccAWSSagemakerCodeRepositoryGitConfigSecretConfig(rName string) string {
+func testAccAWSSagemakerCodeRepositoryGitConfigSecretUpdatedConfig(rName string) string {
 func testAccSagemakerEndpointConfig(rName string) string {
 func testAccSagemakerEndpointConfigEndpointConfigNameUpdate(rName string) string {
 func testAccSagemakerEndpointConfigTags(rName string) string {
@@ -1854,6 +1859,9 @@ func testAccAWSSagemakerNotebookInstanceConfigRootAccess(rName string, rootAcces
 func testAccAWSSagemakerNotebookInstanceConfigDirectInternetAccess(rName string, directInternetAccess string) string {
 func testAccAWSSagemakerNotebookInstanceConfigVolume(rName string) string {
 func testAccAWSSagemakerNotebookInstanceConfigDefaultCodeRepository(rName string, defaultCodeRepository string) string {
+func testAccAWSSagemakerNotebookInstanceConfigAdditionalCodeRepository1(rName, repo1 string) string {
+func testAccAWSSagemakerNotebookInstanceConfigAdditionalCodeRepository2(rName, repo1, repo2 string) string {
+func testAccAWSSagemakerNotebookInstanceConfigDefaultCodeRepositorySageMakerRepo(rName string) string {
 func testAccAWSSagemakerNotebookInstanceKMSConfig(rName string) string {
 func testAccAwsSecretsManagerSecretRotationConfig(rName string, automaticallyAfterDays int) string {
 func testAccAWSSecurityGroupRuleIngressConfig(rInt int) string {
@@ -2084,6 +2092,10 @@ func testAccAWSStorageGatewayStoredIscsiVolumeConfigKMSEncrypted(rName string) s
 func testAccAWSStorageGatewayStoredIscsiVolumeConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayStoredIscsiVolumeConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayStoredIscsiVolumeConfigSnapshotId(rName string) string {
+func testAccAWSStorageGatewayTapePoolBasicConfig(rName string) string {
+func testAccAWSStorageGatewayTapePoolRetentionConfig(rName string) string {
+func testAccAWSStorageGatewayTapePoolConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSStorageGatewayTapePoolConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSubnetTagsConfig1(rName, tagKey1, tagValue1 string) string {
 func testAccSubnetTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSubnetConfigAvailabilityZoneId() string {

@@ -685,6 +685,7 @@ func flattenPlacementStrategy(
 func flattenServiceRegistries(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
+func waitForSteadyState(
 func init(
 func tpl_testAccAWSEcsService_withLbChanges(
 func tpl_testAccAWSEcsServiceWithNetworkConfiguration(
@@ -1743,6 +1744,10 @@ func flattenS3controlLifecycleRule(
 func flattenS3controlLifecycleRuleFilter(
 func flattenS3outpostsNetworkInterfaces(
 func flattenS3outpostsNetworkInterface(
+func expandSagemakerCodeRepositoryGitConfig(
+func flattenSagemakerCodeRepositoryGitConfig(
+func expandSagemakerCodeRepositoryUpdateGitConfig(
+func init(
 func expandSagemakerProductionVariants(
 func flattenProductionVariants(
 func init(
@@ -1970,6 +1975,7 @@ func waitForEc2VpcIpv6CidrBlockAssociationDelete(
 func vpcIpv4CidrBlockAssociationStateRefresh(
 func migrateVpcStateV0toV1(
 func resourceVPCPeeringConnectionAccept(
+func vpcPeeringConnection(
 func vpcPeeringConnectionRefreshState(
 func vpcPeeringConnectionOptionsSchema(
 func vpcPeeringConnectionWaitUntilAvailable(

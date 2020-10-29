@@ -713,6 +713,7 @@ func testAccCheckAWSAPIGatewayV2IntegrationExists(
 func testAccAWSAPIGatewayV2IntegrationImportStateIdFunc(
 func testAccAWSAPIGatewayV2IntegrationConfig_apiWebSocket(
 func testAccAWSAPIGatewayV2IntegrationConfig_apiHttp(
+func testAccAWSAPIGatewayV2IntegrationConfig_lambdaBase(
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpBase(
 func testAccAWSAPIGatewayV2IntegrationConfig_basic(
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttp(
@@ -2930,6 +2931,7 @@ func testAccCheckSESReceiptRuleDestroy(
 func testAccCheckAwsSESReceiptRuleExists(
 func testAccCheckAwsSESReceiptRuleOrder(
 func testAccCheckAwsSESReceiptRuleActions(
+func testAccPreCheckSESReceiptRule(
 func testAccAWSSESReceiptRuleBasicConfig(
 func testAccAWSSESReceiptRuleS3ActionConfig(
 func testAccAWSSESReceiptRuleOrderConfig(
