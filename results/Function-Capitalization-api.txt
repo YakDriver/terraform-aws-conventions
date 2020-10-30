@@ -4,6 +4,7 @@ func TestAccAWSAPIGatewayRestApi_api_key_source(
 func TestAccAWSAPIGatewayRestApi_openapi(
 func apiGatewayStageCacheRefreshFunc(
 func TestAccAWSAPIGatewayUsagePlan_apiStages(
+func TestAccAWSAPIGatewayUsagePlan_apiStages_multiple(
 func testAccAWSAPIGatewayV2ApiMappingConfig_apiMappingKey(
 func TestAccAWSAPIGatewayV2Api_Openapi(
 func TestAccAWSAPIGatewayV2Api_Openapi_WithTags(

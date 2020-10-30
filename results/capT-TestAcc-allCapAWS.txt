@@ -212,6 +212,8 @@ func TestAccAWSRedshiftServiceAccount_Region(
 func TestAccAWSRouteDataSource_basic(
 func TestAccAWSRouteDataSource_TransitGatewayID(
 func TestAccAWSRouteDataSource_LocalGatewayID(
+func TestAccAWSSageMakerPrebuiltECRImage_basic(
+func TestAccAWSSageMakerPrebuiltECRImage_region(
 func TestAccAWSStepFunctionsActivityDataSource_basic(
 func TestAccAWSSsmDocumentDataSource_basic(
 func TestAccAWSSsmParameterDataSource_basic(
@@ -393,6 +395,7 @@ func TestAccAWSAPIGatewayUsagePlan_throttling(
 func TestAccAWSAPIGatewayUsagePlan_throttlingInitialRateLimit(
 func TestAccAWSAPIGatewayUsagePlan_quota(
 func TestAccAWSAPIGatewayUsagePlan_apiStages(
+func TestAccAWSAPIGatewayUsagePlan_apiStages_multiple(
 func TestAccAWSAPIGatewayUsagePlan_disappears(
 func TestAccAWSAPIGatewayV2ApiMapping_basic(
 func TestAccAWSAPIGatewayV2Api_basicWebSocket(
@@ -721,6 +724,7 @@ func TestAccAWSCloudWatchEventTarget_batch(
 func TestAccAWSCloudWatchEventTarget_kinesis(
 func TestAccAWSCloudWatchEventTarget_sqs(
 func TestAccAWSCloudWatchEventTarget_input_transformer(
+func TestAccAWSCloudWatchEventTarget_disappears(
 func TestAccAWSCloudwatchLogDestinationPolicy_basic(
 func TestAccAWSCloudwatchLogDestination_basic(
 func TestAccAWSCloudWatchLogGroup_basic(

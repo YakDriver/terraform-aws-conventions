@@ -651,6 +651,9 @@ func dataSourceAwsS3BucketObjects(
 func dataSourceAwsS3BucketObjectsRead(
 func testAccCheckAwsS3ObjectsDataSourceExists(
 func testAccCheckAwsS3ObjectDataSourceExists(
+func dataSourceAwsSageMakerPrebuiltECRImage(
+func dataSourceAwsSageMakerPrebuiltECRImageRead(
+func dataSourceAwsSageMakerPrebuiltECRImageCreatePath(
 func dataSourceAwsSecretsManagerSecret(
 func dataSourceAwsSecretsManagerSecretRead(
 func dataSourceAwsSecretsManagerSecretRotation(

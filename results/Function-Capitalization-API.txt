@@ -285,6 +285,7 @@ func TestAccAWSAPIGatewayUsagePlan_throttling(
 func TestAccAWSAPIGatewayUsagePlan_throttlingInitialRateLimit(
 func TestAccAWSAPIGatewayUsagePlan_quota(
 func TestAccAWSAPIGatewayUsagePlan_apiStages(
+func TestAccAWSAPIGatewayUsagePlan_apiStages_multiple(
 func TestAccAWSAPIGatewayUsagePlan_disappears(
 func testAccCheckAWSAPIGatewayUsagePlanExists(
 func testAccCheckAWSAPIGatewayUsagePlanDestroy(

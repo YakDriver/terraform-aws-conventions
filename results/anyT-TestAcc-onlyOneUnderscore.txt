@@ -475,6 +475,8 @@ func testAccAWSDataSourceS3ObjectConfig_multipleSlashes(randInt int) (
 func TestAccDataSourceS3Bucket_basic(
 func TestAccDataSourceS3Bucket_website(
 func testAccAWSDataSourceS3BucketConfig_basic(
+func TestAccAWSSageMakerPrebuiltECRImage_basic(
+func TestAccAWSSageMakerPrebuiltECRImage_region(
 func TestAccDataSourceAwsSecretsManagerSecretRotation_basic(
 func testAccDataSourceAwsSecretsManagerSecretRotationConfig_Default(
 func TestAccDataSourceAwsSecretsManagerSecret_basic(
@@ -1350,6 +1352,7 @@ func TestAccAWSCloudWatchEventTarget_ecsWithBlankTaskCount(
 func TestAccAWSCloudWatchEventTarget_batch(
 func TestAccAWSCloudWatchEventTarget_kinesis(
 func TestAccAWSCloudWatchEventTarget_sqs(
+func TestAccAWSCloudWatchEventTarget_disappears(
 func testAccAWSCloudWatchEventTargetConfig_full(
 func TestAccAWSCloudwatchLogDestinationPolicy_basic(
 func TestAccAWSCloudwatchLogDestination_basic(

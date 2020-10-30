@@ -257,6 +257,8 @@ func TestAccDataSourceAWSS3BucketObject_kmsEncrypted(
 func TestAccDataSourceAWSS3BucketObject_allParams(
 func TestAccDataSourceS3Bucket_basic(
 func TestAccDataSourceS3Bucket_website(
+func TestAccAWSSageMakerPrebuiltECRImage_basic(
+func TestAccAWSSageMakerPrebuiltECRImage_region(
 func TestAccDataSourceAwsSecretsManagerSecretRotation_basic(
 func TestAccDataSourceAwsSecretsManagerSecret_basic(
 func TestAccDataSourceAwsSecretsManagerSecretVersion_basic(
@@ -443,6 +445,7 @@ func TestAccAWSAPIGatewayUsagePlan_throttling(
 func TestAccAWSAPIGatewayUsagePlan_throttlingInitialRateLimit(
 func TestAccAWSAPIGatewayUsagePlan_quota(
 func TestAccAWSAPIGatewayUsagePlan_apiStages(
+func TestAccAWSAPIGatewayUsagePlan_apiStages_multiple(
 func TestAccAWSAPIGatewayUsagePlan_disappears(
 func TestAccAWSAPIGatewayV2ApiMapping_basic(
 func TestAccAWSAPIGatewayV2Api_basicWebSocket(
@@ -644,6 +647,7 @@ func TestAccAWSCloudWatchEventTarget_batch(
 func TestAccAWSCloudWatchEventTarget_kinesis(
 func TestAccAWSCloudWatchEventTarget_sqs(
 func TestAccAWSCloudWatchEventTarget_input_transformer(
+func TestAccAWSCloudWatchEventTarget_disappears(
 func TestAccAWSCloudwatchLogDestinationPolicy_basic(
 func TestAccAWSCloudwatchLogDestination_basic(
 func TestAccAWSCloudWatchLogGroup_basic(

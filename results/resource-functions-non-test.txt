@@ -177,6 +177,12 @@ func resourceAwsApiGatewayUsagePlanCreate(
 func resourceAwsApiGatewayUsagePlanRead(
 func resourceAwsApiGatewayUsagePlanUpdate(
 func resourceAwsApiGatewayUsagePlanDelete(
+func expandApiGatewayUsageApiStages(
+func expandApiGatewayUsageQuotaSettings(
+func expandApiGatewayUsageThrottleSettings(
+func flattenApiGatewayUsageApiStages(
+func flattenApiGatewayUsagePlanThrottling(
+func flattenApiGatewayUsagePlanQuota(
 func resourceAwsApiGatewayUsagePlanKey(
 func resourceAwsApiGatewayUsagePlanKeyCreate(
 func resourceAwsApiGatewayUsagePlanKeyRead(
@@ -3200,6 +3206,7 @@ func flattenLambdaFunctionEventInvokeConfigDestinationConfigOnFailure(
 func flattenLambdaFunctionEventInvokeConfigDestinationConfigOnSuccess(
 func resourceAwsLambdaFunction(
 func updateComputedAttributesOnPublish(
+func hasConfigChanges(
 func resourceAwsLambdaFunctionCreate(
 func resourceAwsLambdaFunctionRead(
 func listVersionsByFunctionPages(

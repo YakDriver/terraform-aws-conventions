@@ -596,17 +596,15 @@ func testAccAWSAPIGatewayUsagePlanConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanBasicConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanBasicTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSApiGatewayUsagePlanBasicTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSApiGatewayUsagePlanDescriptionConfig(rName string) string {
-func testAccAWSApiGatewayUsagePlanDescriptionUpdatedConfig(rName string) string {
-func testAccAWSApiGatewayUsagePlanProductCodeConfig(rName string) string {
-func testAccAWSApiGatewayUsagePlanProductCodeUpdatedConfig(rName string) string {
-func testAccAWSApiGatewayUsagePlanBasicUpdatedConfig(rName string) string {
+func testAccAWSApiGatewayUsagePlanDescriptionConfig(rName, desc string) string {
+func testAccAWSApiGatewayUsagePlanProductCodeConfig(rName, code string) string {
 func testAccAWSApiGatewayUsagePlanThrottlingConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanThrottlingModifiedConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanQuotaConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanQuotaModifiedConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanApiStagesModifiedConfig(rName string) string {
+func testAccAWSApiGatewayUsagePlanApiStagesMultipleConfig(rName string) string {
 func testAccAWSAPIGatewayV2ApiMappingConfig_base(rName, certificateArn string) string {
 func testAccAWSAPIGatewayV2ApiMappingConfig_basic(rName, certificateArn string) string {
 func testAccAWSAPIGatewayV2ApiMappingConfig_apiMappingKey(rName, certificateArn, apiMappingKey string) string {
