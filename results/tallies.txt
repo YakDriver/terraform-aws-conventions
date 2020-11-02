@@ -1,6 +1,6 @@
 Analysis Tallies
 4623	All Functions:Exported
-13340	All Functions:Non-Exported
+13336	All Functions:Non-Exported
 8937	All Functions:Multicaps
 3573	All Functions:Non-AWS Multicaps
 7893	All Functions:Uppercase AWS
@@ -27,8 +27,8 @@ Analysis Tallies
 9	Capital-T Test Functions:TestAccAws+Resource
 2703	Capital-T Test Functions:TestAcc and lowercase after first underscore
 1540	Capital-T Test Functions:TestAcc and uppercase after first underscore
-6912	Lowercase-t test Functions:All
-6663	Lowercase-t test Functions:testAcc
+6908	Lowercase-t test Functions:All
+6659	Lowercase-t test Functions:testAcc
 2926	Lowercase-t test Functions:testAccAWS
 542	Lowercase-t test Functions:testAccAws
 1335	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
@@ -37,8 +37,8 @@ Analysis Tallies
 4406	Lowercase-t test Functions:testAcc functions returning strings
 4049	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
 2239	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-11502	Any case-t Test Functions:All
-10907	Any case-t Test Functions:TestAcc
+11498	Any case-t Test Functions:All
+10903	Any case-t Test Functions:TestAcc
 4038	Any case-t Test Functions:TestAcc with lowercase after first underscore
 2411	Any case-t Test Functions:TestAcc with uppercase after first underscore
 5080	Any case-t Test Functions:TestAcc with only one underscore
@@ -94,7 +94,7 @@ Analysis Tallies
 49	Function Capitalization:Dns
 7	Function Capitalization:DNS
 29	Function Capitalization:ec2
-665	Function Capitalization:Ec2
+664	Function Capitalization:Ec2
 24	Function Capitalization:EC2
 7	Function Capitalization:ecs
 262	Function Capitalization:Ecs
@@ -123,7 +123,7 @@ Analysis Tallies
 4	Function Capitalization:iot
 142	Function Capitalization:Iot
 4	Function Capitalization:IOT
-914	Function Capitalization:ip
+913	Function Capitalization:ip
 172	Function Capitalization:Ip
 197	Function Capitalization:IP
 1	Function Capitalization:json
@@ -135,7 +135,7 @@ Analysis Tallies
 0	Function Capitalization:mfa
 11	Function Capitalization:Mfa
 4	Function Capitalization:MFA
-156	Function Capitalization:nat
+155	Function Capitalization:nat
 18	Function Capitalization:Nat
 0	Function Capitalization:NAT
 335	Function Capitalization:ram

@@ -139,7 +139,6 @@ func expandDataSyncEc2Config(
 func flattenDataSyncEc2Config(
 func testAccEc2ClassicRegionProviderConfig(
 func testAccGetEc2ClassicRegion(
-func testAccProviderFactoriesEc2Classic(
 func decodeEc2TransitGatewayRouteID(
 func decodeEc2TransitGatewayRouteTableAssociationID(
 func decodeEc2TransitGatewayRouteTablePropagationID(

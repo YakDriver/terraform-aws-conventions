@@ -62,7 +62,6 @@ func TestAccAWSVpc_coreMismatchedDiffs(
 func testAccPreCheckCur(
 func testAccCurRegionProviderConfig(
 func testAccGetCurRegion(
-func testAccProviderFactoriesCur() map[string]func() (
 func TestAccAWSAcmCertificateDataSource_singleIssued(
 func TestAccAWSAcmCertificateDataSource_multipleIssued(
 func TestAccAWSAcmCertificateDataSource_noMatchReturnsError(
@@ -434,7 +433,7 @@ func TestAccAWSDataSourceIAMPolicyDocument_noStatementMerge(
 func TestAccAWSDataSourceIAMPolicyDocument_noStatementOverride(
 func TestAccAWSDataSourceIAMPolicyDocument_duplicateSid(
 func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_StringAndSlice(
-func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_MultiplePrincipalsAWS(
+func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_MultiplePrincipals(
 func TestAccAWSDataSourceIAMPolicyDocument_Statement_Principal_Identifiers_MultiplePrincipalsGov(
 func TestAccAWSDataSourceIAMPolicyDocument_Version_20081017(
 func testAccAWSIAMPolicyDocumentExpectedJSON(
@@ -1019,7 +1018,6 @@ func testAccCheckDxVirtualInterfaceDestroy(
 func testAccEC2ClassicPreCheck(
 func testAccEc2ClassicRegionProviderConfig(
 func testAccGetEc2ClassicRegion(
-func testAccProviderFactoriesEc2Classic() map[string]func() (
 func TestBuildEC2AttributeFilterList(
 func TestBuildEC2TagFilterList(
 func TestBuildEC2CustomFilterList(
@@ -1070,11 +1068,9 @@ func testAccGetPartitionReverseDNSPrefix(
 func testAccGetAlternateRegionPartition(
 func testAccGetThirdRegionPartition(
 func testAccAlternateAccountPreCheck(
-func testAccAlternateRegionPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func testAccPartitionHasServicePreCheck(
 func testAccMultipleRegionPreCheck(
-func testAccMultipleRegionsPreCheck(
 func testAccRegionPreCheck(
 func testAccPartitionPreCheck(
 func testAccOrganizationsAccountPreCheck(
@@ -9327,7 +9323,7 @@ func testAccCheckAWSS3BucketVersioning(
 func testAccCheckAWSS3BucketCors(
 func testAccCheckAWSS3RequestPayer(
 func testAccCheckAWSS3BucketLogging(
-func testAccCheckAWSS3BucketReplicationRules(n string, providerF func(
+func testAccCheckAWSS3BucketReplicationRules(
 func testAccCheckAWSS3BucketUpdateGrantSingle(resourceName string) func(
 func testAccCheckAWSS3BucketUpdateGrantMulti(resourceName string) func(
 func testAccCheckS3BucketDomainName(

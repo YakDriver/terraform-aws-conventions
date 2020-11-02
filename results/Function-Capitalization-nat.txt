@@ -8,7 +8,6 @@ func testAccProviderFactoriesAlternateAccountAndAlternateRegion(
 func testAccGetAlternateRegion(
 func testAccGetAlternateRegionPartition(
 func testAccAlternateAccountPreCheck(
-func testAccAlternateRegionPreCheck(
 func testAccAlternateAccountProviderConfig(
 func testAccAlternateAccountAlternateRegionProviderConfig(
 func testAccAlternateAccountAndAlternateRegionProviderConfig(

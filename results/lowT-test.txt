@@ -2,7 +2,6 @@ func testAccCloudfrontRegionProviderConfig(
 func testAccPreCheckCur(
 func testAccCurRegionProviderConfig(
 func testAccGetCurRegion(
-func testAccProviderFactoriesCur() map[string]func() (
 func testAccCheckAwsAcmCertificateDataSourceConfig(
 func testAccCheckAwsAcmCertificateDataSourceConfigWithStatus(
 func testAccCheckAwsAcmCertificateDataSourceConfigWithTypes(
@@ -485,7 +484,6 @@ func testAccCheckDxVirtualInterfaceDestroy(
 func testAccEC2ClassicPreCheck(
 func testAccEc2ClassicRegionProviderConfig(
 func testAccGetEc2ClassicRegion(
-func testAccProviderFactoriesEc2Classic() map[string]func() (
 func testAccProviderFactoriesInit(providers *[]*schema.Provider, providerNames []string) map[string]func() (
 func testAccProviderFactoriesInternal(providers *[]*schema.Provider) map[string]func() (
 func testAccProviderFactoriesAlternate(providers *[]*schema.Provider) map[string]func() (
@@ -522,11 +520,9 @@ func testAccGetPartitionReverseDNSPrefix(
 func testAccGetAlternateRegionPartition(
 func testAccGetThirdRegionPartition(
 func testAccAlternateAccountPreCheck(
-func testAccAlternateRegionPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func testAccPartitionHasServicePreCheck(
 func testAccMultipleRegionPreCheck(
-func testAccMultipleRegionsPreCheck(
 func testAccRegionPreCheck(
 func testAccPartitionPreCheck(
 func testAccOrganizationsAccountPreCheck(
@@ -5657,7 +5653,7 @@ func testAccCheckAWSS3BucketVersioning(
 func testAccCheckAWSS3BucketCors(
 func testAccCheckAWSS3RequestPayer(
 func testAccCheckAWSS3BucketLogging(
-func testAccCheckAWSS3BucketReplicationRules(n string, providerF func(
+func testAccCheckAWSS3BucketReplicationRules(
 func testAccCheckAWSS3BucketUpdateGrantSingle(resourceName string) func(
 func testAccCheckAWSS3BucketUpdateGrantMulti(resourceName string) func(
 func testAccCheckS3BucketDomainName(

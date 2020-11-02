@@ -127,7 +127,6 @@ func configWaitForOrganizationRuleStatusUpdateSuccessful(
 func testAccPreCheckCur(
 func testAccCurRegionProviderConfig(
 func testAccGetCurRegion(
-func testAccProviderFactoriesCur(
 func dataSourceAwsAcmCertificate(
 func dataSourceAwsAcmCertificateRead(
 func mostRecentAcmCertificate(
@@ -1093,7 +1092,6 @@ func testAccCheckDxVirtualInterfaceDestroy(
 func testAccEC2ClassicPreCheck(
 func testAccEc2ClassicRegionProviderConfig(
 func testAccGetEc2ClassicRegion(
-func testAccProviderFactoriesEc2Classic(
 func buildEC2AttributeFilterList(
 func buildEC2TagFilterList(
 func ec2AttributeFiltersFromMultimap(
@@ -1189,11 +1187,9 @@ func testAccGetPartitionReverseDNSPrefix(
 func testAccGetAlternateRegionPartition(
 func testAccGetThirdRegionPartition(
 func testAccAlternateAccountPreCheck(
-func testAccAlternateRegionPreCheck(
 func testAccEC2VPCOnlyPreCheck(
 func testAccPartitionHasServicePreCheck(
 func testAccMultipleRegionPreCheck(
-func testAccMultipleRegionsPreCheck(
 func testAccRegionPreCheck(
 func testAccPartitionPreCheck(
 func testAccOrganizationsAccountPreCheck(
