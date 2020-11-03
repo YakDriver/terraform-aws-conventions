@@ -1861,6 +1861,9 @@ func testAccAWSSagemakerNotebookInstanceConfigAdditionalCodeRepository1(rName, r
 func testAccAWSSagemakerNotebookInstanceConfigAdditionalCodeRepository2(rName, repo1, repo2 string) string {
 func testAccAWSSagemakerNotebookInstanceConfigDefaultCodeRepositorySageMakerRepo(rName string) string {
 func testAccAWSSagemakerNotebookInstanceKMSConfig(rName string) string {
+func testAccAwsSecretsManagerSecretPolicyBasicConfig(rName string) string {
+func testAccAwsSecretsManagerSecretPolicyUpdatedConfig(rName string) string {
+func testAccAwsSecretsManagerSecretPolicyBlockConfig(rName string, block bool) string {
 func testAccAwsSecretsManagerSecretRotationConfig(rName string, automaticallyAfterDays int) string {
 func testAccAWSSecurityGroupRuleIngressConfig(rInt int) string {
 func testAccAWSSecurityGroupRuleIngressClassicConfig(rInt int) string {

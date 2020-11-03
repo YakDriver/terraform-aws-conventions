@@ -4336,6 +4336,12 @@ func resourceAwsSecretsManagerSecretCreate(
 func resourceAwsSecretsManagerSecretRead(
 func resourceAwsSecretsManagerSecretUpdate(
 func resourceAwsSecretsManagerSecretDelete(
+func resourceAwsSecretsManagerSecretPolicy(
+func resourceAwsSecretsManagerSecretPolicyCreate(
+func resourceAwsSecretsManagerSecretPolicyRead(
+func resourceAwsSecretsManagerSecretPolicyUpdate(
+func resourceAwsSecretsManagerSecretPolicyDelete(
+func init(
 func resourceAwsSecretsManagerSecretRotation(
 func resourceAwsSecretsManagerSecretRotationCreate(
 func resourceAwsSecretsManagerSecretRotationRead(

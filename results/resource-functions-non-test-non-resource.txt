@@ -1771,6 +1771,7 @@ func stopSagemakerNotebookInstance(
 func sagemakerNotebookInstanceStateRefreshFunc(
 func init(
 func init(
+func init(
 func expandSecretsManagerRotationRules(
 func flattenSecretsManagerRotationRules(
 func init(
