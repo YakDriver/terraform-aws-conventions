@@ -2170,6 +2170,9 @@ func testAccGlueCrawlerConfig_TablePrefix(rName, tablePrefix string) string {
 func testAccGlueCrawlerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlueCrawlerConfig_SecurityConfiguration(rName, securityConfiguration string) string {
+func testAccGlueCrawlerConfigMongoDBTarget(rName, path string) string {
+func testAccGlueCrawlerConfigMongoDBTargetScanAll(rName string, scan bool) string {
+func testAccGlueCrawlerConfigMongoDBMultiple(rName, path1, path2 string) string {
 func testAccAWSDataCatalogEncryptionSettingsEncryptedConfig(rName string) string {
 func testAccAWSDataCatalogEncryptionSettingsNonEncryptedConfig() string {
 func testAccAWSGlueJobConfig_Base(rName string) string {

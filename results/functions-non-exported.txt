@@ -6782,12 +6782,15 @@ func expandGlueJdbcTargets(
 func expandGlueJdbcTarget(
 func expandGlueCatalogTargets(
 func expandGlueCatalogTarget(
+func expandGlueMongoDBTargets(
+func expandGlueMongoDBTarget(
 func resourceAwsGlueCrawlerUpdate(
 func resourceAwsGlueCrawlerRead(
 func flattenGlueS3Targets(
 func flattenGlueCatalogTargets(
 func flattenGlueDynamoDBTargets(
 func flattenGlueJdbcTargets(
+func flattenGlueMongoDBTargets(
 func resourceAwsGlueCrawlerDelete(
 func init(
 func testSweepGlueCrawlers(
@@ -6822,6 +6825,9 @@ func testAccGlueCrawlerConfig_TablePrefix(
 func testAccGlueCrawlerConfigTags1(
 func testAccGlueCrawlerConfigTags2(
 func testAccGlueCrawlerConfig_SecurityConfiguration(
+func testAccGlueCrawlerConfigMongoDBTarget(
+func testAccGlueCrawlerConfigMongoDBTargetScanAll(
+func testAccGlueCrawlerConfigMongoDBMultiple(
 func resourceAwsGlueDataCatalogEncryptionSettings(
 func resourceAwsGlueDataCatalogEncryptionSettingsPut(
 func resourceAwsGlueDataCatalogEncryptionSettingsRead(

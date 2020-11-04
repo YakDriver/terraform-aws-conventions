@@ -992,10 +992,13 @@ func expandGlueJdbcTargets(
 func expandGlueJdbcTarget(
 func expandGlueCatalogTargets(
 func expandGlueCatalogTarget(
+func expandGlueMongoDBTargets(
+func expandGlueMongoDBTarget(
 func flattenGlueS3Targets(
 func flattenGlueCatalogTargets(
 func flattenGlueDynamoDBTargets(
 func flattenGlueJdbcTargets(
+func flattenGlueMongoDBTargets(
 func init(
 func expandGlueDataCatalogEncryptionSettings(
 func flattenGlueDataCatalogEncryptionSettings(

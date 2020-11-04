@@ -1334,6 +1334,9 @@ func TestAccAWSGlueCatalogTable_update_replaceValues(
 func TestAccAWSGlueCatalogTable_disappears(
 func TestAccAWSGlueConnection_basic(
 func TestAccAWSGlueConnection_disappears(
+func TestAccAWSGlueCrawler_mongoDBTarget(
+func TestAccAWSGlueCrawler_mongoDBTarget_scan_all(
+func TestAccAWSGlueCrawler_mongoDBTarget_multiple(
 func TestAccAWSGlueCrawler_disappears(
 func TestAccAWSDataCatalogEncryptionSettings_basic(
 func TestAccAWSGlueJob_basic(

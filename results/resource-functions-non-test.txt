@@ -2471,12 +2471,15 @@ func expandGlueJdbcTargets(
 func expandGlueJdbcTarget(
 func expandGlueCatalogTargets(
 func expandGlueCatalogTarget(
+func expandGlueMongoDBTargets(
+func expandGlueMongoDBTarget(
 func resourceAwsGlueCrawlerUpdate(
 func resourceAwsGlueCrawlerRead(
 func flattenGlueS3Targets(
 func flattenGlueCatalogTargets(
 func flattenGlueDynamoDBTargets(
 func flattenGlueJdbcTargets(
+func flattenGlueMongoDBTargets(
 func resourceAwsGlueCrawlerDelete(
 func init(
 func resourceAwsGlueDataCatalogEncryptionSettings(

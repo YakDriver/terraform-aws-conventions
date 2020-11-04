@@ -2644,6 +2644,7 @@ func testAccAWSGlueConnectionConfig_MongoDB(
 func testAccAWSGlueConnectionConfig_Kafka(
 func TestAccAWSGlueCrawler_DynamodbTarget(
 func TestAccAWSGlueCrawler_JdbcTarget(
+func TestAccAWSGlueCrawler_mongoDBTarget(
 func TestAccAWSGlueCrawler_S3Target(
 func TestAccAWSGlueCrawler_CatalogTarget(
 func TestAccAWSGlueCrawler_disappears(

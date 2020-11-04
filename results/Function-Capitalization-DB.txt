@@ -475,7 +475,16 @@ func TestAccAWSGlueConnection_MongoDB(
 func testAccAWSGlueConnectionConfig_MongoDB(
 func expandGlueDynamoDBTargets(
 func expandGlueDynamoDBTarget(
+func expandGlueMongoDBTargets(
+func expandGlueMongoDBTarget(
 func flattenGlueDynamoDBTargets(
+func flattenGlueMongoDBTargets(
+func TestAccAWSGlueCrawler_mongoDBTarget(
+func TestAccAWSGlueCrawler_mongoDBTarget_scan_all(
+func TestAccAWSGlueCrawler_mongoDBTarget_multiple(
+func testAccGlueCrawlerConfigMongoDBTarget(
+func testAccGlueCrawlerConfigMongoDBTargetScanAll(
+func testAccGlueCrawlerConfigMongoDBMultiple(
 func expandIotDynamoDBAction(
 func expandIotDynamoDBv2Action(
 func flattenIotDynamoDBAction(

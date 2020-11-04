@@ -2265,6 +2265,9 @@ func testAccGlueCrawlerConfig_TablePrefix(
 func testAccGlueCrawlerConfigTags1(
 func testAccGlueCrawlerConfigTags2(
 func testAccGlueCrawlerConfig_SecurityConfiguration(
+func testAccGlueCrawlerConfigMongoDBTarget(
+func testAccGlueCrawlerConfigMongoDBTargetScanAll(
+func testAccGlueCrawlerConfigMongoDBMultiple(
 func testAccAWSDataCatalogEncryptionSettingsEncryptedConfig(
 func testAccAWSDataCatalogEncryptionSettingsNonEncryptedConfig(
 func testAccAWSGlueJobConfig_Base(

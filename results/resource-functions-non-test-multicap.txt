@@ -138,7 +138,10 @@ func readAwsGlueTableID(
 func decodeGlueConnectionID(
 func expandGlueDynamoDBTargets(
 func expandGlueDynamoDBTarget(
+func expandGlueMongoDBTargets(
+func expandGlueMongoDBTarget(
 func flattenGlueDynamoDBTargets(
+func flattenGlueMongoDBTargets(
 func resourceAwsGlueMLTransform(
 func resourceAwsGlueMLTransformCreate(
 func resourceAwsGlueMLTransformRead(

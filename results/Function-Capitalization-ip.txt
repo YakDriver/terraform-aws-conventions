@@ -406,6 +406,7 @@ func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationB
 func TestAccAWSGlueConnection_Description(
 func testAccAWSGlueConnectionConfig_Description(
 func TestAccAWSGlueCrawler_JdbcTarget_Multiple(
+func TestAccAWSGlueCrawler_mongoDBTarget_multiple(
 func TestAccAWSGlueCrawler_S3Target_Multiple(
 func TestAccAWSGlueCrawler_CatalogTarget_Multiple(
 func TestAccAWSGlueCrawler_Description(
@@ -414,6 +415,7 @@ func testAccGlueCrawlerConfig_Description(
 func testAccGlueCrawlerConfig_JdbcTarget_Multiple(
 func testAccGlueCrawlerConfig_S3Target_Multiple(
 func testAccGlueCrawlerConfig_CatalogTarget_Multiple(
+func testAccGlueCrawlerConfigMongoDBMultiple(
 func TestAccAWSGlueJob_Description(
 func testAccAWSGlueJobConfig_Description(
 func TestAccAWSGlueMLTransform_description(

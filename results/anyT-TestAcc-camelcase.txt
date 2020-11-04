@@ -832,6 +832,7 @@ func TestAccAWSFsxWindowsFileSystem_multiAz(
 func TestAccAWSGameliftAlias_fleetRouting(
 func TestAccAWSGameliftFleet_allFields(
 func testAccGlacierVault_withoutNotification(
+func TestAccAWSGlueCrawler_mongoDBTarget(
 func TestAccAWSGlueJob_nonOverridableArguments(
 func TestAccAWSGlueMLTransform_typeFindMatchesFull(
 func TestAccAWSGlueMLTransform_glueVersion(
