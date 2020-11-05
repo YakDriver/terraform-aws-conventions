@@ -603,6 +603,10 @@ func testAccDataSourceAwsRegionConfig_endpointAndName(
 func testAccDataSourceAwsRegionConfig_name(
 func dataSourceAwsDelegationSet(
 func dataSourceAwsDelegationSetRead(
+func dataSourceAwsRoute53ResolverEndpoint(
+func dataSourceAwsRoute53ResolverEndpointRead(
+func TestAccDataSourceAwsRoute53ResolverEndpoint_Basic(
+func TestAccDataSourceAwsRoute53ResolverEndpoint_Filter(
 func dataSourceAwsRoute53ResolverRule(
 func dataSourceAwsRoute53ResolverRuleRead(
 func dataSourceAwsRoute53ResolverRules(
@@ -1645,6 +1649,7 @@ func resourceAwsCloudWatchMetricAlarmMigrateState(
 func resourceAwsCodeArtifactDomain(
 func resourceAwsCodeArtifactDomainCreate(
 func resourceAwsCodeArtifactDomainRead(
+func resourceAwsCodeArtifactDomainUpdate(
 func resourceAwsCodeArtifactDomainDelete(
 func resourceAwsCodeArtifactDomainPermissionsPolicy(
 func resourceAwsCodeArtifactDomainPermissionsPolicyPut(
@@ -2937,7 +2942,6 @@ func resourceAwsGlueTriggerCreate(
 func resourceAwsGlueTriggerRead(
 func resourceAwsGlueTriggerUpdate(
 func resourceAwsGlueTriggerDelete(
-func resourceAwsGlueTriggerRefreshFunc(
 func resourceAwsGlueUserDefinedFunction(
 func resourceAwsGlueUserDefinedFunctionCreate(
 func resourceAwsGlueUserDefinedFunctionUpdate(
@@ -3254,6 +3258,7 @@ func resourceAwsKinesisAnalyticsApplicationCreate(
 func resourceAwsKinesisAnalyticsApplicationRead(
 func resourceAwsKinesisAnalyticsApplicationUpdate(
 func resourceAwsKinesisAnalyticsApplicationDelete(
+func resourceAwsKinesisAnalyticsApplicationImport(
 func resourceAwsKinesisAnalyticsV2Application(
 func resourceAwsKinesisAnalyticsV2ApplicationCreate(
 func resourceAwsKinesisAnalyticsV2ApplicationRead(

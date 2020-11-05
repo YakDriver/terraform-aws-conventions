@@ -204,6 +204,7 @@ func TestDataSyncParseLocationURI(
 func suppressOpenIdURL(
 func suppressEqualCIDRBlockDiffs(
 func testAccEC2ClassicPreCheck(
+func testAccCheckResourceAttrRegionalARNEc2Classic(
 func buildEC2AttributeFilterList(
 func buildEC2TagFilterList(
 func buildEC2CustomFilterList(
@@ -222,6 +223,7 @@ func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARN(
 func testAccCheckResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrRegionalARNAccountID(
+func testAccMatchResourceAttrAccountID(
 func testAccMatchResourceAttrRegionalARN(
 func testAccMatchResourceAttrRegionalARNNoAccount(
 func testAccMatchResourceAttrRegionalARNAccountID(
@@ -1552,6 +1554,7 @@ func TestAccAWSEIP_notAssociated(
 func TestAccAWSEIP_tags_Vpc(
 func TestAccAWSEIP_tags_Ec2Classic(
 func TestAccAWSEIP_PublicIpv4Pool_default(
+func TestAccAWSEIP_NetworkBorderGroup(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func testAccCheckAWSEIPDestroy(
 func TestAccAWSEIP_CustomerOwnedIpv4Pool(
@@ -2752,6 +2755,7 @@ func TestAccAWSRDSCluster_SnapshotIdentifier_EncryptedRestore(
 func TestAccAWSRDSCluster_EnableHttpEndpoint(
 func testAccAWSRDSClusterConfig_DeletionProtection(
 func testAccAWSRDSClusterConfig_EngineMode(
+func testAccAWSRDSClusterConfig_EngineMode_Global(
 func testAccAWSRDSClusterConfig_EngineMode_Multimaster(
 func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_EngineMode_Global(
 func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_EngineMode_Global_Update(

@@ -557,6 +557,8 @@ func testAccAWSCloudWatchEventTargetConfigBatch(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigKinesis(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigSqs(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigInputTransformer(rName string, inputPathCount int) string {
+func testAccAWSCloudWatchEventTargetConfigInputTransformerJsonString(name string) string {
+func testAccAWSCloudWatchEventTargetConfigLambdaBase(name string) string {
 func testAccAWSCloudwatchLogDestinationPolicyConfig(rstring string) string {
 func testAccAWSCloudwatchLogDestinationConfig(rstring string) string {
 func testAccAWSCloudWatchLogGroupConfig(rInt int) string {
@@ -601,6 +603,8 @@ func testAccAWSCodeArtifactDomainPermissionsPolicyBasicConfig(rName string) stri
 func testAccAWSCodeArtifactDomainPermissionsPolicyOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactDomainPermissionsPolicyUpdatedConfig(rName string) string {
 func testAccAWSCodeArtifactDomainBasicConfig(rName string) string {
+func testAccAWSCodeArtifactDomainConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCodeArtifactDomainConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyBasicConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyUpdatedConfig(rName string) string {
@@ -611,6 +615,8 @@ func testAccAWSCodeArtifactRepositoryDescConfig(rName, desc string) string {
 func testAccAWSCodeArtifactRepositoryUpstreamsConfig1(rName string) string {
 func testAccAWSCodeArtifactRepositoryUpstreamsConfig2(rName string) string {
 func testAccAWSCodeArtifactRepositoryExternalConnectionConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCodeArtifactRepositoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCodeBuildReportGroupBasicConfig(rName string) string {
 func testAccAWSCodeBuildReportGroupBasicConfigS3ExportBase(rName string) string {
 func testAccAWSCodeBuildReportGroupS3ExportConfig(rName string) string {
@@ -1147,6 +1153,7 @@ func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoEmptyConfigurationBl
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfo(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoUpdate(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationBlock(rName string) string {
+func testAccAWSGlueClassifierConfigCsvClassifierQuoteSymbol(rName, symbol string) string {
 func testAccGlueCrawlerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlueCrawlerConfigMongoDBTarget(rName, path string) string {
@@ -1175,6 +1182,8 @@ func testAccGluePartitionParametersConfig2(rName, parValue, key1, value1, key2, 
 func testAccGluePartitionMultiplePartValueConfig(rName, parValue, parValue2 string) string {
 func testAccAWSGlueTriggerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueTriggerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSGlueTriggerConfigActionsNotification(rName string, delay int) string {
+func testAccAWSGlueTriggerConfigActionsSecurityConfiguration(rName string) string {
 func testAccGlueUserDefinedFunctionBasicConfig(rName string, name string) string {
 func testAccGlueUserDefinedFunctionResourceURIConfig1(rName string) string {
 func testAccGlueUserDefinedFunctionResourceURIConfig2(rName string) string {
@@ -1320,7 +1329,18 @@ func testAccAWSIotThingPrincipalAttachmentConfigUpdate4(thingName string) string
 func testAccAWSKeyPairConfig(rName string) string {
 func testAccAWSKeyPairConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSKeyPairConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccKinesisAnalyticsApplicationConfigOutputsLambda(rInt int) string {
+func testAccKinesisAnalyticsApplicationConfigBaseIamRole(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigBaseInputOutput(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigBasic(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigCode(rName, code string) string {
+func testAccKinesisAnalyticsApplicationConfigCloudWatchLoggingOptions(rName string, streamIndex int) string {
+func testAccKinesisAnalyticsApplicationConfigInput(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigInputUpdated(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigInputProcessingConfiguration(rName string, lambdaIndex int) string {
+func testAccKinesisAnalyticsApplicationConfigMultiple(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigMultipleUpdated(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccKinesisAnalyticsApplicationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseServiceExecutionIamRole(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseFlinkApplication(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseSQLApplication(rName string) string {
@@ -1414,7 +1434,8 @@ func testAccAWSLambdaConfigEnvVariablesModified(funcName, policyName, roleName, 
 func testAccAWSLambdaConfigEnvVariablesModifiedWithoutEnvironment(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariables(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariablesModified(keyDesc, funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigVersioned(fileName, funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigFilename(fileName, funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigPublishable(fileName, funcName, policyName, roleName, sgName string, publish bool) string {
 func testAccAWSLambdaFileSystemConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaFileSystemUpdateConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVersionedNodeJs10xRuntime(fileName, funcName, policyName, roleName, sgName string) string {
@@ -1843,13 +1864,15 @@ func testAccSagemakerEndpointConfig(rName string) string {
 func testAccSagemakerEndpointConfigEndpointConfigNameUpdate(rName string) string {
 func testAccSagemakerEndpointConfigTags(rName string) string {
 func testAccSagemakerEndpointConfigTagsUpdate(rName string) string {
-func testAccSagemakerModelConfig(rName string, image string) string {
-func testAccSagemakerModelConfigTags(rName string, image string) string {
-func testAccSagemakerModelConfigTagsUpdate(rName string, image string) string {
-func testAccSagemakerPrimaryContainerModelDataUrlConfig(rName string, image string, modelDataUrl string) string {
-func testAccSagemakerPrimaryContainerHostnameConfig(rName string, image string) string {
-func testAccSagemakerPrimaryContainerEnvironmentConfig(rName string, image string) string {
-func testAccSagemakerModelVpcConfig(rName string, image string) string {
+func testAccSagemakerModelConfigBase(rName string) string {
+func testAccSagemakerModelConfig(rName string) string {
+func testAccSagemakerModelConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccSagemakerModelConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccSagemakerPrimaryContainerModelDataUrlConfig(rName string) string {
+func testAccSagemakerPrimaryContainerHostnameConfig(rName string) string {
+func testAccSagemakerPrimaryContainerImageConfigConfig(rName string) string {
+func testAccSagemakerPrimaryContainerEnvironmentConfig(rName string) string {
+func testAccSagemakerModelVpcConfig(rName string) string {
 func testAccAWSSagemakerNotebookInstanceBaseConfig(rName string) string {
 func testAccAWSSagemakerNotebookInstanceBasicConfig(rName string) string {
 func testAccAWSSagemakerNotebookInstanceUpdateConfig(rName string) string {

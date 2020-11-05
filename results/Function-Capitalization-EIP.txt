@@ -25,6 +25,7 @@ func TestAccAWSEIP_notAssociated(
 func TestAccAWSEIP_tags_Vpc(
 func TestAccAWSEIP_tags_Ec2Classic(
 func TestAccAWSEIP_PublicIpv4Pool_default(
+func TestAccAWSEIP_NetworkBorderGroup(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func testAccCheckAWSEIPDestroy(
 func TestAccAWSEIP_CustomerOwnedIpv4Pool(

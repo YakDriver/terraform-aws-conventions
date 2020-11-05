@@ -1,6 +1,5 @@
 const testAccCheckAwsAmiDataSourceConfig =
 const testAccCheckAwsAmiDataSourceWindowsConfig =
-const testAccCheckAwsAmiDataSourceInstanceStoreConfig =
 const testAccCheckAwsAmiDataSourceNameRegexConfig =
 const testAccDataSourceAwsArnConfig =
 const testAccCheckAwsAvailabilityZonesConfig =
@@ -84,6 +83,7 @@ const testAccAWSEFSFileSystemConfigRemovedLifecyclePolicy =
 const testAccAWSEIPConfig =
 const testAccAWSEIPNetworkInterfaceConfig =
 const testAccAWSEIPMultiNetworkInterfaceConfig =
+const testAccAWSEIPConfigNetworkBorderGroup =
 const testAccAWSELBConfig =
 const testAccAWSELBConfigNewInstance =
 const testAccAWSELBConfigHealthCheck =

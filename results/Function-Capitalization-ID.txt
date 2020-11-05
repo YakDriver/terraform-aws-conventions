@@ -43,6 +43,7 @@ func TestHostedZoneIDForRegion(
 func testAccAwsProviderAccountID(
 func testAccCheckResourceAttrAccountID(
 func testAccCheckResourceAttrRegionalARNAccountID(
+func testAccMatchResourceAttrAccountID(
 func testAccMatchResourceAttrRegionalARNAccountID(
 func testAccCheckResourceAttrGlobalARNAccountID(
 func testAccGetAccountID(

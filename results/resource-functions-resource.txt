@@ -534,6 +534,7 @@ func resourceAwsCloudWatchMetricAlarmMigrateState(
 func resourceAwsCodeArtifactDomain(
 func resourceAwsCodeArtifactDomainCreate(
 func resourceAwsCodeArtifactDomainRead(
+func resourceAwsCodeArtifactDomainUpdate(
 func resourceAwsCodeArtifactDomainDelete(
 func resourceAwsCodeArtifactDomainPermissionsPolicy(
 func resourceAwsCodeArtifactDomainPermissionsPolicyPut(
@@ -1534,7 +1535,6 @@ func resourceAwsGlueTriggerCreate(
 func resourceAwsGlueTriggerRead(
 func resourceAwsGlueTriggerUpdate(
 func resourceAwsGlueTriggerDelete(
-func resourceAwsGlueTriggerRefreshFunc(
 func resourceAwsGlueUserDefinedFunction(
 func resourceAwsGlueUserDefinedFunctionCreate(
 func resourceAwsGlueUserDefinedFunctionUpdate(
@@ -1782,6 +1782,7 @@ func resourceAwsKinesisAnalyticsApplicationCreate(
 func resourceAwsKinesisAnalyticsApplicationRead(
 func resourceAwsKinesisAnalyticsApplicationUpdate(
 func resourceAwsKinesisAnalyticsApplicationDelete(
+func resourceAwsKinesisAnalyticsApplicationImport(
 func resourceAwsKinesisAnalyticsV2Application(
 func resourceAwsKinesisAnalyticsV2ApplicationCreate(
 func resourceAwsKinesisAnalyticsV2ApplicationRead(

@@ -1,5 +1,6 @@
 func TestAccDataSourceAwsSecretsManagerSecret_ARN(
 func testAccDataSourceAwsSecretsManagerSecretConfig_ARN(
+func testAccCheckResourceAttrRegionalARNEc2Classic(
 func testAccCheckResourceAttrRegionalARN(
 func testAccCheckResourceAttrRegionalARNNoAccount(
 func testAccCheckResourceAttrRegionalARNAccountID(

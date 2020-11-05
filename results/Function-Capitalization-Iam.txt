@@ -163,6 +163,7 @@ func resourceAwsIamUserSshKeyDelete(
 func resourceAwsIamUserSshKeyImport(
 func testSweepIamUsers(
 func TestAccAWSInstance_withIamInstanceProfile(
+func testAccKinesisAnalyticsApplicationConfigBaseIamRole(
 func testAccKinesisAnalyticsV2ApplicationConfigBaseServiceExecutionIamRole(
 func TestAccAWSKmsKey_Policy_IamRole(
 func TestAccAWSKmsKey_Policy_IamServiceLinkedRole(

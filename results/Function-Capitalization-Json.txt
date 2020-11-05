@@ -2,6 +2,8 @@ func suppressEquivalentJsonDiffs(
 func suppressEquivalentJsonOrYamlDiffs(
 func TestSuppressEquivalentJsonDiffsWhitespaceAndNoWhitespace(
 func TestSuppressEquivalentJsonOrYamlDiffs(
+func TestAccAWSCloudWatchEventTarget_inputTransformerJsonString(
+func testAccAWSCloudWatchEventTargetConfigInputTransformerJsonString(
 func TestAccAWSBeanstalkEnv_settingWithJsonValue(
 func testAccBeanstalkEnvSettingJsonValue(
 func expandConfigurationJson(

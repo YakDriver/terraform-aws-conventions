@@ -286,6 +286,9 @@ func testAccDataSourceAwsRegionsConfig_allRegionsFiltered(filter string) string 
 func testAccDataSourceAwsRegionConfig_endpoint(endpoint string) string {
 func testAccDataSourceAwsRegionConfig_endpointAndName(endpoint, name string) string {
 func testAccDataSourceAwsRegionConfig_name(name string) string {
+func testAccDataSourceRoute53ResolverEndpointConfig_base(rInt int) string {
+func testAccDataSourceRoute53ResolverEndpointConfig_initial(rInt int, direction, name string) string {
+func testAccDataSourceRoute53ResolverEndpointConfig_filter(rInt int, direction, name string) string {
 func testAccDataSourceAwsRoute53ResolverRules_resolverEndpointId(rName1, rName2 string) string {
 func testAccDataSourceAwsRoute53ResolverRule_basic(rName string) string {
 func testAccDataSourceAwsRoute53ResolverRule_resolverEndpointIdWithTags(rName string) string {
@@ -1103,6 +1106,8 @@ func testAccAWSCloudWatchEventTargetConfigBatch(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigKinesis(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigSqs(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigInputTransformer(rName string, inputPathCount int) string {
+func testAccAWSCloudWatchEventTargetConfigInputTransformerJsonString(name string) string {
+func testAccAWSCloudWatchEventTargetConfigLambdaBase(name string) string {
 func testAccAWSCloudwatchLogDestinationPolicyConfig(rstring string) string {
 func testAccAWSCloudwatchLogDestinationConfig(rstring string) string {
 func testAccAWSCloudWatchLogGroupConfig(rInt int) string {
@@ -1151,6 +1156,8 @@ func testAccAWSCodeArtifactDomainPermissionsPolicyBasicConfig(rName string) stri
 func testAccAWSCodeArtifactDomainPermissionsPolicyOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactDomainPermissionsPolicyUpdatedConfig(rName string) string {
 func testAccAWSCodeArtifactDomainBasicConfig(rName string) string {
+func testAccAWSCodeArtifactDomainConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCodeArtifactDomainConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyBasicConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyUpdatedConfig(rName string) string {
@@ -1161,6 +1168,8 @@ func testAccAWSCodeArtifactRepositoryDescConfig(rName, desc string) string {
 func testAccAWSCodeArtifactRepositoryUpstreamsConfig1(rName string) string {
 func testAccAWSCodeArtifactRepositoryUpstreamsConfig2(rName string) string {
 func testAccAWSCodeArtifactRepositoryExternalConnectionConfig(rName string) string {
+func testAccAWSCodeArtifactRepositoryConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCodeArtifactRepositoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCodeBuildBitbucketSourceLocationFromEnv() string {
 func testAccAWSCodeBuildGitHubSourceLocationFromEnv() string {
 func testAccAWSCodeBuildProjectConfig_Base_Bucket(rName string) string {
@@ -2347,6 +2356,7 @@ func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfo(rName string) strin
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoUpdate(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationBlock(rName string) string {
 func testAccAWSGlueClassifierConfig_CsvClassifier(rName string, allowSingleColumn bool, containsHeader string, delimiter string, disableValueTrimming bool) string {
+func testAccAWSGlueClassifierConfigCsvClassifierQuoteSymbol(rName, symbol string) string {
 func testAccAWSGlueClassifierConfig_GrokClassifier(rName, classification, grokPattern string) string {
 func testAccAWSGlueClassifierConfig_GrokClassifier_CustomPatterns(rName, customPatterns string) string {
 func testAccAWSGlueClassifierConfig_JsonClassifier(rName, jsonPath string) string {
@@ -2442,6 +2452,8 @@ func testAccAWSGlueTriggerConfig_Schedule(rName, schedule string) string {
 func testAccAWSGlueTriggerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueTriggerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGlueTriggerConfig_WorkflowName(rName string) string {
+func testAccAWSGlueTriggerConfigActionsNotification(rName string, delay int) string {
+func testAccAWSGlueTriggerConfigActionsSecurityConfiguration(rName string) string {
 func testAccGlueUserDefinedFunctionBasicConfig(rName string, name string) string {
 func testAccGlueUserDefinedFunctionResourceURIConfig1(rName string) string {
 func testAccGlueUserDefinedFunctionResourceURIConfig2(rName string) string {
@@ -2696,21 +2708,22 @@ func testAccAWSIoTTopicRule_errorAction(rName string) string {
 func testAccAWSKeyPairConfig(rName string) string {
 func testAccAWSKeyPairConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSKeyPairConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccKinesisAnalyticsApplication_basic(rInt int) string {
-func testAccKinesisAnalyticsApplication_update(rInt int) string {
-func testAccKinesisAnalyticsApplication_cloudwatchLoggingOptions(rInt int, streamName string) string {
-func testAccKinesisAnalyticsApplication_inputsKinesisFirehose(rInt int) string {
-func testAccKinesisAnalyticsApplication_inputsKinesisStream(rInt int) string {
-func testAccKinesisAnalyticsApplication_inputsUpdateKinesisStream(rInt int, streamName string) string {
-func testAccKinesisAnalyticsApplication_outputsKinesisStream(rInt int) string {
-func testAccKinesisAnalyticsApplication_outputsMultiple(rInt1, rInt2 int) string {
-func testAccKinesisAnalyticsApplicationConfigOutputsLambda(rInt int) string {
-func testAccKinesisAnalyticsApplication_outputsUpdateKinesisStream(rInt int, streamName string) string {
-func testAccKinesisAnalyticsApplication_referenceDataSource(rInt int) string {
-func testAccKinesisAnalyticsApplication_referenceDataSourceUpdate(rInt int) string {
-func testAccKinesisAnalyticsApplication_prereq(rInt int) string {
-func testAccKinesisAnalyticsApplicationWithTags(rInt int, tag1, tag2 string) string {
-func testAccKinesisAnalyticsApplicationWithAddTags(rInt int, tag1, tag2, tag3 string) string {
+func testAccKinesisAnalyticsApplicationConfigBaseIamRole(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigBaseInputOutput(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigBasic(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigCode(rName, code string) string {
+func testAccKinesisAnalyticsApplicationConfigCloudWatchLoggingOptions(rName string, streamIndex int) string {
+func testAccKinesisAnalyticsApplicationConfigInput(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigInputUpdated(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigInputProcessingConfiguration(rName string, lambdaIndex int) string {
+func testAccKinesisAnalyticsApplicationConfigMultiple(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigMultipleUpdated(rName string) string {
+func testAccKinesisAnalyticsApplicationOutput(rName string) string {
+func testAccKinesisAnalyticsApplicationOutputUpdated(rName string) string {
+func testAccKinesisAnalyticsApplicationReferenceDataSource(rName string) string {
+func testAccKinesisAnalyticsApplicationReferenceDataSourceUpdated(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccKinesisAnalyticsApplicationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseServiceExecutionIamRole(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseFlinkApplication(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseSQLApplication(rName string) string {
@@ -2844,7 +2857,8 @@ func testAccAWSLambdaConfigEnvVariablesModified(funcName, policyName, roleName, 
 func testAccAWSLambdaConfigEnvVariablesModifiedWithoutEnvironment(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariables(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariablesModified(keyDesc, funcName, policyName, roleName, sgName string) string {
-func testAccAWSLambdaConfigVersioned(fileName, funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigFilename(fileName, funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigPublishable(fileName, funcName, policyName, roleName, sgName string, publish bool) string {
 func testAccAWSLambdaFileSystemConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaFileSystemUpdateConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVersionedNodeJs10xRuntime(fileName, funcName, policyName, roleName, sgName string) string {
@@ -3401,6 +3415,7 @@ func testAccAWSClusterConfigRemoveIamRoles(n int) string {
 func testAccAWSClusterConfigReplicationSourceIdentifierKmsKeyId(rName string) string {
 func testAccAWSRDSClusterConfig_DeletionProtection(rName string, deletionProtection bool) string {
 func testAccAWSRDSClusterConfig_EngineMode(rName, engineMode string) string {
+func testAccAWSRDSClusterConfig_EngineMode_Global(rName string) string {
 func testAccAWSRDSClusterConfig_EngineMode_Multimaster(rName string) string {
 func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_EngineMode_Global(rName string) string {
 func testAccAWSRDSClusterConfig_GlobalClusterIdentifier_EngineMode_Global_Update(rName, globalClusterIdentifierResourceName string) string {
@@ -3710,16 +3725,18 @@ func testAccSagemakerEndpointConfig(rName string) string {
 func testAccSagemakerEndpointConfigEndpointConfigNameUpdate(rName string) string {
 func testAccSagemakerEndpointConfigTags(rName string) string {
 func testAccSagemakerEndpointConfigTagsUpdate(rName string) string {
-func testAccSagemakerModelConfig(rName string, image string) string {
-func testAccSagemakerModelConfigTags(rName string, image string) string {
-func testAccSagemakerModelConfigTagsUpdate(rName string, image string) string {
-func testAccSagemakerPrimaryContainerModelDataUrlConfig(rName string, image string, modelDataUrl string) string {
-func testAccSagemakerPrimaryContainerHostnameConfig(rName string, image string) string {
-func testAccSagemakerPrimaryContainerEnvironmentConfig(rName string, image string) string {
-func testAccSagemakerPrimaryContainerModeSingle(rName string, image string) string {
-func testAccSagemakerModelContainers(rName string, image string) string {
-func testAccSagemakerModelNetworkIsolation(rName string, image string) string {
-func testAccSagemakerModelVpcConfig(rName string, image string) string {
+func testAccSagemakerModelConfigBase(rName string) string {
+func testAccSagemakerModelConfig(rName string) string {
+func testAccSagemakerModelConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccSagemakerModelConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccSagemakerPrimaryContainerModelDataUrlConfig(rName string) string {
+func testAccSagemakerPrimaryContainerHostnameConfig(rName string) string {
+func testAccSagemakerPrimaryContainerImageConfigConfig(rName string) string {
+func testAccSagemakerPrimaryContainerEnvironmentConfig(rName string) string {
+func testAccSagemakerPrimaryContainerModeSingle(rName string) string {
+func testAccSagemakerModelContainers(rName string) string {
+func testAccSagemakerModelNetworkIsolation(rName string) string {
+func testAccSagemakerModelVpcConfig(rName string) string {
 func testAccSagemakerNotebookInstanceLifecycleConfigurationConfig_Basic(rName string) string {
 func testAccSagemakerNotebookInstanceLifecycleConfigurationConfig_Update(rName string) string {
 func testAccAWSSagemakerNotebookInstanceBaseConfig(rName string) string {
