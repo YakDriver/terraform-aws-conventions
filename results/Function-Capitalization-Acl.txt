@@ -177,6 +177,7 @@ func testAccAWSWafWebAclConfig_Rules_Single_Rule(
 func testAccAWSWafWebAclConfig_Rules_Single_RuleGroup(
 func testAccAWSWafWebAclConfig_Rules_Multiple(
 func testAccAWSWafWebAclConfig_Logging(
+func testAccAWSWafWebAclConfig_LoggingRemoved(
 func testAccAWSWafWebAclConfig_LoggingUpdate(
 func testAccAWSWafWebAclConfigTags1(
 func testAccAWSWafWebAclConfigTags2(

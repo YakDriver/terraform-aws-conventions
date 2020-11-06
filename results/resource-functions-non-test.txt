@@ -769,7 +769,6 @@ func init(
 func resourceAwsCloudWatchEventTarget(
 func resourceAwsCloudWatchEventTargetCreate(
 func resourceAwsCloudWatchEventTargetRead(
-func findEventTargetById(
 func resourceAwsCloudWatchEventTargetUpdate(
 func resourceAwsCloudWatchEventTargetDelete(
 func buildPutTargetInputStruct(
@@ -788,6 +787,8 @@ func flattenAwsCloudWatchEventTargetKinesisParameters(
 func flattenAwsCloudWatchEventTargetSqsParameters(
 func flattenAwsCloudWatchInputTransformer(
 func resourceAwsCloudWatchEventTargetImport(
+func resourceAwsCloudWatchEventTargetV0(
+func resourceAwsCloudWatchEventTargetStateUpgradeV0(
 func init(
 func resourceAwsCloudWatchLogDestination(
 func resourceAwsCloudWatchLogDestinationPut(
@@ -3040,6 +3041,7 @@ func expandKinesisAnalyticsV2VpcConfigurationUpdate(
 func kinesisAnalyticsV2RetryIAMEventualConsistency(
 func init(
 func cloudWatchLoggingOptionsSchema(
+func requestConfigurationSchema(
 func s3ConfigurationSchema(
 func processingConfigurationSchema(
 func flattenCloudwatchLoggingOptions(
@@ -3059,9 +3061,11 @@ func flattenFirehoseSerializer(
 func flattenFirehoseOrcSerDe(
 func flattenFirehoseParquetSerDe(
 func flattenFirehoseSchemaConfiguration(
+func flattenRequestConfiguration(
 func flattenProcessingConfiguration(
 func flattenFirehoseKinesisSourceConfiguration(
 func flattenKinesisFirehoseDeliveryStream(
+func flattenFirehoseHttpEndpointConfiguration(
 func resourceAwsKinesisFirehoseDeliveryStream(
 func createSourceConfig(
 func createS3Config(
@@ -3095,6 +3099,11 @@ func createElasticsearchConfig(
 func updateElasticsearchConfig(
 func createSplunkConfig(
 func updateSplunkConfig(
+func createHttpEndpointConfig(
+func updateHttpEndpointConfig(
+func extractCommonAttributes(
+func extractRequestConfiguration(
+func extractHttpEndpointConfiguration(
 func extractBufferingHints(
 func extractElasticSearchRetryOptions(
 func extractRedshiftRetryOptions(
@@ -4304,6 +4313,12 @@ func resourceAwsSagemakerEndpointConfigurationUpdate(
 func resourceAwsSagemakerEndpointConfigurationDelete(
 func expandSagemakerProductionVariants(
 func flattenProductionVariants(
+func expandSagemakerDataCaptureConfig(
+func flattenSagemakerDataCaptureConfig(
+func expandSagemakerCaptureOptions(
+func flattenSagemakerCaptureOptions(
+func expandSagemakerCaptureContentTypeHeader(
+func flattenSagemakerCaptureContentTypeHeader(
 func init(
 func resourceAwsSagemakerEndpoint(
 func resourceAwsSagemakerEndpointCreate(

@@ -25,6 +25,7 @@ func testAccAWSClusterConfig_kmsKey(
 func TestAccAWSRedshiftCluster_kmsKey(
 func testAccAWSRedshiftClusterConfig_kmsKey(
 func TestAccAWSS3BucketObject_kms(
+func TestAccAWSSagemakerEndpointConfiguration_kmsKeyId(
 func TestAccAWSSagemakerNotebookInstance_kms(
 func TestAccAWSStorageGatewayCachedIscsiVolume_kms(
 func TestAccAWSStorageGatewayStoredIscsiVolume_kms(

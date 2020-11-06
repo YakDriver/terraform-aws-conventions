@@ -735,6 +735,7 @@ func testAccAWSWafWebAclConfig_Rules_Single_Rule(
 func testAccAWSWafWebAclConfig_Rules_Single_RuleGroup(
 func testAccAWSWafWebAclConfig_Rules_Multiple(
 func testAccAWSWafWebAclConfig_Logging(
+func testAccAWSWafWebAclConfig_LoggingRemoved(
 func testAccAWSWafWebAclConfig_LoggingUpdate(
 func testAccAWSWafWebAclConfigTags1(
 func testAccAWSWafWebAclConfigTags2(
@@ -778,6 +779,9 @@ func flattenWafRegexMatchTuples(
 func expandWafRegexMatchTuple(
 func diffWafRegexMatchSetTuples(
 func resourceAwsWafRegexMatchSetTupleHash(
+func testAccPreCheckWafLoggingConfiguration(
+func testAccWafLoggingConfigurationRegionProviderConfig(
+func testAccGetWafLoggingConfigurationRegion(
 func newWafRegionalRetryer(
 func newWafRetryer(
 func expandWafv2Rules(

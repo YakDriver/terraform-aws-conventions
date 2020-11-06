@@ -285,7 +285,6 @@ func getBooleanStateFromString(
 func getStringStateFromBoolean(
 func validateEventPatternValue(
 func init(
-func findEventTargetById(
 func buildPutTargetInputStruct(
 func expandAwsCloudWatchEventTargetRunParameters(
 func expandAwsCloudWatchEventTargetEcsParameters(
@@ -1275,6 +1274,7 @@ func expandKinesisAnalyticsV2VpcConfigurationUpdate(
 func kinesisAnalyticsV2RetryIAMEventualConsistency(
 func init(
 func cloudWatchLoggingOptionsSchema(
+func requestConfigurationSchema(
 func s3ConfigurationSchema(
 func processingConfigurationSchema(
 func flattenCloudwatchLoggingOptions(
@@ -1294,9 +1294,11 @@ func flattenFirehoseSerializer(
 func flattenFirehoseOrcSerDe(
 func flattenFirehoseParquetSerDe(
 func flattenFirehoseSchemaConfiguration(
+func flattenRequestConfiguration(
 func flattenProcessingConfiguration(
 func flattenFirehoseKinesisSourceConfiguration(
 func flattenKinesisFirehoseDeliveryStream(
+func flattenFirehoseHttpEndpointConfiguration(
 func createSourceConfig(
 func createS3Config(
 func expandS3BackupConfig(
@@ -1329,6 +1331,11 @@ func createElasticsearchConfig(
 func updateElasticsearchConfig(
 func createSplunkConfig(
 func updateSplunkConfig(
+func createHttpEndpointConfig(
+func updateHttpEndpointConfig(
+func extractCommonAttributes(
+func extractRequestConfiguration(
+func extractHttpEndpointConfiguration(
 func extractBufferingHints(
 func extractElasticSearchRetryOptions(
 func extractRedshiftRetryOptions(
@@ -1763,6 +1770,12 @@ func expandSagemakerCodeRepositoryUpdateGitConfig(
 func init(
 func expandSagemakerProductionVariants(
 func flattenProductionVariants(
+func expandSagemakerDataCaptureConfig(
+func flattenSagemakerDataCaptureConfig(
+func expandSagemakerCaptureOptions(
+func flattenSagemakerCaptureOptions(
+func expandSagemakerCaptureContentTypeHeader(
+func flattenSagemakerCaptureContentTypeHeader(
 func init(
 func init(
 func expandSageMakerVpcConfigRequest(

@@ -402,6 +402,9 @@ func testAccDataSourceAwsWorkspaceBundleConfig_byOwnerName(owner, name string) s
 func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(bundleID, owner, name string) string {
 func testAccDataSourceAwsWorkspacesDirectoryConfig(rName string) string {
 func testAccDataSourceAwsWorkspacesImageConfig(imageID string) string {
+func testAccDataSourceWorkspacesWorkspaceConfig_byWorkspaceID(rName string) string {
+func testAccDataSourceWorkspacesWorkspaceConfig_byDirectoryID_userName(rName string) string {
+func testAccDataSourceAwsWorkspacesWorkspaceConfig_workspaceIDAndDirectoryIDConflict() string {
 func testAccEc2ClassicRegionProviderConfig() string {
 func testAccGetEc2ClassicRegion() string {
 func testAccAwsProviderAccountID(provider *schema.Provider) string {
@@ -1081,6 +1084,8 @@ func testAccAWSCloudWatchEventBusConfig(name string) string {
 func testAccAWSCloudWatchEventBusConfig_Tags1(name, key, value string) string {
 func testAccAWSCloudWatchEventBusConfig_Tags2(name, key1, value1, key2, value2 string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigBasic(principal, statementID string) string {
+func testAccCheckAwsCloudWatchEventPermissionResourceConfigDefaultEventBusName(principal, statementID string) string {
+func testAccCheckAwsCloudWatchEventPermissionResourceConfigEventBusName(principal, busName, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigAction(action, principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigConditionOrganization(statementID, value string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigMultiple(principal1, statementID1, principal2, statementID2 string) string {
@@ -1097,6 +1102,8 @@ func testAccAWSCloudWatchEventRuleConfigTags2(name, tagKey1, tagValue1, tagKey2,
 func testAccAWSCloudWatchEventRuleConfigTags0(name string) string {
 func testAccAWSCloudWatchEventRuleConfigRole(name string) string {
 func testAccAWSCloudWatchEventTargetConfig(ruleName, snsTopicName, targetID string) string {
+func testAccAWSCloudWatchEventTargetConfigDefaultEventBusName(ruleName, snsTopicName, targetID string) string {
+func testAccAWSCloudWatchEventTargetConfigEventBusName(ruleName, eventBusName, snsTopicName, targetID string) string {
 func testAccAWSCloudWatchEventTargetConfigMissingTargetId(ruleName, snsTopicName string) string {
 func testAccAWSCloudWatchEventTargetConfig_full(ruleName, targetName, rName string) string {
 func testAccAWSCloudWatchEventTargetConfigSsmDocument(rName string) string {
@@ -1105,7 +1112,7 @@ func testAccAWSCloudWatchEventTargetConfigEcsWithBlankTaskCount(rName string) st
 func testAccAWSCloudWatchEventTargetConfigBatch(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigKinesis(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigSqs(rName string) string {
-func testAccAWSCloudWatchEventTargetConfigInputTransformer(rName string, inputPathCount int) string {
+func testAccAWSCloudWatchEventTargetConfigInputTransformer(rName string, inputPathKeys []string) string {
 func testAccAWSCloudWatchEventTargetConfigInputTransformerJsonString(name string) string {
 func testAccAWSCloudWatchEventTargetConfigLambdaBase(name string) string {
 func testAccAWSCloudwatchLogDestinationPolicyConfig(rstring string) string {
@@ -3428,6 +3435,7 @@ func testAccAWSRDSClusterConfig_SnapshotIdentifier(rName string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_DeletionProtection(rName string, deletionProtection bool) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_EngineMode(rName, engineMode string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_EngineVersion(rName, engine, engineVersionSource, engineVersion string) string {
+func testAccAWSRDSClusterConfig_SnapshotIdentifier_KmsKeyId(rName string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_MasterPassword(rName, masterPassword string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_MasterUsername(rName, masterUsername string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_PreferredBackupWindow(rName, preferredBackupWindow string) string {
@@ -3718,8 +3726,9 @@ func testAccSagemakerEndpointConfigurationConfig_Basic(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_ProductionVariants_InitialVariantWeight(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_ProductionVariant_AcceleratorType(rName string) string {
 func testAccSagemakerEndpointConfiguration_Config_KmsKeyId(rName string) string {
-func testAccSagemakerEndpointConfigurationConfig_Tags(rName string) string {
-func testAccSagemakerEndpointConfigurationConfig_Tags_Update(rName string) string {
+func testAccSagemakerEndpointConfigurationConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccSagemakerEndpointConfigurationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccSagemakerEndpointConfigurationDataCaptureConfig(rName string) string {
 func testAccSagemakerEndpointConfig_Base(rName string) string {
 func testAccSagemakerEndpointConfig(rName string) string {
 func testAccSagemakerEndpointConfigEndpointConfigNameUpdate(rName string) string {
@@ -3897,7 +3906,7 @@ func testAccAWSSNSTopicConfig_deliveryStatus(r string) string {
 func testAccAWSSNSTopicConfig_withEncryption(r string) string {
 func testAccAWSSNSTopicConfigTags1(r, tag1Key, tag1Value string) string {
 func testAccAWSSNSTopicConfigTags2(r, tag1Key, tag1Value, tag2Key, tag2Value string) string {
-func testAccAWSSpotDatafeedSubscription(randInt int) string {
+func testAccAWSSpotDatafeedSubscription(rName string) string {
 func testAccAWSSpotFleetRequestConfigBase(rName string) string {
 func testAccAWSSpotFleetRequestConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestConfigTags1(rName, validUntil, tagKey1, tagValue1 string) string {
@@ -4380,6 +4389,7 @@ func testAccAWSWafWebAclConfig_Rules_Single_Rule(rName string) string {
 func testAccAWSWafWebAclConfig_Rules_Single_RuleGroup(rName string) string {
 func testAccAWSWafWebAclConfig_Rules_Multiple(rName string) string {
 func testAccAWSWafWebAclConfig_Logging(rName string) string {
+func testAccAWSWafWebAclConfig_LoggingRemoved(rName string) string {
 func testAccAWSWafWebAclConfig_LoggingUpdate(rName string) string {
 func testAccAWSWafWebAclConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSWafWebAclConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
@@ -4427,3 +4437,5 @@ func testAccAWSXraySamplingRuleConfig_basic(ruleName string) string {
 func testAccAWSXraySamplingRuleConfig_update(ruleName string, priority int, reservoirSize int) string {
 func testAccAWSXraySamplingRuleConfigTags1(ruleName, tagKey1, tagValue1 string) string {
 func testAccAWSXraySamplingRuleConfigTags2(ruleName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccWafLoggingConfigurationRegionProviderConfig() string {
+func testAccGetWafLoggingConfigurationRegion() string {

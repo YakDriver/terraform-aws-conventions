@@ -492,6 +492,8 @@ func resourceAwsCloudWatchEventTargetRead(
 func resourceAwsCloudWatchEventTargetUpdate(
 func resourceAwsCloudWatchEventTargetDelete(
 func resourceAwsCloudWatchEventTargetImport(
+func resourceAwsCloudWatchEventTargetV0(
+func resourceAwsCloudWatchEventTargetStateUpgradeV0(
 func resourceAwsCloudWatchLogDestination(
 func resourceAwsCloudWatchLogDestinationPut(
 func resourceAwsCloudWatchLogDestinationRead(

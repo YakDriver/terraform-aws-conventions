@@ -533,6 +533,8 @@ func testAccAWSCloudTrailConfigOrganization(cloudTrailRandInt int) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
 func testAccAWSCloudWatchEventBusConfig(name string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigBasic(principal, statementID string) string {
+func testAccCheckAwsCloudWatchEventPermissionResourceConfigDefaultEventBusName(principal, statementID string) string {
+func testAccCheckAwsCloudWatchEventPermissionResourceConfigEventBusName(principal, busName, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigAction(action, principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigConditionOrganization(statementID, value string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigMultiple(principal1, statementID1, principal2, statementID2 string) string {
@@ -549,6 +551,8 @@ func testAccAWSCloudWatchEventRuleConfigTags2(name, tagKey1, tagValue1, tagKey2,
 func testAccAWSCloudWatchEventRuleConfigTags0(name string) string {
 func testAccAWSCloudWatchEventRuleConfigRole(name string) string {
 func testAccAWSCloudWatchEventTargetConfig(ruleName, snsTopicName, targetID string) string {
+func testAccAWSCloudWatchEventTargetConfigDefaultEventBusName(ruleName, snsTopicName, targetID string) string {
+func testAccAWSCloudWatchEventTargetConfigEventBusName(ruleName, eventBusName, snsTopicName, targetID string) string {
 func testAccAWSCloudWatchEventTargetConfigMissingTargetId(ruleName, snsTopicName string) string {
 func testAccAWSCloudWatchEventTargetConfigSsmDocument(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigEcs(rName string) string {
@@ -556,7 +560,7 @@ func testAccAWSCloudWatchEventTargetConfigEcsWithBlankTaskCount(rName string) st
 func testAccAWSCloudWatchEventTargetConfigBatch(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigKinesis(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigSqs(rName string) string {
-func testAccAWSCloudWatchEventTargetConfigInputTransformer(rName string, inputPathCount int) string {
+func testAccAWSCloudWatchEventTargetConfigInputTransformer(rName string, inputPathKeys []string) string {
 func testAccAWSCloudWatchEventTargetConfigInputTransformerJsonString(name string) string {
 func testAccAWSCloudWatchEventTargetConfigLambdaBase(name string) string {
 func testAccAWSCloudwatchLogDestinationPolicyConfig(rstring string) string {
@@ -1860,6 +1864,9 @@ func testAccAWSSagemakerCodeRepositoryBasicConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigBranchConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigSecretConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigSecretUpdatedConfig(rName string) string {
+func testAccSagemakerEndpointConfigurationConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccSagemakerEndpointConfigurationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccSagemakerEndpointConfigurationDataCaptureConfig(rName string) string {
 func testAccSagemakerEndpointConfig(rName string) string {
 func testAccSagemakerEndpointConfigEndpointConfigNameUpdate(rName string) string {
 func testAccSagemakerEndpointConfigTags(rName string) string {
@@ -2266,3 +2273,5 @@ func testAccAWSXrayGroupBasicConfigTags1(rName, tagKey1, tagValue1 string) strin
 func testAccAWSXrayGroupBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSXraySamplingRuleConfigTags1(ruleName, tagKey1, tagValue1 string) string {
 func testAccAWSXraySamplingRuleConfigTags2(ruleName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccWafLoggingConfigurationRegionProviderConfig() string {
+func testAccGetWafLoggingConfigurationRegion() string {
