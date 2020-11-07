@@ -3106,6 +3106,7 @@ func extractRequestConfiguration(
 func extractHttpEndpointConfiguration(
 func extractBufferingHints(
 func extractElasticSearchRetryOptions(
+func extractHttpEndpointRetryOptions(
 func extractRedshiftRetryOptions(
 func extractSplunkRetryOptions(
 func extractCopyCommandConfiguration(
