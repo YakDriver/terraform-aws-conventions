@@ -286,3 +286,4 @@ func TestAccAwsWorkspacesWorkspace_workspaceProperties_runningModeAlwaysOn(
 func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
 func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
 func TestAccAwsWorkspacesWorkspace_recreate(
+func TestAccAwsWorkspacesWorkspace_timeout(

@@ -4082,6 +4082,7 @@ func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesB(rName string) string 
 func testAccWorkspacesWorkspaceConfig_WorkspacePropertiesC(rName string) string {
 func testAccWorkspacesWorkspaceConfig_validateRootVolumeSize(rName string) string {
 func testAccWorkspacesWorkspaceConfig_validateUserVolumeSize(rName string) string {
+func testAccWorkspacesWorkspaceConfig_timeout(rName string) string {
 func testAccAWSXrayEncryptionConfigBasicConfig() string {
 func testAccAWSXrayEncryptionConfigWithKeyConfig() string {
 func testAccAWSXrayGroupBasicConfig(rName, expression string) string {

@@ -4266,6 +4266,7 @@ func TestAccAwsWorkspacesWorkspace_workspaceProperties_runningModeAlwaysOn(
 func TestAccAwsWorkspacesWorkspace_validateRootVolumeSize(
 func TestAccAwsWorkspacesWorkspace_validateUserVolumeSize(
 func TestAccAwsWorkspacesWorkspace_recreate(
+func TestAccAwsWorkspacesWorkspace_timeout(
 func TestAccAWSXrayEncryptionConfig_basic(
 func TestAccAWSXrayGroup_basic(
 func TestAccAWSXrayGroup_tags(
