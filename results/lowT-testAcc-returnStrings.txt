@@ -400,6 +400,7 @@ func testAccDataSourceAwsWafWebAclConfig_Name(name string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig_byOwnerName(owner, name string) string {
 func testAccDataSourceAwsWorkspaceBundleConfig_bundleIDAndOwnerNameConflict(bundleID, owner, name string) string {
+func testAccDataSourceAwsWorkspaceBundleConfig_privateOwner(name string) string {
 func testAccDataSourceAwsWorkspacesDirectoryConfig(rName string) string {
 func testAccDataSourceAwsWorkspacesImageConfig(imageID string) string {
 func testAccDataSourceWorkspacesWorkspaceConfig_byWorkspaceID(rName string) string {
