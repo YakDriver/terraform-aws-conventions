@@ -218,7 +218,6 @@ func testAccIAMUserPolicyConfig_name(
 func testAccIAMUserPolicyConfig_namePrefix(
 func testAccIAMUserPolicyConfig_generatedName(
 func testAccIAMUserPolicyConfig_multiplePolicies(
-func kinesisAnalyticsV2RetryIAMEventualConsistency(
 func TestAccAWSLambdaPermission_withIAMRole(
 func testAccAWSLambdaPermissionConfig_withIAMRole(
 func TestAccAWSLaunchConfiguration_withIAMProfile(

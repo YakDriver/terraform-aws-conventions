@@ -1307,6 +1307,7 @@ func testAccCheckAWSDefaultACLAttributes(
 func TestAccAWSDefaultRouteTable_Route_TransitGatewayID(
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID(
 func testAccCheckAWSDefaultSecurityGroupARN(
+func testAccCheckAWSDefaultSecurityGroupARNEc2Classic(
 func parseDSConditionalForwarderId(
 func TestAccAwsDmsEndpoint_DocDB(
 func dmsEndpointDocDBConfig(
@@ -2143,7 +2144,6 @@ func testAccAWSIoTTopicRule_iot_events(
 func testAccAWSIoTTopicRuleTags1(
 func testAccAWSIoTTopicRuleTags2(
 func testAccAWSIoTTopicRule_errorAction(
-func kinesisAnalyticsV2RetryIAMEventualConsistency(
 func TestAccAWSKinesisAnalyticsV2Application_basicSQLApplication(
 func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_Input_Add(
 func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_Input_Update(
@@ -2359,6 +2359,7 @@ func TestAccAWSLBTargetGroup_basic(
 func TestAccAWSLBTargetGroup_basicUdp(
 func TestAccAWSLBTargetGroup_withoutHealthcheck(
 func TestAccAWSLBTargetGroup_networkLB_TargetGroup(
+func TestAccAWSLBTargetGroup_Protocol_Geneve(
 func TestAccAWSLBTargetGroup_Protocol_Tcp_HealthCheck_Protocol(
 func TestAccAWSLBTargetGroup_Protocol_Tls(
 func TestAccAWSLBTargetGroup_networkLB_TargetGroupWithProxy(
@@ -2394,6 +2395,7 @@ func testAccCheckAWSLBTargetGroupDestroy(
 func testAccALB_defaults(
 func testAccNLB_defaults(
 func testAccAWSLBTargetGroupConfig_basic(
+func testAccAWSLBTargetGroupConfigProtocolGeneve(
 func testAccAWSLBTargetGroupConfigTags1(
 func testAccAWSLBTargetGroupConfigTags2(
 func testAccAWSLBTargetGroupConfig_basicUdp(
@@ -2418,6 +2420,7 @@ func testSweepLBs(
 func TestLBCloudwatchSuffixFromARN(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
+func TestAccAWSLB_LoadBalancerType_Gateway(
 func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func TestAccAWSLB_NLB_privateipv4address(
@@ -2452,6 +2455,7 @@ func testAccAWSLBConfig_enableDropInvalidHeaderFields(
 func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(
+func testAccAWSLBConfig_LoadBalancerType_Gateway(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func testAccAWSLBConfigBackwardsCompatibility(
@@ -2837,6 +2841,7 @@ func testAccAWSRouteWithVPCEndpoint(
 func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock(
 func testAccAWSRouteResourceConfigLocalGatewayID(
 func resourceAwsS3BucketAnalyticsConfigurationParseID(
+func BucketCannedACL_Values(
 func resourceAwsS3BucketInventoryParseID(
 func TestAccAWSS3BucketInventory_encryptWithSSES3(
 func TestAccAWSS3BucketInventory_encryptWithSSEKMS(
@@ -2884,6 +2889,7 @@ func TestAccAWSSecurityGroup_ingressWithCidrAndSGsVPC(
 func TestAccAWSSecurityGroup_ingressWithCidrAndSGsClassic(
 func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAccCheckAWSSecurityGroupSGandCidrAttributes(
+func testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic(
 func resourceAwsServiceQuotasServiceQuotaParseID(
 func TestAccAWSSESActiveReceiptRuleSet_serial(
 func testAccAWSSESActiveReceiptRuleSet_basic(

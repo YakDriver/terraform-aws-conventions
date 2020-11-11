@@ -2110,6 +2110,7 @@ func TestAccAWSEmrSecurityConfiguration_basic(
 func TestAccAWSFlowLog_tags(
 func TestAccAWSFlowLog_disappears(
 func TestAccAwsFmsAdminAccount_basic(
+func testAccFmsAdminAccountConfig_basic(
 func TestAccAWSFsxLustreFileSystem_basic(
 func TestAccAWSFsxLustreFileSystem_disappears(
 func TestAccAWSFsxLustreFileSystem_automaticBackupRetentionDays(
@@ -3564,6 +3565,7 @@ func TestAccAWSSecurityGroup_ruleLimitExceededAllNew(
 func TestAccAWSSecurityGroup_rulesDropOnError(
 func testAccAWSSecurityGroupConfig_drift(
 func testAccAWSSecurityGroupConfig_drift_complex(
+func testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic(
 func testAccAWSSecurityGroupConfig_ruleGathering(
 func testAccAWSSecurityHubAccount_basic(
 func testAccAwsSecurityHubActionTarget_basic(
@@ -3870,7 +3872,6 @@ func TestAccAWSVpcEndpointService_basic(
 func TestAccAWSVpcEndpointService_disappears(
 func TestAccAWSVpcEndpointService_tags(
 func testAccVpcEndpointServiceConfig_base(
-func testAccVpcEndpointServiceConfig_basic(
 func testAccVpcEndpointServiceConfig_allowedPrincipals(
 func testAccVpcEndpointServiceConfig_allowedPrincipalsUpdated(
 func TestAccAWSVpcEndpointSubnetAssociation_basic(

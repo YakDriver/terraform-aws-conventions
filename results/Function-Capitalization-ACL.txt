@@ -6,6 +6,7 @@ func testAccDataSourceAwsWafv2WebACL_NonExistent(
 func Test_expandNetworkACLEntry(
 func revokeAllNetworkACLEntries(
 func testAccCheckAWSDefaultACLAttributes(
+func BucketCannedACL_Values(
 func TestAccAWSStorageGatewayNfsFileShare_ObjectACL(
 func testAccAWSStorageGatewayNfsFileShareConfig_ObjectACL(
 func TestAccAWSStorageGatewaySmbFileShare_ObjectACL(

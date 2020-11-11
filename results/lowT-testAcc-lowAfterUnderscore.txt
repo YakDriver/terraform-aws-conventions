@@ -700,6 +700,7 @@ func testAccAWSEmrInstanceGroupConfig_basic(
 func testAccAWSEmrInstanceGroupConfig_ebsConfig(
 func testAccAWSEmrInstanceGroupConfig_zeroCount(
 func testAccAWSEmrManagedScalingPolicy_basic(
+func testAccFmsAdminAccountConfig_basic(
 func testAccGlacierVault_basic(
 func testAccGlacierVault_full(
 func testAccGlacierVault_withoutNotification(
@@ -1171,6 +1172,7 @@ func testAccAWSSecurityGroupRuleIngress_updateDescriptionConfig(
 func testAccAWSSecurityGroupRuleEgress_updateDescriptionConfig(
 func testAccAWSSecurityGroupConfig_drift(
 func testAccAWSSecurityGroupConfig_drift_complex(
+func testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic(
 func testAccAWSSecurityGroupConfig_ruleGathering(
 func testAccAWSSecurityHubAccount_basic(
 func testAccAwsSecurityHubActionTarget_basic(
@@ -1232,7 +1234,6 @@ func testAccAWSTransferUserConfig_forceNew(
 func testAccAWSTransferUserConfig_homeDirectoryMappings(
 func testAccAWSTransferUserConfig_homeDirectoryMappingsUpdate(
 func testAccVpcEndpointServiceConfig_base(
-func testAccVpcEndpointServiceConfig_basic(
 func testAccVpcEndpointServiceConfig_allowedPrincipals(
 func testAccVpcEndpointServiceConfig_allowedPrincipalsUpdated(
 func testAccVpcEndpointConfig_gatewayBasic(

@@ -597,7 +597,6 @@ func TestAccDataSourceAwsRegion_basic(
 func TestAccDataSourceAwsRegion_endpoint(
 func TestAccDataSourceAwsRegion_endpointAndName(
 func TestAccDataSourceAwsRegion_name(
-func testAccDataSourceAwsRegionCheck(
 func testAccDataSourceAwsRegionConfig_endpoint(
 func testAccDataSourceAwsRegionConfig_endpointAndName(
 func testAccDataSourceAwsRegionConfig_name(

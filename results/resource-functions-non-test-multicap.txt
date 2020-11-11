@@ -194,7 +194,6 @@ func expandIotDynamoDBAction(
 func expandIotDynamoDBv2Action(
 func flattenIotDynamoDBAction(
 func flattenIotDynamoDBv2Action(
-func kinesisAnalyticsV2RetryIAMEventualConsistency(
 func flattenFirehoseOpenXJsonSerDe(
 func expandFirehoseOpenXJsonSerDe(
 func firehoseDeliveryStreamSSEStateRefreshFunc(
@@ -324,6 +323,7 @@ func route53HostedZoneVPCDisassociate(
 func route53HostedZoneVPCHash(
 func resourceAwsRouteID(
 func resourceAwsS3BucketAnalyticsConfigurationParseID(
+func BucketCannedACL_Values(
 func resourceAwsS3BucketInventoryParseID(
 func resourceAwsS3BucketMetricParseID(
 func decodeSecretsManagerSecretVersionID(

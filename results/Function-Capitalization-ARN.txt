@@ -20,6 +20,7 @@ func testAccAWSAutoScalingGroupConfig_withServiceLinkedRoleARN(
 func TestAccAWSDataSyncLocationNfs_AgentARNs_Multple(
 func TestAccAWSDataSyncTask_CloudWatchLogGroupARN(
 func testAccCheckAWSDefaultSecurityGroupARN(
+func testAccCheckAWSDefaultSecurityGroupARNEc2Classic(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
 func TestAccAWSEcsService_withARN(

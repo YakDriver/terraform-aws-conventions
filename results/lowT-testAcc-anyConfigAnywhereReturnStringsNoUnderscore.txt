@@ -165,7 +165,7 @@ func testAccAWSOutpostsOutpostDataSourceConfigArn() string {
 func testAccAWSOutpostsSitesDataSourceConfig() string {
 func testAccAWSOutpostsSiteDataSourceConfigId() string {
 func testAccAWSOutpostsSiteDataSourceConfigName() string {
-func testAccDataSourceAwsPricingProductConfigEc2(dataName string, instanceType string) string {
+func testAccDataSourceAwsPricingProductConfigEc2() string {
 func testAccDataSourceAwsPricingProductConfigRedshift() string {
 func testAccDataSourceAwsQLDBLedgerConfig(rName string) string {
 func testAccAWSRDSCertificateDataSourceConfigId() string {
@@ -231,6 +231,8 @@ func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
 func testAccDataSourceAwsWorkspacesDirectoryConfig(rName string) string {
 func testAccDataSourceAwsWorkspacesImageConfig(imageID string) string {
 func testAccEc2ClassicRegionProviderConfig() string {
+func testAccFmsAdminRegionProviderConfig() string {
+func testAccPricingRegionProviderConfig() string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
@@ -719,10 +721,10 @@ func testAccAWSDataSyncLocationS3ConfigBase(rName string) string {
 func testAccAWSDataSyncLocationS3Config(rName string) string {
 func testAccAWSDataSyncLocationS3ConfigTags1(rName, key1, value1 string) string {
 func testAccAWSDataSyncLocationS3ConfigTags2(rName, key1, value1, key2, value2 string) string {
-func testAccAWSDataSyncLocationSmbConfigBase() string {
-func testAccAWSDataSyncLocationSmbConfig() string {
-func testAccAWSDataSyncLocationSmbConfigTags1(key1, value1 string) string {
-func testAccAWSDataSyncLocationSmbConfigTags2(key1, value1, key2, value2 string) string {
+func testAccAWSDataSyncLocationSmbConfigBase(rName string) string {
+func testAccAWSDataSyncLocationSmbConfig(rName string) string {
+func testAccAWSDataSyncLocationSmbConfigTags1(rName, key1, value1 string) string {
+func testAccAWSDataSyncLocationSmbConfigTags2(rName, key1, value1, key2, value2 string) string {
 func testAccAWSDataSyncTaskConfigDestinationLocationS3Base(rName string) string {
 func testAccAWSDataSyncTaskConfigSourceLocationNfsBase(rName string) string {
 func testAccAWSDataSyncTaskConfig(rName string) string {
@@ -790,6 +792,8 @@ func testAccDBSubnetGroupConfig(rName string) string {
 func testAccDefaultRouteTableConfigDefaultRouteTableId(defaultRouteTableId string) string {
 func testAccDefaultRouteTableConfigRequired() string {
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
+func testAccAWSDefaultRouteTableConfigRouteVpcEndpointId(rName string) string {
+func testAccAWSDefaultRouteTableConfigRouteVpcEndpointIdNoRoute(rName string) string {
 func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSDefaultRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
@@ -1017,6 +1021,7 @@ func testAccAWSElasticacheReplicationGroupNativeRedisClusterErrorConfig(rInt int
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterConfig(rName string, numNodeGroups, replicasPerNodeGroup int) string {
 func testAccAWSElasticacheReplicationGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSElasticacheReplicationGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSElasticacheSecurityGroupConfig(rName string) string {
 func testAccAWSElasticacheSubnetGroupConfig(rInt int) string {
 func testAccAWSElasticacheSubnetGroupUpdateConfigPre(rInt int) string {
 func testAccAWSElasticacheSubnetGroupUpdateConfigPost(rInt int) string {
@@ -1255,7 +1260,7 @@ func testAccAvailableAZsNoOptInExcludeConfig(excludeZoneIds ...string) string {
 func testAccAvailableAZsNoOptInConfig() string {
 func testAccInstanceConfigInDefaultVpcBySgName(rName string) string {
 func testAccInstanceConfigInDefaultVpcBySgId(rName string) string {
-func testAccInstanceConfigInEc2Classic(rInt int) string {
+func testAccInstanceConfigInEc2Classic() string {
 func testAccInstanceConfigBasic() string {
 func testAccInstanceConfigAtLeastOneOtherEbsVolume(rName string) string {
 func testAccInstanceConfigWithUserDataBase64(rName string) string {
@@ -1495,6 +1500,7 @@ func testAccAWSLBTargetGroupAttachmentConfigPort(rName string) string {
 func testAccAWSLBTargetGroupAttachmentConfigBackwardsCompatibility(rName string) string {
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdIpAddress(rName string) string {
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdLambda(rName string) string {
+func testAccAWSLBTargetGroupConfigProtocolGeneve(rName string) string {
 func testAccAWSLBTargetGroupConfigTags1(targetGroupName, tagKey1, tagValue1 string) string {
 func testAccAWSLBTargetGroupConfigTags2(targetGroupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSLBTargetGroupConfigBackwardsCompatibility(targetGroupName string) string {
@@ -1763,6 +1769,7 @@ func testAccAWSRouteTableConfigRouteConfigModeBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeNoBlocks() string {
 func testAccAWSRouteTableConfigRouteConfigModeZeroed() string {
 func testAccAWSRouteTableConfigRouteTransitGatewayID() string {
+func testAccAWSRouteTableConfigRouteVpcEndpointId(rName string) string {
 func testAccAWSRouteTableConfigRouteLocalGatewayID() string {
 func testAccAWSRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
 func testAccAWSRouteBasicConfig() string {
@@ -1777,6 +1784,7 @@ func testAccAWSRouteBasicConfigChangeCidr() string {
 func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock() string {
 func testAccAWSRouteConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
 func testAccAWSRouteResourceConfigLocalGatewayID() string {
+func testAccAWSRouteResourceConfigVpcEndpointId(rName string) string {
 func testAccAWSS3AccountPublicAccessBlockConfig() string {
 func testAccAWSS3AccountPublicAccessBlockConfigAccountId() string {
 func testAccAWSS3AccountPublicAccessBlockConfigBlockPublicAcls(blockPublicAcls bool) string {
@@ -1912,6 +1920,7 @@ func testAccAWSSecurityGroupConfigCidrBlockRuleLimit(egressStartIndex, egressRul
 func testAccAWSSecurityGroupConfigRuleDescription(egressDescription, ingressDescription string) string {
 func testAccAWSAWSSecurityGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAWSSecurityGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSecurityGroupConfigClassic(rName string) string {
 func testAccAWSSecurityGroupPrefixNameConfig(namePrefix string) string {
 func testAccAWSSecurityGroupConfigEgressConfigModeBlocks() string {
 func testAccAWSSecurityGroupConfigEgressConfigModeNoBlocks() string {
@@ -2153,6 +2162,7 @@ func testAccVpcEndpointServiceConfigTags2(rName1, rName2, tagKey1, tagValue1, ta
 func testAccVpcEndpointConfigGatewayPolicy(rName, policy string) string {
 func testAccVpcEndpointConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccVpcEndpointConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccVpcEndpointConfigVpcEndpointTypeGatewayLoadBalancer(rName string) string {
 func testAccAwsVPCPeeringConnectionAccepterConfigSameRegionSameAccount(rName string) string {
 func testAccAwsVPCPeeringConnectionAccepterConfigDifferentRegionSameAccount(rName string) string {
 func testAccAwsVPCPeeringConnectionAccepterConfigSameRegionDifferentAccount(rName string) string {
@@ -2273,5 +2283,6 @@ func testAccAWSXrayGroupBasicConfigTags1(rName, tagKey1, tagValue1 string) strin
 func testAccAWSXrayGroupBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSXraySamplingRuleConfigTags1(ruleName, tagKey1, tagValue1 string) string {
 func testAccAWSXraySamplingRuleConfigTags2(ruleName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccRoute53QueryLogRegionProviderConfig() string {
 func testAccWafLoggingConfigurationRegionProviderConfig() string {
 func testAccGetWafLoggingConfigurationRegion() string {

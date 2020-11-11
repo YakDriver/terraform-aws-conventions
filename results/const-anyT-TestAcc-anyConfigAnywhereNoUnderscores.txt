@@ -170,7 +170,6 @@ const testAccAWSSecurityGroupConfigVpcNegOneIngress =
 const testAccAWSSecurityGroupConfigVpcProtoNumIngress =
 const testAccAWSSecurityGroupConfigMultiIngress =
 const testAccAWSSecurityGroupConfigDefaultEgress =
-const testAccAWSSecurityGroupConfigClassic =
 const testAccAWSSecurityGroupConfigIpv4andIpv6Egress =
 const testAccAWSSecurityGroupConfigPrefixListEgress =
 const testAccAWSSecurityGroupConfigPrefixListIngress =

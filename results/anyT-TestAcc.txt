@@ -693,7 +693,6 @@ func TestAccDataSourceAwsRegion_basic(
 func TestAccDataSourceAwsRegion_endpoint(
 func TestAccDataSourceAwsRegion_endpointAndName(
 func TestAccDataSourceAwsRegion_name(
-func testAccDataSourceAwsRegionCheck(
 func testAccDataSourceAwsRegionConfig_endpoint(
 func testAccDataSourceAwsRegionConfig_endpointAndName(
 func testAccDataSourceAwsRegionConfig_name(
@@ -964,6 +963,12 @@ func testAccEC2ClassicPreCheck(
 func testAccEc2ClassicRegionProviderConfig(
 func testAccGetEc2ClassicRegion(
 func testAccCheckResourceAttrRegionalARNEc2Classic(
+func testAccPreCheckFmsAdmin(
+func testAccFmsAdminRegionProviderConfig(
+func testAccGetFmsAdminRegion(
+func testAccPreCheckPricing(
+func testAccPricingRegionProviderConfig(
+func testAccGetPricingRegion(
 func testAccProviderFactoriesInit(providers *[]*schema.Provider, providerNames []string) map[string]func() (
 func testAccProviderFactoriesInternal(providers *[]*schema.Provider) map[string]func() (
 func testAccProviderFactoriesAlternate(providers *[]*schema.Provider) map[string]func() (
@@ -3926,6 +3931,7 @@ func TestAccAWSDefaultRouteTable_disappears_Vpc(
 func TestAccAWSDefaultRouteTable_Route(
 func TestAccAWSDefaultRouteTable_swap(
 func TestAccAWSDefaultRouteTable_Route_TransitGatewayID(
+func TestAccAWSDefaultRouteTable_Route_VpcEndpointId(
 func TestAccAWSDefaultRouteTable_vpc_endpoint(
 func TestAccAWSDefaultRouteTable_tags(
 func TestAccAWSDefaultRouteTable_ConditionalCidrBlock(
@@ -3933,6 +3939,8 @@ func testAccCheckDefaultRouteTableDestroy(
 func testAccDefaultRouteTableConfigDefaultRouteTableId(
 func testAccDefaultRouteTableConfigRequired(
 func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID(
+func testAccAWSDefaultRouteTableConfigRouteVpcEndpointId(
+func testAccAWSDefaultRouteTableConfigRouteVpcEndpointIdNoRoute(
 func testAccDefaultRouteTableConfigTags1(
 func testAccDefaultRouteTableConfigTags2(
 func testAccAWSDefaultRouteTableConfigConditionalIpv4Ipv6(
@@ -3943,7 +3951,11 @@ func TestAccAWSDefaultSecurityGroup_Classic_basic(
 func TestAccAWSDefaultSecurityGroup_Classic_empty(
 func testAccCheckAWSDefaultSecurityGroupDestroy(
 func testAccCheckAWSDefaultSecurityGroupExists(
+func testAccCheckAWSDefaultSecurityGroupEc2ClassicExists(
 func testAccCheckAWSDefaultSecurityGroupARN(
+func testAccCheckAWSDefaultSecurityGroupARNEc2Classic(
+func testAccAWSDefaultSecurityGroupConfig_Classic(
+func testAccAWSDefaultSecurityGroupConfig_Classic_empty(
 func TestAccAWSDefaultSubnet_basic(
 func TestAccAWSDefaultSubnet_publicIp(
 func testAccCheckAWSDefaultSubnetDestroy(
@@ -5100,10 +5112,12 @@ func testAccCheckAWSElasticacheClusterNotRecreated(
 func testAccCheckAWSElasticacheClusterRecreated(
 func testAccCheckAWSElasticacheClusterDestroy(
 func testAccCheckAWSElasticacheClusterExists(
+func testAccCheckAWSElasticacheClusterEc2ClassicExists(
 func testAccAWSElasticacheClusterConfig_Engine_Memcached(
 func testAccAWSElasticacheClusterConfig_Engine_Redis(
 func testAccAWSElasticacheClusterConfig_ParameterGroupName(
 func testAccAWSElasticacheClusterConfig_Port(
+func testAccAWSElasticacheClusterConfig_SecurityGroup_Ec2Classic(
 func testAccAWSElasticacheClusterConfig_snapshots(
 func testAccAWSElasticacheClusterConfig_snapshotsUpdated(
 func testAccAWSElasticacheClusterConfig_NumCacheNodes(
@@ -5172,6 +5186,7 @@ func testAccAWSElasticacheReplicationGroupConfigTags2(
 func TestAccAWSElasticacheSecurityGroup_basic(
 func testAccCheckAWSElasticacheSecurityGroupDestroy(
 func testAccCheckAWSElasticacheSecurityGroupExists(
+func testAccAWSElasticacheSecurityGroupConfig(
 func TestAccAWSElasticacheSubnetGroup_basic(
 func TestAccAWSElasticacheSubnetGroup_update(
 func testAccCheckAWSElasticacheSubnetGroupDestroy(
@@ -5529,6 +5544,7 @@ func testAccFlowLogConfigTags2(
 func testAccFlowLogConfig_MaxAggregationInterval(
 func TestAccAwsFmsAdminAccount_basic(
 func testAccCheckFmsAdminAccountDestroy(
+func testAccFmsAdminAccountConfig_basic(
 func TestAccAWSFsxLustreFileSystem_basic(
 func TestAccAWSFsxLustreFileSystem_disappears(
 func TestAccAWSFsxLustreFileSystem_ExportPath(
@@ -6385,6 +6401,7 @@ func testAccCheckInstanceRecreated(
 func testAccCheckInstanceDestroy(
 func testAccCheckInstanceDestroyWithProvider(
 func testAccCheckInstanceExists(
+func testAccCheckInstanceEc2ClassicExists(
 func testAccCheckInstanceExistsWithProvider(n string, i *ec2.Instance, providerF func(
 func testAccCheckStopInstance(
 func testAccAvailableAZsNoOptInDefaultExcludeConfig(
@@ -6629,6 +6646,7 @@ func testAccKinesisAnalyticsApplicationConfigTags2(
 func TestAccAWSKinesisAnalyticsV2Application_basicFlinkApplication(
 func TestAccAWSKinesisAnalyticsV2Application_basicSQLApplication(
 func TestAccAWSKinesisAnalyticsV2Application_disappears(
+func TestAccAWSKinesisAnalyticsV2Application_Tags(
 func TestAccAWSKinesisAnalyticsV2Application_ApplicationCodeConfiguration_Update(
 func TestAccAWSKinesisAnalyticsV2Application_CloudWatchLoggingOptions_Add(
 func TestAccAWSKinesisAnalyticsV2Application_CloudWatchLoggingOptions_Delete(
@@ -6647,7 +6665,6 @@ func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_Output_
 func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_ReferenceDataSource_Add(
 func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_ReferenceDataSource_Delete(
 func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_ReferenceDataSource_Update(
-func TestAccAWSKinesisAnalyticsV2Application_Tags(
 func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_VPCConfiguration_Add(
 func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_VPCConfiguration_Delete(
 func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_VPCConfiguration_Update(
@@ -7290,6 +7307,7 @@ func TestAccAWSLBTargetGroup_basic(
 func TestAccAWSLBTargetGroup_basicUdp(
 func TestAccAWSLBTargetGroup_withoutHealthcheck(
 func TestAccAWSLBTargetGroup_networkLB_TargetGroup(
+func TestAccAWSLBTargetGroup_Protocol_Geneve(
 func TestAccAWSLBTargetGroup_Protocol_Tcp_HealthCheck_Protocol(
 func TestAccAWSLBTargetGroup_Protocol_Tls(
 func TestAccAWSLBTargetGroup_networkLB_TargetGroupWithProxy(
@@ -7325,6 +7343,7 @@ func testAccCheckAWSLBTargetGroupDestroy(
 func testAccALB_defaults(
 func testAccNLB_defaults(
 func testAccAWSLBTargetGroupConfig_basic(
+func testAccAWSLBTargetGroupConfigProtocolGeneve(
 func testAccAWSLBTargetGroupConfigTags1(
 func testAccAWSLBTargetGroupConfigTags2(
 func testAccAWSLBTargetGroupConfig_basicUdp(
@@ -7347,6 +7366,7 @@ func testAccAWSLBTargetGroupConfig_stickinessDefault(
 func testAccAWSLBTargetGroupConfig_stickinessValidity(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
+func TestAccAWSLB_LoadBalancerType_Gateway(
 func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func TestAccAWSLB_NLB_privateipv4address(
@@ -7381,6 +7401,7 @@ func testAccAWSLBConfig_enableDropInvalidHeaderFields(
 func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(
+func testAccAWSLBConfig_LoadBalancerType_Gateway(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func testAccAWSLBConfigBackwardsCompatibility(
@@ -8716,6 +8737,7 @@ func TestAccAWSRouteTable_RequireRouteDestination(
 func TestAccAWSRouteTable_RequireRouteTarget(
 func TestAccAWSRouteTable_Route_ConfigMode(
 func TestAccAWSRouteTable_Route_TransitGatewayID(
+func TestAccAWSRouteTable_Route_VpcEndpointId(
 func TestAccAWSRouteTable_Route_LocalGatewayID(
 func testAccCheckRouteTableDestroy(
 func testAccCheckRouteTableExists(
@@ -8730,6 +8752,7 @@ func testAccAWSRouteTableConfigRouteConfigModeBlocks(
 func testAccAWSRouteTableConfigRouteConfigModeNoBlocks(
 func testAccAWSRouteTableConfigRouteConfigModeZeroed(
 func testAccAWSRouteTableConfigRouteTransitGatewayID(
+func testAccAWSRouteTableConfigRouteVpcEndpointId(
 func testAccAWSRouteTableConfigRouteLocalGatewayID(
 func testAccAWSRouteTableConfigConditionalIpv4Ipv6(
 func TestAccAWSRoute_basic(
@@ -8746,6 +8769,7 @@ func TestAccAWSRoute_doesNotCrashWithVPCEndpoint(
 func TestAccAWSRoute_TransitGatewayID_DestinationCidrBlock(
 func TestAccAWSRoute_LocalGatewayID(
 func TestAccAWSRoute_ConditionalCidrBlock(
+func TestAccAWSRoute_VpcEndpointId(
 func testAccCheckAWSRouteExists(
 func testAccCheckAWSRouteDestroy(
 func testAccAWSRouteImportStateIdFunc(
@@ -8764,6 +8788,7 @@ func testAccAWSRouteNewRouteTable(
 func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock(
 func testAccAWSRouteConfigConditionalIpv4Ipv6(
 func testAccAWSRouteResourceConfigLocalGatewayID(
+func testAccAWSRouteResourceConfigVpcEndpointId(
 func TestAccAWSS3AccessPoint_basic(
 func TestAccAWSS3AccessPoint_disappears(
 func TestAccAWSS3AccessPoint_bucketDisappears(
@@ -9334,7 +9359,9 @@ func TestAccAWSSecurityGroup_ingressWithPrefixList(
 func TestAccAWSSecurityGroup_ipv4andipv6Egress(
 func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAccCheckAWSSecurityGroupDestroy(
+func testAccCheckAWSSecurityGroupEc2ClassicDestroy(
 func testAccCheckAWSSecurityGroupExists(
+func testAccCheckAWSSecurityGroupEc2ClassicExists(
 func testAccCheckAWSSecurityGroupAttributes(
 func testAccCheckAWSSecurityGroupAttributesNegOneProtocol(
 func testAccAWSSecurityGroupRulesPerGroupLimitFromEnv(
@@ -9355,9 +9382,11 @@ func testAccAWSSecurityGroupConfigCidrBlockRuleLimit(
 func testAccAWSSecurityGroupConfigRuleDescription(
 func testAccAWSAWSSecurityGroupConfigTags1(
 func testAccAWSAWSSecurityGroupConfigTags2(
+func testAccAWSSecurityGroupConfigClassic(
 func testAccAWSSecurityGroupPrefixNameConfig(
 func testAccAWSSecurityGroupConfig_drift(
 func testAccAWSSecurityGroupConfig_drift_complex(
+func testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic(
 func testAccAWSSecurityGroupConfig_ruleGathering(
 func testAccAWSSecurityGroupConfigEgressConfigModeBlocks(
 func testAccAWSSecurityGroupConfigEgressConfigModeNoBlocks(
@@ -10255,11 +10284,13 @@ func testAccVpcEndpointServiceAllowedPrincipalBasicConfig(
 func TestAccAWSVpcEndpointService_basic(
 func TestAccAWSVpcEndpointService_AllowedPrincipals(
 func TestAccAWSVpcEndpointService_disappears(
+func TestAccAWSVpcEndpointService_GatewayLoadBalancerArns(
 func TestAccAWSVpcEndpointService_tags(
 func testAccCheckVpcEndpointServiceDestroy(
 func testAccCheckVpcEndpointServiceExists(
 func testAccVpcEndpointServiceConfig_base(
-func testAccVpcEndpointServiceConfig_basic(
+func testAccVpcEndpointServiceConfig_GatewayLoadBalancerArns(
+func testAccVpcEndpointServiceConfig_NetworkLoadBalancerArns(
 func testAccVpcEndpointServiceConfig_allowedPrincipals(
 func testAccVpcEndpointServiceConfig_allowedPrincipalsUpdated(
 func testAccVpcEndpointServiceConfigTags1(
@@ -10277,6 +10308,7 @@ func TestAccAWSVpcEndpoint_interfaceNonAWSServiceAcceptOnCreate(
 func TestAccAWSVpcEndpoint_interfaceNonAWSServiceAcceptOnUpdate(
 func TestAccAWSVpcEndpoint_disappears(
 func TestAccAWSVpcEndpoint_tags(
+func TestAccAWSVpcEndpoint_VpcEndpointType_GatewayLoadBalancer(
 func testAccCheckVpcEndpointDestroy(
 func testAccCheckVpcEndpointExists(
 func testAccCheckVpcEndpointPrefixListAvailable(
@@ -10290,6 +10322,7 @@ func testAccVpcEndpointConfig_interfaceWithSubnetModified(
 func testAccVpcEndpointConfig_interfaceNonAWSService(
 func testAccVpcEndpointConfigTags1(
 func testAccVpcEndpointConfigTags2(
+func testAccVpcEndpointConfigVpcEndpointTypeGatewayLoadBalancer(
 func TestAccAwsVpcIpv4CidrBlockAssociation_basic(
 func testAccCheckAdditionalAwsVpcIpv4CidrBlock(
 func testAccCheckAwsVpcIpv4CidrBlockAssociationDestroy(
@@ -10974,6 +11007,9 @@ func testAccAWSXraySamplingRuleConfig_basic(
 func testAccAWSXraySamplingRuleConfig_update(
 func testAccAWSXraySamplingRuleConfigTags1(
 func testAccAWSXraySamplingRuleConfigTags2(
+func testAccPreCheckRoute53QueryLog(
+func testAccRoute53QueryLogRegionProviderConfig(
+func testAccGetRoute53QueryLogRegion(
 func testAccPreCheckWafLoggingConfiguration(
 func testAccWafLoggingConfigurationRegionProviderConfig(
 func testAccGetWafLoggingConfigurationRegion(
