@@ -20,7 +20,6 @@ const testAccDefaultRouteTableConfig_routeBlocksExplicitZero =
 const testAccDirectoryServiceDirectoryConfig_microsoftStandard =
 const testAccAWSDocDBClusterParameterGroupConfig_namePrefix =
 const testAccAWSDocDBClusterParameterGroupConfig_generatedName =
-const testAccAWSEIPAssociationConfig_ec2Classic =
 const testAccAWSEIPAssociationConfig_networkInterface =
 const testAccAWSELB_namePrefix =
 const testAccAWSELB_zeroValueName =

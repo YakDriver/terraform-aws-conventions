@@ -7,10 +7,12 @@ func TestAccAWSEIPAssociation_ec2Classic(
 func TestAccAWSEIPAssociation_spotInstance(
 func TestAccAWSEIPAssociation_disappears(
 func testAccCheckAWSEIPAssociationExists(
+func testAccCheckAWSEIPAssociationEc2ClassicExists(
 func testAccCheckAWSEIPAssociationHasIpBasedId(
 func testAccCheckAWSEIPAssociationDestroy(
 func testAccAWSEIPAssociationConfig(
 func testAccAWSEIPAssociationConfigDisappears(
+func testAccAWSEIPAssociationConfig_ec2Classic(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func testAccAWSEIPAssociationConfig_instance(
 func TestAccAWSEIP_Ec2Classic(
@@ -32,8 +34,10 @@ func TestAccAWSEIP_CustomerOwnedIpv4Pool(
 func testAccCheckAWSEIPAttributes(
 func testAccCheckAWSEIPAssociated(
 func testAccCheckAWSEIPExists(
+func testAccCheckAWSEIPEc2ClassicExists(
 func testAccCheckAWSEIPPrivateDNS(
 func testAccCheckAWSEIPPublicDNS(
+func testAccCheckAWSEIPPublicDNSEc2Classic(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_tags_Ec2Classic(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(

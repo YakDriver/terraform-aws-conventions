@@ -673,6 +673,7 @@ func testAccAWSEcsServiceWithNetworkConfiguration_modified(
 func testAccAWSEcsService_withServiceRegistries(
 func testAccAWSEcsService_withServiceRegistries_container(
 func testAccAWSEcsTaskDefinition_constraint(
+func testAccAWSEIPAssociationConfig_ec2Classic(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func testAccAWSEIPAssociationConfig_instance(
 func testAccAWSEIPConfig_tags(
@@ -1088,6 +1089,7 @@ func testAccAWSClusterInstanceConfig_namePrefix(
 func testAccAWSClusterInstanceConfig_generatedName(
 func testAccAWSClusterConfig_s3Restore(
 func testAccAWSClusterConfig_generatedName(
+func testAccAWSClusterConfig_pointInTimeRestoreSource(
 func testAccAWSClusterConfig_kmsKey(
 func testAccAWSClusterConfig_encrypted(
 func testAccAWSClusterConfig_backups(

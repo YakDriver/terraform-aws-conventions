@@ -1,3 +1,8 @@
+func testAccPreCheckApigatewayEdgeDomainName(
+func testAccApigatewayEdgeDomainNameRegionProviderConfig(
+func testAccGetApigatewayEdgeDomainNameRegion(
+func testAccCheckResourceAttrRegionalARNApigatewayEdgeDomainName(
+func testAccCheckResourceAttrRegionalARNApigatewayRegionalDomainName(
 func TestIsAwsErr(
 func TestMain(
 func TestCloudFrontStructure_expandCloudFrontDefaultCacheBehavior(
@@ -3884,6 +3889,8 @@ func TestAccAWSDBInstance_PerformanceInsightsRetentionPeriod(
 func TestAccAWSDBInstance_ReplicateSourceDb_PerformanceInsightsEnabled(
 func TestAccAWSDBInstance_SnapshotIdentifier_PerformanceInsightsEnabled(
 func TestAccAWSDBInstance_CACertificateIdentifier(
+func TestAccAWSDBInstance_RestoreToPointInTime_SourceIdentifier(
+func TestAccAWSDBInstance_RestoreToPointInTime_SourceResourceID(
 func testAccAWSDBInstanceConfig_orderableClass(
 func testAccAWSDBInstanceConfig_orderableClassMysql(
 func testAccAWSDBInstanceConfig_orderableClassMariadb(
@@ -3901,6 +3908,8 @@ func testAccAWSDBInstanceConfig_FinalSnapshotIdentifier(
 func testAccAWSDbInstanceConfig_MonitoringInterval(
 func testAccAWSDbInstanceConfig_MonitoringRoleArnRemoved(
 func testAccAWSDbInstanceConfig_MonitoringRoleArn(
+func testAccAWSDBInstanceConfig_RestoreToPointInTime_SourceIdentifier(
+func testAccAWSDBInstanceConfig_RestoreToPointInTime_SourceResourceID(
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_iopsUpdate(
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_mysqlPort(
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_updateMysqlPort(
@@ -4824,7 +4833,6 @@ func TestAccAWSEc2TransitGatewayRouteTable_disappears_TransitGateway(
 func TestAccAWSEc2TransitGatewayRouteTable_Tags(
 func testAccCheckAWSEc2TransitGatewayRouteTableExists(
 func testAccCheckAWSEc2TransitGatewayRouteTableDestroy(
-func testAccCheckAWSEc2TransitGatewayRouteTableDisappears(
 func testAccCheckAWSEc2TransitGatewayRouteTableNotRecreated(
 func testAccAWSEc2TransitGatewayRouteTableConfig(
 func testAccAWSEc2TransitGatewayRouteTableConfigTags1(
@@ -4881,6 +4889,7 @@ func testAccAWSEc2TransitGatewayVpcAttachmentAccepterConfig_defaultRouteTableAss
 func testSweepEc2TransitGatewayVpcAttachments(
 func TestAccAWSEc2TransitGatewayVpcAttachment_basic(
 func TestAccAWSEc2TransitGatewayVpcAttachment_disappears(
+func TestAccAWSEc2TransitGatewayVpcAttachment_ApplianceModeSupport(
 func TestAccAWSEc2TransitGatewayVpcAttachment_DnsSupport(
 func TestAccAWSEc2TransitGatewayVpcAttachment_Ipv6Support(
 func TestAccAWSEc2TransitGatewayVpcAttachment_SharedTransitGateway(
@@ -4894,6 +4903,7 @@ func testAccCheckAWSEc2TransitGatewayVpcAttachmentDestroy(
 func testAccCheckAWSEc2TransitGatewayVpcAttachmentDisappears(
 func testAccCheckAWSEc2TransitGatewayVpcAttachmentNotRecreated(
 func testAccAWSEc2TransitGatewayVpcAttachmentConfig(
+func testAccAWSEc2TransitGatewayVpcAttachmentConfigApplianceModeSupport(
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigDnsSupport(
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigIpv6Support(
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigSharedTransitGateway(
@@ -5191,10 +5201,12 @@ func TestAccAWSEIPAssociation_ec2Classic(
 func TestAccAWSEIPAssociation_spotInstance(
 func TestAccAWSEIPAssociation_disappears(
 func testAccCheckAWSEIPAssociationExists(
+func testAccCheckAWSEIPAssociationEc2ClassicExists(
 func testAccCheckAWSEIPAssociationHasIpBasedId(
 func testAccCheckAWSEIPAssociationDestroy(
 func testAccAWSEIPAssociationConfig(
 func testAccAWSEIPAssociationConfigDisappears(
+func testAccAWSEIPAssociationConfig_ec2Classic(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func testAccAWSEIPAssociationConfig_instance(
 func testSweepEc2Eips(
@@ -5217,8 +5229,10 @@ func TestAccAWSEIP_CustomerOwnedIpv4Pool(
 func testAccCheckAWSEIPAttributes(
 func testAccCheckAWSEIPAssociated(
 func testAccCheckAWSEIPExists(
+func testAccCheckAWSEIPEc2ClassicExists(
 func testAccCheckAWSEIPPrivateDNS(
 func testAccCheckAWSEIPPublicDNS(
+func testAccCheckAWSEIPPublicDNSEc2Classic(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_tags_Ec2Classic(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
@@ -8644,6 +8658,7 @@ func TestAccAWSRDSCluster_BacktrackWindow(
 func TestAccAWSRDSCluster_ClusterIdentifierPrefix(
 func TestAccAWSRDSCluster_DbSubnetGroupName(
 func TestAccAWSRDSCluster_s3Restore(
+func TestAccAWSRDSCluster_PointInTimeRestore(
 func TestAccAWSRDSCluster_generatedName(
 func TestAccAWSRDSCluster_takeFinalSnapshot(
 func TestAccAWSRDSCluster_missingUserNameCausesError(
@@ -8707,6 +8722,7 @@ func testAccAWSClusterConfig_s3Restore(
 func testAccAWSClusterConfig_generatedName(
 func testAccAWSClusterConfigWithFinalSnapshot(
 func testAccAWSClusterConfigWithoutUserNameAndPassword(
+func testAccAWSClusterConfig_pointInTimeRestoreSource(
 func testAccAWSClusterConfigTags1(
 func testAccAWSClusterConfigTags2(
 func testAccAWSClusterConfigEnabledCloudwatchLogsExports1(
@@ -10858,6 +10874,7 @@ func testAccCheckVpnGatewayDestroy(
 func testAccCheckVpnGatewayExists(
 func testAccCheckVpnGatewayConfigTags1(
 func testAccCheckVpnGatewayConfigTags2(
+func testSweepWafByteMatchSet(
 func TestAccAWSWafByteMatchSet_basic(
 func TestAccAWSWafByteMatchSet_changeNameForceNew(
 func TestAccAWSWafByteMatchSet_changeTuples(
@@ -10870,6 +10887,7 @@ func testAccAWSWafByteMatchSetConfig(
 func testAccAWSWafByteMatchSetConfigChangeName(
 func testAccAWSWafByteMatchSetConfig_changeTuples(
 func testAccAWSWafByteMatchSetConfig_noTuples(
+func testSweepWafGeoMatchSet(
 func TestAccAWSWafGeoMatchSet_basic(
 func TestAccAWSWafGeoMatchSet_changeNameForceNew(
 func TestAccAWSWafGeoMatchSet_disappears(
@@ -10882,6 +10900,7 @@ func testAccAWSWafGeoMatchSetConfig(
 func testAccAWSWafGeoMatchSetConfigChangeName(
 func testAccAWSWafGeoMatchSetConfig_changeConstraints(
 func testAccAWSWafGeoMatchSetConfig_noConstraints(
+func testSweepWafIPSet(
 func TestAccAWSWafIPSet_basic(
 func TestAccAWSWafIPSet_disappears(
 func TestAccAWSWafIPSet_changeNameForceNew(
@@ -10899,6 +10918,7 @@ func testAccAWSWafIPSetConfigChangeIPSetDescriptors(
 func testAccAWSWafIPSetConfig_IpSetDescriptors(
 func testAccAWSWafIPSetConfig_noDescriptors(
 func testAccAWSWafIPSetIPV6Config(
+func testSweepWafRateBasedRules(
 func TestAccAWSWafRateBasedRule_basic(
 func TestAccAWSWafRateBasedRule_changeNameForceNew(
 func TestAccAWSWafRateBasedRule_disappears(
@@ -10927,6 +10947,7 @@ func testAccCheckAWSWafRegexMatchSetDestroy(
 func testAccAWSWafRegexMatchSetConfig(
 func testAccAWSWafRegexMatchSetConfig_changePatterns(
 func testAccAWSWafRegexMatchSetConfig_noPatterns(
+func testSweepWafRegexPatternSet(
 func TestAccAWSWafRegexPatternSet_serial(
 func testAccAWSWafRegexPatternSet_basic(
 func testAccAWSWafRegexPatternSet_changePatterns(
@@ -11131,6 +11152,7 @@ func testAccAWSWafRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRuleGroupConfig_noActivatedRules(
 func testAccAWSWafRuleGroupConfigTags1(
 func testAccAWSWafRuleGroupConfigTags2(
+func testSweepWafRules(
 func TestAccAWSWafRule_basic(
 func TestAccAWSWafRule_changeNameForceNew(
 func TestAccAWSWafRule_disappears(
@@ -11149,6 +11171,7 @@ func testAccAWSWafRuleConfig_noPredicates(
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(
 func testAccAWSWafRuleConfigTags1(
 func testAccAWSWafRuleConfigTags2(
+func testSweepWafSizeConstraintSet(
 func TestAccAWSWafSizeConstraintSet_basic(
 func TestAccAWSWafSizeConstraintSet_changeNameForceNew(
 func TestAccAWSWafSizeConstraintSet_disappears(
@@ -11161,6 +11184,7 @@ func testAccAWSWafSizeConstraintSetConfig(
 func testAccAWSWafSizeConstraintSetConfigChangeName(
 func testAccAWSWafSizeConstraintSetConfig_changeConstraints(
 func testAccAWSWafSizeConstraintSetConfig_noConstraints(
+func testSweepWafSqlInjectionMatchSet(
 func TestAccAWSWafSqlInjectionMatchSet_basic(
 func TestAccAWSWafSqlInjectionMatchSet_changeNameForceNew(
 func TestAccAWSWafSqlInjectionMatchSet_disappears(
@@ -11347,6 +11371,7 @@ func testAccAWSWafWebAclConfig_LoggingRemoved(
 func testAccAWSWafWebAclConfig_LoggingUpdate(
 func testAccAWSWafWebAclConfigTags1(
 func testAccAWSWafWebAclConfigTags2(
+func testSweepWafXssMatchSet(
 func TestAccAWSWafXssMatchSet_basic(
 func TestAccAWSWafXssMatchSet_changeNameForceNew(
 func TestAccAWSWafXssMatchSet_disappears(
@@ -11609,6 +11634,7 @@ func TestValidateSecretManagerSecretNamePrefix(
 func TestValidateRoute53ResolverName(
 func TestCloudWatchEventCustomEventBusName(
 func TestValidateServiceDiscoveryNamespaceName(
+func TestValidateUTCTimestamp(
 func testAccPreCheckWafLoggingConfiguration(
 func testAccWafLoggingConfigurationRegionProviderConfig(
 func testAccGetWafLoggingConfigurationRegion(

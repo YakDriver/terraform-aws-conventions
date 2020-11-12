@@ -1,3 +1,8 @@
+func testAccPreCheckApigatewayEdgeDomainName(
+func testAccApigatewayEdgeDomainNameRegionProviderConfig(
+func testAccGetApigatewayEdgeDomainNameRegion(
+func testAccCheckResourceAttrRegionalARNApigatewayEdgeDomainName(
+func testAccCheckResourceAttrRegionalARNApigatewayRegionalDomainName(
 func dataSourceAwsApiGatewayApiKey(
 func dataSourceAwsApiGatewayApiKeyRead(
 func TestAccDataSourceAwsApiGatewayApiKey_basic(

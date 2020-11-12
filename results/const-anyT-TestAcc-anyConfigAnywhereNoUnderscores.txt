@@ -53,6 +53,7 @@ const testAccCheckAWSProviderConfigAssumeRoleEmpty =
 const testAccAWSCloudFrontOriginAccessIdentityConfig =
 const testAccAWSCloudFrontOriginAccessIdentityNoCommentConfig =
 const testAccAWSCloudWatchEventRuleConfigNameGenerated =
+const testAccAWSDBInstanceBaseConfig =
 const testAccDefaultRouteTableConfig =
 const testAccAWSDefaultVpcDhcpOptionsConfigBasic =
 const testAccAWSDefaultVpcConfigBasic =

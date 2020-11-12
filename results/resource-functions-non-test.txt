@@ -1244,6 +1244,7 @@ func resourceAwsDbInstanceRetrieve(
 func resourceAwsDbInstanceImport(
 func resourceAwsDbInstanceStateRefreshFunc(
 func diffCloudwatchLogsExportConfiguration(
+func expandRestoreToPointInTime(
 func resourceAwsDbInstanceResourceV0(
 func resourceAwsDbInstanceStateUpgradeV0(
 func resourceAwsDbInstanceRoleAssociation(
@@ -1989,6 +1990,7 @@ func resourceAwsEipUpdate(
 func resourceAwsEipDelete(
 func resourceAwsEipDomain(
 func disassociateEip(
+func waitForEc2AddressAssociationClassic(
 func init(
 func resourceAwsEksCluster(
 func resourceAwsEksClusterCreate(
@@ -5019,12 +5021,14 @@ func resourceAwsWafByteMatchSetDelete(
 func updateByteMatchSetResource(
 func flattenWafByteMatchTuples(
 func diffWafByteMatchSetTuples(
+func init(
 func resourceAwsWafGeoMatchSet(
 func resourceAwsWafGeoMatchSetCreate(
 func resourceAwsWafGeoMatchSetRead(
 func resourceAwsWafGeoMatchSetUpdate(
 func resourceAwsWafGeoMatchSetDelete(
 func updateGeoMatchSetResource(
+func init(
 func resourceAwsWafIPSet(
 func resourceAwsWafIPSetCreate(
 func resourceAwsWafIPSetRead(
@@ -5032,12 +5036,14 @@ func resourceAwsWafIPSetUpdate(
 func resourceAwsWafIPSetDelete(
 func updateWafIpSetDescriptors(
 func diffWafIpSetDescriptors(
+func init(
 func resourceAwsWafRateBasedRule(
 func resourceAwsWafRateBasedRuleCreate(
 func resourceAwsWafRateBasedRuleRead(
 func resourceAwsWafRateBasedRuleUpdate(
 func resourceAwsWafRateBasedRuleDelete(
 func updateWafRateBasedRuleResource(
+func init(
 func resourceAwsWafRegexMatchSet(
 func resourceAwsWafRegexMatchSetCreate(
 func resourceAwsWafRegexMatchSetRead(
@@ -5052,6 +5058,7 @@ func resourceAwsWafRegexPatternSetRead(
 func resourceAwsWafRegexPatternSetUpdate(
 func resourceAwsWafRegexPatternSetDelete(
 func updateWafRegexPatternSetPatternStrings(
+func init(
 func resourceAwsWafRegionalByteMatchSet(
 func resourceAwsWafRegionalByteMatchSetCreate(
 func resourceAwsWafRegionalByteMatchSetRead(
@@ -5167,6 +5174,7 @@ func deleteWafRuleGroup(
 func updateWafRuleGroupResource(
 func init(
 func computeWafActivatedRuleWithRuleId(
+func init(
 func computeWafRulePredicateWithIpSet(
 func computeWafRulePredicateWithByteMatchSet(
 func computeWafRulePredicateWithGeoMatchSet(
@@ -5176,6 +5184,7 @@ func resourceAwsWafSizeConstraintSetRead(
 func resourceAwsWafSizeConstraintSetUpdate(
 func resourceAwsWafSizeConstraintSetDelete(
 func updateSizeConstraintSetResource(
+func init(
 func resourceAwsWafSqlInjectionMatchSet(
 func resourceAwsWafSqlInjectionMatchSetCreate(
 func resourceAwsWafSqlInjectionMatchSetRead(
@@ -5184,6 +5193,7 @@ func resourceAwsWafSqlInjectionMatchSetDelete(
 func updateSqlInjectionMatchSetResource(
 func flattenWafSqlInjectionMatchTuples(
 func diffWafSqlInjectionMatchTuples(
+func init(
 func resourceAwsWafv2IPSet(
 func resourceAwsWafv2IPSetCreate(
 func resourceAwsWafv2IPSetRead(
@@ -5266,6 +5276,7 @@ func resourceAwsWafXssMatchSetDelete(
 func updateXssMatchSetResource(
 func flattenWafXssMatchTuples(
 func diffWafXssMatchSetTuples(
+func init(
 func resourceAwsWorkLinkFleet(
 func resourceAwsWorkLinkFleetCreate(
 func resourceAwsWorkLinkFleetRead(

@@ -1950,6 +1950,7 @@ func TestAccAWSEIPAssociation_basic(
 func TestAccAWSEIPAssociation_ec2Classic(
 func TestAccAWSEIPAssociation_spotInstance(
 func TestAccAWSEIPAssociation_disappears(
+func testAccAWSEIPAssociationConfig_ec2Classic(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func testAccAWSEIPAssociationConfig_instance(
 func TestAccAWSEIP_basic(
@@ -3219,6 +3220,7 @@ func TestAccAWSRDSCluster_backupsUpdate(
 func TestAccAWSRDSCluster_iamAuth(
 func testAccAWSClusterConfig_s3Restore(
 func testAccAWSClusterConfig_generatedName(
+func testAccAWSClusterConfig_pointInTimeRestoreSource(
 func testAccAWSClusterConfig_kmsKey(
 func testAccAWSClusterConfig_encrypted(
 func testAccAWSClusterConfig_backups(

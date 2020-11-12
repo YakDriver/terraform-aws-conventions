@@ -1,3 +1,8 @@
+func testAccPreCheckApigatewayEdgeDomainName(
+func testAccApigatewayEdgeDomainNameRegionProviderConfig(
+func testAccGetApigatewayEdgeDomainNameRegion(
+func testAccCheckResourceAttrRegionalARNApigatewayEdgeDomainName(
+func testAccCheckResourceAttrRegionalARNApigatewayRegionalDomainName(
 func isAWSErr(
 func isAWSErrRequestFailureStatusCode(
 func retryOnAwsCode(
@@ -4239,6 +4244,7 @@ func resourceAwsDbInstanceRetrieve(
 func resourceAwsDbInstanceImport(
 func resourceAwsDbInstanceStateRefreshFunc(
 func diffCloudwatchLogsExportConfiguration(
+func expandRestoreToPointInTime(
 func resourceAwsDbInstanceResourceV0(
 func resourceAwsDbInstanceStateUpgradeV0(
 func resourceAwsDbInstanceRoleAssociation(
@@ -4282,6 +4288,8 @@ func testAccAWSDBInstanceConfig_FinalSnapshotIdentifier(
 func testAccAWSDbInstanceConfig_MonitoringInterval(
 func testAccAWSDbInstanceConfig_MonitoringRoleArnRemoved(
 func testAccAWSDbInstanceConfig_MonitoringRoleArn(
+func testAccAWSDBInstanceConfig_RestoreToPointInTime_SourceIdentifier(
+func testAccAWSDBInstanceConfig_RestoreToPointInTime_SourceResourceID(
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_iopsUpdate(
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_mysqlPort(
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_updateMysqlPort(
@@ -5471,7 +5479,6 @@ func testAccCheckAWSEc2TransitGatewayRouteTablePropagationDestroy(
 func testAccAWSEc2TransitGatewayRouteTablePropagationConfig(
 func testAccCheckAWSEc2TransitGatewayRouteTableExists(
 func testAccCheckAWSEc2TransitGatewayRouteTableDestroy(
-func testAccCheckAWSEc2TransitGatewayRouteTableDisappears(
 func testAccCheckAWSEc2TransitGatewayRouteTableNotRecreated(
 func testAccAWSEc2TransitGatewayRouteTableConfig(
 func testAccAWSEc2TransitGatewayRouteTableConfigTags1(
@@ -5524,6 +5531,7 @@ func testAccCheckAWSEc2TransitGatewayVpcAttachmentDestroy(
 func testAccCheckAWSEc2TransitGatewayVpcAttachmentDisappears(
 func testAccCheckAWSEc2TransitGatewayVpcAttachmentNotRecreated(
 func testAccAWSEc2TransitGatewayVpcAttachmentConfig(
+func testAccAWSEc2TransitGatewayVpcAttachmentConfigApplianceModeSupport(
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigDnsSupport(
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigIpv6Support(
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigSharedTransitGateway(
@@ -5834,10 +5842,12 @@ func resourceAwsEipAssociationDelete(
 func readAwsEipAssociation(
 func describeAddressesById(
 func testAccCheckAWSEIPAssociationExists(
+func testAccCheckAWSEIPAssociationEc2ClassicExists(
 func testAccCheckAWSEIPAssociationHasIpBasedId(
 func testAccCheckAWSEIPAssociationDestroy(
 func testAccAWSEIPAssociationConfig(
 func testAccAWSEIPAssociationConfigDisappears(
+func testAccAWSEIPAssociationConfig_ec2Classic(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func testAccAWSEIPAssociationConfig_instance(
 func resourceAwsEip(
@@ -5847,14 +5857,17 @@ func resourceAwsEipUpdate(
 func resourceAwsEipDelete(
 func resourceAwsEipDomain(
 func disassociateEip(
+func waitForEc2AddressAssociationClassic(
 func init(
 func testSweepEc2Eips(
 func testAccCheckAWSEIPDestroy(
 func testAccCheckAWSEIPAttributes(
 func testAccCheckAWSEIPAssociated(
 func testAccCheckAWSEIPExists(
+func testAccCheckAWSEIPEc2ClassicExists(
 func testAccCheckAWSEIPPrivateDNS(
 func testAccCheckAWSEIPPublicDNS(
+func testAccCheckAWSEIPPublicDNSEc2Classic(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_tags_Ec2Classic(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
@@ -9899,6 +9912,7 @@ func testAccAWSClusterConfig_s3Restore(
 func testAccAWSClusterConfig_generatedName(
 func testAccAWSClusterConfigWithFinalSnapshot(
 func testAccAWSClusterConfigWithoutUserNameAndPassword(
+func testAccAWSClusterConfig_pointInTimeRestoreSource(
 func testAccAWSClusterConfigTags1(
 func testAccAWSClusterConfigTags2(
 func testAccAWSClusterConfigEnabledCloudwatchLogsExports1(
@@ -12265,6 +12279,8 @@ func resourceAwsWafByteMatchSetDelete(
 func updateByteMatchSetResource(
 func flattenWafByteMatchTuples(
 func diffWafByteMatchSetTuples(
+func init(
+func testSweepWafByteMatchSet(
 func testAccCheckAWSWafByteMatchSetDisappears(
 func testAccCheckAWSWafByteMatchSetExists(
 func testAccCheckAWSWafByteMatchSetDestroy(
@@ -12278,6 +12294,8 @@ func resourceAwsWafGeoMatchSetRead(
 func resourceAwsWafGeoMatchSetUpdate(
 func resourceAwsWafGeoMatchSetDelete(
 func updateGeoMatchSetResource(
+func init(
+func testSweepWafGeoMatchSet(
 func testAccCheckAWSWafGeoMatchSetDisappears(
 func testAccCheckAWSWafGeoMatchSetExists(
 func testAccCheckAWSWafGeoMatchSetDestroy(
@@ -12292,6 +12310,8 @@ func resourceAwsWafIPSetUpdate(
 func resourceAwsWafIPSetDelete(
 func updateWafIpSetDescriptors(
 func diffWafIpSetDescriptors(
+func init(
+func testSweepWafIPSet(
 func testAccCheckAWSWafIPSetDisappears(
 func testAccCheckAWSWafIPSetDestroy(
 func testAccCheckAWSWafIPSetExists(
@@ -12307,6 +12327,8 @@ func resourceAwsWafRateBasedRuleRead(
 func resourceAwsWafRateBasedRuleUpdate(
 func resourceAwsWafRateBasedRuleDelete(
 func updateWafRateBasedRuleResource(
+func init(
+func testSweepWafRateBasedRules(
 func testAccCheckAWSWafRateBasedRuleDestroy(
 func testAccCheckAWSWafRateBasedRuleExists(
 func testAccAWSWafRateBasedRuleConfig(
@@ -12341,6 +12363,8 @@ func resourceAwsWafRegexPatternSetRead(
 func resourceAwsWafRegexPatternSetUpdate(
 func resourceAwsWafRegexPatternSetDelete(
 func updateWafRegexPatternSetPatternStrings(
+func init(
+func testSweepWafRegexPatternSet(
 func testAccAWSWafRegexPatternSet_basic(
 func testAccAWSWafRegexPatternSet_changePatterns(
 func testAccAWSWafRegexPatternSet_noPatterns(
@@ -12585,6 +12609,8 @@ func testAccAWSWafRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRuleGroupConfig_noActivatedRules(
 func testAccAWSWafRuleGroupConfigTags1(
 func testAccAWSWafRuleGroupConfigTags2(
+func init(
+func testSweepWafRules(
 func computeWafRulePredicateWithIpSet(
 func computeWafRulePredicateWithByteMatchSet(
 func computeWafRulePredicateWithGeoMatchSet(
@@ -12605,6 +12631,8 @@ func resourceAwsWafSizeConstraintSetRead(
 func resourceAwsWafSizeConstraintSetUpdate(
 func resourceAwsWafSizeConstraintSetDelete(
 func updateSizeConstraintSetResource(
+func init(
+func testSweepWafSizeConstraintSet(
 func testAccCheckAWSWafSizeConstraintSetDisappears(
 func testAccCheckAWSWafSizeConstraintSetExists(
 func testAccCheckAWSWafSizeConstraintSetDestroy(
@@ -12620,6 +12648,8 @@ func resourceAwsWafSqlInjectionMatchSetDelete(
 func updateSqlInjectionMatchSetResource(
 func flattenWafSqlInjectionMatchTuples(
 func diffWafSqlInjectionMatchTuples(
+func init(
+func testSweepWafSqlInjectionMatchSet(
 func testAccCheckAWSWafSqlInjectionMatchSetDisappears(
 func testAccCheckAWSWafSqlInjectionMatchSetExists(
 func testAccCheckAWSWafSqlInjectionMatchSetDestroy(
@@ -12818,6 +12848,8 @@ func resourceAwsWafXssMatchSetDelete(
 func updateXssMatchSetResource(
 func flattenWafXssMatchTuples(
 func diffWafXssMatchSetTuples(
+func init(
+func testSweepWafXssMatchSet(
 func testAccCheckAWSWafXssMatchSetExists(
 func testAccCheckAWSWafXssMatchSetDestroy(
 func testAccAWSWafXssMatchSetConfig(
@@ -13271,6 +13303,7 @@ func validateSQSNonFifoQueueName(
 func validateSQSFifoQueueName(
 func validateOnceAWeekWindowFormat(
 func validateOnceADayWindowFormat(
+func validateUTCTimestamp(
 func validateAwsEcsPlacementConstraint(
 func validateAwsDynamoDbGlobalTableName(
 func validateAwsEcsPlacementStrategy(
@@ -13328,7 +13361,6 @@ func validateBatchPrefix(
 func validateSecurityGroupRuleDescription(
 func validateIoTTopicRuleName(
 func validateIoTTopicRuleCloudWatchAlarmStateValue(
-func validateIoTTopicRuleCloudWatchMetricTimestamp(
 func validateIoTTopicRuleElasticSearchEndpoint(
 func validateIoTTopicRuleFirehoseSeparator(
 func validateCognitoRoleMappingsAmbiguousRoleResolutionAgainstType(

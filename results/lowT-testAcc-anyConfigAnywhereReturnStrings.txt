@@ -1,3 +1,4 @@
+func testAccApigatewayEdgeDomainNameRegionProviderConfig() string {
 func testAccCloudfrontRegionProviderConfig() string {
 func testAccCurRegionProviderConfig() string {
 func testAccCheckAwsAcmCertificateDataSourceConfig(domain string) string {
@@ -481,7 +482,7 @@ func testAccAWSAPIGatewayDocumentationPartMethodConfig(apiName, properties strin
 func testAccAWSAPIGatewayDocumentationPartResponseHeaderConfig(apiName, properties string) string {
 func testAccAWSAPIGatewayDocumentationVersionBasicConfig(version, apiName string) string {
 func testAccAWSAPIGatewayDocumentationVersionAllFieldsConfig(version, apiName, stageName, description string) string {
-func testAccAWSAPIGatewayDomainNameConfig_CertificateArn(domainName, certificateArn string) string {
+func testAccAWSAPIGatewayDomainNameConfig_CertificateArn(rootDomain string, domain string) string {
 func testAccAWSAPIGatewayDomainNameConfig_CertificateName(domainName, key, certificate, chainCertificate string) string {
 func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateArn(domainName, key, certificate string) string {
 func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateName(domainName, key, certificate, chainCertificate string) string {
@@ -1418,6 +1419,8 @@ func testAccAWSDBInstanceConfig_FinalSnapshotIdentifier(rInt int) string {
 func testAccAWSDbInstanceConfig_MonitoringInterval(rName string, monitoringInterval int) string {
 func testAccAWSDbInstanceConfig_MonitoringRoleArnRemoved(rName string) string {
 func testAccAWSDbInstanceConfig_MonitoringRoleArn(rName string) string {
+func testAccAWSDBInstanceConfig_RestoreToPointInTime_SourceIdentifier() string {
+func testAccAWSDBInstanceConfig_RestoreToPointInTime_SourceResourceID() string {
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_iopsUpdate(rName string, iops int) string {
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_mysqlPort(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_updateMysqlPort(rName string) string {
@@ -1808,6 +1811,7 @@ func testAccAWSEc2TransitGatewayVpcAttachmentAccepterConfig_tags(rName string) s
 func testAccAWSEc2TransitGatewayVpcAttachmentAccepterConfig_tagsUpdated(rName string) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentAccepterConfig_defaultRouteTableAssociationAndPropagation(rName string, association, propagation bool) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentConfig() string {
+func testAccAWSEc2TransitGatewayVpcAttachmentConfigApplianceModeSupport(appModeSupport string) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigDnsSupport(dnsSupport string) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigIpv6Support(ipv6Support string) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigSharedTransitGateway(rName string) string {
@@ -1878,6 +1882,7 @@ func testAccAWSEgressOnlyInternetGatewayConfigTags1(tagKey1, tagValue1 string) s
 func testAccAWSEgressOnlyInternetGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEIPAssociationConfig() string {
 func testAccAWSEIPAssociationConfigDisappears() string {
+func testAccAWSEIPAssociationConfig_ec2Classic() string {
 func testAccAWSEIPAssociationConfig_spotInstance(rInt int) string {
 func testAccAWSEIPAssociationConfig_instance() string {
 func testAccAWSEIPConfig_tags(rName, testName string) string {
@@ -3117,6 +3122,7 @@ func testAccAWSClusterConfig_s3Restore(bucketName string, bucketPrefix string, u
 func testAccAWSClusterConfig_generatedName() string {
 func testAccAWSClusterConfigWithFinalSnapshot(n int) string {
 func testAccAWSClusterConfigWithoutUserNameAndPassword(n int) string {
+func testAccAWSClusterConfig_pointInTimeRestoreSource(parentId, childId string) string {
 func testAccAWSClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSClusterConfigEnabledCloudwatchLogsExports1(rName, enabledCloudwatchLogExports1 string) string {

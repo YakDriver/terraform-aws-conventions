@@ -79,6 +79,7 @@ func TestAccAWSRDSCluster_BacktrackWindow(
 func TestAccAWSRDSCluster_ClusterIdentifierPrefix(
 func TestAccAWSRDSCluster_DbSubnetGroupName(
 func TestAccAWSRDSCluster_s3Restore(
+func TestAccAWSRDSCluster_PointInTimeRestore(
 func TestAccAWSRDSCluster_generatedName(
 func TestAccAWSRDSCluster_takeFinalSnapshot(
 func TestAccAWSRDSCluster_missingUserNameCausesError(

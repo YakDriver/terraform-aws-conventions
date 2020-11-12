@@ -1,3 +1,5 @@
+func testAccCheckResourceAttrRegionalARNApigatewayEdgeDomainName(
+func testAccCheckResourceAttrRegionalARNApigatewayRegionalDomainName(
 func TestAccDataSourceAwsSecretsManagerSecret_ARN(
 func testAccDataSourceAwsSecretsManagerSecretConfig_ARN(
 func testAccCheckResourceAttrRegionalARNEc2Classic(

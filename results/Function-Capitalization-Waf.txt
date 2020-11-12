@@ -57,6 +57,7 @@ func resourceAwsWafByteMatchSetUpdate(
 func resourceAwsWafByteMatchSetDelete(
 func flattenWafByteMatchTuples(
 func diffWafByteMatchSetTuples(
+func testSweepWafByteMatchSet(
 func TestAccAWSWafByteMatchSet_basic(
 func TestAccAWSWafByteMatchSet_changeNameForceNew(
 func TestAccAWSWafByteMatchSet_changeTuples(
@@ -74,6 +75,7 @@ func resourceAwsWafGeoMatchSetCreate(
 func resourceAwsWafGeoMatchSetRead(
 func resourceAwsWafGeoMatchSetUpdate(
 func resourceAwsWafGeoMatchSetDelete(
+func testSweepWafGeoMatchSet(
 func TestAccAWSWafGeoMatchSet_basic(
 func TestAccAWSWafGeoMatchSet_changeNameForceNew(
 func TestAccAWSWafGeoMatchSet_disappears(
@@ -93,6 +95,7 @@ func resourceAwsWafIPSetUpdate(
 func resourceAwsWafIPSetDelete(
 func updateWafIpSetDescriptors(
 func diffWafIpSetDescriptors(
+func testSweepWafIPSet(
 func TestAccAWSWafIPSet_basic(
 func TestAccAWSWafIPSet_disappears(
 func TestAccAWSWafIPSet_changeNameForceNew(
@@ -116,6 +119,7 @@ func resourceAwsWafRateBasedRuleRead(
 func resourceAwsWafRateBasedRuleUpdate(
 func resourceAwsWafRateBasedRuleDelete(
 func updateWafRateBasedRuleResource(
+func testSweepWafRateBasedRules(
 func TestAccAWSWafRateBasedRule_basic(
 func TestAccAWSWafRateBasedRule_changeNameForceNew(
 func TestAccAWSWafRateBasedRule_disappears(
@@ -156,6 +160,7 @@ func resourceAwsWafRegexPatternSetRead(
 func resourceAwsWafRegexPatternSetUpdate(
 func resourceAwsWafRegexPatternSetDelete(
 func updateWafRegexPatternSetPatternStrings(
+func testSweepWafRegexPatternSet(
 func TestAccAWSWafRegexPatternSet_serial(
 func testAccAWSWafRegexPatternSet_basic(
 func testAccAWSWafRegexPatternSet_changePatterns(
@@ -451,6 +456,7 @@ func testAccAWSWafRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRuleGroupConfig_noActivatedRules(
 func testAccAWSWafRuleGroupConfigTags1(
 func testAccAWSWafRuleGroupConfigTags2(
+func testSweepWafRules(
 func TestAccAWSWafRule_basic(
 func TestAccAWSWafRule_changeNameForceNew(
 func TestAccAWSWafRule_disappears(
@@ -477,6 +483,7 @@ func resourceAwsWafSizeConstraintSetCreate(
 func resourceAwsWafSizeConstraintSetRead(
 func resourceAwsWafSizeConstraintSetUpdate(
 func resourceAwsWafSizeConstraintSetDelete(
+func testSweepWafSizeConstraintSet(
 func TestAccAWSWafSizeConstraintSet_basic(
 func TestAccAWSWafSizeConstraintSet_changeNameForceNew(
 func TestAccAWSWafSizeConstraintSet_disappears(
@@ -496,6 +503,7 @@ func resourceAwsWafSqlInjectionMatchSetUpdate(
 func resourceAwsWafSqlInjectionMatchSetDelete(
 func flattenWafSqlInjectionMatchTuples(
 func diffWafSqlInjectionMatchTuples(
+func testSweepWafSqlInjectionMatchSet(
 func TestAccAWSWafSqlInjectionMatchSet_basic(
 func TestAccAWSWafSqlInjectionMatchSet_changeNameForceNew(
 func TestAccAWSWafSqlInjectionMatchSet_disappears(
@@ -746,6 +754,7 @@ func resourceAwsWafXssMatchSetUpdate(
 func resourceAwsWafXssMatchSetDelete(
 func flattenWafXssMatchTuples(
 func diffWafXssMatchSetTuples(
+func testSweepWafXssMatchSet(
 func TestAccAWSWafXssMatchSet_basic(
 func TestAccAWSWafXssMatchSet_changeNameForceNew(
 func TestAccAWSWafXssMatchSet_disappears(

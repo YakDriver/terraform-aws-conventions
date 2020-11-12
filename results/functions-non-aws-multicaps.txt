@@ -1,3 +1,5 @@
+func testAccCheckResourceAttrRegionalARNApigatewayEdgeDomainName(
+func testAccCheckResourceAttrRegionalARNApigatewayRegionalDomainName(
 func expandCustomOriginConfigSSL(
 func flattenCustomOriginConfigSSL(
 func viewerCertificateConfSetIAM(
@@ -1084,6 +1086,8 @@ func TestAccAWSDBInstance_PerformanceInsightsRetentionPeriod(
 func TestAccAWSDBInstance_ReplicateSourceDb_PerformanceInsightsEnabled(
 func TestAccAWSDBInstance_SnapshotIdentifier_PerformanceInsightsEnabled(
 func TestAccAWSDBInstance_CACertificateIdentifier(
+func TestAccAWSDBInstance_RestoreToPointInTime_SourceIdentifier(
+func TestAccAWSDBInstance_RestoreToPointInTime_SourceResourceID(
 func testAccAWSDBInstanceConfig_orderableClass(
 func testAccAWSDBInstanceConfig_orderableClassMysql(
 func testAccAWSDBInstanceConfig_orderableClassMariadb(
@@ -1098,6 +1102,8 @@ func testAccAWSDBInstanceConfig_IAMAuth(
 func testAccAWSDBInstanceConfig_FinalSnapshotIdentifier_SkipFinalSnapshot(
 func testAccAWSDBInstanceConfig_S3Import(
 func testAccAWSDBInstanceConfig_FinalSnapshotIdentifier(
+func testAccAWSDBInstanceConfig_RestoreToPointInTime_SourceIdentifier(
+func testAccAWSDBInstanceConfig_RestoreToPointInTime_SourceResourceID(
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_iopsUpdate(
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_mysqlPort(
 func testAccAWSDBInstanceConfig_SnapshotInstanceConfig_updateMysqlPort(
@@ -1543,10 +1549,12 @@ func TestAccAWSEIPAssociation_ec2Classic(
 func TestAccAWSEIPAssociation_spotInstance(
 func TestAccAWSEIPAssociation_disappears(
 func testAccCheckAWSEIPAssociationExists(
+func testAccCheckAWSEIPAssociationEc2ClassicExists(
 func testAccCheckAWSEIPAssociationHasIpBasedId(
 func testAccCheckAWSEIPAssociationDestroy(
 func testAccAWSEIPAssociationConfig(
 func testAccAWSEIPAssociationConfigDisappears(
+func testAccAWSEIPAssociationConfig_ec2Classic(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func testAccAWSEIPAssociationConfig_instance(
 func TestAccAWSEIP_Ec2Classic(
@@ -1568,8 +1576,10 @@ func TestAccAWSEIP_CustomerOwnedIpv4Pool(
 func testAccCheckAWSEIPAttributes(
 func testAccCheckAWSEIPAssociated(
 func testAccCheckAWSEIPExists(
+func testAccCheckAWSEIPEc2ClassicExists(
 func testAccCheckAWSEIPPrivateDNS(
 func testAccCheckAWSEIPPublicDNS(
+func testAccCheckAWSEIPPublicDNSEc2Classic(
 func testAccAWSEIPConfig_tags(
 func testAccAWSEIPConfig_tags_Ec2Classic(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
@@ -2718,6 +2728,7 @@ func TestAccAWSRDSCluster_BacktrackWindow(
 func TestAccAWSRDSCluster_ClusterIdentifierPrefix(
 func TestAccAWSRDSCluster_DbSubnetGroupName(
 func TestAccAWSRDSCluster_s3Restore(
+func TestAccAWSRDSCluster_PointInTimeRestore(
 func TestAccAWSRDSCluster_generatedName(
 func TestAccAWSRDSCluster_takeFinalSnapshot(
 func TestAccAWSRDSCluster_missingUserNameCausesError(
@@ -3351,6 +3362,7 @@ func resourceAwsWafIPSetCreate(
 func resourceAwsWafIPSetRead(
 func resourceAwsWafIPSetUpdate(
 func resourceAwsWafIPSetDelete(
+func testSweepWafIPSet(
 func TestAccAWSWafIPSet_basic(
 func TestAccAWSWafIPSet_disappears(
 func TestAccAWSWafIPSet_changeNameForceNew(
@@ -3570,6 +3582,7 @@ func validateSQSNonFifoQueueName(
 func validateSQSFifoQueueName(
 func validateOnceAWeekWindowFormat(
 func validateOnceADayWindowFormat(
+func validateUTCTimestamp(
 func validateDocDBSubnetGroupName(
 func validateDocDBSubnetGroupNamePrefix(
 func validateOpenIdURL(
@@ -3578,7 +3591,6 @@ func validateAwsSSMName(
 func validateAwsSSMMaintenanceWindowTaskName(
 func validateIoTTopicRuleName(
 func validateIoTTopicRuleCloudWatchAlarmStateValue(
-func validateIoTTopicRuleCloudWatchMetricTimestamp(
 func validateIoTTopicRuleElasticSearchEndpoint(
 func validateIoTTopicRuleFirehoseSeparator(
 func TestValidateEC2AutomateARN(
@@ -3594,6 +3606,7 @@ func TestValidateOnceADayWindowFormat(
 func TestValidateDocDBIdentifier(
 func TestValidateOpenIdURL(
 func TestValidateAwsSSMName(
+func TestValidateUTCTimestamp(
 func wafv2ForwardedIPConfig(
 func expandWafv2ForwardedIPConfig(
 func expandWafv2IPSetForwardedIPConfig(

@@ -1,3 +1,4 @@
+func testAccApigatewayEdgeDomainNameRegionProviderConfig() string {
 func testAccCloudfrontRegionProviderConfig() string {
 func testAccCurRegionProviderConfig() string {
 func testAccCheckAwsAcmCertificateDataSourceConfig(domain string) string {
@@ -915,6 +916,7 @@ func testAccAWSEc2TransitGatewayConfigDescription(description string) string {
 func testAccAWSEc2TransitGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSEc2TransitGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentConfig() string {
+func testAccAWSEc2TransitGatewayVpcAttachmentConfigApplianceModeSupport(appModeSupport string) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigDnsSupport(dnsSupport string) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigIpv6Support(ipv6Support string) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigSharedTransitGateway(rName string) string {

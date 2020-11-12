@@ -2233,6 +2233,7 @@ func testAccAWSEc2TransitGatewayVpcAttachmentAccepterConfig_tagsUpdated(
 func testAccAWSEc2TransitGatewayVpcAttachmentAccepterConfig_defaultRouteTableAssociationAndPropagation(
 func TestAccAWSEc2TransitGatewayVpcAttachment_basic(
 func TestAccAWSEc2TransitGatewayVpcAttachment_disappears(
+func TestAccAWSEc2TransitGatewayVpcAttachment_ApplianceModeSupport(
 func TestAccAWSEc2TransitGatewayVpcAttachment_DnsSupport(
 func TestAccAWSEc2TransitGatewayVpcAttachment_Ipv6Support(
 func TestAccAWSEc2TransitGatewayVpcAttachment_SharedTransitGateway(
@@ -2350,6 +2351,7 @@ func TestAccAWSEIPAssociation_basic(
 func TestAccAWSEIPAssociation_ec2Classic(
 func TestAccAWSEIPAssociation_spotInstance(
 func TestAccAWSEIPAssociation_disappears(
+func testAccAWSEIPAssociationConfig_ec2Classic(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func testAccAWSEIPAssociationConfig_instance(
 func TestAccAWSEIP_Ec2Classic(
@@ -3795,6 +3797,7 @@ func TestAccAWSRDSCluster_BacktrackWindow(
 func TestAccAWSRDSCluster_ClusterIdentifierPrefix(
 func TestAccAWSRDSCluster_DbSubnetGroupName(
 func TestAccAWSRDSCluster_s3Restore(
+func TestAccAWSRDSCluster_PointInTimeRestore(
 func TestAccAWSRDSCluster_generatedName(
 func TestAccAWSRDSCluster_takeFinalSnapshot(
 func TestAccAWSRDSCluster_missingUserNameCausesError(
@@ -3820,6 +3823,7 @@ func testAccAWSClusterConfig_ClusterIdentifierPrefix(
 func testAccAWSClusterConfig_DbSubnetGroupName(
 func testAccAWSClusterConfig_s3Restore(
 func testAccAWSClusterConfig_generatedName(
+func testAccAWSClusterConfig_pointInTimeRestoreSource(
 func testAccAWSClusterConfig_kmsKey(
 func testAccAWSClusterConfig_encrypted(
 func testAccAWSClusterConfig_backups(
