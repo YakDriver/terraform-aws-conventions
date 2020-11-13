@@ -441,9 +441,10 @@ func testAccAutoScalingPlansScalingPlanConfigBase(rName, tagName string) string 
 func testAccAutoScalingPlansScalingPlanConfigBasicDynamicScaling(rName, tagName string) string {
 func testAccAutoScalingPlansScalingPlanConfigBasicPredictiveScaling(rName, tagName string) string {
 func testAccAWSAutoscalingScheduleConfig(r, start, end string) string {
-func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter int, deleteAfter int) string {
+func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter, deleteAfter int) string {
 func testAccAwsBackupPlanConfigRuleCopyActionMultiple(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
+func testAccAwsBackupPlanConfigRuleCopyActionNoLifecycle(rName string) string {
 func testAccAwsBackupPlanConfigAdvancedBackupSetting(rName string) string {
 func testAccBackupSelectionConfigBase(rName string) string {
 func testAccBackupSelectionConfigBasic(rName string) string {
@@ -451,6 +452,8 @@ func testAccBackupSelectionConfigWithTags(rName string) string {
 func testAccBackupSelectionConfigWithResources(rName string) string {
 func testAccBackupSelectionConfigUpdateTag(rName string) string {
 func testAccBackupVaultNotificationConfig(rName string) string {
+func testAccBackupVaultPolicyConfig(rName string) string {
+func testAccBackupVaultPolicyConfigUpdated(rName string) string {
 func testAccBackupVaultConfig(randInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigBase(rInt int) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2(rInt int) string {

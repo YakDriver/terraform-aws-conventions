@@ -46,6 +46,7 @@ func TestAccAwsBackupPlan_withRules(
 func TestAccAwsBackupPlan_withLifecycle(
 func TestAccAwsBackupPlan_withRecoveryPointTags(
 func TestAccAwsBackupPlan_Rule_CopyAction_SameRegion(
+func TestAccAwsBackupPlan_Rule_CopyAction_NoLifecycle(
 func TestAccAwsBackupPlan_Rule_CopyAction_Multiple(
 func TestAccAwsBackupPlan_Rule_CopyAction_CrossRegion(
 func TestAccAwsBackupPlan_AdvancedBackupSetting(
@@ -58,6 +59,8 @@ func TestAccAwsBackupSelection_withResources(
 func TestAccAwsBackupSelection_updateTag(
 func TestAccAwsBackupVaultNotification_basic(
 func TestAccAwsBackupVaultNotification_disappears(
+func TestAccAwsBackupVaultPolicy_basic(
+func TestAccAwsBackupVaultPolicy_disappears(
 func TestAccAwsBackupVault_basic(
 func TestAccAwsBackupVault_withKmsKey(
 func TestAccAwsBackupVault_withTags(

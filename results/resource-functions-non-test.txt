@@ -583,6 +583,11 @@ func resourceAwsBackupVaultNotificationsCreate(
 func resourceAwsBackupVaultNotificationsRead(
 func resourceAwsBackupVaultNotificationsDelete(
 func init(
+func resourceAwsBackupVaultPolicy(
+func resourceAwsBackupVaultPolicyPut(
+func resourceAwsBackupVaultPolicyRead(
+func resourceAwsBackupVaultPolicyDelete(
+func init(
 func resourceAwsBatchComputeEnvironment(
 func resourceAwsBatchComputeEnvironmentCreate(
 func resourceAwsBatchComputeEnvironmentRead(
@@ -2494,6 +2499,12 @@ func expandGlueDataCatalogConnectionPasswordEncryption(
 func flattenGlueDataCatalogConnectionPasswordEncryption(
 func expandGlueDataCatalogEncryptionAtRest(
 func flattenGlueDataCatalogEncryptionAtRest(
+func resourceAwsGlueDevEndpoint(
+func resourceAwsGlueDevEndpointCreate(
+func resourceAwsGlueDevEndpointRead(
+func resourceAwsDevEndpointUpdate(
+func resourceAwsDevEndpointDelete(
+func init(
 func resourceAwsGlueJob(
 func resourceAwsGlueJobCreate(
 func resourceAwsGlueJobRead(

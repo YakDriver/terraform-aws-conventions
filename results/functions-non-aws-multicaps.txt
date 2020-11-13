@@ -1831,6 +1831,8 @@ func testAccGlueCrawlerConfig_Role_ARN_Path(
 func testAccGlueCrawlerConfigMongoDBTarget(
 func testAccGlueCrawlerConfigMongoDBTargetScanAll(
 func testAccGlueCrawlerConfigMongoDBMultiple(
+func TestAccGlueDevEndpoint_SubnetID_SecurityGroupIDs(
+func testAccGlueDevEndpointConfig_SubnetID_SecurityGroupIDs(
 func resourceAwsGlueMLTransform(
 func resourceAwsGlueMLTransformCreate(
 func resourceAwsGlueMLTransformRead(

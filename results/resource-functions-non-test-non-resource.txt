@@ -195,6 +195,7 @@ func flattenBackupPlanCopyActionLifecycle(
 func backupBackupPlanHash(
 func expandBackupConditionTags(
 func init(
+func init(
 func flattenBatchComputeResources(
 func deleteBatchComputeEnvironment(
 func disableBatchComputeEnvironment(
@@ -1006,6 +1007,7 @@ func expandGlueDataCatalogConnectionPasswordEncryption(
 func flattenGlueDataCatalogConnectionPasswordEncryption(
 func expandGlueDataCatalogEncryptionAtRest(
 func flattenGlueDataCatalogEncryptionAtRest(
+func init(
 func deleteGlueJob(
 func expandGlueExecutionProperty(
 func expandGlueJobCommand(

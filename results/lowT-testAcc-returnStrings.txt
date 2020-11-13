@@ -953,9 +953,10 @@ func testAccAwsBackupPlanConfig_lifecycleDeleteAfterOnly(rName string) string {
 func testAccAwsBackupPlanConfig_lifecycleColdStorageAfterAndDeleteAfter(rName string) string {
 func testAccAwsBackupPlanConfig_recoveryPointTags(rName string) string {
 func testAccAwsBackupPlanConfig_recoveryPointTagsUpdated(rName string) string {
-func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter int, deleteAfter int) string {
+func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter, deleteAfter int) string {
 func testAccAwsBackupPlanConfigRuleCopyActionMultiple(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
+func testAccAwsBackupPlanConfigRuleCopyActionNoLifecycle(rName string) string {
 func testAccAwsBackupPlanConfigAdvancedBackupSetting(rName string) string {
 func testAccBackupSelectionConfigBase(rName string) string {
 func testAccBackupSelectionConfigBasic(rName string) string {
@@ -963,6 +964,8 @@ func testAccBackupSelectionConfigWithTags(rName string) string {
 func testAccBackupSelectionConfigWithResources(rName string) string {
 func testAccBackupSelectionConfigUpdateTag(rName string) string {
 func testAccBackupVaultNotificationConfig(rName string) string {
+func testAccBackupVaultPolicyConfig(rName string) string {
+func testAccBackupVaultPolicyConfigUpdated(rName string) string {
 func testAccBackupVaultConfig(randInt int) string {
 func testAccBackupVaultWithKmsKey(randInt int) string {
 func testAccBackupVaultWithTags(randInt int) string {
@@ -2427,6 +2430,25 @@ func testAccGlueCrawlerConfigMongoDBTargetScanAll(rName string, scan bool) strin
 func testAccGlueCrawlerConfigMongoDBMultiple(rName, path1, path2 string) string {
 func testAccAWSDataCatalogEncryptionSettingsEncryptedConfig(rName string) string {
 func testAccAWSDataCatalogEncryptionSettingsNonEncryptedConfig() string {
+func testAccGlueDevEndpointConfig_Base(rName string) string {
+func testAccGlueDevEndpointConfig_Basic(rName string) string {
+func testAccGlueDevEndpointConfig_Arguments(rName, argKey, argValue string) string {
+func testAccGlueDevEndpointConfig_Arguments2(rName, argKey1, argValue1, argKey2, argValue2 string) string {
+func testAccGlueDevEndpointConfig_ExtraJarsS3Path(rName string, extraJarsS3Path string) string {
+func testAccGlueDevEndpointConfig_ExtraPythonLibsS3Path(rName string, extraPythonLibsS3Path string) string {
+func testAccGlueDevEndpointConfig_GlueVersion(rName string, glueVersion string) string {
+func testAccGlueDevEndpointConfig_NumberOfNodes(rName string, numberOfNodes int) string {
+func testAccGlueDevEndpointConfig_NumberOfWorkers(rName string, numberOfWorkers int) string {
+func testAccGlueDevEndpointConfig_PublicKey(rName string, publicKey string) string {
+func testAccGlueDevEndpointConfig_PublicKeys2(rName string, publicKey1 string, publicKey2 string) string {
+func testAccGlueDevEndpointConfig_PublicKeys3(rName string, publicKey1 string, publicKey2 string, publicKey3 string) string {
+func testAccGlueDevEndpointConfig_PublicKeys4(rName string, publicKey1 string, publicKey2 string, publicKey3 string, publicKey4 string) string {
+func testAccGlueDevEndpointConfig_SecurityConfiguration(rName string) string {
+func testAccGlueDevEndpointConfig_SubnetID_SecurityGroupIDs(rName string) string {
+func testAccAWSGlueDevEndpointConfig_Tags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGlueDevEndpointConfig_Tags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccGlueDevEndpointConfig_WorkerType(rName, workerType string) string {
+func testAccGlueDevEndpointConfig_WorkerType_Standard(rName string) string {
 func testAccAWSGlueJobConfig_Base(rName string) string {
 func testAccAWSGlueJobConfig_Command(rName, scriptLocation string) string {
 func testAccAWSGlueJobConfig_DefaultArguments(rName, jobBookmarkOption, jobLanguage string) string {
@@ -4119,6 +4141,7 @@ func testAccAWSStorageGateway_SmbFileShare_GuestAccessBase(rName string) string 
 func testAccAWSStorageGatewaySmbFileShareConfig_Authentication_ActiveDirectory(rName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_Authentication_GuestAccess(rName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_DefaultStorageClass(rName, defaultStorageClass string) string {
+func testAccAWSStorageGatewaySmbFileShareConfig_FileShareName(rName, fileShareName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_GuessMIMETypeEnabled(rName string, guessMimeTypeEnabled bool) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_InvalidUserList_Single(rName, invalidUser1 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_InvalidUserList_Multiple(rName, invalidUser1, invalidUser2 string) string {

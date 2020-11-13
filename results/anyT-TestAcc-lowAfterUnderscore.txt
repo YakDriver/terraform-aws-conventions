@@ -951,6 +951,8 @@ func TestAccAwsBackupSelection_withResources(
 func TestAccAwsBackupSelection_updateTag(
 func TestAccAwsBackupVaultNotification_basic(
 func TestAccAwsBackupVaultNotification_disappears(
+func TestAccAwsBackupVaultPolicy_basic(
+func TestAccAwsBackupVaultPolicy_disappears(
 func TestAccAwsBackupVault_basic(
 func TestAccAwsBackupVault_withKmsKey(
 func TestAccAwsBackupVault_withTags(
@@ -2064,6 +2066,7 @@ func TestAccAWSGlueCrawler_mongoDBTarget_scan_all(
 func TestAccAWSGlueCrawler_mongoDBTarget_multiple(
 func TestAccAWSGlueCrawler_disappears(
 func TestAccAWSDataCatalogEncryptionSettings_basic(
+func TestAccGlueDevEndpoint_disappears(
 func TestAccAWSGlueJob_basic(
 func TestAccAWSGlueJob_nonOverridableArguments(
 func TestAccAWSGlueJob_disappears(
