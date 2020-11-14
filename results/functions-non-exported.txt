@@ -10598,6 +10598,7 @@ func resourceAwsS3BucketObjectUpdate(
 func resourceAwsS3BucketObjectDelete(
 func validateMetadataIsLowerCase(
 func resourceAwsS3BucketObjectCustomizeDiff(
+func hasS3BucketObjectContentChanges(
 func deleteAllS3ObjectVersions(
 func deleteS3ObjectVersion(
 func expandS3ObjectLockRetainUntilDate(

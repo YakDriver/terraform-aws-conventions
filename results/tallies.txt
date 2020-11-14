@@ -1,6 +1,6 @@
 Analysis Tallies
 4689	All Functions:Exported
-13519	All Functions:Non-Exported
+13520	All Functions:Non-Exported
 9037	All Functions:Multicaps
 3616	All Functions:Non-AWS Multicaps
 7972	All Functions:Uppercase AWS
@@ -57,9 +57,9 @@ Analysis Tallies
 171	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
 3233	Resource Functions:Resource
 210	Resource Functions:Resource Multi Caps
-5348	Resource Functions:Non-test
+5349	Resource Functions:Non-test
 429	Resource Functions:Non-test Multi-caps
-2160	Resource Functions:Non-test, non-resource
+2161	Resource Functions:Non-test, non-resource
 7	Function Capitalization:acl
 186	Function Capitalization:Acl
 95	Function Capitalization:ACL

@@ -1745,6 +1745,7 @@ func flattenTopicConfigurations(
 func flattenQueueConfigurations(
 func flattenLambdaFunctionConfigurations(
 func validateMetadataIsLowerCase(
+func hasS3BucketObjectContentChanges(
 func deleteAllS3ObjectVersions(
 func deleteS3ObjectVersion(
 func expandS3ObjectLockRetainUntilDate(
