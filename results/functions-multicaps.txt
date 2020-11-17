@@ -949,6 +949,13 @@ func testAccCheckAWSAPIGatewayResourceDestroy(
 func testAccAWSAPIGatewayResourceImportStateIdFunc(
 func testAccAWSAPIGatewayResourceConfig(
 func testAccAWSAPIGatewayResourceConfig_updatePathPart(
+func TestAccAWSAPIGatewayRestApiPolicy_basic(
+func TestAccAWSAPIGatewayRestApiPolicy_disappears(
+func TestAccAWSAPIGatewayRestApiPolicy_disappears_restApi(
+func testAccCheckAWSAPIGatewayRestApiPolicyExists(
+func testAccCheckAWSAPIGatewayRestApiPolicyDestroy(
+func testAccAWSAPIGatewayRestApiPolicyConfig(
+func testAccAWSAPIGatewayRestApiPolicyConfigUpdated(
 func testSweepAPIGatewayRestApis(
 func TestAccAWSAPIGatewayRestApi_basic(
 func TestAccAWSAPIGatewayRestApi_tags(
@@ -6053,6 +6060,9 @@ func TestAccAWSMskCluster_EnhancedMonitoring(
 func TestAccAWSMskCluster_NumberOfBrokerNodes(
 func TestAccAWSMskCluster_OpenMonitoring(
 func TestAccAWSMskCluster_LoggingInfo(
+func TestAccAWSMskCluster_KafkaVersionUpgrade(
+func TestAccAWSMskCluster_KafkaVersionDowngrade(
+func TestAccAWSMskCluster_KafkaVersionUpgradeWithConfigurationInfo(
 func TestAccAWSMskCluster_Tags(
 func testAccPreCheckAWSMsk(
 func TestAccAWSMskConfiguration_basic(

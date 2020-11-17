@@ -1108,6 +1108,7 @@ func detachPolicyFromRole(
 func iamRoleHasPolicyARNAttachment(
 func init(
 func extractNameFromIAMSamlProviderArn(
+func init(
 func currentlyInUseBy(
 func normalizeCert(
 func stripCR(
@@ -1132,6 +1133,7 @@ func checkIAMPwdPolicy(
 func attachPolicyToUser(
 func detachPolicyFromUser(
 func cleanSshKey(
+func init(
 func init(
 func resourceAWSInspectorAssessmentTarget(
 func describeInspectorAssessmentTarget(

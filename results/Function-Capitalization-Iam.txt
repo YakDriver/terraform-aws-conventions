@@ -110,6 +110,7 @@ func resourceAwsIamSamlProviderCreate(
 func resourceAwsIamSamlProviderRead(
 func resourceAwsIamSamlProviderUpdate(
 func resourceAwsIamSamlProviderDelete(
+func testSweepIamSamlProvider(
 func testSweepIamServerCertificates(
 func resourceAwsIamServiceLinkedRole(
 func resourceAwsIamServiceLinkedRoleCreate(

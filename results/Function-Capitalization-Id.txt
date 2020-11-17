@@ -218,6 +218,8 @@ func testAccAWSUserGroupMembershipImportStateIdFunc(
 func testAccAWSIAMUserPolicyAttachmentImportStateIdFunc(
 func resourceAwsIamUserPolicyParseId(
 func testAccAWSUserSSHKeyImportStateIdFunc(
+func TestAccAwsImageBuilderComponent_KmsKeyId(
+func testAccAwsImageBuilderComponentConfigKmsKeyId(
 func getAwsInstanceVolumeIds(
 func TestAccAWSInstance_inDefaultVpcBySgId(
 func testAccInstanceConfigInDefaultVpcBySgId(

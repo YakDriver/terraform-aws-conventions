@@ -163,6 +163,10 @@ func resourceAwsApiGatewayRestApiUpdate(
 func resourceAwsApiGatewayRestApiDelete(
 func expandApiGatewayEndpointConfiguration(
 func flattenApiGatewayEndpointConfiguration(
+func resourceAwsApiGatewayRestApiPolicy(
+func resourceAwsApiGatewayRestApiPolicyPut(
+func resourceAwsApiGatewayRestApiPolicyRead(
+func resourceAwsApiGatewayRestApiPolicyDelete(
 func init(
 func resourceAwsApiGatewayStage(
 func resourceAwsApiGatewayStageCreate(
@@ -2761,6 +2765,7 @@ func resourceAwsIamSamlProviderRead(
 func resourceAwsIamSamlProviderUpdate(
 func resourceAwsIamSamlProviderDelete(
 func extractNameFromIAMSamlProviderArn(
+func init(
 func resourceAwsIAMServerCertificate(
 func resourceAwsIAMServerCertificateCreate(
 func resourceAwsIAMServerCertificateRead(
@@ -2826,6 +2831,12 @@ func resourceAwsIamUserSshKeyUpdate(
 func resourceAwsIamUserSshKeyDelete(
 func resourceAwsIamUserSshKeyImport(
 func cleanSshKey(
+func init(
+func resourceAwsImageBuilderComponent(
+func resourceAwsImageBuilderComponentCreate(
+func resourceAwsImageBuilderComponentRead(
+func resourceAwsImageBuilderComponentUpdate(
+func resourceAwsImageBuilderComponentDelete(
 func init(
 func resourceAWSInspectorAssessmentTarget(
 func resourceAwsInspectorAssessmentTargetCreate(

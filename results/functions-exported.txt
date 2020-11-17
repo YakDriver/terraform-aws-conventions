@@ -264,6 +264,7 @@ func TestAccAWSDataSourceIAMServerCertificate_basic(
 func TestAccAWSDataSourceIAMServerCertificate_matchNamePrefix(
 func TestAccAWSDataSourceIAMServerCertificate_path(
 func TestAccAWSDataSourceIAMUser_basic(
+func TestAccAwsImageBuilderComponentDataSource_Arn(
 func TestAccAWSInspectorRulesPackages_basic(
 func TestAccAWSInstancesDataSource_basic(
 func TestAccAWSInstancesDataSource_tags(
@@ -717,6 +718,9 @@ func TestAccAWSAPIGatewayRequestValidator_disappears(
 func TestAccAWSAPIGatewayResource_basic(
 func TestAccAWSAPIGatewayResource_update(
 func TestAccAWSAPIGatewayResource_disappears(
+func TestAccAWSAPIGatewayRestApiPolicy_basic(
+func TestAccAWSAPIGatewayRestApiPolicy_disappears(
+func TestAccAWSAPIGatewayRestApiPolicy_disappears_restApi(
 func TestAccAWSAPIGatewayRestApi_basic(
 func TestAccAWSAPIGatewayRestApi_tags(
 func TestAccAWSAPIGatewayRestApi_disappears(
@@ -2560,6 +2564,15 @@ func TestAccAWSUser_nameChange(
 func TestAccAWSUser_pathChange(
 func TestAccAWSUser_permissionsBoundary(
 func TestAccAWSUser_tags(
+func TestAccAwsImageBuilderComponent_basic(
+func TestAccAwsImageBuilderComponent_disappears(
+func TestAccAwsImageBuilderComponent_ChangeDescription(
+func TestAccAwsImageBuilderComponent_Description(
+func TestAccAwsImageBuilderComponent_KmsKeyId(
+func TestAccAwsImageBuilderComponent_Platform_Windows(
+func TestAccAwsImageBuilderComponent_SupportedOsVersions(
+func TestAccAwsImageBuilderComponent_Tags(
+func TestAccAwsImageBuilderComponent_Uri(
 func TestAccAWSInspectorTarget_basic(
 func TestAccAWSInspectorTarget_disappears(
 func TestAccAWSInspectorTarget_Name(
@@ -3173,6 +3186,9 @@ func TestAccAWSMskCluster_EnhancedMonitoring(
 func TestAccAWSMskCluster_NumberOfBrokerNodes(
 func TestAccAWSMskCluster_OpenMonitoring(
 func TestAccAWSMskCluster_LoggingInfo(
+func TestAccAWSMskCluster_KafkaVersionUpgrade(
+func TestAccAWSMskCluster_KafkaVersionDowngrade(
+func TestAccAWSMskCluster_KafkaVersionUpgradeWithConfigurationInfo(
 func TestAccAWSMskCluster_Tags(
 func TestAccAWSMskConfiguration_basic(
 func TestAccAWSMskConfiguration_disappears(

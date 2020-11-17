@@ -4,6 +4,9 @@ func testAccGetApigatewayEdgeDomainNameRegion(
 func testAccCheckResourceAttrRegionalARNApigatewayEdgeDomainName(
 func testAccCheckResourceAttrRegionalARNApigatewayRegionalDomainName(
 func testAccCloudfrontRegionProviderConfig(
+func testAccPreCheckCognitoUserPoolCustomDomain(
+func testAccCognitoUserPoolCustomDomainRegionProviderConfig(
+func testAccGetCognitoUserPoolCustomDomainRegion(
 func testAccPreCheckCur(
 func testAccCurRegionProviderConfig(
 func testAccGetCurRegion(
@@ -195,6 +198,7 @@ func testAccAwsIAMRoleConfig_tags(
 func testAccAwsDataIAMServerCertConfig(
 func testAccAwsDataIAMServerCertConfigPath(
 func testAccAwsDataSourceIAMUserConfig(
+func testAccAwsImageBuilderComponentDataSourceConfigBuildVersionArn(
 func testAccInstancesDataSourceConfig_tags(
 func testAccInstancesDataSourceConfig_instance_state_names(
 func testAccInstanceDataSourceConfig_Tags(
@@ -809,6 +813,10 @@ func testAccCheckAWSAPIGatewayResourceDestroy(
 func testAccAWSAPIGatewayResourceImportStateIdFunc(
 func testAccAWSAPIGatewayResourceConfig(
 func testAccAWSAPIGatewayResourceConfig_updatePathPart(
+func testAccCheckAWSAPIGatewayRestApiPolicyExists(
+func testAccCheckAWSAPIGatewayRestApiPolicyDestroy(
+func testAccAWSAPIGatewayRestApiPolicyConfig(
+func testAccAWSAPIGatewayRestApiPolicyConfigUpdated(
 func testAccCheckAWSAPIGatewayRestAPINameAttribute(
 func testAccCheckAWSAPIGatewayRestAPIDescriptionAttribute(
 func testAccCheckAWSAPIGatewayRestAPIMinimumCompressionSizeAttribute(
@@ -3923,6 +3931,17 @@ func testAccAWSUserConfig_permissionsBoundary(
 func testAccAWSUserConfigForceDestroy(
 func testAccAWSUserConfig_tags(
 func testAccAWSUserConfig_tagsUpdate(
+func testAccCheckAwsImageBuilderComponentDestroy(
+func testAccCheckAwsImageBuilderComponentExists(
+func testAccAwsImageBuilderComponentConfigChangeDescription(
+func testAccAwsImageBuilderComponentConfigDescription(
+func testAccAwsImageBuilderComponentConfigKmsKeyId(
+func testAccAwsImageBuilderComponentConfigName(
+func testAccAwsImageBuilderComponentConfigPlatformWindows(
+func testAccAwsImageBuilderComponentConfigSupportedOsVersions(
+func testAccAwsImageBuilderComponentConfigTags1(
+func testAccAwsImageBuilderComponentConfigTags2(
+func testAccAwsImageBuilderComponentConfigUri(
 func testAccCheckAWSInspectorTargetAssessmentDestroy(
 func testAccCheckAWSInspectorTargetExists(
 func testAccCheckAWSInspectorTargetDisappears(
@@ -4732,6 +4751,7 @@ func testAccMqConfigurationConfig_updateTags3(
 func testAccCheckMskClusterDestroy(
 func testAccCheckMskClusterExists(
 func testAccCheckMskClusterNotRecreated(
+func testAccCheckMskClusterRecreated(
 func testAccLoadMskTags(
 func testAccCheckMskClusterTags(
 func testAccPreCheckAWSMsk(
@@ -4748,6 +4768,8 @@ func testAccMskClusterConfigEnhancedMonitoring(
 func testAccMskClusterConfigNumberOfBrokerNodes(
 func testAccMskClusterConfigOpenMonitoring(
 func testAccMskClusterConfigLoggingInfo(
+func testAccMskClusterConfigKafkaVersion(
+func testAccMskClusterConfigKafkaVersionWithConfigurationInfo(
 func testAccMskClusterConfigTags1(
 func testAccMskClusterConfigTags2(
 func testAccCheckMskConfigurationDestroy(

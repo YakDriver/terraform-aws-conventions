@@ -134,6 +134,10 @@ func resourceAwsApiGatewayRestApiRead(
 func resourceAwsApiGatewayRestApiUpdateOperations(
 func resourceAwsApiGatewayRestApiUpdate(
 func resourceAwsApiGatewayRestApiDelete(
+func resourceAwsApiGatewayRestApiPolicy(
+func resourceAwsApiGatewayRestApiPolicyPut(
+func resourceAwsApiGatewayRestApiPolicyRead(
+func resourceAwsApiGatewayRestApiPolicyDelete(
 func resourceAwsApiGatewayStage(
 func resourceAwsApiGatewayStageCreate(
 func resourceAwsApiGatewayStageRead(
@@ -1715,6 +1719,11 @@ func resourceAwsIamUserSshKeyRead(
 func resourceAwsIamUserSshKeyUpdate(
 func resourceAwsIamUserSshKeyDelete(
 func resourceAwsIamUserSshKeyImport(
+func resourceAwsImageBuilderComponent(
+func resourceAwsImageBuilderComponentCreate(
+func resourceAwsImageBuilderComponentRead(
+func resourceAwsImageBuilderComponentUpdate(
+func resourceAwsImageBuilderComponentDelete(
 func resourceAWSInspectorAssessmentTarget(
 func resourceAwsInspectorAssessmentTargetCreate(
 func resourceAwsInspectorAssessmentTargetRead(

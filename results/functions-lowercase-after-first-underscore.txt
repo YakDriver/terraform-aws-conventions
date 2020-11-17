@@ -647,6 +647,9 @@ func TestAccAWSAPIGatewayResource_basic(
 func TestAccAWSAPIGatewayResource_update(
 func TestAccAWSAPIGatewayResource_disappears(
 func testAccAWSAPIGatewayResourceConfig_updatePathPart(
+func TestAccAWSAPIGatewayRestApiPolicy_basic(
+func TestAccAWSAPIGatewayRestApiPolicy_disappears(
+func TestAccAWSAPIGatewayRestApiPolicy_disappears_restApi(
 func TestAccAWSAPIGatewayRestApi_basic(
 func TestAccAWSAPIGatewayRestApi_tags(
 func TestAccAWSAPIGatewayRestApi_disappears(
@@ -2343,6 +2346,8 @@ func TestAccAWSUser_tags(
 func testAccAWSUserConfig_permissionsBoundary(
 func testAccAWSUserConfig_tags(
 func testAccAWSUserConfig_tagsUpdate(
+func TestAccAwsImageBuilderComponent_basic(
+func TestAccAwsImageBuilderComponent_disappears(
 func TestAccAWSInspectorTarget_basic(
 func TestAccAWSInspectorTarget_disappears(
 func TestAccAWSInspectorTemplate_basic(
