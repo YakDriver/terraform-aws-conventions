@@ -1,3 +1,4 @@
+func TestAccAwsGlobalAcceleratorEndpointGroup_TCPHealthCheckProtocol(
 func TestAccAWSLBTargetGroup_TCP_HTTPHealthCheck(
 func testAccAWSLBTargetGroupConfig_typeTCP(
 func testAccAWSLBTargetGroupConfig_typeTCP_withProxyProtocol(
@@ -5,3 +6,5 @@ func testAccAWSLBTargetGroupConfig_typeTCPInvalidThreshold(
 func testAccAWSLBTargetGroupConfig_typeTCPThresholdUpdated(
 func testAccAWSLBTargetGroupConfig_typeTCPIntervalUpdated(
 func testAccAWSLBTargetGroupConfig_typeTCP_HTTPHealthCheck(
+func expandNetworkFirewallTCPFlags(
+func flattenNetworkFirewallTCPFlags(

@@ -66,6 +66,7 @@ func resourceAwsEksFargateProfileParseId(
 func testSweepEksFargateProfiles(
 func TestAccAWSEksFargateProfile_basic(
 func TestAccAWSEksFargateProfile_disappears(
+func TestAccAWSEksFargateProfile_Multi_Profile(
 func TestAccAWSEksFargateProfile_Selector_Labels(
 func TestAccAWSEksFargateProfile_Tags(
 func testAccCheckAWSEksFargateProfileExists(
@@ -74,6 +75,7 @@ func testAccCheckAWSEksFargateProfileDisappears(
 func testAccPreCheckAWSEksFargateProfile(
 func testAccAWSEksFargateProfileConfigBase(
 func testAccAWSEksFargateProfileConfigFargateProfileName(
+func testAccAWSEksFargateProfileConfigFargateProfileMultiple(
 func testAccAWSEksFargateProfileConfigSelectorLabels1(
 func testAccAWSEksFargateProfileConfigTags1(
 func testAccAWSEksFargateProfileConfigTags2(

@@ -1,3 +1,4 @@
+func testAccGlobalAcceleratorEndpointGroupConfigTcpHealthCheckProtocol(
 func TestAccAWSLBTargetGroup_Protocol_Tcp_HealthCheck_Protocol(
 func expandAppmeshTcpRoute(
 func expandAppmeshTcpTimeout(

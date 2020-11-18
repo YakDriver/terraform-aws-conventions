@@ -163,6 +163,8 @@ func testAccAwsDataIAMServerCertConfig(rName, key, certificate string) string {
 func testAccAwsDataIAMServerCertConfigPath(rName, path, pathPrefix, key, certificate string) string {
 func testAccAwsDataSourceIAMUserConfig(name string) string {
 func testAccAwsImageBuilderComponentDataSourceConfigBuildVersionArn(rName string) string {
+func testAccAwsImageBuilderDistributionConfigurationDataSourceConfigArn(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationDataSourceConfigArn(rName string) string {
 func testAccInstancesDataSourceConfig_tags(rInt int) string {
 func testAccInstancesDataSourceConfig_instance_state_names(rInt int) string {
 func testAccInstanceDataSourceConfig_Tags(rInt int) string {
@@ -709,6 +711,7 @@ func testAccAWSAPIGatewayV2StageConfig_routeSettingsWebSocket(rName string) stri
 func testAccAWSAPIGatewayV2StageConfig_routeSettingsWebSocketUpdated(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_routeSettingsHttp(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_routeSettingsHttpUpdated(rName string) string {
+func testAccAWSAPIGatewayV2StageConfig_routeSettingsHttpWithRoute(rName, routeKey string) string {
 func testAccAWSAPIGatewayV2StageConfig_stageVariables(rName string) string {
 func testAccAWSAPIGatewayV2StageConfig_tags(rName string) string {
 func testAccAWSAPIGatewayV2VpcLinkConfig_base(rName string) string {
@@ -2100,6 +2103,7 @@ func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(rName string, end
 func testAccAWSEksClusterConfig_VpcConfig_PublicAccessCidrs(rName string, publicAccessCidr string) string {
 func testAccAWSEksFargateProfileConfigBase(rName string) string {
 func testAccAWSEksFargateProfileConfigFargateProfileName(rName string) string {
+func testAccAWSEksFargateProfileConfigFargateProfileMultiple(rName string) string {
 func testAccAWSEksFargateProfileConfigSelectorLabels1(rName, labelKey1, labelValue1 string) string {
 func testAccAWSEksFargateProfileConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksFargateProfileConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -2374,8 +2378,11 @@ func testAccGlobalAcceleratorEndpointGroupConfigBasic(rName string) string {
 func testAccGlobalAcceleratorEndpointGroupConfigBaseVpc(rName string) string {
 func testAccGlobalAcceleratorEndpointGroupConfigALBEndpointClientIP(rName string, clientIP bool) string {
 func testAccGlobalAcceleratorEndpointGroupConfigInstanceEndpoint(rName string) string {
+func testAccGlobalAcceleratorEndpointGroupConfigMultiRegion(rName string) string {
+func testAccGlobalAcceleratorEndpointGroupConfigPortOverrides(rName string) string {
+func testAccGlobalAcceleratorEndpointGroupConfigPortOverridesUpdated(rName string) string {
+func testAccGlobalAcceleratorEndpointGroupConfigTcpHealthCheckProtocol(rName string) string {
 func testAccGlobalAcceleratorEndpointGroupConfigUpdated(rName string) string {
-func testAccGlobalAcceleratorEndpointGroup_tcp(rInt int) string {
 func testAccGlobalAcceleratorListener_basic(rInt int) string {
 func testAccGlobalAcceleratorListener_update(rInt int) string {
 func testAccGlueCatalogDatabase_basic(rName string) string {
@@ -2388,6 +2395,7 @@ func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoEmptyConfigurationBl
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfo(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoUpdate(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationBlock(rName string) string {
+func testAccGlueCatalogTableColumnParameters(rName string) string {
 func testAccAWSGlueClassifierConfig_CsvClassifier(rName string, allowSingleColumn bool, containsHeader string, delimiter string, disableValueTrimming bool) string {
 func testAccAWSGlueClassifierConfigCsvClassifierQuoteSymbol(rName, symbol string) string {
 func testAccAWSGlueClassifierConfig_GrokClassifier(rName, classification, grokPattern string) string {
@@ -2623,6 +2631,43 @@ func testAccAwsImageBuilderComponentConfigSupportedOsVersions(rName string) stri
 func testAccAwsImageBuilderComponentConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
 func testAccAwsImageBuilderComponentConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
 func testAccAwsImageBuilderComponentConfigUri(rName string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDescription(rName string, description string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistribution2(rName string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistributionAmiDistributionConfigurationAmiTags(rName string, amiTagKey string, amiTagValue string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistributionAmiDistributionConfigurationDescription(rName string, description string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistributionAmiDistributionConfigurationKmsKeyId1(rName string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistributionAmiDistributionConfigurationKmsKeyId2(rName string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistributionAmiDistributionConfigurationLaunchPermissionUserGroups(rName string, userGroup string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistributionAmiDistributionConfigurationLaunchPermissionUserIds(rName string, userId string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistributionAmiDistributionConfigurationName(rName string, name string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistributionAmiDistributionConfigurationTargetAccountIds(rName string, targetAccountId string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistributionLicenseConfigurationArns1(rName string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigDistributionLicenseConfigurationArns2(rName string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigName(rName string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
+func testAccAwsImageBuilderDistributionConfigurationConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigBase(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigDescription(rName string, description string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigInstanceProfileName1(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigInstanceProfileName2(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigInstanceTypes1(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigInstanceTypes2(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigKeyPair1(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigKeyPair2(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigLoggingS3LogsS3BucketName1(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigLoggingS3LogsS3BucketName2(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigLoggingS3LogsS3KeyPrefix(rName string, s3KeyPrefix string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigName(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigResourceTags(rName string, resourceTagKey string, resourceTagValue string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigSecurityGroupIds1(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigSecurityGroupIds2(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigSubnetId1(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigSubnetId2(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigSnsTopicArn1(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigSnsTopicArn2(rName string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
+func testAccAwsImageBuilderInfrastructureConfigurationConfigTerminateInstanceOnFailure(rName string, terminateInstanceOnFailure bool) string {
 func testAccAWSInspectorTargetAssessmentConfig(rName string) string {
 func testAccAWSInspectorTargetAssessmentConfigResourceGroupArn(rName, inspectorResourceGroupResourceName string) string {
 func testAccAWSInspectorTemplateAssessmentBase(rName string) string {
@@ -3292,6 +3337,53 @@ func testAccAWSNetworkAclConfigIngressConfigModeNoBlocks() string {
 func testAccAWSNetworkAclConfigIngressConfigModeZeroed() string {
 func testAccAWSNetworkAclConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSNetworkAclConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsNetworkFirewallFirewallPolicyStatelessRuleGroupDependencies(rName string, count int) string {
+func testAccAwsNetworkFirewallFirewallPolicyStatefulRuleGroupDependencies(rName string, count int) string {
+func testAccAwsNetworkFirewallFirewallPolicy_basic(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_oneTag(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_twoTags(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_statefulRuleGroupReference(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_multipleStatefulRuleGroupReferences(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_singleStatefulRuleGroupReference(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_statelessRuleGroupReference(rName string, priority int) string {
+func testAccAwsNetworkFirewallFirewallPolicy_multipleStatelessRuleGroupReferences(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_singleStatelessRuleGroupReference(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_statelessCustomAction(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_updateStatelessCustomAction(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_multipleStatelessCustomActions(rName string) string {
+func testAccAwsNetworkFirewallFirewallPolicy_statefulRuleGroupReferenceAndStatelessCustomAction(rName string) string {
+func testAccNetworkFirewallFirewallDependenciesConfig(rName string) string {
+func testAccNetworkFirewallFirewall_basic(rName string) string {
+func testAccNetworkFirewallFirewall_deleteProtection(rName string, deleteProtection bool) string {
+func testAccNetworkFirewallFirewall_oneTag(rName string) string {
+func testAccNetworkFirewallFirewall_twoTags(rName string) string {
+func testAccNetworkFirewallFirewall_updateDescription(rName, description string) string {
+func testAccNetworkFirewallFirewall_updateSubnet(rName string) string {
+func testAccNetworkFirewallFirewall_updateMultipleSubnets(rName string) string {
+func testAccNetworkFirewallLoggingConfigurationBaseConfig(rName string) string {
+func testAccNetworkFirewallLoggingConfigurationBaseConfig_updateFirewall(rName string) string {
+func testAccNetworkFirewallLoggingConfigurationS3BucketDependencyConfig(rName string) string {
+func testAccNetworkFirewallLoggingConfigurationCloudWatchDependencyConfig(rName string) string {
+func testAccNetworkFirewallLoggingConfiguration_kinesisDependenciesConfig(rName, streamName string) string {
+func testAccNetworkFirewallLoggingConfiguration_s3(bucketName, rName, destinationType, logType string) string {
+func testAccNetworkFirewallLoggingConfiguration_s3_updateFirewallArn(bucketName, rName, destinationType, logType string) string {
+func testAccNetworkFirewallLoggingConfiguration_s3_updatePrefix(bucketName, rName, destinationType, logType string) string {
+func testAccNetworkFirewallLoggingConfiguration_kinesis(streamName, rName, destinationType, logType string) string {
+func testAccNetworkFirewallLoggingConfiguration_cloudwatch(logGroupName, rName, destinationType, logType string) string {
+func testAccNetworkFirewallLoggingConfiguration_s3AndKinesis(bucketName, streamName, rName, logTypeS3, logTypeKinesis string) string {
+func testAccNetworkFirewallLoggingConfiguration_s3AndCloudWatch(bucketName, logGroupName, rName, logTypeS3, logTypeCloudWatch string) string {
+func testAccNetworkFirewallRuleGroup_basic_rulesSourceList(rName string) string {
+func testAccNetworkFirewallRuleGroup_rulesSourceList_ruleVariables(rName string) string {
+func testAccNetworkFirewallRuleGroup_rulesSourceList_updateRuleVariables(rName string) string {
+func testAccNetworkFirewallRuleGroup_updateRulesSourceList(rName string) string {
+func testAccNetworkFirewallRuleGroup_basic_statefulRule(rName string) string {
+func testAccNetworkFirewallRuleGroup_updateStatefulRule(rName string) string {
+func testAccNetworkFirewallRuleGroup_basic_statelessRule(rName string) string {
+func testAccNetworkFirewallRuleGroup_updateStatelessRule(rName string) string {
+func testAccNetworkFirewallRuleGroup_basic_rules(rName, rules string) string {
+func testAccNetworkFirewallRuleGroup_statelessRuleWithCustomAction(rName string) string {
+func testAccNetworkFirewallRuleGroup_oneTag(rName string) string {
+func testAccNetworkFirewallRuleGroup_twoTags(rName string) string {
 func testAccAWSNetworkInterfaceAttachmentConfig_basic(rInt int) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfig(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaInstance(rName string) string {
@@ -4137,6 +4229,7 @@ func testAccAWSStorageGatewayGatewayBandwidthConfigDownload(rName string, rate i
 func testAccAWSStorageGatewayGatewayBandwidthConfigAll(rName string, rate int) string {
 func testAccAWSStorageGateway_S3FileShareBase(rName string) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_Required(rName string) string {
+func testAccAWSStorageGatewayNfsFileShareConfigFileShareName(rName, fsName string) string {
 func testAccAWSStorageGatewayNfsFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfig_ClientList_Single(rName, clientList1 string) string {

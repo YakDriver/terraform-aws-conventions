@@ -1,4 +1,5 @@
 func TestAccAwsBackupSelection_withResources(
+func TestAccAwsImageBuilderInfrastructureConfiguration_ResourceTags(
 func TestAccAwsRamResourceAssociation_basic(
 func TestAccAwsRamResourceAssociation_disappears(
 func TestAccAwsRamResourceShareAccepter_basic(

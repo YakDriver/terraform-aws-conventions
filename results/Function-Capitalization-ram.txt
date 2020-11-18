@@ -154,6 +154,8 @@ func flattenETAudioParameters(
 func flattenETVideoParams(
 func TestAccAWSElasticTranscoderPreset_Video_FrameRate(
 func testAccAwsElasticTranscoderPresetConfigVideoFrameRate(
+func TestAccAWSGlueCatalogTable_columnParameters(
+func testAccGlueCatalogTableColumnParameters(
 func expandGlueMLTransformParameters(
 func flattenGlueMLTransformParameters(
 func expandGlueMLTransformFindMatchesParameters(

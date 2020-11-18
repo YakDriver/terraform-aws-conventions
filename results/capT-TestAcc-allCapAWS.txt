@@ -464,6 +464,7 @@ func TestAccAWSAPIGatewayV2Stage_DefaultRouteSettingsHttp(
 func TestAccAWSAPIGatewayV2Stage_Deployment(
 func TestAccAWSAPIGatewayV2Stage_RouteSettingsWebSocket(
 func TestAccAWSAPIGatewayV2Stage_RouteSettingsHttp(
+func TestAccAWSAPIGatewayV2Stage_RouteSettingsHttp_WithRoute(
 func TestAccAWSAPIGatewayV2Stage_StageVariables(
 func TestAccAWSAPIGatewayV2Stage_Tags(
 func TestAccAWSAPIGatewayV2VpcLink_basic(
@@ -1572,6 +1573,7 @@ func TestAccAWSEksCluster_VpcConfig_EndpointPublicAccess(
 func TestAccAWSEksCluster_VpcConfig_PublicAccessCidrs(
 func TestAccAWSEksFargateProfile_basic(
 func TestAccAWSEksFargateProfile_disappears(
+func TestAccAWSEksFargateProfile_Multi_Profile(
 func TestAccAWSEksFargateProfile_Selector_Labels(
 func TestAccAWSEksFargateProfile_Tags(
 func TestAccAWSEksNodeGroup_basic(
@@ -1841,6 +1843,7 @@ func TestAccAWSGlueCatalogDatabase_full(
 func TestAccAWSGlueCatalogDatabase_disappears(
 func TestAccAWSGlueCatalogTable_recreates(
 func TestAccAWSGlueCatalogTable_basic(
+func TestAccAWSGlueCatalogTable_columnParameters(
 func TestAccAWSGlueCatalogTable_full(
 func TestAccAWSGlueCatalogTable_update_addValues(
 func TestAccAWSGlueCatalogTable_update_replaceValues(
@@ -3470,6 +3473,7 @@ func TestAccAWSStorageGatewayGateway_bandwidthDownload(
 func TestAccAWSStorageGatewayGateway_bandwidthAll(
 func TestAccAWSStorageGatewayNfsFileShare_basic(
 func TestAccAWSStorageGatewayNfsFileShare_tags(
+func TestAccAWSStorageGatewayNfsFileShare_fileShareName(
 func TestAccAWSStorageGatewayNfsFileShare_ClientList(
 func TestAccAWSStorageGatewayNfsFileShare_DefaultStorageClass(
 func TestAccAWSStorageGatewayNfsFileShare_GuessMIMETypeEnabled(

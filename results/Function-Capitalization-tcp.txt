@@ -5,6 +5,4 @@ func testAccAppmeshRouteConfig_tcpRouteUpdated(
 func testAccAppmeshRouteConfig_tcpRouteUpdatedWithZeroWeight(
 func testAccAppmeshRouteConfig_tcpRouteWithTimeout(
 func testAccAppmeshRouteConfig_tcpRouteWithTimeoutUpdated(
-func TestAccAwsGlobalAcceleratorEndpointGroup_tcp(
-func testAccGlobalAcceleratorEndpointGroup_tcp(
 func TestAccAWSNetworkAclRule_tcpProtocol(

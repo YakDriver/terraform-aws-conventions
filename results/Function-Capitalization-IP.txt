@@ -93,6 +93,9 @@ func TestAccAWSLaunchTemplate_associatePublicIPAddress(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
+func expandNetworkFirewallIPSets(
+func flattenNetworkFirewallIPSets(
+func flattenNetworkFirewallIPSet(
 func TestAccAWSENI_computedIPs(
 func testAccAWSENIIPV6ConfigBase(
 func testAccAWSENIIPV6Config(

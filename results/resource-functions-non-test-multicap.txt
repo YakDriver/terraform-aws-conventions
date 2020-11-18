@@ -227,6 +227,11 @@ func flattenMediaPackageHLSIngest(
 func suppressXMLEquivalentConfig(
 func NGStateRefreshFunc(
 func validateICMPArgumentValue(
+func expandNetworkFirewallIPSets(
+func expandNetworkFirewallTCPFlags(
+func flattenNetworkFirewallIPSets(
+func flattenNetworkFirewallIPSet(
+func flattenNetworkFirewallTCPFlags(
 func resourceAwsNetworkInterfaceSGAttachment(
 func resourceAwsNetworkInterfaceSGAttachmentCreate(
 func resourceAwsNetworkInterfaceSGAttachmentRead(
