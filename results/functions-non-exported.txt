@@ -468,6 +468,7 @@ func dataSourceAwsEip(
 func dataSourceAwsEipRead(
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(
 func testAccDataSourceAwsEipConfigFilter(
+func testAccDataSourceAwsEipConfigPublicIpEc2Classic(
 func testAccDataSourceAwsEipConfigTags(
 func dataSourceAwsEksClusterAuth(
 func dataSourceAwsEksClusterAuthRead(
@@ -570,8 +571,9 @@ func dataSourceAwsInstanceRead(
 func instanceDescriptionAttributes(
 func dataSourceAwsInstances(
 func dataSourceAwsInstancesRead(
+func testAccInstancesDataSourceConfig_ids(
 func testAccInstancesDataSourceConfig_tags(
-func testAccInstancesDataSourceConfig_instance_state_names(
+func testAccInstancesDataSourceConfig_instanceStateNames(
 func testAccInstanceDataSourceConfig_Tags(
 func testAccInstanceDataSourceConfig_privateIP(
 func testAccInstanceDataSourceConfig_secondaryPrivateIPs(
@@ -3459,7 +3461,6 @@ func testAccAWSCodeBuildProjectConfig_Source_Type_NoSource(
 func testAccAWSCodeBuildProjectConfig_Tags(
 func testAccAWSCodeBuildProjectConfig_VpcConfig1(
 func testAccAWSCodeBuildProjectConfig_VpcConfig2(
-func testAccAWSCodeBuildProjectConfig_WindowsContainer(
 func testAccAWSCodeBuildProjectConfig_WindowsServer2019Container(
 func testAccAWSCodeBuildProjectConfig_ARMContainer(
 func testAccAWSCodebuildProjectConfig_Artifacts_ArtifactIdentifier(
@@ -8892,6 +8893,7 @@ func testAccCheckAWSlbARNs(
 func testAccCheckAWSLBExists(
 func testAccCheckAWSLBAttribute(
 func testAccCheckAWSLBDestroy(
+func testAccPreCheckElbv2GatewayLoadBalancer(
 func testAccAWSLBConfigWithIpAddressTypeUpdated(
 func testAccAWSLBConfigWithIpAddressType(
 func testAccAWSLBConfig_basic(
@@ -8902,6 +8904,7 @@ func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(
 func testAccAWSLBConfig_LoadBalancerType_Gateway(
+func testAccAWSLBConfig_LoadBalancerType_Gateway_EnableCrossZoneLoadBalancing(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func testAccAWSLBConfigBackwardsCompatibility(
@@ -13217,6 +13220,8 @@ func testAccWorkspacesDirectoryConfig_subnetIds(
 func testAccWorkspacesDirectoryConfigTags1(
 func testAccWorkspacesDirectoryConfigTags2(
 func testAccWorkspacesDirectoryConfig_workspaceCreationProperties(
+func testAccWorkspacesDirectoryConfig_ipGroupIds_create(
+func testAccWorkspacesDirectoryConfig_ipGroupIds_update(
 func resourceAwsWorkspacesIpGroup(
 func resourceAwsWorkspacesIpGroupCreate(
 func resourceAwsWorkspacesIpGroupRead(
@@ -13230,6 +13235,7 @@ func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
 func testAccAwsWorkspacesIpGroupConfigTags1(
 func testAccAwsWorkspacesIpGroupConfigTags2(
+func testAccAwsWorkspacesIpGroupConfigMultipleDirectories(
 func resourceAwsWorkspacesWorkspace(
 func resourceAwsWorkspacesWorkspaceCreate(
 func resourceAwsWorkspacesWorkspaceRead(

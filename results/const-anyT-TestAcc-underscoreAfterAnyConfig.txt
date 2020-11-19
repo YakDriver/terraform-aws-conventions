@@ -13,7 +13,6 @@ const testAccCheckAwsEcrRepositoryDataSourceConfig_NonExistent =
 const testAccDataSourceAwsEfsFileSystemIDConfig_NonExistent =
 const testAccCheckAwsEksClusterAuthConfig_basic =
 const testAccDataSourceAwsElasticacheReplicationGroupConfig_NonExistent =
-const testAccInstancesDataSourceConfig_ids =
 const testAccDataSourceAwsKmsCiphertextConfig_basic =
 const testAccDataSourceAwsKmsCiphertextConfig_validate =
 const testAccDataSourceAwsKmsCiphertextConfig_validate_withContext =

@@ -123,7 +123,7 @@ func TestAccAWSDataSourceIAMUser_basic(
 func TestAccAWSInspectorRulesPackages_basic(
 func TestAccAWSInstancesDataSource_basic(
 func TestAccAWSInstancesDataSource_tags(
-func TestAccAWSInstancesDataSource_instance_state_names(
+func TestAccAWSInstancesDataSource_instanceStateNames(
 func TestAccAWSInstanceDataSource_basic(
 func TestAccAWSInstanceDataSource_tags(
 func TestAccAWSInstanceDataSource_AzUserData(
@@ -819,7 +819,6 @@ func TestAccAWSCodeBuildProject_Source_Type_NoSource(
 func TestAccAWSCodeBuildProject_Source_Type_NoSourceInvalid(
 func TestAccAWSCodeBuildProject_Tags(
 func TestAccAWSCodeBuildProject_VpcConfig(
-func TestAccAWSCodeBuildProject_WindowsContainer(
 func TestAccAWSCodeBuildProject_WindowsServer2019Container(
 func TestAccAWSCodeBuildProject_ARMContainer(
 func TestAccAWSCodeBuildProject_Artifacts_ArtifactIdentifier(
@@ -2495,6 +2494,7 @@ func TestAccAWSLBTargetGroup_stickinessInvalidALB(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_LoadBalancerType_Gateway(
+func TestAccAWSLB_LoadBalancerType_Gateway_EnableCrossZoneLoadBalancing(
 func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func TestAccAWSLB_NLB_privateipv4address(

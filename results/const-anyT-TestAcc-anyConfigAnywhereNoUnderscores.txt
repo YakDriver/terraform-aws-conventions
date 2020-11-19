@@ -13,7 +13,6 @@ const testAccDataSourceAwsEBSEncryptionByDefaultConfig =
 const testAccDataSourceAwsEfsFileSystemNameConfig =
 const testAccDataSourceAwsEfsFileSystemIDConfig =
 const testAccDataSourceAwsEipConfigId =
-const testAccDataSourceAwsEipConfigPublicIpEc2Classic =
 const testAccDataSourceAwsEipConfigPublicIpVpc =
 const testAccDataSourceAwsEipConfigNetworkInterface =
 const testAccCheckAwsElasticBeanstalkSolutionStackDataSourceConfig =

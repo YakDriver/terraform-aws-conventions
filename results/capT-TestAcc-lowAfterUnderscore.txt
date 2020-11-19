@@ -129,7 +129,7 @@ func TestAccAWSDataSourceIAMUser_basic(
 func TestAccAWSInspectorRulesPackages_basic(
 func TestAccAWSInstancesDataSource_basic(
 func TestAccAWSInstancesDataSource_tags(
-func TestAccAWSInstancesDataSource_instance_state_names(
+func TestAccAWSInstancesDataSource_instanceStateNames(
 func TestAccAWSInstanceDataSource_basic(
 func TestAccAWSInstanceDataSource_tags(
 func TestAccAWSInstanceDataSource_gp2IopsDevice(
@@ -2752,6 +2752,7 @@ func TestAccAwsWorkspacesDirectory_subnetIds(
 func TestAccAwsWorkspacesDirectory_tags(
 func TestAccAwsWorkspacesDirectory_selfServicePermissions(
 func TestAccAwsWorkspacesDirectory_workspaceCreationProperties(
+func TestAccAwsWorkspacesDirectory_ipGroupIds(
 func TestAccAwsWorkspacesIpGroup_basic(
 func TestAccAwsWorkspacesIpGroup_tags(
 func TestAccAwsWorkspacesIpGroup_disappears(

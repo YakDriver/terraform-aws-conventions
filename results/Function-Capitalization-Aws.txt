@@ -331,6 +331,7 @@ func TestAccDataSourceAwsEip_Tags(
 func TestAccDataSourceAwsEip_NetworkInterface(
 func TestAccDataSourceAwsEip_Instance(
 func testAccDataSourceAwsEipConfigFilter(
+func testAccDataSourceAwsEipConfigPublicIpEc2Classic(
 func testAccDataSourceAwsEipConfigTags(
 func dataSourceAwsEksClusterAuth(
 func dataSourceAwsEksClusterAuthRead(
@@ -5575,6 +5576,7 @@ func TestAccAwsWorkspacesDirectory_subnetIds(
 func TestAccAwsWorkspacesDirectory_tags(
 func TestAccAwsWorkspacesDirectory_selfServicePermissions(
 func TestAccAwsWorkspacesDirectory_workspaceCreationProperties(
+func TestAccAwsWorkspacesDirectory_ipGroupIds(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryDisappears(
 func testAccCheckAwsWorkspacesDirectoryExists(
@@ -5587,12 +5589,14 @@ func resourceAwsWorkspacesIpGroupDelete(
 func TestAccAwsWorkspacesIpGroup_basic(
 func TestAccAwsWorkspacesIpGroup_tags(
 func TestAccAwsWorkspacesIpGroup_disappears(
+func TestAccAwsWorkspacesIpGroup_MultipleDirectories(
 func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
 func testAccAwsWorkspacesIpGroupConfigTags1(
 func testAccAwsWorkspacesIpGroupConfigTags2(
+func testAccAwsWorkspacesIpGroupConfigMultipleDirectories(
 func resourceAwsWorkspacesWorkspace(
 func resourceAwsWorkspacesWorkspaceCreate(
 func resourceAwsWorkspacesWorkspaceRead(

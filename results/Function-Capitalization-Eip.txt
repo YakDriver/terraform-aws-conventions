@@ -8,6 +8,7 @@ func TestAccDataSourceAwsEip_Tags(
 func TestAccDataSourceAwsEip_NetworkInterface(
 func TestAccDataSourceAwsEip_Instance(
 func testAccDataSourceAwsEipConfigFilter(
+func testAccDataSourceAwsEipConfigPublicIpEc2Classic(
 func testAccDataSourceAwsEipConfigTags(
 func resourceAwsEipAssociation(
 func resourceAwsEipAssociationCreate(

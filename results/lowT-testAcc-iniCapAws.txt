@@ -611,4 +611,5 @@ func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
 func testAccAwsWorkspacesIpGroupConfigTags1(
 func testAccAwsWorkspacesIpGroupConfigTags2(
+func testAccAwsWorkspacesIpGroupConfigMultipleDirectories(
 func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(

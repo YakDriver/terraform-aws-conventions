@@ -382,7 +382,10 @@ func resourceAwsWafv2ACLAssociationDecodeId(
 func testAccAWSWafv2WebACLAssociationImportStateIdFunc(
 func testAccAwsWafv2WebACLImportStateIdFunc(
 func TestAccAwsWorkspacesDirectory_subnetIds(
+func TestAccAwsWorkspacesDirectory_ipGroupIds(
 func testAccWorkspacesDirectoryConfig_subnetIds(
+func testAccWorkspacesDirectoryConfig_ipGroupIds_create(
+func testAccWorkspacesDirectoryConfig_ipGroupIds_update(
 func flattenElastiCacheSecurityGroupIds(
 func flattenDaxSecurityGroupIds(
 func expandMqConfigurationId(

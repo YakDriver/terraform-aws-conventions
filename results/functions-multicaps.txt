@@ -243,7 +243,7 @@ func testAccAwsDataSourceIAMUserConfig(
 func TestAccAWSInspectorRulesPackages_basic(
 func TestAccAWSInstancesDataSource_basic(
 func TestAccAWSInstancesDataSource_tags(
-func TestAccAWSInstancesDataSource_instance_state_names(
+func TestAccAWSInstancesDataSource_instanceStateNames(
 func TestAccAWSInstanceDataSource_basic(
 func TestAccAWSInstanceDataSource_tags(
 func TestAccAWSInstanceDataSource_AzUserData(
@@ -2050,7 +2050,6 @@ func TestAccAWSCodeBuildProject_Source_Type_NoSource(
 func TestAccAWSCodeBuildProject_Source_Type_NoSourceInvalid(
 func TestAccAWSCodeBuildProject_Tags(
 func TestAccAWSCodeBuildProject_VpcConfig(
-func TestAccAWSCodeBuildProject_WindowsContainer(
 func TestAccAWSCodeBuildProject_WindowsServer2019Container(
 func TestAccAWSCodeBuildProject_ARMContainer(
 func TestAccAWSCodeBuildProject_Artifacts_ArtifactIdentifier(
@@ -2120,7 +2119,6 @@ func testAccAWSCodeBuildProjectConfig_Source_Type_NoSource(
 func testAccAWSCodeBuildProjectConfig_Tags(
 func testAccAWSCodeBuildProjectConfig_VpcConfig1(
 func testAccAWSCodeBuildProjectConfig_VpcConfig2(
-func testAccAWSCodeBuildProjectConfig_WindowsContainer(
 func testAccAWSCodeBuildProjectConfig_WindowsServer2019Container(
 func testAccAWSCodeBuildProjectConfig_ARMContainer(
 func testAccAWSCodebuildProjectConfig_Artifacts_ArtifactIdentifier(
@@ -5898,6 +5896,7 @@ func TestLBCloudwatchSuffixFromARN(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_LoadBalancerType_Gateway(
+func TestAccAWSLB_LoadBalancerType_Gateway_EnableCrossZoneLoadBalancing(
 func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func TestAccAWSLB_NLB_privateipv4address(
@@ -5933,6 +5932,7 @@ func testAccAWSLBConfig_enableDeletionProtection(
 func testAccAWSLBConfig_networkLoadbalancer_subnets(
 func testAccAWSLBConfig_networkLoadbalancer(
 func testAccAWSLBConfig_LoadBalancerType_Gateway(
+func testAccAWSLBConfig_LoadBalancerType_Gateway_EnableCrossZoneLoadBalancing(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func testAccAWSLBConfigBackwardsCompatibility(

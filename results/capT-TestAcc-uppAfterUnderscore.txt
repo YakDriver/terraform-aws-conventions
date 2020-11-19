@@ -426,7 +426,6 @@ func TestAccAWSCodeBuildProject_Source_Type_NoSource(
 func TestAccAWSCodeBuildProject_Source_Type_NoSourceInvalid(
 func TestAccAWSCodeBuildProject_Tags(
 func TestAccAWSCodeBuildProject_VpcConfig(
-func TestAccAWSCodeBuildProject_WindowsContainer(
 func TestAccAWSCodeBuildProject_WindowsServer2019Container(
 func TestAccAWSCodeBuildProject_ARMContainer(
 func TestAccAWSCodeBuildProject_Artifacts_ArtifactIdentifier(
@@ -1174,6 +1173,7 @@ func TestAccAWSLBTargetGroup_BackwardsCompatibility(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_LoadBalancerType_Gateway(
+func TestAccAWSLB_LoadBalancerType_Gateway_EnableCrossZoneLoadBalancing(
 func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_NLB_privateipv4address(
 func TestAccAWSLB_BackwardsCompatibility(
@@ -1626,3 +1626,4 @@ func TestAccAWSWorkLinkFleet_IdentityProvider(
 func TestAccAWSWorkLinkFleet_Disappears(
 func TestAccAWSWorkLinkWorkLinkWebsiteCertificateAuthorityAssociation_DisplayName(
 func TestAccAWSWorkLinkWorkLinkWebsiteCertificateAuthorityAssociation_Disappears(
+func TestAccAwsWorkspacesIpGroup_MultipleDirectories(

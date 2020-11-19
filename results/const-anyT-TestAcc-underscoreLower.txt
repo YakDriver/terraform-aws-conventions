@@ -6,7 +6,6 @@ const testAccCheckAwsCallerIdentityConfig_basic =
 const testAccDataSourceAwsEbsSnapshotIdsConfig_empty =
 const testAccCheckAwsEksClusterAuthConfig_basic =
 const testAccCheckAwsElasticBeanstalkHostedZoneDataSource_currentRegion =
-const testAccInstancesDataSourceConfig_ids =
 const testAccDataSourceAwsKmsCiphertextConfig_basic =
 const testAccDataSourceAwsKmsCiphertextConfig_validate =
 const testAccDataSourceAwsKmsCiphertextConfig_validate_withContext =

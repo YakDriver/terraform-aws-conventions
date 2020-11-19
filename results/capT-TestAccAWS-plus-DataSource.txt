@@ -76,7 +76,7 @@ func TestAccAWSEksClusterDataSource_basic(
 func TestAccAWSElasticBeanstalkSolutionStackDataSource_basic(
 func TestAccAWSInstancesDataSource_basic(
 func TestAccAWSInstancesDataSource_tags(
-func TestAccAWSInstancesDataSource_instance_state_names(
+func TestAccAWSInstancesDataSource_instanceStateNames(
 func TestAccAWSInstanceDataSource_basic(
 func TestAccAWSInstanceDataSource_tags(
 func TestAccAWSInstanceDataSource_AzUserData(

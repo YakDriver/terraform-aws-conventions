@@ -133,6 +133,7 @@ func testAccDataSourceAWSEFSAccessPointConfig(rName string) string {
 func testAccAwsEfsMountTargetConfigByMountTargetId(ct string) string {
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool() string {
 func testAccDataSourceAwsEipConfigFilter(rName string) string {
+func testAccDataSourceAwsEipConfigPublicIpEc2Classic() string {
 func testAccDataSourceAwsEipConfigTags(rName string) string {
 func testAccAWSEksClusterDataSourceConfig_Basic(rName string) string {
 func testAccAWSElastiCacheClusterConfigWithDataSource(rName string) string {
@@ -165,8 +166,9 @@ func testAccAwsDataSourceIAMUserConfig(name string) string {
 func testAccAwsImageBuilderComponentDataSourceConfigBuildVersionArn(rName string) string {
 func testAccAwsImageBuilderDistributionConfigurationDataSourceConfigArn(rName string) string {
 func testAccAwsImageBuilderInfrastructureConfigurationDataSourceConfigArn(rName string) string {
-func testAccInstancesDataSourceConfig_tags(rInt int) string {
-func testAccInstancesDataSourceConfig_instance_state_names(rInt int) string {
+func testAccInstancesDataSourceConfig_ids(rName string) string {
+func testAccInstancesDataSourceConfig_tags(rName string) string {
+func testAccInstancesDataSourceConfig_instanceStateNames(rName string) string {
 func testAccInstanceDataSourceConfig_Tags(rInt int) string {
 func testAccInstanceDataSourceConfig_privateIP(rName string) string {
 func testAccInstanceDataSourceConfig_secondaryPrivateIPs(rName string) string {
@@ -1238,7 +1240,6 @@ func testAccAWSCodeBuildProjectConfig_Source_Type_NoSource(rName string, rLocati
 func testAccAWSCodeBuildProjectConfig_Tags(rName, tagKey, tagValue string) string {
 func testAccAWSCodeBuildProjectConfig_VpcConfig1(rName string) string {
 func testAccAWSCodeBuildProjectConfig_VpcConfig2(rName string) string {
-func testAccAWSCodeBuildProjectConfig_WindowsContainer(rName string) string {
 func testAccAWSCodeBuildProjectConfig_WindowsServer2019Container(rName string) string {
 func testAccAWSCodeBuildProjectConfig_ARMContainer(rName string) string {
 func testAccAWSCodebuildProjectConfig_Artifacts_ArtifactIdentifier(rName string, bName string, artifactIdentifier string) string {
@@ -3146,6 +3147,7 @@ func testAccAWSLBConfig_enableDeletionProtection(lbName string, deletion_protect
 func testAccAWSLBConfig_networkLoadbalancer_subnets(lbName string) string {
 func testAccAWSLBConfig_networkLoadbalancer(lbName string, cz bool) string {
 func testAccAWSLBConfig_LoadBalancerType_Gateway(rName string) string {
+func testAccAWSLBConfig_LoadBalancerType_Gateway_EnableCrossZoneLoadBalancing(rName string, enableCrossZoneLoadBalancing bool) string {
 func testAccAWSLBConfig_networkLoadBalancerEIP(lbName string) string {
 func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(lbName string) string {
 func testAccAWSLBConfigBackwardsCompatibility(lbName string) string {
@@ -3565,8 +3567,8 @@ func testAccAWSClusterConfig_encrypted(n int) string {
 func testAccAWSClusterConfig_backups(n int) string {
 func testAccAWSClusterConfig_backupsUpdate(n int) string {
 func testAccAWSClusterConfig_iamAuth(n int) string {
-func testAccAWSClusterConfig_EngineVersion(rInt int, engine, engineVersion string) string {
-func testAccAWSClusterConfig_EngineVersionWithPrimaryInstance(rInt int, engine, engineVersion string) string {
+func testAccAWSClusterConfig_EngineVersion(upgrade bool, rInt int) string {
+func testAccAWSClusterConfig_EngineVersionWithPrimaryInstance(upgrade bool, rInt int) string {
 func testAccAWSClusterConfig_Port(rInt, port int) string {
 func testAccAWSClusterConfigIncludingIamRoles(n int) string {
 func testAccAWSClusterConfigAddIamRoles(n int) string {
@@ -3586,7 +3588,7 @@ func testAccAWSRDSClusterConfig_ScalingConfiguration_DefaultMinCapacity(rName st
 func testAccAWSRDSClusterConfig_SnapshotIdentifier(rName string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_DeletionProtection(rName string, deletionProtection bool) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_EngineMode(rName, engineMode string) string {
-func testAccAWSRDSClusterConfig_SnapshotIdentifier_EngineVersion(rName, engine, engineVersionSource, engineVersion string) string {
+func testAccAWSRDSClusterConfig_SnapshotIdentifier_EngineVersion(rName string, same bool) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_KmsKeyId(rName string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_MasterPassword(rName, masterPassword string) string {
 func testAccAWSRDSClusterConfig_SnapshotIdentifier_MasterUsername(rName, masterUsername string) string {
@@ -4574,10 +4576,13 @@ func testAccWorkspacesDirectoryConfig_subnetIds(rName string) string {
 func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccWorkspacesDirectoryConfig_workspaceCreationProperties(rName string) string {
+func testAccWorkspacesDirectoryConfig_ipGroupIds_create(rName string) string {
+func testAccWorkspacesDirectoryConfig_ipGroupIds_update(rName string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccAwsWorkspacesIpGroupConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsWorkspacesIpGroupConfigMultipleDirectories(name string) string {
 func testAccAwsWorkspacesWorkspaceConfig_Prerequisites(rName string) string {
 func testAccWorkspacesWorkspaceConfig(rName string) string {
 func testAccWorkspacesWorkspaceConfig_TagsA(rName string) string {

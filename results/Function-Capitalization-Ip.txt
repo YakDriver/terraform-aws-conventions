@@ -1,5 +1,6 @@
 func TestAccDataSourceAWSEIP_CustomerOwnedIpv4Pool(
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(
+func testAccDataSourceAwsEipConfigPublicIpEc2Classic(
 func testAccAWSLaunchTemplateDataSourceConfig_associatePublicIpAddress(
 func TestAccDataSourceAwsSubnet_ipv6ByIpv6Filter(
 func TestAccDataSourceAwsSubnet_ipv6ByIpv6CidrBlock(
@@ -149,12 +150,14 @@ func flattenIpGroupRules(
 func TestAccAwsWorkspacesIpGroup_basic(
 func TestAccAwsWorkspacesIpGroup_tags(
 func TestAccAwsWorkspacesIpGroup_disappears(
+func TestAccAwsWorkspacesIpGroup_MultipleDirectories(
 func testAccCheckAwsWorkspacesIpGroupDestroy(
 func testAccCheckAwsWorkspacesIpGroupExists(
 func testAccAwsWorkspacesIpGroupConfigA(
 func testAccAwsWorkspacesIpGroupConfigB(
 func testAccAwsWorkspacesIpGroupConfigTags1(
 func testAccAwsWorkspacesIpGroupConfigTags2(
+func testAccAwsWorkspacesIpGroupConfigMultipleDirectories(
 func flattenEc2NetworkInterfaceIpv6Address(
 func expandRoute53ResolverEndpointIpAddresses(
 func flattenRoute53ResolverEndpointIpAddresses(

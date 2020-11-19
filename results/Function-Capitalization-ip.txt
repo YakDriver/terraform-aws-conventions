@@ -26,6 +26,7 @@ func TestAccDataSourceAwsEip_Tags(
 func TestAccDataSourceAwsEip_NetworkInterface(
 func TestAccDataSourceAwsEip_Instance(
 func testAccDataSourceAwsEipConfigFilter(
+func testAccDataSourceAwsEipConfigPublicIpEc2Classic(
 func testAccDataSourceAwsEipConfigTags(
 func solutionStackDescriptionAttributes(
 func dataSourceAwsGlueScript(
@@ -927,6 +928,11 @@ func testAccAwsWafv2RuleGroupConfig_UpdateMultipleRules(
 func testAccAwsWafv2WebACLConfig_multipleNestedRateBasedStatements(
 func testAccAwsWafv2WebACLConfig_multipleNestedOperatorStatements(
 func testAccAWSWafWebAclConfig_Rules_Multiple(
+func TestAccAwsWorkspacesDirectory_ipGroupIds(
+func testAccWorkspacesDirectoryConfig_ipGroupIds_create(
+func testAccWorkspacesDirectoryConfig_ipGroupIds_update(
+func TestAccAwsWorkspacesIpGroup_MultipleDirectories(
+func testAccAwsWorkspacesIpGroupConfigMultipleDirectories(
 func stripNonKeyAttributes(
 func stripCapacityAttributes(
 func flattenAwsDynamoDbReplicaDescriptions(

@@ -102,6 +102,7 @@ func testAccDataSourceAWSEFSAccessPointConfig(rName string) string {
 func testAccAwsEfsMountTargetConfigByMountTargetId(ct string) string {
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool() string {
 func testAccDataSourceAwsEipConfigFilter(rName string) string {
+func testAccDataSourceAwsEipConfigPublicIpEc2Classic() string {
 func testAccDataSourceAwsEipConfigTags(rName string) string {
 func testAccAWSElastiCacheClusterConfigWithDataSource(rName string) string {
 func testAccAWSElasticsearchDomainConfigWithDataSource(rInt int) string {
@@ -2344,6 +2345,7 @@ func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigB(name, description string) string {
 func testAccAwsWorkspacesIpGroupConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccAwsWorkspacesIpGroupConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsWorkspacesIpGroupConfigMultipleDirectories(name string) string {
 func testAccWorkspacesWorkspaceConfig(rName string) string {
 func testAccAWSXrayEncryptionConfigBasicConfig() string {
 func testAccAWSXrayEncryptionConfigWithKeyConfig() string {

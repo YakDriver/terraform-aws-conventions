@@ -26,7 +26,6 @@ const testAccDataSourceAwsEfsFileSystemIDConfig_NonExistent =
 const testAccDataSourceAwsEfsFileSystemNameConfig =
 const testAccDataSourceAwsEfsFileSystemIDConfig =
 const testAccDataSourceAwsEipConfigId =
-const testAccDataSourceAwsEipConfigPublicIpEc2Classic =
 const testAccDataSourceAwsEipConfigPublicIpVpc =
 const testAccDataSourceAwsEipConfigNetworkInterface =
 const testAccCheckAwsEksClusterAuthConfig_basic =
@@ -44,7 +43,6 @@ const testAccAWSIAMPolicyDocumentDataSourceConfigVersion20081017ConversionNotRes
 const testAccAWSIAMPolicyDocumentDataSourceConfigVersion20081017ConversionPrincipal =
 const testAccAWSIAMPolicyDocumentDataSourceConfigVersion20081017ConversionResources =
 const testAccCheckAWSInspectorRulesPackagesConfig =
-const testAccInstancesDataSourceConfig_ids =
 const testAccDataSourceAwsInternetGatewayConfig =
 const testAccAWSIotEndpointConfig =
 const testAccAWSIPRangesConfig =
