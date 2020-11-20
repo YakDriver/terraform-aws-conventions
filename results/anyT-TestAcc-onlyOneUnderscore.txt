@@ -1289,6 +1289,7 @@ func TestAccAWSCloudFormationStackSet_Tags(
 func TestAccAWSCloudFormationStackSet_TemplateBody(
 func TestAccAWSCloudFormationStackSet_TemplateUrl(
 func TestAccAWSCloudFormationStack_basic(
+func TestAccAWSCloudFormationStack_UpdateFailure(
 func TestAccAWSCloudFormationStack_disappears(
 func TestAccAWSCloudFormationStack_yaml(
 func TestAccAWSCloudFormationStack_defaultParams(
@@ -2650,6 +2651,8 @@ func TestAccAWSGlueCatalogTable_recreates(
 func TestAccAWSGlueCatalogTable_basic(
 func TestAccAWSGlueCatalogTable_columnParameters(
 func TestAccAWSGlueCatalogTable_full(
+func TestAccAWSGlueCatalogTable_partitionIndexesSingle(
+func TestAccAWSGlueCatalogTable_partitionIndexesMultiple(
 func TestAccAWSGlueCatalogTable_disappears(
 func testAccGlueCatalogTable_basic(
 func testAccGlueCatalogTable_full(

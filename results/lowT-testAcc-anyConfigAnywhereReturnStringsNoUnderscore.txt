@@ -516,6 +516,7 @@ func testAccAWSCloudFormationStackSetConfigTemplateBody(rName, templateBody stri
 func testAccAWSCloudFormationStackSetConfigTemplateUrl1(rName string) string {
 func testAccAWSCloudFormationStackSetConfigTemplateUrl2(rName string) string {
 func testAccAWSCloudFormationStackConfig(stackName string) string {
+func testAccAWSCloudFormationStackConfigCreationFailure(stackName, onFailure string) string {
 func testAccAWSCloudFrontDistributionRetainConfig() string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNamesUnordered2(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNamesUnordered3(retainOnDelete bool) string {

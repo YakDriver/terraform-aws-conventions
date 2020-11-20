@@ -965,12 +965,12 @@ func testAccAWSCloudFormationStackSetConfigTemplateBody(rName, templateBody stri
 func testAccAWSCloudFormationStackSetConfigTemplateUrl1(rName string) string {
 func testAccAWSCloudFormationStackSetConfigTemplateUrl2(rName string) string {
 func testAccAWSCloudFormationStackConfig(stackName string) string {
+func testAccAWSCloudFormationStackConfigCreationFailure(stackName, onFailure string) string {
 func testAccAWSCloudFormationStackConfig_yaml(stackName string) string {
 func testAccAWSCloudFormationStackConfig_defaultParams(stackName string) string {
 func testAccAWSCloudFormationStackConfig_allAttributesWithBodies(stackName string) string {
 func testAccAWSCloudFormationStackConfig_allAttributesWithBodies_modified(stackName string) string {
-func testAccAWSCloudFormationStackConfig_withParams(stackName string) string {
-func testAccAWSCloudFormationStackConfig_withParams_modified(stackName string) string {
+func testAccAWSCloudFormationStackConfig_withParams(stackName, cidr string) string {
 func testAccAWSCloudFormationStackConfig_templateUrl_withParams(rName, bucketKey, vpcCidr string) string {
 func testAccAWSCloudFormationStackConfig_templateUrl_withParams_withYaml(rName, bucketKey, vpcCidr string) string {
 func testAccAWSCloudFormationStackConfig_withTransform(rName string) string {
@@ -1741,7 +1741,7 @@ func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool
 func testAccEc2ClientVpnNetworkAssociationConfigBasic(rName string) string {
 func testAccEc2ClientVpnRouteConfigBasic(rName string) string {
 func testAccEc2ClientVpnRouteConfigDescription(rName string) string {
-func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(rInt int) string {
+func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(rName string) string {
 func testAccAWSEc2FleetConfig_BaseLaunchTemplate(rName string) string {
 func testAccAWSEc2FleetConfig_ExcessCapacityTerminationPolicy(rName, excessCapacityTerminationPolicy string) string {
 func testAccAWSEc2FleetConfig_LaunchTemplateConfig_LaunchTemplateSpecification_LaunchTemplateId(rName, launchTemplateResourceName string) string {

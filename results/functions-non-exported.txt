@@ -2862,16 +2862,6 @@ func resourceAwsCloudFormationStackCreate(
 func resourceAwsCloudFormationStackRead(
 func resourceAwsCloudFormationStackUpdate(
 func resourceAwsCloudFormationStackDelete(
-func getLastCfEventTimestamp(
-func getCloudFormationRollbackReasons(
-func getCloudFormationDeletionReasons(
-func getCloudFormationFailures(
-func cfStackEventIsFailure(
-func cfStackEventIsRollback(
-func cfStackEventIsStackDeletion(
-func cfStackStateRefresh(
-func waitForCloudFormationStackCreation(
-func waitForCloudFormationStackDeletion(
 func resourceAwsCloudFormationStackSet(
 func resourceAwsCloudFormationStackSetCreate(
 func resourceAwsCloudFormationStackSetRead(
@@ -2885,14 +2875,11 @@ func resourceAwsCloudFormationStackSetInstanceUpdate(
 func resourceAwsCloudFormationStackSetInstanceDelete(
 func resourceAwsCloudFormationStackSetInstanceParseId(
 func listCloudFormationStackSetInstances(
-func refreshCloudformationStackSetOperation(
-func waitForCloudFormationStackSetOperation(
 func init(
 func testSweepCloudformationStackSetInstances(
 func testAccCheckCloudFormationStackSetInstanceExists(
 func testAccCheckCloudFormationStackSetInstanceStackExists(
 func testAccCheckAWSCloudFormationStackSetInstanceDestroy(
-func testAccCheckCloudFormationStackSetInstanceDisappears(
 func testAccCheckCloudFormationStackSetInstanceNotRecreated(
 func testAccAWSCloudFormationStackSetInstanceConfigBase(
 func testAccAWSCloudFormationStackSetInstanceConfig(
@@ -2903,7 +2890,6 @@ func init(
 func testSweepCloudformationStackSets(
 func testAccCheckCloudFormationStackSetExists(
 func testAccCheckAWSCloudFormationStackSetDestroy(
-func testAccCheckCloudFormationStackSetDisappears(
 func testAccCheckCloudFormationStackSetNotRecreated(
 func testAccCheckCloudFormationStackSetRecreated(
 func testAccPreCheckAWSCloudFormationStackSet(
@@ -2933,12 +2919,12 @@ func testAccCheckCloudFormationStackExists(
 func testAccCheckAWSCloudFormationDestroy(
 func testAccCheckCloudFormationStackDisappears(
 func testAccAWSCloudFormationStackConfig(
+func testAccAWSCloudFormationStackConfigCreationFailure(
 func testAccAWSCloudFormationStackConfig_yaml(
 func testAccAWSCloudFormationStackConfig_defaultParams(
 func testAccAWSCloudFormationStackConfig_allAttributesWithBodies(
 func testAccAWSCloudFormationStackConfig_allAttributesWithBodies_modified(
 func testAccAWSCloudFormationStackConfig_withParams(
-func testAccAWSCloudFormationStackConfig_withParams_modified(
 func testAccAWSCloudFormationStackConfig_templateUrl_withParams(
 func testAccAWSCloudFormationStackConfig_templateUrl_withParams_withYaml(
 func testAccAWSCloudFormationStackConfig_withTransform(
@@ -5348,7 +5334,6 @@ func flattenEc2FleetLaunchTemplateSpecification(
 func flattenEc2OnDemandOptions(
 func flattenEc2SpotOptions(
 func flattenEc2TargetCapacitySpecification(
-func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(
 func testAccCheckAWSEc2FleetHistory(
 func testAccCheckAWSEc2FleetExists(
 func testAccCheckAWSEc2FleetDestroy(
@@ -5356,6 +5341,7 @@ func testAccCheckAWSEc2FleetDisappears(
 func testAccCheckAWSEc2FleetNotRecreated(
 func testAccCheckAWSEc2FleetRecreated(
 func testAccPreCheckAWSEc2Fleet(
+func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(
 func testAccAWSEc2FleetConfig_BaseLaunchTemplate(
 func testAccAWSEc2FleetConfig_ExcessCapacityTerminationPolicy(
 func testAccAWSEc2FleetConfig_LaunchTemplateConfig_LaunchTemplateSpecification_LaunchTemplateId(
@@ -6800,6 +6786,8 @@ func resourceAwsGlueCatalogTableRead(
 func resourceAwsGlueCatalogTableUpdate(
 func resourceAwsGlueCatalogTableDelete(
 func expandGlueTableInput(
+func expandGlueTablePartitionIndexes(
+func expandGlueTablePartitionIndex(
 func expandGlueStorageDescriptor(
 func expandGlueColumns(
 func expandGlueSerDeInfo(
@@ -6808,6 +6796,8 @@ func expandGlueSkewedInfo(
 func flattenGlueStorageDescriptor(
 func flattenGlueColumns(
 func flattenGlueColumn(
+func flattenGluePartitionIndexes(
+func flattenGluePartitionIndex(
 func flattenGlueSerDeInfo(
 func flattenGlueOrders(
 func flattenGlueSkewedInfo(
@@ -6822,6 +6812,8 @@ func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationB
 func testAccGlueCatalogTableColumnParameters(
 func testAccCheckGlueTableDestroy(
 func testAccCheckGlueCatalogTableExists(
+func testAccGlueCatalogTablePartitionIndexesSingle(
+func testAccGlueCatalogTablePartitionIndexesMultiple(
 func resourceAwsGlueClassifier(
 func resourceAwsGlueClassifierCreate(
 func resourceAwsGlueClassifierRead(

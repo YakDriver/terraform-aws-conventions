@@ -654,16 +654,6 @@ func resourceAwsCloudFormationStackCreate(
 func resourceAwsCloudFormationStackRead(
 func resourceAwsCloudFormationStackUpdate(
 func resourceAwsCloudFormationStackDelete(
-func getLastCfEventTimestamp(
-func getCloudFormationRollbackReasons(
-func getCloudFormationDeletionReasons(
-func getCloudFormationFailures(
-func cfStackEventIsFailure(
-func cfStackEventIsRollback(
-func cfStackEventIsStackDeletion(
-func cfStackStateRefresh(
-func waitForCloudFormationStackCreation(
-func waitForCloudFormationStackDeletion(
 func resourceAwsCloudFormationStackSet(
 func resourceAwsCloudFormationStackSetCreate(
 func resourceAwsCloudFormationStackSetRead(
@@ -677,8 +667,6 @@ func resourceAwsCloudFormationStackSetInstanceUpdate(
 func resourceAwsCloudFormationStackSetInstanceDelete(
 func resourceAwsCloudFormationStackSetInstanceParseId(
 func listCloudFormationStackSetInstances(
-func refreshCloudformationStackSetOperation(
-func waitForCloudFormationStackSetOperation(
 func init(
 func init(
 func init(
@@ -2428,6 +2416,8 @@ func resourceAwsGlueCatalogTableRead(
 func resourceAwsGlueCatalogTableUpdate(
 func resourceAwsGlueCatalogTableDelete(
 func expandGlueTableInput(
+func expandGlueTablePartitionIndexes(
+func expandGlueTablePartitionIndex(
 func expandGlueStorageDescriptor(
 func expandGlueColumns(
 func expandGlueSerDeInfo(
@@ -2436,6 +2426,8 @@ func expandGlueSkewedInfo(
 func flattenGlueStorageDescriptor(
 func flattenGlueColumns(
 func flattenGlueColumn(
+func flattenGluePartitionIndexes(
+func flattenGluePartitionIndex(
 func flattenGlueSerDeInfo(
 func flattenGlueOrders(
 func flattenGlueSkewedInfo(

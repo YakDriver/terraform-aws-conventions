@@ -843,6 +843,8 @@ func TestAccAWSGameliftAlias_fleetRouting(
 func TestAccAWSGameliftFleet_allFields(
 func testAccGlacierVault_withoutNotification(
 func TestAccAWSGlueCatalogTable_columnParameters(
+func TestAccAWSGlueCatalogTable_partitionIndexesSingle(
+func TestAccAWSGlueCatalogTable_partitionIndexesMultiple(
 func TestAccAWSGlueCrawler_mongoDBTarget(
 func TestAccAWSGlueJob_nonOverridableArguments(
 func TestAccAWSGlueMLTransform_typeFindMatchesFull(
