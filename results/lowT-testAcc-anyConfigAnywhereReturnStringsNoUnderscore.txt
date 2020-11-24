@@ -123,6 +123,7 @@ func testAccAwsDataIAMServerCertConfigPath(rName, path, pathPrefix, key, certifi
 func testAccAwsDataSourceIAMUserConfig(name string) string {
 func testAccAwsImageBuilderComponentDataSourceConfigBuildVersionArn(rName string) string {
 func testAccAwsImageBuilderDistributionConfigurationDataSourceConfigArn(rName string) string {
+func testAccAwsImageBuilderImageRecipeDataSourceConfigArn(rName string) string {
 func testAccAwsImageBuilderInfrastructureConfigurationDataSourceConfigArn(rName string) string {
 func testAccInstanceDataSourceConfigGetUserData(rName string, getUserData bool) string {
 func testAccInstanceDataSourceConfigGetUserDataNoUserData(rName string, getUserData bool) string {
@@ -212,6 +213,8 @@ func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(serviceCode, q
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaName(serviceCode, quotaName string) string {
 func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(serviceName string) string {
 func testAccDataSourceAwsSfnStateMachineConfig(rName string) string {
+func testAccDataSourceAWSSignerSigningJobConfigBasic(profileName string) string {
+func testAccDataSourceAWSSignerSigningProfileConfigBasic(profileName string) string {
 func testAccDataSourceAwsSqsQueueConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfigTags(rName string) string {
 func testAccCheckAwsSsmDocumentDataSourceConfig(name string, documentFormat string) string {
@@ -1295,6 +1298,21 @@ func testAccAwsImageBuilderDistributionConfigurationConfigDistributionLicenseCon
 func testAccAwsImageBuilderDistributionConfigurationConfigName(rName string) string {
 func testAccAwsImageBuilderDistributionConfigurationConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
 func testAccAwsImageBuilderDistributionConfigurationConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
+func testAccAwsImageBuilderImageRecipeConfigBase(rName string) string {
+func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingDeviceName(rName string, deviceName string) string {
+func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingEbsDeleteOnTermination(rName string, deleteOnTermination bool) string {
+func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingEbsEncrypted(rName string, encrypted bool) string {
+func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingEbsIops(rName string, iops int) string {
+func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingEbsKmsKeyId(rName string) string {
+func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingEbsSnapshotId(rName string) string {
+func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingEbsVolumeSize(rName string, volumeSize int) string {
+func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingEbsVolumeType(rName string, volumeType string) string {
+func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingNoDevice(rName string, noDevice bool) string {
+func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingVirtualName(rName string, virtualName string) string {
+func testAccAwsImageBuilderImageRecipeConfigDescription(rName string, description string) string {
+func testAccAwsImageBuilderImageRecipeConfigName(rName string) string {
+func testAccAwsImageBuilderImageRecipeConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
+func testAccAwsImageBuilderImageRecipeConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
 func testAccAwsImageBuilderInfrastructureConfigurationConfigBase(rName string) string {
 func testAccAwsImageBuilderInfrastructureConfigurationConfigDescription(rName string, description string) string {
 func testAccAwsImageBuilderInfrastructureConfigurationConfigInstanceProfileName1(rName string) string {
@@ -1418,7 +1436,7 @@ func testAccKinesisAnalyticsV2ApplicationConfigBaseServiceExecutionIamRole(rName
 func testAccKinesisAnalyticsV2ApplicationConfigBaseFlinkApplication(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseSQLApplication(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseVPC(rName string) string {
-func testAccKinesisAnalyticsV2ApplicationConfigBasicFlinkApplication(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigBasicFlinkApplication(rName, runtimeEnvironment string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBasicSQLApplication(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBasicSQLApplicationPlusDescription(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBasicSQLApplicationServiceExecutionRoleUpdated(rName string) string {
@@ -1477,6 +1495,9 @@ func testAccAwsLambdaAliasBaseConfig(roleName, policyName, attachmentName string
 func testAccAwsLambdaAliasConfig(roleName, policyName, attachmentName, funcName, aliasName string) string {
 func testAccAwsLambdaAliasConfigUsingFunctionName(roleName, policyName, attachmentName, funcName, aliasName string) string {
 func testAccAwsLambdaAliasConfigWithRoutingConfig(roleName, policyName, attachmentName, funcName, aliasName string) string {
+func testAccAWSLambdaCodeSigningConfigUpdatePublishers() string {
+func testAccAWSLambdaCodeSigningConfigUpdatePolicy() string {
+func testAccAWSLambdaCodeSigningConfigBasic() string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBase(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisStartingPositionTimestamp(rName, startingPositionTimestamp string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBatchWindow(rName string, batchWindow int64) string {
@@ -1499,6 +1520,10 @@ func testAccAWSLambdaFunctionEventInvokeConfigQualifierAliasName(rName string) s
 func testAccAWSLambdaFunctionEventInvokeConfigQualifierFunctionVersion(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigQualifierLatest(rName string) string {
 func testAccAWSLambdaConfigBasic(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigCSCBasic(roleName string) string {
+func testAccAWSLambdaConfigCSCCreate(roleName, funcName string) string {
+func testAccAWSLambdaConfigCSCUpdate(roleName, funcName string) string {
+func testAccAWSLambdaConfigCSCDelete(roleName, funcName string) string {
 func testAccAWSLambdaConfigBasicConcurrency(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigConcurrencyUpdate(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithoutFilenameAndS3Attributes(funcName, policyName, roleName, sgName string) string {
@@ -2055,6 +2080,13 @@ func testAccShieldProtectionAlbConfig(rName string) string {
 func testAccShieldProtectionCloudfrontConfig(rName, retainOnDelete string) string {
 func testAccShieldProtectionElasticIPAddressConfig(rName string) string {
 func testAccShieldProtectionGlobalAcceleratorConfig(rName string) string {
+func testAccAWSSignerSigningJobConfig(profileName string) string {
+func testAccAWSSignerSigningProfilePermissionConfig(profileName string) string {
+func testAccAWSSignerSigningProfileConfig(namePrefix string) string {
+func testAccAWSSignerSigningProfileConfigGenerateName() string {
+func testAccAWSSignerSigningProfileConfigProvidedName(profileName string) string {
+func testAccAWSSignerSigningProfileConfigTags(namePrefix string) string {
+func testAccAWSSignerSigningProfileConfigSVP(namePrefix string) string {
 func testAccAWSSnapshotCreateVolumePermissionConfig(includeCreateVolumePermission bool, accountID string) string {
 func testAccAWSSNSTopicSubscriptionConfig(i int) string {
 func testAccAWSSNSTopicConfigTags1(r, tag1Key, tag1Value string) string {
@@ -2193,6 +2225,7 @@ func testAccAWSStorageGatewayNfsFileShareConfigFileShareName(rName, fsName strin
 func testAccAWSStorageGatewayNfsFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfigCacheAttributes(rName string, timeout int) string {
+func testAccAWSStorageGatewayNfsFileShareConfigNotificationPolicy(rName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewaySmbFileShareSMBACLConfig(rName string, enabled bool) string {

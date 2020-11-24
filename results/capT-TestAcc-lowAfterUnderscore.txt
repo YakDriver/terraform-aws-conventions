@@ -153,6 +153,7 @@ func TestAccDataSourceAwsKmsKey_basic(
 func TestAccAWSKmsSecretsDataSource_basic(
 func TestAccAWSKmsSecretDataSource_removed(
 func TestAccDataSourceAWSLambdaAlias_basic(
+func TestAccDataSourceAWSLambdaCodeSigningConfig_basic(
 func TestAccDataSourceAWSLambdaFunction_basic(
 func TestAccDataSourceAWSLambdaFunction_version(
 func TestAccDataSourceAWSLambdaFunction_alias(
@@ -267,6 +268,8 @@ func TestAccDataSourceAwsSecurityGroups_filter(
 func TestAccDataSourceAwsSecurityGroup_basic(
 func TestAccAWSStepFunctionsActivityDataSource_basic(
 func TestAccDataSourceAwsSfnStateMachine_basic(
+func TestAccDataSourceAWSSignerSigningJob_basic(
+func TestAccDataSourceAWSSignerSigningProfile_basic(
 func TestAccDataSourceAwsSnsTopic_basic(
 func TestAccDataSourceAwsSqsQueue_basic(
 func TestAccDataSourceAwsSqsQueue_tags(
@@ -1456,6 +1459,8 @@ func TestAccAwsImageBuilderComponent_basic(
 func TestAccAwsImageBuilderComponent_disappears(
 func TestAccAwsImageBuilderDistributionConfiguration_basic(
 func TestAccAwsImageBuilderDistributionConfiguration_disappears(
+func TestAccAwsImageBuilderImageRecipe_basic(
+func TestAccAwsImageBuilderImageRecipe_disappears(
 func TestAccAwsImageBuilderInfrastructureConfiguration_basic(
 func TestAccAwsImageBuilderInfrastructureConfiguration_disappears(
 func TestAccAWSInspectorTarget_basic(
@@ -1610,6 +1615,7 @@ func TestAccAWSKmsKey_tags(
 func TestAccAWSLambdaAlias_basic(
 func TestAccAWSLambdaAlias_nameupdate(
 func TestAccAWSLambdaAlias_routingconfig(
+func TestAccAWSLambdaCodeSigningConfig_basic(
 func TestAccAWSLambdaEventSourceMapping_kinesis_basic(
 func TestAccAWSLambdaEventSourceMapping_kinesis_removeBatchSize(
 func TestAccAWSLambdaEventSourceMapping_sqs_basic(
@@ -1622,6 +1628,7 @@ func TestAccAWSLambdaFunctionEventInvokeConfig_disappears_LambdaFunction(
 func TestAccAWSLambdaFunctionEventInvokeConfig_disappears_LambdaFunctionEventInvokeConfig(
 func TestAccAWSLambdaFunction_basic(
 func TestAccAWSLambdaFunction_disappears(
+func TestAccAWSLambdaFunction_codeSigningConfig(
 func TestAccAWSLambdaFunction_concurrency(
 func TestAccAWSLambdaFunction_concurrencyCycle(
 func TestAccAWSLambdaFunction_expectFilenameAndS3Attributes(
@@ -2366,6 +2373,10 @@ func TestAccAWSSfnActivity_basic(
 func TestAccAWSSfnStateMachine_createUpdate(
 func TestAccAWSSfnStateMachine_tags(
 func TestAccAWSSfnStateMachine_disappears(
+func TestAccAWSSignerSigningJob_basic(
+func TestAccAWSSignerSigningProfilePermission_basic(
+func TestAccAWSSignerSigningProfile_basic(
+func TestAccAWSSignerSigningProfile_tags(
 func TestAccAWSSimpleDBDomain_basic(
 func TestAccAWSSnapshotCreateVolumePermission_basic(
 func TestAccAWSSnapshotCreateVolumePermission_disappears(
@@ -2507,6 +2518,7 @@ func TestAccAWSStorageGatewayGateway_bandwidthAll(
 func TestAccAWSStorageGatewayNfsFileShare_basic(
 func TestAccAWSStorageGatewayNfsFileShare_tags(
 func TestAccAWSStorageGatewayNfsFileShare_fileShareName(
+func TestAccAWSStorageGatewayNfsFileShare_notificationPolicy(
 func TestAccAWSStorageGatewayNfsFileShare_cacheAttributes(
 func TestAccAWSStorageGatewayNfsFileShare_disappears(
 func TestAccAWSStorageGatewaySmbFileShare_smb_acl(

@@ -343,6 +343,7 @@ func migrateSGRuleStateV0toV1(
 func migrateExpandIPPerm(
 func resourceAwsServiceQuotasServiceQuotaParseID(
 func resourceAwsSesIdentityPolicyParseID(
+func baseAccAWSSignerSigningProfileConfig(
 func resourceAwsSimpleDBDomain(
 func resourceAwsSimpleDBDomainCreate(
 func resourceAwsSimpleDBDomainRead(
