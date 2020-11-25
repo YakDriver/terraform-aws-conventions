@@ -637,12 +637,16 @@ func expandEc2FleetLaunchTemplateOverridesRequest(
 func expandEc2LaunchTemplateSpecificationRequest(
 func expandEc2OnDemandOptionsRequest(
 func expandEc2SpotOptionsRequest(
+func expandFleetSpotMaintenanceStrategiesRequest(
+func expandFleetSpotCapacityRebalanceRequest(
 func expandEc2TargetCapacitySpecificationRequest(
 func flattenEc2FleetLaunchTemplateConfigs(
 func flattenEc2FleetLaunchTemplateOverrides(
 func flattenEc2FleetLaunchTemplateSpecification(
 func flattenEc2OnDemandOptions(
 func flattenEc2SpotOptions(
+func flattenFleetSpotMaintenanceStrategies(
+func flattenFleetSpotCapacityRebalance(
 func flattenEc2TargetCapacitySpecification(
 func decodeEc2LocalGatewayRouteID(
 func getEc2LocalGatewayRoute(
@@ -1139,6 +1143,11 @@ func flattenImageBuilderDistribution(
 func flattenImageBuilderDistributions(
 func flattenImageBuilderLaunchPermissionConfiguration(
 func init(
+func expandImageBuilderImageTestConfiguration(
+func expandImageBuilderPipelineSchedule(
+func flattenImageBuilderImageTestsConfiguration(
+func flattenImageBuilderSchedule(
+func init(
 func expandImageBuilderComponentConfiguration(
 func expandImageBuilderComponentConfigurations(
 func expandImageBuilderEbsInstanceBlockDeviceSpecification(
@@ -1559,6 +1568,7 @@ func expandMskClusterClientAuthentication(
 func expandMskClusterConfigurationInfo(
 func expandMskClusterEncryptionInfo(
 func expandMskClusterEncryptionInTransit(
+func expandMskClusterScram(
 func expandMskClusterTls(
 func expandMskOpenMonitoring(
 func expandMskOpenMonitoringPrometheus(
@@ -1574,6 +1584,8 @@ func flattenMskClientAuthentication(
 func flattenMskConfigurationInfo(
 func flattenMskEncryptionInfo(
 func flattenMskEncryptionInTransit(
+func flattenMskSasl(
+func flattenMskScram(
 func flattenMskTls(
 func flattenMskOpenMonitoring(
 func flattenMskOpenMonitoringPrometheus(
@@ -1588,6 +1600,9 @@ func mskClusterOperationRefreshFunc(
 func waitForMskClusterOperation(
 func init(
 func init(
+func associateMSKClusterSecrets(
+func disassociateMSKClusterSecrets(
+func unprocessedScramSecretsError(
 func NGStateRefreshFunc(
 func init(
 func flattenAwsNeptuneClusterResource(
@@ -1605,6 +1620,9 @@ func validateICMPArgumentValue(
 func init(
 func expandNetworkFirewallSubnetMappings(
 func expandNetworkFirewallSubnetMappingIds(
+func flattenNetworkFirewallFirewallStatus(
+func flattenNetworkFirewallSyncStates(
+func flattenNetworkFirewallSyncStateAttachment(
 func flattenNetworkFirewallSubnetMappings(
 func networkFirewallSubnetMappingsHash(
 func networkFirewallSubnetMappingsDiff(
@@ -1974,6 +1992,8 @@ func buildSpotFleetLaunchSpecification(
 func readSpotFleetBlockDeviceMappingsFromConfig(
 func buildAwsSpotFleetLaunchSpecifications(
 func buildLaunchTemplateConfigs(
+func expandSpotMaintenanceStrategies(
+func expandSpotCapacityRebalance(
 func flattenSpotFleetRequestLaunchTemplateOverrides(
 func launchSpecsToSet(
 func launchSpecToMap(
@@ -1989,6 +2009,8 @@ func hashEbsBlockDevice(
 func flattenFleetLaunchTemplateConfig(
 func flattenFleetLaunchTemplateSpecification(
 func flattenLaunchTemplateOverrides(
+func flattenSpotMaintenanceStrategies(
+func flattenSpotCapacityRebalance(
 func migrateSpotFleetRequestV0toV1(
 func init(
 func readInstance(

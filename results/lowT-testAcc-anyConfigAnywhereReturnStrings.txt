@@ -43,7 +43,7 @@ func testAccCheckAWSCodeArtifactAuthorizationTokenBasicConfig(rName string) stri
 func testAccCheckAWSCodeArtifactAuthorizationTokenOwnerConfig(rName string) string {
 func testAccCheckAWSCodeArtifactAuthorizationTokenDurationConfig(rName string) string {
 func testAccCheckAWSCodeArtifactRepositoryEndpointBaseConfig(rName string) string {
-func testAccCheckAWSCodeArtifactRepositoryEndpointBasicConfig(rName string) string {
+func testAccCheckAWSCodeArtifactRepositoryEndpointBasicConfig(rName, format string) string {
 func testAccCheckAWSCodeArtifactRepositoryEndpointOwnerConfig(rName string) string {
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_basic(rName string) string {
@@ -156,6 +156,7 @@ func testAccAwsDataIAMServerCertConfigPath(rName, path, pathPrefix, key, certifi
 func testAccAwsDataSourceIAMUserConfig(name string) string {
 func testAccAwsImageBuilderComponentDataSourceConfigBuildVersionArn(rName string) string {
 func testAccAwsImageBuilderDistributionConfigurationDataSourceConfigArn(rName string) string {
+func testAccAwsImageBuilderImagePipelineDataSourceConfigArn(rName string) string {
 func testAccAwsImageBuilderImageRecipeDataSourceConfigArn(rName string) string {
 func testAccAwsImageBuilderInfrastructureConfigurationDataSourceConfigArn(rName string) string {
 func testAccInstancesDataSourceConfig_ids(rName string) string {
@@ -332,7 +333,7 @@ func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(serviceName strin
 func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityArn(rName string) string {
 func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityName(rName string) string {
 func testAccDataSourceAwsSfnStateMachineConfig(rName string) string {
-func testAccDataSourceAWSSignerSigningJobConfigBasic(profileName string) string {
+func testAccDataSourceAWSSignerSigningJobConfigBasic(rName string) string {
 func testAccDataSourceAWSSignerSigningProfileConfigBasic(profileName string) string {
 func testAccDataSourceAwsSqsQueueConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfigTags(rName string) string {
@@ -854,6 +855,7 @@ func testAccAWSAutoScalingGroupConfig_LaunchTemplate_IAMInstanceProfile(rName st
 func testAccAWSAutoScalingGroupConfig_LoadBalancers(rName string, elbCount int) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_Base(rName string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy(rName string) string {
+func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_CapacityRebalance(rName string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_InstancesDistribution_OnDemandAllocationStrategy(rName, onDemandAllocationStrategy string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_InstancesDistribution_OnDemandBaseCapacity(rName string, onDemandBaseCapacity int) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_InstancesDistribution_OnDemandPercentageAboveBaseCapacity(rName string, onDemandPercentageAboveBaseCapacity int) string {
@@ -899,6 +901,8 @@ func testAccAwsBackupPlanConfigRuleCopyActionMultiple(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionNoLifecycle(rName string) string {
 func testAccAwsBackupPlanConfigAdvancedBackupSetting(rName string) string {
+func testAccBackupRegionSettingsConfig1(rName string) string {
+func testAccBackupRegionSettingsConfig2(rName string) string {
 func testAccBackupSelectionConfigBase(rName string) string {
 func testAccBackupSelectionConfigBasic(rName string) string {
 func testAccBackupSelectionConfigWithTags(rName string) string {
@@ -1762,6 +1766,7 @@ func testAccAWSEc2FleetConfig_LaunchTemplateConfig_Override_WeightedCapacity_Mul
 func testAccAWSEc2FleetConfig_OnDemandOptions_AllocationStrategy(rName, allocationStrategy string) string {
 func testAccAWSEc2FleetConfig_ReplaceUnhealthyInstances(rName string, replaceUnhealthyInstances bool) string {
 func testAccAWSEc2FleetConfig_SpotOptions_AllocationStrategy(rName, allocationStrategy string) string {
+func testAccAWSEc2FleetConfig_SpotOptions_CapacityRebalance(rName, allocationStrategy string) string {
 func testAccAWSEc2FleetConfig_SpotOptions_InstanceInterruptionBehavior(rName, instanceInterruptionBehavior string) string {
 func testAccAWSEc2FleetConfig_SpotOptions_InstancePoolsToUseCount(rName string, instancePoolsToUseCount int) string {
 func testAccAWSEc2FleetConfig_Tags(rName, key1, value1 string) string {
@@ -2427,6 +2432,21 @@ func testAccAwsImageBuilderDistributionConfigurationConfigDistributionLicenseCon
 func testAccAwsImageBuilderDistributionConfigurationConfigName(rName string) string {
 func testAccAwsImageBuilderDistributionConfigurationConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
 func testAccAwsImageBuilderDistributionConfigurationConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
+func testAccAwsImageBuilderImagePipelineConfigBase(rName string) string {
+func testAccAwsImageBuilderImagePipelineConfigDescription(rName string, description string) string {
+func testAccAwsImageBuilderImagePipelineConfigDistributionConfigurationArn1(rName string) string {
+func testAccAwsImageBuilderImagePipelineConfigDistributionConfigurationArn2(rName string) string {
+func testAccAwsImageBuilderImagePipelineConfigEnhancedImageMetadataEnabled(rName string, enhancedImageMetadataEnabled bool) string {
+func testAccAwsImageBuilderImagePipelineConfigImageRecipeArn2(rName string) string {
+func testAccAwsImageBuilderImagePipelineConfigImageTestsConfigurationImageTestsEnabled(rName string, imageTestsEnabled bool) string {
+func testAccAwsImageBuilderImagePipelineConfigImageTestsConfigurationTimeoutMinutes(rName string, timeoutMinutes int) string {
+func testAccAwsImageBuilderImagePipelineConfigInfrastructureConfigurationArn2(rName string) string {
+func testAccAwsImageBuilderImagePipelineConfigName(rName string) string {
+func testAccAwsImageBuilderImagePipelineConfigSchedulePipelineExecutionStartCondition(rName string, pipelineExecutionStartCondition string) string {
+func testAccAwsImageBuilderImagePipelineConfigScheduleScheduleExpression(rName string, scheduleExpression string) string {
+func testAccAwsImageBuilderImagePipelineConfigStatus(rName string, status string) string {
+func testAccAwsImageBuilderImagePipelineConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
+func testAccAwsImageBuilderImagePipelineConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
 func testAccAwsImageBuilderImageRecipeConfigBase(rName string) string {
 func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingDeviceName(rName string, deviceName string) string {
 func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingEbsDeleteOnTermination(rName string, deleteOnTermination bool) string {
@@ -2838,6 +2858,7 @@ func testAccAWSLBListenerConfig_changeForwardWeightedToBasic(lbName, targetGroup
 func testAccAWSLBListenerConfig_basicUdp(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccAWSLBListenerConfig_https(rName, key, certificate string) string {
+func testAccAWSLBListenerConfig_LoadBalancerArn_GatewayLoadBalancer(rName string) string {
 func testAccAWSLBListenerConfig_Protocol_Tls(rName, key, certificate string) string {
 func testAccAWSLBListenerConfig_redirect(lbName string) string {
 func testAccAWSLBListenerConfig_fixedResponse(lbName string) string {
@@ -3001,6 +3022,7 @@ func testAccMskClusterBaseConfig() string {
 func testAccMskClusterConfig_basic(rName string) string {
 func testAccMskClusterConfigBrokerNodeGroupInfoEbsVolumeSize(rName string, ebsVolumeSize int) string {
 func testAccMskClusterConfigClientAuthenticationTlsCertificateAuthorityArns(rName string) string {
+func testAccMskClusterConfigClientAuthenticationSaslScram(rName string, enabled bool) string {
 func testAccMskClusterConfigConfigurationInfoRevision1(rName string) string {
 func testAccMskClusterConfigConfigurationInfoRevision2(rName string) string {
 func testAccMskClusterConfigEncryptionInfoEncryptionAtRestKmsKeyArn(rName string) string {
@@ -3018,6 +3040,7 @@ func testAccMskConfigurationConfig(rName string) string {
 func testAccMskConfigurationConfigDescription(rName, description string) string {
 func testAccMskConfigurationConfigKafkaVersions(rName string) string {
 func testAccMskConfigurationConfigServerProperties(rName string, serverProperty string) string {
+func testAccMskScramSecretAssociationBaseConfig(rName string, count int) string {
 func testAccNatGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccNatGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSNeptuneClusterInstanceConfig(instanceName string, n int) string {
@@ -3088,6 +3111,8 @@ func testAccNetworkFirewallLoggingConfiguration_kinesis(streamName, rName, desti
 func testAccNetworkFirewallLoggingConfiguration_cloudwatch(logGroupName, rName, destinationType, logType string) string {
 func testAccNetworkFirewallLoggingConfiguration_s3AndKinesis(bucketName, streamName, rName, logTypeS3, logTypeKinesis string) string {
 func testAccNetworkFirewallLoggingConfiguration_s3AndCloudWatch(bucketName, logGroupName, rName, logTypeS3, logTypeCloudWatch string) string {
+func testAccNetworkFirewallResourcePolicyFirewallPolicyBaseConfig(rName string) string {
+func testAccNetworkFirewallResourcePolicyRuleGroupBaseConfig(rName string) string {
 func testAccAWSNetworkInterfaceAttachmentConfig_basic(rInt int) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfig(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaInstance(rName string) string {
@@ -3702,7 +3727,7 @@ func testAccShieldProtectionAlbConfig(rName string) string {
 func testAccShieldProtectionCloudfrontConfig(rName, retainOnDelete string) string {
 func testAccShieldProtectionElasticIPAddressConfig(rName string) string {
 func testAccShieldProtectionGlobalAcceleratorConfig(rName string) string {
-func testAccAWSSignerSigningJobConfig(profileName string) string {
+func testAccAWSSignerSigningJobConfig(rName string) string {
 func testAccAWSSignerSigningProfilePermissionConfig(profileName string) string {
 func testAccAWSSignerSigningProfilePermissionConfig_base(profileName string) string {
 func testAccAWSSignerSigningProfileConfig(namePrefix string) string {

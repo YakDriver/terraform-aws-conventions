@@ -376,6 +376,9 @@ func resourceAwsBackupPlanCreate(
 func resourceAwsBackupPlanRead(
 func resourceAwsBackupPlanUpdate(
 func resourceAwsBackupPlanDelete(
+func resourceAwsBackupRegionSettings(
+func resourceAwsBackupRegionSettingsUpdate(
+func resourceAwsBackupRegionSettingsRead(
 func resourceAwsBackupSelection(
 func resourceAwsBackupSelectionCreate(
 func resourceAwsBackupSelectionRead(
@@ -1726,6 +1729,11 @@ func resourceAwsImageBuilderDistributionConfigurationCreate(
 func resourceAwsImageBuilderDistributionConfigurationRead(
 func resourceAwsImageBuilderDistributionConfigurationUpdate(
 func resourceAwsImageBuilderDistributionConfigurationDelete(
+func resourceAwsImageBuilderImagePipeline(
+func resourceAwsImageBuilderImagePipelineCreate(
+func resourceAwsImageBuilderImagePipelineRead(
+func resourceAwsImageBuilderImagePipelineUpdate(
+func resourceAwsImageBuilderImagePipelineDelete(
 func resourceAwsImageBuilderImageRecipe(
 func resourceAwsImageBuilderImageRecipeCreate(
 func resourceAwsImageBuilderImageRecipeRead(
@@ -2084,6 +2092,11 @@ func resourceAwsMskConfigurationCreate(
 func resourceAwsMskConfigurationRead(
 func resourceAwsMskConfigurationUpdate(
 func resourceAwsMskConfigurationDelete(
+func resourceAwsMskScramSecretAssociation(
+func resourceAwsMskScramSecretAssociationCreate(
+func resourceAwsMskScramSecretAssociationRead(
+func resourceAwsMskScramSecretAssociationUpdate(
+func resourceAwsMskScramSecretAssociationDelete(
 func resourceAwsNatGateway(
 func resourceAwsNatGatewayCreate(
 func resourceAwsNatGatewayRead(
@@ -2154,6 +2167,10 @@ func resourceAwsNetworkFirewallLoggingConfigurationCreate(
 func resourceAwsNetworkFirewallLoggingConfigurationRead(
 func resourceAwsNetworkFirewallLoggingConfigurationUpdate(
 func resourceAwsNetworkFirewallLoggingConfigurationDelete(
+func resourceAwsNetworkFirewallResourcePolicy(
+func resourceAwsNetworkFirewallResourcePolicyPut(
+func resourceAwsNetworkFirewallResourcePolicyRead(
+func resourceAwsNetworkFirewallResourcePolicyDelete(
 func resourceAwsNetworkFirewallRuleGroup(
 func resourceAwsNetworkFirewallRuleGroupCreate(
 func resourceAwsNetworkFirewallRuleGroupRead(

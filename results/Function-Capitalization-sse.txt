@@ -28,6 +28,7 @@ func TestAccAWSLaunchTemplate_networkInterfaceAddresses(
 func TestAccAWSLaunchTemplate_networkInterface_ipv6Addresses(
 func testAccAWSLaunchTemplateConfig_networkInterfaceAddresses(
 func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(
+func unprocessedScramSecretsError(
 func expandNetworkFirewallAddresses(
 func flattenNetworkFirewallAddresses(
 func TestAccAWSS3BucketObject_sse(

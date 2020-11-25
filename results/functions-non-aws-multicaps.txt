@@ -2334,6 +2334,7 @@ func TestAccAWSLBListener_forwardWeighted(
 func TestAccAWSLBListener_basicUdp(
 func TestAccAWSLBListener_BackwardsCompatibility(
 func TestAccAWSLBListener_https(
+func TestAccAWSLBListener_LoadBalancerArn_GatewayLoadBalancer(
 func TestAccAWSLBListener_Protocol_Tls(
 func TestAccAWSLBListener_redirect(
 func TestAccAWSLBListener_fixedResponse(
@@ -2351,6 +2352,7 @@ func testAccAWSLBListenerConfig_changeForwardWeightedToBasic(
 func testAccAWSLBListenerConfig_basicUdp(
 func testAccAWSLBListenerConfigBackwardsCompatibility(
 func testAccAWSLBListenerConfig_https(
+func testAccAWSLBListenerConfig_LoadBalancerArn_GatewayLoadBalancer(
 func testAccAWSLBListenerConfig_Protocol_Tls(
 func testAccAWSLBListenerConfig_redirect(
 func testAccAWSLBListenerConfig_fixedResponse(
@@ -2505,6 +2507,8 @@ func testAccAWSLBConfig_nosg(
 func testAccAWSLBConfig_updateSecurityGroups(
 func flattenMediaPackageHLSIngest(
 func suppressXMLEquivalentConfig(
+func associateMSKClusterSecrets(
+func disassociateMSKClusterSecrets(
 func NGStateRefreshFunc(
 func validateICMPArgumentValue(
 func TestAccAWSNetworkAclRule_ipv6ICMP(

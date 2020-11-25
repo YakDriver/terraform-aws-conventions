@@ -225,6 +225,8 @@ func resourceAwsLBSSLNegotiationPolicyParseId(
 func lbTargetGroupSuffixFromARN(
 func flattenMediaPackageHLSIngest(
 func suppressXMLEquivalentConfig(
+func associateMSKClusterSecrets(
+func disassociateMSKClusterSecrets(
 func NGStateRefreshFunc(
 func validateICMPArgumentValue(
 func expandNetworkFirewallIPSets(
