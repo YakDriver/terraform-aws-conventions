@@ -346,6 +346,7 @@ func testAccDataSourceAwsSecretsManagerSecretVersionConfig_VersionStage_Default(
 func testAccDataSourceAwsSecurityGroupsConfig_tag(rInt int) string {
 func testAccDataSourceAwsSecurityGroupsConfig_filter(rInt int) string {
 func testAccDataSourceAwsSecurityGroupConfig(rInt int) string {
+func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_Versioned(version string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(serviceCode, quotaCode string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaName(serviceCode, quotaName string) string {
 func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(serviceName string) string {
@@ -2509,6 +2510,10 @@ func testAccGluePartitionBasicConfig(rName, parValue string) string {
 func testAccGluePartitionParametersConfig1(rName, parValue, key1, value1 string) string {
 func testAccGluePartitionParametersConfig2(rName, parValue, key1, value1, key2, value2 string) string {
 func testAccGluePartitionMultiplePartValueConfig(rName, parValue, parValue2 string) string {
+func testAccAWSGlueRegistryDescriptionConfig(rName, description string) string {
+func testAccAWSGlueRegistryBasicConfig(rName string) string {
+func testAccAWSGlueRegistryConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGlueRegistryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGlueResourcePolicy_Required(action string) string {
 func testAccAWSGlueSecurityConfigurationConfig_Basic(rName string) string {
 func testAccAWSGlueSecurityConfigurationConfig_CloudWatchEncryption_CloudWatchEncryptionMode_SSEKMS(rName string) string {
@@ -4038,6 +4043,14 @@ func testAccAwsSecurityHubActionTargetConfigIdentifier(identifier string) string
 func testAccAwsSecurityHubActionTargetConfigName(name string) string {
 func testAccAWSSecurityHubMemberConfig_basic(accountId, email string) string {
 func testAccAWSSecurityHubMemberConfig_invite(accountId, email string, invite bool) string {
+func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfig(stackName string) string {
+func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_updateInitial(stackName, functionName string) string {
+func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_updateUpdated(stackName, functionName string) string {
+func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versioned(stackName, version string) string {
+func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versioned2(stackName, version string) string {
+func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versionedPaired(stackName, version string) string {
+func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -4325,6 +4338,8 @@ func testAccAWSStorageGateway_SmbFileShare_ActiveDirectoryBase(rName string) str
 func testAccAWSStorageGateway_SmbFileShare_GuestAccessBase(rName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_Authentication_ActiveDirectory(rName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_Authentication_GuestAccess(rName string) string {
+func testAccAWSStorageGatewaySmbFileShareConfigAccessBasedEnumeration(rName string, enabled bool) string {
+func testAccAWSStorageGatewaySmbFileShareConfigNotificationPolicy(rName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_DefaultStorageClass(rName, defaultStorageClass string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_FileShareName(rName, fileShareName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfig_GuessMIMETypeEnabled(rName string, guessMimeTypeEnabled bool) string {

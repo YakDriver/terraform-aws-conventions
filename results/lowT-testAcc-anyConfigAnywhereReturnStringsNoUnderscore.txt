@@ -1213,6 +1213,10 @@ func testAccGluePartitionBasicConfig(rName, parValue string) string {
 func testAccGluePartitionParametersConfig1(rName, parValue, key1, value1 string) string {
 func testAccGluePartitionParametersConfig2(rName, parValue, key1, value1, key2, value2 string) string {
 func testAccGluePartitionMultiplePartValueConfig(rName, parValue, parValue2 string) string {
+func testAccAWSGlueRegistryDescriptionConfig(rName, description string) string {
+func testAccAWSGlueRegistryBasicConfig(rName string) string {
+func testAccAWSGlueRegistryConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGlueRegistryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGlueTriggerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueTriggerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGlueTriggerConfigActionsNotification(rName string, delay int) string {
@@ -2049,6 +2053,9 @@ func testAccAWSSecurityHubAccountConfig() string {
 func testAccAwsSecurityHubActionTargetConfigDescription(description string) string {
 func testAccAwsSecurityHubActionTargetConfigIdentifier(identifier string) string {
 func testAccAwsSecurityHubActionTargetConfigName(name string) string {
+func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfig(stackName string) string {
+func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -2248,6 +2255,8 @@ func testAccAWSStorageGatewayNfsFileShareConfigTags1(rName, tagKey1, tagValue1 s
 func testAccAWSStorageGatewayNfsFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayNfsFileShareConfigCacheAttributes(rName string, timeout int) string {
 func testAccAWSStorageGatewayNfsFileShareConfigNotificationPolicy(rName string) string {
+func testAccAWSStorageGatewaySmbFileShareConfigAccessBasedEnumeration(rName string, enabled bool) string {
+func testAccAWSStorageGatewaySmbFileShareConfigNotificationPolicy(rName string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewaySmbFileShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewaySmbFileShareSMBACLConfig(rName string, enabled bool) string {

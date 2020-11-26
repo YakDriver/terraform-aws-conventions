@@ -435,6 +435,8 @@ func TestAccAWSGlueMLTransform_description(
 func testAccAWSGlueMLTransformConfigDescription(
 func TestAccAWSGluePartition_multipleValues(
 func testAccGluePartitionMultiplePartValueConfig(
+func TestAccAWSGlueRegistry_Description(
+func testAccAWSGlueRegistryDescriptionConfig(
 func TestAccAWSGlueTrigger_Description(
 func testAccAWSGlueTriggerConfig_Description(
 func TestAccAWSGlueWorkflow_Description(

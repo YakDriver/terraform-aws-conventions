@@ -178,6 +178,7 @@ func TestAccDataSourceAwsSecretsManagerSecret_ARN(
 func testAccDataSourceAwsSecretsManagerSecretConfig_ARN(
 func TestAccDataSourceAwsSecretsManagerSecretVersion_VersionID(
 func testAccDataSourceAwsSecretsManagerSecretVersionConfig_VersionID(
+func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceID(
 func dataSourceAwsSubnetIDs(
 func dataSourceAwsSubnetIDsRead(
 func TestAccDataSourceAwsSubnetIDs_basic(
@@ -239,6 +240,7 @@ func testAccCheckResourceAttrGlobalARN(
 func testAccCheckResourceAttrGlobalARNNoAccount(
 func testAccCheckResourceAttrGlobalARNAccountID(
 func testAccMatchResourceAttrGlobalARN(
+func testAccCheckResourceAttrRegionalARNIgnoreRegionAndAccount(
 func testAccCheckResourceAttrEquivalentJSON(
 func testAccGetAccountID(
 func testAccGetPartitionDNSSuffix(

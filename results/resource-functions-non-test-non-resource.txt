@@ -1025,6 +1025,7 @@ func flattenGlueMLTransformFindMatchesParameters(
 func flattenGlueMLTransformSchemaColumns(
 func init(
 func expandGluePartitionInput(
+func init(
 func CreateTablePolicy(
 func deleteGlueSecurityConfiguration(
 func expandGlueCloudWatchEncryption(
@@ -1928,6 +1929,11 @@ func migrateExpandIPPerm(
 func init(
 func calcSecurityGroupChecksum(
 func cycleIpPermForGroup(
+func flattenNonDefaultServerlessApplicationCloudFormationParameters(
+func flattenServerlessRepositoryParameterDefinitions(
+func createServerlessApplicationRepositoryCloudFormationChangeSet(
+func expandServerlessRepositoryCloudFormationChangeSetParameters(
+func flattenServerlessRepositoryStackCapabilities(
 func init(
 func init(
 func init(
@@ -2062,7 +2068,6 @@ func expandStorageGatewayNfsFileShareDefaults(
 func flattenStorageGatewayNfsFileShareDefaults(
 func expandStorageGatewayNfsFileShareCacheAttributes(
 func flattenStorageGatewayNfsFileShareCacheAttributes(
-func storageGatewaySmbFileShareRefreshFunc(
 func decodeStorageGatewayUploadBufferID(
 func decodeStorageGatewayWorkingStorageID(
 func SubnetStateRefreshFunc(
