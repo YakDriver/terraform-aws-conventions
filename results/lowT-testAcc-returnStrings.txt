@@ -1374,12 +1374,15 @@ func testAccAWSCognitoUserPoolDomainConfig_basic(domainName, poolName string) st
 func testAccAWSCognitoUserPoolDomainConfig_custom(rootDomain string, domain string, poolName string) string {
 func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(rName string, externalID string) string {
 func testAccAWSCognitoUserPoolConfig_Name(rName string) string {
-func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfiguration(name string) string {
-func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdated(name string) string {
+func testAccAWSCognitoUserPoolConfigAccountRecoverySingle(rName string) string {
+func testAccAWSCognitoUserPoolConfigAccountRecoveryMulti(rName string) string {
+func testAccAWSCognitoUserPoolConfigAccountRecoveryUpdate(rName string) string {
+func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfiguration(rName string) string {
+func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigurationUpdated(rName string) string {
 func testAccAWSCognitoUserPoolConfig_AdvancedSecurityMode(rName string, advancedSecurityMode string) string {
-func testAccAWSCognitoUserPoolConfig_withDeviceConfiguration(name string) string {
-func testAccAWSCognitoUserPoolConfig_withDeviceConfigurationUpdated(name string) string {
-func testAccAWSCognitoUserPoolConfig_withEmailVerificationMessage(name, subject, message string) string {
+func testAccAWSCognitoUserPoolConfig_withDeviceConfiguration(rName string) string {
+func testAccAWSCognitoUserPoolConfig_withDeviceConfigurationUpdated(rName string) string {
+func testAccAWSCognitoUserPoolConfig_withEmailVerificationMessage(rName, subject, message string) string {
 func testAccAWSCognitoUserPoolConfig_MfaConfiguration(rName string, mfaConfiguration string) string {
 func testAccAWSCognitoUserPoolConfig_MfaConfiguration_SmsConfiguration(rName string) string {
 func testAccAWSCognitoUserPoolConfig_MfaConfiguration_SmsConfigurationAndSoftwareTokenMfaConfigurationEnabled(rName string, enabled bool) string {
@@ -1388,11 +1391,11 @@ func testAccAWSCognitoUserPoolConfig_SmsAuthenticationMessage(rName, smsAuthenti
 func testAccAWSCognitoUserPoolConfig_SmsConfiguration_ExternalId(rName string, externalID string) string {
 func testAccAWSCognitoUserPoolConfig_SmsConfiguration_SnsCallerArn2(rName string) string {
 func testAccAWSCognitoUserPoolConfig_SmsVerificationMessage(rName, smsVerificationMessage string) string {
-func testAccAWSCognitoUserPoolConfig_Tags1(name, tagKey1, tagValue1 string) string {
-func testAccAWSCognitoUserPoolConfig_Tags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSCognitoUserPoolConfig_withEmailConfiguration(name, email, arn, from, account string) string {
-func testAccAWSCognitoUserPoolConfig_withAliasAttributes(name string) string {
-func testAccAWSCognitoUserPoolConfig_withAliasAttributesUpdated(name string) string {
+func testAccAWSCognitoUserPoolConfig_Tags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCognitoUserPoolConfig_Tags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCognitoUserPoolConfig_withEmailConfiguration(rName, email, arn, from, account string) string {
+func testAccAWSCognitoUserPoolConfig_withAliasAttributes(rName string) string {
+func testAccAWSCognitoUserPoolConfig_withAliasAttributesUpdated(rName string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigAndPasswordPolicy(rName string) string {
 func testAccAWSCognitoUserPoolConfig_withPasswordPolicy(name string) string {
 func testAccAWSCognitoUserPoolConfig_withPasswordPolicyUpdated(name string) string {

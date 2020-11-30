@@ -675,6 +675,9 @@ func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigBase(userPoolName, clie
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfig(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigShareUserData(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(rName string, externalID string) string {
+func testAccAWSCognitoUserPoolConfigAccountRecoverySingle(rName string) string {
+func testAccAWSCognitoUserPoolConfigAccountRecoveryMulti(rName string) string {
+func testAccAWSCognitoUserPoolConfigAccountRecoveryUpdate(rName string) string {
 func testAccConfigConfigurationRecorderStatusConfig(randInt int, enabled bool) string {
 func testAccConfigOrganizationCustomRuleConfigBase(rName string) string {
 func testAccConfigOrganizationCustomRuleConfigDescription(rName, description string) string {

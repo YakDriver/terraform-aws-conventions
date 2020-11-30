@@ -425,6 +425,8 @@ func expandCognitoSmsConfiguration(
 func expandCognitoSoftwareTokenMfaConfiguration(
 func flattenCognitoSmsConfiguration(
 func flattenCognitoSoftwareTokenMfaConfiguration(
+func expandCognitoUserPoolAccountRecoverySettingConfig(
+func flattenCognitoUserPoolAccountRecoverySettingConfig(
 func init(
 func describeConfigAggregateAuthorizations(
 func init(
