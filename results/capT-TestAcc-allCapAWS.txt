@@ -426,6 +426,7 @@ func TestAccAWSAPIGatewayV2DomainName_basic(
 func TestAccAWSAPIGatewayV2DomainName_disappears(
 func TestAccAWSAPIGatewayV2DomainName_Tags(
 func TestAccAWSAPIGatewayV2DomainName_UpdateCertificate(
+func TestAccAWSAPIGatewayV2DomainName_MutualTlsAuthentication(
 func TestAccAWSAPIGatewayV2IntegrationResponse_basic(
 func TestAccAWSAPIGatewayV2IntegrationResponse_disappears(
 func TestAccAWSAPIGatewayV2IntegrationResponse_AllAttributes(
@@ -1579,6 +1580,7 @@ func TestAccAWSEksCluster_VpcConfig_SecurityGroupIds(
 func TestAccAWSEksCluster_VpcConfig_EndpointPrivateAccess(
 func TestAccAWSEksCluster_VpcConfig_EndpointPublicAccess(
 func TestAccAWSEksCluster_VpcConfig_PublicAccessCidrs(
+func TestAccAWSEksCluster_NetworkConfig_ServiceIpv4Cidr(
 func TestAccAWSEksFargateProfile_basic(
 func TestAccAWSEksFargateProfile_disappears(
 func TestAccAWSEksFargateProfile_Multi_Profile(
@@ -1587,9 +1589,11 @@ func TestAccAWSEksFargateProfile_Tags(
 func TestAccAWSEksNodeGroup_basic(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
+func TestAccAWSEksNodeGroup_CapacityType_Spot(
 func TestAccAWSEksNodeGroup_DiskSize(
 func TestAccAWSEksNodeGroup_ForceUpdateVersion(
-func TestAccAWSEksNodeGroup_InstanceTypes(
+func TestAccAWSEksNodeGroup_InstanceTypes_Multiple(
+func TestAccAWSEksNodeGroup_InstanceTypes_Single(
 func TestAccAWSEksNodeGroup_Labels(
 func TestAccAWSEksNodeGroup_LaunchTemplate_Id(
 func TestAccAWSEksNodeGroup_LaunchTemplate_Name(
@@ -2354,6 +2358,7 @@ func TestAccAWSLambdaFunction_DeadLetterConfig(
 func TestAccAWSLambdaFunction_DeadLetterConfigUpdated(
 func TestAccAWSLambdaFunction_nilDeadLetterConfig(
 func TestAccAWSLambdaFunction_FileSystemConfig(
+func TestAccAWSLambdaFunction_imageConfig(
 func TestAccAWSLambdaFunction_tracingConfig(
 func TestAccAWSLambdaFunction_KmsKeyArn_NoEnvironmentVariables(
 func TestAccAWSLambdaFunction_Layers(
@@ -2800,6 +2805,7 @@ func TestAccAWSRDSCluster_ClusterIdentifierPrefix(
 func TestAccAWSRDSCluster_DbSubnetGroupName(
 func TestAccAWSRDSCluster_s3Restore(
 func TestAccAWSRDSCluster_PointInTimeRestore(
+func TestAccAWSRDSCluster_PointInTimeRestore_EnabledCloudwatchLogsExports(
 func TestAccAWSRDSCluster_generatedName(
 func TestAccAWSRDSCluster_takeFinalSnapshot(
 func TestAccAWSRDSCluster_missingUserNameCausesError(

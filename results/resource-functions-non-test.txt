@@ -229,6 +229,8 @@ func apiGatewayV2DomainNameRefresh(
 func waitForApiGatewayV2DomainNameAvailabilityOnUpdate(
 func expandApiGatewayV2DomainNameConfiguration(
 func flattenApiGatewayV2DomainNameConfiguration(
+func expandApiGatewayV2MutualTlsAuthentication(
+func flattenApiGatewayV2MutualTlsAuthentication(
 func init(
 func resourceAwsApiGatewayV2Integration(
 func resourceAwsApiGatewayV2IntegrationCreate(
@@ -2007,6 +2009,7 @@ func expandEksEncryptionConfig(
 func expandEksProvider(
 func expandEksVpcConfigRequest(
 func expandEksVpcConfigUpdateRequest(
+func expandEksNetworkConfigRequest(
 func expandEksLoggingTypes(
 func flattenEksCertificate(
 func flattenEksIdentity(
@@ -2015,6 +2018,7 @@ func flattenEksEncryptionConfig(
 func flattenEksProvider(
 func flattenEksVpcConfigResponse(
 func flattenEksEnabledLogTypes(
+func flattenEksNetworkConfig(
 func refreshEksClusterStatus(
 func refreshEksUpdateStatus(
 func waitForDeleteEksCluster(
@@ -3308,6 +3312,7 @@ func flattenLambdaFunctionEventInvokeConfigDestinationConfig(
 func flattenLambdaFunctionEventInvokeConfigDestinationConfigOnFailure(
 func flattenLambdaFunctionEventInvokeConfigDestinationConfigOnSuccess(
 func resourceAwsLambdaFunction(
+func checkHandlerRuntimeForZipFunction(
 func updateComputedAttributesOnPublish(
 func hasConfigChanges(
 func resourceAwsLambdaFunctionCreate(
@@ -3325,6 +3330,8 @@ func waitForLambdaFunctionCreation(
 func waitForLambdaFunctionUpdate(
 func flattenLambdaFileSystemConfigs(
 func expandLambdaFileSystemConfigs(
+func flattenLambdaImageConfig(
+func expandLambdaImageConfigs(
 func init(
 func createTempFile(
 func baseAccAWSLambdaConfig(

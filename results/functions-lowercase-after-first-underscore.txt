@@ -717,7 +717,6 @@ func TestAccAWSAPIGatewayV2Deployment_disappears(
 func testAccAWSAPIGatewayV2DeploymentConfig_basic(
 func TestAccAWSAPIGatewayV2DomainName_basic(
 func TestAccAWSAPIGatewayV2DomainName_disappears(
-func testAccAWSAPIGatewayV2DomainNameConfig_base(
 func testAccAWSAPIGatewayV2DomainNameConfig_basic(
 func testAccAWSAPIGatewayV2DomainNameConfig_tags(
 func TestAccAWSAPIGatewayV2IntegrationResponse_basic(
@@ -2610,6 +2609,7 @@ func TestAccAWSLambdaFunction_versionedUpdate(
 func TestAccAWSLambdaFunction_enablePublish(
 func TestAccAWSLambdaFunction_disablePublish(
 func TestAccAWSLambdaFunction_nilDeadLetterConfig(
+func TestAccAWSLambdaFunction_imageConfig(
 func TestAccAWSLambdaFunction_tracingConfig(
 func TestAccAWSLambdaFunction_s3(
 func TestAccAWSLambdaFunction_localUpdate(
@@ -3348,6 +3348,7 @@ func TestAccAWSRDSCluster_iamAuth(
 func testAccAWSClusterConfig_s3Restore(
 func testAccAWSClusterConfig_generatedName(
 func testAccAWSClusterConfig_pointInTimeRestoreSource(
+func testAccAWSClusterConfig_pointInTimeRestoreSource_enabled_cloudwatch_logs_exports(
 func testAccAWSClusterConfig_kmsKey(
 func testAccAWSClusterConfig_encrypted(
 func testAccAWSClusterConfig_backups(

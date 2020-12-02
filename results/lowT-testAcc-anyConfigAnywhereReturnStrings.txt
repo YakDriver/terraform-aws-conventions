@@ -611,9 +611,13 @@ func testAccAWSAPIGatewayV2AuthorizerConfig_httpApiLambdaRequestAuthorizer(rName
 func testAccAWSAPIGatewayV2AuthorizerConfig_httpApiLambdaRequestAuthorizerUpdated(rName string, authorizerResultTtl int) string {
 func testAccAWSAPIGatewayV2DeploymentConfig_basic(rName, description string) string {
 func testAccAWSAPIGatewayV2DeploymentConfigTriggers(rName string, apiKeyRequired bool) string {
-func testAccAWSAPIGatewayV2DomainNameConfig_base(rName, certificate, key string, count int) string {
+func testAccAWSAPIGatewayV2DomainNameConfigImportedCerts(rName, certificate, key string, count int) string {
+func testAccAWSAPIGatewayV2DomainNameConfigPublicCert(rootDomain, domain string) string {
 func testAccAWSAPIGatewayV2DomainNameConfig_basic(rName, certificate, key string, count, index int) string {
 func testAccAWSAPIGatewayV2DomainNameConfig_tags(rName, certificate, key string, count, index int) string {
+func testAccAWSAPIGatewayV2DomainNameConfigMututalTlsAuthentication(rootDomain, domain, rName string) string {
+func testAccAWSAPIGatewayV2DomainNameConfigMututalTlsAuthenticationUpdated(rootDomain, domain, rName string) string {
+func testAccAWSAPIGatewayV2DomainNameConfigMututalTlsAuthenticationMissing(rootDomain, domain string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributes(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributesUpdated(rName string) string {
@@ -734,14 +738,16 @@ func testAccAwsAppmeshRouteConfig_httpRetryPolicyUpdated(meshName, vrName, vn1Na
 func testAccAppmeshVirtualGatewayConfig(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigBackendDefaults(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigBackendDefaultsUpdated(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigListenerConnectionPool(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigListenerConnectionPoolUpdated(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerHealthChecks(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerHealthChecksUpdated(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigRootCA(rName string) string {
+func testAccAppmeshVirtualGatewayConfigListenerTlsAcm(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigListenerTlsFile(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigLogging(meshName, vgName, path string) string {
 func testAccAppmeshVirtualGatewayConfigTags1(meshName, vgName, tagKey1, tagValue1 string) string {
 func testAccAppmeshVirtualGatewayConfigTags2(meshName, vgName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAppmeshVirtualGatewayConfigTlsFile(meshName, vgName string) string {
-func testAccAppmeshVirtualGatewayConfigRootCA(rName string) string {
-func testAccAppmeshVirtualGatewayConfigTlsAcm(meshName, vgName string) string {
 func testAccAppmeshVirtualNodeConfig_mesh(rName string) string {
 func testAccAppmeshVirtualNodeConfigRootCA(rName string) string {
 func testAccAppmeshVirtualNodeConfigPrivateCert(rName string) string {
@@ -1927,6 +1933,7 @@ func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(rName string) string 
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(rName string, endpointPrivateAccess bool) string {
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(rName string, endpointPublicAccess bool) string {
 func testAccAWSEksClusterConfig_VpcConfig_PublicAccessCidrs(rName string, publicAccessCidr string) string {
+func testAccAWSEksClusterConfig_NetworkConfig_ServiceIpv4Cidr(rName string, serviceIpv4Cidr string) string {
 func testAccAWSEksFargateProfileConfigBase(rName string) string {
 func testAccAWSEksFargateProfileConfigFargateProfileName(rName string) string {
 func testAccAWSEksFargateProfileConfigFargateProfileMultiple(rName string) string {
@@ -1938,9 +1945,11 @@ func testAccAWSEksNodeGroupConfigBase(rName string) string {
 func testAccAWSEksNodeGroupConfigBaseVersion(rName string, version string) string {
 func testAccAWSEksNodeGroupConfigNodeGroupName(rName string) string {
 func testAccAWSEksNodeGroupConfigAmiType(rName, amiType string) string {
+func testAccAWSEksNodeGroupConfigCapacityType(rName, capacityType string) string {
 func testAccAWSEksNodeGroupConfigDiskSize(rName string, diskSize int) string {
 func testAccAWSEksNodeGroupConfigForceUpdateVersion(rName, version string) string {
-func testAccAWSEksNodeGroupConfigInstanceTypes1(rName, instanceType1 string) string {
+func testAccAWSEksNodeGroupConfigInstanceTypesMultiple(rName string) string {
+func testAccAWSEksNodeGroupConfigInstanceTypesSingle(rName string) string {
 func testAccAWSEksNodeGroupConfigLabels1(rName, labelKey1, labelValue1 string) string {
 func testAccAWSEksNodeGroupConfigLabels2(rName, labelKey1, labelValue1, labelKey2, labelValue2 string) string {
 func testAccAWSEksNodeGroupConfigLaunchTemplateId1(rName string) string {
@@ -2741,6 +2750,9 @@ func testAccAWSLambdaConfigFilename(fileName, funcName, policyName, roleName, sg
 func testAccAWSLambdaConfigPublishable(fileName, funcName, policyName, roleName, sgName string, publish bool) string {
 func testAccAWSLambdaFileSystemConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaFileSystemUpdateConfig(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaImageConfig(funcName, policyName, roleName, sgName, imageID string) string {
+func testAccAWSLambdaImageConfigUpdateCode(funcName, policyName, roleName, sgName, imageID string) string {
+func testAccAWSLambdaImageConfigUpdateConfig(funcName, policyName, roleName, sgName, imageID string) string {
 func testAccAWSLambdaConfigVersionedNodeJs10xRuntime(fileName, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigVpcConfigProperIamDependencies(rName string) string {
 func testAccAWSLambdaConfigWithTracingConfig(funcName, policyName, roleName, sgName string) string {
@@ -3279,6 +3291,7 @@ func testAccAWSClusterConfig_generatedName() string {
 func testAccAWSClusterConfigWithFinalSnapshot(n int) string {
 func testAccAWSClusterConfigWithoutUserNameAndPassword(n int) string {
 func testAccAWSClusterConfig_pointInTimeRestoreSource(parentId, childId string) string {
+func testAccAWSClusterConfig_pointInTimeRestoreSource_enabled_cloudwatch_logs_exports(parentId, childId, enabledCloudwatchLogExports string) string {
 func testAccAWSClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSClusterConfigEnabledCloudwatchLogsExports1(rName, enabledCloudwatchLogExports1 string) string {

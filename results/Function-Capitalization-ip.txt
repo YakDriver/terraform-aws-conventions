@@ -367,6 +367,8 @@ func disassociateEip(
 func testSweepEc2Eips(
 func TestAccAWSEIP_associated_user_private_ip(
 func testAccAWSEksFargateProfileConfigFargateProfileMultiple(
+func TestAccAWSEksNodeGroup_InstanceTypes_Multiple(
+func testAccAWSEksNodeGroupConfigInstanceTypesMultiple(
 func TestAccAWSElasticacheCluster_ReplicationGroupID_MultipleReplica(
 func TestAccAWSElasticacheParameterGroup_Description(
 func testAccAWSElasticacheParameterGroupConfigDescription(
@@ -605,6 +607,7 @@ func testAccAWSKmsExternalKeyConfigDescription(
 func TestAccAWSKmsGrant_withRetiringPrincipal(
 func testAccAWSKmsGrant_withRetiringPrincipal(
 func resourceAwsKmsKeyDescriptionUpdate(
+func checkHandlerRuntimeForZipFunction(
 func testAccCreateZipFromFiles(
 func TestAccAWSLambdaLayerVersion_description(
 func testAccAWSLambdaLayerVersionDescription(

@@ -1647,6 +1647,7 @@ func TestAccAWSLambdaFunction_versionedUpdate(
 func TestAccAWSLambdaFunction_enablePublish(
 func TestAccAWSLambdaFunction_disablePublish(
 func TestAccAWSLambdaFunction_nilDeadLetterConfig(
+func TestAccAWSLambdaFunction_imageConfig(
 func TestAccAWSLambdaFunction_tracingConfig(
 func TestAccAWSLambdaFunction_s3(
 func TestAccAWSLambdaFunction_localUpdate(

@@ -16,6 +16,7 @@ func expandEksEncryptionConfig(
 func expandEksProvider(
 func expandEksVpcConfigRequest(
 func expandEksVpcConfigUpdateRequest(
+func expandEksNetworkConfigRequest(
 func expandEksLoggingTypes(
 func flattenEksCertificate(
 func flattenEksIdentity(
@@ -24,6 +25,7 @@ func flattenEksEncryptionConfig(
 func flattenEksProvider(
 func flattenEksVpcConfigResponse(
 func flattenEksEnabledLogTypes(
+func flattenEksNetworkConfig(
 func refreshEksClusterStatus(
 func refreshEksUpdateStatus(
 func waitForDeleteEksCluster(
@@ -38,8 +40,10 @@ func TestAccAWSEksCluster_VpcConfig_SecurityGroupIds(
 func TestAccAWSEksCluster_VpcConfig_EndpointPrivateAccess(
 func TestAccAWSEksCluster_VpcConfig_EndpointPublicAccess(
 func TestAccAWSEksCluster_VpcConfig_PublicAccessCidrs(
+func TestAccAWSEksCluster_NetworkConfig_ServiceIpv4Cidr(
 func testAccCheckAWSEksClusterExists(
 func testAccCheckAWSEksClusterDestroy(
+func testAccCheckAWSEksClusterRecreated(
 func testAccCheckAWSEksClusterNotRecreated(
 func testAccPreCheckAWSEks(
 func testAccAWSEksClusterConfig_Base(
@@ -53,6 +57,7 @@ func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPrivateAccess(
 func testAccAWSEksClusterConfig_VpcConfig_EndpointPublicAccess(
 func testAccAWSEksClusterConfig_VpcConfig_PublicAccessCidrs(
+func testAccAWSEksClusterConfig_NetworkConfig_ServiceIpv4Cidr(
 func resourceAwsEksFargateProfile(
 func resourceAwsEksFargateProfileCreate(
 func resourceAwsEksFargateProfileRead(
@@ -102,9 +107,11 @@ func testSweepEksFargateNodegroups(
 func TestAccAWSEksNodeGroup_basic(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
+func TestAccAWSEksNodeGroup_CapacityType_Spot(
 func TestAccAWSEksNodeGroup_DiskSize(
 func TestAccAWSEksNodeGroup_ForceUpdateVersion(
-func TestAccAWSEksNodeGroup_InstanceTypes(
+func TestAccAWSEksNodeGroup_InstanceTypes_Multiple(
+func TestAccAWSEksNodeGroup_InstanceTypes_Single(
 func TestAccAWSEksNodeGroup_Labels(
 func TestAccAWSEksNodeGroup_LaunchTemplate_Id(
 func TestAccAWSEksNodeGroup_LaunchTemplate_Name(
@@ -127,9 +134,11 @@ func testAccAWSEksNodeGroupConfigBase(
 func testAccAWSEksNodeGroupConfigBaseVersion(
 func testAccAWSEksNodeGroupConfigNodeGroupName(
 func testAccAWSEksNodeGroupConfigAmiType(
+func testAccAWSEksNodeGroupConfigCapacityType(
 func testAccAWSEksNodeGroupConfigDiskSize(
 func testAccAWSEksNodeGroupConfigForceUpdateVersion(
-func testAccAWSEksNodeGroupConfigInstanceTypes1(
+func testAccAWSEksNodeGroupConfigInstanceTypesMultiple(
+func testAccAWSEksNodeGroupConfigInstanceTypesSingle(
 func testAccAWSEksNodeGroupConfigLabels1(
 func testAccAWSEksNodeGroupConfigLabels2(
 func testAccAWSEksNodeGroupConfigLaunchTemplateId1(

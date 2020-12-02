@@ -31,6 +31,8 @@ func TestAccAWSEIP_PublicIpv4Pool_custom(
 func TestAccAWSEIP_CustomerOwnedIpv4Pool(
 func testAccAWSEIPConfig_PublicIpv4Pool_custom(
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
+func TestAccAWSEksCluster_NetworkConfig_ServiceIpv4Cidr(
+func testAccAWSEksClusterConfig_NetworkConfig_ServiceIpv4Cidr(
 func expandGameliftIpPermissions(
 func expandGameliftIpPermission(
 func resourceAwsGlobalAcceleratorAcceleratorFlattenIpSets(
