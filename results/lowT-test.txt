@@ -575,6 +575,7 @@ func testAccRegionalProviderConfig(
 func testAccAwsRegionProviderFunc(region string, providers *[]*schema.Provider) func(
 func testAccCheckResourceDisappears(
 func testAccCheckWithProviders(f func(
+func testAccErrorCheckSkipMessagesContaining(
 func testAccPreCheckSkipError(
 func testSweepSkipSweepError(
 func testAccCheckAWSProviderDnsSuffix(
@@ -4601,6 +4602,8 @@ func testAccAWSLambdaEventSourceMappingConfigUpdate_kinesis(
 func testAccAWSLambdaEventSourceMappingConfig_sqs(
 func testAccAWSLambdaEventSourceMappingConfigUpdate_sqs(
 func testAccAWSLambdaEventSourceMappingConfig_sqs_testWithFunctionName(
+func testAccAWSLambdaEventSourceMappingConfigSQSBase(
+func testAccAWSLambdaEventSourceMappingConfigSqsWithBatchWindow(
 func testAccCheckLambdaFunctionEventInvokeConfigDestroy(
 func testAccCheckAwsLambdaFunctionEventInvokeConfigDisappears(
 func testAccCheckAwsLambdaFunctionEventInvokeConfigExists(
@@ -5214,6 +5217,7 @@ func testAccAwsNetworkFirewallFirewallPolicy_statefulRuleGroupReferenceAndStatel
 func testSweepNetworkFirewallFirewalls(
 func testAccCheckAwsNetworkFirewallFirewallDestroy(
 func testAccCheckAwsNetworkFirewallFirewallExists(
+func testAccPreCheckAwsNetworkFirewall(
 func testAccNetworkFirewallFirewallDependenciesConfig(
 func testAccNetworkFirewallFirewall_basic(
 func testAccNetworkFirewallFirewall_deleteProtection(
@@ -5253,6 +5257,7 @@ func testAccNetworkFirewallRuleGroup_rulesSourceList_ruleVariables(
 func testAccNetworkFirewallRuleGroup_rulesSourceList_updateRuleVariables(
 func testAccNetworkFirewallRuleGroup_updateRulesSourceList(
 func testAccNetworkFirewallRuleGroup_basic_statefulRule(
+func testAccNetworkFirewallRuleGroup_statefulRule_header(
 func testAccNetworkFirewallRuleGroup_updateStatefulRule(
 func testAccNetworkFirewallRuleGroup_basic_statelessRule(
 func testAccNetworkFirewallRuleGroup_updateStatelessRule(
@@ -5746,6 +5751,8 @@ func testSweepRoute53QueryLogs(
 func testAccCheckRoute53QueryLogExists(
 func testAccCheckRoute53QueryLogDestroy(
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(
+func testAccErrorCheckSkipRoute53(
+func testAccAWSRoute53RecordOverwriteExpectErrorCheck(
 func testAccCheckRoute53RecordDestroy(
 func testAccCheckRoute53RecordDisappears(
 func testAccCheckRoute53RecordExists(
@@ -6584,7 +6591,6 @@ func testAccAWSSSMDocumentConfigSchemaVersion1Update(
 func testAccAWSSSMDocumentConfig_Tags_Single(
 func testAccAWSSSMDocumentConfig_Tags_Multiple(
 func testAccCheckAWSSSMMaintenanceWindowTargetExists(
-func testAccCheckAWSSSMMaintenanceWindowTargetDisappears(
 func testAccCheckAWSSSMMaintenanceWindowTargetDestroy(
 func testAccAWSSSMMaintenanceWindowTargetBasicConfig(
 func testAccAWSSSMMaintenanceWindowTargetBasicResourceGroupConfig(

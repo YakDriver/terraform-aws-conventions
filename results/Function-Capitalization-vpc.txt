@@ -1,6 +1,6 @@
 func TestAccDataSourceAWSLambdaFunction_vpc(
 func TestAccAWSDataSourceRedshiftCluster_vpc(
-func TestAccDataSourceAwsRoute53Zone_vpc(
+func TestAccAWSRoute53ZoneDataSource_vpc(
 func testAccAWSALBTargetGroupConfig_missing_vpc(
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpBase(
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttp(

@@ -11,6 +11,7 @@ func testAccAWSCloudWatchEventTargetConfigSqs(
 func expandIotSqsAction(
 func flattenIotSqsActions(
 func flattenIotSqsAction(
+func testAccAWSLambdaEventSourceMappingConfigSqsWithBatchWindow(
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSqsQueue(
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnSuccessDestinationSqsQueue(
 func resourceAwsSqsQueue(
