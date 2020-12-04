@@ -512,6 +512,9 @@ func testAccCheckResourceAttrRegionalARNEc2Classic(
 func testAccPreCheckFmsAdmin(
 func testAccFmsAdminRegionProviderConfig(
 func testAccGetFmsAdminRegion(
+func testAccPreCheckLightsailDomain(
+func testAccLightsailDomainRegionProviderConfig(
+func testAccGetLightsailDomainRegion(
 func testAccPreCheckPricing(
 func testAccPricingRegionProviderConfig(
 func testAccGetPricingRegion(

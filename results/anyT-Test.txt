@@ -1076,6 +1076,9 @@ func testAccPreCheckFmsAdmin(
 func testAccFmsAdminRegionProviderConfig(
 func testAccGetFmsAdminRegion(
 func TestHostedZoneIDForRegion(
+func testAccPreCheckLightsailDomain(
+func testAccLightsailDomainRegionProviderConfig(
+func testAccGetLightsailDomainRegion(
 func Test_expandNetworkACLEntry(
 func Test_validatePorts(
 func testAccPreCheckPricing(

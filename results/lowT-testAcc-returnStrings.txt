@@ -424,6 +424,8 @@ func testAccEc2ClassicRegionProviderConfig() string {
 func testAccGetEc2ClassicRegion() string {
 func testAccFmsAdminRegionProviderConfig() string {
 func testAccGetFmsAdminRegion() string {
+func testAccLightsailDomainRegionProviderConfig() string {
+func testAccGetLightsailDomainRegion() string {
 func testAccPricingRegionProviderConfig() string {
 func testAccGetPricingRegion() string {
 func testAccAwsProviderAccountID(provider *schema.Provider) string {

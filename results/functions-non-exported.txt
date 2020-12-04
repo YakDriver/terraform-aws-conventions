@@ -1193,6 +1193,10 @@ func waitForFsxFileSystemDeletion(
 func waitForFsxFileSystemUpdate(
 func waitForFsxFileSystemUpdateAdministrativeActionsStatusFileSystemUpdate(
 func iamPolicyDecodeConfigStringList(
+func init(
+func testAccPreCheckLightsailDomain(
+func testAccLightsailDomainRegionProviderConfig(
+func testAccGetLightsailDomainRegion(
 func expandMediaConvertReservationPlanSettings(
 func flattenMediaConvertReservationPlan(
 func expandNetworkAclEntries(

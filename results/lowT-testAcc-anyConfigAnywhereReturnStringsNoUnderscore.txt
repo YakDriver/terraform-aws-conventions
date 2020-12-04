@@ -242,6 +242,7 @@ func testAccDataSourceAwsWorkspacesDirectoryConfig(rName string) string {
 func testAccDataSourceAwsWorkspacesImageConfig(imageID string) string {
 func testAccEc2ClassicRegionProviderConfig() string {
 func testAccFmsAdminRegionProviderConfig() string {
+func testAccLightsailDomainRegionProviderConfig() string {
 func testAccPricingRegionProviderConfig() string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {

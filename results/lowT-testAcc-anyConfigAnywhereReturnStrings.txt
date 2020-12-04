@@ -392,6 +392,7 @@ func testAccDataSourceWorkspacesWorkspaceConfig_byDirectoryID_userName(rName str
 func testAccDataSourceAwsWorkspacesWorkspaceConfig_workspaceIDAndDirectoryIDConflict() string {
 func testAccEc2ClassicRegionProviderConfig() string {
 func testAccFmsAdminRegionProviderConfig() string {
+func testAccLightsailDomainRegionProviderConfig() string {
 func testAccPricingRegionProviderConfig() string {
 func testAccAlternateAccountProviderConfig() string {
 func testAccAlternateAccountAlternateRegionProviderConfig() string {
