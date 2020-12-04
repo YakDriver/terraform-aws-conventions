@@ -394,7 +394,6 @@ func testAccAWSAppautoscalingTargetEmrClusterConfig(rInt int) string {
 func testAccAWSAppautoscalingTargetSpotFleetRequestConfig(validUntil string) string {
 func testAccAppCookieStickinessPolicyConfig(rName string) string {
 func testAccAppCookieStickinessPolicyConfigUpdate(rName string) string {
-func testAccAppCookieStickinessPolicyConfigDestroy(rName string) string {
 func testAccAppmeshGatewayRouteConfigBase(meshName, vgName string) string {
 func testAccAppmeshGatewayRouteConfigGrpcRoute(meshName, vgName, grName string) string {
 func testAccAppmeshGatewayRouteConfigGrpcRouteUpdated(meshName, vgName, grName string) string {
@@ -887,7 +886,7 @@ func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
 func testAccAwsEbsVolumeConfigOutpost() string {
 func testAccAwsEbsVolumeConfigMultiAttach(rName string) string {
-func testAccEc2AvailabilityZoneGroupConfigOptInStatus(optInStatus string) string {
+func testAccEc2AvailabilityZoneGroupConfigOptInStatus(localZone, optInStatus string) string {
 func testAccEc2ClientVpnAuthorizationRuleConfigBasic(rName string) string {
 func testAccEc2ClientVpnAuthorizationRuleConfigGroups(rName string, groupNames map[string]string) string {
 func testAccEc2ClientVpnAuthorizationRuleConfigSubnets(rName string, subnetCount int, groupNames map[string]int) string {
@@ -1614,7 +1613,6 @@ func testAccAWSLaunchTemplateConfigPartition(rName string, partNum int) string {
 func testAccAWSLaunchTemplateConfigHibernation(rName string, enabled bool) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
-func testAccLBCookieStickinessPolicyConfigDestroy(rName string) string {
 func testAccLbListenerCertificateConfigLbListenerBase(rName, key, certificate string) string {
 func testAccLbListenerCertificateConfig(rName, key, certificate string) string {
 func testAccLbListenerCertificateConfigMultiple(rName string, keys, certificates []string) string {
@@ -2261,6 +2259,7 @@ func testAccAWSStorageGatewayCachedIscsiVolumeConfigBase(rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigKMSEncrypted(rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSStorageGatewayGatewayConfigSmbActiveDirectorySettingsBase(rName string) string {
 func testAccAWSStorageGatewayGatewayConfigSMBSecurityStrategy(rName, strategy string) string {
 func testAccAWSStorageGatewayGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

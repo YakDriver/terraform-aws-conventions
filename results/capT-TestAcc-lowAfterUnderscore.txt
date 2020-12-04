@@ -504,8 +504,8 @@ func TestAccAWSAppautoScalingTarget_emrCluster(
 func TestAccAWSAppautoScalingTarget_multipleTargets(
 func TestAccAWSAppautoScalingTarget_optionalRoleArn(
 func TestAccAWSAppCookieStickinessPolicy_basic(
-func TestAccAWSAppCookieStickinessPolicy_missingLB(
-func TestAccAWSAppCookieStickinessPolicy_drift(
+func TestAccAWSAppCookieStickinessPolicy_disappears_ELB(
+func TestAccAWSAppCookieStickinessPolicy_disappears(
 func TestAccAWSAppmesh_serial(
 func TestAccAWSAppsyncApiKey_basic(
 func TestAccAwsAppsyncDatasource_basic(
@@ -1150,6 +1150,7 @@ func TestAccAWSEcsTaskDefinition_withPidMode(
 func TestAccAWSEcsTaskDefinition_constraint(
 func TestAccAWSEcsTaskDefinition_changeVolumesForcesNewResource(
 func TestAccAWSEcsTaskDefinition_arrays(
+func TestAccAWSEcsTaskDefinition_disappears(
 func TestAccAWSEcsTaskDefinition_inferenceAccelerator(
 func TestAccAWSEFSAccessPoint_basic(
 func TestAccAWSEFSAccessPoint_root_directory(
@@ -1341,7 +1342,6 @@ func TestAccAwsGlobalAcceleratorListener_basic(
 func TestAccAwsGlobalAcceleratorListener_update(
 func TestAccAWSGlueCatalogDatabase_full(
 func TestAccAWSGlueCatalogDatabase_disappears(
-func TestAccAWSGlueCatalogTable_recreates(
 func TestAccAWSGlueCatalogTable_basic(
 func TestAccAWSGlueCatalogTable_columnParameters(
 func TestAccAWSGlueCatalogTable_full(
@@ -1710,8 +1710,8 @@ func TestAccAWSLaunchTemplate_hibernation(
 func TestAccAWSLaunchTemplate_defaultVersion(
 func TestAccAWSLaunchTemplate_updateDefaultVersion(
 func TestAccAWSLBCookieStickinessPolicy_basic(
-func TestAccAWSLBCookieStickinessPolicy_drift(
-func TestAccAWSLBCookieStickinessPolicy_missingLB(
+func TestAccAWSLBCookieStickinessPolicy_disappears(
+func TestAccAWSLBCookieStickinessPolicy_disappears_ELB(
 func TestAccAwsLbListenerCertificate_basic(
 func TestAccAwsLbListenerCertificate_multiple(
 func TestAccAWSLBListenerRule_basic(
@@ -2480,6 +2480,7 @@ func TestAccAWSSSMActivation_update(
 func TestAccAWSSSMActivation_expirationDate(
 func TestAccAWSSSMActivation_disappears(
 func TestAccAWSSSMAssociation_basic(
+func TestAccAWSSSMAssociation_disappears(
 func TestAccAWSSSMAssociation_withTargets(
 func TestAccAWSSSMAssociation_withParameters(
 func TestAccAWSSSMAssociation_withAssociationName(

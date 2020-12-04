@@ -5006,9 +5006,9 @@ func resourceAwsStorageGatewayGatewayCreate(
 func resourceAwsStorageGatewayGatewayRead(
 func resourceAwsStorageGatewayGatewayUpdate(
 func resourceAwsStorageGatewayGatewayDelete(
+func expandStorageGatewayGatewayDomain(
+func flattenStorageGatewayGatewayNetworkInterfaces(
 func isAWSErrStorageGatewayGatewayNotFound(
-func StorageGatewayGatewayConnectedStatus(
-func WaitForStorageGatewayGatewayConnected(
 func init(
 func resourceAwsStorageGatewayNfsFileShare(
 func resourceAwsStorageGatewayNfsFileShareCreate(

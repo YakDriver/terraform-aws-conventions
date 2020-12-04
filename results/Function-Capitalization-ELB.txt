@@ -1,6 +1,7 @@
 func TestAccDataSourceAWSELB_basic(
 func testAccDataSourceAWSELBConfigBasic(
 func resourceAwsELBSticknessPolicyAssigned(
+func TestAccAWSAppCookieStickinessPolicy_disappears_ELB(
 func getELBInstanceStates(
 func TestAccAWSAutoScalingGroup_ALB_TargetGroups_ELBCapacity(
 func testAccAWSAutoScalingGroupConfig_ALB_TargetGroup_ELBCapacity(
@@ -54,5 +55,6 @@ func testAccAWSELBAccessLogsDisabled(
 func testAccAWSELBAccessLogsCommon(
 func testAccELBConfig_Listener_IAMServerCertificate(
 func testAccELBConfig_Listener_IAMServerCertificate_AddInvalidListener(
+func TestAccAWSLBCookieStickinessPolicy_disappears_ELB(
 func TestAccAWSSpotFleetRequest_WithELBs(
 func testAccAWSSpotFleetRequestConfigWithELBs(

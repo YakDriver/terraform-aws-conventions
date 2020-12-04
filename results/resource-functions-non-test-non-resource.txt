@@ -2069,9 +2069,9 @@ func flattenSsmResourceDataSyncS3Destination(
 func expandSsmResourceDataSyncS3Destination(
 func parseStorageGatewayVolumeGatewayARNAndTargetNameFromARN(
 func decodeStorageGatewayCacheID(
+func expandStorageGatewayGatewayDomain(
+func flattenStorageGatewayGatewayNetworkInterfaces(
 func isAWSErrStorageGatewayGatewayNotFound(
-func StorageGatewayGatewayConnectedStatus(
-func WaitForStorageGatewayGatewayConnected(
 func init(
 func expandStorageGatewayNfsFileShareDefaults(
 func flattenStorageGatewayNfsFileShareDefaults(

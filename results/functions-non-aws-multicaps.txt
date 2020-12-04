@@ -867,7 +867,7 @@ func testAccAppautoscalingScheduledActionConfig_DynamoDB(
 func testAccAppautoscalingScheduledActionConfig_ECS(
 func testAccAppautoscalingScheduledActionConfig_EMR(
 func resourceAwsELBSticknessPolicyAssigned(
-func TestAccAWSAppCookieStickinessPolicy_missingLB(
+func TestAccAWSAppCookieStickinessPolicy_disappears_ELB(
 func testAccAppmeshVirtualGatewayConfigRootCA(
 func testAccAppmeshVirtualNodeConfigRootCA(
 func decodeAppsyncDataSourceID(
@@ -2258,11 +2258,10 @@ func resourceAwsLBCookieStickinessPolicyParseId(
 func TestAccAWSLBCookieStickinessPolicy_basic(
 func testAccCheckLBCookieStickinessPolicyDestroy(
 func testAccCheckLBCookieStickinessPolicy(
-func TestAccAWSLBCookieStickinessPolicy_drift(
-func TestAccAWSLBCookieStickinessPolicy_missingLB(
+func TestAccAWSLBCookieStickinessPolicy_disappears(
+func TestAccAWSLBCookieStickinessPolicy_disappears_ELB(
 func testAccLBCookieStickinessPolicyConfig(
 func testAccLBCookieStickinessPolicyConfigUpdate(
-func testAccLBCookieStickinessPolicyConfigDestroy(
 func suppressIfLBType(
 func cleanupLBNetworkInterfaces(
 func waitForNLBNetworkInterfacesToDetach(
@@ -3143,6 +3142,7 @@ func testAccAWSSSMActivationConfig_expirationDate(
 func expandSSMDocumentParameters(
 func expandSSMAssociationOutputLocation(
 func TestAccAWSSSMAssociation_basic(
+func TestAccAWSSSMAssociation_disappears(
 func TestAccAWSSSMAssociation_withTargets(
 func TestAccAWSSSMAssociation_withParameters(
 func TestAccAWSSSMAssociation_withAssociationName(

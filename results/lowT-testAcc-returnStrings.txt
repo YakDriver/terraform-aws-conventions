@@ -752,7 +752,6 @@ func testAccAWSAppautoscalingTarget_multipleTargets(tableName string) string {
 func testAccAWSAppautoscalingTarget_optionalRoleArn(tableName string) string {
 func testAccAppCookieStickinessPolicyConfig(rName string) string {
 func testAccAppCookieStickinessPolicyConfigUpdate(rName string) string {
-func testAccAppCookieStickinessPolicyConfigDestroy(rName string) string {
 func testAccAppmeshGatewayRouteConfigBase(meshName, vgName string) string {
 func testAccAppmeshGatewayRouteConfigGrpcRoute(meshName, vgName, grName string) string {
 func testAccAppmeshGatewayRouteConfigGrpcRouteUpdated(meshName, vgName, grName string) string {
@@ -1846,7 +1845,7 @@ func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
 func testAccAwsEbsVolumeConfigOutpost() string {
 func testAccAwsEbsVolumeConfigMultiAttach(rName string) string {
-func testAccEc2AvailabilityZoneGroupConfigOptInStatus(optInStatus string) string {
+func testAccEc2AvailabilityZoneGroupConfigOptInStatus(localZone, optInStatus string) string {
 func testAccEc2CapacityReservationConfig_ebsOptimized(ebsOptimized bool) string {
 func testAccEc2CapacityReservationConfig_endDate(endDate string) string {
 func testAccEc2CapacityReservationConfig_endDateType(endDateType string) string {
@@ -3119,7 +3118,6 @@ func testAccAWSLaunchTemplateConfig_descriptionDefaultVersion(rName, description
 func testAccAWSLaunchTemplateconfig_descriptionUpdateDefaultVersion(rName, description string, update bool) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
-func testAccLBCookieStickinessPolicyConfigDestroy(rName string) string {
 func testAccLbListenerCertificateConfigLbListenerBase(rName, key, certificate string) string {
 func testAccLbListenerCertificateConfig(rName, key, certificate string) string {
 func testAccLbListenerCertificateConfigMultiple(rName string, keys, certificates []string) string {
@@ -4326,7 +4324,9 @@ func testAccAWSStorageGatewayGatewayConfig_GatewayType_Stored(rName string) stri
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(rName, gatewayTimezone string) string {
 func testAccAWSStorageGatewayGatewayConfig_GatewayVpcEndpoint(rName string) string {
+func testAccAWSStorageGatewayGatewayConfigSmbActiveDirectorySettingsBase(rName string) string {
 func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettings(rName string) string {
+func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettingsTimeout(rName string, timeout int) string {
 func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(rName, smbGuestPassword string) string {
 func testAccAWSStorageGatewayGatewayConfigSMBSecurityStrategy(rName, strategy string) string {
 func testAccAWSStorageGatewayGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {

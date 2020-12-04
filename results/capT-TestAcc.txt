@@ -763,8 +763,8 @@ func TestAccAWSAppautoScalingTarget_emrCluster(
 func TestAccAWSAppautoScalingTarget_multipleTargets(
 func TestAccAWSAppautoScalingTarget_optionalRoleArn(
 func TestAccAWSAppCookieStickinessPolicy_basic(
-func TestAccAWSAppCookieStickinessPolicy_missingLB(
-func TestAccAWSAppCookieStickinessPolicy_drift(
+func TestAccAWSAppCookieStickinessPolicy_disappears_ELB(
+func TestAccAWSAppCookieStickinessPolicy_disappears(
 func TestAccAWSAppmesh_serial(
 func TestAccAWSAppsyncApiKey_basic(
 func TestAccAWSAppsyncApiKey_Description(
@@ -1892,7 +1892,7 @@ func TestAccAWSEcsTaskDefinition_changeVolumesForcesNewResource(
 func TestAccAWSEcsTaskDefinition_arrays(
 func TestAccAWSEcsTaskDefinition_Fargate(
 func TestAccAWSEcsTaskDefinition_ExecutionRole(
-func TestAccAWSEcsTaskDefinition_Inactive(
+func TestAccAWSEcsTaskDefinition_disappears(
 func TestAccAWSEcsTaskDefinition_Tags(
 func TestAccAWSEcsTaskDefinition_ProxyConfiguration(
 func TestAccAWSEcsTaskDefinition_inferenceAccelerator(
@@ -2244,7 +2244,6 @@ func TestAccAwsGlobalAcceleratorListener_basic(
 func TestAccAwsGlobalAcceleratorListener_update(
 func TestAccAWSGlueCatalogDatabase_full(
 func TestAccAWSGlueCatalogDatabase_disappears(
-func TestAccAWSGlueCatalogTable_recreates(
 func TestAccAWSGlueCatalogTable_basic(
 func TestAccAWSGlueCatalogTable_columnParameters(
 func TestAccAWSGlueCatalogTable_full(
@@ -2913,8 +2912,8 @@ func TestAccAWSLaunchTemplate_hibernation(
 func TestAccAWSLaunchTemplate_defaultVersion(
 func TestAccAWSLaunchTemplate_updateDefaultVersion(
 func TestAccAWSLBCookieStickinessPolicy_basic(
-func TestAccAWSLBCookieStickinessPolicy_drift(
-func TestAccAWSLBCookieStickinessPolicy_missingLB(
+func TestAccAWSLBCookieStickinessPolicy_disappears(
+func TestAccAWSLBCookieStickinessPolicy_disappears_ELB(
 func TestAccAwsLbListenerCertificate_basic(
 func TestAccAwsLbListenerCertificate_multiple(
 func TestAccAWSLBListenerRule_basic(
@@ -4031,6 +4030,7 @@ func TestAccAWSSSMActivation_update(
 func TestAccAWSSSMActivation_expirationDate(
 func TestAccAWSSSMActivation_disappears(
 func TestAccAWSSSMAssociation_basic(
+func TestAccAWSSSMAssociation_disappears(
 func TestAccAWSSSMAssociation_withTargets(
 func TestAccAWSSSMAssociation_withParameters(
 func TestAccAWSSSMAssociation_withAssociationName(
@@ -4119,6 +4119,7 @@ func TestAccAWSStorageGatewayGateway_CloudWatchLogs(
 func TestAccAWSStorageGatewayGateway_GatewayTimezone(
 func TestAccAWSStorageGatewayGateway_GatewayVpcEndpoint(
 func TestAccAWSStorageGatewayGateway_SmbActiveDirectorySettings(
+func TestAccAWSStorageGatewayGateway_SmbActiveDirectorySettings_timeout(
 func TestAccAWSStorageGatewayGateway_SmbGuestPassword(
 func TestAccAWSStorageGatewayGateway_SMBSecurityStrategy(
 func TestAccAWSStorageGatewayGateway_disappears(

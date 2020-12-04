@@ -215,7 +215,7 @@ func TestAccAWSEcsTaskDefinition_changeVolumesForcesNewResource(
 func TestAccAWSEcsTaskDefinition_arrays(
 func TestAccAWSEcsTaskDefinition_Fargate(
 func TestAccAWSEcsTaskDefinition_ExecutionRole(
-func TestAccAWSEcsTaskDefinition_Inactive(
+func TestAccAWSEcsTaskDefinition_disappears(
 func TestAccAWSEcsTaskDefinition_Tags(
 func TestAccAWSEcsTaskDefinition_ProxyConfiguration(
 func TestAccAWSEcsTaskDefinition_inferenceAccelerator(

@@ -2113,7 +2113,6 @@ func testAccCheckAppCookieStickinessPolicyDestroy(
 func testAccCheckAppCookieStickinessPolicy(
 func testAccAppCookieStickinessPolicyConfig(
 func testAccAppCookieStickinessPolicyConfigUpdate(
-func testAccAppCookieStickinessPolicyConfigDestroy(
 func resourceAwsAppmeshGatewayRoute(
 func resourceAwsAppmeshGatewayRouteCreate(
 func resourceAwsAppmeshGatewayRouteRead(
@@ -3201,7 +3200,9 @@ func resourceAwsCloudWatchEventTargetImport(
 func resourceAwsCloudWatchEventTargetV0(
 func resourceAwsCloudWatchEventTargetStateUpgradeV0(
 func testResourceAwsCloudWatchEventTargetStateDataV0(
+func testResourceAwsCloudWatchEventTargetStateDataV0EventBusName(
 func testResourceAwsCloudWatchEventTargetStateDataV1(
+func testResourceAwsCloudWatchEventTargetStateDataV1EventBusName(
 func init(
 func testSweepCloudWatchEventTargets(
 func testAccCheckCloudWatchEventTargetExists(
@@ -8862,7 +8863,6 @@ func testAccCheckLBCookieStickinessPolicyDestroy(
 func testAccCheckLBCookieStickinessPolicy(
 func testAccLBCookieStickinessPolicyConfig(
 func testAccLBCookieStickinessPolicyConfigUpdate(
-func testAccLBCookieStickinessPolicyConfigDestroy(
 func resourceAwsLb(
 func suppressIfLBType(
 func resourceAwsLbCreate(
@@ -12362,6 +12362,8 @@ func resourceAwsStorageGatewayGatewayCreate(
 func resourceAwsStorageGatewayGatewayRead(
 func resourceAwsStorageGatewayGatewayUpdate(
 func resourceAwsStorageGatewayGatewayDelete(
+func expandStorageGatewayGatewayDomain(
+func flattenStorageGatewayGatewayNetworkInterfaces(
 func isAWSErrStorageGatewayGatewayNotFound(
 func init(
 func testSweepStorageGatewayGateways(
@@ -12377,7 +12379,9 @@ func testAccAWSStorageGatewayGatewayConfig_GatewayType_Stored(
 func testAccAWSStorageGatewayGatewayConfig_GatewayType_Vtl(
 func testAccAWSStorageGatewayGatewayConfig_GatewayTimezone(
 func testAccAWSStorageGatewayGatewayConfig_GatewayVpcEndpoint(
+func testAccAWSStorageGatewayGatewayConfigSmbActiveDirectorySettingsBase(
 func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettings(
+func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettingsTimeout(
 func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(
 func testAccAWSStorageGatewayGatewayConfigSMBSecurityStrategy(
 func testAccAWSStorageGatewayGatewayConfigTags1(
