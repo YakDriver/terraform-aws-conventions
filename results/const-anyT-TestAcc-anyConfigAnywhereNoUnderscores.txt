@@ -1,7 +1,6 @@
 const testAccCheckAwsAmiDataSourceConfig =
 const testAccCheckAwsAmiDataSourceWindowsConfig =
 const testAccCheckAwsAmiDataSourceNameRegexConfig =
-const testAccDataSourceAwsArnConfig =
 const testAccCheckAwsAvailabilityZonesConfig =
 const testAccCheckAwsAvailabilityZonesStateConfig =
 const testAccCheckAwsBillingServiceAccountConfig =
@@ -193,7 +192,6 @@ const testAccVpnGatewayConfig =
 const testAccVpnGatewayConfigChangeVPC =
 const testAccCheckVpnGatewayConfigReattach =
 const testAccCheckVpnGatewayConfigReattachChange =
-const testAccVpnGatewayConfigWithAZ =
 const testAccVpnGatewayConfigWithASN =
 const testAccWebACLLoggingConfigurationResourceConfig =
 const testAccWebACLLoggingConfigurationResourceUpdateTwoRedactedFieldsConfig =

@@ -13,6 +13,7 @@ func testAccDataSourceAwsApiGatewayApiKeyConfig(r string) string {
 func testAccDataSourceAwsApiGatewayResourceConfig(r string) string {
 func testAccDataSourceAwsApiGatewayRestApiConfigName() string {
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(r string) string {
+func testAccDataSourceAwsArnConfig(arn string) string {
 func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(rInt1, rInt2, rInt3 int) string {
 func testAccAutoScalingGroupDataResourceConfig(rName string) string {
@@ -2336,6 +2337,7 @@ func testAccAwsVpnConnectionConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2
 func testAccVpnGatewayAttachmentConfig(rName string) string {
 func testAccCheckVpnGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccCheckVpnGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccVpnGatewayConfigWithAZ() string {
 func testAccAWSWafByteMatchSetConfig(name string) string {
 func testAccAWSWafByteMatchSetConfigChangeName(name string) string {
 func testAccAWSWafGeoMatchSetConfig(name string) string {

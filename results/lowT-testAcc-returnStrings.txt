@@ -17,6 +17,7 @@ func testAccDataSourceAwsApiGatewayApiKeyConfig(r string) string {
 func testAccDataSourceAwsApiGatewayResourceConfig(r string) string {
 func testAccDataSourceAwsApiGatewayRestApiConfigName() string {
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(r string) string {
+func testAccDataSourceAwsArnConfig(arn string) string {
 func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(rInt1, rInt2, rInt3 int) string {
 func testAccAutoScalingGroupDataResourceConfig(rName string) string {
@@ -811,20 +812,24 @@ func testAccAppmeshVirtualNodeConfig_mesh(rName string) string {
 func testAccAppmeshVirtualNodeConfigRootCA(rName string) string {
 func testAccAppmeshVirtualNodeConfigPrivateCert(rName string) string {
 func testAccAppmeshVirtualNodeConfig_basic(meshName, vnName string) string {
-func testAccAppmeshVirtualNodeConfig_cloudMapServiceDiscovery(meshName, vnName, rName, attrKey, attrValue string) string {
-func testAccAppmeshVirtualNodeConfig_listenerHealthChecks(meshName, vnName string) string {
-func testAccAppmeshVirtualNodeConfig_listenerHealthChecksUpdated(meshName, vnName string) string {
-func testAccAppmeshVirtualNodeConfig_listenerTimeout(meshName, vnName string) string {
-func testAccAppmeshVirtualNodeConfig_listenerTimeoutUpdated(meshName, vnName string) string {
-func testAccAppmeshVirtualNodeConfig_logging(meshName, vnName, path string) string {
-func testAccAppmeshVirtualNodeConfig_tags(meshName, vnName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAppmeshVirtualNodeConfig_tlsFile(meshName, vnName string) string {
-func testAccAppmeshVirtualNodeConfig_tlsAcm(meshName, vnName string) string {
-func testAccAppmeshVirtualNodeConfig_clientPolicyFile(meshName, vnName string) string {
-func testAccAppmeshVirtualNodeConfig_clientPolicyFileUpdated(meshName, vnName string) string {
-func testAccAppmeshVirtualNodeConfig_clientPolicyAcm(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_backendDefaults(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_backendDefaultsUpdated(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_backendClientPolicyAcm(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_backendClientPolicyFile(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_backendClientPolicyFileUpdated(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_cloudMapServiceDiscovery(meshName, vnName, rName, attrKey, attrValue string) string {
+func testAccAppmeshVirtualNodeConfig_listenerConnectionPool(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerConnectionPoolUpdated(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerHealthChecks(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerHealthChecksUpdated(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerOutlierDetection(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerOutlierDetectionUpdated(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerTimeout(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerTimeoutUpdated(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerTlsFile(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerTlsAcm(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_logging(meshName, vnName, path string) string {
+func testAccAppmeshVirtualNodeConfig_tags(meshName, vnName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAppmeshVirtualRouterConfig_basic(meshName, vrName string) string {
 func testAccAppmeshVirtualRouterConfig_updated(meshName, vrName string) string {
 func testAccAppmeshVirtualRouterConfig_tags(meshName, vrName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -4475,6 +4480,7 @@ func testAccAwsVpnConnectionConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2
 func testAccVpnGatewayAttachmentConfig(rName string) string {
 func testAccCheckVpnGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccCheckVpnGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccVpnGatewayConfigWithAZ() string {
 func testAccAWSWafByteMatchSetConfig(name string) string {
 func testAccAWSWafByteMatchSetConfigChangeName(name string) string {
 func testAccAWSWafByteMatchSetConfig_changeTuples(name string) string {

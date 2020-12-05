@@ -8590,6 +8590,7 @@ func TestAccAWSVpnGateway_disappears(
 func TestAccAWSVpnGateway_reattach(
 func TestAccAWSVpnGateway_delete(
 func TestAccAWSVpnGateway_tags(
+func testAccVpnGatewayConfigWithAZ(
 func TestAccAWSWafByteMatchSet_basic(
 func TestAccAWSWafByteMatchSet_changeNameForceNew(
 func TestAccAWSWafByteMatchSet_changeTuples(

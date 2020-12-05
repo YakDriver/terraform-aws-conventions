@@ -3400,6 +3400,7 @@ func TestAccAWSVpnConnection_TransitGatewayID(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func TestAccAWSVPNGatewayRoutePropagation_basic(
 func testSweepVPNGateways(
+func testAccVpnGatewayConfigWithAZ(
 func resourceAwsWafIPSet(
 func resourceAwsWafIPSetCreate(
 func resourceAwsWafIPSetRead(

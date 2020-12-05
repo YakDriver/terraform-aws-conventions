@@ -177,3 +177,4 @@ func testAccCheckVpnGatewayDestroy(
 func testAccCheckVpnGatewayExists(
 func testAccCheckVpnGatewayConfigTags1(
 func testAccCheckVpnGatewayConfigTags2(
+func testAccVpnGatewayConfigWithAZ(
