@@ -16,3 +16,6 @@ func testAccCheckNatGatewayDestroy(
 func testAccCheckNatGatewayExists(
 func testAccNatGatewayConfigTags1(
 func testAccNatGatewayConfigTags2(
+func TestAccAWSRouteTable_IPv4_To_NatGateway(
+func testAccAWSRouteTableConfigIpv4NatGateway(
+func testAccLatestAmazonNatInstanceAmiConfig(

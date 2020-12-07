@@ -1903,8 +1903,8 @@ func TestAccAWSDefaultNetworkAcl_withIpv6Ingress(
 func TestAccAWSDefaultNetworkAcl_SubnetRemoval(
 func TestAccAWSDefaultNetworkAcl_SubnetReassign(
 func TestAccAWSDefaultRouteTable_basic(
-func TestAccAWSDefaultRouteTable_Route(
 func TestAccAWSDefaultRouteTable_swap(
+func TestAccAWSDefaultRouteTable_VpcEndpointAssociation(
 func TestAccAWSDefaultRouteTable_tags(
 func TestAccAWSDefaultRouteTable_ConditionalCidrBlock(
 func testAccAWSDefaultSecurityGroupConfig_Classic(
@@ -4183,14 +4183,16 @@ func TestAccAWSRoute53Zone_ForceDestroy(
 func TestAccAWSRoute53Zone_Tags(
 func TestAccAWSRouteTableAssociation_disappears(
 func TestAccAWSRouteTable_basic(
-func TestAccAWSRouteTable_instance(
-func TestAccAWSRouteTable_ipv6(
+func TestAccAWSRouteTable_disappears(
 func TestAccAWSRouteTable_tags(
 func TestAccAWSRouteTable_RequireRouteDestination(
 func TestAccAWSRouteTable_RequireRouteTarget(
-func TestAccAWSRouteTable_vpcPeering(
 func TestAccAWSRouteTable_vgwRoutePropagation(
 func TestAccAWSRouteTable_ConditionalCidrBlock(
+func TestAccAWSRouteTable_VpcMultipleCidrs(
+func TestAccAWSRouteTable_VpcClassicLink(
+func TestAccAWSRouteTable_GatewayVpcEndpoint(
+func TestAccAWSRouteTable_MultipleRoutes(
 func TestAccAWSRoute_basic(
 func TestAccAWSRoute_disappears(
 func TestAccAWSRoute_ipv6Support(
@@ -4733,6 +4735,7 @@ func TestAccAWSSSMMaintenanceWindow_Enabled(
 func TestAccAWSSSMMaintenanceWindow_EndDate(
 func TestAccAWSSSMMaintenanceWindow_Schedule(
 func TestAccAWSSSMMaintenanceWindow_ScheduleTimezone(
+func TestAccAWSSSMMaintenanceWindow_ScheduleOffset(
 func TestAccAWSSSMMaintenanceWindow_StartDate(
 func TestAccAWSSSMParameter_basic(
 func TestAccAWSSSMParameter_Tier(

@@ -1582,13 +1582,18 @@ func testAccAwsDbSnapshotConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Val
 func testAccDBSubnetGroupConfig(rName string) string {
 func testAccDBSubnetGroupConfig_updatedDescription(rName string) string {
 func testAccDefaultRouteTableConfigDefaultRouteTableId(defaultRouteTableId string) string {
-func testAccDefaultRouteTableConfigRequired() string {
-func testAccAWSDefaultRouteTableConfigRouteTransitGatewayID() string {
-func testAccAWSDefaultRouteTableConfigRouteVpcEndpointId(rName string) string {
-func testAccAWSDefaultRouteTableConfigRouteVpcEndpointIdNoRoute(rName string) string {
+func testAccDefaultRouteTableConfigBasic(rName string) string {
+func testAccDefaultRouteTableConfigIpv4InternetGateway(rName, destinationCidr string) string {
+func testAccDefaultRouteTableConfigNoRouteBlock(rName string) string {
+func testAccDefaultRouteTableConfigRouteBlocksExplicitZero(rName string) string {
+func testAccDefaultRouteTableConfigSwap(rName, destinationCidr1, destinationCidr2 string) string {
+func testAccDefaultRouteTableConfigIpv4TransitGateway(rName, destinationCidr string) string {
+func testAccDefaultRouteTableConfigIpv4VpcEndpoint(rName, destinationCidr string) string {
+func testAccDefaultRouteTableConfigIpv4VpcEndpointNoRoute(rName string) string {
+func testAccDefaultRouteTableConfigVpcEndpointAssociation(rName, destinationCidr string) string {
 func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSDefaultRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
+func testAccDefaultRouteTableConfigConditionalIpv4Ipv6(rName, destinationCidr, destinationIpv6Cidr string, ipv6Route bool) string {
 func testAccAWSDefaultSecurityGroupConfig_Classic() string {
 func testAccAWSDefaultSecurityGroupConfig_Classic_empty() string {
 func testAccAWSDefaultSubnetConfigBasic(rInt int) string {
@@ -3443,17 +3448,29 @@ func testAccRoute53ZoneConfigTagsSingle(zoneName, tag1Key, tag1Value string) str
 func testAccRoute53ZoneConfigTagsMultiple(zoneName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccRoute53ZoneConfigVPCSingle(rName, zoneName string) string {
 func testAccRoute53ZoneConfigVPCMultiple(rName, zoneName string) string {
-func testAccRouteTableConfigInstance() string {
+func testAccAWSRouteTableConfigBasic(rName string) string {
+func testAccAWSRouteTableConfigSubnetAssociation(rName string) string {
+func testAccAWSRouteTableConfigIpv4InternetGateway(rName, destinationCidr1, destinationCidr2 string) string {
+func testAccAWSRouteTableConfigIpv6EgressOnlyInternetGateway(rName, destinationCidr string) string {
+func testAccAWSRouteTableConfigIpv4Instance(rName, destinationCidr string) string {
 func testAccAWSRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccRouteTableConfigNoDestination() string {
-func testAccAWSRouteTableConfigRouteConfigModeBlocks() string {
-func testAccAWSRouteTableConfigRouteConfigModeNoBlocks() string {
-func testAccAWSRouteTableConfigRouteConfigModeZeroed() string {
-func testAccAWSRouteTableConfigRouteTransitGatewayID() string {
-func testAccAWSRouteTableConfigRouteVpcEndpointId(rName string) string {
-func testAccAWSRouteTableConfigRouteLocalGatewayID() string {
-func testAccAWSRouteTableConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
+func testAccAWSRouteTableConfigIpv4VpcPeeringConnection(rName, destinationCidr string) string {
+func testAccAWSRouteTableConfigVgwRoutePropagation(rName, vgwResourceName string) string {
+func testAccRouteTableConfigNoDestination(rName string) string {
+func testAccRouteTableConfigNoTarget(rName string) string {
+func testAccAWSRouteTableConfigRouteConfigModeNoBlocks(rName string) string {
+func testAccAWSRouteTableConfigRouteConfigModeZeroed(rName string) string {
+func testAccAWSRouteTableConfigIpv4TransitGateway(rName, destinationCidr string) string {
+func testAccAWSRouteTableConfigRouteIpv4VpcEndpointId(rName, destinationCidr string) string {
+func testAccAWSRouteTableConfigRouteIpv4LocalGateway(rName, destinationCidr string) string {
+func testAccAWSRouteTableConfigConditionalIpv4Ipv6(rName, destinationCidr, destinationIpv6Cidr string, ipv6Route bool) string {
+func testAccAWSRouteTableConfigIpv4NatGateway(rName, destinationCidr string) string {
+func testAccAWSRouteTableConfigIpv6NetworkInterfaceUnattached(rName, destinationCidr string) string {
+func testAccAWSRouteTableConfigVpcMultipleCidrs(rName string) string {
+func testAccAWSRouteTableConfigVpcClassicLink(rName string) string {
+func testAccAWSRouteTableConfigGatewayVpcEndpoint(rName string) string {
+func testAccLatestAmazonNatInstanceAmiConfig() string {
 func testAccAWSRouteBasicConfig() string {
 func testAccAWSRouteConfigIpv6InternetGateway() string {
 func testAccAWSRouteConfigIpv6NetworkInterface() string {
@@ -3902,6 +3919,7 @@ func testAccAWSSSMMaintenanceWindowConfigEndDate(rName, endDate string) string {
 func testAccAWSSSMMaintenanceWindowConfigMultipleUpdates(rName string) string {
 func testAccAWSSSMMaintenanceWindowConfigSchedule(rName, schedule string) string {
 func testAccAWSSSMMaintenanceWindowConfigScheduleTimezone(rName, scheduleTimezone string) string {
+func testAccAWSSSMMaintenanceWindowConfigScheduleOffset(rName string, scheduleOffset int) string {
 func testAccAWSSSMMaintenanceWindowConfigStartDate(rName, startDate string) string {
 func testAccAWSSSMParameterBasicConfig(rName, pType, value string) string {
 func testAccAWSSSMParameterConfigTier(rName, tier string) string {

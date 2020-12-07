@@ -23,6 +23,8 @@ func TestAccDataSourceAwsWafv2IPSet_basic(
 func testAccDataSourceAwsWafv2IPSet_Name(
 func testAccDataSourceAwsWafv2IPSet_NonExistent(
 func TestAccAWSCloudFrontDistribution_IsIPV6EnabledConfig(
+func TestAccAWSDefaultRouteTable_IPv4_To_TransitGateway(
+func TestAccAWSDefaultRouteTable_IPv4_To_VpcEndpoint(
 func TestAccAWSEcsTaskDefinition_withIPCMode(
 func TestAccAWSEIPAssociation_instance(
 func TestAccAWSEIPAssociation_networkInterface(
@@ -102,6 +104,15 @@ func testAccAWSENIIPV6Config(
 func testAccAWSENIIPV6MultipleConfig(
 func testAccAWSENIIPV6CountConfig(
 func testAccAWSENIConfigWithNoPrivateIPs(
+func TestAccAWSRouteTable_IPv4_To_InternetGateway(
+func TestAccAWSRouteTable_IPv4_To_Instance(
+func TestAccAWSRouteTable_IPv6_To_EgressOnlyInternetGateway(
+func TestAccAWSRouteTable_IPv4_To_TransitGateway(
+func TestAccAWSRouteTable_IPv4_To_VpcEndpoint(
+func TestAccAWSRouteTable_IPv4_To_LocalGateway(
+func TestAccAWSRouteTable_IPv4_To_VpcPeeringConnection(
+func TestAccAWSRouteTable_IPv4_To_NatGateway(
+func TestAccAWSRouteTable_IPv6_To_NetworkInterface_Unattached(
 func resourceAwsSecurityGroupIPPermGather(
 func expandIPPerm(
 func setFromIPPerm(

@@ -19,6 +19,8 @@ func testAccAWSRedshiftSecurityGroupConfig_ingressCidr(
 func testAccAWSRedshiftSecurityGroupConfig_ingressCidrAdd(
 func testAccAWSRedshiftSecurityGroupConfig_ingressCidrReduce(
 func TestAccAWSRouteTable_ConditionalCidrBlock(
+func TestAccAWSRouteTable_VpcMultipleCidrs(
+func testAccAWSRouteTableConfigVpcMultipleCidrs(
 func TestAccAWSRoute_changeCidr(
 func TestAccAWSRoute_TransitGatewayID_DestinationCidrBlock(
 func TestAccAWSRoute_ConditionalCidrBlock(
@@ -49,3 +51,4 @@ func testAccVpcConfigAssignGeneratedIpv6CidrBlock(
 func canonicalCidrBlock(
 func TestCidrBlocksEqual(
 func TestCanonicalCidrBlock(
+func Test_canonicalCidrBlock(

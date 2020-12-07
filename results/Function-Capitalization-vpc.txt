@@ -6,7 +6,6 @@ func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpBase(
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttp(
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpUpdated(
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkWebSocket(
-func TestAccAWSDefaultRouteTable_vpc_endpoint(
 func TestAccAWSElasticacheCluster_vpc(
 func TestAccAWSElasticacheReplicationGroup_vpc(
 func TestAccAWSElasticSearchDomain_vpc(
@@ -15,7 +14,6 @@ func testAccESDomainConfig_vpc(
 func testAccESDomainConfig_vpc_update1(
 func testAccESDomainConfig_vpc_update2(
 func TestAccAWSOpsworksStack_vpc(
-func TestAccAWSRouteTable_vpcPeering(
 func testAccAWSS3AccessPointConfig_vpc(
 func TestAccAWSSagemakerModel_vpcConfig(
 func TestAccAWSSecurityGroup_vpc(

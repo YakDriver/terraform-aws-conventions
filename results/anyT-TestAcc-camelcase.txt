@@ -1449,7 +1449,6 @@ func testAccRoute53ResolverRuleConfig_forwardEndpointRecreate(
 func testAccRoute53ResolverRuleConfig_resolverVpc(
 func testAccRoute53ResolverRuleConfig_resolverEndpoint(
 func testAccRoute53ResolverRuleConfig_resolverEndpointRecreate(
-func TestAccAWSRouteTable_vpcPeering(
 func TestAccAWSRouteTable_vgwRoutePropagation(
 func TestAccAWSRoute_ipv6Support(
 func TestAccAWSRoute_ipv6ToInternetGateway(

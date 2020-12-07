@@ -1563,7 +1563,6 @@ func TestAccAWSDefaultNetworkAcl_withIpv6Ingress(
 func TestAccAWSDefaultRouteTable_basic(
 func TestAccAWSDefaultRouteTable_disappears_Vpc(
 func TestAccAWSDefaultRouteTable_swap(
-func TestAccAWSDefaultRouteTable_vpc_endpoint(
 func TestAccAWSDefaultRouteTable_tags(
 func TestAWSDefaultSecurityGroupMigrateState_empty(
 func TestAccAWSDefaultSubnet_basic(
@@ -3510,10 +3509,9 @@ func TestAccAWSRoute53Zone_disappears(
 func TestAccAWSRoute53Zone_multiple(
 func TestAccAWSRouteTableAssociation_disappears(
 func TestAccAWSRouteTable_basic(
-func TestAccAWSRouteTable_instance(
-func TestAccAWSRouteTable_ipv6(
+func TestAccAWSRouteTable_disappears(
+func TestAccAWSRouteTable_disappears_SubnetAssociation(
 func TestAccAWSRouteTable_tags(
-func TestAccAWSRouteTable_vpcPeering(
 func TestAccAWSRouteTable_vgwRoutePropagation(
 func TestAccAWSRoute_basic(
 func TestAccAWSRoute_disappears(
@@ -4346,3 +4344,4 @@ func TestExpandListeners_invalid(
 func TestExpandPolicyAttributes_invalid(
 func TestExpandPolicyAttributes_empty(
 func TestExpandRdsClusterScalingConfiguration_basic(
+func Test_canonicalCidrBlock(

@@ -779,7 +779,10 @@ func TestAccAWSRoute53Zone_VPC_Multiple(
 func testAccRoute53ZoneConfigMultiple(
 func testAccRoute53ZoneConfigTagsMultiple(
 func testAccRoute53ZoneConfigVPCMultiple(
-func TestAccAWSRouteTable_ipv6(
+func TestAccAWSRouteTable_VpcMultipleCidrs(
+func TestAccAWSRouteTable_MultipleRoutes(
+func testAccAWSRouteTableConfigVpcMultipleCidrs(
+func testAccAWSRouteTableConfigMultipleRoutes(
 func TestAccAWSRoute_ipv6Support(
 func TestAccAWSRoute_ipv6ToInternetGateway(
 func TestAccAWSRoute_ipv6ToInstance(
