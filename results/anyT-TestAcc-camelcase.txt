@@ -859,6 +859,7 @@ func TestAccAWSGlueMLTransform_maxRetries(
 func TestAccAWSGlueMLTransform_workerType(
 func TestAccAWSGlueMLTransform_maxCapacity(
 func TestAccAWSGluePartition_multipleValues(
+func TestAccAWSGlueSchema_schemaDefUpdated(
 func TestAccAWSGlueWorkflow_maxConcurrentRuns(
 func testAccGuardDutyFilterConfig_multipleTags(
 func testAccGuardDutyFilterConfig_updateTags(

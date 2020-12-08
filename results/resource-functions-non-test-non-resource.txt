@@ -1033,6 +1033,7 @@ func init(
 func expandGluePartitionInput(
 func init(
 func CreateTablePolicy(
+func init(
 func deleteGlueSecurityConfiguration(
 func expandGlueCloudWatchEncryption(
 func expandGlueEncryptionConfiguration(

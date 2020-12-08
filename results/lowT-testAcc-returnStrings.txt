@@ -2538,6 +2538,13 @@ func testAccAWSGlueRegistryBasicConfig(rName string) string {
 func testAccAWSGlueRegistryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGlueRegistryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSGlueResourcePolicy_Required(action string) string {
+func testAccAWSGlueSchemaBase(rName string) string {
+func testAccAWSGlueSchemaDescriptionConfig(rName, description string) string {
+func testAccAWSGlueSchemaCompatibillityConfig(rName, compat string) string {
+func testAccAWSGlueSchemaBasicConfig(rName string) string {
+func testAccAWSGlueSchemaConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSGlueSchemaConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSGlueSchemaConfigSchemaDefinitionUpdated(rName string) string {
 func testAccAWSGlueSecurityConfigurationConfig_Basic(rName string) string {
 func testAccAWSGlueSecurityConfigurationConfig_CloudWatchEncryption_CloudWatchEncryptionMode_SSEKMS(rName string) string {
 func testAccAWSGlueSecurityConfigurationConfig_JobBookmarksEncryption_JobBookmarksEncryptionMode_CSEKMS(rName string) string {
@@ -4710,6 +4717,8 @@ func testAccWorkspacesDirectoryConfig_subnetIds(rName string) string {
 func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccWorkspacesDirectoryConfig_workspaceCreationProperties(rName string) string {
+func testAccWorkspacesDirectoryConfig_workspaceCreationProperties_customSecurityGroupId_defaultOu_Absent(rName string) string {
+func testAccWorkspacesDirectoryConfig_workspaceCreationProperties_customSecurityGroupId_defaultOu_Present(rName string) string {
 func testAccWorkspacesDirectoryConfig_ipGroupIds_create(rName string) string {
 func testAccWorkspacesDirectoryConfig_ipGroupIds_update(rName string) string {
 func testAccAwsWorkspacesIpGroupConfigA(name, description string) string {

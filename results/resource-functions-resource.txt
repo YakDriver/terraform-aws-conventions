@@ -1546,6 +1546,11 @@ func resourceAwsGlueResourcePolicy(
 func resourceAwsGlueResourcePolicyPut(
 func resourceAwsGlueResourcePolicyRead(
 func resourceAwsGlueResourcePolicyDelete(
+func resourceAwsGlueSchema(
+func resourceAwsGlueSchemaCreate(
+func resourceAwsGlueSchemaRead(
+func resourceAwsGlueSchemaUpdate(
+func resourceAwsGlueSchemaDelete(
 func resourceAwsGlueSecurityConfiguration(
 func resourceAwsGlueSecurityConfigurationCreate(
 func resourceAwsGlueSecurityConfigurationRead(

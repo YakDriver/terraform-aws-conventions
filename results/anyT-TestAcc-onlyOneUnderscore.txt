@@ -2809,6 +2809,12 @@ func testAccAWSGlueResourcePolicy_basic(
 func testAccAWSGlueResourcePolicy_disappears(
 func testAccAWSGlueResourcePolicy_Required(
 func testAccAWSGlueResourcePolicy_update(
+func TestAccAWSGlueSchema_basic(
+func TestAccAWSGlueSchema_description(
+func TestAccAWSGlueSchema_compatibility(
+func TestAccAWSGlueSchema_tags(
+func TestAccAWSGlueSchema_schemaDefUpdated(
+func TestAccAWSGlueSchema_disappears(
 func TestAccAWSGlueSecurityConfiguration_basic(
 func testAccAWSGlueSecurityConfigurationConfig_Basic(
 func TestAccAWSGlue_serial(

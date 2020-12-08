@@ -3003,6 +3003,11 @@ func resourceAwsGlueResourcePolicy(
 func resourceAwsGlueResourcePolicyPut(
 func resourceAwsGlueResourcePolicyRead(
 func resourceAwsGlueResourcePolicyDelete(
+func resourceAwsGlueSchema(
+func resourceAwsGlueSchemaCreate(
+func resourceAwsGlueSchemaRead(
+func resourceAwsGlueSchemaUpdate(
+func resourceAwsGlueSchemaDelete(
 func resourceAwsGlueSecurityConfiguration(
 func resourceAwsGlueSecurityConfigurationCreate(
 func resourceAwsGlueSecurityConfigurationRead(
@@ -5720,6 +5725,7 @@ func TestAccAwsWorkspacesDirectory_subnetIds(
 func TestAccAwsWorkspacesDirectory_tags(
 func TestAccAwsWorkspacesDirectory_selfServicePermissions(
 func TestAccAwsWorkspacesDirectory_workspaceCreationProperties(
+func TestAccAwsWorkspacesDirectory_workspaceCreationProperties_customSecurityGroupId_defaultOu(
 func TestAccAwsWorkspacesDirectory_ipGroupIds(
 func testAccCheckAwsWorkspacesDirectoryDestroy(
 func testAccCheckAwsWorkspacesDirectoryDisappears(
