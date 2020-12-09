@@ -1719,6 +1719,12 @@ func resourceAwsEc2CapacityReservationRead(
 func resourceAwsEc2CapacityReservationUpdate(
 func resourceAwsEc2CapacityReservationDelete(
 func init(
+func resourceAwsEc2CarrierGateway(
+func resourceAwsEc2CarrierGatewayCreate(
+func resourceAwsEc2CarrierGatewayRead(
+func resourceAwsEc2CarrierGatewayUpdate(
+func resourceAwsEc2CarrierGatewayDelete(
+func init(
 func resourceAwsEc2ClientVpnAuthorizationRule(
 func resourceAwsEc2ClientVpnAuthorizationRuleCreate(
 func resourceAwsEc2ClientVpnAuthorizationRuleRead(

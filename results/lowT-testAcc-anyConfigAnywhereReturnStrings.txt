@@ -1753,6 +1753,9 @@ func testAccEc2CapacityReservationConfig_instanceType(instanceType string) strin
 func testAccEc2CapacityReservationConfig_tags_single(tag1Key, tag1Value string) string {
 func testAccEc2CapacityReservationConfig_tags_multiple(tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccEc2CapacityReservationConfig_tenancy(tenancy string) string {
+func testAccEc2CarrierGatewayConfig(rName string) string {
+func testAccEc2CarrierGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccEc2CarrierGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccEc2ClientVpnAuthorizationRuleConfigBasic(rName string) string {
 func testAccEc2ClientVpnAuthorizationRuleConfigGroups(rName string, groupNames map[string]string) string {
 func testAccEc2ClientVpnAuthorizationRuleConfigSubnets(rName string, subnetCount int, groupNames map[string]int) string {
@@ -2491,6 +2494,7 @@ func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingEbsVolumeSize(rNam
 func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingEbsVolumeType(rName string, volumeType string) string {
 func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingNoDevice(rName string, noDevice bool) string {
 func testAccAwsImageBuilderImageRecipeConfigBlockDeviceMappingVirtualName(rName string, virtualName string) string {
+func testAccAwsImageBuilderImageRecipeConfigComponent(rName string) string {
 func testAccAwsImageBuilderImageRecipeConfigDescription(rName string, description string) string {
 func testAccAwsImageBuilderImageRecipeConfigName(rName string) string {
 func testAccAwsImageBuilderImageRecipeConfigTags1(rName string, tagKey1 string, tagValue1 string) string {

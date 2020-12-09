@@ -623,6 +623,7 @@ func ec2DescribeAvailabilityZoneGroup(
 func ec2AvailabilityZoneGroupOptInStatusRefreshFunc(
 func waitForEc2AvailabilityZoneGroupOptInStatus(
 func init(
+func init(
 func deleteClientVpnAuthorizationRule(
 func flattenConnLoggingConfig(
 func flattenAuthOptsConfig(

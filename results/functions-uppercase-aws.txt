@@ -3040,6 +3040,10 @@ func TestAccAWSEc2CapacityReservation_tags(
 func TestAccAWSEc2CapacityReservation_disappears(
 func TestAccAWSEc2CapacityReservation_tenancy(
 func testAccPreCheckAWSEc2CapacityReservation(
+func TestAccAWSEc2CarrierGateway_basic(
+func TestAccAWSEc2CarrierGateway_disappears(
+func TestAccAWSEc2CarrierGateway_Tags(
+func testAccPreCheckAWSWavelengthZoneAvailable(
 func TestAccAWSEc2Fleet_basic(
 func TestAccAWSEc2Fleet_disappears(
 func TestAccAWSEc2Fleet_ExcessCapacityTerminationPolicy(
