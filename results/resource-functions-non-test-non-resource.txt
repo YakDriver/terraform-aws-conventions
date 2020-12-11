@@ -1427,6 +1427,7 @@ func updateKmsKeyStatus(
 func updateKmsKeyRotationStatus(
 func handleKeyRotation(
 func init(
+func isLakeFormationResourceNotFoundErr(
 func expandLambdaAliasRoutingConfiguration(
 func expandLambdaCodeSigningConfigAllowedPublishers(
 func flattenLambdaCodeSigningConfigAllowedPublishers(

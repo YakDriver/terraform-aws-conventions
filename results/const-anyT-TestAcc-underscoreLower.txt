@@ -80,7 +80,6 @@ const testAccAWSDBClusterParameterGroupConfig_namePrefix_Parameter =
 const testAccAWSDBClusterParameterGroupConfig_generatedName =
 const testAccAWSDBClusterParameterGroupConfig_generatedName_Parameter =
 const testAccRoute53HealthCheckConfig_withChildHealthChecks =
-const testAccRoute53HealthCheckConfig_withHealthCheckRegions =
 const testAccRoute53RecordConfig_nameWithTrailingPeriod =
 const testAccRoute53RecordConfig_fqdn =
 const testAccRoute53RecordConfig_fqdn_no_op =

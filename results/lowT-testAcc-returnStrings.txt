@@ -211,10 +211,12 @@ func testAccLaunchConfigurationDataSourceConfig_basic(rName string) string {
 func testAccLaunchConfigurationDataSourceConfig_securityGroups(rInt int) string {
 func testAccLaunchConfigurationDataSourceConfigEbsNoDevice(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfig_Basic(rName string) string {
+func testAccAWSLaunchTemplateDataSourceConfig_BasicId(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfigBasicFilter(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfigFilterTags(rName string, rInt int) string {
 func testAccAWSLaunchTemplateDataSourceConfig_metadataOptions(rName string) string {
 func testAccAWSLaunchTemplateDataSourceConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
+func testAccAWSLaunchTemplateDataSourceConfig_associateCarrierIpAddress(rName, associateCarrierIPAddress string) string {
 func testAccAWSLaunchTemplateDataSourceConfigNetworkInterfacesDeleteOnTermination(rName, deleteOnTermination string) string {
 func testAccDataSourceAWSLBListenerConfigBasic(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
@@ -3010,6 +3012,8 @@ func testAccAWSKmsKey_enabledRotation(rName string) string {
 func testAccAWSKmsKey_disabled(rName string) string {
 func testAccAWSKmsKey_enabled(rName string) string {
 func testAccAWSKmsKey_tags(rName string) string {
+func testAccAWSLakeFormationResourceConfig_basic(bucket, role string) string {
+func testAccAWSLakeFormationResourceConfig_serviceLinkedRole(rName string) string {
 func testAccAwsLambdaAliasBaseConfig(roleName, policyName, attachmentName string) string {
 func testAccAwsLambdaAliasConfig(roleName, policyName, attachmentName, funcName, aliasName string) string {
 func testAccAwsLambdaAliasConfigUsingFunctionName(roleName, policyName, attachmentName, funcName, aliasName string) string {
@@ -3118,6 +3122,7 @@ func testAccAWSLaunchTemplateConfig_basic(rName string) string {
 func testAccAWSLaunchTemplateConfig_ipv6_count(rName string) string {
 func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS(rName string) string {
 func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS_DeleteOnTermination(rName string, deleteOnTermination bool) string {
+func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS_Gp3(rName string) string {
 func testAccAWSLaunchTemplateConfig_NetworkInterfaces_DeleteOnTermination(rName string, deleteOnTermination string) string {
 func testAccAWSLaunchTemplateConfig_EbsOptimized(rName, ebsOptimized string) string {
 func testAccAWSLaunchTemplateConfigElasticInferenceAccelerator(rName, elasticInferenceAcceleratorType string) string {
@@ -3134,6 +3139,7 @@ func testAccAWSLaunchTemplateConfig_networkInterface(rName string) string {
 func testAccAWSLaunchTemplateConfigPartition(rName string, partNum int) string {
 func testAccAWSLaunchTemplateConfig_networkInterfaceAddresses(rName string) string {
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
+func testAccAWSLaunchTemplateConfig_associateCarrierIpAddress(rName, associateCarrierIPAddress string) string {
 func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(rName string) string {
 func testAccAWSLaunchTemplateConfig_metadataOptions(rName string) string {
 func testAccAWSLaunchTemplateConfigHibernation(rName string, enabled bool) string {
@@ -3769,9 +3775,11 @@ func testAccRoute53DelegationSetConfig(refName string) string {
 func testAccRoute53DelegationSetWithZonesConfig(refName, zoneName1, zoneName2 string) string {
 func testAccRoute53HealthCheckConfigTags1(tag1Key, tag1Value string) string {
 func testAccRoute53HealthCheckConfigTags2(tag1Key, tag1Value, tagKey2, tagValue2 string) string {
+func testAccRoute53HealthCheckConfig_withHealthCheckRegions(regions ...string) string {
 func testAccRoute53HealthCheckConfigDisabled(disabled bool) string {
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(rName string) string {
 func testAccRoute53RecordConfig_allowOverwrite(allowOverwrite bool) string {
+func testAccRoute53LatencyCNAMERecord(firstRegion, secondRegion, thirdRegion string) string {
 func testAccRoute53RecordConfigAliasS3(rName string) string {
 func testAccRoute53RecordConfigHealthCheckIdSetIdentifier(setIdentifier string) string {
 func testAccRoute53RecordConfigHealthCheckIdTypeA() string {
@@ -4229,6 +4237,8 @@ func testAccAWSSpotFleetRequestConfigWithWeightedCapacity(rName, validUntil stri
 func testAccAWSSpotFleetRequestEBSConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestLaunchSpecificationEbsBlockDeviceKmsKeyId(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestLaunchSpecificationRootBlockDeviceKmsKeyId(rName, validUntil string) string {
+func testAccAWSSpotFleetRequestLaunchSpecificationEbsBlockDeviceGp3(rName string) string {
+func testAccAWSSpotFleetRequestLaunchSpecificationRootBlockDeviceGp3(rName string) string {
 func testAccAWSSpotFleetRequestLaunchSpecificationWithInstanceStoreAmi(rName string, validUntil string) string {
 func testAccAWSSpotFleetRequestTagsConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestTenancyGroupConfig(rName, validUntil string) string {

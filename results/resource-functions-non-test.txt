@@ -3291,6 +3291,11 @@ func updateKmsKeyRotationStatus(
 func handleKeyRotation(
 func resourceAwsKmsKeyDelete(
 func init(
+func resourceAwsLakeFormationResource(
+func resourceAwsLakeFormationResourceCreate(
+func resourceAwsLakeFormationResourceRead(
+func resourceAwsLakeFormationResourceDelete(
+func isLakeFormationResourceNotFoundErr(
 func resourceAwsLambdaAlias(
 func resourceAwsLambdaAliasCreate(
 func resourceAwsLambdaAliasRead(

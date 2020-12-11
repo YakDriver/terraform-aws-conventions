@@ -3572,6 +3572,10 @@ func resourceAwsKmsKeyUpdate(
 func resourceAwsKmsKeyDescriptionUpdate(
 func resourceAwsKmsKeyPolicyUpdate(
 func resourceAwsKmsKeyDelete(
+func resourceAwsLakeFormationResource(
+func resourceAwsLakeFormationResourceCreate(
+func resourceAwsLakeFormationResourceRead(
+func resourceAwsLakeFormationResourceDelete(
 func resourceAwsLambdaAlias(
 func resourceAwsLambdaAliasCreate(
 func resourceAwsLambdaAliasRead(

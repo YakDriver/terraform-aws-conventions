@@ -33,7 +33,6 @@ const testAccAWSPinpointAppConfig_withGeneratedName =
 const testAccAWSDBClusterParameterGroupConfig_namePrefix =
 const testAccAWSDBClusterParameterGroupConfig_generatedName =
 const testAccRoute53HealthCheckConfig_withChildHealthChecks =
-const testAccRoute53HealthCheckConfig_withHealthCheckRegions =
 const testAccRoute53RecordConfig_nameWithTrailingPeriod =
 const testAccRoute53ResolverRuleConfig_basicNoTags =
 const testAccRoute53ResolverRuleConfig_basicTags =
