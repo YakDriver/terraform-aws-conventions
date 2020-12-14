@@ -52,6 +52,7 @@ func testAccCheckAwsAutoscalingGroupsAvailable(
 func testAccCheckAwsAutoscalingGroupsConfig(
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(
 func TestAccAwsAutoScalingGroupDataSource_basic(
+func TestAccAwsAutoScalingGroupDataSource_launchTemplate(
 func dataSourceAwsAvailabilityZone(
 func dataSourceAwsAvailabilityZoneRead(
 func dataSourceAwsAvailabilityZones(

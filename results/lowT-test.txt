@@ -30,6 +30,7 @@ func testAccCheckAwsAutoscalingGroupsAvailable(attrs map[string]string) (
 func testAccCheckAwsAutoscalingGroupsConfig(
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(
 func testAccAutoScalingGroupDataResourceConfig(
+func testAccAutoScalingGroupDataResourceConfig_launchTemplate(
 func testAccCheckAwsAvailabilityZonesMeta(
 func testAccCheckAwsAvailabilityZonesExcluded(
 func testAccCheckAwsAvailabilityZoneState(

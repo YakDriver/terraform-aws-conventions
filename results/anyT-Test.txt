@@ -108,7 +108,9 @@ func testAccCheckAwsAutoscalingGroupsAvailable(attrs map[string]string) (
 func testAccCheckAwsAutoscalingGroupsConfig(
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(
 func TestAccAwsAutoScalingGroupDataSource_basic(
+func TestAccAwsAutoScalingGroupDataSource_launchTemplate(
 func testAccAutoScalingGroupDataResourceConfig(
+func testAccAutoScalingGroupDataResourceConfig_launchTemplate(
 func TestAvailabilityZonesSort(
 func TestAccAWSAvailabilityZones_basic(
 func TestAccAWSAvailabilityZones_AllAvailabilityZones(

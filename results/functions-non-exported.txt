@@ -186,6 +186,7 @@ func testAccCheckAwsAutoscalingGroupsAvailable(
 func testAccCheckAwsAutoscalingGroupsConfig(
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(
 func testAccAutoScalingGroupDataResourceConfig(
+func testAccAutoScalingGroupDataResourceConfig_launchTemplate(
 func dataSourceAwsAvailabilityZone(
 func dataSourceAwsAvailabilityZoneRead(
 func dataSourceAwsAvailabilityZones(

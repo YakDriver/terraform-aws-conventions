@@ -16,6 +16,7 @@ func TestAccDataSourceAwsApiGatewayVpcLink_basic(
 func TestAccDataSourceAwsArn_basic(
 func TestAccAWSAutoscalingGroups_basic(
 func TestAccAwsAutoScalingGroupDataSource_basic(
+func TestAccAwsAutoScalingGroupDataSource_launchTemplate(
 func TestAccAWSAvailabilityZones_basic(
 func TestAccAWSAvailabilityZones_stateFilter(
 func TestAccAWSBackupPlanDataSource_basic(

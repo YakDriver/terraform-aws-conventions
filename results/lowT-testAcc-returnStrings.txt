@@ -21,6 +21,7 @@ func testAccDataSourceAwsArnConfig(arn string) string {
 func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(rInt1, rInt2, rInt3 int) string {
 func testAccAutoScalingGroupDataResourceConfig(rName string) string {
+func testAccAutoScalingGroupDataResourceConfig_launchTemplate() string {
 func testAccCheckAwsAvailabilityZonesConfigAllAvailabilityZones() string {
 func testAccCheckAwsAvailabilityZonesConfigFilter() string {
 func testAccCheckAwsAvailabilityZonesConfigExcludeNames() string {

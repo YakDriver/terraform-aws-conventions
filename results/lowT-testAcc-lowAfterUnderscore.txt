@@ -1,4 +1,5 @@
 func testAccDataSourceAwsAmiIdsConfig_sorted(
+func testAccAutoScalingGroupDataResourceConfig_launchTemplate(
 func testAccAwsBackupPlanDataSourceConfig_basic(
 func testAccAwsBackupSelectionDataSourceConfig_basic(
 func testAccAwsBackupVaultDataSourceConfig_basic(
