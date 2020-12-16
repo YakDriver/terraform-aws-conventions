@@ -1,7 +1,9 @@
 func TestAccDataSourceAwsEip_PublicIP_EC2Classic(
 func TestAccDataSourceAwsEip_PublicIP_VPC(
+func TestAccDataSourceAWSEIP_CarrierIP(
 func TestAccDataSourceAWSEIP_CustomerOwnedIpv4Pool(
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(
+func testAccDataSourceAWSEIPConfigCarrierIP(
 func TestAccAWSInstanceDataSource_privateIP(
 func TestAccAWSInstanceDataSource_secondaryPrivateIPs(
 func testAccInstanceDataSourceConfig_privateIP(
@@ -14,6 +16,10 @@ func testAccAWSIPRangesCheckAttributes(
 func testAccAWSIPRangesCheckCidrBlocksAttribute(
 func TestAccAWSLaunchTemplateDataSource_associatePublicIPAddress(
 func TestAccAWSLaunchTemplateDataSource_associateCarrierIPAddress(
+func TestAccDataSourceAwsNetworkInterface_CarrierIPAssociation(
+func TestAccDataSourceAwsNetworkInterface_PublicIPAssociation(
+func testAccDataSourceAwsNetworkInterfaceConfigCarrierIPAssociation(
+func testAccDataSourceAwsNetworkInterfaceConfigPublicIPAssociation(
 func TestAccDataSourceAwsWafIPSet_basic(
 func testAccDataSourceAwsWafIPSet_Name(
 func TestAccDataSourceAwsWafRegionalIPSet_basic(
@@ -55,6 +61,7 @@ func TestAccAWSEIP_tags_Vpc(
 func TestAccAWSEIP_tags_Ec2Classic(
 func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_NetworkBorderGroup(
+func TestAccAWSEIP_CarrierIP(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func testAccCheckAWSEIPDestroy(
 func TestAccAWSEIP_CustomerOwnedIpv4Pool(
@@ -76,6 +83,7 @@ func testAccAWSEIP_Instance(
 func testAccAWSEIPAssociate_not_associated(
 func testAccAWSEIPAssociate_associated(
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
+func testAccAWSEIPConfigCarrierIP(
 func TestAccAwsGlobalAcceleratorEndpointGroup_ALBEndpoint_ClientIP(
 func testAccGlobalAcceleratorEndpointGroupConfigALBEndpointClientIP(
 func expandSecondaryPrivateIPAddresses(
@@ -127,6 +135,7 @@ func TestAccAWSSecurityGroup_IPRangeAndSecurityGroupWithSameRules(
 func TestAccAWSSecurityGroup_IPRangesWithSameRules(
 func TestAccAWSShieldProtection_ElasticIPAddress(
 func testAccShieldProtectionElasticIPAddressConfig(
+func validateTunnelInsideIPVersion(
 func resourceAwsWafIPSet(
 func resourceAwsWafIPSetCreate(
 func resourceAwsWafIPSetRead(

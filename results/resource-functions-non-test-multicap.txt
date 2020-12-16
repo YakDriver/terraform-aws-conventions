@@ -376,6 +376,8 @@ func resourceVPCPeeringConnectionAccept(
 func resourceAwsVPCPeeringUpdate(
 func resourceAwsVPCPeeringDelete(
 func validateVpnConnectionTunnelInsideCIDR(
+func validateVpnConnectionTunnelInsideIpv6CIDR(
+func validateTunnelInsideIPVersion(
 func resourceAwsWafIPSet(
 func resourceAwsWafIPSetCreate(
 func resourceAwsWafIPSetRead(

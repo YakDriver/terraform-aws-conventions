@@ -659,7 +659,9 @@ func TestAccAWSEMRCluster_Ec2Attributes_DefaultManagedSecurityGroups(
 func testAccAWSEmrClusterConfigEc2AttributesDefaultManagedSecurityGroups(
 func getAwsEc2InstancePasswordData(
 func expandEc2InstanceMetadataOptions(
+func expandEc2EnclaveOptions(
 func flattenEc2InstanceMetadataOptions(
+func flattenEc2EnclaveOptions(
 func TestAccAWSInstance_inEc2Classic(
 func testAccCheckInstanceEc2ClassicExists(
 func testAccInstanceConfigInEc2Classic(
@@ -687,6 +689,7 @@ func waitForEc2VpcIpv6CidrBlockAssociationDelete(
 func waitForEc2VpcPeeringConnectionDeletion(
 func testSweepEc2VpcPeeringConnections(
 func waitForEc2VpnConnectionAvailable(
+func waitForEc2VpnConnectionAvailableWhenModifying(
 func waitForEc2VpnConnectionDeletion(
 func testSweepEc2VpnConnections(
 func flattenEc2AttributeValues(

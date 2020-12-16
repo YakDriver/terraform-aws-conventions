@@ -67,6 +67,7 @@ const testAccCheckAwsOrganizationConfig =
 const testAccCheckAwsPartitionConfig_basic =
 const testAccDataSourceAwsPrefixListConfig =
 const testAccDataSourceAwsPrefixListConfigFilter =
+const testAccDataSourceAwsPrefixListConfig_nameDoesNotOverrideFilter =
 const testAccDataSourceAwsRamResourceShareConfig_NonExistent =
 const testAccCheckAwsRedshiftServiceAccountConfig =
 const testAccCheckAwsRedshiftServiceAccountExplicitRegionConfig =

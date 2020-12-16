@@ -25,6 +25,7 @@ func testAccDataSourceAwsAvailabilityZoneConfigAllAvailabilityZones() string {
 func testAccDataSourceAwsAvailabilityZoneConfigFilter() string {
 func testAccDataSourceAwsAvailabilityZoneConfigName() string {
 func testAccDataSourceAwsAvailabilityZoneConfigZoneId() string {
+func testAccDataSourceAwsAvailabilityZoneConfigZoneType(zoneType string) string {
 func testAccDataSourceAwsBatchComputeEnvironmentConfig(rName string) string {
 func testAccDataSourceAwsBatchJobQueueConfig(rName string) string {
 func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
@@ -105,6 +106,7 @@ func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool() string {
 func testAccDataSourceAwsEipConfigFilter(rName string) string {
 func testAccDataSourceAwsEipConfigPublicIpEc2Classic() string {
 func testAccDataSourceAwsEipConfigTags(rName string) string {
+func testAccDataSourceAWSEIPConfigCarrierIP(rName string) string {
 func testAccAWSElastiCacheClusterConfigWithDataSource(rName string) string {
 func testAccAWSElasticsearchDomainConfigWithDataSource(rInt int) string {
 func testAccAWSElasticsearchDomainConfigAdvancedWithDataSource(rInt int) string {
@@ -164,6 +166,11 @@ func testAccAWSNeptuneEngineVersionDataSourcePreferredConfig() string {
 func testAccAWSNeptuneEngineVersionDataSourceDefaultOnlyConfig() string {
 func testAccAWSNeptuneOrderableDbInstanceDataSourceConfigBasic(class, engine, version, license string) string {
 func testAccAWSNeptuneOrderableDbInstanceDataSourceConfigPreferred(engine, version, license, preferredOption string) string {
+func testAccDataSourceAwsNetworkInterfaceConfigBase(rName string) string {
+func testAccDataSourceAwsNetworkInterfaceConfigBasic(rName string) string {
+func testAccDataSourceAwsNetworkInterfaceConfigCarrierIPAssociation(rName string) string {
+func testAccDataSourceAwsNetworkInterfaceConfigPublicIPAssociation(rName string) string {
+func testAccDataSourceAwsNetworkInterfaceConfigFilters(rName string) string {
 func testAccAWSOutpostsOutpostInstanceTypesDataSourceConfig() string {
 func testAccAWSOutpostsOutpostInstanceTypeDataSourceConfigInstanceType() string {
 func testAccAWSOutpostsOutpostInstanceTypeDataSourceConfigPreferredInstanceTypes() string {
@@ -669,6 +676,7 @@ func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) s
 func testAccAWSCodePipelineConfigWithTags(rName, githubToken, tag1, tag2 string) string {
 func testAccAWSCodePipelineConfigWithNamespace(rName, githubToken string) string {
 func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2, githubToken string) string {
+func testAccAWSCodeStarConnectionsConnectionConfigBasic(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBase(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBasic(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigStatus(rName, status string) string {
@@ -1015,6 +1023,7 @@ func testAccAWSEIPAssociationConfig() string {
 func testAccAWSEIPAssociationConfigDisappears() string {
 func testAccAWSEIPInstanceConfig() string {
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool() string {
+func testAccAWSEIPConfigCarrierIP(rName string) string {
 func testAccAWSEksClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEksFargateProfileConfigBase(rName string) string {
@@ -1390,6 +1399,8 @@ func testAccAWSInspectorTargetAssessmentConfigResourceGroupArn(rName, inspectorR
 func testAccAvailableAZsNoOptInDefaultExcludeConfig() string {
 func testAccAvailableAZsNoOptInExcludeConfig(excludeZoneIds ...string) string {
 func testAccAvailableAZsNoOptInConfig() string {
+func testAccAvailableAZsWavelengthZonesExcludeConfig(excludeZoneIds ...string) string {
+func testAccAvailableAZsWavelengthZonesDefaultExcludeConfig() string {
 func testAccInstanceConfigInDefaultVpcBySgName(rName string) string {
 func testAccInstanceConfigInDefaultVpcBySgId(rName string) string {
 func testAccInstanceConfigInEc2Classic() string {
@@ -1447,6 +1458,7 @@ func testAccAwsInstanceVpcIpv6Config(rName string) string {
 func testAccInstanceConfigHibernation(hibernation bool) string {
 func testAccInstanceConfigMetadataOptions(rName string) string {
 func testAccInstanceConfigMetadataOptionsUpdated(rName string) string {
+func testAccInstanceConfigEnclaveOptions(enabled bool) string {
 func testAccAwsEc2InstanceConfigDynamicEBSBlockDevices() string {
 func testAccAWSInternetGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSInternetGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1617,6 +1629,7 @@ func testAccAWSLaunchConfigurationConfigWithInstanceStoreAMI(rName string) strin
 func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceCopiedAmi(rName string) string {
 func testAccAWSLaunchConfigurationConfigWithRootBlockDeviceVolumeSize(rName string, volumeSize int) string {
 func testAccAWSLaunchConfigurationConfigWithEncryptedRootBlockDevice(rInt int) string {
+func testAccAWSLaunchConfigurationConfigMetadataOptions(rName string) string {
 func testAccAWSLaunchConfigurationConfig() string {
 func testAccAWSLaunchConfigurationWithSpotPriceConfig() string {
 func testAccAWSLaunchConfigurationNoNameConfig() string {
@@ -2357,9 +2370,10 @@ func testAccAwsVpnConnectionRouteConfig(rBgpAsn int) string {
 func testAccAwsVpnConnectionRouteConfigUpdate(rBgpAsn int) string {
 func testAccAwsVpnConnectionConfig(rBgpAsn int) string {
 func testAccAwsVpnConnectionConfigUpdate(rInt, rBgpAsn int) string {
+func testAccAwsVpnConnectionConfigEnableAcceleration(rBgpAsn int) string {
+func testAccAwsVpnConnectionConfigIpv6(rBgpAsn int, localIpv6NetworkCidr string, remoteIpv6NetworkCidr string, tunnel1InsideIpv6Cidr string, tunnel2InsideIpv6Cidr string) string {
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(rBgpAsn int, psk string, tunnelCidr string) string {
 func testAccAwsVpnConnectionConfigTransitGatewayID(rBgpAsn int) string {
-func testAccAwsVpnConnectionConfigTunnelOptions(rBgpAsn int, psk string, tunnelCidr string, psk2 string, tunnelCidr2 string) string {
 func testAccAwsVpnConnectionConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
 func testAccAwsVpnConnectionConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccVpnGatewayAttachmentConfig(rName string) string {

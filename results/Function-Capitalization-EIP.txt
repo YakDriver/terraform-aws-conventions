@@ -1,5 +1,7 @@
+func TestAccDataSourceAWSEIP_CarrierIP(
 func TestAccDataSourceAWSEIP_CustomerOwnedIpv4Pool(
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(
+func testAccDataSourceAWSEIPConfigCarrierIP(
 func TestAccAWSEIPAssociation_instance(
 func TestAccAWSEIPAssociation_networkInterface(
 func TestAccAWSEIPAssociation_basic(
@@ -28,6 +30,7 @@ func TestAccAWSEIP_tags_Vpc(
 func TestAccAWSEIP_tags_Ec2Classic(
 func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_NetworkBorderGroup(
+func TestAccAWSEIP_CarrierIP(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func testAccCheckAWSEIPDestroy(
 func TestAccAWSEIP_CustomerOwnedIpv4Pool(
@@ -49,5 +52,6 @@ func testAccAWSEIP_Instance(
 func testAccAWSEIPAssociate_not_associated(
 func testAccAWSEIPAssociate_associated(
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
+func testAccAWSEIPConfigCarrierIP(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerEIP(

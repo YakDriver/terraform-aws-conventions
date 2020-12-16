@@ -190,6 +190,7 @@ func testAccAWSVolumeAttachmentImportStateIDFunc(
 func findVPCsByDHCPOptionsID(
 func isNoSuchDhcpOptionIDErr(
 func validateVpnConnectionTunnelInsideCIDR(
+func validateVpnConnectionTunnelInsideIpv6CIDR(
 func TestAccAWSVpnConnection_TransitGatewayID(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func decodeWorkLinkWebsiteCertificateAuthorityAssociationResourceID(

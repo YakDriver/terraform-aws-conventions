@@ -18,6 +18,7 @@ const testAccDataSourceAwsKmsCiphertextConfig_basic =
 const testAccDataSourceAwsKmsCiphertextConfig_validate =
 const testAccAWSLaunchTemplateDataSourceConfig_NonExistent =
 const testAccCheckAwsPartitionConfig_basic =
+const testAccDataSourceAwsPrefixListConfig_nameDoesNotOverrideFilter =
 const testAccDataSourceAwsRamResourceShareConfig_NonExistent =
 const testAccDataSourceAwsRegionConfig_empty =
 const testAccAWSDataSourceAWSRoute53DelegationSetConfig_basic =

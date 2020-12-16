@@ -48,6 +48,8 @@ func testAccCheckAwsVpcIpv4CidrBlockAssociationExists(
 func TestAccAWSVpc_AssignGeneratedIpv6CidrBlock(
 func testAccCheckVpcCidr(
 func testAccVpcConfigAssignGeneratedIpv6CidrBlock(
+func validateLocalIpv4NetworkCidr(
+func validateLocalIpv6NetworkCidr(
 func canonicalCidrBlock(
 func TestCidrBlocksEqual(
 func TestCanonicalCidrBlock(

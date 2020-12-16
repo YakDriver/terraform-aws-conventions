@@ -1,6 +1,7 @@
 func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
 func TestAccDataSourceAWSEFSAccessPoints_basic(
 func TestAccDataSourceAWSEFSAccessPoint_basic(
+func TestAccDataSourceAWSEIP_CarrierIP(
 func TestAccDataSourceAWSEIP_CustomerOwnedIpv4Pool(
 func TestAccDataSourceAWSELB_basic(
 func TestAccDataSourceAWSGlueScript_Language_Python(

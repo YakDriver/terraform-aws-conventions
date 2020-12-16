@@ -142,6 +142,11 @@ func testAccCheckAwsVpcIpv4CidrBlockAssociationDestroy(
 func testAccCheckAwsVpcIpv4CidrBlockAssociationExists(
 func TestAccAWSVpc_AssignGeneratedIpv6CidrBlock(
 func testAccVpcConfigAssignGeneratedIpv6CidrBlock(
+func validateVpnConnectionTunnelInsideIpv6CIDR(
+func validateLocalIpv4NetworkCidr(
+func validateLocalIpv6NetworkCidr(
+func TestAccAWSVpnConnection_withIpv6(
+func testAccAwsVpnConnectionConfigIpv6(
 func updateWafIpSetDescriptors(
 func diffWafIpSetDescriptors(
 func TestAccAWSWafIPSet_IpSetDescriptors_1000UpdateLimit(

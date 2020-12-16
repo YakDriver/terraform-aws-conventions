@@ -2,6 +2,7 @@ const testAccAwsBackupPlanDataSourceConfig_nonExistent =
 const testAccAwsBackupSelectionDataSourceConfig_nonExistent =
 const testAccAwsBackupVaultDataSourceConfig_nonExistent =
 const testAccCheckAwsElasticBeanstalkHostedZoneDataSource_currentRegion =
+const testAccDataSourceAwsPrefixListConfig_nameDoesNotOverrideFilter =
 const testAccAWSALBTargetGroupConfig_namePrefix =
 const testAccAWSALBTargetGroupConfig_generatedName =
 const testAccAWSCloudWatchLogGroup_namePrefix =

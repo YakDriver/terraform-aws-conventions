@@ -51,8 +51,10 @@ func TestAccDataSourceAWSEFSAccessPoint_basic(
 func testAccDataSourceAWSEFSAccessPointConfig(
 func TestAccDataSourceAwsEip_PublicIP_EC2Classic(
 func TestAccDataSourceAwsEip_PublicIP_VPC(
+func TestAccDataSourceAWSEIP_CarrierIP(
 func TestAccDataSourceAWSEIP_CustomerOwnedIpv4Pool(
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool(
+func testAccDataSourceAWSEIPConfigCarrierIP(
 func testAccCheckAwsElasticBeanstalkSolutionStackDataSourceID(
 func TestAccDataSourceAWSELB_basic(
 func testAccDataSourceAWSELBConfigBasic(
@@ -143,6 +145,10 @@ func testAccDataSourceAWSLBConfigBackardsCompatibility(
 func dataSourceAwsmQBrokerRead(
 func TestAccDataSourceAwsNetworkAcls_VpcID(
 func testAccDataSourceAwsNetworkAclsConfig_VpcID(
+func TestAccDataSourceAwsNetworkInterface_CarrierIPAssociation(
+func TestAccDataSourceAwsNetworkInterface_PublicIPAssociation(
+func testAccDataSourceAwsNetworkInterfaceConfigCarrierIPAssociation(
+func testAccDataSourceAwsNetworkInterfaceConfigPublicIPAssociation(
 func testAccPricingCheckValueIsJSON(
 func dataSourceAwsQLDBLedger(
 func dataSourceAwsQLDBLedgerRead(
@@ -1588,6 +1594,7 @@ func TestAccAWSEIP_tags_Vpc(
 func TestAccAWSEIP_tags_Ec2Classic(
 func TestAccAWSEIP_PublicIpv4Pool_default(
 func TestAccAWSEIP_NetworkBorderGroup(
+func TestAccAWSEIP_CarrierIP(
 func TestAccAWSEIP_PublicIpv4Pool_custom(
 func testAccCheckAWSEIPDestroy(
 func TestAccAWSEIP_CustomerOwnedIpv4Pool(
@@ -1609,6 +1616,7 @@ func testAccAWSEIP_Instance(
 func testAccAWSEIPAssociate_not_associated(
 func testAccAWSEIPAssociate_associated(
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
+func testAccAWSEIPConfigCarrierIP(
 func TestAccAWSElasticacheCluster_multiAZInVpc(
 func TestAccAWSElasticacheCluster_AZMode_Memcached(
 func TestAccAWSElasticacheCluster_AZMode_Redis(
@@ -2099,6 +2107,8 @@ func TestInstanceHostIDSchema(
 func testAccAvailableAZsNoOptInDefaultExcludeConfig(
 func testAccAvailableAZsNoOptInExcludeConfig(
 func testAccAvailableAZsNoOptInConfig(
+func testAccAvailableAZsWavelengthZonesExcludeConfig(
+func testAccAvailableAZsWavelengthZonesDefaultExcludeConfig(
 func testAccInstanceGP2IopsDevice(
 func testAccInstanceGP2WithIopsValue(
 func testAccInstanceConfigNoAMIEphemeralDevices(
@@ -3410,6 +3420,8 @@ func testSweepVPCs(
 func testAccAWSVPCConfigTags1(
 func testAccAWSVPCConfigTags2(
 func validateVpnConnectionTunnelInsideCIDR(
+func validateVpnConnectionTunnelInsideIpv6CIDR(
+func validateTunnelInsideIPVersion(
 func TestAccAWSVpnConnection_TransitGatewayID(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func TestAccAWSVPNGatewayRoutePropagation_basic(

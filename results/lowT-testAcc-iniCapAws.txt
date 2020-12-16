@@ -570,6 +570,8 @@ func testAccAwsVpnConnectionDestroy(
 func testAccAwsVpnConnectionExists(
 func testAccAwsVpnConnectionConfig(
 func testAccAwsVpnConnectionConfigUpdate(
+func testAccAwsVpnConnectionConfigEnableAcceleration(
+func testAccAwsVpnConnectionConfigIpv6(
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
 func testAccAwsVpnConnectionConfigTunnelOptions(
