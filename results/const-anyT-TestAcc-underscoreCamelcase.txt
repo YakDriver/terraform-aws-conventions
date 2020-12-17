@@ -1,6 +1,7 @@
 const testAccAwsBackupPlanDataSourceConfig_nonExistent =
 const testAccAwsBackupSelectionDataSourceConfig_nonExistent =
 const testAccAwsBackupVaultDataSourceConfig_nonExistent =
+const testAccDataSourceAwsPrefixListConfig_matchesTooMany =
 const testAccCheckAwsElasticBeanstalkHostedZoneDataSource_currentRegion =
 const testAccDataSourceAwsPrefixListConfig_nameDoesNotOverrideFilter =
 const testAccAWSALBTargetGroupConfig_namePrefix =
@@ -26,6 +27,7 @@ const testAccAWSELBConfigListener_multipleListeners =
 const testAccAWSSSHKeyConfig_sshEncoding =
 const testAccAWSSSHKeyConfig_pemEncoding =
 const testAccAWSKeyPairConfig_generatedName =
+const testAccAWSLakeFormationDataLakeSettingsConfig_withoutCatalogId =
 const testAccAWSLBTargetGroupConfig_namePrefix =
 const testAccAWSLBTargetGroupConfig_generatedName =
 const testAccAWSNeptuneClusterParameterGroupConfig_namePrefix =

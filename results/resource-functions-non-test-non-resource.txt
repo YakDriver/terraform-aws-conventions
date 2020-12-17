@@ -656,6 +656,12 @@ func flattenEc2TargetCapacitySpecification(
 func decodeEc2LocalGatewayRouteID(
 func getEc2LocalGatewayRoute(
 func getEc2LocalGatewayRouteTableVpcAssociation(
+func expandEc2AddPrefixListEntry(
+func expandEc2AddPrefixListEntries(
+func expandEc2RemovePrefixListEntry(
+func expandEc2RemovePrefixListEntries(
+func flattenEc2PrefixListEntry(
+func flattenEc2PrefixListEntries(
 func extractResourceIDAndKeyFromEc2TagID(
 func findEc2TrafficMirrorFilterRule(
 func buildTrafficMirrorPortRangeRequest(
@@ -1180,6 +1186,7 @@ func resourceAWSInspectorResourceGroup(
 func expandInspectorResourceGroupTags(
 func flattenInspectorResourceGroupTags(
 func iopsDiffSuppressFunc(
+func throughputDiffSuppressFunc(
 func InstanceStateRefreshFunc(
 func MetadataOptionsRefreshFunc(
 func RootBlockDeviceDeleteOnTerminationRefreshFunc(
@@ -1429,6 +1436,12 @@ func updateKmsKeyStatus(
 func updateKmsKeyRotationStatus(
 func handleKeyRotation(
 func init(
+func expandDataLakeSettingsCreateDefaultPermissions(
+func expandDataLakeSettingsCreateDefaultPermission(
+func flattenDataLakeSettingsCreateDefaultPermissions(
+func flattenDataLakeSettingsCreateDefaultPermission(
+func expandDataLakeSettingsAdmins(
+func flattenDataLakeSettingsAdmins(
 func isLakeFormationResourceNotFoundErr(
 func expandLambdaAliasRoutingConfiguration(
 func expandLambdaCodeSigningConfigAllowedPublishers(

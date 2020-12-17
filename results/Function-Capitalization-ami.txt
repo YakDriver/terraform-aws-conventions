@@ -7,6 +7,8 @@ func amiBlockDeviceMappingHash(
 func amiProductCodesHash(
 func TestAccAwsAutoScalingPlansScalingPlan_basicDynamicScaling(
 func testAccAutoScalingPlansScalingPlanConfigBasicDynamicScaling(
+func TestAccAwsEc2ManagedPrefixList_AddressFamily_IPv6(
+func testAccAwsEc2ManagedPrefixListConfig_AddressFamily(
 func buildFamilyAndRevisionFromARN(
 func TestAccAWSEcsService_withFamilyAndRevision(
 func testAccAWSEcsServiceWithFamilyAndRevision(

@@ -1151,6 +1151,11 @@ func resourceAwsEc2LocalGatewayRouteTableVpcAssociationCreate(
 func resourceAwsEc2LocalGatewayRouteTableVpcAssociationRead(
 func resourceAwsEc2LocalGatewayRouteTableVpcAssociationUpdate(
 func resourceAwsEc2LocalGatewayRouteTableVpcAssociationDelete(
+func resourceAwsEc2ManagedPrefixList(
+func resourceAwsEc2ManagedPrefixListCreate(
+func resourceAwsEc2ManagedPrefixListRead(
+func resourceAwsEc2ManagedPrefixListUpdate(
+func resourceAwsEc2ManagedPrefixListDelete(
 func resourceAwsEc2Tag(
 func resourceAwsEc2TagCreate(
 func resourceAwsEc2TagRead(
@@ -1893,6 +1898,10 @@ func resourceAwsKmsKeyUpdate(
 func resourceAwsKmsKeyDescriptionUpdate(
 func resourceAwsKmsKeyPolicyUpdate(
 func resourceAwsKmsKeyDelete(
+func resourceAwsLakeFormationDataLakeSettings(
+func resourceAwsLakeFormationDataLakeSettingsCreate(
+func resourceAwsLakeFormationDataLakeSettingsRead(
+func resourceAwsLakeFormationDataLakeSettingsDelete(
 func resourceAwsLakeFormationResource(
 func resourceAwsLakeFormationResourceCreate(
 func resourceAwsLakeFormationResourceRead(

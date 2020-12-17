@@ -128,6 +128,7 @@ func TestAccAWSInstanceDataSource_basic(
 func TestAccAWSInstanceDataSource_tags(
 func TestAccAWSInstanceDataSource_AzUserData(
 func TestAccAWSInstanceDataSource_gp2IopsDevice(
+func TestAccAWSInstanceDataSource_gp3ThroughputDevice(
 func TestAccAWSInstanceDataSource_blockDevices(
 func TestAccAWSInstanceDataSource_EbsBlockDevice_KmsKeyId(
 func TestAccAWSInstanceDataSource_RootBlockDevice_KmsKeyId(
@@ -156,6 +157,7 @@ func TestAccAWSIPRanges_Url(
 func TestAccAWSKinesisStreamDataSource_basic(
 func TestAccAWSKmsSecretsDataSource_basic(
 func TestAccAWSKmsSecretDataSource_removed(
+func TestAccAWSLakeFormationDataLakeSettingsDataSource_serial(
 func TestAccAWSLaunchConfigurationDataSource_basic(
 func TestAccAWSLaunchConfigurationDataSource_securityGroups(
 func TestAccAWSLaunchConfigurationDataSource_ebsNoDevice(
@@ -2101,6 +2103,7 @@ func TestAccAWSInstance_basic(
 func TestAccAWSInstance_atLeastOneOtherEbsVolume(
 func TestAccAWSInstance_EbsBlockDevice_KmsKeyArn(
 func TestAccAWSInstance_EbsBlockDevice_InvalidIopsForVolumeType(
+func TestAccAWSInstance_EbsBlockDevice_InvalidThroughputForVolumeType(
 func TestAccAWSInstance_RootBlockDevice_KmsKeyArn(
 func TestAccAWSInstance_userDataBase64(
 func TestAccAWSInstance_GP2IopsDevice(
@@ -2136,6 +2139,7 @@ func TestAccAWSInstance_EbsRootDevice_ModifySize(
 func TestAccAWSInstance_EbsRootDevice_ModifyType(
 func TestAccAWSInstance_EbsRootDevice_ModifyIOPS_Io1(
 func TestAccAWSInstance_EbsRootDevice_ModifyIOPS_Io2(
+func TestAccAWSInstance_EbsRootDevice_ModifyThroughput_Gp3(
 func TestAccAWSInstance_EbsRootDevice_ModifyDeleteOnTermination(
 func TestAccAWSInstance_EbsRootDevice_ModifyAll(
 func TestAccAWSInstance_EbsRootDevice_MultipleBlockDevices_ModifySize(
@@ -2336,6 +2340,7 @@ func TestAccAWSKmsKey_Policy_IamRole(
 func TestAccAWSKmsKey_Policy_IamServiceLinkedRole(
 func TestAccAWSKmsKey_isEnabled(
 func TestAccAWSKmsKey_tags(
+func TestAccAWSLakeFormationDataLakeSettings_serial(
 func TestAccAWSLakeFormationResource_basic(
 func TestAccAWSLakeFormationResource_disappears(
 func TestAccAWSLakeFormationResource_serviceLinkedRole(
