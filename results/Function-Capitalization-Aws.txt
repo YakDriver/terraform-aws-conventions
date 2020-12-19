@@ -473,6 +473,10 @@ func testAccDataSourceAwsKmsSecretsDecrypt(
 func testAccCheckAwsKmsSecretsDataSourceSecret(
 func dataSourceAwsLakeFormationDataLakeSettings(
 func dataSourceAwsLakeFormationDataLakeSettingsRead(
+func dataSourceAwsLakeFormationPermissions(
+func dataSourceAwsLakeFormationPermissionsRead(
+func dataSourceAwsLakeFormationResource(
+func dataSourceAwsLakeFormationResourceRead(
 func dataSourceAwsLambdaAlias(
 func dataSourceAwsLambdaAliasRead(
 func dataSourceAwsLambdaCodeSigningConfig(
@@ -1419,6 +1423,11 @@ func resourceAwsAutoscalingGroupUpdate(
 func resourceAwsAutoscalingGroupDelete(
 func getAwsAutoscalingGroup(
 func resourceAwsAutoscalingGroupDrain(
+func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Basic(
+func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Full(
+func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Disabled(
+func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Start(
+func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Triggers(
 func resourceAwsAutoscalingLifecycleHook(
 func resourceAwsAutoscalingLifecycleHookPutOp(
 func resourceAwsAutoscalingLifecycleHookPut(
@@ -3618,6 +3627,10 @@ func resourceAwsLakeFormationDataLakeSettings(
 func resourceAwsLakeFormationDataLakeSettingsCreate(
 func resourceAwsLakeFormationDataLakeSettingsRead(
 func resourceAwsLakeFormationDataLakeSettingsDelete(
+func resourceAwsLakeFormationPermissions(
+func resourceAwsLakeFormationPermissionsCreate(
+func resourceAwsLakeFormationPermissionsRead(
+func resourceAwsLakeFormationPermissionsDelete(
 func resourceAwsLakeFormationResource(
 func resourceAwsLakeFormationResourceCreate(
 func resourceAwsLakeFormationResourceRead(

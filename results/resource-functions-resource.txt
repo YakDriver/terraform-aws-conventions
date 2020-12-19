@@ -1902,6 +1902,10 @@ func resourceAwsLakeFormationDataLakeSettings(
 func resourceAwsLakeFormationDataLakeSettingsCreate(
 func resourceAwsLakeFormationDataLakeSettingsRead(
 func resourceAwsLakeFormationDataLakeSettingsDelete(
+func resourceAwsLakeFormationPermissions(
+func resourceAwsLakeFormationPermissionsCreate(
+func resourceAwsLakeFormationPermissionsRead(
+func resourceAwsLakeFormationPermissionsDelete(
 func resourceAwsLakeFormationResource(
 func resourceAwsLakeFormationResourceCreate(
 func resourceAwsLakeFormationResourceRead(

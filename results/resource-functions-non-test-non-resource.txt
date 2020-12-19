@@ -164,6 +164,11 @@ func flattenAutoScalingLaunchTemplateSpecification(
 func flattenAutoScalingMixedInstancesPolicy(
 func waitUntilAutoscalingGroupLoadBalancersAdded(
 func waitUntilAutoscalingGroupLoadBalancersRemoved(
+func createAutoScalingGroupInstanceRefreshInput(
+func expandAutoScalingGroupInstanceRefreshPreferences(
+func autoScalingGroupRefreshInstances(
+func cancelAutoscalingInstanceRefresh(
+func validateAutoScalingGroupInstanceRefreshTriggerFields(
 func init(
 func autoscalingTagDescriptionsToMap(
 func waitForASGCapacity(
@@ -1442,6 +1447,15 @@ func flattenDataLakeSettingsCreateDefaultPermissions(
 func flattenDataLakeSettingsCreateDefaultPermission(
 func expandDataLakeSettingsAdmins(
 func flattenDataLakeSettingsAdmins(
+func expandLakeFormationResource(
+func expandLakeFormationDataLocationResource(
+func flattenLakeFormationDataLocationResource(
+func expandLakeFormationDatabaseResource(
+func flattenLakeFormationDatabaseResource(
+func expandLakeFormationTableResource(
+func flattenLakeFormationTableResource(
+func expandLakeFormationTableWithColumnsResource(
+func flattenLakeFormationTableWithColumnsResource(
 func isLakeFormationResourceNotFoundErr(
 func expandLambdaAliasRoutingConfiguration(
 func expandLambdaCodeSigningConfigAllowedPublishers(

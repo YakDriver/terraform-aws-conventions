@@ -1,4 +1,5 @@
 func TestAccAWSCloudformationExportDataSource_ResourceReference(
+func TestAccAWSLakeFormationResourceDataSource_basic(
 func TestAccAWSAPIGatewayResource_basic(
 func TestAccAWSAPIGatewayResource_update(
 func TestAccAWSAPIGatewayResource_disappears(

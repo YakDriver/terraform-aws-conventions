@@ -1037,11 +1037,13 @@ func stripNonKeyAttributes(
 func stripCapacityAttributes(
 func flattenAwsDynamoDbReplicaDescriptions(
 func ec2TagsFromTagDescriptions(
+func validatePrincipal(
 func validateDbEventSubscriptionName(
 func validateSecurityGroupRuleDescription(
 func validateIotThingTypeDescription(
 func validateNeptuneEventSubscriptionName(
 func validateNeptuneEventSubscriptionNamePrefix(
+func TestValidatePrincipal(
 func TestValidateDbEventSubscriptionName(
 func TestValidateNeptuneEventSubscriptionName(
 func TestValidateNeptuneEventSubscriptionNamePrefix(

@@ -158,7 +158,7 @@ func TestAccDataSourceAwsKmsCiphertext_validate_withContext(
 func TestAccDataSourceAwsKmsKey_basic(
 func TestAccAWSKmsSecretsDataSource_basic(
 func TestAccAWSKmsSecretDataSource_removed(
-func TestAccAWSLakeFormationDataLakeSettingsDataSource_serial(
+func TestAccAWSLakeFormationResourceDataSource_basic(
 func TestAccDataSourceAWSLambdaAlias_basic(
 func TestAccDataSourceAWSLambdaCodeSigningConfig_basic(
 func TestAccDataSourceAWSLambdaFunction_basic(
@@ -1645,13 +1645,13 @@ func TestAccAWSKmsKey_disappears(
 func TestAccAWSKmsKey_policy(
 func TestAccAWSKmsKey_isEnabled(
 func TestAccAWSKmsKey_tags(
-func TestAccAWSLakeFormationDataLakeSettings_serial(
 func TestAccAWSLakeFormationResource_basic(
 func TestAccAWSLakeFormationResource_disappears(
 func TestAccAWSLakeFormationResource_serviceLinkedRole(
 func TestAccAWSLakeFormationResource_updateRoleToRole(
 func TestAccAWSLakeFormationResource_updateSLRToRole(
 func TestAccAWSLakeFormationResource_updateRoleToSLR(
+func TestAccAWSLakeFormation_serial(
 func TestAccAWSLambdaAlias_basic(
 func TestAccAWSLambdaAlias_nameupdate(
 func TestAccAWSLambdaAlias_routingconfig(

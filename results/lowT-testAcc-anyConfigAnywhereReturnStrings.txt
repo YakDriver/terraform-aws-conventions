@@ -182,6 +182,12 @@ func testAccInstanceDataSourceConfig_metadataOptions(rName string) string {
 func testAccInstanceDataSourceConfig_enclaveOptions(rName string) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
 func testAccDataSourceAwsKmsKeyConfig(rName string) string {
+func testAccAWSLakeFormationPermissionsDataSourceConfig_basic(rName string) string {
+func testAccAWSLakeFormationPermissionsDataSourceConfig_dataLocation(rName string) string {
+func testAccAWSLakeFormationPermissionsDataSourceConfig_database(rName string) string {
+func testAccAWSLakeFormationPermissionsDataSourceConfig_table(rName string) string {
+func testAccAWSLakeFormationPermissionsDataSourceConfig_tableWithColumns(rName string) string {
+func testAccAWSLakeFormationResourceDataSourceConfig_basic(rName string) string {
 func testAccDataSourceAWSLambdaAliasConfigBase(rName string) string {
 func testAccDataSourceAWSLambdaAliasConfigBasic(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBase(rName string) string {
@@ -892,6 +898,11 @@ func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_Launch
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_Override_InstanceType(rName, instanceType string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_Override_WeightedCapacity(rName string) string {
 func testAccAWSAutoScalingGroupPartitionConfig(rName string) string {
+func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Basic() string {
+func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Full() string {
+func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Disabled() string {
+func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Start(launchConfigurationName string) string {
+func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Triggers() string {
 func testAccAWSAutoscalingLifecycleHookConfig(name string) string {
 func testAccAWSAutoscalingLifecycleHookConfig_omitDefaultResult(name string, rInt int) string {
 func testAccASGNotificationConfig_basic(rName string) string {
@@ -2748,6 +2759,11 @@ func testAccAWSKmsExternalKeyConfigValidTo(validTo string) string {
 func testAccAWSKmsGrantConfigBase(rName string) string {
 func testAccAWSKmsKeyConfigPolicyIamRole(rName string) string {
 func testAccAWSKmsKeyConfigPolicyIamServiceLinkedRole(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_basic(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_dataLocation(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_database(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_table(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_tableWithColumns(rName string) string {
 func testAccAWSLakeFormationResourceConfig_basic(bucket, role string) string {
 func testAccAWSLakeFormationResourceConfig_serviceLinkedRole(rName string) string {
 func testAccAwsLambdaAliasBaseConfig(roleName, policyName, attachmentName string) string {
