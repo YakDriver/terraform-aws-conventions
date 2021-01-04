@@ -1119,6 +1119,7 @@ func iamPolicyDeleteNondefaultVersions(
 func iamPolicyDeleteVersion(
 func iamPolicyListVersions(
 func init(
+func deleteAwsIamRole(
 func deleteAwsIamRoleInstanceProfiles(
 func deleteAwsIamRolePolicyAttachments(
 func deleteAwsIamRolePolicies(

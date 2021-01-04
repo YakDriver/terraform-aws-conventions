@@ -2531,6 +2531,7 @@ func testAccAwsImageBuilderImageRecipeConfigDescription(rName string, descriptio
 func testAccAwsImageBuilderImageRecipeConfigName(rName string) string {
 func testAccAwsImageBuilderImageRecipeConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
 func testAccAwsImageBuilderImageRecipeConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
+func testAccAwsImageBuilderImageRecipeConfigWorkingDirectory(rName string, workingDirectory string) string {
 func testAccAwsImageBuilderInfrastructureConfigurationConfigBase(rName string) string {
 func testAccAwsImageBuilderInfrastructureConfigurationConfigDescription(rName string, description string) string {
 func testAccAwsImageBuilderInfrastructureConfigurationConfigInstanceProfileName1(rName string) string {

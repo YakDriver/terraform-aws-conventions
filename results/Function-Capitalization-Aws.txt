@@ -3230,6 +3230,7 @@ func resourceAwsIamRoleCreate(
 func resourceAwsIamRoleRead(
 func resourceAwsIamRoleUpdate(
 func resourceAwsIamRoleDelete(
+func deleteAwsIamRole(
 func deleteAwsIamRoleInstanceProfiles(
 func deleteAwsIamRolePolicyAttachments(
 func deleteAwsIamRolePolicies(
@@ -3414,6 +3415,7 @@ func TestAccAwsImageBuilderImageRecipe_BlockDeviceMapping_VirtualName(
 func TestAccAwsImageBuilderImageRecipe_Component(
 func TestAccAwsImageBuilderImageRecipe_Description(
 func TestAccAwsImageBuilderImageRecipe_Tags(
+func TestAccAwsImageBuilderImageRecipe_WorkingDirectory(
 func testAccCheckAwsImageBuilderImageRecipeDestroy(
 func testAccCheckAwsImageBuilderImageRecipeExists(
 func testAccAwsImageBuilderImageRecipeConfigBase(
@@ -3432,6 +3434,7 @@ func testAccAwsImageBuilderImageRecipeConfigDescription(
 func testAccAwsImageBuilderImageRecipeConfigName(
 func testAccAwsImageBuilderImageRecipeConfigTags1(
 func testAccAwsImageBuilderImageRecipeConfigTags2(
+func testAccAwsImageBuilderImageRecipeConfigWorkingDirectory(
 func resourceAwsImageBuilderInfrastructureConfiguration(
 func resourceAwsImageBuilderInfrastructureConfigurationCreate(
 func resourceAwsImageBuilderInfrastructureConfigurationRead(

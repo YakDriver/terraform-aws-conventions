@@ -90,6 +90,7 @@ func resourceAwsIamRoleCreate(
 func resourceAwsIamRoleRead(
 func resourceAwsIamRoleUpdate(
 func resourceAwsIamRoleDelete(
+func deleteAwsIamRole(
 func deleteAwsIamRoleInstanceProfiles(
 func deleteAwsIamRolePolicyAttachments(
 func deleteAwsIamRolePolicies(
