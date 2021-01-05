@@ -2524,6 +2524,11 @@ func flattenGlueDynamoDBTargets(
 func flattenGlueJdbcTargets(
 func flattenGlueMongoDBTargets(
 func resourceAwsGlueCrawlerDelete(
+func flattenGlueCrawlerSchemaChangePolicy(
+func expandGlueCrawlerLineageConfiguration(
+func flattenGlueCrawlerLineageConfiguration(
+func expandGlueCrawlerRecrawlPolicy(
+func flattenGlueCrawlerRecrawlPolicy(
 func init(
 func resourceAwsGlueDataCatalogEncryptionSettings(
 func resourceAwsGlueDataCatalogEncryptionSettingsPut(
@@ -4581,6 +4586,12 @@ func resourceAwsSagemakerEndpointRead(
 func resourceAwsSagemakerEndpointUpdate(
 func resourceAwsSagemakerEndpointDelete(
 func init(
+func resourceAwsSagemakerImage(
+func resourceAwsSagemakerImageCreate(
+func resourceAwsSagemakerImageRead(
+func resourceAwsSagemakerImageUpdate(
+func resourceAwsSagemakerImageDelete(
+func init(
 func resourceAwsSagemakerModel(
 func resourceAwsSagemakerModelCreate(
 func expandSageMakerVpcConfigRequest(
@@ -5209,6 +5220,7 @@ func vpcEndpointServiceIdPrincipalArnHash(
 func resourceAwsVpcEndpointService(
 func resourceAwsVpcEndpointServiceCreate(
 func resourceAwsVpcEndpointServiceRead(
+func flattenPrivateDnsNameConfiguration(
 func resourceAwsVpcEndpointServiceUpdate(
 func resourceAwsVpcEndpointServiceDelete(
 func vpcEndpointServiceStateRefresh(

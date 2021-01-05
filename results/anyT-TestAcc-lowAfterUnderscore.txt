@@ -2113,6 +2113,8 @@ func TestAccAWSGlueCrawler_mongoDBTarget(
 func TestAccAWSGlueCrawler_mongoDBTarget_scan_all(
 func TestAccAWSGlueCrawler_mongoDBTarget_multiple(
 func TestAccAWSGlueCrawler_disappears(
+func TestAccAWSGlueCrawler_lineageConfig(
+func TestAccAWSGlueCrawler_recrawlPolicy(
 func TestAccAWSDataCatalogEncryptionSettings_basic(
 func TestAccGlueDevEndpoint_disappears(
 func TestAccAWSGlueJob_basic(
@@ -3571,6 +3573,11 @@ func TestAccAWSSagemakerEndpointConfiguration_tags(
 func TestAccAWSSagemakerEndpointConfiguration_dataCaptureConfig(
 func TestAccAWSSagemakerEndpointConfiguration_disappears(
 func TestAccAWSSagemakerEndpoint_basic(
+func TestAccAWSSagemakerImage_basic(
+func TestAccAWSSagemakerImage_description(
+func TestAccAWSSagemakerImage_displayName(
+func TestAccAWSSagemakerImage_tags(
+func TestAccAWSSagemakerImage_disappears(
 func TestAccAWSSagemakerModel_basic(
 func TestAccAWSSagemakerModel_tags(
 func TestAccAWSSagemakerModel_primaryContainerModelDataUrl(
@@ -3968,6 +3975,7 @@ func TestAccAWSVpcEndpointServiceAllowedPrincipal_basic(
 func TestAccAWSVpcEndpointService_basic(
 func TestAccAWSVpcEndpointService_disappears(
 func TestAccAWSVpcEndpointService_tags(
+func TestAccAWSVpcEndpointService_private_dns_name(
 func testAccVpcEndpointServiceConfig_base(
 func testAccVpcEndpointServiceConfig_allowedPrincipals(
 func testAccVpcEndpointServiceConfig_allowedPrincipalsUpdated(

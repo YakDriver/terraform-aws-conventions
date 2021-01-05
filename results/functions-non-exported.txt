@@ -6246,6 +6246,8 @@ func testAccAWSElasticacheReplicationGroupConfigParameterGroupName(
 func testAccAWSElasticacheReplicationGroupConfigUpdatedDescription(
 func testAccAWSElasticacheReplicationGroupConfigUpdatedMaintenanceWindow(
 func testAccAWSElasticacheReplicationGroupConfigUpdatedNodeSize(
+func testAccAWSElasticacheReplicationGroupMultiAZInVPCConfig(
+func testAccAWSElasticacheReplicationGroupRedisClusterInVPCConfig(
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterErrorConfig(
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterConfig(
 func testAccAWSElasticacheReplicationGroup_UseCmkKmsKeyId(
@@ -7045,6 +7047,11 @@ func flattenGlueDynamoDBTargets(
 func flattenGlueJdbcTargets(
 func flattenGlueMongoDBTargets(
 func resourceAwsGlueCrawlerDelete(
+func flattenGlueCrawlerSchemaChangePolicy(
+func expandGlueCrawlerLineageConfiguration(
+func flattenGlueCrawlerLineageConfiguration(
+func expandGlueCrawlerRecrawlPolicy(
+func flattenGlueCrawlerRecrawlPolicy(
 func init(
 func testSweepGlueCrawlers(
 func testAccCheckAWSGlueCrawlerExists(
@@ -7081,6 +7088,8 @@ func testAccGlueCrawlerConfig_SecurityConfiguration(
 func testAccGlueCrawlerConfigMongoDBTarget(
 func testAccGlueCrawlerConfigMongoDBTargetScanAll(
 func testAccGlueCrawlerConfigMongoDBMultiple(
+func testAccGlueCrawlerLineageConfig(
+func testAccGlueCrawlerRecrawlPolicyConfig(
 func resourceAwsGlueDataCatalogEncryptionSettings(
 func resourceAwsGlueDataCatalogEncryptionSettingsPut(
 func resourceAwsGlueDataCatalogEncryptionSettingsRead(
@@ -11507,6 +11516,21 @@ func testAccSagemakerEndpointConfig(
 func testAccSagemakerEndpointConfigEndpointConfigNameUpdate(
 func testAccSagemakerEndpointConfigTags(
 func testAccSagemakerEndpointConfigTagsUpdate(
+func resourceAwsSagemakerImage(
+func resourceAwsSagemakerImageCreate(
+func resourceAwsSagemakerImageRead(
+func resourceAwsSagemakerImageUpdate(
+func resourceAwsSagemakerImageDelete(
+func init(
+func testSweepSagemakerImages(
+func testAccCheckAWSSagemakerImageDestroy(
+func testAccCheckAWSSagemakerImageExists(
+func testAccAWSSagemakerImageConfigBase(
+func testAccAWSSagemakerImageBasicConfig(
+func testAccAWSSagemakerImageDescription(
+func testAccAWSSagemakerImageDisplayName(
+func testAccAWSSagemakerImageConfigTags1(
+func testAccAWSSagemakerImageConfigTags2(
 func resourceAwsSagemakerModel(
 func resourceAwsSagemakerModelCreate(
 func expandSageMakerVpcConfigRequest(
@@ -12865,6 +12889,7 @@ func testAccVpcEndpointServiceAllowedPrincipalBasicConfig(
 func resourceAwsVpcEndpointService(
 func resourceAwsVpcEndpointServiceCreate(
 func resourceAwsVpcEndpointServiceRead(
+func flattenPrivateDnsNameConfiguration(
 func resourceAwsVpcEndpointServiceUpdate(
 func resourceAwsVpcEndpointServiceDelete(
 func vpcEndpointServiceStateRefresh(
@@ -12883,6 +12908,7 @@ func testAccVpcEndpointServiceConfig_allowedPrincipals(
 func testAccVpcEndpointServiceConfig_allowedPrincipalsUpdated(
 func testAccVpcEndpointServiceConfigTags1(
 func testAccVpcEndpointServiceConfigTags2(
+func testAccVpcEndpointServiceConfigPrivateDnsName(
 func resourceAwsVpcEndpointSubnetAssociation(
 func resourceAwsVpcEndpointSubnetAssociationCreate(
 func resourceAwsVpcEndpointSubnetAssociationRead(

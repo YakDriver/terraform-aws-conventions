@@ -44,6 +44,8 @@ func expandServiceDiscoveryDnsConfig(
 func flattenServiceDiscoveryDnsConfig(
 func expandServiceDiscoveryDnsConfigChange(
 func flattenVpcEndpointDnsEntries(
+func flattenPrivateDnsNameConfiguration(
+func testAccVpcEndpointServiceConfigPrivateDnsName(
 func TestAccAWSVpc_bothDnsOptionsSet(
 func TestAccAWSVpc_DisabledDnsSupport(
 func TestAccAWSVpc_classiclinkDnsSupportOptionSet(

@@ -1067,6 +1067,8 @@ func testAccAWSElasticacheReplicationGroupConfigParameterGroupName(rName string,
 func testAccAWSElasticacheReplicationGroupConfigUpdatedDescription(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfigUpdatedMaintenanceWindow(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfigUpdatedNodeSize(rName string) string {
+func testAccAWSElasticacheReplicationGroupMultiAZInVPCConfig(rName string) string {
+func testAccAWSElasticacheReplicationGroupRedisClusterInVPCConfig(rName string) string {
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterErrorConfig(rInt int, rName string) string {
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterConfig(rName string, numNodeGroups, replicasPerNodeGroup int) string {
 func testAccAWSElasticacheReplicationGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -1222,6 +1224,8 @@ func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2
 func testAccGlueCrawlerConfigMongoDBTarget(rName, path string) string {
 func testAccGlueCrawlerConfigMongoDBTargetScanAll(rName string, scan bool) string {
 func testAccGlueCrawlerConfigMongoDBMultiple(rName, path1, path2 string) string {
+func testAccGlueCrawlerLineageConfig(rName, lineageConfig string) string {
+func testAccGlueCrawlerRecrawlPolicyConfig(rName, policy string) string {
 func testAccAWSDataCatalogEncryptionSettingsEncryptedConfig(rName string) string {
 func testAccAWSDataCatalogEncryptionSettingsNonEncryptedConfig() string {
 func testAccAWSGlueJobnonOverridableArgumentsConfig(rName, jobBookmarkOption, jobLanguage string) string {
@@ -2058,6 +2062,10 @@ func testAccSagemakerEndpointConfig(rName string) string {
 func testAccSagemakerEndpointConfigEndpointConfigNameUpdate(rName string) string {
 func testAccSagemakerEndpointConfigTags(rName string) string {
 func testAccSagemakerEndpointConfigTagsUpdate(rName string) string {
+func testAccAWSSagemakerImageConfigBase(rName string) string {
+func testAccAWSSagemakerImageBasicConfig(rName string) string {
+func testAccAWSSagemakerImageConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSagemakerImageConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSagemakerModelConfigBase(rName string) string {
 func testAccSagemakerModelConfig(rName string) string {
 func testAccSagemakerModelConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -2354,6 +2362,7 @@ func testAccVpcEndpointRouteTableAssociationConfig(rName string) string {
 func testAccVpcEndpointServiceAllowedPrincipalBasicConfig(lbName string) string {
 func testAccVpcEndpointServiceConfigTags1(rName1, rName2, tagKey1, tagValue1 string) string {
 func testAccVpcEndpointServiceConfigTags2(rName1, rName2, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccVpcEndpointServiceConfigPrivateDnsName(rName1, rName2, dnsName string) string {
 func testAccVpcEndpointConfigGatewayPolicy(rName, policy string) string {
 func testAccVpcEndpointConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccVpcEndpointConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

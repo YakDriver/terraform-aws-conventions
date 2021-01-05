@@ -3724,6 +3724,8 @@ func TestAccAWSGlueCrawler_TablePrefix(
 func TestAccAWSGlueCrawler_RemoveTablePrefix(
 func TestAccAWSGlueCrawler_Tags(
 func TestAccAWSGlueCrawler_SecurityConfiguration(
+func TestAccAWSGlueCrawler_lineageConfig(
+func TestAccAWSGlueCrawler_recrawlPolicy(
 func testAccGlueCrawlerConfig_Base(
 func testAccGlueCrawlerConfig_Classifiers_Single(
 func testAccGlueCrawlerConfig_Classifiers_Multiple(
@@ -5959,6 +5961,11 @@ func TestAccAWSSagemakerEndpoint_basic(
 func TestAccAWSSagemakerEndpoint_EndpointConfigName(
 func TestAccAWSSagemakerEndpoint_Tags(
 func testAccSagemakerEndpointConfig_Base(
+func TestAccAWSSagemakerImage_basic(
+func TestAccAWSSagemakerImage_description(
+func TestAccAWSSagemakerImage_displayName(
+func TestAccAWSSagemakerImage_tags(
+func TestAccAWSSagemakerImage_disappears(
 func TestAccAWSSagemakerModel_basic(
 func TestAccAWSSagemakerModel_tags(
 func TestAccAWSSagemakerModel_primaryContainerModelDataUrl(
@@ -6594,6 +6601,7 @@ func TestAccAWSVpcEndpointService_AllowedPrincipals(
 func TestAccAWSVpcEndpointService_disappears(
 func TestAccAWSVpcEndpointService_GatewayLoadBalancerArns(
 func TestAccAWSVpcEndpointService_tags(
+func TestAccAWSVpcEndpointService_private_dns_name(
 func testAccVpcEndpointServiceConfig_base(
 func testAccVpcEndpointServiceConfig_GatewayLoadBalancerArns(
 func testAccVpcEndpointServiceConfig_NetworkLoadBalancerArns(

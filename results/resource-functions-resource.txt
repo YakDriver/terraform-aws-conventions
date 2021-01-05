@@ -2681,6 +2681,11 @@ func resourceAwsSagemakerEndpointCreate(
 func resourceAwsSagemakerEndpointRead(
 func resourceAwsSagemakerEndpointUpdate(
 func resourceAwsSagemakerEndpointDelete(
+func resourceAwsSagemakerImage(
+func resourceAwsSagemakerImageCreate(
+func resourceAwsSagemakerImageRead(
+func resourceAwsSagemakerImageUpdate(
+func resourceAwsSagemakerImageDelete(
 func resourceAwsSagemakerModel(
 func resourceAwsSagemakerModelCreate(
 func resourceAwsSagemakerModelRead(

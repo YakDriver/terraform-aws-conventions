@@ -1017,6 +1017,11 @@ func flattenGlueCatalogTargets(
 func flattenGlueDynamoDBTargets(
 func flattenGlueJdbcTargets(
 func flattenGlueMongoDBTargets(
+func flattenGlueCrawlerSchemaChangePolicy(
+func expandGlueCrawlerLineageConfiguration(
+func flattenGlueCrawlerLineageConfiguration(
+func expandGlueCrawlerRecrawlPolicy(
+func flattenGlueCrawlerRecrawlPolicy(
 func init(
 func expandGlueDataCatalogEncryptionSettings(
 func flattenGlueDataCatalogEncryptionSettings(
@@ -1925,6 +1930,7 @@ func expandSagemakerCaptureContentTypeHeader(
 func flattenSagemakerCaptureContentTypeHeader(
 func init(
 func init(
+func init(
 func expandSageMakerVpcConfigRequest(
 func flattenSageMakerVpcConfigResponse(
 func expandContainer(
@@ -2152,6 +2158,7 @@ func findResourceVpcEndpoint(
 func vpcEndpointIdRouteTableIdHash(
 func findResourceVpcEndpointServiceAllowedPrincipals(
 func vpcEndpointServiceIdPrincipalArnHash(
+func flattenPrivateDnsNameConfiguration(
 func vpcEndpointServiceStateRefresh(
 func vpcEndpointServiceWaitUntilAvailable(
 func waitForVpcEndpointServiceDeletion(

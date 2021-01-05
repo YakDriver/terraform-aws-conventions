@@ -407,6 +407,7 @@ func TestAccAWSVpcEndpointService_AllowedPrincipals(
 func TestAccAWSVpcEndpointService_disappears(
 func TestAccAWSVpcEndpointService_GatewayLoadBalancerArns(
 func TestAccAWSVpcEndpointService_tags(
+func TestAccAWSVpcEndpointService_private_dns_name(
 func testAccCheckVpcEndpointServiceDestroy(
 func testAccCheckVpcEndpointServiceExists(
 func testAccVpcEndpointServiceConfig_base(
@@ -416,6 +417,7 @@ func testAccVpcEndpointServiceConfig_allowedPrincipals(
 func testAccVpcEndpointServiceConfig_allowedPrincipalsUpdated(
 func testAccVpcEndpointServiceConfigTags1(
 func testAccVpcEndpointServiceConfigTags2(
+func testAccVpcEndpointServiceConfigPrivateDnsName(
 func resourceAwsVpcEndpointSubnetAssociation(
 func resourceAwsVpcEndpointSubnetAssociationCreate(
 func resourceAwsVpcEndpointSubnetAssociationRead(

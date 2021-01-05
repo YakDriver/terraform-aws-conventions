@@ -2466,6 +2466,8 @@ func TestAccAWSGlueCrawler_TablePrefix(
 func TestAccAWSGlueCrawler_RemoveTablePrefix(
 func TestAccAWSGlueCrawler_Tags(
 func TestAccAWSGlueCrawler_SecurityConfiguration(
+func TestAccAWSGlueCrawler_lineageConfig(
+func TestAccAWSGlueCrawler_recrawlPolicy(
 func TestAccAWSDataCatalogEncryptionSettings_basic(
 func TestAccGlueDevEndpoint_Basic(
 func TestAccGlueDevEndpoint_Arguments(
@@ -4009,6 +4011,11 @@ func TestAccAWSSagemakerEndpointConfiguration_disappears(
 func TestAccAWSSagemakerEndpoint_basic(
 func TestAccAWSSagemakerEndpoint_EndpointConfigName(
 func TestAccAWSSagemakerEndpoint_Tags(
+func TestAccAWSSagemakerImage_basic(
+func TestAccAWSSagemakerImage_description(
+func TestAccAWSSagemakerImage_displayName(
+func TestAccAWSSagemakerImage_tags(
+func TestAccAWSSagemakerImage_disappears(
 func TestAccAWSSagemakerModel_basic(
 func TestAccAWSSagemakerModel_tags(
 func TestAccAWSSagemakerModel_primaryContainerModelDataUrl(
@@ -4510,6 +4517,7 @@ func TestAccAWSVpcEndpointService_AllowedPrincipals(
 func TestAccAWSVpcEndpointService_disappears(
 func TestAccAWSVpcEndpointService_GatewayLoadBalancerArns(
 func TestAccAWSVpcEndpointService_tags(
+func TestAccAWSVpcEndpointService_private_dns_name(
 func TestAccAWSVpcEndpointSubnetAssociation_basic(
 func TestAccAWSVpcEndpointSubnetAssociation_multiple(
 func TestAccAWSVpcEndpoint_gatewayBasic(
