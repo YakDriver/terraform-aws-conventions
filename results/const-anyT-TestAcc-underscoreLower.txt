@@ -18,6 +18,7 @@ const testAccDataSourceAwsPrefixListConfig_nameDoesNotOverrideFilter =
 const testAccDataSourceAwsRegionConfig_empty =
 const testAccAWSDataSourceAWSRoute53DelegationSetConfig_basic =
 const testAccDataSourceAwsRoute53ResolverRules_basic =
+const testAccDataSourceAWSSSOPermissionSetByNameConfig_nonExistent =
 const testAccDataSourceAwsTransferServerConfig_basic =
 const testAccAWSALBTargetGroupConfig_namePrefix =
 const testAccAWSALBTargetGroupConfig_generatedName =

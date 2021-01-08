@@ -358,6 +358,8 @@ func expandSSMDocumentParameters(
 func expandSSMAssociationOutputLocation(
 func updateAwsSSMDocument(
 func validateSSMDocumentPermissions(
+func parseSsoAdminManagedPolicyAttachmentID(
+func parseSsoAdminResourceID(
 func parseStorageGatewayVolumeGatewayARNAndTargetNameFromARN(
 func decodeStorageGatewayCacheID(
 func isAWSErrStorageGatewayGatewayNotFound(

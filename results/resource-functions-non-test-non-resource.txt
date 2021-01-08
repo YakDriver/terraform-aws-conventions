@@ -2109,6 +2109,10 @@ func flattenAwsSsmPatchRuleGroup(
 func findResourceDataSyncItem(
 func flattenSsmResourceDataSyncS3Destination(
 func expandSsmResourceDataSyncS3Destination(
+func parseSsoAdminManagedPolicyAttachmentID(
+func parseSsoAdminResourceID(
+func provisionSsoAdminPermissionSet(
+func init(
 func parseStorageGatewayVolumeGatewayARNAndTargetNameFromARN(
 func decodeStorageGatewayCacheID(
 func expandStorageGatewayGatewayDomain(

@@ -379,6 +379,9 @@ func testAccCheckAwsSsmDocumentDataSourceConfig(name string, documentFormat stri
 func testAccCheckAwsSsmParameterDataSourceConfig(name string, withDecryption string) string {
 func testAccCheckAwsSsmPatchBaselineDataSourceConfig_existingBaseline() string {
 func testAccCheckAwsSsmPatchBaselineDataSourceConfig_newBaseline(name string) string {
+func testAccDataSourceAWSSSOPermissionSetBaseConfig(rName string) string {
+func testAccDataSourceAWSSSOPermissionSetByArnConfig(rName string) string {
+func testAccDataSourceAWSSSOPermissionSetByNameConfig(rName string) string {
 func testAccAWSStorageGatewayLocalDiskDataSourceConfigBase(rName string) string {
 func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskNode(rName string) string {
 func testAccAWSStorageGatewayLocalDiskDataSourceConfig_DiskNode_NonExistent(rName string) string {
@@ -4402,6 +4405,19 @@ func testAccAWSSSMPatchBaselineConfigWithOperatingSystemUpdated(rName string) st
 func testAccAWSSSMPatchGroupBasicConfig(rName string) string {
 func testAccSsmResourceDataSyncConfig(rInt int, rName string) string {
 func testAccSsmResourceDataSyncConfigUpdate(rInt int, rName string) string {
+func testAccSSOAdminManagedPolicyAttachmentBaseConfig(rName string) string {
+func testAccSSOAdminManagedPolicyAttachmentBasicConfig(rName string) string {
+func testAccSSOAdminManagedPolicyAttachmentConfig_forceNew(rName string) string {
+func testAccSSOAdminManagedPolicyAttachmentConfig_multiple(rName string) string {
+func testAccSSOAdminPermissionSetInlinePolicyBasicConfig(rName string) string {
+func testAccSSOAdminPermissionSetInlinePolicyUpdateConfig(rName string) string {
+func testAccAWSSSOAdminPermissionSetBasicConfig(rName string) string {
+func testAccAWSSSOAdminPermissionSetUpdateDescriptionConfig(rName string) string {
+func testAccAWSSSOAdminPermissionSetUpdateRelayStateConfig(rName string) string {
+func testAccAWSSSOAdminPermissionSetUpdateSessionDurationConfig(rName string) string {
+func testAccAWSSSOAdminPermissionSetConfigTagsSingle(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSSOAdminPermissionSetConfigTagsMultiple(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSSOAdminPermissionSetMixedPolicyAttachmentsConfig(rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigBase(rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_Basic(rName string) string {
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigKMSEncrypted(rName string) string {

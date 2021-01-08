@@ -14,6 +14,7 @@ func testAccCheckResourceAttrGlobalARNNoAccount(
 func testAccCheckResourceAttrGlobalARNAccountID(
 func testAccMatchResourceAttrGlobalARN(
 func testAccCheckResourceAttrRegionalARNIgnoreRegionAndAccount(
+func testAccMatchResourceAttrGlobalARNNoAccount(
 func testAccAssumeRoleARNPreCheck(
 func TestALBTargetGroupCloudwatchSuffixFromARN(
 func testAccCheckAWSAPIGatewayV2StageARN(

@@ -179,6 +179,8 @@ func resourceAwsSnapshotCreateVolumePermissionParseID(
 func decodeResourceAwsSnsPlatformApplicationID(
 func TestDecodeResourceAwsSnsPlatformApplicationID(
 func findSubscriptionByNonID(
+func parseSsoAdminManagedPolicyAttachmentID(
+func parseSsoAdminResourceID(
 func decodeStorageGatewayCacheID(
 func TestDecodeStorageGatewayCacheID(
 func decodeStorageGatewayUploadBufferID(
