@@ -2385,6 +2385,11 @@ func testAccFlowLogConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccFlowLogConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccFlowLogConfig_MaxAggregationInterval(rName string) string {
 func testAccFmsAdminAccountConfig_basic() string {
+func testAccFmsPolicyConfig(name string, group string) string {
+func testAccFmsPolicyConfig_updated(name string, group string) string {
+func testAccFmsPolicyConfig_include(name string, group string) string {
+func testAccFmsPolicyConfig_tags(name string, group string) string {
+func testAccFmsPolicyConfig_tagsChanged(name string, group string) string {
 func testAccAwsFsxLustreFileSystemConfigBase() string {
 func testAccAwsFsxLustreFileSystemConfigExportPath(rName, exportPrefix string) string {
 func testAccAwsFsxLustreFileSystemConfigImportPath(rName, importPrefix string) string {

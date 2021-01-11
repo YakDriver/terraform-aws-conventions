@@ -2335,6 +2335,15 @@ func associateFmsAdminAccountRefreshFunc(
 func resourceAwsFmsAdminAccountRead(
 func resourceAwsFmsAdminAccountDelete(
 func waitForFmsAdminAccountDeletion(
+func resourceAwsFmsPolicy(
+func resourceAwsFmsPolicyCreate(
+func resourceAwsFmsPolicyRead(
+func resourceAwsFmsPolicyUpdate(
+func resourceAwsFmsPolicyDelete(
+func expandFMSPolicyMap(
+func flattenFMSPolicyMap(
+func flattenFMSResourceTags(
+func constructResourceTags(
 func resourceAwsFsxLustreFileSystem(
 func resourceAwsFsxLustreFileSystemCreate(
 func resourceAwsFsxLustreFileSystemUpdate(

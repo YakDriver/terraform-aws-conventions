@@ -918,6 +918,10 @@ func flattenEmrComputeLimits(
 func init(
 func associateFmsAdminAccountRefreshFunc(
 func waitForFmsAdminAccountDeletion(
+func expandFMSPolicyMap(
+func flattenFMSPolicyMap(
+func flattenFMSResourceTags(
+func constructResourceTags(
 func init(
 func expandFsxSelfManagedActiveDirectoryConfigurationCreate(
 func expandFsxSelfManagedActiveDirectoryConfigurationUpdate(

@@ -1325,6 +1325,10 @@ func TestAccAWSEmrSecurityConfiguration_basic(
 func TestAccAWSFlowLog_tags(
 func TestAccAWSFlowLog_disappears(
 func TestAccAwsFmsAdminAccount_basic(
+func TestAccAWSFmsPolicy_basic(
+func TestAccAWSFmsPolicy_includeMap(
+func TestAccAWSFmsPolicy_update(
+func TestAccAWSFmsPolicy_tags(
 func TestAccAWSFsxLustreFileSystem_basic(
 func TestAccAWSFsxLustreFileSystem_disappears(
 func TestAccAWSFsxLustreFileSystem_automaticBackupRetentionDays(

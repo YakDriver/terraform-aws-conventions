@@ -4460,6 +4460,13 @@ func TestAccAWSFlowLog_disappears(
 func testAccCheckAWSFlowLogAttributes(
 func testAccFlowLogConfig_SubnetID(
 func testAccFlowLogConfig_VPCID(
+func expandFMSPolicyMap(
+func flattenFMSPolicyMap(
+func flattenFMSResourceTags(
+func TestAccAWSFmsPolicy_basic(
+func TestAccAWSFmsPolicy_includeMap(
+func TestAccAWSFmsPolicy_update(
+func TestAccAWSFmsPolicy_tags(
 func testSweepFSXLustreFileSystems(
 func TestAccAWSFsxLustreFileSystem_basic(
 func TestAccAWSFsxLustreFileSystem_disappears(

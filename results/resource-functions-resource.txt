@@ -1436,6 +1436,11 @@ func resourceAwsFmsAdminAccount(
 func resourceAwsFmsAdminAccountCreate(
 func resourceAwsFmsAdminAccountRead(
 func resourceAwsFmsAdminAccountDelete(
+func resourceAwsFmsPolicy(
+func resourceAwsFmsPolicyCreate(
+func resourceAwsFmsPolicyRead(
+func resourceAwsFmsPolicyUpdate(
+func resourceAwsFmsPolicyDelete(
 func resourceAwsFsxLustreFileSystem(
 func resourceAwsFsxLustreFileSystemCreate(
 func resourceAwsFsxLustreFileSystemUpdate(

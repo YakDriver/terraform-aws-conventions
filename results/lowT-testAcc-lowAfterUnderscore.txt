@@ -724,6 +724,10 @@ func testAccAWSEmrInstanceGroupConfig_ebsConfig(
 func testAccAWSEmrInstanceGroupConfig_zeroCount(
 func testAccAWSEmrManagedScalingPolicy_basic(
 func testAccFmsAdminAccountConfig_basic(
+func testAccFmsPolicyConfig_updated(
+func testAccFmsPolicyConfig_include(
+func testAccFmsPolicyConfig_tags(
+func testAccFmsPolicyConfig_tagsChanged(
 func testAccGlacierVault_basic(
 func testAccGlacierVault_full(
 func testAccGlacierVault_withoutNotification(

@@ -1842,6 +1842,9 @@ func TestAccAWSFlowLog_VPCID(
 func TestAccAWSFlowLog_SubnetID(
 func testAccFlowLogConfig_SubnetID(
 func testAccFlowLogConfig_VPCID(
+func expandFMSPolicyMap(
+func flattenFMSPolicyMap(
+func flattenFMSResourceTags(
 func testSweepFSXLustreFileSystems(
 func testSweepFSXWindowsFileSystems(
 func testAccAWSGameLiftFleetIAMRole(

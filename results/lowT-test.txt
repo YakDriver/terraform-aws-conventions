@@ -3662,6 +3662,13 @@ func testAccFlowLogConfigTags2(
 func testAccFlowLogConfig_MaxAggregationInterval(
 func testAccCheckFmsAdminAccountDestroy(
 func testAccFmsAdminAccountConfig_basic(
+func testAccCheckAwsFmsPolicyDestroy(
+func testAccCheckAwsFmsPolicyExists(
+func testAccFmsPolicyConfig(
+func testAccFmsPolicyConfig_updated(
+func testAccFmsPolicyConfig_include(
+func testAccFmsPolicyConfig_tags(
+func testAccFmsPolicyConfig_tagsChanged(
 func testSweepFSXLustreFileSystems(
 func testAccCheckFsxLustreFileSystemExists(
 func testAccCheckFsxLustreFileSystemDestroy(

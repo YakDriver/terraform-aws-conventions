@@ -132,6 +132,9 @@ func resourceAwsEMRManagedScalingPolicyCreate(
 func resourceAwsEMRManagedScalingPolicyRead(
 func resourceAwsEMRManagedScalingPolicyDelete(
 func resourceAwsEMRSecurityConfiguration(
+func expandFMSPolicyMap(
+func flattenFMSPolicyMap(
+func flattenFMSResourceTags(
 func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
 func readAwsGlueTableID(

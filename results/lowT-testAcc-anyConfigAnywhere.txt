@@ -2277,6 +2277,11 @@ func testAccFlowLogConfigTags1(
 func testAccFlowLogConfigTags2(
 func testAccFlowLogConfig_MaxAggregationInterval(
 func testAccFmsAdminAccountConfig_basic(
+func testAccFmsPolicyConfig(
+func testAccFmsPolicyConfig_updated(
+func testAccFmsPolicyConfig_include(
+func testAccFmsPolicyConfig_tags(
+func testAccFmsPolicyConfig_tagsChanged(
 func testAccAwsFsxLustreFileSystemConfigBase(
 func testAccAwsFsxLustreFileSystemConfigExportPath(
 func testAccAwsFsxLustreFileSystemConfigImportPath(
