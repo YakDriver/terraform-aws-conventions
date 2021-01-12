@@ -786,6 +786,10 @@ func waitForCreateElasticacheCacheCluster(
 func deleteElasticacheCacheCluster(
 func waitForDeleteElasticacheCacheCluster(
 func init(
+func elastiCacheParameterChanges(
+func flattenElastiCacheParameters(
+func expandElastiCacheParameters(
+func expandElastiCacheParameter(
 func cacheReplicationGroupStateRefreshFunc(
 func deleteElasticacheReplicationGroup(
 func flattenElasticacheNodeGroupsToClusterMode(

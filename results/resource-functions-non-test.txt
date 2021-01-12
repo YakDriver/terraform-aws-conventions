@@ -2100,6 +2100,12 @@ func resourceAwsElasticacheParameterGroupRead(
 func resourceAwsElasticacheParameterGroupUpdate(
 func resourceAwsElasticacheParameterGroupDelete(
 func resourceAwsElasticacheParameterHash(
+func elastiCacheParameterChanges(
+func resourceAwsElastiCacheResetParameterGroup(
+func resourceAwsElastiCacheModifyParameterGroup(
+func flattenElastiCacheParameters(
+func expandElastiCacheParameters(
+func expandElastiCacheParameter(
 func resourceAwsElasticacheReplicationGroup(
 func resourceAwsElasticacheReplicationGroupCreate(
 func resourceAwsElasticacheReplicationGroupRead(

@@ -1076,6 +1076,7 @@ func testAccAWSElasticacheReplicationGroupNativeRedisClusterErrorConfig(rInt int
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterConfig(rName string, numNodeGroups, replicasPerNodeGroup int) string {
 func testAccAWSElasticacheReplicationGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSElasticacheReplicationGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSElasticacheReplicationGroupConfigFinalSnapshot(rName string) string {
 func testAccAWSElasticacheSecurityGroupConfig(rName string) string {
 func testAccAWSElasticacheSubnetGroupConfig(rInt int) string {
 func testAccAWSElasticacheSubnetGroupUpdateConfigPre(rInt int) string {

@@ -2031,6 +2031,8 @@ func testAccAWSElasticacheClusterConfig_NodeType_Redis(rName, nodeType string) s
 func testAccAWSElasticacheClusterConfig_NumCacheNodes_Redis(rName string, numCacheNodes int) string {
 func testAccAWSElasticacheClusterConfig_ReplicationGroupID_AvailabilityZone(rName string) string {
 func testAccAWSElasticacheClusterConfig_ReplicationGroupID_Replica(rName string, count int) string {
+func testAccAWSElasticacheClusterConfig_Memcached_FinalSnapshot(rName string) string {
+func testAccAWSElasticacheClusterConfig_Redis_FinalSnapshot(rName string) string {
 func testAccAWSElasticacheParameterGroupConfig(rName string) string {
 func testAccAWSElasticacheParameterGroupConfigDescription(rName, description string) string {
 func testAccAWSElasticacheParameterGroupConfigParameter1(rName, family, parameterName1, parameterValue1 string) string {
@@ -2052,6 +2054,7 @@ func testAccAWSElasticacheReplicationGroup_EnableAuthTokenTransitEncryptionConfi
 func testAccAWSElasticacheReplicationGroupConfig_NumberCacheClusters(rName string, numberCacheClusters int, autoFailover bool) string {
 func testAccAWSElasticacheReplicationGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSElasticacheReplicationGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSElasticacheReplicationGroupConfigFinalSnapshot(rName string) string {
 func testAccAWSElasticacheSecurityGroupConfig(rName string) string {
 func testAccAWSElasticacheSubnetGroupConfig(rInt int) string {
 func testAccAWSElasticacheSubnetGroupUpdateConfigPre(rInt int) string {
