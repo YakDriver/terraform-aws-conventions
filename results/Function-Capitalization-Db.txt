@@ -251,6 +251,7 @@ func testSweepRdsDbSubnetGroups(
 func flattenDmsMongoDbSettings(
 func TestAccAwsDmsEndpoint_DynamoDb(
 func TestAccAwsDmsEndpoint_MongoDb(
+func TestAccAwsDmsEndpoint_MongoDb_Update(
 func TestAccAwsDmsEndpoint_Db2(
 func dmsEndpointDynamoDbConfig(
 func dmsEndpointDynamoDbConfigUpdate(

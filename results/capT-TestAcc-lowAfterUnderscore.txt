@@ -10,6 +10,7 @@ func TestAccAWSAmiDataSource_windowsInstance(
 func TestAccAWSAmiDataSource_instanceStore(
 func TestAccAWSAmiDataSource_localNameFilter(
 func TestAccDataSourceAwsApiGatewayApiKey_basic(
+func TestAccDataSourceAwsApiGatewayDomainName_basic(
 func TestAccDataSourceAwsApiGatewayResource_basic(
 func TestAccDataSourceAwsApiGatewayRestApi_basic(
 func TestAccDataSourceAwsApiGatewayVpcLink_basic(
@@ -408,6 +409,7 @@ func TestAccAWSAPIGatewayAuthorizer_authTypeValidation(
 func TestAccAWSAPIGatewayAuthorizer_zero_ttl(
 func TestAccAWSAPIGatewayAuthorizer_disappears(
 func TestAccAWSAPIGatewayBasePathMapping_basic(
+func TestAccAWSAPIGatewayBasePathMapping_updates(
 func TestAccAWSAPIGatewayBasePathMapping_disappears(
 func TestAccAWSAPIGatewayClientCertificate_basic(
 func TestAccAWSAPIGatewayClientCertificate_tags(
@@ -454,6 +456,7 @@ func TestAccAWSAPIGatewayRestApi_basic(
 func TestAccAWSAPIGatewayRestApi_tags(
 func TestAccAWSAPIGatewayRestApi_disappears(
 func TestAccAWSAPIGatewayRestApi_api_key_source(
+func TestAccAWSAPIGatewayRestApi_disable_execute_api_endpoint(
 func TestAccAWSAPIGatewayRestApi_policy(
 func TestAccAWSAPIGatewayRestApi_openapi(
 func TestAccAWSAPIGatewayStage_basic(
@@ -1530,8 +1533,9 @@ func TestAccAWSInstance_ipv6_supportAddressCount(
 func TestAccAWSInstance_ipv6AddressCountAndSingleAddressCausesError(
 func TestAccAWSInstance_ipv6_supportAddressCountWithIpv4(
 func TestAccAWSInstance_tags(
-func TestAccAWSInstance_volumeTags(
-func TestAccAWSInstance_volumeTagsComputed(
+func TestAccAWSInstance_blockDeviceTags_volumeTags(
+func TestAccAWSInstance_blockDeviceTags_withAttachedVolume(
+func TestAccAWSInstance_blockDeviceTags_ebsAndRoot(
 func TestAccAWSInstance_instanceProfileChange(
 func TestAccAWSInstance_withIamInstanceProfile(
 func TestAccAWSInstance_privateIP(

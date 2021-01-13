@@ -14,6 +14,7 @@ func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndTypes(domain,
 func testAccAwsAcmCertificateDataSourceConfigKeyTypes(certificate, key, rName string) string {
 func testAccDataSourceAwsAmiIdsConfig_sorted(sort_ascending bool) string {
 func testAccDataSourceAwsApiGatewayApiKeyConfig(r string) string {
+func testAccDataSourceAwsApiGatewayDomainNameConfig_RegionalCertificateArn(domainName, key, certificate string) string {
 func testAccDataSourceAwsApiGatewayResourceConfig(r string) string {
 func testAccDataSourceAwsApiGatewayRestApiConfigName() string {
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(r string) string {
@@ -553,6 +554,7 @@ func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationRequest(rName string
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationCognito(rName string) string {
 func testAccAWSAPIGatewayBasePathConfigBase(domainName, key, certificate string) string {
 func testAccAWSAPIGatewayBasePathConfigBasePath(domainName, key, certificate, basePath string) string {
+func testAccAWSAPIGatewayBasePathConfigBasePathAltStageAndAPI(domainName, key, certificate, basePath string) string {
 func testAccAWSAPIGatewayClientCertificateConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayClientCertificateConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayDeploymentConfigBase(uri string) string {
@@ -567,6 +569,7 @@ func testAccAWSAPIGatewayDocumentationPartMethodConfig(apiName, properties strin
 func testAccAWSAPIGatewayDocumentationPartResponseHeaderConfig(apiName, properties string) string {
 func testAccAWSAPIGatewayDocumentationVersionBasicConfig(version, apiName string) string {
 func testAccAWSAPIGatewayDocumentationVersionAllFieldsConfig(version, apiName, stageName, description string) string {
+func testAccAWSAPIGatewayDomainNameConfigPublicCert(rootDomain, domain string) string {
 func testAccAWSAPIGatewayDomainNameConfig_CertificateArn(rootDomain string, domain string) string {
 func testAccAWSAPIGatewayDomainNameConfig_CertificateName(domainName, key, certificate, chainCertificate string) string {
 func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateArn(domainName, key, certificate string) string {
@@ -574,6 +577,8 @@ func testAccAWSAPIGatewayDomainNameConfig_RegionalCertificateName(domainName, ke
 func testAccAWSAPIGatewayDomainNameConfig_SecurityPolicy(domainName, key, certificate, securityPolicy string) string {
 func testAccAWSAPIGatewayDomainNameConfigTags1(domainName, key, certificate, tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayDomainNameConfigTags2(domainName, key, certificate, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSAPIGatewayDomainNameConfig_MutualTlsAuthentication(rootDomain, domain, rName string) string {
+func testAccAWSAPIGatewayDomainNameConfig_MutualTlsAuthenticationMissing(rootDomain, domain string) string {
 func testAccAWSAPIGatewayGatewayResponseConfig(rName string) string {
 func testAccAWSAPIGatewayGatewayResponseConfigUpdate(rName string) string {
 func testAccAWSAPIGatewayIntegrationResponseConfig(rName string) string {
@@ -588,6 +593,7 @@ func testAccAWSAPIGatewayIntegrationConfigCacheKeyParameters(rName string) strin
 func testAccAWSAPIGatewayIntegrationConfig_IntegrationTypeBase(rName string) string {
 func testAccAWSAPIGatewayIntegrationConfig_IntegrationTypeVpcLink(rName string) string {
 func testAccAWSAPIGatewayIntegrationConfig_IntegrationTypeInternet(rName string) string {
+func testAccAWSAPIGatewayIntegrationConfig_TlsConfig_InsecureSkipVerification(rName string, insecureSkipVerification bool) string {
 func testAccAWSAPIGatewayMethodResponseConfig(rName string) string {
 func testAccAWSAPIGatewayMethodResponseConfigUpdate(rName string) string {
 func testAccAWSAPIGatewayMethodSettingsConfigBase(rName string) string {
@@ -609,6 +615,7 @@ func testAccAWSAPIGatewayMethodConfig(rInt int) string {
 func testAccAWSAPIGatewayMethodConfigUpdate(rInt int) string {
 func testAccAWSAPIGatewayMethodConfigWithCustomRequestValidator(rInt int) string {
 func testAccAWSAPIGatewayMethodConfigWithCustomRequestValidatorUpdate(rInt int) string {
+func testAccAWSAPIGatewayMethodConfigOperationName(rInt int, operationName string) string {
 func testAccAWSAPIGatewayModelConfig(rName, modelName string) string {
 func testAccAWSAPIGatewayRequestValidatorConfig_base(rName string) string {
 func testAccAWSAPIGatewayRequestValidatorConfig(rName string) string {
@@ -619,6 +626,7 @@ func testAccAWSAPIGatewayRestApiPolicyConfig(rName string) string {
 func testAccAWSAPIGatewayRestApiPolicyConfigUpdated(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfig(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(rName, endpointType string) string {
+func testAccAWSAPIGatewayRestAPIConfig_DisableExecuteApiEndpoint(rName string, disabled bool) string {
 func testAccAWSAPIGatewayRestAPIConfig_Name(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration2(rName string) string {
@@ -632,6 +640,7 @@ func testAccAWSAPIGatewayRestAPIUpdateConfig(rName string) string {
 func testAccAWSAPIGatewayRestAPIDisableCompressionConfig(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfigOpenAPI(rName string) string {
 func testAccAWSAPIGatewayRestAPIUpdateConfigOpenAPI(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigParameters1(rName string, parameterKey1 string, parameterValue1 string) string {
 func testAccAWSAPIGatewayStageConfig_base(rName string) string {
 func testAccAWSAPIGatewayStageConfigBaseDeploymentStageName(rName string, stageName string) string {
 func testAccAWSAPIGatewayStageConfigReferencingDeployment(rName string) string {
@@ -639,9 +648,9 @@ func testAccAWSAPIGatewayStageConfig_basic(rName string) string {
 func testAccAWSAPIGatewayStageConfig_updated(rName string) string {
 func testAccAWSAPIGatewayStageConfig_accessLogSettings(rName string, format string) string {
 func testAccAWSAPIGatewayStageConfig_accessLogSettingsKinesis(rName string, format string) string {
-func testAccAWSAPIGatewayUsagePlanKeyConfig(rName string) string {
-func testAccAWSApiGatewayUsagePlanKeyBasicConfig(rName string) string {
-func testAccAWSApiGatewayUsagePlanKeyBasicUpdatedConfig(rName string) string {
+func testAccAWSAPIGatewayUsagePlanKeyConfigBase(rName string) string {
+func testAccAWSApiGatewayUsagePlanKeyConfigKeyTypeApiKey(rName string) string {
+func testAccAWSApiGatewayUsagePlanKeyConfigKeyIdConcurrency(rName string) string {
 func testAccAWSAPIGatewayUsagePlanConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanBasicConfig(rName string) string {
 func testAccAWSApiGatewayUsagePlanBasicTags1(rName, tagKey1, tagValue1 string) string {
@@ -2834,14 +2843,20 @@ func testAccInstanceConfigPlacementGroup(rName string) string {
 func testAccInstanceConfigIpv6ErrorConfig(rName string) string {
 func testAccInstanceConfigIpv6Support(rName string) string {
 func testAccInstanceConfigIpv6SupportWithIpv4(rName string) string {
-func testAccCheckInstanceConfigTags() string {
+func testAccInstanceConfigTags() string {
 func testAccInstanceConfigEbsBlockDeviceKmsKeyArn() string {
 func testAccInstanceConfigRootBlockDeviceKmsKeyArn(rName string) string {
-func testAccCheckInstanceConfigWithAttachedVolume() string {
-func testAccCheckInstanceConfigNoVolumeTags() string {
-func testAccCheckInstanceConfigWithVolumeTags() string {
-func testAccCheckInstanceConfigWithVolumeTagsUpdate() string {
-func testAccCheckInstanceConfigTagsUpdate() string {
+func testAccInstanceConfigBlockDeviceTagsAttachedVolumeWithTags(rName string) string {
+func testAccInstanceConfigBlockDeviceTagsAttachedVolumeWithTagsUpdate(rName string) string {
+func testAccInstanceConfigBlockDeviceTagsRootTagsConflict() string {
+func testAccInstanceConfigBlockDeviceTagsEBSTagsConflict() string {
+func testAccInstanceConfigBlockDeviceTagsNoVolumeTags() string {
+func testAccInstanceConfigBlockDeviceTagsEBSTags(rName string) string {
+func testAccInstanceConfigBlockDeviceTagsEBSAndRootTags(rName string) string {
+func testAccInstanceConfigBlockDeviceTagsEBSAndRootTagsUpdate(rName string) string {
+func testAccInstanceConfigBlockDeviceTagsVolumeTags() string {
+func testAccInstanceConfigBlockDeviceTagsVolumeTagsUpdate() string {
+func testAccInstanceConfigTagsUpdate() string {
 func testAccInstanceConfigWithoutInstanceProfile(rName string) string {
 func testAccInstanceConfigWithInstanceProfile(rName string) string {
 func testAccInstanceConfigPrivateIP(rName string) string {

@@ -55,6 +55,7 @@ func resourceAwsApiGatewayAuthorizerDelete(
 func resourceAwsApiGatewayAuthorizerCustomizeDiff(
 func resourceAwsApiGatewayBasePathMapping(
 func resourceAwsApiGatewayBasePathMappingCreate(
+func resourceAwsApiGatewayBasePathMappingUpdate(
 func resourceAwsApiGatewayBasePathMappingRead(
 func resourceAwsApiGatewayBasePathMappingDelete(
 func resourceAwsApiGatewayClientCertificate(

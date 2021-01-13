@@ -24,6 +24,10 @@ func expandApiGatewayDocumentationPartLocation(
 func flattenApiGatewayDocumentationPartLocation(
 func decodeApiGatewayDocumentationPartId(
 func decodeApiGatewayDocumentationVersionId(
+func expandApiGatewayMutualTlsAuthentication(
+func flattenApiGatewayMutualTlsAuthentication(
+func expandApiGatewayTlsConfig(
+func flattenApiGatewayTlsConfig(
 func flattenAwsApiGatewayMethodSettings(
 func expandApiGatewayEndpointConfiguration(
 func flattenApiGatewayEndpointConfiguration(
@@ -525,6 +529,9 @@ func flattenDmsKafkaSettings(
 func flattenDmsKinesisSettings(
 func flattenDmsMongoDbSettings(
 func flattenDmsS3Settings(
+func suppressExtraConnectionAttributesDiffs(
+func extraConnectionAttributesToSet(
+func engineSettingsToSet(
 func dmsEndpointDestroy(
 func checkDmsEndpointExists(
 func dmsEndpointBasicConfig(
@@ -532,9 +539,11 @@ func dmsEndpointBasicConfigUpdate(
 func dmsEndpointDynamoDbConfig(
 func dmsEndpointDynamoDbConfigUpdate(
 func dmsEndpointS3Config(
+func dmsEndpointS3ExtraConnectionAttributesConfig(
 func dmsEndpointS3ConfigUpdate(
 func dmsEndpointElasticsearchConfigBase(
 func dmsEndpointElasticsearchConfig(
+func dmsEndpointElasticsearchExtraConnectionAttributesConfig(
 func dmsEndpointElasticsearchConfigErrorRetryDuration(
 func dmsEndpointElasticsearchConfigFullLoadErrorPercentage(
 func dmsEndpointKafkaConfigBroker(
@@ -1229,6 +1238,9 @@ func waitForInstanceDeletion(
 func iamInstanceProfileArnToName(
 func userDataHashSum(
 func getAwsInstanceVolumeIds(
+func getRootVolumeId(
+func getVolumeIdByDeviceName(
+func blockDeviceTagsDefined(
 func getCreditSpecifications(
 func expandEc2InstanceMetadataOptions(
 func expandEc2EnclaveOptions(

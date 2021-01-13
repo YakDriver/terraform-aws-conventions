@@ -19,14 +19,17 @@ func flattenDmsMongoDbSettings(
 func flattenDmsS3Settings(
 func TestAccAwsDmsEndpoint_basic(
 func TestAccAwsDmsEndpoint_S3(
+func TestAccAwsDmsEndpoint_S3_ExtraConnectionAttributes(
 func TestAccAwsDmsEndpoint_DynamoDb(
 func TestAccAwsDmsEndpoint_Elasticsearch(
+func TestAccAwsDmsEndpoint_Elasticsearch_ExtraConnectionAttributes(
 func TestAccAwsDmsEndpoint_Elasticsearch_ErrorRetryDuration(
 func TestAccAwsDmsEndpoint_Elasticsearch_FullLoadErrorPercentage(
 func TestAccAwsDmsEndpoint_Kafka_Broker(
 func TestAccAwsDmsEndpoint_Kafka_Topic(
 func TestAccAwsDmsEndpoint_Kinesis(
 func TestAccAwsDmsEndpoint_MongoDb(
+func TestAccAwsDmsEndpoint_MongoDb_Update(
 func TestAccAwsDmsEndpoint_DocDB(
 func TestAccAwsDmsEndpoint_Db2(
 func checkDmsEndpointExists(

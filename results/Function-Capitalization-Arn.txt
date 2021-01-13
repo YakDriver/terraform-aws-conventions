@@ -1,3 +1,4 @@
+func testAccDataSourceAwsApiGatewayDomainNameConfig_RegionalCertificateArn(
 func dataSourceAwsArn(
 func dataSourceAwsArnRead(
 func TestAccDataSourceAwsArn_basic(

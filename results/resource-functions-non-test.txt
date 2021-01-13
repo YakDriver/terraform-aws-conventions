@@ -76,6 +76,7 @@ func resourceAwsApiGatewayAuthorizerCustomizeDiff(
 func validateAuthorizerType(
 func resourceAwsApiGatewayBasePathMapping(
 func resourceAwsApiGatewayBasePathMappingCreate(
+func resourceAwsApiGatewayBasePathMappingUpdate(
 func resourceAwsApiGatewayBasePathMappingRead(
 func resourceAwsApiGatewayBasePathMappingDelete(
 func decodeApiGatewayBasePathMappingId(
@@ -110,6 +111,8 @@ func resourceAwsApiGatewayDomainNameRead(
 func resourceAwsApiGatewayDomainNameUpdateOperations(
 func resourceAwsApiGatewayDomainNameUpdate(
 func resourceAwsApiGatewayDomainNameDelete(
+func expandApiGatewayMutualTlsAuthentication(
+func flattenApiGatewayMutualTlsAuthentication(
 func resourceAwsApiGatewayGatewayResponse(
 func resourceAwsApiGatewayGatewayResponsePut(
 func resourceAwsApiGatewayGatewayResponseRead(
@@ -119,6 +122,8 @@ func resourceAwsApiGatewayIntegrationCreate(
 func resourceAwsApiGatewayIntegrationRead(
 func resourceAwsApiGatewayIntegrationUpdate(
 func resourceAwsApiGatewayIntegrationDelete(
+func expandApiGatewayTlsConfig(
+func flattenApiGatewayTlsConfig(
 func resourceAwsApiGatewayIntegrationResponse(
 func resourceAwsApiGatewayIntegrationResponseCreate(
 func resourceAwsApiGatewayIntegrationResponseRead(
@@ -1432,6 +1437,9 @@ func flattenDmsKafkaSettings(
 func flattenDmsKinesisSettings(
 func flattenDmsMongoDbSettings(
 func flattenDmsS3Settings(
+func suppressExtraConnectionAttributesDiffs(
+func extraConnectionAttributesToSet(
+func engineSettingsToSet(
 func dmsEndpointDestroy(
 func checkDmsEndpointExists(
 func dmsEndpointBasicConfig(
@@ -1439,9 +1447,11 @@ func dmsEndpointBasicConfigUpdate(
 func dmsEndpointDynamoDbConfig(
 func dmsEndpointDynamoDbConfigUpdate(
 func dmsEndpointS3Config(
+func dmsEndpointS3ExtraConnectionAttributesConfig(
 func dmsEndpointS3ConfigUpdate(
 func dmsEndpointElasticsearchConfigBase(
 func dmsEndpointElasticsearchConfig(
+func dmsEndpointElasticsearchExtraConnectionAttributesConfig(
 func dmsEndpointElasticsearchConfigErrorRetryDuration(
 func dmsEndpointElasticsearchConfigFullLoadErrorPercentage(
 func dmsEndpointKafkaConfigBroker(
@@ -2999,6 +3009,9 @@ func waitForInstanceDeletion(
 func iamInstanceProfileArnToName(
 func userDataHashSum(
 func getAwsInstanceVolumeIds(
+func getRootVolumeId(
+func getVolumeIdByDeviceName(
+func blockDeviceTagsDefined(
 func getCreditSpecifications(
 func expandEc2InstanceMetadataOptions(
 func expandEc2EnclaveOptions(

@@ -935,8 +935,6 @@ func TestAccAWSInstance_disableApiTermination(
 func TestAccAWSInstance_dedicatedInstance(
 func TestAccAWSInstance_placementGroup(
 func TestAccAWSInstance_ipv6AddressCountAndSingleAddressCausesError(
-func TestAccAWSInstance_volumeTags(
-func TestAccAWSInstance_volumeTagsComputed(
 func TestAccAWSInstance_instanceProfileChange(
 func TestAccAWSInstance_withIamInstanceProfile(
 func TestAccAWSInstance_privateIP(

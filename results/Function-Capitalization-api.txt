@@ -1,6 +1,7 @@
 func TestAccDataSourceAwsTransferServer_apigateway(
 func testAccDataSourceAwsTransferServerConfig_apigateway(
 func TestAccAWSAPIGatewayRestApi_api_key_source(
+func TestAccAWSAPIGatewayRestApi_disable_execute_api_endpoint(
 func TestAccAWSAPIGatewayRestApi_openapi(
 func apiGatewayStageCacheRefreshFunc(
 func TestAccAWSAPIGatewayUsagePlan_apiStages(
