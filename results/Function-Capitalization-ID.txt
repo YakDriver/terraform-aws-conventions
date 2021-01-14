@@ -17,6 +17,12 @@ func testAccAWSEc2TransitGatewayDataSourceConfigID(
 func TestAccAWSEc2TransitGatewayVpcAttachmentDataSource_ID(
 func testAccAWSEc2TransitGatewayVpcAttachmentDataSourceConfigID(
 func testAccCheckAwsElasticBeanstalkSolutionStackDataSourceID(
+func TestAccAWSIdentityStoreGroupDataSource_GroupID(
+func testAccPreCheckAWSIdentityStoreGroupID(
+func testAccAWSIdentityStoreGroupDataSourceConfigGroupID(
+func TestAccAWSIdentityStoreUserDataSource_UserID(
+func testAccPreCheckAWSIdentityStoreUserID(
+func testAccAWSIdentityStoreUserDataSourceConfigUserID(
 func TestAccDataSourceAwsNetworkAcls_VpcID(
 func testAccDataSourceAwsNetworkAclsConfig_VpcID(
 func TestAccAWSRouteDataSource_TransitGatewayID(
@@ -161,6 +167,7 @@ func resourceAwsS3BucketAnalyticsConfigurationParseID(
 func resourceAwsS3BucketInventoryParseID(
 func resourceAwsS3BucketMetricParseID(
 func TestResourceAwsS3BucketMetricParseID(
+func decodeSagemakerDomainID(
 func TestAccAwsSecretsManagerSecret_KmsKeyID(
 func testAccAwsSecretsManagerSecretConfig_KmsKeyID(
 func testAccAwsSecretsManagerSecretConfig_KmsKeyID_Updated(
@@ -179,6 +186,7 @@ func resourceAwsSnapshotCreateVolumePermissionParseID(
 func decodeResourceAwsSnsPlatformApplicationID(
 func TestDecodeResourceAwsSnsPlatformApplicationID(
 func findSubscriptionByNonID(
+func parseSsoAdminAccountAssignmentID(
 func parseSsoAdminManagedPolicyAttachmentID(
 func parseSsoAdminResourceID(
 func decodeStorageGatewayCacheID(

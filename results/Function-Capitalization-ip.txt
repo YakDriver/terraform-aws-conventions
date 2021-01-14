@@ -123,6 +123,8 @@ func testAccAwsBackupPlanConfigRuleCopyActionMultiple(
 func testAccAWSBudgetsBudgetConfigNotificationSnippet(
 func TestAccAWSCloudFormationStackSet_Description(
 func testAccAWSCloudFormationStackSetConfigDescription(
+func TestAccAwsCloudWatchCompositeAlarm_description(
+func testAccAwsCloudWatchCompositeAlarmConfig_description(
 func validateCloudWatchEventPermissionPrincipal(
 func TestAccAWSCloudWatchEventPermission_Multiple(
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigMultiple(
@@ -187,6 +189,7 @@ func flattenAwsCodePipelineActionsInputArtifacts(
 func resourceAwsCodePipelineRead(
 func resourceAwsCodePipelineUpdate(
 func resourceAwsCodePipelineDelete(
+func resourceAwsCodePipelineValidateActionProvider(
 func suppressCodePipelineStageActionConfiguration(
 func hashCodePipelineGitHubToken(
 func TestAccAWSCodePipeline_basic(
@@ -198,9 +201,10 @@ func TestAccAWSCodePipeline_multiregion_basic(
 func TestAccAWSCodePipeline_multiregion_Update(
 func TestAccAWSCodePipeline_multiregion_ConvertSingleRegion(
 func TestAccAWSCodePipeline_WithNamespace(
+func TestAccAWSCodePipeline_WithGitHubv1SourceAction(
 func testAccCheckAWSCodePipelineExists(
 func testAccCheckAWSCodePipelineDestroy(
-func testAccPreCheckAWSCodePipeline(
+func testAccPreCheckAWSCodePipelineSupported(
 func testAccAWSCodePipelineServiceIAMRole(
 func testAccAWSCodePipelineServiceIAMRoleWithAssumeRole(
 func testAccAWSCodePipelineConfig_basic(
@@ -216,6 +220,8 @@ func testAccAWSCodePipelineS3DefaultBucket(
 func testAccAWSCodePipelineS3Bucket(
 func testAccAWSCodePipelineS3BucketWithProvider(
 func testAccAWSCodePipelineConfigWithNamespace(
+func testAccAWSCodePipelineConfig_WithGitHubv1SourceAction(
+func testAccAWSCodePipelineConfig_WithGitHubv1SourceAction_Updated(
 func TestResourceAWSCodePipelineExpandArtifactStoresValidation(
 func resourceAwsCodePipelineWebhook(
 func extractCodePipelineWebhookRules(

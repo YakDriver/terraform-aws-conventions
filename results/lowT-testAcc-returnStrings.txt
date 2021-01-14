@@ -168,6 +168,10 @@ func testAccAwsIAMRoleConfig_tags(roleName string) string {
 func testAccAwsDataIAMServerCertConfig(rName, key, certificate string) string {
 func testAccAwsDataIAMServerCertConfigPath(rName, path, pathPrefix, key, certificate string) string {
 func testAccAwsDataSourceIAMUserConfig(name string) string {
+func testAccAWSIdentityStoreGroupDataSourceConfigDisplayName(name string) string {
+func testAccAWSIdentityStoreGroupDataSourceConfigGroupID(name, id string) string {
+func testAccAWSIdentityStoreUserDataSourceConfigDisplayName(name string) string {
+func testAccAWSIdentityStoreUserDataSourceConfigUserID(name, id string) string {
 func testAccAwsImageBuilderComponentDataSourceConfigBuildVersionArn(rName string) string {
 func testAccAwsImageBuilderDistributionConfigurationDataSourceConfigArn(rName string) string {
 func testAccAwsImageBuilderImagePipelineDataSourceConfigArn(rName string) string {
@@ -711,6 +715,8 @@ func testAccAWSAPIGatewayV2IntegrationConfig_apiHttp(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_lambdaBase(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_vpcLinkHttpBase(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_dataMappingHttp(rName string) string {
+func testAccAWSAPIGatewayV2IntegrationConfig_dataMappingHttpUpdated(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttp(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_integrationTypeHttpUpdated(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationConfig_lambdaWebSocket(rName string) string {
@@ -804,6 +810,7 @@ func testAccAwsAppmeshRouteConfig_grpcRouteUpdated(meshName, vrName, vn1Name, vn
 func testAccAwsAppmeshRouteConfig_grpcRouteUpdatedWithZeroWeight(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_grpcRouteWithTimeout(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_grpcRouteWithTimeoutUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
+func testAccAwsAppmeshRouteConfig_grpcRouteWithEmptyMatch(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_http2Route(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_http2RouteUpdated(meshName, vrName, vn1Name, vn2Name, rName string) string {
 func testAccAwsAppmeshRouteConfig_http2RouteWithTimeout(meshName, vrName, vn1Name, vn2Name, rName string) string {
@@ -1151,6 +1158,18 @@ func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(cloudTrailRandInt int
 func testAccAWSCloudTrailConfig_eventSelectorModified(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_eventSelectorNone(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfig_insightSelector(rName string) string {
+func testAccAwsCloudWatchCompositeAlarmBaseConfig(suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_actionsEnabled(enabled bool, suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_basic(suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_description(description, suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_alarmActions(suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_updateAlarmActions(suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_updateAlarmRule(suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_insufficientDataActions(suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_updateInsufficientDataActions(suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_okActions(suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_updateOkActions(suffix string) string {
+func testAccAwsCloudWatchCompositeAlarmConfig_allActions(suffix string) string {
 func testAccAWSCloudWatchDashboardName(rInt int) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
 func testAccAWSCloudWatchDashboardConfig_updateBody(rInt int) string {
@@ -1353,19 +1372,21 @@ func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string 
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) string {
 func testAccAWSCodePipelineServiceIAMRole(rName string) string {
 func testAccAWSCodePipelineServiceIAMRoleWithAssumeRole(rName string) string {
-func testAccAWSCodePipelineConfig_basic(rName, githubToken string) string {
-func testAccAWSCodePipelineConfig_basicUpdated(rName, githubToken string) string {
-func testAccAWSCodePipelineConfig_emptyStageArtifacts(rName, githubToken string) string {
+func testAccAWSCodePipelineConfig_basic(rName string) string {
+func testAccAWSCodePipelineConfig_basicUpdated(rName string) string {
+func testAccAWSCodePipelineConfig_emptyStageArtifacts(rName string) string {
 func testAccAWSCodePipelineDeployActionIAMRole(rName string) string {
-func testAccAWSCodePipelineConfig_deployWithServiceRole(rName, githubToken string) string {
-func testAccAWSCodePipelineConfigWithTags(rName, githubToken, tag1, tag2 string) string {
-func testAccAWSCodePipelineConfig_multiregion(rName, githubToken string) string {
-func testAccAWSCodePipelineConfig_multiregionUpdated(rName, githubToken string) string {
-func testAccAWSCodePipelineConfig_backToBasic(rName, githubToken string) string {
+func testAccAWSCodePipelineConfig_deployWithServiceRole(rName string) string {
+func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
+func testAccAWSCodePipelineConfig_multiregion(rName string) string {
+func testAccAWSCodePipelineConfig_multiregionUpdated(rName string) string {
+func testAccAWSCodePipelineConfig_backToBasic(rName string) string {
 func testAccAWSCodePipelineS3DefaultBucket(rName string) string {
 func testAccAWSCodePipelineS3Bucket(bucket, rName string) string {
 func testAccAWSCodePipelineS3BucketWithProvider(bucket, rName, provider string) string {
-func testAccAWSCodePipelineConfigWithNamespace(rName, githubToken string) string {
+func testAccAWSCodePipelineConfigWithNamespace(rName string) string {
+func testAccAWSCodePipelineConfig_WithGitHubv1SourceAction(rName, githubToken string) string {
+func testAccAWSCodePipelineConfig_WithGitHubv1SourceAction_Updated(rName, githubToken string) string {
 func testAccAWSCodePipelineWebhookConfig_basic(rName, githubToken string) string {
 func testAccAWSCodePipelineWebhookConfig_ipAuth(rName, githubToken string) string {
 func testAccAWSCodePipelineWebhookConfig_unauthenticated(rName, githubToken string) string {
@@ -3860,6 +3881,8 @@ func testAccRoute53RecordConfigHealthCheckIdTypeCname() string {
 func testAccRoute53CustomVpcEndpointBase(rName string) string {
 func testAccRoute53RecordConfigAliasCustomVpcEndpointSwappedAliasAttributes(rName string) string {
 func testAccRoute53RecordConfigCustomVpcEndpoint(rName string) string {
+func testAccRoute53ResolverDnssecConfigBase(rName string) string {
+func testAccRoute53ResolverDnssecConfigConfigBasic(rName string) string {
 func testAccRoute53ResolverEndpointConfig_base(rInt int) string {
 func testAccRoute53ResolverEndpointConfig_initial(rInt int, direction, name string) string {
 func testAccRoute53ResolverEndpointConfig_updated(rInt int, direction, name string) string {
@@ -4073,6 +4096,18 @@ func testAccAWSSagemakerCodeRepositoryBasicConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigBranchConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigSecretConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigSecretUpdatedConfig(rName string) string {
+func testAccAWSSagemakerDomainConfigBase(rName string) string {
+func testAccAWSSagemakerDomainBasicConfig(rName string) string {
+func testAccAWSSagemakerDomainKMSConfig(rName string) string {
+func testAccAWSSagemakerDomainConfigSecurityGroup1(rName string) string {
+func testAccAWSSagemakerDomainConfigSecurityGroup2(rName string) string {
+func testAccAWSSagemakerDomainConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSagemakerDomainConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSagemakerDomainConfigSharingSettings(rName string) string {
+func testAccAWSSagemakerDomainConfigTensorBoardAppSettings(rName string) string {
+func testAccAWSSagemakerDomainConfigTensorBoardAppSettingsWithImage(rName string) string {
+func testAccAWSSagemakerDomainConfigJupyterServerAppSettings(rName string) string {
+func testAccAWSSagemakerDomainConfigKernelGatewayAppSettings(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_Base(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_Basic(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_ProductionVariants_InitialVariantWeight(rName string) string {
@@ -4430,6 +4465,9 @@ func testAccAWSSSMPatchBaselineConfigWithOperatingSystemUpdated(rName string) st
 func testAccAWSSSMPatchGroupBasicConfig(rName string) string {
 func testAccSsmResourceDataSyncConfig(rInt int, rName string) string {
 func testAccSsmResourceDataSyncConfigUpdate(rInt int, rName string) string {
+func testAccAWSSSOAdminAccountAssignmentBaseConfig(rName string) string {
+func testAccAWSSSOAdminAccountAssignmentBasicGroupConfig(groupName, rName string) string {
+func testAccAWSSSOAdminAccountAssignmentBasicUserConfig(userName, rName string) string {
 func testAccSSOAdminManagedPolicyAttachmentBaseConfig(rName string) string {
 func testAccSSOAdminManagedPolicyAttachmentBasicConfig(rName string) string {
 func testAccSSOAdminManagedPolicyAttachmentConfig_forceNew(rName string) string {
@@ -4824,6 +4862,7 @@ func testAccWorkspacesDirectory_selfServicePermissions(rName string) string {
 func testAccWorkspacesDirectoryConfig_subnetIds(rName string) string {
 func testAccWorkspacesDirectoryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccWorkspacesDirectoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccWorkspacesDirectory_workspaceAccessProperties(rName string) string {
 func testAccWorkspacesDirectoryConfig_workspaceCreationProperties(rName string) string {
 func testAccWorkspacesDirectoryConfig_workspaceCreationProperties_customSecurityGroupId_defaultOu_Absent(rName string) string {
 func testAccWorkspacesDirectoryConfig_workspaceCreationProperties_customSecurityGroupId_defaultOu_Present(rName string) string {

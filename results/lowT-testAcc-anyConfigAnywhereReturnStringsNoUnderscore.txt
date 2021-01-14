@@ -124,6 +124,10 @@ func testAccAwsIAMRoleConfig(roleName string) string {
 func testAccAwsDataIAMServerCertConfig(rName, key, certificate string) string {
 func testAccAwsDataIAMServerCertConfigPath(rName, path, pathPrefix, key, certificate string) string {
 func testAccAwsDataSourceIAMUserConfig(name string) string {
+func testAccAWSIdentityStoreGroupDataSourceConfigDisplayName(name string) string {
+func testAccAWSIdentityStoreGroupDataSourceConfigGroupID(name, id string) string {
+func testAccAWSIdentityStoreUserDataSourceConfigDisplayName(name string) string {
+func testAccAWSIdentityStoreUserDataSourceConfigUserID(name, id string) string {
 func testAccAwsImageBuilderComponentDataSourceConfigBuildVersionArn(rName string) string {
 func testAccAwsImageBuilderDistributionConfigurationDataSourceConfigArn(rName string) string {
 func testAccAwsImageBuilderImagePipelineDataSourceConfigArn(rName string) string {
@@ -572,6 +576,7 @@ func testAccAWSCloudTrailConfigCloudWatch(randInt int) string {
 func testAccAWSCloudTrailConfigCloudWatchModified(randInt int) string {
 func testAccAWSCloudTrailConfigMultiRegion(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigOrganization(cloudTrailRandInt int) string {
+func testAccAwsCloudWatchCompositeAlarmBaseConfig(suffix string) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
 func testAccAWSCloudWatchEventBusConfig(name string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigBasic(principal, statementID string) string {
@@ -680,8 +685,8 @@ func testAccAWSCodeDeployDeploymentConfigTrafficLinear(rName string, interval, p
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) string {
-func testAccAWSCodePipelineConfigWithTags(rName, githubToken, tag1, tag2 string) string {
-func testAccAWSCodePipelineConfigWithNamespace(rName, githubToken string) string {
+func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
+func testAccAWSCodePipelineConfigWithNamespace(rName string) string {
 func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2, githubToken string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigBasic(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBase(rName string) string {
@@ -1929,6 +1934,8 @@ func testAccRoute53RecordConfigHealthCheckIdTypeA() string {
 func testAccRoute53RecordConfigHealthCheckIdTypeCname() string {
 func testAccRoute53RecordConfigAliasCustomVpcEndpointSwappedAliasAttributes(rName string) string {
 func testAccRoute53RecordConfigCustomVpcEndpoint(rName string) string {
+func testAccRoute53ResolverDnssecConfigBase(rName string) string {
+func testAccRoute53ResolverDnssecConfigConfigBasic(rName string) string {
 func testAccRoute53ResolverQueryLogConfigAssociationConfig(rName string) string {
 func testAccRoute53ResolverQueryLogConfigConfig(rName string) string {
 func testAccRoute53ResolverQueryLogConfigConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -2070,6 +2077,18 @@ func testAccAWSSagemakerCodeRepositoryBasicConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigBranchConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigSecretConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigSecretUpdatedConfig(rName string) string {
+func testAccAWSSagemakerDomainConfigBase(rName string) string {
+func testAccAWSSagemakerDomainBasicConfig(rName string) string {
+func testAccAWSSagemakerDomainKMSConfig(rName string) string {
+func testAccAWSSagemakerDomainConfigSecurityGroup1(rName string) string {
+func testAccAWSSagemakerDomainConfigSecurityGroup2(rName string) string {
+func testAccAWSSagemakerDomainConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSagemakerDomainConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSagemakerDomainConfigSharingSettings(rName string) string {
+func testAccAWSSagemakerDomainConfigTensorBoardAppSettings(rName string) string {
+func testAccAWSSagemakerDomainConfigTensorBoardAppSettingsWithImage(rName string) string {
+func testAccAWSSagemakerDomainConfigJupyterServerAppSettings(rName string) string {
+func testAccAWSSagemakerDomainConfigKernelGatewayAppSettings(rName string) string {
 func testAccSagemakerEndpointConfigurationConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccSagemakerEndpointConfigurationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSagemakerEndpointConfigurationDataCaptureConfig(rName string) string {
@@ -2322,6 +2341,9 @@ func testAccAWSSSMPatchBaselineConfigWithOperatingSystemUpdated(rName string) st
 func testAccAWSSSMPatchGroupBasicConfig(rName string) string {
 func testAccSsmResourceDataSyncConfig(rInt int, rName string) string {
 func testAccSsmResourceDataSyncConfigUpdate(rInt int, rName string) string {
+func testAccAWSSSOAdminAccountAssignmentBaseConfig(rName string) string {
+func testAccAWSSSOAdminAccountAssignmentBasicGroupConfig(groupName, rName string) string {
+func testAccAWSSSOAdminAccountAssignmentBasicUserConfig(userName, rName string) string {
 func testAccSSOAdminManagedPolicyAttachmentBaseConfig(rName string) string {
 func testAccSSOAdminManagedPolicyAttachmentBasicConfig(rName string) string {
 func testAccSSOAdminPermissionSetInlinePolicyBasicConfig(rName string) string {

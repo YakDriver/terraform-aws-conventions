@@ -336,6 +336,7 @@ func resourceAwsS3BucketAnalyticsConfigurationParseID(
 func BucketCannedACL_Values(
 func resourceAwsS3BucketInventoryParseID(
 func resourceAwsS3BucketMetricParseID(
+func decodeSagemakerDomainID(
 func decodeSecretsManagerSecretVersionID(
 func resourceAwsSecurityGroupIPPermGather(
 func SGStateRefreshFunc(
@@ -361,6 +362,7 @@ func expandSSMDocumentParameters(
 func expandSSMAssociationOutputLocation(
 func updateAwsSSMDocument(
 func validateSSMDocumentPermissions(
+func parseSsoAdminAccountAssignmentID(
 func parseSsoAdminManagedPolicyAttachmentID(
 func parseSsoAdminResourceID(
 func parseStorageGatewayVolumeGatewayARNAndTargetNameFromARN(
