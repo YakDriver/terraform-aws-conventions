@@ -185,6 +185,7 @@ func testAccInstanceDataSourceConfigGetUserDataNoUserData(rName string, getUserD
 func testAccInstanceDataSourceConfig_creditSpecification(rName string) string {
 func testAccInstanceDataSourceConfig_metadataOptions(rName string) string {
 func testAccInstanceDataSourceConfig_enclaveOptions(rName string) string {
+func testAccInstanceDataSourceConfig_blockDeviceTags(rName string) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
 func testAccDataSourceAwsKmsKeyConfig(rName string) string {
 func testAccAWSLakeFormationPermissionsDataSourceConfig_basic(rName string) string {

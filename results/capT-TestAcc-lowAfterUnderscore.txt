@@ -149,6 +149,7 @@ func TestAccAWSInstanceDataSource_getPasswordData_falseToTrue(
 func TestAccAWSInstanceDataSource_creditSpecification(
 func TestAccAWSInstanceDataSource_metadataOptions(
 func TestAccAWSInstanceDataSource_enclaveOptions(
+func TestAccAWSInstanceDataSource_blockDeviceTags(
 func TestAccDataSourceAwsInternetGateway_typical(
 func TestAccAWSIotEndpointDataSource_basic(
 func TestAccAWSIPRanges_basic(
