@@ -478,6 +478,7 @@ func testAccAutoScalingPlansScalingPlanConfigBase(rName, tagName string) string 
 func testAccAutoScalingPlansScalingPlanConfigBasicDynamicScaling(rName, tagName string) string {
 func testAccAutoScalingPlansScalingPlanConfigBasicPredictiveScaling(rName, tagName string) string {
 func testAccAWSAutoscalingScheduleConfig(r, start, end string) string {
+func testAccBackupGlobalSettingsConfig(setting string) string {
 func testAccAwsBackupPlanConfigRuleCopyAction(rName string, coldStorageAfter, deleteAfter int) string {
 func testAccAwsBackupPlanConfigRuleCopyActionMultiple(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
@@ -2096,6 +2097,15 @@ func testAccSagemakerEndpointConfig(rName string) string {
 func testAccSagemakerEndpointConfigEndpointConfigNameUpdate(rName string) string {
 func testAccSagemakerEndpointConfigTags(rName string) string {
 func testAccSagemakerEndpointConfigTagsUpdate(rName string) string {
+func testAccAWSSagemakerFeatureGroupBaseConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupOfflineBaseConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupBasicConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupDescriptionConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupConfigMultiFeature(rName string) string {
+func testAccAWSSagemakerFeatureGroupOnlineSecurityConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupOfflineBasicConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupOfflineCreateGlueCatalogConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupOfflineCreateGlueCatalogConfigProvidedCatalog(rName string) string {
 func testAccAWSSagemakerImageConfigBase(rName string) string {
 func testAccAWSSagemakerImageBasicConfig(rName string) string {
 func testAccAWSSagemakerImageConfigTags1(rName, tagKey1, tagValue1 string) string {

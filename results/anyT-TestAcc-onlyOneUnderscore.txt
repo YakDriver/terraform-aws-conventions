@@ -1281,6 +1281,7 @@ func TestAccAWSAutoscalingSchedule_negativeOne(
 func testAccAWSAutoscalingScheduleConfig_recurrence(
 func testAccAWSAutoscalingScheduleConfig_zeroValues(
 func testAccAWSAutoscalingScheduleConfig_negativeOne(
+func TestAccAwsBackupGlobalSettings_basic(
 func TestAccAwsBackupPlan_basic(
 func TestAccAwsBackupPlan_withTags(
 func TestAccAwsBackupPlan_withRules(
@@ -4515,6 +4516,12 @@ func TestAccAWSSagemakerEndpoint_basic(
 func TestAccAWSSagemakerEndpoint_EndpointConfigName(
 func TestAccAWSSagemakerEndpoint_Tags(
 func testAccSagemakerEndpointConfig_Base(
+func TestAccAWSSagemakerFeatureGroup_basic(
+func TestAccAWSSagemakerFeatureGroup_description(
+func TestAccAWSSagemakerFeatureGroup_tags(
+func TestAccAWSSagemakerFeatureGroup_multipleFeatures(
+func TestAccAWSSagemakerFeatureGroup_onlineConfigSecurityConfig(
+func TestAccAWSSagemakerFeatureGroup_disappears(
 func TestAccAWSSagemakerImage_basic(
 func TestAccAWSSagemakerImage_description(
 func TestAccAWSSagemakerImage_displayName(

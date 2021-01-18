@@ -942,6 +942,7 @@ func testAccAWSAutoscalingScheduleConfig(r, start, end string) string {
 func testAccAWSAutoscalingScheduleConfig_recurrence(r string) string {
 func testAccAWSAutoscalingScheduleConfig_zeroValues(r, start, end string) string {
 func testAccAWSAutoscalingScheduleConfig_negativeOne(r, start, end string) string {
+func testAccBackupGlobalSettingsConfig(setting string) string {
 func testAccAwsBackupPlanConfig_basic(rName string) string {
 func testAccAwsBackupPlanConfig_tags(rName string) string {
 func testAccAwsBackupPlanConfig_tagsUpdated(rName string) string {
@@ -3756,6 +3757,15 @@ func testAccSagemakerEndpointConfig(rName string) string {
 func testAccSagemakerEndpointConfigEndpointConfigNameUpdate(rName string) string {
 func testAccSagemakerEndpointConfigTags(rName string) string {
 func testAccSagemakerEndpointConfigTagsUpdate(rName string) string {
+func testAccAWSSagemakerFeatureGroupBaseConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupOfflineBaseConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupBasicConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupDescriptionConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupConfigMultiFeature(rName string) string {
+func testAccAWSSagemakerFeatureGroupOnlineSecurityConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupOfflineBasicConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupOfflineCreateGlueCatalogConfig(rName string) string {
+func testAccAWSSagemakerFeatureGroupOfflineCreateGlueCatalogConfigProvidedCatalog(rName string) string {
 func testAccAWSSagemakerImageConfigBase(rName string) string {
 func testAccAWSSagemakerImageBasicConfig(rName string) string {
 func testAccAWSSagemakerImageConfigTags1(rName, tagKey1, tagValue1 string) string {

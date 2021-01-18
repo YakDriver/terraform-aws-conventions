@@ -1483,6 +1483,11 @@ func resourceAwsAutoscalingScheduleCreate(
 func resourceAwsAutoscalingScheduleRead(
 func resourceAwsAutoscalingScheduleDelete(
 func resourceAwsASGScheduledActionRetrieve(
+func resourceAwsBackupGlobalSettings(
+func resourceAwsBackupGlobalSettingsUpdate(
+func resourceAwsBackupGlobalSettingsRead(
+func TestAccAwsBackupGlobalSettings_basic(
+func testAccCheckAwsBackupGlobalSettingsExists(
 func resourceAwsBackupPlan(
 func resourceAwsBackupPlanCreate(
 func resourceAwsBackupPlanRead(
@@ -4890,6 +4895,11 @@ func resourceAwsSagemakerEndpointCreate(
 func resourceAwsSagemakerEndpointRead(
 func resourceAwsSagemakerEndpointUpdate(
 func resourceAwsSagemakerEndpointDelete(
+func resourceAwsSagemakerFeatureGroup(
+func resourceAwsSagemakerFeatureGroupCreate(
+func resourceAwsSagemakerFeatureGroupRead(
+func resourceAwsSagemakerFeatureGroupUpdate(
+func resourceAwsSagemakerFeatureGroupDelete(
 func resourceAwsSagemakerImage(
 func resourceAwsSagemakerImageCreate(
 func resourceAwsSagemakerImageRead(

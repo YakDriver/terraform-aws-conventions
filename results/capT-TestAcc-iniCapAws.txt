@@ -46,6 +46,7 @@ func TestAccAwsAutoScalingPlansScalingPlan_basicDynamicScaling(
 func TestAccAwsAutoScalingPlansScalingPlan_basicPredictiveScaling(
 func TestAccAwsAutoScalingPlansScalingPlan_basicUpdate(
 func TestAccAwsAutoScalingPlansScalingPlan_disappears(
+func TestAccAwsBackupGlobalSettings_basic(
 func TestAccAwsBackupPlan_basic(
 func TestAccAwsBackupPlan_withTags(
 func TestAccAwsBackupPlan_withRules(
