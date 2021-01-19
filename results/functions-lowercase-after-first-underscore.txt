@@ -620,7 +620,6 @@ func TestAccAWSAMI_basic(
 func TestAccAWSAMI_description(
 func TestAccAWSAMI_disappears(
 func TestAccAWSAMI_tags(
-func TestAccAWSAMI_snapshotSize(
 func TestAccAWSAPIGatewayAccount_basic(
 func testAccAWSAPIGatewayAccountConfig_updated(
 func testAccAWSAPIGatewayAccountConfig_updated2(
@@ -1819,6 +1818,9 @@ func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_withTags(
 func TestAccAWSEBSVolume_multiAttach(
 func TestAccAWSEBSVolume_outpost(
+func TestAccAWSEBSVolume_gp3_basic(
+func TestAccAWSEBSVolume_gp3_iops(
+func TestAccAWSEBSVolume_gp3_throughput(
 func TestAccAWSEBSVolume_disappears(
 func TestAccAWSEc2CapacityReservation_basic(
 func TestAccAWSEc2CapacityReservation_ebsOptimized(

@@ -21,6 +21,7 @@ func TestAccAWSAmiDataSource_natInstance(
 func TestAccAWSAmiDataSource_windowsInstance(
 func TestAccAWSAmiDataSource_instanceStore(
 func TestAccAWSAmiDataSource_localNameFilter(
+func TestAccAWSAmiDataSource_Gp3BlockDevice(
 func testAccCheckAwsAmiDataSourceID(
 func TestAccAWSAutoscalingGroups_basic(
 func TestAccAWSAvailabilityZones_basic(
@@ -797,8 +798,9 @@ func testAccAWSAMILaunchPermissionImportStateIdFunc(
 func TestAccAWSAMI_basic(
 func TestAccAWSAMI_description(
 func TestAccAWSAMI_disappears(
+func TestAccAWSAMI_EphemeralBlockDevices(
+func TestAccAWSAMI_Gp3BlockDevice(
 func TestAccAWSAMI_tags(
-func TestAccAWSAMI_snapshotSize(
 func TestAccAWSAPIGatewayAccount_basic(
 func testAccCheckAWSAPIGatewayAccountCloudwatchRoleArn(
 func testAccCheckAWSAPIGatewayAccountExists(
@@ -3400,9 +3402,13 @@ func TestAccAWSEBSVolume_updateIops_Io2(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_NoIops(
 func TestAccAWSEBSVolume_InvalidIopsForType(
+func TestAccAWSEBSVolume_InvalidThroughputForType(
 func TestAccAWSEBSVolume_withTags(
 func TestAccAWSEBSVolume_multiAttach(
 func TestAccAWSEBSVolume_outpost(
+func TestAccAWSEBSVolume_gp3_basic(
+func TestAccAWSEBSVolume_gp3_iops(
+func TestAccAWSEBSVolume_gp3_throughput(
 func TestAccAWSEBSVolume_disappears(
 func TestAccAWSEc2AvailabilityZoneGroup_OptInStatus(
 func testAccPreCheckAWSEc2AvailabilityZoneGroup(

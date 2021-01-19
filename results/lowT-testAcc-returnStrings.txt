@@ -13,6 +13,7 @@ func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndStatus(domain
 func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndTypes(domain, certType string, mostRecent bool) string {
 func testAccAwsAcmCertificateDataSourceConfigKeyTypes(certificate, key, rName string) string {
 func testAccDataSourceAwsAmiIdsConfig_sorted(sort_ascending bool) string {
+func testAccAmiDataSourceConfigGp3BlockDevice(rName string) string {
 func testAccDataSourceAwsApiGatewayApiKeyConfig(r string) string {
 func testAccDataSourceAwsApiGatewayDomainNameConfig_RegionalCertificateArn(domainName, key, certificate string) string {
 func testAccDataSourceAwsApiGatewayResourceConfig(r string) string {
@@ -535,11 +536,13 @@ func testAccAWSAMIFromInstanceConfig(rName string) string {
 func testAccAWSAMIFromInstanceConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAMIFromInstanceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAMILaunchPermissionConfig(rName string) string {
-func testAccAmiConfigBase(rName string, size int) string {
-func testAccAmiConfigBasic(rName string, size int) string {
-func testAccAmiConfigDesc(rName, desc string, size int) string {
-func testAccAmiConfigTags1(rName, tagKey1, tagValue1 string, size int) string {
-func testAccAmiConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string, size int) string {
+func testAccAmiConfigBase(rName string) string {
+func testAccAmiConfigBasic(rName string) string {
+func testAccAmiConfigDesc(rName, desc string) string {
+func testAccAmiConfigEphemeralBlockDevices(rName string) string {
+func testAccAmiConfigGp3BlockDevice(rName string) string {
+func testAccAmiConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAmiConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAPIGatewayAccountConfig_updated(randName string) string {
 func testAccAWSAPIGatewayAccountConfig_updated2(randName string) string {
 func testAccAWSAPIGatewayApiKeyConfig(rName string) string {
@@ -1915,6 +1918,9 @@ func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
 func testAccAwsEbsVolumeConfigOutpost() string {
 func testAccAwsEbsVolumeConfigMultiAttach(rName string) string {
+func testAccAwsEbsVolumeConfigSizeType(rName string, size int, volumeType string) string {
+func testAccAwsEbsVolumeConfigGp3Throughput(rName string, throughput int) string {
+func testAccAwsEbsVolumeConfigGp3Iops(rName string, iops int) string {
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(localZone, optInStatus string) string {
 func testAccEc2CapacityReservationConfig_ebsOptimized(ebsOptimized bool) string {
 func testAccEc2CapacityReservationConfig_endDate(endDate string) string {

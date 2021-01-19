@@ -52,6 +52,14 @@ func resourceAwsAmiDelete(
 func AMIStateRefreshFunc(
 func resourceAwsAmiWaitForDestroy(
 func resourceAwsAmiWaitForAvailable(
+func expandEc2BlockDeviceMappingForAmiEbsBlockDevice(
+func expandEc2BlockDeviceMappingsForAmiEbsBlockDevice(
+func flattenEc2BlockDeviceMappingForAmiEbsBlockDevice(
+func flattenEc2BlockDeviceMappingsForAmiEbsBlockDevice(
+func expandEc2BlockDeviceMappingForAmiEphemeralBlockDevice(
+func expandEc2BlockDeviceMappingsForAmiEphemeralBlockDevice(
+func flattenEc2BlockDeviceMappingForAmiEphemeralBlockDevice(
+func flattenEc2BlockDeviceMappingsForAmiEphemeralBlockDevice(
 func resourceAwsAmiLaunchPermission(
 func resourceAwsAmiLaunchPermissionCreate(
 func resourceAwsAmiLaunchPermissionRead(
@@ -1737,6 +1745,7 @@ func resourceAWSEbsVolumeUpdate(
 func volumeStateRefreshFunc(
 func resourceAwsEbsVolumeRead(
 func resourceAwsEbsVolumeDelete(
+func resourceAwsEbsVolumeCustomizeDiff(
 func init(
 func resourceAwsEc2AvailabilityZoneGroup(
 func resourceAwsEc2AvailabilityZoneGroupCreate(

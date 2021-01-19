@@ -37,8 +37,9 @@ func testAccAWSAMILaunchPermissionImportStateIdFunc(
 func TestAccAWSAMI_basic(
 func TestAccAWSAMI_description(
 func TestAccAWSAMI_disappears(
+func TestAccAWSAMI_EphemeralBlockDevices(
+func TestAccAWSAMI_Gp3BlockDevice(
 func TestAccAWSAMI_tags(
-func TestAccAWSAMI_snapshotSize(
 func TestAccAWSAutoScalingGroup_LaunchTemplate_IAMInstanceProfile(
 func testAccAWSAutoScalingGroupConfig_LaunchTemplate_IAMInstanceProfile(
 func testAccAWSEmrClusterConfigIAMInstanceProfileBase(

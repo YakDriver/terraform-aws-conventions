@@ -1,4 +1,5 @@
 func TestAccAWSAcmCertificateDataSource_KeyTypes(
+func TestAccAWSAmiDataSource_Gp3BlockDevice(
 func TestAccDataSourceAwsApiGatewayRestApi_EndpointConfiguration_VpcEndpointIds(
 func TestAccAWSAvailabilityZones_AllAvailabilityZones(
 func TestAccAWSAvailabilityZones_Filter(
@@ -187,6 +188,8 @@ func TestAccAWSAMICopy_EnaSupport(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission_Public(
 func TestAccAWSAMILaunchPermission_Disappears_AMI(
+func TestAccAWSAMI_EphemeralBlockDevices(
+func TestAccAWSAMI_Gp3BlockDevice(
 func TestAccAWSAPIGatewayApiKey_Tags(
 func TestAccAWSAPIGatewayApiKey_Description(
 func TestAccAWSAPIGatewayApiKey_Enabled(
@@ -700,6 +703,7 @@ func TestAccAWSDynamoDbTable_Replica_Multiple(
 func TestAccAWSDynamoDbTable_Replica_Single(
 func TestAccAWSEBSVolume_NoIops(
 func TestAccAWSEBSVolume_InvalidIopsForType(
+func TestAccAWSEBSVolume_InvalidThroughputForType(
 func TestAccAWSEc2AvailabilityZoneGroup_OptInStatus(
 func TestAccAWSEc2CarrierGateway_Tags(
 func TestAccAWSEc2Fleet_ExcessCapacityTerminationPolicy(

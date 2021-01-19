@@ -10,6 +10,7 @@ func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndStatus(
 func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndTypes(
 func testAccAwsAcmCertificateDataSourceConfigKeyTypes(
 func testAccDataSourceAwsAmiIdsConfig_sorted(
+func testAccAmiDataSourceConfigGp3BlockDevice(
 func testAccDataSourceAwsApiGatewayApiKeyConfig(
 func testAccDataSourceAwsApiGatewayDomainNameConfig_RegionalCertificateArn(
 func testAccDataSourceAwsApiGatewayResourceConfig(
@@ -490,6 +491,8 @@ func testAccAWSAMILaunchPermissionConfig(
 func testAccAmiConfigBase(
 func testAccAmiConfigBasic(
 func testAccAmiConfigDesc(
+func testAccAmiConfigEphemeralBlockDevices(
+func testAccAmiConfigGp3BlockDevice(
 func testAccAmiConfigTags1(
 func testAccAmiConfigTags2(
 func testAccAWSAPIGatewayAccountConfig_updated(
@@ -1885,6 +1888,9 @@ func testAccAwsEbsSnapshotConfigWithDescription(
 func testAccAwsEbsSnapshotConfigWithKms(
 func testAccAwsEbsVolumeConfigOutpost(
 func testAccAwsEbsVolumeConfigMultiAttach(
+func testAccAwsEbsVolumeConfigSizeType(
+func testAccAwsEbsVolumeConfigGp3Throughput(
+func testAccAwsEbsVolumeConfigGp3Iops(
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(
 func testAccEc2CapacityReservationConfig_ebsOptimized(
 func testAccEc2CapacityReservationConfig_endDate(

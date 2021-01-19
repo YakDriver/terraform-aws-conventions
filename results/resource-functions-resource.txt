@@ -1112,6 +1112,7 @@ func resourceAwsEbsVolumeCreate(
 func resourceAWSEbsVolumeUpdate(
 func resourceAwsEbsVolumeRead(
 func resourceAwsEbsVolumeDelete(
+func resourceAwsEbsVolumeCustomizeDiff(
 func resourceAwsEc2AvailabilityZoneGroup(
 func resourceAwsEc2AvailabilityZoneGroupCreate(
 func resourceAwsEc2AvailabilityZoneGroupRead(

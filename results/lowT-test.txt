@@ -19,6 +19,7 @@ func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndTypes(
 func testAccAwsAcmCertificateDataSourceConfigKeyTypes(
 func testAccDataSourceAwsAmiIdsConfig_sorted(
 func testAccCheckAwsAmiDataSourceID(
+func testAccAmiDataSourceConfigGp3BlockDevice(
 func testAccDataSourceAwsApiGatewayApiKeyConfig(
 func testAccDataSourceAwsApiGatewayDomainNameConfig_RegionalCertificateArn(
 func testAccDataSourceAwsApiGatewayResourceConfig(
@@ -725,11 +726,11 @@ func testAccAWSAMILaunchPermissionConfig(
 func testAccAWSAMILaunchPermissionImportStateIdFunc(
 func testAccCheckAmiDestroy(
 func testAccCheckAmiExists(
-func testAccCheckAmiBlockDevice(
-func testAccCheckAmiEbsBlockDevice(
 func testAccAmiConfigBase(
 func testAccAmiConfigBasic(
 func testAccAmiConfigDesc(
+func testAccAmiConfigEphemeralBlockDevices(
+func testAccAmiConfigGp3BlockDevice(
 func testAccAmiConfigTags1(
 func testAccAmiConfigTags2(
 func testAccCheckAWSAPIGatewayAccountCloudwatchRoleArn(
@@ -2934,6 +2935,9 @@ func testAccCheckVolumeDestroy(
 func testAccCheckVolumeExists(
 func testAccAwsEbsVolumeConfigOutpost(
 func testAccAwsEbsVolumeConfigMultiAttach(
+func testAccAwsEbsVolumeConfigSizeType(
+func testAccAwsEbsVolumeConfigGp3Throughput(
+func testAccAwsEbsVolumeConfigGp3Iops(
 func testAccPreCheckAWSEc2AvailabilityZoneGroup(
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(
 func testSweepEc2CapacityReservations(

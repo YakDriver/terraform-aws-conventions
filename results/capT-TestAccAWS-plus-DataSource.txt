@@ -6,6 +6,7 @@ func TestAccAWSAmiDataSource_natInstance(
 func TestAccAWSAmiDataSource_windowsInstance(
 func TestAccAWSAmiDataSource_instanceStore(
 func TestAccAWSAmiDataSource_localNameFilter(
+func TestAccAWSAmiDataSource_Gp3BlockDevice(
 func TestAccAWSBackupPlanDataSource_basic(
 func TestAccAWSBackupSelectionDataSource_basic(
 func TestAccAWSBackupVaultDataSource_basic(

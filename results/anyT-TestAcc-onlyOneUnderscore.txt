@@ -11,6 +11,7 @@ func TestAccAWSAmiDataSource_natInstance(
 func TestAccAWSAmiDataSource_windowsInstance(
 func TestAccAWSAmiDataSource_instanceStore(
 func TestAccAWSAmiDataSource_localNameFilter(
+func TestAccAWSAmiDataSource_Gp3BlockDevice(
 func TestAccDataSourceAwsApiGatewayApiKey_basic(
 func TestAccDataSourceAwsApiGatewayDomainName_basic(
 func testAccDataSourceAwsApiGatewayDomainNameConfig_RegionalCertificateArn(
@@ -740,8 +741,9 @@ func TestAccAWSAMILaunchPermission_basic(
 func TestAccAWSAMI_basic(
 func TestAccAWSAMI_description(
 func TestAccAWSAMI_disappears(
+func TestAccAWSAMI_EphemeralBlockDevices(
+func TestAccAWSAMI_Gp3BlockDevice(
 func TestAccAWSAMI_tags(
-func TestAccAWSAMI_snapshotSize(
 func TestAccAWSAPIGatewayAccount_basic(
 func testAccAWSAPIGatewayAccountConfig_updated(
 func testAccAWSAPIGatewayAccountConfig_updated2(
@@ -2230,6 +2232,7 @@ func TestAccAWSEBSVolume_updateType(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_NoIops(
 func TestAccAWSEBSVolume_InvalidIopsForType(
+func TestAccAWSEBSVolume_InvalidThroughputForType(
 func TestAccAWSEBSVolume_withTags(
 func TestAccAWSEBSVolume_multiAttach(
 func TestAccAWSEBSVolume_outpost(

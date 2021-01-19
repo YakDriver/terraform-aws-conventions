@@ -173,6 +173,7 @@ const testAccAwsEbsVolumeConfigWithKmsKey =
 const testAccAwsEbsVolumeConfigWithTags =
 const testAccAwsEbsVolumeConfigWithNoIops =
 const testAccAwsEbsVolumeConfigWithInvalidIopsForType =
+const testAccAwsEbsVolumeConfigWithInvalidThroughputForType =
 const testAccEc2CapacityReservationConfig =
 const testAccAWSEFSFileSystemConfigWithPerformanceMode =
 const testAccAWSEFSFileSystemConfigRemovedLifecyclePolicy =
