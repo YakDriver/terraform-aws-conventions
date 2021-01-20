@@ -1,6 +1,6 @@
 func GetSupportedEC2Platforms(
 func TestGetSupportedEC2Platforms(
-func TestAccDataSourceAwsEip_PublicIP_EC2Classic(
+func TestAccDataSourceAWSEIP_PublicIP_EC2Classic(
 func testAccEC2ClassicPreCheck(
 func buildEC2AttributeFilterList(
 func buildEC2TagFilterList(

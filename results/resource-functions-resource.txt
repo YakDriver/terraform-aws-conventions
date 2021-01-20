@@ -889,6 +889,9 @@ func resourceAwsDefaultSubnetDelete(
 func resourceAwsDefaultVpcDhcpOptions(
 func resourceAwsDefaultVpcDhcpOptionsCreate(
 func resourceAwsDefaultVpcDhcpOptionsDelete(
+func resourceAwsEc2RegionalPrivateDnsSuffix(
+func resourceAwsEc2RegionalPublicDnsSuffix(
+func resourceAwsEc2DashIP(
 func resourceAwsDefaultVpc(
 func resourceAwsDefaultVpcCreate(
 func resourceAwsDefaultVpcDelete(

@@ -1,6 +1,8 @@
 func testAccCheckAwsDnsSuffix(
 func testAccCheckResourceAttrRegionalReverseDnsService(
 func testAccCheckAWSProviderDnsSuffix(
+func resourceAwsEc2RegionalPrivateDnsSuffix(
+func resourceAwsEc2RegionalPublicDnsSuffix(
 func TestAccAWSEc2TransitGateway_DnsSupport(
 func testAccAWSEc2TransitGatewayConfigDnsSupport(
 func TestAccAWSEc2TransitGatewayVpcAttachment_DnsSupport(

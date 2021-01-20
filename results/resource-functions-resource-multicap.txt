@@ -3,6 +3,7 @@ func resourceAwsELBSticknessPolicyAssigned(
 func resourceAwsASGScheduledActionRetrieve(
 func resourceAwsConfigAggregateAuthorizationParseID(
 func resourceAwsDbProxyTargetParseID(
+func resourceAwsEc2DashIP(
 func resourceAwsDocDBCluster(
 func resourceAwsDocDBClusterImport(
 func resourceAwsDocDBClusterCreate(

@@ -338,16 +338,6 @@ func TestAccDataSourceAwsEfsMountTarget_basic(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
 func dataSourceAwsEip(
 func dataSourceAwsEipRead(
-func TestAccDataSourceAwsEip_Filter(
-func TestAccDataSourceAwsEip_Id(
-func TestAccDataSourceAwsEip_PublicIP_EC2Classic(
-func TestAccDataSourceAwsEip_PublicIP_VPC(
-func TestAccDataSourceAwsEip_Tags(
-func TestAccDataSourceAwsEip_NetworkInterface(
-func TestAccDataSourceAwsEip_Instance(
-func testAccDataSourceAwsEipConfigFilter(
-func testAccDataSourceAwsEipConfigPublicIpEc2Classic(
-func testAccDataSourceAwsEipConfigTags(
 func dataSourceAwsEksClusterAuth(
 func dataSourceAwsEksClusterAuthRead(
 func testAccCheckAwsEksClusterAuthToken(
@@ -417,6 +407,7 @@ func testAccAwsDataIAMServerCertConfigPath(
 func dataSourceAwsIAMUser(
 func dataSourceAwsIAMUserRead(
 func testAccAwsDataSourceIAMUserConfig(
+func testAccAwsDataSourceIAMUserConfig_tags(
 func dataSourceAwsIdentityStoreGroup(
 func dataSourceAwsIdentityStoreGroupRead(
 func dataSourceAwsIdentityStoreUser(
@@ -2201,6 +2192,9 @@ func resourceAwsDefaultSubnetDelete(
 func resourceAwsDefaultVpcDhcpOptions(
 func resourceAwsDefaultVpcDhcpOptionsCreate(
 func resourceAwsDefaultVpcDhcpOptionsDelete(
+func resourceAwsEc2RegionalPrivateDnsSuffix(
+func resourceAwsEc2RegionalPublicDnsSuffix(
+func resourceAwsEc2DashIP(
 func resourceAwsDefaultVpc(
 func resourceAwsDefaultVpcCreate(
 func resourceAwsDefaultVpcDelete(

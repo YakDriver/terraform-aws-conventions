@@ -31,6 +31,7 @@ func decodeCognitoResourceServerID(
 func resourceAwsConfigAggregateAuthorizationParseID(
 func resourceAwsDbProxyTargetParseID(
 func revokeAllNetworkACLEntries(
+func resourceAwsEc2DashIP(
 func parseDSConditionalForwarderId(
 func dmsEndpointDocDBConfig(
 func dmsEndpointDocDBConfigUpdate(

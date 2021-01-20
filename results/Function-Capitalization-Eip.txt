@@ -1,15 +1,5 @@
 func dataSourceAwsEip(
 func dataSourceAwsEipRead(
-func TestAccDataSourceAwsEip_Filter(
-func TestAccDataSourceAwsEip_Id(
-func TestAccDataSourceAwsEip_PublicIP_EC2Classic(
-func TestAccDataSourceAwsEip_PublicIP_VPC(
-func TestAccDataSourceAwsEip_Tags(
-func TestAccDataSourceAwsEip_NetworkInterface(
-func TestAccDataSourceAwsEip_Instance(
-func testAccDataSourceAwsEipConfigFilter(
-func testAccDataSourceAwsEipConfigPublicIpEc2Classic(
-func testAccDataSourceAwsEipConfigTags(
 func resourceAwsEipAssociation(
 func resourceAwsEipAssociationCreate(
 func resourceAwsEipAssociationRead(

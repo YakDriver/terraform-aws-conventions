@@ -131,6 +131,7 @@ func TestAccAWSDataSourceIAMServerCertificate_basic(
 func TestAccAWSDataSourceIAMServerCertificate_matchNamePrefix(
 func TestAccAWSDataSourceIAMServerCertificate_path(
 func TestAccAWSDataSourceIAMUser_basic(
+func TestAccAWSDataSourceIAMUser_tags(
 func TestAccAWSInspectorRulesPackages_basic(
 func TestAccAWSInstancesDataSource_basic(
 func TestAccAWSInstancesDataSource_tags(
@@ -403,6 +404,7 @@ func TestAccAWSAPIGatewayApiKey_basic(
 func TestAccAWSAPIGatewayApiKey_disappears(
 func TestAccAWSAPIGatewayAuthorizer_basic(
 func TestAccAWSAPIGatewayAuthorizer_cognito(
+func TestAccAWSAPIGatewayAuthorizer_cognito_authorizerCredentials(
 func TestAccAWSAPIGatewayAuthorizer_switchAuthType(
 func TestAccAWSAPIGatewayAuthorizer_switchAuthorizerTTL(
 func TestAccAWSAPIGatewayAuthorizer_authTypeValidation(

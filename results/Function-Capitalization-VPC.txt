@@ -1,4 +1,4 @@
-func TestAccDataSourceAwsEip_PublicIP_VPC(
+func TestAccDataSourceAWSEIP_PublicIP_VPC(
 func TestAccAWSInstanceDataSource_VPC(
 func TestAccAWSInstanceDataSource_VPCSecurityGroups(
 func testAccInstanceDataSourceConfig_VPC(

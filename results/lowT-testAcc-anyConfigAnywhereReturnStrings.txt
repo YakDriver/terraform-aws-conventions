@@ -134,9 +134,9 @@ func testAccDataSourceAWSEFSAccessPointsConfig() string {
 func testAccDataSourceAWSEFSAccessPointConfig(rName string) string {
 func testAccAwsEfsMountTargetConfigByMountTargetId(ct string) string {
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool() string {
-func testAccDataSourceAwsEipConfigFilter(rName string) string {
-func testAccDataSourceAwsEipConfigPublicIpEc2Classic() string {
-func testAccDataSourceAwsEipConfigTags(rName string) string {
+func testAccDataSourceAWSEIPConfigFilter(rName string) string {
+func testAccDataSourceAWSEIPConfigPublicIpEc2Classic() string {
+func testAccDataSourceAWSEIPConfigTags(rName string) string {
 func testAccDataSourceAWSEIPConfigCarrierIP(rName string) string {
 func testAccAWSEksClusterDataSourceConfig_Basic(rName string) string {
 func testAccAWSElastiCacheClusterConfigWithDataSource(rName string) string {
@@ -160,6 +160,7 @@ func testAccAwsIAMRoleConfig_tags(roleName string) string {
 func testAccAwsDataIAMServerCertConfig(rName, key, certificate string) string {
 func testAccAwsDataIAMServerCertConfigPath(rName, path, pathPrefix, key, certificate string) string {
 func testAccAwsDataSourceIAMUserConfig(name string) string {
+func testAccAwsDataSourceIAMUserConfig_tags(name string) string {
 func testAccAWSIdentityStoreGroupDataSourceConfigDisplayName(name string) string {
 func testAccAWSIdentityStoreGroupDataSourceConfigGroupID(name, id string) string {
 func testAccAWSIdentityStoreUserDataSourceConfigDisplayName(name string) string {
@@ -507,6 +508,7 @@ func testAccAWSAPIGatewayAuthorizerConfig_lambdaUpdate(rName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_lambdaNoCache(rName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_cognito(rName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_cognitoUpdate(rName string) string {
+func testAccAWSAPIGatewayAuthorizerConfig_cognitoAuthorizerCredentials(rName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationDefaultToken(rName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationRequest(rName string) string {
 func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationCognito(rName string) string {
@@ -2869,6 +2871,7 @@ func testAccAWSLambdaConfigWithoutFilenameAndS3Attributes(funcName, policyName, 
 func testAccAWSLambdaConfigEnvVariables(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEnvVariablesModified(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEnvVariablesModifiedWithoutEnvironment(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigEnvironmentVariablesNoValue(rName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariables(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigEncryptedEnvVariablesModified(keyDesc, funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigFilename(fileName, funcName, policyName, roleName, sgName string) string {
