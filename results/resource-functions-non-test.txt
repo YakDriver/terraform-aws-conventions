@@ -2123,11 +2123,8 @@ func resourceAwsElasticacheClusterUpdate(
 func getCacheNodesToRemove(
 func setCacheNodeData(
 func resourceAwsElasticacheClusterDelete(
-func cacheClusterStateRefreshFunc(
 func createElasticacheCacheCluster(
-func waitForCreateElasticacheCacheCluster(
 func deleteElasticacheCacheCluster(
-func waitForDeleteElasticacheCacheCluster(
 func init(
 func resourceAwsElasticacheParameterGroup(
 func resourceAwsElasticacheParameterGroupCreate(
@@ -2146,10 +2143,8 @@ func resourceAwsElasticacheReplicationGroupCreate(
 func resourceAwsElasticacheReplicationGroupRead(
 func resourceAwsElasticacheReplicationGroupUpdate(
 func resourceAwsElasticacheReplicationGroupDelete(
-func cacheReplicationGroupStateRefreshFunc(
 func deleteElasticacheReplicationGroup(
 func flattenElasticacheNodeGroupsToClusterMode(
-func waitForModifyElasticacheReplicationGroup(
 func validateAwsElastiCacheReplicationGroupEngine(
 func init(
 func resourceAwsElasticacheSecurityGroup(
@@ -3387,6 +3382,8 @@ func resourceAwsLakeFormationPermissions(
 func resourceAwsLakeFormationPermissionsCreate(
 func resourceAwsLakeFormationPermissionsRead(
 func resourceAwsLakeFormationPermissionsDelete(
+func resourceAwsLakeFormationPermissionsCompareResource(
+func expandLakeFormationResourceType(
 func expandLakeFormationResource(
 func expandLakeFormationDataLocationResource(
 func flattenLakeFormationDataLocationResource(
@@ -4690,6 +4687,10 @@ func resourceAwsSagemakerImageRead(
 func resourceAwsSagemakerImageUpdate(
 func resourceAwsSagemakerImageDelete(
 func init(
+func resourceAwsSagemakerImageVersion(
+func resourceAwsSagemakerImageVersionCreate(
+func resourceAwsSagemakerImageVersionRead(
+func resourceAwsSagemakerImageVersionDelete(
 func resourceAwsSagemakerModel(
 func resourceAwsSagemakerModelCreate(
 func expandSageMakerVpcConfigRequest(
@@ -4717,6 +4718,13 @@ func resourceAwsSagemakerNotebookInstanceLifeCycleConfigurationRead(
 func resourceAwsSagemakerNotebookInstanceLifeCycleConfigurationUpdate(
 func resourceAwsSagemakerNotebookInstanceLifeCycleConfigurationDelete(
 func init(
+func init(
+func resourceAwsSagemakerUserProfile(
+func resourceAwsSagemakerUserProfileCreate(
+func resourceAwsSagemakerUserProfileRead(
+func resourceAwsSagemakerUserProfileUpdate(
+func resourceAwsSagemakerUserProfileDelete(
+func decodeSagemakerUserProfileName(
 func init(
 func resourceAwsSecretsManagerSecret(
 func resourceAwsSecretsManagerSecretCreate(

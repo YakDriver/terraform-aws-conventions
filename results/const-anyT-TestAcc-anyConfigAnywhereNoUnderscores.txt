@@ -47,7 +47,6 @@ const testAccCheckAwsRedshiftServiceAccountExplicitRegionConfig =
 const testAccDataSourceAwsRouteTableGroupConfig =
 const testAccCheckAwsSageMakerPrebuiltECRImageConfig =
 const testAccCheckAwsSageMakerPrebuiltECRImageExplicitRegionConfig =
-const testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig =
 const testAccDataSourceAwsSnsTopicConfig =
 const testAccDataSourceAWSSSOAdminInstancesConfigBasic =
 const testAccDataSourceAwsVpcEndpointServiceGatewayConfig =

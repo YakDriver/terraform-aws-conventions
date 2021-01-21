@@ -218,6 +218,7 @@ func testAccDataSourceAWSLambdaFunctionConfigLayers(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigVPC(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigEnvironment(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigFileSystemConfigs(rName string) string {
+func testAccDataSourceAWSLambdaFunctionConfigImageConfig(rName, imageID string) string {
 func testAccDataSourceAwsLambdaInvocation_base_config(roleName string) string {
 func testAccDataSourceAwsLambdaInvocation_basic_config(rName, testData string) string {
 func testAccDataSourceAwsLambdaInvocation_qualifier_config(rName, testData string) string {
@@ -372,7 +373,10 @@ func testAccDataSourceAwsSecretsManagerSecretVersionConfig_VersionStage_Default(
 func testAccDataSourceAwsSecurityGroupsConfig_tag(rInt int) string {
 func testAccDataSourceAwsSecurityGroupsConfig_filter(rInt int) string {
 func testAccDataSourceAwsSecurityGroupConfig(rInt int) string {
-func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_Versioned(version string) string {
+func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig(appARN string) string {
+func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_NonExistent() string {
+func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_Versioned(appARN, version string) string {
+func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_Versioned_NonExistent(appARN string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(serviceCode, quotaCode string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaName(serviceCode, quotaName string) string {
 func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(serviceName string) string {
@@ -634,23 +638,37 @@ func testAccAWSAPIGatewayResourceConfig(rName string) string {
 func testAccAWSAPIGatewayResourceConfig_updatePathPart(rName string) string {
 func testAccAWSAPIGatewayRestApiPolicyConfig(rName string) string {
 func testAccAWSAPIGatewayRestApiPolicyConfigUpdated(rName string) string {
-func testAccAWSAPIGatewayRestAPIConfig(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfig_EndpointConfiguration(rName, endpointType string) string {
-func testAccAWSAPIGatewayRestAPIConfig_DisableExecuteApiEndpoint(rName string, disabled bool) string {
+func testAccAWSAPIGatewayRestAPIConfigDisableExecuteApiEndpoint(rName string, disableExecuteApiEndpoint bool) string {
+func testAccAWSAPIGatewayRestAPIConfigDisableExecuteApiEndpointOverrideBody(rName string, configDisableExecuteApiEndpoint bool, bodyDisableExecuteApiEndpoint bool) string {
+func testAccAWSAPIGatewayRestAPIConfigDisableExecuteApiEndpointSetByBody(rName string, bodyDisableExecuteApiEndpoint bool) string {
 func testAccAWSAPIGatewayRestAPIConfig_Name(rName string) string {
-func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration(rName string) string {
-func testAccAWSAPIGatewayRestAPIConfig_VPCEndpointConfiguration2(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigEndpointConfigurationVpcEndpointIds1(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigEndpointConfigurationVpcEndpointIds2(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigEndpointConfigurationVpcEndpointIdsOverrideBody(rName string, configVpcEndpointResourceName string, bodyVpcEndpointResourceName string) string {
+func testAccAWSAPIGatewayRestAPIConfigEndpointConfigurationVpcEndpointIdsSetByBody(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayRestAPIConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSAPIGatewayRestAPIConfigWithAPIKeySource(rName string) string {
-func testAccAWSAPIGatewayRestAPIConfigWithUpdateAPIKeySource(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfigWithPolicy(rName string) string {
 func testAccAWSAPIGatewayRestAPIConfigUpdatePolicy(rName string) string {
-func testAccAWSAPIGatewayRestAPIUpdateConfig(rName string) string {
-func testAccAWSAPIGatewayRestAPIDisableCompressionConfig(rName string) string {
-func testAccAWSAPIGatewayRestAPIConfigOpenAPI(rName string) string {
-func testAccAWSAPIGatewayRestAPIUpdateConfigOpenAPI(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigApiKeySource(rName string, apiKeySource string) string {
+func testAccAWSAPIGatewayRestAPIConfigApiKeySourceOverrideBody(rName string, apiKeySource string, bodyApiKeySource string) string {
+func testAccAWSAPIGatewayRestAPIConfigApiKeySourceSetByBody(rName string, bodyApiKeySource string) string {
+func testAccAWSAPIGatewayRestAPIConfigBinaryMediaTypes1(rName string, binaryMediaTypes1 string) string {
+func testAccAWSAPIGatewayRestAPIConfigBinaryMediaTypes1OverrideBody(rName string, binaryMediaTypes1 string, bodyBinaryMediaTypes1 string) string {
+func testAccAWSAPIGatewayRestAPIConfigBinaryMediaTypes1SetByBody(rName string, bodyBinaryMediaTypes1 string) string {
+func testAccAWSAPIGatewayRestAPIConfigBody(rName string, basePath string) string {
+func testAccAWSAPIGatewayRestAPIConfigDescription(rName string, description string) string {
+func testAccAWSAPIGatewayRestAPIConfigDescriptionOverrideBody(rName string, description string, bodyDescription string) string {
+func testAccAWSAPIGatewayRestAPIConfigDescriptionSetByBody(rName string, bodyDescription string) string {
+func testAccAWSAPIGatewayRestAPIConfigMinimumCompressionSize(rName string, minimumCompressionSize int) string {
+func testAccAWSAPIGatewayRestAPIConfigMinimumCompressionSizeOverrideBody(rName string, minimumCompressionSize int, bodyMinimumCompressionSize int) string {
+func testAccAWSAPIGatewayRestAPIConfigMinimumCompressionSizeSetByBody(rName string, bodyMinimumCompressionSize int) string {
+func testAccAWSAPIGatewayRestAPIConfigName(rName string) string {
+func testAccAWSAPIGatewayRestAPIConfigNameOverrideBody(rName string, title string) string {
 func testAccAWSAPIGatewayRestAPIConfigParameters1(rName string, parameterKey1 string, parameterValue1 string) string {
+func testAccAWSAPIGatewayRestAPIConfigPolicyOverrideBody(rName string, bodyPath string, policyEffect string) string {
+func testAccAWSAPIGatewayRestAPIConfigPolicySetByBody(rName string, bodyPolicyEffect string) string {
 func testAccAWSAPIGatewayStageConfig_base(rName string) string {
 func testAccAWSAPIGatewayStageConfigBaseDeploymentStageName(rName string, stageName string) string {
 func testAccAWSAPIGatewayStageConfigReferencingDeployment(rName string) string {
@@ -3112,6 +3130,7 @@ func testAccAWSLakeFormationPermissionsConfig_dataLocation(rName string) string 
 func testAccAWSLakeFormationPermissionsConfig_database(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_table(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_tableWithColumns(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_tableWithColumnsAndTable(rName string) string {
 func testAccAWSLakeFormationResourceConfig_basic(bucket, role string) string {
 func testAccAWSLakeFormationResourceConfig_serviceLinkedRole(rName string) string {
 func testAccAwsLambdaAliasBaseConfig(roleName, policyName, attachmentName string) string {
@@ -4149,6 +4168,7 @@ func testAccAWSSagemakerImageDescription(rName string) string {
 func testAccAWSSagemakerImageDisplayName(rName string) string {
 func testAccAWSSagemakerImageConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSagemakerImageConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSagemakerImageVersionBasicConfig(rName, baseImage string) string {
 func testAccSagemakerModelConfigBase(rName string) string {
 func testAccSagemakerModelConfig(rName string) string {
 func testAccSagemakerModelConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -4177,6 +4197,14 @@ func testAccAWSSagemakerNotebookInstanceConfigAdditionalCodeRepository1(rName, r
 func testAccAWSSagemakerNotebookInstanceConfigAdditionalCodeRepository2(rName, repo1, repo2 string) string {
 func testAccAWSSagemakerNotebookInstanceConfigDefaultCodeRepositorySageMakerRepo(rName string) string {
 func testAccAWSSagemakerNotebookInstanceKMSConfig(rName string) string {
+func testAccAWSSagemakerUserProfileConfigBase(rName string) string {
+func testAccAWSSagemakerUserProfileBasicConfig(rName string) string {
+func testAccAWSSagemakerUserProfileConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSagemakerUserProfileConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSagemakerUserProfileConfigTensorBoardAppSettings(rName string) string {
+func testAccAWSSagemakerUserProfileConfigTensorBoardAppSettingsWithImage(rName string) string {
+func testAccAWSSagemakerUserProfileConfigJupyterServerAppSettings(rName string) string {
+func testAccAWSSagemakerUserProfileConfigKernelGatewayAppSettings(rName string) string {
 func testAccAwsSecretsManagerSecretPolicyBasicConfig(rName string) string {
 func testAccAwsSecretsManagerSecretPolicyUpdatedConfig(rName string) string {
 func testAccAwsSecretsManagerSecretPolicyBlockConfig(rName string, block bool) string {
@@ -4239,14 +4267,15 @@ func testAccAwsSecurityHubActionTargetConfigIdentifier(identifier string) string
 func testAccAwsSecurityHubActionTargetConfigName(name string) string {
 func testAccAWSSecurityHubMemberConfig_basic(accountId, email string) string {
 func testAccAWSSecurityHubMemberConfig_invite(accountId, email string, invite bool) string {
-func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfig(stackName string) string {
-func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_updateInitial(stackName, functionName string) string {
-func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_updateUpdated(stackName, functionName string) string {
-func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versioned(stackName, version string) string {
-func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versioned2(stackName, version string) string {
-func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versionedPaired(stackName, version string) string {
-func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags1(rName, tagKey1, tagValue1 string) string {
-func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsServerlessApplicationRepositoryCloudFormationApplicationID() string {
+func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfig(stackName, appARN string) string {
+func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_updateInitial(stackName, appARN, functionName string) string {
+func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_updateUpdated(stackName, appARN, functionName string) string {
+func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versioned(stackName, appARN, version string) string {
+func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versioned2(stackName, appARN, version string) string {
+func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versionedPaired(stackName, appARN, version string) string {
+func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags1(rName, appARN, tagKey1, tagValue1 string) string {
+func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags2(rName, appARN, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

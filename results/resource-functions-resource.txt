@@ -1927,6 +1927,7 @@ func resourceAwsLakeFormationPermissions(
 func resourceAwsLakeFormationPermissionsCreate(
 func resourceAwsLakeFormationPermissionsRead(
 func resourceAwsLakeFormationPermissionsDelete(
+func resourceAwsLakeFormationPermissionsCompareResource(
 func resourceAwsLakeFormationResource(
 func resourceAwsLakeFormationResourceCreate(
 func resourceAwsLakeFormationResourceRead(
@@ -2721,6 +2722,10 @@ func resourceAwsSagemakerImageCreate(
 func resourceAwsSagemakerImageRead(
 func resourceAwsSagemakerImageUpdate(
 func resourceAwsSagemakerImageDelete(
+func resourceAwsSagemakerImageVersion(
+func resourceAwsSagemakerImageVersionCreate(
+func resourceAwsSagemakerImageVersionRead(
+func resourceAwsSagemakerImageVersionDelete(
 func resourceAwsSagemakerModel(
 func resourceAwsSagemakerModelCreate(
 func resourceAwsSagemakerModelRead(
@@ -2736,6 +2741,11 @@ func resourceAwsSagemakerNotebookInstanceLifeCycleConfigurationCreate(
 func resourceAwsSagemakerNotebookInstanceLifeCycleConfigurationRead(
 func resourceAwsSagemakerNotebookInstanceLifeCycleConfigurationUpdate(
 func resourceAwsSagemakerNotebookInstanceLifeCycleConfigurationDelete(
+func resourceAwsSagemakerUserProfile(
+func resourceAwsSagemakerUserProfileCreate(
+func resourceAwsSagemakerUserProfileRead(
+func resourceAwsSagemakerUserProfileUpdate(
+func resourceAwsSagemakerUserProfileDelete(
 func resourceAwsSecretsManagerSecret(
 func resourceAwsSecretsManagerSecretCreate(
 func resourceAwsSecretsManagerSecretRead(

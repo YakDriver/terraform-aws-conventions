@@ -801,20 +801,15 @@ func setCacheNodeData(
 func (
 func (
 func (
-func cacheClusterStateRefreshFunc(
 func createElasticacheCacheCluster(
-func waitForCreateElasticacheCacheCluster(
 func deleteElasticacheCacheCluster(
-func waitForDeleteElasticacheCacheCluster(
 func init(
 func elastiCacheParameterChanges(
 func flattenElastiCacheParameters(
 func expandElastiCacheParameters(
 func expandElastiCacheParameter(
-func cacheReplicationGroupStateRefreshFunc(
 func deleteElasticacheReplicationGroup(
 func flattenElasticacheNodeGroupsToClusterMode(
-func waitForModifyElasticacheReplicationGroup(
 func validateAwsElastiCacheReplicationGroupEngine(
 func init(
 func init(
@@ -1485,6 +1480,7 @@ func flattenDataLakeSettingsCreateDefaultPermissions(
 func flattenDataLakeSettingsCreateDefaultPermission(
 func expandDataLakeSettingsAdmins(
 func flattenDataLakeSettingsAdmins(
+func expandLakeFormationResourceType(
 func expandLakeFormationResource(
 func expandLakeFormationDataLocationResource(
 func flattenLakeFormationDataLocationResource(
@@ -2006,6 +2002,8 @@ func init(
 func stopSagemakerNotebookInstance(
 func sagemakerNotebookInstanceStateRefreshFunc(
 func init(
+func init(
+func decodeSagemakerUserProfileName(
 func init(
 func init(
 func expandSecretsManagerRotationRules(
