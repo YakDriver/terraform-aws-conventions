@@ -99,7 +99,6 @@ const testAccDataSourceAwsVpcDhcpOptionsConfig_DhcpOptionsID =
 const testAccDataSourceAwsVpcEndpointServiceGatewayConfig =
 const testAccDataSourceAwsVpcEndpointServiceInterfaceConfig =
 const testAccDataSourceAwsVpcPeeringConnectionsConfig =
-const testAccDataSourceAwsVpcPeeringConnectionConfig =
 const testAccDataSourceAwsWafIPSet_NonExistent =
 const testAccDataSourceAwsWafRateBasedRuleConfig_NonExistent =
 const testAccDataSourceAwsWafRegionalIPSet_NonExistent =

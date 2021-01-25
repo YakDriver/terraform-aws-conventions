@@ -420,6 +420,11 @@ func testAccDataSourceAwsVpcEndpointConfig_byFilter(rName string) string {
 func testAccDataSourceAwsVpcEndpointConfig_byTags(rName string) string {
 func testAccDataSourceAwsVpcEndpointConfig_gatewayWithRouteTableAndTags(rName string) string {
 func testAccDataSourceAwsVpcEndpointConfig_interface(rName string) string {
+func testAccDataSourceAwsVpcPeeringConnectionConfigCidrBlock() string {
+func testAccDataSourceAwsVpcPeeringConnectionConfigId() string {
+func testAccDataSourceAwsVpcPeeringConnectionConfigPeerCidrBlock() string {
+func testAccDataSourceAwsVpcPeeringConnectionConfigPeerVpcId() string {
+func testAccDataSourceAwsVpcPeeringConnectionConfigVpcId() string {
 func testAccDataSourceAwsVpcsConfig() string {
 func testAccDataSourceAwsVpcsConfig_tags(rName string) string {
 func testAccDataSourceAwsVpcsConfig_filters(rName string) string {

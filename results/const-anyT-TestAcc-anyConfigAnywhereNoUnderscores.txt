@@ -52,7 +52,6 @@ const testAccDataSourceAWSSSOAdminInstancesConfigBasic =
 const testAccDataSourceAwsVpcEndpointServiceGatewayConfig =
 const testAccDataSourceAwsVpcEndpointServiceInterfaceConfig =
 const testAccDataSourceAwsVpcPeeringConnectionsConfig =
-const testAccDataSourceAwsVpcPeeringConnectionConfig =
 const testAccCheckAWSProviderConfigAssumeRoleEmpty =
 const testAccAWSCloudFrontOriginAccessIdentityConfig =
 const testAccAWSCloudFrontOriginAccessIdentityNoCommentConfig =

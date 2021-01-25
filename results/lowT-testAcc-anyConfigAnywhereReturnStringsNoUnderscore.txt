@@ -249,6 +249,11 @@ func testAccDataSourceAwsVpcEndpointServiceCustomConfigBase(rName string) string
 func testAccDataSourceAwsVpcEndpointServiceCustomConfig(rName string) string {
 func testAccDataSourceAwsVpcEndpointServiceCustomConfigFilter(rName string) string {
 func testAccDataSourceAwsVpcEndpointServiceCustomConfigFilterTags(rName string) string {
+func testAccDataSourceAwsVpcPeeringConnectionConfigCidrBlock() string {
+func testAccDataSourceAwsVpcPeeringConnectionConfigId() string {
+func testAccDataSourceAwsVpcPeeringConnectionConfigPeerCidrBlock() string {
+func testAccDataSourceAwsVpcPeeringConnectionConfigPeerVpcId() string {
+func testAccDataSourceAwsVpcPeeringConnectionConfigVpcId() string {
 func testAccDataSourceAwsVpcsConfig() string {
 func testAccDataSourceAwsVpcConfigIpv6(cidr, tag string) string {
 func testAccDataSourceAwsVpcConfig(cidr, tag string) string {

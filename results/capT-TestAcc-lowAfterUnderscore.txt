@@ -319,7 +319,6 @@ func TestAccDataSourceAwsVpcEndpoint_byTags(
 func TestAccDataSourceAwsVpcEndpoint_gatewayWithRouteTableAndTags(
 func TestAccDataSourceAwsVpcEndpoint_interface(
 func TestAccDataSourceAwsVpcPeeringConnections_basic(
-func TestAccDataSourceAwsVpcPeeringConnection_basic(
 func TestAccDataSourceAwsVpcs_basic(
 func TestAccDataSourceAwsVpcs_tags(
 func TestAccDataSourceAwsVpcs_filters(
