@@ -453,6 +453,7 @@ func TestAccAwsEc2ManagedPrefixList_Name(
 func TestAccAwsEc2ManagedPrefixList_Tags(
 func testAccCheckAwsEc2ManagedPrefixListDestroy(
 func testAccAwsEc2ManagedPrefixListExists(
+func testAccPreCheckEc2ManagedPrefixList(
 func testAccAwsEc2ManagedPrefixListConfig_AddressFamily(
 func testAccAwsEc2ManagedPrefixListConfig_Entry1(
 func testAccAwsEc2ManagedPrefixListConfig_Entry2(

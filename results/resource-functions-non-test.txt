@@ -2149,7 +2149,7 @@ func validateAwsElastiCacheReplicationGroupEngine(
 func elasticacheReplicationGroupModifyShardConfiguration(
 func elasticacheReplicationGroupModifyNumCacheClusters(
 func elasticacheReplicationGroupIncreaseNumCacheClusters(
-func elasticacheReplicationGroupReduceNumCacheClusters(
+func elasticacheReplicationGroupDecreaseNumCacheClusters(
 func resourceAwsElasticacheReplicationGroupDisableAutomaticFailover(
 func resourceAwsElasticacheReplicationGroupEnableAutomaticFailover(
 func resourceAwsElasticacheReplicationGroupSetPrimaryClusterID(
@@ -2955,6 +2955,14 @@ func flattenImageBuilderDistribution(
 func flattenImageBuilderDistributions(
 func flattenImageBuilderLaunchPermissionConfiguration(
 func init(
+func resourceAwsImageBuilderImage(
+func resourceAwsImageBuilderImageCreate(
+func resourceAwsImageBuilderImageRead(
+func resourceAwsImageBuilderImageUpdate(
+func resourceAwsImageBuilderImageDelete(
+func flattenImageBuilderOutputResources(
+func flattenImageBuilderAmi(
+func flattenImageBuilderAmis(
 func resourceAwsImageBuilderImagePipeline(
 func resourceAwsImageBuilderImagePipelineCreate(
 func resourceAwsImageBuilderImagePipelineRead(
@@ -2980,6 +2988,7 @@ func flattenImageBuilderComponentConfigurations(
 func flattenImageBuilderEbsInstanceBlockDeviceSpecification(
 func flattenImageBuilderInstanceBlockDeviceMapping(
 func flattenImageBuilderInstanceBlockDeviceMappings(
+func init(
 func init(
 func resourceAwsImageBuilderInfrastructureConfiguration(
 func resourceAwsImageBuilderInfrastructureConfigurationCreate(
