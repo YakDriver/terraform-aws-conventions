@@ -31,6 +31,7 @@ func TestAccDataSourceAWSLambdaLayerVersion_runtime(
 func TestAccDataSourceAWSLBListener_basic(
 func TestAccDataSourceAWSLBListener_BackwardsCompatibility(
 func TestAccDataSourceAWSLBListener_https(
+func TestAccDataSourceAWSLBListener_DefaultAction_Forward(
 func TestAccDataSourceAWSALBTargetGroup_basic(
 func TestAccDataSourceAWSLBTargetGroup_BackwardsCompatibility(
 func TestAccDataSourceAWSLB_basic(

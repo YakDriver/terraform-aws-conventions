@@ -1717,6 +1717,8 @@ func TestAccAWSEBSVolume_outpost(
 func TestAccAWSEBSVolume_gp3_basic(
 func TestAccAWSEBSVolume_gp3_iops(
 func TestAccAWSEBSVolume_gp3_throughput(
+func TestAccAWSEBSVolume_snapshotID(
+func TestAccAWSEBSVolume_snapshotIDAndSize(
 func TestAccAWSEBSVolume_disappears(
 func TestAccAWSEc2CapacityReservation_basic(
 func TestAccAWSEc2CapacityReservation_ebsOptimized(

@@ -2247,6 +2247,8 @@ func TestAccAWSEBSVolume_InvalidThroughputForType(
 func TestAccAWSEBSVolume_withTags(
 func TestAccAWSEBSVolume_multiAttach(
 func TestAccAWSEBSVolume_outpost(
+func TestAccAWSEBSVolume_snapshotID(
+func TestAccAWSEBSVolume_snapshotIDAndSize(
 func TestAccAWSEBSVolume_disappears(
 func TestAccAWSEc2AvailabilityZoneGroup_OptInStatus(
 func TestAccAWSEc2CapacityReservation_basic(

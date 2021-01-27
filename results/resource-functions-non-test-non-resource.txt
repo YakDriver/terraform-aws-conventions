@@ -811,6 +811,11 @@ func expandElastiCacheParameter(
 func deleteElasticacheReplicationGroup(
 func flattenElasticacheNodeGroupsToClusterMode(
 func validateAwsElastiCacheReplicationGroupEngine(
+func elasticacheReplicationGroupModifyShardConfiguration(
+func elasticacheReplicationGroupModifyNumCacheClusters(
+func elasticacheReplicationGroupIncreaseNumCacheClusters(
+func elasticacheReplicationGroupReduceNumCacheClusters(
+func formatReplicationGroupClusterID(
 func init(
 func init(
 func getBeanstalkApplication(

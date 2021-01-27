@@ -742,6 +742,8 @@ func TestAccAWSEBSVolume_updateType(
 func TestAccAWSEBSVolume_kmsKey(
 func TestAccAWSEBSVolume_withTags(
 func TestAccAWSEBSVolume_multiAttach(
+func TestAccAWSEBSVolume_snapshotID(
+func TestAccAWSEBSVolume_snapshotIDAndSize(
 func TestAccAWSEc2CapacityReservation_ebsOptimized(
 func TestAccAWSEc2CapacityReservation_endDate(
 func TestAccAWSEc2CapacityReservation_endDateType(

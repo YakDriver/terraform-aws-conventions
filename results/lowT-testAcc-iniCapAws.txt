@@ -163,6 +163,8 @@ func testAccAwsEbsVolumeConfigMultiAttach(
 func testAccAwsEbsVolumeConfigSizeType(
 func testAccAwsEbsVolumeConfigGp3Throughput(
 func testAccAwsEbsVolumeConfigGp3Iops(
+func testAccAwsEbsVolumeConfigSnapshotId(
+func testAccAwsEbsVolumeConfigSnapshotIdAndSize(
 func testAccAwsEc2ClientVpnAuthorizationRule_basic(
 func testAccAwsEc2ClientVpnAuthorizationRule_groups(
 func testAccAwsEc2ClientVpnAuthorizationRule_Subnets(
