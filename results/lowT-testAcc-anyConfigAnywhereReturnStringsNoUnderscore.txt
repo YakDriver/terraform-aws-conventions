@@ -687,6 +687,7 @@ func testAccAWSCodeArtifactDomainPermissionsPolicyUpdatedConfig(rName string) st
 func testAccAWSCodeArtifactDomainBasicConfig(rName string) string {
 func testAccAWSCodeArtifactDomainConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSCodeArtifactDomainConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCodeArtifactDomainDefaultEncryptionKeyConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyBasicConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryPermissionsPolicyUpdatedConfig(rName string) string {
@@ -2118,6 +2119,11 @@ func testAccAWSS3BucketConfigReplicationWithV2ConfigurationOnlyOneTag(randInt in
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationPrefixAndTags(randInt int) string {
 func testAccAWSS3BucketConfigReplicationWithV2ConfigurationMultipleTags(randInt int) string {
 func testAccAWSS3OutpostsEndpointConfig(rInt int) string {
+func testAccAWSSagemakerAppImageConfigBasicConfig(rName string) string {
+func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigKernalSpecs1(rName string) string {
+func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigKernalSpecs2(rName string) string {
+func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig1(rName string) string {
+func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig2(rName string) string {
 func testAccAWSSagemakerCodeRepositoryBasicConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigBranchConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigSecretConfig(rName string) string {

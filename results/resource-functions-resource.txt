@@ -1350,10 +1350,10 @@ func resourceAwsElasticacheReplicationGroupCreate(
 func resourceAwsElasticacheReplicationGroupRead(
 func resourceAwsElasticacheReplicationGroupUpdate(
 func resourceAwsElasticacheReplicationGroupDelete(
+func resourceAwsElasticacheReplicationGroupModify(
 func resourceAwsElasticacheReplicationGroupDisableAutomaticFailover(
 func resourceAwsElasticacheReplicationGroupEnableAutomaticFailover(
 func resourceAwsElasticacheReplicationGroupSetPrimaryClusterID(
-func resourceAwsElasticacheReplicationGroupModify(
 func resourceAwsElasticacheSecurityGroup(
 func resourceAwsElasticacheSecurityGroupCreate(
 func resourceAwsElasticacheSecurityGroupRead(
@@ -2392,6 +2392,11 @@ func resourceAwsPlacementGroupCreate(
 func resourceAwsPlacementGroupRead(
 func resourceAwsPlacementGroupUpdate(
 func resourceAwsPlacementGroupDelete(
+func resourceAwsPrometheusWorkspace(
+func resourceAwsPrometheusWorkspaceRead(
+func resourceAwsPrometheusWorkspaceUpdate(
+func resourceAwsPrometheusWorkspaceCreate(
+func resourceAwsPrometheusWorkspaceDelete(
 func resourceAwsProxyProtocolPolicy(
 func resourceAwsProxyProtocolPolicyCreate(
 func resourceAwsProxyProtocolPolicyRead(
@@ -2701,6 +2706,11 @@ func resourceAwsS3OutpostsEndpointCreate(
 func resourceAwsS3OutpostsEndpointRead(
 func resourceAwsS3OutpostsEndpointDelete(
 func resourceAwsS3OutpostsEndpointImportState(
+func resourceAwsSagemakerAppImageConfig(
+func resourceAwsSagemakerAppImageConfigCreate(
+func resourceAwsSagemakerAppImageConfigRead(
+func resourceAwsSagemakerAppImageConfigUpdate(
+func resourceAwsSagemakerAppImageConfigDelete(
 func resourceAwsSagemakerCodeRepository(
 func resourceAwsSagemakerCodeRepositoryCreate(
 func resourceAwsSagemakerCodeRepositoryRead(
