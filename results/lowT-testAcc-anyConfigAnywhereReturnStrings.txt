@@ -2319,6 +2319,12 @@ func testAccAWSGameliftFleetAllFieldsUpdatedConfig(fleetName, desc, launchPath s
 func testAccAWSGameliftGameSessionQueueBasicConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSGameliftGameSessionQueueBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlacierVaultLockConfigCompleteLock(rName string, completeLock bool) string {
+func testAccGlacierVaultBasicConfig(rName string) string {
+func testAccGlacierVaultNotificationConfig(rName string) string {
+func testAccGlacierVaultPolicyConfig(rName string) string {
+func testAccGlacierVaultPolicyConfigUpdated(rName string) string {
+func testAccGlacierVaultConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccGlacierVaultConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlobalAcceleratorEndpointGroupConfigBasic(rName string) string {
 func testAccGlobalAcceleratorEndpointGroupConfigBaseVpc(rName string) string {
 func testAccGlobalAcceleratorEndpointGroupConfigALBEndpointClientIP(rName string, clientIP bool) string {
@@ -2493,7 +2499,7 @@ func testAccGuardDutyThreatintelsetConfigTags1(rName, tagKey1, tagValue1 string)
 func testAccGuardDutyThreatintelsetConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSAccessKeyConfig(rName string) string {
 func testAccAWSAccessKeyConfig_encrypted(rName, key string) string {
-func testAccAWSAccessKeyConfig_inactive(rName string) string {
+func testAccAWSAccessKeyConfig_Status(rName string, status string) string {
 func testAccAWSIAMAccountAliasConfig_with_datasource(rstring string) string {
 func testAccAWSIAMAccountAliasConfig(rstring string) string {
 func testAccAWSGroupMemberConfig(groupName, userName, membershipName string) string {
@@ -2869,7 +2875,8 @@ func testAccAWSKmsKeyConfigPolicyIamServiceLinkedRole(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_basic(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_dataLocation(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_database(rName string) string {
-func testAccAWSLakeFormationPermissionsConfig_table(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_table_name(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_table_wildcard(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_tableWithColumns(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_tableWithColumnsAndTable(rName string) string {
 func testAccAWSLakeFormationResourceConfig_basic(bucket, role string) string {
@@ -4247,6 +4254,8 @@ func testAccAWSStorageGatewayWorkingStorageConfig_Basic(rName string) string {
 func testAccSubnetTagsConfig1(rName, tagKey1, tagValue1 string) string {
 func testAccSubnetTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSubnetConfigAvailabilityZoneId() string {
+func testAccSubnetConfigCustomerOwnedIpv4Pool() string {
+func testAccSubnetConfigMapCustomerOwnedIpOnLaunch(mapCustomerOwnedIpOnLaunch bool) string {
 func testAccSubnetConfigOutpost() string {
 func testAccAWSSwfDomainConfig_Description(rName, description string) string {
 func testAccAWSSwfDomainConfig_Name(rName string) string {

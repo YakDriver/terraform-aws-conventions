@@ -4252,8 +4252,10 @@ func testAccAWSGameliftSampleGame(
 func TestAccAWSGlacierVaultLock_basic(
 func TestAccAWSGlacierVaultLock_CompleteLock(
 func TestAccAWSGlacierVault_basic(
-func TestAccAWSGlacierVault_full(
-func TestAccAWSGlacierVault_RemoveNotifications(
+func TestAccAWSGlacierVault_notification(
+func TestAccAWSGlacierVault_policy(
+func TestAccAWSGlacierVault_tags(
+func TestAccAWSGlacierVault_disappears(
 func TestAccAWSGlueCatalogDatabase_full(
 func TestAccAWSGlueCatalogDatabase_disappears(
 func TestAccAWSGlueCatalogTable_basic(
@@ -4499,13 +4501,13 @@ func TestAccAWSGuardDuty_serial(
 func testAccAWSGuardDutyMemberFromEnv(
 func TestAccAWSAccessKey_basic(
 func TestAccAWSAccessKey_encrypted(
-func TestAccAWSAccessKey_inactive(
+func TestAccAWSAccessKey_Status(
 func testAccCheckAWSAccessKeyDestroy(
 func testAccCheckAWSAccessKeyExists(
 func testAccCheckAWSAccessKeyAttributes(
 func testAccAWSAccessKeyConfig(
 func testAccAWSAccessKeyConfig_encrypted(
-func testAccAWSAccessKeyConfig_inactive(
+func testAccAWSAccessKeyConfig_Status(
 func TestAccAWSIAMAccountAlias_serial(
 func testAccAWSIAMAccountAlias_importBasic(
 func testAccAWSIAMAccountAlias_basic_with_datasource(
@@ -5105,7 +5107,8 @@ func testAccCheckAWSLakeFormationDataLakeSettingsExists(
 func testAccAWSLakeFormationPermissions_basic(
 func testAccAWSLakeFormationPermissions_dataLocation(
 func testAccAWSLakeFormationPermissions_database(
-func testAccAWSLakeFormationPermissions_table(
+func testAccAWSLakeFormationPermissions_table_name(
+func testAccAWSLakeFormationPermissions_table_wildcard(
 func testAccAWSLakeFormationPermissions_tableWithColumns(
 func testAccAWSLakeFormationPermissions_tableWithColumnsAndTable(
 func testAccCheckAWSLakeFormationPermissionsDestroy(
@@ -5113,7 +5116,8 @@ func testAccCheckAWSLakeFormationPermissionsExists(
 func testAccAWSLakeFormationPermissionsConfig_basic(
 func testAccAWSLakeFormationPermissionsConfig_dataLocation(
 func testAccAWSLakeFormationPermissionsConfig_database(
-func testAccAWSLakeFormationPermissionsConfig_table(
+func testAccAWSLakeFormationPermissionsConfig_table_name(
+func testAccAWSLakeFormationPermissionsConfig_table_wildcard(
 func testAccAWSLakeFormationPermissionsConfig_tableWithColumns(
 func testAccAWSLakeFormationPermissionsConfig_tableWithColumnsAndTable(
 func TestAccAWSLakeFormationResource_basic(
@@ -7999,6 +8003,8 @@ func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
 func TestAccAWSSubnet_availabilityZoneId(
 func TestAccAWSSubnet_disappears(
+func TestAccAWSSubnet_CustomerOwnedIpv4Pool(
+func TestAccAWSSubnet_MapCustomerOwnedIpOnLaunch(
 func TestAccAWSSubnet_outpost(
 func TestAccAWSSwfDomain_basic(
 func TestAccAWSSwfDomain_tags(

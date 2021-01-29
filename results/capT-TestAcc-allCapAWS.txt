@@ -1944,8 +1944,10 @@ func TestAccAWSGameliftGameSessionQueue_disappears(
 func TestAccAWSGlacierVaultLock_basic(
 func TestAccAWSGlacierVaultLock_CompleteLock(
 func TestAccAWSGlacierVault_basic(
-func TestAccAWSGlacierVault_full(
-func TestAccAWSGlacierVault_RemoveNotifications(
+func TestAccAWSGlacierVault_notification(
+func TestAccAWSGlacierVault_policy(
+func TestAccAWSGlacierVault_tags(
+func TestAccAWSGlacierVault_disappears(
 func TestAccAWSGlueCatalogDatabase_full(
 func TestAccAWSGlueCatalogDatabase_disappears(
 func TestAccAWSGlueCatalogTable_basic(
@@ -2076,7 +2078,7 @@ func TestAccAWSGlueWorkflow_disappears(
 func TestAccAWSGuardDuty_serial(
 func TestAccAWSAccessKey_basic(
 func TestAccAWSAccessKey_encrypted(
-func TestAccAWSAccessKey_inactive(
+func TestAccAWSAccessKey_Status(
 func TestAccAWSIAMAccountAlias_serial(
 func TestAccAWSIAMAccountPasswordPolicy_basic(
 func TestAccAWSGroupMembership_basic(
@@ -3769,6 +3771,8 @@ func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
 func TestAccAWSSubnet_availabilityZoneId(
 func TestAccAWSSubnet_disappears(
+func TestAccAWSSubnet_CustomerOwnedIpv4Pool(
+func TestAccAWSSubnet_MapCustomerOwnedIpOnLaunch(
 func TestAccAWSSubnet_outpost(
 func TestAccAWSSwfDomain_basic(
 func TestAccAWSSwfDomain_tags(

@@ -628,6 +628,7 @@ func testAccAWSGlueTriggerConfig_WorkflowName(
 func testAccAWSGlueWorkflowConfig_DefaultRunProperties(
 func testAccAWSGlueWorkflowConfig_Description(
 func testAccAWSGlueWorkflowConfig_Required(
+func testAccAWSAccessKeyConfig_Status(
 func testAccIAMRolePolicyConfig_Policy_InvalidResource(
 func testAccCheckIAMRoleConfig_MaxSessionDuration(
 func testAccCheckIAMRoleConfig_PermissionsBoundary(

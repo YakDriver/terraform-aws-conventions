@@ -1376,7 +1376,10 @@ func TestAccAWSGameliftGameSessionQueue_tags(
 func TestAccAWSGameliftGameSessionQueue_disappears(
 func TestAccAWSGlacierVaultLock_basic(
 func TestAccAWSGlacierVault_basic(
-func TestAccAWSGlacierVault_full(
+func TestAccAWSGlacierVault_notification(
+func TestAccAWSGlacierVault_policy(
+func TestAccAWSGlacierVault_tags(
+func TestAccAWSGlacierVault_disappears(
 func TestAccAwsGlobalAcceleratorAccelerator_basic(
 func TestAccAwsGlobalAcceleratorAccelerator_update(
 func TestAccAwsGlobalAcceleratorAccelerator_attributes(
@@ -1448,7 +1451,6 @@ func TestAccAWSGlueWorkflow_disappears(
 func TestAccAWSGuardDuty_serial(
 func TestAccAWSAccessKey_basic(
 func TestAccAWSAccessKey_encrypted(
-func TestAccAWSAccessKey_inactive(
 func TestAccAWSIAMAccountAlias_serial(
 func TestAccAWSIAMAccountPasswordPolicy_basic(
 func TestAccAWSGroupMembership_basic(

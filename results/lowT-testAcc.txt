@@ -3711,9 +3711,12 @@ func testAccGlacierVaultLockConfigCompleteLock(
 func testAccCheckGlacierVaultExists(
 func testAccCheckVaultNotificationsMissing(
 func testAccCheckGlacierVaultDestroy(
-func testAccGlacierVault_basic(
-func testAccGlacierVault_full(
-func testAccGlacierVault_withoutNotification(
+func testAccGlacierVaultBasicConfig(
+func testAccGlacierVaultNotificationConfig(
+func testAccGlacierVaultPolicyConfig(
+func testAccGlacierVaultPolicyConfigUpdated(
+func testAccGlacierVaultConfigTags1(
+func testAccGlacierVaultConfigTags2(
 func testAccPreCheckGlobalAccelerator(
 func testAccCheckGlobalAcceleratorAcceleratorExists(
 func testAccCheckGlobalAcceleratorAcceleratorDestroy(
@@ -3990,7 +3993,7 @@ func testAccCheckAWSAccessKeyExists(
 func testAccCheckAWSAccessKeyAttributes(
 func testAccAWSAccessKeyConfig(
 func testAccAWSAccessKeyConfig_encrypted(
-func testAccAWSAccessKeyConfig_inactive(
+func testAccAWSAccessKeyConfig_Status(
 func testAccAWSIAMAccountAlias_importBasic(
 func testAccAWSIAMAccountAlias_basic_with_datasource(
 func testAccCheckAWSIAMAccountAliasDestroy(
@@ -4602,7 +4605,8 @@ func testAccCheckAWSLakeFormationDataLakeSettingsExists(
 func testAccAWSLakeFormationPermissions_basic(
 func testAccAWSLakeFormationPermissions_dataLocation(
 func testAccAWSLakeFormationPermissions_database(
-func testAccAWSLakeFormationPermissions_table(
+func testAccAWSLakeFormationPermissions_table_name(
+func testAccAWSLakeFormationPermissions_table_wildcard(
 func testAccAWSLakeFormationPermissions_tableWithColumns(
 func testAccAWSLakeFormationPermissions_tableWithColumnsAndTable(
 func testAccCheckAWSLakeFormationPermissionsDestroy(
@@ -4610,7 +4614,8 @@ func testAccCheckAWSLakeFormationPermissionsExists(
 func testAccAWSLakeFormationPermissionsConfig_basic(
 func testAccAWSLakeFormationPermissionsConfig_dataLocation(
 func testAccAWSLakeFormationPermissionsConfig_database(
-func testAccAWSLakeFormationPermissionsConfig_table(
+func testAccAWSLakeFormationPermissionsConfig_table_name(
+func testAccAWSLakeFormationPermissionsConfig_table_wildcard(
 func testAccAWSLakeFormationPermissionsConfig_tableWithColumns(
 func testAccAWSLakeFormationPermissionsConfig_tableWithColumnsAndTable(
 func testAccCheckAWSLakeFormationResourceDestroy(
@@ -6865,6 +6870,8 @@ func testAccCheckSubnetUpdateTags(
 func testAccSubnetTagsConfig1(
 func testAccSubnetTagsConfig2(
 func testAccSubnetConfigAvailabilityZoneId(
+func testAccSubnetConfigCustomerOwnedIpv4Pool(
+func testAccSubnetConfigMapCustomerOwnedIpOnLaunch(
 func testAccSubnetConfigOutpost(
 func testAccPreCheckSwfDomainTestingEnabled(
 func testAccCheckAwsSwfDomainDestroy(

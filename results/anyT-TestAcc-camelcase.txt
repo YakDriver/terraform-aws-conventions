@@ -890,7 +890,6 @@ func TestAccAWSFsxWindowsFileSystem_storageTypeHdd(
 func TestAccAWSFsxWindowsFileSystem_multiAz(
 func TestAccAWSGameliftAlias_fleetRouting(
 func TestAccAWSGameliftFleet_allFields(
-func testAccGlacierVault_withoutNotification(
 func TestAccAWSGlueCatalogTable_columnParameters(
 func TestAccAWSGlueCatalogTable_partitionIndexesSingle(
 func TestAccAWSGlueCatalogTable_partitionIndexesMultiple(
