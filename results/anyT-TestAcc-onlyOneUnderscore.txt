@@ -4637,7 +4637,7 @@ func TestAccAWSSecurityGroup_ruleGathering(
 func TestAccAWSSecurityGroup_forceRevokeRulesTrue(
 func TestAccAWSSecurityGroup_forceRevokeRulesFalse(
 func TestAccAWSSecurityGroup_ipv6(
-func TestAccAWSSecurityGroup_namePrefix(
+func TestAccAWSSecurityGroup_NamePrefix(
 func TestAccAWSSecurityGroup_self(
 func TestAccAWSSecurityGroup_vpc(
 func TestAccAWSSecurityGroup_vpcNegOneIngress(
@@ -4645,7 +4645,6 @@ func TestAccAWSSecurityGroup_vpcProtoNumIngress(
 func TestAccAWSSecurityGroup_multiIngress(
 func TestAccAWSSecurityGroup_change(
 func TestAccAWSSecurityGroup_ruleDescription(
-func TestAccAWSSecurityGroup_generatedName(
 func TestAccAWSSecurityGroup_defaultEgressVPC(
 func TestAccAWSSecurityGroup_defaultEgressClassic(
 func TestAccAWSSecurityGroup_drift(

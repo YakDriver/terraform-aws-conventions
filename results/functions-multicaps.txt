@@ -7967,7 +7967,10 @@ func TestAccAWSSecurityGroup_ruleGathering(
 func TestAccAWSSecurityGroup_forceRevokeRulesTrue(
 func TestAccAWSSecurityGroup_forceRevokeRulesFalse(
 func TestAccAWSSecurityGroup_ipv6(
-func TestAccAWSSecurityGroup_namePrefix(
+func TestAccAWSSecurityGroup_Name_Generated(
+func TestAccAWSSecurityGroup_Name_TerraformPrefix(
+func TestAccAWSSecurityGroup_NamePrefix(
+func TestAccAWSSecurityGroup_NamePrefix_TerraformPrefix(
 func TestAccAWSSecurityGroup_self(
 func TestAccAWSSecurityGroup_vpc(
 func TestAccAWSSecurityGroup_vpcNegOneIngress(
@@ -7975,7 +7978,6 @@ func TestAccAWSSecurityGroup_vpcProtoNumIngress(
 func TestAccAWSSecurityGroup_multiIngress(
 func TestAccAWSSecurityGroup_change(
 func TestAccAWSSecurityGroup_ruleDescription(
-func TestAccAWSSecurityGroup_generatedName(
 func TestAccAWSSecurityGroup_defaultEgressVPC(
 func TestAccAWSSecurityGroup_defaultEgressClassic(
 func TestAccAWSSecurityGroup_drift(
@@ -8014,7 +8016,8 @@ func testAccAWSSecurityGroupConfigRuleDescription(
 func testAccAWSAWSSecurityGroupConfigTags1(
 func testAccAWSAWSSecurityGroupConfigTags2(
 func testAccAWSSecurityGroupConfigClassic(
-func testAccAWSSecurityGroupPrefixNameConfig(
+func testAccAWSSecurityGroupConfigName(
+func testAccAWSSecurityGroupConfigNamePrefix(
 func testAccAWSSecurityGroupConfig_drift(
 func testAccAWSSecurityGroupConfig_drift_complex(
 func testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic(

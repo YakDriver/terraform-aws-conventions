@@ -4285,7 +4285,8 @@ func testAccAWSSecurityGroupConfigRuleDescription(egressDescription, ingressDesc
 func testAccAWSAWSSecurityGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAWSSecurityGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSecurityGroupConfigClassic(rName string) string {
-func testAccAWSSecurityGroupPrefixNameConfig(namePrefix string) string {
+func testAccAWSSecurityGroupConfigName(name string) string {
+func testAccAWSSecurityGroupConfigNamePrefix(namePrefix string) string {
 func testAccAWSSecurityGroupConfig_drift() string {
 func testAccAWSSecurityGroupConfig_drift_complex() string {
 func testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic(rName string) string {

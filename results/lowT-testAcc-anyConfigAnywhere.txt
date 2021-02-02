@@ -4071,7 +4071,8 @@ func testAccAWSSecurityGroupConfigRuleDescription(
 func testAccAWSAWSSecurityGroupConfigTags1(
 func testAccAWSAWSSecurityGroupConfigTags2(
 func testAccAWSSecurityGroupConfigClassic(
-func testAccAWSSecurityGroupPrefixNameConfig(
+func testAccAWSSecurityGroupConfigName(
+func testAccAWSSecurityGroupConfigNamePrefix(
 func testAccAWSSecurityGroupConfig_drift(
 func testAccAWSSecurityGroupConfig_drift_complex(
 func testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic(
