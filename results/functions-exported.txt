@@ -607,8 +607,10 @@ func TestHostedZoneIDForRegion(
 func Test_expandNetworkACLEntry(
 func Test_validatePorts(
 func Provider(
+func ReverseDns(
 func TestProvider(
 func TestProvider_impl(
+func TestReverseDns(
 func TestAccAWSProvider_Endpoints(
 func TestAccAWSProvider_IgnoreTags_EmptyConfigurationBlock(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_None(
@@ -617,9 +619,11 @@ func TestAccAWSProvider_IgnoreTags_KeyPrefixes_Multiple(
 func TestAccAWSProvider_IgnoreTags_Keys_None(
 func TestAccAWSProvider_IgnoreTags_Keys_One(
 func TestAccAWSProvider_IgnoreTags_Keys_Multiple(
+func TestAccAWSProvider_Region_AwsC2S(
 func TestAccAWSProvider_Region_AwsChina(
 func TestAccAWSProvider_Region_AwsCommercial(
 func TestAccAWSProvider_Region_AwsGovCloudUs(
+func TestAccAWSProvider_Region_AwsSC2S(
 func TestAccAWSProvider_AssumeRole_Empty(
 func TestAccAWSAccessAnalyzer_serial(
 func TestAccAWSAcmCertificate_emailValidation(

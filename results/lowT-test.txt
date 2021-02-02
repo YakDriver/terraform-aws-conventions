@@ -644,6 +644,7 @@ func testAccCheckAWSProviderEndpoints(
 func testAccCheckAWSProviderIgnoreTagsKeyPrefixes(
 func testAccCheckAWSProviderIgnoreTagsKeys(
 func testAccCheckAWSProviderPartition(
+func testAccCheckAWSProviderReverseDnsPrefix(
 func testAccPreCheckEc2ClassicOrHasDefaultVpcWithDefaultSubnets(
 func testAccHasDefaultVpc(
 func testAccDefaultSubnetCount(

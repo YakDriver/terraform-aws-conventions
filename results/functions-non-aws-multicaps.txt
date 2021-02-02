@@ -282,6 +282,7 @@ func testAccGetAccountID(
 func testAccGetPartitionDNSSuffix(
 func testAccGetPartitionReverseDNSPrefix(
 func testAccEC2VPCOnlyPreCheck(
+func TestAccAWSProvider_Region_AwsSC2S(
 func testAccAssumeRoleARNPreCheck(
 func TestAccAWSAcmCertificate_disableCTLogging(
 func testAccAcmCertificateConfig_disableCTLogging(

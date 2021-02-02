@@ -967,9 +967,11 @@ func TestAwsEcsContainerDefinitionsAreEquivalent_negative(
 func TestAwsEcsContainerDefinitionsAreEquivalent_missingEnvironmentName(
 func testAccAwsProviderAccountID(
 func testAccAwsRegionProviderFunc(
+func TestAccAWSProvider_Region_AwsC2S(
 func TestAccAWSProvider_Region_AwsChina(
 func TestAccAWSProvider_Region_AwsCommercial(
 func TestAccAWSProvider_Region_AwsGovCloudUs(
+func TestAccAWSProvider_Region_AwsSC2S(
 func resourceAwsAccessAnalyzerAnalyzer(
 func resourceAwsAccessAnalyzerAnalyzerCreate(
 func resourceAwsAccessAnalyzerAnalyzerRead(
