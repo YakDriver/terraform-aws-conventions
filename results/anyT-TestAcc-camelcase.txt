@@ -974,7 +974,6 @@ func TestAccAWSInstance_addSecurityGroupNetworkInterface(
 func TestAccAWSInstance_metadataOptions(
 func TestAccAWSInstance_enclaveOptions(
 func testAccInstanceConfig_getPasswordData(
-func TestAccAWSIoTPolicy_invalidJson(
 func testAccAWSIotThingTypeConfig_fullUpdated(
 func TestAccAWSIoTTopicRule_dynamoDbv2(
 func TestAccAWSIoTTopicRule_errorAction(

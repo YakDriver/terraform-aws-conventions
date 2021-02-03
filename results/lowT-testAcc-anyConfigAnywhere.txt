@@ -2862,7 +2862,6 @@ func testAccAWSIotPolicyAttachmentConfigUpdate1(
 func testAccAWSIotPolicyAttachmentConfigUpdate2(
 func testAccAWSIotPolicyAttachmentConfigUpdate3(
 func testAccAWSIoTPolicyConfigInitialState(
-func testAccAWSIoTPolicyInvalidJsonConfig(
 func testAccAWSIotRoleAliasConfig(
 func testAccAWSIotRoleAliasConfigUpdate1(
 func testAccAWSIotRoleAliasConfigUpdate2(
@@ -4422,6 +4421,7 @@ func testAccSubnetTagsConfig2(
 func testAccSubnetConfigAvailabilityZoneId(
 func testAccSubnetConfigCustomerOwnedIpv4Pool(
 func testAccSubnetConfigMapCustomerOwnedIpOnLaunch(
+func testAccSubnetConfigMapPublicIpOnLaunch(
 func testAccSubnetConfigOutpost(
 func testAccAWSSwfDomainConfig_Description(
 func testAccAWSSwfDomainConfig_Name(

@@ -2553,7 +2553,6 @@ func testAccCheckAWSIoTCertificateDestroy_basic(
 func TestAccAWSIotPolicyAttachment_basic(
 func TestAccAWSIoTPolicy_basic(
 func TestAccAWSIoTPolicy_disappears(
-func TestAccAWSIoTPolicy_invalidJson(
 func testAccCheckAWSIoTPolicyDestroy_basic(
 func TestAccAWSIotRoleAlias_basic(
 func TestAccAWSIotThingPrincipalAttachment_basic(

@@ -8371,7 +8371,6 @@ func resourceAwsIotPolicyDelete(
 func testAccCheckAWSIoTPolicyDestroy_basic(
 func testAccCheckAWSIoTPolicyExists(
 func testAccAWSIoTPolicyConfigInitialState(
-func testAccAWSIoTPolicyInvalidJsonConfig(
 func resourceAwsIotRoleAlias(
 func resourceAwsIotRoleAliasCreate(
 func getIotRoleAliasDescription(
@@ -13134,6 +13133,7 @@ func testAccSubnetTagsConfig2(
 func testAccSubnetConfigAvailabilityZoneId(
 func testAccSubnetConfigCustomerOwnedIpv4Pool(
 func testAccSubnetConfigMapCustomerOwnedIpOnLaunch(
+func testAccSubnetConfigMapPublicIpOnLaunch(
 func testAccSubnetConfigOutpost(
 func resourceAwsSwfDomain(
 func resourceAwsSwfDomainCreate(

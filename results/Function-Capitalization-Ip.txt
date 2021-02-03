@@ -128,10 +128,12 @@ func SubnetIpv6CidrStateRefreshFunc(
 func TestAccAWSSubnet_enableIpv6(
 func TestAccAWSSubnet_CustomerOwnedIpv4Pool(
 func TestAccAWSSubnet_MapCustomerOwnedIpOnLaunch(
+func TestAccAWSSubnet_MapPublicIpOnLaunch(
 func testAccCheckAwsSubnetIpv6BeforeUpdate(
 func testAccCheckAwsSubnetIpv6AfterUpdate(
 func testAccSubnetConfigCustomerOwnedIpv4Pool(
 func testAccSubnetConfigMapCustomerOwnedIpOnLaunch(
+func testAccSubnetConfigMapPublicIpOnLaunch(
 func Ipv6CidrStateRefreshFunc(
 func waitForEc2VpcIpv6CidrBlockAssociationCreate(
 func waitForEc2VpcIpv6CidrBlockAssociationDelete(

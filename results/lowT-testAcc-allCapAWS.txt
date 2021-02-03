@@ -1799,7 +1799,6 @@ func testAccAWSIotPolicyAttachmentConfigUpdate1(
 func testAccAWSIotPolicyAttachmentConfigUpdate2(
 func testAccAWSIotPolicyAttachmentConfigUpdate3(
 func testAccAWSIoTPolicyConfigInitialState(
-func testAccAWSIoTPolicyInvalidJsonConfig(
 func testAccAWSIotRoleAliasConfig(
 func testAccAWSIotRoleAliasConfigUpdate1(
 func testAccAWSIotRoleAliasConfigUpdate2(

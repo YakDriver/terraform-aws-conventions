@@ -21,8 +21,6 @@ func flattenGlueJsonClassifier(
 func TestAccAWSGlueClassifier_JsonClassifier(
 func testAccAWSGlueClassifierConfig_JsonClassifier(
 func testAccAWSIAMRoleConfig_badJson(
-func TestAccAWSIoTPolicy_invalidJson(
-func testAccAWSIoTPolicyInvalidJsonConfig(
 func flattenFirehoseHiveJsonSerDe(
 func flattenFirehoseOpenXJsonSerDe(
 func expandFirehoseHiveJsonSerDe(

@@ -1,14 +1,14 @@
 Analysis Tallies
 5137	All Functions:Exported
 14702	All Functions:Non-Exported
-9649	All Functions:Multicaps
-3846	All Functions:Non-AWS Multicaps
-8542	All Functions:Uppercase AWS
+9648	All Functions:Multicaps
+3844	All Functions:Non-AWS Multicaps
+8541	All Functions:Uppercase AWS
 6042	All Functions:Mixed case AWS
 7284	All Functions:Any underscores
 1641	All Functions:Multiple underscores
-4541	All Functions:Lowercase after first underscore
-2742	All Functions:Uppercase after first underscore
+4540	All Functions:Lowercase after first underscore
+2743	All Functions:Uppercase after first underscore
 5104	Capital-T Test Functions:All
 4747	Capital-T Test Functions:TestAcc
 4023	Capital-T Test Functions:TestAccAWS
@@ -25,11 +25,11 @@ Analysis Tallies
 3	Capital-T Test Functions:TestAccResourceAws
 31	Capital-T Test Functions:TestAccAWS+Resource
 15	Capital-T Test Functions:TestAccAws+Resource
-2947	Capital-T Test Functions:TestAcc and lowercase after first underscore
-1799	Capital-T Test Functions:TestAcc and uppercase after first underscore
+2946	Capital-T Test Functions:TestAcc and lowercase after first underscore
+1800	Capital-T Test Functions:TestAcc and uppercase after first underscore
 7686	Lowercase-t test Functions:All
 7394	Lowercase-t test Functions:testAcc
-3180	Lowercase-t test Functions:testAccAWS
+3179	Lowercase-t test Functions:testAccAWS
 704	Lowercase-t test Functions:testAccAws
 1457	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
 941	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
@@ -39,10 +39,10 @@ Analysis Tallies
 2621	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
 12790	Any case-t Test Functions:All
 12141	Any case-t Test Functions:TestAcc
-4404	Any case-t Test Functions:TestAcc with lowercase after first underscore
-2740	Any case-t Test Functions:TestAcc with uppercase after first underscore
+4403	Any case-t Test Functions:TestAcc with lowercase after first underscore
+2741	Any case-t Test Functions:TestAcc with uppercase after first underscore
 5543	Any case-t Test Functions:TestAcc with only one underscore
-1935	Any case-t Test Functions:TestAcc with camel case after first underscore
+1934	Any case-t Test Functions:TestAcc with camel case after first underscore
 1602	Any case-t Test Functions:TestAcc with multiple underscores
 437	Test Constants:All
 428	Test Constants:TestAcc (any case)
@@ -77,7 +77,7 @@ Analysis Tallies
 16	Function Capitalization:ASG
 9	Function Capitalization:aws
 6042	Function Capitalization:Aws
-8542	Function Capitalization:AWS
+8541	Function Capitalization:AWS
 1	Function Capitalization:cidr
 60	Function Capitalization:Cidr
 18	Function Capitalization:CIDR
@@ -124,10 +124,10 @@ Analysis Tallies
 142	Function Capitalization:Iot
 4	Function Capitalization:IOT
 1067	Function Capitalization:ip
-201	Function Capitalization:Ip
+203	Function Capitalization:Ip
 238	Function Capitalization:IP
 1	Function Capitalization:json
-44	Function Capitalization:Json
+42	Function Capitalization:Json
 10	Function Capitalization:JSON
 32	Function Capitalization:kms
 235	Function Capitalization:Kms

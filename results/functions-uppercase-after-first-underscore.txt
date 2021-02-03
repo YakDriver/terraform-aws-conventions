@@ -2583,6 +2583,7 @@ func testAccAWSStorageGatewayUploadBufferConfig_Basic(
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(
 func TestAccAWSSubnet_CustomerOwnedIpv4Pool(
 func TestAccAWSSubnet_MapCustomerOwnedIpOnLaunch(
+func TestAccAWSSubnet_MapPublicIpOnLaunch(
 func TestAccAWSSwfDomain_NamePrefix(
 func TestAccAWSSwfDomain_GeneratedName(
 func TestAccAWSSwfDomain_Description(

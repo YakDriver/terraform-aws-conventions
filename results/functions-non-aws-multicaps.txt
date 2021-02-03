@@ -2239,11 +2239,9 @@ func TestAccAWSIoTCertificate_keys_certificate(
 func testAccCheckAWSIoTCertificateDestroy_basic(
 func TestAccAWSIoTPolicy_basic(
 func TestAccAWSIoTPolicy_disappears(
-func TestAccAWSIoTPolicy_invalidJson(
 func testAccCheckAWSIoTPolicyDestroy_basic(
 func testAccCheckAWSIoTPolicyExists(
 func testAccAWSIoTPolicyConfigInitialState(
-func testAccAWSIoTPolicyInvalidJsonConfig(
 func getIoTThingPricipalAttachment(
 func expandIotDynamoDBAction(
 func expandIotDynamoDBv2Action(

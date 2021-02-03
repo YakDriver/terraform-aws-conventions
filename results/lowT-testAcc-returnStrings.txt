@@ -2997,7 +2997,6 @@ func testAccAWSIotPolicyAttachmentConfigUpdate1(policyName, policyName2 string) 
 func testAccAWSIotPolicyAttachmentConfigUpdate2(policyName2 string) string {
 func testAccAWSIotPolicyAttachmentConfigUpdate3(policyName2 string) string {
 func testAccAWSIoTPolicyConfigInitialState(rName string) string {
-func testAccAWSIoTPolicyInvalidJsonConfig(rName string) string {
 func testAccAWSIotRoleAliasConfig(alias string) string {
 func testAccAWSIotRoleAliasConfigUpdate1(alias string, alias2 string) string {
 func testAccAWSIotRoleAliasConfigUpdate2(alias2 string) string {
@@ -4661,6 +4660,7 @@ func testAccSubnetTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 stri
 func testAccSubnetConfigAvailabilityZoneId() string {
 func testAccSubnetConfigCustomerOwnedIpv4Pool() string {
 func testAccSubnetConfigMapCustomerOwnedIpOnLaunch(mapCustomerOwnedIpOnLaunch bool) string {
+func testAccSubnetConfigMapPublicIpOnLaunch(mapPublicIpOnLaunch bool) string {
 func testAccSubnetConfigOutpost() string {
 func testAccAWSSwfDomainConfig_Description(rName, description string) string {
 func testAccAWSSwfDomainConfig_Name(rName string) string {

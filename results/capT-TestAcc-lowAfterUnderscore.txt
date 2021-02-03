@@ -1602,7 +1602,6 @@ func TestAccAWSIoTCertificate_keys_certificate(
 func TestAccAWSIotPolicyAttachment_basic(
 func TestAccAWSIoTPolicy_basic(
 func TestAccAWSIoTPolicy_disappears(
-func TestAccAWSIoTPolicy_invalidJson(
 func TestAccAWSIotRoleAlias_basic(
 func TestAccAWSIotThingPrincipalAttachment_basic(
 func TestAccAWSIotThing_basic(
