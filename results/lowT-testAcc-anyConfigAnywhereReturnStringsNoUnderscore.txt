@@ -31,6 +31,7 @@ func testAccDataSourceAwsBatchComputeEnvironmentConfig(rName string) string {
 func testAccDataSourceAwsBatchJobQueueConfig(rName string) string {
 func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
 func testAccCheckAwsCloudformationExportConfigResourceReference(rName string) string {
+func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(rInt int) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigKMS(rName string) string {
@@ -595,6 +596,9 @@ func testAccAWSCloudFrontDistributionConfigViewerCertificateAcmCertificateArnBas
 func testAccAWSCloudFrontDistributionConfigViewerCertificateAcmCertificateArn(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigViewerCertificateAcmCertificateArnConflictsWithCloudFrontDefaultCertificate(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigWaitForDeployment(enabled, waitForDeployment bool) string {
+func testAccAWSCloudFrontOriginRequestPolicyConfig(rInt int) string {
+func testAccAWSCloudFrontOriginRequestPolicyConfigUpdate(rInt int) string {
+func testAccAWSCloudFrontOriginRequestPolicyConfigNoneBehavior(rInt int) string {
 func testAccAWSCloudFrontPublicKeyConfig(rInt int) string {
 func testAccAWSCloudFrontPublicKeyConfigUpdate(rInt int) string {
 func testAccAWSCloudHsmV2ClusterConfigBase() string {
@@ -1275,6 +1279,8 @@ func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoEmptyConfigurationBl
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfo(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoUpdate(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationBlock(rName string) string {
+func testAccGlueCatalogTableConfigStorageDescriptorSchemaReference(rName string) string {
+func testAccGlueCatalogTableConfigStorageDescriptorSchemaReferenceArn(rName string) string {
 func testAccAWSGlueClassifierConfigCsvClassifierQuoteSymbol(rName, symbol string) string {
 func testAccGlueCrawlerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGlueCrawlerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -2277,6 +2283,8 @@ func testAccAWSSfnStateMachineConfigBase(rName string) string {
 func testAccAWSSfnStateMachineConfig(rName string, rMaxAttempts int) string {
 func testAccAWSSfnStateMachineConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSSfnStateMachineConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAWSSfnStateMachineTypedConfig(rType string, rName string, rMaxAttempts int) string {
+func testAccAWSSfnStateMachineExpressConfigLogConfiguration(rType string, rName string, rLevel string) string {
 func testAccShieldProtectionCloudfrontRetainConfig() string {
 func testAccShieldProtectionRoute53HostedZoneConfig(rName string) string {
 func testAccShieldProtectionElbConfig(rName string) string {
@@ -2616,6 +2624,7 @@ func testAccAWSXrayGroupBasicConfigTags1(rName, tagKey1, tagValue1 string) strin
 func testAccAWSXrayGroupBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSXraySamplingRuleConfigTags1(ruleName, tagKey1, tagValue1 string) string {
 func testAccAWSXraySamplingRuleConfigTags2(ruleName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccRoute53KeySigningKeyRegionProviderConfig() string {
 func testAccRoute53QueryLogRegionProviderConfig() string {
 func testAccWafLoggingConfigurationRegionProviderConfig() string {
 func testAccGetWafLoggingConfigurationRegion() string {

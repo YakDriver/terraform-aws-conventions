@@ -141,6 +141,8 @@ func flattenFMSResourceTags(
 func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
 func readAwsGlueTableID(
+func expandGlueTableSchemaReferenceSchemaID(
+func flattenGlueTableSchemaReferenceSchemaID(
 func decodeGlueConnectionID(
 func expandGlueDynamoDBTargets(
 func expandGlueDynamoDBTarget(

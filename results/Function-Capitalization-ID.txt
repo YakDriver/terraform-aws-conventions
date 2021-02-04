@@ -117,6 +117,8 @@ func testAccFlowLogConfig_VPCID(
 func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
 func readAwsGlueTableID(
+func expandGlueTableSchemaReferenceSchemaID(
+func flattenGlueTableSchemaReferenceSchemaID(
 func decodeGlueConnectionID(
 func TestAccGlueDevEndpoint_SubnetID_SecurityGroupIDs(
 func testAccGlueDevEndpointConfig_SubnetID_SecurityGroupIDs(

@@ -1,21 +1,21 @@
 Analysis Tallies
-5137	All Functions:Exported
-14702	All Functions:Non-Exported
-9648	All Functions:Multicaps
-3844	All Functions:Non-AWS Multicaps
-8541	All Functions:Uppercase AWS
-6042	All Functions:Mixed case AWS
-7284	All Functions:Any underscores
-1641	All Functions:Multiple underscores
-4540	All Functions:Lowercase after first underscore
-2743	All Functions:Uppercase after first underscore
-5104	Capital-T Test Functions:All
-4747	Capital-T Test Functions:TestAcc
-4023	Capital-T Test Functions:TestAccAWS
-450	Capital-T Test Functions:TestAccAws
+5156	All Functions:Exported
+14758	All Functions:Non-Exported
+9671	All Functions:Multicaps
+3850	All Functions:Non-AWS Multicaps
+8562	All Functions:Uppercase AWS
+6078	All Functions:Mixed case AWS
+7309	All Functions:Any underscores
+1645	All Functions:Multiple underscores
+4554	All Functions:Lowercase after first underscore
+2754	All Functions:Uppercase after first underscore
+5123	Capital-T Test Functions:All
+4766	Capital-T Test Functions:TestAcc
+4035	Capital-T Test Functions:TestAccAWS
+457	Capital-T Test Functions:TestAccAws
 65	Capital-T Test Functions:TestAccDataSourceAWS
 188	Capital-T Test Functions:TestAccDataSourceAws
-202	Capital-T Test Functions:TestAccAWS+DataSource
+203	Capital-T Test Functions:TestAccAWS+DataSource
 16	Capital-T Test Functions:TestAccAws+DataSource
 28	Capital-T Test Functions:TestAccAWSDataSource
 0	Capital-T Test Functions:TestAccAwsDataSource
@@ -25,25 +25,25 @@ Analysis Tallies
 3	Capital-T Test Functions:TestAccResourceAws
 31	Capital-T Test Functions:TestAccAWS+Resource
 15	Capital-T Test Functions:TestAccAws+Resource
-2946	Capital-T Test Functions:TestAcc and lowercase after first underscore
-1800	Capital-T Test Functions:TestAcc and uppercase after first underscore
-7686	Lowercase-t test Functions:All
-7394	Lowercase-t test Functions:testAcc
-3179	Lowercase-t test Functions:testAccAWS
-704	Lowercase-t test Functions:testAccAws
+2960	Capital-T Test Functions:TestAcc and lowercase after first underscore
+1805	Capital-T Test Functions:TestAcc and uppercase after first underscore
+7708	Lowercase-t test Functions:All
+7416	Lowercase-t test Functions:testAcc
+3186	Lowercase-t test Functions:testAccAWS
+711	Lowercase-t test Functions:testAccAws
 1457	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
-941	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
-4748	Lowercase-t test Functions:testAcc functions with config (any case)
-4988	Lowercase-t test Functions:testAcc functions returning strings
-4578	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
-2621	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-12790	Any case-t Test Functions:All
-12141	Any case-t Test Functions:TestAcc
-4403	Any case-t Test Functions:TestAcc with lowercase after first underscore
-2741	Any case-t Test Functions:TestAcc with uppercase after first underscore
-5543	Any case-t Test Functions:TestAcc with only one underscore
-1934	Any case-t Test Functions:TestAcc with camel case after first underscore
-1602	Any case-t Test Functions:TestAcc with multiple underscores
+947	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
+4763	Lowercase-t test Functions:testAcc functions with config (any case)
+5004	Lowercase-t test Functions:testAcc functions returning strings
+4593	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
+2630	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
+12831	Any case-t Test Functions:All
+12182	Any case-t Test Functions:TestAcc
+4417	Any case-t Test Functions:TestAcc with lowercase after first underscore
+2752	Any case-t Test Functions:TestAcc with uppercase after first underscore
+5564	Any case-t Test Functions:TestAcc with only one underscore
+1939	Any case-t Test Functions:TestAcc with camel case after first underscore
+1606	Any case-t Test Functions:TestAcc with multiple underscores
 437	Test Constants:All
 428	Test Constants:TestAcc (any case)
 428	Test Constants:testAcc (lowercase)
@@ -55,11 +55,11 @@ Analysis Tallies
 370	Test Constants:TestAcc (any case) with config (any case)
 193	Test Constants:TestAcc (any case) with config (any case) and no underscores
 175	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
-3437	Resource Functions:Resource
+3452	Resource Functions:Resource
 212	Resource Functions:Resource Multi Caps
-5827	Resource Functions:Non-test
-449	Resource Functions:Non-test Multi-caps
-2435	Resource Functions:Non-test, non-resource
+5848	Resource Functions:Non-test
+451	Resource Functions:Non-test Multi-caps
+2441	Resource Functions:Non-test, non-resource
 7	Function Capitalization:acl
 187	Function Capitalization:Acl
 95	Function Capitalization:ACL
@@ -68,16 +68,16 @@ Analysis Tallies
 52	Function Capitalization:AMI
 23	Function Capitalization:api
 471	Function Capitalization:Api
-592	Function Capitalization:API
+594	Function Capitalization:API
 3	Function Capitalization:arn
-176	Function Capitalization:Arn
+178	Function Capitalization:Arn
 54	Function Capitalization:ARN
 5	Function Capitalization:asg
 5	Function Capitalization:Asg
 16	Function Capitalization:ASG
 9	Function Capitalization:aws
-6042	Function Capitalization:Aws
-8541	Function Capitalization:AWS
+6078	Function Capitalization:Aws
+8562	Function Capitalization:AWS
 1	Function Capitalization:cidr
 60	Function Capitalization:Cidr
 18	Function Capitalization:CIDR
@@ -94,7 +94,7 @@ Analysis Tallies
 67	Function Capitalization:Dns
 8	Function Capitalization:DNS
 30	Function Capitalization:ec2
-741	Function Capitalization:Ec2
+754	Function Capitalization:Ec2
 24	Function Capitalization:EC2
 12	Function Capitalization:ecs
 262	Function Capitalization:Ecs
@@ -118,12 +118,12 @@ Analysis Tallies
 198	Function Capitalization:Iam
 233	Function Capitalization:IAM
 35	Function Capitalization:id
-447	Function Capitalization:Id
-220	Function Capitalization:ID
+449	Function Capitalization:Id
+222	Function Capitalization:ID
 4	Function Capitalization:iot
 142	Function Capitalization:Iot
 4	Function Capitalization:IOT
-1067	Function Capitalization:ip
+1071	Function Capitalization:ip
 203	Function Capitalization:Ip
 238	Function Capitalization:IP
 1	Function Capitalization:json

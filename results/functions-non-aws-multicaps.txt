@@ -469,6 +469,8 @@ func TestAccAWSAPIGatewayDomainName_disappears(
 func TestAccAWSAPIGatewayDomainName_MutualTlsAuthentication(
 func testAccCheckAWSAPIGatewayDomainNameExists(
 func testAccCheckAWSAPIGatewayDomainNameDestroy(
+func testAccCheckAWSAPIGatewayEdgeDomainNameExists(
+func testAccCheckAWSAPIGatewayEdgeDomainNameDestroy(
 func testAccAWSAPIGatewayDomainNameConfigPublicCert(
 func testAccAWSAPIGatewayDomainNameConfig_CertificateArn(
 func testAccAWSAPIGatewayDomainNameConfig_CertificateName(
@@ -1943,6 +1945,8 @@ func testAccGlobalAcceleratorEndpointGroupConfigALBEndpointClientIP(
 func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
 func readAwsGlueTableID(
+func expandGlueTableSchemaReferenceSchemaID(
+func flattenGlueTableSchemaReferenceSchemaID(
 func decodeGlueConnectionID(
 func TestAccAWSGlueConnection_MongoDB(
 func testAccAWSGlueConnectionConfig_MongoDB(
@@ -2516,6 +2520,7 @@ func testSweepLBTargetGroups(
 func TestLBTargetGroupCloudwatchSuffixFromARN(
 func TestAccAWSLBTargetGroup_basic(
 func TestAccAWSLBTargetGroup_basicUdp(
+func TestAccAWSLBTargetGroup_ProtocolVersion(
 func TestAccAWSLBTargetGroup_withoutHealthcheck(
 func TestAccAWSLBTargetGroup_networkLB_TargetGroup(
 func TestAccAWSLBTargetGroup_Protocol_Geneve(
@@ -2554,6 +2559,7 @@ func testAccCheckAWSLBTargetGroupDestroy(
 func testAccALB_defaults(
 func testAccNLB_defaults(
 func testAccAWSLBTargetGroupConfig_basic(
+func testAccAWSLBTargetGroupConfig_ProtocolVersion(
 func testAccAWSLBTargetGroupConfigProtocolGeneve(
 func testAccAWSLBTargetGroupConfigTags1(
 func testAccAWSLBTargetGroupConfigTags2(

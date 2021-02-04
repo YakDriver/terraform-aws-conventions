@@ -715,6 +715,11 @@ func resourceAwsCloudFrontOriginAccessIdentityUpdate(
 func resourceAwsCloudFrontOriginAccessIdentityDelete(
 func expandOriginAccessIdentityConfig(
 func flattenOriginAccessIdentityConfig(
+func resourceAwsCloudFrontOriginRequestPolicy(
+func resourceAwsCloudFrontOriginRequestPolicyCreate(
+func resourceAwsCloudFrontOriginRequestPolicyRead(
+func resourceAwsCloudFrontOriginRequestPolicyUpdate(
+func resourceAwsCloudFrontOriginRequestPolicyDelete(
 func resourceAwsCloudFrontPublicKey(
 func resourceAwsCloudFrontPublicKeyCreate(
 func resourceAwsCloudFrontPublicKeyRead(
@@ -1893,6 +1898,11 @@ func resourceAwsEc2TransitGatewayPeeringAttachmentRead(
 func resourceAwsEc2TransitGatewayPeeringAttachmentUpdate(
 func resourceAwsEc2TransitGatewayPeeringAttachmentDelete(
 func init(
+func resourceAwsEc2TransitGatewayPrefixListReference(
+func resourceAwsEc2TransitGatewayPrefixListReferenceCreate(
+func resourceAwsEc2TransitGatewayPrefixListReferenceRead(
+func resourceAwsEc2TransitGatewayPrefixListReferenceUpdate(
+func resourceAwsEc2TransitGatewayPrefixListReferenceDelete(
 func resourceAwsEc2TransitGatewayRoute(
 func resourceAwsEc2TransitGatewayRouteCreate(
 func resourceAwsEc2TransitGatewayRouteRead(
@@ -2517,6 +2527,8 @@ func expandGlueColumns(
 func expandGlueSerDeInfo(
 func expandGlueSortColumns(
 func expandGlueSkewedInfo(
+func expandGlueTableSchemaReference(
+func expandGlueTableSchemaReferenceSchemaID(
 func flattenGlueStorageDescriptor(
 func flattenGlueColumns(
 func flattenGlueColumn(
@@ -2525,6 +2537,8 @@ func flattenGluePartitionIndex(
 func flattenGlueSerDeInfo(
 func flattenGlueOrders(
 func flattenGlueSkewedInfo(
+func flattenGlueTableSchemaReference(
+func flattenGlueTableSchemaReferenceSchemaID(
 func resourceAwsGlueClassifier(
 func resourceAwsGlueClassifierCreate(
 func resourceAwsGlueClassifierRead(
@@ -4355,6 +4369,11 @@ func resourceAwsRoute53HealthCheckUpdate(
 func resourceAwsRoute53HealthCheckCreate(
 func resourceAwsRoute53HealthCheckRead(
 func resourceAwsRoute53HealthCheckDelete(
+func resourceAwsRoute53KeySigningKey(
+func resourceAwsRoute53KeySigningKeyCreate(
+func resourceAwsRoute53KeySigningKeyRead(
+func resourceAwsRoute53KeySigningKeyUpdate(
+func resourceAwsRoute53KeySigningKeyDelete(
 func resourceAwsRoute53QueryLog(
 func resourceAwsRoute53QueryLogCreate(
 func resourceAwsRoute53QueryLogRead(
@@ -4992,6 +5011,8 @@ func resourceAwsSfnStateMachineCreate(
 func resourceAwsSfnStateMachineRead(
 func resourceAwsSfnStateMachineUpdate(
 func resourceAwsSfnStateMachineDelete(
+func expandAwsSfnLoggingConfiguration(
+func flattenAwsSfnLoggingConfiguration(
 func resourceAwsShieldProtection(
 func resourceAwsShieldProtectionCreate(
 func resourceAwsShieldProtectionRead(

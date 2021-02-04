@@ -1000,6 +1000,8 @@ func expandGlueColumns(
 func expandGlueSerDeInfo(
 func expandGlueSortColumns(
 func expandGlueSkewedInfo(
+func expandGlueTableSchemaReference(
+func expandGlueTableSchemaReferenceSchemaID(
 func flattenGlueStorageDescriptor(
 func flattenGlueColumns(
 func flattenGlueColumn(
@@ -1008,6 +1010,8 @@ func flattenGluePartitionIndex(
 func flattenGlueSerDeInfo(
 func flattenGlueOrders(
 func flattenGlueSkewedInfo(
+func flattenGlueTableSchemaReference(
+func flattenGlueTableSchemaReferenceSchemaID(
 func deleteGlueClassifier(
 func expandGlueCsvClassifierCreate(
 func expandGlueCsvClassifierUpdate(
@@ -2085,6 +2089,8 @@ func flattenSesSnsDestination(
 func decodeSesIdentityNotificationTopicId(
 func buildReceiptRule(
 func init(
+func expandAwsSfnLoggingConfiguration(
+func flattenAwsSfnLoggingConfiguration(
 func flattenSignerSigningJobRevocationRecord(
 func flattenSignerSigningJobSource(
 func flattenSignerSigningJobS3Source(

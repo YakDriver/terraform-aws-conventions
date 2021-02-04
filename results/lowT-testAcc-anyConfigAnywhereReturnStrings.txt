@@ -39,6 +39,7 @@ func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
 func testAccCheckAwsCloudformationExportConfigResourceReference(rName string) string {
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(stackName string) string {
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(stackName string) string {
+func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(rInt int) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigKMS(rName string) string {
@@ -1085,6 +1086,9 @@ func testAccAWSCloudFrontDistributionConfigViewerCertificateAcmCertificateArnBas
 func testAccAWSCloudFrontDistributionConfigViewerCertificateAcmCertificateArn(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigViewerCertificateAcmCertificateArnConflictsWithCloudFrontDefaultCertificate(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigWaitForDeployment(enabled, waitForDeployment bool) string {
+func testAccAWSCloudFrontOriginRequestPolicyConfig(rInt int) string {
+func testAccAWSCloudFrontOriginRequestPolicyConfigUpdate(rInt int) string {
+func testAccAWSCloudFrontOriginRequestPolicyConfigNoneBehavior(rInt int) string {
 func testAccAWSCloudFrontPublicKeyConfig(rInt int) string {
 func testAccAWSCloudFrontPublicKeyConfig_namePrefix() string {
 func testAccAWSCloudFrontPublicKeyConfigUpdate(rInt int) string {
@@ -1935,6 +1939,8 @@ func testAccAWSEc2TransitGatewayPeeringAttachmentConfigBasic_sameAccount(rName s
 func testAccAWSEc2TransitGatewayPeeringAttachmentConfigBasic_differentAccount(rName string) string {
 func testAccAWSEc2TransitGatewayPeeringAttachmentConfigTags1_sameAccount(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEc2TransitGatewayPeeringAttachmentConfigTags2_sameAccount(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsEc2TransitGatewayPrefixListReferenceConfig_Blackhole(rName string) string {
+func testAccAwsEc2TransitGatewayPrefixListReferenceConfig_TransitGatewayAttachmentId(rName string, index int) string {
 func testAccAWSEc2TransitGatewayRouteTableAssociationConfig() string {
 func testAccAWSEc2TransitGatewayRouteTablePropagationConfig() string {
 func testAccAWSEc2TransitGatewayRouteTableConfig() string {
@@ -2339,6 +2345,8 @@ func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoEmptyConfigurationBl
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfo(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSerDeInfoUpdate(rName string) string {
 func testAccGlueCatalogTableConfigStorageDescriptorSkewedInfoEmptyConfigurationBlock(rName string) string {
+func testAccGlueCatalogTableConfigStorageDescriptorSchemaReference(rName string) string {
+func testAccGlueCatalogTableConfigStorageDescriptorSchemaReferenceArn(rName string) string {
 func testAccAWSGlueClassifierConfig_CsvClassifier(rName string, allowSingleColumn bool, containsHeader string, delimiter string, disableValueTrimming bool) string {
 func testAccAWSGlueClassifierConfigCsvClassifierQuoteSymbol(rName, symbol string) string {
 func testAccAWSGlueClassifierConfig_GrokClassifier(rName, classification, grokPattern string) string {
@@ -3075,6 +3083,7 @@ func testAccAWSLBTargetGroupAttachmentConfigBackwardsCompatibility(rName string)
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdIpAddress(rName string) string {
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdLambda(rName string) string {
 func testAccAWSLBTargetGroupConfig_basic(targetGroupName string) string {
+func testAccAWSLBTargetGroupConfig_ProtocolVersion(targetGroupName string) string {
 func testAccAWSLBTargetGroupConfigProtocolGeneve(rName string) string {
 func testAccAWSLBTargetGroupConfigTags1(targetGroupName, tagKey1, tagValue1 string) string {
 func testAccAWSLBTargetGroupConfigTags2(targetGroupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -3582,6 +3591,9 @@ func testAccRoute53HealthCheckConfigTags1(tag1Key, tag1Value string) string {
 func testAccRoute53HealthCheckConfigTags2(tag1Key, tag1Value, tagKey2, tagValue2 string) string {
 func testAccRoute53HealthCheckConfig_withHealthCheckRegions(regions ...string) string {
 func testAccRoute53HealthCheckConfigDisabled(disabled bool) string {
+func testAccAwsRoute53KeySigningKeyConfig_Base(rName string) string {
+func testAccAwsRoute53KeySigningKeyConfig_Name(rName string) string {
+func testAccAwsRoute53KeySigningKeyConfig_Status(rName string, status string) string {
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(rName string) string {
 func testAccRoute53RecordConfig_allowOverwrite(allowOverwrite bool) string {
 func testAccRoute53RecordConfigAliasS3(rName string) string {
@@ -3986,6 +3998,8 @@ func testAccAWSSfnStateMachineConfigBase(rName string) string {
 func testAccAWSSfnStateMachineConfig(rName string, rMaxAttempts int) string {
 func testAccAWSSfnStateMachineConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSSfnStateMachineConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAWSSfnStateMachineTypedConfig(rType string, rName string, rMaxAttempts int) string {
+func testAccAWSSfnStateMachineExpressConfigLogConfiguration(rType string, rName string, rLevel string) string {
 func testAccShieldProtectionCloudfrontRetainConfig() string {
 func testAccShieldProtectionRoute53HostedZoneConfig(rName string) string {
 func testAccShieldProtectionElbConfig(rName string) string {
@@ -4573,6 +4587,7 @@ func testAccAWSXraySamplingRuleConfig_basic(ruleName string) string {
 func testAccAWSXraySamplingRuleConfig_update(ruleName string, priority int, reservoirSize int) string {
 func testAccAWSXraySamplingRuleConfigTags1(ruleName, tagKey1, tagValue1 string) string {
 func testAccAWSXraySamplingRuleConfigTags2(ruleName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccRoute53KeySigningKeyRegionProviderConfig() string {
 func testAccRoute53QueryLogRegionProviderConfig() string {
 func testAccWafLoggingConfigurationRegionProviderConfig() string {
 func testAccGetWafLoggingConfigurationRegion() string {
