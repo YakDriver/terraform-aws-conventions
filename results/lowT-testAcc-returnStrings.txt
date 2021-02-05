@@ -3405,6 +3405,7 @@ func testAccAWSLBConfig_enableDeletionProtection(lbName string, deletion_protect
 func testAccAWSLBConfig_networkLoadbalancer_subnets(lbName string) string {
 func testAccAWSLBConfig_networkLoadbalancer(lbName string, cz bool) string {
 func testAccAWSLBConfig_LoadBalancerType_Gateway(rName string) string {
+func testAccAWSLBConfig_IPv6(rName string) string {
 func testAccAWSLBConfig_LoadBalancerType_Gateway_EnableCrossZoneLoadBalancing(rName string, enableCrossZoneLoadBalancing bool) string {
 func testAccAWSLBConfig_networkLoadBalancerEIP(lbName string) string {
 func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(lbName string) string {
@@ -4578,6 +4579,8 @@ func testAccAWSSSOAdminPermissionSetBasicConfig(rName string) string {
 func testAccAWSSSOAdminPermissionSetUpdateDescriptionConfig(rName string) string {
 func testAccAWSSSOAdminPermissionSetUpdateRelayStateConfig(rName string) string {
 func testAccAWSSSOAdminPermissionSetUpdateSessionDurationConfig(rName string) string {
+func testAccAWSSSOAdminPermissionSetRelayStateConfig(rName string) string {
+func testAccAWSSSOAdminPermissionSetRelayStateConfig_updateSessionDuration(rName string) string {
 func testAccAWSSSOAdminPermissionSetConfigTagsSingle(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSSOAdminPermissionSetConfigTagsMultiple(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSSOAdminPermissionSetMixedPolicyAttachmentsConfig(rName string) string {

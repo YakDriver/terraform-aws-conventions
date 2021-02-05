@@ -1988,6 +1988,7 @@ func testAccAWSLBTargetGroupConfig_Protocol_Tls(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_LoadBalancerType_Gateway(
+func TestAccAWSLB_IPv6SubnetMapping(
 func TestAccAWSLB_LoadBalancerType_Gateway_EnableCrossZoneLoadBalancing(
 func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_NLB_privateipv4address(
@@ -1997,6 +1998,7 @@ func TestAccAWSLB_ALB_AccessLogs_Prefix(
 func TestAccAWSLB_NLB_AccessLogs(
 func TestAccAWSLB_NLB_AccessLogs_Prefix(
 func testAccAWSLBConfig_LoadBalancerType_Gateway(
+func testAccAWSLBConfig_IPv6(
 func testAccAWSLBConfig_LoadBalancerType_Gateway_EnableCrossZoneLoadBalancing(
 func TestAccAWSLightsailInstance_Name(
 func TestAccAWSLightsailInstance_Tags(

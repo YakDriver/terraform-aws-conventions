@@ -112,7 +112,9 @@ func testAccInstanceConfigPublicAndPrivateSecondaryIPs(
 func testAccInstanceConfigPrivateIPAndSecondaryIPs(
 func TestAccAWSLaunchTemplate_associatePublicIPAddress(
 func TestAccAWSLaunchTemplate_associateCarrierIPAddress(
+func TestAccAWSLB_IPv6SubnetMapping(
 func TestAccAWSLB_networkLoadbalancerEIP(
+func testAccAWSLBConfig_IPv6(
 func testAccAWSLBConfig_networkLoadBalancerEIP(
 func testAccAWSLBConfig_networkLoadBalancerPrivateIPV4Address(
 func expandNetworkFirewallIPSets(

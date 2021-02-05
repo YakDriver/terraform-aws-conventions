@@ -409,6 +409,7 @@ func testAccAwsElasticTranscoderPresetConfigDescription(
 func flattenEmrAutoScalingPolicyDescription(
 func TestAccAWSEMRCluster_Step_Multiple(
 func testAccAWSEmrClusterConfig_Step_Multiple(
+func testAccErrorCheckSkipEmrManagedScalingPolicy(
 func flattenGlobalAcceleratorEndpointDescriptions(
 func expandGlueStorageDescriptor(
 func flattenGlueStorageDescriptor(

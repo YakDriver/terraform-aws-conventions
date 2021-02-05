@@ -3166,6 +3166,7 @@ func TestAccAWSLBTargetGroup_stickinessInvalidALB(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_LoadBalancerType_Gateway(
+func TestAccAWSLB_IPv6SubnetMapping(
 func TestAccAWSLB_LoadBalancerType_Gateway_EnableCrossZoneLoadBalancing(
 func TestAccAWSLB_ALB_outpost(
 func TestAccAWSLB_networkLoadbalancerEIP(
@@ -4356,6 +4357,7 @@ func TestAccAWSSSOAdminPermissionSet_tags(
 func TestAccAWSSSOAdminPermissionSet_updateDescription(
 func TestAccAWSSSOAdminPermissionSet_updateRelayState(
 func TestAccAWSSSOAdminPermissionSet_updateSessionDuration(
+func TestAccAWSSSOAdminPermissionSet_relayState_updateSessionDuration(
 func TestAccAWSSSOAdminPermissionSet_mixedPolicyAttachments(
 func TestAccAWSStorageGatewayCachedIscsiVolume_basic(
 func TestAccAWSStorageGatewayCachedIscsiVolume_kms(
