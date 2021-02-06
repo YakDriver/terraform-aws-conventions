@@ -4024,6 +4024,7 @@ func testAccAwsSnsPlatformApplicationConfig_snsTopicAttribute(name string, platf
 func testAccAWSSNSTopicSubscriptionConfig(i int) string {
 func testAccAWSSNSTopicSubscriptionConfig_filterPolicy(i int, policy string) string {
 func testAccAWSSNSTopicSubscriptionConfig_deliveryPolicy(i int, policy string) string {
+func testAccAWSSNSTopicSubscriptionConfig_redrivePolicy(i int, dlqName string) string {
 func testAccAWSSNSTopicSubscriptionConfig_rawMessageDelivery(i int, rawMessageDelivery bool) string {
 func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingEndpoint(i int) string {
 func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingSecuredEndpoint(i int, username, password string) string {
