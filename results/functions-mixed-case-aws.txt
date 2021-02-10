@@ -5005,6 +5005,11 @@ func resourceAwsSagemakerModelCreate(
 func resourceAwsSagemakerModelRead(
 func resourceAwsSagemakerModelUpdate(
 func resourceAwsSagemakerModelDelete(
+func resourceAwsSagemakerModelPackageGroup(
+func resourceAwsSagemakerModelPackageGroupCreate(
+func resourceAwsSagemakerModelPackageGroupRead(
+func resourceAwsSagemakerModelPackageGroupUpdate(
+func resourceAwsSagemakerModelPackageGroupDelete(
 func resourceAwsSagemakerNotebookInstance(
 func resourceAwsSagemakerNotebookInstanceCreate(
 func resourceAwsSagemakerNotebookInstanceRead(

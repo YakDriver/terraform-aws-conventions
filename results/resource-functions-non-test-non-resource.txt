@@ -991,6 +991,7 @@ func flattenGlobalAcceleratorEndpointDescriptions(
 func flattenGlobalAcceleratorPortOverrides(
 func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
+func init(
 func readAwsGlueTableID(
 func expandGlueTableInput(
 func expandGlueTablePartitionIndexes(
@@ -2019,6 +2020,7 @@ func expandContainers(
 func flattenContainer(
 func flattenSagemakerImageConfig(
 func flattenContainers(
+func init(
 func init(
 func stopSagemakerNotebookInstance(
 func sagemakerNotebookInstanceStateRefreshFunc(

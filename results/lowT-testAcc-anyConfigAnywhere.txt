@@ -4009,6 +4009,9 @@ func testAccAWSSagemakerImageBasicConfig(
 func testAccAWSSagemakerImageConfigTags1(
 func testAccAWSSagemakerImageConfigTags2(
 func testAccAWSSagemakerImageVersionBasicConfig(
+func testAccAWSSagemakerModelPackageGroupBasicConfig(
+func testAccAWSSagemakerModelPackageGroupConfigTags1(
+func testAccAWSSagemakerModelPackageGroupConfigTags2(
 func testAccSagemakerModelConfigBase(
 func testAccSagemakerModelConfig(
 func testAccSagemakerModelConfigTags1(

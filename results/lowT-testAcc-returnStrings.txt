@@ -4216,6 +4216,10 @@ func testAccAWSSagemakerImageDisplayName(rName string) string {
 func testAccAWSSagemakerImageConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSagemakerImageConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSagemakerImageVersionBasicConfig(rName, baseImage string) string {
+func testAccAWSSagemakerModelPackageGroupBasicConfig(rName string) string {
+func testAccAWSSagemakerModelPackageGroupDescription(rName string) string {
+func testAccAWSSagemakerModelPackageGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSagemakerModelPackageGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSagemakerModelConfigBase(rName string) string {
 func testAccSagemakerModelConfig(rName string) string {
 func testAccSagemakerModelConfigTags1(rName, tagKey1, tagValue1 string) string {

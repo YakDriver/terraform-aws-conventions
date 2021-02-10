@@ -3890,6 +3890,7 @@ func testAccCheckGlobalAcceleratorListenerExists(
 func testAccCheckGlobalAcceleratorListenerDestroy(
 func testAccGlobalAcceleratorListener_basic(
 func testAccGlobalAcceleratorListener_update(
+func testSweepGlueCatalogDatabases(
 func testAccCheckGlueDatabaseDestroy(
 func testAccGlueCatalogDatabase_basic(
 func testAccGlueCatalogDatabase_full(
@@ -6439,6 +6440,13 @@ func testAccAWSSagemakerImageConfigTags2(
 func testAccCheckAWSSagemakerImageVersionDestroy(
 func testAccCheckAWSSagemakerImageVersionExists(
 func testAccAWSSagemakerImageVersionBasicConfig(
+func testSweepSagemakerModelPackageGroups(
+func testAccCheckAWSSagemakerModelPackageGroupDestroy(
+func testAccCheckAWSSagemakerModelPackageGroupExists(
+func testAccAWSSagemakerModelPackageGroupBasicConfig(
+func testAccAWSSagemakerModelPackageGroupDescription(
+func testAccAWSSagemakerModelPackageGroupConfigTags1(
+func testAccAWSSagemakerModelPackageGroupConfigTags2(
 func testSweepSagemakerModels(
 func testAccCheckSagemakerModelDestroy(
 func testAccCheckSagemakerModelExists(

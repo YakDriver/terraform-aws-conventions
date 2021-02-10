@@ -2513,6 +2513,7 @@ func resourceAwsGlueCatalogDatabaseRead(
 func resourceAwsGlueCatalogDatabaseDelete(
 func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
+func init(
 func resourceAwsGlueCatalogTable(
 func readAwsGlueTableID(
 func resourceAwsGlueCatalogTableCreate(
@@ -4759,6 +4760,12 @@ func expandContainers(
 func flattenContainer(
 func flattenSagemakerImageConfig(
 func flattenContainers(
+func resourceAwsSagemakerModelPackageGroup(
+func resourceAwsSagemakerModelPackageGroupCreate(
+func resourceAwsSagemakerModelPackageGroupRead(
+func resourceAwsSagemakerModelPackageGroupUpdate(
+func resourceAwsSagemakerModelPackageGroupDelete(
+func init(
 func init(
 func resourceAwsSagemakerNotebookInstance(
 func resourceAwsSagemakerNotebookInstanceCreate(
