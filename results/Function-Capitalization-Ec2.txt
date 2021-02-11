@@ -485,6 +485,7 @@ func resourceAwsEc2TrafficMirrorFilterRuleUpdate(
 func resourceAwsEc2TrafficMirrorFilterRuleDelete(
 func resourceAwsEc2TrafficMirrorFilterRuleImport(
 func TestAccAWSEc2TrafficMirrorFilterRule_basic(
+func TestAccAWSEc2TrafficMirrorFilterRule_disappears(
 func testAccCheckAWSEc2TrafficMirrorFilterRuleExists(
 func testAccEc2TrafficMirrorFilterRuleConfig(
 func testAccEc2TrafficMirrorFilterRuleConfigFull(
@@ -495,7 +496,6 @@ func TestAccAWSEc2TrafficMirrorFilter_basic(
 func TestAccAWSEc2TrafficMirrorFilter_tags(
 func TestAccAWSEc2TrafficMirrorFilter_disappears(
 func testAccCheckAWSEc2TrafficMirrorFilterExists(
-func testAccCheckAWSEc2TrafficMirrorFilterDisappears(
 func testAccPreCheckAWSEc2TrafficMirrorFilter(
 func testAccCheckAWSEc2TrafficMirrorFilterDestroy(
 func resourceAwsEc2TrafficMirrorSession(

@@ -254,6 +254,9 @@ func init(
 func expandOriginAccessIdentityConfig(
 func flattenOriginAccessIdentityConfig(
 func expandPublicKeyConfig(
+func expandCloudFrontEndPoints(
+func flattenCloudFrontEndPoints(
+func init(
 func describeCloudHsmV2Cluster(
 func readCloudHsmV2ClusterCertificates(
 func waitForCloudhsmv2ClusterDeletion(
@@ -370,6 +373,7 @@ func expandAwsCodeBuildReportGroupExportConfig(
 func flattenAwsCodeBuildReportGroupExportConfig(
 func expandAwsCodeBuildReportGroupS3ReportExportConfig(
 func flattenAwsCodeBuildReportGroupS3ReportExportConfig(
+func init(
 func expandWebhookFilterGroups(
 func expandWebhookFilterData(
 func flattenAwsCodeBuildWebhookFilterGroups(
@@ -456,6 +460,8 @@ func init(
 func configRuleSourceDetailsHash(
 func init(
 func init(
+func expandConfigConformancePackInputParameters(
+func flattenConfigConformancePackInputParameters(
 func init(
 func expandConfigRemediationConfigurationParameters(
 func flattenRemediationConfigurationParameters(
@@ -731,7 +737,6 @@ func flattenEcsInferenceAccelerators(
 func expandEcsInferenceAccelerators(
 func migrateEcsTaskDefinitionStateV0toV1(
 func init(
-func waitForDeleteEfsAccessPoint(
 func hasEmptyAccessPoints(
 func expandEfsAccessPointPosixUser(
 func expandEfsAccessPointRootDirectory(
@@ -2080,6 +2085,8 @@ func flattenServiceDiscoveryHealthCheckConfig(
 func expandServiceDiscoveryHealthCheckCustomConfig(
 func flattenServiceDiscoveryHealthCheckCustomConfig(
 func init(
+func expandSesConfigurationSetDeliveryOptions(
+func flattenSesConfigurationSetDeliveryOptions(
 func init(
 func init(
 func getAwsSesIdentityVerificationAttributes(

@@ -36,7 +36,6 @@ func resourceAwsEfsAccessPointCreate(
 func resourceAwsEfsAccessPointUpdate(
 func resourceAwsEfsAccessPointRead(
 func resourceAwsEfsAccessPointDelete(
-func waitForDeleteEfsAccessPoint(
 func expandEfsAccessPointPosixUser(
 func expandEfsAccessPointRootDirectory(
 func expandEfsAccessPointRootDirectoryCreationInfo(

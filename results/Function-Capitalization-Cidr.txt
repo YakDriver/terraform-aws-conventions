@@ -1,4 +1,5 @@
 func testAccAWSIPRangesCheckCidrBlocksAttribute(
+func TestAccAWSRouteDataSource_IPv6DestinationCidr(
 func TestAccDataSourceAwsSubnet_ipv6ByIpv6CidrBlock(
 func testAccDataSourceAwsSubnetConfigIpv6WithDataSourceIpv6CidrBlock(
 func TestAccDataSourceAwsVpcPeeringConnection_CidrBlock(

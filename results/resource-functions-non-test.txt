@@ -726,6 +726,14 @@ func resourceAwsCloudFrontPublicKeyRead(
 func resourceAwsCloudFrontPublicKeyUpdate(
 func resourceAwsCloudFrontPublicKeyDelete(
 func expandPublicKeyConfig(
+func resourceAwsCloudFrontRealtimeLogConfig(
+func resourceAwsCloudFrontRealtimeLogConfigCreate(
+func resourceAwsCloudFrontRealtimeLogConfigRead(
+func resourceAwsCloudFrontRealtimeLogConfigUpdate(
+func resourceAwsCloudFrontRealtimeLogConfigDelete(
+func expandCloudFrontEndPoints(
+func flattenCloudFrontEndPoints(
+func init(
 func resourceAwsCloudHsmV2Cluster(
 func describeCloudHsmV2Cluster(
 func resourceAwsCloudHsmV2ClusterRefreshFunc(
@@ -950,6 +958,7 @@ func expandAwsCodeBuildReportGroupExportConfig(
 func flattenAwsCodeBuildReportGroupExportConfig(
 func expandAwsCodeBuildReportGroupS3ReportExportConfig(
 func flattenAwsCodeBuildReportGroupS3ReportExportConfig(
+func init(
 func resourceAwsCodeBuildSourceCredential(
 func resourceAwsCodeBuildSourceCredentialCreate(
 func resourceAwsCodeBuildSourceCredentialRead(
@@ -1158,6 +1167,12 @@ func resourceAwsConfigConfigurationRecorderStatusPut(
 func resourceAwsConfigConfigurationRecorderStatusRead(
 func resourceAwsConfigConfigurationRecorderStatusDelete(
 func init(
+func resourceAwsConfigConformancePack(
+func resourceAwsConfigConformancePackPut(
+func resourceAwsConfigConformancePackRead(
+func resourceAwsConfigConformancePackDelete(
+func expandConfigConformancePackInputParameters(
+func flattenConfigConformancePackInputParameters(
 func resourceAwsConfigDeliveryChannel(
 func resourceAwsConfigDeliveryChannelPut(
 func resourceAwsConfigDeliveryChannelRead(
@@ -2015,7 +2030,6 @@ func resourceAwsEfsAccessPointCreate(
 func resourceAwsEfsAccessPointUpdate(
 func resourceAwsEfsAccessPointRead(
 func resourceAwsEfsAccessPointDelete(
-func waitForDeleteEfsAccessPoint(
 func hasEmptyAccessPoints(
 func expandEfsAccessPointPosixUser(
 func expandEfsAccessPointRootDirectory(
@@ -4873,6 +4887,10 @@ func resourceAwsSecurityHubMember(
 func resourceAwsSecurityHubMemberCreate(
 func resourceAwsSecurityHubMemberRead(
 func resourceAwsSecurityHubMemberDelete(
+func resourceAwsSecurityHubOrganizationAdminAccount(
+func resourceAwsSecurityHubOrganizationAdminAccountCreate(
+func resourceAwsSecurityHubOrganizationAdminAccountRead(
+func resourceAwsSecurityHubOrganizationAdminAccountDelete(
 func resourceAwsSecurityHubProductSubscription(
 func resourceAwsSecurityHubProductSubscriptionCreate(
 func resourceAwsSecurityHubProductSubscriptionRead(
@@ -4942,7 +4960,10 @@ func resourceAwsSesActiveReceiptRuleSetDelete(
 func resourceAwsSesConfigurationSet(
 func resourceAwsSesConfigurationSetCreate(
 func resourceAwsSesConfigurationSetRead(
+func resourceAwsSesConfigurationSetUpdate(
 func resourceAwsSesConfigurationSetDelete(
+func expandSesConfigurationSetDeliveryOptions(
+func flattenSesConfigurationSetDeliveryOptions(
 func init(
 func resourceAwsSesDomainDkim(
 func resourceAwsSesDomainDkimCreate(

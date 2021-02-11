@@ -664,6 +664,9 @@ func TestAccAWSCloudFrontOriginRequestPolicy_noneBehavior(
 func TestAccAWSCloudFrontPublicKey_basic(
 func TestAccAWSCloudFrontPublicKey_namePrefix(
 func TestAccAWSCloudFrontPublicKey_update(
+func TestAccAWSCloudFrontRealtimeLogConfig_basic(
+func TestAccAWSCloudFrontRealtimeLogConfig_disappears(
+func TestAccAWSCloudFrontRealtimeLogConfig_updates(
 func TestAccAWSCloudHsmV2Cluster_basic(
 func TestAccAWSCloudHsmV2Hsm_basic(
 func TestAccAWSCloudTrail_serial(
@@ -702,6 +705,7 @@ func TestAccAWSCloudWatchEventTarget_input_transformer(
 func TestAccAWSCloudWatchEventTarget_inputTransformerJsonString(
 func TestAccAWSCloudwatchLogDestinationPolicy_basic(
 func TestAccAWSCloudwatchLogDestination_basic(
+func TestAccAWSCloudwatchLogDestination_disappears(
 func TestAccAWSCloudWatchLogGroup_basic(
 func TestAccAWSCloudWatchLogGroup_namePrefix(
 func TestAccAWSCloudWatchLogGroup_namePrefix_retention(
@@ -750,6 +754,7 @@ func TestAccAWSCodeBuildProject_basic(
 func TestAccAWSCodeBuildReportGroup_basic(
 func TestAccAWSCodeBuildReportGroup_export_s3(
 func TestAccAWSCodeBuildReportGroup_tags(
+func TestAccAWSCodeBuildReportGroup_deleteReports(
 func TestAccAWSCodeBuildReportGroup_disappears(
 func TestAccAWSCodeBuildSourceCredential_basic(
 func TestAccAWSCodeCommitRepository_basic(
@@ -872,6 +877,7 @@ func TestAccAwsCurReportDefinition_overwrite(
 func TestAccAWSCustomerGateway_basic(
 func TestAccAWSCustomerGateway_tags(
 func TestAccAWSCustomerGateway_similarAlreadyExists(
+func TestAccAWSCustomerGateway_deviceName(
 func TestAccAWSCustomerGateway_disappears(
 func TestAccAWSDataPipelinePipeline_basic(
 func TestAccAWSDataPipelinePipeline_description(
@@ -1105,6 +1111,7 @@ func TestAccAwsEc2ManagedPrefixList_disappears(
 func TestAccAWSEc2Tag_basic(
 func TestAccAWSEc2Tag_disappears(
 func TestAccAWSEc2TrafficMirrorFilterRule_basic(
+func TestAccAWSEc2TrafficMirrorFilterRule_disappears(
 func TestAccAWSEc2TrafficMirrorFilter_basic(
 func TestAccAWSEc2TrafficMirrorFilter_tags(
 func TestAccAWSEc2TrafficMirrorFilter_disappears(
@@ -1481,6 +1488,8 @@ func TestAccAWSIAMGroup_nameChange(
 func TestAccAWSIAMInstanceProfile_basic(
 func TestAccAWSIAMInstanceProfile_withoutRole(
 func TestAccAWSIAMInstanceProfile_namePrefix(
+func TestAccAWSIAMInstanceProfile_disappears(
+func TestAccAWSIAMInstanceProfile_disappears_role(
 func TestAccAWSIAMOpenIDConnectProvider_basic(
 func TestAccAWSIAMOpenIDConnectProvider_disappears(
 func TestAccAWSIAMPolicyAttachment_basic(
@@ -1798,6 +1807,7 @@ func TestAccAWSLBCookieStickinessPolicy_disappears(
 func TestAccAWSLBCookieStickinessPolicy_disappears_ELB(
 func TestAccAwsLbListenerCertificate_basic(
 func TestAccAwsLbListenerCertificate_multiple(
+func TestAccAwsLbListenerCertificate_disappears(
 func TestAccAWSLBListenerRule_basic(
 func TestAccAWSLBListenerRule_forwardWeighted(
 func TestAccAWSLBListenerRule_redirect(
@@ -2497,6 +2507,11 @@ func TestAccAWSServiceDiscoveryService_disappears(
 func TestAccAwsServiceQuotasServiceQuota_basic(
 func TestAccAWSSESActiveReceiptRuleSet_serial(
 func TestAccAWSSESConfigurationSet_basic(
+func TestAccAWSSESConfigurationSet_deliveryOptions(
+func TestAccAWSSESConfigurationSet_update_deliveryOptions(
+func TestAccAWSSESConfigurationSet_emptyDeliveryOptions(
+func TestAccAWSSESConfigurationSet_update_emptyDeliveryOptions(
+func TestAccAWSSESConfigurationSet_disappears(
 func TestAccAWSSESDomainDkim_basic(
 func TestAccAWSSESDomainIdentity_basic(
 func TestAccAWSSESDomainIdentity_disappears(

@@ -513,6 +513,7 @@ func TestAccDataSourceAwsRouteTable_basic(
 func TestAccDataSourceAwsRouteTable_main(
 func TestAccAWSRouteDataSource_basic(
 func TestAccAWSRouteDataSource_TransitGatewayID(
+func TestAccAWSRouteDataSource_IPv6DestinationCidr(
 func TestAccAWSRouteDataSource_LocalGatewayID(
 func TestAccDataSourceAWSS3BucketObjects_basic(
 func TestAccDataSourceAWSS3BucketObjects_basicViaAccessPoint(
@@ -1422,6 +1423,9 @@ func TestAccAWSCloudFrontPublicKey_basic(
 func TestAccAWSCloudFrontPublicKey_namePrefix(
 func TestAccAWSCloudFrontPublicKey_update(
 func testAccAWSCloudFrontPublicKeyConfig_namePrefix(
+func TestAccAWSCloudFrontRealtimeLogConfig_basic(
+func TestAccAWSCloudFrontRealtimeLogConfig_disappears(
+func TestAccAWSCloudFrontRealtimeLogConfig_updates(
 func TestAccAWSCloudHsmV2Cluster_basic(
 func TestAccAWSCloudHsmV2Cluster_Tags(
 func TestAccAWSCloudHsmV2Hsm_basic(
@@ -1502,6 +1506,7 @@ func TestAccAWSCloudWatchEventTarget_inputTransformerJsonString(
 func testAccAWSCloudWatchEventTargetConfig_full(
 func TestAccAWSCloudwatchLogDestinationPolicy_basic(
 func TestAccAWSCloudwatchLogDestination_basic(
+func TestAccAWSCloudwatchLogDestination_disappears(
 func TestAccAWSCloudWatchLogGroup_basic(
 func TestAccAWSCloudWatchLogGroup_namePrefix(
 func TestAccAWSCloudWatchLogGroup_generatedName(
@@ -1576,6 +1581,7 @@ func testAccAWSCodeBuildProjectConfig_ARMContainer(
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts(
 func TestAccAWSCodeBuildReportGroup_basic(
 func TestAccAWSCodeBuildReportGroup_tags(
+func TestAccAWSCodeBuildReportGroup_deleteReports(
 func TestAccAWSCodeBuildReportGroup_disappears(
 func TestAccAWSCodeBuildSourceCredential_basic(
 func TestAccAWSCodeBuildSourceCredential_BasicAuth(
@@ -1776,6 +1782,17 @@ func testAccConfigConfigurationRecorder_allParams(
 func testAccConfigConfigurationRecorder_importBasic(
 func testAccConfigConfigurationRecorderConfig_basic(
 func testAccConfigConfigurationRecorderConfig_allParams(
+func testAccConfigConformancePack_basic(
+func testAccConfigConformancePack_forceNew(
+func testAccConfigConformancePack_disappears(
+func testAccConfigConformancePack_inputParameters(
+func testAccConfigConformancePack_S3Delivery(
+func testAccConfigConformancePack_S3Template(
+func testAccConfigConformancePack_updateInputParameters(
+func testAccConfigConformancePack_updateS3Delivery(
+func testAccConfigConformancePack_updateS3Template(
+func testAccConfigConformancePack_updateTemplateBody(
+func testAccConfigConformancePack_S3TemplateAndTemplateBody(
 func testAccConfigDeliveryChannel_basic(
 func testAccConfigDeliveryChannel_allParams(
 func testAccConfigDeliveryChannel_importBasic(
@@ -1822,6 +1839,7 @@ func testAccAwsCurReportDefinitionConfig_additional(
 func TestAccAWSCustomerGateway_basic(
 func TestAccAWSCustomerGateway_tags(
 func TestAccAWSCustomerGateway_similarAlreadyExists(
+func TestAccAWSCustomerGateway_deviceName(
 func TestAccAWSCustomerGateway_disappears(
 func TestAccAWSCustomerGateway_4ByteAsn(
 func TestAccAWSDataPipelinePipeline_basic(
@@ -2342,6 +2360,7 @@ func TestAccAWSEc2Tag_basic(
 func TestAccAWSEc2Tag_disappears(
 func TestAccAWSEc2Tag_Value(
 func TestAccAWSEc2TrafficMirrorFilterRule_basic(
+func TestAccAWSEc2TrafficMirrorFilterRule_disappears(
 func TestAccAWSEc2TrafficMirrorFilter_basic(
 func TestAccAWSEc2TrafficMirrorFilter_tags(
 func TestAccAWSEc2TrafficMirrorFilter_disappears(
@@ -3037,6 +3056,7 @@ func TestAccAWSIAMGroup_nameChange(
 func TestAccAWSIAMInstanceProfile_basic(
 func TestAccAWSIAMInstanceProfile_withoutRole(
 func TestAccAWSIAMInstanceProfile_namePrefix(
+func TestAccAWSIAMInstanceProfile_disappears(
 func TestAccAWSIAMOpenIDConnectProvider_basic(
 func TestAccAWSIAMOpenIDConnectProvider_disappears(
 func testAccIAMOpenIDConnectProviderConfig_modified(
@@ -3206,6 +3226,7 @@ func TestAccAWSInstance_disappears(
 func TestAccAWSInstance_hibernation(
 func TestAccAWSInstance_metadataOptions(
 func TestAccAWSInstance_enclaveOptions(
+func TestAccAWSInstance_GP3RootBlockDevice(
 func testAccInstanceConfigForceNewAndTagsDrift_Update(
 func testAccInstanceConfig_getPasswordData(
 func TestAccAWSInternetGateway_basic(
@@ -3396,6 +3417,7 @@ func TestAccAWSLambdaEventSourceMapping_MaximumRetryAttemptsZero(
 func TestAccAWSLambdaEventSourceMapping_MaximumRecordAgeInSeconds(
 func TestAccAWSLambdaEventSourceMapping_BisectBatch(
 func TestAccAWSLambdaEventSourceMapping_KinesisDestinationConfig(
+func TestAccAWSLambdaEventSourceMapping_MSK(
 func testAccAWSLambdaEventSourceMappingConfig_kinesis(
 func testAccAWSLambdaEventSourceMappingConfigUpdate_kinesis(
 func testAccAWSLambdaEventSourceMappingConfig_sqs(
@@ -3512,6 +3534,7 @@ func TestAccAWSLBCookieStickinessPolicy_basic(
 func TestAccAWSLBCookieStickinessPolicy_disappears(
 func TestAccAwsLbListenerCertificate_basic(
 func TestAccAwsLbListenerCertificate_multiple(
+func TestAccAwsLbListenerCertificate_disappears(
 func TestAccAWSLBListenerRule_basic(
 func TestAccAWSLBListenerRule_forwardWeighted(
 func TestAccAWSLBListenerRule_BackwardsCompatibility(
@@ -4701,6 +4724,8 @@ func testAccAWSSecurityHubMember_basic(
 func testAccAWSSecurityHubMember_invite(
 func testAccAWSSecurityHubMemberConfig_basic(
 func testAccAWSSecurityHubMemberConfig_invite(
+func testAccAwsSecurityHubOrganizationAdminAccount_basic(
+func testAccAwsSecurityHubOrganizationAdminAccount_disappears(
 func testAccAWSSecurityHubProductSubscription_basic(
 func testAccAWSSecurityHubStandardsSubscription_basic(
 func TestAccAWSSecurityHub_serial(
@@ -4743,6 +4768,9 @@ func TestAccAWSSESActiveReceiptRuleSet_serial(
 func testAccAWSSESActiveReceiptRuleSet_basic(
 func testAccAWSSESActiveReceiptRuleSet_disappears(
 func TestAccAWSSESConfigurationSet_basic(
+func TestAccAWSSESConfigurationSet_deliveryOptions(
+func TestAccAWSSESConfigurationSet_emptyDeliveryOptions(
+func TestAccAWSSESConfigurationSet_disappears(
 func TestAccAWSSESDomainDkim_basic(
 func TestAccAWSSESDomainIdentity_basic(
 func TestAccAWSSESDomainIdentity_disappears(

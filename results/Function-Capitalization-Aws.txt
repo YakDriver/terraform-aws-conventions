@@ -687,8 +687,9 @@ func testAccDataSourceAwsRouteTablesConfigWithDataSource(
 func testAccDataSourceAwsRouteTablesConfig(
 func TestAccDataSourceAwsRouteTable_basic(
 func TestAccDataSourceAwsRouteTable_main(
-func testAccDataSourceAwsRouteCheck(
-func testAccDataSourceAwsRouteGroupConfig(
+func testAccDataSourceAwsRouteTableConfigBasic(
+func testAccDataSourceAwsRouteTableConfigMain(
+func testAccDataSourceAwsRouteConfigBasic(
 func dataSourceAwsS3Bucket(
 func dataSourceAwsS3BucketRead(
 func dataSourceAwsS3BucketObject(
@@ -1654,6 +1655,11 @@ func resourceAwsCloudFrontPublicKeyCreate(
 func resourceAwsCloudFrontPublicKeyRead(
 func resourceAwsCloudFrontPublicKeyUpdate(
 func resourceAwsCloudFrontPublicKeyDelete(
+func resourceAwsCloudFrontRealtimeLogConfig(
+func resourceAwsCloudFrontRealtimeLogConfigCreate(
+func resourceAwsCloudFrontRealtimeLogConfigRead(
+func resourceAwsCloudFrontRealtimeLogConfigUpdate(
+func resourceAwsCloudFrontRealtimeLogConfigDelete(
 func resourceAwsCloudHsmV2Cluster(
 func resourceAwsCloudHsmV2ClusterRefreshFunc(
 func resourceAwsCloudHsmV2ClusterCreate(
@@ -2005,6 +2011,10 @@ func resourceAwsConfigConfigurationRecorderStatus(
 func resourceAwsConfigConfigurationRecorderStatusPut(
 func resourceAwsConfigConfigurationRecorderStatusRead(
 func resourceAwsConfigConfigurationRecorderStatusDelete(
+func resourceAwsConfigConformancePack(
+func resourceAwsConfigConformancePackPut(
+func resourceAwsConfigConformancePackRead(
+func resourceAwsConfigConformancePackDelete(
 func resourceAwsConfigDeliveryChannel(
 func resourceAwsConfigDeliveryChannelPut(
 func resourceAwsConfigDeliveryChannelRead(
@@ -3862,6 +3872,7 @@ func resourceAwsLbListenerCertificateDelete(
 func findAwsLbListenerCertificate(
 func TestAccAwsLbListenerCertificate_basic(
 func TestAccAwsLbListenerCertificate_multiple(
+func TestAccAwsLbListenerCertificate_disappears(
 func testAccCheckAwsLbListenerCertificateDestroy(
 func testAccCheckAwsLbListenerCertificateExists(
 func testAccCheckAwsLbListenerCertificateNotExists(
@@ -5136,6 +5147,14 @@ func resourceAwsSecurityHubMember(
 func resourceAwsSecurityHubMemberCreate(
 func resourceAwsSecurityHubMemberRead(
 func resourceAwsSecurityHubMemberDelete(
+func resourceAwsSecurityHubOrganizationAdminAccount(
+func resourceAwsSecurityHubOrganizationAdminAccountCreate(
+func resourceAwsSecurityHubOrganizationAdminAccountRead(
+func resourceAwsSecurityHubOrganizationAdminAccountDelete(
+func testAccAwsSecurityHubOrganizationAdminAccount_basic(
+func testAccAwsSecurityHubOrganizationAdminAccount_disappears(
+func testAccCheckAwsSecurityHubOrganizationAdminAccountDestroy(
+func testAccCheckAwsSecurityHubOrganizationAdminAccountExists(
 func resourceAwsSecurityHubProductSubscription(
 func resourceAwsSecurityHubProductSubscriptionCreate(
 func resourceAwsSecurityHubProductSubscriptionRead(
@@ -5218,6 +5237,7 @@ func testAccCheckAwsSESActiveReceiptRuleSetExists(
 func resourceAwsSesConfigurationSet(
 func resourceAwsSesConfigurationSetCreate(
 func resourceAwsSesConfigurationSetRead(
+func resourceAwsSesConfigurationSetUpdate(
 func resourceAwsSesConfigurationSetDelete(
 func testAccCheckAwsSESConfigurationSetExists(
 func resourceAwsSesDomainDkim(

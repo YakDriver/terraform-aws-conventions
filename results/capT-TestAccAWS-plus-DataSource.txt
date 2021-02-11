@@ -185,6 +185,7 @@ func TestAccAWSRoute53ZoneDataSource_vpc(
 func TestAccAWSRoute53ZoneDataSource_serviceDiscovery(
 func TestAccAWSRouteDataSource_basic(
 func TestAccAWSRouteDataSource_TransitGatewayID(
+func TestAccAWSRouteDataSource_IPv6DestinationCidr(
 func TestAccAWSRouteDataSource_LocalGatewayID(
 func TestAccAWSStepFunctionsActivityDataSource_basic(
 func TestAccAWSSsmDocumentDataSource_basic(

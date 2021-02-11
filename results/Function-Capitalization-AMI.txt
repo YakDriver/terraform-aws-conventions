@@ -46,6 +46,8 @@ func testAccAWSEmrClusterConfigIAMInstanceProfileBase(
 func TestAccAWSIAMInstanceProfile_basic(
 func TestAccAWSIAMInstanceProfile_withoutRole(
 func TestAccAWSIAMInstanceProfile_namePrefix(
+func TestAccAWSIAMInstanceProfile_disappears(
+func TestAccAWSIAMInstanceProfile_disappears_role(
 func TestAccAWSInstance_noAMIEphemeralDevices(
 func testAccInstanceConfigNoAMIEphemeralDevices(
 func TestAccAWSLaunchConfiguration_withInstanceStoreAMI(

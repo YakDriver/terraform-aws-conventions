@@ -104,6 +104,8 @@ func TestAccAWSIAMGroup_nameChange(
 func TestAccAWSIAMInstanceProfile_basic(
 func TestAccAWSIAMInstanceProfile_withoutRole(
 func TestAccAWSIAMInstanceProfile_namePrefix(
+func TestAccAWSIAMInstanceProfile_disappears(
+func TestAccAWSIAMInstanceProfile_disappears_role(
 func TestAccAWSIAMOpenIDConnectProvider_basic(
 func TestAccAWSIAMOpenIDConnectProvider_disappears(
 func testAccCheckIAMOpenIDConnectProviderDestroy(
