@@ -640,6 +640,7 @@ func waitForDynamoDbBackupUpdateToBeCompleted(
 func waitForDynamoDbTtlUpdateToBeCompleted(
 func waitForDynamoDbSSEUpdateToBeCompleted(
 func isDynamoDbTableOptionDisabled(
+func validateDynamoDbTableAttributes(
 func validateDynamoDbTableItem(
 func buildDynamoDbExpressionAttributeNames(
 func buildDynamoDbProjectionExpression(
@@ -1864,6 +1865,7 @@ func normalizeAwsAliasName(
 func parseRecordId(
 func migrateRoute53RecordStateV0toV1(
 func migrateRoute53RecordStateV1toV2(
+func updateResolverDnsSecConfigValidation(
 func init(
 func route53ResolverEndpointRefresh(
 func route53ResolverEndpointWaitUntilTargetState(
@@ -2191,6 +2193,8 @@ func expandAwsSsmTaskInvocationStepFunctionsParameters(
 func flattenAwsSsmTaskInvocationStepFunctionsParameters(
 func expandAwsSsmTaskInvocationRunCommandParametersNotificationConfig(
 func flattenAwsSsmTaskInvocationRunCommandParametersNotificationConfig(
+func expandAwsSsmTaskInvocationRunCommandParametersCloudWatchConfig(
+func flattenAwsSsmTaskInvocationRunCommandParametersCloudWatchConfig(
 func expandAwsSsmTaskInvocationCommonParameters(
 func flattenAwsSsmTaskInvocationCommonParameters(
 func init(
@@ -2199,6 +2203,8 @@ func expandAwsSsmPatchFilterGroup(
 func flattenAwsSsmPatchFilterGroup(
 func expandAwsSsmPatchRuleGroup(
 func flattenAwsSsmPatchRuleGroup(
+func expandAwsSsmPatchSource(
+func flattenAwsSsmPatchSource(
 func findResourceDataSyncItem(
 func flattenSsmResourceDataSyncS3Destination(
 func expandSsmResourceDataSyncS3Destination(
@@ -2223,6 +2229,17 @@ func decodeStorageGatewayWorkingStorageID(
 func SubnetStateRefreshFunc(
 func SubnetIpv6CidrStateRefreshFunc(
 func migrateSubnetStateV0toV1(
+func init(
+func expandAwsSyntheticsCanaryCode(
+func expandAwsSyntheticsCanarySchedule(
+func flattenAwsSyntheticsCanarySchedule(
+func expandAwsSyntheticsCanaryRunConfig(
+func flattenAwsSyntheticsCanaryRunConfig(
+func flattenAwsSyntheticsCanaryVpcConfig(
+func expandAwsSyntheticsCanaryVpcConfig(
+func flattenAwsSyntheticsCanaryTimeline(
+func syntheticsStartCanary(
+func syntheticsStopCanary(
 func init(
 func waitForTransferServerDeletion(
 func deleteTransferUsers(

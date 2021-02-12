@@ -61,6 +61,10 @@ func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAccCheckAWSSpotInstanceRequestAttributesVPC(
 func testAccAWSSpotInstanceRequestConfigVPC(
 func testAccAWSStorageGateway_VPCBase(
+func testAccAWSSyntheticsCanaryVPCConfigBase(
+func testAccAWSSyntheticsCanaryVPCConfig1(
+func testAccAWSSyntheticsCanaryVPCConfig2(
+func testAccAWSSyntheticsCanaryVPCConfig3(
 func testAccDHCPOptionsAssociationVPCImportIdFunc(
 func findVPCsByDHCPOptionsID(
 func VPCStateRefreshFunc(

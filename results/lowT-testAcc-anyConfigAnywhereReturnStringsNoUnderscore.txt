@@ -31,6 +31,7 @@ func testAccDataSourceAwsBatchComputeEnvironmentConfig(rName string) string {
 func testAccDataSourceAwsBatchJobQueueConfig(rName string) string {
 func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
 func testAccCheckAwsCloudformationExportConfigResourceReference(rName string) string {
+func testAccAWSCloudFrontCachePolicyDataSourceNameConfig(rInt int) string {
 func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(rInt int) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
@@ -584,6 +585,9 @@ func testAccAWSCloudFormationStackSetConfigTemplateUrl1(rName string) string {
 func testAccAWSCloudFormationStackSetConfigTemplateUrl2(rName string) string {
 func testAccAWSCloudFormationStackConfig(stackName string) string {
 func testAccAWSCloudFormationStackConfigCreationFailure(stackName, onFailure string) string {
+func testAccAWSCloudFrontCachePolicyConfig(rInt int) string {
+func testAccAWSCloudFrontCachePolicyConfigUpdate(rInt int) string {
+func testAccAWSCloudFrontCachePolicyConfigNoneBehavior(rInt int) string {
 func testAccAWSCloudFrontDistributionRetainConfig() string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNamesUnordered2(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNamesUnordered3(retainOnDelete bool) string {
@@ -735,6 +739,8 @@ func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
 func testAccAWSCodePipelineConfigWithNamespace(rName string) string {
 func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2, githubToken string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigBasic(rName string) string {
+func testAccAWSCodeStarConnectionsConnectionConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
+func testAccAWSCodeStarConnectionsConnectionConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBase(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBasic(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigStatus(rName, status string) string {
@@ -954,6 +960,7 @@ func testAccAWSDynamoDbConfigLsiNonKeyAttributes(name string) string {
 func testAccAWSDynamoDbConfigTimeToLive(rName string, ttlEnabled bool) string {
 func testAccAWSDynamoDbConfigOneAttribute(rName, hashKey, attrName, attrType string) string {
 func testAccAWSDynamoDbConfigTwoAttributes(rName, hashKey, rangeKey, attrName1, attrType1, attrName2, attrType2 string) string {
+func testAccAWSDynamoDbConfigUnmatchedIndexes(rName, attr1, attr2 string) string {
 func testAccAWSDynamoDbTableConfigReplica0(rName string) string {
 func testAccAWSDynamoDbTableConfigReplica1(rName string) string {
 func testAccAWSDynamoDbTableConfigReplica2(rName string) string {
@@ -2380,6 +2387,7 @@ func testAccAWSSQSConfigWithTags(r string) string {
 func testAccAWSSQSConfigWithTagsChanged(r string) string {
 func testAccAWSSSMActivationBasicConfigBase(rName string) string {
 func testAccAWSSSMActivationBasicConfig(rName string, rTag string) string {
+func testAccAWSSSMAssociationBasicConfigWithApplyOnlyAtCronInterval(rName string, applyOnlyAtCronInterval bool) string {
 func testAccAWSSSMAssociationBasicConfigWithAutomationTargetParamName(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithParametersUpdated(rName string) string {
 func testAccAWSSSMAssociationBasicConfigWithParameters(rName string) string {
@@ -2397,6 +2405,7 @@ func testAccAWSSSMAssociationBasicConfigWithComplianceSeverity(compSeverity, rNa
 func testAccAWSSSMAssociationRateControlConfig(rName, rate string) string {
 func testAccAWSSSMDocumentBasicConfig(rName string) string {
 func testAccAWSSSMDocumentBasicConfigTargetType(rName, typ string) string {
+func testAccAWSSSMDocumentBasicConfigVersionName(rName, version string) string {
 func testAccAWSSSMDocument20Config(rName string) string {
 func testAccAWSSSMDocument20UpdatedConfig(rName string) string {
 func testAccAWSSSMDocumentPublicPermissionConfig(rName string) string {
@@ -2417,11 +2426,13 @@ func testAccAWSSSMMaintenanceWindowTaskBasicConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdate(rName, description, taskType, taskArn string, priority, maxConcurrency, maxErrors int) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdated(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskConfigEmptyNotifcationConfig(rName string) string {
+func testAccAWSSSMMaintenanceWindowTaskNoRoleConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfig(rName, version string) string {
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfigUpdate(rName, version string) string {
 func testAccAWSSSMMaintenanceWindowTaskLambdaConfig(funcName, policyName, roleName, sgName, rName string, rInt int) string {
 func testAccAWSSSMMaintenanceWindowTaskRunCommandConfig(rName, comment string, timeoutSeconds int) string {
 func testAccAWSSSMMaintenanceWindowTaskRunCommandConfigUpdate(rName, comment string, timeoutSeconds int) string {
+func testAccAWSSSMMaintenanceWindowTaskRunCommandCloudWatchConfig(rName string, enabled bool) string {
 func testAccAWSSSMMaintenanceWindowTaskStepFunctionConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowConfigDescription(rName, desc string) string {
@@ -2451,6 +2462,12 @@ func testAccAWSSSMPatchBaselineBasicConfigTags2(rName, tagKey1, tagValue1, tagKe
 func testAccAWSSSMPatchBaselineBasicConfigUpdated(rName string) string {
 func testAccAWSSSMPatchBaselineConfigWithOperatingSystem(rName string) string {
 func testAccAWSSSMPatchBaselineConfigWithOperatingSystemUpdated(rName string) string {
+func testAccAWSSSMPatchBaselineConfigWithApproveUntilDate(rName string) string {
+func testAccAWSSSMPatchBaselineConfigWithApproveUntilDateUpdated(rName string) string {
+func testAccAWSSSMPatchBaselineConfigWithSource(rName string) string {
+func testAccAWSSSMPatchBaselineConfigWithSourceUpdated(rName string) string {
+func testAccAWSSSMPatchBaselineBasicConfigApprovedPatchesNonSec(rName string) string {
+func testAccAWSSSMPatchBaselineBasicConfigRejectPatchesAction(rName string) string {
 func testAccAWSSSMPatchGroupBasicConfig(rName string) string {
 func testAccSsmResourceDataSyncConfig(rInt int, rName string) string {
 func testAccSsmResourceDataSyncConfigUpdate(rInt int, rName string) string {
@@ -2513,6 +2530,21 @@ func testAccSubnetConfigMapPublicIpOnLaunch(mapPublicIpOnLaunch bool) string {
 func testAccSubnetConfigOutpost() string {
 func testAccAWSSwfDomainConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSwfDomainConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSyntheticsCanaryConfigBase(rName string) string {
+func testAccAWSSyntheticsCanaryRunConfigConfig1(rName string) string {
+func testAccAWSSyntheticsCanaryRunConfigConfig2(rName string) string {
+func testAccAWSSyntheticsCanaryRunConfigTracingConfig(rName string, tracing bool) string {
+func testAccAWSSyntheticsCanaryBasicConfig(rName string) string {
+func testAccAWSSyntheticsCanaryRuntimeVersionConfig(rName, version string) string {
+func testAccAWSSyntheticsCanaryZipUpdatedConfig(rName string) string {
+func testAccAWSSyntheticsCanaryStartCanaryConfig(rName string, state bool) string {
+func testAccAWSSyntheticsCanaryBasicS3CodeConfig(rName string) string {
+func testAccAWSSyntheticsCanaryVPCConfigBase(rName string) string {
+func testAccAWSSyntheticsCanaryVPCConfig1(rName string) string {
+func testAccAWSSyntheticsCanaryVPCConfig2(rName string) string {
+func testAccAWSSyntheticsCanaryVPCConfig3(rName string) string {
+func testAccAWSSyntheticsCanaryConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSyntheticsCanaryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccVolumeAttachmentInstanceOnlyConfigBase(rName string) string {
 func testAccVolumeAttachmentConfigBase(rName string) string {
 func testAccVolumeAttachmentConfig(rName string) string {

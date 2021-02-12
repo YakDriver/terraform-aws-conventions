@@ -698,6 +698,11 @@ func listCloudFormationStackSetInstances(
 func init(
 func init(
 func init(
+func resourceAwsCloudFrontCachePolicy(
+func resourceAwsCloudFrontCachePolicyCreate(
+func resourceAwsCloudFrontCachePolicyRead(
+func resourceAwsCloudFrontCachePolicyUpdate(
+func resourceAwsCloudFrontCachePolicyDelete(
 func resourceAwsCloudFrontDistribution(
 func resourceAwsCloudFrontDistributionCreate(
 func resourceAwsCloudFrontDistributionRead(
@@ -1077,6 +1082,7 @@ func resourceAwsCodePipelineWebhookDelete(
 func resourceAwsCodeStarConnectionsConnection(
 func resourceAwsCodeStarConnectionsConnectionCreate(
 func resourceAwsCodeStarConnectionsConnectionRead(
+func resourceAwsCodeStarConnectionsConnectionUpdate(
 func resourceAwsCodeStarConnectionsConnectionDelete(
 func resourceAwsCodeStarNotificationsNotificationRule(
 func expandCodeStarNotificationsNotificationRuleTargets(
@@ -1727,6 +1733,7 @@ func waitForDynamoDbBackupUpdateToBeCompleted(
 func waitForDynamoDbTtlUpdateToBeCompleted(
 func waitForDynamoDbSSEUpdateToBeCompleted(
 func isDynamoDbTableOptionDisabled(
+func validateDynamoDbTableAttributes(
 func resourceAwsDynamoDbTableItem(
 func validateDynamoDbTableItem(
 func resourceAwsDynamoDbTableItemCreate(
@@ -2408,6 +2415,8 @@ func waitForFmsAdminAccountDeletion(
 func resourceAwsFmsPolicy(
 func resourceAwsFmsPolicyCreate(
 func resourceAwsFmsPolicyRead(
+func resourceAwsFmsPolicyFlattenPolicy(
+func resourceAwsFmsPolicyExpandPolicy(
 func resourceAwsFmsPolicyUpdate(
 func resourceAwsFmsPolicyDelete(
 func expandFMSPolicyMap(
@@ -4418,6 +4427,7 @@ func resourceAwsRoute53ResolverDnssecConfig(
 func resourceAwsRoute53ResolverDnssecConfigCreate(
 func resourceAwsRoute53ResolverDnssecConfigRead(
 func resourceAwsRoute53ResolverDnssecConfigDelete(
+func updateResolverDnsSecConfigValidation(
 func init(
 func resourceAwsRoute53ResolverEndpoint(
 func resourceAwsRoute53ResolverEndpointCreate(
@@ -5227,6 +5237,8 @@ func expandAwsSsmTaskInvocationStepFunctionsParameters(
 func flattenAwsSsmTaskInvocationStepFunctionsParameters(
 func expandAwsSsmTaskInvocationRunCommandParametersNotificationConfig(
 func flattenAwsSsmTaskInvocationRunCommandParametersNotificationConfig(
+func expandAwsSsmTaskInvocationRunCommandParametersCloudWatchConfig(
+func flattenAwsSsmTaskInvocationRunCommandParametersCloudWatchConfig(
 func expandAwsSsmTaskInvocationCommonParameters(
 func flattenAwsSsmTaskInvocationCommonParameters(
 func resourceAwsSsmMaintenanceWindowTaskCreate(
@@ -5249,6 +5261,8 @@ func expandAwsSsmPatchFilterGroup(
 func flattenAwsSsmPatchFilterGroup(
 func expandAwsSsmPatchRuleGroup(
 func flattenAwsSsmPatchRuleGroup(
+func expandAwsSsmPatchSource(
+func flattenAwsSsmPatchSource(
 func resourceAwsSsmPatchGroup(
 func resourceAwsSsmPatchGroupCreate(
 func resourceAwsSsmPatchGroupRead(
@@ -5349,6 +5363,22 @@ func resourceAwsSwfDomainCreate(
 func resourceAwsSwfDomainRead(
 func resourceAwsSwfDomainUpdate(
 func resourceAwsSwfDomainDelete(
+func resourceAwsSyntheticsCanary(
+func resourceAwsSyntheticsCanaryCreate(
+func resourceAwsSyntheticsCanaryRead(
+func resourceAwsSyntheticsCanaryUpdate(
+func resourceAwsSyntheticsCanaryDelete(
+func expandAwsSyntheticsCanaryCode(
+func expandAwsSyntheticsCanarySchedule(
+func flattenAwsSyntheticsCanarySchedule(
+func expandAwsSyntheticsCanaryRunConfig(
+func flattenAwsSyntheticsCanaryRunConfig(
+func flattenAwsSyntheticsCanaryVpcConfig(
+func expandAwsSyntheticsCanaryVpcConfig(
+func flattenAwsSyntheticsCanaryTimeline(
+func syntheticsStartCanary(
+func syntheticsStopCanary(
+func init(
 func resourceAwsTransferServer(
 func resourceAwsTransferServerCreate(
 func resourceAwsTransferServerRead(

@@ -447,6 +447,11 @@ func resourceAwsCloudFormationStackSetInstanceRead(
 func resourceAwsCloudFormationStackSetInstanceUpdate(
 func resourceAwsCloudFormationStackSetInstanceDelete(
 func resourceAwsCloudFormationStackSetInstanceParseId(
+func resourceAwsCloudFrontCachePolicy(
+func resourceAwsCloudFrontCachePolicyCreate(
+func resourceAwsCloudFrontCachePolicyRead(
+func resourceAwsCloudFrontCachePolicyUpdate(
+func resourceAwsCloudFrontCachePolicyDelete(
 func resourceAwsCloudFrontDistribution(
 func resourceAwsCloudFrontDistributionCreate(
 func resourceAwsCloudFrontDistributionRead(
@@ -645,6 +650,7 @@ func resourceAwsCodePipelineWebhookDelete(
 func resourceAwsCodeStarConnectionsConnection(
 func resourceAwsCodeStarConnectionsConnectionCreate(
 func resourceAwsCodeStarConnectionsConnectionRead(
+func resourceAwsCodeStarConnectionsConnectionUpdate(
 func resourceAwsCodeStarConnectionsConnectionDelete(
 func resourceAwsCodeStarNotificationsNotificationRule(
 func resourceAwsCodeStarNotificationsNotificationRuleCreate(
@@ -1478,6 +1484,8 @@ func resourceAwsFmsAdminAccountDelete(
 func resourceAwsFmsPolicy(
 func resourceAwsFmsPolicyCreate(
 func resourceAwsFmsPolicyRead(
+func resourceAwsFmsPolicyFlattenPolicy(
+func resourceAwsFmsPolicyExpandPolicy(
 func resourceAwsFmsPolicyUpdate(
 func resourceAwsFmsPolicyDelete(
 func resourceAwsFsxLustreFileSystem(
@@ -3163,6 +3171,11 @@ func resourceAwsSwfDomainCreate(
 func resourceAwsSwfDomainRead(
 func resourceAwsSwfDomainUpdate(
 func resourceAwsSwfDomainDelete(
+func resourceAwsSyntheticsCanary(
+func resourceAwsSyntheticsCanaryCreate(
+func resourceAwsSyntheticsCanaryRead(
+func resourceAwsSyntheticsCanaryUpdate(
+func resourceAwsSyntheticsCanaryDelete(
 func resourceAwsTransferServer(
 func resourceAwsTransferServerCreate(
 func resourceAwsTransferServerRead(

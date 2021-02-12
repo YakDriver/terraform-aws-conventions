@@ -14,6 +14,7 @@ func resourceAwsRoute53ResolverDnssecConfig(
 func resourceAwsRoute53ResolverDnssecConfigCreate(
 func resourceAwsRoute53ResolverDnssecConfigRead(
 func resourceAwsRoute53ResolverDnssecConfigDelete(
+func updateResolverDnsSecConfigValidation(
 func testSweepRoute53ResolverDnssecConfig(
 func TestAccAWSRoute53ResolverDnssecConfig_basic(
 func TestAccAWSRoute53ResolverDnssecConfig_disappear(

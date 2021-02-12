@@ -304,6 +304,7 @@ func waitForDynamoDbBackupUpdateToBeCompleted(
 func waitForDynamoDbTtlUpdateToBeCompleted(
 func waitForDynamoDbSSEUpdateToBeCompleted(
 func isDynamoDbTableOptionDisabled(
+func validateDynamoDbTableAttributes(
 func resourceAwsDynamoDbTableItem(
 func validateDynamoDbTableItem(
 func resourceAwsDynamoDbTableItemCreate(
@@ -377,6 +378,7 @@ func testAccAWSDynamoDbConfigLsiNonKeyAttributes(
 func testAccAWSDynamoDbConfigTimeToLive(
 func testAccAWSDynamoDbConfigOneAttribute(
 func testAccAWSDynamoDbConfigTwoAttributes(
+func testAccAWSDynamoDbConfigUnmatchedIndexes(
 func testAccAWSDynamoDbTableConfigReplica0(
 func testAccAWSDynamoDbTableConfigReplica1(
 func testAccAWSDynamoDbTableConfigReplica2(
@@ -428,7 +430,6 @@ func validateDbSubnetGroupNamePrefix(
 func validateDbOptionGroupName(
 func validateDbOptionGroupNamePrefix(
 func validateDynamoDbStreamSpec(
-func validateDynamoDbTableAttributes(
 func TestValidateDbEventSubscriptionName(
 func TestValidateDbSubnetGroupName(
 func TestValidateDbSubnetGroupNamePrefix(

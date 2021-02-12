@@ -750,6 +750,7 @@ func testAccAWSEmrInstanceGroupConfig_ebsConfig(
 func testAccAWSEmrInstanceGroupConfig_zeroCount(
 func testAccAWSEmrManagedScalingPolicy_basic(
 func testAccFmsAdminAccountConfig_basic(
+func testAccFmsPolicyConfig_cloudfrontDistribution(
 func testAccFmsPolicyConfig_updated(
 func testAccFmsPolicyConfig_include(
 func testAccFmsPolicyConfig_tags(
