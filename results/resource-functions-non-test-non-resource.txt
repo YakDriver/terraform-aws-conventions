@@ -1263,7 +1263,6 @@ func buildAwsInstanceOpts(
 func awsTerminateInstance(
 func waitForInstanceStopping(
 func waitForInstanceDeletion(
-func iamInstanceProfileArnToName(
 func userDataHashSum(
 func getAwsInstanceVolumeIds(
 func getRootVolumeId(

@@ -147,6 +147,7 @@ func testAccAwsDbSnapshotConfig(
 func testAccAwsDbSnapshotConfigTags1(
 func testAccAwsDbSnapshotConfigTags2(
 func testAccAwsDocDBClusterSnapshotConfig(
+func testAccAwsDxGatewayAssociationImportStateIdFunc(
 func testAccAwsDxHostedTransitVirtualInterface_basic(
 func testAccAwsDxHostedTransitVirtualInterface_accepterTags(
 func testAccAwsDxTransitVirtualInterface_basic(

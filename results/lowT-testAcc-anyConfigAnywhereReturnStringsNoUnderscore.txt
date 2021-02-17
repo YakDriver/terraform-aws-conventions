@@ -1755,6 +1755,7 @@ func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccLbListenerCertificateConfigLbListenerBase(rName, key, certificate string) string {
 func testAccLbListenerCertificateConfig(rName, key, certificate string) string {
+func testAccLbListenerCertificateConfigCertificateArnUnderscores(rName, key, certificate string) string {
 func testAccLbListenerCertificateConfigMultiple(rName string, keys, certificates []string) string {
 func testAccLbListenerCertificateConfigMultipleAddNew(rName string, keys, certificates []string) string {
 func testAccAWSLBListenerRuleConfigBackwardsCompatibility(lbName, targetGroupName string) string {

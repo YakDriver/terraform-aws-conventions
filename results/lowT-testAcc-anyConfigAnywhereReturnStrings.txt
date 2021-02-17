@@ -1790,7 +1790,7 @@ func testAccDxGatewayAssociationConfig_basicVpnGatewaySingleAccount(rName string
 func testAccDxGatewayAssociationConfig_basicVpnGatewayCrossAccount(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationConfig_basicTransitGatewaySingleAccount(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationConfig_basicTransitGatewayCrossAccount(rName string, rBgpAsn int) string {
-func testAccDxGatewayAssociationConfig_multiVpnGatewaysSingleAccount(rName1, rName2 string, rBgpAsn int) string {
+func testAccDxGatewayAssociationConfig_multiVpnGatewaysSingleAccount(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationConfig_allowedPrefixesVpnGatewaySingleAccount(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationConfig_allowedPrefixesVpnGatewaySingleAccountUpdated(rName string, rBgpAsn int) string {
 func testAccDxGatewayAssociationConfig_allowedPrefixesVpnGatewayCrossAccount(rName string, rBgpAsn int) string {
@@ -3049,6 +3049,7 @@ func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
 func testAccLbListenerCertificateConfigLbListenerBase(rName, key, certificate string) string {
 func testAccLbListenerCertificateConfig(rName, key, certificate string) string {
+func testAccLbListenerCertificateConfigCertificateArnUnderscores(rName, key, certificate string) string {
 func testAccLbListenerCertificateConfigMultiple(rName string, keys, certificates []string) string {
 func testAccLbListenerCertificateConfigMultipleAddNew(rName string, keys, certificates []string) string {
 func testAccAWSLBListenerRuleConfig_basic(lbName, targetGroupName string) string {
@@ -3122,6 +3123,7 @@ func testAccAWSLBTargetGroupConfigBackwardsCompatibility(targetGroupName string)
 func testAccAWSLBTargetGroupConfig_enableHealthcheck(targetGroupName string) string {
 func testAccAWSLBTargetGroupConfig_updatedPort(targetGroupName string) string {
 func testAccAWSLBTargetGroupConfig_updatedProtocol(targetGroupName string) string {
+func testAccAWSLBTargetGroupConfig_GRPC_ProtocolVersion(targetGroupName string) string {
 func testAccAWSLBTargetGroupConfig_updatedVpc(targetGroupName string) string {
 func testAccAWSLBTargetGroupConfig_updateHealthCheck(targetGroupName string) string {
 func testAccAWSLBTargetGroupConfig_Protocol_Tls(targetGroupName string) string {

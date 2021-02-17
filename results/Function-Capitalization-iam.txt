@@ -7,7 +7,6 @@ func iamPolicyDeleteNondefaultVersions(
 func iamPolicyDeleteVersion(
 func iamPolicyListVersions(
 func iamRoleHasPolicyARNAttachment(
-func iamInstanceProfileArnToName(
 func TestAccAWSNeptuneCluster_iamAuth(
 func testAccAWSNeptuneClusterConfig_iamAuth(
 func TestAccAWSRDSCluster_iamAuth(

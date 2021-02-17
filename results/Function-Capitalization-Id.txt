@@ -178,6 +178,7 @@ func TestAccAWSDmsReplicationInstance_VpcSecurityGroupIds(
 func testAccAWSDmsReplicationInstanceConfig_ReplicationSubnetGroupId(
 func testAccAWSDmsReplicationInstanceConfig_VpcSecurityGroupIds(
 func dxGatewayAssociationId(
+func testAccAwsDxGatewayAssociationImportStateIdFunc(
 func buildDynamoDbTableItemId(
 func testAccAwsEbsVolumeConfigSnapshotId(
 func testAccAwsEbsVolumeConfigSnapshotIdAndSize(
