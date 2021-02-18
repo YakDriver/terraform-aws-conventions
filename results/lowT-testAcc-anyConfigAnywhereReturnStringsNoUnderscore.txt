@@ -626,6 +626,7 @@ func testAccAWSCloudTrailConfigMultiRegion(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigOrganization(cloudTrailRandInt int) string {
 func testAccAwsCloudWatchCompositeAlarmBaseConfig(suffix string) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
+func testAccAWSCloudWatchArchiveConfig(name string) string {
 func testAccAWSCloudWatchEventBusConfig(name string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigBasic(principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigDefaultEventBusName(principal, statementID string) string {
@@ -754,6 +755,7 @@ func testAccAWSCodeStarNotificationsNotificationRuleConfigEventTypeIds3(rName st
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigBase(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfig(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigShareUserData(userPoolName, clientName string) string {
+func testAccAWSCognitoUserPoolClientConfigAnalyticsWithArnConfig(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(rName string, externalID string) string {
 func testAccAWSCognitoUserPoolConfigAccountRecoverySingle(rName string) string {
 func testAccAWSCognitoUserPoolConfigAccountRecoveryMulti(rName string) string {
@@ -2369,11 +2371,13 @@ func testAccAWSSpotFleetRequestEBSConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestTagsConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestTenancyGroupConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestZeroCapacityConfig(rName string, validUntil string) string {
-func testAccAWSSpotInstanceRequestConfig(rInt int) string {
+func testAccAWSSpotInstanceRequestConfigBase(rName string) string {
+func testAccAWSSpotInstanceRequestConfig(rName string) string {
 func testAccAWSSpotInstanceRequestTagsConfig1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSpotInstanceRequestTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSSpotInstanceRequestConfigValidUntil(rInt int, validUntil string) string {
-func testAccAWSSpotInstanceRequestConfigVPC(rInt int) string {
+func testAccAWSSpotInstanceRequestConfigValidUntil(rName string, validUntil string) string {
+func testAccAWSSpotInstanceRequestConfigVPC(rName string) string {
+func testAccAWSSpotInstanceRequestInterruptConfig(interruptionBehavior string) string {
 func testAccAWSSQSPolicyConfigBasic(rName string) string {
 func testAccAWSSQSConfigWithDefaults(r string) string {
 func testAccAWSSQSConfigWithNamePrefix(r string) string {

@@ -1209,6 +1209,10 @@ func TestAccAWSCloudWatchDashboard_basic(
 func TestAccAWSCloudWatchDashboard_update(
 func TestAccAWSCloudWatchDashboard_updateName(
 func testAccAWSCloudWatchDashboardConfig_updateBody(
+func TestAccAWSCloudWatchArchive_basic(
+func TestAccAWSCloudWatchArchive_update(
+func TestAccAWSCloudWatchEventArchive_disappears(
+func testAccAWSCloudWatchArchiveConfig_updateAttributes(
 func TestAccAWSCloudWatchEventBus_basic(
 func TestAccAWSCloudWatchEventBus_tags(
 func TestAccAWSCloudWatchEventBus_default(
@@ -1230,6 +1234,7 @@ func TestAccAWSCloudWatchEventTarget_kinesis(
 func TestAccAWSCloudWatchEventTarget_sqs(
 func TestAccAWSCloudWatchEventTarget_input_transformer(
 func TestAccAWSCloudWatchEventTarget_inputTransformerJsonString(
+func testAccAWSCloudWatchEventTargetConfig_retryPolicyDlc(
 func testAccAWSCloudWatchEventTargetConfig_full(
 func TestAccAWSCloudwatchLogDestinationPolicy_basic(
 func TestAccAWSCloudwatchLogDestination_basic(
@@ -1255,7 +1260,6 @@ func TestAccAWSCloudWatchLogStream_disappears_LogGroup(
 func TestAccAWSCloudwatchLogSubscriptionFilter_basic(
 func TestAccAWSCloudwatchLogSubscriptionFilter_disappears(
 func TestAccAWSCloudwatchLogSubscriptionFilter_disappears_LogGroup(
-func _strArrPtrToList(
 func TestAccAWSCloudWatchMetricAlarm_basic(
 func TestAccAWSCloudWatchMetricAlarm_datapointsToAlarm(
 func TestAccAWSCloudWatchMetricAlarm_treatMissingData(
@@ -1264,6 +1268,7 @@ func TestAccAWSCloudWatchMetricAlarm_extendedStatistic(
 func TestAccAWSCloudWatchMetricAlarm_expression(
 func TestAccAWSCloudWatchMetricAlarm_missingStatistic(
 func TestAccAWSCloudWatchMetricAlarm_tags(
+func TestAccAWSCloudWatchMetricAlarm_disappears(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_basic(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_owner(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_disappears(
@@ -1456,6 +1461,7 @@ func TestAccAWSCognitoUserPoolClient_basic(
 func TestAccAWSCognitoUserPoolClient_allFields(
 func TestAccAWSCognitoUserPoolClient_allFieldsUpdatingOneField(
 func TestAccAWSCognitoUserPoolClient_analyticsConfig(
+func TestAccAWSCognitoUserPoolClient_analyticsConfigWithArn(
 func TestAccAWSCognitoUserPoolClient_disappears(
 func testAccAWSCognitoUserPoolClientConfig_basic(
 func testAccAWSCognitoUserPoolClientConfig_allFields(
@@ -3799,6 +3805,8 @@ func TestAccAWSS3ControlBucketPolicy_basic(
 func TestAccAWSS3ControlBucketPolicy_disappears(
 func TestAccAWSS3ControlBucket_basic(
 func TestAccAWSS3ControlBucket_disappears(
+func TestAccAWSS3ObjectCopy_basic(
+func testAccAWSS3ObjectCopyConfig_basic(
 func TestAccAWSS3OutpostsEndpoint_basic(
 func TestAccAWSS3OutpostsEndpoint_disappears(
 func TestAccAWSSagemakerAppImageConfig_basic(
@@ -3929,6 +3937,8 @@ func testAccAWSSecurityGroupConfig_ruleGathering(
 func testAccAWSSecurityHubAccount_basic(
 func testAccAwsSecurityHubActionTarget_basic(
 func testAccAwsSecurityHubActionTarget_disappears(
+func testAccAWSSecurityHubInviteAccepter_basic(
+func testAccAWSSecurityHubInviteAccepterConfig_basic(
 func testAccAWSSecurityHubMember_basic(
 func testAccAWSSecurityHubMember_invite(
 func testAccAWSSecurityHubMemberConfig_basic(
@@ -4106,6 +4116,7 @@ func TestAccAWSSpotInstanceRequest_vpc(
 func TestAccAWSSpotInstanceRequest_validUntil(
 func TestAccAWSSpotInstanceRequest_withoutSpotPrice(
 func TestAccAWSSpotInstanceRequest_getPasswordData(
+func TestAccAWSSpotInstanceRequest_disappears(
 func testAccAWSSpotInstanceRequestConfig_withoutSpotPrice(
 func testAccAWSSpotInstanceRequestConfig_withLaunchGroup(
 func testAccAWSSpotInstanceRequestConfig_withBlockDuration(

@@ -690,6 +690,9 @@ func TestAccAwsCloudWatchCompositeAlarm_updateAlarmRule(
 func TestAccAWSCloudWatchDashboard_basic(
 func TestAccAWSCloudWatchDashboard_update(
 func TestAccAWSCloudWatchDashboard_updateName(
+func TestAccAWSCloudWatchArchive_basic(
+func TestAccAWSCloudWatchArchive_update(
+func TestAccAWSCloudWatchEventArchive_disappears(
 func TestAccAWSCloudWatchEventBus_basic(
 func TestAccAWSCloudWatchEventBus_tags(
 func TestAccAWSCloudWatchEventBus_default(
@@ -739,6 +742,7 @@ func TestAccAWSCloudWatchMetricAlarm_extendedStatistic(
 func TestAccAWSCloudWatchMetricAlarm_expression(
 func TestAccAWSCloudWatchMetricAlarm_missingStatistic(
 func TestAccAWSCloudWatchMetricAlarm_tags(
+func TestAccAWSCloudWatchMetricAlarm_disappears(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_basic(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_owner(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_disappears(
@@ -848,6 +852,7 @@ func TestAccAWSCognitoUserPoolClient_basic(
 func TestAccAWSCognitoUserPoolClient_allFields(
 func TestAccAWSCognitoUserPoolClient_allFieldsUpdatingOneField(
 func TestAccAWSCognitoUserPoolClient_analyticsConfig(
+func TestAccAWSCognitoUserPoolClient_analyticsConfigWithArn(
 func TestAccAWSCognitoUserPoolClient_disappears(
 func TestAccAWSCognitoUserPoolDomain_basic(
 func TestAccAWSCognitoUserPoolDomain_custom(
@@ -2379,6 +2384,7 @@ func TestAccAWSS3ControlBucketPolicy_basic(
 func TestAccAWSS3ControlBucketPolicy_disappears(
 func TestAccAWSS3ControlBucket_basic(
 func TestAccAWSS3ControlBucket_disappears(
+func TestAccAWSS3ObjectCopy_basic(
 func TestAccAWSS3OutpostsEndpoint_basic(
 func TestAccAWSS3OutpostsEndpoint_disappears(
 func TestAccAWSSagemakerAppImageConfig_basic(
@@ -2627,6 +2633,7 @@ func TestAccAWSSpotInstanceRequest_vpc(
 func TestAccAWSSpotInstanceRequest_validUntil(
 func TestAccAWSSpotInstanceRequest_withoutSpotPrice(
 func TestAccAWSSpotInstanceRequest_getPasswordData(
+func TestAccAWSSpotInstanceRequest_disappears(
 func TestAccAWSSQSQueuePolicy_basic(
 func TestAccAWSSQSQueuePolicy_disappears_queue(
 func TestAccAWSSQSQueuePolicy_disappears(

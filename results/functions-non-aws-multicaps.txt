@@ -1187,6 +1187,8 @@ func testAccCheckAWSDBInstanceReplicaAttributes(
 func testAccCheckAWSDBInstanceSnapshot(
 func testAccCheckAWSDBInstanceNoSnapshot(
 func testAccCheckAWSDBInstanceExists(
+func testAccCheckAWSDBInstanceEc2ClassicDestroy(
+func testAccCheckAWSDBInstanceEc2ClassicExists(
 func TestAccAWSDBInstance_PerformanceInsightsEnabled_DisabledToEnabled(
 func TestAccAWSDBInstance_PerformanceInsightsEnabled_EnabledToDisabled(
 func TestAccAWSDBInstance_PerformanceInsightsKmsKeyId(
@@ -3049,6 +3051,7 @@ func testAccAWSS3BucketInventoryConfigEncryptWithSSES3(
 func testAccAWSS3BucketInventoryConfigEncryptWithSSEKMS(
 func resourceAwsS3BucketMetricParseID(
 func TestResourceAwsS3BucketMetricParseID(
+func resourceAwsS3BucketObjectSetKMS(
 func TestAccAWSS3BucketObject_defaultBucketSSE(
 func testAccCheckAWSS3BucketObjectSSE(
 func testAccAWSS3BucketObjectConfig_withKMSId(
@@ -3340,6 +3343,7 @@ func testAccAWSSSMAssociationRateControlConfig(
 func updateAwsSSMDocument(
 func validateSSMDocumentPermissions(
 func TestAccAWSSSMDocument_basic(
+func TestAccAWSSSMDocument_Name(
 func TestAccAWSSSMDocument_target_type(
 func TestAccAWSSSMDocument_VersionName(
 func TestAccAWSSSMDocument_update(

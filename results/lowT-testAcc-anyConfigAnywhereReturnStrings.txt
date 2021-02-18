@@ -1141,6 +1141,8 @@ func testAccAwsCloudWatchCompositeAlarmConfig_updateOkActions(suffix string) str
 func testAccAwsCloudWatchCompositeAlarmConfig_allActions(suffix string) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
 func testAccAWSCloudWatchDashboardConfig_updateBody(rInt int) string {
+func testAccAWSCloudWatchArchiveConfig(name string) string {
+func testAccAWSCloudWatchArchiveConfig_updateAttributes(name string) string {
 func testAccAWSCloudWatchEventBusConfig(name string) string {
 func testAccAWSCloudWatchEventBusConfig_Tags1(name, key, value string) string {
 func testAccAWSCloudWatchEventBusConfig_Tags2(name, key1, value1, key2, value2 string) string {
@@ -1166,6 +1168,7 @@ func testAccAWSCloudWatchEventTargetConfig(ruleName, snsTopicName, targetID stri
 func testAccAWSCloudWatchEventTargetConfigDefaultEventBusName(ruleName, snsTopicName, targetID string) string {
 func testAccAWSCloudWatchEventTargetConfigEventBusName(ruleName, eventBusName, snsTopicName, targetID string) string {
 func testAccAWSCloudWatchEventTargetConfigMissingTargetId(ruleName, snsTopicName string) string {
+func testAccAWSCloudWatchEventTargetConfig_retryPolicyDlc(ruleName, targetName, rName string) string {
 func testAccAWSCloudWatchEventTargetConfig_full(ruleName, targetName, rName string) string {
 func testAccAWSCloudWatchEventTargetConfigSsmDocument(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigEcs(rName string) string {
@@ -1392,6 +1395,7 @@ func testAccAWSCognitoUserPoolClientConfig_allFields(userPoolName, clientName st
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigBase(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfig(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigShareUserData(userPoolName, clientName string) string {
+func testAccAWSCognitoUserPoolClientConfigAnalyticsWithArnConfig(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolDomainConfig_basic(domainName, poolName string) string {
 func testAccAWSCognitoUserPoolDomainConfig_custom(rootDomain string, domain string, poolName string) string {
 func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(rName string, externalID string) string {
@@ -2062,7 +2066,7 @@ func testAccAWSEgressOnlyInternetGatewayConfigTags2(tagKey1, tagValue1, tagKey2,
 func testAccAWSEIPAssociationConfig() string {
 func testAccAWSEIPAssociationConfigDisappears() string {
 func testAccAWSEIPAssociationConfig_ec2Classic() string {
-func testAccAWSEIPAssociationConfig_spotInstance(rInt int) string {
+func testAccAWSEIPAssociationConfig_spotInstance(rName string) string {
 func testAccAWSEIPAssociationConfig_instance() string {
 func testAccAWSEIPConfig_tags(rName, testName string) string {
 func testAccAWSEIPConfig_tags_Ec2Classic(rName, testName string) string {
@@ -3834,6 +3838,7 @@ func testAccAWSS3ControlBucketPolicyConfig_Policy(rName, action string) string {
 func testAccAWSS3ControlBucketConfig_Bucket(rName string) string {
 func testAccAWSS3ControlBucketConfig_Tags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSS3ControlBucketConfig_Tags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSS3ObjectCopyConfig_basic(rName1, sourceKey, rName2, key string) string {
 func testAccAWSS3OutpostsEndpointConfig(rInt int) string {
 func testAccAWSSagemakerAppImageConfigBasicConfig(rName string) string {
 func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigKernalSpecs1(rName string) string {
@@ -3974,6 +3979,7 @@ func testAccAWSSecurityHubAccountConfig() string {
 func testAccAwsSecurityHubActionTargetConfigDescription(description string) string {
 func testAccAwsSecurityHubActionTargetConfigIdentifier(identifier string) string {
 func testAccAwsSecurityHubActionTargetConfigName(name string) string {
+func testAccAWSSecurityHubInviteAccepterConfig_basic() string {
 func testAccAWSSecurityHubMemberConfig_basic(accountId, email string) string {
 func testAccAWSSecurityHubMemberConfig_invite(accountId, email string, invite bool) string {
 func testAccSecurityHubOrganizationAdminAccountConfigSelf() string {
@@ -4105,17 +4111,18 @@ func testAccAWSSpotFleetRequestEBSConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestTagsConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestTenancyGroupConfig(rName, validUntil string) string {
 func testAccAWSSpotFleetRequestZeroCapacityConfig(rName string, validUntil string) string {
-func testAccAWSSpotInstanceRequestConfig(rInt int) string {
+func testAccAWSSpotInstanceRequestConfigBase(rName string) string {
+func testAccAWSSpotInstanceRequestConfig(rName string) string {
 func testAccAWSSpotInstanceRequestTagsConfig1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSpotInstanceRequestTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSSpotInstanceRequestConfigValidUntil(rInt int, validUntil string) string {
-func testAccAWSSpotInstanceRequestConfig_withoutSpotPrice(rInt int) string {
-func testAccAWSSpotInstanceRequestConfig_withLaunchGroup(rInt int) string {
-func testAccAWSSpotInstanceRequestConfig_withBlockDuration(rInt int) string {
-func testAccAWSSpotInstanceRequestConfigVPC(rInt int) string {
-func testAccAWSSpotInstanceRequestConfig_SubnetAndSGAndPublicIpAddress(rInt int) string {
-func testAccAWSSpotInstanceRequestConfig_getPasswordData(rInt int) string {
-func testAccAWSSpotInstanceRequestInterruptConfig(interruption_behavior string) string {
+func testAccAWSSpotInstanceRequestConfigValidUntil(rName string, validUntil string) string {
+func testAccAWSSpotInstanceRequestConfig_withoutSpotPrice(rName string) string {
+func testAccAWSSpotInstanceRequestConfig_withLaunchGroup(rName string) string {
+func testAccAWSSpotInstanceRequestConfig_withBlockDuration(rName string) string {
+func testAccAWSSpotInstanceRequestConfigVPC(rName string) string {
+func testAccAWSSpotInstanceRequestConfig_SubnetAndSGAndPublicIpAddress(rName string) string {
+func testAccAWSSpotInstanceRequestConfig_getPasswordData(rName string) string {
+func testAccAWSSpotInstanceRequestInterruptConfig(interruptionBehavior string) string {
 func testAccAWSSQSPolicyConfigBasic(rName string) string {
 func testAccAWSSQSConfigWithDefaults(r string) string {
 func testAccAWSSQSConfigWithNamePrefix(r string) string {

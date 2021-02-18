@@ -2005,6 +2005,12 @@ func testAccCheckAWSCloudWatchDashboardDestroyPrevious(
 func testAccAWSCloudWatchDashboardName(
 func testAccAWSCloudWatchDashboardConfig(
 func testAccAWSCloudWatchDashboardConfig_updateBody(
+func TestAccAWSCloudWatchArchive_basic(
+func TestAccAWSCloudWatchArchive_update(
+func TestAccAWSCloudWatchEventArchive_disappears(
+func testAccCheckAWSCloudWatchArchiveDestroy(
+func testAccAWSCloudWatchArchiveConfig(
+func testAccAWSCloudWatchArchiveConfig_updateAttributes(
 func TestAccAWSCloudWatchEventBus_basic(
 func TestAccAWSCloudWatchEventBus_tags(
 func TestAccAWSCloudWatchEventBus_default(
@@ -2048,6 +2054,7 @@ func testAccAWSCloudWatchEventRuleConfigRole(
 func TestAccAWSCloudWatchEventTarget_basic(
 func TestAccAWSCloudWatchEventTarget_EventBusName(
 func TestAccAWSCloudWatchEventTarget_GeneratedTargetId(
+func TestAccAWSCloudWatchEventTarget_RetryPolicy_DeadLetterConfig(
 func TestAccAWSCloudWatchEventTarget_full(
 func TestAccAWSCloudWatchEventTarget_disappears(
 func TestAccAWSCloudWatchEventTarget_ssmDocument(
@@ -2065,6 +2072,7 @@ func testAccAWSCloudWatchEventTargetConfig(
 func testAccAWSCloudWatchEventTargetConfigDefaultEventBusName(
 func testAccAWSCloudWatchEventTargetConfigEventBusName(
 func testAccAWSCloudWatchEventTargetConfigMissingTargetId(
+func testAccAWSCloudWatchEventTargetConfig_retryPolicyDlc(
 func testAccAWSCloudWatchEventTargetConfig_full(
 func testAccAWSCloudWatchEventTargetConfigSsmDocument(
 func testAccAWSCloudWatchEventTargetConfigEcs(
@@ -2147,6 +2155,7 @@ func TestAccAWSCloudWatchMetricAlarm_extendedStatistic(
 func TestAccAWSCloudWatchMetricAlarm_expression(
 func TestAccAWSCloudWatchMetricAlarm_missingStatistic(
 func TestAccAWSCloudWatchMetricAlarm_tags(
+func TestAccAWSCloudWatchMetricAlarm_disappears(
 func testAccCheckAWSCloudWatchMetricAlarmDestroy(
 func testAccAWSCloudWatchMetricAlarmConfig(
 func testAccAWSCloudWatchMetricAlarmConfigDatapointsToAlarm(
@@ -2599,6 +2608,7 @@ func TestAccAWSCognitoUserPoolClient_Name(
 func TestAccAWSCognitoUserPoolClient_allFields(
 func TestAccAWSCognitoUserPoolClient_allFieldsUpdatingOneField(
 func TestAccAWSCognitoUserPoolClient_analyticsConfig(
+func TestAccAWSCognitoUserPoolClient_analyticsConfigWithArn(
 func TestAccAWSCognitoUserPoolClient_disappears(
 func testAccAWSCognitoUserPoolClientImportStateIDFunc(
 func testAccCheckAWSCognitoUserPoolClientDestroy(
@@ -2611,6 +2621,7 @@ func testAccAWSCognitoUserPoolClientConfig_allFields(
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigBase(
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfig(
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigShareUserData(
+func testAccAWSCognitoUserPoolClientConfigAnalyticsWithArnConfig(
 func TestAccAWSCognitoUserPoolDomain_basic(
 func TestAccAWSCognitoUserPoolDomain_custom(
 func TestAccAWSCognitoUserPoolDomain_disappears(
@@ -2949,6 +2960,8 @@ func testAccCheckAWSDBInstanceReplicaAttributes(
 func testAccCheckAWSDBInstanceSnapshot(
 func testAccCheckAWSDBInstanceNoSnapshot(
 func testAccCheckAWSDBInstanceExists(
+func testAccCheckAWSDBInstanceEc2ClassicDestroy(
+func testAccCheckAWSDBInstanceEc2ClassicExists(
 func TestAccAWSDBInstance_PerformanceInsightsEnabled_DisabledToEnabled(
 func TestAccAWSDBInstance_PerformanceInsightsEnabled_EnabledToDisabled(
 func TestAccAWSDBInstance_PerformanceInsightsKmsKeyId(
@@ -7551,6 +7564,7 @@ func testAccAWSS3BucketNotificationConfigQueue(
 func testAccAWSS3BucketNotificationConfigLambdaFunction(
 func testAccAWSS3BucketNotificationConfigLambdaFunctionLambdaFunctionArnAlias(
 func testAccAWSS3BucketNotificationConfigTopic(
+func resourceAwsS3BucketObjectSetKMS(
 func TestAccAWSS3BucketObject_noNameNoKey(
 func TestAccAWSS3BucketObject_empty(
 func TestAccAWSS3BucketObject_source(
@@ -7794,6 +7808,10 @@ func testAccCheckAWSS3ControlBucketExists(
 func testAccAWSS3ControlBucketConfig_Bucket(
 func testAccAWSS3ControlBucketConfig_Tags1(
 func testAccAWSS3ControlBucketConfig_Tags2(
+func TestAccAWSS3ObjectCopy_basic(
+func testAccCheckAWSS3ObjectCopyDestroy(
+func testAccCheckAWSS3ObjectCopyExists(
+func testAccAWSS3ObjectCopyConfig_basic(
 func TestAccAWSS3OutpostsEndpoint_basic(
 func TestAccAWSS3OutpostsEndpoint_disappears(
 func testAccCheckAWSS3OutpostsEndpointDestroy(
@@ -8113,6 +8131,10 @@ func testAccAWSSecurityHubAccount_basic(
 func testAccCheckAWSSecurityHubAccountExists(
 func testAccCheckAWSSecurityHubAccountDestroy(
 func testAccAWSSecurityHubAccountConfig(
+func testAccAWSSecurityHubInviteAccepter_basic(
+func testAccCheckAWSSecurityHubInviteAccepterExists(
+func testAccCheckAWSSecurityHubInviteAccepterDestroy(
+func testAccAWSSecurityHubInviteAccepterConfig_basic(
 func testAccAWSSecurityHubMember_basic(
 func testAccAWSSecurityHubMember_invite(
 func testAccCheckAWSSecurityHubMemberExists(
@@ -8474,6 +8496,7 @@ func TestAccAWSSpotInstanceRequest_withoutSpotPrice(
 func TestAccAWSSpotInstanceRequest_SubnetAndSGAndPublicIpAddress(
 func TestAccAWSSpotInstanceRequest_NetworkInterfaceAttributes(
 func TestAccAWSSpotInstanceRequest_getPasswordData(
+func TestAccAWSSpotInstanceRequest_disappears(
 func testAccAWSSpotInstanceRequestValidUntil(
 func testAccAWSSpotInstanceRequestTime(
 func testAccCheckAWSSpotInstanceRequestDestroy(
@@ -8486,6 +8509,7 @@ func testAccCheckAWSSpotInstanceRequest_NetworkInterfaceAttributes(
 func testAccCheckAWSSpotInstanceRequestAttributesVPC(
 func TestAccAWSSpotInstanceRequest_InterruptStop(
 func TestAccAWSSpotInstanceRequest_InterruptHibernate(
+func testAccAWSSpotInstanceRequestConfigBase(
 func testAccAWSSpotInstanceRequestConfig(
 func testAccAWSSpotInstanceRequestTagsConfig1(
 func testAccAWSSpotInstanceRequestTagsConfig2(
@@ -8580,6 +8604,7 @@ func testAccAWSSSMAssociationRateControlConfig(
 func updateAwsSSMDocument(
 func validateSSMDocumentPermissions(
 func TestAccAWSSSMDocument_basic(
+func TestAccAWSSSMDocument_Name(
 func TestAccAWSSSMDocument_target_type(
 func TestAccAWSSSMDocument_VersionName(
 func TestAccAWSSSMDocument_update(

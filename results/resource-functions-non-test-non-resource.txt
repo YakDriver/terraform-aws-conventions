@@ -278,6 +278,9 @@ func init(
 func expandAwsCloudWatchPutCompositeAlarmInput(
 func init(
 func isCloudWatchDashboardNotFoundErr(
+func buildCreateArchiveInputStruct(
+func buildUpdateArchiveInputStruct(
+func init(
 func init(
 func getPolicyStatement(
 func validateCloudWatchEventPermissionAction(
@@ -302,6 +305,8 @@ func init(
 func buildPutTargetInputStruct(
 func expandAwsCloudWatchEventTargetRunParameters(
 func expandAwsCloudWatchEventTargetEcsParameters(
+func expandAwsCloudWatchEventRetryPolicyParameters(
+func expandAwsCloudWatchEventDeadLetterConfigParameters(
 func expandAwsCloudWatchEventTargetEcsParametersNetworkConfiguration(
 func expandAwsCloudWatchEventTargetBatchParameters(
 func expandAwsCloudWatchEventTargetKinesisParameters(
@@ -314,6 +319,8 @@ func flattenAwsCloudWatchEventTargetBatchParameters(
 func flattenAwsCloudWatchEventTargetKinesisParameters(
 func flattenAwsCloudWatchEventTargetSqsParameters(
 func flattenAwsCloudWatchInputTransformer(
+func flatternAwsCloudWatchEventTargetRetryPolicy(
+func flatternAwsCloudWatchEventTargetDeadLetterConfig(
 func init(
 func lookupCloudWatchLogDestination(
 func lookupCloudWatchLogGroup(
@@ -329,7 +336,6 @@ func cloudwatchLogsSubscriptionFilterId(
 func validateResourceAwsCloudWatchMetricAlarm(
 func getAwsCloudWatchPutMetricAlarmInput(
 func getAwsCloudWatchMetricAlarm(
-func _strArrPtrToList(
 func flattenDimensions(
 func migrateCloudWatchMetricAlarmStateV0toV1(
 func decodeCodeArtifactDomainID(
@@ -1947,8 +1953,8 @@ func validateMetadataIsLowerCase(
 func hasS3BucketObjectContentChanges(
 func deleteAllS3ObjectVersions(
 func deleteS3ObjectVersion(
-func expandS3ObjectLockRetainUntilDate(
-func flattenS3ObjectLockRetainUntilDate(
+func expandS3ObjectDate(
+func flattenS3ObjectDate(
 func init(
 func expandS3OwnershipControlsRules(
 func expandS3OwnershipControlsRule(
@@ -1965,6 +1971,8 @@ func flattenS3controlLifecycleExpiration(
 func flattenS3controlLifecycleRules(
 func flattenS3controlLifecycleRule(
 func flattenS3controlLifecycleRuleFilter(
+func expandS3Grant(
+func expandS3Grants(
 func flattenS3outpostsNetworkInterfaces(
 func flattenS3outpostsNetworkInterface(
 func expandSagemakerAppImageConfigKernelGatewayImageConfig(

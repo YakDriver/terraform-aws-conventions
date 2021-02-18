@@ -789,6 +789,9 @@ func TestAccAWSCloudTrail_serial(
 func TestAccAWSCloudWatchDashboard_basic(
 func TestAccAWSCloudWatchDashboard_update(
 func TestAccAWSCloudWatchDashboard_updateName(
+func TestAccAWSCloudWatchArchive_basic(
+func TestAccAWSCloudWatchArchive_update(
+func TestAccAWSCloudWatchEventArchive_disappears(
 func TestAccAWSCloudWatchEventBus_basic(
 func TestAccAWSCloudWatchEventBus_tags(
 func TestAccAWSCloudWatchEventBus_default(
@@ -812,6 +815,7 @@ func TestAccAWSCloudWatchEventRule_IsEnabled(
 func TestAccAWSCloudWatchEventTarget_basic(
 func TestAccAWSCloudWatchEventTarget_EventBusName(
 func TestAccAWSCloudWatchEventTarget_GeneratedTargetId(
+func TestAccAWSCloudWatchEventTarget_RetryPolicy_DeadLetterConfig(
 func TestAccAWSCloudWatchEventTarget_full(
 func TestAccAWSCloudWatchEventTarget_disappears(
 func TestAccAWSCloudWatchEventTarget_ssmDocument(
@@ -857,6 +861,7 @@ func TestAccAWSCloudWatchMetricAlarm_extendedStatistic(
 func TestAccAWSCloudWatchMetricAlarm_expression(
 func TestAccAWSCloudWatchMetricAlarm_missingStatistic(
 func TestAccAWSCloudWatchMetricAlarm_tags(
+func TestAccAWSCloudWatchMetricAlarm_disappears(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_basic(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_owner(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_disappears(
@@ -1042,6 +1047,7 @@ func TestAccAWSCognitoUserPoolClient_Name(
 func TestAccAWSCognitoUserPoolClient_allFields(
 func TestAccAWSCognitoUserPoolClient_allFieldsUpdatingOneField(
 func TestAccAWSCognitoUserPoolClient_analyticsConfig(
+func TestAccAWSCognitoUserPoolClient_analyticsConfigWithArn(
 func TestAccAWSCognitoUserPoolClient_disappears(
 func TestAccAWSCognitoUserPoolDomain_basic(
 func TestAccAWSCognitoUserPoolDomain_custom(
@@ -3337,6 +3343,7 @@ func TestAccAWSS3ControlBucketPolicy_Policy(
 func TestAccAWSS3ControlBucket_basic(
 func TestAccAWSS3ControlBucket_disappears(
 func TestAccAWSS3ControlBucket_Tags(
+func TestAccAWSS3ObjectCopy_basic(
 func TestAccAWSS3OutpostsEndpoint_basic(
 func TestAccAWSS3OutpostsEndpoint_disappears(
 func TestAccAWSSagemakerAppImageConfig_basic(
@@ -3638,6 +3645,7 @@ func TestAccAWSSpotInstanceRequest_withoutSpotPrice(
 func TestAccAWSSpotInstanceRequest_SubnetAndSGAndPublicIpAddress(
 func TestAccAWSSpotInstanceRequest_NetworkInterfaceAttributes(
 func TestAccAWSSpotInstanceRequest_getPasswordData(
+func TestAccAWSSpotInstanceRequest_disappears(
 func TestAccAWSSpotInstanceRequest_InterruptStop(
 func TestAccAWSSpotInstanceRequest_InterruptHibernate(
 func TestAccAWSSQSQueuePolicy_basic(
@@ -3674,6 +3682,7 @@ func TestAccAWSSSMAssociation_withScheduleExpression(
 func TestAccAWSSSMAssociation_withComplianceSeverity(
 func TestAccAWSSSMAssociation_rateControl(
 func TestAccAWSSSMDocument_basic(
+func TestAccAWSSSMDocument_Name(
 func TestAccAWSSSMDocument_target_type(
 func TestAccAWSSSMDocument_VersionName(
 func TestAccAWSSSMDocument_update(

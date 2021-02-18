@@ -1724,6 +1724,11 @@ func resourceAwsCloudWatchDashboard(
 func resourceAwsCloudWatchDashboardRead(
 func resourceAwsCloudWatchDashboardPut(
 func resourceAwsCloudWatchDashboardDelete(
+func resourceAwsCloudWatchEventArchive(
+func resourceAwsCloudWatchEventArchiveCreate(
+func resourceAwsCloudWatchEventArchiveRead(
+func resourceAwsCloudWatchEventArchiveUpdate(
+func resourceAwsCloudWatchEventArchiveDelete(
 func resourceAwsCloudWatchEventBus(
 func resourceAwsCloudWatchEventBusCreate(
 func resourceAwsCloudWatchEventBusRead(
@@ -1752,6 +1757,8 @@ func resourceAwsCloudWatchEventTargetUpdate(
 func resourceAwsCloudWatchEventTargetDelete(
 func expandAwsCloudWatchEventTargetRunParameters(
 func expandAwsCloudWatchEventTargetEcsParameters(
+func expandAwsCloudWatchEventRetryPolicyParameters(
+func expandAwsCloudWatchEventDeadLetterConfigParameters(
 func expandAwsCloudWatchEventTargetEcsParametersNetworkConfiguration(
 func expandAwsCloudWatchEventTargetBatchParameters(
 func expandAwsCloudWatchEventTargetKinesisParameters(
@@ -1764,6 +1771,8 @@ func flattenAwsCloudWatchEventTargetBatchParameters(
 func flattenAwsCloudWatchEventTargetKinesisParameters(
 func flattenAwsCloudWatchEventTargetSqsParameters(
 func flattenAwsCloudWatchInputTransformer(
+func flatternAwsCloudWatchEventTargetRetryPolicy(
+func flatternAwsCloudWatchEventTargetDeadLetterConfig(
 func resourceAwsCloudWatchEventTargetImport(
 func resourceAwsCloudWatchEventTargetV0(
 func resourceAwsCloudWatchEventTargetStateUpgradeV0(
@@ -4954,6 +4963,7 @@ func resourceAwsS3BucketObjectCreate(
 func resourceAwsS3BucketObjectRead(
 func resourceAwsS3BucketObjectUpdate(
 func resourceAwsS3BucketObjectDelete(
+func resourceAwsS3BucketObjectSetKMS(
 func resourceAwsS3BucketObjectCustomizeDiff(
 func resourceAwsS3BucketOwnershipControls(
 func resourceAwsS3BucketOwnershipControlsCreate(
@@ -4984,6 +4994,12 @@ func resourceAwsS3ControlBucketPolicyCreate(
 func resourceAwsS3ControlBucketPolicyRead(
 func resourceAwsS3ControlBucketPolicyUpdate(
 func resourceAwsS3ControlBucketPolicyDelete(
+func resourceAwsS3ObjectCopy(
+func resourceAwsS3ObjectCopyCreate(
+func resourceAwsS3ObjectCopyRead(
+func resourceAwsS3ObjectCopyUpdate(
+func resourceAwsS3ObjectCopyDelete(
+func resourceAwsS3ObjectCopyDoCopy(
 func resourceAwsS3OutpostsEndpoint(
 func resourceAwsS3OutpostsEndpointCreate(
 func resourceAwsS3OutpostsEndpointRead(
@@ -5160,6 +5176,11 @@ func testAccCheckAwsSecurityHubActionTargetDestroy(
 func testAccAwsSecurityHubActionTargetConfigDescription(
 func testAccAwsSecurityHubActionTargetConfigIdentifier(
 func testAccAwsSecurityHubActionTargetConfigName(
+func resourceAwsSecurityHubInviteAccepter(
+func resourceAwsSecurityHubInviteAccepterCreate(
+func resourceAwsSecurityHubInviteAccepterGetInvitationId(
+func resourceAwsSecurityHubInviteAccepterRead(
+func resourceAwsSecurityHubInviteAccepterDelete(
 func resourceAwsSecurityHubMember(
 func resourceAwsSecurityHubMemberCreate(
 func resourceAwsSecurityHubMemberRead(
