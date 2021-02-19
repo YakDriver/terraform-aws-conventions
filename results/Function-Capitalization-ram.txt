@@ -150,6 +150,7 @@ func resourceAwsElastiCacheModifyParameterGroup(
 func flattenElastiCacheParameters(
 func expandElastiCacheParameters(
 func expandElastiCacheParameter(
+func testSweepElasticacheParameterGroups(
 func TestAccAWSElasticacheParameterGroup_basic(
 func TestAccAWSElasticacheParameterGroup_addParameter(
 func TestAccAWSElasticacheParameterGroup_removeAllParameters(

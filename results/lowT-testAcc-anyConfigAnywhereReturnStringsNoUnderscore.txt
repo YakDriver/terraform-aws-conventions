@@ -47,6 +47,8 @@ func testAccCheckAWSCodeArtifactRepositoryEndpointOwnerConfig(rName string) stri
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(rName string) string {
 func testAccAWSCustomerGatewayDataSourceConfigFilter(asn, hostOctet int) string {
 func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {
+func testAccCheckAwsDbEventCategoriesConfig() string {
+func testAccCheckAwsDbEventCategoriesConfigSourceType(sourceType string) string {
 func testAccAWSDBInstanceDataSourceConfig(rInt int) string {
 func testAccCheckAwsDbSnapshotDataSourceConfig(rInt int) string {
 func testAccAWSDBSubnetGroupDataSourceConfig(rName string) string {
@@ -977,9 +979,7 @@ func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
 func testAccAwsEbsVolumeConfigOutpost() string {
 func testAccAwsEbsVolumeConfigMultiAttach(rName string) string {
-func testAccAwsEbsVolumeConfigSizeType(rName string, size int, volumeType string) string {
-func testAccAwsEbsVolumeConfigGp3Throughput(rName string, throughput int) string {
-func testAccAwsEbsVolumeConfigGp3Iops(rName string, iops int) string {
+func testAccAwsEbsVolumeConfigSizeTypeIopsThroughput(rName, size, volumeType, iops, throughput string) string {
 func testAccAwsEbsVolumeConfigSnapshotId(rName string) string {
 func testAccAwsEbsVolumeConfigSnapshotIdAndSize(rName string, size int) string {
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(localZone, optInStatus string) string {
@@ -2417,7 +2417,7 @@ func testAccAWSSSMDocumentPublicPermissionConfig(rName string) string {
 func testAccAWSSSMDocumentPrivatePermissionConfig(rName string, rIds string) string {
 func testAccAWSSSMDocumentParamConfig(rName string) string {
 func testAccAWSSSMDocumentTypeAutomationConfig(rName string) string {
-func testAccAWSSSMDocumentTypePackageConfig(rName, source string, rInt int) string {
+func testAccAWSSSMDocumentTypePackageConfig(rName string, rInt int) string {
 func testAccAWSSSMDocumentTypeSessionConfig(rName string) string {
 func testAccAWSSSMDocumentConfigSchemaVersion1(rName string) string {
 func testAccAWSSSMDocumentConfigSchemaVersion1Update(rName string) string {
@@ -2543,6 +2543,7 @@ func testAccAWSSyntheticsCanaryBasicConfig(rName string) string {
 func testAccAWSSyntheticsCanaryRuntimeVersionConfig(rName, version string) string {
 func testAccAWSSyntheticsCanaryZipUpdatedConfig(rName string) string {
 func testAccAWSSyntheticsCanaryStartCanaryConfig(rName string, state bool) string {
+func testAccAWSSyntheticsCanaryStartCanaryZipUpdatedConfig(rName string, state bool) string {
 func testAccAWSSyntheticsCanaryBasicS3CodeConfig(rName string) string {
 func testAccAWSSyntheticsCanaryVPCConfigBase(rName string) string {
 func testAccAWSSyntheticsCanaryVPCConfig1(rName string) string {

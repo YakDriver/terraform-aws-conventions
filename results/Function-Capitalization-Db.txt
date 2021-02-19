@@ -11,9 +11,9 @@ func testAccCheckAwsDbClusterSnapshotDataSourceConfig_MostRecent(
 func dataSourceAwsDbEventCategories(
 func dataSourceAwsDbEventCategoriesRead(
 func TestAccAWSDbEventCategories_basic(
-func TestAccAWSDbEventCategories_sourceType(
-func testAccAwsDbEventCategoriesAttrCheck(
-func testAccCheckAwsDbEventCategoriesBuild(
+func TestAccAWSDbEventCategories_SourceType(
+func testAccCheckAwsDbEventCategoriesConfig(
+func testAccCheckAwsDbEventCategoriesConfigSourceType(
 func dataSourceAwsDbInstance(
 func dataSourceAwsDbInstanceRead(
 func TestAccAWSDbInstanceDataSource_basic(

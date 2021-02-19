@@ -156,8 +156,8 @@ func testAccCheckAwsDbClusterSnapshotDataSourceConfig_DbClusterIdentifier(
 func testAccCheckAwsDbClusterSnapshotDataSourceConfig_MostRecent(
 func dataSourceAwsDbEventCategories(
 func dataSourceAwsDbEventCategoriesRead(
-func testAccAwsDbEventCategoriesAttrCheck(
-func testAccCheckAwsDbEventCategoriesBuild(
+func testAccCheckAwsDbEventCategoriesConfig(
+func testAccCheckAwsDbEventCategoriesConfigSourceType(
 func dataSourceAwsDbInstance(
 func dataSourceAwsDbInstanceRead(
 func dataSourceAwsDbSnapshot(
@@ -2583,9 +2583,7 @@ func resourceAwsEbsVolumeDelete(
 func resourceAwsEbsVolumeCustomizeDiff(
 func testAccAwsEbsVolumeConfigOutpost(
 func testAccAwsEbsVolumeConfigMultiAttach(
-func testAccAwsEbsVolumeConfigSizeType(
-func testAccAwsEbsVolumeConfigGp3Throughput(
-func testAccAwsEbsVolumeConfigGp3Iops(
+func testAccAwsEbsVolumeConfigSizeTypeIopsThroughput(
 func testAccAwsEbsVolumeConfigSnapshotId(
 func testAccAwsEbsVolumeConfigSnapshotIdAndSize(
 func resourceAwsEc2AvailabilityZoneGroup(
@@ -2877,6 +2875,11 @@ func resourceAwsElasticacheClusterCreate(
 func resourceAwsElasticacheClusterRead(
 func resourceAwsElasticacheClusterUpdate(
 func resourceAwsElasticacheClusterDelete(
+func resourceAwsElasticacheGlobalReplicationGroup(
+func resourceAwsElasticacheGlobalReplicationGroupCreate(
+func resourceAwsElasticacheGlobalReplicationGroupRead(
+func resourceAwsElasticacheGlobalReplicationGroupUpdate(
+func resourceAwsElasticacheGlobalReplicationGroupDelete(
 func resourceAwsElasticacheParameterGroup(
 func resourceAwsElasticacheParameterGroupCreate(
 func resourceAwsElasticacheParameterGroupRead(

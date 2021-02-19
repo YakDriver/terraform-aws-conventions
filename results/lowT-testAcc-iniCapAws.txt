@@ -2,7 +2,6 @@ func testAccAwsAcmCertificateDataSourceConfigKeyTypes(
 func testAccAwsBackupPlanDataSourceConfig_basic(
 func testAccAwsBackupSelectionDataSourceConfig_basic(
 func testAccAwsBackupVaultDataSourceConfig_basic(
-func testAccAwsDbEventCategoriesAttrCheck(
 func testAccAwsEc2SpotPriceDataSourceConfig(
 func testAccAwsEc2SpotPriceDataSourceFilterConfig(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
@@ -163,9 +162,7 @@ func testAccAwsEbsSnapshotConfigWithDescription(
 func testAccAwsEbsSnapshotConfigWithKms(
 func testAccAwsEbsVolumeConfigOutpost(
 func testAccAwsEbsVolumeConfigMultiAttach(
-func testAccAwsEbsVolumeConfigSizeType(
-func testAccAwsEbsVolumeConfigGp3Throughput(
-func testAccAwsEbsVolumeConfigGp3Iops(
+func testAccAwsEbsVolumeConfigSizeTypeIopsThroughput(
 func testAccAwsEbsVolumeConfigSnapshotId(
 func testAccAwsEbsVolumeConfigSnapshotIdAndSize(
 func testAccAwsEc2ClientVpnAuthorizationRule_basic(

@@ -816,10 +816,17 @@ func (
 func createElasticacheCacheCluster(
 func deleteElasticacheCacheCluster(
 func init(
+func elasticacheDescriptionDiffSuppress(
+func elasticacheDescriptionStateFunc(
+func updateElasticacheGlobalReplicationGroup(
+func deleteElasticacheGlobalReplicationGroup(
+func flattenElasticacheGlobalReplicationGroupPrimaryGroupID(
+func init(
 func elastiCacheParameterChanges(
 func flattenElastiCacheParameters(
 func expandElastiCacheParameters(
 func expandElastiCacheParameter(
+func init(
 func deleteElasticacheReplicationGroup(
 func flattenElasticacheNodeGroupsToClusterMode(
 func elasticacheReplicationGroupModifyShardConfiguration(
@@ -830,6 +837,7 @@ func elasticacheReplicationGroupIncreaseNumCacheClusters(
 func elasticacheReplicationGroupDecreaseNumCacheClusters(
 func init(
 func formatReplicationGroupClusterID(
+func init(
 func init(
 func getBeanstalkApplication(
 func init(
@@ -2292,7 +2300,6 @@ func vpcEndpointSubnetAssociationId(
 func init(
 func VPCStateRefreshFunc(
 func Ipv6CidrStateRefreshFunc(
-func awsVpcDescribeVpcAttribute(
 func vpcDescribe(
 func waitForEc2VpcIpv6CidrBlockAssociationCreate(
 func waitForEc2VpcIpv6CidrBlockAssociationDelete(

@@ -480,7 +480,6 @@ func resourceAwsVpcSetDefaultSecurityGroup(
 func resourceAwsVpcSetDefaultRouteTable(
 func resourceAwsVpcSetMainRouteTable(
 func resourceAwsVpcInstanceImport(
-func awsVpcDescribeVpcAttribute(
 func waitForEc2VpcIpv6CidrBlockAssociationCreate(
 func waitForEc2VpcIpv6CidrBlockAssociationDelete(
 func resourceAwsVpcIpv4CidrBlockAssociation(

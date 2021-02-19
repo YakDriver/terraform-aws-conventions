@@ -80,6 +80,7 @@ func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
 func tpl_testAccAWSEcsService_withLbChanges(
 func tpl_testAccAWSEcsServiceWithNetworkConfiguration(
+func flattenElasticacheGlobalReplicationGroupPrimaryGroupID(
 func resourceAwsElasticacheReplicationGroupSetPrimaryClusterID(
 func formatReplicationGroupClusterID(
 func expandESNodeToNodeEncryptionOptions(

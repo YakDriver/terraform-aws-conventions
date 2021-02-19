@@ -45,7 +45,7 @@ func TestAccAWSDbClusterSnapshotDataSource_DbClusterSnapshotIdentifier(
 func TestAccAWSDbClusterSnapshotDataSource_DbClusterIdentifier(
 func TestAccAWSDbClusterSnapshotDataSource_MostRecent(
 func TestAccAWSDbEventCategories_basic(
-func TestAccAWSDbEventCategories_sourceType(
+func TestAccAWSDbEventCategories_SourceType(
 func TestAccAWSDbInstanceDataSource_basic(
 func TestAccAWSDbInstanceDataSource_ec2Classic(
 func TestAccAWSDbSnapshotDataSource_basic(
@@ -1445,6 +1445,7 @@ func TestAccAWSEBSVolume_outpost(
 func TestAccAWSEBSVolume_gp3_basic(
 func TestAccAWSEBSVolume_gp3_iops(
 func TestAccAWSEBSVolume_gp3_throughput(
+func TestAccAWSEBSVolume_gp3_to_gp2(
 func TestAccAWSEBSVolume_snapshotID(
 func TestAccAWSEBSVolume_snapshotIDAndSize(
 func TestAccAWSEBSVolume_disappears(
@@ -1739,6 +1740,9 @@ func TestAccAWSElasticacheCluster_ReplicationGroupID_SingleReplica(
 func TestAccAWSElasticacheCluster_ReplicationGroupID_MultipleReplica(
 func TestAccAWSElasticacheCluster_Memcached_FinalSnapshot(
 func TestAccAWSElasticacheCluster_Redis_FinalSnapshot(
+func TestAccAWSElasticacheGlobalReplicationGroup_basic(
+func TestAccAWSElasticacheGlobalReplicationGroup_Description(
+func TestAccAWSElasticacheGlobalReplicationGroup_disappears(
 func TestAccAWSElasticacheParameterGroup_basic(
 func TestAccAWSElasticacheParameterGroup_addParameter(
 func TestAccAWSElasticacheParameterGroup_removeAllParameters(
@@ -2077,6 +2081,7 @@ func TestAccAWSGluePartition_basic(
 func TestAccAWSGluePartition_multipleValues(
 func TestAccAWSGluePartition_parameters(
 func TestAccAWSGluePartition_disappears(
+func TestAccAWSGluePartition_disappears_table(
 func TestAccAWSGlueRegistry_basic(
 func TestAccAWSGlueRegistry_Description(
 func TestAccAWSGlueRegistry_tags(
@@ -3697,6 +3702,7 @@ func TestAccAWSSSMDocument_SchemaVersion_1(
 func TestAccAWSSSMDocument_session(
 func TestAccAWSSSMDocument_DocumentFormat_YAML(
 func TestAccAWSSSMDocument_Tags(
+func TestAccAWSSSMDocument_disappears(
 func TestAccAWSSSMMaintenanceWindowTarget_basic(
 func TestAccAWSSSMMaintenanceWindowTarget_noNameOrDescription(
 func TestAccAWSSSMMaintenanceWindowTarget_validation(
@@ -3862,6 +3868,7 @@ func TestAccAWSSwfDomain_Description(
 func TestAccAWSSyntheticsCanary_basic(
 func TestAccAWSSyntheticsCanary_runtimeVersion(
 func TestAccAWSSyntheticsCanary_startCanary(
+func TestAccAWSSyntheticsCanary_startCanary_codeChanges(
 func TestAccAWSSyntheticsCanary_s3(
 func TestAccAWSSyntheticsCanary_runConfig(
 func TestAccAWSSyntheticsCanary_runConfigTracing(

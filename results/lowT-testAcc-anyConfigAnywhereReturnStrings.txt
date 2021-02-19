@@ -62,6 +62,8 @@ func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {
 func testAccCheckAwsDbClusterSnapshotDataSourceConfig_DbClusterSnapshotIdentifier(rName string) string {
 func testAccCheckAwsDbClusterSnapshotDataSourceConfig_DbClusterIdentifier(rName string) string {
 func testAccCheckAwsDbClusterSnapshotDataSourceConfig_MostRecent(rName string) string {
+func testAccCheckAwsDbEventCategoriesConfig() string {
+func testAccCheckAwsDbEventCategoriesConfigSourceType(sourceType string) string {
 func testAccAWSDBInstanceDataSourceConfig(rInt int) string {
 func testAccAWSDBInstanceDataSourceConfig_ec2Classic(rInt int) string {
 func testAccCheckAwsDbSnapshotDataSourceConfig(rInt int) string {
@@ -1869,9 +1871,7 @@ func testAccAwsEbsSnapshotConfigWithDescription(rName string) string {
 func testAccAwsEbsSnapshotConfigWithKms(rName string) string {
 func testAccAwsEbsVolumeConfigOutpost() string {
 func testAccAwsEbsVolumeConfigMultiAttach(rName string) string {
-func testAccAwsEbsVolumeConfigSizeType(rName string, size int, volumeType string) string {
-func testAccAwsEbsVolumeConfigGp3Throughput(rName string, throughput int) string {
-func testAccAwsEbsVolumeConfigGp3Iops(rName string, iops int) string {
+func testAccAwsEbsVolumeConfigSizeTypeIopsThroughput(rName, size, volumeType, iops, throughput string) string {
 func testAccAwsEbsVolumeConfigSnapshotId(rName string) string {
 func testAccAwsEbsVolumeConfigSnapshotIdAndSize(rName string, size int) string {
 func testAccEc2AvailabilityZoneGroupConfigOptInStatus(localZone, optInStatus string) string {
@@ -2139,6 +2139,8 @@ func testAccAWSElasticacheClusterConfig_ReplicationGroupID_AvailabilityZone(rNam
 func testAccAWSElasticacheClusterConfig_ReplicationGroupID_Replica(rName string, count int) string {
 func testAccAWSElasticacheClusterConfig_Memcached_FinalSnapshot(rName string) string {
 func testAccAWSElasticacheClusterConfig_Redis_FinalSnapshot(rName string) string {
+func testAccAWSElasticacheGlobalReplicationGroupConfig_basic(rName, primaryReplicationGroupId string) string {
+func testAccAWSElasticacheGlobalReplicationGroupConfig_description(rName, primaryReplicationGroupId, description string) string {
 func testAccAWSElasticacheParameterGroupConfig(rName string) string {
 func testAccAWSElasticacheParameterGroupConfigDescription(rName, description string) string {
 func testAccAWSElasticacheParameterGroupConfigParameter1(rName, family, parameterName1, parameterValue1 string) string {
@@ -4164,7 +4166,7 @@ func testAccAWSSSMDocumentPublicPermissionConfig(rName string) string {
 func testAccAWSSSMDocumentPrivatePermissionConfig(rName string, rIds string) string {
 func testAccAWSSSMDocumentParamConfig(rName string) string {
 func testAccAWSSSMDocumentTypeAutomationConfig(rName string) string {
-func testAccAWSSSMDocumentTypePackageConfig(rName, source string, rInt int) string {
+func testAccAWSSSMDocumentTypePackageConfig(rName string, rInt int) string {
 func testAccAWSSSMDocumentTypeSessionConfig(rName string) string {
 func testAccAWSSSMDocumentConfig_DocumentFormat_YAML(rName, content string) string {
 func testAccAWSSSMDocumentConfigSchemaVersion1(rName string) string {
@@ -4345,6 +4347,7 @@ func testAccAWSSyntheticsCanaryBasicConfig(rName string) string {
 func testAccAWSSyntheticsCanaryRuntimeVersionConfig(rName, version string) string {
 func testAccAWSSyntheticsCanaryZipUpdatedConfig(rName string) string {
 func testAccAWSSyntheticsCanaryStartCanaryConfig(rName string, state bool) string {
+func testAccAWSSyntheticsCanaryStartCanaryZipUpdatedConfig(rName string, state bool) string {
 func testAccAWSSyntheticsCanaryBasicS3CodeConfig(rName string) string {
 func testAccAWSSyntheticsCanaryVPCConfigBase(rName string) string {
 func testAccAWSSyntheticsCanaryVPCConfig1(rName string) string {

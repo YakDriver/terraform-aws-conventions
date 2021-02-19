@@ -2169,6 +2169,17 @@ func resourceAwsElasticacheClusterDelete(
 func createElasticacheCacheCluster(
 func deleteElasticacheCacheCluster(
 func init(
+func resourceAwsElasticacheGlobalReplicationGroup(
+func elasticacheDescriptionDiffSuppress(
+func elasticacheDescriptionStateFunc(
+func resourceAwsElasticacheGlobalReplicationGroupCreate(
+func resourceAwsElasticacheGlobalReplicationGroupRead(
+func resourceAwsElasticacheGlobalReplicationGroupUpdate(
+func updateElasticacheGlobalReplicationGroup(
+func resourceAwsElasticacheGlobalReplicationGroupDelete(
+func deleteElasticacheGlobalReplicationGroup(
+func flattenElasticacheGlobalReplicationGroupPrimaryGroupID(
+func init(
 func resourceAwsElasticacheParameterGroup(
 func resourceAwsElasticacheParameterGroupCreate(
 func resourceAwsElasticacheParameterGroupRead(
@@ -2181,6 +2192,7 @@ func resourceAwsElastiCacheModifyParameterGroup(
 func flattenElastiCacheParameters(
 func expandElastiCacheParameters(
 func expandElastiCacheParameter(
+func init(
 func resourceAwsElasticacheReplicationGroup(
 func resourceAwsElasticacheReplicationGroupCreate(
 func resourceAwsElasticacheReplicationGroupRead(
@@ -2210,6 +2222,7 @@ func resourceAwsElasticacheSubnetGroupCreate(
 func resourceAwsElasticacheSubnetGroupRead(
 func resourceAwsElasticacheSubnetGroupUpdate(
 func resourceAwsElasticacheSubnetGroupDelete(
+func init(
 func resourceAwsElasticBeanstalkApplication(
 func resourceAwsElasticBeanstalkApplicationCreate(
 func resourceAwsElasticBeanstalkApplicationUpdate(
@@ -5517,7 +5530,6 @@ func resourceAwsVpcSetDefaultSecurityGroup(
 func resourceAwsVpcSetDefaultRouteTable(
 func resourceAwsVpcSetMainRouteTable(
 func resourceAwsVpcInstanceImport(
-func awsVpcDescribeVpcAttribute(
 func vpcDescribe(
 func waitForEc2VpcIpv6CidrBlockAssociationCreate(
 func waitForEc2VpcIpv6CidrBlockAssociationDelete(

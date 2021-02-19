@@ -6,4 +6,3 @@ func awsElasticTranscoderPipelineWithPerms(
 func awsElasticTranscoderNotifications(
 func awsElasticTranscoderNotifications_update(
 func awsTerminateInstance(
-func awsVpcDescribeVpcAttribute(
