@@ -4568,6 +4568,7 @@ func testAccInstanceConfigBlockDeviceTagsVolumeTagsUpdate(
 func testAccInstanceConfigTagsUpdate(
 func testAccInstanceConfigWithoutInstanceProfile(
 func testAccInstanceConfigWithInstanceProfile(
+func testAccInstanceConfigWithInstanceProfilePath(
 func testAccInstanceConfigPrivateIP(
 func testAccInstanceConfigEmptyPrivateIP(
 func testAccInstanceConfigAssociatePublicIPAndPrivateIP(

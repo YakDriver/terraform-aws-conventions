@@ -2979,6 +2979,7 @@ func testAccInstanceConfigBlockDeviceTagsVolumeTagsUpdate() string {
 func testAccInstanceConfigTagsUpdate() string {
 func testAccInstanceConfigWithoutInstanceProfile(rName string) string {
 func testAccInstanceConfigWithInstanceProfile(rName string) string {
+func testAccInstanceConfigWithInstanceProfilePath(rName string) string {
 func testAccInstanceConfigPrivateIP(rName string) string {
 func testAccInstanceConfigEmptyPrivateIP(rName string) string {
 func testAccInstanceConfigAssociatePublicIPAndPrivateIP(rName string) string {

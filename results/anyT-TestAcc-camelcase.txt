@@ -982,6 +982,7 @@ func TestAccAWSInstance_placementGroup(
 func TestAccAWSInstance_ipv6AddressCountAndSingleAddressCausesError(
 func TestAccAWSInstance_instanceProfileChange(
 func TestAccAWSInstance_withIamInstanceProfile(
+func TestAccAWSInstance_withIamInstanceProfilePath(
 func TestAccAWSInstance_privateIP(
 func TestAccAWSInstance_associatePublicIPAndPrivateIP(
 func TestAccAWSInstance_keyPairCheck(

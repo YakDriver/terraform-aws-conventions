@@ -3236,6 +3236,7 @@ func TestAccAWSInstance_NetworkInstanceVPCSecurityGroupIDs(
 func TestAccAWSInstance_tags(
 func TestAccAWSInstance_instanceProfileChange(
 func TestAccAWSInstance_withIamInstanceProfile(
+func TestAccAWSInstance_withIamInstanceProfilePath(
 func TestAccAWSInstance_privateIP(
 func TestAccAWSInstance_associatePublicIPAndPrivateIP(
 func TestAccAWSInstance_keyPairCheck(
