@@ -951,6 +951,9 @@ func TestAccAWSIAMRole_basicWithDescription(
 func TestAccAWSIAMRole_namePrefix(
 func TestAccAWSIAMRole_testNameChange(
 func TestAccAWSIAMRole_badJSON(
+func TestAccAWSIAMRole_policyBasicInline(
+func TestAccAWSIAMRole_policyBasicInlineEmpty(
+func TestAccAWSIAMRole_policyBasicManaged(
 func testAccAWSIAMRoleConfig_badJson(
 func testAccAWSIAMRoleConfig_tagsUpdate(
 func TestAccAWSUserLoginProfile_keybaseDoesntExist(

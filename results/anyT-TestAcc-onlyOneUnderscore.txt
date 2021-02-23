@@ -17,6 +17,11 @@ func TestAccDataSourceAwsApiGatewayDomainName_basic(
 func testAccDataSourceAwsApiGatewayDomainNameConfig_RegionalCertificateArn(
 func TestAccDataSourceAwsApiGatewayResource_basic(
 func TestAccDataSourceAwsApiGatewayRestApi_basic(
+func TestAccAWSAPIGatewayV2ApisDataSource_Name(
+func TestAccAWSAPIGatewayV2ApisDataSource_ProtocolType(
+func TestAccAWSAPIGatewayV2ApisDataSource_Tags(
+func TestAccAWSAPIGatewayV2ApiDataSource_Http(
+func TestAccAWSAPIGatewayV2ApiDataSource_WebSocket(
 func TestAccDataSourceAwsApiGatewayVpcLink_basic(
 func TestAccDataSourceAwsArn_basic(
 func TestAccAWSAutoscalingGroups_basic(
@@ -3111,6 +3116,9 @@ func TestAccAWSIAMRole_disappears(
 func TestAccAWSIAMRole_MaxSessionDuration(
 func TestAccAWSIAMRole_PermissionsBoundary(
 func TestAccAWSIAMRole_tags(
+func TestAccAWSIAMRole_policyBasicInline(
+func TestAccAWSIAMRole_policyBasicInlineEmpty(
+func TestAccAWSIAMRole_policyBasicManaged(
 func testAccCheckIAMRoleConfig_MaxSessionDuration(
 func testAccCheckIAMRoleConfig_PermissionsBoundary(
 func testAccAWSIAMRoleConfig_badJson(

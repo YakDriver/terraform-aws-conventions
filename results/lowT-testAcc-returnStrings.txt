@@ -18,6 +18,12 @@ func testAccDataSourceAwsApiGatewayApiKeyConfig(r string) string {
 func testAccDataSourceAwsApiGatewayDomainNameConfig_RegionalCertificateArn(domainName, key, certificate string) string {
 func testAccDataSourceAwsApiGatewayResourceConfig(r string) string {
 func testAccDataSourceAwsApiGatewayRestApiConfigName() string {
+func testAccAWSAPIGatewayV2ApisDataSourceConfigBase(rName1, rName2 string) string {
+func testAccAWSAPIGatewayV2ApisDataSourceConfigName(rName1, rName2 string) string {
+func testAccAWSAPIGatewayV2ApisDataSourceConfigProtocolType(rName1, rName2 string) string {
+func testAccAWSAPIGatewayV2ApisDataSourceConfigTags(rName1, rName2 string) string {
+func testAccAWSAPIGatewayV2ApiDataSourceConfigHttp(rName string) string {
+func testAccAWSAPIGatewayV2ApiDataSourceConfigWebSocket(rName string) string {
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(r string) string {
 func testAccDataSourceAwsArnConfig(arn string) string {
 func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
@@ -1068,6 +1074,7 @@ func testAccAwsBackupPlanConfigRuleCopyActionMultiple(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionNoLifecycle(rName string) string {
 func testAccAwsBackupPlanConfigAdvancedBackupSetting(rName string) string {
+func testAccAwsBackupPlanConfigAdvancedBackupSettingUpdated(rName string) string {
 func testAccBackupRegionSettingsConfig1(rName string) string {
 func testAccBackupRegionSettingsConfig2(rName string) string {
 func testAccBackupSelectionConfigBase(rName string) string {
@@ -2813,6 +2820,18 @@ func testAccAWSIAMRoleConfig_badJson(rName string) string {
 func testAccAWSIAMRoleConfig_force_detach_policies(rName string) string {
 func testAccAWSIAMRoleConfig_tags(rName string) string {
 func testAccAWSIAMRoleConfig_tagsUpdate(rName string) string {
+func testAccAWSRolePolicyInlineConfig(roleName, policyName string) string {
+func testAccAWSRolePolicyInlineConfigUpdate(roleName, policyName2, policyName3 string) string {
+func testAccAWSRolePolicyInlineConfigUpdateDown(roleName, policyName3 string) string {
+func testAccAWSRolePolicyManagedConfig(roleName, policyName string) string {
+func testAccAWSRolePolicyManagedConfigUpdate(roleName, policyName1, policyName2, policyName3 string) string {
+func testAccAWSRolePolicyManagedConfigUpdateDown(roleName, policyName1, policyName2, policyName3 string) string {
+func testAccAWSRolePolicyExtraManagedConfig(roleName, policyName1, policyName2 string) string {
+func testAccAWSRolePolicyExtraInlineConfig() string {
+func testAccAWSRolePolicyNoInlineConfig(roleName string) string {
+func testAccAWSRolePolicyNoManagedConfig(roleName, policyName string) string {
+func testAccAWSRolePolicyEmptyInlineConfig(roleName string) string {
+func testAccAWSRolePolicyEmptyManagedConfig(roleName, policyName string) string {
 func testAccIAMSamlProviderConfig(rName string) string {
 func testAccIAMSamlProviderConfigUpdate(rName string) string {
 func testAccIAMServerCertConfig(rName, key, certificate string) string {

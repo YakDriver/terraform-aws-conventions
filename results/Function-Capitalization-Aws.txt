@@ -38,6 +38,10 @@ func dataSourceAwsApiGatewayRestApiRead(
 func TestAccDataSourceAwsApiGatewayRestApi_basic(
 func TestAccDataSourceAwsApiGatewayRestApi_EndpointConfiguration_VpcEndpointIds(
 func testAccDataSourceAwsApiGatewayRestApiConfigName(
+func dataSourceAwsApiGatewayV2Api(
+func dataSourceAwsAwsApiGatewayV2ApiRead(
+func dataSourceAwsApiGatewayV2Apis(
+func dataSourceAwsAwsApiGatewayV2ApisRead(
 func dataSourceAwsApiGatewayVpcLink(
 func dataSourceAwsApiGatewayVpcLinkRead(
 func TestAccDataSourceAwsApiGatewayVpcLink_basic(
@@ -1540,6 +1544,7 @@ func testAccAwsBackupPlanConfigRuleCopyActionMultiple(
 func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(
 func testAccAwsBackupPlanConfigRuleCopyActionNoLifecycle(
 func testAccAwsBackupPlanConfigAdvancedBackupSetting(
+func testAccAwsBackupPlanConfigAdvancedBackupSettingUpdated(
 func resourceAwsBackupRegionSettings(
 func resourceAwsBackupRegionSettingsUpdate(
 func resourceAwsBackupRegionSettingsRead(
@@ -3374,10 +3379,6 @@ func resourceAwsIamRoleCreate(
 func resourceAwsIamRoleRead(
 func resourceAwsIamRoleUpdate(
 func resourceAwsIamRoleDelete(
-func deleteAwsIamRole(
-func deleteAwsIamRoleInstanceProfiles(
-func deleteAwsIamRolePolicyAttachments(
-func deleteAwsIamRolePolicies(
 func resourceAwsIamRolePolicyAttachment(
 func resourceAwsIamRolePolicyAttachmentCreate(
 func resourceAwsIamRolePolicyAttachmentRead(
