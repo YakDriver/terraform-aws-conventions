@@ -1804,6 +1804,7 @@ func TestAccAWSDlmLifecyclePolicy_basic(
 func TestAccAWSDlmLifecyclePolicy_Full(
 func TestAccAWSDlmLifecyclePolicy_Tags(
 func TestAccAWSDmsCertificate_basic(
+func TestAccAWSDmsCertificate_tags(
 func TestAccAwsDmsEndpoint_basic(
 func TestAccAwsDmsEndpoint_S3(
 func TestAccAwsDmsEndpoint_S3_ExtraConnectionAttributes(

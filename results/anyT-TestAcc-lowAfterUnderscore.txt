@@ -1583,6 +1583,7 @@ func testAccDirectoryServiceDirectoryConfig_withSso_modified(
 func TestAccAWSDirectoryServiceLogSubscription_basic(
 func TestAccAWSDlmLifecyclePolicy_basic(
 func TestAccAWSDmsCertificate_basic(
+func TestAccAWSDmsCertificate_tags(
 func TestAccAwsDmsEndpoint_basic(
 func TestAccAWSDmsEventSubscription_basic(
 func TestAccAWSDmsEventSubscription_disappears(

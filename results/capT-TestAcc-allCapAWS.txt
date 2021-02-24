@@ -1332,6 +1332,7 @@ func TestAccAWSDlmLifecyclePolicy_basic(
 func TestAccAWSDlmLifecyclePolicy_Full(
 func TestAccAWSDlmLifecyclePolicy_Tags(
 func TestAccAWSDmsCertificate_basic(
+func TestAccAWSDmsCertificate_tags(
 func TestAccAWSDmsEventSubscription_basic(
 func TestAccAWSDmsEventSubscription_disappears(
 func TestAccAWSDmsEventSubscription_Enabled(

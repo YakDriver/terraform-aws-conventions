@@ -947,6 +947,7 @@ func resourceAwsDlmLifecyclePolicyDelete(
 func resourceAwsDmsCertificate(
 func resourceAwsDmsCertificateCreate(
 func resourceAwsDmsCertificateRead(
+func resourceAwsDmsCertificateUpdate(
 func resourceAwsDmsCertificateDelete(
 func resourceAwsDmsCertificateSetState(
 func resourceAwsDmsEndpoint(

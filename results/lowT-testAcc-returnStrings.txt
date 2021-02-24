@@ -1848,6 +1848,8 @@ func testAccDirectoryServiceDirectoryConfig_withAlias(alias string) string {
 func testAccDirectoryServiceDirectoryConfig_withSso(alias string) string {
 func testAccDirectoryServiceDirectoryConfig_withSso_modified(alias string) string {
 func testAccDirectoryServiceLogSubscriptionConfig(logGroupName string) string {
+func testAccAWSDmsCertificateConfigTags1(randId, tagKey1, tagValue1 string) string {
+func testAccAWSDmsCertificateConfigTags2(randId, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccDmsEventSubscriptionConfigBase(rName string) string {
 func testAccDmsEventSubscriptionConfigEnabled(rName string, enabled bool) string {
 func testAccDmsEventSubscriptionConfigEventCategories2(rName string, eventCategory1 string, eventCategory2 string) string {

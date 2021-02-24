@@ -3271,6 +3271,9 @@ func TestAccAWSDlmLifecyclePolicy_Full(
 func TestAccAWSDlmLifecyclePolicy_Tags(
 func testAccPreCheckAWSDlm(
 func TestAccAWSDmsCertificate_basic(
+func TestAccAWSDmsCertificate_tags(
+func testAccAWSDmsCertificateConfigTags1(
+func testAccAWSDmsCertificateConfigTags2(
 func TestAccAwsDmsEndpoint_DocDB(
 func dmsEndpointDocDBConfig(
 func dmsEndpointDocDBConfigUpdate(

@@ -5044,12 +5044,15 @@ func dlmLifecyclePolicyConfigTags2(
 func resourceAwsDmsCertificate(
 func resourceAwsDmsCertificateCreate(
 func resourceAwsDmsCertificateRead(
+func resourceAwsDmsCertificateUpdate(
 func resourceAwsDmsCertificateDelete(
 func resourceAwsDmsCertificateSetState(
 func dmsCertificateDestroy(
 func checkDmsCertificateExists(
 func checkDmsCertificateExistsWithProviders(
 func dmsCertificateConfig(
+func testAccAWSDmsCertificateConfigTags1(
+func testAccAWSDmsCertificateConfigTags2(
 func resourceAwsDmsEndpoint(
 func resourceAwsDmsEndpointCreate(
 func resourceAwsDmsEndpointRead(

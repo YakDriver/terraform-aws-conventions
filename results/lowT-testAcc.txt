@@ -2700,6 +2700,8 @@ func testAccCheckAwsDirectoryServiceLogSubscriptionDestroy(
 func testAccCheckAwsDirectoryServiceLogSubscriptionExists(
 func testAccDirectoryServiceLogSubscriptionConfig(
 func testAccPreCheckAWSDlm(
+func testAccAWSDmsCertificateConfigTags1(
+func testAccAWSDmsCertificateConfigTags2(
 func testAccCheckDmsEventSubscriptionDestroy(
 func testAccCheckDmsEventSubscriptionDisappears(
 func testAccCheckDmsEventSubscriptionExists(
