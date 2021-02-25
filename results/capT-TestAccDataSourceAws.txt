@@ -162,7 +162,7 @@ func TestAccDataSourceAwsVpcs_tags(
 func TestAccDataSourceAwsVpcs_filters(
 func TestAccDataSourceAwsVpc_basic(
 func TestAccDataSourceAwsVpc_ipv6Associated(
-func TestAccDataSourceAwsVpc_multipleCidr(
+func TestAccDataSourceAwsVpc_CidrBlockAssociations_Multiple(
 func TestAccDataSourceAwsVpnGateway_unattached(
 func TestAccDataSourceAwsVpnGateway_attached(
 func TestAccDataSourceAwsWafIPSet_basic(

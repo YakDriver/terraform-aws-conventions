@@ -28,6 +28,11 @@ func buildEC2TagSet(
 func baseAWSCognitoIdentityPoolRolesAttachmentConfig(
 func decodeCognitoIdentityProviderID(
 func decodeCognitoResourceServerID(
+func resourceAwsCognitoUserPoolUICustomization(
+func resourceAwsCognitoUserPoolUICustomizationPut(
+func resourceAwsCognitoUserPoolUICustomizationRead(
+func resourceAwsCognitoUserPoolUICustomizationDelete(
+func parseCognitoUserPoolUICustomizationID(
 func resourceAwsConfigAggregateAuthorizationParseID(
 func resourceAwsDbProxyTargetParseID(
 func revokeAllNetworkACLEntries(
@@ -363,8 +368,7 @@ func resourceAwsSimpleDBDomainRead(
 func resourceAwsSimpleDBDomainDelete(
 func resourceAwsSnapshotCreateVolumePermissionParseID(
 func decodeResourceAwsSnsPlatformApplicationID(
-func subscribeToSNSTopic(
-func findSubscriptionByNonID(
+func expandSNSSubscriptionAttributes(
 func expandSSMDocumentParameters(
 func expandSSMAssociationOutputLocation(
 func updateAwsSSMDocument(

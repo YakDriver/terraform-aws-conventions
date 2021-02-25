@@ -429,7 +429,7 @@ func testAccDataSourceAwsVpcsConfig_tags(rName string) string {
 func testAccDataSourceAwsVpcsConfig_filters(rName string) string {
 func testAccDataSourceAwsVpcConfigIpv6(cidr, tag string) string {
 func testAccDataSourceAwsVpcConfig(cidr, tag string) string {
-func testAccDataSourceAwsVpcConfigMultipleCidr(octet int) string {
+func testAccDataSourceAwsVpcConfigCidrBlockAssociationsMultiple() string {
 func testAccDataSourceAwsVpnGatewayUnattachedConfig(rInt int) string {
 func testAccDataSourceAwsVpnGatewayAttachedConfig(rInt int) string {
 func testAccDataSourceAwsWafRateBasedRuleConfig_Name(name string) string {
@@ -1150,8 +1150,9 @@ func testAccAwsCloudWatchCompositeAlarmConfig_updateOkActions(suffix string) str
 func testAccAwsCloudWatchCompositeAlarmConfig_allActions(suffix string) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
 func testAccAWSCloudWatchDashboardConfig_updateBody(rInt int) string {
-func testAccAWSCloudWatchArchiveConfig(name string) string {
-func testAccAWSCloudWatchArchiveConfig_updateAttributes(name string) string {
+func testAccAWSCloudWatchEventArchiveConfig(name string) string {
+func testAccAWSCloudWatchEventArchiveConfig_updateAttributes(name string) string {
+func testAccAWSCloudWatchEventArchiveConfig_retentionOnCreation(name string) string {
 func testAccAWSCloudWatchEventBusConfig(name string) string {
 func testAccAWSCloudWatchEventBusConfig_Tags1(name, key, value string) string {
 func testAccAWSCloudWatchEventBusConfig_Tags2(name, key1, value1, key2, value2 string) string {
@@ -1443,6 +1444,12 @@ func testAccAWSCognitoUserPoolConfig_withSchemaAttributesUpdated(name string) st
 func testAccAWSCognitoUserPoolConfig_withVerificationMessageTemplate(name string) string {
 func testAccAWSCognitoUserPoolConfig_withVerificationMessageTemplate_DefaultEmailOption(name string) string {
 func testAccAWSCognitoUserPoolConfig_update(name string, mfaconfig, smsAuthMsg string) string {
+func testAccAWSCognitoUserPoolUICustomizationConfig_AllClients_CSS(rName, css string) string {
+func testAccAWSCognitoUserPoolUICustomizationConfig_AllClients_Image(rName, filename string) string {
+func testAccAWSCognitoUserPoolUICustomizationConfig_AllClients_CSSAndImage(rName, css, filename string) string {
+func testAccAWSCognitoUserPoolUICustomizationConfig_Client_CSS(rName, css string) string {
+func testAccAWSCognitoUserPoolUICustomizationConfig_Client_Image(rName, filename string) string {
+func testAccAWSCognitoUserPoolUICustomizationConfig_ClientAndAllCustomizations_CSS(rName, allCSS, clientCSS string) string {
 func testAccAWSConfigAggregateAuthorizationConfig_basic(rString string) string {
 func testAccAWSConfigAggregateAuthorizationConfig_tags(rString, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccConfigConfigRuleConfig_base(rName string) string {
@@ -2015,6 +2022,14 @@ func testAccAWSEc2TransitGatewayVpcAttachmentConfigTransitGatewayDefaultRouteTab
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigTransitGatewayDefaultRouteTableAssociation(transitGatewayDefaultRouteTableAssociation bool) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigTransitGatewayDefaultRouteTablePropagation(transitGatewayDefaultRouteTablePropagation bool) string {
 func testAccEcrLifecyclePolicyConfig(rName string) string {
+func testAccAWSEcrPublicRepositoryConfig(rName string) string {
+func testAccAWSEcrPublicRepositoryConfigForceDestroy(rName string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigAboutText(rName string, aboutText string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigArchitectures(rName string, architecture string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigDescription(rName string, description string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigOperatingSystems(rName string, operatingSystem string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigUsageText(rName string, usageText string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigLogoImageBlob(rName string) string {
 func testAccAWSEcrRepositoryConfig(rName string) string {
 func testAccAWSEcrRepositoryConfig_tags(rName string) string {
 func testAccAWSEcrRepositoryConfig_tagsChanged(rName string) string {
@@ -4091,13 +4106,15 @@ func testAccAwsSnsPlatformApplicationConfig_basic(name string, platform *testAcc
 func testAccAwsSnsPlatformApplicationConfig_basicAttribute(name string, platform *testAccAwsSnsPlatformApplicationPlatform, attributeKey, attributeValue string) string {
 func testAccAwsSnsPlatformApplicationConfig_iamRoleAttribute(name string, platform *testAccAwsSnsPlatformApplicationPlatform, attributeKey, iamRoleName string) string {
 func testAccAwsSnsPlatformApplicationConfig_snsTopicAttribute(name string, platform *testAccAwsSnsPlatformApplicationPlatform, attributeKey, snsTopicName string) string {
-func testAccAWSSNSTopicSubscriptionConfig(i int) string {
-func testAccAWSSNSTopicSubscriptionConfig_filterPolicy(i int, policy string) string {
-func testAccAWSSNSTopicSubscriptionConfig_deliveryPolicy(i int, policy string) string {
-func testAccAWSSNSTopicSubscriptionConfig_redrivePolicy(i int, dlqName string) string {
-func testAccAWSSNSTopicSubscriptionConfig_rawMessageDelivery(i int, rawMessageDelivery bool) string {
-func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingEndpoint(i int) string {
-func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingSecuredEndpoint(i int, username, password string) string {
+func testAccAWSSNSTopicSubscriptionConfig(rName string) string {
+func testAccAWSSNSTopicSubscriptionConfig_filterPolicy(rName, policy string) string {
+func testAccAWSSNSTopicSubscriptionConfig_deliveryPolicy(rName, policy string) string {
+func testAccAWSSNSTopicSubscriptionConfig_redrivePolicy(rName, dlqName string) string {
+func testAccAWSSNSTopicSubscriptionConfig_rawMessageDelivery(rName string, rawMessageDelivery bool) string {
+func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingEndpoint(rName string) string {
+func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingSecuredEndpoint(rName string) string {
+func testAccAWSSNSTopicSubscriptionEmailConfig(rName string) string {
+func testAccAWSSNSTopicSubscriptionConfig_firehose(rName string) string {
 func testAccAWSSNSTopicConfig_withName(r string) string {
 func testAccAWSSNSTopicConfig_withNamePrefix() string {
 func testAccAWSSNSTopicConfig_withIAMRole(r string) string {

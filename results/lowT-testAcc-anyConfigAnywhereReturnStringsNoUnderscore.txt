@@ -273,7 +273,7 @@ func testAccDataSourceAwsVpcPeeringConnectionConfigVpcId() string {
 func testAccDataSourceAwsVpcsConfig() string {
 func testAccDataSourceAwsVpcConfigIpv6(cidr, tag string) string {
 func testAccDataSourceAwsVpcConfig(cidr, tag string) string {
-func testAccDataSourceAwsVpcConfigMultipleCidr(octet int) string {
+func testAccDataSourceAwsVpcConfigCidrBlockAssociationsMultiple() string {
 func testAccDataSourceAwsVpnGatewayUnattachedConfig(rInt int) string {
 func testAccDataSourceAwsVpnGatewayAttachedConfig(rInt int) string {
 func testAccDataSourceAwsWorkspaceBundleConfig(bundleID string) string {
@@ -635,7 +635,7 @@ func testAccAWSCloudTrailConfigMultiRegion(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigOrganization(cloudTrailRandInt int) string {
 func testAccAwsCloudWatchCompositeAlarmBaseConfig(suffix string) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
-func testAccAWSCloudWatchArchiveConfig(name string) string {
+func testAccAWSCloudWatchEventArchiveConfig(name string) string {
 func testAccAWSCloudWatchEventBusConfig(name string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigBasic(principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigDefaultEventBusName(principal, statementID string) string {
@@ -1062,6 +1062,14 @@ func testAccAWSEc2TransitGatewayVpcAttachmentConfigTransitGatewayDefaultRouteTab
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigTransitGatewayDefaultRouteTableAssociation(transitGatewayDefaultRouteTableAssociation bool) string {
 func testAccAWSEc2TransitGatewayVpcAttachmentConfigTransitGatewayDefaultRouteTablePropagation(transitGatewayDefaultRouteTablePropagation bool) string {
 func testAccEcrLifecyclePolicyConfig(rName string) string {
+func testAccAWSEcrPublicRepositoryConfig(rName string) string {
+func testAccAWSEcrPublicRepositoryConfigForceDestroy(rName string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigAboutText(rName string, aboutText string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigArchitectures(rName string, architecture string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigDescription(rName string, description string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigOperatingSystems(rName string, operatingSystem string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigUsageText(rName string, usageText string) string {
+func testAccAWSEcrPublicRepositoryCatalogDataConfigLogoImageBlob(rName string) string {
 func testAccAWSEcrRepositoryConfig(rName string) string {
 func testAccAWSEcsCapacityProviderConfigBase(rName string) string {
 func testAccAWSEcsCapacityProviderConfig(rName string) string {
@@ -2362,7 +2370,8 @@ func testAccAWSSignerSigningProfileConfigProvidedName(profileName string) string
 func testAccAWSSignerSigningProfileConfigTags(namePrefix string) string {
 func testAccAWSSignerSigningProfileConfigSVP(namePrefix string) string {
 func testAccAWSSnapshotCreateVolumePermissionConfig(includeCreateVolumePermission bool, accountID string) string {
-func testAccAWSSNSTopicSubscriptionConfig(i int) string {
+func testAccAWSSNSTopicSubscriptionConfig(rName string) string {
+func testAccAWSSNSTopicSubscriptionEmailConfig(rName string) string {
 func testAccAWSSNSTopicConfigTags1(r, tag1Key, tag1Value string) string {
 func testAccAWSSNSTopicConfigTags2(r, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSSpotFleetRequestConfigBase(rName string) string {

@@ -461,6 +461,7 @@ func flattenCognitoSoftwareTokenMfaConfiguration(
 func expandCognitoUserPoolAccountRecoverySettingConfig(
 func flattenCognitoUserPoolAccountRecoverySettingConfig(
 func init(
+func parseCognitoUserPoolUICustomizationID(
 func describeConfigAggregateAuthorizations(
 func init(
 func configRuleSourceDetailsHash(
@@ -707,6 +708,9 @@ func buildTrafficMirrorPortRangeRequest(
 func buildTrafficMirrorFilterRulePortRangeSchema(
 func init(
 func init(
+func init(
+func flattenEcrPublicRepositoryCatalogData(
+func expandEcrPublicRepositoryCatalogData(
 func init(
 func flattenImageScanningConfiguration(
 func expandEcrRepositoryEncryptionConfiguration(
@@ -2148,11 +2152,7 @@ func validateDeliverySamplingRate(
 func updateAwsSnsTopicAttribute(
 func getAccountIdFromSnsTopicArn(
 func buildDefaultSnsTopicPolicy(
-func getResourceAttributes(
-func subscribeToSNSTopic(
-func findSubscriptionByNonID(
-func subscriptionHasPendingConfirmation(
-func obfuscateEndpoint(
+func expandSNSSubscriptionAttributes(
 func snsSubscriptionAttributeUpdate(
 func (
 func (
@@ -2163,6 +2163,8 @@ func (
 func (
 func (
 func suppressEquivalentSnsTopicSubscriptionDeliveryPolicy(
+func normalizeSnsTopicSubscriptionDeliveryPolicy(
+func obfuscateEndpoint(
 func init(
 func buildSpotFleetLaunchSpecification(
 func readSpotFleetBlockDeviceMappingsFromConfig(

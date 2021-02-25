@@ -1,6 +1,10 @@
 func resourceAwsAPIGatewayV2ImportOpenAPI(
 func resourceAwsELBSticknessPolicyAssigned(
 func resourceAwsASGScheduledActionRetrieve(
+func resourceAwsCognitoUserPoolUICustomization(
+func resourceAwsCognitoUserPoolUICustomizationPut(
+func resourceAwsCognitoUserPoolUICustomizationRead(
+func resourceAwsCognitoUserPoolUICustomizationDelete(
 func resourceAwsConfigAggregateAuthorizationParseID(
 func resourceAwsDbProxyTargetParseID(
 func resourceAwsEc2DashIP(

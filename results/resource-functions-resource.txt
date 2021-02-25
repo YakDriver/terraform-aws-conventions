@@ -703,6 +703,10 @@ func resourceAwsCognitoUserPoolCreate(
 func resourceAwsCognitoUserPoolRead(
 func resourceAwsCognitoUserPoolUpdate(
 func resourceAwsCognitoUserPoolDelete(
+func resourceAwsCognitoUserPoolUICustomization(
+func resourceAwsCognitoUserPoolUICustomizationPut(
+func resourceAwsCognitoUserPoolUICustomizationRead(
+func resourceAwsCognitoUserPoolUICustomizationDelete(
 func resourceAwsConfigAggregateAuthorization(
 func resourceAwsConfigAggregateAuthorizationPut(
 func resourceAwsConfigAggregateAuthorizationRead(
@@ -1273,6 +1277,12 @@ func resourceAwsEcrLifecyclePolicy(
 func resourceAwsEcrLifecyclePolicyCreate(
 func resourceAwsEcrLifecyclePolicyRead(
 func resourceAwsEcrLifecyclePolicyDelete(
+func resourceAwsEcrPublicRepository(
+func resourceAwsEcrPublicRepositoryCreate(
+func resourceAwsEcrPublicRepositoryRead(
+func resourceAwsEcrPublicRepositoryDelete(
+func resourceAwsEcrPublicRepositoryUpdate(
+func resourceAwsEcrPublicRepositoryUpdateCatalogData(
 func resourceAwsEcrRepository(
 func resourceAwsEcrRepositoryCreate(
 func resourceAwsEcrRepositoryRead(
@@ -3049,8 +3059,8 @@ func resourceAwsSnsTopicPolicyRead(
 func resourceAwsSnsTopicPolicyDelete(
 func resourceAwsSnsTopicSubscription(
 func resourceAwsSnsTopicSubscriptionCreate(
-func resourceAwsSnsTopicSubscriptionUpdate(
 func resourceAwsSnsTopicSubscriptionRead(
+func resourceAwsSnsTopicSubscriptionUpdate(
 func resourceAwsSnsTopicSubscriptionDelete(
 func resourceAwsSpotDataFeedSubscription(
 func resourceAwsSpotDataFeedSubscriptionCreate(
