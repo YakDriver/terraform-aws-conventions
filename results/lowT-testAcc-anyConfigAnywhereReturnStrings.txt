@@ -950,6 +950,7 @@ func testAccAWSAutoScalingGroupConfig_withLaunchTemplate_toLaunchTemplateVersion
 func testAccAWSAutoScalingGroupConfig_LaunchTemplate_IAMInstanceProfile(rName string) string {
 func testAccAWSAutoScalingGroupConfig_LoadBalancers(rName string, elbCount int) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_Base(rName string) string {
+func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_Arm_Base(rName string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy(rName string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_CapacityRebalance(rName string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_InstancesDistribution_OnDemandAllocationStrategy(rName, onDemandAllocationStrategy string) string {
@@ -961,6 +962,7 @@ func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_InstancesDistribution
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_LaunchTemplateSpecification_LaunchTemplateName(rName string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_LaunchTemplateSpecification_Version(rName, version string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_Override_InstanceType(rName, instanceType string) string {
+func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_Override_InstanceType_With_LaunchTemplateSpecification(rName, rName2 string) string {
 func testAccAWSAutoScalingGroupConfig_MixedInstancesPolicy_LaunchTemplate_Override_WeightedCapacity(rName string) string {
 func testAccAWSAutoScalingGroupPartitionConfig(rName string) string {
 func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Basic() string {
@@ -2525,6 +2527,7 @@ func testAccAWSGlueSecurityConfigurationConfig_S3Encryption_S3EncryptionMode_SSE
 func testAccAWSGlueTriggerConfig_Description(rName, description string) string {
 func testAccAWSGlueTriggerConfig_Enabled(rName string, enabled bool) string {
 func testAccAWSGlueTriggerConfig_OnDemand(rName string) string {
+func testAccAWSGlueTriggerConfig_OnDemandEnabled(rName string, enabled bool) string {
 func testAccAWSGlueTriggerConfig_Predicate(rName, state string) string {
 func testAccAWSGlueTriggerConfig_Crawler(rName, state string) string {
 func testAccAWSGlueTriggerConfig_Schedule(rName, schedule string) string {
@@ -3884,6 +3887,11 @@ func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigKernalSpecs1(rName
 func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigKernalSpecs2(rName string) string {
 func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig1(rName string) string {
 func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig2(rName string) string {
+func testAccAWSSagemakerAppConfigBase(rName string) string {
+func testAccAWSSagemakerAppBasicConfig(rName string) string {
+func testAccAWSSagemakerAppConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSagemakerAppConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSagemakerAppResourceSpecConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryBasicConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigBranchConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigSecretConfig(rName string) string {
@@ -3900,6 +3908,7 @@ func testAccAWSSagemakerDomainConfigTensorBoardAppSettings(rName string) string 
 func testAccAWSSagemakerDomainConfigTensorBoardAppSettingsWithImage(rName string) string {
 func testAccAWSSagemakerDomainConfigJupyterServerAppSettings(rName string) string {
 func testAccAWSSagemakerDomainConfigKernelGatewayAppSettings(rName string) string {
+func testAccAWSSagemakerDomainConfigKernelGatewayAppSettingsCustomImage(rName, baseImage string) string {
 func testAccSagemakerEndpointConfigurationConfig_Base(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_Basic(rName string) string {
 func testAccSagemakerEndpointConfigurationConfig_ProductionVariants_InitialVariantWeight(rName string) string {

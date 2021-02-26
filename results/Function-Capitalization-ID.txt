@@ -171,6 +171,7 @@ func resourceAwsS3BucketAnalyticsConfigurationParseID(
 func resourceAwsS3BucketInventoryParseID(
 func resourceAwsS3BucketMetricParseID(
 func TestResourceAwsS3BucketMetricParseID(
+func decodeSagemakerAppID(
 func decodeSagemakerDomainID(
 func TestAccAwsSecretsManagerSecret_KmsKeyID(
 func testAccAwsSecretsManagerSecretConfig_KmsKeyID(

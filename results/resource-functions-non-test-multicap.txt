@@ -348,6 +348,7 @@ func BucketCannedACL_Values(
 func resourceAwsS3BucketInventoryParseID(
 func resourceAwsS3BucketMetricParseID(
 func resourceAwsS3BucketObjectSetKMS(
+func decodeSagemakerAppID(
 func decodeSagemakerDomainID(
 func decodeSecretsManagerSecretVersionID(
 func resourceAwsSecurityGroupIPPermGather(

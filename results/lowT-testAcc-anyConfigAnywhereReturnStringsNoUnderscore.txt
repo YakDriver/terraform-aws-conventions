@@ -2199,6 +2199,11 @@ func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigKernalSpecs1(rName
 func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigKernalSpecs2(rName string) string {
 func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig1(rName string) string {
 func testAccAWSSagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig2(rName string) string {
+func testAccAWSSagemakerAppConfigBase(rName string) string {
+func testAccAWSSagemakerAppBasicConfig(rName string) string {
+func testAccAWSSagemakerAppConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSagemakerAppConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSagemakerAppResourceSpecConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryBasicConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigBranchConfig(rName string) string {
 func testAccAWSSagemakerCodeRepositoryGitConfigSecretConfig(rName string) string {
@@ -2215,6 +2220,7 @@ func testAccAWSSagemakerDomainConfigTensorBoardAppSettings(rName string) string 
 func testAccAWSSagemakerDomainConfigTensorBoardAppSettingsWithImage(rName string) string {
 func testAccAWSSagemakerDomainConfigJupyterServerAppSettings(rName string) string {
 func testAccAWSSagemakerDomainConfigKernelGatewayAppSettings(rName string) string {
+func testAccAWSSagemakerDomainConfigKernelGatewayAppSettingsCustomImage(rName, baseImage string) string {
 func testAccSagemakerEndpointConfigurationConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccSagemakerEndpointConfigurationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSagemakerEndpointConfigurationDataCaptureConfig(rName string) string {

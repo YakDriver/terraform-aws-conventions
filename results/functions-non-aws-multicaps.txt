@@ -3110,6 +3110,7 @@ func TestAccAWSS3Bucket_enableDefaultEncryption_whenAES256IsUsed(
 func testAccAWSS3BucketEnableDefaultEncryptionWithAES256(
 func testAccAWSS3BucketConfigWithCORS(
 func testAccAWSS3BucketConfigWithCORSEmptyOrigin(
+func decodeSagemakerAppID(
 func decodeSagemakerDomainID(
 func testAccAWSSagemakerDomainKMSConfig(
 func testAccAWSSagemakerNotebookInstanceKMSConfig(

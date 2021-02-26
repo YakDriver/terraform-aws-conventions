@@ -4738,6 +4738,12 @@ func resourceAwsS3OutpostsEndpointDelete(
 func resourceAwsS3OutpostsEndpointImportState(
 func flattenS3outpostsNetworkInterfaces(
 func flattenS3outpostsNetworkInterface(
+func resourceAwsSagemakerApp(
+func resourceAwsSagemakerAppCreate(
+func resourceAwsSagemakerAppRead(
+func resourceAwsSagemakerAppUpdate(
+func resourceAwsSagemakerAppDelete(
+func decodeSagemakerAppID(
 func resourceAwsSagemakerAppImageConfig(
 func resourceAwsSagemakerAppImageConfigCreate(
 func resourceAwsSagemakerAppImageConfigRead(
@@ -4749,6 +4755,7 @@ func expandSagemakerAppImageConfigKernelGatewayImageConfigKernelSpecs(
 func flattenSagemakerAppImageConfigKernelGatewayImageConfig(
 func flattenSagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig(
 func flattenSagemakerAppImageConfigKernelGatewayImageConfigKernelSpecs(
+func init(
 func init(
 func resourceAwsSagemakerCodeRepository(
 func resourceAwsSagemakerCodeRepositoryCreate(

@@ -2766,6 +2766,11 @@ func resourceAwsS3OutpostsEndpointCreate(
 func resourceAwsS3OutpostsEndpointRead(
 func resourceAwsS3OutpostsEndpointDelete(
 func resourceAwsS3OutpostsEndpointImportState(
+func resourceAwsSagemakerApp(
+func resourceAwsSagemakerAppCreate(
+func resourceAwsSagemakerAppRead(
+func resourceAwsSagemakerAppUpdate(
+func resourceAwsSagemakerAppDelete(
 func resourceAwsSagemakerAppImageConfig(
 func resourceAwsSagemakerAppImageConfigCreate(
 func resourceAwsSagemakerAppImageConfigRead(
