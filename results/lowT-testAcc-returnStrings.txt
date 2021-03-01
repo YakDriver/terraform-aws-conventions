@@ -4017,6 +4017,9 @@ func testAccRoute53HealthCheckConfigTags1(tag1Key, tag1Value string) string {
 func testAccRoute53HealthCheckConfigTags2(tag1Key, tag1Value, tagKey2, tagValue2 string) string {
 func testAccRoute53HealthCheckConfig_withHealthCheckRegions(regions ...string) string {
 func testAccRoute53HealthCheckConfigDisabled(disabled bool) string {
+func testAccAwsRoute53HostedZoneDnssecConfig_Base(rName string) string {
+func testAccAwsRoute53HostedZoneDnssecConfig(rName string) string {
+func testAccAwsRoute53HostedZoneDnssecConfig_SigningStatus(rName string, signingStatus string) string {
 func testAccAwsRoute53KeySigningKeyConfig_Base(rName string) string {
 func testAccAwsRoute53KeySigningKeyConfig_Name(rName string) string {
 func testAccAwsRoute53KeySigningKeyConfig_Status(rName string, status string) string {

@@ -2587,6 +2587,11 @@ func resourceAwsRoute53HealthCheckUpdate(
 func resourceAwsRoute53HealthCheckCreate(
 func resourceAwsRoute53HealthCheckRead(
 func resourceAwsRoute53HealthCheckDelete(
+func resourceAwsRoute53HostedZoneDnssec(
+func resourceAwsRoute53HostedZoneDnssecCreate(
+func resourceAwsRoute53HostedZoneDnssecRead(
+func resourceAwsRoute53HostedZoneDnssecUpdate(
+func resourceAwsRoute53HostedZoneDnssecDelete(
 func resourceAwsRoute53KeySigningKey(
 func resourceAwsRoute53KeySigningKeyCreate(
 func resourceAwsRoute53KeySigningKeyRead(

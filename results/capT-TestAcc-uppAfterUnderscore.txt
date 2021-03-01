@@ -1479,6 +1479,7 @@ func TestAccAWSRoute53HealthCheck_IpConfig(
 func TestAccAWSRoute53HealthCheck_Ipv6Config(
 func TestAccAWSRoute53HealthCheck_CloudWatchAlarmCheck(
 func TestAccAWSRoute53HealthCheck_Disabled(
+func TestAccAwsRoute53HostedZoneDnssec_SigningStatus(
 func TestAccAwsRoute53KeySigningKey_Status(
 func TestAccAWSRoute53Record_Alias_Elb(
 func TestAccAWSRoute53Record_Alias_S3(

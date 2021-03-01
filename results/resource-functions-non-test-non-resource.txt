@@ -1878,6 +1878,8 @@ func init(
 func extractResourceGroupResourceQuery(
 func expandNameServers(
 func cleanDelegationSetId(
+func route53HostedZoneDnssecDisable(
+func route53HostedZoneDnssecEnable(
 func init(
 func changeRoute53RecordSet(
 func waitForRoute53RecordSetToSync(

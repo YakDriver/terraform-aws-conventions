@@ -2045,6 +2045,7 @@ func testAccRoute53DelegationSetWithZonesConfig(refName, zoneName1, zoneName2 st
 func testAccRoute53HealthCheckConfigTags1(tag1Key, tag1Value string) string {
 func testAccRoute53HealthCheckConfigTags2(tag1Key, tag1Value, tagKey2, tagValue2 string) string {
 func testAccRoute53HealthCheckConfigDisabled(disabled bool) string {
+func testAccAwsRoute53HostedZoneDnssecConfig(rName string) string {
 func testAccCheckAWSRoute53QueryLogResourceConfigBasic1(rName string) string {
 func testAccRoute53RecordConfigAliasS3(rName string) string {
 func testAccRoute53RecordConfigHealthCheckIdSetIdentifier(setIdentifier string) string {

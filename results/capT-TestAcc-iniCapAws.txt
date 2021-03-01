@@ -347,6 +347,9 @@ func TestAccAwsRamResourceShare_basic(
 func TestAccAwsRamResourceShare_AllowExternalPrincipals(
 func TestAccAwsRamResourceShare_Name(
 func TestAccAwsRamResourceShare_Tags(
+func TestAccAwsRoute53HostedZoneDnssec_basic(
+func TestAccAwsRoute53HostedZoneDnssec_disappears(
+func TestAccAwsRoute53HostedZoneDnssec_SigningStatus(
 func TestAccAwsRoute53KeySigningKey_basic(
 func TestAccAwsRoute53KeySigningKey_disappears(
 func TestAccAwsRoute53KeySigningKey_Status(

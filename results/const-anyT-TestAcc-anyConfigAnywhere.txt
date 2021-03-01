@@ -268,6 +268,7 @@ const testAccRoute53WildCardRecordConfigUpdate =
 const testAccRoute53RecordConfigTXT =
 const testAccRoute53RecordConfigSPF =
 const testAccRoute53RecordConfigCAA =
+const testAccRoute53RecordConfigDS =
 const testAccRoute53RecordConfigAliasElb =
 const testAccRoute53RecordConfigAliasElbUppercase =
 const testAccRoute53RecordConfigEmptyName =

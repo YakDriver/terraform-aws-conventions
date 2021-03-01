@@ -3147,6 +3147,7 @@ func TestAccAWSRoute53Record_basic_trailingPeriodAndZoneID(
 func TestAccAWSRoute53Record_txtSupport(
 func TestAccAWSRoute53Record_spfSupport(
 func TestAccAWSRoute53Record_caaSupport(
+func TestAccAWSRoute53Record_dsSupport(
 func TestAccAWSRoute53Record_generatesSuffix(
 func TestAccAWSRoute53Record_wildcard(
 func TestAccAWSRoute53Record_failover(

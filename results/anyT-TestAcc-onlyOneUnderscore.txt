@@ -4369,6 +4369,11 @@ func TestAccAWSRoute53HealthCheck_withSNI(
 func TestAccAWSRoute53HealthCheck_Disabled(
 func TestAccAWSRoute53HealthCheck_disappears(
 func testAccRoute53HealthCheckConfig_withHealthCheckRegions(
+func TestAccAwsRoute53HostedZoneDnssec_basic(
+func TestAccAwsRoute53HostedZoneDnssec_disappears(
+func TestAccAwsRoute53HostedZoneDnssec_SigningStatus(
+func testAccAwsRoute53HostedZoneDnssecConfig_Base(
+func testAccAwsRoute53HostedZoneDnssecConfig_SigningStatus(
 func TestAccAwsRoute53KeySigningKey_basic(
 func TestAccAwsRoute53KeySigningKey_disappears(
 func TestAccAwsRoute53KeySigningKey_Status(
@@ -4382,6 +4387,7 @@ func TestAccAWSRoute53Record_disappears(
 func TestAccAWSRoute53Record_txtSupport(
 func TestAccAWSRoute53Record_spfSupport(
 func TestAccAWSRoute53Record_caaSupport(
+func TestAccAWSRoute53Record_dsSupport(
 func TestAccAWSRoute53Record_generatesSuffix(
 func TestAccAWSRoute53Record_wildcard(
 func TestAccAWSRoute53Record_failover(
