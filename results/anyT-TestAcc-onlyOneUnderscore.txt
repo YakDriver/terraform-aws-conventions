@@ -3398,12 +3398,14 @@ func TestAccAWSKmsGrant_withConstraints(
 func TestAccAWSKmsGrant_withRetiringPrincipal(
 func TestAccAWSKmsGrant_bare(
 func TestAccAWSKmsGrant_ARN(
+func TestAccAWSKmsGrant_AsymmetricKey(
 func TestAccAWSKmsGrant_disappears(
 func testAccAWSKmsGrant_Basic(
 func testAccAWSKmsGrant_withConstraints(
 func testAccAWSKmsGrant_withRetiringPrincipal(
 func testAccAWSKmsGrant_bare(
 func testAccAWSKmsGrant_ARN(
+func testAccAWSKmsGrant_AsymmetricKey(
 func TestAccAWSKmsKey_basic(
 func TestAccAWSKmsKey_asymmetricKey(
 func TestAccAWSKmsKey_disappears(

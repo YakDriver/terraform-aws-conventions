@@ -3341,6 +3341,7 @@ func testAccAWSNeptuneClusterInstanceConfig_generatedName(n int) string {
 func testAccAWSNeptuneClusterInstanceConfigKmsKey(n int) string {
 func testAccAWSNeptuneClusterParameterGroupConfig_Description(name, description string) string {
 func testAccAWSNeptuneClusterParameterGroupConfig_Parameter(name, pName, pValue string) string {
+func testAccAWSNeptuneClusterParameterGroupConfig_NamePrefix_Parameter(namePrefix, pName, pValue string) string {
 func testAccAWSNeptuneClusterParameterGroupConfig_Tags(name, tKey, tValue string) string {
 func testAccAWSNeptuneClusterParameterGroupConfig(name string) string {
 func testAccAwsNeptuneClusterSnapshotConfig(rName string) string {

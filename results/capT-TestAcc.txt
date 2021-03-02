@@ -3007,6 +3007,7 @@ func TestAccAWSKmsGrant_withConstraints(
 func TestAccAWSKmsGrant_withRetiringPrincipal(
 func TestAccAWSKmsGrant_bare(
 func TestAccAWSKmsGrant_ARN(
+func TestAccAWSKmsGrant_AsymmetricKey(
 func TestAccAWSKmsGrant_disappears(
 func TestAccAWSKmsKey_basic(
 func TestAccAWSKmsKey_asymmetricKey(
@@ -3400,6 +3401,7 @@ func TestAccAWSNeptuneClusterParameterGroup_basic(
 func TestAccAWSNeptuneClusterParameterGroup_namePrefix(
 func TestAccAWSNeptuneClusterParameterGroup_generatedName(
 func TestAccAWSNeptuneClusterParameterGroup_Description(
+func TestAccAWSNeptuneClusterParameterGroup_NamePrefix_Parameter(
 func TestAccAWSNeptuneClusterParameterGroup_Parameter(
 func TestAccAWSNeptuneClusterParameterGroup_Tags(
 func TestAccAWSNeptuneClusterSnapshot_basic(

@@ -1266,6 +1266,7 @@ func TestAccAWSKmsExternalKey_Policy(
 func TestAccAWSKmsExternalKey_Tags(
 func TestAccAWSKmsExternalKey_ValidTo(
 func TestAccAWSKmsGrant_ARN(
+func TestAccAWSKmsGrant_AsymmetricKey(
 func TestAccAWSKmsKey_Policy_IamRole(
 func TestAccAWSKmsKey_Policy_IamServiceLinkedRole(
 func TestAccAWSLambdaAlias_FunctionName_Name(
@@ -1374,6 +1375,7 @@ func TestAccAWSMskConfiguration_Description(
 func TestAccAWSMskConfiguration_KafkaVersions(
 func TestAccAWSMskConfiguration_ServerProperties(
 func TestAccAWSNeptuneClusterParameterGroup_Description(
+func TestAccAWSNeptuneClusterParameterGroup_NamePrefix_Parameter(
 func TestAccAWSNeptuneClusterParameterGroup_Parameter(
 func TestAccAWSNeptuneClusterParameterGroup_Tags(
 func TestAccAWSNeptuneParameterGroup_Description(

@@ -3946,6 +3946,7 @@ func resourceAwsNeptuneClusterParameterGroupCreate(
 func resourceAwsNeptuneClusterParameterGroupRead(
 func resourceAwsNeptuneClusterParameterGroupUpdate(
 func resourceAwsNeptuneClusterParameterGroupDelete(
+func modifyNeptuneClusterParameterGroupParameters(
 func resourceAwsNeptuneClusterSnapshot(
 func resourceAwsNeptuneClusterSnapshotCreate(
 func resourceAwsNeptuneClusterSnapshotRead(

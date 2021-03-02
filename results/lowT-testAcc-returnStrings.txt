@@ -3225,6 +3225,7 @@ func testAccAWSKmsGrant_withConstraints(rName string, constraintName string, enc
 func testAccAWSKmsGrant_withRetiringPrincipal(rName string) string {
 func testAccAWSKmsGrant_bare(rName string) string {
 func testAccAWSKmsGrant_ARN(rName string, operations string) string {
+func testAccAWSKmsGrant_AsymmetricKey(rName string) string {
 func testAccAWSKmsKey(rName string) string {
 func testAccAWSKmsKey_asymmetric(rName string) string {
 func testAccAWSKmsKey_policy(rName string) string {
@@ -3632,6 +3633,7 @@ func testAccAWSNeptuneClusterInstanceConfig_generatedName(n int) string {
 func testAccAWSNeptuneClusterInstanceConfigKmsKey(n int) string {
 func testAccAWSNeptuneClusterParameterGroupConfig_Description(name, description string) string {
 func testAccAWSNeptuneClusterParameterGroupConfig_Parameter(name, pName, pValue string) string {
+func testAccAWSNeptuneClusterParameterGroupConfig_NamePrefix_Parameter(namePrefix, pName, pValue string) string {
 func testAccAWSNeptuneClusterParameterGroupConfig_Tags(name, tKey, tValue string) string {
 func testAccAWSNeptuneClusterParameterGroupConfig(name string) string {
 func testAccAwsNeptuneClusterSnapshotConfig(rName string) string {

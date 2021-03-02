@@ -1735,6 +1735,7 @@ func init(
 func flattenAwsNeptuneClusterResource(
 func setIamRoleToNeptuneCluster(
 func removeIamRoleFromNeptuneCluster(
+func modifyNeptuneClusterParameterGroupParameters(
 func init(
 func updateNetworkAclEntries(
 func cleanUpDependencyViolations(

@@ -4886,6 +4886,7 @@ func testAccAWSKmsGrant_withConstraints(
 func testAccAWSKmsGrant_withRetiringPrincipal(
 func testAccAWSKmsGrant_bare(
 func testAccAWSKmsGrant_ARN(
+func testAccAWSKmsGrant_AsymmetricKey(
 func testSweepKmsKeys(
 func testAccCheckAWSKmsKeyHasPolicy(
 func testAccCheckAWSKmsKeyDestroy(
@@ -5493,6 +5494,7 @@ func testAccCheckAWSNeptuneClusterParameterGroupAttributes(
 func testAccCheckAWSNeptuneClusterParameterGroupExists(
 func testAccAWSNeptuneClusterParameterGroupConfig_Description(
 func testAccAWSNeptuneClusterParameterGroupConfig_Parameter(
+func testAccAWSNeptuneClusterParameterGroupConfig_NamePrefix_Parameter(
 func testAccAWSNeptuneClusterParameterGroupConfig_Tags(
 func testAccAWSNeptuneClusterParameterGroupConfig(
 func testAccCheckNeptuneClusterSnapshotDestroy(

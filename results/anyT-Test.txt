@@ -8031,6 +8031,7 @@ func TestAccAWSKmsGrant_withConstraints(
 func TestAccAWSKmsGrant_withRetiringPrincipal(
 func TestAccAWSKmsGrant_bare(
 func TestAccAWSKmsGrant_ARN(
+func TestAccAWSKmsGrant_AsymmetricKey(
 func TestAccAWSKmsGrant_disappears(
 func testAccCheckAWSKmsGrantDestroy(
 func testAccCheckAWSKmsGrantExists(
@@ -8041,6 +8042,7 @@ func testAccAWSKmsGrant_withConstraints(
 func testAccAWSKmsGrant_withRetiringPrincipal(
 func testAccAWSKmsGrant_bare(
 func testAccAWSKmsGrant_ARN(
+func testAccAWSKmsGrant_AsymmetricKey(
 func testSweepKmsKeys(
 func TestAccAWSKmsKey_basic(
 func TestAccAWSKmsKey_asymmetricKey(
@@ -9049,6 +9051,7 @@ func TestAccAWSNeptuneClusterParameterGroup_basic(
 func TestAccAWSNeptuneClusterParameterGroup_namePrefix(
 func TestAccAWSNeptuneClusterParameterGroup_generatedName(
 func TestAccAWSNeptuneClusterParameterGroup_Description(
+func TestAccAWSNeptuneClusterParameterGroup_NamePrefix_Parameter(
 func TestAccAWSNeptuneClusterParameterGroup_Parameter(
 func TestAccAWSNeptuneClusterParameterGroup_Tags(
 func testAccCheckAWSNeptuneClusterParameterGroupDestroy(
@@ -9056,6 +9059,7 @@ func testAccCheckAWSNeptuneClusterParameterGroupAttributes(
 func testAccCheckAWSNeptuneClusterParameterGroupExists(
 func testAccAWSNeptuneClusterParameterGroupConfig_Description(
 func testAccAWSNeptuneClusterParameterGroupConfig_Parameter(
+func testAccAWSNeptuneClusterParameterGroupConfig_NamePrefix_Parameter(
 func testAccAWSNeptuneClusterParameterGroupConfig_Tags(
 func testAccAWSNeptuneClusterParameterGroupConfig(
 func TestAccAWSNeptuneClusterSnapshot_basic(
