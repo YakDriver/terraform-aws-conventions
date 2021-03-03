@@ -1725,6 +1725,7 @@ func flattenMskLoggingInfoBrokerLogsFirehose(
 func flattenMskLoggingInfoBrokerLogsS3(
 func mskClusterOperationRefreshFunc(
 func waitForMskClusterOperation(
+func sortMskClusterEndpoints(
 func init(
 func init(
 func associateMSKClusterSecrets(

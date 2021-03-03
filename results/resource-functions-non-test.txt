@@ -3903,6 +3903,7 @@ func resourceAwsMskClusterDelete(
 func resourceAwsMskClusterDeleteWaiter(
 func mskClusterOperationRefreshFunc(
 func waitForMskClusterOperation(
+func sortMskClusterEndpoints(
 func init(
 func resourceAwsMskConfiguration(
 func resourceAwsMskConfigurationCreate(

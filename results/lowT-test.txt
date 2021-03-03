@@ -668,6 +668,7 @@ func testAccAWSProviderConfigIgnoreTagsKeys2(
 func testAccAWSProviderConfigRegion(
 func testAccAssumeRoleARNPreCheck(
 func testAccProviderConfigAssumeRolePolicy(
+func testCheckResourceAttrIsSortedCsv(
 func testAccAWSAccessAnalyzerAnalyzer_basic(
 func testAccAWSAccessAnalyzerAnalyzer_disappears(
 func testAccAWSAccessAnalyzerAnalyzer_Tags(

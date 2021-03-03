@@ -1,6 +1,6 @@
 Analysis Tallies
-5273	All Functions:Exported
-15135	All Functions:Non-Exported
+5274	All Functions:Exported
+15137	All Functions:Non-Exported
 9946	All Functions:Multicaps
 3955	All Functions:Non-AWS Multicaps
 8828	All Functions:Uppercase AWS
@@ -9,7 +9,7 @@ Analysis Tallies
 1700	All Functions:Multiple underscores
 4672	All Functions:Lowercase after first underscore
 2813	All Functions:Uppercase after first underscore
-5240	Capital-T Test Functions:All
+5241	Capital-T Test Functions:All
 4882	Capital-T Test Functions:TestAcc
 4144	Capital-T Test Functions:TestAccAWS
 464	Capital-T Test Functions:TestAccAws
@@ -27,7 +27,7 @@ Analysis Tallies
 15	Capital-T Test Functions:TestAccAws+Resource
 3035	Capital-T Test Functions:TestAcc and lowercase after first underscore
 1846	Capital-T Test Functions:TestAcc and uppercase after first underscore
-7929	Lowercase-t test Functions:All
+7930	Lowercase-t test Functions:All
 7626	Lowercase-t test Functions:testAcc
 3323	Lowercase-t test Functions:testAccAWS
 716	Lowercase-t test Functions:testAccAws
@@ -37,7 +37,7 @@ Analysis Tallies
 5137	Lowercase-t test Functions:testAcc functions returning strings
 4724	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
 2737	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-13169	Any case-t Test Functions:All
+13171	Any case-t Test Functions:All
 12508	Any case-t Test Functions:TestAcc
 4536	Any case-t Test Functions:TestAcc with lowercase after first underscore
 2811	Any case-t Test Functions:TestAcc with uppercase after first underscore
@@ -57,9 +57,9 @@ Analysis Tallies
 175	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
 3527	Resource Functions:Resource
 217	Resource Functions:Resource Multi Caps
-5980	Resource Functions:Non-test
+5981	Resource Functions:Non-test
 458	Resource Functions:Non-test Multi-caps
-2497	Resource Functions:Non-test, non-resource
+2498	Resource Functions:Non-test, non-resource
 7	Function Capitalization:acl
 187	Function Capitalization:Acl
 95	Function Capitalization:ACL

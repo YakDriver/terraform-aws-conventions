@@ -1300,6 +1300,7 @@ func testAccAWSProviderConfigIgnoreTagsKeys2(
 func testAccAWSProviderConfigRegion(
 func testAccAssumeRoleARNPreCheck(
 func testAccProviderConfigAssumeRolePolicy(
+func testCheckResourceAttrIsSortedCsv(
 func testAccAWSAccessAnalyzerAnalyzer_basic(
 func testAccAWSAccessAnalyzerAnalyzer_disappears(
 func testAccAWSAccessAnalyzerAnalyzer_Tags(
@@ -9004,6 +9005,7 @@ func testAccMskClusterConfigKafkaVersion(
 func testAccMskClusterConfigKafkaVersionWithConfigurationInfo(
 func testAccMskClusterConfigTags1(
 func testAccMskClusterConfigTags2(
+func TestSortMskClusterEndpoints(
 func testSweepMskConfigurations(
 func TestAccAWSMskConfiguration_basic(
 func TestAccAWSMskConfiguration_disappears(

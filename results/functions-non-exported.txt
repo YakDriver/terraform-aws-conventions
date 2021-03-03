@@ -1428,6 +1428,7 @@ func testAccAWSProviderConfigIgnoreTagsKeys2(
 func testAccAWSProviderConfigRegion(
 func testAccAssumeRoleARNPreCheck(
 func testAccProviderConfigAssumeRolePolicy(
+func testCheckResourceAttrIsSortedCsv(
 func composeConfig(
 func resourceAwsAccessAnalyzerAnalyzer(
 func resourceAwsAccessAnalyzerAnalyzerCreate(
@@ -10094,6 +10095,7 @@ func resourceAwsMskClusterDelete(
 func resourceAwsMskClusterDeleteWaiter(
 func mskClusterOperationRefreshFunc(
 func waitForMskClusterOperation(
+func sortMskClusterEndpoints(
 func init(
 func testSweepMskClusters(
 func testAccCheckMskClusterDestroy(

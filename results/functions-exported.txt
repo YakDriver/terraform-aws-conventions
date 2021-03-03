@@ -3554,6 +3554,7 @@ func TestAccAWSMskCluster_KafkaVersionUpgrade(
 func TestAccAWSMskCluster_KafkaVersionDowngrade(
 func TestAccAWSMskCluster_KafkaVersionUpgradeWithConfigurationInfo(
 func TestAccAWSMskCluster_Tags(
+func TestSortMskClusterEndpoints(
 func TestAccAWSMskConfiguration_basic(
 func TestAccAWSMskConfiguration_disappears(
 func TestAccAWSMskConfiguration_Description(
