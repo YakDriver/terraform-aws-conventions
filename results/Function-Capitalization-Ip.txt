@@ -43,7 +43,8 @@ func TestAccAWSEksCluster_NetworkConfig_ServiceIpv4Cidr(
 func testAccAWSEksClusterConfig_NetworkConfig_ServiceIpv4Cidr(
 func expandGameliftIpPermissions(
 func expandGameliftIpPermission(
-func resourceAwsGlobalAcceleratorAcceleratorFlattenIpSets(
+func flattenGlobalAcceleratorIpSet(
+func flattenGlobalAcceleratorIpSets(
 func resourceAwsGuardDutyIpset(
 func resourceAwsGuardDutyIpsetCreate(
 func resourceAwsGuardDutyIpsetRead(

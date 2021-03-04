@@ -1006,6 +1006,10 @@ func getGlacierVaultNotification(
 func glacierVaultLockRefreshFunc(
 func waitForGlacierVaultLockCompletion(
 func init(
+func expandGlobalAcceleratorUpdateAcceleratorAttributesInput(
+func flattenGlobalAcceleratorIpSet(
+func flattenGlobalAcceleratorIpSets(
+func flattenGlobalAcceleratorAcceleratorAttributes(
 func init(
 func sweepGlobalAcceleratorListeners(
 func sweepGlobalAcceleratorEndpointGroups(

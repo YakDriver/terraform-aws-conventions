@@ -760,9 +760,6 @@ func testAccFmsPolicyConfig_updated(
 func testAccFmsPolicyConfig_include(
 func testAccFmsPolicyConfig_tags(
 func testAccFmsPolicyConfig_tagsChanged(
-func testAccGlobalAcceleratorAccelerator_basic(
-func testAccGlobalAcceleratorAccelerator_attributes(
-func testAccGlobalAcceleratorAccelerator_tags(
 func testAccGlobalAcceleratorListener_basic(
 func testAccGlobalAcceleratorListener_update(
 func testAccGlueCatalogDatabase_basic(

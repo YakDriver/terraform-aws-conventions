@@ -2596,9 +2596,11 @@ func testAccGlacierVaultPolicyConfig(rName string) string {
 func testAccGlacierVaultPolicyConfigUpdated(rName string) string {
 func testAccGlacierVaultConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccGlacierVaultConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccGlobalAcceleratorAccelerator_basic(rName string, enabled bool) string {
-func testAccGlobalAcceleratorAccelerator_attributes(rName string) string {
-func testAccGlobalAcceleratorAccelerator_tags(rName string, enabled bool, tagKey string, tagValue string) string {
+func testAccGlobalAcceleratorAcceleratorConfig(rName string) string {
+func testAccGlobalAcceleratorAcceleratorConfigEnabled(rName string, enabled bool) string {
+func testAccGlobalAcceleratorAcceleratorConfigAttributes(rName string, flowLogsEnabled bool, flowLogsPrefix string) string {
+func testAccGlobalAcceleratorAcceleratorConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccGlobalAcceleratorAcceleratorConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccGlobalAcceleratorEndpointGroupConfigBasic(rName string) string {
 func testAccGlobalAcceleratorEndpointGroupConfigBaseVpc(rName string) string {
 func testAccGlobalAcceleratorEndpointGroupConfigALBEndpointClientIP(rName string, clientIP bool) string {
@@ -4634,6 +4636,7 @@ func testAccAWSSSMMaintenanceWindowTaskConfigBase(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdate(rName, description, taskType, taskArn string, priority, maxConcurrency, maxErrors int) string {
 func testAccAWSSSMMaintenanceWindowTaskBasicConfigUpdated(rName string) string {
+func testAccAWSSSMMaintenanceWindowTaskConfigDescription(rName string, description string) string {
 func testAccAWSSSMMaintenanceWindowTaskConfigEmptyNotifcationConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskNoRoleConfig(rName string) string {
 func testAccAWSSSMMaintenanceWindowTaskAutomationConfig(rName, version string) string {
