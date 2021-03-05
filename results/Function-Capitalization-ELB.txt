@@ -56,5 +56,6 @@ func testAccAWSELBAccessLogsCommon(
 func testAccELBConfig_Listener_IAMServerCertificate(
 func testAccELBConfig_Listener_IAMServerCertificate_AddInvalidListener(
 func TestAccAWSLBCookieStickinessPolicy_disappears_ELB(
+func testAccErrorCheckSkipELBV2(
 func TestAccAWSSpotFleetRequest_WithELBs(
 func testAccAWSSpotFleetRequestConfigWithELBs(

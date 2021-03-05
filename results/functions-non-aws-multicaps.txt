@@ -2532,6 +2532,7 @@ func TestAccAWSLBListener_cognito(
 func TestAccAWSLBListener_oidc(
 func TestAccAWSLBListener_DefaultAction_Order(
 func TestAccAWSLBListener_DefaultAction_Order_Recreates(
+func testAccErrorCheckSkipELBV2(
 func testAccCheckAWSLBListenerDefaultActionOrderDisappears(
 func testAccCheckAWSLBListenerExists(
 func testAccCheckAWSLBListenerDestroy(

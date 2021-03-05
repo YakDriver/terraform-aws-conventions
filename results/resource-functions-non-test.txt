@@ -1616,6 +1616,7 @@ func resourceAwsDxConnectionUpdate(
 func resourceAwsDxConnectionDelete(
 func dxConnectionRefreshStateFunc(
 func isNoSuchDxConnectionErr(
+func init(
 func resourceAwsDxGatewayAssociation(
 func resourceAwsDxGatewayAssociationCreate(
 func resourceAwsDxGatewayAssociationRead(
@@ -1692,6 +1693,7 @@ func resourceAwsDxLagUpdate(
 func resourceAwsDxLagDelete(
 func dxLagRefreshStateFunc(
 func isNoSuchDxLagErr(
+func init(
 func resourceAwsDxPrivateVirtualInterface(
 func resourceAwsDxPrivateVirtualInterfaceCreate(
 func resourceAwsDxPrivateVirtualInterfaceRead(

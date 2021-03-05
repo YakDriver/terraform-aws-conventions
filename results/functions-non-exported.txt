@@ -5271,6 +5271,8 @@ func resourceAwsDxConnectionUpdate(
 func resourceAwsDxConnectionDelete(
 func dxConnectionRefreshStateFunc(
 func isNoSuchDxConnectionErr(
+func init(
+func testSweepDxConnections(
 func testAccCheckAwsDxConnectionDestroy(
 func testAccCheckAwsDxConnectionExists(
 func testAccDxConnectionConfig(
@@ -5404,6 +5406,8 @@ func resourceAwsDxLagUpdate(
 func resourceAwsDxLagDelete(
 func dxLagRefreshStateFunc(
 func isNoSuchDxLagErr(
+func init(
+func testSweepDxLags(
 func testAccCheckAwsDxLagDestroy(
 func testAccCheckAwsDxLagExists(
 func testAccDxLagConfig(
@@ -9602,6 +9606,7 @@ func testAccAWSLBListenerRuleConfig_conditionMixed_updated(
 func testAccAWSLBListenerRuleConfig_conditionMixed_updated2(
 func testAccAWSLBListenerRuleConfig_conditionMultiple(
 func testAccAWSLBListenerRuleConfig_conditionMultiple_updated(
+func testAccErrorCheckSkipELBV2(
 func testAccCheckAWSLBListenerDefaultActionOrderDisappears(
 func testAccCheckAWSLBListenerExists(
 func testAccCheckAWSLBListenerDestroy(

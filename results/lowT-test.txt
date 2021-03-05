@@ -2893,6 +2893,7 @@ func testAccCheckAwsDxConnectionAssociationDestroy(
 func testAccCheckAwsDxConnectionAssociationExists(
 func testAccDxConnectionAssociationConfig(
 func testAccDxConnectionAssociationConfig_multiConns(
+func testSweepDxConnections(
 func testAccCheckAwsDxConnectionDestroy(
 func testAccCheckAwsDxConnectionExists(
 func testAccDxConnectionConfig(
@@ -2950,6 +2951,7 @@ func testAccDxHostedTransitVirtualInterfaceConfig_base(
 func testAccDxHostedTransitVirtualInterfaceConfig_basic(
 func testAccDxHostedTransitVirtualInterfaceConfig_accepterTags(
 func testAccDxHostedTransitVirtualInterfaceConfig_accepterTagsUpdated(
+func testSweepDxLags(
 func testAccCheckAwsDxLagDestroy(
 func testAccCheckAwsDxLagExists(
 func testAccDxLagConfig(
@@ -5176,6 +5178,7 @@ func testAccAWSLBListenerRuleConfig_conditionMixed_updated(
 func testAccAWSLBListenerRuleConfig_conditionMixed_updated2(
 func testAccAWSLBListenerRuleConfig_conditionMultiple(
 func testAccAWSLBListenerRuleConfig_conditionMultiple_updated(
+func testAccErrorCheckSkipELBV2(
 func testAccCheckAWSLBListenerDefaultActionOrderDisappears(
 func testAccCheckAWSLBListenerExists(
 func testAccCheckAWSLBListenerDestroy(

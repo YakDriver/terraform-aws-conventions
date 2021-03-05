@@ -598,6 +598,7 @@ func waitForDocDBSubnetGroupDeletion(
 func dxBgpPeerStateRefresh(
 func dxConnectionRefreshStateFunc(
 func isNoSuchDxConnectionErr(
+func init(
 func dxGatewayAssociationStateRefresh(
 func dxGatewayAssociationId(
 func waitForDirectConnectGatewayAssociationAvailabilityOnCreate(
@@ -619,6 +620,7 @@ func dxHostedTransitVirtualInterfaceAccepterWaitUntilAvailable(
 func dxHostedTransitVirtualInterfaceWaitUntilAvailable(
 func dxLagRefreshStateFunc(
 func isNoSuchDxLagErr(
+func init(
 func dxPrivateVirtualInterfaceWaitUntilAvailable(
 func dxPublicVirtualInterfaceWaitUntilAvailable(
 func dxTransitVirtualInterfaceWaitUntilAvailable(
