@@ -778,6 +778,8 @@ func testAccAppautoscalingScheduledActionConfig_ECS(
 func testAccAppautoscalingScheduledActionConfig_EMR(
 func testAccAppautoscalingScheduledActionConfig_Name_Duplicate(
 func testAccAppautoscalingScheduledActionConfig_SpotFleet(
+func testAccAppautoscalingScheduledActionConfig_Schedule(
+func testAccAppautoscalingScheduledActionConfig_ScheduleWithTimezone(
 func testAccAWSAppautoscalingTargetConfig(
 func testAccAWSAppautoscalingTargetConfigUpdate(
 func testAccAWSAppautoscalingTargetEmrClusterConfig(
@@ -3448,6 +3450,7 @@ func testAccMqBrokerConfig_updateTags2(
 func testAccMqBrokerConfig_updateTags3(
 func testAccMqBrokerConfig_updateSecurityGroups(
 func testAccMqBrokerConfig_updateUsersSecurityGroups(
+func testAccMqBrokerConfigRabbit(
 func testAccCheckAwsMqConfigurationDestroy(
 func testAccCheckAwsMqConfigurationExists(
 func testAccMqConfigurationConfig(

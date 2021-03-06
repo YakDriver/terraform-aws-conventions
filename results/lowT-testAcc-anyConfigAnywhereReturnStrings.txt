@@ -775,6 +775,8 @@ func testAccAppautoscalingScheduledActionConfig_ECS(rName, ts string) string {
 func testAccAppautoscalingScheduledActionConfig_EMR(rName, ts string) string {
 func testAccAppautoscalingScheduledActionConfig_Name_Duplicate(rName string) string {
 func testAccAppautoscalingScheduledActionConfig_SpotFleet(rName, ts, validUntil string) string {
+func testAccAppautoscalingScheduledActionConfig_Schedule(rName, schedule string) string {
+func testAccAppautoscalingScheduledActionConfig_ScheduleWithTimezone(rName, schedule, timezone, startTime, endTime string) string {
 func testAccAWSAppautoscalingTargetEmrClusterConfig(rInt int) string {
 func testAccAWSAppautoscalingTargetSpotFleetRequestConfig(validUntil string) string {
 func testAccAppCookieStickinessPolicyConfig(rName string) string {
@@ -3306,6 +3308,7 @@ func testAccMqBrokerConfig_updateTags2(sgName, brokerName string) string {
 func testAccMqBrokerConfig_updateTags3(sgName, brokerName string) string {
 func testAccMqBrokerConfig_updateSecurityGroups(sgName, brokerName string) string {
 func testAccMqBrokerConfig_updateUsersSecurityGroups(sgName, brokerName string) string {
+func testAccMqBrokerConfigRabbit(sgName, brokerName string) string {
 func testAccMqConfigurationConfig(configurationName string) string {
 func testAccMqConfigurationConfig_descriptionUpdated(configurationName string) string {
 func testAccMqConfigurationWithDataConfig(configurationName string) string {

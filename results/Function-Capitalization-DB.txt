@@ -15,6 +15,7 @@ func testAccDataSourceAwsQLDBLedgerConfig(
 func getUserDBEnabled(
 func testAccAWSAppautoscalingPolicyDynamoDB(
 func testAccAWSAppautoscalingPolicyDynamoDBIndex(
+func TestAccAWSAppautoscalingScheduledAction_DynamoDB(
 func testAccAppautoscalingScheduledActionConfig_DynamoDB(
 func TestAccAwsAppsyncDatasource_DynamoDBConfig_Region(
 func TestAccAwsAppsyncDatasource_DynamoDBConfig_UseCallerCredentials(

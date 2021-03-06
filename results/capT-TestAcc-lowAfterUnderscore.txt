@@ -520,7 +520,6 @@ func TestAccAWSAppautoScalingPolicy_dynamodb_table(
 func TestAccAWSAppautoScalingPolicy_dynamodb_index(
 func TestAccAWSAppautoScalingPolicy_multiplePoliciesSameName(
 func TestAccAWSAppautoScalingPolicy_multiplePoliciesSameResource(
-func TestAccAWSAppautoscalingScheduledAction_dynamo(
 func TestAccAWSAppautoScalingTarget_basic(
 func TestAccAWSAppautoScalingTarget_disappears(
 func TestAccAWSAppautoScalingTarget_spotFleetRequest(
@@ -2004,6 +2003,7 @@ func TestAccAWSMqBroker_updateUsers(
 func TestAccAWSMqBroker_updateTags(
 func TestAccAWSMqBroker_updateSecurityGroup(
 func TestAccAWSMqBroker_disappears(
+func TestAccAWSMqBroker_rabbitmq(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
 func TestAccAWSMqConfiguration_updateTags(

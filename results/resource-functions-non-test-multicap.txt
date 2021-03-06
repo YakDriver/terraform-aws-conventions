@@ -238,6 +238,8 @@ func resourceAwsLBSSLNegotiationPolicyDelete(
 func resourceAwsLBSSLNegotiationPolicyParseId(
 func lbTargetGroupSuffixFromARN(
 func flattenMediaPackageHLSIngest(
+func flattenMQLDAPServerMetadata(
+func expandMQLDAPServerMetadata(
 func suppressXMLEquivalentConfig(
 func associateMSKClusterSecrets(
 func disassociateMSKClusterSecrets(

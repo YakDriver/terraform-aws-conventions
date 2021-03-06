@@ -295,6 +295,8 @@ func resourceAwsLoadBalancerPolicyParseId(
 func TestAccAWSMacieS3BucketAssociation_accountIdAndPrefix(
 func testAccAWSMacieS3BucketAssociationConfig_accountIdAndPrefix(
 func testAccAWSMacieS3BucketAssociationConfig_accountIdAndPrefixOneTime(
+func expandMqConfigurationId(
+func flattenMqConfigurationId(
 func TestAccAWSMqBroker_EncryptionOptions_KmsKeyId(
 func testAccMqBrokerConfigEncryptionOptionsKmsKeyId(
 func TestAccAWSNeptuneEventSubscription_withSourceIds(
@@ -421,8 +423,6 @@ func testAccWorkspacesDirectoryConfig_ipGroupIds_create(
 func testAccWorkspacesDirectoryConfig_ipGroupIds_update(
 func flattenElastiCacheSecurityGroupIds(
 func flattenDaxSecurityGroupIds(
-func expandMqConfigurationId(
-func flattenMqConfigurationId(
 func TestFlattenAttachmentWhenNoInstanceId(
 func validateCloudWatchEventTargetId(
 func validateAwsAccountId(

@@ -965,6 +965,7 @@ func testAccAPIGatewayVpcLinkConfigTags2(
 func testAccAPIGatewayVpcLinkConfig_Update(
 func testAccAWSAppautoscalingPolicyDynamoDB(
 func testAccAWSAppautoscalingPolicyDynamoDBIndex(
+func TestAccAWSAppautoscalingScheduledAction_DynamoDB(
 func TestAccAWSAppautoscalingScheduledAction_ECS(
 func TestAccAWSAppautoscalingScheduledAction_EMR(
 func testAccAppautoscalingScheduledActionConfig_DynamoDB(
@@ -2704,6 +2705,8 @@ func testAccAWSLBConfigNLBAccessLogsNoBlocks(
 func testAccAWSLBConfig_nosg(
 func testAccAWSLBConfig_updateSecurityGroups(
 func flattenMediaPackageHLSIngest(
+func flattenMQLDAPServerMetadata(
+func expandMQLDAPServerMetadata(
 func suppressXMLEquivalentConfig(
 func associateMSKClusterSecrets(
 func disassociateMSKClusterSecrets(
