@@ -2,5 +2,4 @@ func suppressOpenIdURL(
 func testAccCheckAWSEcrRepositoryRepositoryURL(
 func buildApiGatewayInvokeURL(
 func validateOpenIdURL(
-func validateCognitoUserPoolClientURL(
 func TestValidateOpenIdURL(

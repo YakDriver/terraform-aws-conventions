@@ -326,8 +326,12 @@ func flattenMetricDimensions(
 func flattenPredefinedMetricSpecification(
 func resourceAwsAppautoscalingScheduledAction(
 func resourceAwsAppautoscalingScheduledActionPut(
+func appautoscalingScheduledActionPopulateInputForCreate(
+func appautoscalingScheduledActionPopulateInputForUpdate(
 func resourceAwsAppautoscalingScheduledActionRead(
 func resourceAwsAppautoscalingScheduledActionDelete(
+func expandScalableTargetAction(
+func flattenScalableTargetAction(
 func resourceAwsAppautoscalingTarget(
 func resourceAwsAppautoscalingTargetPut(
 func resourceAwsAppautoscalingTargetRead(
@@ -1141,6 +1145,8 @@ func resourceAwsCognitoUserPoolClientDelete(
 func resourceAwsCognitoUserPoolClientImport(
 func expandAwsCognitoUserPoolClientAnalyticsConfig(
 func flattenAwsCognitoUserPoolClientAnalyticsConfig(
+func expandAwsCognitoUserPoolClientTokenValidityUnitsType(
+func flattenAwsCognitoUserPoolClientTokenValidityUnitsType(
 func resourceAwsCognitoUserPoolDomain(
 func resourceAwsCognitoUserPoolDomainCreate(
 func resourceAwsCognitoUserPoolDomainRead(

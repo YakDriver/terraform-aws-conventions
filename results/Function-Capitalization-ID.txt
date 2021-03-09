@@ -87,6 +87,7 @@ func decodeCodeArtifactRepositoryID(
 func decodeCognitoIdentityProviderID(
 func decodeCognitoResourceServerID(
 func testAccAWSCognitoUserPoolClientImportStateIDFunc(
+func testAccAWSCognitoUserPoolClientConfigIDTokenValidity(
 func parseCognitoUserPoolUICustomizationID(
 func resourceAwsConfigAggregateAuthorizationParseID(
 func TestAccAWSDBInstance_RestoreToPointInTime_SourceResourceID(

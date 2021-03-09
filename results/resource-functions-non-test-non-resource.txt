@@ -88,6 +88,10 @@ func flattenTargetTrackingScalingPolicyConfiguration(
 func flattenCustomizedMetricSpecification(
 func flattenMetricDimensions(
 func flattenPredefinedMetricSpecification(
+func appautoscalingScheduledActionPopulateInputForCreate(
+func appautoscalingScheduledActionPopulateInputForUpdate(
+func expandScalableTargetAction(
+func flattenScalableTargetAction(
 func getAwsAppautoscalingTarget(
 func expandAppmeshGatewayRouteSpec(
 func expandAppmeshGatewayRouteTarget(
@@ -453,6 +457,8 @@ func decodeCognitoIdentityProviderID(
 func decodeCognitoResourceServerID(
 func expandAwsCognitoUserPoolClientAnalyticsConfig(
 func flattenAwsCognitoUserPoolClientAnalyticsConfig(
+func expandAwsCognitoUserPoolClientTokenValidityUnitsType(
+func flattenAwsCognitoUserPoolClientTokenValidityUnitsType(
 func init(
 func expandCognitoSmsConfiguration(
 func expandCognitoSoftwareTokenMfaConfiguration(

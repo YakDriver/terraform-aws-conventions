@@ -761,6 +761,10 @@ func testAccAWSCodeStarNotificationsNotificationRuleConfigTags2(rName string) st
 func testAccAWSCodeStarNotificationsNotificationRuleConfigEventTypeIds1(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigEventTypeIds2(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigEventTypeIds3(rName string) string {
+func testAccAWSCognitoUserPoolClientConfigAccessTokenValidity(rName string, validity int) string {
+func testAccAWSCognitoUserPoolClientConfigIDTokenValidity(rName string, validity int) string {
+func testAccAWSCognitoUserPoolClientConfigTokenValidityUnits(rName, units string) string {
+func testAccAWSCognitoUserPoolClientConfigTokenValidityUnitsWithTokenValidity(rName, units string) string {
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigBase(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfig(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigShareUserData(userPoolName, clientName string) string {

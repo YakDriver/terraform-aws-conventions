@@ -826,12 +826,15 @@ func testAccAWSAppautoscalingPolicyConfigResourceIdForceNewBase(rName string) st
 func testAccAWSAppautoscalingPolicyConfigResourceIdForceNew1(rName string) string {
 func testAccAWSAppautoscalingPolicyConfigResourceIdForceNew2(rName string) string {
 func testAccAppautoscalingScheduledActionConfig_DynamoDB(rName, ts string) string {
+func testAccAppautoscalingScheduledActionConfig_DynamoDB_Updated(rName, ts, timezone string) string {
 func testAccAppautoscalingScheduledActionConfig_ECS(rName, ts string) string {
 func testAccAppautoscalingScheduledActionConfig_EMR(rName, ts string) string {
 func testAccAppautoscalingScheduledActionConfig_Name_Duplicate(rName string) string {
 func testAccAppautoscalingScheduledActionConfig_SpotFleet(rName, ts, validUntil string) string {
 func testAccAppautoscalingScheduledActionConfig_Schedule(rName, schedule string) string {
 func testAccAppautoscalingScheduledActionConfig_ScheduleWithTimezone(rName, schedule, timezone, startTime, endTime string) string {
+func testAccAppautoscalingScheduledActionConfig_MinCapacity(rName, ts string, minCapacity int) string {
+func testAccAppautoscalingScheduledActionConfig_MaxCapacity(rName, ts string, maxCapacity int) string {
 func testAccAWSAppautoscalingTargetEmrClusterConfig(rInt int) string {
 func testAccAWSAppautoscalingTargetSpotFleetRequestConfig(validUntil string) string {
 func testAccAWSAppautoscalingTarget_multipleTargets(tableName string) string {
@@ -1505,6 +1508,10 @@ func testAccAWSCognitoUserGroupConfig_RoleArn(rName string) string {
 func testAccAWSCognitoUserGroupConfig_RoleArn_Updated(rName string) string {
 func testAccAWSCognitoUserPoolClientConfig_basic(userPoolName, clientName string) string {
 func testAccAWSCognitoUserPoolClientConfig_RefreshTokenValidity(rName string, refreshTokenValidity int) string {
+func testAccAWSCognitoUserPoolClientConfigAccessTokenValidity(rName string, validity int) string {
+func testAccAWSCognitoUserPoolClientConfigIDTokenValidity(rName string, validity int) string {
+func testAccAWSCognitoUserPoolClientConfigTokenValidityUnits(rName, units string) string {
+func testAccAWSCognitoUserPoolClientConfigTokenValidityUnitsWithTokenValidity(rName, units string) string {
 func testAccAWSCognitoUserPoolClientConfig_Name(rName, name string) string {
 func testAccAWSCognitoUserPoolClientConfig_allFields(userPoolName, clientName string, refreshTokenValidity int) string {
 func testAccAWSCognitoUserPoolClientConfigAnalyticsConfigBase(userPoolName, clientName string) string {
@@ -1534,7 +1541,8 @@ func testAccAWSCognitoUserPoolConfig_SmsConfiguration_SnsCallerArn2(rName string
 func testAccAWSCognitoUserPoolConfig_SmsVerificationMessage(rName, smsVerificationMessage string) string {
 func testAccAWSCognitoUserPoolConfig_Tags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSCognitoUserPoolConfig_Tags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSCognitoUserPoolConfig_withEmailConfiguration(rName, email, arn, from, account string) string {
+func testAccAWSCognitoUserPoolConfig_withEmailConfiguration(rName string) string {
+func testAccAWSCognitoUserPoolConfig_withEmailConfigurationSource(rName, email, arn, from, account string) string {
 func testAccAWSCognitoUserPoolConfig_withAliasAttributes(rName string) string {
 func testAccAWSCognitoUserPoolConfig_withAliasAttributesUpdated(rName string) string {
 func testAccAWSCognitoUserPoolConfig_withAdminCreateUserConfigAndPasswordPolicy(rName string) string {

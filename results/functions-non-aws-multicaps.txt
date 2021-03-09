@@ -969,6 +969,7 @@ func TestAccAWSAppautoscalingScheduledAction_DynamoDB(
 func TestAccAWSAppautoscalingScheduledAction_ECS(
 func TestAccAWSAppautoscalingScheduledAction_EMR(
 func testAccAppautoscalingScheduledActionConfig_DynamoDB(
+func testAccAppautoscalingScheduledActionConfig_DynamoDB_Updated(
 func testAccAppautoscalingScheduledActionConfig_ECS(
 func testAccAppautoscalingScheduledActionConfig_EMR(
 func resourceAwsELBSticknessPolicyAssigned(
@@ -1076,7 +1077,9 @@ func testAccAWSCodePipelineServiceIAMRoleWithAssumeRole(
 func testAccAWSCodePipelineDeployActionIAMRole(
 func decodeCognitoIdentityProviderID(
 func decodeCognitoResourceServerID(
+func TestAccAWSCognitoUserPoolClient_tokenValidityUnitsWTokenValidity(
 func testAccAWSCognitoUserPoolClientImportStateIDFunc(
+func testAccAWSCognitoUserPoolClientConfigIDTokenValidity(
 func resourceAwsCognitoUserPoolUICustomization(
 func resourceAwsCognitoUserPoolUICustomizationPut(
 func resourceAwsCognitoUserPoolUICustomizationRead(
@@ -3934,7 +3937,6 @@ func validateUTCTimestamp(
 func validateDocDBSubnetGroupName(
 func validateDocDBSubnetGroupNamePrefix(
 func validateOpenIdURL(
-func validateCognitoUserPoolClientURL(
 func validateAwsSSMName(
 func validateIoTTopicRuleName(
 func validateIoTTopicRuleCloudWatchAlarmStateValue(
