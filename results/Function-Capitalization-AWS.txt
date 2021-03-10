@@ -5943,6 +5943,7 @@ func TestAccAWSMediaStoreContainer_tags(
 func testAccPreCheckAWSMediaStore(
 func TestResourceAWSMqBrokerPasswordValidation(
 func TestAccAWSMqBroker_basic(
+func TestAccAWSMqBroker_throughputOptimized(
 func TestAccAWSMqBroker_allFieldsDefaultVpc(
 func TestAccAWSMqBroker_allFieldsCustomVpc(
 func TestAccAWSMqBroker_EncryptionOptions_KmsKeyId(

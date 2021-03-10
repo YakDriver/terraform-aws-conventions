@@ -10057,6 +10057,7 @@ func testAccCheckAwsMqBrokerExists(
 func testAccCheckAwsMqBrokerDisappears(
 func testAccPreCheckAWSMq(
 func testAccMqBrokerConfig(
+func testAccMqBrokerEBSConfig(
 func testAccMqBrokerConfig_allFieldsDefaultVpc(
 func testAccMqBrokerConfig_allFieldsCustomVpc(
 func testAccMqBrokerConfigEncryptionOptionsKmsKeyId(

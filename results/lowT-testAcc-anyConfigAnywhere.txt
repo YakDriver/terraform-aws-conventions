@@ -3446,6 +3446,7 @@ func testAccMediaStoreContainerPolicyConfig(
 func testAccMediaStoreContainerConfig(
 func testAccMediaStoreContainerConfigWithTags(
 func testAccMqBrokerConfig(
+func testAccMqBrokerEBSConfig(
 func testAccMqBrokerConfig_allFieldsDefaultVpc(
 func testAccMqBrokerConfig_allFieldsCustomVpc(
 func testAccMqBrokerConfigEncryptionOptionsKmsKeyId(

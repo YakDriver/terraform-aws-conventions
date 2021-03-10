@@ -1828,6 +1828,7 @@ func testAccMediaStoreContainerPolicyConfig(rName, sid string) string {
 func testAccMediaStoreContainerConfig(rName string) string {
 func testAccMediaStoreContainerConfigWithTags(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccMqBrokerConfig(sgName, brokerName string) string {
+func testAccMqBrokerEBSConfig(sgName, brokerName string) string {
 func testAccMqBrokerConfigEncryptionOptionsKmsKeyId(rName string) string {
 func testAccMqBrokerConfigEncryptionOptionsUseAwsOwnedKey(rName string, useAwsOwnedKey bool) string {
 func testAccMqBrokerConfigRabbit(sgName, brokerName string) string {

@@ -3592,6 +3592,7 @@ func testAccMediaStoreContainerPolicyConfig(rName, sid string) string {
 func testAccMediaStoreContainerConfig(rName string) string {
 func testAccMediaStoreContainerConfigWithTags(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccMqBrokerConfig(sgName, brokerName string) string {
+func testAccMqBrokerEBSConfig(sgName, brokerName string) string {
 func testAccMqBrokerConfig_allFieldsDefaultVpc(sgName, cfgName, cfgBody, brokerName string) string {
 func testAccMqBrokerConfig_allFieldsCustomVpc(sgName, cfgName, cfgBody, brokerName string) string {
 func testAccMqBrokerConfigEncryptionOptionsKmsKeyId(rName string) string {

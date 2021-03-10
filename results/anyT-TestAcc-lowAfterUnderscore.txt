@@ -3105,6 +3105,7 @@ func TestAccAWSMediaStoreContainerPolicy_basic(
 func TestAccAWSMediaStoreContainer_basic(
 func TestAccAWSMediaStoreContainer_tags(
 func TestAccAWSMqBroker_basic(
+func TestAccAWSMqBroker_throughputOptimized(
 func TestAccAWSMqBroker_allFieldsDefaultVpc(
 func TestAccAWSMqBroker_allFieldsCustomVpc(
 func TestAccAWSMqBroker_updateUsers(

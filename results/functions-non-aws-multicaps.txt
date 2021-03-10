@@ -2710,6 +2710,7 @@ func testAccAWSLBConfig_updateSecurityGroups(
 func flattenMediaPackageHLSIngest(
 func flattenMQLDAPServerMetadata(
 func expandMQLDAPServerMetadata(
+func testAccMqBrokerEBSConfig(
 func suppressXMLEquivalentConfig(
 func associateMSKClusterSecrets(
 func disassociateMSKClusterSecrets(

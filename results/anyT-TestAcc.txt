@@ -8599,6 +8599,7 @@ func testAccPreCheckAWSMediaStore(
 func testAccMediaStoreContainerConfig(
 func testAccMediaStoreContainerConfigWithTags(
 func TestAccAWSMqBroker_basic(
+func TestAccAWSMqBroker_throughputOptimized(
 func TestAccAWSMqBroker_allFieldsDefaultVpc(
 func TestAccAWSMqBroker_allFieldsCustomVpc(
 func TestAccAWSMqBroker_EncryptionOptions_KmsKeyId(
@@ -8614,6 +8615,7 @@ func testAccCheckAwsMqBrokerExists(
 func testAccCheckAwsMqBrokerDisappears(
 func testAccPreCheckAWSMq(
 func testAccMqBrokerConfig(
+func testAccMqBrokerEBSConfig(
 func testAccMqBrokerConfig_allFieldsDefaultVpc(
 func testAccMqBrokerConfig_allFieldsCustomVpc(
 func testAccMqBrokerConfigEncryptionOptionsKmsKeyId(

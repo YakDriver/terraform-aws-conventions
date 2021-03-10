@@ -1292,6 +1292,7 @@ func TestAccAWSMediaConvertQueue_withDescription(
 func testAccMediaConvertQueueConfig_withStatus(
 func testAccMediaConvertQueueConfig_withDescription(
 func testAccMediaConvertQueueConfig_withTags(
+func TestAccAWSMqBroker_throughputOptimized(
 func TestAccAWSMqBroker_allFieldsDefaultVpc(
 func TestAccAWSMqBroker_allFieldsCustomVpc(
 func TestAccAWSMqBroker_updateUsers(

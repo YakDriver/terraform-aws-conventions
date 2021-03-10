@@ -6581,6 +6581,7 @@ func flattenMQLDAPServerMetadata(
 func expandMQLDAPServerMetadata(
 func TestResourceAWSMqBrokerPasswordValidation(
 func TestAccAWSMqBroker_basic(
+func TestAccAWSMqBroker_throughputOptimized(
 func TestAccAWSMqBroker_allFieldsDefaultVpc(
 func TestAccAWSMqBroker_allFieldsCustomVpc(
 func TestAccAWSMqBroker_EncryptionOptions_KmsKeyId(
@@ -6592,6 +6593,7 @@ func TestAccAWSMqBroker_updateSecurityGroup(
 func TestAccAWSMqBroker_disappears(
 func TestAccAWSMqBroker_rabbitmq(
 func testAccPreCheckAWSMq(
+func testAccMqBrokerEBSConfig(
 func suppressXMLEquivalentConfig(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
