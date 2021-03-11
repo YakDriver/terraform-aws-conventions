@@ -1,4 +1,5 @@
 func TestAccDataSourceAwsAcmpcaCertificateAuthority_basic(
+func TestAccDataSourceAwsAcmpcaCertificate_Basic(
 func TestAccDataSourceAwsAmiIds_basic(
 func TestAccDataSourceAwsAmiIds_sorted(
 func TestAccDataSourceAwsApiGatewayApiKey_basic(

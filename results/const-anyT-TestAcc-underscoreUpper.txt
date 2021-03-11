@@ -1,5 +1,6 @@
 const testAccDataSourceAwsAcmpcaCertificateAuthorityConfig_ARN =
 const testAccDataSourceAwsAcmpcaCertificateAuthorityConfig_NonExistent =
+const testAccDataSourceAwsAcmpcaCertificateConfig_NonExistent =
 const testAccAWSDBSubnetGroupDataSourceConfig_NonExistent =
 const testAccDataSourceAwsDirectoryServiceDirectoryConfig_NonExistent =
 const testAccDataSourceAwsDxGatewayConfig_NonExistent =

@@ -2008,10 +2008,13 @@ func TestAccAWSMqBroker_throughputOptimized(
 func TestAccAWSMqBroker_allFieldsDefaultVpc(
 func TestAccAWSMqBroker_allFieldsCustomVpc(
 func TestAccAWSMqBroker_updateUsers(
-func TestAccAWSMqBroker_updateTags(
+func TestAccAWSMqBroker_tags(
 func TestAccAWSMqBroker_updateSecurityGroup(
+func TestAccAWSMqBroker_updateEngineVersion(
 func TestAccAWSMqBroker_disappears(
 func TestAccAWSMqBroker_rabbitmq(
+func TestAccAWSMqBroker_clusterRabbitMQ(
+func TestAccAWSMqBroker_ldap(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
 func TestAccAWSMqConfiguration_updateTags(

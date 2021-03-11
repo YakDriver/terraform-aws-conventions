@@ -310,6 +310,7 @@ func testAccAcmCertificateConfig(domainName, validationMethod string) string {
 func testAccAcmCertificateConfigPrivateKeyWithoutChain(commonName string) string {
 func testAccAcmCertificateConfigPrivateKeyTags(commonName string) string {
 func testAccAcmCertificateConfigPrivateKey(certificate, privateKey, chain string) string {
+func testAccAcmpcaCertificateBaseRootCAConfig(rName string) string {
 func testAccAWSAMICopyConfigBase(rName string) string {
 func testAccAWSAMICopyConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAMICopyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1827,11 +1828,15 @@ func testAccMediaPackageChannelConfigWithTags(rName, key, value string) string {
 func testAccMediaStoreContainerPolicyConfig(rName, sid string) string {
 func testAccMediaStoreContainerConfig(rName string) string {
 func testAccMediaStoreContainerConfigWithTags(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccMqBrokerConfig(sgName, brokerName string) string {
-func testAccMqBrokerEBSConfig(sgName, brokerName string) string {
+func testAccMqBrokerConfig(rName string) string {
+func testAccMqBrokerEBSConfig(rName string) string {
+func testAccMqBrokerEngineVersionUpdateConfig(rName string) string {
 func testAccMqBrokerConfigEncryptionOptionsKmsKeyId(rName string) string {
 func testAccMqBrokerConfigEncryptionOptionsUseAwsOwnedKey(rName string, useAwsOwnedKey bool) string {
-func testAccMqBrokerConfigRabbit(sgName, brokerName string) string {
+func testAccMqBrokerConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccMqBrokerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccMqBrokerConfigRabbit(rName string) string {
+func testAccRabbitMqClusterBrokerConfig(rName string) string {
 func testAccMqConfigurationConfig(configurationName string) string {
 func testAccMqConfigurationWithDataConfig(configurationName string) string {
 func testAccMskClusterBaseConfig() string {

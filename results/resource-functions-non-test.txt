@@ -23,6 +23,9 @@ func resourceAwsAcmCertificateValidationCreate(
 func resourceAwsAcmCertificateCheckValidationRecords(
 func resourceAwsAcmCertificateValidationRead(
 func resourceAwsAcmCertificateValidationDelete(
+func resourceAwsAcmpcaCertificateAuthorityCertificate(
+func resourceAwsAcmpcaCertificateAuthorityCertificateCreate(
+func resourceAwsAcmpcaCertificateAuthorityCertificateRead(
 func resourceAwsAcmpcaCertificateAuthority(
 func resourceAwsAcmpcaCertificateAuthorityCreate(
 func resourceAwsAcmpcaCertificateAuthorityRead(
@@ -40,6 +43,13 @@ func resourceAwsAcmpcaCertificateAuthorityMigrateState(
 func migrateAcmpcaCertificateAuthorityStateV0toV1(
 func init(
 func listAcmpcaCertificateAuthorities(
+func resourceAwsAcmpcaCertificate(
+func resourceAwsAcmpcaCertificateCreate(
+func resourceAwsAcmpcaCertificateRead(
+func resourceAwsAcmpcaCertificateRevoke(
+func validateAcmPcaTemplateArn(
+func expandAcmpcaValidity(
+func expandAcmpcaValidityValue(
 func resourceAwsAmiCopy(
 func resourceAwsAmiCopyCreate(
 func resourceAwsAmiFromInstance(

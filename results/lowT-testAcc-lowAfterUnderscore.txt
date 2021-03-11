@@ -1104,11 +1104,9 @@ func testAccMqBrokerConfig_allFieldsCustomVpc(
 func testAccMqBrokerConfig_updateUsers1(
 func testAccMqBrokerConfig_updateUsers2(
 func testAccMqBrokerConfig_updateUsers3(
-func testAccMqBrokerConfig_updateTags1(
-func testAccMqBrokerConfig_updateTags2(
-func testAccMqBrokerConfig_updateTags3(
 func testAccMqBrokerConfig_updateSecurityGroups(
 func testAccMqBrokerConfig_updateUsersSecurityGroups(
+func testAccMqBrokerConfig_ldap(
 func testAccMqConfigurationConfig_descriptionUpdated(
 func testAccMqConfigurationConfig_updateTags1(
 func testAccMqConfigurationConfig_updateTags2(

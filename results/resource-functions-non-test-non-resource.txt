@@ -16,6 +16,9 @@ func flattenAcmpcaRevocationConfiguration(
 func migrateAcmpcaCertificateAuthorityStateV0toV1(
 func init(
 func listAcmpcaCertificateAuthorities(
+func validateAcmPcaTemplateArn(
+func expandAcmpcaValidity(
+func expandAcmpcaValidityValue(
 func AMIStateRefreshFunc(
 func expandEc2BlockDeviceMappingForAmiEbsBlockDevice(
 func expandEc2BlockDeviceMappingsForAmiEbsBlockDevice(

@@ -9,6 +9,7 @@ func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecent(domain string, 
 func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndStatus(domain, status string, mostRecent bool) string {
 func testAccCheckAwsAcmCertificateDataSourceConfigWithMostRecentAndTypes(domain, certType string, mostRecent bool) string {
 func testAccAwsAcmCertificateDataSourceConfigKeyTypes(certificate, key, rName string) string {
+func testAccDataSourceAwsAcmpcaCertificateConfig_ARN(rName string) string {
 func testAccDataSourceAwsAmiIdsConfig_sorted(sort_ascending bool) string {
 func testAccAmiDataSourceConfigGp3BlockDevice(rName string) string {
 func testAccDataSourceAwsApiGatewayApiKeyConfig(r string) string {
@@ -484,10 +485,17 @@ func testAccAcmCertificateConfigPrivateKeyTags(commonName string) string {
 func testAccAcmCertificateConfigPrivateKey(certificate, privateKey, chain string) string {
 func testAccAcmCertificateConfig_disableCTLogging(domainName, validationMethod string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_Enabled(rName, certificateAuthorityType string, enabled bool) string {
+func testAccAwsAcmpcaCertificateAuthorityConfig_WithRootCertificate(rName string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_CustomCname(rName, customCname string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_Enabled(rName string, enabled bool) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_ExpirationInDays(rName string, expirationInDays int) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_S3Bucket(rName string) string {
+func testAccAwsAcmpcaCertificateConfig_RootCertificate(rName string) string {
+func testAccAwsAcmpcaCertificateConfig_SubordinateCertificate(rName string) string {
+func testAccAwsAcmpcaCertificateConfig_EndEntityCertificate(rName, csr string) string {
+func testAccAwsAcmpcaCertificateConfig_Validity_EndDate(rName, csr, expiry string) string {
+func testAccAwsAcmpcaCertificateConfig_Validity_Absolute(rName, csr string, expiry int64) string {
+func testAccAcmpcaCertificateBaseRootCAConfig(rName string) string {
 func testAccAWSALBTargetGroupConfig_basic(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_updatedPort(targetGroupName string) string {
 func testAccAWSALBTargetGroupConfig_updatedProtocol(targetGroupName string) string {
@@ -1657,6 +1665,7 @@ func testAccAWSDBInstanceConfig_ReplicateSourceDb_Port(rName string, port int) s
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_VpcSecurityGroupIds(rName string) string {
 func testAccAWSDBInstanceConfig_ReplicateSourceDb_CACertificateIdentifier(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier(rName string) string {
+func testAccAWSDBInstanceConfig_SnapshotIdentifierRemoved(rName string) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_AllocatedStorage(rName string, allocatedStorage int) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_Io1Storage(rName string, iops int) string {
 func testAccAWSDBInstanceConfig_SnapshotIdentifier_AllowMajorVersionUpgrade(rName string, allowMajorVersionUpgrade bool) string {
@@ -3303,21 +3312,23 @@ func testAccMediaPackageChannelConfigWithTags(rName, key, value string) string {
 func testAccMediaStoreContainerPolicyConfig(rName, sid string) string {
 func testAccMediaStoreContainerConfig(rName string) string {
 func testAccMediaStoreContainerConfigWithTags(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccMqBrokerConfig(sgName, brokerName string) string {
-func testAccMqBrokerEBSConfig(sgName, brokerName string) string {
-func testAccMqBrokerConfig_allFieldsDefaultVpc(sgName, cfgName, cfgBody, brokerName string) string {
-func testAccMqBrokerConfig_allFieldsCustomVpc(sgName, cfgName, cfgBody, brokerName string) string {
+func testAccMqBrokerConfig(rName string) string {
+func testAccMqBrokerEBSConfig(rName string) string {
+func testAccMqBrokerEngineVersionUpdateConfig(rName string) string {
+func testAccMqBrokerConfig_allFieldsDefaultVpc(rName, cfgName, cfgBody string) string {
+func testAccMqBrokerConfig_allFieldsCustomVpc(rName, cfgName, cfgBody string) string {
 func testAccMqBrokerConfigEncryptionOptionsKmsKeyId(rName string) string {
 func testAccMqBrokerConfigEncryptionOptionsUseAwsOwnedKey(rName string, useAwsOwnedKey bool) string {
-func testAccMqBrokerConfig_updateUsers1(sgName, brokerName string) string {
-func testAccMqBrokerConfig_updateUsers2(sgName, brokerName string) string {
-func testAccMqBrokerConfig_updateUsers3(sgName, brokerName string) string {
-func testAccMqBrokerConfig_updateTags1(sgName, brokerName string) string {
-func testAccMqBrokerConfig_updateTags2(sgName, brokerName string) string {
-func testAccMqBrokerConfig_updateTags3(sgName, brokerName string) string {
-func testAccMqBrokerConfig_updateSecurityGroups(sgName, brokerName string) string {
-func testAccMqBrokerConfig_updateUsersSecurityGroups(sgName, brokerName string) string {
-func testAccMqBrokerConfigRabbit(sgName, brokerName string) string {
+func testAccMqBrokerConfig_updateUsers1(rName string) string {
+func testAccMqBrokerConfig_updateUsers2(rName string) string {
+func testAccMqBrokerConfig_updateUsers3(rName string) string {
+func testAccMqBrokerConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccMqBrokerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccMqBrokerConfig_updateSecurityGroups(rName string) string {
+func testAccMqBrokerConfig_updateUsersSecurityGroups(rName string) string {
+func testAccMqBrokerConfigRabbit(rName string) string {
+func testAccRabbitMqClusterBrokerConfig(rName string) string {
+func testAccMqBrokerConfig_ldap(rName, ldapUsername string) string {
 func testAccMqConfigurationConfig(configurationName string) string {
 func testAccMqConfigurationConfig_descriptionUpdated(configurationName string) string {
 func testAccMqConfigurationWithDataConfig(configurationName string) string {

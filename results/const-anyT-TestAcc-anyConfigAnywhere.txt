@@ -1,5 +1,6 @@
 const testAccDataSourceAwsAcmpcaCertificateAuthorityConfig_ARN =
 const testAccDataSourceAwsAcmpcaCertificateAuthorityConfig_NonExistent =
+const testAccDataSourceAwsAcmpcaCertificateConfig_NonExistent =
 const testAccDataSourceAwsAmiIdsConfig_basic =
 const testAccCheckAwsAmiDataSourceConfig =
 const testAccCheckAwsAmiDataSourceWindowsConfig =
