@@ -2231,6 +2231,7 @@ func resourceAwsElasticacheReplicationGroupCreate(
 func resourceAwsElasticacheReplicationGroupRead(
 func resourceAwsElasticacheReplicationGroupUpdate(
 func resourceAwsElasticacheReplicationGroupDelete(
+func disassociateElasticacheReplicationGroup(
 func deleteElasticacheReplicationGroup(
 func flattenElasticacheNodeGroupsToClusterMode(
 func elasticacheReplicationGroupModifyShardConfiguration(
@@ -3282,6 +3283,8 @@ func resourceAwsKinesisAnalyticsApplicationRead(
 func resourceAwsKinesisAnalyticsApplicationUpdate(
 func resourceAwsKinesisAnalyticsApplicationDelete(
 func resourceAwsKinesisAnalyticsApplicationImport(
+func kinesisAnalyticsStartApplication(
+func kinesisAnalyticsStopApplication(
 func expandKinesisAnalyticsCloudWatchLoggingOptions(
 func expandKinesisAnalyticsInputs(
 func expandKinesisAnalyticsInput(

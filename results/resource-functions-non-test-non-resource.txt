@@ -842,6 +842,7 @@ func flattenElastiCacheParameters(
 func expandElastiCacheParameters(
 func expandElastiCacheParameter(
 func init(
+func disassociateElasticacheReplicationGroup(
 func deleteElasticacheReplicationGroup(
 func flattenElasticacheNodeGroupsToClusterMode(
 func elasticacheReplicationGroupModifyShardConfiguration(
@@ -1382,6 +1383,8 @@ func flattenIotStepFunctionsAction(
 func init(
 func migrateKeyPairStateV0toV1(
 func init(
+func kinesisAnalyticsStartApplication(
+func kinesisAnalyticsStopApplication(
 func expandKinesisAnalyticsCloudWatchLoggingOptions(
 func expandKinesisAnalyticsInputs(
 func expandKinesisAnalyticsInput(

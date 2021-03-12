@@ -2376,6 +2376,11 @@ func testAccAWSElasticacheClusterConfig_Memcached_FinalSnapshot(rName string) st
 func testAccAWSElasticacheClusterConfig_Redis_FinalSnapshot(rName string) string {
 func testAccAWSElasticacheGlobalReplicationGroupConfig_basic(rName, primaryReplicationGroupId string) string {
 func testAccAWSElasticacheGlobalReplicationGroupConfig_description(rName, primaryReplicationGroupId, description string) string {
+func testAccAWSElasticacheGlobalReplicationGroupConfig_MultipleSecondaries(rName string) string {
+func testAccAWSElasticacheReplicationGroupConfig_ReplaceSecondary_DifferentRegion_Setup(rName string) string {
+func testAccAWSElasticacheReplicationGroupConfig_ReplaceSecondary_DifferentRegion_Move(rName string) string {
+func testAccElasticacheVpcBaseWithProvider(rName, name, provider string) string {
+func testAccAvailableAZsNoOptInConfigWithProvider(name, provider string) string {
 func testAccAWSElasticacheParameterGroupConfig(rName string) string {
 func testAccAWSElasticacheParameterGroupConfigDescription(rName, description string) string {
 func testAccAWSElasticacheParameterGroupConfigParameter1(rName, family, parameterName1, parameterValue1 string) string {
@@ -2405,6 +2410,9 @@ func testAccAWSElasticacheReplicationGroupConfig_FailoverMultiAZ(rName string, n
 func testAccAWSElasticacheReplicationGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSElasticacheReplicationGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSElasticacheReplicationGroupConfigFinalSnapshot(rName string) string {
+func testAccAWSElasticacheReplicationGroupConfig_Validation_NoNodeType(rName string) string {
+func testAccAWSElasticacheReplicationGroupConfig_Validation_GlobalReplicationGroupIdAndNodeType(rName string) string {
+func testAccAWSElasticacheReplicationGroupConfig_GlobalReplicationGroupId_Basic(rName string) string {
 func testAccAWSElasticacheSecurityGroupConfig(rName string) string {
 func testAccAWSElasticacheSubnetGroupConfig(rInt int) string {
 func testAccAWSElasticacheSubnetGroupUpdateConfigPre(rInt int) string {
@@ -3152,12 +3160,13 @@ func testAccKinesisAnalyticsApplicationConfigCloudWatchLoggingOptions(rName stri
 func testAccKinesisAnalyticsApplicationConfigInput(rName string) string {
 func testAccKinesisAnalyticsApplicationConfigInputUpdated(rName string) string {
 func testAccKinesisAnalyticsApplicationConfigInputProcessingConfiguration(rName string, lambdaIndex int) string {
-func testAccKinesisAnalyticsApplicationConfigMultiple(rName string) string {
-func testAccKinesisAnalyticsApplicationConfigMultipleUpdated(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigMultiple(rName, startApplication, startingPosition string) string {
+func testAccKinesisAnalyticsApplicationConfigMultipleUpdated(rName, startApplication, startingPosition string) string {
 func testAccKinesisAnalyticsApplicationOutput(rName string) string {
 func testAccKinesisAnalyticsApplicationOutputUpdated(rName string) string {
 func testAccKinesisAnalyticsApplicationReferenceDataSource(rName string) string {
 func testAccKinesisAnalyticsApplicationReferenceDataSourceUpdated(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigStartApplication(rName string, start bool) string {
 func testAccKinesisAnalyticsApplicationConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccKinesisAnalyticsApplicationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseServiceExecutionIamRole(rName string) string {

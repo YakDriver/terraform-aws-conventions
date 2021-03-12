@@ -1160,6 +1160,7 @@ func testAccAWSEksNodeGroupConfigScalingConfigSizes(rName string, desiredSize, m
 func testAccAWSEksNodeGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksNodeGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEksNodeGroupConfigVersion(rName, version string) string {
+func testAccAvailableAZsNoOptInConfigWithProvider(name, provider string) string {
 func testAccAWSElasticacheParameterGroupConfig(rName string) string {
 func testAccAWSElasticacheParameterGroupConfigDescription(rName, description string) string {
 func testAccAWSElasticacheParameterGroupConfigParameter1(rName, family, parameterName1, parameterValue1 string) string {
@@ -1640,8 +1641,9 @@ func testAccKinesisAnalyticsApplicationConfigCloudWatchLoggingOptions(rName stri
 func testAccKinesisAnalyticsApplicationConfigInput(rName string) string {
 func testAccKinesisAnalyticsApplicationConfigInputUpdated(rName string) string {
 func testAccKinesisAnalyticsApplicationConfigInputProcessingConfiguration(rName string, lambdaIndex int) string {
-func testAccKinesisAnalyticsApplicationConfigMultiple(rName string) string {
-func testAccKinesisAnalyticsApplicationConfigMultipleUpdated(rName string) string {
+func testAccKinesisAnalyticsApplicationConfigMultiple(rName, startApplication, startingPosition string) string {
+func testAccKinesisAnalyticsApplicationConfigMultipleUpdated(rName, startApplication, startingPosition string) string {
+func testAccKinesisAnalyticsApplicationConfigStartApplication(rName string, start bool) string {
 func testAccKinesisAnalyticsApplicationConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccKinesisAnalyticsApplicationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseServiceExecutionIamRole(rName string) string {
