@@ -7315,11 +7315,14 @@ func TestAccAWSWafRule_changeNameForceNew(
 func TestAccAWSWafRule_disappears(
 func TestAccAWSWafRule_changePredicates(
 func TestAccAWSWafRule_geoMatchSetPredicate(
+func TestAccAWSWafRule_webACL(
 func TestAccAWSWafRule_noPredicates(
 func TestAccAWSWafRule_Tags(
 func testAccAWSWafRuleConfig_changePredicates(
 func testAccAWSWafRuleConfig_noPredicates(
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(
+func testAccAWSWafRuleConfig_referencedByWebACL(
+func testAccAWSWafWebAclConfig_noRules(
 func TestAccAWSWafSizeConstraintSet_basic(
 func TestAccAWSWafSizeConstraintSet_changeNameForceNew(
 func TestAccAWSWafSizeConstraintSet_disappears(

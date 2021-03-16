@@ -154,6 +154,7 @@ func testAccAWSWafRegionalWebAclConfig_noRules(
 func testAccAWSWafRegionalWebAclConfig_changeRules(
 func testAccAWSWafRegionalWebAclConfigLoggingConfiguration(
 func testAccAWSWafRegionalWebAclConfigLoggingConfigurationUpdate(
+func testAccAWSWafWebAclConfig_noRules(
 func TestAccAwsWafv2WebACLLoggingConfiguration_disappears_WebAcl(
 func testSweepWafv2WebAcls(
 func resourceAwsWafWebAcl(
@@ -169,7 +170,6 @@ func TestAccAWSWafWebAcl_Rules(
 func TestAccAWSWafWebAcl_LoggingConfiguration(
 func TestAccAWSWafWebAcl_disappears(
 func TestAccAWSWafWebAcl_Tags(
-func testAccCheckAWSWafWebAclDisappears(
 func testAccCheckAWSWafWebAclDestroy(
 func testAccCheckAWSWafWebAclExists(
 func testAccAWSWafWebAclConfig_Required(

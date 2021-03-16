@@ -166,7 +166,6 @@ func flattenWafIpSetDescriptorWR(
 func TestAccAWSWafRegionalIPSet_IpSetDescriptors_1000UpdateLimit(
 func TestDiffWafRegionalIpSetDescriptors(
 func testAccAWSWafRegionalIPSetConfig_IpSetDescriptors(
-func computeWafRulePredicateWithIpSet(
 func testSweepWafv2IpSets(
 func TestAccAwsWafv2RuleGroup_IpSetReferenceStatement(
 func TestAccAwsWafv2RuleGroup_IpSetReferenceStatement_IPSetForwardedIPConfig(

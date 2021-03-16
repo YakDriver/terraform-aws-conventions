@@ -9685,9 +9685,9 @@ func TestAccAWSWafRule_changeNameForceNew(
 func TestAccAWSWafRule_disappears(
 func TestAccAWSWafRule_changePredicates(
 func TestAccAWSWafRule_geoMatchSetPredicate(
+func TestAccAWSWafRule_webACL(
 func TestAccAWSWafRule_noPredicates(
 func TestAccAWSWafRule_Tags(
-func testAccCheckAWSWafRuleDisappears(
 func testAccCheckAWSWafRuleDestroy(
 func testAccCheckAWSWafRuleExists(
 func testAccPreCheckAWSWaf(
@@ -9698,6 +9698,8 @@ func testAccAWSWafRuleConfig_noPredicates(
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(
 func testAccAWSWafRuleConfigTags1(
 func testAccAWSWafRuleConfigTags2(
+func testAccAWSWafRuleConfig_referencedByWebACL(
+func testAccAWSWafWebAclConfig_noRules(
 func TestAccAWSWafSizeConstraintSet_basic(
 func TestAccAWSWafSizeConstraintSet_changeNameForceNew(
 func TestAccAWSWafSizeConstraintSet_disappears(
@@ -9844,7 +9846,6 @@ func TestAccAWSWafWebAcl_Rules(
 func TestAccAWSWafWebAcl_LoggingConfiguration(
 func TestAccAWSWafWebAcl_disappears(
 func TestAccAWSWafWebAcl_Tags(
-func testAccCheckAWSWafWebAclDisappears(
 func testAccCheckAWSWafWebAclDestroy(
 func testAccCheckAWSWafWebAclExists(
 func testAccAWSWafWebAclConfig_Required(

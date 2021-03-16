@@ -14335,10 +14335,6 @@ func testAccAWSWafRuleGroupConfigTags1(
 func testAccAWSWafRuleGroupConfigTags2(
 func init(
 func testSweepWafRules(
-func computeWafRulePredicateWithIpSet(
-func computeWafRulePredicateWithByteMatchSet(
-func computeWafRulePredicateWithGeoMatchSet(
-func testAccCheckAWSWafRuleDisappears(
 func testAccCheckAWSWafRuleDestroy(
 func testAccCheckAWSWafRuleExists(
 func testAccPreCheckAWSWaf(
@@ -14349,6 +14345,8 @@ func testAccAWSWafRuleConfig_noPredicates(
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(
 func testAccAWSWafRuleConfigTags1(
 func testAccAWSWafRuleConfigTags2(
+func testAccAWSWafRuleConfig_referencedByWebACL(
+func testAccAWSWafWebAclConfig_noRules(
 func resourceAwsWafSizeConstraintSet(
 func resourceAwsWafSizeConstraintSetCreate(
 func resourceAwsWafSizeConstraintSetRead(
@@ -14551,7 +14549,6 @@ func flattenWAFLoggingConfiguration(
 func flattenWAFRedactedFields(
 func init(
 func testSweepWafWebAcls(
-func testAccCheckAWSWafWebAclDisappears(
 func testAccCheckAWSWafWebAclDestroy(
 func testAccCheckAWSWafWebAclExists(
 func testAccAWSWafWebAclConfig_Required(

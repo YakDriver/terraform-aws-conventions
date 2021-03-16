@@ -2984,6 +2984,7 @@ func TestAccAWSWafRule_changeNameForceNew(
 func TestAccAWSWafRule_disappears(
 func TestAccAWSWafRule_changePredicates(
 func TestAccAWSWafRule_geoMatchSetPredicate(
+func TestAccAWSWafRule_webACL(
 func TestAccAWSWafRule_noPredicates(
 func TestAccAWSWafSizeConstraintSet_basic(
 func TestAccAWSWafSizeConstraintSet_changeNameForceNew(

@@ -7454,7 +7454,6 @@ func testAccAWSWafRuleGroupConfig_changeActivatedRules(
 func testAccAWSWafRuleGroupConfig_noActivatedRules(
 func testAccAWSWafRuleGroupConfigTags1(
 func testAccAWSWafRuleGroupConfigTags2(
-func testAccCheckAWSWafRuleDisappears(
 func testAccCheckAWSWafRuleDestroy(
 func testAccCheckAWSWafRuleExists(
 func testAccPreCheckAWSWaf(
@@ -7465,6 +7464,8 @@ func testAccAWSWafRuleConfig_noPredicates(
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(
 func testAccAWSWafRuleConfigTags1(
 func testAccAWSWafRuleConfigTags2(
+func testAccAWSWafRuleConfig_referencedByWebACL(
+func testAccAWSWafWebAclConfig_noRules(
 func testAccCheckAWSWafSizeConstraintSetDisappears(
 func testAccCheckAWSWafSizeConstraintSetExists(
 func testAccCheckAWSWafSizeConstraintSetDestroy(
@@ -7570,7 +7571,6 @@ func testAccAwsWafv2WebACLConfig_TwoTags(
 func testAccAwsWafv2WebACLConfig_multipleNestedRateBasedStatements(
 func testAccAwsWafv2WebACLConfig_multipleNestedOperatorStatements(
 func testAccAwsWafv2WebACLImportStateIdFunc(
-func testAccCheckAWSWafWebAclDisappears(
 func testAccCheckAWSWafWebAclDestroy(
 func testAccCheckAWSWafWebAclExists(
 func testAccAWSWafWebAclConfig_Required(

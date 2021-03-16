@@ -2448,9 +2448,6 @@ func updateWafRuleGroupResource(
 func init(
 func computeWafActivatedRuleWithRuleId(
 func init(
-func computeWafRulePredicateWithIpSet(
-func computeWafRulePredicateWithByteMatchSet(
-func computeWafRulePredicateWithGeoMatchSet(
 func updateSizeConstraintSetResource(
 func init(
 func updateSqlInjectionMatchSetResource(

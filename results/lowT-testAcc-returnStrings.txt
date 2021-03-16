@@ -5025,6 +5025,8 @@ func testAccAWSWafRuleConfig_noPredicates(name string) string {
 func testAccAWSWafRuleConfig_geoMatchSetPredicate(name string) string {
 func testAccAWSWafRuleConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSWafRuleConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
+func testAccAWSWafRuleConfig_referencedByWebACL(rName string) string {
+func testAccAWSWafWebAclConfig_noRules(rName string) string {
 func testAccAWSWafSizeConstraintSetConfig(name string) string {
 func testAccAWSWafSizeConstraintSetConfigChangeName(name string) string {
 func testAccAWSWafSizeConstraintSetConfig_changeConstraints(name string) string {

@@ -12,6 +12,8 @@ func testAccAWSStorageGatewayNfsFileShareConfig_ObjectACL(
 func TestAccAWSStorageGatewaySmbFileShare_ObjectACL(
 func testAccAWSStorageGatewaySmbFileShareConfig_ObjectACL(
 func testAccAWSStorageGatewaySmbFileShareSMBACLConfig(
+func TestAccAWSWafRule_webACL(
+func testAccAWSWafRuleConfig_referencedByWebACL(
 func resourceAwsWafv2WebACLAssociation(
 func resourceAwsWafv2WebACLAssociationCreate(
 func resourceAwsWafv2WebACLAssociationRead(

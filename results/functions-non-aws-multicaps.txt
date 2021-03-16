@@ -3780,6 +3780,8 @@ func expandWAFRegionalRedactedFields(
 func flattenWAFRegionalLoggingConfiguration(
 func flattenWAFRegionalRedactedFields(
 func updateXssMatchSetResourceWR(
+func TestAccAWSWafRule_webACL(
+func testAccAWSWafRuleConfig_referencedByWebACL(
 func resourceAwsWafv2IPSet(
 func resourceAwsWafv2IPSetCreate(
 func resourceAwsWafv2IPSetRead(
