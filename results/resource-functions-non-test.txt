@@ -1506,10 +1506,6 @@ func resourceAwsDmsCertificateRead(
 func resourceAwsDmsCertificateUpdate(
 func resourceAwsDmsCertificateDelete(
 func resourceAwsDmsCertificateSetState(
-func dmsCertificateDestroy(
-func checkDmsCertificateExists(
-func checkDmsCertificateExistsWithProviders(
-func dmsCertificateConfig(
 func resourceAwsDmsEndpoint(
 func resourceAwsDmsEndpointCreate(
 func resourceAwsDmsEndpointRead(
@@ -5369,6 +5365,9 @@ func resourceAwsSsmPatchGroup(
 func resourceAwsSsmPatchGroupCreate(
 func resourceAwsSsmPatchGroupRead(
 func resourceAwsSsmPatchGroupDelete(
+func parseSsmPatchGroupId(
+func resourceAwsSsmPatchGroupV0(
+func resourceAwsSsmPatchGroupStateUpgradeV0(
 func resourceAwsSsmResourceDataSync(
 func resourceAwsSsmResourceDataSyncCreate(
 func resourceAwsSsmResourceDataSyncRead(

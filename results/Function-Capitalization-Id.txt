@@ -390,6 +390,7 @@ func testAccAWSSpotFleetRequestLaunchSpecificationEbsBlockDeviceKmsKeyId(
 func testAccAWSSpotFleetRequestLaunchSpecificationRootBlockDeviceKmsKeyId(
 func testAccAWSSSMMaintenanceWindowTargetImportStateIdFunc(
 func testAccAWSSSMMaintenanceWindowTaskImportStateIdFunc(
+func parseSsmPatchGroupId(
 func TestAccAWSStorageGatewayCachedIscsiVolume_SnapshotId(
 func testAccAWSStorageGatewayCachedIscsiVolumeConfig_SnapshotId(
 func TestAccAWSStorageGatewayStoredIscsiVolume_snapshotId(
@@ -433,7 +434,6 @@ func validateCloudWatchEventTargetId(
 func validateAwsAccountId(
 func validatePolicyStatementId(
 func validateAwsEmrCustomAmiId(
-func validateDmsCertificateId(
 func validateDmsEndpointId(
 func validateDmsReplicationInstanceId(
 func validateDmsReplicationSubnetGroupId(
@@ -446,7 +446,6 @@ func TestValidateAwsAccountId(
 func TestValidatePolicyStatementId(
 func TestValidateEmrCustomAmiId(
 func TestValidateDmsEndpointId(
-func TestValidateDmsCertificateId(
 func TestValidateDmsReplicationInstanceId(
 func TestValidateDmsReplicationSubnetGroupId(
 func TestValidateDmsReplicationTaskId(

@@ -3776,7 +3776,6 @@ func testAccAWSCodeBuildProjectConfig_Environment_RegistryCredential1(
 func testAccAWSCodeBuildProjectConfig_Environment_RegistryCredential2(
 func testAccAWSCodeBuildProjectConfig_LogsConfig_CloudWatchLogs(
 func testAccAWSCodeBuildProjectConfig_LogsConfig_S3Logs(
-func testAccAWSCodeBuildProjectConfig_Source_Auth(
 func testAccAWSCodeBuildProjectConfig_Source_GitCloneDepth(
 func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_CodeCommit(
 func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_GitHub(
@@ -5111,10 +5110,10 @@ func resourceAwsDmsCertificateRead(
 func resourceAwsDmsCertificateUpdate(
 func resourceAwsDmsCertificateDelete(
 func resourceAwsDmsCertificateSetState(
-func dmsCertificateDestroy(
-func checkDmsCertificateExists(
-func checkDmsCertificateExistsWithProviders(
-func dmsCertificateConfig(
+func testAccCheckAWSDmsCertificateDestroy(
+func testAccAWSDmsCertificateExists(
+func testAccAWSDmsCertificateConfig(
+func testAccAWSDmsCertificateConfigCertificateWallet(
 func testAccAWSDmsCertificateConfigTags1(
 func testAccAWSDmsCertificateConfigTags2(
 func resourceAwsDmsEndpoint(
@@ -13322,7 +13321,6 @@ func resourceAwsSsmParameterPut(
 func shouldUpdateSsmParameter(
 func testAccCheckAWSSSMParameterRecreated(
 func testAccCheckAWSSSMParameterExists(
-func testAccCheckAWSSSMParameterDisappears(
 func testAccCheckAWSSSMParameterDestroy(
 func testAccAWSSSMParameterBasicConfig(
 func testAccAWSSSMParameterConfigTier(
@@ -13363,9 +13361,15 @@ func resourceAwsSsmPatchGroup(
 func resourceAwsSsmPatchGroupCreate(
 func resourceAwsSsmPatchGroupRead(
 func resourceAwsSsmPatchGroupDelete(
-func testAccCheckAWSSSMPatchGroupExists(
+func parseSsmPatchGroupId(
+func resourceAwsSsmPatchGroupV0(
+func resourceAwsSsmPatchGroupStateUpgradeV0(
+func testResourceAwsSsmPatchGroupStateDataV0(
+func testResourceAwsSsmPatchGroupStateDataV1(
 func testAccCheckAWSSSMPatchGroupDestroy(
+func testAccCheckAWSSSMPatchGroupExists(
 func testAccAWSSSMPatchGroupBasicConfig(
+func testAccAWSSSMPatchGroupConfigMultipleBaselines(
 func resourceAwsSsmResourceDataSync(
 func resourceAwsSsmResourceDataSyncCreate(
 func resourceAwsSsmResourceDataSyncRead(
@@ -15036,7 +15040,6 @@ func validateAwsEcsPlacementStrategy(
 func validateAwsEmrEbsVolumeType(
 func validateAwsEmrCustomAmiId(
 func validateSfnStateMachineName(
-func validateDmsCertificateId(
 func validateDmsEndpointId(
 func validateDmsReplicationInstanceId(
 func validateDmsReplicationSubnetGroupId(

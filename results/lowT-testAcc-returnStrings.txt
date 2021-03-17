@@ -1375,7 +1375,6 @@ func testAccAWSCodeBuildProjectConfig_Environment_RegistryCredential1(rName stri
 func testAccAWSCodeBuildProjectConfig_Environment_RegistryCredential2(rName string) string {
 func testAccAWSCodeBuildProjectConfig_LogsConfig_CloudWatchLogs(rName, status, gName, sName string) string {
 func testAccAWSCodeBuildProjectConfig_LogsConfig_S3Logs(rName, bName, status, location string, encryptionDisabled bool) string {
-func testAccAWSCodeBuildProjectConfig_Source_Auth(rName, authResource, authType string) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitCloneDepth(rName string, gitCloneDepth int) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_CodeCommit(rName string, fetchSubmodules bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_GitHub(rName string, fetchSubmodules bool) string {
@@ -1879,6 +1878,8 @@ func testAccDirectoryServiceDirectoryConfig_withAlias(alias string) string {
 func testAccDirectoryServiceDirectoryConfig_withSso(alias string) string {
 func testAccDirectoryServiceDirectoryConfig_withSso_modified(alias string) string {
 func testAccDirectoryServiceLogSubscriptionConfig(logGroupName string) string {
+func testAccAWSDmsCertificateConfig(randId string) string {
+func testAccAWSDmsCertificateConfigCertificateWallet(rName string) string {
 func testAccAWSDmsCertificateConfigTags1(randId, tagKey1, tagValue1 string) string {
 func testAccAWSDmsCertificateConfigTags2(randId, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccDmsEventSubscriptionConfigBase(rName string) string {
@@ -4716,6 +4717,7 @@ func testAccAWSSSMPatchBaselineConfigWithSourceUpdated(rName string) string {
 func testAccAWSSSMPatchBaselineBasicConfigApprovedPatchesNonSec(rName string) string {
 func testAccAWSSSMPatchBaselineBasicConfigRejectPatchesAction(rName string) string {
 func testAccAWSSSMPatchGroupBasicConfig(rName string) string {
+func testAccAWSSSMPatchGroupConfigMultipleBaselines(rName string) string {
 func testAccSsmResourceDataSyncConfig(rInt int, rName string) string {
 func testAccSsmResourceDataSyncConfigUpdate(rInt int, rName string) string {
 func testAccAWSSSOAdminAccountAssignmentBaseConfig(rName string) string {

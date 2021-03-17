@@ -5604,6 +5604,10 @@ func resourceAwsSsmPatchGroup(
 func resourceAwsSsmPatchGroupCreate(
 func resourceAwsSsmPatchGroupRead(
 func resourceAwsSsmPatchGroupDelete(
+func resourceAwsSsmPatchGroupV0(
+func resourceAwsSsmPatchGroupStateUpgradeV0(
+func testResourceAwsSsmPatchGroupStateDataV0(
+func testResourceAwsSsmPatchGroupStateDataV1(
 func resourceAwsSsmResourceDataSync(
 func resourceAwsSsmResourceDataSyncCreate(
 func resourceAwsSsmResourceDataSyncRead(

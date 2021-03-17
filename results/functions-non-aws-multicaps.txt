@@ -3527,6 +3527,8 @@ func testAccAWSSSMMaintenanceWindowConfigScheduleOffset(
 func testAccAWSSSMMaintenanceWindowConfigStartDate(
 func TestAccAWSSSMParameter_basic(
 func TestAccAWSSSMParameter_Tier(
+func TestAccAWSSSMParameter_Tier_IntelligentTieringToStandard(
+func TestAccAWSSSMParameter_Tier_IntelligentTieringToAdvanced(
 func TestAccAWSSSMParameter_disappears(
 func TestAccAWSSSMParameter_overwrite(
 func TestAccAWSSSMParameter_tags(
@@ -3540,7 +3542,6 @@ func TestAccAWSSSMParameter_secure_with_key(
 func TestAccAWSSSMParameter_secure_keyUpdate(
 func testAccCheckAWSSSMParameterRecreated(
 func testAccCheckAWSSSMParameterExists(
-func testAccCheckAWSSSMParameterDisappears(
 func testAccCheckAWSSSMParameterDestroy(
 func testAccAWSSSMParameterBasicConfig(
 func testAccAWSSSMParameterConfigTier(
@@ -3574,10 +3575,14 @@ func testAccAWSSSMPatchBaselineConfigWithSource(
 func testAccAWSSSMPatchBaselineConfigWithSourceUpdated(
 func testAccAWSSSMPatchBaselineBasicConfigApprovedPatchesNonSec(
 func testAccAWSSSMPatchBaselineBasicConfigRejectPatchesAction(
+func TestResourceAWSSSMPatchGroupStateUpgradeV0(
 func TestAccAWSSSMPatchGroup_basic(
-func testAccCheckAWSSSMPatchGroupExists(
+func TestAccAWSSSMPatchGroup_disappears(
+func TestAccAWSSSMPatchGroup_multipleBaselines(
 func testAccCheckAWSSSMPatchGroupDestroy(
+func testAccCheckAWSSSMPatchGroupExists(
 func testAccAWSSSMPatchGroupBasicConfig(
+func testAccAWSSSMPatchGroupConfigMultipleBaselines(
 func parseSsoAdminAccountAssignmentID(
 func TestAccAWSSSOAdminAccountAssignment_Basic_Group(
 func TestAccAWSSSOAdminAccountAssignment_Basic_User(

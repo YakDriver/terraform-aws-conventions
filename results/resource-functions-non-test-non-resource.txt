@@ -554,10 +554,6 @@ func dlmLifecyclePolicyFullConfig(
 func dlmLifecyclePolicyFullUpdateConfig(
 func dlmLifecyclePolicyConfigTags1(
 func dlmLifecyclePolicyConfigTags2(
-func dmsCertificateDestroy(
-func checkDmsCertificateExists(
-func checkDmsCertificateExistsWithProviders(
-func dmsCertificateConfig(
 func flattenDmsElasticsearchSettings(
 func flattenDmsKafkaSettings(
 func flattenDmsKinesisSettings(
@@ -2265,6 +2261,7 @@ func expandAwsSsmPatchRuleGroup(
 func flattenAwsSsmPatchRuleGroup(
 func expandAwsSsmPatchSource(
 func flattenAwsSsmPatchSource(
+func parseSsmPatchGroupId(
 func findResourceDataSyncItem(
 func flattenSsmResourceDataSyncS3Destination(
 func expandSsmResourceDataSyncS3Destination(

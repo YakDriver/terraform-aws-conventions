@@ -1694,6 +1694,7 @@ func testAccDirectoryServiceDirectoryConfig_withSso_modified(
 func TestAccAWSDirectoryServiceLogSubscription_basic(
 func TestAccAWSDlmLifecyclePolicy_basic(
 func TestAccAWSDmsCertificate_basic(
+func TestAccAWSDmsCertificate_disappears(
 func TestAccAWSDmsCertificate_tags(
 func TestAccAwsDmsEndpoint_basic(
 func TestAccAWSDmsEventSubscription_basic(
@@ -4243,6 +4244,8 @@ func TestAccAWSSSMPatchBaseline_basic(
 func TestAccAWSSSMPatchBaseline_tags(
 func TestAccAWSSSMPatchBaseline_disappears(
 func TestAccAWSSSMPatchGroup_basic(
+func TestAccAWSSSMPatchGroup_disappears(
+func TestAccAWSSSMPatchGroup_multipleBaselines(
 func TestAccAWSSsmResourceDataSync_basic(
 func TestAccAWSSsmResourceDataSync_update(
 func TestAccAWSSSOAdminManagedPolicyAttachment_basic(

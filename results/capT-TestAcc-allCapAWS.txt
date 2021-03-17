@@ -910,7 +910,6 @@ func TestAccAWSCodeBuildProject_Environment_EnvironmentVariable_Value(
 func TestAccAWSCodeBuildProject_Environment_Certificate(
 func TestAccAWSCodeBuildProject_LogsConfig_CloudWatchLogs(
 func TestAccAWSCodeBuildProject_LogsConfig_S3Logs(
-func TestAccAWSCodeBuildProject_Source_Auth(
 func TestAccAWSCodeBuildProject_Source_GitCloneDepth(
 func TestAccAWSCodeBuildProject_Source_GitSubmodulesConfig_CodeCommit(
 func TestAccAWSCodeBuildProject_Source_GitSubmodulesConfig_GitHub(
@@ -1359,6 +1358,8 @@ func TestAccAWSDlmLifecyclePolicy_basic(
 func TestAccAWSDlmLifecyclePolicy_Full(
 func TestAccAWSDlmLifecyclePolicy_Tags(
 func TestAccAWSDmsCertificate_basic(
+func TestAccAWSDmsCertificate_disappears(
+func TestAccAWSDmsCertificate_CertificateWallet(
 func TestAccAWSDmsCertificate_tags(
 func TestAccAWSDmsEventSubscription_basic(
 func TestAccAWSDmsEventSubscription_disappears(
@@ -3795,6 +3796,8 @@ func TestAccAWSSSMMaintenanceWindow_ScheduleOffset(
 func TestAccAWSSSMMaintenanceWindow_StartDate(
 func TestAccAWSSSMParameter_basic(
 func TestAccAWSSSMParameter_Tier(
+func TestAccAWSSSMParameter_Tier_IntelligentTieringToStandard(
+func TestAccAWSSSMParameter_Tier_IntelligentTieringToAdvanced(
 func TestAccAWSSSMParameter_disappears(
 func TestAccAWSSSMParameter_overwrite(
 func TestAccAWSSSMParameter_tags(
@@ -3815,6 +3818,8 @@ func TestAccAWSSSMPatchBaseline_Sources(
 func TestAccAWSSSMPatchBaseline_ApprovedPatchesNonSec(
 func TestAccAWSSSMPatchBaseline_RejectPatchesAction(
 func TestAccAWSSSMPatchGroup_basic(
+func TestAccAWSSSMPatchGroup_disappears(
+func TestAccAWSSSMPatchGroup_multipleBaselines(
 func TestAccAWSSsmResourceDataSync_basic(
 func TestAccAWSSsmResourceDataSync_update(
 func TestAccAWSSSOAdminAccountAssignment_Basic_Group(

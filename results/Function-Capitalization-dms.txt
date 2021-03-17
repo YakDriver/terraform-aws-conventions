@@ -1,5 +1,3 @@
-func dmsCertificateDestroy(
-func dmsCertificateConfig(
 func dmsEndpointDestroy(
 func dmsEndpointBasicConfig(
 func dmsEndpointBasicConfigUpdate(

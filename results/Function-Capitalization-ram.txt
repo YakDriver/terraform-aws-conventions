@@ -331,6 +331,8 @@ func resourceAwsSsmParameterPut(
 func shouldUpdateSsmParameter(
 func TestAccAWSSSMParameter_basic(
 func TestAccAWSSSMParameter_Tier(
+func TestAccAWSSSMParameter_Tier_IntelligentTieringToStandard(
+func TestAccAWSSSMParameter_Tier_IntelligentTieringToAdvanced(
 func TestAccAWSSSMParameter_disappears(
 func TestAccAWSSSMParameter_overwrite(
 func TestAccAWSSSMParameter_tags(
@@ -344,7 +346,6 @@ func TestAccAWSSSMParameter_secure_with_key(
 func TestAccAWSSSMParameter_secure_keyUpdate(
 func testAccCheckAWSSSMParameterRecreated(
 func testAccCheckAWSSSMParameterExists(
-func testAccCheckAWSSSMParameterDisappears(
 func testAccCheckAWSSSMParameterDestroy(
 func testAccAWSSSMParameterBasicConfig(
 func testAccAWSSSMParameterConfigTier(
