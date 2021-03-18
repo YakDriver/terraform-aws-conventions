@@ -203,6 +203,10 @@ func testAccInstanceDataSourceConfig_metadataOptions(rName string) string {
 func testAccInstanceDataSourceConfig_enclaveOptions(rName string) string {
 func testAccInstanceDataSourceConfig_blockDeviceTags(rName string) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
+func testAccAWSKinesisStreamConsumerDataSourceBaseConfig(rName string) string {
+func testAccAWSKinesisStreamConsumerDataSourceConfig(rName string) string {
+func testAccAWSKinesisStreamConsumerDataSourceConfigName(rName string) string {
+func testAccAWSKinesisStreamConsumerDataSourceConfigArn(rName string) string {
 func testAccDataSourceAwsKmsKeyConfig(rName string) string {
 func testAccAWSLakeFormationPermissionsDataSourceConfig_basic(rName string) string {
 func testAccAWSLakeFormationPermissionsDataSourceConfig_dataLocation(rName string) string {
@@ -457,10 +461,17 @@ func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
 func testAccAlternateRegionProviderConfig() string {
 func testAccMultipleRegionProviderConfig(regions int) string {
+func testAccProviderConfigDefaultAndIgnoreTagsKeyPrefixes1(key1, value1, keyPrefix1 string) string {
+func testAccProviderConfigDefaultAndIgnoreTagsKeys1(key1, value1 string) string {
 func testAccProviderConfigIgnoreTagsKeyPrefixes1(keyPrefix1 string) string {
 func testAccProviderConfigIgnoreTagsKeys1(key1 string) string {
 func testAccNamedRegionalProviderConfig(providerName string, region string) string {
 func testAccRegionalProviderConfig(region string) string {
+func testAccAWSProviderConfigDefaultTags_Tags0() string {
+func testAccAWSProviderConfigDefaultTags_Tags1(tag1, value1 string) string {
+func testAccAWSProviderConfigDefaultTags_Tags2(tag1, value1, tag2, value2 string) string {
+func testAccAWSProviderConfigDefaultTagsEmptyConfigurationBlock() string {
+func testAccAWSProviderConfigDefaultAndIgnoreTagsEmptyConfigurationBlock() string {
 func testAccAWSProviderConfigEndpoints(endpoints string) string {
 func testAccAWSProviderConfigIgnoreTagsEmptyConfigurationBlock() string {
 func testAccAWSProviderConfigIgnoreTagsKeyPrefixes0() string {
@@ -1707,6 +1718,7 @@ func testAccAWSDBOptionGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagV
 func testAccAWSDBOptionGroupConfigTagsWithOption1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSDBOptionGroupConfigTagsWithOption2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSDBParameterGroupConfig(n string) string {
+func testAccAWSDBParameterGroupConfigCaseWithMixedParameters(n string) string {
 func testAccAWSDBParameterGroupConfigWithApplyMethod(n string) string {
 func testAccAWSDBParameterGroupAddParametersConfig(n string) string {
 func testAccAWSDBParameterGroupOnlyConfig(n string) string {
@@ -1940,6 +1952,7 @@ func testAccEc2ClientVpnEndpointConfig_tags(rName string) string {
 func testAccEc2ClientVpnEndpointConfig_tagsChanged(rName string) string {
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
 func testAccEc2ClientVpnNetworkAssociationConfigBasic(rName string) string {
+func testAccEc2ClientVpnNetworkAssociationConfigMultipleSubnets(rName string) string {
 func testAccEc2ClientVpnRouteConfigBasic(rName string) string {
 func testAccEc2ClientVpnRouteConfigDescription(rName string) string {
 func testAccAWSEc2FleetConfig_multipleNetworkInterfaces(rName string) string {
@@ -2959,6 +2972,9 @@ func testAccKinesisFirehoseDeliveryStreamConfig_HTTPEndpoint_RetryDuration(rInt,
 func testAccKinesisFirehoseDeliveryStreamConfig_ElasticsearchVpcBasic(ri int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_ElasticsearchVpcUpdate(funcName, policyName, roleName string, ri int) string {
 func testAccKinesisFirehoseDeliveryStreamConfig_missingProcessingConfiguration(rInt int) string {
+func testAccAWSKinesisStreamConsumerBaseConfig(rName string) string {
+func testAccAWSKinesisStreamConsumerConfig_basic(rName string) string {
+func testAccAWSKinesisStreamConsumerConfig_multiple(rName string, count int) string {
 func testAccKinesisStreamConfig(rInt int) string {
 func testAccKinesisStreamConfigConcurrent(rInt int) string {
 func testAccKinesisStreamConfigWithEncryptionAndNoKmsKey(rInt int) string {
@@ -4358,6 +4374,7 @@ func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettings(rName stri
 func testAccAWSStorageGatewayGatewayConfig_SmbActiveDirectorySettingsTimeout(rName string, timeout int) string {
 func testAccAWSStorageGatewayGatewayConfig_SmbGuestPassword(rName, smbGuestPassword string) string {
 func testAccAWSStorageGatewayGatewayConfigSMBSecurityStrategy(rName, strategy string) string {
+func testAccAWSStorageGatewayGatewayConfigSMBVisibility(rName string, visible bool) string {
 func testAccAWSStorageGatewayGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayGatewayBandwidthConfigUpload(rName string, rate int) string {
@@ -4677,10 +4694,15 @@ func testAccAwsWafv2RuleGroupConfig_TwoTags(name, tag1Key, tag1Value, tag2Key, t
 func testAccAwsWafv2WebACLAssociationConfig(name string) string {
 func testAccWebACLLoggingConfigurationDependenciesConfig(rName string) string {
 func testAccWebACLLoggingConfigurationKinesisDependencyConfig(rName string) string {
+func testAccWebACLLoggingConfigurationResource_updateRedactedFieldConfig(field string) string {
 func testAccAwsWafv2WebACLLoggingConfiguration_basic(rName string) string {
 func testAccAwsWafv2WebACLLoggingConfiguration_updateLogDestination(rName, rNameNew string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_updateTwoSingleHeaderRedactedFields(rName string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_updateSingleHeaderRedactedField(rName string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_updateRedactedField(rName, field string) string {
 func testAccAwsWafv2WebACLLoggingConfiguration_updateTwoRedactedFields(rName string) string {
-func testAccAwsWafv2WebACLLoggingConfiguration_updateOneRedactedField(rName string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_updateThreeRedactedFields(rName string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_emptyRedactedField(rName string) string {
 func testAccAwsWafv2WebACLConfig_Basic(name string) string {
 func testAccAwsWafv2WebACLConfig_BasicRule(name string) string {
 func testAccAwsWafv2WebACLConfig_UpdateRuleNamePriorityMetric(name, ruleName1, ruleName2 string, priority1, priority2 int) string {

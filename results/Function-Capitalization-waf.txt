@@ -6,6 +6,7 @@ func wafv2ScopeDownStatementSchema(
 func wafv2RuleGroupReferenceStatementSchema(
 func wafSizeConstraintSetSchema(
 func wafv2EmptySchema(
+func wafv2EmptySchemaDeprecated(
 func wafv2RootStatementSchema(
 func wafv2StatementSchema(
 func wafv2ByteMatchStatementSchema(

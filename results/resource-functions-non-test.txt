@@ -3415,6 +3415,10 @@ func resourceAwsKinesisFirehoseMigrateState(
 func migrateKinesisFirehoseV0toV1(
 func init(
 func baseAccFirehoseAWSLambdaConfig(
+func resourceAwsKinesisStreamConsumer(
+func resourceAwsKinesisStreamConsumerCreate(
+func resourceAwsKinesisStreamConsumerRead(
+func resourceAwsKinesisStreamConsumerDelete(
 func resourceAwsKinesisStream(
 func resourceAwsKinesisStreamImport(
 func resourceAwsKinesisStreamCreate(
@@ -4502,6 +4506,7 @@ func parseRecordId(
 func resourceAwsRoute53RecordMigrateState(
 func migrateRoute53RecordStateV0toV1(
 func migrateRoute53RecordStateV1toV2(
+func init(
 func resourceAwsRoute53ResolverDnssecConfig(
 func resourceAwsRoute53ResolverDnssecConfigCreate(
 func resourceAwsRoute53ResolverDnssecConfigRead(
@@ -5919,8 +5924,12 @@ func resourceAwsWafv2WebACLLoggingConfiguration(
 func resourceAwsWafv2WebACLLoggingConfigurationPut(
 func resourceAwsWafv2WebACLLoggingConfigurationRead(
 func resourceAwsWafv2WebACLLoggingConfigurationDelete(
-func flattenWafv2RedactedFields(
 func expandWafv2RedactedFields(
+func expandWafv2RedactedField(
+func flattenWafv2RedactedFields(
+func flattenWafv2RedactedField(
+func redactedFieldsHash(
+func suppressRedactedFieldsDiff(
 func init(
 func resourceAwsWafWebAcl(
 func resourceAwsWafWebAclCreate(

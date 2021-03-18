@@ -1935,6 +1935,10 @@ func resourceAwsKinesisFirehoseDeliveryStreamUpdate(
 func resourceAwsKinesisFirehoseDeliveryStreamRead(
 func resourceAwsKinesisFirehoseDeliveryStreamDelete(
 func resourceAwsKinesisFirehoseMigrateState(
+func resourceAwsKinesisStreamConsumer(
+func resourceAwsKinesisStreamConsumerCreate(
+func resourceAwsKinesisStreamConsumerRead(
+func resourceAwsKinesisStreamConsumerDelete(
 func resourceAwsKinesisStream(
 func resourceAwsKinesisStreamImport(
 func resourceAwsKinesisStreamCreate(

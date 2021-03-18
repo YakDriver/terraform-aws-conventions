@@ -93,6 +93,7 @@ func resourceAwsDbParameterGroupDelete(
 func resourceAwsDbParameterHash(
 func testSweepRdsDbParameterGroups(
 func TestAccAWSDBParameterGroup_basic(
+func TestAccAWSDBParameterGroup_caseWithMixedParameters(
 func TestAccAWSDBParameterGroup_limit(
 func TestAccAWSDBParameterGroup_Disappears(
 func TestAccAWSDBParameterGroup_namePrefix(
@@ -107,6 +108,7 @@ func testAccCheckAWSDBParameterGroupAttributes(
 func testAccCheckAWSDBParameterGroupExists(
 func testAccCheckAWSDBParameterNotUserDefined(
 func testAccAWSDBParameterGroupConfig(
+func testAccAWSDBParameterGroupConfigCaseWithMixedParameters(
 func testAccAWSDBParameterGroupConfigWithApplyMethod(
 func testAccAWSDBParameterGroupAddParametersConfig(
 func testAccAWSDBParameterGroupOnlyConfig(

@@ -149,6 +149,10 @@ func testAccAwsImageBuilderInfrastructureConfigurationDataSourceConfigArn(rName 
 func testAccInstanceDataSourceConfigGetUserData(rName string, getUserData bool) string {
 func testAccInstanceDataSourceConfigGetUserDataNoUserData(rName string, getUserData bool) string {
 func testAccAWSIotEndpointConfigEndpointType(endpointType string) string {
+func testAccAWSKinesisStreamConsumerDataSourceBaseConfig(rName string) string {
+func testAccAWSKinesisStreamConsumerDataSourceConfig(rName string) string {
+func testAccAWSKinesisStreamConsumerDataSourceConfigName(rName string) string {
+func testAccAWSKinesisStreamConsumerDataSourceConfigArn(rName string) string {
 func testAccDataSourceAwsKmsKeyConfig(rName string) string {
 func testAccDataSourceAWSLambdaAliasConfigBase(rName string) string {
 func testAccDataSourceAWSLambdaAliasConfigBasic(rName string) string {
@@ -288,10 +292,14 @@ func testAccAlternateAccountAlternateRegionProviderConfig() string {
 func testAccAlternateAccountAndAlternateRegionProviderConfig() string {
 func testAccAlternateRegionProviderConfig() string {
 func testAccMultipleRegionProviderConfig(regions int) string {
+func testAccProviderConfigDefaultAndIgnoreTagsKeyPrefixes1(key1, value1, keyPrefix1 string) string {
+func testAccProviderConfigDefaultAndIgnoreTagsKeys1(key1, value1 string) string {
 func testAccProviderConfigIgnoreTagsKeyPrefixes1(keyPrefix1 string) string {
 func testAccProviderConfigIgnoreTagsKeys1(key1 string) string {
 func testAccNamedRegionalProviderConfig(providerName string, region string) string {
 func testAccRegionalProviderConfig(region string) string {
+func testAccAWSProviderConfigDefaultTagsEmptyConfigurationBlock() string {
+func testAccAWSProviderConfigDefaultAndIgnoreTagsEmptyConfigurationBlock() string {
 func testAccAWSProviderConfigEndpoints(endpoints string) string {
 func testAccAWSProviderConfigIgnoreTagsEmptyConfigurationBlock() string {
 func testAccAWSProviderConfigIgnoreTagsKeyPrefixes0() string {
@@ -889,6 +897,7 @@ func testAccAWSDBOptionGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagV
 func testAccAWSDBOptionGroupConfigTagsWithOption1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSDBOptionGroupConfigTagsWithOption2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSDBParameterGroupConfig(n string) string {
+func testAccAWSDBParameterGroupConfigCaseWithMixedParameters(n string) string {
 func testAccAWSDBParameterGroupConfigWithApplyMethod(n string) string {
 func testAccAWSDBParameterGroupAddParametersConfig(n string) string {
 func testAccAWSDBParameterGroupOnlyConfig(n string) string {
@@ -1014,6 +1023,7 @@ func testAccEc2ClientVpnEndpointConfigWithMutualAuthAndMicrosoftAD(rName string)
 func testAccEc2ClientVpnEndpointConfigWithFederatedAuth(rName string) string {
 func testAccEc2ClientVpnEndpointConfigSplitTunnel(rName string, splitTunnel bool) string {
 func testAccEc2ClientVpnNetworkAssociationConfigBasic(rName string) string {
+func testAccEc2ClientVpnNetworkAssociationConfigMultipleSubnets(rName string) string {
 func testAccEc2ClientVpnRouteConfigBasic(rName string) string {
 func testAccEc2ClientVpnRouteConfigDescription(rName string) string {
 func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigBase(rName string) string {
@@ -1684,6 +1694,7 @@ func testAccFirehoseAWSLambdaConfigBasic(funcName, policyName, roleName string) 
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfigBase(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfig(rName string, rInt int) string {
 func testAccKinesisFirehoseDeliveryStreamRedshiftConfigUpdates(rName string, rInt int) string {
+func testAccAWSKinesisStreamConsumerBaseConfig(rName string) string {
 func testAccKinesisStreamConfig(rInt int) string {
 func testAccKinesisStreamConfigConcurrent(rInt int) string {
 func testAccKinesisStreamConfigWithEncryptionAndNoKmsKey(rInt int) string {
@@ -2557,6 +2568,7 @@ func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags1(rName, tagKey1, tagVal
 func testAccAWSStorageGatewayCachedIscsiVolumeConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayGatewayConfigSmbActiveDirectorySettingsBase(rName string) string {
 func testAccAWSStorageGatewayGatewayConfigSMBSecurityStrategy(rName, strategy string) string {
+func testAccAWSStorageGatewayGatewayConfigSMBVisibility(rName string, visible bool) string {
 func testAccAWSStorageGatewayGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSStorageGatewayGatewayBandwidthConfigUpload(rName string, rate int) string {

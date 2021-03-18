@@ -278,6 +278,7 @@ func testAccAWSDBOptionGroupConfigTags2(
 func testAccAWSDBOptionGroupConfigTagsWithOption1(
 func testAccAWSDBOptionGroupConfigTagsWithOption2(
 func TestAccAWSDBParameterGroup_basic(
+func TestAccAWSDBParameterGroup_caseWithMixedParameters(
 func TestAccAWSDBParameterGroup_limit(
 func TestAccAWSDBParameterGroup_Disappears(
 func TestAccAWSDBParameterGroup_namePrefix(
@@ -291,6 +292,7 @@ func testAccCheckAWSDBParameterGroupAttributes(
 func testAccCheckAWSDBParameterGroupExists(
 func testAccCheckAWSDBParameterNotUserDefined(
 func testAccAWSDBParameterGroupConfig(
+func testAccAWSDBParameterGroupConfigCaseWithMixedParameters(
 func testAccAWSDBParameterGroupConfigWithApplyMethod(
 func testAccAWSDBParameterGroupAddParametersConfig(
 func testAccAWSDBParameterGroupOnlyConfig(

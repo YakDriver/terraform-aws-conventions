@@ -1919,6 +1919,7 @@ func normalizeAwsAliasName(
 func parseRecordId(
 func migrateRoute53RecordStateV0toV1(
 func migrateRoute53RecordStateV1toV2(
+func init(
 func updateResolverDnsSecConfigValidation(
 func init(
 func route53ResolverEndpointRefresh(
@@ -2483,8 +2484,12 @@ func flattenWafv2ManagedRuleGroupStatement(
 func flattenWafv2RateBasedStatement(
 func flattenWafv2RuleGroupReferenceStatement(
 func flattenWafv2ExcludedRules(
-func flattenWafv2RedactedFields(
 func expandWafv2RedactedFields(
+func expandWafv2RedactedField(
+func flattenWafv2RedactedFields(
+func flattenWafv2RedactedField(
+func redactedFieldsHash(
+func suppressRedactedFieldsDiff(
 func init(
 func expandWAFLoggingConfiguration(
 func expandWAFRedactedFields(
