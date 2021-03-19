@@ -2,6 +2,8 @@ func dataSourceAwsEcsCluster(
 func dataSourceAwsEcsClusterRead(
 func TestAccAWSEcsDataSource_ecsCluster(
 func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
+func testAccCheckAwsEcsClusterDataSourceConfig(
+func testAccCheckAwsEcsClusterDataSourceConfigContainerInsights(
 func dataSourceAwsEcsContainerDefinition(
 func dataSourceAwsEcsContainerDefinitionRead(
 func TestAccAWSEcsDataSource_ecsContainerDefinition(
@@ -9,6 +11,7 @@ func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(
 func dataSourceAwsEcsService(
 func dataSourceAwsEcsServiceRead(
 func TestAccAWSEcsServiceDataSource_basic(
+func testAccCheckAwsEcsServiceDataSourceConfig(
 func dataSourceAwsEcsTaskDefinition(
 func dataSourceAwsEcsTaskDefinitionRead(
 func TestAccAWSEcsDataSource_ecsTaskDefinition(

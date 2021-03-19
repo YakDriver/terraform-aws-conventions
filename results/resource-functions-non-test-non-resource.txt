@@ -1543,6 +1543,7 @@ func expandDataLakeSettingsAdmins(
 func flattenDataLakeSettingsAdmins(
 func expandLakeFormationResourceType(
 func expandLakeFormationResource(
+func expandLakeFormationResourceForSelectPermissions(
 func expandLakeFormationDataLocationResource(
 func flattenLakeFormationDataLocationResource(
 func expandLakeFormationDatabaseResource(
@@ -1551,6 +1552,8 @@ func expandLakeFormationTableResource(
 func flattenLakeFormationTableResource(
 func expandLakeFormationTableWithColumnsResource(
 func flattenLakeFormationTableWithColumnsResource(
+func flattenLakeFormationPermissions(
+func flattenLakeFormationGrantPermissions(
 func isLakeFormationResourceNotFoundErr(
 func expandLambdaAliasRoutingConfiguration(
 func expandLambdaCodeSigningConfigAllowedPublishers(

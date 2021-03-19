@@ -39,6 +39,7 @@ func TestAccDataSourceAwsWafv2IPSet_basic(
 func testAccDataSourceAwsWafv2IPSet_Name(
 func testAccDataSourceAwsWafv2IPSet_NonExistent(
 func TestAccAWSCloudFrontDistribution_IsIPV6EnabledConfig(
+func testAccAWSCloudFrontDistributionIsIPV6EnabledConfig(
 func TestAccAWSDefaultRouteTable_IPv4_To_TransitGateway(
 func TestAccAWSDefaultRouteTable_IPv4_To_VpcEndpoint(
 func resourceAwsEc2DashIP(

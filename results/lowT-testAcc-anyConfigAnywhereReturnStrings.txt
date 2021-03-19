@@ -47,6 +47,7 @@ func testAccCheckAwsCloudformationExportConfigResourceReference(rName string) st
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(stackName string) string {
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(stackName string) string {
 func testAccAWSCloudFrontCachePolicyDataSourceNameConfig(rInt int) string {
+func testAccAWSCloudFrontDistributionDataConfig(rInt int) string {
 func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(rInt int) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
@@ -60,6 +61,8 @@ func testAccCheckAWSCodeArtifactRepositoryEndpointBaseConfig(rName string) strin
 func testAccCheckAWSCodeArtifactRepositoryEndpointBasicConfig(rName, format string) string {
 func testAccCheckAWSCodeArtifactRepositoryEndpointOwnerConfig(rName string) string {
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(rName string) string {
+func testAccDataSourceAWSCodeStarConnectionsConnectionConfigBasic(rName string) string {
+func testAccDataSourceAWSCodeStarConnectionsConnectionConfigTags(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_basic(rName string) string {
 func testAccDataSourceAwsCognitoUserPoolsConfig_notFound(rName string) string {
 func testAccDataSourceAwsCurReportDefinitionConfig_basic(reportName string, bucketName string) string {
@@ -139,7 +142,10 @@ func testAccCheckAwsEcrAuthorizationTokenDataSourceRepositoryConfig(rName string
 func testAccCheckAwsEcrImageDataSourceConfig(reg, repo, tag string) string {
 func testAccCheckAwsEcrRepositoryDataSourceConfig(rName string) string {
 func testAccCheckAwsEcrRepositoryDataSourceConfig_encryption(rName string) string {
+func testAccCheckAwsEcsClusterDataSourceConfig(rName string) string {
+func testAccCheckAwsEcsClusterDataSourceConfigContainerInsights(rName string) string {
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(clusterName, tdName, svcName string) string {
+func testAccCheckAwsEcsServiceDataSourceConfig(rName string) string {
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(rName string) string {
 func testAccDataSourceAWSEFSAccessPointsConfig() string {
 func testAccDataSourceAWSEFSAccessPointConfig(rName string) string {
@@ -1114,6 +1120,19 @@ func testAccAWSCloudFrontCachePolicyConfig(rInt int) string {
 func testAccAWSCloudFrontCachePolicyConfigUpdate(rInt int) string {
 func testAccAWSCloudFrontCachePolicyConfigNoneBehavior(rInt int) string {
 func testAccAWSCloudFrontDistributionRetainConfig() string {
+func testAccAWSCloudFrontDistributionS3Config(rInt int) string {
+func testAccAWSCloudFrontDistributionS3ConfigWithTags(rInt int) string {
+func testAccAWSCloudFrontDistributionS3ConfigWithTagsUpdated(rInt int) string {
+func testAccAWSCloudFrontDistributionCustomConfig(rInt int) string {
+func testAccAWSCloudFrontDistributionOriginRequestPolicyConfigDefault(rInt int) string {
+func testAccAWSCloudFrontDistributionOriginRequestPolicyConfigOrdered(rInt int) string {
+func testAccAWSCloudFrontDistributionMultiOriginConfig(rInt int) string {
+func testAccAWSCloudFrontDistributionNoOptionalItemsConfig(rInt int) string {
+func testAccAWSCloudFrontDistributionConfig_Origin_EmptyDomainName() string {
+func testAccAWSCloudFrontDistributionConfig_Origin_EmptyOriginID() string {
+func testAccAWSCloudFrontDistributionHTTP11Config(rInt int) string {
+func testAccAWSCloudFrontDistributionIsIPV6EnabledConfig(rInt int) string {
+func testAccAWSCloudFrontDistributionOriginGroupsConfig(rInt int) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNamesUnordered2(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNamesUnordered3(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesHeadersUnordered2(retainOnDelete bool) string {
@@ -2187,6 +2206,8 @@ func testAccAWSElasticacheClusterConfig_snapshots(rName string) string {
 func testAccAWSElasticacheClusterConfig_snapshotsUpdated(rName string) string {
 func testAccAWSElasticacheClusterConfig_NumCacheNodes(rName string, numCacheNodes int) string {
 func testAccAWSElasticacheClusterConfig_NumCacheNodesWithPreferredAvailabilityZones(rName string, numCacheNodes int) string {
+func testAccAWSElasticacheClusterInVPCConfig(rName string) string {
+func testAccAWSElasticacheClusterMultiAZInVPCConfig(rName string) string {
 func testAccAWSElasticacheClusterConfig_AZMode_Memcached(rName, azMode string) string {
 func testAccAWSElasticacheClusterConfig_AZMode_Redis(rName, azMode string) string {
 func testAccAWSElasticacheClusterConfig_EngineVersion_Memcached(rName, engineVersion string) string {
@@ -2215,6 +2236,7 @@ func testAccAWSElasticacheReplicationGroupConfigParameterGroupName(rName string,
 func testAccAWSElasticacheReplicationGroupConfigUpdatedDescription(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfigUpdatedMaintenanceWindow(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfigUpdatedNodeSize(rName string) string {
+func testAccAWSElasticacheReplicationGroupInVPCConfig(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfig_MultiAZNotInVPC_Basic(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfig_MultiAZNotInVPC_AvailabilityZones(rName string) string {
 func testAccAWSElasticacheReplicationGroupMultiAZInVPCConfig(rName string) string {
@@ -3009,6 +3031,7 @@ func testAccAWSLakeFormationPermissionsConfig_table_name(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_table_wildcard(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_tableWithColumns(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_tableWithColumnsAndTable(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_selectPermissions(rName string) string {
 func testAccAWSLakeFormationResourceConfig_basic(bucket, role string) string {
 func testAccAWSLakeFormationResourceConfig_serviceLinkedRole(rName string) string {
 func testAccAwsLambdaAliasBaseConfig(roleName, policyName, attachmentName string) string {

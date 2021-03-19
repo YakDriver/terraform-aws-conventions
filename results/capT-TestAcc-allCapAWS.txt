@@ -3008,6 +3008,7 @@ func TestAccAWSPinpointEventStream_basic(
 func TestAccAWSPinpointGCMChannel_basic(
 func TestAccAWSPinpointSMSChannel_basic(
 func TestAccAWSPinpointSMSChannel_full(
+func TestAccAWSPinpointSMSChannel_disappears(
 func TestAccAWSPlacementGroup_basic(
 func TestAccAWSPlacementGroup_tags(
 func TestAccAWSPlacementGroup_disappears(

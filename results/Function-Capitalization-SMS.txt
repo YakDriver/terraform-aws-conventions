@@ -4,6 +4,7 @@ func resourceAwsPinpointSMSChannelRead(
 func resourceAwsPinpointSMSChannelDelete(
 func TestAccAWSPinpointSMSChannel_basic(
 func TestAccAWSPinpointSMSChannel_full(
+func TestAccAWSPinpointSMSChannel_disappears(
 func testAccCheckAWSPinpointSMSChannelExists(
 func testAccAWSPinpointSMSChannelConfig_full(
 func testAccCheckAWSPinpointSMSChannelDestroy(

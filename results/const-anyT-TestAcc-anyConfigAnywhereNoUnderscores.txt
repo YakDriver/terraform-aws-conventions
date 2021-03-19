@@ -9,6 +9,7 @@ const testAccCheckAwsCloudTrailServiceAccountConfig =
 const testAccCheckAwsCloudTrailServiceAccountConfigRegion =
 const testAccDataSourceAwsEBSDefaultKmsKeyConfig =
 const testAccDataSourceAwsEBSEncryptionByDefaultConfig =
+const testAccDataSourceAwsEc2TransitGatewayRouteTablesConfig =
 const testAccDataSourceAwsEfsFileSystemNameConfig =
 const testAccDataSourceAwsEfsFileSystemIDConfig =
 const testAccDataSourceAWSEIPConfigId =

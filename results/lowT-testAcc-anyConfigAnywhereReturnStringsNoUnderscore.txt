@@ -38,6 +38,7 @@ func testAccDataSourceAwsBatchJobQueueConfig(rName string) string {
 func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
 func testAccCheckAwsCloudformationExportConfigResourceReference(rName string) string {
 func testAccAWSCloudFrontCachePolicyDataSourceNameConfig(rInt int) string {
+func testAccAWSCloudFrontDistributionDataConfig(rInt int) string {
 func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(rInt int) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
@@ -51,6 +52,8 @@ func testAccCheckAWSCodeArtifactRepositoryEndpointBaseConfig(rName string) strin
 func testAccCheckAWSCodeArtifactRepositoryEndpointBasicConfig(rName, format string) string {
 func testAccCheckAWSCodeArtifactRepositoryEndpointOwnerConfig(rName string) string {
 func testAccCheckAwsCodeCommitRepositoryDataSourceConfig(rName string) string {
+func testAccDataSourceAWSCodeStarConnectionsConnectionConfigBasic(rName string) string {
+func testAccDataSourceAWSCodeStarConnectionsConnectionConfigTags(rName string) string {
 func testAccAWSCustomerGatewayDataSourceConfigFilter(asn, hostOctet int) string {
 func testAccAWSCustomerGatewayDataSourceConfigID(asn, hostOctet int) string {
 func testAccCheckAwsDbEventCategoriesConfig() string {
@@ -108,7 +111,10 @@ func testAccAWSEc2TransitGatewayVpnAttachmentDataSourceConfigFilter(rBgpAsn int)
 func testAccCheckAwsEcrAuthorizationTokenDataSourceRepositoryConfig(rName string) string {
 func testAccCheckAwsEcrImageDataSourceConfig(reg, repo, tag string) string {
 func testAccCheckAwsEcrRepositoryDataSourceConfig(rName string) string {
+func testAccCheckAwsEcsClusterDataSourceConfig(rName string) string {
+func testAccCheckAwsEcsClusterDataSourceConfigContainerInsights(rName string) string {
 func testAccCheckAwsEcsContainerDefinitionDataSourceConfig(clusterName, tdName, svcName string) string {
+func testAccCheckAwsEcsServiceDataSourceConfig(rName string) string {
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(rName string) string {
 func testAccDataSourceAWSEFSAccessPointsConfig() string {
 func testAccDataSourceAWSEFSAccessPointConfig(rName string) string {
@@ -607,6 +613,17 @@ func testAccAWSCloudFrontCachePolicyConfig(rInt int) string {
 func testAccAWSCloudFrontCachePolicyConfigUpdate(rInt int) string {
 func testAccAWSCloudFrontCachePolicyConfigNoneBehavior(rInt int) string {
 func testAccAWSCloudFrontDistributionRetainConfig() string {
+func testAccAWSCloudFrontDistributionS3Config(rInt int) string {
+func testAccAWSCloudFrontDistributionS3ConfigWithTags(rInt int) string {
+func testAccAWSCloudFrontDistributionS3ConfigWithTagsUpdated(rInt int) string {
+func testAccAWSCloudFrontDistributionCustomConfig(rInt int) string {
+func testAccAWSCloudFrontDistributionOriginRequestPolicyConfigDefault(rInt int) string {
+func testAccAWSCloudFrontDistributionOriginRequestPolicyConfigOrdered(rInt int) string {
+func testAccAWSCloudFrontDistributionMultiOriginConfig(rInt int) string {
+func testAccAWSCloudFrontDistributionNoOptionalItemsConfig(rInt int) string {
+func testAccAWSCloudFrontDistributionHTTP11Config(rInt int) string {
+func testAccAWSCloudFrontDistributionIsIPV6EnabledConfig(rInt int) string {
+func testAccAWSCloudFrontDistributionOriginGroupsConfig(rInt int) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNamesUnordered2(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNamesUnordered3(retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorForwardedValuesHeadersUnordered2(retainOnDelete bool) string {
@@ -1172,6 +1189,8 @@ func testAccAWSEksNodeGroupConfigScalingConfigSizes(rName string, desiredSize, m
 func testAccAWSEksNodeGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksNodeGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEksNodeGroupConfigVersion(rName, version string) string {
+func testAccAWSElasticacheClusterInVPCConfig(rName string) string {
+func testAccAWSElasticacheClusterMultiAZInVPCConfig(rName string) string {
 func testAccAvailableAZsNoOptInConfigWithProvider(name, provider string) string {
 func testAccAWSElasticacheParameterGroupConfig(rName string) string {
 func testAccAWSElasticacheParameterGroupConfigDescription(rName, description string) string {
@@ -1183,6 +1202,7 @@ func testAccAWSElasticacheReplicationGroupConfigParameterGroupName(rName string,
 func testAccAWSElasticacheReplicationGroupConfigUpdatedDescription(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfigUpdatedMaintenanceWindow(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfigUpdatedNodeSize(rName string) string {
+func testAccAWSElasticacheReplicationGroupInVPCConfig(rName string) string {
 func testAccAWSElasticacheReplicationGroupMultiAZInVPCConfig(rName string) string {
 func testAccAWSElasticacheReplicationGroupRedisClusterInVPCConfig(rName string) string {
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterErrorConfig(rInt int, rName string) string {
