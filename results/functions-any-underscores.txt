@@ -5384,6 +5384,7 @@ func testAccMqBrokerConfig_updateUsersSecurityGroups(
 func testAccMqBrokerConfig_ldap(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
+func TestAccAWSMqConfiguration_withLdapData(
 func TestAccAWSMqConfiguration_updateTags(
 func testAccMqConfigurationConfig_descriptionUpdated(
 func testAccMqConfigurationConfig_updateTags1(

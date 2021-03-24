@@ -3377,12 +3377,13 @@ func testAccMqBrokerConfig_updateUsersSecurityGroups(rName string) string {
 func testAccMqBrokerConfigRabbit(rName string) string {
 func testAccRabbitMqClusterBrokerConfig(rName string) string {
 func testAccMqBrokerConfig_ldap(rName, ldapUsername string) string {
-func testAccMqConfigurationConfig(configurationName string) string {
-func testAccMqConfigurationConfig_descriptionUpdated(configurationName string) string {
-func testAccMqConfigurationWithDataConfig(configurationName string) string {
-func testAccMqConfigurationConfig_updateTags1(configurationName string) string {
-func testAccMqConfigurationConfig_updateTags2(configurationName string) string {
-func testAccMqConfigurationConfig_updateTags3(configurationName string) string {
+func testAccMqConfigurationConfig(rName string) string {
+func testAccMqConfigurationConfig_descriptionUpdated(rName string) string {
+func testAccMqConfigurationWithDataConfig(rName string) string {
+func testAccMqConfigurationWithLdapDataConfig(rName string) string {
+func testAccMqConfigurationConfig_updateTags1(rName string) string {
+func testAccMqConfigurationConfig_updateTags2(rName string) string {
+func testAccMqConfigurationConfig_updateTags3(rName string) string {
 func testAccMskClusterBaseConfig() string {
 func testAccMskClusterConfig_basic(rName string) string {
 func testAccMskClusterConfigBrokerNodeGroupInfoEbsVolumeSize(rName string, ebsVolumeSize int) string {

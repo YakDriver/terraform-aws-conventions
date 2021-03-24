@@ -8751,12 +8751,14 @@ func testAccRabbitMqClusterBrokerConfig(
 func testAccMqBrokerConfig_ldap(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
+func TestAccAWSMqConfiguration_withLdapData(
 func TestAccAWSMqConfiguration_updateTags(
 func testAccCheckAwsMqConfigurationDestroy(
 func testAccCheckAwsMqConfigurationExists(
 func testAccMqConfigurationConfig(
 func testAccMqConfigurationConfig_descriptionUpdated(
 func testAccMqConfigurationWithDataConfig(
+func testAccMqConfigurationWithLdapDataConfig(
 func testAccMqConfigurationConfig_updateTags1(
 func testAccMqConfigurationConfig_updateTags2(
 func testAccMqConfigurationConfig_updateTags3(

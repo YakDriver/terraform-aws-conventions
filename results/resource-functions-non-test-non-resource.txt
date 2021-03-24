@@ -439,8 +439,6 @@ func expandAwsCodePipelineStages(
 func flattenAwsCodePipelineStages(
 func expandAwsCodePipelineActions(
 func flattenAwsCodePipelineStageActions(
-func expandAwsCodePipelineStageActionConfiguration(
-func flattenAwsCodePipelineStageActionConfiguration(
 func expandAwsCodePipelineActionsOutputArtifacts(
 func flattenAwsCodePipelineActionsOutputArtifacts(
 func expandAwsCodePipelineActionsInputArtifacts(

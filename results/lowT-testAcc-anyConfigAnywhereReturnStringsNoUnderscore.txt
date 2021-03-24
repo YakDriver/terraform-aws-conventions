@@ -1872,8 +1872,9 @@ func testAccMqBrokerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccMqBrokerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccMqBrokerConfigRabbit(rName string) string {
 func testAccRabbitMqClusterBrokerConfig(rName string) string {
-func testAccMqConfigurationConfig(configurationName string) string {
-func testAccMqConfigurationWithDataConfig(configurationName string) string {
+func testAccMqConfigurationConfig(rName string) string {
+func testAccMqConfigurationWithDataConfig(rName string) string {
+func testAccMqConfigurationWithLdapDataConfig(rName string) string {
 func testAccMskClusterBaseConfig() string {
 func testAccMskClusterConfigBrokerNodeGroupInfoEbsVolumeSize(rName string, ebsVolumeSize int) string {
 func testAccMskClusterConfigClientAuthenticationTlsCertificateAuthorityArns(rName string) string {

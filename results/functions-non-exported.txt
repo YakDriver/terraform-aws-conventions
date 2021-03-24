@@ -4052,8 +4052,6 @@ func expandAwsCodePipelineStages(
 func flattenAwsCodePipelineStages(
 func expandAwsCodePipelineActions(
 func flattenAwsCodePipelineStageActions(
-func expandAwsCodePipelineStageActionConfiguration(
-func flattenAwsCodePipelineStageActionConfiguration(
 func expandAwsCodePipelineActionsOutputArtifacts(
 func flattenAwsCodePipelineActionsOutputArtifacts(
 func expandAwsCodePipelineActionsInputArtifacts(
@@ -10186,6 +10184,7 @@ func testAccCheckAwsMqConfigurationExists(
 func testAccMqConfigurationConfig(
 func testAccMqConfigurationConfig_descriptionUpdated(
 func testAccMqConfigurationWithDataConfig(
+func testAccMqConfigurationWithLdapDataConfig(
 func testAccMqConfigurationConfig_updateTags1(
 func testAccMqConfigurationConfig_updateTags2(
 func testAccMqConfigurationConfig_updateTags3(

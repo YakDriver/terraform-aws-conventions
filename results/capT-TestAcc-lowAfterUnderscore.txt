@@ -2026,6 +2026,7 @@ func TestAccAWSMqBroker_clusterRabbitMQ(
 func TestAccAWSMqBroker_ldap(
 func TestAccAWSMqConfiguration_basic(
 func TestAccAWSMqConfiguration_withData(
+func TestAccAWSMqConfiguration_withLdapData(
 func TestAccAWSMqConfiguration_updateTags(
 func TestAccAWSMskCluster_basic(
 func TestAccAWSMskConfiguration_basic(
