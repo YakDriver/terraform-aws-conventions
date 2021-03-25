@@ -3407,8 +3407,11 @@ func resourceAwsIamInstanceProfileCreate(
 func resourceAwsIamInstanceProfileUpdate(
 func resourceAwsIamInstanceProfileRead(
 func resourceAwsIamInstanceProfileDelete(
+func testAccAwsIamInstanceProfileBaseConfig(
 func testAccAwsIamInstanceProfileConfig(
 func testAccAwsIamInstanceProfileConfigWithoutRole(
+func testAccAwsIamInstanceProfileConfigTags1(
+func testAccAwsIamInstanceProfileConfigTags2(
 func resourceAwsIamOpenIDConnectProvider(
 func resourceAwsIamOpenIDConnectProviderCreate(
 func resourceAwsIamOpenIDConnectProviderRead(
@@ -3450,6 +3453,7 @@ func resourceAwsIamSamlProviderDelete(
 func resourceAwsIAMServerCertificate(
 func resourceAwsIAMServerCertificateCreate(
 func resourceAwsIAMServerCertificateRead(
+func resourceAwsIAMServerCertificateUpdate(
 func resourceAwsIAMServerCertificateDelete(
 func resourceAwsIAMServerCertificateImport(
 func resourceAwsIamServiceLinkedRole(
@@ -4130,6 +4134,10 @@ func resourceAwsLightsailInstanceRead(
 func resourceAwsLightsailInstanceDelete(
 func resourceAwsLightsailInstanceUpdate(
 func resourceAwsLightsailOperationRefreshFunc(
+func resourceAwsLightsailInstancePublicPorts(
+func resourceAwsLightsailInstancePublicPortsCreate(
+func resourceAwsLightsailInstancePublicPortsRead(
+func resourceAwsLightsailInstancePublicPortsDelete(
 func resourceAwsLightsailKeyPair(
 func resourceAwsLightsailKeyPairCreate(
 func resourceAwsLightsailKeyPairRead(

@@ -2272,6 +2272,7 @@ func testAccAWSEcsServiceWithNetworkConfiguration(sg1Name, sg2Name, clusterName,
 func testAccAWSEcsServiceWithNetworkConfiguration_modified(sg1Name, sg2Name, clusterName, tdName, svcName string) string {
 func testAccAWSEcsService_withServiceRegistries(rName, clusterName, tdName, svcName string) string {
 func testAccAWSEcsService_withServiceRegistries_container(rName, clusterName, tdName, svcName string) string {
+func testAccAWSEcsService_withServiceRegistriesChanges(rName, discoveryName, clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithDaemonSchedulingStrategy(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceWithDaemonSchedulingStrategySetDeploymentMinimum(clusterName, tdName, svcName string) string {
 func testAccAWSEcsServiceConfigDeploymentControllerTypeCodeDeploy(rName string) string {
@@ -2282,6 +2283,7 @@ func testAccAWSEcsServiceConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Val
 func testAccAWSEcsServiceConfigManagedTags(rName string) string {
 func testAccAWSEcsServiceConfigPropagateTags(rName, propagate string) string {
 func testAccAWSEcsServiceWithReplicaSchedulingStrategy(clusterName, tdName, svcName string) string {
+func testAccAWSEcsServiceConfigExecuteCommand(rName string, enable bool) string {
 func testAccAWSEcsTaskDefinition_constraint(tdName string) string {
 func testAccAWSEcsTaskDefinition(tdName string) string {
 func testAccAWSEcsTaskDefinitionUpdatedVolume(tdName string) string {
@@ -2452,6 +2454,7 @@ func testAccAWSElasticacheReplicationGroupConfigFinalSnapshot(rName string) stri
 func testAccAWSElasticacheReplicationGroupConfig_Validation_NoNodeType(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfig_Validation_GlobalReplicationGroupIdAndNodeType(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfig_GlobalReplicationGroupId_Basic(rName string) string {
+func testAccAWSElasticacheReplicationGroupConfig_GlobalReplicationGroupId_Full(rName string) string {
 func testAccAWSElasticacheSecurityGroupConfig(rName string) string {
 func testAccAWSElasticacheSubnetGroupConfig(rInt int) string {
 func testAccAWSElasticacheSubnetGroupUpdateConfigPre(rInt int) string {
@@ -2874,11 +2877,16 @@ func testAccIAMGroupPolicyConfig_generatedName(rInt int, policyAction string) st
 func testAccIAMGroupPolicyConfigUpdate(rInt int) string {
 func testAccAWSGroupConfig(groupName string) string {
 func testAccAWSGroupConfig2(groupName string) string {
+func testAccAwsIamInstanceProfileBaseConfig(rName string) string {
 func testAccAwsIamInstanceProfileConfig(rName string) string {
 func testAccAwsIamInstanceProfileConfigWithoutRole(rName string) string {
 func testAccAWSInstanceProfilePrefixNameConfig(rName string) string {
+func testAccAwsIamInstanceProfileConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAwsIamInstanceProfileConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccIAMOpenIDConnectProviderConfig(rString string) string {
 func testAccIAMOpenIDConnectProviderConfig_modified(rString string) string {
+func testAccIAMOpenIDConnectProviderConfigTags1(rString, tagKey1, tagValue1 string) string {
+func testAccIAMOpenIDConnectProviderConfigTags2(rString, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSPolicyAttachConfig(userName, roleName, groupName, policyName, attachmentName string) string {
 func testAccAWSPolicyPaginatedAttachConfig(userNamePrefix, policyName, attachmentName string) string {
 func testAccAWSIamPolicyAttachmentConfigGroupsRenamedGroup(rName, groupName string) string {
@@ -2925,10 +2933,14 @@ func testAccAWSRolePolicyEmptyInlineConfig(roleName string) string {
 func testAccAWSRolePolicyEmptyManagedConfig(roleName, policyName string) string {
 func testAccIAMSamlProviderConfig(rName string) string {
 func testAccIAMSamlProviderConfigUpdate(rName string) string {
+func testAccIAMSamlProviderConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccIAMSamlProviderConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccIAMServerCertConfig(rName, key, certificate string) string {
 func testAccIAMServerCertConfig_random(key, certificate string) string {
 func testAccIAMServerCertConfig_path(rName, path, key, certificate string) string {
 func testAccIAMServerCertConfig_file(rInt int, fName string) string {
+func testAccIAMServerCertConfigTags1(rName, key, certificate, tagKey1, tagValue1 string) string {
+func testAccIAMServerCertConfigTags2(rName, key, certificate, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSIAMServiceLinkedRoleConfig(awsServiceName string) string {
 func testAccAWSIAMServiceLinkedRoleConfig_CustomSuffix(awsServiceName, customSuffix string) string {
 func testAccAWSIAMServiceLinkedRoleConfig_Description(awsServiceName, customSuffix, description string) string {
@@ -3621,6 +3633,9 @@ func testAccAwsLexSlotTypeUpdateConfig_description(rName string) string {
 func testAccAwsLexSlotTypeConfig_enumerationValues(rName string) string {
 func testAccAwsLexSlotTypeConfig_valueSelectionStrategy(rName string) string {
 func testAccAWSLightsailDomainConfig_basic(lightsailDomainName string) string {
+func testAccAWSLightsailInstancePublicPortsConfig_basic(rName string) string {
+func testAccAWSLightsailInstancePublicPortsConfig_multiple(rName string) string {
+func testAccAWSLightsailInstancePublicPortsConfig_cidrs(rName string) string {
 func testAccAWSLightsailInstanceConfig_basic(lightsailName string) string {
 func testAccAWSLightsailInstanceConfig_tags1(lightsailName string) string {
 func testAccAWSLightsailInstanceConfig_tags2(lightsailName string) string {
@@ -3927,7 +3942,8 @@ func testAccAWSPinpointAppConfig_Tag1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSPinpointAppConfig_Tag2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSPinpointBaiduChannelConfig_basic(apiKey, secretKey string) string {
 func testAccAWSPinpointEmailChannelConfig_FromAddress(fromAddress string) string {
-func testAccAWSPinpointEventStreamConfig_basic(rName string) string {
+func testAccAWSPinpointEmailChannelConfigConfigurationSet(fromAddress, rName string) string {
+func testAccAWSPinpointEventStreamConfig_basic(rName, streamName string) string {
 func testAccAWSPinpointGCMChannelConfig_basic(apiKey string) string {
 func testAccAWSPinpointSMSChannelConfig_full(senderId, shortCode string) string {
 func testAccAWSPlacementGroupConfig(rName string) string {
@@ -4171,22 +4187,27 @@ func testAccAWSRouteTableConfigVpcMultipleCidrs(rName string) string {
 func testAccAWSRouteTableConfigVpcClassicLink(rName string) string {
 func testAccAWSRouteTableConfigGatewayVpcEndpoint(rName string) string {
 func testAccLatestAmazonNatInstanceAmiConfig() string {
-func testAccAWSRouteBasicConfig() string {
-func testAccAWSRouteConfigIpv6InternetGateway() string {
-func testAccAWSRouteConfigIpv6NetworkInterface() string {
-func testAccAWSRouteConfigIpv6Instance() string {
-func testAccAWSRouteConfigIpv6InstanceExpanded() string {
-func testAccAWSRouteConfigIpv6PeeringConnection() string {
-func testAccAWSRouteConfigIpv6() string {
-func testAccAWSRouteConfigIpv6Expanded() string {
-func testAccAWSRouteBasicConfigChangeCidr() string {
-func testAccAWSRouteNoopChange() string {
-func testAccAWSRouteWithVPCEndpoint() string {
-func testAccAWSRouteNewRouteTable() string {
-func testAccAWSRouteConfigTransitGatewayIDDestinatationCidrBlock() string {
-func testAccAWSRouteConfigConditionalIpv4Ipv6(rName string, ipv6Route bool) string {
-func testAccAWSRouteResourceConfigLocalGatewayID() string {
-func testAccAWSRouteResourceConfigVpcEndpointId(rName string) string {
+func testAccAWSRouteConfigIpv4InternetGateway(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv6InternetGateway(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv6NetworkInterfaceUnattached(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv6Instance(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv6VpcPeeringConnection(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv6EgressOnlyInternetGateway(rName, destinationCidr string) string {
+func testAccAWSRouteConfigWithVpcEndpoint(rName string) string {
+func testAccAWSRouteConfigIpv4TransitGateway(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv6TransitGateway(rName, destinationCidr string) string {
+func testAccAWSRouteConfigConditionalIpv4Ipv6(rName, destinationCidr, destinationIpv6Cidr string, ipv6Route bool) string {
+func testAccAWSRouteConfigIpv4Instance(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv4NetworkInterfaceUnattached(rName, destinationCidr string) string {
+func testAccAWSRouteResourceConfigIpv4LocalGateway(rName, destinationCidr string) string {
+func testAccAWSRouteResourceConfigIpv6LocalGateway(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv4NetworkInterfaceAttached(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv4NetworkInterfaceTwoAttachments(rName, destinationCidr, targetResourceName string) string {
+func testAccAWSRouteConfigIpv4VpcPeeringConnection(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv4NatGateway(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv4VpnGateway(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv6VpnGateway(rName, destinationCidr string) string {
+func testAccAWSRouteResourceConfigIpv4VpcEndpoint(rName, destinationCidr string) string {
 func testAccAWSS3AccessPointConfig_basic(bucketName, accessPointName string) string {
 func testAccAWSS3AccessPointConfig_Bucket_Arn(rName string) string {
 func testAccAWSS3AccessPointConfig_policy(rName string) string {

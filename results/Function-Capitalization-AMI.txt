@@ -16,6 +16,7 @@ func testAccAWSAMICopyConfigDescription(
 func testAccAWSAMICopyConfigENASupport(
 func TestAccAWSAMIFromInstance_basic(
 func TestAccAWSAMIFromInstance_tags(
+func TestAccAWSAMIFromInstance_disappears(
 func testAccCheckAWSAMIFromInstanceExists(
 func testAccCheckAWSAMIFromInstanceDestroy(
 func testAccAWSAMIFromInstanceConfigBase(
@@ -45,6 +46,7 @@ func testAccAWSAutoScalingGroupConfig_LaunchTemplate_IAMInstanceProfile(
 func testAccAWSEmrClusterConfigIAMInstanceProfileBase(
 func TestAccAWSIAMInstanceProfile_basic(
 func TestAccAWSIAMInstanceProfile_withoutRole(
+func TestAccAWSIAMInstanceProfile_tags(
 func TestAccAWSIAMInstanceProfile_namePrefix(
 func TestAccAWSIAMInstanceProfile_disappears(
 func TestAccAWSIAMInstanceProfile_disappears_role(

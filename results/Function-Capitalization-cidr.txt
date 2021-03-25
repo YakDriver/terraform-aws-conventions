@@ -1,1 +1,3 @@
+func TestAccAWSLightsailInstancePublicPorts_cidrs(
+func testAccAWSLightsailInstancePublicPortsConfig_cidrs(
 func cidrBlocksEqual(

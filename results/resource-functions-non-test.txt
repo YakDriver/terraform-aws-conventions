@@ -2895,11 +2895,13 @@ func resourceAwsIamInstanceProfileUpdate(
 func resourceAwsIamInstanceProfileRead(
 func resourceAwsIamInstanceProfileDelete(
 func instanceProfileReadResult(
+func init(
 func resourceAwsIamOpenIDConnectProvider(
 func resourceAwsIamOpenIDConnectProviderCreate(
 func resourceAwsIamOpenIDConnectProviderRead(
 func resourceAwsIamOpenIDConnectProviderUpdate(
 func resourceAwsIamOpenIDConnectProviderDelete(
+func init(
 func resourceAwsIamPolicyAttachment(
 func resourceAwsIamPolicyAttachmentCreate(
 func resourceAwsIamPolicyAttachmentRead(
@@ -2968,6 +2970,7 @@ func init(
 func resourceAwsIAMServerCertificate(
 func resourceAwsIAMServerCertificateCreate(
 func resourceAwsIAMServerCertificateRead(
+func resourceAwsIAMServerCertificateUpdate(
 func resourceAwsIAMServerCertificateDelete(
 func resourceAwsIAMServerCertificateImport(
 func currentlyInUseBy(
@@ -3787,6 +3790,14 @@ func resourceAwsLightsailInstanceRead(
 func resourceAwsLightsailInstanceDelete(
 func resourceAwsLightsailInstanceUpdate(
 func resourceAwsLightsailOperationRefreshFunc(
+func resourceAwsLightsailInstancePublicPorts(
+func resourceAwsLightsailInstancePublicPortsCreate(
+func resourceAwsLightsailInstancePublicPortsRead(
+func resourceAwsLightsailInstancePublicPortsDelete(
+func expandLightsailPortInfo(
+func expandLightsailPortInfos(
+func flattenLightsailInstancePortState(
+func flattenLightsailInstancePortStates(
 func init(
 func resourceAwsLightsailKeyPair(
 func resourceAwsLightsailKeyPairCreate(

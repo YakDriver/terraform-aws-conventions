@@ -628,6 +628,7 @@ func TestAccAWSAMICopy_basic(
 func TestAccAWSAMICopy_tags(
 func TestAccAWSAMIFromInstance_basic(
 func TestAccAWSAMIFromInstance_tags(
+func TestAccAWSAMIFromInstance_disappears(
 func TestAccAWSAMILaunchPermission_basic(
 func TestAccAWSAMI_basic(
 func TestAccAWSAMI_description(
@@ -1144,6 +1145,7 @@ func TestAccAWSCloudFrontDistribution_originPolicyOrdered(
 func TestAccAWSCloudFrontDistribution_multiOrigin(
 func TestAccAWSCloudFrontDistribution_orderedCacheBehavior(
 func TestAccAWSCloudFrontDistribution_orderedCacheBehaviorCachePolicy(
+func TestAccAWSCloudFrontDistribution_forwardedValuesToCachePolicy(
 func TestAccAWSCloudFrontDistribution_noOptionalItemsConfig(
 func TestAccAWSCloudFrontDistribution_noCustomErrorResponseConfig(
 func TestAccAWSCloudFrontOriginAccessIdentity_basic(
@@ -2051,6 +2053,7 @@ func TestAccAWSEcsService_withDaemonSchedulingStrategySetDeploymentMinimum(
 func TestAccAWSEcsService_withReplicaSchedulingStrategy(
 func TestAccAWSEcsService_withServiceRegistries(
 func TestAccAWSEcsService_withServiceRegistries_container(
+func TestAccAWSEcsService_withServiceRegistriesChanges(
 func testAccAWSEcsService_healthCheckGracePeriodSeconds(
 func testAccAWSEcsService_withIamRole(
 func tpl_testAccAWSEcsService_withLbChanges(
@@ -2060,6 +2063,7 @@ func testAccAWSEcsServiceWithNetworkConfiguration_modified(
 func tpl_testAccAWSEcsServiceWithNetworkConfiguration(
 func testAccAWSEcsService_withServiceRegistries(
 func testAccAWSEcsService_withServiceRegistries_container(
+func testAccAWSEcsService_withServiceRegistriesChanges(
 func TestAccAWSEcsTaskDefinition_basic(
 func TestAccAWSEcsTaskDefinition_withScratchVolume(
 func TestAccAWSEcsTaskDefinition_withDockerVolume(
@@ -2458,10 +2462,12 @@ func TestAccAWSIAMGroup_basic(
 func TestAccAWSIAMGroup_nameChange(
 func TestAccAWSIAMInstanceProfile_basic(
 func TestAccAWSIAMInstanceProfile_withoutRole(
+func TestAccAWSIAMInstanceProfile_tags(
 func TestAccAWSIAMInstanceProfile_namePrefix(
 func TestAccAWSIAMInstanceProfile_disappears(
 func TestAccAWSIAMInstanceProfile_disappears_role(
 func TestAccAWSIAMOpenIDConnectProvider_basic(
+func TestAccAWSIAMOpenIDConnectProvider_tags(
 func TestAccAWSIAMOpenIDConnectProvider_disappears(
 func testAccIAMOpenIDConnectProviderConfig_modified(
 func TestAccAWSIAMPolicyAttachment_basic(
@@ -2507,8 +2513,10 @@ func testAccAWSIAMRoleConfig_force_detach_policies(
 func testAccAWSIAMRoleConfig_tags(
 func testAccAWSIAMRoleConfig_tagsUpdate(
 func TestAccAWSIAMSamlProvider_basic(
+func TestAccAWSIAMSamlProvider_tags(
 func TestAccAWSIAMSamlProvider_disappears(
 func TestAccAWSIAMServerCertificate_basic(
+func TestAccAWSIAMServerCertificate_tags(
 func TestAccAWSIAMServerCertificate_name_prefix(
 func TestAccAWSIAMServerCertificate_disappears(
 func TestAccAWSIAMServerCertificate_file(
@@ -3188,6 +3196,12 @@ func TestAccAWSLicenseManagerLicenseConfiguration_update(
 func TestAccAWSLightsailDomain_basic(
 func TestAccAWSLightsailDomain_disappears(
 func testAccAWSLightsailDomainConfig_basic(
+func TestAccAWSLightsailInstancePublicPorts_basic(
+func TestAccAWSLightsailInstancePublicPorts_multiple(
+func TestAccAWSLightsailInstancePublicPorts_cidrs(
+func testAccAWSLightsailInstancePublicPortsConfig_basic(
+func testAccAWSLightsailInstancePublicPortsConfig_multiple(
+func testAccAWSLightsailInstancePublicPortsConfig_cidrs(
 func TestAccAWSLightsailInstance_basic(
 func TestAccAWSLightsailInstance_disapear(
 func testAccAWSLightsailInstanceConfig_basic(
@@ -3528,7 +3542,10 @@ func TestAccAWSPinpointApp_basic(
 func TestAccAWSPinpointBaiduChannel_basic(
 func testAccAWSPinpointBaiduChannelConfig_basic(
 func TestAccAWSPinpointEmailChannel_basic(
+func TestAccAWSPinpointEmailChannel_configurationSet(
+func TestAccAWSPinpointEmailChannel_disappears(
 func TestAccAWSPinpointEventStream_basic(
+func TestAccAWSPinpointEventStream_disappears(
 func testAccAWSPinpointEventStreamConfig_basic(
 func TestAccAWSPinpointGCMChannel_basic(
 func testAccAWSPinpointGCMChannelConfig_basic(
@@ -3757,15 +3774,7 @@ func TestAccAWSRouteTable_tags(
 func TestAccAWSRouteTable_vgwRoutePropagation(
 func TestAccAWSRoute_basic(
 func TestAccAWSRoute_disappears(
-func TestAccAWSRoute_ipv6Support(
-func TestAccAWSRoute_ipv6ToInternetGateway(
-func TestAccAWSRoute_ipv6ToInstance(
-func TestAccAWSRoute_ipv6ToNetworkInterface(
-func TestAccAWSRoute_ipv6ToPeeringConnection(
-func TestAccAWSRoute_changeRouteTable(
-func TestAccAWSRoute_changeCidr(
-func TestAccAWSRoute_noopdiff(
-func TestAccAWSRoute_doesNotCrashWithVPCEndpoint(
+func TestAccAWSRoute_disappears_RouteTable(
 func TestAccAWSS3AccessPoint_basic(
 func TestAccAWSS3AccessPoint_disappears(
 func TestAccAWSS3AccessPoint_disappears_Bucket(

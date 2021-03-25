@@ -20,3 +20,5 @@ func testAccNatGatewayConfigTags2(
 func TestAccAWSRouteTable_IPv4_To_NatGateway(
 func testAccAWSRouteTableConfigIpv4NatGateway(
 func testAccLatestAmazonNatInstanceAmiConfig(
+func TestAccAWSRoute_IPv4_To_NatGateway(
+func testAccAWSRouteConfigIpv4NatGateway(

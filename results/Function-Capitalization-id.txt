@@ -25,6 +25,8 @@ func TestAccAWSLBListener_oidc(
 func testAccAWSLBListenerConfig_oidc(
 func TestAccAwsLexBot_idleSessionTtlInSeconds(
 func testAccAwsLexBotConfig_idleSessionTtlInSecondsUpdate(
+func TestAccAWSLightsailInstancePublicPorts_cidrs(
+func testAccAWSLightsailInstancePublicPortsConfig_cidrs(
 func idCollapseHash(
 func idHash(
 func TestAccAWSStorageGatewayGateway_bandwidthUpload(

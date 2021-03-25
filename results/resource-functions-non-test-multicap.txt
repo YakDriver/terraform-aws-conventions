@@ -185,6 +185,7 @@ func extractNameFromIAMSamlProviderArn(
 func resourceAwsIAMServerCertificate(
 func resourceAwsIAMServerCertificateCreate(
 func resourceAwsIAMServerCertificateRead(
+func resourceAwsIAMServerCertificateUpdate(
 func resourceAwsIAMServerCertificateDelete(
 func resourceAwsIAMServerCertificateImport(
 func stripCR(

@@ -112,6 +112,10 @@ func testAccEc2ClientVpnRouteVpcBase(
 func testAccEc2ClientVpnRouteAcmCertificateBase(
 func TestAccAWSEc2TransitGateway_VpnEcmpSupport(
 func testAccAWSEc2TransitGatewayConfigVpnEcmpSupport(
+func TestAccAWSRoute_IPv6_To_VpnGateway(
+func TestAccAWSRoute_IPv4_To_VpnGateway(
+func testAccAWSRouteConfigIpv4VpnGateway(
+func testAccAWSRouteConfigIpv6VpnGateway(
 func resourceAwsVpnConnection(
 func resourceAwsVpnConnectionCreate(
 func resourceAwsVpnConnectionRead(

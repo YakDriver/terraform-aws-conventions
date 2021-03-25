@@ -1178,6 +1178,8 @@ func instanceProfileAddRole(
 func instanceProfileRemoveRole(
 func instanceProfileRemoveAllRoles(
 func instanceProfileReadResult(
+func init(
+func init(
 func composeErrors(
 func attachPolicyToUsers(
 func attachPolicyToRoles(
@@ -1687,6 +1689,10 @@ func getLatestLexSlotTypeVersion(
 func flattenLexEnumerationValues(
 func expandLexEnumerationValues(
 func init(
+func expandLightsailPortInfo(
+func expandLightsailPortInfos(
+func flattenLightsailInstancePortState(
+func flattenLightsailInstancePortStates(
 func init(
 func init(
 func policyInBackendServerPolicies(
