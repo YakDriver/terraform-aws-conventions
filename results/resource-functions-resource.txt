@@ -1298,9 +1298,8 @@ func resourceAwsEcrRepositoryDelete(
 func resourceAwsEcrRepositoryUpdateImageTagMutability(
 func resourceAwsEcrRepositoryUpdateImageScanningConfiguration(
 func resourceAwsEcrRepositoryPolicy(
-func resourceAwsEcrRepositoryPolicyCreate(
+func resourceAwsEcrRepositoryPolicyPut(
 func resourceAwsEcrRepositoryPolicyRead(
-func resourceAwsEcrRepositoryPolicyUpdate(
 func resourceAwsEcrRepositoryPolicyDelete(
 func resourceAwsEcsCapacityProvider(
 func resourceAwsEcsCapacityProviderCreate(
@@ -1338,7 +1337,6 @@ func resourceAwsEfsFileSystemCreate(
 func resourceAwsEfsFileSystemUpdate(
 func resourceAwsEfsFileSystemRead(
 func resourceAwsEfsFileSystemDelete(
-func resourceEfsFileSystemCreateUpdateRefreshFunc(
 func resourceAwsEfsFileSystemPolicy(
 func resourceAwsEfsFileSystemPolicyPut(
 func resourceAwsEfsFileSystemPolicyRead(
@@ -2666,8 +2664,7 @@ func resourceAwsRouteCreate(
 func resourceAwsRouteRead(
 func resourceAwsRouteUpdate(
 func resourceAwsRouteDelete(
-func resourceAwsRouteID(
-func resourceAwsRouteFindRoute(
+func resourceAwsRouteImport(
 func resourceAwsRouteTableAssociation(
 func resourceAwsRouteTableAssociationCreate(
 func resourceAwsRouteTableAssociationRead(

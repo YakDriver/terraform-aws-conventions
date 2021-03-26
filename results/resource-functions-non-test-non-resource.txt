@@ -57,8 +57,6 @@ func flattenApiGateway2CorsConfiguration(
 func init(
 func expandApiGateway2JwtConfiguration(
 func flattenApiGateway2JwtConfiguration(
-func apiGatewayV2DomainNameRefresh(
-func waitForApiGatewayV2DomainNameAvailabilityOnUpdate(
 func expandApiGatewayV2DomainNameConfiguration(
 func flattenApiGatewayV2DomainNameConfiguration(
 func expandApiGatewayV2MutualTlsAuthentication(
@@ -761,11 +759,10 @@ func flattenEfsAccessPointPosixUser(
 func flattenEfsAccessPointRootDirectory(
 func flattenEfsAccessPointRootDirectoryCreationInfo(
 func init(
-func waitForDeleteEfsFileSystem(
 func hasEmptyFileSystems(
-func resourceEfsFileSystemCreateUpdateRefreshFunc(
 func flattenEfsFileSystemLifecyclePolicies(
 func expandEfsFileSystemLifecyclePolicies(
+func flattenEfsFileSystemSizeInBytes(
 func init(
 func getAzFromSubnetId(
 func waitForDeleteEfsMountTarget(
@@ -1774,7 +1771,6 @@ func cleanUpDependencyViolations(
 func getDefaultNetworkAcl(
 func findNetworkAclAssociation(
 func networkAclEntriesToMapList(
-func findNetworkAclRule(
 func networkAclIdRuleNumberEgressHash(
 func validateICMPArgumentValue(
 func init(
@@ -1955,6 +1951,8 @@ func route53HostedZoneVPCAssociate(
 func route53HostedZoneVPCDisassociate(
 func route53HostedZoneVPCHash(
 func route53WaitForChangeSynchronization(
+func routeDestinationAttribute(
+func routeTargetAttribute(
 func init(
 func s3AccessPointParseId(
 func expandS3AccessPointVpcConfiguration(

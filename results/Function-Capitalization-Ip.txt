@@ -109,6 +109,7 @@ func testAccAWSRouteTableConfigIpv4Instance(
 func testAccAWSRouteTableConfigIpv4VpcPeeringConnection(
 func testAccAWSRouteTableConfigIpv4TransitGateway(
 func testAccAWSRouteTableConfigRouteIpv4VpcEndpointId(
+func testAccAWSRouteTableConfigIpv4CarrierGateway(
 func testAccAWSRouteTableConfigRouteIpv4LocalGateway(
 func testAccAWSRouteTableConfigConditionalIpv4Ipv6(
 func testAccAWSRouteTableConfigIpv4NatGateway(
@@ -133,6 +134,11 @@ func testAccAWSRouteConfigIpv4NatGateway(
 func testAccAWSRouteConfigIpv4VpnGateway(
 func testAccAWSRouteConfigIpv6VpnGateway(
 func testAccAWSRouteResourceConfigIpv4VpcEndpoint(
+func testAccAWSRouteConfigIpv4FlexiTarget(
+func testAccAWSRouteConfigIpv6FlexiTarget(
+func testAccAWSRouteConfigIpv4NoRoute(
+func testAccAWSRouteConfigIpv4LocalRoute(
+func testAccAWSRouteConfigIpv4CarrierGateway(
 func TestIpPermissionIDHash(
 func TestAccAWSSecurityGroupRule_Ingress_Ipv6(
 func cycleIpPermForGroup(

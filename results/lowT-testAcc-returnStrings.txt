@@ -778,8 +778,8 @@ func testAccAWSAPIGatewayV2DomainNameConfigImportedCerts(rName, certificate, key
 func testAccAWSAPIGatewayV2DomainNameConfigPublicCert(rootDomain, domain string) string {
 func testAccAWSAPIGatewayV2DomainNameConfig_basic(rName, certificate, key string, count, index int) string {
 func testAccAWSAPIGatewayV2DomainNameConfig_tags(rName, certificate, key string, count, index int) string {
-func testAccAWSAPIGatewayV2DomainNameConfigMututalTlsAuthentication(rootDomain, domain, rName string) string {
-func testAccAWSAPIGatewayV2DomainNameConfigMututalTlsAuthenticationUpdated(rootDomain, domain, rName string) string {
+func testAccAWSAPIGatewayV2DomainNameConfigMututalTlsAuthenticationNoObjectVersion(rootDomain, domain, rName, pemFileName string) string {
+func testAccAWSAPIGatewayV2DomainNameConfigMututalTlsAuthenticationObjectVersion(rootDomain, domain, rName, pemFileName string) string {
 func testAccAWSAPIGatewayV2DomainNameConfigMututalTlsAuthenticationMissing(rootDomain, domain string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_basic(rName string) string {
 func testAccAWSAPIGatewayV2IntegrationResponseConfig_allAttributes(rName string) string {
@@ -1617,7 +1617,8 @@ func testAccConfigConfigRuleConfig_Scope_TagValue(rName, tagValue string) string
 func testAccConfigConfigRuleConfig_Tags(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSConfigConfigurationAggregatorConfig_account(rName string) string {
 func testAccAWSConfigConfigurationAggregatorConfig_organization(rName string) string {
-func testAccAWSConfigConfigurationAggregatorConfig_tags(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSConfigConfigurationAggregatorConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSConfigConfigurationAggregatorConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccConfigConfigurationRecorderStatusConfig(randInt int, enabled bool) string {
 func testAccConfigConfigurationRecorderConfig_basic(randInt int) string {
 func testAccConfigConfigurationRecorderConfig_allParams(randInt int) string {
@@ -2212,8 +2213,9 @@ func testAccAWSEcrPublicRepositoryCatalogDataConfigDescription(rName string, des
 func testAccAWSEcrPublicRepositoryCatalogDataConfigOperatingSystems(rName string, operatingSystem string) string {
 func testAccAWSEcrPublicRepositoryCatalogDataConfigUsageText(rName string, usageText string) string {
 func testAccAWSEcrPublicRepositoryCatalogDataConfigLogoImageBlob(rName string) string {
-func testAccAWSEcrRepositoryPolicy(randString string) string {
-func testAccAWSEcrRepositoryPolicyWithIAMRole(randString string) string {
+func testAccAWSEcrRepositoryPolicyConfig(rName string) string {
+func testAccAWSEcrRepositoryPolicyConfigUpdated(rName string) string {
+func testAccAWSEcrRepositoryPolicyWithIAMRoleConfig(rName string) string {
 func testAccAWSEcrRepositoryConfig(rName string) string {
 func testAccAWSEcrRepositoryConfig_tags(rName string) string {
 func testAccAWSEcrRepositoryConfig_tagsChanged(rName string) string {
@@ -2897,6 +2899,8 @@ func testAccAWSIAMPolicyConfigName(rName string) string {
 func testAccAWSIAMPolicyConfigNamePrefix(namePrefix string) string {
 func testAccAWSIAMPolicyConfigPath(rName, path string) string {
 func testAccAWSIAMPolicyConfigPolicy(rName, policy string) string {
+func testAccAWSIAMPolicyConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSIAMPolicyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSRolePolicyAttachConfig(rInt int) string {
 func testAccAWSRolePolicyAttachConfigUpdate(rInt int) string {
 func testAccAWSIAMRolePolicyAttachmentConfig(rName string) string {
@@ -4179,6 +4183,7 @@ func testAccAWSRouteTableConfigRouteConfigModeNoBlocks(rName string) string {
 func testAccAWSRouteTableConfigRouteConfigModeZeroed(rName string) string {
 func testAccAWSRouteTableConfigIpv4TransitGateway(rName, destinationCidr string) string {
 func testAccAWSRouteTableConfigRouteIpv4VpcEndpointId(rName, destinationCidr string) string {
+func testAccAWSRouteTableConfigIpv4CarrierGateway(rName, destinationCidr string) string {
 func testAccAWSRouteTableConfigRouteIpv4LocalGateway(rName, destinationCidr string) string {
 func testAccAWSRouteTableConfigConditionalIpv4Ipv6(rName, destinationCidr, destinationIpv6Cidr string, ipv6Route bool) string {
 func testAccAWSRouteTableConfigIpv4NatGateway(rName, destinationCidr string) string {
@@ -4208,6 +4213,11 @@ func testAccAWSRouteConfigIpv4NatGateway(rName, destinationCidr string) string {
 func testAccAWSRouteConfigIpv4VpnGateway(rName, destinationCidr string) string {
 func testAccAWSRouteConfigIpv6VpnGateway(rName, destinationCidr string) string {
 func testAccAWSRouteResourceConfigIpv4VpcEndpoint(rName, destinationCidr string) string {
+func testAccAWSRouteConfigIpv4FlexiTarget(rName, destinationCidr, targetAttribute, targetValue string) string {
+func testAccAWSRouteConfigIpv6FlexiTarget(rName, destinationCidr, targetAttribute, targetValue string) string {
+func testAccAWSRouteConfigIpv4NoRoute(rName string) string {
+func testAccAWSRouteConfigIpv4LocalRoute(rName string) string {
+func testAccAWSRouteConfigIpv4CarrierGateway(rName, destinationCidr string) string {
 func testAccAWSS3AccessPointConfig_basic(bucketName, accessPointName string) string {
 func testAccAWSS3AccessPointConfig_Bucket_Arn(rName string) string {
 func testAccAWSS3AccessPointConfig_policy(rName string) string {
@@ -4515,6 +4525,7 @@ func testAccAWSSecurityHubInviteAccepterConfig_basic() string {
 func testAccAWSSecurityHubMemberConfig_basic(accountId, email string) string {
 func testAccAWSSecurityHubMemberConfig_invite(accountId, email string, invite bool) string {
 func testAccSecurityHubOrganizationAdminAccountConfigSelf() string {
+func testAccSecurityHubOrganizationAdminAccountConfigMultiRegion() string {
 func testAccAwsServerlessApplicationRepositoryCloudFormationApplicationID() string {
 func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfig(stackName, appARN string) string {
 func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_updateInitial(stackName, appARN, functionName string) string {
@@ -4889,7 +4900,8 @@ func testAccAWSStorageGatewayTapePoolBasicConfig(rName string) string {
 func testAccAWSStorageGatewayTapePoolRetentionConfig(rName string) string {
 func testAccAWSStorageGatewayTapePoolConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSStorageGatewayTapePoolConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSStorageGatewayUploadBufferConfig_Basic(rName string) string {
+func testAccAWSStorageGatewayUploadBufferConfigDiskId(rName string) string {
+func testAccAWSStorageGatewayUploadBufferConfigDiskPath(rName string) string {
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(rName string) string {
 func testAccSubnetTagsConfig1(rName, tagKey1, tagValue1 string) string {
 func testAccSubnetTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

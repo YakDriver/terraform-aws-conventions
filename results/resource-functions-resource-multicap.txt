@@ -166,7 +166,6 @@ func resourceAwsRoute53VPCAssociationAuthorizationCreate(
 func resourceAwsRoute53VPCAssociationAuthorizationRead(
 func resourceAwsRoute53VPCAssociationAuthorizationDelete(
 func resourceAwsRoute53VPCAssociationAuthorizationParseId(
-func resourceAwsRouteID(
 func resourceAwsS3BucketAnalyticsConfigurationParseID(
 func resourceAwsS3BucketInventoryParseID(
 func resourceAwsS3BucketMetricParseID(

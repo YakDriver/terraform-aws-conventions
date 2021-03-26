@@ -44,7 +44,6 @@ func resourceAwsNetworkAclRule(
 func resourceAwsNetworkAclRuleCreate(
 func resourceAwsNetworkAclRuleRead(
 func resourceAwsNetworkAclRuleDelete(
-func findNetworkAclRule(
 func networkAclIdRuleNumberEgressHash(
 func TestAccAWSNetworkAclRule_basic(
 func TestAccAWSNetworkAclRule_disappears(

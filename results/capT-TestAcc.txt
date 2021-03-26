@@ -1482,6 +1482,7 @@ func TestAccAWSConfigConfigurationAggregator_account(
 func TestAccAWSConfigConfigurationAggregator_organization(
 func TestAccAWSConfigConfigurationAggregator_switch(
 func TestAccAWSConfigConfigurationAggregator_tags(
+func TestAccAWSConfigConfigurationAggregator_disappears(
 func TestAccAWSConfig_serial(
 func TestAccAwsCurReportDefinition_basic(
 func TestAccAwsCurReportDefinition_textOrCsv(
@@ -2030,6 +2031,8 @@ func TestAccAWSEcrPublicRepository_basic_forcedestroy(
 func TestAccAWSEcrPublicRepository_disappears(
 func TestAccAWSEcrRepositoryPolicy_basic(
 func TestAccAWSEcrRepositoryPolicy_iam(
+func TestAccAWSEcrRepositoryPolicy_disappears(
+func TestAccAWSEcrRepositoryPolicy_disappears_repository(
 func TestAccAWSEcrRepository_basic(
 func TestAccAWSEcrRepository_tags(
 func TestAccAWSEcrRepository_immutability(
@@ -2671,6 +2674,7 @@ func TestAccAWSIAMPolicyAttachment_Roles_RenamedRole(
 func TestAccAWSIAMPolicyAttachment_Users_RenamedUser(
 func TestAccAWSIAMPolicy_basic(
 func TestAccAWSIAMPolicy_description(
+func TestAccAWSIAMPolicy_tags(
 func TestAccAWSIAMPolicy_disappears(
 func TestAccAWSIAMPolicy_namePrefix(
 func TestAccAWSIAMPolicy_path(
@@ -3934,6 +3938,7 @@ func TestAccAWSRouteTable_RequireRouteTarget(
 func TestAccAWSRouteTable_Route_ConfigMode(
 func TestAccAWSRouteTable_IPv4_To_TransitGateway(
 func TestAccAWSRouteTable_IPv4_To_VpcEndpoint(
+func TestAccAWSRouteTable_IPv4_To_CarrierGateway(
 func TestAccAWSRouteTable_IPv4_To_LocalGateway(
 func TestAccAWSRouteTable_IPv4_To_VpcPeeringConnection(
 func TestAccAWSRouteTable_vgwRoutePropagation(
@@ -3963,10 +3968,14 @@ func TestAccAWSRoute_IPv4_To_NatGateway(
 func TestAccAWSRoute_DoesNotCrashWithVpcEndpoint(
 func TestAccAWSRoute_IPv4_To_TransitGateway(
 func TestAccAWSRoute_IPv6_To_TransitGateway(
+func TestAccAWSRoute_IPv4_To_CarrierGateway(
 func TestAccAWSRoute_IPv4_To_LocalGateway(
 func TestAccAWSRoute_IPv6_To_LocalGateway(
 func TestAccAWSRoute_ConditionalCidrBlock(
+func TestAccAWSRoute_IPv4_Update_Target(
+func TestAccAWSRoute_IPv6_Update_Target(
 func TestAccAWSRoute_IPv4_To_VpcEndpoint(
+func TestAccAWSRoute_LocalRoute(
 func TestAccAWSS3AccessPoint_basic(
 func TestAccAWSS3AccessPoint_disappears(
 func TestAccAWSS3AccessPoint_disappears_Bucket(
@@ -4364,6 +4373,8 @@ func TestAccAWSSNSTopicSubscription_autoConfirmingEndpoint(
 func TestAccAWSSNSTopicSubscription_autoConfirmingSecuredEndpoint(
 func TestAccAWSSNSTopicSubscription_email(
 func TestAccAWSSNSTopicSubscription_firehose(
+func TestAccAWSSNSTopicSubscription_disappears(
+func TestAccAWSSNSTopicSubscription_disappears_topic(
 func TestAccAWSSNSTopic_basic(
 func TestAccAWSSNSTopic_name(
 func TestAccAWSSNSTopic_namePrefix(
@@ -4626,6 +4637,7 @@ func TestAccAWSStorageGatewayTapePool_retention(
 func TestAccAWSStorageGatewayTapePool_tags(
 func TestAccAWSStorageGatewayTapePool_disappears(
 func TestAccAWSStorageGatewayUploadBuffer_basic(
+func TestAccAWSStorageGatewayUploadBuffer_DiskPath(
 func TestAccAWSStorageGatewayWorkingStorage_basic(
 func TestAccAWSSubnet_basic(
 func TestAccAWSSubnet_tags(

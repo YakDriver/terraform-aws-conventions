@@ -334,7 +334,6 @@ func resourceAwsApiGatewayV2DomainNameCreate(
 func resourceAwsApiGatewayV2DomainNameRead(
 func resourceAwsApiGatewayV2DomainNameUpdate(
 func resourceAwsApiGatewayV2DomainNameDelete(
-func waitForApiGatewayV2DomainNameAvailabilityOnUpdate(
 func expandApiGatewayV2DomainNameConfiguration(
 func flattenApiGatewayV2DomainNameConfiguration(
 func expandApiGatewayV2MutualTlsAuthentication(

@@ -345,7 +345,6 @@ func flattenRoute53VPCs(
 func route53HostedZoneVPCAssociate(
 func route53HostedZoneVPCDisassociate(
 func route53HostedZoneVPCHash(
-func resourceAwsRouteID(
 func resourceAwsS3BucketAnalyticsConfigurationParseID(
 func BucketCannedACL_Values(
 func resourceAwsS3BucketInventoryParseID(

@@ -248,8 +248,6 @@ func resourceAwsApiGatewayV2DomainNameCreate(
 func resourceAwsApiGatewayV2DomainNameRead(
 func resourceAwsApiGatewayV2DomainNameUpdate(
 func resourceAwsApiGatewayV2DomainNameDelete(
-func apiGatewayV2DomainNameRefresh(
-func waitForApiGatewayV2DomainNameAvailabilityOnUpdate(
 func expandApiGatewayV2DomainNameConfiguration(
 func flattenApiGatewayV2DomainNameConfiguration(
 func expandApiGatewayV2MutualTlsAuthentication(
@@ -2008,9 +2006,8 @@ func resourceAwsEcrRepositoryDelete(
 func resourceAwsEcrRepositoryUpdateImageTagMutability(
 func resourceAwsEcrRepositoryUpdateImageScanningConfiguration(
 func resourceAwsEcrRepositoryPolicy(
-func resourceAwsEcrRepositoryPolicyCreate(
+func resourceAwsEcrRepositoryPolicyPut(
 func resourceAwsEcrRepositoryPolicyRead(
-func resourceAwsEcrRepositoryPolicyUpdate(
 func resourceAwsEcrRepositoryPolicyDelete(
 func init(
 func resourceAwsEcsCapacityProvider(
@@ -2089,11 +2086,10 @@ func resourceAwsEfsFileSystemCreate(
 func resourceAwsEfsFileSystemUpdate(
 func resourceAwsEfsFileSystemRead(
 func resourceAwsEfsFileSystemDelete(
-func waitForDeleteEfsFileSystem(
 func hasEmptyFileSystems(
-func resourceEfsFileSystemCreateUpdateRefreshFunc(
 func flattenEfsFileSystemLifecyclePolicies(
 func expandEfsFileSystemLifecyclePolicies(
+func flattenEfsFileSystemSizeInBytes(
 func resourceAwsEfsFileSystemPolicy(
 func resourceAwsEfsFileSystemPolicyPut(
 func resourceAwsEfsFileSystemPolicyRead(
@@ -4024,7 +4020,6 @@ func resourceAwsNetworkAclRule(
 func resourceAwsNetworkAclRuleCreate(
 func resourceAwsNetworkAclRuleRead(
 func resourceAwsNetworkAclRuleDelete(
-func findNetworkAclRule(
 func networkAclIdRuleNumberEgressHash(
 func validateICMPArgumentValue(
 func init(
@@ -4597,8 +4592,9 @@ func resourceAwsRouteCreate(
 func resourceAwsRouteRead(
 func resourceAwsRouteUpdate(
 func resourceAwsRouteDelete(
-func resourceAwsRouteID(
-func resourceAwsRouteFindRoute(
+func resourceAwsRouteImport(
+func routeDestinationAttribute(
+func routeTargetAttribute(
 func resourceAwsRouteTableAssociation(
 func resourceAwsRouteTableAssociationCreate(
 func resourceAwsRouteTableAssociationRead(

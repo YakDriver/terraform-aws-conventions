@@ -1834,9 +1834,9 @@ func TestAccAWSConfigConfigurationAggregator_account(
 func TestAccAWSConfigConfigurationAggregator_organization(
 func TestAccAWSConfigConfigurationAggregator_switch(
 func TestAccAWSConfigConfigurationAggregator_tags(
+func TestAccAWSConfigConfigurationAggregator_disappears(
 func testAccAWSConfigConfigurationAggregatorConfig_account(
 func testAccAWSConfigConfigurationAggregatorConfig_organization(
-func testAccAWSConfigConfigurationAggregatorConfig_tags(
 func testAccConfigConfigurationRecorderStatus_basic(
 func testAccConfigConfigurationRecorderStatus_startEnabled(
 func testAccConfigConfigurationRecorderStatus_importBasic(
@@ -2498,6 +2498,7 @@ func TestAccAWSEcrPublicRepository_basic(
 func TestAccAWSEcrPublicRepository_disappears(
 func TestAccAWSEcrRepositoryPolicy_basic(
 func TestAccAWSEcrRepositoryPolicy_iam(
+func TestAccAWSEcrRepositoryPolicy_disappears(
 func TestAccAWSEcrRepository_basic(
 func TestAccAWSEcrRepository_tags(
 func TestAccAWSEcrRepository_immutability(
@@ -3153,6 +3154,7 @@ func TestAccAWSIAMPolicyAttachment_basic(
 func TestAccAWSIAMPolicyAttachment_paginatedEntities(
 func TestAccAWSIAMPolicy_basic(
 func TestAccAWSIAMPolicy_description(
+func TestAccAWSIAMPolicy_tags(
 func TestAccAWSIAMPolicy_disappears(
 func TestAccAWSIAMPolicy_namePrefix(
 func TestAccAWSIAMPolicy_path(
@@ -4538,6 +4540,7 @@ func TestAccAWSRoute_basic(
 func TestAccAWSRoute_disappears(
 func TestAccAWSRoute_DoesNotCrashWithVpcEndpoint(
 func TestAccAWSRoute_ConditionalCidrBlock(
+func TestAccAWSRoute_LocalRoute(
 func TestAccAWSS3AccessPoint_basic(
 func TestAccAWSS3AccessPoint_disappears(
 func TestAccAWSS3AccessPoint_Policy(
@@ -4852,6 +4855,7 @@ func testAccAWSSecurityHubMemberConfig_basic(
 func testAccAWSSecurityHubMemberConfig_invite(
 func testAccAwsSecurityHubOrganizationAdminAccount_basic(
 func testAccAwsSecurityHubOrganizationAdminAccount_disappears(
+func testAccAwsSecurityHubOrganizationAdminAccount_MultiRegion(
 func testAccAWSSecurityHubProductSubscription_basic(
 func testAccAWSSecurityHubStandardsSubscription_basic(
 func TestAccAWSSecurityHub_serial(
@@ -4980,6 +4984,7 @@ func TestAccAWSSNSTopicSubscription_autoConfirmingEndpoint(
 func TestAccAWSSNSTopicSubscription_autoConfirmingSecuredEndpoint(
 func TestAccAWSSNSTopicSubscription_email(
 func TestAccAWSSNSTopicSubscription_firehose(
+func TestAccAWSSNSTopicSubscription_disappears(
 func testAccAWSSNSTopicSubscriptionConfig_filterPolicy(
 func testAccAWSSNSTopicSubscriptionConfig_deliveryPolicy(
 func testAccAWSSNSTopicSubscriptionConfig_redrivePolicy(
@@ -5271,7 +5276,7 @@ func TestAccAWSStorageGatewayTapePool_retention(
 func TestAccAWSStorageGatewayTapePool_tags(
 func TestAccAWSStorageGatewayTapePool_disappears(
 func TestAccAWSStorageGatewayUploadBuffer_basic(
-func testAccAWSStorageGatewayUploadBufferConfig_Basic(
+func TestAccAWSStorageGatewayUploadBuffer_DiskPath(
 func TestAccAWSStorageGatewayWorkingStorage_basic(
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(
 func TestAccAWSSubnet_basic(

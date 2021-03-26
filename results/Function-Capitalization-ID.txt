@@ -25,6 +25,7 @@ func testAccPreCheckAWSIdentityStoreUserID(
 func testAccAWSIdentityStoreUserDataSourceConfigUserID(
 func TestAccDataSourceAwsNetworkAcls_VpcID(
 func testAccDataSourceAwsNetworkAclsConfig_VpcID(
+func resourceAwsRouteID(
 func TestAccAWSRouteDataSource_TransitGatewayID(
 func TestAccAWSRouteDataSource_LocalGatewayID(
 func TestAccDataSourceAwsSecretsManagerSecretVersion_VersionID(
@@ -167,7 +168,6 @@ func TestCleanZoneID(
 func TestCleanChangeID(
 func TestAccAWSRoute53Zone_DelegationSetID(
 func testAccRoute53ZoneConfigDelegationSetID(
-func resourceAwsRouteID(
 func resourceAwsS3BucketAnalyticsConfigurationParseID(
 func resourceAwsS3BucketInventoryParseID(
 func resourceAwsS3BucketMetricParseID(

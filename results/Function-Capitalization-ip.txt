@@ -660,6 +660,7 @@ func testAccAWSLBListenerRuleConfig_conditionMultiple(
 func testAccAWSLBListenerRuleConfig_conditionMultiple_updated(
 func testAccErrorCheckSkipELBV2(
 func TestAccAWSLBTargetGroupAttachment_ipAddress(
+func testAccErrorCheckSkipELBv2(
 func TestAccAWSLB_NLB_privateipv4address(
 func TestAccAwsLexBotAlias_description(
 func testAccAwsLexBotAliasConfig_descriptionUpdate(
@@ -983,6 +984,8 @@ func TestAccAWSSNSTopicSubscription_autoConfirmingEndpoint(
 func TestAccAWSSNSTopicSubscription_autoConfirmingSecuredEndpoint(
 func TestAccAWSSNSTopicSubscription_email(
 func TestAccAWSSNSTopicSubscription_firehose(
+func TestAccAWSSNSTopicSubscription_disappears(
+func TestAccAWSSNSTopicSubscription_disappears_topic(
 func testAccErrorCheckSkipSNS(
 func testAccCheckAWSSNSTopicSubscriptionDestroy(
 func testAccCheckAWSSNSTopicSubscriptionExists(
