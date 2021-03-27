@@ -196,6 +196,7 @@ func TestAccAWSRouteDataSource_basic(
 func TestAccAWSRouteDataSource_TransitGatewayID(
 func TestAccAWSRouteDataSource_IPv6DestinationCidr(
 func TestAccAWSRouteDataSource_LocalGatewayID(
+func TestAccAWSRouteDataSource_CarrierGatewayID(
 func TestAccAWSStepFunctionsActivityDataSource_basic(
 func TestAccAWSSsmDocumentDataSource_basic(
 func TestAccAWSSsmParameterDataSource_basic(

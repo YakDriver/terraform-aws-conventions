@@ -702,7 +702,6 @@ func testAccDataSourceAwsRoute53ZoneConfigVpc(
 func testAccDataSourceAwsRoute53ZoneConfigServiceDiscovery(
 func dataSourceAwsRoute(
 func dataSourceAwsRouteRead(
-func resourceAwsRouteID(
 func dataSourceAwsRouteTable(
 func dataSourceAwsRouteTableRead(
 func dataSourceAwsRouteTables(

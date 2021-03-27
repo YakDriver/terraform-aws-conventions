@@ -729,6 +729,8 @@ func flattenEcsSettings(
 func init(
 func expandEcsDeploymentController(
 func flattenEcsDeploymentController(
+func expandECSDeploymentCircuitBreaker(
+func flattenECSDeploymentCircuitBreaker(
 func flattenEcsNetworkConfiguration(
 func expandEcsNetworkConfiguration(
 func expandEcsCapacityProviderStrategy(
@@ -740,10 +742,7 @@ func flattenPlacementStrategy(
 func flattenServiceRegistries(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
-func waitForSteadyState(
 func init(
-func tpl_testAccAWSEcsService_withLbChanges(
-func tpl_testAccAWSEcsServiceWithNetworkConfiguration(
 func validateAwsEcsTaskDefinitionContainerDefinitions(
 func flattenPlacementConstraints(
 func flattenProxyConfiguration(

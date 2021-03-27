@@ -370,6 +370,7 @@ func testAccDataSourceAwsRouteConfigBasic(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv4TransitGateway(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv6EgressOnlyInternetGateway(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv4LocalGateway(rName string) string {
+func testAccAWSRouteDataSourceConfigIpv4CarrierGateway(rName string) string {
 func testAccAWSDataSourceS3ObjectsConfigResources(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigResourcesPlusAccessPoint(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigBasic(randInt int) string {
@@ -2244,47 +2245,51 @@ func testAccAWSEcsClusterCapacityProvidersFargateSpotNoStrategy(rName string) st
 func testAccAWSEcsClusterConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSEcsClusterConfigContainerInsights(rName string) string {
 func testAccAWSEcsClusterConfigContainerInsightsDisable(rName string) string {
-func testAccAWSEcsService(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceModified(clusterName, tdName, svcName string) string {
+func testAccAWSEcsService(rName string) string {
+func testAccAWSEcsServiceModified(rName string) string {
 func testAccAWSEcsServiceWithLaunchTypeFargateWithoutWait(rName string) string {
 func testAccAWSEcsServiceWithLaunchTypeFargateAndWait(rName string, desiredCount int, waitForSteadyState bool) string {
-func testAccAWSEcsServiceWithInterchangeablePlacementStrategy(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithCapacityProviderStrategy(providerName, clusterName, tdName, svcName string, weight, base int) string {
-func testAccAWSEcsServiceWithMultipleCapacityProviderStrategies(clusterName, tdName, svcName, sgName string) string {
-func testAccAWSEcsServiceWithForceNewDeployment(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithPlacementStrategy(clusterName, tdName, svcName string) string {
+func testAccAWSEcsServiceWithInterchangeablePlacementStrategy(rName string) string {
+func testAccAWSEcsServiceWithCapacityProviderStrategy(rName string, weight, base int) string {
+func testAccAWSEcsServiceWithMultipleCapacityProviderStrategies(rName string) string {
+func testAccAWSEcsServiceWithForceNewDeployment(rName string) string {
+func testAccAWSEcsServiceWithPlacementStrategy(rName string) string {
 func testAccAWSEcsServiceWithPlacementStrategyType(rName string, placementStrategyType string) string {
-func testAccAWSEcsServiceWithRandomPlacementStrategy(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithMultiPlacementStrategy(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithPlacementConstraint(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithPlacementConstraintEmptyExpression(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithLaunchTypeFargate(sg1Name, sg2Name, clusterName, tdName, svcName, assignPublicIP string) string {
-func testAccAWSEcsServiceWithLaunchTypeFargateAndPlatformVersion(sg1Name, sg2Name, clusterName, tdName, svcName, platformVersion string) string {
-func testAccAWSEcsService_withIamRole(clusterName, tdName, roleName, policyName, svcName string) string {
-func testAccAWSEcsServiceWithDeploymentValues(clusterName, tdName, svcName string) string {
-func testAccAWSEcsService_withLbChanges(clusterName, tdName, roleName, policyName, svcName string) string {
-func testAccAWSEcsService_withLbChanges_modified(clusterName, tdName, roleName, policyName, svcName string) string {
-func testAccAWSEcsServiceWithFamilyAndRevision(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithFamilyAndRevisionModified(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithRenamedCluster(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithEcsClusterName(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithAlb(clusterName, tdName, roleName, policyName, lbName, svcName string) string {
-func testAccAWSEcsServiceWithMultipleTargetGroups(clusterName, tdName, lbName, svcName string) string {
-func testAccAWSEcsServiceWithNetworkConfiguration(sg1Name, sg2Name, clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithNetworkConfiguration_modified(sg1Name, sg2Name, clusterName, tdName, svcName string) string {
-func testAccAWSEcsService_withServiceRegistries(rName, clusterName, tdName, svcName string) string {
-func testAccAWSEcsService_withServiceRegistries_container(rName, clusterName, tdName, svcName string) string {
-func testAccAWSEcsService_withServiceRegistriesChanges(rName, discoveryName, clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithDaemonSchedulingStrategy(clusterName, tdName, svcName string) string {
-func testAccAWSEcsServiceWithDaemonSchedulingStrategySetDeploymentMinimum(clusterName, tdName, svcName string) string {
+func testAccAWSEcsServiceWithRandomPlacementStrategy(rName string) string {
+func testAccAWSEcsServiceWithMultiPlacementStrategy(rName string) string {
+func testAccAWSEcsServiceWithPlacementConstraint(rName string) string {
+func testAccAWSEcsServiceWithPlacementConstraintEmptyExpression(rName string) string {
+func testAccAWSEcsServiceWithLaunchTypeFargate(rName string, assignPublicIP bool) string {
+func testAccAWSEcsServiceWithLaunchTypeFargateAndPlatformVersion(rName, platformVersion string) string {
+func testAccAWSEcsService_healthCheckGracePeriodSeconds(rName string, healthCheckGracePeriodSeconds int) string {
+func testAccAWSEcsService_withIamRole(rName string) string {
+func testAccAWSEcsServiceWithDeploymentValues(rName string) string {
+func testAccAWSEcsService_withLbChangesBase(rName, image, containerName string, containerPort, hostPort int) string {
+func testAccAWSEcsService_withLbChanges(rName string) string {
+func testAccAWSEcsService_withLbChanges_modified(rName string) string {
+func testAccAWSEcsServiceWithFamilyAndRevision(rName string) string {
+func testAccAWSEcsServiceWithFamilyAndRevisionModified(rName string) string {
+func testAccAWSEcsServiceWithRenamedCluster(rName string) string {
+func testAccAWSEcsServiceWithEcsClusterName(rName string) string {
+func testAccAWSEcsServiceWithAlb(rName string) string {
+func testAccAWSEcsServiceWithMultipleTargetGroups(rName string) string {
+func testAccAWSEcsServiceWithNetworkConfigurationBase(rName, securityGroups string) string {
+func testAccAWSEcsServiceWithNetworkConfiguration(rName string) string {
+func testAccAWSEcsServiceWithNetworkConfiguration_modified(rName string) string {
+func testAccAWSEcsService_withServiceRegistries(rName string) string {
+func testAccAWSEcsService_withServiceRegistries_container(rName string) string {
+func testAccAWSEcsService_withServiceRegistriesChanges(rName, discoveryName string) string {
+func testAccAWSEcsServiceWithDaemonSchedulingStrategy(rName string) string {
+func testAccAWSEcsServiceWithDaemonSchedulingStrategySetDeploymentMinimum(rName string) string {
 func testAccAWSEcsServiceConfigDeploymentControllerTypeCodeDeploy(rName string) string {
 func testAccAWSEcsServiceConfigDeploymentControllerTypeExternal(rName string) string {
 func testAccAWSEcsServiceConfigDeploymentPercents(rName string, deploymentMinimumHealthyPercent, deploymentMaximumPercent int) string {
+func testAccAWSEcsServiceConfigDeploymentCircuitBreaker(rName string) string {
 func testAccAWSEcsServiceConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSEcsServiceConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSEcsServiceConfigManagedTags(rName string) string {
 func testAccAWSEcsServiceConfigPropagateTags(rName, propagate string) string {
-func testAccAWSEcsServiceWithReplicaSchedulingStrategy(clusterName, tdName, svcName string) string {
+func testAccAWSEcsServiceWithReplicaSchedulingStrategy(rName string) string {
 func testAccAWSEcsServiceConfigExecuteCommand(rName string, enable bool) string {
 func testAccAWSEcsTaskDefinition_constraint(tdName string) string {
 func testAccAWSEcsTaskDefinition(tdName string) string {

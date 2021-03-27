@@ -530,6 +530,7 @@ func TestAccAWSRouteDataSource_basic(
 func TestAccAWSRouteDataSource_TransitGatewayID(
 func TestAccAWSRouteDataSource_IPv6DestinationCidr(
 func TestAccAWSRouteDataSource_LocalGatewayID(
+func TestAccAWSRouteDataSource_CarrierGatewayID(
 func TestAccDataSourceAWSS3BucketObjects_basic(
 func TestAccDataSourceAWSS3BucketObjects_basicViaAccessPoint(
 func TestAccDataSourceAWSS3BucketObjects_all(
@@ -2530,6 +2531,7 @@ func TestAccAWSEcsService_healthCheckGracePeriodSeconds(
 func TestAccAWSEcsService_withIamRole(
 func TestAccAWSEcsService_withDeploymentValues(
 func TestAccAWSEcsService_withDeploymentMinimumZeroMaximumOneHundred(
+func TestAccAWSEcsService_withDeploymentCircuitBreaker(
 func TestAccAWSEcsService_withLbChanges(
 func TestAccAWSEcsService_withEcsClusterName(
 func TestAccAWSEcsService_withAlb(
@@ -2553,6 +2555,7 @@ func TestAccAWSEcsService_PropagateTags(
 func TestAccAWSEcsService_ExecuteCommand(
 func testAccAWSEcsService_healthCheckGracePeriodSeconds(
 func testAccAWSEcsService_withIamRole(
+func testAccAWSEcsService_withLbChangesBase(
 func testAccAWSEcsService_withLbChanges(
 func testAccAWSEcsServiceWithNetworkConfiguration_modified(
 func testAccAWSEcsService_withServiceRegistries(

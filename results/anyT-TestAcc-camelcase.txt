@@ -816,6 +816,7 @@ func TestAccAWSEcsService_healthCheckGracePeriodSeconds(
 func TestAccAWSEcsService_withIamRole(
 func TestAccAWSEcsService_withDeploymentValues(
 func TestAccAWSEcsService_withDeploymentMinimumZeroMaximumOneHundred(
+func TestAccAWSEcsService_withDeploymentCircuitBreaker(
 func TestAccAWSEcsService_withLbChanges(
 func TestAccAWSEcsService_withEcsClusterName(
 func TestAccAWSEcsService_withAlb(
@@ -835,6 +836,7 @@ func TestAccAWSEcsService_withServiceRegistries(
 func TestAccAWSEcsService_withServiceRegistriesChanges(
 func testAccAWSEcsService_healthCheckGracePeriodSeconds(
 func testAccAWSEcsService_withIamRole(
+func testAccAWSEcsService_withLbChangesBase(
 func testAccAWSEcsService_withLbChanges(
 func testAccAWSEcsService_withServiceRegistries(
 func testAccAWSEcsService_withServiceRegistriesChanges(

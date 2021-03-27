@@ -236,6 +236,7 @@ func testAccDataSourceAwsRouteConfigBasic(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv4TransitGateway(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv6EgressOnlyInternetGateway(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv4LocalGateway(rName string) string {
+func testAccAWSRouteDataSourceConfigIpv4CarrierGateway(rName string) string {
 func testAccAWSDataSourceS3ObjectsConfigResources(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigResourcesPlusAccessPoint(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigBasic(randInt int) string {
@@ -1122,10 +1123,12 @@ func testAccAWSEcsClusterCapacityProviderConfig(rName string) string {
 func testAccAWSEcsClusterConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSEcsClusterConfigContainerInsights(rName string) string {
 func testAccAWSEcsClusterConfigContainerInsightsDisable(rName string) string {
-func testAccAWSEcsServiceWithNetworkConfiguration(sg1Name, sg2Name, clusterName, tdName, svcName string) string {
+func testAccAWSEcsServiceWithNetworkConfigurationBase(rName, securityGroups string) string {
+func testAccAWSEcsServiceWithNetworkConfiguration(rName string) string {
 func testAccAWSEcsServiceConfigDeploymentControllerTypeCodeDeploy(rName string) string {
 func testAccAWSEcsServiceConfigDeploymentControllerTypeExternal(rName string) string {
 func testAccAWSEcsServiceConfigDeploymentPercents(rName string, deploymentMinimumHealthyPercent, deploymentMaximumPercent int) string {
+func testAccAWSEcsServiceConfigDeploymentCircuitBreaker(rName string) string {
 func testAccAWSEcsServiceConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSEcsServiceConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSEcsServiceConfigManagedTags(rName string) string {

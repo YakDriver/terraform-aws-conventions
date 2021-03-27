@@ -81,10 +81,10 @@ func migrateDynamoDBStateV0toV1(
 func resourceAWSEbsVolumeUpdate(
 func decodeEc2LocalGatewayRouteID(
 func extractResourceIDAndKeyFromEc2TagID(
+func expandECSDeploymentCircuitBreaker(
+func flattenECSDeploymentCircuitBreaker(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
-func tpl_testAccAWSEcsService_withLbChanges(
-func tpl_testAccAWSEcsServiceWithNetworkConfiguration(
 func flattenElasticacheGlobalReplicationGroupPrimaryGroupID(
 func resourceAwsElasticacheReplicationGroupSetPrimaryClusterID(
 func formatReplicationGroupClusterID(

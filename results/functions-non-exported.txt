@@ -1000,8 +1000,6 @@ func testAccDataSourceAwsRoute53ZoneConfigVpc(
 func testAccDataSourceAwsRoute53ZoneConfigServiceDiscovery(
 func dataSourceAwsRoute(
 func dataSourceAwsRouteRead(
-func getRoutes(
-func resourceAwsRouteID(
 func dataSourceAwsRouteTable(
 func dataSourceAwsRouteTableRead(
 func dataSourceRoutesRead(
@@ -1016,6 +1014,7 @@ func testAccDataSourceAwsRouteConfigBasic(
 func testAccAWSRouteDataSourceConfigIpv4TransitGateway(
 func testAccAWSRouteDataSourceConfigIpv6EgressOnlyInternetGateway(
 func testAccAWSRouteDataSourceConfigIpv4LocalGateway(
+func testAccAWSRouteDataSourceConfigIpv4CarrierGateway(
 func dataSourceAwsS3Bucket(
 func dataSourceAwsS3BucketRead(
 func bucketLocation(
@@ -6233,6 +6232,8 @@ func resourceAwsEcsServiceCreate(
 func resourceAwsEcsServiceRead(
 func expandEcsDeploymentController(
 func flattenEcsDeploymentController(
+func expandECSDeploymentCircuitBreaker(
+func flattenECSDeploymentCircuitBreaker(
 func flattenEcsNetworkConfiguration(
 func expandEcsNetworkConfiguration(
 func expandEcsCapacityProviderStrategy(
@@ -6247,12 +6248,10 @@ func resourceAwsEcsServiceDelete(
 func resourceAwsEcsLoadBalancerHash(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
-func waitForSteadyState(
 func init(
 func testSweepEcsServices(
 func testAccCheckAWSEcsServiceDestroy(
 func testAccCheckAWSEcsServiceExists(
-func testAccCheckAWSEcsServiceDisappears(
 func testAccCheckAWSEcsServiceNotRecreated(
 func testAccAWSEcsService(
 func testAccAWSEcsServiceModified(
@@ -6273,7 +6272,7 @@ func testAccAWSEcsServiceWithLaunchTypeFargateAndPlatformVersion(
 func testAccAWSEcsService_healthCheckGracePeriodSeconds(
 func testAccAWSEcsService_withIamRole(
 func testAccAWSEcsServiceWithDeploymentValues(
-func tpl_testAccAWSEcsService_withLbChanges(
+func testAccAWSEcsService_withLbChangesBase(
 func testAccAWSEcsService_withLbChanges(
 func testAccAWSEcsService_withLbChanges_modified(
 func testAccAWSEcsServiceWithFamilyAndRevision(
@@ -6282,9 +6281,9 @@ func testAccAWSEcsServiceWithRenamedCluster(
 func testAccAWSEcsServiceWithEcsClusterName(
 func testAccAWSEcsServiceWithAlb(
 func testAccAWSEcsServiceWithMultipleTargetGroups(
+func testAccAWSEcsServiceWithNetworkConfigurationBase(
 func testAccAWSEcsServiceWithNetworkConfiguration(
 func testAccAWSEcsServiceWithNetworkConfiguration_modified(
-func tpl_testAccAWSEcsServiceWithNetworkConfiguration(
 func testAccAWSEcsService_withServiceRegistries(
 func testAccAWSEcsService_withServiceRegistries_container(
 func testAccAWSEcsService_withServiceRegistriesChanges(
@@ -6293,6 +6292,7 @@ func testAccAWSEcsServiceWithDaemonSchedulingStrategySetDeploymentMinimum(
 func testAccAWSEcsServiceConfigDeploymentControllerTypeCodeDeploy(
 func testAccAWSEcsServiceConfigDeploymentControllerTypeExternal(
 func testAccAWSEcsServiceConfigDeploymentPercents(
+func testAccAWSEcsServiceConfigDeploymentCircuitBreaker(
 func testAccAWSEcsServiceConfigTags1(
 func testAccAWSEcsServiceConfigTags2(
 func testAccAWSEcsServiceConfigManagedTags(

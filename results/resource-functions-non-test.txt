@@ -2036,6 +2036,8 @@ func resourceAwsEcsServiceCreate(
 func resourceAwsEcsServiceRead(
 func expandEcsDeploymentController(
 func flattenEcsDeploymentController(
+func expandECSDeploymentCircuitBreaker(
+func flattenECSDeploymentCircuitBreaker(
 func flattenEcsNetworkConfiguration(
 func expandEcsNetworkConfiguration(
 func expandEcsCapacityProviderStrategy(
@@ -2050,10 +2052,7 @@ func resourceAwsEcsServiceDelete(
 func resourceAwsEcsLoadBalancerHash(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
-func waitForSteadyState(
 func init(
-func tpl_testAccAWSEcsService_withLbChanges(
-func tpl_testAccAWSEcsServiceWithNetworkConfiguration(
 func resourceAwsEcsTaskDefinition(
 func validateAwsEcsTaskDefinitionContainerDefinitions(
 func resourceAwsEcsTaskDefinitionCreate(
