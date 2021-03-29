@@ -3866,6 +3866,17 @@ func testAccAWSRouteConfigIpv4FlexiTarget(rName, destinationCidr, targetAttribut
 func testAccAWSRouteConfigIpv6FlexiTarget(rName, destinationCidr, targetAttribute, targetValue string) string {
 func testAccAWSRouteConfigIpv4NoRoute(rName string) string {
 func testAccAWSRouteConfigIpv4LocalRoute(rName string) string {
+func testAccAWSRouteConfigPrefixListInternetGateway(rName string) string {
+func testAccAWSRouteConfigPrefixListVpnGateway(rName string) string {
+func testAccAWSRouteConfigPrefixListInstance(rName string) string {
+func testAccAWSRouteConfigPrefixListNetworkInterfaceUnattached(rName string) string {
+func testAccAWSRouteConfigPrefixListNetworkInterfaceAttached(rName string) string {
+func testAccAWSRouteConfigPrefixListVpcPeeringConnection(rName string) string {
+func testAccAWSRouteConfigPrefixListNatGateway(rName string) string {
+func testAccAWSRouteConfigPrefixListTransitGateway(rName string) string {
+func testAccAWSRouteConfigPrefixListCarrierGateway(rName string) string {
+func testAccAWSRouteConfigPrefixListLocalGateway(rName string) string {
+func testAccAWSRouteConfigPrefixListEgressOnlyInternetGateway(rName string) string {
 func testAccAWSRouteConfigIpv4CarrierGateway(rName, destinationCidr string) string {
 func testAccAWSS3AccessPointConfig_basic(bucketName, accessPointName string) string {
 func testAccAWSS3AccessPointConfig_Bucket_Arn(rName string) string {
