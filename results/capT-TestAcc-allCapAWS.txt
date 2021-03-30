@@ -256,6 +256,8 @@ func TestAccAWSRouteDataSource_TransitGatewayID(
 func TestAccAWSRouteDataSource_IPv6DestinationCidr(
 func TestAccAWSRouteDataSource_LocalGatewayID(
 func TestAccAWSRouteDataSource_CarrierGatewayID(
+func TestAccAWSRouteDataSource_DestinationPrefixListId(
+func TestAccAWSRouteDataSource_GatewayVpcEndpoint(
 func TestAccAWSSageMakerPrebuiltECRImage_basic(
 func TestAccAWSSageMakerPrebuiltECRImage_region(
 func TestAccAWSStepFunctionsActivityDataSource_basic(
@@ -1347,6 +1349,8 @@ func TestAccAWSDefaultRouteTable_IPv4_To_VpcEndpoint(
 func TestAccAWSDefaultRouteTable_VpcEndpointAssociation(
 func TestAccAWSDefaultRouteTable_tags(
 func TestAccAWSDefaultRouteTable_ConditionalCidrBlock(
+func TestAccAWSDefaultRouteTable_PrefixList_To_InternetGateway(
+func TestAccAWSDefaultRouteTable_RevokeExistingRules(
 func TestAccAWSDefaultSecurityGroup_Vpc_basic(
 func TestAccAWSDefaultSecurityGroup_Vpc_empty(
 func TestAccAWSDefaultSecurityGroup_Classic_basic(
@@ -2781,6 +2785,7 @@ func TestAccAWSLBTargetGroup_stickinessValidNLB(
 func TestAccAWSLBTargetGroup_stickinessValidALB(
 func TestAccAWSLBTargetGroup_stickinessInvalidNLB(
 func TestAccAWSLBTargetGroup_stickinessInvalidALB(
+func TestAccAWSLBTargetGroup_preserveClientIPValid(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_LoadBalancerType_Gateway(
@@ -3305,6 +3310,7 @@ func TestAccAWSRouteTable_VpcMultipleCidrs(
 func TestAccAWSRouteTable_VpcClassicLink(
 func TestAccAWSRouteTable_GatewayVpcEndpoint(
 func TestAccAWSRouteTable_MultipleRoutes(
+func TestAccAWSRouteTable_PrefixList_To_InternetGateway(
 func TestAccAWSRoute_basic(
 func TestAccAWSRoute_disappears(
 func TestAccAWSRoute_disappears_RouteTable(

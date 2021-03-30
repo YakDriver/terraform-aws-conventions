@@ -4606,7 +4606,6 @@ func resourceAwsRouteTableRead(
 func resourceAwsRouteTableUpdate(
 func resourceAwsRouteTableDelete(
 func resourceAwsRouteTableHash(
-func resourceAwsRouteTableStateRefreshFunc(
 func init(
 func resourceAwsS3AccessPoint(
 func resourceAwsS3AccessPointCreate(

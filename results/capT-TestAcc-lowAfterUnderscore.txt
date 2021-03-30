@@ -1936,6 +1936,7 @@ func TestAccAWSLBTargetGroup_stickinessValidNLB(
 func TestAccAWSLBTargetGroup_stickinessValidALB(
 func TestAccAWSLBTargetGroup_stickinessInvalidNLB(
 func TestAccAWSLBTargetGroup_stickinessInvalidALB(
+func TestAccAWSLBTargetGroup_preserveClientIPValid(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func TestAccAWSLB_generatedName(
 func TestAccAWSLB_generatesNameForZeroValue(

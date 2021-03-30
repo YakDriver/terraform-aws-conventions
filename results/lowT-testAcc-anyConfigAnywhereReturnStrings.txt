@@ -255,8 +255,8 @@ func testAccDataSourceAWSLBListenerConfigBasic(lbName, targetGroupName string) s
 func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigHTTPS(lbName, targetGroupName, certificate, key string) string {
 func testAccDataSourceAWSLBListenerConfigDefaultActionForward(rName string) string {
-func testAccDataSourceAWSLBTargetGroupConfigBasic(lbName string, targetGroupName string) string {
-func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(lbName string, targetGroupName string) string {
+func testAccDataSourceAWSLBTargetGroupConfigBasic(rName string) string {
+func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(rName string) string {
 func testAccDataSourceAWSLBConfigBasic(lbName string) string {
 func testAccDataSourceAWSLBConfigOutpost(lbName string) string {
 func testAccDataSourceAWSLBConfigBackardsCompatibility(albName string) string {
@@ -354,6 +354,9 @@ func testAccAWSRouteDataSourceConfigIpv4TransitGateway(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv6EgressOnlyInternetGateway(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv4LocalGateway(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv4CarrierGateway(rName string) string {
+func testAccAWSRouteDataSourceConfigPrefixListNatGateway(rName string) string {
+func testAccAWSRouteDataSourceConfigGatewayVpcEndpointNoDataSource(rName string) string {
+func testAccAWSRouteDataSourceConfigGatewayVpcEndpointWithDataSource(rName string) string {
 func testAccAWSDataSourceS3ObjectsConfigResources(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigResourcesPlusAccessPoint(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigBasic(randInt int) string {
@@ -514,20 +517,22 @@ func testAccAwsAcmpcaCertificateConfig_EndEntityCertificate(rName, csr string) s
 func testAccAwsAcmpcaCertificateConfig_Validity_EndDate(rName, csr, expiry string) string {
 func testAccAwsAcmpcaCertificateConfig_Validity_Absolute(rName, csr string, expiry int64) string {
 func testAccAcmpcaCertificateBaseRootCAConfig(rName string) string {
-func testAccAWSALBTargetGroupConfig_basic(targetGroupName string) string {
-func testAccAWSALBTargetGroupConfig_updatedPort(targetGroupName string) string {
-func testAccAWSALBTargetGroupConfig_updatedProtocol(targetGroupName string) string {
-func testAccAWSALBTargetGroupConfig_updatedVpc(targetGroupName string) string {
-func testAccAWSALBTargetGroupConfig_updateTags(targetGroupName string) string {
-func testAccAWSALBTargetGroupConfig_updateHealthCheck(targetGroupName string) string {
-func testAccAWSALBTargetGroupConfig_stickiness(targetGroupName string, addStickinessBlock bool, enabled bool) string {
-func testAccAWSALBTargetGroupConfig_loadBalancingAlgorithm(targetGroupName string, nonDefault bool, algoType string) string {
-func testAccAWSALBTargetGroupConfig_updateSlowStart(targetGroupName string, slowStartDuration int) string {
-func testAccAWSALBTargetGroupConfig_lambda(targetGroupName string) string {
+func testAccAWSALBTargetGroupConfig_basic(rName string) string {
+func testAccAWSALBTargetGroupConfig_updatedPort(rName string) string {
+func testAccAWSALBTargetGroupConfig_updatedProtocol(rName string) string {
+func testAccAWSALBTargetGroupConfig_updatedVpc(rName string) string {
+func testAccAWSALBTargetGroupConfig_updateTags(rName string) string {
+func testAccAWSALBTargetGroupConfig_updateHealthCheck(rName string) string {
+func testAccAWSALBTargetGroupConfig_stickiness(rName string, addStickinessBlock bool, enabled bool) string {
+func testAccAWSALBTargetGroupConfig_loadBalancingAlgorithm(rName string, nonDefault bool, algoType string) string {
+func testAccAWSALBTargetGroupConfig_updateSlowStart(rName string, slowStartDuration int) string {
+func testAccAWSALBTargetGroupConfig_namePrefix(rName string) string {
+func testAccAWSALBTargetGroupConfig_generatedName(rName string) string {
+func testAccAWSALBTargetGroupConfig_lambda(rName string) string {
 func testAccAWSALBTargetGroupConfig_lambdaMultiValueHeadersEnabled(rName string, lambdaMultiValueHadersEnabled bool) string {
-func testAccAWSALBTargetGroupConfig_missing_port(targetGroupName string) string {
-func testAccAWSALBTargetGroupConfig_missing_protocol(targetGroupName string) string {
-func testAccAWSALBTargetGroupConfig_missing_vpc(targetGroupName string) string {
+func testAccAWSALBTargetGroupConfig_missing_port(rName string) string {
+func testAccAWSALBTargetGroupConfig_missing_protocol(rName string) string {
+func testAccAWSALBTargetGroupConfig_missing_vpc(rName string) string {
 func testAccAWSAMICopyConfigBase(rName string) string {
 func testAccAWSAMICopyConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAMICopyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -1789,6 +1794,11 @@ func testAccDefaultRouteTableConfigVpcEndpointAssociation(rName, destinationCidr
 func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccDefaultRouteTableConfigConditionalIpv4Ipv6(rName, destinationCidr, destinationIpv6Cidr string, ipv6Route bool) string {
+func testAccDefaultRouteTableConfigPrefixListInternetGateway(rName string) string {
+func testAccDefaultRouteTableConfigPrefixListInternetGatewayNoRoute(rName string) string {
+func testAccDefaultRouteTableConfigRevokeExistingRulesCustomRouteTable(rName string) string {
+func testAccDefaultRouteTableConfigRevokeExistingRulesCustomRouteTableToMain(rName string) string {
+func testAccDefaultRouteTableConfigRevokeExistingRulesDefaultRouteTableOverlaysCustomRouteTable(rName string) string {
 func testAccAWSDefaultSecurityGroupConfig_Classic() string {
 func testAccAWSDefaultSecurityGroupConfig_Classic_empty() string {
 func testAccAWSDefaultSubnetConfigBasic(rInt int) string {
@@ -3250,30 +3260,33 @@ func testAccAWSLBTargetGroupAttachmentConfigPort(rName string) string {
 func testAccAWSLBTargetGroupAttachmentConfigBackwardsCompatibility(rName string) string {
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdIpAddress(rName string) string {
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdLambda(rName string) string {
-func testAccAWSLBTargetGroupConfig_basic(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_ProtocolVersion(targetGroupName string) string {
+func testAccAWSLBTargetGroupConfig_basic(rName string) string {
+func testAccAWSLBTargetGroupConfig_ProtocolVersion(rName string) string {
 func testAccAWSLBTargetGroupConfigProtocolGeneve(rName string) string {
-func testAccAWSLBTargetGroupConfigTags1(targetGroupName, tagKey1, tagValue1 string) string {
-func testAccAWSLBTargetGroupConfigTags2(targetGroupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSLBTargetGroupConfig_basicUdp(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_withoutHealthcheck(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfigBackwardsCompatibility(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_enableHealthcheck(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_updatedPort(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_updatedProtocol(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_GRPC_ProtocolVersion(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_updatedVpc(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_updateHealthCheck(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_Protocol_Tls(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_typeTCP(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_typeTCP_withProxyProtocol(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_typeTCPInvalidThreshold(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_typeTCPThresholdUpdated(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_typeTCPIntervalUpdated(targetGroupName string) string {
-func testAccAWSLBTargetGroupConfig_typeTCP_HTTPHealthCheck(targetGroupName, path string, threshold int) string {
-func testAccAWSLBTargetGroupConfig_stickiness(targetGroupName string, addStickinessBlock bool, enabled bool) string {
-func testAccAWSLBTargetGroupConfig_stickinessDefault(protocol string) string {
-func testAccAWSLBTargetGroupConfig_stickinessValidity(protocol, stickyType string, enabled bool) string {
+func testAccAWSLBTargetGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSLBTargetGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSLBTargetGroupConfig_basicUdp(rName string) string {
+func testAccAWSLBTargetGroupConfig_withoutHealthcheck(rName string) string {
+func testAccAWSLBTargetGroupConfigBackwardsCompatibility(rName string) string {
+func testAccAWSLBTargetGroupConfig_enableHealthcheck(rName string) string {
+func testAccAWSLBTargetGroupConfig_updatedPort(rName string) string {
+func testAccAWSLBTargetGroupConfig_updatedProtocol(rName string) string {
+func testAccAWSLBTargetGroupConfig_GRPC_ProtocolVersion(rName string) string {
+func testAccAWSLBTargetGroupConfig_updatedVpc(rName string) string {
+func testAccAWSLBTargetGroupConfig_updateHealthCheck(rName string) string {
+func testAccAWSLBTargetGroupConfig_Protocol_Tls(rName string) string {
+func testAccAWSLBTargetGroupConfig_typeTCP(rName string) string {
+func testAccAWSLBTargetGroupConfig_typeTCP_withProxyProtocol(rName string) string {
+func testAccAWSLBTargetGroupConfig_typeTCPInvalidThreshold(rName string) string {
+func testAccAWSLBTargetGroupConfig_typeTCPThresholdUpdated(rName string) string {
+func testAccAWSLBTargetGroupConfig_typeTCPIntervalUpdated(rName string) string {
+func testAccAWSLBTargetGroupConfig_typeTCP_HTTPHealthCheck(rName, path string, threshold int) string {
+func testAccAWSLBTargetGroupConfig_stickiness(rName string, addStickinessBlock bool, enabled bool) string {
+func testAccAWSLBTargetGroupConfig_namePrefix(rName string) string {
+func testAccAWSLBTargetGroupConfig_generatedName(rName string) string {
+func testAccAWSLBTargetGroupConfig_stickinessDefault(rName, protocol string) string {
+func testAccAWSLBTargetGroupConfig_stickinessValidity(rName, protocol, stickyType string, enabled bool) string {
+func testAccAWSLBTargetGroupConfig_preserveClientIP(rName string, preserveClientIP bool) string {
 func testAccAWSLBConfigWithIpAddressTypeUpdated(lbName string) string {
 func testAccAWSLBConfigWithIpAddressType(lbName string) string {
 func testAccAWSLBConfig_basic(lbName string) string {
@@ -3841,6 +3854,7 @@ func testAccAWSRouteTableConfigVpcMultipleCidrs(rName string) string {
 func testAccAWSRouteTableConfigVpcClassicLink(rName string) string {
 func testAccAWSRouteTableConfigGatewayVpcEndpoint(rName string) string {
 func testAccLatestAmazonNatInstanceAmiConfig() string {
+func testAccAWSRouteTableConfigPrefixListInternetGateway(rName string) string {
 func testAccAWSRouteConfigIpv4InternetGateway(rName, destinationCidr string) string {
 func testAccAWSRouteConfigIpv6InternetGateway(rName, destinationCidr string) string {
 func testAccAWSRouteConfigIpv6NetworkInterfaceUnattached(rName, destinationCidr string) string {

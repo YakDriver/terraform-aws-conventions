@@ -620,6 +620,8 @@ func TestAccAWSRouteDataSource_TransitGatewayID(
 func TestAccAWSRouteDataSource_IPv6DestinationCidr(
 func TestAccAWSRouteDataSource_LocalGatewayID(
 func TestAccAWSRouteDataSource_CarrierGatewayID(
+func TestAccAWSRouteDataSource_DestinationPrefixListId(
+func TestAccAWSRouteDataSource_GatewayVpcEndpoint(
 func TestAccDataSourceAWSS3BucketObjects_basic(
 func TestAccDataSourceAWSS3BucketObjects_basicViaAccessPoint(
 func TestAccDataSourceAWSS3BucketObjects_all(
@@ -927,6 +929,8 @@ func testAccAWSALBTargetGroupConfig_updateHealthCheck(
 func testAccAWSALBTargetGroupConfig_stickiness(
 func testAccAWSALBTargetGroupConfig_loadBalancingAlgorithm(
 func testAccAWSALBTargetGroupConfig_updateSlowStart(
+func testAccAWSALBTargetGroupConfig_namePrefix(
+func testAccAWSALBTargetGroupConfig_generatedName(
 func testAccAWSALBTargetGroupConfig_lambda(
 func testAccAWSALBTargetGroupConfig_lambdaMultiValueHeadersEnabled(
 func testAccAWSALBTargetGroupConfig_missing_port(
@@ -2842,6 +2846,8 @@ func TestAccAWSDefaultRouteTable_IPv4_To_VpcEndpoint(
 func TestAccAWSDefaultRouteTable_VpcEndpointAssociation(
 func TestAccAWSDefaultRouteTable_tags(
 func TestAccAWSDefaultRouteTable_ConditionalCidrBlock(
+func TestAccAWSDefaultRouteTable_PrefixList_To_InternetGateway(
+func TestAccAWSDefaultRouteTable_RevokeExistingRules(
 func TestAccAWSDefaultSecurityGroup_Vpc_basic(
 func TestAccAWSDefaultSecurityGroup_Vpc_empty(
 func TestAccAWSDefaultSecurityGroup_Classic_basic(
@@ -5156,6 +5162,7 @@ func TestAccAWSLBTargetGroup_stickinessValidNLB(
 func TestAccAWSLBTargetGroup_stickinessValidALB(
 func TestAccAWSLBTargetGroup_stickinessInvalidNLB(
 func TestAccAWSLBTargetGroup_stickinessInvalidALB(
+func TestAccAWSLBTargetGroup_preserveClientIPValid(
 func testAccALB_defaults(
 func testAccNLB_defaults(
 func testAccAWSLBTargetGroupConfig_basic(
@@ -5176,8 +5183,11 @@ func testAccAWSLBTargetGroupConfig_typeTCPThresholdUpdated(
 func testAccAWSLBTargetGroupConfig_typeTCPIntervalUpdated(
 func testAccAWSLBTargetGroupConfig_typeTCP_HTTPHealthCheck(
 func testAccAWSLBTargetGroupConfig_stickiness(
+func testAccAWSLBTargetGroupConfig_namePrefix(
+func testAccAWSLBTargetGroupConfig_generatedName(
 func testAccAWSLBTargetGroupConfig_stickinessDefault(
 func testAccAWSLBTargetGroupConfig_stickinessValidity(
+func testAccAWSLBTargetGroupConfig_preserveClientIP(
 func TestAccAWSLB_ALB_basic(
 func TestAccAWSLB_NLB_basic(
 func TestAccAWSLB_LoadBalancerType_Gateway(
@@ -6147,6 +6157,7 @@ func TestAccAWSRouteTable_VpcMultipleCidrs(
 func TestAccAWSRouteTable_VpcClassicLink(
 func TestAccAWSRouteTable_GatewayVpcEndpoint(
 func TestAccAWSRouteTable_MultipleRoutes(
+func TestAccAWSRouteTable_PrefixList_To_InternetGateway(
 func TestAccAWSRoute_basic(
 func TestAccAWSRoute_disappears(
 func TestAccAWSRoute_disappears_RouteTable(

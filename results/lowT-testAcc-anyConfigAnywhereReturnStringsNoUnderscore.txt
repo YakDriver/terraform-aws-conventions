@@ -182,8 +182,8 @@ func testAccDataSourceAWSLBListenerConfigBasic(lbName, targetGroupName string) s
 func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
 func testAccDataSourceAWSLBListenerConfigHTTPS(lbName, targetGroupName, certificate, key string) string {
 func testAccDataSourceAWSLBListenerConfigDefaultActionForward(rName string) string {
-func testAccDataSourceAWSLBTargetGroupConfigBasic(lbName string, targetGroupName string) string {
-func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(lbName string, targetGroupName string) string {
+func testAccDataSourceAWSLBTargetGroupConfigBasic(rName string) string {
+func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(rName string) string {
 func testAccDataSourceAWSLBConfigBasic(lbName string) string {
 func testAccDataSourceAWSLBConfigOutpost(lbName string) string {
 func testAccDataSourceAWSLBConfigBackardsCompatibility(albName string) string {
@@ -237,6 +237,9 @@ func testAccAWSRouteDataSourceConfigIpv4TransitGateway(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv6EgressOnlyInternetGateway(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv4LocalGateway(rName string) string {
 func testAccAWSRouteDataSourceConfigIpv4CarrierGateway(rName string) string {
+func testAccAWSRouteDataSourceConfigPrefixListNatGateway(rName string) string {
+func testAccAWSRouteDataSourceConfigGatewayVpcEndpointNoDataSource(rName string) string {
+func testAccAWSRouteDataSourceConfigGatewayVpcEndpointWithDataSource(rName string) string {
 func testAccAWSDataSourceS3ObjectsConfigResources(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigResourcesPlusAccessPoint(randInt int) string {
 func testAccAWSDataSourceS3ObjectsConfigBasic(randInt int) string {
@@ -957,6 +960,11 @@ func testAccDefaultRouteTableConfigVpcEndpointAssociation(rName, destinationCidr
 func testAccDefaultRouteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccDefaultRouteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccDefaultRouteTableConfigConditionalIpv4Ipv6(rName, destinationCidr, destinationIpv6Cidr string, ipv6Route bool) string {
+func testAccDefaultRouteTableConfigPrefixListInternetGateway(rName string) string {
+func testAccDefaultRouteTableConfigPrefixListInternetGatewayNoRoute(rName string) string {
+func testAccDefaultRouteTableConfigRevokeExistingRulesCustomRouteTable(rName string) string {
+func testAccDefaultRouteTableConfigRevokeExistingRulesCustomRouteTableToMain(rName string) string {
+func testAccDefaultRouteTableConfigRevokeExistingRulesDefaultRouteTableOverlaysCustomRouteTable(rName string) string {
 func testAccAWSDefaultSubnetConfigBasic(rInt int) string {
 func testAccAWSDefaultSubnetConfigPublicIp(rInt int) string {
 func testAccAWSDefaultSubnetConfigNoPublicIp(rInt int) string {
@@ -1865,9 +1873,9 @@ func testAccAWSLBTargetGroupAttachmentConfigBackwardsCompatibility(rName string)
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdIpAddress(rName string) string {
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdLambda(rName string) string {
 func testAccAWSLBTargetGroupConfigProtocolGeneve(rName string) string {
-func testAccAWSLBTargetGroupConfigTags1(targetGroupName, tagKey1, tagValue1 string) string {
-func testAccAWSLBTargetGroupConfigTags2(targetGroupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSLBTargetGroupConfigBackwardsCompatibility(targetGroupName string) string {
+func testAccAWSLBTargetGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSLBTargetGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSLBTargetGroupConfigBackwardsCompatibility(rName string) string {
 func testAccAWSLBConfigWithIpAddressTypeUpdated(lbName string) string {
 func testAccAWSLBConfigWithIpAddressType(lbName string) string {
 func testAccAWSLBConfigBackwardsCompatibility(lbName string) string {
@@ -2170,6 +2178,7 @@ func testAccAWSRouteTableConfigVpcMultipleCidrs(rName string) string {
 func testAccAWSRouteTableConfigVpcClassicLink(rName string) string {
 func testAccAWSRouteTableConfigGatewayVpcEndpoint(rName string) string {
 func testAccLatestAmazonNatInstanceAmiConfig() string {
+func testAccAWSRouteTableConfigPrefixListInternetGateway(rName string) string {
 func testAccAWSRouteConfigIpv4InternetGateway(rName, destinationCidr string) string {
 func testAccAWSRouteConfigIpv6InternetGateway(rName, destinationCidr string) string {
 func testAccAWSRouteConfigIpv6NetworkInterfaceUnattached(rName, destinationCidr string) string {

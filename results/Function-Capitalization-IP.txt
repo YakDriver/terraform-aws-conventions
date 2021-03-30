@@ -114,6 +114,8 @@ func testAccInstanceConfigPublicAndPrivateSecondaryIPs(
 func testAccInstanceConfigPrivateIPAndSecondaryIPs(
 func TestAccAWSLaunchTemplate_associatePublicIPAddress(
 func TestAccAWSLaunchTemplate_associateCarrierIPAddress(
+func TestAccAWSLBTargetGroup_preserveClientIPValid(
+func testAccAWSLBTargetGroupConfig_preserveClientIP(
 func TestAccAWSLB_IPv6SubnetMapping(
 func TestAccAWSLB_networkLoadbalancerEIP(
 func testAccAWSLBConfig_IPv6(
