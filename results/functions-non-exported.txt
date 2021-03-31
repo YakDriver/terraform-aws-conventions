@@ -3171,6 +3171,8 @@ func resourceAwsCloudFormationStackSetRead(
 func resourceAwsCloudFormationStackSetUpdate(
 func resourceAwsCloudFormationStackSetDelete(
 func listCloudFormationStackSets(
+func expandAutoDeployment(
+func flattenStackSetAutoDeploymentResponse(
 func resourceAwsCloudFormationStackSetInstance(
 func resourceAwsCloudFormationStackSetInstanceCreate(
 func resourceAwsCloudFormationStackSetInstanceRead(
@@ -3216,6 +3218,7 @@ func testAccAWSCloudFormationStackSetConfigTags2(
 func testAccAWSCloudFormationStackSetConfigTemplateBody(
 func testAccAWSCloudFormationStackSetConfigTemplateUrl1(
 func testAccAWSCloudFormationStackSetConfigTemplateUrl2(
+func testAccAWSCloudFormationStackSetConfigPermissionModel(
 func init(
 func testSweepCloudformationStacks(
 func testAccCheckCloudFormationStackExists(
@@ -3707,6 +3710,18 @@ func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSNSTopic(
 func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSWFAction(
 func testAccAWSCloudWatchMetricAlarmConfigTags1(
 func testAccAWSCloudWatchMetricAlarmConfigTags2(
+func resourceAwsCloudWatchQueryDefinition(
+func resourceAwsCloudWatchQueryDefinitionCreate(
+func getAwsCloudWatchQueryDefinitionInput(
+func resourceAwsCloudWatchQueryDefinitionRead(
+func resourceAwsCloudWatchQueryDefinitionUpdate(
+func resourceAwsCloudWatchQueryDefinitionDelete(
+func resourceAwsCloudWatchQueryDefinitionImport(
+func testAccAWSCloudWatchQueryDefinitionImportStateId(
+func testAccCheckAWSCloudWatchQueryDefinitionExists(
+func testAccCheckAWSCloudWatchQueryDefinitionDestroy(
+func testAccAWSCloudWatchQueryDefinitionConfig_Basic(
+func testAccAWSCloudWatchQueryDefinitionConfig_LogGroups(
 func resourceAwsCodeArtifactDomain(
 func resourceAwsCodeArtifactDomainCreate(
 func resourceAwsCodeArtifactDomainRead(
@@ -6403,6 +6418,7 @@ func testAccCheckEfsCreationToken(
 func testAccCheckEfsFileSystemPerformanceMode(
 func testAccCheckEfsFileSystemLifecyclePolicy(
 func testAccAWSEFSFileSystemConfig(
+func testAccAWSEFSFileSystemConfigAvailabilityZoneName(
 func testAccAWSEFSFileSystemConfigTags1(
 func testAccAWSEFSFileSystemConfigTags2(
 func testAccAWSEFSFileSystemConfigPagedTags(

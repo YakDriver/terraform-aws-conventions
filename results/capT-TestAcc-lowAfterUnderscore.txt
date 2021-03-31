@@ -105,6 +105,7 @@ func TestAccDataSourceAWSEFSAccessPoints_basic(
 func TestAccDataSourceAWSEFSAccessPoint_basic(
 func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
+func TestAccDataSourceAwsEfsFileSystem_availabilityZone(
 func TestAccDataSourceAwsEfsMountTarget_basic(
 func TestAccAWSEksClusterAuthDataSource_basic(
 func TestAccAWSEksClusterDataSource_basic(
@@ -747,6 +748,8 @@ func TestAccAWSCloudWatchMetricAlarm_expression(
 func TestAccAWSCloudWatchMetricAlarm_missingStatistic(
 func TestAccAWSCloudWatchMetricAlarm_tags(
 func TestAccAWSCloudWatchMetricAlarm_disappears(
+func TestAccAWSCloudWatchQueryDefinition_basic(
+func TestAccAWSCloudWatchQueryDefinition_disappears(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_basic(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_owner(
 func TestAccAWSCodeArtifactDomainPermissionsPolicy_disappears(
@@ -1264,6 +1267,7 @@ func TestAccAWSEFSAccessPoint_disappears(
 func TestAccAWSEFSFileSystemPolicy_basic(
 func TestAccAWSEFSFileSystemPolicy_disappears(
 func TestAccAWSEFSFileSystem_basic(
+func TestAccAWSEFSFileSystem_availabilityZoneName(
 func TestAccAWSEFSFileSystem_tags(
 func TestAccAWSEFSFileSystem_pagedTags(
 func TestAccAWSEFSFileSystem_kmsKey(

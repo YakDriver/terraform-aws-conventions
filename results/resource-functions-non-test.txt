@@ -700,6 +700,8 @@ func resourceAwsCloudFormationStackSetRead(
 func resourceAwsCloudFormationStackSetUpdate(
 func resourceAwsCloudFormationStackSetDelete(
 func listCloudFormationStackSets(
+func expandAutoDeployment(
+func flattenStackSetAutoDeploymentResponse(
 func resourceAwsCloudFormationStackSetInstance(
 func resourceAwsCloudFormationStackSetInstanceCreate(
 func resourceAwsCloudFormationStackSetInstanceRead(
@@ -917,6 +919,13 @@ func getAwsCloudWatchMetricAlarm(
 func flattenDimensions(
 func resourceAwsCloudWatchMetricAlarmMigrateState(
 func migrateCloudWatchMetricAlarmStateV0toV1(
+func resourceAwsCloudWatchQueryDefinition(
+func resourceAwsCloudWatchQueryDefinitionCreate(
+func getAwsCloudWatchQueryDefinitionInput(
+func resourceAwsCloudWatchQueryDefinitionRead(
+func resourceAwsCloudWatchQueryDefinitionUpdate(
+func resourceAwsCloudWatchQueryDefinitionDelete(
+func resourceAwsCloudWatchQueryDefinitionImport(
 func resourceAwsCodeArtifactDomain(
 func resourceAwsCodeArtifactDomainCreate(
 func resourceAwsCodeArtifactDomainRead(

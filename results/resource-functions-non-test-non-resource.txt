@@ -250,6 +250,8 @@ func decodeBudgetsBudgetID(
 func expandBudgetsCostTypesUnmarshal(
 func init(
 func listCloudFormationStackSets(
+func expandAutoDeployment(
+func flattenStackSetAutoDeploymentResponse(
 func listCloudFormationStackSetInstances(
 func init(
 func init(
@@ -343,6 +345,7 @@ func getAwsCloudWatchPutMetricAlarmInput(
 func getAwsCloudWatchMetricAlarm(
 func flattenDimensions(
 func migrateCloudWatchMetricAlarmStateV0toV1(
+func getAwsCloudWatchQueryDefinitionInput(
 func decodeCodeArtifactDomainID(
 func init(
 func expandCodeArtifactUpstreams(

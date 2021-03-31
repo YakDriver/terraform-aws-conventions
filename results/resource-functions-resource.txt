@@ -580,6 +580,12 @@ func resourceAwsCloudWatchMetricAlarmRead(
 func resourceAwsCloudWatchMetricAlarmUpdate(
 func resourceAwsCloudWatchMetricAlarmDelete(
 func resourceAwsCloudWatchMetricAlarmMigrateState(
+func resourceAwsCloudWatchQueryDefinition(
+func resourceAwsCloudWatchQueryDefinitionCreate(
+func resourceAwsCloudWatchQueryDefinitionRead(
+func resourceAwsCloudWatchQueryDefinitionUpdate(
+func resourceAwsCloudWatchQueryDefinitionDelete(
+func resourceAwsCloudWatchQueryDefinitionImport(
 func resourceAwsCodeArtifactDomain(
 func resourceAwsCodeArtifactDomainCreate(
 func resourceAwsCodeArtifactDomainRead(

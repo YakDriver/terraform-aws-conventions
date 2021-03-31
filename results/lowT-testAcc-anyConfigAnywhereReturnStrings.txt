@@ -1112,6 +1112,7 @@ func testAccAWSCloudFormationStackSetConfigTags2(rName, value1, value2 string) s
 func testAccAWSCloudFormationStackSetConfigTemplateBody(rName, templateBody string) string {
 func testAccAWSCloudFormationStackSetConfigTemplateUrl1(rName string) string {
 func testAccAWSCloudFormationStackSetConfigTemplateUrl2(rName string) string {
+func testAccAWSCloudFormationStackSetConfigPermissionModel(rName string) string {
 func testAccAWSCloudFormationStackConfig(stackName string) string {
 func testAccAWSCloudFormationStackConfigCreationFailure(stackName, onFailure string) string {
 func testAccAWSCloudFormationStackConfig_yaml(stackName string) string {
@@ -1283,6 +1284,8 @@ func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSNSTopic(rName string) str
 func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSWFAction(rName string) string {
 func testAccAWSCloudWatchMetricAlarmConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSCloudWatchMetricAlarmConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCloudWatchQueryDefinitionConfig_Basic(rName string) string {
+func testAccAWSCloudWatchQueryDefinitionConfig_LogGroups(rName string, count int) string {
 func testAccAWSCodeArtifactDomainPermissionsPolicyBasicConfig(rName string) string {
 func testAccAWSCodeArtifactDomainPermissionsPolicyOwnerConfig(rName string) string {
 func testAccAWSCodeArtifactDomainPermissionsPolicyUpdatedConfig(rName string) string {
@@ -2145,6 +2148,7 @@ func testAccAWSEFSAccessPointConfigTags2(rName, tagKey1, tagValue1, tagKey2, tag
 func testAccAWSEFSFileSystemPolicyConfig(rName string) string {
 func testAccAWSEFSFileSystemPolicyConfigUpdated(rName string) string {
 func testAccAWSEFSFileSystemConfig(rName string) string {
+func testAccAWSEFSFileSystemConfigAvailabilityZoneName(rName string) string {
 func testAccAWSEFSFileSystemConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEFSFileSystemConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEFSFileSystemConfigPagedTags(rInt int) string {

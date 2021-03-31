@@ -1697,6 +1697,7 @@ func testAccAWSEFSFileSystemPolicyConfig(
 func testAccAWSEFSFileSystemPolicyConfigUpdated(
 func TestResourceAWSEFSFileSystem_hasEmptyFileSystems(
 func TestAccAWSEFSFileSystem_basic(
+func TestAccAWSEFSFileSystem_availabilityZoneName(
 func TestAccAWSEFSFileSystem_tags(
 func TestAccAWSEFSFileSystem_pagedTags(
 func TestAccAWSEFSFileSystem_kmsKey(
@@ -1708,6 +1709,7 @@ func TestAccAWSEFSFileSystem_lifecyclePolicy_update(
 func TestAccAWSEFSFileSystem_lifecyclePolicy_removal(
 func TestAccAWSEFSFileSystem_disappears(
 func testAccAWSEFSFileSystemConfig(
+func testAccAWSEFSFileSystemConfigAvailabilityZoneName(
 func testAccAWSEFSFileSystemConfigTags1(
 func testAccAWSEFSFileSystemConfigTags2(
 func testAccAWSEFSFileSystemConfigPagedTags(

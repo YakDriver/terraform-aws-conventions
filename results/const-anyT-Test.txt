@@ -35,6 +35,7 @@ const testAccCheckAwsEcrRepositoryDataSourceConfig_NonExistent =
 const testAccDataSourceAwsEfsFileSystemIDConfig_NonExistent =
 const testAccDataSourceAwsEfsFileSystemNameConfig =
 const testAccDataSourceAwsEfsFileSystemIDConfig =
+const testAccDataSourceAwsEfsFileSystemAvailabilityZoneConfig =
 const testAccDataSourceAWSEIPConfigId =
 const testAccDataSourceAWSEIPConfigPublicIpVpc =
 const testAccDataSourceAWSEIPConfigNetworkInterface =

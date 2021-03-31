@@ -12,6 +12,7 @@ const testAccDataSourceAwsEBSEncryptionByDefaultConfig =
 const testAccDataSourceAwsEc2TransitGatewayRouteTablesConfig =
 const testAccDataSourceAwsEfsFileSystemNameConfig =
 const testAccDataSourceAwsEfsFileSystemIDConfig =
+const testAccDataSourceAwsEfsFileSystemAvailabilityZoneConfig =
 const testAccDataSourceAWSEIPConfigId =
 const testAccDataSourceAWSEIPConfigPublicIpVpc =
 const testAccDataSourceAWSEIPConfigNetworkInterface =

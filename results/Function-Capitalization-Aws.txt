@@ -355,6 +355,7 @@ func dataSourceAwsEfsFileSystem(
 func dataSourceAwsEfsFileSystemRead(
 func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
+func TestAccDataSourceAwsEfsFileSystem_availabilityZone(
 func TestAccDataSourceAwsEfsFileSystem_NonExistent(
 func testAccDataSourceAwsEfsFileSystemCheck(
 func dataSourceAwsEfsMountTarget(
@@ -1876,6 +1877,13 @@ func resourceAwsCloudWatchMetricAlarmDelete(
 func getAwsCloudWatchPutMetricAlarmInput(
 func getAwsCloudWatchMetricAlarm(
 func resourceAwsCloudWatchMetricAlarmMigrateState(
+func resourceAwsCloudWatchQueryDefinition(
+func resourceAwsCloudWatchQueryDefinitionCreate(
+func getAwsCloudWatchQueryDefinitionInput(
+func resourceAwsCloudWatchQueryDefinitionRead(
+func resourceAwsCloudWatchQueryDefinitionUpdate(
+func resourceAwsCloudWatchQueryDefinitionDelete(
+func resourceAwsCloudWatchQueryDefinitionImport(
 func resourceAwsCodeArtifactDomain(
 func resourceAwsCodeArtifactDomainCreate(
 func resourceAwsCodeArtifactDomainRead(
