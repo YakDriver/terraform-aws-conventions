@@ -493,6 +493,7 @@ func testAccAppmeshRouteConfigWithTags(meshName, vrName, vn1Name, vn2Name, rName
 func testAccAppmeshVirtualGatewayConfig(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigBackendDefaults(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigBackendDefaultsUpdated(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigBackendDefaultsCertificate(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerConnectionPool(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerConnectionPoolUpdated(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerHealthChecks(meshName, vgName string) string {
@@ -500,6 +501,8 @@ func testAccAppmeshVirtualGatewayConfigListenerHealthChecksUpdated(meshName, vgN
 func testAccAppmeshVirtualGatewayConfigRootCA(rName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerTlsAcm(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerTlsFile(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigListenerValidation(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigListenerValidationUpdated(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigLogging(meshName, vgName, path string) string {
 func testAccAppmeshVirtualGatewayConfigTags1(meshName, vgName, tagKey1, tagValue1 string) string {
 func testAccAppmeshVirtualGatewayConfigTags2(meshName, vgName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -547,6 +550,7 @@ func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionNoLifecycle(rName string) string {
 func testAccAwsBackupPlanConfigAdvancedBackupSetting(rName string) string {
 func testAccAwsBackupPlanConfigAdvancedBackupSettingUpdated(rName string) string {
+func testAccAwsBackupPlanConfigEnableContinuousBackup(rName string) string {
 func testAccBackupRegionSettingsConfig1(rName string) string {
 func testAccBackupRegionSettingsConfig2(rName string) string {
 func testAccBackupSelectionConfigBase(rName string) string {

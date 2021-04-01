@@ -768,6 +768,7 @@ func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_tags(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_tagsUpdated(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_UpdatedOpenAPIYaml(rName string) string {
 func testAccAWSAPIGatewayV2ApiConfig_UpdatedOpenAPI2(rName string) string {
+func testAccAWSAPIGatewayV2ApiConfig_FailOnWarnings(rName string, failOnWarnings string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_apiWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_apiHttp(rName string) string {
 func testAccAWSAPIGatewayV2AuthorizerConfig_baseLambda(rName string) string {
@@ -809,16 +810,19 @@ func testAccAWSAPIGatewayV2IntegrationConfig_sqsIntegration(rName string, queueI
 func testAccAWSAPIGatewayV2ModelConfig_api(rName string) string {
 func testAccAWSAPIGatewayV2ModelConfig_basic(rName, schema string) string {
 func testAccAWSAPIGatewayV2ModelConfig_allAttributes(rName, schema string) string {
-func testAccAWSAPIGatewayV2RouteResponseConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2RouteResponseConfig_basicWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2RouteResponseConfig_model(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_apiWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_apiHttp(rName string) string {
-func testAccAWSAPIGatewayV2RouteConfig_basic(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_basicWebSocket(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_authorizer(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_authorizerUpdated(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_jwtAuthorization(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_jwtAuthorizationUpdated(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_model(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_noRequestParameters(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_requestParameters(rName string) string {
+func testAccAWSAPIGatewayV2RouteConfig_requestParametersUpdated(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_routeKey(rName, routeKey string) string {
 func testAccAWSAPIGatewayV2RouteConfig_simpleAttributes(rName string) string {
 func testAccAWSAPIGatewayV2RouteConfig_target(rName string) string {
@@ -919,6 +923,7 @@ func testAccAwsAppmeshRouteConfig_httpRetryPolicyUpdated(meshName, vrName, vn1Na
 func testAccAppmeshVirtualGatewayConfig(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigBackendDefaults(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigBackendDefaultsUpdated(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigBackendDefaultsCertificate(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerConnectionPool(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerConnectionPoolUpdated(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerHealthChecks(meshName, vgName string) string {
@@ -926,6 +931,8 @@ func testAccAppmeshVirtualGatewayConfigListenerHealthChecksUpdated(meshName, vgN
 func testAccAppmeshVirtualGatewayConfigRootCA(rName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerTlsAcm(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigListenerTlsFile(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigListenerValidation(meshName, vgName string) string {
+func testAccAppmeshVirtualGatewayConfigListenerValidationUpdated(meshName, vgName string) string {
 func testAccAppmeshVirtualGatewayConfigLogging(meshName, vgName, path string) string {
 func testAccAppmeshVirtualGatewayConfigTags1(meshName, vgName, tagKey1, tagValue1 string) string {
 func testAccAppmeshVirtualGatewayConfigTags2(meshName, vgName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -935,6 +942,7 @@ func testAccAppmeshVirtualNodeConfigPrivateCert(rName string) string {
 func testAccAppmeshVirtualNodeConfig_basic(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_backendDefaults(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_backendDefaultsUpdated(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_backendDefaultsCertificate(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_backendClientPolicyAcm(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_backendClientPolicyFile(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_backendClientPolicyFileUpdated(meshName, vnName string) string {
@@ -949,6 +957,8 @@ func testAccAppmeshVirtualNodeConfig_listenerTimeout(meshName, vnName string) st
 func testAccAppmeshVirtualNodeConfig_listenerTimeoutUpdated(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_listenerTlsFile(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_listenerTlsAcm(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerValidation(meshName, vnName string) string {
+func testAccAppmeshVirtualNodeConfig_listenerValidationUpdated(meshName, vnName string) string {
 func testAccAppmeshVirtualNodeConfig_logging(meshName, vnName, path string) string {
 func testAccAppmeshVirtualNodeConfig_tags(meshName, vnName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAppmeshVirtualRouterConfig_basic(meshName, vrName string) string {
@@ -1116,6 +1126,7 @@ func testAccAwsBackupPlanConfigRuleCopyActionCrossRegion(rName string) string {
 func testAccAwsBackupPlanConfigRuleCopyActionNoLifecycle(rName string) string {
 func testAccAwsBackupPlanConfigAdvancedBackupSetting(rName string) string {
 func testAccAwsBackupPlanConfigAdvancedBackupSettingUpdated(rName string) string {
+func testAccAwsBackupPlanConfigEnableContinuousBackup(rName string) string {
 func testAccBackupRegionSettingsConfig1(rName string) string {
 func testAccBackupRegionSettingsConfig2(rName string) string {
 func testAccBackupSelectionConfigBase(rName string) string {
@@ -2512,6 +2523,7 @@ func testAccESDomainPolicyConfig(randInt int, policy string) string {
 func testAccESDomainConfig(randInt int) string {
 func testAccESDomainConfigWithDisabledEBSAndVolumeType(rName, volumeType string) string {
 func testAccESDomainConfig_DomainEndpointOptions(randInt int, enforceHttps bool, tlsSecurityPolicy string) string {
+func testAccESDomainConfig_CustomEndpoint(randInt int, enforceHttps bool, tlsSecurityPolicy string, customEndpointEnabled bool, customEndpoint string, certKey string, certBody string) string {
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessConfig_AvailabilityZoneCount(rName string, availabilityZoneCount int) string {
 func testAccESDomainConfig_ClusterConfig_ZoneAwarenessEnabled(rName string, zoneAwarenessEnabled bool) string {
 func testAccESDomainConfigWarm(rName, warmType string, enabled bool, warmCnt int) string {

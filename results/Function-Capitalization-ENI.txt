@@ -1,5 +1,4 @@
 func delSGFromENI(
-func sgExistsInENI(
 func TestAccAWSENI_basic(
 func TestAccAWSENI_ipv6(
 func TestAccAWSENI_tags(

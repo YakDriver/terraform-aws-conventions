@@ -68,6 +68,7 @@ func TestAccAwsBackupPlan_Rule_CopyAction_NoLifecycle(
 func TestAccAwsBackupPlan_Rule_CopyAction_Multiple(
 func TestAccAwsBackupPlan_Rule_CopyAction_CrossRegion(
 func TestAccAwsBackupPlan_AdvancedBackupSetting(
+func TestAccAwsBackupPlan_EnableContinuousBackup(
 func TestAccAwsBackupPlan_disappears(
 func TestAccAwsBackupRegionSettings_basic(
 func TestAccAwsBackupSelection_basic(

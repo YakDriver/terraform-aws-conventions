@@ -2858,6 +2858,7 @@ func TestAccAWSVolumeAttachment_disappears(
 func TestAccAWSDHCPOptionsAssociation_basic(
 func TestAccAWSDHCPOptionsAssociation_disappears_vpc(
 func TestAccAWSDHCPOptionsAssociation_disappears_dhcp(
+func TestAccAWSDHCPOptionsAssociation_disappears(
 func TestAccAWSDHCPOptions_basic(
 func TestAccAWSDHCPOptions_deleteOptions(
 func TestAccAWSDHCPOptions_tags(

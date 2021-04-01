@@ -281,6 +281,8 @@ func resourceAwsApiGatewayV2RouteRead(
 func resourceAwsApiGatewayV2RouteUpdate(
 func resourceAwsApiGatewayV2RouteDelete(
 func resourceAwsApiGatewayV2RouteImport(
+func expandApiGatewayV2RouteRequestParameters(
+func flattenApiGatewayV2RouteRequestParameters(
 func resourceAwsApiGatewayV2RouteResponse(
 func resourceAwsApiGatewayV2RouteResponseCreate(
 func resourceAwsApiGatewayV2RouteResponseRead(
@@ -2314,6 +2316,7 @@ func suppressEquivalentKmsKeyIds(
 func getKibanaEndpoint(
 func esCognitoOptionsDiffSuppress(
 func isDedicatedMasterDisabled(
+func isCustomEndpointDisabled(
 func expandESNodeToNodeEncryptionOptions(
 func flattenESNodeToNodeEncryptionOptions(
 func expandESClusterConfig(
@@ -4133,9 +4136,7 @@ func resourceAwsNetworkInterfaceSGAttachment(
 func resourceAwsNetworkInterfaceSGAttachmentCreate(
 func resourceAwsNetworkInterfaceSGAttachmentRead(
 func resourceAwsNetworkInterfaceSGAttachmentDelete(
-func fetchNetworkInterface(
 func delSGFromENI(
-func sgExistsInENI(
 func init(
 func resourceAwsOpsworksApplication(
 func resourceAwsOpsworksApplicationValidate(

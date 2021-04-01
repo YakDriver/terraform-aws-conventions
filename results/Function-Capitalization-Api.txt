@@ -285,6 +285,7 @@ func TestAccAWSAPIGatewayV2Api_Openapi(
 func TestAccAWSAPIGatewayV2Api_Openapi_WithTags(
 func TestAccAWSAPIGatewayV2Api_Openapi_WithCorsConfiguration(
 func TestAccAWSAPIGatewayV2Api_OpenapiWithMoreFields(
+func TestAccAWSAPIGatewayV2Api_Openapi_FailOnWarnings(
 func testAccCheckAWSAPIGatewayV2ApiRoutes(
 func TestAccAWSAPIGatewayV2Api_Tags(
 func TestAccAWSAPIGatewayV2Api_CorsConfiguration(
@@ -311,6 +312,7 @@ func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_tags(
 func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_tagsUpdated(
 func testAccAWSAPIGatewayV2ApiConfig_UpdatedOpenAPIYaml(
 func testAccAWSAPIGatewayV2ApiConfig_UpdatedOpenAPI2(
+func testAccAWSAPIGatewayV2ApiConfig_FailOnWarnings(
 func resourceAwsApiGatewayV2Authorizer(
 func resourceAwsApiGatewayV2AuthorizerCreate(
 func resourceAwsApiGatewayV2AuthorizerRead(
@@ -366,6 +368,8 @@ func resourceAwsApiGatewayV2RouteRead(
 func resourceAwsApiGatewayV2RouteUpdate(
 func resourceAwsApiGatewayV2RouteDelete(
 func resourceAwsApiGatewayV2RouteImport(
+func expandApiGatewayV2RouteRequestParameters(
+func flattenApiGatewayV2RouteRequestParameters(
 func resourceAwsApiGatewayV2RouteResponse(
 func resourceAwsApiGatewayV2RouteResponseCreate(
 func resourceAwsApiGatewayV2RouteResponseRead(

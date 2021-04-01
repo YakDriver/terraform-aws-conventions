@@ -1,3 +1,5 @@
 func TestCloudFrontStructure_expandViewerCertificate_acm_certificate_arn(
 func TestAccDataSourceAWSSSOAdminPermissionSet_arn(
+func TestAccAWSAPIGatewayV2Api_Openapi_FailOnWarnings(
+func testAccAWSAPIGatewayV2ApiConfig_FailOnWarnings(
 func testAccBeanstalkEnvConfig_platform_arn(

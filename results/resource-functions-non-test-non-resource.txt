@@ -66,6 +66,8 @@ func expandApiGateway2TlsConfig(
 func flattenApiGateway2TlsConfig(
 func expandApiGateway2IntegrationResponseParameters(
 func flattenApiGateway2IntegrationResponseParameters(
+func expandApiGatewayV2RouteRequestParameters(
+func flattenApiGatewayV2RouteRequestParameters(
 func expandApiGatewayV2AccessLogSettings(
 func flattenApiGatewayV2AccessLogSettings(
 func expandApiGatewayV2DefaultRouteSettings(
@@ -876,6 +878,7 @@ func suppressEquivalentKmsKeyIds(
 func getKibanaEndpoint(
 func esCognitoOptionsDiffSuppress(
 func isDedicatedMasterDisabled(
+func isCustomEndpointDisabled(
 func expandESNodeToNodeEncryptionOptions(
 func flattenESNodeToNodeEncryptionOptions(
 func expandESClusterConfig(
@@ -1839,9 +1842,7 @@ func detachNetworkInterface(
 func networkInterfaceAttachmentStateRefresh(
 func networkInterfaceStateRefresh(
 func waitForNetworkInterfaceCreation(
-func fetchNetworkInterface(
 func delSGFromENI(
-func sgExistsInENI(
 func init(
 func startOpsworksInstance(
 func stopOpsworksInstance(
