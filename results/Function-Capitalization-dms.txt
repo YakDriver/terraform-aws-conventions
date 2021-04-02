@@ -24,6 +24,6 @@ func dmsEndpointDb2ConfigUpdate(
 func dmsReplicationSubnetGroupDestroy(
 func dmsReplicationSubnetGroupConfig(
 func dmsReplicationSubnetGroupConfigUpdate(
+func dmsReplicationTaskRemoveReadOnlySettings(
 func dmsReplicationTaskDestroy(
 func dmsReplicationTaskConfig(
-func dmsReplicationTaskConfigUpdate(

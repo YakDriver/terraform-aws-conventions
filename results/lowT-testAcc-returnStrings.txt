@@ -389,6 +389,7 @@ func testAccAWSDataSourceS3ObjectConfig_basic(randInt int) string {
 func testAccAWSDataSourceS3ObjectConfig_basicViaAccessPoint(rName string) string {
 func testAccAWSDataSourceS3ObjectConfig_readableBody(randInt int) string {
 func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(randInt int) string {
+func testAccAWSDataSourceS3ObjectConfig_bucketKeyEnabled(randInt int) string {
 func testAccAWSDataSourceS3ObjectConfig_allParams(randInt int) string {
 func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOff(randInt int) string {
 func testAccAWSDataSourceS3ObjectConfig_objectLockLegalHoldOn(randInt int, retainUntilDate string) string {
@@ -1616,7 +1617,7 @@ func testAccAWSCognitoUserPoolConfig_withUsernameConfigurationUpdated(name strin
 func testAccAWSCognitoUserPoolConfig_withLambdaConfig(name string) string {
 func testAccAWSCognitoUserPoolConfig_withLambdaConfigUpdated(name string) string {
 func testAccAWSCognitoUserPoolConfig_withSchemaAttributes(name string) string {
-func testAccAWSCognitoUserPoolConfig_withSchemaAttributesUpdated(name string) string {
+func testAccAWSCognitoUserPoolConfig_withSchemaAttributesUpdated(name string, boolname string) string {
 func testAccAWSCognitoUserPoolConfig_withVerificationMessageTemplate(name string) string {
 func testAccAWSCognitoUserPoolConfig_withVerificationMessageTemplate_DefaultEmailOption(name string) string {
 func testAccAWSCognitoUserPoolConfig_update(name string, mfaconfig, smsAuthMsg string) string {
@@ -4328,6 +4329,8 @@ func testAccAWSS3BucketObjectConfig_withObjectLockLegalHold(randInt int, content
 func testAccAWSS3BucketObjectConfig_noObjectLockRetention(randInt int, content string) string {
 func testAccAWSS3BucketObjectConfig_withObjectLockRetention(randInt int, content, retainUntilDate string) string {
 func testAccAWSS3BucketObjectConfig_NonVersioned(randInt int, source string) string {
+func testAccAWSS3BucketObjectConfig_objectBucketKeyEnabled(randInt int, content string) string {
+func testAccAWSS3BucketObjectConfig_bucketBucketKeyEnabled(randInt int, content string) string {
 func testAccAWSS3BucketObjectConfig_defaultBucketSSE(randInt int, content string) string {
 func testAccAWSS3BucketOwnershipControlsConfig_Rule_ObjectOwnership(rName, objectOwnership string) string {
 func testAccAWSS3BucketPolicyConfig(bucketName string) string {
@@ -4352,6 +4355,7 @@ func testAccAWSS3BucketConfigRequestPayerRequester(bucketName string) string {
 func testAccAWSS3BucketConfigWithPolicy(bucketName, partition string) string {
 func testAccAWSS3BucketDestroyedConfig(bucketName string) string {
 func testAccAWSS3BucketEnableDefaultEncryption(bucketName string) string {
+func testAccAWSS3BucketKeyEnabled(bucketName string) string {
 func testAccAWSS3BucketEnableDefaultEncryptionWithAES256(bucketName string) string {
 func testAccAWSS3BucketEnableDefaultEncryptionWithDefaultKey(bucketName string) string {
 func testAccAWSS3BucketDisableDefaultEncryption(bucketName string) string {

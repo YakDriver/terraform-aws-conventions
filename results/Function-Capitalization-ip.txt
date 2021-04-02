@@ -1,3 +1,5 @@
+func testSweepSkipSweepError(
+func testSweepSkipResourceError(
 func TestAccAWSAcmCertificateDataSource_multipleIssued(
 func amiDescriptionAttributes(
 func dbSnapshotDescriptionAttributes(
@@ -60,8 +62,6 @@ func testAccMultipleRegionPreCheck(
 func testAccMultipleRegionProviderConfig(
 func testAccErrorCheckSkipMessagesContaining(
 func testAccPreCheckSkipError(
-func testSweepSkipSweepError(
-func testSweepSkipResourceError(
 func TestAccAWSProvider_DefaultTags_Tags_Multiple(
 func TestAccAWSProvider_IgnoreTags_KeyPrefixes_Multiple(
 func TestAccAWSProvider_IgnoreTags_Keys_Multiple(

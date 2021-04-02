@@ -3395,7 +3395,6 @@ func resourceAwsIamAccountPasswordPolicyDelete(
 func resourceAwsIamGroup(
 func resourceAwsIamGroupCreate(
 func resourceAwsIamGroupRead(
-func resourceAwsIamGroupReadResult(
 func resourceAwsIamGroupUpdate(
 func resourceAwsIamGroupDelete(
 func deleteAwsIamGroupPolicyAttachments(

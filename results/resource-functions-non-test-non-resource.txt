@@ -593,10 +593,10 @@ func checkDmsReplicationSubnetGroupExistsWithProviders(
 func dmsReplicationSubnetGroupDestroy(
 func dmsReplicationSubnetGroupConfig(
 func dmsReplicationSubnetGroupConfigUpdate(
+func dmsReplicationTaskRemoveReadOnlySettings(
 func checkDmsReplicationTaskExists(
 func dmsReplicationTaskDestroy(
 func dmsReplicationTaskConfig(
-func dmsReplicationTaskConfigUpdate(
 func waitForDocDBClusterUpdate(
 func buildDocDBCloudwatchLogsExportConfiguration(
 func waitForDocDBClusterParameterGroupDeletion(
