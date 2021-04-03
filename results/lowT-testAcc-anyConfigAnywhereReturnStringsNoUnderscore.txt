@@ -1870,7 +1870,8 @@ func testAccLbListenerCertificateConfigCertificateArnUnderscores(rName, key, cer
 func testAccLbListenerCertificateConfigMultiple(rName string, keys, certificates []string) string {
 func testAccLbListenerCertificateConfigMultipleAddNew(rName string, keys, certificates []string) string {
 func testAccAWSLBListenerRuleConfigBackwardsCompatibility(lbName, targetGroupName string) string {
-func testAccAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
+func testAccAWSLBListenerConfigBase(rName string) string {
+func testAccAWSLBListenerConfigBackwardsCompatibility(rName string) string {
 func testAccSslNegotiationPolicyConfig(rName, key, certificate string) string {
 func testAccAWSLBTargetGroupAttachmentConfigInstanceBase() string {
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdInstance(rName string) string {

@@ -5827,6 +5827,7 @@ func TestAccAWSLBListener_DefaultAction_Order_Recreates(
 func testAccCheckAWSLBListenerDefaultActionOrderDisappears(
 func testAccCheckAWSLBListenerExists(
 func testAccCheckAWSLBListenerDestroy(
+func testAccAWSLBListenerConfigBase(
 func testAccAWSLBListenerConfig_basic(
 func testAccAWSLBListenerConfig_forwardWeighted(
 func testAccAWSLBListenerConfig_changeForwardWeightedStickiness(

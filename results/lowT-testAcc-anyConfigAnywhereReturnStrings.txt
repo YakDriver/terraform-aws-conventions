@@ -3256,17 +3256,18 @@ func testAccAWSLBListenerRuleConfig_conditionMixed_updated(lbName string) string
 func testAccAWSLBListenerRuleConfig_conditionMixed_updated2(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionMultiple(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionMultiple_updated(lbName string) string {
-func testAccAWSLBListenerConfig_basic(lbName, targetGroupName string) string {
-func testAccAWSLBListenerConfig_forwardWeighted(lbName, targetGroupName1 string, targetGroupName2 string) string {
-func testAccAWSLBListenerConfig_changeForwardWeightedStickiness(lbName, targetGroupName1 string, targetGroupName2 string) string {
-func testAccAWSLBListenerConfig_changeForwardWeightedToBasic(lbName, targetGroupName1 string, targetGroupName2 string) string {
-func testAccAWSLBListenerConfig_basicUdp(lbName, targetGroupName string) string {
-func testAccAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
+func testAccAWSLBListenerConfigBase(rName string) string {
+func testAccAWSLBListenerConfig_basic(rName string) string {
+func testAccAWSLBListenerConfig_forwardWeighted(rName, rName2 string) string {
+func testAccAWSLBListenerConfig_changeForwardWeightedStickiness(rName, rName2 string) string {
+func testAccAWSLBListenerConfig_changeForwardWeightedToBasic(rName, rName2 string) string {
+func testAccAWSLBListenerConfig_basicUdp(rName string) string {
+func testAccAWSLBListenerConfigBackwardsCompatibility(rName string) string {
 func testAccAWSLBListenerConfig_https(rName, key, certificate string) string {
 func testAccAWSLBListenerConfig_LoadBalancerArn_GatewayLoadBalancer(rName string) string {
 func testAccAWSLBListenerConfig_Protocol_Tls(rName, key, certificate string) string {
-func testAccAWSLBListenerConfig_redirect(lbName string) string {
-func testAccAWSLBListenerConfig_fixedResponse(lbName string) string {
+func testAccAWSLBListenerConfig_redirect(rName string) string {
+func testAccAWSLBListenerConfig_fixedResponse(rName string) string {
 func testAccAWSLBListenerConfig_cognito(rName, key, certificate string) string {
 func testAccAWSLBListenerConfig_oidc(rName, key, certificate string) string {
 func testAccAWSLBListenerConfig_DefaultAction_Order(rName, key, certificate string) string {

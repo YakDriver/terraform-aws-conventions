@@ -5127,6 +5127,7 @@ func testAccErrorCheckSkipELBV2(
 func testAccCheckAWSLBListenerDefaultActionOrderDisappears(
 func testAccCheckAWSLBListenerExists(
 func testAccCheckAWSLBListenerDestroy(
+func testAccAWSLBListenerConfigBase(
 func testAccAWSLBListenerConfig_basic(
 func testAccAWSLBListenerConfig_forwardWeighted(
 func testAccAWSLBListenerConfig_changeForwardWeightedStickiness(
