@@ -263,9 +263,9 @@ func testAccAWSLaunchTemplateDataSourceConfig_enclaveOptions(rName string) strin
 func testAccAWSLaunchTemplateDataSourceConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
 func testAccAWSLaunchTemplateDataSourceConfig_associateCarrierIpAddress(rName, associateCarrierIPAddress string) string {
 func testAccAWSLaunchTemplateDataSourceConfigNetworkInterfacesDeleteOnTermination(rName, deleteOnTermination string) string {
-func testAccDataSourceAWSLBListenerConfigBasic(lbName, targetGroupName string) string {
-func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(lbName, targetGroupName string) string {
-func testAccDataSourceAWSLBListenerConfigHTTPS(lbName, targetGroupName, certificate, key string) string {
+func testAccDataSourceAWSLBListenerConfigBasic(rName string) string {
+func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(rName string) string {
+func testAccDataSourceAWSLBListenerConfigHTTPS(rName, certificate, key string) string {
 func testAccDataSourceAWSLBListenerConfigDefaultActionForward(rName string) string {
 func testAccDataSourceAWSLBTargetGroupConfigBasic(rName string) string {
 func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(rName string) string {
@@ -1256,6 +1256,10 @@ func testAccAWSCloudFrontDistributionConfigWaitForDeployment(enabled, waitForDep
 func testAccAWSCloudFrontDistributionConfigCacheBehaviorRealtimeLogConfigBase(rName string) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorRealtimeLogConfigArn(rName string, retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigOrderedCacheBehaviorRealtimeLogConfigArn(rName string, retainOnDelete bool) string {
+func testAccAWSCloudFrontKeyGroupConfigBase(rName string) string {
+func testAccAWSCloudFrontKeyGroupConfig(rName string) string {
+func testAccAWSCloudFrontKeyGroupConfigComment(rName string, comment string) string {
+func testAccAWSCloudFrontKeyGroupConfigItems(rName string) string {
 func testAccAWSCloudFrontOriginRequestPolicyConfig(rInt int) string {
 func testAccAWSCloudFrontOriginRequestPolicyConfigUpdate(rInt int) string {
 func testAccAWSCloudFrontOriginRequestPolicyConfigNoneBehavior(rInt int) string {
@@ -1969,6 +1973,7 @@ func testAccAWSDocDBClusterInstanceConfig_namePrefix(rName, rNamePrefix string) 
 func testAccAWSDocDBClusterInstanceConfig_generatedName(rName string) string {
 func testAccAWSDocDBClusterInstanceConfigKmsKey(rName string) string {
 func testAccAWSDocDBClusterParameterGroupConfig(name string) string {
+func testAccAWSDocDBClusterParameterGroupConfig_SystemParameter(name string) string {
 func testAccAWSDocDBClusterParameterGroupConfig_Description(name, description string) string {
 func testAccAWSDocDBClusterParameterGroupConfig_Parameter(name, pName, pValue string) string {
 func testAccAWSDocDBClusterParameterGroupConfig_Tags(name, tKey, tValue string) string {
@@ -2239,6 +2244,7 @@ func testAccAWSEcrPublicRepositoryCatalogDataConfigDescription(rName string, des
 func testAccAWSEcrPublicRepositoryCatalogDataConfigOperatingSystems(rName string, operatingSystem string) string {
 func testAccAWSEcrPublicRepositoryCatalogDataConfigUsageText(rName string, usageText string) string {
 func testAccAWSEcrPublicRepositoryCatalogDataConfigLogoImageBlob(rName string) string {
+func testAccAWSEcrReplicationConfiguration(region string) string {
 func testAccAWSEcrRepositoryPolicyConfig(rName string) string {
 func testAccAWSEcrRepositoryPolicyConfigUpdated(rName string) string {
 func testAccAWSEcrRepositoryPolicyWithIAMRoleConfig(rName string) string {
@@ -2492,7 +2498,6 @@ func testAccAWSElasticacheSecurityGroupConfig(rName string) string {
 func testAccAWSElasticacheSubnetGroupConfig(rInt int) string {
 func testAccAWSElasticacheSubnetGroupUpdateConfigPre(rInt int) string {
 func testAccAWSElasticacheSubnetGroupUpdateConfigPost(rInt int) string {
-func testAccBeanstalkAppImportConfig(name string) string {
 func testAccBeanstalkAppConfig(rName string) string {
 func testAccBeanstalkAppServiceRole(rName string) string {
 func testAccBeanstalkAppConfigWithMaxAge(rName string) string {
@@ -3758,6 +3763,11 @@ func testAccMskConfigurationConfigKafkaVersions(rName string) string {
 func testAccMskConfigurationConfigServerProperties(rName string, serverProperty string) string {
 func testAccMskScramSecretAssociationBaseConfig(rName string, count int) string {
 func testAccMskScramSecretAssociation_basic(rName string, count int) string {
+func testAccAWSMwaaEnvironmentBase(rName string) string {
+func testAccAWSMwssEnvironmentBasicConfig(rName string) string {
+func testAccAWSMwssEnvironmentAirflowConfigurationOptionsConfig(rName, retries, parallelism string) string {
+func testAccAWSMwssEnvironmentLoggingConfigurationConfig(rName, logEnabled, logLevel string) string {
+func testAccAWSMwssEnvironmentFullConfig(rName string) string {
 func testAccNatGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccNatGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSNeptuneClusterInstanceConfig(instanceName string, n int) string {

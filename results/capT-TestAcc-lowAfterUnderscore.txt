@@ -57,7 +57,7 @@ func TestAccAWSDbInstanceDataSource_ec2Classic(
 func TestAccAWSDbSnapshotDataSource_basic(
 func TestAccAWSDbSubnetGroupDataSource_basic(
 func TestAccAWSDbSubnetGroupDataSource_nonexistent(
-func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
+func TestAccDataSourceAwsDirectoryServiceDirectory_connector(
 func TestAccAWSDocDBEngineVersionDataSource_basic(
 func TestAccAWSDocDBEngineVersionDataSource_preferred(
 func TestAccAWSDocDBEngineVersionDataSource_defaultOnly(
@@ -194,7 +194,7 @@ func TestAccDataSourceAWSLambdaLayerVersion_runtime(
 func TestAccAWSLaunchConfigurationDataSource_basic(
 func TestAccAWSLaunchConfigurationDataSource_securityGroups(
 func TestAccAWSLaunchConfigurationDataSource_ebsNoDevice(
-func TestAccLaunchConfigurationDataSource_metadataOptions(
+func TestAccAWSLaunchConfigurationDataSource_metadataOptions(
 func TestAccAWSLaunchTemplateDataSource_basic(
 func TestAccAWSLaunchTemplateDataSource_id_basic(
 func TestAccAWSLaunchTemplateDataSource_filter_basic(
@@ -206,7 +206,7 @@ func TestAccAWSLaunchTemplateDataSource_associateCarrierIPAddress(
 func TestAccAWSLaunchTemplateDataSource_networkInterfaces_deleteOnTermination(
 func TestAccDataSourceAWSLBListener_basic(
 func TestAccDataSourceAWSLBListener_https(
-func TestAccDataSourceAWSALBTargetGroup_basic(
+func TestAccDataSourceAWSLBTargetGroup_basic(
 func TestAccDataSourceAWSLB_basic(
 func TestAccDataSourceAWSLB_outpost(
 func TestAccDataSourceAwsLexBot_basic(
@@ -667,6 +667,8 @@ func TestAccAWSCloudFrontDistribution_orderedCacheBehaviorCachePolicy(
 func TestAccAWSCloudFrontDistribution_forwardedValuesToCachePolicy(
 func TestAccAWSCloudFrontDistribution_noOptionalItemsConfig(
 func TestAccAWSCloudFrontDistribution_noCustomErrorResponseConfig(
+func TestAccAWSCloudFrontKeyGroup_basic(
+func TestAccAWSCloudFrontKeyGroup_disappears(
 func TestAccAWSCloudFrontOriginAccessIdentity_basic(
 func TestAccAWSCloudFrontOriginAccessIdentity_noComment(
 func TestAccAWSCloudFrontOriginAccessIdentity_disappears(
@@ -1022,6 +1024,7 @@ func TestAccAWSDocDBClusterInstance_generatedName(
 func TestAccAWSDocDBClusterInstance_kmsKey(
 func TestAccAWSDocDBClusterInstance_disappears(
 func TestAccAWSDocDBClusterParameterGroup_basic(
+func TestAccAWSDocDBClusterParameterGroup_systemParameter(
 func TestAccAWSDocDBClusterParameterGroup_namePrefix(
 func TestAccAWSDocDBClusterParameterGroup_generatedName(
 func TestAccAWSDocDBClusterParameterGroup_disappears(
@@ -1191,6 +1194,7 @@ func TestAccAWSEcrPublicRepository_catalogdata_usagetext(
 func TestAccAWSEcrPublicRepository_catalogdata_logoimageblob(
 func TestAccAWSEcrPublicRepository_basic_forcedestroy(
 func TestAccAWSEcrPublicRepository_disappears(
+func TestAccAWSEcrReplicationConfiguration_basic(
 func TestAccAWSEcrRepositoryPolicy_basic(
 func TestAccAWSEcrRepositoryPolicy_iam(
 func TestAccAWSEcrRepositoryPolicy_disappears(
@@ -1334,7 +1338,6 @@ func TestAccAWSElasticacheReplicationGroup_tags(
 func TestAccAWSElasticacheSecurityGroup_basic(
 func TestAccAWSElasticacheSubnetGroup_basic(
 func TestAccAWSElasticacheSubnetGroup_update(
-func TestAccAWSElasticBeanstalkApplication_basic(
 func TestAccAWSBeanstalkApp_basic(
 func TestAccAWSBeanstalkApp_appversionlifecycle(
 func TestAccAWSBeanstalkApp_tags(
@@ -2058,6 +2061,9 @@ func TestAccAwsMskScramSecretAssociation_basic(
 func TestAccAwsMskScramSecretAssociation_update(
 func TestAccAwsMskScramSecretAssociation_disappears(
 func TestAccAwsMskScramSecretAssociation_disappears_Cluster(
+func TestAccAWSMwaaEnvironment_basic(
+func TestAccAWSMwaaEnvironment_disappears(
+func TestAccAWSMwaaEnvironment_full(
 func TestAccAWSNatGateway_basic(
 func TestAccAWSNatGateway_tags(
 func TestAccAWSNeptuneClusterInstance_basic(
@@ -2199,7 +2205,7 @@ func TestAccAWSOpsworksStack_noVpcBasic(
 func TestAccAWSOpsworksStack_noVpcChangeServiceRoleForceNew(
 func TestAccAWSOpsworksStack_vpc(
 func TestAccAWSOpsworksStack_noVpcCreateTags(
-func TestAccAWSOpsWorksStack_classicEndpoints(
+func TestAccAWSOpsworksStack_classicEndpoints(
 func TestAccAWSOpsworksStaticWebLayer_basic(
 func TestAccAWSOpsworksStaticWebLayer_tags(
 func TestAccAWSOpsworksUserProfile_basic(
@@ -2439,7 +2445,7 @@ func TestAccAWSS3Bucket_basic(
 func TestAccAWSS3Bucket_tagsWithNoSystemTags(
 func TestAccAWSS3Bucket_tagsWithSystemTags(
 func TestAccAWSS3Bucket_ignoreTags(
-func TestAccAWSS3MultiBucket_withTags(
+func TestAccAWSS3Bucket_withTags(
 func TestAccAWSS3Bucket_namePrefix(
 func TestAccAWSS3Bucket_generatedName(
 func TestAccAWSS3Bucket_acceleration(

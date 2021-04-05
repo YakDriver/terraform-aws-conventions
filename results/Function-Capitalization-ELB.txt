@@ -30,11 +30,8 @@ func TestAccAWSELB_swap_subnets(
 func TestAccAWSELB_InstanceAttaching(
 func TestAccAWSELB_listener(
 func TestAccAWSELB_HealthCheck(
-func TestAccAWSELBUpdate_HealthCheck(
 func TestAccAWSELB_Timeout(
-func TestAccAWSELBUpdate_Timeout(
 func TestAccAWSELB_ConnectionDraining(
-func TestAccAWSELBUpdate_ConnectionDraining(
 func TestAccAWSELB_SecurityGroups(
 func TestResourceAWSELB_validateElbNameCannotBeginWithHyphen(
 func TestResourceAWSELB_validateElbNameCanBeAnEmptyString(
@@ -46,7 +43,6 @@ func TestResourceAWSELB_validateHealthCheckTarget(
 func testAccCheckAWSELBDestroy(
 func testAccCheckAWSELBDisappears(
 func testAccCheckAWSELBAttributes(
-func testAccCheckAWSELBAttributesHealthCheck(
 func testAccCheckAWSELBExists(
 func testAccAWSELBConfigTags1(
 func testAccAWSELBConfigTags2(

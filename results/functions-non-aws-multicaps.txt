@@ -167,7 +167,7 @@ func testAccDataSourceAWSLBListenerConfigBasic(
 func testAccDataSourceAWSLBListenerConfigBackwardsCompatibility(
 func testAccDataSourceAWSLBListenerConfigHTTPS(
 func testAccDataSourceAWSLBListenerConfigDefaultActionForward(
-func TestAccDataSourceAWSALBTargetGroup_basic(
+func TestAccDataSourceAWSLBTargetGroup_basic(
 func TestAccDataSourceAWSLBTargetGroup_BackwardsCompatibility(
 func testAccDataSourceAWSLBTargetGroupConfigBasic(
 func testAccDataSourceAWSLBTargetGroupConfigBackwardsCompatibility(
@@ -1362,7 +1362,7 @@ func TestAccAWSDBOptionGroup_basic(
 func TestAccAWSDBOptionGroup_timeoutBlock(
 func TestAccAWSDBOptionGroup_namePrefix(
 func TestAccAWSDBOptionGroup_generatedName(
-func TestAccAWSDBOptionGroupConfig_OptionGroupDescription(
+func TestAccAWSDBOptionGroup_OptionGroupDescription(
 func TestAccAWSDBOptionGroup_basicDestroyWithInstance(
 func TestAccAWSDBOptionGroup_Option_OptionSettings(
 func TestAccAWSDBOptionGroup_Option_OptionSettings_IAMRole(
@@ -1534,6 +1534,7 @@ func resourceAwsDocDBClusterParameterGroupUpdate(
 func resourceAwsDocDBClusterParameterGroupDelete(
 func waitForDocDBClusterParameterGroupDeletion(
 func TestAccAWSDocDBClusterParameterGroup_basic(
+func TestAccAWSDocDBClusterParameterGroup_systemParameter(
 func TestAccAWSDocDBClusterParameterGroup_namePrefix(
 func TestAccAWSDocDBClusterParameterGroup_generatedName(
 func TestAccAWSDocDBClusterParameterGroup_Description(
@@ -1545,6 +1546,7 @@ func testAccCheckAWSDocDBClusterParameterGroupDisappears(
 func testAccCheckAWSDocDBClusterParameterGroupAttributes(
 func testAccCheckAWSDocDBClusterParameterGroupExists(
 func testAccAWSDocDBClusterParameterGroupConfig(
+func testAccAWSDocDBClusterParameterGroupConfig_SystemParameter(
 func testAccAWSDocDBClusterParameterGroupConfig_Description(
 func testAccAWSDocDBClusterParameterGroupConfig_Parameter(
 func testAccAWSDocDBClusterParameterGroupConfig_Tags(
@@ -1906,11 +1908,8 @@ func TestAccAWSELB_swap_subnets(
 func TestAccAWSELB_InstanceAttaching(
 func TestAccAWSELB_listener(
 func TestAccAWSELB_HealthCheck(
-func TestAccAWSELBUpdate_HealthCheck(
 func TestAccAWSELB_Timeout(
-func TestAccAWSELBUpdate_Timeout(
 func TestAccAWSELB_ConnectionDraining(
-func TestAccAWSELBUpdate_ConnectionDraining(
 func TestAccAWSELB_SecurityGroups(
 func TestResourceAWSELB_validateElbNameCannotBeginWithHyphen(
 func TestResourceAWSELB_validateElbNameCanBeAnEmptyString(
@@ -1922,7 +1921,6 @@ func TestResourceAWSELB_validateHealthCheckTarget(
 func testAccCheckAWSELBDestroy(
 func testAccCheckAWSELBDisappears(
 func testAccCheckAWSELBAttributes(
-func testAccCheckAWSELBAttributesHealthCheck(
 func testAccCheckAWSELBExists(
 func testAccAWSELBConfigTags1(
 func testAccAWSELBConfigTags2(

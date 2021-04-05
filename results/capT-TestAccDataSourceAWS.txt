@@ -1,4 +1,3 @@
-func TestAccDataSourceAWSDirectoryServiceDirectory_connector(
 func TestAccDataSourceAWSEFSAccessPoints_basic(
 func TestAccDataSourceAWSEFSAccessPoint_basic(
 func TestAccDataSourceAWSEIP_Filter(
@@ -32,7 +31,7 @@ func TestAccDataSourceAWSLBListener_basic(
 func TestAccDataSourceAWSLBListener_BackwardsCompatibility(
 func TestAccDataSourceAWSLBListener_https(
 func TestAccDataSourceAWSLBListener_DefaultAction_Forward(
-func TestAccDataSourceAWSALBTargetGroup_basic(
+func TestAccDataSourceAWSLBTargetGroup_basic(
 func TestAccDataSourceAWSLBTargetGroup_BackwardsCompatibility(
 func TestAccDataSourceAWSLB_basic(
 func TestAccDataSourceAWSLB_outpost(

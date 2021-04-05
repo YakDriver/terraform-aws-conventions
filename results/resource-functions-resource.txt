@@ -467,6 +467,11 @@ func resourceAwsCloudFrontDistributionDelete(
 func resourceAwsCloudFrontDistributionWaitUntilDeployed(
 func resourceAwsCloudFrontWebDistributionStateRefreshFunc(
 func resourceAwsCloudFrontDistributionMigrateState(
+func resourceAwsCloudFrontKeyGroup(
+func resourceAwsCloudFrontKeyGroupCreate(
+func resourceAwsCloudFrontKeyGroupRead(
+func resourceAwsCloudFrontKeyGroupUpdate(
+func resourceAwsCloudFrontKeyGroupDelete(
 func resourceAwsCloudFrontOriginAccessIdentity(
 func resourceAwsCloudFrontOriginAccessIdentityCreate(
 func resourceAwsCloudFrontOriginAccessIdentityRead(
@@ -1296,6 +1301,9 @@ func resourceAwsEcrPublicRepositoryRead(
 func resourceAwsEcrPublicRepositoryDelete(
 func resourceAwsEcrPublicRepositoryUpdate(
 func resourceAwsEcrPublicRepositoryUpdateCatalogData(
+func resourceAwsEcrReplicationConfiguration(
+func resourceAwsEcrReplicationConfigurationPut(
+func resourceAwsEcrReplicationConfigurationRead(
 func resourceAwsEcrRepository(
 func resourceAwsEcrRepositoryCreate(
 func resourceAwsEcrRepositoryRead(
@@ -2222,6 +2230,11 @@ func resourceAwsMskScramSecretAssociationCreate(
 func resourceAwsMskScramSecretAssociationRead(
 func resourceAwsMskScramSecretAssociationUpdate(
 func resourceAwsMskScramSecretAssociationDelete(
+func resourceAwsMwaaEnvironment(
+func resourceAwsMwaaEnvironmentCreate(
+func resourceAwsMwaaEnvironmentRead(
+func resourceAwsMwaaEnvironmentUpdate(
+func resourceAwsMwaaEnvironmentDelete(
 func resourceAwsNatGateway(
 func resourceAwsNatGatewayCreate(
 func resourceAwsNatGatewayRead(

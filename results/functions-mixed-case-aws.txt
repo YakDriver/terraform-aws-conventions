@@ -183,6 +183,7 @@ func dataSourceAwsDirectoryServiceDirectoryRead(
 func TestAccDataSourceAwsDirectoryServiceDirectory_NonExistent(
 func TestAccDataSourceAwsDirectoryServiceDirectory_SimpleAD(
 func TestAccDataSourceAwsDirectoryServiceDirectory_MicrosoftAD(
+func TestAccDataSourceAwsDirectoryServiceDirectory_connector(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_SimpleAD(
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_MicrosoftAD(
@@ -1705,6 +1706,11 @@ func resourceAwsCloudFrontDistributionWaitUntilDeployed(
 func resourceAwsCloudFrontWebDistributionStateRefreshFunc(
 func resourceAwsCloudFrontDistributionMigrateState(
 func TestAwsCloudFrontDistributionMigrateState(
+func resourceAwsCloudFrontKeyGroup(
+func resourceAwsCloudFrontKeyGroupCreate(
+func resourceAwsCloudFrontKeyGroupRead(
+func resourceAwsCloudFrontKeyGroupUpdate(
+func resourceAwsCloudFrontKeyGroupDelete(
 func resourceAwsCloudFrontOriginAccessIdentity(
 func resourceAwsCloudFrontOriginAccessIdentityCreate(
 func resourceAwsCloudFrontOriginAccessIdentityRead(
@@ -2855,6 +2861,9 @@ func resourceAwsEcrPublicRepositoryDelete(
 func resourceAwsEcrPublicRepositoryUpdate(
 func resourceAwsEcrPublicRepositoryUpdateCatalogData(
 func testAccPreCheckAwsEcrPublic(
+func resourceAwsEcrReplicationConfiguration(
+func resourceAwsEcrReplicationConfigurationPut(
+func resourceAwsEcrReplicationConfigurationRead(
 func resourceAwsEcrRepository(
 func resourceAwsEcrRepositoryCreate(
 func resourceAwsEcrRepositoryRead(
@@ -4264,6 +4273,11 @@ func TestAccAwsMskScramSecretAssociation_basic(
 func TestAccAwsMskScramSecretAssociation_update(
 func TestAccAwsMskScramSecretAssociation_disappears(
 func TestAccAwsMskScramSecretAssociation_disappears_Cluster(
+func resourceAwsMwaaEnvironment(
+func resourceAwsMwaaEnvironmentCreate(
+func resourceAwsMwaaEnvironmentRead(
+func resourceAwsMwaaEnvironmentUpdate(
+func resourceAwsMwaaEnvironmentDelete(
 func resourceAwsNatGateway(
 func resourceAwsNatGatewayCreate(
 func resourceAwsNatGatewayRead(
