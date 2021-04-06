@@ -3112,7 +3112,7 @@ func testAccAWSCloudHsmV2ClusterConfigTags2(
 func testAccCheckAWSCloudHsmV2ClusterDestroy(
 func testAccCheckAWSCloudHsmV2ClusterExists(
 func TestAccAWSCloudHsmV2Hsm_basic(
-func testAccAWSCloudHsmV2Hsm(
+func testAccAWSCloudHsmV2HsmConfig(
 func testAccCheckAWSCloudHsmV2HsmDestroy(
 func testAccCheckAWSCloudHsmV2HsmExists(
 func testSweepCloudTrails(
@@ -5589,6 +5589,13 @@ func testAccAWSEcrPublicRepositoryCatalogDataConfigOperatingSystems(
 func testAccAWSEcrPublicRepositoryCatalogDataConfigUsageText(
 func testAccAWSEcrPublicRepositoryCatalogDataConfigLogoImageBlob(
 func testAccPreCheckAwsEcrPublic(
+func TestAccAWSEcrRegistryPolicy_serial(
+func testAccAWSEcrRegistryPolicy_basic(
+func testAccAWSEcrRegistryPolicy_disappears(
+func testAccCheckAWSEcrRegistryPolicyDestroy(
+func testAccCheckAWSEcrRegistryPolicyExists(
+func testAccAWSEcrRegistryPolicy(
+func testAccAWSEcrRegistryPolicyUpdated(
 func TestAccAWSEcrReplicationConfiguration_basic(
 func testAccCheckAWSEcrReplicationConfigurationExists(
 func testAccAWSEcrReplicationConfiguration(

@@ -3399,7 +3399,7 @@ func resourceAwsCloudHsmV2HsmRead(
 func resourceAwsCloudHsmV2HsmDelete(
 func waitForCloudhsmv2HsmActive(
 func waitForCloudhsmv2HsmDeletion(
-func testAccAWSCloudHsmV2Hsm(
+func testAccAWSCloudHsmV2HsmConfig(
 func testAccCheckAWSCloudHsmV2HsmDestroy(
 func testAccCheckAWSCloudHsmV2HsmExists(
 func resourceAwsCloudTrail(
@@ -6204,6 +6204,16 @@ func testAccAWSEcrPublicRepositoryCatalogDataConfigOperatingSystems(
 func testAccAWSEcrPublicRepositoryCatalogDataConfigUsageText(
 func testAccAWSEcrPublicRepositoryCatalogDataConfigLogoImageBlob(
 func testAccPreCheckAwsEcrPublic(
+func resourceAwsEcrRegistryPolicy(
+func resourceAwsEcrRegistryPolicyPut(
+func resourceAwsEcrRegistryPolicyRead(
+func resourceAwsEcrRegistryPolicyDelete(
+func testAccAWSEcrRegistryPolicy_basic(
+func testAccAWSEcrRegistryPolicy_disappears(
+func testAccCheckAWSEcrRegistryPolicyDestroy(
+func testAccCheckAWSEcrRegistryPolicyExists(
+func testAccAWSEcrRegistryPolicy(
+func testAccAWSEcrRegistryPolicyUpdated(
 func resourceAwsEcrReplicationConfiguration(
 func resourceAwsEcrReplicationConfigurationPut(
 func resourceAwsEcrReplicationConfigurationRead(

@@ -1186,6 +1186,7 @@ func testAccAWSCloudHsmV2ClusterConfigBase() string {
 func testAccAWSCloudHsmV2ClusterConfig() string {
 func testAccAWSCloudHsmV2ClusterConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSCloudHsmV2ClusterConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCloudHsmV2HsmConfig() string {
 func testAccAWSCloudTrailConfig(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigModified(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigCloudWatch(randInt int) string {

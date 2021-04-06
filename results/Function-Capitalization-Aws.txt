@@ -2861,6 +2861,10 @@ func resourceAwsEcrPublicRepositoryDelete(
 func resourceAwsEcrPublicRepositoryUpdate(
 func resourceAwsEcrPublicRepositoryUpdateCatalogData(
 func testAccPreCheckAwsEcrPublic(
+func resourceAwsEcrRegistryPolicy(
+func resourceAwsEcrRegistryPolicyPut(
+func resourceAwsEcrRegistryPolicyRead(
+func resourceAwsEcrRegistryPolicyDelete(
 func resourceAwsEcrReplicationConfiguration(
 func resourceAwsEcrReplicationConfigurationPut(
 func resourceAwsEcrReplicationConfigurationRead(

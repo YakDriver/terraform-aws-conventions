@@ -1194,6 +1194,7 @@ func TestAccAWSEcrPublicRepository_catalogdata_usagetext(
 func TestAccAWSEcrPublicRepository_catalogdata_logoimageblob(
 func TestAccAWSEcrPublicRepository_basic_forcedestroy(
 func TestAccAWSEcrPublicRepository_disappears(
+func TestAccAWSEcrRegistryPolicy_serial(
 func TestAccAWSEcrReplicationConfiguration_basic(
 func TestAccAWSEcrRepositoryPolicy_basic(
 func TestAccAWSEcrRepositoryPolicy_iam(

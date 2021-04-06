@@ -1197,6 +1197,7 @@ func testAccAWSCloudHsmV2ClusterConfigBase(
 func testAccAWSCloudHsmV2ClusterConfig(
 func testAccAWSCloudHsmV2ClusterConfigTags1(
 func testAccAWSCloudHsmV2ClusterConfigTags2(
+func testAccAWSCloudHsmV2HsmConfig(
 func testAccAWSCloudTrailConfig(
 func testAccAWSCloudTrailConfigModified(
 func testAccAWSCloudTrailConfigCloudWatch(

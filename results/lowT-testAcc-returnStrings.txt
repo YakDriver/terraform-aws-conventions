@@ -1273,7 +1273,7 @@ func testAccAWSCloudHsmV2ClusterConfigBase() string {
 func testAccAWSCloudHsmV2ClusterConfig() string {
 func testAccAWSCloudHsmV2ClusterConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSCloudHsmV2ClusterConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSCloudHsmV2Hsm() string {
+func testAccAWSCloudHsmV2HsmConfig() string {
 func testAccAWSCloudTrailConfig(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigModified(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigCloudWatch(randInt int) string {
@@ -2244,6 +2244,8 @@ func testAccAWSEcrPublicRepositoryCatalogDataConfigDescription(rName string, des
 func testAccAWSEcrPublicRepositoryCatalogDataConfigOperatingSystems(rName string, operatingSystem string) string {
 func testAccAWSEcrPublicRepositoryCatalogDataConfigUsageText(rName string, usageText string) string {
 func testAccAWSEcrPublicRepositoryCatalogDataConfigLogoImageBlob(rName string) string {
+func testAccAWSEcrRegistryPolicy() string {
+func testAccAWSEcrRegistryPolicyUpdated() string {
 func testAccAWSEcrReplicationConfiguration(region string) string {
 func testAccAWSEcrRepositoryPolicyConfig(rName string) string {
 func testAccAWSEcrRepositoryPolicyConfigUpdated(rName string) string {
