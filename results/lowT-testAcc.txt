@@ -3527,6 +3527,7 @@ func testAccAWSEksFargateProfileConfigFargateProfileMultiple(
 func testAccAWSEksFargateProfileConfigSelectorLabels1(
 func testAccAWSEksFargateProfileConfigTags1(
 func testAccAWSEksFargateProfileConfigTags2(
+func testAccErrorCheckSkipEKS(
 func testAccCheckAWSEksNodeGroupExists(
 func testAccCheckAWSEksNodeGroupDestroy(
 func testAccCheckAWSEksNodeGroupDisappears(

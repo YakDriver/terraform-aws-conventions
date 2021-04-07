@@ -6641,8 +6641,10 @@ func refreshEksNodeGroupUpdateStatus(
 func waitForEksNodeGroupDeletion(
 func waitForEksNodeGroupUpdate(
 func resourceAwsEksNodeGroupParseId(
+func resourceAwsEksNodeGroupCreateId(
 func init(
-func testSweepEksFargateNodegroups(
+func testSweepEksNodeGroups(
+func testAccErrorCheckSkipEKS(
 func testAccCheckAWSEksNodeGroupExists(
 func testAccCheckAWSEksNodeGroupDestroy(
 func testAccCheckAWSEksNodeGroupDisappears(

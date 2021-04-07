@@ -203,6 +203,7 @@ func TestAccAWSEksCluster_VpcConfig_SecurityGroupIds(
 func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(
 func resourceAwsEksFargateProfileParseId(
 func resourceAwsEksNodeGroupParseId(
+func resourceAwsEksNodeGroupCreateId(
 func TestAccAWSEksNodeGroup_LaunchTemplate_Id(
 func TestAccAWSEksNodeGroup_RemoteAccess_SourceSecurityGroupIds(
 func testAccAWSEksNodeGroupConfigLaunchTemplateId1(

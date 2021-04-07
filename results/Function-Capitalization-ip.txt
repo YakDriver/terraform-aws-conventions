@@ -378,6 +378,7 @@ func testSweepEc2Eips(
 func TestAccAWSEIP_associated_user_private_ip(
 func testAccAWSEksFargateProfileConfigFargateProfileMultiple(
 func TestAccAWSEksNodeGroup_InstanceTypes_Multiple(
+func testAccErrorCheckSkipEKS(
 func testAccAWSEksNodeGroupConfigInstanceTypesMultiple(
 func TestAccAWSElasticacheCluster_ReplicationGroupID_MultipleReplica(
 func elasticacheDescriptionDiffSuppress(

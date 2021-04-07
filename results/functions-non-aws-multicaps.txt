@@ -1786,6 +1786,7 @@ func testAccAWSEIPAssociate_not_associated(
 func testAccAWSEIPAssociate_associated(
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
 func testAccAWSEIPConfigCarrierIP(
+func testAccErrorCheckSkipEKS(
 func TestAccAWSElasticacheCluster_multiAZInVpc(
 func TestAccAWSElasticacheCluster_AZMode_Memcached(
 func TestAccAWSElasticacheCluster_AZMode_Redis(
@@ -4034,6 +4035,7 @@ func validateIoTTopicRuleName(
 func validateIoTTopicRuleCloudWatchAlarmStateValue(
 func validateIoTTopicRuleElasticSearchEndpoint(
 func validateIoTTopicRuleFirehoseSeparator(
+func TestValidateCloudWatchEventBusNameOrARN(
 func TestValidateEC2AutomateARN(
 func TestValidateCIDRNetworkAddress(
 func TestValidateCIDRBlock(

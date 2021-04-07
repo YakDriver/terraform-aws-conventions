@@ -52,4 +52,5 @@ func parseStorageGatewayVolumeGatewayARNAndTargetNameFromARN(
 func TestParseStorageGatewayVolumeGatewayARNAndTargetNameFromARN(
 func TestAccAwsWafv2WebACLLoggingConfiguration_changeResourceARNForceNew(
 func validateEC2AutomateARN(
+func TestValidateCloudWatchEventBusNameOrARN(
 func TestValidateEC2AutomateARN(

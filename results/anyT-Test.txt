@@ -5982,7 +5982,7 @@ func testAccAWSEksFargateProfileConfigFargateProfileMultiple(
 func testAccAWSEksFargateProfileConfigSelectorLabels1(
 func testAccAWSEksFargateProfileConfigTags1(
 func testAccAWSEksFargateProfileConfigTags2(
-func testSweepEksFargateNodegroups(
+func testSweepEksNodeGroups(
 func TestAccAWSEksNodeGroup_basic(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
@@ -6003,6 +6003,7 @@ func TestAccAWSEksNodeGroup_ScalingConfig_MaxSize(
 func TestAccAWSEksNodeGroup_ScalingConfig_MinSize(
 func TestAccAWSEksNodeGroup_Tags(
 func TestAccAWSEksNodeGroup_Version(
+func testAccErrorCheckSkipEKS(
 func testAccCheckAWSEksNodeGroupExists(
 func testAccCheckAWSEksNodeGroupDestroy(
 func testAccCheckAWSEksNodeGroupDisappears(
@@ -13466,6 +13467,7 @@ func TestValidateTypeStringNullableBoolean(
 func TestValidateTypeStringNullableFloat(
 func TestValidateCloudWatchDashboardName(
 func TestValidateCloudWatchEventRuleName(
+func TestValidateCloudWatchEventBusNameOrARN(
 func TestValidateLambdaFunctionName(
 func TestValidateLambdaQualifier(
 func TestValidateLambdaPermissionAction(

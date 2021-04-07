@@ -2959,6 +2959,7 @@ func resourceAwsEksNodeGroupRead(
 func resourceAwsEksNodeGroupUpdate(
 func resourceAwsEksNodeGroupDelete(
 func resourceAwsEksNodeGroupParseId(
+func resourceAwsEksNodeGroupCreateId(
 func resourceAwsElasticacheCluster(
 func resourceAwsElasticacheClusterCreate(
 func resourceAwsElasticacheClusterRead(

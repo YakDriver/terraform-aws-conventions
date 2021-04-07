@@ -103,7 +103,8 @@ func refreshEksNodeGroupUpdateStatus(
 func waitForEksNodeGroupDeletion(
 func waitForEksNodeGroupUpdate(
 func resourceAwsEksNodeGroupParseId(
-func testSweepEksFargateNodegroups(
+func resourceAwsEksNodeGroupCreateId(
+func testSweepEksNodeGroups(
 func TestAccAWSEksNodeGroup_basic(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(

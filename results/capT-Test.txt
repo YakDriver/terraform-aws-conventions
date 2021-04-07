@@ -5317,6 +5317,7 @@ func TestValidateTypeStringNullableBoolean(
 func TestValidateTypeStringNullableFloat(
 func TestValidateCloudWatchDashboardName(
 func TestValidateCloudWatchEventRuleName(
+func TestValidateCloudWatchEventBusNameOrARN(
 func TestValidateLambdaFunctionName(
 func TestValidateLambdaQualifier(
 func TestValidateLambdaPermissionAction(
