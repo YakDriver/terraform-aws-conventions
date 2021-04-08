@@ -173,6 +173,7 @@ func testAccDataSourceAWSGlueScriptConfigScala() string {
 func testAccAwsGuarddutyDetectorBasicResourceConfig() string {
 func testAccAwsGuarddutyDetectorBasicResourceDataConfig() string {
 func testAccAwsGuarddutyDetectorExplicitConfig() string {
+func testAccAWSIAMAccountAliasDataSourceConfig(rName string) string {
 func testAccAwsIAMGroupConfig(name string) string {
 func testAccAwsIAMGroupConfigWithUser(groupName, userName, membershipName string, userCount int) string {
 func testAccDatasourceAwsIamInstanceProfileConfig(roleName, profileName string) string {
@@ -2904,8 +2905,7 @@ func testAccGuardDutyThreatintelsetConfigTags2(rName, tagKey1, tagValue1, tagKey
 func testAccAWSAccessKeyConfig(rName string) string {
 func testAccAWSAccessKeyConfig_encrypted(rName, key string) string {
 func testAccAWSAccessKeyConfig_Status(rName string, status string) string {
-func testAccAWSIAMAccountAliasConfig_with_datasource(rstring string) string {
-func testAccAWSIAMAccountAliasConfig(rstring string) string {
+func testAccAWSIAMAccountAliasConfig(rName string) string {
 func testAccAWSGroupMemberConfig(groupName, userName, membershipName string) string {
 func testAccAWSGroupMemberConfigUpdate(groupName, userName, userName2, userName3, membershipName string) string {
 func testAccAWSGroupMemberConfigUpdateDown(groupName, userName3, membershipName string) string {

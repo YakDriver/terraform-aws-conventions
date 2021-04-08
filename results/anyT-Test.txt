@@ -478,6 +478,8 @@ func testAccAWSGuarddutyDetectorDataSource_Id(
 func testAccAwsGuarddutyDetectorBasicResourceConfig(
 func testAccAwsGuarddutyDetectorBasicResourceDataConfig(
 func testAccAwsGuarddutyDetectorExplicitConfig(
+func testAccAWSIAMAccountAliasDataSource_basic(
+func testAccAWSIAMAccountAliasDataSourceConfig(
 func TestAccAWSDataSourceIAMGroup_basic(
 func TestAccAWSDataSourceIAMGroup_users(
 func testAccAwsIAMGroupConfig(
@@ -7208,12 +7210,9 @@ func testAccAWSAccessKeyConfig_encrypted(
 func testAccAWSAccessKeyConfig_Status(
 func TestSesSmtpPasswordFromSecretKeySigV4(
 func TestAccAWSIAMAccountAlias_serial(
-func testAccAWSIAMAccountAlias_importBasic(
-func testAccAWSIAMAccountAlias_basic_with_datasource(
+func testAccAWSIAMAccountAlias_basic(
 func testAccCheckAWSIAMAccountAliasDestroy(
-func testAccCheckAWSIAMAccountAliasDataExists(
 func testAccCheckAWSIAMAccountAliasExists(
-func testAccAWSIAMAccountAliasConfig_with_datasource(
 func testAccAWSIAMAccountAliasConfig(
 func TestAccAWSIAMAccountPasswordPolicy_basic(
 func testAccCheckAWSIAMAccountPasswordPolicyDestroy(

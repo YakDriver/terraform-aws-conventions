@@ -45,6 +45,8 @@ func testAccAWSElasticsearchDomainConfigWithDataSource(
 func testAccAWSElasticsearchDomainConfigAdvancedWithDataSource(
 func testAccAWSGuarddutyDetectorDataSource_basic(
 func testAccAWSGuarddutyDetectorDataSource_Id(
+func testAccAWSIAMAccountAliasDataSource_basic(
+func testAccAWSIAMAccountAliasDataSourceConfig(
 func testAccAWSIAMPolicyDocumentExpectedJSON(
 func testAccAWSIAMPolicyDocumentSourceExpectedJSON(
 func testAccAWSIAMPolicyDocumentExpectedJSONStatementPrincipalIdentifiersStringAndSlice(
@@ -1858,9 +1860,7 @@ func testAccAWSGuardDutyMemberFromEnv(t *testing.T) (
 func testAccAWSAccessKeyConfig(
 func testAccAWSAccessKeyConfig_encrypted(
 func testAccAWSAccessKeyConfig_Status(
-func testAccAWSIAMAccountAlias_importBasic(
-func testAccAWSIAMAccountAlias_basic_with_datasource(
-func testAccAWSIAMAccountAliasConfig_with_datasource(
+func testAccAWSIAMAccountAlias_basic(
 func testAccAWSIAMAccountAliasConfig(
 func testAccAWSGroupMemberConfig(
 func testAccAWSGroupMemberConfigUpdate(

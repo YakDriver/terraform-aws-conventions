@@ -965,7 +965,6 @@ func testAccGuardDutyFilterConfig_multipleTags(
 func testAccGuardDutyFilterConfig_updateTags(
 func testAccAwsGuardDutyMember_invitationMessage(
 func testAccGuardDutyMemberConfig_invitationMessage(
-func testAccAWSIAMAccountAlias_importBasic(
 func TestAccAWSGroupMembership_paginatedUserList(
 func TestAccAWSIAMGroupPolicy_namePrefix(
 func TestAccAWSIAMGroupPolicy_generatedName(

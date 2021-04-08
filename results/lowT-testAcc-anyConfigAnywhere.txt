@@ -169,6 +169,7 @@ func testAccDataSourceAWSGlueScriptConfigScala(
 func testAccAwsGuarddutyDetectorBasicResourceConfig(
 func testAccAwsGuarddutyDetectorBasicResourceDataConfig(
 func testAccAwsGuarddutyDetectorExplicitConfig(
+func testAccAWSIAMAccountAliasDataSourceConfig(
 func testAccAwsIAMGroupConfig(
 func testAccAwsIAMGroupConfigWithUser(
 func testAccDatasourceAwsIamInstanceProfileConfig(
@@ -2792,7 +2793,6 @@ func testAccGuardDutyThreatintelsetConfigTags2(
 func testAccAWSAccessKeyConfig(
 func testAccAWSAccessKeyConfig_encrypted(
 func testAccAWSAccessKeyConfig_Status(
-func testAccAWSIAMAccountAliasConfig_with_datasource(
 func testAccAWSIAMAccountAliasConfig(
 func testAccAWSGroupMemberConfig(
 func testAccAWSGroupMemberConfigUpdate(

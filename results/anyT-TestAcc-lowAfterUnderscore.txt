@@ -144,6 +144,7 @@ func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
 func TestAccDataSourceAWSELB_basic(
 func testAccAWSGuarddutyDetectorDataSource_basic(
+func testAccAWSIAMAccountAliasDataSource_basic(
 func TestAccAWSDataSourceIAMGroup_basic(
 func TestAccAWSDataSourceIAMGroup_users(
 func TestAccAWSDataSourceIAMInstanceProfile_basic(
@@ -2357,9 +2358,7 @@ func TestAccAWSAccessKey_basic(
 func TestAccAWSAccessKey_encrypted(
 func testAccAWSAccessKeyConfig_encrypted(
 func TestAccAWSIAMAccountAlias_serial(
-func testAccAWSIAMAccountAlias_importBasic(
-func testAccAWSIAMAccountAlias_basic_with_datasource(
-func testAccAWSIAMAccountAliasConfig_with_datasource(
+func testAccAWSIAMAccountAlias_basic(
 func TestAccAWSIAMAccountPasswordPolicy_basic(
 func TestAccAWSGroupMembership_basic(
 func TestAccAWSGroupMembership_paginatedUserList(

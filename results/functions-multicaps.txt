@@ -227,6 +227,8 @@ func testAccDataSourceAWSGlueScriptConfigPython(
 func testAccDataSourceAWSGlueScriptConfigScala(
 func testAccAWSGuarddutyDetectorDataSource_basic(
 func testAccAWSGuarddutyDetectorDataSource_Id(
+func testAccAWSIAMAccountAliasDataSource_basic(
+func testAccAWSIAMAccountAliasDataSourceConfig(
 func dataSourceAwsIAMGroup(
 func dataSourceAwsIAMGroupRead(
 func TestAccAWSDataSourceIAMGroup_basic(
@@ -5277,12 +5279,9 @@ func testAccAWSAccessKeyConfig(
 func testAccAWSAccessKeyConfig_encrypted(
 func testAccAWSAccessKeyConfig_Status(
 func TestAccAWSIAMAccountAlias_serial(
-func testAccAWSIAMAccountAlias_importBasic(
-func testAccAWSIAMAccountAlias_basic_with_datasource(
+func testAccAWSIAMAccountAlias_basic(
 func testAccCheckAWSIAMAccountAliasDestroy(
-func testAccCheckAWSIAMAccountAliasDataExists(
 func testAccCheckAWSIAMAccountAliasExists(
-func testAccAWSIAMAccountAliasConfig_with_datasource(
 func testAccAWSIAMAccountAliasConfig(
 func TestAccAWSIAMAccountPasswordPolicy_basic(
 func testAccCheckAWSIAMAccountPasswordPolicyDestroy(
