@@ -742,6 +742,7 @@ func testAccAvailableEc2InstanceTypeForAvailabilityZone(
 func flattenEc2LaunchTemplateElasticInferenceAcceleratorResponse(
 func expandEc2LaunchTemplateElasticInferenceAccelerators(
 func testSweepEc2NetworkInterfaces(
+func testSweepEc2PlacementGroups(
 func testAccCheckAWSSecurityGroupEc2ClassicDestroy(
 func testAccCheckAWSSecurityGroupEc2ClassicExists(
 func testAccPreCheckAWSEc2SpotFleetRequest(

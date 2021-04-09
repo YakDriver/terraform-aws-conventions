@@ -1718,6 +1718,7 @@ func testAccKinesisAnalyticsApplicationConfigMultipleUpdated(rName, startApplica
 func testAccKinesisAnalyticsApplicationConfigStartApplication(rName string, start bool) string {
 func testAccKinesisAnalyticsApplicationConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccKinesisAnalyticsApplicationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccKinesisAnalyticsV2ApplicationSnapshotConfig(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseServiceExecutionIamRole(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseFlinkApplication(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigBaseSQLApplication(rName string) string {
@@ -1731,20 +1732,23 @@ func testAccKinesisAnalyticsV2ApplicationConfigCloudWatchLoggingOptions(rName st
 func testAccKinesisAnalyticsV2ApplicationConfigEnvironmentProperties(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigEnvironmentPropertiesUpdated(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigEnvironmentPropertiesNotSpecified(rName string) string {
-func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfiguration(rName string) string {
-func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfigurationUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfiguration(rName, startApplication string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfigurationUpdated(rName, startApplication string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfigurationEnvironmentProperties(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfigurationEnvironmentPropertiesUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigStartSnapshotableFlinkApplication(rName, applicationRestoreType, snapshotName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigStopSnapshotableFlinkApplication(rName string, forceStop bool) string {
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationNotSpecified(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationInput(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationInputUpdated(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationInputProcessingConfiguration(rName string, lambdaIndex int) string {
-func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationMultiple(rName string) string {
-func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationMultipleUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationMultiple(rName, startApplication, startingPosition string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationMultipleUpdated(rName, startApplication, startingPosition string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationOutput(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationOutputUpdated(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationReferenceDataSource(rName string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationReferenceDataSourceUpdated(rName string) string {
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationStartApplication(rName string, start bool) string {
 func testAccKinesisAnalyticsV2ApplicationConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccKinesisAnalyticsV2ApplicationConfigVPCConfiguration(rName string) string {
@@ -2153,6 +2157,9 @@ func testAccRoute53RecordConfigAliasCustomVpcEndpointSwappedAliasAttributes(rNam
 func testAccRoute53RecordConfigCustomVpcEndpoint(rName string) string {
 func testAccRoute53ResolverDnssecConfigBase(rName string) string {
 func testAccRoute53ResolverDnssecConfigConfigBasic(rName string) string {
+func testAccRoute53ResolverFirewallRuleGroupConfig(rName string) string {
+func testAccRoute53ResolverFirewallRuleGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccRoute53ResolverFirewallRuleGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccRoute53ResolverQueryLogConfigAssociationConfig(rName string) string {
 func testAccRoute53ResolverQueryLogConfigConfig(rName string) string {
 func testAccRoute53ResolverQueryLogConfigConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -2623,6 +2630,7 @@ func testAccAWSSSMParameterBasicConfigTags1(rName, tagKey1, tagValue1 string) st
 func testAccAWSSSMParameterBasicConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSSSMParameterBasicConfigOverwrite(rName, pType, value string) string {
 func testAccAWSSSMParameterBasicConfigOverwriteWithoutDescription(rName, pType, value string) string {
+func testAccAWSSSMParameterConfigOverwriteWithTags1(rName string, overwrite bool, tagKey1, tagValue1 string) string {
 func testAccAWSSSMParameterSecureConfig(rName string, value string) string {
 func testAccAWSSSMParameterSecureConfigWithKey(rName string, value string, keyAlias string) string {
 func testAccAWSSSMPatchBaselineBasicConfig(rName string) string {

@@ -3753,6 +3753,8 @@ func resourceAwsCloudWatchQueryDefinitionRead(
 func resourceAwsCloudWatchQueryDefinitionUpdate(
 func resourceAwsCloudWatchQueryDefinitionDelete(
 func resourceAwsCloudWatchQueryDefinitionImport(
+func init(
+func testSweepCloudwatchlogQueryDefinitions(
 func testAccAWSCloudWatchQueryDefinitionImportStateId(
 func testAccCheckAWSCloudWatchQueryDefinitionExists(
 func testAccCheckAWSCloudWatchQueryDefinitionDestroy(
@@ -4116,6 +4118,8 @@ func resourceAwsCodePipelineDelete(
 func resourceAwsCodePipelineValidateActionProvider(
 func suppressCodePipelineStageActionConfiguration(
 func hashCodePipelineGitHubToken(
+func init(
+func testSweepCodepipelinePipelines(
 func testAccCheckAWSCodePipelineExists(
 func testAccCheckAWSCodePipelineDestroy(
 func testAccPreCheckAWSCodePipelineSupported(
@@ -6791,12 +6795,11 @@ func testAccAWSElasticacheReplicationGroupConfig_MultiAZNotInVPC_Basic(
 func testAccAWSElasticacheReplicationGroupConfig_MultiAZNotInVPC_AvailabilityZones(
 func testAccAWSElasticacheReplicationGroupMultiAZInVPCConfig(
 func testAccAWSElasticacheReplicationGroupConfig_MultiAZ_NoAutomaticFailover(
-func testAccAWSElasticacheReplicationGroupConfig_MultiAZOneCacheCluster_SingleNodeGroup(
-func testAccAWSElasticacheReplicationGroupConfig_MultiAZOneCacheCluster_ClusterMode(
 func testAccAWSElasticacheReplicationGroupRedisClusterInVPCConfig(
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterErrorConfig(
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterConfig(
 func testAccAWSElasticacheReplicationGroupNativeRedisClusterConfig_NonClusteredParameterGroup(
+func testAccAWSElasticacheReplicationGroupNativeRedisClusterConfig_SingleNode(
 func testAccAWSElasticacheReplicationGroup_UseCmkKmsKeyId(
 func testAccAWSElasticacheReplicationGroup_EnableAtRestEncryptionConfig(
 func testAccAWSElasticacheReplicationGroup_EnableAuthTokenTransitEncryptionConfig(
@@ -8800,6 +8803,8 @@ func resourceAwsIotCertificateCreate(
 func resourceAwsIotCertificateRead(
 func resourceAwsIotCertificateUpdate(
 func resourceAwsIotCertificateDelete(
+func init(
+func testSweepIotCertifcates(
 func testAccCheckAWSIoTCertificateDestroy_basic(
 func resourceAwsIotPolicyAttachment(
 func resourceAwsIotPolicyAttachmentCreate(
@@ -8807,6 +8812,8 @@ func listIotPolicyAttachmentPages(
 func getIotPolicyAttachment(
 func resourceAwsIotPolicyAttachmentRead(
 func resourceAwsIotPolicyAttachmentDelete(
+func init(
+func testSweepIotPolicyAttachments(
 func testAccCheckAWSIotPolicyAttchmentDestroy(
 func testAccCheckAWSIotPolicyAttachmentExists(
 func testAccCheckAWSIotPolicyAttachmentCertStatus(
@@ -8819,6 +8826,8 @@ func resourceAwsIotPolicyCreate(
 func resourceAwsIotPolicyRead(
 func resourceAwsIotPolicyUpdate(
 func resourceAwsIotPolicyDelete(
+func init(
+func testSweepIotPolicies(
 func testAccCheckAWSIoTPolicyDestroy_basic(
 func testAccCheckAWSIoTPolicyExists(
 func testAccAWSIoTPolicyConfigInitialState(
@@ -8828,6 +8837,8 @@ func getIotRoleAliasDescription(
 func resourceAwsIotRoleAliasRead(
 func resourceAwsIotRoleAliasDelete(
 func resourceAwsIotRoleAliasUpdate(
+func init(
+func testSweepIotRoleAliases(
 func testAccCheckAWSIotRoleAliasDestroy(
 func testAccCheckAWSIotRoleAliasExists(
 func testAccAWSIotRoleAliasConfig(
@@ -8846,6 +8857,8 @@ func resourceAwsIotThingPrincipalAttachmentCreate(
 func getIoTThingPricipalAttachment(
 func resourceAwsIotThingPrincipalAttachmentRead(
 func resourceAwsIotThingPrincipalAttachmentDelete(
+func init(
+func testSweepIotThingPrincipalAttachments(
 func testAccCheckAWSIotThingPrincipalAttachmentDestroy(
 func testAccCheckAWSIotThingPrincipalAttachmentExists(
 func testAccCheckAWSIotThingPrincipalAttachmentStatus(
@@ -8854,6 +8867,8 @@ func testAccAWSIotThingPrincipalAttachmentConfigUpdate1(
 func testAccAWSIotThingPrincipalAttachmentConfigUpdate2(
 func testAccAWSIotThingPrincipalAttachmentConfigUpdate3(
 func testAccAWSIotThingPrincipalAttachmentConfigUpdate4(
+func init(
+func testSweepIotThings(
 func testAccCheckIotThingExists(
 func testAccCheckAWSIotThingDestroy(
 func testAccAWSIotThingConfig_basic(
@@ -8863,6 +8878,8 @@ func resourceAwsIotThingTypeCreate(
 func resourceAwsIotThingTypeRead(
 func resourceAwsIotThingTypeUpdate(
 func resourceAwsIotThingTypeDelete(
+func init(
+func testSweepIotThingTypes(
 func testAccCheckAWSIotThingTypeDestroy(
 func testAccAWSIotThingTypeConfig_basic(
 func testAccAWSIotThingTypeConfig_full(
@@ -9016,6 +9033,8 @@ func resourceAwsKinesisAnalyticsV2ApplicationRead(
 func resourceAwsKinesisAnalyticsV2ApplicationUpdate(
 func resourceAwsKinesisAnalyticsV2ApplicationDelete(
 func resourceAwsKinesisAnalyticsV2ApplicationImport(
+func kinesisAnalyticsV2StartApplication(
+func kinesisAnalyticsV2StopApplication(
 func expandKinesisAnalyticsV2ApplicationConfiguration(
 func expandKinesisAnalyticsV2ApplicationCodeConfigurationUpdate(
 func expandKinesisAnalyticsV2ApplicationFlinkApplicationConfigurationUpdate(
@@ -9038,6 +9057,15 @@ func expandKinesisAnalyticsV2VpcConfigurationUpdate(
 func flattenKinesisAnalyticsV2ApplicationConfigurationDescription(
 func flattenKinesisAnalyticsV2CloudWatchLoggingOptionDescriptions(
 func flattenKinesisAnalyticsV2SourceSchema(
+func expandKinesisAnalyticsV2StartApplicationInput(
+func expandKinesisAnalyticsV2StopApplicationInput(
+func resourceAwsKinesisAnalyticsV2ApplicationSnapshot(
+func resourceAwsKinesisAnalyticsV2ApplicationSnapshotCreate(
+func resourceAwsKinesisAnalyticsV2ApplicationSnapshotRead(
+func resourceAwsKinesisAnalyticsV2ApplicationSnapshotDelete(
+func testAccCheckKinesisAnalyticsV2ApplicationSnapshotDestroy(
+func testAccCheckKinesisAnalyticsV2ApplicationSnapshotExists(
+func testAccKinesisAnalyticsV2ApplicationSnapshotConfig(
 func init(
 func testSweepKinesisAnalyticsV2Application(
 func testAccCheckKinesisAnalyticsV2ApplicationDestroy(
@@ -9060,6 +9088,8 @@ func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfiguration(
 func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfigurationUpdated(
 func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfigurationEnvironmentProperties(
 func testAccKinesisAnalyticsV2ApplicationConfigFlinkApplicationConfigurationEnvironmentPropertiesUpdated(
+func testAccKinesisAnalyticsV2ApplicationConfigStartSnapshotableFlinkApplication(
+func testAccKinesisAnalyticsV2ApplicationConfigStopSnapshotableFlinkApplication(
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationNotSpecified(
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationInput(
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationInputUpdated(
@@ -9070,6 +9100,7 @@ func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationOutput
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationOutputUpdated(
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationReferenceDataSource(
 func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationReferenceDataSourceUpdated(
+func testAccKinesisAnalyticsV2ApplicationConfigSQLApplicationConfigurationStartApplication(
 func testAccKinesisAnalyticsV2ApplicationConfigTags1(
 func testAccKinesisAnalyticsV2ApplicationConfigTags2(
 func testAccKinesisAnalyticsV2ApplicationConfigVPCConfiguration(
@@ -9962,6 +9993,8 @@ func flattenLexConversationLogs(
 func expandLexConversationLogs(
 func flattenLexLogSettings(
 func expandLexLogSettings(
+func init(
+func testSweepLexBotAliases(
 func testAccAwsLexBotAlias_botVersion(
 func testAccCheckAwsLexBotAliasExists(
 func testAccCheckAwsLexBotAliasDestroy(
@@ -9979,6 +10012,8 @@ func resourceAwsLexBotDelete(
 func getLatestLexBotVersion(
 func flattenLexIntents(
 func expandLexIntents(
+func init(
+func testSweepLexBots(
 func testAccAwsLexBot_createVersion(
 func testAccCheckAwsLexBotExistsWithVersion(
 func testAccCheckAwsLexBotExists(
@@ -10020,6 +10055,8 @@ func flattenLexSlots(
 func expandLexSlots(
 func flattenLexStatement(
 func expandLexStatement(
+func init(
+func testSweepLexIntents(
 func testAccCheckAwsLexIntentExistsWithVersion(
 func testAccCheckAwsLexIntentExists(
 func testAccCheckAwsLexIntentNotExists(
@@ -10048,6 +10085,8 @@ func resourceAwsLexSlotTypeUpdate(
 func resourceAwsLexSlotTypeDelete(
 func flattenLexEnumerationValues(
 func expandLexEnumerationValues(
+func init(
+func testSweepLexSlotTypes(
 func testAccCheckAwsLexSlotTypeExistsWithVersion(
 func testAccCheckAwsLexSlotTypeExists(
 func testAccCheckAwsLexSlotTypeNotExists(
@@ -10960,6 +10999,7 @@ func resourceAwsOrganizationsOrganizationalUnitDelete(
 func resourceAwsOrganizationsOrganizationalUnitGetParentId(
 func flattenOrganizationsOrganizationalUnitAccounts(
 func testAccAwsOrganizationsOrganizationalUnit_basic(
+func testAccAwsOrganizationsOrganizationalUnit_disappears(
 func testAccAwsOrganizationsOrganizationalUnit_Name(
 func testAccCheckAwsOrganizationsOrganizationalUnitDestroy(
 func testAccCheckAwsOrganizationsOrganizationalUnitExists(
@@ -11140,6 +11180,8 @@ func resourceAwsPlacementGroupCreate(
 func resourceAwsPlacementGroupRead(
 func resourceAwsPlacementGroupUpdate(
 func resourceAwsPlacementGroupDelete(
+func init(
+func testSweepEc2PlacementGroups(
 func testAccCheckAWSPlacementGroupDestroy(
 func testAccCheckAWSPlacementGroupExists(
 func testAccAWSPlacementGroupConfig(
@@ -11684,6 +11726,18 @@ func testAccPreCheckAWSRoute53Resolver(
 func testAccRoute53ResolverEndpointConfig_base(
 func testAccRoute53ResolverEndpointConfig_initial(
 func testAccRoute53ResolverEndpointConfig_updated(
+func resourceAwsRoute53ResolverFirewallRuleGroup(
+func resourceAwsRoute53ResolverFirewallRuleGroupCreate(
+func resourceAwsRoute53ResolverFirewallRuleGroupRead(
+func resourceAwsRoute53ResolverFirewallRuleGroupUpdate(
+func resourceAwsRoute53ResolverFirewallRuleGroupDelete(
+func init(
+func testSweepRoute53ResolverFirewallRuleGroups(
+func testAccCheckRoute53ResolverFirewallRuleGroupDestroy(
+func testAccCheckRoute53ResolverFirewallRuleGroupExists(
+func testAccRoute53ResolverFirewallRuleGroupConfig(
+func testAccRoute53ResolverFirewallRuleGroupConfigTags1(
+func testAccRoute53ResolverFirewallRuleGroupConfigTags2(
 func resourceAwsRoute53ResolverQueryLogConfigAssociation(
 func resourceAwsRoute53ResolverQueryLogConfigAssociationCreate(
 func resourceAwsRoute53ResolverQueryLogConfigAssociationRead(
@@ -12277,6 +12331,8 @@ func expandS3Grants(
 func testAccCheckAWSS3ObjectCopyDestroy(
 func testAccCheckAWSS3ObjectCopyExists(
 func testAccAWSS3ObjectCopyConfig_basic(
+func testAccAWSS3ObjectCopyConfig_BucketKeyEnabled_Bucket(
+func testAccAWSS3ObjectCopyConfig_BucketKeyEnabled_Object(
 func resourceAwsS3OutpostsEndpoint(
 func resourceAwsS3OutpostsEndpointCreate(
 func resourceAwsS3OutpostsEndpointRead(
@@ -13544,9 +13600,10 @@ func testAccAWSSSMMaintenanceWindowConfigScheduleTimezone(
 func testAccAWSSSMMaintenanceWindowConfigScheduleOffset(
 func testAccAWSSSMMaintenanceWindowConfigStartDate(
 func resourceAwsSsmParameter(
+func resourceAwsSsmParameterCreate(
 func resourceAwsSsmParameterRead(
+func resourceAwsSsmParameterUpdate(
 func resourceAwsSsmParameterDelete(
-func resourceAwsSsmParameterPut(
 func shouldUpdateSsmParameter(
 func testAccCheckAWSSSMParameterRecreated(
 func testAccCheckAWSSSMParameterExists(
@@ -13558,6 +13615,7 @@ func testAccAWSSSMParameterBasicConfigTags1(
 func testAccAWSSSMParameterBasicConfigTags2(
 func testAccAWSSSMParameterBasicConfigOverwrite(
 func testAccAWSSSMParameterBasicConfigOverwriteWithoutDescription(
+func testAccAWSSSMParameterConfigOverwriteWithTags1(
 func testAccAWSSSMParameterSecureConfig(
 func testAccAWSSSMParameterSecureConfigWithKey(
 func resourceAwsSsmPatchBaseline(
@@ -13606,6 +13664,8 @@ func resourceAwsSsmResourceDataSyncDelete(
 func findResourceDataSyncItem(
 func flattenSsmResourceDataSyncS3Destination(
 func expandSsmResourceDataSyncS3Destination(
+func init(
+func testSweepSsmResourceDataSyncs(
 func testAccCheckAWSSsmResourceDataSyncDestroy(
 func testAccCheckAWSSsmResourceDataSyncExists(
 func testAccSsmResourceDataSyncConfig(

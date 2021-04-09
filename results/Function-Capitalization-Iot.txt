@@ -11,12 +11,14 @@ func resourceAwsIotCertificateCreate(
 func resourceAwsIotCertificateRead(
 func resourceAwsIotCertificateUpdate(
 func resourceAwsIotCertificateDelete(
+func testSweepIotCertifcates(
 func resourceAwsIotPolicyAttachment(
 func resourceAwsIotPolicyAttachmentCreate(
 func listIotPolicyAttachmentPages(
 func getIotPolicyAttachment(
 func resourceAwsIotPolicyAttachmentRead(
 func resourceAwsIotPolicyAttachmentDelete(
+func testSweepIotPolicyAttachments(
 func TestAccAWSIotPolicyAttachment_basic(
 func testAccCheckAWSIotPolicyAttchmentDestroy(
 func testAccCheckAWSIotPolicyAttachmentExists(
@@ -30,12 +32,14 @@ func resourceAwsIotPolicyCreate(
 func resourceAwsIotPolicyRead(
 func resourceAwsIotPolicyUpdate(
 func resourceAwsIotPolicyDelete(
+func testSweepIotPolicies(
 func resourceAwsIotRoleAlias(
 func resourceAwsIotRoleAliasCreate(
 func getIotRoleAliasDescription(
 func resourceAwsIotRoleAliasRead(
 func resourceAwsIotRoleAliasDelete(
 func resourceAwsIotRoleAliasUpdate(
+func testSweepIotRoleAliases(
 func TestAccAWSIotRoleAlias_basic(
 func testAccCheckAWSIotRoleAliasDestroy(
 func testAccCheckAWSIotRoleAliasExists(
@@ -54,6 +58,7 @@ func resourceAwsIotThingPrincipalAttachment(
 func resourceAwsIotThingPrincipalAttachmentCreate(
 func resourceAwsIotThingPrincipalAttachmentRead(
 func resourceAwsIotThingPrincipalAttachmentDelete(
+func testSweepIotThingPrincipalAttachments(
 func TestAccAWSIotThingPrincipalAttachment_basic(
 func testAccCheckAWSIotThingPrincipalAttachmentDestroy(
 func testAccCheckAWSIotThingPrincipalAttachmentExists(
@@ -63,6 +68,7 @@ func testAccAWSIotThingPrincipalAttachmentConfigUpdate1(
 func testAccAWSIotThingPrincipalAttachmentConfigUpdate2(
 func testAccAWSIotThingPrincipalAttachmentConfigUpdate3(
 func testAccAWSIotThingPrincipalAttachmentConfigUpdate4(
+func testSweepIotThings(
 func TestAccAWSIotThing_basic(
 func TestAccAWSIotThing_full(
 func testAccCheckIotThingExists(
@@ -74,6 +80,7 @@ func resourceAwsIotThingTypeCreate(
 func resourceAwsIotThingTypeRead(
 func resourceAwsIotThingTypeUpdate(
 func resourceAwsIotThingTypeDelete(
+func testSweepIotThingTypes(
 func TestAccAWSIotThingType_basic(
 func TestAccAWSIotThingType_full(
 func testAccCheckAWSIotThingTypeDestroy(

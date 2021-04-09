@@ -335,9 +335,10 @@ func TestAccAWSSSMMaintenanceWindowTask_TaskInvocationRunCommandParameters(
 func TestAccAWSSSMMaintenanceWindowTask_TaskInvocationRunCommandParametersCloudWatch(
 func TestAccAWSSSMMaintenanceWindowTask_TaskInvocationStepFunctionParameters(
 func resourceAwsSsmParameter(
+func resourceAwsSsmParameterCreate(
 func resourceAwsSsmParameterRead(
+func resourceAwsSsmParameterUpdate(
 func resourceAwsSsmParameterDelete(
-func resourceAwsSsmParameterPut(
 func shouldUpdateSsmParameter(
 func TestAccAWSSSMParameter_basic(
 func TestAccAWSSSMParameter_Tier(
@@ -345,6 +346,9 @@ func TestAccAWSSSMParameter_Tier_IntelligentTieringToStandard(
 func TestAccAWSSSMParameter_Tier_IntelligentTieringToAdvanced(
 func TestAccAWSSSMParameter_disappears(
 func TestAccAWSSSMParameter_overwrite(
+func TestAccAWSSSMParameter_overwriteWithTags(
+func TestAccAWSSSMParameter_noOverwriteWithTags(
+func TestAccAWSSSMParameter_updateToOverwriteWithTags(
 func TestAccAWSSSMParameter_tags(
 func TestAccAWSSSMParameter_updateType(
 func TestAccAWSSSMParameter_updateDescription(
@@ -364,6 +368,7 @@ func testAccAWSSSMParameterBasicConfigTags1(
 func testAccAWSSSMParameterBasicConfigTags2(
 func testAccAWSSSMParameterBasicConfigOverwrite(
 func testAccAWSSSMParameterBasicConfigOverwriteWithoutDescription(
+func testAccAWSSSMParameterConfigOverwriteWithTags1(
 func testAccAWSSSMParameterSecureConfig(
 func testAccAWSSSMParameterSecureConfigWithKey(
 func TestAWSSSMParameterShouldUpdate(

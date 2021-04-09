@@ -350,6 +350,7 @@ func getAwsCloudWatchMetricAlarm(
 func flattenDimensions(
 func migrateCloudWatchMetricAlarmStateV0toV1(
 func getAwsCloudWatchQueryDefinitionInput(
+func init(
 func decodeCodeArtifactDomainID(
 func init(
 func expandCodeArtifactUpstreams(
@@ -450,6 +451,7 @@ func expandAwsCodePipelineActionsInputArtifacts(
 func flattenAwsCodePipelineActionsInputArtifacts(
 func suppressCodePipelineStageActionConfiguration(
 func hashCodePipelineGitHubToken(
+func init(
 func extractCodePipelineWebhookRules(
 func extractCodePipelineWebhookAuthConfig(
 func getCodePipelineWebhook(
@@ -1333,10 +1335,17 @@ func findPublicNetworkInterfacesForVpcID(
 func IGStateRefreshFunc(
 func IGAttachStateRefreshFunc(
 func init(
+func init(
 func listIotPolicyAttachmentPages(
 func getIotPolicyAttachment(
+func init(
+func init(
 func getIotRoleAliasDescription(
+func init(
 func getIoTThingPricipalAttachment(
+func init(
+func init(
+func init(
 func expandIotPutItemInput(
 func expandIotCloudwatchAlarmAction(
 func expandIotCloudwatchMetricAction(
@@ -1409,6 +1418,8 @@ func flattenKinesisAnalyticsOutputDescriptions(
 func flattenKinesisAnalyticsReferenceDataSourceDescriptions(
 func flattenKinesisAnalyticsSourceSchema(
 func init(
+func kinesisAnalyticsV2StartApplication(
+func kinesisAnalyticsV2StopApplication(
 func expandKinesisAnalyticsV2ApplicationConfiguration(
 func expandKinesisAnalyticsV2ApplicationCodeConfigurationUpdate(
 func expandKinesisAnalyticsV2ApplicationFlinkApplicationConfigurationUpdate(
@@ -1431,6 +1442,8 @@ func expandKinesisAnalyticsV2VpcConfigurationUpdate(
 func flattenKinesisAnalyticsV2ApplicationConfigurationDescription(
 func flattenKinesisAnalyticsV2CloudWatchLoggingOptionDescriptions(
 func flattenKinesisAnalyticsV2SourceSchema(
+func expandKinesisAnalyticsV2StartApplicationInput(
+func expandKinesisAnalyticsV2StopApplicationInput(
 func init(
 func cloudWatchLoggingOptionsSchema(
 func requestConfigurationSchema(
@@ -1677,9 +1690,11 @@ func flattenLexConversationLogs(
 func expandLexConversationLogs(
 func flattenLexLogSettings(
 func expandLexLogSettings(
+func init(
 func getLatestLexBotVersion(
 func flattenLexIntents(
 func expandLexIntents(
+func init(
 func getLatestLexIntentVersion(
 func flattenLexCodeHook(
 func expandLexCodeHook(
@@ -1695,9 +1710,11 @@ func flattenLexSlots(
 func expandLexSlots(
 func flattenLexStatement(
 func expandLexStatement(
+func init(
 func getLatestLexSlotTypeVersion(
 func flattenLexEnumerationValues(
 func expandLexEnumerationValues(
+func init(
 func init(
 func expandLightsailPortInfo(
 func expandLightsailPortInfos(
@@ -1884,6 +1901,7 @@ func flattenPinpointCampaignLimits(
 func expandPinpointQuietTime(
 func flattenPinpointQuietTime(
 func init(
+func init(
 func qldbLedgerRefreshStatusFunc(
 func waitForQLDBLedgerDeletion(
 func init(
@@ -1950,6 +1968,7 @@ func init(
 func route53ResolverEndpointRefresh(
 func route53ResolverEndpointWaitUntilTargetState(
 func route53ResolverEndpointHashIpAddress(
+func init(
 func init(
 func init(
 func init(
@@ -2293,6 +2312,7 @@ func parseSsmPatchGroupId(
 func findResourceDataSyncItem(
 func flattenSsmResourceDataSyncS3Destination(
 func expandSsmResourceDataSyncS3Destination(
+func init(
 func parseSsoAdminAccountAssignmentID(
 func init(
 func parseSsoAdminManagedPolicyAttachmentID(

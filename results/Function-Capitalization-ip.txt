@@ -186,6 +186,7 @@ func resourceAwsCodePipelineDelete(
 func resourceAwsCodePipelineValidateActionProvider(
 func suppressCodePipelineStageActionConfiguration(
 func hashCodePipelineGitHubToken(
+func testSweepCodepipelinePipelines(
 func TestAccAWSCodePipeline_basic(
 func TestAccAWSCodePipeline_disappears(
 func TestAccAWSCodePipeline_emptyStageArtifacts(
@@ -600,6 +601,7 @@ func resourceAwsIotThingPrincipalAttachmentCreate(
 func getIoTThingPricipalAttachment(
 func resourceAwsIotThingPrincipalAttachmentRead(
 func resourceAwsIotThingPrincipalAttachmentDelete(
+func testSweepIotThingPrincipalAttachments(
 func TestAccAWSIotThingPrincipalAttachment_basic(
 func testAccCheckAWSIotThingPrincipalAttachmentDestroy(
 func testAccCheckAWSIotThingPrincipalAttachmentExists(

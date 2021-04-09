@@ -1204,6 +1204,7 @@ func testAccAwsOpsWorksStack_classic_endpoint(
 func testAccAwsOpsWorksStack_regional_endpoint(
 func testAccAwsOrganizationsAccount_basic(
 func testAccAwsOrganizationsOrganizationalUnit_basic(
+func testAccAwsOrganizationsOrganizationalUnit_disappears(
 func testAccAwsOrganizationsOrganization_basic(
 func testAccAwsOrganizationsPolicy_basic(
 func testAccAwsOrganizationsPolicy_concurrent(
