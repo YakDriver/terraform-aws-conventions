@@ -199,6 +199,7 @@ func testAccAWSEcsTaskDefinitionImportStateIdFunc(
 func getAzFromSubnetId(
 func describeAddressesById(
 func testAccCheckAWSEIPAssociationHasIpBasedId(
+func resourceAwsEksAddonParseId(
 func TestAccAWSEksCluster_VpcConfig_SecurityGroupIds(
 func testAccAWSEksClusterConfig_VpcConfig_SecurityGroupIds(
 func resourceAwsEksFargateProfileParseId(

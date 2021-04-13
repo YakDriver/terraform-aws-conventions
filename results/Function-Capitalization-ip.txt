@@ -335,9 +335,11 @@ func TestAccAWSDynamoDbGlobalTable_multipleRegions(
 func testAccDynamoDbGlobalTableConfig_multipleRegions_dynamodb_tables(
 func testAccDynamoDbGlobalTableConfig_multipleRegions1(
 func testAccDynamoDbGlobalTableConfig_multipleRegions2(
+func flattenDynamoDbReplicaDescription(
+func flattenDynamoDbReplicaDescriptions(
 func TestAccAWSDynamoDbTableItem_withMultipleItems(
 func testAccAWSDynamoDbItemConfigWithMultipleItems(
-func TestAccAWSDynamoDbTable_Replica_Multiple(
+func TestAccAWSDynamoDbTable_Replica_multiple(
 func testAccAWSDynamoDbConfigGsiMultipleNonKeyAttributes(
 func TestAccAWSEbsSnapshotCopy_withDescription(
 func TestAccAWSEBSSnapshot_withDescription(
@@ -782,6 +784,7 @@ func testAccCheckAwsRamPrincipalAssociationDestroy(
 func testAccAwsRamPrincipalAssociationConfig(
 func TestAccAwsRamResourceShare_AllowExternalPrincipals(
 func testAccAwsRamResourceShareConfigAllowExternalPrincipals(
+func testAccErrorCheckSkipRDS(
 func resourceAwsRedshiftEventSubscription(
 func resourceAwsRedshiftEventSubscriptionCreate(
 func resourceAwsRedshiftEventSubscriptionRead(
@@ -1099,7 +1102,6 @@ func TestAccAwsWorkspacesIpGroup_MultipleDirectories(
 func testAccAwsWorkspacesIpGroupConfigMultipleDirectories(
 func stripNonKeyAttributes(
 func stripCapacityAttributes(
-func flattenAwsDynamoDbReplicaDescriptions(
 func ec2TagsFromTagDescriptions(
 func validatePrincipal(
 func validateDbEventSubscriptionName(

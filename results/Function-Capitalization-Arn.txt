@@ -91,6 +91,8 @@ func TestAccAWSDmsReplicationInstance_KmsKeyArn(
 func testAccAWSDmsReplicationInstanceConfig_KmsKeyArn(
 func TestAccAWSEcsTaskDefinition_withTaskRoleArn(
 func testAccAWSEcsTaskDefinitionWithTaskRoleArn(
+func TestAccAWSEksAddon_ServiceAccountRoleArn(
+func testAccAWSEksAddonConfigServiceAccountRoleArn(
 func TestAccAWSBeanstalkEnv_platformArn(
 func buildESDomainArn(
 func TestAccAWSGlueCatalogTable_StorageDescriptor_schemaReferenceArn(

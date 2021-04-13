@@ -1017,20 +1017,21 @@ func testAccAWSDynamoDbConfigInitialState(rName string) string {
 func testAccAWSDynamoDbConfigInitialStateWithEncryptionAmazonCMK(rName string, enabled bool) string {
 func testAccAWSDynamoDbConfigInitialStateWithEncryptionBYOK(rName string) string {
 func testAccAWSDynamoDbConfigAddSecondaryGSI(rName string) string {
-func testAccAWSDynamoDbConfigStreamSpecification(tableName string, enabled bool, viewType string) string {
-func testAccAWSDynamoDbConfigTags() string {
-func testAccAWSDynamoDbConfigGsiUpdate(name string) string {
-func testAccAWSDynamoDbConfigGsiUpdatedCapacity(name string) string {
-func testAccAWSDynamoDbConfigGsiUpdatedOtherAttributes(name string) string {
-func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(name string) string {
-func testAccAWSDynamoDbConfigGsiMultipleNonKeyAttributes(name, attributes string) string {
-func testAccAWSDynamoDbConfigLsiNonKeyAttributes(name string) string {
+func testAccAWSDynamoDbConfigStreamSpecification(rName string, enabled bool, viewType string) string {
+func testAccAWSDynamoDbConfigTags(rName string) string {
+func testAccAWSDynamoDbConfigGsiUpdate(rName string) string {
+func testAccAWSDynamoDbConfigGsiUpdatedCapacity(rName string) string {
+func testAccAWSDynamoDbConfigGsiUpdatedOtherAttributes(rName string) string {
+func testAccAWSDynamoDbConfigGsiUpdatedNonKeyAttributes(rName string) string {
+func testAccAWSDynamoDbConfigGsiMultipleNonKeyAttributes(rName, attributes string) string {
+func testAccAWSDynamoDbConfigLsiNonKeyAttributes(rName string) string {
 func testAccAWSDynamoDbConfigTimeToLive(rName string, ttlEnabled bool) string {
 func testAccAWSDynamoDbConfigOneAttribute(rName, hashKey, attrName, attrType string) string {
 func testAccAWSDynamoDbConfigTwoAttributes(rName, hashKey, rangeKey, attrName1, attrType1, attrName2, attrType2 string) string {
 func testAccAWSDynamoDbConfigUnmatchedIndexes(rName, attr1, attr2 string) string {
 func testAccAWSDynamoDbTableConfigReplica0(rName string) string {
 func testAccAWSDynamoDbTableConfigReplica1(rName string) string {
+func testAccAWSDynamoDbTableConfigReplicaWithCMK(rName string) string {
 func testAccAWSDynamoDbTableConfigReplica2(rName string) string {
 func testAccAWSDynamoDbConfigLSI(rName, lsiName string) string {
 func testAccAwsEbsEncryptionByDefaultConfig(enabled bool) string {
@@ -1186,6 +1187,11 @@ func testAccAWSEIPAssociationConfigDisappears() string {
 func testAccAWSEIPInstanceConfig() string {
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool() string {
 func testAccAWSEIPConfigCarrierIP(rName string) string {
+func testAccAWSEksAddonConfigAddonVersion(rName, addonName, addonVersion string) string {
+func testAccAWSEksAddonConfigResolveConflicts(rName, addonName, resolveConflicts string) string {
+func testAccAWSEksAddonConfigServiceAccountRoleArn(rName, addonName string) string {
+func testAccAWSEksAddonConfigTags1(rName, addonName, tagKey1, tagValue1 string) string {
+func testAccAWSEksAddonConfigTags2(rName, addonName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEksClusterConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksClusterConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEksFargateProfileConfigBase(rName string) string {

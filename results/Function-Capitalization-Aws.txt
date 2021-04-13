@@ -365,6 +365,8 @@ func TestAccDataSourceAwsEfsMountTarget_basic(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
 func dataSourceAwsEip(
 func dataSourceAwsEipRead(
+func dataSourceAwsEksAddon(
+func dataSourceAwsEksAddonRead(
 func dataSourceAwsEksClusterAuth(
 func dataSourceAwsEksClusterAuthRead(
 func testAccCheckAwsEksClusterAuthToken(
@@ -2609,10 +2611,9 @@ func testAccCheckAwsDynamoDbGlobalTableDestroy(
 func testAccCheckAwsDynamoDbGlobalTableExists(
 func resourceAwsDynamoDbTable(
 func resourceAwsDynamoDbTableCreate(
-func resourceAwsDynamoDbTableUpdate(
 func resourceAwsDynamoDbTableRead(
+func resourceAwsDynamoDbTableUpdate(
 func resourceAwsDynamoDbTableDelete(
-func deleteAwsDynamoDbTable(
 func resourceAwsDynamoDbTableItem(
 func resourceAwsDynamoDbTableItemCreate(
 func resourceAwsDynamoDbTableItemUpdate(
@@ -2942,6 +2943,12 @@ func resourceAwsEipRead(
 func resourceAwsEipUpdate(
 func resourceAwsEipDelete(
 func resourceAwsEipDomain(
+func resourceAwsEksAddon(
+func resourceAwsEksAddonCreate(
+func resourceAwsEksAddonRead(
+func resourceAwsEksAddonUpdate(
+func resourceAwsEksAddonDelete(
+func resourceAwsEksAddonParseId(
 func resourceAwsEksCluster(
 func resourceAwsEksClusterCreate(
 func resourceAwsEksClusterRead(
@@ -6281,8 +6288,6 @@ func resourceAwsXraySamplingRuleDelete(
 func expandAwsSsmTargets(
 func flattenAwsSsmParameters(
 func flattenAwsSsmTargets(
-func flattenAwsDynamoDbReplicaDescriptions(
-func flattenAwsDynamoDbTableResource(
 func validateAwsAccountId(
 func validateAwsEcsPlacementConstraint(
 func validateAwsDynamoDbGlobalTableName(

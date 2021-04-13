@@ -74,9 +74,7 @@ func resourceAwsDocDBSubnetGroupUpdate(
 func resourceAwsDocDBSubnetGroupDelete(
 func waitForDocDBSubnetGroupDeletion(
 func updateDynamoDbPITR(
-func waitForDynamoDbGSIToBeActive(
-func waitForDynamoDbGSIToBeDeleted(
-func waitForDynamoDbSSEUpdateToBeCompleted(
+func updateDynamoDbDiffGSI(
 func migrateDynamoDBStateV0toV1(
 func resourceAWSEbsVolumeUpdate(
 func decodeEc2LocalGatewayRouteID(

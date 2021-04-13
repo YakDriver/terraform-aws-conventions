@@ -155,6 +155,7 @@ func testAccDataSourceAWSEIPConfigFilter(
 func testAccDataSourceAWSEIPConfigPublicIpEc2Classic(
 func testAccDataSourceAWSEIPConfigTags(
 func testAccDataSourceAWSEIPConfigCarrierIP(
+func testAccAWSEksAddonDataSourceConfig_Basic(
 func testAccAWSEksClusterDataSourceConfig_Basic(
 func testAccAWSElastiCacheClusterConfigWithDataSource(
 func testAccDataSourceAwsElasticacheReplicationGroupConfig_basic(
@@ -2061,6 +2062,7 @@ func testAccAWSDynamoDbConfigTwoAttributes(
 func testAccAWSDynamoDbConfigUnmatchedIndexes(
 func testAccAWSDynamoDbTableConfigReplica0(
 func testAccAWSDynamoDbTableConfigReplica1(
+func testAccAWSDynamoDbTableConfigReplicaWithCMK(
 func testAccAWSDynamoDbTableConfigReplica2(
 func testAccAWSDynamoDbConfigLSI(
 func testAccAwsEbsEncryptionByDefaultConfig(
@@ -2299,6 +2301,12 @@ func testAccAWSEIPInstanceConfig_associated(
 func testAccAWSEIPInstanceConfig_associated_switch(
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
 func testAccAWSEIPConfigCarrierIP(
+func testAccAWSEksAddonConfig_Base(
+func testAccAWSEksAddonConfigAddonVersion(
+func testAccAWSEksAddonConfigResolveConflicts(
+func testAccAWSEksAddonConfigServiceAccountRoleArn(
+func testAccAWSEksAddonConfigTags1(
+func testAccAWSEksAddonConfigTags2(
 func testAccAWSEksClusterConfig_Base(
 func testAccAWSEksClusterConfig_Required(
 func testAccAWSEksClusterConfig_Version(

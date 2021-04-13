@@ -1128,8 +1128,8 @@ func resourceAwsDynamoDbGlobalTableRetrieve(
 func resourceAwsDynamoDbGlobalTableStateRefreshFunc(
 func resourceAwsDynamoDbTable(
 func resourceAwsDynamoDbTableCreate(
-func resourceAwsDynamoDbTableUpdate(
 func resourceAwsDynamoDbTableRead(
+func resourceAwsDynamoDbTableUpdate(
 func resourceAwsDynamoDbTableDelete(
 func resourceAwsDynamoDbTableItem(
 func resourceAwsDynamoDbTableItemCreate(
@@ -1379,6 +1379,12 @@ func resourceAwsEipRead(
 func resourceAwsEipUpdate(
 func resourceAwsEipDelete(
 func resourceAwsEipDomain(
+func resourceAwsEksAddon(
+func resourceAwsEksAddonCreate(
+func resourceAwsEksAddonRead(
+func resourceAwsEksAddonUpdate(
+func resourceAwsEksAddonDelete(
+func resourceAwsEksAddonParseId(
 func resourceAwsEksCluster(
 func resourceAwsEksClusterCreate(
 func resourceAwsEksClusterRead(

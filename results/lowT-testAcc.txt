@@ -189,6 +189,7 @@ func testAccDataSourceAWSEIPConfigFilter(
 func testAccDataSourceAWSEIPConfigPublicIpEc2Classic(
 func testAccDataSourceAWSEIPConfigTags(
 func testAccDataSourceAWSEIPConfigCarrierIP(
+func testAccAWSEksAddonDataSourceConfig_Basic(
 func testAccCheckAwsEksClusterAuthToken(
 func testAccAWSEksClusterDataSourceConfig_Basic(
 func testAccAWSElastiCacheClusterConfigWithDataSource(
@@ -3003,10 +3004,10 @@ func testAccCheckInitialAWSDynamoDbTableExists(
 func testAccCheckInitialAWSDynamoDbTableConf(
 func testAccAWSDynamoDbConfig_basic(
 func testAccAWSDynamoDbConfig_backup(
-func testAccAWSDynamoDbBilling_PayPerRequest(
-func testAccAWSDynamoDbBilling_Provisioned(
-func testAccAWSDynamoDbBilling_PayPerRequestWithGSI(
-func testAccAWSDynamoDbBilling_ProvisionedWithGSI(
+func testAccAWSDynamoDbBilling_payPerRequest(
+func testAccAWSDynamoDbBilling_provisioned(
+func testAccAWSDynamoDbBilling_payPerRequestWithGSI(
+func testAccAWSDynamoDbBilling_provisionedWithGSI(
 func testAccAWSDynamoDbConfigInitialState(
 func testAccAWSDynamoDbConfigInitialStateWithEncryptionAmazonCMK(
 func testAccAWSDynamoDbConfigInitialStateWithEncryptionBYOK(
@@ -3025,6 +3026,7 @@ func testAccAWSDynamoDbConfigTwoAttributes(
 func testAccAWSDynamoDbConfigUnmatchedIndexes(
 func testAccAWSDynamoDbTableConfigReplica0(
 func testAccAWSDynamoDbTableConfigReplica1(
+func testAccAWSDynamoDbTableConfigReplicaWithCMK(
 func testAccAWSDynamoDbTableConfigReplica2(
 func testAccAWSDynamoDbConfigLSI(
 func testAccCheckAwsEbsDefaultKmsKeyDestroy(
@@ -3502,6 +3504,17 @@ func testAccAWSEIPAssociate_not_associated(
 func testAccAWSEIPAssociate_associated(
 func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
 func testAccAWSEIPConfigCarrierIP(
+func testAccCheckAWSEksAddonExists(
+func testAccCheckAWSEksAddonDestroy(
+func testAccCheckAWSEksClusterDisappears(
+func testAccPreCheckAWSEksAddon(
+func testAccAWSEksAddonConfig_Base(
+func testAccAWSEksAddon_Basic(
+func testAccAWSEksAddonConfigAddonVersion(
+func testAccAWSEksAddonConfigResolveConflicts(
+func testAccAWSEksAddonConfigServiceAccountRoleArn(
+func testAccAWSEksAddonConfigTags1(
+func testAccAWSEksAddonConfigTags2(
 func testAccCheckAWSEksClusterExists(
 func testAccCheckAWSEksClusterDestroy(
 func testAccCheckAWSEksClusterRecreated(
@@ -5922,6 +5935,7 @@ func testAccAWSDBClusterParameterGroupAddParametersConfig(
 func testAccAWSDBClusterParameterGroupOnlyConfig(
 func testAccAWSDBClusterParameterGroupUpdateParametersInitialConfig(
 func testAccAWSDBClusterParameterGroupUpdateParametersUpdatedConfig(
+func testAccErrorCheckSkipRDS(
 func testAccCheckAWSClusterDestroy(
 func testAccCheckAWSClusterDestroyWithProvider(
 func testAccCheckAWSClusterSnapshot(

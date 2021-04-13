@@ -129,6 +129,7 @@ func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
 func TestAccDataSourceAwsEfsFileSystem_availabilityZone(
 func TestAccDataSourceAwsEfsMountTarget_basic(
+func TestAccAWSEksAddonDataSource_basic(
 func TestAccAWSEksClusterAuthDataSource_basic(
 func TestAccAWSEksClusterDataSource_basic(
 func TestAccAWSDataElasticacheCluster_basic(
@@ -1754,7 +1755,7 @@ func TestAccAWSDynamoDbTableItem_update(
 func TestAccAWSDynamoDbTableItem_updateWithRangeKey(
 func TestAccAWSDynamoDbTable_basic(
 func TestAccAWSDynamoDbTable_disappears(
-func TestAccAWSDynamoDbTable_disappears_PayPerRequestWithGSI(
+func TestAccAWSDynamoDbTable_disappears_payPerRequestWithGSI(
 func TestAccAWSDynamoDbTable_extended(
 func TestAccAWSDynamoDbTable_enablePitr(
 func TestAccAWSDynamoDbTable_streamSpecification(
@@ -1771,6 +1772,10 @@ func TestAccAWSDynamoDbTable_attributeUpdateValidation(
 func TestAccAWSDynamoDbTable_encryption(
 func testAccAWSDynamoDbConfig_basic(
 func testAccAWSDynamoDbConfig_backup(
+func testAccAWSDynamoDbBilling_payPerRequest(
+func testAccAWSDynamoDbBilling_provisioned(
+func testAccAWSDynamoDbBilling_payPerRequestWithGSI(
+func testAccAWSDynamoDbBilling_provisionedWithGSI(
 func TestAccAWSEBSDefaultKmsKey_basic(
 func TestAccAWSEBSEncryptionByDefault_basic(
 func TestAccAWSEbsSnapshotCopy_basic(
@@ -2054,6 +2059,9 @@ func testAccAWSEIPInstanceConfig_associated(
 func testAccAWSEIPInstanceConfig_associated_switch(
 func testAccAWSEIPAssociate_not_associated(
 func testAccAWSEIPAssociate_associated(
+func TestAccAWSEksAddon_basic(
+func TestAccAWSEksAddon_disappears(
+func TestAccAWSEksAddon_disappears_Cluster(
 func TestAccAWSEksCluster_basic(
 func TestAccAWSEksFargateProfile_basic(
 func TestAccAWSEksFargateProfile_disappears(

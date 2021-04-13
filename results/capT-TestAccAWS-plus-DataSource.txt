@@ -79,6 +79,7 @@ func TestAccAWSEcsDataSource_ecsClusterContainerInsights(
 func TestAccAWSEcsDataSource_ecsContainerDefinition(
 func TestAccAWSEcsServiceDataSource_basic(
 func TestAccAWSEcsDataSource_ecsTaskDefinition(
+func TestAccAWSEksAddonDataSource_basic(
 func TestAccAWSEksClusterAuthDataSource_basic(
 func TestAccAWSEksClusterDataSource_basic(
 func TestAccAWSElasticBeanstalkSolutionStackDataSource_basic(

@@ -107,6 +107,7 @@ func TestAccDataSourceAwsEfsFileSystem_id(
 func TestAccDataSourceAwsEfsFileSystem_name(
 func TestAccDataSourceAwsEfsFileSystem_availabilityZone(
 func TestAccDataSourceAwsEfsMountTarget_basic(
+func TestAccAWSEksAddonDataSource_basic(
 func TestAccAWSEksClusterAuthDataSource_basic(
 func TestAccAWSEksClusterDataSource_basic(
 func TestAccAWSDataElasticacheCluster_basic(
@@ -1080,7 +1081,7 @@ func TestAccAWSDynamoDbTableItem_update(
 func TestAccAWSDynamoDbTableItem_updateWithRangeKey(
 func TestAccAWSDynamoDbTable_basic(
 func TestAccAWSDynamoDbTable_disappears(
-func TestAccAWSDynamoDbTable_disappears_PayPerRequestWithGSI(
+func TestAccAWSDynamoDbTable_disappears_payPerRequestWithGSI(
 func TestAccAWSDynamoDbTable_extended(
 func TestAccAWSDynamoDbTable_enablePitr(
 func TestAccAWSDynamoDbTable_streamSpecification(
@@ -1302,6 +1303,9 @@ func TestAccAWSEIP_disappears(
 func TestAccAWSEIP_notAssociated(
 func TestAccAWSEIP_tags_Vpc(
 func TestAccAWSEIP_tags_Ec2Classic(
+func TestAccAWSEksAddon_basic(
+func TestAccAWSEksAddon_disappears(
+func TestAccAWSEksAddon_disappears_Cluster(
 func TestAccAWSEksCluster_basic(
 func TestAccAWSEksFargateProfile_basic(
 func TestAccAWSEksFargateProfile_disappears(

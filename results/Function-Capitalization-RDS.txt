@@ -72,6 +72,7 @@ func resourceAwsRDSClusterParameterGroupUpdate(
 func resourceAwsRDSClusterParameterGroupDelete(
 func resourceAwsRDSClusterParameterGroupDeleteRefreshFunc(
 func testAccCheckAWSRDSClusterParameterNotUserDefined(
+func testAccErrorCheckSkipRDS(
 func TestAccAWSRDSCluster_basic(
 func TestAccAWSRDSCluster_AllowMajorVersionUpgrade(
 func TestAccAWSRDSCluster_AvailabilityZones(
