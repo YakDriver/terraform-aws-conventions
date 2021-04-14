@@ -1090,6 +1090,10 @@ func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Full() string {
 func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Disabled() string {
 func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Start(launchConfigurationName string) string {
 func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Triggers() string {
+func testAccAwsAutoScalingGroupConfig_WarmPool_Base() string {
+func testAccAwsAutoScalingGroupConfig_WarmPool_Empty() string {
+func testAccAwsAutoScalingGroupConfig_WarmPool_Full() string {
+func testAccAwsAutoScalingGroupConfig_WarmPool_Remove() string {
 func testAccAWSAutoscalingLifecycleHookConfig(name string) string {
 func testAccAWSAutoscalingLifecycleHookConfig_omitDefaultResult(name string, rInt int) string {
 func testAccASGNotificationConfig_basic(rName string) string {
@@ -1275,7 +1279,10 @@ func testAccAWSCloudHsmV2ClusterConfigBase() string {
 func testAccAWSCloudHsmV2ClusterConfig() string {
 func testAccAWSCloudHsmV2ClusterConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSCloudHsmV2ClusterConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSCloudHsmV2HsmConfig() string {
+func testAccAWSCloudHsmV2HsmConfigBase() string {
+func testAccAWSCloudHsmV2HsmConfigAvailabilityZone() string {
+func testAccAWSCloudHsmV2HsmConfigIpAddress() string {
+func testAccAWSCloudHsmV2HsmConfigSubnetId() string {
 func testAccAWSCloudTrailConfig(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigModified(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigCloudWatch(randInt int) string {
@@ -1499,6 +1506,8 @@ func testAccAWSCodeCommitRepositoryConfigTags2(r, tag1Key, tag1Value, tag2Key, t
 func testAccCodeCommitTrigger_basic(rName string) string {
 func testAccAWSCodeDeployAppConfigComputePlatform(rName string, computePlatform string) string {
 func testAccAWSCodeDeployAppConfigName(rName string) string {
+func testAccAWSCodeDeployAppConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCodeDeployAppConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCodeDeployDeploymentConfigFleet(rName string, value int) string {
 func testAccAWSCodeDeployDeploymentConfigHostCount(rName string, value int) string {
 func testAccAWSCodeDeployDeploymentConfigTrafficCanary(rName string, interval, percentage int) string {

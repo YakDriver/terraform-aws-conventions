@@ -18,6 +18,8 @@ func dataSourceAWSWafIpSetRead(
 func dataSourceAwsWafRegionalIpSet(
 func dataSourceAWSWafRegionalIpSetRead(
 func TestAccAWSAcmCertificate_imported_IpAddress(
+func TestAccAWSCloudHsmV2Hsm_IpAddress(
+func testAccAWSCloudHsmV2HsmConfigIpAddress(
 func TestAccAWSDefaultNetworkAcl_basicIpv6Vpc(
 func TestAccAWSDefaultNetworkAcl_withIpv6Ingress(
 func testAccDefaultRouteTableConfigIpv4InternetGateway(

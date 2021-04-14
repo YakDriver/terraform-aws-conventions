@@ -1314,6 +1314,7 @@ func TestAccAWSAutoScalingGroup_serviceLinkedRoleARN(
 func TestAccAWSAutoScalingGroup_MaxInstanceLifetime(
 func TestAccAWSAutoScalingGroup_TargetGroupArns(
 func TestAccAWSAutoScalingGroup_initialLifecycleHook(
+func TestAccAWSAutoScalingGroup_WarmPool(
 func TestAccAWSAutoScalingGroup_classicVpcZoneIdentifier(
 func TestAccAWSAutoScalingGroup_launchTemplate(
 func TestAccAWSAutoScalingGroup_LoadBalancers(
@@ -1502,8 +1503,12 @@ func TestAccAWSCloudFrontRealtimeLogConfig_basic(
 func TestAccAWSCloudFrontRealtimeLogConfig_disappears(
 func TestAccAWSCloudFrontRealtimeLogConfig_updates(
 func TestAccAWSCloudHsmV2Cluster_basic(
+func TestAccAWSCloudHsmV2Cluster_disappears(
 func TestAccAWSCloudHsmV2Cluster_Tags(
 func TestAccAWSCloudHsmV2Hsm_basic(
+func TestAccAWSCloudHsmV2Hsm_disappears(
+func TestAccAWSCloudHsmV2Hsm_AvailabilityZone(
+func TestAccAWSCloudHsmV2Hsm_IpAddress(
 func TestAccAWSCloudTrail_serial(
 func testAccAWSCloudTrail_basic(
 func testAccAWSCloudTrail_cloudwatch(
@@ -1696,6 +1701,8 @@ func testAccCodeCommitTrigger_basic(
 func TestAccAWSCodeDeployApp_basic(
 func TestAccAWSCodeDeployApp_computePlatform(
 func TestAccAWSCodeDeployApp_name(
+func TestAccAWSCodeDeployApp_tags(
+func TestAccAWSCodeDeployApp_disappears(
 func TestAccAWSCodeDeployDeploymentConfig_basic(
 func TestAccAWSCodeDeployDeploymentConfig_fleetPercent(
 func TestAccAWSCodeDeployDeploymentConfig_hostCount(

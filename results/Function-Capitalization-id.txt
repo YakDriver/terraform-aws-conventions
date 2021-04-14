@@ -19,6 +19,8 @@ func TestAccAWSEFSAccessPoint_posix_user_secondary_gids(
 func testAccAWSEFSAccessPointConfigPosixUserSecondaryGids(
 func flattenEksOidc(
 func TestAccAWSEMRCluster_custom_ami_id(
+func expandLbListenerAuthenticateOidcConfig(
+func flattenLbListenerActionAuthenticateOidcConfig(
 func TestAccAWSLBListenerRule_oidc(
 func testAccAWSLBListenerRuleConfig_oidc(
 func TestAccAWSLBListener_oidc(

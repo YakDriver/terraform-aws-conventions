@@ -2666,11 +2666,6 @@ func TestAccAWSLBTargetGroup_preserveClientIPValid(
 func testAccCheckAWSLBTargetGroupExists(
 func testAccCheckAWSLBTargetGroupNotRecreated(
 func testAccCheckAWSLBTargetGroupRecreated(
-func testAccCheckAWSLBTargetGroupHealthCheckEnabled(
-func testAccCheckAWSLBTargetGroupHealthCheckInterval(
-func testAccCheckAWSLBTargetGroupHealthCheckTimeout(
-func testAccCheckAWSLBTargetGroupHealthyThreshold(
-func testAccCheckAWSLBTargetGroupUnhealthyThreshold(
 func testAccCheckAWSLBTargetGroupDestroy(
 func testAccALB_defaults(
 func testAccNLB_defaults(

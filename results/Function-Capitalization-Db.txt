@@ -297,7 +297,10 @@ func updateDynamoDbReplica(
 func updateDynamoDbDiffGSI(
 func deleteDynamoDbTable(
 func deleteDynamoDbReplicas(
-func flattenDynamoDbTableResource(
+func flattenDynamoDbTableAttributeDefinitions(
+func flattenDynamoDbTableLocalSecondaryIndex(
+func flattenDynamoDbTableGlobalSecondaryIndex(
+func flattenDynamodDbTableServerSideEncryption(
 func expandDynamoDbAttributes(
 func flattenDynamoDbReplicaDescription(
 func flattenDynamoDbReplicaDescriptions(

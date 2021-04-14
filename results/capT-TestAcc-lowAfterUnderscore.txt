@@ -684,7 +684,10 @@ func TestAccAWSCloudFrontRealtimeLogConfig_basic(
 func TestAccAWSCloudFrontRealtimeLogConfig_disappears(
 func TestAccAWSCloudFrontRealtimeLogConfig_updates(
 func TestAccAWSCloudHsmV2Cluster_basic(
+func TestAccAWSCloudHsmV2Cluster_disappears(
 func TestAccAWSCloudHsmV2Hsm_basic(
+func TestAccAWSCloudHsmV2Hsm_disappears(
+func TestAccAWSCloudHsmV2Hsm_disappears_Cluster(
 func TestAccAWSCloudTrail_serial(
 func TestAccAwsCloudWatchCompositeAlarm_basic(
 func TestAccAwsCloudWatchCompositeAlarm_disappears(
@@ -791,6 +794,8 @@ func TestAccAWSCodeDeployApp_computePlatform(
 func TestAccAWSCodeDeployApp_computePlatform_ECS(
 func TestAccAWSCodeDeployApp_computePlatform_Lambda(
 func TestAccAWSCodeDeployApp_name(
+func TestAccAWSCodeDeployApp_tags(
+func TestAccAWSCodeDeployApp_disappears(
 func TestAccAWSCodeDeployDeploymentConfig_basic(
 func TestAccAWSCodeDeployDeploymentConfig_fleetPercent(
 func TestAccAWSCodeDeployDeploymentConfig_hostCount(

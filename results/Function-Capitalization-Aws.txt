@@ -1512,6 +1512,8 @@ func resourceAwsAutoscalingGroupCreate(
 func resourceAwsAutoscalingGroupRead(
 func resourceAwsAutoscalingGroupUpdate(
 func resourceAwsAutoscalingGroupDelete(
+func getAwsAutoscalingGroupWarmPool(
+func resourceAwsAutoscalingGroupWarmPoolDrain(
 func getAwsAutoscalingGroup(
 func resourceAwsAutoscalingGroupDrain(
 func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Basic(
@@ -1519,6 +1521,10 @@ func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Full(
 func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Disabled(
 func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Start(
 func testAccAwsAutoScalingGroupConfig_InstanceRefresh_Triggers(
+func testAccAwsAutoScalingGroupConfig_WarmPool_Base(
+func testAccAwsAutoScalingGroupConfig_WarmPool_Empty(
+func testAccAwsAutoScalingGroupConfig_WarmPool_Full(
+func testAccAwsAutoScalingGroupConfig_WarmPool_Remove(
 func resourceAwsAutoscalingLifecycleHook(
 func resourceAwsAutoscalingLifecycleHookPutOp(
 func resourceAwsAutoscalingLifecycleHookPut(
@@ -1734,14 +1740,11 @@ func resourceAwsCloudFrontRealtimeLogConfigRead(
 func resourceAwsCloudFrontRealtimeLogConfigUpdate(
 func resourceAwsCloudFrontRealtimeLogConfigDelete(
 func resourceAwsCloudHsmV2Cluster(
-func resourceAwsCloudHsmV2ClusterRefreshFunc(
 func resourceAwsCloudHsmV2ClusterCreate(
 func resourceAwsCloudHsmV2ClusterRead(
 func resourceAwsCloudHsmV2ClusterUpdate(
 func resourceAwsCloudHsmV2ClusterDelete(
 func resourceAwsCloudHsmV2Hsm(
-func resourceAwsCloudHsmV2HsmImport(
-func resourceAwsCloudHsmV2HsmRefreshFunc(
 func resourceAwsCloudHsmV2HsmCreate(
 func resourceAwsCloudHsmV2HsmRead(
 func resourceAwsCloudHsmV2HsmDelete(

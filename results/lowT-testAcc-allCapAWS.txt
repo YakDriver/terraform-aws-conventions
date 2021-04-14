@@ -710,7 +710,10 @@ func testAccAWSCloudHsmV2ClusterConfigBase(
 func testAccAWSCloudHsmV2ClusterConfig(
 func testAccAWSCloudHsmV2ClusterConfigTags1(
 func testAccAWSCloudHsmV2ClusterConfigTags2(
-func testAccAWSCloudHsmV2HsmConfig(
+func testAccAWSCloudHsmV2HsmConfigBase(
+func testAccAWSCloudHsmV2HsmConfigAvailabilityZone(
+func testAccAWSCloudHsmV2HsmConfigIpAddress(
+func testAccAWSCloudHsmV2HsmConfigSubnetId(
 func testAccAWSCloudTrail_basic(
 func testAccAWSCloudTrail_cloudwatch(
 func testAccAWSCloudTrail_enable_logging(
@@ -928,6 +931,8 @@ func testAccAWSCodeCommitRepositoryConfigTags1(
 func testAccAWSCodeCommitRepositoryConfigTags2(
 func testAccAWSCodeDeployAppConfigComputePlatform(
 func testAccAWSCodeDeployAppConfigName(
+func testAccAWSCodeDeployAppConfigTags1(
+func testAccAWSCodeDeployAppConfigTags2(
 func testAccAWSCodeDeployDeploymentConfigFleet(
 func testAccAWSCodeDeployDeploymentConfigHostCount(
 func testAccAWSCodeDeployDeploymentConfigTrafficCanary(
