@@ -403,6 +403,7 @@ func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityName(rName str
 func testAccDataSourceAwsSfnStateMachineConfig(rName string) string {
 func testAccDataSourceAWSSignerSigningJobConfigBasic(rName string) string {
 func testAccDataSourceAWSSignerSigningProfileConfigBasic(profileName string) string {
+func testAccDataSourceAwsSnsTopicConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfigTags(rName string) string {
 func testAccCheckAwsSsmDocumentDataSourceConfig(name string, documentFormat string) string {
@@ -1415,6 +1416,7 @@ func testAccAWSCodeDeployDeploymentConfigFleet(rName string, value int) string {
 func testAccAWSCodeDeployDeploymentConfigHostCount(rName string, value int) string {
 func testAccAWSCodeDeployDeploymentConfigTrafficCanary(rName string, interval, percentage int) string {
 func testAccAWSCodeDeployDeploymentConfigTrafficLinear(rName string, interval, percentage int) string {
+func testAccAWSCodeDeployDeploymentGroupConfigBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_create(rName string) string {
 func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_update(rName string) string {
 func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_createMultiple(rName string) string {
@@ -1422,6 +1424,8 @@ func testAccAWSCodeDeployDeploymentGroup_triggerConfiguration_updateMultiple(rNa
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) string {
+func testAccAWSCodeDeployDeploymentGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCodeDeployDeploymentGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCodePipelineConfig_basic(rName string) string {
 func testAccAWSCodePipelineConfig_basicUpdated(rName string) string {
 func testAccAWSCodePipelineConfig_emptyStageArtifacts(rName string) string {
@@ -4324,13 +4328,16 @@ func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingEndpoint(rName string) s
 func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingSecuredEndpoint(rName string) string {
 func testAccAWSSNSTopicSubscriptionEmailConfig(rName string) string {
 func testAccAWSSNSTopicSubscriptionConfig_firehose(rName string) string {
-func testAccAWSSNSTopicConfig_withName(r string) string {
-func testAccAWSSNSTopicConfig_withNamePrefix() string {
+func testAccAWSSNSTopicConfigName(rName string) string {
+func testAccAWSSNSTopicConfigNameFIFOTopic(rName string) string {
+func testAccAWSSNSTopicConfigNamePrefix(prefix string) string {
+func testAccAWSSNSTopicConfigNamePrefixFIFOTopic(prefix string) string {
 func testAccAWSSNSTopicConfig_withIAMRole(r string) string {
 func testAccAWSSNSTopicConfig_withDeliveryPolicy(r string) string {
 func testAccAWSSNSTopicConfig_withFakeIAMRole(r string) string {
 func testAccAWSSNSTopicConfig_deliveryStatus(r string) string {
-func testAccAWSSNSTopicConfig_withEncryption(r string) string {
+func testAccAWSSNSTopicConfig_withEncryption(rName string) string {
+func testAccAWSSNSTopicConfigWithFIFOContentBasedDeduplication(r string, cbd bool) string {
 func testAccAWSSNSTopicConfigTags1(r, tag1Key, tag1Value string) string {
 func testAccAWSSNSTopicConfigTags2(r, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSSpotFleetRequestConfigBase(rName string) string {

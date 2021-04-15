@@ -1286,6 +1286,8 @@ func TestAccAWSCodeDeployDeploymentGroup_basic(
 func TestAccAWSCodeDeployDeploymentGroup_basic_tagSet(
 func TestAccAWSCodeDeployDeploymentGroup_onPremiseTag(
 func TestAccAWSCodeDeployDeploymentGroup_disappears(
+func TestAccAWSCodeDeployDeploymentGroup_disappears_app(
+func TestAccAWSCodeDeployDeploymentGroup_tags(
 func TestAccAWSCodeDeployDeploymentGroup_triggerConfiguration_basic(
 func TestAccAWSCodeDeployDeploymentGroup_triggerConfiguration_multiple(
 func TestAccAWSCodeDeployDeploymentGroup_autoRollbackConfiguration_create(
@@ -4067,8 +4069,6 @@ func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingEndpoint(
 func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingSecuredEndpoint(
 func testAccAWSSNSTopicSubscriptionConfig_firehose(
 func TestAccAWSSNSTopic_basic(
-func TestAccAWSSNSTopic_name(
-func TestAccAWSSNSTopic_namePrefix(
 func TestAccAWSSNSTopic_policy(
 func TestAccAWSSNSTopic_withIAMRole(
 func TestAccAWSSNSTopic_withFakeIAMRole(
@@ -4076,8 +4076,6 @@ func TestAccAWSSNSTopic_withDeliveryPolicy(
 func TestAccAWSSNSTopic_deliveryStatus(
 func TestAccAWSSNSTopic_encryption(
 func TestAccAWSSNSTopic_tags(
-func testAccAWSSNSTopicConfig_withName(
-func testAccAWSSNSTopicConfig_withNamePrefix(
 func testAccAWSSNSTopicConfig_withIAMRole(
 func testAccAWSSNSTopicConfig_withDeliveryPolicy(
 func testAccAWSSNSTopicConfig_withFakeIAMRole(

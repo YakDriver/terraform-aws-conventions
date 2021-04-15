@@ -796,7 +796,7 @@ func dataSourceAwsSignerSigningProfileRead(
 func dataSourceAwsSnsTopic(
 func dataSourceAwsSnsTopicsRead(
 func TestAccDataSourceAwsSnsTopic_basic(
-func testAccDataSourceAwsSnsTopicCheck(
+func testAccDataSourceAwsSnsTopicConfig(
 func dataSourceAwsSqsQueue(
 func dataSourceAwsSqsQueueRead(
 func TestAccDataSourceAwsSqsQueue_basic(
@@ -5566,6 +5566,7 @@ func resourceAwsSnsTopicCreate(
 func resourceAwsSnsTopicUpdate(
 func resourceAwsSnsTopicRead(
 func resourceAwsSnsTopicDelete(
+func resourceAwsSnsTopicCustomizeDiff(
 func updateAwsSnsTopicAttribute(
 func resourceAwsSnsTopicPolicy(
 func resourceAwsSnsTopicPolicyUpsert(

@@ -1116,7 +1116,7 @@ func dataSourceAwsSignerSigningProfileRead(
 func testAccDataSourceAWSSignerSigningProfileConfigBasic(
 func dataSourceAwsSnsTopic(
 func dataSourceAwsSnsTopicsRead(
-func testAccDataSourceAwsSnsTopicCheck(
+func testAccDataSourceAwsSnsTopicConfig(
 func dataSourceAwsSqsQueue(
 func dataSourceAwsSqsQueueRead(
 func testAccDataSourceAwsSqsQueueCheck(
@@ -4070,9 +4070,9 @@ func loadBalancerInfoHash(
 func testAccCheckCodeDeployDeploymentGroupTriggerEvents(
 func testAccCheckCodeDeployDeploymentGroupTriggerTargetArn(
 func testAccCheckAWSCodeDeployDeploymentGroupDestroy(
-func testAccAWSCodeDeployDeploymentGroupDisappears(
 func testAccCheckAWSCodeDeployDeploymentGroupExists(
 func testAccAWSCodeDeployDeploymentGroupImportStateIdFunc(
+func testAccAWSCodeDeployDeploymentGroupConfigBase(
 func testAccAWSCodeDeployDeploymentGroup(
 func testAccAWSCodeDeployDeploymentGroupModified(
 func testAccAWSCodeDeployDeploymentGroupOnPremiseTags(
@@ -4110,6 +4110,8 @@ func test_config_blue_green_deployment_complete_updated(
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(
+func testAccAWSCodeDeployDeploymentGroupConfigTags1(
+func testAccAWSCodeDeployDeploymentGroupConfigTags2(
 func resourceAwsCodePipeline(
 func resourceAwsCodePipelineCreate(
 func expandAwsCodePipeline(
@@ -8710,6 +8712,7 @@ func migrateAwsInstanceStateV0toV1(
 func readV0BlockDevices(
 func writeV1BlockDevice(
 func init(
+func testAccErrorCheckSkipEC2(
 func testSweepInstances(
 func testAccCheckInstanceNotRecreated(
 func testAccCheckInstanceRecreated(
@@ -13311,6 +13314,7 @@ func resourceAwsSnsTopicCreate(
 func resourceAwsSnsTopicUpdate(
 func resourceAwsSnsTopicRead(
 func resourceAwsSnsTopicDelete(
+func resourceAwsSnsTopicCustomizeDiff(
 func updateAwsSnsTopicAttribute(
 func resourceAwsSnsTopicPolicy(
 func resourceAwsSnsTopicPolicyUpsert(
@@ -13348,14 +13352,18 @@ func testAccCheckAWSNSTopicHasPolicy(
 func testAccCheckAWSNSTopicHasDeliveryPolicy(
 func testAccCheckAWSSNSTopicDestroy(
 func testAccCheckAWSSNSTopicExists(
-func testAccAWSSNSTopicConfig_withName(
-func testAccAWSSNSTopicConfig_withNamePrefix(
+func testAccAWSSNSTopicConfigName(
+func testAccAWSSNSTopicConfigNameFIFOTopic(
+func testAccAWSSNSTopicConfigNamePrefix(
+func testAccAWSSNSTopicConfigNamePrefixFIFOTopic(
 func testAccAWSSNSTopicWithPolicy(
 func testAccAWSSNSTopicConfig_withIAMRole(
 func testAccAWSSNSTopicConfig_withDeliveryPolicy(
 func testAccAWSSNSTopicConfig_withFakeIAMRole(
 func testAccAWSSNSTopicConfig_deliveryStatus(
 func testAccAWSSNSTopicConfig_withEncryption(
+func testAccAWSSNSTopicConfigWithFIFOContentBasedDeduplication(
+func testAccAWSSNSTopicExpectContentBasedDeduplicationError(
 func testAccAWSSNSTopicConfigTags1(
 func testAccAWSSNSTopicConfigTags2(
 func resourceAwsSpotDataFeedSubscription(

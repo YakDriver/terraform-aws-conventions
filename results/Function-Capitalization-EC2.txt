@@ -20,5 +20,6 @@ func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsEC2Automate(
 func buildEC2TagFilters(
 func buildEC2TagSet(
 func TestAccAWSEcsService_withLaunchTypeEC2AndNetworkConfiguration(
+func testAccErrorCheckSkipEC2(
 func validateEC2AutomateARN(
 func TestValidateEC2AutomateARN(

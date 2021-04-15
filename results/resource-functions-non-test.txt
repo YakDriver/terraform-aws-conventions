@@ -5327,6 +5327,7 @@ func resourceAwsSnsTopicCreate(
 func resourceAwsSnsTopicUpdate(
 func resourceAwsSnsTopicRead(
 func resourceAwsSnsTopicDelete(
+func resourceAwsSnsTopicCustomizeDiff(
 func updateAwsSnsTopicAttribute(
 func resourceAwsSnsTopicPolicy(
 func resourceAwsSnsTopicPolicyUpsert(

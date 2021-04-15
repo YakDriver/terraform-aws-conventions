@@ -262,6 +262,7 @@ func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(serviceName strin
 func testAccDataSourceAwsSfnStateMachineConfig(rName string) string {
 func testAccDataSourceAWSSignerSigningJobConfigBasic(rName string) string {
 func testAccDataSourceAWSSignerSigningProfileConfigBasic(profileName string) string {
+func testAccDataSourceAwsSnsTopicConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfig(rName string) string {
 func testAccDataSourceAwsSqsQueueConfigTags(rName string) string {
 func testAccCheckAwsSsmDocumentDataSourceConfig(name string, documentFormat string) string {
@@ -788,9 +789,12 @@ func testAccAWSCodeDeployDeploymentConfigFleet(rName string, value int) string {
 func testAccAWSCodeDeployDeploymentConfigHostCount(rName string, value int) string {
 func testAccAWSCodeDeployDeploymentConfigTrafficCanary(rName string, interval, percentage int) string {
 func testAccAWSCodeDeployDeploymentConfigTrafficLinear(rName string, interval, percentage int) string {
+func testAccAWSCodeDeployDeploymentGroupConfigBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBase(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreen(rName string) string {
 func testAccAWSCodeDeployDeploymentGroupConfigEcsBlueGreenUpdate(rName string) string {
+func testAccAWSCodeDeployDeploymentGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSCodeDeployDeploymentGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
 func testAccAWSCodePipelineConfigWithNamespace(rName string) string {
 func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2, githubToken string) string {
@@ -2522,6 +2526,11 @@ func testAccAWSSignerSigningProfileConfigSVP(namePrefix string) string {
 func testAccAWSSnapshotCreateVolumePermissionConfig(includeCreateVolumePermission bool, accountID string) string {
 func testAccAWSSNSTopicSubscriptionConfig(rName string) string {
 func testAccAWSSNSTopicSubscriptionEmailConfig(rName string) string {
+func testAccAWSSNSTopicConfigName(rName string) string {
+func testAccAWSSNSTopicConfigNameFIFOTopic(rName string) string {
+func testAccAWSSNSTopicConfigNamePrefix(prefix string) string {
+func testAccAWSSNSTopicConfigNamePrefixFIFOTopic(prefix string) string {
+func testAccAWSSNSTopicConfigWithFIFOContentBasedDeduplication(r string, cbd bool) string {
 func testAccAWSSNSTopicConfigTags1(r, tag1Key, tag1Value string) string {
 func testAccAWSSNSTopicConfigTags2(r, tag1Key, tag1Value, tag2Key, tag2Value string) string {
 func testAccAWSSpotFleetRequestConfigBase(rName string) string {
