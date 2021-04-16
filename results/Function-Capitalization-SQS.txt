@@ -6,8 +6,10 @@ func TestAccAWSSQSQueuePolicy_disappears(
 func testAccAWSSQSPolicyConfigBasic(
 func TestAccAWSSQSQueue_basic(
 func TestAccAWSSQSQueue_tags(
-func TestAccAWSSQSQueue_namePrefix(
-func TestAccAWSSQSQueue_namePrefix_fifo(
+func TestAccAWSSQSQueue_Name_Generated(
+func TestAccAWSSQSQueue_Name_Generated_FIFOQueue(
+func TestAccAWSSQSQueue_NamePrefix(
+func TestAccAWSSQSQueue_NamePrefix_FIFOQueue(
 func TestAccAWSSQSQueue_policy(
 func TestAccAWSSQSQueue_queueDeletedRecently(
 func TestAccAWSSQSQueue_redrivePolicy(
@@ -23,8 +25,8 @@ func testAccCheckAWSSQSQueueExists(
 func testAccCheckAWSSQSQueueDefaultAttributes(
 func testAccCheckAWSSQSQueueOverrideAttributes(
 func testAccAWSSQSConfigWithDefaults(
-func testAccAWSSQSConfigWithNamePrefix(
-func testAccAWSSQSFifoConfigWithNamePrefix(
+func testAccAWSSQSQueueConfigNamePrefix(
+func testAccAWSSQSQueueConfigNamePrefixFIFOQueue(
 func testAccAWSSQSConfigWithOverrides(
 func testAccAWSSQSConfigWithRedrive(
 func testAccAWSSQSConfig_PolicyFormat(
@@ -34,8 +36,3 @@ func testAccAWSSQSConfigWithFIFOExpectError(
 func testAccAWSSQSConfigWithEncryption(
 func testAccAWSSQSConfigWithTags(
 func testAccAWSSQSConfigWithTagsChanged(
-func validateSQSQueueName(
-func validateSQSNonFifoQueueName(
-func validateSQSFifoQueueName(
-func TestValidateSQSQueueName(
-func TestValidateSQSFifoQueueName(

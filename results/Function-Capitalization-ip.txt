@@ -377,8 +377,7 @@ func resourceAwsEipUpdate(
 func resourceAwsEipDelete(
 func resourceAwsEipDomain(
 func disassociateEip(
-func testSweepEc2Eips(
-func TestAccAWSEIP_associated_user_private_ip(
+func testSweepEC2Eips(
 func testAccAWSEksFargateProfileConfigFargateProfileMultiple(
 func TestAccAWSEksNodeGroup_InstanceTypes_Multiple(
 func testAccErrorCheckSkipEKS(
@@ -423,6 +422,7 @@ func testAccAwsElasticTranscoderPresetConfigDescription(
 func flattenEmrAutoScalingPolicyDescription(
 func TestAccAWSEMRCluster_Step_Multiple(
 func testAccAWSEmrClusterConfig_Step_Multiple(
+func testAccAWSEmrClusterConfig_InstanceFleet_MultipleSubnets(
 func testAccErrorCheckSkipEmrManagedScalingPolicy(
 func flattenGlobalAcceleratorEndpointDescriptions(
 func expandGlueStorageDescriptor(
@@ -899,6 +899,9 @@ func TestAccAWSSecurityGroup_ipv4andipv6Egress(
 func testAccAWSSecurityGroupConfigRuleDescription(
 func testAccAwsSecurityHubActionTarget_Description(
 func testAccAwsSecurityHubActionTargetConfigDescription(
+func ipFilterSchema(
+func testAccAwsSecurityHubInsight_MultipleFilters(
+func testAccAwsSecurityHubInsightConfig_MultipleFilters(
 func resourceAwsSecurityHubProductSubscription(
 func resourceAwsSecurityHubProductSubscriptionCreate(
 func resourceAwsSecurityHubProductSubscriptionRead(

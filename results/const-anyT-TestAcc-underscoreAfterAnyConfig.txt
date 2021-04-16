@@ -73,7 +73,6 @@ const testAccAWSDocDBClusterParameterGroupConfig_generatedName =
 const testAccAwsEbsDefaultKmsKeyConfig_basic =
 const testAccAWSEgressOnlyInternetGatewayConfig_basic =
 const testAccAWSEIPAssociationConfig_networkInterface =
-const testAccAWSEIPConfig_PublicIpv4Pool_default =
 const testAccAWSELBConfig_AvailabilityZonesUpdate =
 const testAccAWSELBConfigHealthCheck_update =
 const testAccAWSELBConfigListener_update =

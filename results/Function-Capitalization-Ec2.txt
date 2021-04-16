@@ -706,13 +706,6 @@ func getEc2EgressOnlyInternetGateway(
 func testSweepEc2EgressOnlyInternetGateways(
 func testAccCheckAWSEIPAssociationEc2ClassicExists(
 func waitForEc2AddressAssociationClassic(
-func testSweepEc2Eips(
-func TestAccAWSEIP_Ec2Classic(
-func TestAccAWSEIP_tags_Ec2Classic(
-func testAccCheckAWSEIPEc2ClassicExists(
-func testAccCheckAWSEIPPublicDNSEc2Classic(
-func testAccAWSEIPConfig_tags_Ec2Classic(
-func testAccAWSEIPInstanceEc2Classic(
 func TestAccAWSEksNodeGroup_RemoteAccess_Ec2SshKey(
 func testAccAWSEksNodeGroupConfigRemoteAccessEc2SshKey(
 func TestAccAWSElasticacheCluster_SecurityGroup_Ec2Classic(

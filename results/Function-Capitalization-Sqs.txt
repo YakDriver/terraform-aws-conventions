@@ -19,6 +19,7 @@ func resourceAwsSqsQueueCreate(
 func resourceAwsSqsQueueUpdate(
 func resourceAwsSqsQueueRead(
 func resourceAwsSqsQueueDelete(
+func resourceAwsSqsQueueCustomizeDiff(
 func extractNameFromSqsQueueUrl(
 func resourceAwsSqsQueuePolicy(
 func resourceAwsSqsQueuePolicyUpsert(

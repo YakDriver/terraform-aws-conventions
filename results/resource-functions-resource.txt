@@ -1307,6 +1307,7 @@ func resourceAwsEcrRegistryPolicyDelete(
 func resourceAwsEcrReplicationConfiguration(
 func resourceAwsEcrReplicationConfigurationPut(
 func resourceAwsEcrReplicationConfigurationRead(
+func resourceAwsEcrReplicationConfigurationDelete(
 func resourceAwsEcrRepository(
 func resourceAwsEcrRepositoryCreate(
 func resourceAwsEcrRepositoryRead(
@@ -2655,6 +2656,11 @@ func resourceAwsRoute53ResolverEndpointCreate(
 func resourceAwsRoute53ResolverEndpointRead(
 func resourceAwsRoute53ResolverEndpointUpdate(
 func resourceAwsRoute53ResolverEndpointDelete(
+func resourceAwsRoute53ResolverFirewallDomainList(
+func resourceAwsRoute53ResolverFirewallDomainListCreate(
+func resourceAwsRoute53ResolverFirewallDomainListRead(
+func resourceAwsRoute53ResolverFirewallDomainListUpdate(
+func resourceAwsRoute53ResolverFirewallDomainListDelete(
 func resourceAwsRoute53ResolverFirewallRuleGroup(
 func resourceAwsRoute53ResolverFirewallRuleGroupCreate(
 func resourceAwsRoute53ResolverFirewallRuleGroupRead(
@@ -2930,6 +2936,11 @@ func resourceAwsSecurityHubActionTargetRead(
 func resourceAwsSecurityHubActionTargetUpdate(
 func resourceAwsSecurityHubActionTargetCheckExists(
 func resourceAwsSecurityHubActionTargetDelete(
+func resourceAwsSecurityHubInsight(
+func resourceAwsSecurityHubInsightCreate(
+func resourceAwsSecurityHubInsightRead(
+func resourceAwsSecurityHubInsightUpdate(
+func resourceAwsSecurityHubInsightDelete(
 func resourceAwsSecurityHubInviteAccepter(
 func resourceAwsSecurityHubInviteAccepterCreate(
 func resourceAwsSecurityHubInviteAccepterGetInvitationId(
@@ -3135,6 +3146,7 @@ func resourceAwsSqsQueueCreate(
 func resourceAwsSqsQueueUpdate(
 func resourceAwsSqsQueueRead(
 func resourceAwsSqsQueueDelete(
+func resourceAwsSqsQueueCustomizeDiff(
 func resourceAwsSqsQueuePolicy(
 func resourceAwsSqsQueuePolicyUpsert(
 func resourceAwsSqsQueuePolicyRead(

@@ -5,4 +5,4 @@ func testAccEc2ClientVpnEndpointConfigWithDNSServers(
 func testAccTrafficMirrorFilterConfigWithoutDNS(
 func testAccCheckAWSEIPPrivateDNS(
 func testAccCheckAWSEIPPublicDNS(
-func testAccCheckAWSEIPPublicDNSEc2Classic(
+func testAccCheckAWSEIPPublicDNSEC2Classic(

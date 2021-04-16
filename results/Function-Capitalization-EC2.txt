@@ -20,6 +20,15 @@ func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsEC2Automate(
 func buildEC2TagFilters(
 func buildEC2TagSet(
 func TestAccAWSEcsService_withLaunchTypeEC2AndNetworkConfiguration(
+func testSweepEC2Eips(
+func TestAccAWSEIP_Tags_EC2VPC_withVPCTrue(
+func TestAccAWSEIP_Tags_EC2VPC_withoutVPCTrue(
+func TestAccAWSEIP_Tags_EC2Classic_withVPCTrue(
+func TestAccAWSEIP_Tags_EC2Classic_withoutVPCTrue(
+func testAccCheckAWSEIPPublicDNSEC2Classic(
+func testAccEIPTagsEC2VPCConfig(
+func testAccEIPTagsEC2ClassicConfig(
+func testAccEIPInstanceEC2ClassicConfig(
 func testAccErrorCheckSkipEC2(
 func validateEC2AutomateARN(
 func TestValidateEC2AutomateARN(

@@ -1,3 +1,4 @@
+func flattenCloudfrontKGKeyPairIds(
 func amiRootSnapshotId(
 func dataSourceAwsAmiIds(
 func dataSourceAwsAmiIdsRead(

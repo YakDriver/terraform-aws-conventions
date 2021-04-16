@@ -37,11 +37,6 @@ func TestAccAWSEFSMountTarget_IpAddress(
 func TestAccAWSEFSMountTarget_IpAddress_EmptyString(
 func testAccAWSEFSMountTargetConfigIpAddress(
 func testAccCheckAWSEIPAssociationHasIpBasedId(
-func TestAccAWSEIP_PublicIpv4Pool_default(
-func TestAccAWSEIP_PublicIpv4Pool_custom(
-func TestAccAWSEIP_CustomerOwnedIpv4Pool(
-func testAccAWSEIPConfig_PublicIpv4Pool_custom(
-func testAccAWSEIPConfigCustomerOwnedIpv4Pool(
 func TestAccAWSEksCluster_NetworkConfig_ServiceIpv4Cidr(
 func testAccAWSEksClusterConfig_NetworkConfig_ServiceIpv4Cidr(
 func expandGameliftIpPermissions(
@@ -145,6 +140,10 @@ func testAccAWSRouteConfigIpv4CarrierGateway(
 func TestIpPermissionIDHash(
 func TestAccAWSSecurityGroupRule_Ingress_Ipv6(
 func cycleIpPermForGroup(
+func expandSecurityHubIpFilters(
+func flattenSecurityHubIpFilters(
+func testAccAwsSecurityHubInsight_IpFilters(
+func testAccAwsSecurityHubInsightConfig_IpFilters(
 func TestAccAWSSpotFleetRequest_associatePublicIpAddress(
 func testAccAWSSpotFleetRequestConfigAssociatePublicIpAddress(
 func TestAccAWSSpotInstanceRequest_SubnetAndSGAndPublicIpAddress(

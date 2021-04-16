@@ -26,6 +26,7 @@ func ec2AvailabilityZoneGroupOptInStatusRefreshFunc(
 func ec2FleetRefreshFunc(
 func TestAccAWSEIPAssociation_ec2Classic(
 func testAccAWSEIPAssociationConfig_ec2Classic(
+func TestAccAWSEIP_Instance_ec2Classic(
 func ec2TagsFromTagDescriptions(
 func ec2TagSpecificationsFromMap(
 func ec2TagSpecificationsFromKeyValueTags(
