@@ -2303,6 +2303,7 @@ func TestAccAWSUser_ForceDestroy_MFADevice(
 func TestAccAWSUser_ForceDestroy_SSHKey(
 func testAccCheckAWSUserCreatesMFADevice(
 func testAccCheckAWSUserUploadsSSHKey(
+func resourceAwsInstanceDisableAPITermination(
 func expandSecondaryPrivateIPAddresses(
 func resourceAwsInstanceFindByID(
 func testAccErrorCheckSkipEC2(

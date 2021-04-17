@@ -196,6 +196,7 @@ func checkIAMPwdPolicy(
 func resourceAWSInspectorAssessmentTarget(
 func resourceAWSInspectorAssessmentTemplate(
 func resourceAWSInspectorResourceGroup(
+func resourceAwsInstanceDisableAPITermination(
 func expandSecondaryPrivateIPAddresses(
 func resourceAwsInstanceFindByID(
 func detachIGStateRefreshFunc(

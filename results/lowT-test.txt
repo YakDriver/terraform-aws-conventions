@@ -276,6 +276,9 @@ func testAccDataSourceAwsKmsAlias_name(
 func testAccDataSourceAwsKmsAlias_CMK(
 func testAccDataSourceAwsKmsKeyCheck(
 func testAccDataSourceAwsKmsKeyConfig(
+func testAccDataSourceAwsKmsPublicKeyCheck(
+func testAccDataSourceAwsKmsPublicKeyConfig(
+func testAccDataSourceAwsKmsPublicKeyEncryptConfig(
 func testAccDataSourceAwsKmsSecretsEncrypt(
 func testAccDataSourceAwsKmsSecretsDecrypt(
 func testAccCheckAwsKmsSecretsDataSourceSecret(

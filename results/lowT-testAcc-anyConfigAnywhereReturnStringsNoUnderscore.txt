@@ -161,6 +161,8 @@ func testAccAWSKinesisStreamConsumerDataSourceConfig(rName string) string {
 func testAccAWSKinesisStreamConsumerDataSourceConfigName(rName string) string {
 func testAccAWSKinesisStreamConsumerDataSourceConfigArn(rName string) string {
 func testAccDataSourceAwsKmsKeyConfig(rName string) string {
+func testAccDataSourceAwsKmsPublicKeyConfig(rName string) string {
+func testAccDataSourceAwsKmsPublicKeyEncryptConfig(rName string) string {
 func testAccDataSourceAWSLambdaAliasConfigBase(rName string) string {
 func testAccDataSourceAWSLambdaAliasConfigBasic(rName string) string {
 func testAccDataSourceAWSLambdaFunctionConfigBase(rName string) string {

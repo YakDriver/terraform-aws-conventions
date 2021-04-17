@@ -1319,6 +1319,7 @@ func buildNetworkInterfaceOpts(
 func readBlockDeviceMappingsFromConfig(
 func readVolumeTags(
 func readSecurityGroups(
+func readInstanceShutdownBehavior(
 func getAwsEc2InstancePasswordData(
 func buildAwsInstanceOpts(
 func awsTerminateInstance(

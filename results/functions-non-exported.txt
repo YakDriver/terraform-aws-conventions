@@ -726,6 +726,11 @@ func dataSourceAwsKmsKey(
 func dataSourceAwsKmsKeyRead(
 func testAccDataSourceAwsKmsKeyCheck(
 func testAccDataSourceAwsKmsKeyConfig(
+func dataSourceAwsKmsPublicKey(
+func dataSourceAwsKmsPublicKeyRead(
+func testAccDataSourceAwsKmsPublicKeyCheck(
+func testAccDataSourceAwsKmsPublicKeyConfig(
+func testAccDataSourceAwsKmsPublicKeyEncryptConfig(
 func dataSourceAwsKmsSecret(
 func dataSourceAwsKmsSecrets(
 func dataSourceAwsKmsSecretsRead(
@@ -8694,6 +8699,7 @@ func resourceAwsInstanceCreate(
 func resourceAwsInstanceRead(
 func resourceAwsInstanceUpdate(
 func resourceAwsInstanceDelete(
+func resourceAwsInstanceDisableAPITermination(
 func stringifyStateReason(
 func readBlockDevices(
 func associateInstanceProfile(
@@ -8705,6 +8711,7 @@ func buildNetworkInterfaceOpts(
 func readBlockDeviceMappingsFromConfig(
 func readVolumeTags(
 func readSecurityGroups(
+func readInstanceShutdownBehavior(
 func getAwsEc2InstancePasswordData(
 func buildAwsInstanceOpts(
 func awsTerminateInstance(

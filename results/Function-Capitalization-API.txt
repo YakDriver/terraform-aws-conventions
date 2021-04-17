@@ -607,5 +607,6 @@ func testAccAPIGatewayVpcLinkConfig_Update(
 func TestAccAWSAppsyncGraphqlApi_AuthenticationType_APIKey(
 func TestAccAWSAppsyncGraphqlApi_AdditionalAuthentication_APIKey(
 func testAccCheckCloudFrontDistributionExistsAPIOnly(
+func resourceAwsInstanceDisableAPITermination(
 func testAccInstanceConfigDisableAPITermination(
 func getRegexMatchTuplesFromAPIResource(

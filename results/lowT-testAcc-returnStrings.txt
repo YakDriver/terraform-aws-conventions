@@ -227,6 +227,8 @@ func testAccAWSKinesisStreamConsumerDataSourceConfigArn(rName string) string {
 func testAccDataSourceAwsKmsAlias_name(name string) string {
 func testAccDataSourceAwsKmsAlias_CMK(rInt int) string {
 func testAccDataSourceAwsKmsKeyConfig(rName string) string {
+func testAccDataSourceAwsKmsPublicKeyConfig(rName string) string {
+func testAccDataSourceAwsKmsPublicKeyEncryptConfig(rName string) string {
 func testAccCheckAwsKmsSecretsDataSourceSecret(payload string) string {
 func testAccAWSLakeFormationPermissionsDataSourceConfig_basic(rName string) string {
 func testAccAWSLakeFormationPermissionsDataSourceConfig_dataLocation(rName string) string {

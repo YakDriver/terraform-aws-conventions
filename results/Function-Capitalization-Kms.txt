@@ -21,6 +21,13 @@ func dataSourceAwsKmsKeyRead(
 func TestAccDataSourceAwsKmsKey_basic(
 func testAccDataSourceAwsKmsKeyCheck(
 func testAccDataSourceAwsKmsKeyConfig(
+func dataSourceAwsKmsPublicKey(
+func dataSourceAwsKmsPublicKeyRead(
+func TestAccDataSourceAwsKmsPublicKey_basic(
+func TestAccDataSourceAwsKmsPublicKey_encrypt(
+func testAccDataSourceAwsKmsPublicKeyCheck(
+func testAccDataSourceAwsKmsPublicKeyConfig(
+func testAccDataSourceAwsKmsPublicKeyEncryptConfig(
 func dataSourceAwsKmsSecret(
 func dataSourceAwsKmsSecrets(
 func dataSourceAwsKmsSecretsRead(

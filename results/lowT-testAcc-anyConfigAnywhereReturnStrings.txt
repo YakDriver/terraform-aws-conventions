@@ -216,6 +216,8 @@ func testAccAWSKinesisStreamConsumerDataSourceConfig(rName string) string {
 func testAccAWSKinesisStreamConsumerDataSourceConfigName(rName string) string {
 func testAccAWSKinesisStreamConsumerDataSourceConfigArn(rName string) string {
 func testAccDataSourceAwsKmsKeyConfig(rName string) string {
+func testAccDataSourceAwsKmsPublicKeyConfig(rName string) string {
+func testAccDataSourceAwsKmsPublicKeyEncryptConfig(rName string) string {
 func testAccAWSLakeFormationPermissionsDataSourceConfig_basic(rName string) string {
 func testAccAWSLakeFormationPermissionsDataSourceConfig_dataLocation(rName string) string {
 func testAccAWSLakeFormationPermissionsDataSourceConfig_database(rName string) string {

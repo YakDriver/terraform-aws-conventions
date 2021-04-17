@@ -3167,6 +3167,7 @@ func resourceAwsInstanceCreate(
 func resourceAwsInstanceRead(
 func resourceAwsInstanceUpdate(
 func resourceAwsInstanceDelete(
+func resourceAwsInstanceDisableAPITermination(
 func InstanceStateRefreshFunc(
 func MetadataOptionsRefreshFunc(
 func RootBlockDeviceDeleteOnTerminationRefreshFunc(
@@ -3182,6 +3183,7 @@ func buildNetworkInterfaceOpts(
 func readBlockDeviceMappingsFromConfig(
 func readVolumeTags(
 func readSecurityGroups(
+func readInstanceShutdownBehavior(
 func getAwsEc2InstancePasswordData(
 func buildAwsInstanceOpts(
 func awsTerminateInstance(

@@ -5647,6 +5647,7 @@ func resourceAWSInspectorResourceGroup(
 func TestAccAWSInspectorResourceGroup_basic(
 func testAccCheckAWSInspectorResourceGroupExists(
 func testAccCheckAWSInspectorResourceGroupRecreated(
+func resourceAwsInstanceDisableAPITermination(
 func expandSecondaryPrivateIPAddresses(
 func resourceAwsInstanceFindByID(
 func TestAWSInstanceMigrateState(

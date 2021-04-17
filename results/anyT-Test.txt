@@ -627,6 +627,11 @@ func TestAccDataSourceAwsKmsCiphertext_validate_withContext(
 func TestAccDataSourceAwsKmsKey_basic(
 func testAccDataSourceAwsKmsKeyCheck(
 func testAccDataSourceAwsKmsKeyConfig(
+func TestAccDataSourceAwsKmsPublicKey_basic(
+func TestAccDataSourceAwsKmsPublicKey_encrypt(
+func testAccDataSourceAwsKmsPublicKeyCheck(
+func testAccDataSourceAwsKmsPublicKeyConfig(
+func testAccDataSourceAwsKmsPublicKeyEncryptConfig(
 func TestAccAWSKmsSecretsDataSource_basic(
 func testAccDataSourceAwsKmsSecretsEncrypt(
 func testAccDataSourceAwsKmsSecretsDecrypt(

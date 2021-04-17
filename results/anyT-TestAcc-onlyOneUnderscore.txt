@@ -323,6 +323,8 @@ func testAccDataSourceAwsKmsAlias_CMK(
 func TestAccDataSourceAwsKmsCiphertext_basic(
 func TestAccDataSourceAwsKmsCiphertext_validate(
 func TestAccDataSourceAwsKmsKey_basic(
+func TestAccDataSourceAwsKmsPublicKey_basic(
+func TestAccDataSourceAwsKmsPublicKey_encrypt(
 func TestAccAWSKmsSecretsDataSource_basic(
 func TestAccAWSKmsSecretDataSource_removed(
 func testAccAWSLakeFormationDataLakeSettingsDataSource_basic(

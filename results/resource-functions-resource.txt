@@ -1886,6 +1886,7 @@ func resourceAwsInstanceCreate(
 func resourceAwsInstanceRead(
 func resourceAwsInstanceUpdate(
 func resourceAwsInstanceDelete(
+func resourceAwsInstanceDisableAPITermination(
 func resourceAwsInstanceFindByID(
 func resourceAwsInstanceFind(
 func resourceAwsInstanceMigrateState(

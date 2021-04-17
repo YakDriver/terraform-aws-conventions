@@ -81,6 +81,7 @@ func resourceAwsIAMServerCertificateImport(
 func resourceAWSInspectorAssessmentTarget(
 func resourceAWSInspectorAssessmentTemplate(
 func resourceAWSInspectorResourceGroup(
+func resourceAwsInstanceDisableAPITermination(
 func resourceAwsInstanceFindByID(
 func resourceAwsLBCookieStickinessPolicy(
 func resourceAwsLBCookieStickinessPolicyCreate(
