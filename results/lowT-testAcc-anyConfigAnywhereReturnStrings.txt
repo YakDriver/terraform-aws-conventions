@@ -1094,6 +1094,8 @@ func testAccAWSBatchComputeEnvironmentConfigTags2(rInt int, tagKey1, tagValue1, 
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvanced(rName string) string {
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvancedUpdate(rName string) string {
 func testAccBatchJobDefinitionConfigName(rName string) string {
+func testAccBatchJobDefinitionConfigCapabilitiesEC2(rName string) string {
+func testAccBatchJobDefinitionConfigCapabilitiesFargate(rName string) string {
 func testAccBatchJobDefinitionConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccBatchJobDefinitionConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccBatchJobQueueConfigBase(rName string) string {
@@ -1646,6 +1648,7 @@ func testAccAWSDataSyncTaskConfigCloudWatchLogGroupArn(rName string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsAtimeMtime(rName, atime, mtime string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsBytesPerSecond(rName string, bytesPerSecond int) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsGid(rName, gid string) string {
+func testAccAWSDataSyncTaskConfigDefaultSyncOptionsLogLevel(rName, logLevel string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsPosixPermissions(rName, posixPermissions string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsPreserveDeletedFiles(rName, preserveDeletedFiles string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsPreserveDevices(rName, preserveDevices string) string {
@@ -3787,6 +3790,7 @@ func testAccAWSRdsGlobalClusterConfigDatabaseName(rName, databaseName string) st
 func testAccAWSRdsGlobalClusterConfigDeletionProtection(rName string, deletionProtection bool) string {
 func testAccAWSRdsGlobalClusterConfigEngine(rName, engine string) string {
 func testAccAWSRdsGlobalClusterConfigEngineVersion(rName, engine, engineVersion string) string {
+func testAccAWSRdsGlobalClusterWithPrimaryConfigEngineVersion(rName, engine, engineVersion string) string {
 func testAccAWSRdsGlobalClusterConfigSourceDbClusterIdentifier(rName string) string {
 func testAccAWSRdsGlobalClusterConfigSourceDbClusterIdentifierStorageEncrypted(rName string) string {
 func testAccAWSRdsGlobalClusterConfigStorageEncrypted(rName string, storageEncrypted bool) string {

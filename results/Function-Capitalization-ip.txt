@@ -996,7 +996,6 @@ func TestAccAWSSNSTopicSubscription_email(
 func TestAccAWSSNSTopicSubscription_firehose(
 func TestAccAWSSNSTopicSubscription_disappears(
 func TestAccAWSSNSTopicSubscription_disappears_topic(
-func testAccErrorCheckSkipSNS(
 func testAccCheckAWSSNSTopicSubscriptionDestroy(
 func testAccCheckAWSSNSTopicSubscriptionExists(
 func testAccCheckAWSSNSTopicSubscriptionDeliveryPolicyAttribute(
@@ -1010,6 +1009,7 @@ func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingEndpoint(
 func testAccAWSSNSTopicSubscriptionConfig_autoConfirmingSecuredEndpoint(
 func testAccAWSSNSTopicSubscriptionEmailConfig(
 func testAccAWSSNSTopicSubscriptionConfig_firehose(
+func testAccErrorCheckSkipSNS(
 func resourceAwsSpotDataFeedSubscription(
 func resourceAwsSpotDataFeedSubscriptionCreate(
 func resourceAwsSpotDataFeedSubscriptionRead(

@@ -2561,7 +2561,11 @@ func resourceAwsRDSGlobalCluster(
 func resourceAwsRDSGlobalClusterCreate(
 func resourceAwsRDSGlobalClusterRead(
 func resourceAwsRDSGlobalClusterUpdate(
+func resourceAwsRDSGlobalClusterGetIdByArn(
 func resourceAwsRDSGlobalClusterDelete(
+func resourceAwsRDSGlobalClusterUpgradeMajorEngineVersion(
+func resourceAwsRDSGlobalClusterUpgradeMinorEngineVersion(
+func resourceAwsRDSGlobalClusterUpgradeEngineVersion(
 func resourceAwsRedshiftCluster(
 func resourceAwsRedshiftClusterImport(
 func resourceAwsRedshiftClusterCreate(

@@ -158,4 +158,8 @@ func resourceAwsRDSGlobalCluster(
 func resourceAwsRDSGlobalClusterCreate(
 func resourceAwsRDSGlobalClusterRead(
 func resourceAwsRDSGlobalClusterUpdate(
+func resourceAwsRDSGlobalClusterGetIdByArn(
 func resourceAwsRDSGlobalClusterDelete(
+func resourceAwsRDSGlobalClusterUpgradeMajorEngineVersion(
+func resourceAwsRDSGlobalClusterUpgradeMinorEngineVersion(
+func resourceAwsRDSGlobalClusterUpgradeEngineVersion(

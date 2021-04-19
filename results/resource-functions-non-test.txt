@@ -656,13 +656,16 @@ func resourceAwsBatchJobDefinitionCreate(
 func resourceAwsBatchJobDefinitionRead(
 func resourceAwsBatchJobDefinitionUpdate(
 func resourceAwsBatchJobDefinitionDelete(
-func getJobDefinition(
 func validateAwsBatchJobContainerProperties(
 func expandBatchJobContainerProperties(
 func flattenBatchContainerProperties(
 func expandJobDefinitionParameters(
-func expandJobDefinitionRetryStrategy(
-func flattenBatchRetryStrategy(
+func expandRetryStrategy(
+func expandEvaluateOnExit(
+func expandEvaluateOnExits(
+func flattenRetryStrategy(
+func flattenEvaluateOnExit(
+func flattenEvaluateOnExits(
 func expandJobDefinitionTimeout(
 func flattenBatchJobTimeout(
 func init(
@@ -4485,6 +4488,7 @@ func resourceAwsRDSGlobalCluster(
 func resourceAwsRDSGlobalClusterCreate(
 func resourceAwsRDSGlobalClusterRead(
 func resourceAwsRDSGlobalClusterUpdate(
+func resourceAwsRDSGlobalClusterGetIdByArn(
 func resourceAwsRDSGlobalClusterDelete(
 func flattenRdsGlobalClusterMembers(
 func rdsDescribeGlobalCluster(
@@ -4494,6 +4498,9 @@ func waitForRdsGlobalClusterCreation(
 func waitForRdsGlobalClusterUpdate(
 func waitForRdsGlobalClusterDeletion(
 func waitForRdsGlobalClusterRemoval(
+func resourceAwsRDSGlobalClusterUpgradeMajorEngineVersion(
+func resourceAwsRDSGlobalClusterUpgradeMinorEngineVersion(
+func resourceAwsRDSGlobalClusterUpgradeEngineVersion(
 func init(
 func resourceAwsRedshiftCluster(
 func resourceAwsRedshiftClusterImport(
