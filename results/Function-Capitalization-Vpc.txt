@@ -368,6 +368,8 @@ func flattenSageMakerVpcConfigResponse(
 func testAccSagemakerModelVpcConfig(
 func TestAccAWSStorageGatewayGateway_GatewayVpcEndpoint(
 func testAccAWSStorageGatewayGatewayConfig_GatewayVpcEndpoint(
+func testAccSubnetConfig_tagsComputedFromVpcDataSource1(
+func testAccSubnetConfig_tagsComputedFromVpcDataSource2(
 func flattenAwsSyntheticsCanaryVpcConfig(
 func expandAwsSyntheticsCanaryVpcConfig(
 func TestAccAWSTransferServer_Vpc(

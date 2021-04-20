@@ -1467,6 +1467,10 @@ func testAccAWSCloudFormationStackConfig_defaultParams(
 func testAccAWSCloudFormationStackConfig_allAttributesWithBodies(
 func testAccAWSCloudFormationStackConfig_withParams(
 func testAccAWSCloudFormationStackConfig_withTransform(
+func TestAccAwsCloudformationType_basic(
+func TestAccAwsCloudformationType_disappears(
+func TestAccAwsCloudformationType_ExecutionRoleArn(
+func TestAccAwsCloudformationType_LoggingConfig(
 func TestAccAWSCloudFrontCachePolicy_basic(
 func TestAccAWSCloudFrontCachePolicy_update(
 func TestAccAWSCloudFrontCachePolicy_noneBehavior(
@@ -5389,6 +5393,7 @@ func testAccAWSStorageGatewayWorkingStorageConfig_Basic(
 func TestAccAWSSubnet_basic(
 func TestAccAWSSubnet_tags(
 func TestAccAWSSubnet_defaultAndIgnoreTags(
+func TestAccAWSSubnet_updateTagsKnownAtApply(
 func TestAccAWSSubnet_ignoreTags(
 func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
@@ -5398,6 +5403,8 @@ func TestAccAWSSubnet_CustomerOwnedIpv4Pool(
 func TestAccAWSSubnet_MapCustomerOwnedIpOnLaunch(
 func TestAccAWSSubnet_MapPublicIpOnLaunch(
 func TestAccAWSSubnet_outpost(
+func testAccSubnetConfig_tagsComputedFromVpcDataSource1(
+func testAccSubnetConfig_tagsComputedFromVpcDataSource2(
 func TestAccAWSSwfDomain_basic(
 func TestAccAWSSwfDomain_tags(
 func TestAccAWSSwfDomain_NamePrefix(

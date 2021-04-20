@@ -456,6 +456,10 @@ func resourceAwsCloudFormationStackSetInstanceRead(
 func resourceAwsCloudFormationStackSetInstanceUpdate(
 func resourceAwsCloudFormationStackSetInstanceDelete(
 func resourceAwsCloudFormationStackSetInstanceParseId(
+func resourceAwsCloudFormationType(
+func resourceAwsCloudFormationTypeCreate(
+func resourceAwsCloudFormationTypeRead(
+func resourceAwsCloudFormationTypeDelete(
 func resourceAwsCloudFrontCachePolicy(
 func resourceAwsCloudFrontCachePolicyCreate(
 func resourceAwsCloudFrontCachePolicyRead(

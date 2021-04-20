@@ -390,6 +390,7 @@ const testAccAWSSNSTopicConfigNameGeneratedFIFOTopic =
 const testAccAWSSQSQueueConfigNameGenerated =
 const testAccAWSSQSQueueConfigNameGeneratedFIFOQueue =
 const testAccSubnetConfig =
+const testAccSubnetComputedTagsBaseConfig =
 const testAccSubnetConfigPreIpv6 =
 const testAccSubnetConfigIpv6 =
 const testAccSubnetConfigIpv6UpdateAssignIpv6OnCreation =

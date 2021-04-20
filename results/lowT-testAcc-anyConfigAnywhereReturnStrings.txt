@@ -46,6 +46,11 @@ func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
 func testAccCheckAwsCloudformationExportConfigResourceReference(rName string) string {
 func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(stackName string) string {
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(stackName string) string {
+func testAccCloudformationTypeConfigPrivateBase(rName string, zipPath string, typeName string) string {
+func testAccAwsCloudformationTypeDataSourceConfigArnPrivate(rName string, zipPath string, typeName string) string {
+func testAccAwsCloudformationTypeDataSourceConfigArnPublic() string {
+func testAccAwsCloudformationTypeDataSourceConfigTypeNamePrivate(rName string, zipPath string, typeName string) string {
+func testAccAwsCloudformationTypeDataSourceConfigTypeNamePublic() string {
 func testAccAWSCloudFrontCachePolicyDataSourceNameConfig(rInt int) string {
 func testAccAWSCloudFrontDistributionDataConfig(rInt int) string {
 func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(rInt int) string {
@@ -1146,6 +1151,10 @@ func testAccAWSCloudFormationStackConfig_withParams(stackName, cidr string) stri
 func testAccAWSCloudFormationStackConfig_templateUrl_withParams(rName, bucketKey, vpcCidr string) string {
 func testAccAWSCloudFormationStackConfig_templateUrl_withParams_withYaml(rName, bucketKey, vpcCidr string) string {
 func testAccAWSCloudFormationStackConfig_withTransform(rName string) string {
+func testAccCloudformationTypeConfigBase(rName string, zipPath string) string {
+func testAccCloudformationTypeConfigExecutionRoleArn(rName string, zipPath string, typeName string) string {
+func testAccCloudformationTypeConfigLoggingConfig(rName string, zipPath string, typeName string) string {
+func testAccCloudformationTypeConfigTypeName(rName string, zipPath string, typeName string) string {
 func testAccAWSCloudFrontCachePolicyConfig(rInt int) string {
 func testAccAWSCloudFrontCachePolicyConfigUpdate(rInt int) string {
 func testAccAWSCloudFrontCachePolicyConfigNoneBehavior(rInt int) string {
@@ -4619,6 +4628,8 @@ func testAccAWSStorageGatewayUploadBufferConfigDiskPath(rName string) string {
 func testAccAWSStorageGatewayWorkingStorageConfig_Basic(rName string) string {
 func testAccSubnetTagsConfig1(rName, tagKey1, tagValue1 string) string {
 func testAccSubnetTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccSubnetConfig_tagsComputedFromVpcDataSource1(tagKey1, tagValue1 string) string {
+func testAccSubnetConfig_tagsComputedFromVpcDataSource2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSubnetConfigAvailabilityZoneId() string {
 func testAccSubnetConfigCustomerOwnedIpv4Pool() string {
 func testAccSubnetConfigMapCustomerOwnedIpOnLaunch(mapCustomerOwnedIpOnLaunch bool) string {

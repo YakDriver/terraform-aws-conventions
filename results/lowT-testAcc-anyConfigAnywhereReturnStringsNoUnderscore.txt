@@ -37,6 +37,11 @@ func testAccDataSourceAwsBatchComputeEnvironmentConfig(rName string) string {
 func testAccDataSourceAwsBatchJobQueueConfig(rName string) string {
 func testAccCheckAwsCloudformationExportConfigStaticValue(rName string) string {
 func testAccCheckAwsCloudformationExportConfigResourceReference(rName string) string {
+func testAccCloudformationTypeConfigPrivateBase(rName string, zipPath string, typeName string) string {
+func testAccAwsCloudformationTypeDataSourceConfigArnPrivate(rName string, zipPath string, typeName string) string {
+func testAccAwsCloudformationTypeDataSourceConfigArnPublic() string {
+func testAccAwsCloudformationTypeDataSourceConfigTypeNamePrivate(rName string, zipPath string, typeName string) string {
+func testAccAwsCloudformationTypeDataSourceConfigTypeNamePublic() string {
 func testAccAWSCloudFrontCachePolicyDataSourceNameConfig(rInt int) string {
 func testAccAWSCloudFrontDistributionDataConfig(rInt int) string {
 func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(rInt int) string {
@@ -624,6 +629,10 @@ func testAccAWSCloudFormationStackSetConfigTemplateUrl2(rName string) string {
 func testAccAWSCloudFormationStackSetConfigPermissionModel(rName string) string {
 func testAccAWSCloudFormationStackConfig(stackName string) string {
 func testAccAWSCloudFormationStackConfigCreationFailure(stackName, onFailure string) string {
+func testAccCloudformationTypeConfigBase(rName string, zipPath string) string {
+func testAccCloudformationTypeConfigExecutionRoleArn(rName string, zipPath string, typeName string) string {
+func testAccCloudformationTypeConfigLoggingConfig(rName string, zipPath string, typeName string) string {
+func testAccCloudformationTypeConfigTypeName(rName string, zipPath string, typeName string) string {
 func testAccAWSCloudFrontCachePolicyConfig(rInt int) string {
 func testAccAWSCloudFrontCachePolicyConfigUpdate(rInt int) string {
 func testAccAWSCloudFrontCachePolicyConfigNoneBehavior(rInt int) string {

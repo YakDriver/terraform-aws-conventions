@@ -9522,6 +9522,7 @@ func TestAccAWSSubnet_defaultTags_providerAndResource_nonOverlappingTag(
 func TestAccAWSSubnet_defaultTags_providerAndResource_overlappingTag(
 func TestAccAWSSubnet_defaultTags_providerAndResource_duplicateTag(
 func TestAccAWSSubnet_defaultAndIgnoreTags(
+func TestAccAWSSubnet_updateTagsKnownAtApply(
 func TestAccAWSSubnet_ignoreTags(
 func TestAccAWSSubnet_ipv6(
 func TestAccAWSSubnet_enableIpv6(
