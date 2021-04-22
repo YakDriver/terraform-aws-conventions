@@ -225,7 +225,10 @@ func testAccAWSIAMPolicyDocumentSourceExpectedJSON(
 func testAccAWSIAMPolicyDocumentExpectedJSONStatementPrincipalIdentifiersStringAndSlice(
 func testAccAWSIAMPolicyDocumentExpectedJSONStatementPrincipalIdentifiersMultiplePrincipalsAWS(
 func testAccAWSIAMPolicyDocumentExpectedJSONStatementPrincipalIdentifiersMultiplePrincipalsGov(
-func TestAccAWSDataSourceIAMPolicy_basic(
+func TestAccAWSDataSourceIAMPolicy_Arn(
+func TestAccAWSDataSourceIAMPolicy_Name(
+func TestAccAWSDataSourceIAMPolicy_NameAndPathPrefix(
+func TestAccAWSDataSourceIAMPolicy_NonExistent(
 func TestAccAWSDataSourceIAMRole_basic(
 func TestAccAWSDataSourceIAMRole_tags(
 func TestAccAWSDataSourceIAMServerCertificate_basic(
@@ -4702,7 +4705,7 @@ func TestAccAWSGlueMLTransform_typeFindMatchesFull(
 func TestAccAWSGlueMLTransform_description(
 func TestAccAWSGlueMLTransform_glueVersion(
 func TestAccAWSGlueMLTransform_maxRetries(
-func TestAccAWSGlueMLTransform_tags(
+func TestAccAWSGlueMLTransform_Tags(
 func TestAccAWSGlueMLTransform_timeout(
 func TestAccAWSGlueMLTransform_workerType(
 func TestAccAWSGlueMLTransform_maxCapacity(
@@ -4727,7 +4730,7 @@ func TestAccAWSGluePartition_disappears(
 func TestAccAWSGluePartition_disappears_table(
 func TestAccAWSGlueRegistry_basic(
 func TestAccAWSGlueRegistry_Description(
-func TestAccAWSGlueRegistry_tags(
+func TestAccAWSGlueRegistry_Tags(
 func TestAccAWSGlueRegistry_disappears(
 func testAccPreCheckAWSGlueRegistry(
 func testAccCheckAWSGlueRegistryExists(
@@ -4745,7 +4748,7 @@ func testAccCheckAWSGlueResourcePolicyDestroy(
 func TestAccAWSGlueSchema_basic(
 func TestAccAWSGlueSchema_description(
 func TestAccAWSGlueSchema_compatibility(
-func TestAccAWSGlueSchema_tags(
+func TestAccAWSGlueSchema_Tags(
 func TestAccAWSGlueSchema_schemaDefUpdated(
 func TestAccAWSGlueSchema_disappears(
 func TestAccAWSGlueSchema_disappears_registry(

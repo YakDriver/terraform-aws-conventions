@@ -179,7 +179,11 @@ func testAccAWSIAMAccountAliasDataSourceConfig(rName string) string {
 func testAccAwsIAMGroupConfig(name string) string {
 func testAccAwsIAMGroupConfigWithUser(groupName, userName, membershipName string, userCount int) string {
 func testAccDatasourceAwsIamInstanceProfileConfig(roleName, profileName string) string {
-func testAccAwsDataSourceIamPolicyConfig(policyName string) string {
+func testAccAwsDataSourceIamPolicyBaseConfig(policyName, policyPath string) string {
+func testAccAwsDataSourceIamPolicyConfig_Arn(policyName, policyPath string) string {
+func testAccAwsDataSourceIamPolicyConfig_Name(policyName, policyPath string) string {
+func testAccAwsDataSourceIamPolicyConfig_PathPrefix(policyName, policyPath string) string {
+func testAccAwsDataSourceIamPolicyConfig_NonExistent(policyName, policyPath string) string {
 func testAccAwsIAMRoleConfig(roleName string) string {
 func testAccAwsIAMRoleConfig_tags(roleName string) string {
 func testAccAwsDataIAMServerCertConfig(rName, key, certificate string) string {
@@ -3658,6 +3662,8 @@ func testAccAwsOrganizationsAccountConfigParentId2(name, email string) string {
 func testAccAwsOrganizationsAccountConfigTags1(name, email, tagKey1, tagValue1 string) string {
 func testAccAwsOrganizationsAccountConfigTags2(name, email, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOrganizationsOrganizationalUnitConfig(name string) string {
+func testAccAwsOrganizationsOrganizationalUnitConfigTags1(name, tagKey1, tagValue1 string) string {
+func testAccAwsOrganizationsOrganizationalUnitConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsOrganizationsOrganizationConfigAwsServiceAccessPrincipals1(principal1 string) string {
 func testAccAwsOrganizationsOrganizationConfigAwsServiceAccessPrincipals2(principal1, principal2 string) string {
 func testAccAwsOrganizationsOrganizationConfigEnabledPolicyTypes1(policyType1 string) string {
@@ -4895,6 +4901,9 @@ func testAccAwsWafv2WebACLLoggingConfiguration_updateRedactedField(rName, field 
 func testAccAwsWafv2WebACLLoggingConfiguration_updateTwoRedactedFields(rName string) string {
 func testAccAwsWafv2WebACLLoggingConfiguration_updateThreeRedactedFields(rName string) string {
 func testAccAwsWafv2WebACLLoggingConfiguration_emptyRedactedField(rName string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_loggingFilter(rName string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_updateLoggingFilter_twoFilters(rName string) string {
+func testAccAwsWafv2WebACLLoggingConfiguration_updateLoggingFilter_oneFilter(rName string) string {
 func testAccAwsWafv2WebACLConfig_Basic(name string) string {
 func testAccAwsWafv2WebACLConfig_BasicRule(name string) string {
 func testAccAwsWafv2WebACLConfig_UpdateRuleNamePriorityMetric(name, ruleName1, ruleName2 string, priority1, priority2 int) string {
