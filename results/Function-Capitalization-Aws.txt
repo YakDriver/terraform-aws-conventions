@@ -372,6 +372,9 @@ func testAccDataSourceAwsEfsFileSystemCheck(
 func dataSourceAwsEfsMountTarget(
 func dataSourceAwsEfsMountTargetRead(
 func TestAccDataSourceAwsEfsMountTarget_basic(
+func TestAccDataSourceAwsEfsMountTarget_byAccessPointID(
+func TestAccDataSourceAwsEfsMountTarget_byFileSystemID(
+func testAccAwsEfsMountTargetDataSourceBaseConfig(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
 func dataSourceAwsEip(
 func dataSourceAwsEipRead(
@@ -1676,10 +1679,9 @@ func testAccCheckAwsBackupVaultExists(
 func resourceAwsBatchComputeEnvironment(
 func resourceAwsBatchComputeEnvironmentCreate(
 func resourceAwsBatchComputeEnvironmentRead(
-func resourceAwsBatchComputeEnvironmentDelete(
 func resourceAwsBatchComputeEnvironmentUpdate(
-func resourceAwsBatchComputeEnvironmentStatusRefreshFunc(
-func resourceAwsBatchComputeEnvironmentDeleteRefreshFunc(
+func resourceAwsBatchComputeEnvironmentDelete(
+func resourceAwsBatchComputeEnvironmentCustomizeDiff(
 func testAccCheckAwsBatchComputeEnvironmentExists(
 func resourceAwsBatchJobDefinition(
 func resourceAwsBatchJobDefinitionCreate(
@@ -5976,6 +5978,9 @@ func testAccAwsVpnConnectionConfigEnableAcceleration(
 func testAccAwsVpnConnectionConfigIpv6(
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
+func testAccAwsVpnConnectionConfigTunnel1InsideCidr(
+func testAccAwsVpnConnectionConfigTunnel1InsideIpv6Cidr(
+func testAccAwsVpnConnectionConfigTunnel1PresharedKey(
 func testAccAwsVpnConnectionConfigTunnelOptions(
 func testAccAwsVpnConnectionConfigTags1(
 func testAccAwsVpnConnectionConfigTags2(

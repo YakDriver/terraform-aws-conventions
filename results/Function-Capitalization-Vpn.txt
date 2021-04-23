@@ -155,6 +155,9 @@ func testAccAwsVpnConnectionRouteConfigUpdate(
 func testSweepEc2VpnConnections(
 func TestAccAWSVpnConnection_basic(
 func TestAccAWSVpnConnection_TransitGatewayID(
+func TestAccAWSVpnConnection_Tunnel1InsideCidr(
+func TestAccAWSVpnConnection_Tunnel1InsideIpv6Cidr(
+func TestAccAWSVpnConnection_Tunnel1PresharedKey(
 func TestAccAWSVpnConnection_tunnelOptions(
 func TestAccAWSVpnConnection_withoutStaticRoutes(
 func TestAccAWSVpnConnection_withEnableAcceleration(
@@ -163,13 +166,15 @@ func TestAccAWSVpnConnection_tags(
 func TestAccAWSVpnConnection_disappears(
 func testAccAwsVpnConnectionDestroy(
 func testAccAwsVpnConnectionExists(
-func TestAWSVpnConnection_xmlconfig(
 func testAccAwsVpnConnectionConfig(
 func testAccAwsVpnConnectionConfigUpdate(
 func testAccAwsVpnConnectionConfigEnableAcceleration(
 func testAccAwsVpnConnectionConfigIpv6(
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(
 func testAccAwsVpnConnectionConfigTransitGatewayID(
+func testAccAwsVpnConnectionConfigTunnel1InsideCidr(
+func testAccAwsVpnConnectionConfigTunnel1InsideIpv6Cidr(
+func testAccAwsVpnConnectionConfigTunnel1PresharedKey(
 func testAccAwsVpnConnectionConfigTunnelOptions(
 func testAccAwsVpnConnectionConfigTags1(
 func testAccAwsVpnConnectionConfigTags2(

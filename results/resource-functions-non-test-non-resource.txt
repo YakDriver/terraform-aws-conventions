@@ -229,9 +229,10 @@ func backupBackupPlanHash(
 func expandBackupConditionTags(
 func init(
 func init(
-func flattenBatchComputeResources(
-func deleteBatchComputeEnvironment(
-func disableBatchComputeEnvironment(
+func expandBatchComputeResource(
+func expandBatchLaunchTemplateSpecification(
+func flattenBatchComputeResource(
+func flattenBatchLaunchTemplateSpecification(
 func init(
 func validateAwsBatchJobContainerProperties(
 func expandBatchJobContainerProperties(

@@ -157,7 +157,10 @@ func testAccCheckAwsEcsServiceDataSourceConfig(rName string) string {
 func testAccCheckAwsEcsTaskDefinitionDataSourceConfig(rName string) string {
 func testAccDataSourceAWSEFSAccessPointsConfig() string {
 func testAccDataSourceAWSEFSAccessPointConfig(rName string) string {
-func testAccAwsEfsMountTargetConfigByMountTargetId(ct string) string {
+func testAccAwsEfsMountTargetDataSourceBaseConfig(rName string) string {
+func testAccAwsEfsMountTargetConfigByMountTargetId(rName string) string {
+func testAccAWSEFSMountTargetConfigByAccessPointId(rName string) string {
+func testAccAWSEFSMountTargetConfigByFileSystemId(rName string) string {
 func testAccDataSourceAWSEIPConfigCustomerOwnedIpv4Pool() string {
 func testAccDataSourceAWSEIPConfigFilter(rName string) string {
 func testAccDataSourceAWSEIPConfigPublicIpEc2Classic() string {
@@ -1161,24 +1164,27 @@ func testAccBackupVaultWithKmsKey(randInt int) string {
 func testAccBackupVaultWithTags(randInt int) string {
 func testAccBackupVaultWithUpdateTags(randInt int) string {
 func testAccBackupVaultWithRemoveTags(randInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigBase(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigEC2(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigNamePrefix(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigEC2WithTags(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigSpot(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigUnmanaged(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigComputeResourcesMaxVcpusMinVcpus(rInt int, maxVcpus int, minVcpus int) string {
-func testAccAWSBatchComputeEnvironmentConfigEC2UpdateInstanceType(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigEC2UpdateState(rInt int, state string) string {
-func testAccAWSBatchComputeEnvironmentConfigEC2UpdateComputeEnvironmentName(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigEC2WithoutComputeResources(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigUnmanagedWithComputeResources(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigSpotWithAllocationStrategy(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigSpotWithoutBidPercentage(rInt int) string {
-func testAccAWSBatchComputeEnvironmentConfigLaunchTemplate(rInt int) string {
-func testAccAWSBatchComputeEnvironmentUpdateLaunchTemplateInExistingComputeEnvironment(rInt int, version string) string {
-func testAccAWSBatchComputeEnvironmentConfigTags1(rInt int, tagKey1, tagValue1 string) string {
-func testAccAWSBatchComputeEnvironmentConfigTags2(rInt int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSBatchComputeEnvironmentConfigBase(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigBasic(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigNameGenerated(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigNamePrefix(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigEC2(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigEC2WithDesiredVcpusEc2KeyPairImageIdAndComputeResourcesTags(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigFargate(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigFargateSpot(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigSpot(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigSpotWithAllocationStrategyAndBidPercentage(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigState(rName string, state string) string {
+func testAccAWSBatchComputeEnvironmentConfigUpdatedServiceRole(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigComputeResourcesMaxVcpusMinVcpus(rName string, maxVcpus int, minVcpus int) string {
+func testAccAWSBatchComputeEnvironmentConfigFargateUpdatedSecurityGroupsAndSubnets(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigEC2WithoutComputeResources(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigUnmanagedWithComputeResources(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigSpotWithoutIamFleetRole(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigLaunchTemplate(rName string) string {
+func testAccAWSBatchComputeEnvironmentUpdateLaunchTemplateInExistingComputeEnvironment(rName string, version string) string {
+func testAccAWSBatchComputeEnvironmentConfigTags1(rName string, tagKey1, tagValue1 string) string {
+func testAccAWSBatchComputeEnvironmentConfigTags2(rName string, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvanced(rName string) string {
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvancedUpdate(rName string) string {
 func testAccBatchJobDefinitionConfigName(rName string) string {
@@ -5141,6 +5147,9 @@ func testAccAwsVpnConnectionConfigEnableAcceleration(rBgpAsn int) string {
 func testAccAwsVpnConnectionConfigIpv6(rBgpAsn int, localIpv6NetworkCidr string, remoteIpv6NetworkCidr string, tunnel1InsideIpv6Cidr string, tunnel2InsideIpv6Cidr string) string {
 func testAccAwsVpnConnectionConfigSingleTunnelOptions(rBgpAsn int, psk string, tunnelCidr string) string {
 func testAccAwsVpnConnectionConfigTransitGatewayID(rBgpAsn int) string {
+func testAccAwsVpnConnectionConfigTunnel1InsideCidr(rBgpAsn int, tunnel1InsideCidr string, tunnel2InsideCidr string) string {
+func testAccAwsVpnConnectionConfigTunnel1InsideIpv6Cidr(rBgpAsn int, tunnel1InsideIpv6Cidr string, tunnel2InsideIpv6Cidr string) string {
+func testAccAwsVpnConnectionConfigTunnel1PresharedKey(rBgpAsn int, tunnel1PresharedKey string, tunnel2PresharedKey string) string {
 func testAccAwsVpnConnectionConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
 func testAccAwsVpnConnectionConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccVpnGatewayAttachmentConfig(rName string) string {

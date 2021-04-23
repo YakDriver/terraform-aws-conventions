@@ -12,6 +12,9 @@ func testAccDataSourceAwsEfsFileSystemCheck(
 func dataSourceAwsEfsMountTarget(
 func dataSourceAwsEfsMountTargetRead(
 func TestAccDataSourceAwsEfsMountTarget_basic(
+func TestAccDataSourceAwsEfsMountTarget_byAccessPointID(
+func TestAccDataSourceAwsEfsMountTarget_byFileSystemID(
+func testAccAwsEfsMountTargetDataSourceBaseConfig(
 func testAccAwsEfsMountTargetConfigByMountTargetId(
 func resourceAwsDataSyncLocationEfs(
 func resourceAwsDataSyncLocationEfsCreate(

@@ -175,8 +175,10 @@ func testAccVpcConfigAssignGeneratedIpv6CidrBlock(
 func validateVpnConnectionTunnelInsideIpv6CIDR(
 func validateLocalIpv4NetworkCidr(
 func validateLocalIpv6NetworkCidr(
+func TestAccAWSVpnConnection_Tunnel1InsideIpv6Cidr(
 func TestAccAWSVpnConnection_withIpv6(
 func testAccAwsVpnConnectionConfigIpv6(
+func testAccAwsVpnConnectionConfigTunnel1InsideIpv6Cidr(
 func updateWafIpSetDescriptors(
 func diffWafIpSetDescriptors(
 func TestAccAWSWafIPSet_IpSetDescriptors_1000UpdateLimit(
