@@ -2242,6 +2242,8 @@ func init(
 func resourceAwsElasticacheCluster(
 func resourceAwsElasticacheClusterCreate(
 func resourceAwsElasticacheClusterRead(
+func elasticacheSetResourceDataFromCacheCluster(
+func elasticacheSetResourceDataEngineVersionFromCacheCluster(
 func resourceAwsElasticacheClusterUpdate(
 func getCacheNodesToRemove(
 func setCacheNodeData(

@@ -645,6 +645,7 @@ func TestAccAWSKmsGrant_withRetiringPrincipal(
 func testAccAWSKmsGrant_withRetiringPrincipal(
 func resourceAwsKmsKeyDescriptionUpdate(
 func checkHandlerRuntimeForZipFunction(
+func testAccErrorCheckSkipLambda(
 func testAccCreateZipFromFiles(
 func TestAccAWSLambdaLayerVersion_description(
 func testAccAWSLambdaLayerVersionDescription(

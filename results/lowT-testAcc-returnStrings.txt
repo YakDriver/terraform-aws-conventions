@@ -2520,6 +2520,7 @@ func testAccAWSElasticacheParameterGroupConfigParameter1(rName, family, paramete
 func testAccAWSElasticacheParameterGroupConfigParameter2(rName, family, parameterName1, parameterValue1, parameterName2, parameterValue2 string) string {
 func testAccAWSElasticacheReplicationGroupConfig(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfig_Uppercase(rName string) string {
+func testAccAWSElasticacheReplicationGroupConfig_EngineVersion(rName, engineVersion string) string {
 func testAccAWSElasticacheReplicationGroupConfigEnableSnapshotting(rName string) string {
 func testAccAWSElasticacheReplicationGroupConfigParameterGroupName(rName string, parameterGroupNameIndex int) string {
 func testAccAWSElasticacheReplicationGroupConfigUpdatedDescription(rName string) string {
@@ -3450,7 +3451,7 @@ func testAccAWSLambdaEventSourceMappingConfigKinesisDestinationConfig(rName stri
 func testAccAWSLambdaEventSourceMappingConfig_sqs_testWithFunctionName(roleName, policyName, attName, streamName, funcName string) string {
 func testAccAWSLambdaEventSourceMappingConfigSQSBase(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigSqsWithBatchWindow(rName string, batchWindow int64) string {
-func testAccAWSLambdaEventSourceMappingConfigMsk(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigMsk(rName, batchSize string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigBase(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSnsTopic(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSqsQueue(rName string) string {

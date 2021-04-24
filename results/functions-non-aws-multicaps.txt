@@ -283,6 +283,7 @@ func TestBuildEC2CustomFilterList(
 func decodeEc2TransitGatewayRouteID(
 func decodeEc2TransitGatewayRouteTableAssociationID(
 func decodeEc2TransitGatewayRouteTablePropagationID(
+func CustomizeDiffValidateClusterAZMode(
 func getUserDBEnabled(
 func HostedZoneIDForRegion(
 func TestHostedZoneIDForRegion(

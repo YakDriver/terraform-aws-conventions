@@ -6779,6 +6779,8 @@ func testAccAWSEksNodeGroupConfigVersion(
 func resourceAwsElasticacheCluster(
 func resourceAwsElasticacheClusterCreate(
 func resourceAwsElasticacheClusterRead(
+func elasticacheSetResourceDataFromCacheCluster(
+func elasticacheSetResourceDataEngineVersionFromCacheCluster(
 func resourceAwsElasticacheClusterUpdate(
 func getCacheNodesToRemove(
 func setCacheNodeData(
@@ -6878,8 +6880,12 @@ func init(
 func testSweepElasticacheReplicationGroups(
 func testAccCheckAWSElasticacheReplicationGroupExists(
 func testAccCheckAWSElasticacheReplicationDestroy(
+func testAccCheckAWSElastiCacheReplicationGroupMemberClusters(
+func testAccCheckAWSElastiCacheReplicationGroupRecreated(
+func testAccCheckAWSElastiCacheReplicationGroupNotRecreated(
 func testAccAWSElasticacheReplicationGroupConfig(
 func testAccAWSElasticacheReplicationGroupConfig_Uppercase(
+func testAccAWSElasticacheReplicationGroupConfig_EngineVersion(
 func testAccAWSElasticacheReplicationGroupConfigEnableSnapshotting(
 func testAccAWSElasticacheReplicationGroupConfigParameterGroupName(
 func testAccAWSElasticacheReplicationGroupConfigUpdatedDescription(
@@ -9649,6 +9655,7 @@ func expandLambdaFileSystemConfigs(
 func flattenLambdaImageConfig(
 func expandLambdaImageConfigs(
 func init(
+func testAccErrorCheckSkipLambda(
 func testSweepLambdaFunctions(
 func testAccLambdaImagePreCheck(
 func testAccCheckLambdaFunctionDestroy(
@@ -15620,6 +15627,7 @@ func validateSecretManagerSecretNamePrefix(
 func validateWorklinkFleetName(
 func validateRoute53ResolverName(
 func validateNestedExactlyOneOf(
+func validateVersionString(
 func wafSizeConstraintSetSchema(
 func diffWafSizeConstraints(
 func flattenWafSizeConstraints(

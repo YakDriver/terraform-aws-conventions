@@ -844,6 +844,8 @@ func refreshEksNodeGroupUpdateStatus(
 func waitForEksNodeGroupDeletion(
 func waitForEksNodeGroupUpdate(
 func init(
+func elasticacheSetResourceDataFromCacheCluster(
+func elasticacheSetResourceDataEngineVersionFromCacheCluster(
 func getCacheNodesToRemove(
 func setCacheNodeData(
 func (

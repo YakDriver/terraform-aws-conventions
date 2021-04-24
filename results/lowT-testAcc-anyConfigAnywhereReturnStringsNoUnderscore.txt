@@ -1846,7 +1846,7 @@ func testAccAWSLambdaEventSourceMappingConfigKinesisMaximumRecordAgeInSeconds(rN
 func testAccAWSLambdaEventSourceMappingConfigKinesisDestinationConfig(rName string, streamName string) string {
 func testAccAWSLambdaEventSourceMappingConfigSQSBase(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigSqsWithBatchWindow(rName string, batchWindow int64) string {
-func testAccAWSLambdaEventSourceMappingConfigMsk(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigMsk(rName, batchSize string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigBase(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSnsTopic(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSqsQueue(rName string) string {
