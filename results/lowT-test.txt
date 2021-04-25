@@ -3687,6 +3687,7 @@ func testAccCheckAWSEksAddonExists(
 func testAccCheckAWSEksAddonDestroy(
 func testAccCheckAWSEksClusterDisappears(
 func testAccPreCheckAWSEksAddon(
+func testAccCheckEksAddonUpdateTags(
 func testAccAWSEksAddonConfig_Base(
 func testAccAWSEksAddon_Basic(
 func testAccAWSEksAddonConfigAddonVersion(

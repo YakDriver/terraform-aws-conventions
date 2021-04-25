@@ -2695,6 +2695,8 @@ func TestAccAWSEksAddon_AddonVersion(
 func TestAccAWSEksAddon_ResolveConflicts(
 func TestAccAWSEksAddon_ServiceAccountRoleArn(
 func TestAccAWSEksAddon_Tags(
+func TestAccAWSEksAddon_defaultAndIgnoreTags(
+func TestAccAWSEksAddon_ignoreTags(
 func testAccAWSEksAddonConfig_Base(
 func testAccAWSEksAddon_Basic(
 func TestAccAWSEksCluster_basic(

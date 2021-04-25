@@ -887,6 +887,8 @@ func testAccAWSEIPAssociationConfig_ec2Classic(
 func testAccAWSEIPAssociationConfig_spotInstance(
 func TestAccAWSEIP_networkBorderGroup(
 func TestAccAWSEIP_carrierIP(
+func TestAccAWSEksAddon_defaultAndIgnoreTags(
+func TestAccAWSEksAddon_ignoreTags(
 func TestAccAWSElasticacheCluster_snapshotsWithUpdates(
 func TestAccAWSElasticacheCluster_multiAZInVpc(
 func testAccAWSElasticacheClusterConfig_snapshotsUpdated(
