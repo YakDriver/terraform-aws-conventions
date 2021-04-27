@@ -1692,6 +1692,8 @@ func testAccAWSElasticacheSecurityGroupConfig(
 func testAccAWSElasticacheSubnetGroupConfig(
 func testAccAWSElasticacheSubnetGroupUpdateConfigPre(
 func testAccAWSElasticacheSubnetGroupUpdateConfigPost(
+func testAccAWSElasticacheSubnetGroupTags1(
+func testAccAWSElasticacheSubnetGroupTags2(
 func testAccAWSELBAttachmentCheckInstanceCount(
 func testAccAWSELBAttachmentConfig1(
 func testAccAWSELBAttachmentConfig2(

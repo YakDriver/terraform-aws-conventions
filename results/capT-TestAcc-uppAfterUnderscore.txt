@@ -847,7 +847,8 @@ func TestAccAWSEc2Fleet_Type(
 func TestAccAWSEc2Fleet_TemplateMultipleNetworkInterfaces(
 func TestAccAwsEc2LocalGatewayRouteTableVpcAssociation_Tags(
 func TestAccAwsEc2ManagedPrefixList_AddressFamily_IPv6(
-func TestAccAwsEc2ManagedPrefixList_Entry(
+func TestAccAwsEc2ManagedPrefixList_Entry_Cidr(
+func TestAccAwsEc2ManagedPrefixList_Entry_Description(
 func TestAccAwsEc2ManagedPrefixList_Name(
 func TestAccAwsEc2ManagedPrefixList_Tags(
 func TestAccAWSEc2Tag_Value(

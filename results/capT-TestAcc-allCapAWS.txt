@@ -1921,6 +1921,7 @@ func TestAccAWSElasticacheReplicationGroup_GlobalReplicationGroupId_disappears(
 func TestAccAWSElasticacheSecurityGroup_basic(
 func TestAccAWSElasticacheSubnetGroup_basic(
 func TestAccAWSElasticacheSubnetGroup_update(
+func TestAccAWSElasticacheSubnetGroup_tags(
 func TestAccAWSBeanstalkApp_basic(
 func TestAccAWSBeanstalkApp_appversionlifecycle(
 func TestAccAWSBeanstalkApp_tags(

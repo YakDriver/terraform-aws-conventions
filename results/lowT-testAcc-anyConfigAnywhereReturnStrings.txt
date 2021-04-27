@@ -2079,8 +2079,9 @@ func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags1(rName, tagKey1
 func testAccAwsEc2LocalGatewayRouteTableVpcAssociationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSEc2LocalGatewayRouteConfigDestinationCidrBlock(destinationCidrBlock string) string {
 func testAccAwsEc2ManagedPrefixListConfig_AddressFamily(rName string, addressFamily string) string {
-func testAccAwsEc2ManagedPrefixListConfig_Entry1(rName string) string {
-func testAccAwsEc2ManagedPrefixListConfig_Entry2(rName string) string {
+func testAccAwsEc2ManagedPrefixListConfig_Entry_Cidr1(rName string) string {
+func testAccAwsEc2ManagedPrefixListConfig_Entry_Cidr2(rName string) string {
+func testAccAwsEc2ManagedPrefixListConfig_Entry_Description(rName string, description string) string {
 func testAccAwsEc2ManagedPrefixListConfig_Name(rName string) string {
 func testAccAwsEc2ManagedPrefixListConfig_Tags1(rName string, tagKey1 string, tagValue1 string) string {
 func testAccAwsEc2ManagedPrefixListConfig_Tags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {

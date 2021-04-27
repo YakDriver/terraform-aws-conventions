@@ -2131,7 +2131,8 @@ func TestAccAWSEc2LocalGatewayRoute_disappears(
 func TestAccAwsEc2ManagedPrefixList_basic(
 func TestAccAwsEc2ManagedPrefixList_disappears(
 func TestAccAwsEc2ManagedPrefixList_AddressFamily_IPv6(
-func TestAccAwsEc2ManagedPrefixList_Entry(
+func TestAccAwsEc2ManagedPrefixList_Entry_Cidr(
+func TestAccAwsEc2ManagedPrefixList_Entry_Description(
 func TestAccAwsEc2ManagedPrefixList_Name(
 func TestAccAwsEc2ManagedPrefixList_Tags(
 func TestAccAWSEc2Tag_basic(
@@ -2482,6 +2483,7 @@ func TestAccAWSElasticacheReplicationGroup_GlobalReplicationGroupId_disappears(
 func TestAccAWSElasticacheSecurityGroup_basic(
 func TestAccAWSElasticacheSubnetGroup_basic(
 func TestAccAWSElasticacheSubnetGroup_update(
+func TestAccAWSElasticacheSubnetGroup_tags(
 func TestAccAWSBeanstalkApp_basic(
 func TestAccAWSBeanstalkApp_appversionlifecycle(
 func TestAccAWSBeanstalkApp_tags(
