@@ -35,6 +35,7 @@ const testAccAWSDefaultNetworkConfig_Subnets_remove =
 const testAccAWSDefaultNetworkConfig_Subnets_move =
 const testAccAWSDefaultSecurityGroupConfig_Vpc =
 const testAccAWSDefaultSecurityGroupConfig_Vpc_empty =
+const testAccAWSEIPConfig_BYOIPAddress_custom_default =
 const testAccAWSELBConfig_AvailabilityZonesUpdate =
 const testAccAWSEmrClusterConfig_Step_DebugLoggingStep =
 const testAccAWSEmrClusterConfig_Step_SparkStep =

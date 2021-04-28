@@ -2426,7 +2426,9 @@ func testAccEIPTagsEC2VPCConfig(rName, vpcConfig string) string {
 func testAccEIPTagsEC2ClassicConfig(rName, vpcConfig string) string {
 func testAccEIPPublicIPv4PoolCustomConfig(poolName string) string {
 func testAccEIPInstanceEC2ClassicConfig() string {
-func testAccEIPInstanceConfig() string {
+func testAccAWSEIPConfig_BYOIPAddress_custom(address string) string {
+func testAccAWSEIPConfig_BYOIPAddress_custom_with_PublicIpv4Pool(address string, poolname string) string {
+func testAccAWSEIPInstanceConfig() string {
 func testAccEIPInstanceAssociatedConfig(rName string) string {
 func testAccEIPInstanceAssociatedSwitchConfig(rName string) string {
 func testAccEIPNetworkInterfaceConfig(rName string) string {
@@ -3562,6 +3564,7 @@ func testAccAWSLaunchTemplateConfig_licenseSpecification(rName string) string {
 func testAccAWSLaunchTemplateConfig_description(rName, description string) string {
 func testAccAWSLaunchTemplateConfig_networkInterface(rName string) string {
 func testAccAWSLaunchTemplateConfigPartition(rName string, partNum int) string {
+func testAccAWSLaunchTemplateConfigPlacementHostResourceGroupArn(rName string) string {
 func testAccAWSLaunchTemplateConfig_networkInterfaceAddresses(rName string) string {
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
 func testAccAWSLaunchTemplateConfig_associateCarrierIpAddress(rName, associateCarrierIPAddress string) string {
@@ -3792,6 +3795,8 @@ func testAccMqBrokerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 st
 func testAccMqBrokerConfig_updateSecurityGroups(rName string) string {
 func testAccMqBrokerConfig_updateUsersSecurityGroups(rName string) string {
 func testAccMqBrokerConfigRabbit(rName string) string {
+func testAccMqBrokerConfigRabbitLogs(rName string) string {
+func testAccMqBrokerConfigRabbitAuditLog(rName string, enabled bool) string {
 func testAccRabbitMqClusterBrokerConfig(rName string) string {
 func testAccMqBrokerConfig_ldap(rName, ldapUsername string) string {
 func testAccMqConfigurationConfig(rName string) string {
@@ -4683,6 +4688,10 @@ func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags2(rNa
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSServiceCatalogProductConfigTemplateURLBase(rName string) string {
+func testAccAWSServiceCatalogProductConfig_basic(rName, description, supportDescription string) string {
+func testAccAWSServiceCatalogProductConfig_updateTags(rName, description, supportDescription string) string {
+func testAccAWSServiceCatalogProductConfig_physicalID(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfig(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigDescription(rName, description string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -4707,6 +4716,8 @@ func testAccAwsServiceQuotasServiceQuotaConfigSameValue(quotaCode, serviceCode s
 func testAccAwsServiceQuotasServiceQuotaConfigValue(quotaCode, serviceCode, value string) string {
 func testAccAWSSESActiveReceiptRuleSetConfig(name string) string {
 func testAccAWSSESConfigurationSetBasicConfig(rName string) string {
+func testAccAWSSESConfigurationSetSendingConfig(rName string, enabled bool) string {
+func testAccAWSSESConfigurationSetReputationMetricsConfig(rName string, enabled bool) string {
 func testAccAWSSESConfigurationSetDeliveryOptionsConfig(rName, tlsPolicy string) string {
 func testAccAWSSESConfigurationSetEmptyDeliveryOptionsConfig(rName string) string {
 func testAccAwsSESDomainIdentityConfig(domain string) string {
@@ -4766,6 +4777,8 @@ func testAccAwsSnsPlatformApplicationConfig_basic(name string, platform *testAcc
 func testAccAwsSnsPlatformApplicationConfig_basicAttribute(name string, platform *testAccAwsSnsPlatformApplicationPlatform, attributeKey, attributeValue string) string {
 func testAccAwsSnsPlatformApplicationConfig_iamRoleAttribute(name string, platform *testAccAwsSnsPlatformApplicationPlatform, attributeKey, iamRoleName string) string {
 func testAccAwsSnsPlatformApplicationConfig_snsTopicAttribute(name string, platform *testAccAwsSnsPlatformApplicationPlatform, attributeKey, snsTopicName string) string {
+func testAccAWSSNSTopicPolicyBasicConfig(rName string) string {
+func testAccAWSSNSTopicPolicyUpdatedConfig(rName string) string {
 func testAccAWSSNSTopicSubscriptionConfig(rName string) string {
 func testAccAWSSNSTopicSubscriptionConfig_filterPolicy(rName, policy string) string {
 func testAccAWSSNSTopicSubscriptionConfig_deliveryPolicy(rName, policy string) string {

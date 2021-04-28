@@ -45,6 +45,9 @@ func TestAccAWSEIP_PublicIPv4Pool_custom(
 func TestAccAWSEIP_CustomerOwnedIPv4Pool(
 func TestAccAWSEIP_networkBorderGroup(
 func TestAccAWSEIP_carrierIP(
+func TestAccAWSEIP_BYOIPAddress_default(
+func TestAccAWSEIP_BYOIPAddress_custom(
+func TestAccAWSEIP_BYOIPAddress_custom_with_PublicIpv4Pool(
 func testAccCheckAWSEIPDestroy(
 func testAccCheckAWSEIPAttributes(
 func testAccCheckAWSEIPAssociated(
@@ -56,7 +59,9 @@ func testAccEIPTagsEC2VPCConfig(
 func testAccEIPTagsEC2ClassicConfig(
 func testAccEIPPublicIPv4PoolCustomConfig(
 func testAccEIPInstanceEC2ClassicConfig(
-func testAccEIPInstanceConfig(
+func testAccAWSEIPConfig_BYOIPAddress_custom(
+func testAccAWSEIPConfig_BYOIPAddress_custom_with_PublicIpv4Pool(
+func testAccAWSEIPInstanceConfig(
 func testAccEIPInstanceAssociatedConfig(
 func testAccEIPInstanceAssociatedSwitchConfig(
 func testAccEIPNetworkInterfaceConfig(

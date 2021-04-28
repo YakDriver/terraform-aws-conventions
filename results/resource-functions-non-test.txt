@@ -5195,6 +5195,13 @@ func resourceAwsServiceCatalogPortfolioCreate(
 func resourceAwsServiceCatalogPortfolioRead(
 func resourceAwsServiceCatalogPortfolioUpdate(
 func resourceAwsServiceCatalogPortfolioDelete(
+func resourceAwsServiceCatalogProduct(
+func resourceAwsServiceCatalogProductCreate(
+func resourceAwsServiceCatalogProductRead(
+func resourceAwsServiceCatalogProductUpdate(
+func resourceAwsServiceCatalogProductDelete(
+func expandProvisioningArtifactParameters(
+func init(
 func resourceAwsServiceDiscoveryHttpNamespace(
 func resourceAwsServiceDiscoveryHttpNamespaceCreate(
 func resourceAwsServiceDiscoveryHttpNamespaceRead(
@@ -5385,7 +5392,6 @@ func resourceAwsSnsTopicPolicy(
 func resourceAwsSnsTopicPolicyUpsert(
 func resourceAwsSnsTopicPolicyRead(
 func resourceAwsSnsTopicPolicyDelete(
-func getAccountIdFromSnsTopicArn(
 func buildDefaultSnsTopicPolicy(
 func resourceAwsSnsTopicSubscription(
 func resourceAwsSnsTopicSubscriptionCreate(

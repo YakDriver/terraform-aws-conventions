@@ -1779,6 +1779,9 @@ func TestAccAWSEIP_PublicIPv4Pool_custom(
 func TestAccAWSEIP_CustomerOwnedIPv4Pool(
 func TestAccAWSEIP_networkBorderGroup(
 func TestAccAWSEIP_carrierIP(
+func TestAccAWSEIP_BYOIPAddress_default(
+func TestAccAWSEIP_BYOIPAddress_custom(
+func TestAccAWSEIP_BYOIPAddress_custom_with_PublicIpv4Pool(
 func testAccCheckAWSEIPDestroy(
 func testAccCheckAWSEIPAttributes(
 func testAccCheckAWSEIPAssociated(
@@ -1790,7 +1793,9 @@ func testAccEIPTagsEC2VPCConfig(
 func testAccEIPTagsEC2ClassicConfig(
 func testAccEIPPublicIPv4PoolCustomConfig(
 func testAccEIPInstanceEC2ClassicConfig(
-func testAccEIPInstanceConfig(
+func testAccAWSEIPConfig_BYOIPAddress_custom(
+func testAccAWSEIPConfig_BYOIPAddress_custom_with_PublicIpv4Pool(
+func testAccAWSEIPInstanceConfig(
 func testAccEIPInstanceAssociatedConfig(
 func testAccEIPInstanceAssociatedSwitchConfig(
 func testAccEIPNetworkInterfaceConfig(
@@ -3238,6 +3243,9 @@ func testAccAWSSecurityGroupCheckVPCIDExists(
 func testAccCheckAWSSecurityGroupSGandCidrAttributes(
 func testAccAWSSecurityGroupConfig_ingressWithCidrAndSGs_classic(
 func testAccAwsServerlessApplicationRepositoryCloudFormationApplicationID(
+func TestAccAWSServiceCatalogProduct_physicalID(
+func testAccAWSServiceCatalogProductConfigTemplateURLBase(
+func testAccAWSServiceCatalogProductConfig_physicalID(
 func resourceAwsServiceQuotasServiceQuotaParseID(
 func TestAccAWSSESActiveReceiptRuleSet_serial(
 func testAccAWSSESActiveReceiptRuleSet_basic(
@@ -3246,6 +3254,8 @@ func testAccCheckSESActiveReceiptRuleSetDestroy(
 func testAccCheckAwsSESActiveReceiptRuleSetExists(
 func testAccAWSSESActiveReceiptRuleSetConfig(
 func TestAccAWSSESConfigurationSet_basic(
+func TestAccAWSSESConfigurationSet_sendingEnabled(
+func TestAccAWSSESConfigurationSet_reputationMetricsEnabled(
 func TestAccAWSSESConfigurationSet_deliveryOptions(
 func TestAccAWSSESConfigurationSet_update_deliveryOptions(
 func TestAccAWSSESConfigurationSet_emptyDeliveryOptions(
@@ -3254,6 +3264,8 @@ func TestAccAWSSESConfigurationSet_disappears(
 func testAccCheckAwsSESConfigurationSetExists(
 func testAccCheckSESConfigurationSetDestroy(
 func testAccAWSSESConfigurationSetBasicConfig(
+func testAccAWSSESConfigurationSetSendingConfig(
+func testAccAWSSESConfigurationSetReputationMetricsConfig(
 func testAccAWSSESConfigurationSetDeliveryOptionsConfig(
 func testAccAWSSESConfigurationSetEmptyDeliveryOptionsConfig(
 func TestAccAWSSESDomainDkim_basic(
@@ -3350,6 +3362,12 @@ func testAccAWSSNSSMSPreferences_almostAll(
 func testAccAWSSNSSMSPreferences_deliveryRole(
 func testAccCheckAWSSNSSMSPrefsDestroy(
 func TestAccAWSSNSTopicPolicy_basic(
+func TestAccAWSSNSTopicPolicy_updated(
+func TestAccAWSSNSTopicPolicy_disappears_topic(
+func TestAccAWSSNSTopicPolicy_disappears(
+func testAccCheckAWSSNSTopicPolicyDestroy(
+func testAccAWSSNSTopicPolicyBasicConfig(
+func testAccAWSSNSTopicPolicyUpdatedConfig(
 func expandSNSSubscriptionAttributes(
 func TestAccAWSSNSTopicSubscription_basic(
 func TestAccAWSSNSTopicSubscription_filterPolicy(

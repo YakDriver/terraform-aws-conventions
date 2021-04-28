@@ -2241,6 +2241,8 @@ func flattenServerlessRepositoryParameterDefinitions(
 func createServerlessApplicationRepositoryCloudFormationChangeSet(
 func expandServerlessRepositoryCloudFormationChangeSetParameters(
 func flattenServerlessRepositoryStackCapabilities(
+func expandProvisioningArtifactParameters(
+func init(
 func init(
 func init(
 func init(
@@ -2287,7 +2289,6 @@ func init(
 func validateMonthlySpend(
 func validateDeliverySamplingRate(
 func updateAwsSnsTopicAttribute(
-func getAccountIdFromSnsTopicArn(
 func buildDefaultSnsTopicPolicy(
 func expandSNSSubscriptionAttributes(
 func snsSubscriptionAttributeUpdate(

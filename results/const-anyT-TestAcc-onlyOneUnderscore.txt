@@ -139,7 +139,6 @@ const testAccAWSSNSSMSPreferencesConfig_empty =
 const testAccAWSSNSSMSPreferencesConfig_defSMSType =
 const testAccAWSSNSSMSPreferencesConfig_almostAll =
 const testAccAWSSNSSMSPreferencesConfig_deliveryRole =
-const testAccAWSSNSTopicConfig_withPolicy =
 const testAccAWSSwfDomainConfig_GeneratedName =
 const testAccAWSSwfDomainConfig_NamePrefix =
 const testAccAWSTransferServerConfig_basic =

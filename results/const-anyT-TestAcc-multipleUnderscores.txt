@@ -7,6 +7,7 @@ const testAccAWSDefaultNetworkConfig_deny_ingress =
 const testAccAWSDefaultNetworkConfig_Subnets_remove =
 const testAccAWSDefaultNetworkConfig_Subnets_move =
 const testAccAWSDefaultSecurityGroupConfig_Vpc_empty =
+const testAccAWSEIPConfig_BYOIPAddress_custom_default =
 const testAccAWSELBConfigConnectionDraining_update_timeout =
 const testAccAWSELBConfigConnectionDraining_update_disable =
 const testAccAWSELBConfig_subnet_swap =

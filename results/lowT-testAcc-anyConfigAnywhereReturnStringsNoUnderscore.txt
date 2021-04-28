@@ -1218,7 +1218,7 @@ func testAccEIPTagsEC2VPCConfig(rName, vpcConfig string) string {
 func testAccEIPTagsEC2ClassicConfig(rName, vpcConfig string) string {
 func testAccEIPPublicIPv4PoolCustomConfig(poolName string) string {
 func testAccEIPInstanceEC2ClassicConfig() string {
-func testAccEIPInstanceConfig() string {
+func testAccAWSEIPInstanceConfig() string {
 func testAccEIPInstanceAssociatedConfig(rName string) string {
 func testAccEIPInstanceAssociatedSwitchConfig(rName string) string {
 func testAccEIPNetworkInterfaceConfig(rName string) string {
@@ -1918,6 +1918,7 @@ func testAccAWSLaunchConfigurationConfigEbsNoDevice(rInt int) string {
 func testAccAWSLaunchTemplateConfigElasticInferenceAccelerator(rName, elasticInferenceAcceleratorType string) string {
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(rName string) string {
 func testAccAWSLaunchTemplateConfigPartition(rName string, partNum int) string {
+func testAccAWSLaunchTemplateConfigPlacementHostResourceGroupArn(rName string) string {
 func testAccAWSLaunchTemplateConfigHibernation(rName string, enabled bool) string {
 func testAccLBCookieStickinessPolicyConfig(rName string) string {
 func testAccLBCookieStickinessPolicyConfigUpdate(rName string) string {
@@ -1963,6 +1964,8 @@ func testAccMqBrokerConfigEncryptionOptionsUseAwsOwnedKey(rName string, useAwsOw
 func testAccMqBrokerConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccMqBrokerConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccMqBrokerConfigRabbit(rName string) string {
+func testAccMqBrokerConfigRabbitLogs(rName string) string {
+func testAccMqBrokerConfigRabbitAuditLog(rName string, enabled bool) string {
 func testAccRabbitMqClusterBrokerConfig(rName string) string {
 func testAccMqConfigurationConfig(rName string) string {
 func testAccMqConfigurationWithDataConfig(rName string) string {
@@ -2502,6 +2505,7 @@ func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags2(rNa
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSServiceCatalogProductConfigTemplateURLBase(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfig(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigDescription(rName, description string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -2521,6 +2525,8 @@ func testAccAwsServiceQuotasServiceQuotaConfigSameValue(quotaCode, serviceCode s
 func testAccAwsServiceQuotasServiceQuotaConfigValue(quotaCode, serviceCode, value string) string {
 func testAccAWSSESActiveReceiptRuleSetConfig(name string) string {
 func testAccAWSSESConfigurationSetBasicConfig(rName string) string {
+func testAccAWSSESConfigurationSetSendingConfig(rName string, enabled bool) string {
+func testAccAWSSESConfigurationSetReputationMetricsConfig(rName string, enabled bool) string {
 func testAccAWSSESConfigurationSetDeliveryOptionsConfig(rName, tlsPolicy string) string {
 func testAccAWSSESConfigurationSetEmptyDeliveryOptionsConfig(rName string) string {
 func testAccAwsSESDomainIdentityConfig(domain string) string {
@@ -2564,6 +2570,8 @@ func testAccAWSSignerSigningProfileConfigProvidedName(profileName string) string
 func testAccAWSSignerSigningProfileConfigTags(namePrefix string) string {
 func testAccAWSSignerSigningProfileConfigSVP(namePrefix string) string {
 func testAccAWSSnapshotCreateVolumePermissionConfig(includeCreateVolumePermission bool, accountID string) string {
+func testAccAWSSNSTopicPolicyBasicConfig(rName string) string {
+func testAccAWSSNSTopicPolicyUpdatedConfig(rName string) string {
 func testAccAWSSNSTopicSubscriptionConfig(rName string) string {
 func testAccAWSSNSTopicSubscriptionEmailConfig(rName string) string {
 func testAccAWSSNSTopicConfigName(rName string) string {

@@ -1,5 +1,6 @@
 func suppressOpenIdURL(
 func testAccCheckAWSEcrRepositoryRepositoryURL(
+func testAccAWSServiceCatalogProductConfigTemplateURLBase(
 func buildApiGatewayInvokeURL(
 func validateOpenIdURL(
 func TestValidateOpenIdURL(

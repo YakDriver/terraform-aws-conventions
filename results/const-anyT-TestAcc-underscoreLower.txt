@@ -116,7 +116,6 @@ const testAccAWSSNSSMSPreferencesConfig_empty =
 const testAccAWSSNSSMSPreferencesConfig_defSMSType =
 const testAccAWSSNSSMSPreferencesConfig_almostAll =
 const testAccAWSSNSSMSPreferencesConfig_deliveryRole =
-const testAccAWSSNSTopicConfig_withPolicy =
 const testAccAWSTransferServerConfig_basic =
 const testAccAWSTransferUserConfig_base =
 const testAccVpcEndpointSubnetAssociationConfig_basic =

@@ -1789,6 +1789,9 @@ func TestAccAWSEIP_PublicIPv4Pool_custom(
 func TestAccAWSEIP_CustomerOwnedIPv4Pool(
 func TestAccAWSEIP_networkBorderGroup(
 func TestAccAWSEIP_carrierIP(
+func TestAccAWSEIP_BYOIPAddress_default(
+func TestAccAWSEIP_BYOIPAddress_custom(
+func TestAccAWSEIP_BYOIPAddress_custom_with_PublicIpv4Pool(
 func TestAccAWSEksAddon_basic(
 func TestAccAWSEksAddon_disappears(
 func TestAccAWSEksAddon_disappears_Cluster(
@@ -2762,6 +2765,7 @@ func TestAccAWSLaunchTemplate_networkInterface(
 func TestAccAWSLaunchTemplate_networkInterfaceAddresses(
 func TestAccAWSLaunchTemplate_associatePublicIPAddress(
 func TestAccAWSLaunchTemplate_associateCarrierIPAddress(
+func TestAccAWSLaunchTemplate_Placement_HostResourceGroupArn(
 func TestAccAWSLaunchTemplate_placement_partitionNum(
 func TestAccAWSLaunchTemplate_networkInterface_ipv6Addresses(
 func TestAccAWSLaunchTemplate_networkInterface_ipv6AddressCount(
@@ -2933,6 +2937,8 @@ func TestAccAWSMqBroker_updateSecurityGroup(
 func TestAccAWSMqBroker_updateEngineVersion(
 func TestAccAWSMqBroker_disappears(
 func TestAccAWSMqBroker_rabbitmq(
+func TestAccAWSMqBroker_rabbitmq_Logs(
+func TestAccAWSMqBroker_rabbitmq_Validation_AuditLog(
 func TestAccAWSMqBroker_clusterRabbitMQ(
 func TestAccAWSMqBroker_ldap(
 func TestAccAWSMqConfiguration_basic(
@@ -3708,6 +3714,11 @@ func TestAccAWSSecurityHub_serial(
 func TestAccAWSServiceCatalogPortfolio_basic(
 func TestAccAWSServiceCatalogPortfolio_Disappears(
 func TestAccAWSServiceCatalogPortfolio_Tags(
+func TestAccAWSServiceCatalogProduct_basic(
+func TestAccAWSServiceCatalogProduct_disappears(
+func TestAccAWSServiceCatalogProduct_update(
+func TestAccAWSServiceCatalogProduct_updateTags(
+func TestAccAWSServiceCatalogProduct_physicalID(
 func TestAccAWSServiceDiscoveryHttpNamespace_basic(
 func TestAccAWSServiceDiscoveryHttpNamespace_disappears(
 func TestAccAWSServiceDiscoveryHttpNamespace_Description(
@@ -3728,6 +3739,8 @@ func TestAccAWSServiceDiscoveryService_disappears(
 func TestAccAWSServiceDiscoveryService_Tags(
 func TestAccAWSSESActiveReceiptRuleSet_serial(
 func TestAccAWSSESConfigurationSet_basic(
+func TestAccAWSSESConfigurationSet_sendingEnabled(
+func TestAccAWSSESConfigurationSet_reputationMetricsEnabled(
 func TestAccAWSSESConfigurationSet_deliveryOptions(
 func TestAccAWSSESConfigurationSet_update_deliveryOptions(
 func TestAccAWSSESConfigurationSet_emptyDeliveryOptions(
@@ -3793,6 +3806,9 @@ func TestAccAWSSnsPlatformApplication_iamRoleAttributes(
 func TestAccAWSSnsPlatformApplication_snsTopicAttributes(
 func TestAccAWSSNSSMSPreferences_serial(
 func TestAccAWSSNSTopicPolicy_basic(
+func TestAccAWSSNSTopicPolicy_updated(
+func TestAccAWSSNSTopicPolicy_disappears_topic(
+func TestAccAWSSNSTopicPolicy_disappears(
 func TestAccAWSSNSTopicSubscription_basic(
 func TestAccAWSSNSTopicSubscription_filterPolicy(
 func TestAccAWSSNSTopicSubscription_deliveryPolicy(

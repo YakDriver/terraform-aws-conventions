@@ -2983,6 +2983,11 @@ func resourceAwsServiceCatalogPortfolioCreate(
 func resourceAwsServiceCatalogPortfolioRead(
 func resourceAwsServiceCatalogPortfolioUpdate(
 func resourceAwsServiceCatalogPortfolioDelete(
+func resourceAwsServiceCatalogProduct(
+func resourceAwsServiceCatalogProductCreate(
+func resourceAwsServiceCatalogProductRead(
+func resourceAwsServiceCatalogProductUpdate(
+func resourceAwsServiceCatalogProductDelete(
 func resourceAwsServiceDiscoveryHttpNamespace(
 func resourceAwsServiceDiscoveryHttpNamespaceCreate(
 func resourceAwsServiceDiscoveryHttpNamespaceRead(
