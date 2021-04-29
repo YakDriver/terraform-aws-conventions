@@ -353,6 +353,10 @@ func testAccDataSourceAwsRegionsConfig_allRegionsFiltered(filter string) string 
 func testAccDataSourceAwsRegionConfig_endpoint() string {
 func testAccDataSourceAwsRegionConfig_endpointAndName() string {
 func testAccDataSourceAwsRegionConfig_name() string {
+func testAccDataSourceAwsResourceGroupsTaggingAPIResourcesConfigTagFilter(rName string) string {
+func testAccDataSourceAwsResourceGroupsTaggingAPIResourcesConfigResourceTypeFilters(rName string) string {
+func testAccDataSourceAwsResourceGroupsTaggingAPIResourcesConfigResourceARNList(rName string) string {
+func testAccDataSourceAwsResourceGroupsTaggingAPIResourcesConfigIncludeComplianceDetails(rName string) string {
 func testAccDataSourceRoute53ResolverEndpointConfig_base(rInt int) string {
 func testAccDataSourceRoute53ResolverEndpointConfig_initial(rInt int, direction, name string) string {
 func testAccDataSourceRoute53ResolverEndpointConfig_filter(rInt int, direction, name string) string {
@@ -1375,12 +1379,14 @@ func testAccAWSCodeBuildProjectConfig_Environment_Certificate(rName string, bNam
 func testAccAWSCodeBuildProjectConfig_Environment_RegistryCredential1(rName string) string {
 func testAccAWSCodeBuildProjectConfig_Environment_RegistryCredential2(rName string) string {
 func testAccAWSCodeBuildProjectConfig_LogsConfig_CloudWatchLogs(rName, status, gName, sName string) string {
+func testAccAWSCodeBuildProjectConfig_BuildBatchConfig(rName string, combineArtifacts bool, computeTypesAllowed string, maximumBuildsAllowed, timeoutInMins int) string {
 func testAccAWSCodeBuildProjectConfig_LogsConfig_S3Logs(rName, bName, status, location string, encryptionDisabled bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitCloneDepth(rName string, gitCloneDepth int) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_CodeCommit(rName string, fetchSubmodules bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_GitHub(rName string, fetchSubmodules bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_GitHubEnterprise(rName string, fetchSubmodules bool) string {
 func testAccAWSCodeBuildProjectConfig_SecondarySources_GitSubmodulesConfig_CodeCommit(rName string, fetchSubmodules bool) string {
+func testAccAWSCodeBuildProjectConfig_SecondarySources_none(rName string, fetchSubmodules bool) string {
 func testAccAWSCodeBuildProjectConfig_SecondarySources_GitSubmodulesConfig_GitHub(rName string, fetchSubmodules bool) string {
 func testAccAWSCodeBuildProjectConfig_SecondarySources_GitSubmodulesConfig_GitHubEnterprise(rName string, fetchSubmodules bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_InsecureSSL(rName string, insecureSSL bool) string {
@@ -1408,6 +1414,7 @@ func testAccAWSCodebuildProjectConfig_Artifacts_Packaging(rName, packaging strin
 func testAccAWSCodebuildProjectConfig_Artifacts_Path(rName, path string) string {
 func testAccAWSCodebuildProjectConfig_Artifacts_Type(rName string, bName string, artifactType string) string {
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts(rName string, bName string) string {
+func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_none(rName string, bName string) string {
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_ArtifactIdentifier(rName string, bName string, artifactIdentifier string) string {
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_EncryptionDisabled(rName string, bName string, encryptionDisabled bool) string {
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Location(rName, bName string) string {
@@ -1418,6 +1425,8 @@ func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Packaging(rName, packag
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Path(rName, path string) string {
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Type(rName string, bName string, artifactType string) string {
 func testAccAWSCodeBuildProjectConfig_SecondarySources_CodeCommit(rName string) string {
+func testAccAWSCodeBuildProjectConfig_Source_BuildStatusConfig_GitHubEnterprise(rName string) string {
+func testAccAWSCodeBuildProjectConfig_ConcurrentBuildLimit(rName string, concurrentBuildLimit int) string {
 func testAccAWSCodeBuildReportGroupBasicConfig(rName string) string {
 func testAccAWSCodeBuildReportGroupBasicConfigS3ExportBase(rName string) string {
 func testAccAWSCodeBuildReportGroupS3ExportConfig(rName string) string {
@@ -1470,6 +1479,9 @@ func testAccAWSCodePipelineWebhookConfig_codePipeline(rName, githubToken string)
 func testAccAWSCodeStarConnectionsConnectionConfigBasic(rName string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
+func testAccAWSCodeStarConnectionsHostVpcConfig(rName string) string {
+func testAccAWSCodeStarConnectionsHostConfigBasic(rName string) string {
+func testAccAWSCodeStarConnectionsHostConfigVpcConfig(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBase(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBasic(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigStatus(rName, status string) string {
@@ -1819,6 +1831,13 @@ func testAccAWSDBProxyDefaultTargetGroupConfig_InitQuery(rName, initQuery string
 func testAccAWSDBProxyDefaultTargetGroupConfig_MaxConnectionsPercent(rName string, maxConnectionsPercent int) string {
 func testAccAWSDBProxyDefaultTargetGroupConfig_MaxIdleConnectionsPercent(rName string, maxIdleConnectionsPercent int) string {
 func testAccAWSDBProxyDefaultTargetGroupConfig_SessionPinningFilters(rName, sessionPinningFilters string) string {
+func testAccAWSDBProxyEndpointConfigBase(rName string) string {
+func testAccAWSDBProxyEndpointConfig(rName string) string {
+func testAccAWSDBProxyEndpointConfigTargetRole(rName string) string {
+func testAccAWSDBProxyEndpointConfigVpcSecurityGroupIds1(rName string) string {
+func testAccAWSDBProxyEndpointConfigVpcSecurityGroupIds2(rName string) string {
+func testAccAWSDBProxyEndpointConfigTags1(rName, key1, value1 string) string {
+func testAccAWSDBProxyEndpointConfigTags2(rName, key1, value1, key2, value2 string) string {
 func testAccAWSDBProxyTargetConfigBase(rName string) string {
 func testAccAWSDBProxyTargetConfig_Instance(rName string) string {
 func testAccAWSDBProxyTargetConfig_Cluster(rName string) string {
@@ -3466,6 +3485,10 @@ func testAccAWSLoadBalancerListenerPolicyConfig_basic2(lbName string) string {
 func testAccAWSLoadBalancerPolicyConfig_basic(rInt int) string {
 func testAccAWSLoadBalancerPolicyConfig_updateWhileAssigned0(rInt int) string {
 func testAccAWSLoadBalancerPolicyConfig_updateWhileAssigned1(rInt int) string {
+func testAccAwsMacieAccountConfigBasic() string {
+func testAccAwsMacieAccountConfigWithFinding(finding string) string {
+func testAccAwsMacieAccountConfigWithstatus(status string) string {
+func testAccAwsMacieAccountConfigWithfindingandstatus(finding, status string) string {
 func testAccAWSMacieMemberAccountAssociationConfig_basic(memberAcctId string) string {
 func testAccAWSMacieS3BucketAssociationConfig_basic(randInt int) string {
 func testAccAWSMacieS3BucketAssociationConfig_basicOneTime(randInt int) string {
@@ -3726,10 +3749,10 @@ func testAccAWSQuickSightUserConfigWithEmail(rName, email string) string {
 func testAccAWSQuickSightUserConfig(rName string) string {
 func testAccAwsRamPrincipalAssociationConfig(rName string) string {
 func testAccAwsRamResourceAssociationConfig(rName string) string {
-func testAccAwsRamResourceShareConfigAllowExternalPrincipals(shareName string, allowExternalPrincipals bool) string {
-func testAccAwsRamResourceShareConfigName(shareName string) string {
-func testAccAwsRamResourceShareConfigTags1(shareName, tagKey1, tagValue1 string) string {
-func testAccAwsRamResourceShareConfigTags2(shareName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsRamResourceShareConfigAllowExternalPrincipals(rName string, allowExternalPrincipals bool) string {
+func testAccAwsRamResourceShareConfigName(rName string) string {
+func testAccAwsRamResourceShareConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAwsRamResourceShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSClusterEndpointConfigBase(n int) string {
 func testAccAWSClusterEndpointConfig(n int) string {
 func testAccAWSClusterEndpointConfigTags1(n int, tagKey1, tagValue1 string) string {
@@ -3905,6 +3928,9 @@ func testAccRoute53ResolverFirewallDomainListConfigTags2(rName, tagKey1, tagValu
 func testAccRoute53ResolverFirewallRuleGroupConfig(rName string) string {
 func testAccRoute53ResolverFirewallRuleGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccRoute53ResolverFirewallRuleGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccRoute53ResolverFirewallRuleConfig(rName string) string {
+func testAccRoute53ResolverFirewallRuleConfig_block(rName, blockResponse string) string {
+func testAccRoute53ResolverFirewallRuleConfig_blockOverride(rName string) string {
 func testAccRoute53ResolverQueryLogConfigAssociationConfig(rName string) string {
 func testAccRoute53ResolverQueryLogConfigConfig(rName string) string {
 func testAccRoute53ResolverQueryLogConfigConfigTags1(rName, tagKey1, tagValue1 string) string {

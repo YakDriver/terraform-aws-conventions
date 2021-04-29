@@ -18,3 +18,4 @@ func TestAccAwsServiceQuotasServiceQuotaDataSource_QuotaCode(
 func TestAccAwsServiceQuotasServiceQuotaDataSource_QuotaName(
 func TestAccAwsServiceQuotasServiceDataSource_ServiceName(
 func TestAccAwsAppsyncResolver_DataSource(
+func TestAccAwsAppsyncResolver_DataSource_lambda(

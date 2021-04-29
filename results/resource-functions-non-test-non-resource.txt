@@ -371,6 +371,8 @@ func expandProjectArtifactData(
 func expandProjectCache(
 func expandProjectEnvironment(
 func expandProjectLogsConfig(
+func expandCodeBuildBuildBatchConfig(
+func expandCodeBuildBatchRestrictions(
 func expandCodeBuildCloudWatchLogsConfig(
 func expandCodeBuildS3LogsConfig(
 func expandCodeBuildVpcConfig(
@@ -390,11 +392,15 @@ func flattenAwsCodeBuildProjectSecondarySources(
 func flattenAwsCodeBuildProjectSource(
 func flattenAwsCodeBuildProjectSourceData(
 func flattenAwsCodebuildProjectGitSubmodulesConfig(
+func flattenAwsCodebuildProjectBuildStatusConfig(
 func flattenAwsCodeBuildVpcConfig(
+func flattenAwsCodeBuildBuildBatchConfig(
+func flattenAwsCodeBuildBuildBatchConfigRestrictions(
 func environmentVariablesToMap(
 func sourceAuthToMap(
 func validateAwsCodeBuildProjectName(
 func validateAwsCodeBuildProjectS3LogsLocation(
+func init(
 func expandAwsCodeBuildReportGroupExportConfig(
 func flattenAwsCodeBuildReportGroupExportConfig(
 func expandAwsCodeBuildReportGroupS3ReportExportConfig(
@@ -465,6 +471,8 @@ func extractCodePipelineWebhookAuthConfig(
 func getCodePipelineWebhook(
 func flattenCodePipelineWebhookFilters(
 func flattenCodePipelineWebhookAuthenticationConfiguration(
+func expandCodeStarConnectionsHostVpcConfiguration(
+func flattenCodeStarConnectionsHostVpcConfiguration(
 func expandCodeStarNotificationsNotificationRuleTargets(
 func cleanupCodeStarNotificationsNotificationRuleTargets(
 func validateRoleMappings(
@@ -1759,6 +1767,10 @@ func init(
 func init(
 func policyInBackendServerPolicies(
 func policyInListenerPolicies(
+func resourceMacie2AccountCreate(
+func resourceMacie2AccountRead(
+func resourceMacie2AccountUpdate(
+func resourceMacie2AccountDelete(
 func findMainRouteTableAssociation(
 func findMainRouteTable(
 func getAwsMediaConvertAccountClient(
@@ -1941,9 +1953,6 @@ func init(
 func qldbLedgerRefreshStatusFunc(
 func waitForQLDBLedgerDeletion(
 func init(
-func getRamResourceSharePrincipalAssociation(
-func waitForRamResourceSharePrincipalAssociation(
-func waitForRamResourceSharePrincipalDisassociation(
 func decodeRamResourceAssociationID(
 func getRamResourceShareAssociation(
 func ramResourceAssociationStateRefreshFunc(
@@ -2004,6 +2013,7 @@ func init(
 func route53ResolverEndpointRefresh(
 func route53ResolverEndpointWaitUntilTargetState(
 func route53ResolverEndpointHashIpAddress(
+func init(
 func init(
 func init(
 func init(

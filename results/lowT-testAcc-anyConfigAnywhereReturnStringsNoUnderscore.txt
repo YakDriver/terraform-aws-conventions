@@ -234,6 +234,10 @@ func testAccAWSRDSEngineVersionDataSourceDefaultOnlyConfig() string {
 func testAccAWSDataSourceRedshiftClusterConfig(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithVpc(rInt int) string {
 func testAccAWSDataSourceRedshiftClusterConfigWithLogging(rInt int) string {
+func testAccDataSourceAwsResourceGroupsTaggingAPIResourcesConfigTagFilter(rName string) string {
+func testAccDataSourceAwsResourceGroupsTaggingAPIResourcesConfigResourceTypeFilters(rName string) string {
+func testAccDataSourceAwsResourceGroupsTaggingAPIResourcesConfigResourceARNList(rName string) string {
+func testAccDataSourceAwsResourceGroupsTaggingAPIResourcesConfigIncludeComplianceDetails(rName string) string {
 func testAccDataSourceAwsRoute53ZoneConfigId(rInt int) string {
 func testAccDataSourceAwsRoute53ZoneConfigName(rInt int) string {
 func testAccDataSourceAwsRoute53ZoneConfigTagsPrivate(rInt int) string {
@@ -821,6 +825,9 @@ func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2, githubToken 
 func testAccAWSCodeStarConnectionsConnectionConfigBasic(rName string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
+func testAccAWSCodeStarConnectionsHostVpcConfig(rName string) string {
+func testAccAWSCodeStarConnectionsHostConfigBasic(rName string) string {
+func testAccAWSCodeStarConnectionsHostConfigVpcConfig(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBase(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigBasic(rName string) string {
 func testAccAWSCodeStarNotificationsNotificationRuleConfigStatus(rName, status string) string {
@@ -969,6 +976,13 @@ func testAccAWSDBParameterGroupIncludeDefaultConfig(n string) string {
 func testAccAWSDBParameterGroupUpdateParametersInitialConfig(n string) string {
 func testAccAWSDBParameterGroupUpdateParametersUpdatedConfig(n string) string {
 func testAccAWSDBProxyDefaultTargetGroupConfigBase(rName string) string {
+func testAccAWSDBProxyEndpointConfigBase(rName string) string {
+func testAccAWSDBProxyEndpointConfig(rName string) string {
+func testAccAWSDBProxyEndpointConfigTargetRole(rName string) string {
+func testAccAWSDBProxyEndpointConfigVpcSecurityGroupIds1(rName string) string {
+func testAccAWSDBProxyEndpointConfigVpcSecurityGroupIds2(rName string) string {
+func testAccAWSDBProxyEndpointConfigTags1(rName, key1, value1 string) string {
+func testAccAWSDBProxyEndpointConfigTags2(rName, key1, value1, key2, value2 string) string {
 func testAccAWSDBProxyTargetConfigBase(rName string) string {
 func testAccAWSDBProxyConfigBase(rName string) string {
 func testAccAWSDBProxyConfig(rName string) string {
@@ -1950,6 +1964,10 @@ func testAccAWSLBConfigALBAccessLogsNoBlocks(lbName, bucketName string) string {
 func testAccAWSLBConfigNLBAccessLogsBase(bucketName string) string {
 func testAccAWSLBConfigNLBAccessLogs(enabled bool, lbName, bucketName, bucketPrefix string) string {
 func testAccAWSLBConfigNLBAccessLogsNoBlocks(lbName, bucketName string) string {
+func testAccAwsMacieAccountConfigBasic() string {
+func testAccAwsMacieAccountConfigWithFinding(finding string) string {
+func testAccAwsMacieAccountConfigWithstatus(status string) string {
+func testAccAwsMacieAccountConfigWithfindingandstatus(finding, status string) string {
 func testAccMediaPackageChannelConfig(rName string) string {
 func testAccMediaPackageChannelConfigDescription(rName, description string) string {
 func testAccMediaPackageChannelConfigWithTags(rName, key, value string) string {
@@ -2124,10 +2142,10 @@ func testAccAWSQuickSightUserConfigWithEmail(rName, email string) string {
 func testAccAWSQuickSightUserConfig(rName string) string {
 func testAccAwsRamPrincipalAssociationConfig(rName string) string {
 func testAccAwsRamResourceAssociationConfig(rName string) string {
-func testAccAwsRamResourceShareConfigAllowExternalPrincipals(shareName string, allowExternalPrincipals bool) string {
-func testAccAwsRamResourceShareConfigName(shareName string) string {
-func testAccAwsRamResourceShareConfigTags1(shareName, tagKey1, tagValue1 string) string {
-func testAccAwsRamResourceShareConfigTags2(shareName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsRamResourceShareConfigAllowExternalPrincipals(rName string, allowExternalPrincipals bool) string {
+func testAccAwsRamResourceShareConfigName(rName string) string {
+func testAccAwsRamResourceShareConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAwsRamResourceShareConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSClusterEndpointConfigBase(n int) string {
 func testAccAWSClusterEndpointConfig(n int) string {
 func testAccAWSClusterEndpointConfigTags1(n int, tagKey1, tagValue1 string) string {
@@ -2217,6 +2235,7 @@ func testAccRoute53ResolverFirewallDomainListConfigTags2(rName, tagKey1, tagValu
 func testAccRoute53ResolverFirewallRuleGroupConfig(rName string) string {
 func testAccRoute53ResolverFirewallRuleGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccRoute53ResolverFirewallRuleGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccRoute53ResolverFirewallRuleConfig(rName string) string {
 func testAccRoute53ResolverQueryLogConfigAssociationConfig(rName string) string {
 func testAccRoute53ResolverQueryLogConfigConfig(rName string) string {
 func testAccRoute53ResolverQueryLogConfigConfigTags1(rName, tagKey1, tagValue1 string) string {

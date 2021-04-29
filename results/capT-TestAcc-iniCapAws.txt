@@ -52,6 +52,7 @@ func TestAccAwsAppsyncFunction_disappears(
 func TestAccAwsAppsyncResolver_basic(
 func TestAccAwsAppsyncResolver_disappears(
 func TestAccAwsAppsyncResolver_DataSource(
+func TestAccAwsAppsyncResolver_DataSource_lambda(
 func TestAccAwsAppsyncResolver_RequestTemplate(
 func TestAccAwsAppsyncResolver_ResponseTemplate(
 func TestAccAwsAppsyncResolver_multipleResolvers(
@@ -302,6 +303,11 @@ func TestAccAwsLexSlotType_enumerationValues(
 func TestAccAwsLexSlotType_name(
 func TestAccAwsLexSlotType_valueSelectionStrategy(
 func TestAccAwsLexSlotType_disappears(
+func TestAccAwsMacie2Account_basic(
+func TestAccAwsMacie2Account_FindingPublishingFrequency(
+func TestAccAwsMacie2Account_WithStatus(
+func TestAccAwsMacie2Account_WithFindingAndStatus(
+func TestAccAwsMacie2Account_disappears(
 func TestAccAwsMskScramSecretAssociation_basic(
 func TestAccAwsMskScramSecretAssociation_update(
 func TestAccAwsMskScramSecretAssociation_disappears(
@@ -363,6 +369,7 @@ func TestAccAwsRamPrincipalAssociation_disappears(
 func TestAccAwsRamResourceAssociation_basic(
 func TestAccAwsRamResourceAssociation_disappears(
 func TestAccAwsRamResourceShareAccepter_basic(
+func TestAccAwsRamResourceShareAccepter_disappears(
 func TestAccAwsRamResourceShare_basic(
 func TestAccAwsRamResourceShare_AllowExternalPrincipals(
 func TestAccAwsRamResourceShare_Name(

@@ -202,6 +202,11 @@ func expandDbProxyConnectionPoolConfig(
 func flattenDbProxyTargetGroupConnectionPoolConfig(
 func resourceAwsDbProxyDefaultTargetGroupGet(
 func resourceAwsDbProxyDefaultTargetGroupRefreshFunc(
+func resourceAwsDbProxyEndpoint(
+func resourceAwsDbProxyEndpointCreate(
+func resourceAwsDbProxyEndpointRead(
+func resourceAwsDbProxyEndpointUpdate(
+func resourceAwsDbProxyEndpointDelete(
 func resourceAwsDbProxy(
 func resourceAwsDbProxyCreate(
 func resourceAwsDbProxyRefreshFunc(

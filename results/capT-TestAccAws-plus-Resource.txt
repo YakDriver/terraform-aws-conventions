@@ -8,6 +8,7 @@ func TestAccAwsNetworkFirewallResourcePolicy_disappears_RuleGroup(
 func TestAccAwsRamResourceAssociation_basic(
 func TestAccAwsRamResourceAssociation_disappears(
 func TestAccAwsRamResourceShareAccepter_basic(
+func TestAccAwsRamResourceShareAccepter_disappears(
 func TestAccAwsRamResourceShare_basic(
 func TestAccAwsRamResourceShare_AllowExternalPrincipals(
 func TestAccAwsRamResourceShare_Name(
