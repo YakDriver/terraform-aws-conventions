@@ -14,108 +14,108 @@ Find out more:
 ## All Functions
 
 ### Exported
-Count: 5593
+Count: 5606
 [List matches](./results/functions-exported.txt)
 
-Example: `func TestAccAWSGameliftBuild_tags(`
+Example: `func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_UpdateRunning(`
 
 ### Non-Exported
-Count: 15803
+Count: 15826
 [List matches](./results/functions-non-exported.txt)
 
-Example: `func resourceDHCPOptionsStateRefreshFunc(`
+Example: `func decodeApiGatewayDocumentationVersionId(`
 
 ### Multicaps
-Count: 10467
+Count: 10483
 [List matches](./results/functions-multicaps.txt)
 
-Example: `func TestAccAWSCodeBuildProject_WindowsServer2019Container(`
+Example: `func testAccAWSWafIPSetConfigChangeIPSetDescriptors(`
 
 ### Non-AWS Multicaps
-Count: 4132
+Count: 4140
 [List matches](./results/functions-non-aws-multicaps.txt)
 
-Example: `func testAccDataSourceAWSELBConfigBasic(`
+Example: `func testAccCheckIAMSamlProviderDestroy(`
 
 ### Uppercase AWS
-Count: 9277
+Count: 9294
 [List matches](./results/functions-uppercase-aws.txt)
 
-Example: `func TestAccAWSInstanceDataSource_gp3ThroughputDevice(`
+Example: `func testAccAWSEcsServiceWithFamilyAndRevisionModified(`
 
 ### Mixed case AWS
-Count: 6446
+Count: 6451
 [List matches](./results/functions-mixed-case-aws.txt)
 
-Example: `func resourceAwsDbOptionGroupUpdate(`
+Example: `func resourceAwsVpnConnection(`
 
 ### Any underscores
-Count: 7899
+Count: 7914
 [List matches](./results/functions-any-underscores.txt)
 
-Example: `func TestAccAWSRoute53ResolverEndpointDataSource_Basic(`
+Example: `func TestAccAWSWafGeoMatchSet_disappears(`
 
 ### Multiple underscores
 Count: 1849
 [List matches](./results/functions-multiple-underscores.txt)
 
-Example: `func TestAccAWSSSOAdminAccountAssignment_Basic_User(`
+Example: `func TestAccAWSElasticacheReplicationGroup_GlobalReplicationGroupId_Full(`
 
 ### Lowercase after first underscore
-Count: 4840
+Count: 4853
 [List matches](./results/functions-lowercase-after-first-underscore.txt)
 
-Example: `func TestAccAWSSagemakerFeatureGroup_multipleFeatures(`
+Example: `func TestAccAWSSSMDocument_permission_public(`
 
 ### Uppercase after first underscore
-Count: 3058
+Count: 3060
 [List matches](./results/functions-uppercase-after-first-underscore.txt)
 
-Example: `func testAccAppsyncApiKeyConfig_Required(`
+Example: `func TestAccAWSDBInstance_PerformanceInsightsKmsKeyId(`
 
 ## Capital-T Test Functions
 
 ### All
-Count: 5547
+Count: 5560
 [List matches](./results/capT-Test.txt)
 
-Example: `func TestCloudFrontStructure_flattenCustomErrorResponses(`
+Example: `func TestAccAWSLBTargetGroup_stickinessValidNLB(`
 
 ### TestAcc
-Count: 5182
+Count: 5194
 [List matches](./results/capT-TestAcc.txt)
 
-Example: `func TestAccAWSDBClusterParameterGroup_generatedName_Parameter(`
+Example: `func TestAccAWSGlueJob_Timeout(`
 
 ### TestAccAWS
-Count: 4396
+Count: 4408
 [List matches](./results/capT-TestAcc-allCapAWS.txt)
 
-Example: `func TestAccAWSInstance_instanceProfileChange(`
+Example: `func TestAccAWSEc2TransitGatewayVpcAttachmentAccepter_basic(`
 
 ### TestAccAws
 Count: 498
 [List matches](./results/capT-TestAcc-iniCapAws.txt)
 
-Example: `func TestAccAwsAcmpcaCertificateAuthority_disappears(`
+Example: `func TestAccAwsNetworkFirewallFirewallPolicy_tags(`
 
 ### TestAccDataSourceAWS
 Count: 65
 [List matches](./results/capT-TestAccDataSourceAWS.txt)
 
-Example: `func TestAccDataSourceAWSSignerSigningJob_basic(`
+Example: `func TestAccDataSourceAWSEIP_CarrierIP(`
 
 ### TestAccDataSourceAws
 Count: 203
 [List matches](./results/capT-TestAccDataSourceAws.txt)
 
-Example: `func TestAccDataSourceAwsEc2CoipPools_basic(`
+Example: `func TestAccDataSourceAwsEfsFileSystem_id(`
 
 ### TestAccAWS+DataSource
 Count: 218
 [List matches](./results/capT-TestAccAWS-plus-DataSource.txt)
 
-Example: `func TestAccAWSRDSEngineVersionDataSource_upgradeTargets(`
+Example: `func TestAccAWSOutpostsOutpostDataSource_Name(`
 
 ### TestAccAws+DataSource
 Count: 21
@@ -127,7 +127,7 @@ Example: `func TestAccAwsImageBuilderImageRecipeDataSource_Arn(`
 Count: 34
 [List matches](./results/capT-TestAccAWSDataSource.txt)
 
-Example: `func TestAccAWSDataSourceIAMPolicy_NameAndPathPrefix(`
+Example: `func TestAccAWSDataSourceIAMGroup_users(`
 
 ### TestAccAwsDataSource
 Count: 0
@@ -135,7 +135,7 @@ Count: 0
 Count: 78
 [List matches](./results/capT-TestAccAWSData.txt)
 
-Example: `func TestAccAWSDataSourceIAMServerCertificate_basic(`
+Example: `func TestAccAWSDataSourceIAMPolicy_NonExistent(`
 
 ### TestAccAwsData
 Count: 0
@@ -151,131 +151,131 @@ Example: `func TestAccResourceAwsKmsCiphertext_validate_withContext(`
 Count: 44
 [List matches](./results/capT-TestAccAWS-plus-Resource.txt)
 
-Example: `func TestAccAWSEcsTaskDefinition_changeVolumesForcesNewResource(`
+Example: `func TestAccAWSLakeFormationResource_basic(`
 
 ### TestAccAws+Resource
 Count: 16
 [List matches](./results/capT-TestAccAws-plus-Resource.txt)
 
-Example: `func TestAccAwsRamResourceShare_Name(`
+Example: `func TestAccAwsRamResourceShareAccepter_basic(`
 
 ### TestAcc and lowercase after first underscore
-Count: 3162
+Count: 3172
 [List matches](./results/capT-TestAcc-lowAfterUnderscore.txt)
 
-Example: `func TestAccAWSLBTargetGroup_namePrefix(`
+Example: `func TestAccAwsBackupSelection_disappears(`
 
 ### TestAcc and uppercase after first underscore
-Count: 2019
+Count: 2021
 [List matches](./results/capT-TestAcc-uppAfterUnderscore.txt)
 
-Example: `func TestAccAWSS3Bucket_LifecycleBasic(`
+Example: `func TestAccAWSKinesisAnalyticsV2Application_SQLApplicationConfiguration_StartApplication_OnCreate(`
 
 ## Lowercase-t test Functions
 
 ### All
-Count: 8358
+Count: 8370
 [List matches](./results/lowT-test.txt)
 
-Example: `func testAccAWSRDSClusterConfig_ScalingConfiguration(`
+Example: `func testAccAWSElasticacheClusterConfig_NodeType_Redis(`
 
 ### testAcc
-Count: 8024
+Count: 8035
 [List matches](./results/lowT-testAcc.txt)
 
-Example: `func testAccDataSourceAwsNetworkInterfacesConfig_Base(`
+Example: `func testAccDataSourceAwsEbsVolumeIDsConfigWithDataSource(`
 
 ### testAccAWS
-Count: 3508
+Count: 3512
 [List matches](./results/lowT-testAcc-allCapAWS.txt)
 
-Example: `func testAccAWSCodeBuildProjectConfig_WindowsServer2019Container(`
+Example: `func testAccAWSLBConfig_generatedName(`
 
 ### testAccAws
 Count: 793
 [List matches](./results/lowT-testAcc-iniCapAws.txt)
 
-Example: `func testAccAwsImageBuilderImageRecipeConfigBase(`
+Example: `func testAccAwsRamResourceShareConfigAllowExternalPrincipals(`
 
 ### testAcc functions with lowercase after first underscore
-Count: 1545
+Count: 1548
 [List matches](./results/lowT-testAcc-lowAfterUnderscore.txt)
 
-Example: `func testAccDataSourceAwsLambdaInvocation_complex_config(`
+Example: `func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(`
 
 ### testAcc functions with uppercase after first underscore
 Count: 1037
 [List matches](./results/lowT-testAcc-uppAfterUnderscore.txt)
 
-Example: `func testAccAWSCodeBuildProjectConfig_QueuedTimeout(`
+Example: `func testAccCheckAwsDbClusterSnapshotDataSourceConfig_DbClusterSnapshotIdentifier(`
 
 ### testAcc functions with config (any case)
-Count: 5226
+Count: 5237
 [List matches](./results/lowT-testAcc-anyConfigAnywhere.txt)
 
-Example: `func testAccAWSRouteConfigIpv4InternetGateway(`
+Example: `func testAccSagemakerModelConfigTags2(`
 
 ### testAcc functions returning strings
-Count: 5459
+Count: 5470
 [List matches](./results/lowT-testAcc-returnStrings.txt)
 
-Example: `func testAccAWSEc2TransitGatewayConfigDefaultRouteTableAssociation(defaultRouteTableAssociation string) string {`
+Example: `func testAccAWSAppautoscalingTargetSpotFleetRequestConfig(validUntil string) string {`
 
 ### testAcc functions with config (any case) and returning strings
-Count: 5038
+Count: 5049
 [List matches](./results/lowT-testAcc-anyConfigAnywhereReturnStrings.txt)
 
-Example: `func testAccAWSCognitoIdentityPoolConfig_Tags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {`
+Example: `func testAccConfigConformancePackConfigBase(rName string) string {`
 
 ### testAcc functions with config (any case) and returning strings without underscores
-Count: 2965
+Count: 2973
 [List matches](./results/lowT-testAcc-anyConfigAnywhereReturnStringsNoUnderscore.txt)
 
-Example: `func testAccSagemakerEndpointConfigTags(rName string) string {`
+Example: `func testAccAWSEksNodeGroupConfigVersion(rName, version string) string {`
 
 ## Any case-t Test Functions
 
 ### All
-Count: 13905
+Count: 13930
 [List matches](./results/anyT-Test.txt)
 
-Example: `func TestAccAWSWafRegionalByteMatchSet_disappears(`
+Example: `func testAccConfigConfigurationRecorderConfig_basic(`
 
 ### TestAcc
-Count: 13206
+Count: 13229
 [List matches](./results/anyT-TestAcc.txt)
 
-Example: `func testAccAWSRDSClusterConfig_EngineMode_Multimaster(`
+Example: `func TestAccAWSDHCPOptionsAssociation_basic(`
 
 ### TestAcc with lowercase after first underscore
-Count: 4707
+Count: 4720
 [List matches](./results/anyT-TestAcc-lowAfterUnderscore.txt)
 
-Example: `func TestAccAWSAppautoScalingPolicy_dynamodb_index(`
+Example: `func TestAccAwsLexIntent_sampleUtterances(`
 
 ### TestAcc with uppercase after first underscore
-Count: 3056
+Count: 3058
 [List matches](./results/anyT-TestAcc-capAfterUnderscore.txt)
 
-Example: `func TestAccAWSCognitoUserPoolUICustomization_Client_Disappears(`
+Example: `func testAccELBConfig_Listener_IAMServerCertificate_AddInvalidListener(`
 
 ### TestAcc with only one underscore
-Count: 5953
+Count: 5968
 [List matches](./results/anyT-TestAcc-onlyOneUnderscore.txt)
 
-Example: `func testAccAWSAutoscalingMetricsCollectionConfig_allMetricsCollected(`
+Example: `func testAccAWSWafRegionalRateBasedRuleConfig_changePredicates(`
 
 ### TestAcc with camel case after first underscore
-Count: 2050
+Count: 2056
 [List matches](./results/anyT-TestAcc-camelcase.txt)
 
-Example: `func TestAccAWSIAMUserPolicy_generatedName(`
+Example: `func testAccAWSLambdaPermissionConfig_withIAMRole(`
 
 ### TestAcc with multiple underscores
 Count: 1811
 [List matches](./results/anyT-TestAcc-multipleUnderscores.txt)
 
-Example: `func TestAccAWSSecurityGroup_Name_TerraformPrefix(`
+Example: `func TestAccAWSLaunchConfiguration_ebs_noDevice(`
 
 ## Test Constants
 
@@ -283,31 +283,31 @@ Example: `func TestAccAWSSecurityGroup_Name_TerraformPrefix(`
 Count: 444
 [List matches](./results/const-anyT-Test.txt)
 
-Example: `const testAccAWSS3BucketConfigBucketEmptyString =`
+Example: `const testAccDataSourceAwsAcmpcaCertificateAuthorityConfig_ARN =`
 
 ### TestAcc (any case)
 Count: 435
 [List matches](./results/const-anyT-TestAcc.txt)
 
-Example: `const testAccWebACLLoggingConfigurationResourceConfig =`
+Example: `const testAccAWSNetworkAclRuleIngressEgressSameNumberMissing =`
 
 ### testAcc (lowercase)
 Count: 435
 [List matches](./results/const-lowT-testAcc.txt)
 
-Example: `const testAccRouteTableAssociationSubnetConfig_ChangeSubnet =`
+Example: `const testAccEc2CapacityReservationConfig =`
 
 ### TestAcc (any case) with lowercase after first underscore
 Count: 133
 [List matches](./results/const-anyT-TestAcc-underscoreLower.txt)
 
-Example: `const testAccWebACLLoggingConfigurationResource_emptyRedactedFieldsConfig =`
+Example: `const testAccAWSLaunchTemplateConfig_instanceMarketOptions_basic =`
 
 ### TestAcc (any case) with uppercase after first underscore
 Count: 62
 [List matches](./results/const-anyT-TestAcc-underscoreUpper.txt)
 
-Example: `const testAccAWSNetworkAclSubnet_SubnetIdsDeleteOne =`
+Example: `const testAccDataSourceAwsElasticacheReplicationGroupConfig_NonExistent =`
 
 ### TestAcc (any case) with camel case after underscore
 Count: 58
@@ -319,7 +319,7 @@ Example: `const testAccRoute53ResolverRuleConfig_basicNoTags =`
 Count: 164
 [List matches](./results/const-anyT-TestAcc-onlyOneUnderscore.txt)
 
-Example: `const testAccDataSourceAwsWafRegionalIPSet_NonExistent =`
+Example: `const testAccCheckAwsEksClusterAuthConfig_basic =`
 
 ### TestAcc (any case) with multiple underscores
 Count: 31
@@ -331,51 +331,51 @@ Example: `const testAccAwsAcmpcaCertificateAuthorityConfig_Tags_SingleUpdated =`
 Count: 377
 [List matches](./results/const-anyT-TestAcc-anyConfigAnywhere.txt)
 
-Example: `const testAccAwsEbsVolumeConfigWithInvalidThroughputForType =`
+Example: `const testAccCheckAwsEcrRepositoryDataSourceConfig_NonExistent =`
 
 ### TestAcc (any case) with config (any case) and no underscores
 Count: 197
 [List matches](./results/const-anyT-TestAcc-anyConfigAnywhereNoUnderscores.txt)
 
-Example: `const testAccInternetGatewayConfig =`
+Example: `const testAccSubnetConfigIpv6UpdateIpv6Cidr =`
 
 ### TestAcc (any case) with underscore anywhere after config (any case)
 Count: 178
 [List matches](./results/const-anyT-TestAcc-underscoreAfterAnyConfig.txt)
 
-Example: `const testAccDBSubnetGroupConfig_withUnderscoresAndPeriodsAndSpaces =`
+Example: `const testAccAWSSecurityGroupConfig_revoke_true =`
 
 ## Resource Functions
 
 ### Resource
-Count: 3612
+Count: 3617
 [List matches](./results/resource-functions-resource.txt)
 
-Example: `func resourceAwsDmsReplicationSubnetGroupDelete(`
+Example: `func resourceAwsCognitoUserGroupUpdate(`
 
 ### Resource Multi Caps
 Count: 222
 [List matches](./results/resource-functions-resource-multicap.txt)
 
-Example: `func resourceAwsInstanceFindByID(`
+Example: `func resourceAwsIamOpenIDConnectProviderUpdate(`
 
 ### Non-test
-Count: 6217
+Count: 6227
 [List matches](./results/resource-functions-non-test.txt)
 
-Example: `func expandEfsAccessPointRootDirectory(`
+Example: `func resourceAwsVpnConnection(`
 
 ### Non-test Multi-caps
 Count: 462
 [List matches](./results/resource-functions-non-test-multicap.txt)
 
-Example: `func decodeSecretsManagerSecretVersionID(`
+Example: `func detachIGStateRefreshFunc(`
 
 ### Non-test, non-resource
-Count: 2653
+Count: 2658
 [List matches](./results/resource-functions-non-test-non-resource.txt)
 
-Example: `func expandIotElasticsearchAction(`
+Example: `func expandAwsSyntheticsCanaryVpcConfig(`
 
 ## Function Capitalization
 
@@ -383,55 +383,55 @@ Example: `func expandIotElasticsearchAction(`
 Count: 7
 [List matches](./results/Function-Capitalization-acl.txt)
 
-Example: `func testAccAWSDBInstanceConfig_EnabledCloudwatchLogsExports_Oracle(`
+Example: `func TestAccAWSS3BucketObject_acl(`
 
 ### Acl
 Count: 186
 [List matches](./results/Function-Capitalization-Acl.txt)
 
-Example: `func resourceAwsNetworkAclRead(`
+Example: `func dataSourceAwsNetworkAclsRead(`
 
 ### ACL
 Count: 112
 [List matches](./results/Function-Capitalization-ACL.txt)
 
-Example: `func testAccAwsWafv2WebACLLoggingConfiguration_updateTwoRedactedFields(`
+Example: `func TestAccAwsWafv2WebACLLoggingConfiguration_loggingFilter(`
 
 ### ami
 Count: 18
 [List matches](./results/Function-Capitalization-ami.txt)
 
-Example: `func amiBlockDeviceMappingHash(`
+Example: `func amiStateReason(`
 
 ### Ami
 Count: 81
 [List matches](./results/Function-Capitalization-Ami.txt)
 
-Example: `func resourceAwsAmiRead(`
+Example: `func testAccAmiConfigTags1(`
 
 ### AMI
 Count: 56
 [List matches](./results/Function-Capitalization-AMI.txt)
 
-Example: `func testAccCheckAWSAMIFromInstanceDestroy(`
+Example: `func testAccAWSAMIFromInstanceConfigTags2(`
 
 ### api
 Count: 23
 [List matches](./results/Function-Capitalization-api.txt)
 
-Example: `func TestAccAWSAPIGatewayUsagePlan_apiStages_multiple(`
+Example: `func testAccAWSAPIGatewayV2IntegrationConfig_apiWebSocket(`
 
 ### Api
 Count: 489
 [List matches](./results/Function-Capitalization-Api.txt)
 
-Example: `func TestAccAWSAppsyncGraphqlApi_AuthenticationType_AWSIAM(`
+Example: `func expandApiGatewayV2RouteSettings(`
 
 ### API
 Count: 625
 [List matches](./results/Function-Capitalization-API.txt)
 
-Example: `func testAccAWSAPIGatewayV2DomainNameConfig_basic(`
+Example: `func testAccAWSAPIGatewayAuthorizerConfig_authTypeValidationCognito(`
 
 ### arn
 Count: 5
@@ -443,79 +443,79 @@ Example: `func TestCloudFrontStructure_expandViewerCertificate_acm_certificate_a
 Count: 201
 [List matches](./results/Function-Capitalization-Arn.txt)
 
-Example: `func TestAccAWSEksAddon_ServiceAccountRoleArn(`
+Example: `func TestAccAWSCloudwatchLogSubscriptionFilter_DestinationArn_KinesisStream(`
 
 ### ARN
 Count: 57
 [List matches](./results/Function-Capitalization-ARN.txt)
 
-Example: `func testAccCheckAWSAPIGatewayV2StageExecutionARN(`
+Example: `func TestLBListenerARNFromRuleARN(`
 
 ### asg
 Count: 6
 [List matches](./results/Function-Capitalization-asg.txt)
 
-Example: `func TestAccAWSCodeDeployDeploymentGroup_blueGreenDeploymentConfiguration_update_with_asg(`
+Example: `func test_config_blue_green_deployment_config_update_with_asg(`
 
 ### Asg
 Count: 5
 [List matches](./results/Function-Capitalization-Asg.txt)
 
-Example: `func flattenAsgSuspendedProcesses(`
+Example: `func expandAsgTagFilters(`
 
 ### ASG
 Count: 16
 [List matches](./results/Function-Capitalization-ASG.txt)
 
-Example: `func TestAccAWSASGNotification_basic(`
+Example: `func testAccASGNotificationConfig_update(`
 
 ### aws
 Count: 8
 [List matches](./results/Function-Capitalization-aws.txt)
 
-Example: `func awsElasticTranscoderPipelineWithContentConfig(`
+Example: `func awsElasticTranscoderPipelineWithPerms(`
 
 ### Aws
-Count: 6446
+Count: 6451
 [List matches](./results/Function-Capitalization-Aws.txt)
 
-Example: `func TestAccDataSourceAwsKmsCiphertext_basic(`
+Example: `func resourceAwsCodeCommitUpdateDefaultBranch(`
 
 ### AWS
-Count: 9277
+Count: 9294
 [List matches](./results/Function-Capitalization-AWS.txt)
 
-Example: `func testAccAWSCloudFormationStackConfig_allAttributesWithBodies(`
+Example: `func TestAccAWSIoTTopicRule_sqs(`
 
 ### cidr
 Count: 3
 [List matches](./results/Function-Capitalization-cidr.txt)
 
-Example: `func TestAccAWSLightsailInstancePublicPorts_cidrs(`
+Example: `func testAccAWSLightsailInstancePublicPortsConfig_cidrs(`
 
 ### Cidr
 Count: 64
 [List matches](./results/Function-Capitalization-Cidr.txt)
 
-Example: `func testAccDataSourceAwsVpcConfigCidrBlockAssociationsMultiple(`
+Example: `func validateLocalIpv4NetworkCidr(`
 
 ### CIDR
 Count: 18
 [List matches](./results/Function-Capitalization-CIDR.txt)
 
-Example: `func validateIpv6CIDRBlock(`
+Example: `func testAccAWSSecurityGroupRuleInvalidIPv6CIDR(`
 
 ### cors
 Count: 5
 [List matches](./results/Function-Capitalization-cors.txt)
 
-Example: `func testAccAWSAPIGatewayV2ApiConfig_corsConfiguration(`
+Example: `func testAccAWSAPIGatewayV2ApiConfig_OpenAPIYaml_corsConfiguration(`
 
 ### Cors
 Count: 9
 [List matches](./results/Function-Capitalization-Cors.txt)
 
-Example: `func TestAccAWSAPIGatewayV2Api_Openapi_WithCorsConfiguration(`
+Example: `func flattenApiGateway2CorsConfiguration(`
 
 ### CORS
 Count: 2
@@ -527,31 +527,31 @@ Example: `func testAccAWSS3BucketConfigWithCORS(`
 Count: 67
 [List matches](./results/Function-Capitalization-db.txt)
 
-Example: `func testAccGlueCrawlerConfig_JdbcTarget(`
+Example: `func testAccAwsPinpointAPNSVoipSandboxChannelTokenConfigurationFromEnv(`
 
 ### Db
 Count: 441
 [List matches](./results/Function-Capitalization-Db.txt)
 
-Example: `func waitForRdsDbInstanceRoleAssociation(`
+Example: `func TestAccAwsDmsEndpoint_Db2(`
 
 ### DB
 Count: 578
 [List matches](./results/Function-Capitalization-DB.txt)
 
-Example: `func testAccAWSDBInstanceConfig_DbSubnetGroupName_VpcSecurityGroupIds(`
+Example: `func testAccAWSDBProxyDefaultTargetGroupConfig_InitQuery(`
 
 ### dms
 Count: 29
 [List matches](./results/Function-Capitalization-dms.txt)
 
-Example: `func dmsReplicationTaskDestroy(`
+Example: `func dmsEndpointMongoDbConfigUpdate(`
 
 ### Dms
 Count: 124
 [List matches](./results/Function-Capitalization-Dms.txt)
 
-Example: `func TestValidateDmsEndpointId(`
+Example: `func testAccAWSDmsReplicationInstanceConfig_Tags_One(`
 
 ### DMS
 Count: 0
@@ -559,19 +559,19 @@ Count: 0
 Count: 13
 [List matches](./results/Function-Capitalization-dns.txt)
 
-Example: `func testAccAcmCertificateValidation_validationRecordFqdnsEmailValidation(`
+Example: `func testAccAcmCertificateValidation_validationRecordFqdnsTwoRoute53Records(`
 
 ### Dns
 Count: 83
 [List matches](./results/Function-Capitalization-Dns.txt)
 
-Example: `func resourceAwsRoute53HostedZoneDnssecDelete(`
+Example: `func TestAccAWSRoute53ResolverDnssecConfig_basic(`
 
 ### DNS
 Count: 8
 [List matches](./results/Function-Capitalization-DNS.txt)
 
-Example: `func testAccAwsEc2ClientVpnEndpoint_withDNSServers(`
+Example: `func testAccGetPartitionReverseDNSPrefix(`
 
 ### ec2
 Count: 32
@@ -583,31 +583,31 @@ Example: `func testAccAWSEIPAssociationConfig_ec2Classic(`
 Count: 759
 [List matches](./results/Function-Capitalization-Ec2.txt)
 
-Example: `func resourceAwsEc2CapacityReservationDelete(`
+Example: `func testAccEc2ClientVpnEndpointConfigWithMicrosoftAD(`
 
 ### EC2
 Count: 33
 [List matches](./results/Function-Capitalization-EC2.txt)
 
-Example: `func testAccEC2ClassicPreCheck(`
+Example: `func TestGetSupportedEC2Platforms(`
 
 ### ecs
 Count: 12
 [List matches](./results/Function-Capitalization-ecs.txt)
 
-Example: `func launchSpecsToSet(`
+Example: `func TestAccAWSEcsDataSource_ecsTaskDefinition(`
 
 ### Ecs
 Count: 270
 [List matches](./results/Function-Capitalization-Ecs.txt)
 
-Example: `func testAccCheckAWSEcsServiceDestroy(`
+Example: `func TestAccAWSEcsService_healthCheckGracePeriodSeconds(`
 
 ### ECS
 Count: 6
 [List matches](./results/Function-Capitalization-ECS.txt)
 
-Example: `func TestAccAWSCodeDeployDeploymentGroup_ECS_BlueGreen(`
+Example: `func TestAccAWSCodeDeployApp_computePlatform_ECS(`
 
 ### efs
 Count: 1
@@ -619,31 +619,31 @@ Example: `func testAccCheckAWSSNSSMSPrefsDestroy(`
 Count: 80
 [List matches](./results/Function-Capitalization-Efs.txt)
 
-Example: `func resourceAwsEfsMountTargetUpdate(`
+Example: `func TestAccAWSDataSyncLocationEfs_basic(`
 
 ### EFS
 Count: 66
 [List matches](./results/Function-Capitalization-EFS.txt)
 
-Example: `func testAccAWSEFSMountTargetConfigModified(`
+Example: `func testAccAWSEcsTaskDefinitionWithEFSAccessPoint(`
 
 ### eip
-Count: 52
+Count: 58
 [List matches](./results/Function-Capitalization-eip.txt)
 
-Example: `func testAccCheckAwsSESReceiptRuleSetExists(`
+Example: `func testAccCheckSESReceiptRuleDestroy(`
 
 ### Eip
 Count: 15
 [List matches](./results/Function-Capitalization-Eip.txt)
 
-Example: `func disassociateEip(`
+Example: `func resourceAwsEipAssociationRead(`
 
 ### EIP
 Count: 75
 [List matches](./results/Function-Capitalization-EIP.txt)
 
-Example: `func TestAccAWSEIP_Instance_reassociate(`
+Example: `func testAccEIPTagsEC2VPCConfig(`
 
 ### eks
 Count: 0
@@ -651,37 +651,37 @@ Count: 0
 Count: 195
 [List matches](./results/Function-Capitalization-Eks.txt)
 
-Example: `func testAccAWSEksNodeGroupConfigLaunchTemplateVersion2(`
+Example: `func resourceAwsEksNodeGroupUpdate(`
 
 ### EKS
-Count: 1
+Count: 3
 [List matches](./results/Function-Capitalization-EKS.txt)
 
-Example: `func testAccErrorCheckSkipEKS(`
+Example: `func validateEKSClusterName(`
 
 ### elb
 Count: 4
 [List matches](./results/Function-Capitalization-elb.txt)
 
-Example: `func TestAccAWSAutoscalingAttachment_elb(`
+Example: `func testAccAWSAutoscalingAttachment_elb_associated(`
 
 ### Elb
 Count: 37
 [List matches](./results/Function-Capitalization-Elb.txt)
 
-Example: `func TestResourceAWSELB_validateElbNameCanBeAnEmptyString(`
+Example: `func validateElbName(`
 
 ### ELB
 Count: 58
 [List matches](./results/Function-Capitalization-ELB.txt)
 
-Example: `func testAccErrorCheckSkipELBv2(`
+Example: `func TestResourceAWSELB_validateAccessLogsInterval(`
 
 ### eni
 Count: 6
 [List matches](./results/Function-Capitalization-eni.txt)
 
-Example: `func testAccAWSCognitoIdentityPoolConfig_openidConnectProviderArnsModified(`
+Example: `func flatteninstanceTypeConfigs(`
 
 ### Eni
 Count: 2
@@ -693,55 +693,55 @@ Example: `func testAccTrafficMirrorTargetConfigEni(`
 Count: 32
 [List matches](./results/Function-Capitalization-ENI.txt)
 
-Example: `func testAccAWSENIIPV6MultipleConfig(`
+Example: `func testAccAWSENIConfigWithSourceDestCheck(`
 
 ### iam
 Count: 19
 [List matches](./results/Function-Capitalization-iam.txt)
 
-Example: `func TestAccAWSDBInstance_iamAuth(`
+Example: `func iamRoleHasPolicyARNAttachment(`
 
 ### Iam
 Count: 218
 [List matches](./results/Function-Capitalization-Iam.txt)
 
-Example: `func resourceAwsIamGroupPolicyPut(`
+Example: `func testAccAWSKmsKeyConfigPolicyIamServiceLinkedRole(`
 
 ### IAM
 Count: 263
 [List matches](./results/Function-Capitalization-IAM.txt)
 
-Example: `func testAccAWSIAMRoleConfig(`
+Example: `func TestAccAWSIAMRole_policyBasicManaged(`
 
 ### id
 Count: 40
 [List matches](./results/Function-Capitalization-id.txt)
 
-Example: `func TestAccAwsLexBot_idleSessionTtlInSeconds(`
+Example: `func TestAccAWSEcsTaskDefinition_withPidMode(`
 
 ### Id
 Count: 468
 [List matches](./results/Function-Capitalization-Id.txt)
 
-Example: `func TestAccAWSRedshiftSubnetGroup_updateSubnetIds(`
+Example: `func testAccAWSElasticacheReplicationGroupConfig_GlobalReplicationGroupId_Full(`
 
 ### ID
 Count: 227
 [List matches](./results/Function-Capitalization-ID.txt)
 
-Example: `func TestDecodeIamServiceLinkedRoleID(`
+Example: `func testAccAWSServiceCatalogProductConfig_physicalID(`
 
 ### iot
 Count: 4
 [List matches](./results/Function-Capitalization-iot.txt)
 
-Example: `func testAccAWSIoTTopicRule_iot_events(`
+Example: `func TestAccAWSIoTTopicRule_iot_events(`
 
 ### Iot
 Count: 149
 [List matches](./results/Function-Capitalization-Iot.txt)
 
-Example: `func testSweepIotThingTypes(`
+Example: `func testAccAWSIotRoleAliasConfigUpdate4(`
 
 ### IOT
 Count: 4
@@ -750,22 +750,22 @@ Count: 4
 Example: `func TestAccAWSIotEndpointDataSource_EndpointType_IOTDataATS(`
 
 ### ip
-Count: 1122
+Count: 1128
 [List matches](./results/Function-Capitalization-ip.txt)
 
-Example: `func testAccAwsEc2ClientVpnNetworkAssociation_multipleSubnets(`
+Example: `func flattenCodePipelineWebhookAuthenticationConfiguration(`
 
 ### Ip
 Count: 230
 [List matches](./results/Function-Capitalization-Ip.txt)
 
-Example: `func testAccAWSRouteConfigConditionalIpv4Ipv6(`
+Example: `func validateIpv4CIDRNetworkAddress(`
 
 ### IP
 Count: 274
 [List matches](./results/Function-Capitalization-IP.txt)
 
-Example: `func TestAccAWSEIP_Instance_ec2Classic(`
+Example: `func testAccAWSSecurityGroupRuleInvalidIPv6CIDR(`
 
 ### json
 Count: 1
@@ -777,31 +777,31 @@ Example: `func jsonBytesEqual(`
 Count: 42
 [List matches](./results/Function-Capitalization-Json.txt)
 
-Example: `func TestValidateIAMPolicyJsonString(`
+Example: `func testAccKinesisFirehoseDeliveryStreamConfig_ExtendedS3_DataFormatConversionConfiguration_HiveJsonSerDe_Empty(`
 
 ### JSON
 Count: 10
 [List matches](./results/Function-Capitalization-JSON.txt)
 
-Example: `func TestAccAWSIAMRole_badJSON(`
+Example: `func testAccAWSIAMPolicyDocumentExpectedJSONStatementPrincipalIdentifiersStringAndSlice(`
 
 ### kms
 Count: 32
 [List matches](./results/Function-Capitalization-kms.txt)
 
-Example: `func TestAccAWSDBInstance_kmsKey(`
+Example: `func TestAccAWSStorageGatewayCachedIscsiVolume_kms(`
 
 ### Kms
 Count: 244
 [List matches](./results/Function-Capitalization-Kms.txt)
 
-Example: `func resourceAwsKmsGrantRead(`
+Example: `func testAccDataSourceAwsKmsSecretsDecrypt(`
 
 ### KMS
 Count: 26
 [List matches](./results/Function-Capitalization-KMS.txt)
 
-Example: `func testAccAthenaDatabaseWithKMSConfig(`
+Example: `func testAccAWSSagemakerDomainKMSConfig(`
 
 ### mfa
 Count: 0
@@ -815,19 +815,19 @@ Example: `func testAccAWSCognitoUserPoolConfig_MfaConfiguration_SmsConfiguration
 Count: 4
 [List matches](./results/Function-Capitalization-MFA.txt)
 
-Example: `func deleteAwsIamUserVirtualMFADevices(`
+Example: `func testAccCheckAWSUserCreatesMFADevice(`
 
 ### nat
 Count: 198
 [List matches](./results/Function-Capitalization-nat.txt)
 
-Example: `func resourceAwsCloudWatchLogDestinationDelete(`
+Example: `func TestAccAwsAcmpcaCertificate_SubordinateCertificate(`
 
 ### Nat
 Count: 28
 [List matches](./results/Function-Capitalization-Nat.txt)
 
-Example: `func resourceAwsNatGateway(`
+Example: `func dataSourceAwsNatGatewayRead(`
 
 ### NAT
 Count: 0
@@ -835,13 +835,13 @@ Count: 0
 Count: 404
 [List matches](./results/Function-Capitalization-ram.txt)
 
-Example: `func resourceAwsRDSClusterParameterGroup(`
+Example: `func TestAccAWSSSMParameter_disappears(`
 
 ### Ram
 Count: 61
 [List matches](./results/Function-Capitalization-Ram.txt)
 
-Example: `func testAccAwsRamResourceShareConfigTags1(`
+Example: `func resourceAwsRamResourceAssociationDelete(`
 
 ### RAM
 Count: 1
@@ -853,19 +853,19 @@ Example: `func buildRAMTagFilters(`
 Count: 41
 [List matches](./results/Function-Capitalization-rds.txt)
 
-Example: `func testAccDataSourceAWSLBConfigBackardsCompatibility(`
+Example: `func resourceAwsSecurityHubStandardsSubscriptionCreate(`
 
 ### Rds
 Count: 94
 [List matches](./results/Function-Capitalization-Rds.txt)
 
-Example: `func testSweepRdsClusters(`
+Example: `func dataSourceAwsRdsCertificate(`
 
 ### RDS
 Count: 165
 [List matches](./results/Function-Capitalization-RDS.txt)
 
-Example: `func TestAccAWSRDSCluster_AllowMajorVersionUpgrade(`
+Example: `func TestAccAWSRDSCluster_iamAuth(`
 
 ### sms
 Count: 0
@@ -873,49 +873,49 @@ Count: 0
 Count: 28
 [List matches](./results/Function-Capitalization-Sms.txt)
 
-Example: `func TestAccAWSCognitoUserPool_MfaConfiguration_SoftwareTokenMfaConfigurationToSmsConfiguration(`
+Example: `func resourceAwsSnsSmsPreferences(`
 
 ### SMS
 Count: 16
 [List matches](./results/Function-Capitalization-SMS.txt)
 
-Example: `func TestAccAWSSNSSMSPreferences_serial(`
+Example: `func testAccAWSSNSSMSPreferences_deliveryRole(`
 
 ### sqs
 Count: 9
 [List matches](./results/Function-Capitalization-sqs.txt)
 
-Example: `func testAccAWSAPIGatewayV2IntegrationConfig_sqsIntegration(`
+Example: `func TestAccAWSIoTTopicRule_sqs(`
 
 ### Sqs
 Count: 32
 [List matches](./results/Function-Capitalization-Sqs.txt)
 
-Example: `func resourceAwsSqsQueuePolicyUpsert(`
+Example: `func dataSourceAwsSqsQueue(`
 
 ### SQS
 Count: 38
 [List matches](./results/Function-Capitalization-SQS.txt)
 
-Example: `func testAccAWSSQSConfig_PolicyFormat(`
+Example: `func TestAccAWSSQSQueue_Name_Generated(`
 
 ### sse
 Count: 69
 [List matches](./results/Function-Capitalization-sse.txt)
 
-Example: `func resourceAWSInspectorAssessmentTemplate(`
+Example: `func describeInspectorAssessmentTarget(`
 
 ### Sse
 Count: 5
 [List matches](./results/Function-Capitalization-Sse.txt)
 
-Example: `func testAccAthenaWorkGroupConfigConfigurationResultConfigurationEncryptionConfigurationEncryptionOptionSseS3(`
+Example: `func sourceSseKmsObjectsHash(`
 
 ### SSE
-Count: 76
+Count: 84
 [List matches](./results/Function-Capitalization-SSE.txt)
 
-Example: `func TestAccAWSSESEventDestination_basic(`
+Example: `func TestAccAWSKinesisFirehoseDeliveryStream_s3basicWithSSEAndKeyType(`
 
 ### ssl
 Count: 0
@@ -923,31 +923,31 @@ Count: 0
 Count: 4
 [List matches](./results/Function-Capitalization-Ssl.txt)
 
-Example: `func resourceAwsOpsworksApplicationSsl(`
+Example: `func resourceAwsOpsworksSetApplicationSsl(`
 
 ### SSL
 Count: 16
 [List matches](./results/Function-Capitalization-SSL.txt)
 
-Example: `func TestCloudFrontStructure_expandCustomOriginConfigSSL(`
+Example: `func flattenCustomOriginConfigSSL(`
 
 ### tcp
 Count: 8
 [List matches](./results/Function-Capitalization-tcp.txt)
 
-Example: `func testAccAppmeshRouteConfig_tcpRouteWithTimeoutUpdated(`
+Example: `func TestAccAWSNetworkAclRule_tcpProtocol(`
 
 ### Tcp
 Count: 6
 [List matches](./results/Function-Capitalization-Tcp.txt)
 
-Example: `func testAccGlobalAcceleratorEndpointGroupConfigTcpHealthCheckProtocol(`
+Example: `func expandAppmeshTcpRoute(`
 
 ### TCP
 Count: 10
 [List matches](./results/Function-Capitalization-TCP.txt)
 
-Example: `func TestAccAwsGlobalAcceleratorEndpointGroup_TCPHealthCheckProtocol(`
+Example: `func flattenNetworkFirewallTCPFlags(`
 
 ### url
 Count: 0
@@ -967,55 +967,55 @@ Example: `func testAccCheckAWSEcrRepositoryRepositoryURL(`
 Count: 43
 [List matches](./results/Function-Capitalization-vpc.txt)
 
-Example: `func vpcEndpointAccept(`
+Example: `func TestAccAWSDBProxyEndpoint_vpcSecurityGroupIds(`
 
 ### Vpc
 Count: 572
 [List matches](./results/Function-Capitalization-Vpc.txt)
 
-Example: `func testAccCheckVpcEndpointServiceAllowedPrincipalDestroy(`
+Example: `func resourceAwsEc2TransitGatewayVpcAttachmentAccepterUpdate(`
 
 ### VPC
 Count: 107
 [List matches](./results/Function-Capitalization-VPC.txt)
 
-Example: `func resourceAwsRoute53VPCAssociationAuthorizationDelete(`
+Example: `func TestAccAWSVPCPeeringConnection_options(`
 
 ### vpn
 Count: 6
 [List matches](./results/Function-Capitalization-vpn.txt)
 
-Example: `func testAccDxGatewayAssociationConfigBase_vpnGatewaySingleAccount(`
+Example: `func testAccDxPrivateVirtualInterfaceConfig_vpnGateway(`
 
 ### Vpn
 Count: 212
 [List matches](./results/Function-Capitalization-Vpn.txt)
 
-Example: `func testAccAwsVpnConnectionRouteDestroy(`
+Example: `func TestAccAWSEc2TransitGatewayVpnAttachmentDataSource_TransitGatewayIdAndVpnConnectionId(`
 
 ### VPN
 Count: 3
 [List matches](./results/Function-Capitalization-VPN.txt)
 
-Example: `func TestAccAWSVPNGatewayRoutePropagation_basic(`
+Example: `func testAccPreCheckClientVPNSyncronize(`
 
 ### waf
 Count: 23
 [List matches](./results/Function-Capitalization-waf.txt)
 
-Example: `func wafv2XssMatchStatementSchema(`
+Example: `func wafv2ByteMatchStatementSchema(`
 
 ### Waf
 Count: 865
 [List matches](./results/Function-Capitalization-Waf.txt)
 
-Example: `func TestAccAWSWafSqlInjectionMatchSet_changeNameForceNew(`
+Example: `func flattenWafv2RegexPatternSet(`
 
 ### WAF
 Count: 8
 [List matches](./results/Function-Capitalization-WAF.txt)
 
-Example: `func expandWAFRegionalLoggingConfiguration(`
+Example: `func flattenWAFRegionalLoggingConfiguration(`
 
 
 

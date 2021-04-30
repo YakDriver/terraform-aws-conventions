@@ -365,6 +365,8 @@ func flattenCodeArtifactUpstreams(
 func flattenCodeArtifactExternalConnections(
 func decodeCodeArtifactRepositoryID(
 func init(
+func expandProjectFileSystemLocations(
+func expandProjectFileSystemLocation(
 func expandProjectSecondaryArtifacts(
 func expandProjectArtifacts(
 func expandProjectArtifactData(
@@ -379,6 +381,8 @@ func expandCodeBuildVpcConfig(
 func expandProjectSecondarySources(
 func expandProjectSource(
 func expandProjectSourceData(
+func flattenAwsCodeBuildProjectFileSystemLocations(
+func flattenAwsCodeBuildProjectFileSystemLocation(
 func flattenAwsCodeBuildLogsConfig(
 func flattenAwsCodeBuildCloudWatchLogs(
 func flattenAwsCodeBuildS3Logs(
@@ -2013,6 +2017,7 @@ func init(
 func route53ResolverEndpointRefresh(
 func route53ResolverEndpointWaitUntilTargetState(
 func route53ResolverEndpointHashIpAddress(
+func init(
 func init(
 func init(
 func init(

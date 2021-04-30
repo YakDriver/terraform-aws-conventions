@@ -1975,6 +1975,8 @@ func resourceAwsCodeBuildProjectCreate(
 func resourceAwsCodeBuildProjectRead(
 func resourceAwsCodeBuildProjectUpdate(
 func resourceAwsCodeBuildProjectDelete(
+func flattenAwsCodeBuildProjectFileSystemLocations(
+func flattenAwsCodeBuildProjectFileSystemLocation(
 func flattenAwsCodeBuildLogsConfig(
 func flattenAwsCodeBuildCloudWatchLogs(
 func flattenAwsCodeBuildS3Logs(
@@ -5066,6 +5068,11 @@ func resourceAwsRoute53ResolverFirewallRuleCreate(
 func resourceAwsRoute53ResolverFirewallRuleRead(
 func resourceAwsRoute53ResolverFirewallRuleUpdate(
 func resourceAwsRoute53ResolverFirewallRuleDelete(
+func resourceAwsRoute53ResolverFirewallRuleGroupAssociation(
+func resourceAwsRoute53ResolverFirewallRuleGroupAssociationCreate(
+func resourceAwsRoute53ResolverFirewallRuleGroupAssociationRead(
+func resourceAwsRoute53ResolverFirewallRuleGroupAssociationUpdate(
+func resourceAwsRoute53ResolverFirewallRuleGroupAssociationDelete(
 func resourceAwsRoute53ResolverFirewallRuleGroup(
 func resourceAwsRoute53ResolverFirewallRuleGroupCreate(
 func resourceAwsRoute53ResolverFirewallRuleGroupRead(
@@ -5623,8 +5630,6 @@ func resourceAwsSesReceiptRuleSetDelete(
 func testAccCheckAwsSESReceiptRuleSetExists(
 func testAccCheckAwsSESReceiptRuleExists(
 func testAccAwsSesReceiptRuleImportStateIdFunc(
-func testAccCheckAwsSESReceiptRuleOrder(
-func testAccCheckAwsSESReceiptRuleActions(
 func resourceAwsSesTemplate(
 func resourceAwsSesTemplateCreate(
 func resourceAwsSesTemplateRead(

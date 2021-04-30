@@ -1360,7 +1360,6 @@ func testAccAWSCodeArtifactRepositoryUpstreamsConfig2(rName string) string {
 func testAccAWSCodeArtifactRepositoryExternalConnectionConfig(rName string) string {
 func testAccAWSCodeArtifactRepositoryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSCodeArtifactRepositoryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSCodeBuildProjectConfig_Base_Bucket(rName string) string {
 func testAccAWSCodeBuildProjectConfig_Base_ServiceRole(rName string) string {
 func testAccAWSCodeBuildProjectConfig_basic(rName string) string {
 func testAccAWSCodebuildProjectConfig_BadgeEnabled(rName string, badgeEnabled bool) string {
@@ -1375,12 +1374,12 @@ func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_One(rName,
 func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_Two(rName, key1, value1, key2, value2 string) string {
 func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_Zero(rName string) string {
 func testAccAWSCodeBuildProjectConfig_Environment_EnvironmentVariable_Type(rName, environmentVariableType string) string {
-func testAccAWSCodeBuildProjectConfig_Environment_Certificate(rName string, bName string, oName string) string {
+func testAccAWSCodeBuildProjectConfig_Environment_Certificate(rName string, oName string) string {
 func testAccAWSCodeBuildProjectConfig_Environment_RegistryCredential1(rName string) string {
 func testAccAWSCodeBuildProjectConfig_Environment_RegistryCredential2(rName string) string {
 func testAccAWSCodeBuildProjectConfig_LogsConfig_CloudWatchLogs(rName, status, gName, sName string) string {
 func testAccAWSCodeBuildProjectConfig_BuildBatchConfig(rName string, combineArtifacts bool, computeTypesAllowed string, maximumBuildsAllowed, timeoutInMins int) string {
-func testAccAWSCodeBuildProjectConfig_LogsConfig_S3Logs(rName, bName, status, location string, encryptionDisabled bool) string {
+func testAccAWSCodeBuildProjectConfig_LogsConfig_S3Logs(rName, status, location string, encryptionDisabled bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitCloneDepth(rName string, gitCloneDepth int) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_CodeCommit(rName string, fetchSubmodules bool) string {
 func testAccAWSCodeBuildProjectConfig_Source_GitSubmodulesConfig_GitHub(rName string, fetchSubmodules bool) string {
@@ -1404,29 +1403,30 @@ func testAccAWSCodeBuildProjectConfig_VpcConfig1(rName string) string {
 func testAccAWSCodeBuildProjectConfig_VpcConfig2(rName string) string {
 func testAccAWSCodeBuildProjectConfig_WindowsServer2019Container(rName string) string {
 func testAccAWSCodeBuildProjectConfig_ARMContainer(rName string) string {
-func testAccAWSCodebuildProjectConfig_Artifacts_ArtifactIdentifier(rName string, bName string, artifactIdentifier string) string {
-func testAccAWSCodebuildProjectConfig_Artifacts_EncryptionDisabled(rName string, bName string, encryptionDisabled bool) string {
-func testAccAWSCodebuildProjectConfig_Artifacts_Location(rName, bName string) string {
-func testAccAWSCodebuildProjectConfig_Artifacts_Name(rName string, bName string, name string) string {
+func testAccAWSCodebuildProjectConfig_Artifacts_ArtifactIdentifier(rName string, artifactIdentifier string) string {
+func testAccAWSCodebuildProjectConfig_Artifacts_EncryptionDisabled(rName string, encryptionDisabled bool) string {
+func testAccAWSCodebuildProjectConfig_Artifacts_Location(rName, bucketName string) string {
+func testAccAWSCodebuildProjectConfig_Artifacts_Name(rName string, name string) string {
 func testAccAWSCodebuildProjectConfig_Artifacts_NamespaceType(rName, namespaceType string) string {
-func testAccAWSCodebuildProjectConfig_Artifacts_OverrideArtifactName(rName string, bName string, overrideArtifactName bool) string {
+func testAccAWSCodebuildProjectConfig_Artifacts_OverrideArtifactName(rName string, overrideArtifactName bool) string {
 func testAccAWSCodebuildProjectConfig_Artifacts_Packaging(rName, packaging string) string {
 func testAccAWSCodebuildProjectConfig_Artifacts_Path(rName, path string) string {
-func testAccAWSCodebuildProjectConfig_Artifacts_Type(rName string, bName string, artifactType string) string {
-func testAccAWSCodebuildProjectConfig_SecondaryArtifacts(rName string, bName string) string {
-func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_none(rName string, bName string) string {
-func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_ArtifactIdentifier(rName string, bName string, artifactIdentifier string) string {
-func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_EncryptionDisabled(rName string, bName string, encryptionDisabled bool) string {
-func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Location(rName, bName string) string {
-func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Name(rName string, bName string, name string) string {
+func testAccAWSCodebuildProjectConfig_Artifacts_Type(rName string, artifactType string) string {
+func testAccAWSCodebuildProjectConfig_SecondaryArtifacts(rName string) string {
+func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_none(rName string) string {
+func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_ArtifactIdentifier(rName string, artifactIdentifier string) string {
+func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_EncryptionDisabled(rName string, encryptionDisabled bool) string {
+func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Location(rName, bucketName string) string {
+func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Name(rName string, name string) string {
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_NamespaceType(rName, namespaceType string) string {
-func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_OverrideArtifactName(rName string, bName string, overrideArtifactName bool) string {
+func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_OverrideArtifactName(rName string, overrideArtifactName bool) string {
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Packaging(rName, packaging string) string {
 func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Path(rName, path string) string {
-func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Type(rName string, bName string, artifactType string) string {
+func testAccAWSCodebuildProjectConfig_SecondaryArtifacts_Type(rName string, artifactType string) string {
 func testAccAWSCodeBuildProjectConfig_SecondarySources_CodeCommit(rName string) string {
 func testAccAWSCodeBuildProjectConfig_Source_BuildStatusConfig_GitHubEnterprise(rName string) string {
 func testAccAWSCodeBuildProjectConfig_ConcurrentBuildLimit(rName string, concurrentBuildLimit int) string {
+func testAccAWSCodeBuildProjectConfig_FileSystemLocations(rName, mountPoint string) string {
 func testAccAWSCodeBuildReportGroupBasicConfig(rName string) string {
 func testAccAWSCodeBuildReportGroupBasicConfigS3ExportBase(rName string) string {
 func testAccAWSCodeBuildReportGroupS3ExportConfig(rName string) string {
@@ -3534,6 +3534,7 @@ func testAccMqConfigurationConfig_updateTags3(rName string) string {
 func testAccMskClusterBaseConfig() string {
 func testAccMskClusterConfig_basic(rName string) string {
 func testAccMskClusterConfigBrokerNodeGroupInfoEbsVolumeSize(rName string, ebsVolumeSize int) string {
+func testAccMskClusterConfigBrokerNodeGroupInfoInstanceType(rName string, t string) string {
 func testAccMskClusterConfigClientAuthenticationTlsCertificateAuthorityArns(rName string) string {
 func testAccMskClusterConfigClientAuthenticationSaslScram(rName string, enabled bool) string {
 func testAccMskClusterConfigConfigurationInfoRevision1(rName string) string {
@@ -3925,6 +3926,12 @@ func testAccRoute53ResolverFirewallDomainListConfig(rName string) string {
 func testAccRoute53ResolverFirewallDomainListConfigDomains(rName, domain string) string {
 func testAccRoute53ResolverFirewallDomainListConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccRoute53ResolverFirewallDomainListConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccRoute53ResolverFirewallRuleGroupAssociationConfig_base(rName string) string {
+func testAccRoute53ResolverFirewallRuleGroupAssociationConfig(rName string) string {
+func testAccRoute53ResolverFirewallRuleGroupAssociationConfig_mutationProtection(rName, mutationProtection string) string {
+func testAccRoute53ResolverFirewallRuleGroupAssociationConfig_priority(rName string, priority int) string {
+func testAccRoute53ResolverFirewallRuleGroupAssociationConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccRoute53ResolverFirewallRuleGroupAssociationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccRoute53ResolverFirewallRuleGroupConfig(rName string) string {
 func testAccRoute53ResolverFirewallRuleGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccRoute53ResolverFirewallRuleGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -4374,6 +4381,10 @@ func testAccAWSSESReceiptFilterConfig(rName string) string {
 func testAccAWSSESReceiptRuleSetConfig(rName string) string {
 func testAccAWSSESReceiptRuleBasicConfig(rName string) string {
 func testAccAWSSESReceiptRuleS3ActionConfig(rName string) string {
+func testAccAWSSESReceiptRuleSNSActionConfig(rName string) string {
+func testAccAWSSESReceiptRuleSNSActionEncodingConfig(rName string) string {
+func testAccAWSSESReceiptRuleLambdaActionConfig(rName string) string {
+func testAccAWSSESReceiptRuleStopActionConfig(rName string) string {
 func testAccAWSSESReceiptRuleOrderConfig(rName string) string {
 func testAccAWSSESReceiptRuleActionsConfig(rName string) string {
 func testAccCheckAwsSesTemplateResourceConfigBasic1(name string) string {

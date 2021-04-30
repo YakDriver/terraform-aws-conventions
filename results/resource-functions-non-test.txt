@@ -971,6 +971,8 @@ func resourceAwsCodeArtifactRepositoryPermissionsPolicyDelete(
 func init(
 func resourceAwsCodeBuildProject(
 func resourceAwsCodeBuildProjectCreate(
+func expandProjectFileSystemLocations(
+func expandProjectFileSystemLocation(
 func expandProjectSecondaryArtifacts(
 func expandProjectArtifacts(
 func expandProjectArtifactData(
@@ -988,6 +990,8 @@ func expandProjectSourceData(
 func resourceAwsCodeBuildProjectRead(
 func resourceAwsCodeBuildProjectUpdate(
 func resourceAwsCodeBuildProjectDelete(
+func flattenAwsCodeBuildProjectFileSystemLocations(
+func flattenAwsCodeBuildProjectFileSystemLocation(
 func flattenAwsCodeBuildLogsConfig(
 func flattenAwsCodeBuildCloudWatchLogs(
 func flattenAwsCodeBuildS3Logs(
@@ -4672,6 +4676,12 @@ func resourceAwsRoute53ResolverFirewallRuleCreate(
 func resourceAwsRoute53ResolverFirewallRuleRead(
 func resourceAwsRoute53ResolverFirewallRuleUpdate(
 func resourceAwsRoute53ResolverFirewallRuleDelete(
+func resourceAwsRoute53ResolverFirewallRuleGroupAssociation(
+func resourceAwsRoute53ResolverFirewallRuleGroupAssociationCreate(
+func resourceAwsRoute53ResolverFirewallRuleGroupAssociationRead(
+func resourceAwsRoute53ResolverFirewallRuleGroupAssociationUpdate(
+func resourceAwsRoute53ResolverFirewallRuleGroupAssociationDelete(
+func init(
 func resourceAwsRoute53ResolverFirewallRuleGroup(
 func resourceAwsRoute53ResolverFirewallRuleGroupCreate(
 func resourceAwsRoute53ResolverFirewallRuleGroupRead(

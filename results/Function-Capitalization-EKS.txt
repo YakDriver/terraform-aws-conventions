@@ -1,1 +1,3 @@
 func testAccErrorCheckSkipEKS(
+func validateEKSClusterName(
+func TestResourceAWSEKSClusterNameValidation(

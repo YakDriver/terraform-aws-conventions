@@ -1990,6 +1990,7 @@ func testAccMqConfigurationWithDataConfig(rName string) string {
 func testAccMqConfigurationWithLdapDataConfig(rName string) string {
 func testAccMskClusterBaseConfig() string {
 func testAccMskClusterConfigBrokerNodeGroupInfoEbsVolumeSize(rName string, ebsVolumeSize int) string {
+func testAccMskClusterConfigBrokerNodeGroupInfoInstanceType(rName string, t string) string {
 func testAccMskClusterConfigClientAuthenticationTlsCertificateAuthorityArns(rName string) string {
 func testAccMskClusterConfigClientAuthenticationSaslScram(rName string, enabled bool) string {
 func testAccMskClusterConfigConfigurationInfoRevision1(rName string) string {
@@ -2232,6 +2233,9 @@ func testAccRoute53ResolverFirewallDomainListConfig(rName string) string {
 func testAccRoute53ResolverFirewallDomainListConfigDomains(rName, domain string) string {
 func testAccRoute53ResolverFirewallDomainListConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccRoute53ResolverFirewallDomainListConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccRoute53ResolverFirewallRuleGroupAssociationConfig(rName string) string {
+func testAccRoute53ResolverFirewallRuleGroupAssociationConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccRoute53ResolverFirewallRuleGroupAssociationConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccRoute53ResolverFirewallRuleGroupConfig(rName string) string {
 func testAccRoute53ResolverFirewallRuleGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccRoute53ResolverFirewallRuleGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -2560,6 +2564,10 @@ func testAccAWSSESReceiptFilterConfig(rName string) string {
 func testAccAWSSESReceiptRuleSetConfig(rName string) string {
 func testAccAWSSESReceiptRuleBasicConfig(rName string) string {
 func testAccAWSSESReceiptRuleS3ActionConfig(rName string) string {
+func testAccAWSSESReceiptRuleSNSActionConfig(rName string) string {
+func testAccAWSSESReceiptRuleSNSActionEncodingConfig(rName string) string {
+func testAccAWSSESReceiptRuleLambdaActionConfig(rName string) string {
+func testAccAWSSESReceiptRuleStopActionConfig(rName string) string {
 func testAccAWSSESReceiptRuleOrderConfig(rName string) string {
 func testAccAWSSESReceiptRuleActionsConfig(rName string) string {
 func testAccCheckAwsSesTemplateResourceConfigBasic1(name string) string {
