@@ -13461,6 +13461,7 @@ func testAccAWSSfnStateMachineConfigTags2(
 func testAccAWSSfnStateMachineTypedConfig(
 func testAccAWSSfnStateMachineExpressConfigLogConfiguration(
 func resourceAwsShieldProtection(
+func resourceAwsShieldProtectionUpdate(
 func resourceAwsShieldProtectionCreate(
 func resourceAwsShieldProtectionRead(
 func resourceAwsShieldProtectionDelete(
@@ -13472,6 +13473,8 @@ func testAccShieldProtectionRoute53HostedZoneConfig(
 func testAccShieldProtectionElbConfig(
 func testAccShieldProtectionAlbConfig(
 func testAccShieldProtectionCloudfrontConfig(
+func testAccShieldProtectionCloudfrontConfigTags1(
+func testAccShieldProtectionCloudfrontConfigTags2(
 func testAccShieldProtectionElasticIPAddressConfig(
 func testAccShieldProtectionGlobalAcceleratorConfig(
 func resourceAwsSignerSigningJob(

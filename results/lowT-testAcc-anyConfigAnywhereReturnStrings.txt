@@ -4404,6 +4404,8 @@ func testAccShieldProtectionRoute53HostedZoneConfig(rName string) string {
 func testAccShieldProtectionElbConfig(rName string) string {
 func testAccShieldProtectionAlbConfig(rName string) string {
 func testAccShieldProtectionCloudfrontConfig(rName, retainOnDelete string) string {
+func testAccShieldProtectionCloudfrontConfigTags1(rName, retainOnDelete, tagKey string, tagValue string) string {
+func testAccShieldProtectionCloudfrontConfigTags2(rName, retainOnDelete, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
 func testAccShieldProtectionElasticIPAddressConfig(rName string) string {
 func testAccShieldProtectionGlobalAcceleratorConfig(rName string) string {
 func testAccAWSSignerSigningJobConfig(rName string) string {

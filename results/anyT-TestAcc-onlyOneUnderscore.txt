@@ -5118,6 +5118,7 @@ func TestAccAWSSfnStateMachine_disappears(
 func TestAccAWSSfnStateMachine_expressLoggingConfiguration(
 func TestAccAWSShieldProtection_GlobalAccelerator(
 func TestAccAWSShieldProtection_ElasticIPAddress(
+func TestAccAWSShieldProtection_disappears(
 func TestAccAWSShieldProtection_Alb(
 func TestAccAWSShieldProtection_Elb(
 func TestAccAWSShieldProtection_Cloudfront(

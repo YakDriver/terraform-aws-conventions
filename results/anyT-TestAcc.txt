@@ -11554,9 +11554,11 @@ func testAccAWSSfnStateMachineTypedConfig(
 func testAccAWSSfnStateMachineExpressConfigLogConfiguration(
 func TestAccAWSShieldProtection_GlobalAccelerator(
 func TestAccAWSShieldProtection_ElasticIPAddress(
+func TestAccAWSShieldProtection_disappears(
 func TestAccAWSShieldProtection_Alb(
 func TestAccAWSShieldProtection_Elb(
 func TestAccAWSShieldProtection_Cloudfront(
+func TestAccAWSShieldProtection_Cloudfront_Tags(
 func TestAccAWSShieldProtection_Route53(
 func testAccCheckAWSShieldProtectionDestroy(
 func testAccCheckAWSShieldProtectionExists(
@@ -11566,6 +11568,8 @@ func testAccShieldProtectionRoute53HostedZoneConfig(
 func testAccShieldProtectionElbConfig(
 func testAccShieldProtectionAlbConfig(
 func testAccShieldProtectionCloudfrontConfig(
+func testAccShieldProtectionCloudfrontConfigTags1(
+func testAccShieldProtectionCloudfrontConfigTags2(
 func testAccShieldProtectionElasticIPAddressConfig(
 func testAccShieldProtectionGlobalAcceleratorConfig(
 func TestAccAWSSignerSigningJob_basic(

@@ -2685,6 +2685,7 @@ func TestAccAWSSfnStateMachine_standardUpdate(
 func TestAccAWSSfnStateMachine_tags(
 func TestAccAWSSfnStateMachine_disappears(
 func TestAccAWSSfnStateMachine_expressLoggingConfiguration(
+func TestAccAWSShieldProtection_disappears(
 func TestAccAWSSignerSigningJob_basic(
 func TestAccAWSSignerSigningProfilePermission_basic(
 func TestAccAWSSignerSigningProfile_basic(

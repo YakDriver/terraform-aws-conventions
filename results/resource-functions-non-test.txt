@@ -5359,6 +5359,7 @@ func resourceAwsSfnStateMachineDelete(
 func expandAwsSfnLoggingConfiguration(
 func flattenAwsSfnLoggingConfiguration(
 func resourceAwsShieldProtection(
+func resourceAwsShieldProtectionUpdate(
 func resourceAwsShieldProtectionCreate(
 func resourceAwsShieldProtectionRead(
 func resourceAwsShieldProtectionDelete(
