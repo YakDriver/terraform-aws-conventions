@@ -57,6 +57,7 @@ func TestAccAWSDataSyncLocationNfs_AgentARNs_Multple(
 func TestAccAWSDataSyncLocationNfs_Subdirectory(
 func TestAccAWSDataSyncLocationNfs_Tags(
 func TestAccAWSDataSyncLocationS3_basic(
+func TestAccAWSDataSyncLocationS3_storageclass(
 func TestAccAWSDataSyncLocationS3_disappears(
 func TestAccAWSDataSyncLocationS3_Tags(
 func TestAccAWSDataSyncLocationSmb_basic(

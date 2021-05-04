@@ -63,6 +63,7 @@ func TestAccAWSCloudFrontDataSourceOriginRequestPolicy_basic(
 func TestAccDataSourceCloudHsmV2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
 func TestAccAWSCloudTrailServiceAccount_Region(
+func TestAccDataSourceAwsCloudWatchEventSource_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_tags(
 func TestAccAWSCloudwatchLogGroupDataSource_kms(
@@ -1581,6 +1582,7 @@ func TestAccAWSCloudWatchEventBus_basic(
 func TestAccAWSCloudWatchEventBus_tags(
 func TestAccAWSCloudWatchEventBus_default(
 func TestAccAWSCloudWatchEventBus_disappears(
+func TestAccAWSCloudWatchEventBus_PartnerEventSource(
 func testAccAWSCloudWatchEventBusConfig_Tags1(
 func testAccAWSCloudWatchEventBusConfig_Tags2(
 func TestAccAWSCloudWatchEventPermission_basic(
@@ -1598,6 +1600,7 @@ func TestAccAWSCloudWatchEventRule_ScheduleAndPattern(
 func TestAccAWSCloudWatchEventRule_NamePrefix(
 func TestAccAWSCloudWatchEventRule_tags(
 func TestAccAWSCloudWatchEventRule_IsEnabled(
+func TestAccAWSCloudWatchEventRule_PartnerEventBus(
 func TestAccAWSCloudWatchEventTarget_basic(
 func TestAccAWSCloudWatchEventTarget_EventBusName(
 func TestAccAWSCloudWatchEventTarget_GeneratedTargetId(
@@ -1610,6 +1613,7 @@ func TestAccAWSCloudWatchEventTarget_batch(
 func TestAccAWSCloudWatchEventTarget_kinesis(
 func TestAccAWSCloudWatchEventTarget_sqs(
 func TestAccAWSCloudWatchEventTarget_inputTransformerJsonString(
+func TestAccAWSCloudWatchEventTarget_PartnerEventBus(
 func testAccAWSCloudWatchEventTargetConfig_retryPolicyDlc(
 func testAccAWSCloudWatchEventTargetConfig_full(
 func TestAccAWSCloudwatchLogDestinationPolicy_basic(
@@ -2000,6 +2004,7 @@ func TestAccAWSDataSyncLocationNfs_disappears(
 func TestAccAWSDataSyncLocationNfs_Subdirectory(
 func TestAccAWSDataSyncLocationNfs_Tags(
 func TestAccAWSDataSyncLocationS3_basic(
+func TestAccAWSDataSyncLocationS3_storageclass(
 func TestAccAWSDataSyncLocationS3_disappears(
 func TestAccAWSDataSyncLocationS3_Tags(
 func TestAccAWSDataSyncLocationSmb_basic(

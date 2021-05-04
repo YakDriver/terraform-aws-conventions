@@ -61,6 +61,7 @@ func TestAccAWSCloudFrontDataSourceOriginRequestPolicy_basic(
 func TestAccDataSourceCloudHsmV2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
 func TestAccAWSCloudTrailServiceAccount_Region(
+func TestAccDataSourceAwsCloudWatchEventSource_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_tags(
 func TestAccAWSCloudwatchLogGroupDataSource_kms(
@@ -1225,6 +1226,7 @@ func TestAccAWSCloudWatchEventBus_basic(
 func TestAccAWSCloudWatchEventBus_tags(
 func TestAccAWSCloudWatchEventBus_default(
 func TestAccAWSCloudWatchEventBus_disappears(
+func TestAccAWSCloudWatchEventBus_PartnerEventSource(
 func TestAccAWSCloudWatchEventPermission_basic(
 func TestAccAWSCloudWatchEventPermission_EventBusName(
 func TestAccAWSCloudWatchEventPermission_Action(
@@ -1241,6 +1243,7 @@ func TestAccAWSCloudWatchEventRule_NamePrefix(
 func TestAccAWSCloudWatchEventRule_Name_Generated(
 func TestAccAWSCloudWatchEventRule_tags(
 func TestAccAWSCloudWatchEventRule_IsEnabled(
+func TestAccAWSCloudWatchEventRule_PartnerEventBus(
 func TestAccAWSCloudWatchEventTarget_basic(
 func TestAccAWSCloudWatchEventTarget_EventBusName(
 func TestAccAWSCloudWatchEventTarget_GeneratedTargetId(
@@ -1255,6 +1258,7 @@ func TestAccAWSCloudWatchEventTarget_kinesis(
 func TestAccAWSCloudWatchEventTarget_sqs(
 func TestAccAWSCloudWatchEventTarget_input_transformer(
 func TestAccAWSCloudWatchEventTarget_inputTransformerJsonString(
+func TestAccAWSCloudWatchEventTarget_PartnerEventBus(
 func TestAccAWSCloudwatchLogDestinationPolicy_basic(
 func TestAccAWSCloudwatchLogDestination_basic(
 func TestAccAWSCloudwatchLogDestination_disappears(
@@ -1582,6 +1586,7 @@ func TestAccAWSDataSyncLocationNfs_AgentARNs_Multple(
 func TestAccAWSDataSyncLocationNfs_Subdirectory(
 func TestAccAWSDataSyncLocationNfs_Tags(
 func TestAccAWSDataSyncLocationS3_basic(
+func TestAccAWSDataSyncLocationS3_storageclass(
 func TestAccAWSDataSyncLocationS3_disappears(
 func TestAccAWSDataSyncLocationS3_Tags(
 func TestAccAWSDataSyncLocationSmb_basic(

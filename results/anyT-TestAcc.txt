@@ -136,6 +136,8 @@ func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(
 func TestAccDataSourceCloudHsmV2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
 func TestAccAWSCloudTrailServiceAccount_Region(
+func TestAccDataSourceAwsCloudWatchEventSource_basic(
+func testAccAwsDataSourcePartnerEventSourceConfig(
 func TestAccAWSCloudwatchLogGroupDataSource_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_tags(
 func TestAccAWSCloudwatchLogGroupDataSource_kms(
@@ -3145,6 +3147,7 @@ func TestAccAWSCloudWatchEventBus_basic(
 func TestAccAWSCloudWatchEventBus_tags(
 func TestAccAWSCloudWatchEventBus_default(
 func TestAccAWSCloudWatchEventBus_disappears(
+func TestAccAWSCloudWatchEventBus_PartnerEventSource(
 func testAccCheckAWSCloudWatchEventBusDestroy(
 func testAccCheckCloudWatchEventBusExists(
 func testAccCheckCloudWatchEventBusRecreated(
@@ -3152,6 +3155,7 @@ func testAccCheckCloudWatchEventBusNotRecreated(
 func testAccAWSCloudWatchEventBusConfig(
 func testAccAWSCloudWatchEventBusConfig_Tags1(
 func testAccAWSCloudWatchEventBusConfig_Tags2(
+func testAccAWSCloudWatchEventBusPartnerEventSourceConfig(
 func TestAccAWSCloudWatchEventPermission_basic(
 func TestAccAWSCloudWatchEventPermission_EventBusName(
 func TestAccAWSCloudWatchEventPermission_Action(
@@ -3176,6 +3180,7 @@ func TestAccAWSCloudWatchEventRule_NamePrefix(
 func TestAccAWSCloudWatchEventRule_Name_Generated(
 func TestAccAWSCloudWatchEventRule_tags(
 func TestAccAWSCloudWatchEventRule_IsEnabled(
+func TestAccAWSCloudWatchEventRule_PartnerEventBus(
 func testAccCheckCloudWatchEventRuleExists(
 func testAccCheckCloudWatchEventRuleEnabled(
 func testAccCheckAWSCloudWatchEventRuleDestroy(
@@ -3194,6 +3199,7 @@ func testAccAWSCloudWatchEventRuleConfigTags1(
 func testAccAWSCloudWatchEventRuleConfigTags2(
 func testAccAWSCloudWatchEventRuleConfigTags0(
 func testAccAWSCloudWatchEventRuleConfigRole(
+func testAccAWSCloudWatchEventRulePartnerEventBusConfig(
 func TestAccAWSCloudWatchEventTarget_basic(
 func TestAccAWSCloudWatchEventTarget_EventBusName(
 func TestAccAWSCloudWatchEventTarget_GeneratedTargetId(
@@ -3208,6 +3214,7 @@ func TestAccAWSCloudWatchEventTarget_kinesis(
 func TestAccAWSCloudWatchEventTarget_sqs(
 func TestAccAWSCloudWatchEventTarget_input_transformer(
 func TestAccAWSCloudWatchEventTarget_inputTransformerJsonString(
+func TestAccAWSCloudWatchEventTarget_PartnerEventBus(
 func testAccCheckCloudWatchEventTargetExists(
 func testAccCheckAWSCloudWatchEventTargetDestroy(
 func testAccAWSCloudWatchEventTargetImportStateIdFunc(
@@ -3227,6 +3234,7 @@ func testAccAWSCloudWatchEventTargetConfigSqs(
 func testAccAWSCloudWatchEventTargetConfigInputTransformer(
 func testAccAWSCloudWatchEventTargetConfigInputTransformerJsonString(
 func testAccAWSCloudWatchEventTargetConfigLambdaBase(
+func testAccAWSCloudWatchEventTargetPartnerEventBusConfig(
 func TestAccAWSCloudwatchLogDestinationPolicy_basic(
 func testAccCheckAWSCloudwatchLogDestinationPolicyDestroy(
 func testAccCheckAWSCloudwatchLogDestinationPolicyExists(
@@ -4147,6 +4155,7 @@ func testAccAWSDataSyncLocationNfsConfigSubdirectory(
 func testAccAWSDataSyncLocationNfsConfigTags1(
 func testAccAWSDataSyncLocationNfsConfigTags2(
 func TestAccAWSDataSyncLocationS3_basic(
+func TestAccAWSDataSyncLocationS3_storageclass(
 func TestAccAWSDataSyncLocationS3_disappears(
 func TestAccAWSDataSyncLocationS3_Tags(
 func testAccCheckAWSDataSyncLocationS3Destroy(
@@ -4155,6 +4164,7 @@ func testAccCheckAWSDataSyncLocationS3Disappears(
 func testAccCheckAWSDataSyncLocationS3NotRecreated(
 func testAccAWSDataSyncLocationS3ConfigBase(
 func testAccAWSDataSyncLocationS3Config(
+func testAccAWSDataSyncLocationS3ConfigStorageClass(
 func testAccAWSDataSyncLocationS3ConfigTags1(
 func testAccAWSDataSyncLocationS3ConfigTags2(
 func TestAccAWSDataSyncLocationSmb_basic(

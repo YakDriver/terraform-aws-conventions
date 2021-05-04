@@ -310,6 +310,9 @@ func dataSourceCloudHsmV2Cluster(
 func dataSourceCloudHsmV2ClusterRead(
 func dataSourceAwsCloudTrailServiceAccount(
 func dataSourceAwsCloudTrailServiceAccountRead(
+func dataSourceAwsCloudWatchEventSource(
+func dataSourceAwsCloudWatchEventSourceRead(
+func testAccAwsDataSourcePartnerEventSourceConfig(
 func dataSourceAwsCloudwatchLogGroup(
 func dataSourceAwsCloudwatchLogGroupRead(
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(
@@ -3585,6 +3588,7 @@ func testAccCheckCloudWatchEventBusNotRecreated(
 func testAccAWSCloudWatchEventBusConfig(
 func testAccAWSCloudWatchEventBusConfig_Tags1(
 func testAccAWSCloudWatchEventBusConfig_Tags2(
+func testAccAWSCloudWatchEventBusPartnerEventSourceConfig(
 func resourceAwsCloudWatchEventPermission(
 func resourceAwsCloudWatchEventPermissionCreate(
 func resourceAwsCloudWatchEventPermissionRead(
@@ -3636,6 +3640,7 @@ func testAccAWSCloudWatchEventRuleConfigTags1(
 func testAccAWSCloudWatchEventRuleConfigTags2(
 func testAccAWSCloudWatchEventRuleConfigTags0(
 func testAccAWSCloudWatchEventRuleConfigRole(
+func testAccAWSCloudWatchEventRulePartnerEventBusConfig(
 func resourceAwsCloudWatchEventTarget(
 func resourceAwsCloudWatchEventTargetCreate(
 func resourceAwsCloudWatchEventTargetRead(
@@ -3688,6 +3693,7 @@ func testAccAWSCloudWatchEventTargetConfigSqs(
 func testAccAWSCloudWatchEventTargetConfigInputTransformer(
 func testAccAWSCloudWatchEventTargetConfigInputTransformerJsonString(
 func testAccAWSCloudWatchEventTargetConfigLambdaBase(
+func testAccAWSCloudWatchEventTargetPartnerEventBusConfig(
 func resourceAwsCloudWatchLogDestination(
 func resourceAwsCloudWatchLogDestinationPut(
 func resourceAwsCloudWatchLogDestinationRead(
@@ -4775,6 +4781,7 @@ func testAccCheckAWSDataSyncLocationS3Disappears(
 func testAccCheckAWSDataSyncLocationS3NotRecreated(
 func testAccAWSDataSyncLocationS3ConfigBase(
 func testAccAWSDataSyncLocationS3Config(
+func testAccAWSDataSyncLocationS3ConfigStorageClass(
 func testAccAWSDataSyncLocationS3ConfigTags1(
 func testAccAWSDataSyncLocationS3ConfigTags2(
 func resourceAwsDataSyncLocationSmb(

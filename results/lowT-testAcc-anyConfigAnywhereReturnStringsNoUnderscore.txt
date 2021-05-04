@@ -45,6 +45,7 @@ func testAccAwsCloudformationTypeDataSourceConfigTypeNamePublic() string {
 func testAccAWSCloudFrontCachePolicyDataSourceNameConfig(rInt int) string {
 func testAccAWSCloudFrontDistributionDataConfig(rInt int) string {
 func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(rInt int) string {
+func testAccAwsDataSourcePartnerEventSourceConfig(namePrefix string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigKMS(rName string) string {
@@ -706,6 +707,7 @@ func testAccAwsCloudWatchCompositeAlarmBaseConfig(suffix string) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
 func testAccAWSCloudWatchEventArchiveConfig(name string) string {
 func testAccAWSCloudWatchEventBusConfig(name string) string {
+func testAccAWSCloudWatchEventBusPartnerEventSourceConfig(name string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigBasic(principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigDefaultEventBusName(principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigEventBusName(principal, busName, statementID string) string {
@@ -724,6 +726,7 @@ func testAccAWSCloudWatchEventRuleConfigTags1(name, tagKey1, tagValue1 string) s
 func testAccAWSCloudWatchEventRuleConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSCloudWatchEventRuleConfigTags0(name string) string {
 func testAccAWSCloudWatchEventRuleConfigRole(name string) string {
+func testAccAWSCloudWatchEventRulePartnerEventBusConfig(rName, eventBusName string) string {
 func testAccAWSCloudWatchEventTargetConfig(ruleName, snsTopicName, targetID string) string {
 func testAccAWSCloudWatchEventTargetConfigDefaultEventBusName(ruleName, snsTopicName, targetID string) string {
 func testAccAWSCloudWatchEventTargetConfigEventBusName(ruleName, eventBusName, snsTopicName, targetID string) string {
@@ -737,6 +740,7 @@ func testAccAWSCloudWatchEventTargetConfigSqs(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigInputTransformer(rName string, inputPathKeys []string) string {
 func testAccAWSCloudWatchEventTargetConfigInputTransformerJsonString(name string) string {
 func testAccAWSCloudWatchEventTargetConfigLambdaBase(name string) string {
+func testAccAWSCloudWatchEventTargetPartnerEventBusConfig(rName, eventBusName string) string {
 func testAccAWSCloudwatchLogDestinationPolicyConfig(rstring string) string {
 func testAccAWSCloudwatchLogDestinationConfig(rstring string) string {
 func testAccAWSCloudWatchLogGroupConfig(rInt int) string {
@@ -923,6 +927,7 @@ func testAccAWSDataSyncLocationNfsConfigTags1(rName, key1, value1 string) string
 func testAccAWSDataSyncLocationNfsConfigTags2(rName, key1, value1, key2, value2 string) string {
 func testAccAWSDataSyncLocationS3ConfigBase(rName string) string {
 func testAccAWSDataSyncLocationS3Config(rName string) string {
+func testAccAWSDataSyncLocationS3ConfigStorageClass(rName string) string {
 func testAccAWSDataSyncLocationS3ConfigTags1(rName, key1, value1 string) string {
 func testAccAWSDataSyncLocationS3ConfigTags2(rName, key1, value1, key2, value2 string) string {
 func testAccAWSDataSyncLocationSmbConfigBase(rName string) string {

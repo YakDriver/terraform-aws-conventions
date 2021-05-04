@@ -36,6 +36,7 @@ func TestAccAWSDataSourceCloudFrontDistribution_basic(
 func TestAccAWSCloudFrontDataSourceOriginRequestPolicy_basic(
 func TestAccDataSourceCloudHsmV2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
+func TestAccDataSourceAwsCloudWatchEventSource_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_basic(
 func TestAccAWSCloudwatchLogGroupDataSource_tags(
 func TestAccAWSCloudwatchLogGroupDataSource_kms(
@@ -944,6 +945,7 @@ func TestAccAWSDataSyncLocationFsxWindows_tags(
 func TestAccAWSDataSyncLocationNfs_basic(
 func TestAccAWSDataSyncLocationNfs_disappears(
 func TestAccAWSDataSyncLocationS3_basic(
+func TestAccAWSDataSyncLocationS3_storageclass(
 func TestAccAWSDataSyncLocationS3_disappears(
 func TestAccAWSDataSyncLocationSmb_basic(
 func TestAccAWSDataSyncLocationSmb_disappears(
