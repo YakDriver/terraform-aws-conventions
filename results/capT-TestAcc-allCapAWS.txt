@@ -3811,6 +3811,7 @@ func TestAccAWSSfnStateMachine_createUpdate(
 func TestAccAWSSfnStateMachine_expressUpdate(
 func TestAccAWSSfnStateMachine_standardUpdate(
 func TestAccAWSSfnStateMachine_tags(
+func TestAccAWSSfnStateMachine_TracingConfiguration(
 func TestAccAWSSfnStateMachine_disappears(
 func TestAccAWSSfnStateMachine_expressLoggingConfiguration(
 func TestAccAWSShieldProtection_GlobalAccelerator(

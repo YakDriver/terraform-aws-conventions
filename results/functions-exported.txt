@@ -4742,6 +4742,7 @@ func TestAccAWSSfnStateMachine_createUpdate(
 func TestAccAWSSfnStateMachine_expressUpdate(
 func TestAccAWSSfnStateMachine_standardUpdate(
 func TestAccAWSSfnStateMachine_tags(
+func TestAccAWSSfnStateMachine_TracingConfiguration(
 func TestAccAWSSfnStateMachine_disappears(
 func TestAccAWSSfnStateMachine_expressLoggingConfiguration(
 func TestAccAWSShieldProtection_GlobalAccelerator(
@@ -5506,10 +5507,14 @@ func TestTlsRsaX509LocallySignedCertificatePem(
 func TestTlsRsaX509SelfSignedCaCertificatePem(
 func TestTlsRsaX509SelfSignedCertificatePem(
 func TestTlsRsaX509CertificateRequestPem(
+func StringSlicesEqualIgnoreOrder(
+func StringSlicesEqual(
 func TestBase64Encode(
 func TestLooksLikeJsonString(
 func TestJsonBytesEqualQuotedAndUnquoted(
 func TestJsonBytesEqualWhitespaceAndNoWhitespace(
+func TestStringSlicesEqualIgnoreOrder(
+func TestStringSlicesEqual(
 func MapMaxItems(
 func MapKeysDoNotMatch(
 func TestValidateTypeStringNullableBoolean(

@@ -2719,6 +2719,7 @@ func TestAccAWSSESIdentityPolicy_Identity_Email(
 func TestAccAWSSESIdentityPolicy_Policy(
 func TestAccAWSSesTemplate_Update(
 func TestAccAWSSfnActivity_Tags(
+func TestAccAWSSfnStateMachine_TracingConfiguration(
 func TestAccAWSShieldProtection_GlobalAccelerator(
 func TestAccAWSShieldProtection_ElasticIPAddress(
 func TestAccAWSShieldProtection_Alb(

@@ -2585,8 +2585,10 @@ func testAccAWSSfnStateMachineConfigBase(rName string) string {
 func testAccAWSSfnStateMachineConfig(rName string, rMaxAttempts int) string {
 func testAccAWSSfnStateMachineConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSSfnStateMachineConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
-func testAccAWSSfnStateMachineTypedConfig(rType string, rName string, rMaxAttempts int) string {
-func testAccAWSSfnStateMachineExpressConfigLogConfiguration(rType string, rName string, rLevel string) string {
+func testAccAWSSfnStateMachineTypedConfig(rName, rType string, rMaxAttempts int) string {
+func testAccAWSSfnStateMachineExpressConfigLogConfiguration(rName string, rLevel string) string {
+func testAccAWSSfnStateMachineConfigTracingConfigEnable(rName string) string {
+func testAccAWSSfnStateMachineConfigTracingConfigDisable(rName string) string {
 func testAccShieldProtectionCloudfrontRetainConfig() string {
 func testAccShieldProtectionRoute53HostedZoneConfig(rName string) string {
 func testAccShieldProtectionElbConfig(rName string) string {

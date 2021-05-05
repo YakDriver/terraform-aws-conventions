@@ -3456,11 +3456,14 @@ func testAccAWSKmsKey_tags(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_basic(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_dataLocation(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_database(rName string) string {
-func testAccAWSLakeFormationPermissionsConfig_table_name(rName string) string {
-func testAccAWSLakeFormationPermissionsConfig_table_wildcard(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_tableName(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_tableWildcard(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_tableWithColumns(rName string) string {
-func testAccAWSLakeFormationPermissionsConfig_tableWithColumnsAndTable(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_implicitTableWithColumnsPermissions(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_implicitTablePermissions(rName string) string {
 func testAccAWSLakeFormationPermissionsConfig_selectPermissions(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_tableWildcardPermissions(rName string) string {
+func testAccAWSLakeFormationPermissionsConfig_columnWildcardPermissions(rName string) string {
 func testAccAWSLakeFormationResourceConfig_basic(bucket, role string) string {
 func testAccAWSLakeFormationResourceConfig_serviceLinkedRole(rName string) string {
 func testAccAwsLambdaAliasBaseConfig(roleName, policyName, attachmentName string) string {
@@ -4792,8 +4795,10 @@ func testAccAWSSfnStateMachineConfigBase(rName string) string {
 func testAccAWSSfnStateMachineConfig(rName string, rMaxAttempts int) string {
 func testAccAWSSfnStateMachineConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSSfnStateMachineConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
-func testAccAWSSfnStateMachineTypedConfig(rType string, rName string, rMaxAttempts int) string {
-func testAccAWSSfnStateMachineExpressConfigLogConfiguration(rType string, rName string, rLevel string) string {
+func testAccAWSSfnStateMachineTypedConfig(rName, rType string, rMaxAttempts int) string {
+func testAccAWSSfnStateMachineExpressConfigLogConfiguration(rName string, rLevel string) string {
+func testAccAWSSfnStateMachineConfigTracingConfigEnable(rName string) string {
+func testAccAWSSfnStateMachineConfigTracingConfigDisable(rName string) string {
 func testAccShieldProtectionCloudfrontRetainConfig() string {
 func testAccShieldProtectionRoute53HostedZoneConfig(rName string) string {
 func testAccShieldProtectionElbConfig(rName string) string {

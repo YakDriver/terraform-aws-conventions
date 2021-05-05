@@ -3975,7 +3975,6 @@ func resourceAwsLakeFormationPermissions(
 func resourceAwsLakeFormationPermissionsCreate(
 func resourceAwsLakeFormationPermissionsRead(
 func resourceAwsLakeFormationPermissionsDelete(
-func resourceAwsLakeFormationPermissionsCompareResource(
 func resourceAwsLakeFormationResource(
 func resourceAwsLakeFormationResourceCreate(
 func resourceAwsLakeFormationResourceRead(
@@ -5652,8 +5651,6 @@ func resourceAwsSfnStateMachineCreate(
 func resourceAwsSfnStateMachineRead(
 func resourceAwsSfnStateMachineUpdate(
 func resourceAwsSfnStateMachineDelete(
-func expandAwsSfnLoggingConfiguration(
-func flattenAwsSfnLoggingConfiguration(
 func resourceAwsShieldProtection(
 func resourceAwsShieldProtectionUpdate(
 func resourceAwsShieldProtectionCreate(

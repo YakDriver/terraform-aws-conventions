@@ -4706,6 +4706,7 @@ func TestAccAWSSfnStateMachine_createUpdate(
 func TestAccAWSSfnStateMachine_expressUpdate(
 func TestAccAWSSfnStateMachine_standardUpdate(
 func TestAccAWSSfnStateMachine_tags(
+func TestAccAWSSfnStateMachine_TracingConfiguration(
 func TestAccAWSSfnStateMachine_disappears(
 func TestAccAWSSfnStateMachine_expressLoggingConfiguration(
 func TestAccAWSShieldProtection_GlobalAccelerator(
@@ -5466,6 +5467,8 @@ func TestBase64Encode(
 func TestLooksLikeJsonString(
 func TestJsonBytesEqualQuotedAndUnquoted(
 func TestJsonBytesEqualWhitespaceAndNoWhitespace(
+func TestStringSlicesEqualIgnoreOrder(
+func TestStringSlicesEqual(
 func TestValidateTypeStringNullableBoolean(
 func TestValidateTypeStringNullableFloat(
 func TestValidateCloudWatchDashboardName(
