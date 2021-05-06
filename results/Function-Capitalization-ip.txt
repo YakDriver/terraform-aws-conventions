@@ -1065,6 +1065,7 @@ func TestAccAWSSwfDomain_Description(
 func testAccAWSSwfDomainConfig_Description(
 func testAccAWSSyntheticsCanaryZipUpdatedConfig(
 func testAccAWSSyntheticsCanaryStartCanaryZipUpdatedConfig(
+func testAccErrorCheckSkipTransfer(
 func TestAccAWSVolumeAttachment_skipDestroy(
 func testAccVolumeAttachmentConfigSkipDestroy(
 func resourceAwsVpcEndpointServiceAllowedPrincipal(

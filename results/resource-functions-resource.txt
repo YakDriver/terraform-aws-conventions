@@ -1138,6 +1138,10 @@ func resourceAwsDynamoDbGlobalTableUpdate(
 func resourceAwsDynamoDbGlobalTableDelete(
 func resourceAwsDynamoDbGlobalTableRetrieve(
 func resourceAwsDynamoDbGlobalTableStateRefreshFunc(
+func resourceAwsDynamoDbKinesisStreamingDestination(
+func resourceAwsDynamoDbKinesisStreamingDestinationCreate(
+func resourceAwsDynamoDbKinesisStreamingDestinationRead(
+func resourceAwsDynamoDbKinesisStreamingDestinationDelete(
 func resourceAwsDynamoDbTable(
 func resourceAwsDynamoDbTableCreate(
 func resourceAwsDynamoDbTableRead(
@@ -2203,6 +2207,11 @@ func resourceMacie2AccountCreate(
 func resourceMacie2AccountRead(
 func resourceMacie2AccountUpdate(
 func resourceMacie2AccountDelete(
+func resourceAwsMacie2ClassificationJob(
+func resourceMacie2ClassificationJobCreate(
+func resourceMacie2ClassificationJobRead(
+func resourceMacie2ClassificationJobUpdate(
+func resourceMacie2ClassificationJobDelete(
 func resourceAwsMacieMemberAccountAssociation(
 func resourceAwsMacieMemberAccountAssociationCreate(
 func resourceAwsMacieMemberAccountAssociationRead(

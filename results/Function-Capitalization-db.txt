@@ -16,6 +16,7 @@ func resourceAwsdbClusterSnapshotUpdate(
 func testAccAWSDBInstanceConfig_orderableClassMariadb(
 func testAccPreCheckAWSDynamodbGlobalTable(
 func testAccDynamoDbGlobalTableConfig_multipleRegions_dynamodb_tables(
+func testAccAwsDynamodbKinesisStreamingDestinationConfigBasic(
 func expandGlueJdbcTargets(
 func expandGlueJdbcTarget(
 func flattenGlueJdbcTargets(

@@ -1177,11 +1177,12 @@ func testAccAWSBatchComputeEnvironmentConfigNamePrefix(rName string) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2(rName string) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2WithDesiredVcpusEc2KeyPairImageIdAndComputeResourcesTags(rName string) string {
 func testAccAWSBatchComputeEnvironmentConfigFargate(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigFargateDefaultServiceRole(rName string) string {
+func testAccAWSBatchComputeEnvironmentConfigFargateUpdatedServiceRole(rName string) string {
 func testAccAWSBatchComputeEnvironmentConfigFargateSpot(rName string) string {
 func testAccAWSBatchComputeEnvironmentConfigSpot(rName string) string {
 func testAccAWSBatchComputeEnvironmentConfigSpotWithAllocationStrategyAndBidPercentage(rName string) string {
 func testAccAWSBatchComputeEnvironmentConfigState(rName string, state string) string {
-func testAccAWSBatchComputeEnvironmentConfigUpdatedServiceRole(rName string) string {
 func testAccAWSBatchComputeEnvironmentConfigComputeResourcesMaxVcpusMinVcpus(rName string, maxVcpus int, minVcpus int) string {
 func testAccAWSBatchComputeEnvironmentConfigFargateUpdatedSecurityGroupsAndSubnets(rName string) string {
 func testAccAWSBatchComputeEnvironmentConfigEC2WithoutComputeResources(rName string) string {
@@ -1195,6 +1196,7 @@ func testAccBatchJobDefinitionConfigContainerPropertiesAdvanced(rName string) st
 func testAccBatchJobDefinitionConfigContainerPropertiesAdvancedUpdate(rName string) string {
 func testAccBatchJobDefinitionConfigName(rName string) string {
 func testAccBatchJobDefinitionConfigCapabilitiesEC2(rName string) string {
+func testAccBatchJobDefinitionConfigCapabilitiesFargateContainerPropertiesDefaults(rName string) string {
 func testAccBatchJobDefinitionConfigCapabilitiesFargate(rName string) string {
 func testAccBatchJobDefinitionConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccBatchJobDefinitionConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -2119,6 +2121,7 @@ func testAccDynamoDbGlobalTableConfig_multipleRegions_dynamodb_tables(tableName 
 func testAccDynamoDbGlobalTableConfig_multipleRegions1(tableName string) string {
 func testAccDynamoDbGlobalTableConfig_multipleRegions2(tableName string) string {
 func testAccDynamoDbGlobalTableConfig_invalidName(tableName string) string {
+func testAccAwsDynamodbKinesisStreamingDestinationConfigBasic(rName string) string {
 func testAccAWSDynamoDbItemConfigBasic(tableName, hashKey, item string) string {
 func testAccAWSDynamoDbItemConfigWithRangeKey(tableName, hashKey, rangeKey, item string) string {
 func testAccAWSDynamoDbItemConfigWithMultipleItems(tableName, hashKey, rangeKey, firstItem, secondItem string) string {
@@ -3796,6 +3799,11 @@ func testAccAwsMacieAccountConfigBasic() string {
 func testAccAwsMacieAccountConfigWithFinding(finding string) string {
 func testAccAwsMacieAccountConfigWithstatus(status string) string {
 func testAccAwsMacieAccountConfigWithfindingandstatus(finding, status string) string {
+func testAccAwsMacieClassificationJobconfigNameGenerated(bucketName, jobType string) string {
+func testAccAwsMacieClassificationJobconfigNamePrefix(nameBucket, namePrefix, jobType string) string {
+func testAccAwsMacieClassificationJobconfigComplete(nameBucket, jobStatus, description string) string {
+func testAccAwsMacieClassificationJobconfigStatus(nameBucket, jobStatus string) string {
+func testAccAwsMacieClassificationJobconfigCompleteWithTags(nameBucket, jobStatus string) string {
 func testAccAWSMacieMemberAccountAssociationConfig_basic(memberAcctId string) string {
 func testAccAWSMacieS3BucketAssociationConfig_basic(randInt int) string {
 func testAccAWSMacieS3BucketAssociationConfig_basicOneTime(randInt int) string {
@@ -3864,10 +3872,11 @@ func testAccMskConfigurationConfigServerProperties(rName string, serverProperty 
 func testAccMskScramSecretAssociationBaseConfig(rName string, count int) string {
 func testAccMskScramSecretAssociation_basic(rName string, count int) string {
 func testAccAWSMwaaEnvironmentBase(rName string) string {
-func testAccAWSMwssEnvironmentBasicConfig(rName string) string {
-func testAccAWSMwssEnvironmentAirflowConfigurationOptionsConfig(rName, retries, parallelism string) string {
-func testAccAWSMwssEnvironmentLoggingConfigurationConfig(rName, logEnabled, logLevel string) string {
-func testAccAWSMwssEnvironmentFullConfig(rName string) string {
+func testAccAWSMwaaEnvironmentBasicConfig(rName string) string {
+func testAccAWSMwaaEnvironmentAirflowConfigurationOptionsConfig(rName, retries, parallelism string) string {
+func testAccAWSMwaaEnvironmentLoggingConfigurationConfig(rName, logEnabled, logLevel string) string {
+func testAccAWSMwaaEnvironmentFullConfig(rName string) string {
+func testAccAWSMwaaEnvironmentPluginsS3ObjectVersionConfig(rName, content string) string {
 func testAccNatGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccNatGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSNeptuneClusterInstanceConfig(instanceName string, n int) string {
@@ -5145,9 +5154,15 @@ func testAccAWSSyntheticsCanaryVPCConfig2(rName string) string {
 func testAccAWSSyntheticsCanaryVPCConfig3(rName string) string {
 func testAccAWSSyntheticsCanaryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSyntheticsCanaryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSTransferServerConfig_basicUpdate(rName string) string {
+func testAccAWSTransferServerBasicConfig() string {
+func testAccAWSTransferServerSecurityPolicyConfig(policy string) string {
+func testAccAWSTransferServerUpdatedConfig(rName string) string {
 func testAccAWSTransferServerConfig_apigateway(rName string) string {
 func testAccAWSTransferServerConfig_forcedestroy(rName string) string {
+func testAccAWSTransferServerConfig_VpcEndPoint(rName string) string {
+func testAccAWSTransferServerConfig_VpcDefault(rName string) string {
+func testAccAWSTransferServerConfig_Vpc(rName string) string {
+func testAccAWSTransferServerConfig_VpcUpdate(rName string) string {
 func testAccAWSTransferServerConfig_hostKey(hostKey string) string {
 func testAccAWSTransferSshKeyConfig_basic(rName string) string {
 func testAccAWSTransferUserConfig_basic(rName string) string {

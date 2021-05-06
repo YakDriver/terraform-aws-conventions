@@ -379,6 +379,10 @@ func testAccSubnetConfig_tagsComputedFromVpcDataSource2(
 func flattenAwsSyntheticsCanaryVpcConfig(
 func expandAwsSyntheticsCanaryVpcConfig(
 func TestAccAWSTransferServer_Vpc(
+func testAccAWSTransferServerConfig_VpcEndPoint(
+func testAccAWSTransferServerConfig_VpcDefault(
+func testAccAWSTransferServerConfig_Vpc(
+func testAccAWSTransferServerConfig_VpcUpdate(
 func resourceAwsVpcDhcpOptionsAssociation(
 func resourceAwsVpcDhcpOptionsAssociationImport(
 func resourceAwsVpcDhcpOptionsAssociationCreate(
