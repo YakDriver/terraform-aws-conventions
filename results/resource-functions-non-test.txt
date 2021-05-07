@@ -5730,14 +5730,11 @@ func resourceAwsTransferServerCreate(
 func resourceAwsTransferServerRead(
 func resourceAwsTransferServerUpdate(
 func resourceAwsTransferServerDelete(
-func waitForTransferServerDeletion(
-func deleteTransferUsers(
-func expandTransferServerEndpointDetails(
-func flattenTransferServerEndpointDetails(
-func stopAndWaitForTransferServer(
-func startAndWaitForTransferServer(
-func refreshTransferServerStatus(
-func describeTransferServer(
+func expandTransferEndpointDetails(
+func flattenTransferEndpointDetails(
+func stopTransferServer(
+func startTransferServer(
+func updateTransferServer(
 func init(
 func resourceAwsTransferSshKey(
 func resourceAwsTransferSshKeyCreate(
@@ -5749,7 +5746,6 @@ func resourceAwsTransferUserCreate(
 func resourceAwsTransferUserRead(
 func resourceAwsTransferUserUpdate(
 func resourceAwsTransferUserDelete(
-func decodeTransferUserId(
 func waitForTransferUserDeletion(
 func expandAwsTransferHomeDirectoryMappings(
 func flattenAwsTransferHomeDirectoryMappings(

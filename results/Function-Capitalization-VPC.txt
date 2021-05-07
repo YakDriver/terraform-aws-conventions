@@ -102,6 +102,7 @@ func TestAccAWSVPCPeeringConnection_optionsNoAutoAccept(
 func testSweepVPCs(
 func testAccAWSVPCConfigTags1(
 func testAccAWSVPCConfigTags2(
+func testAccAWSVPCConfigWithIgnoreChanges_DynamicTagsMergedWithLocals(
 func flattenESVPCDerivedInfo(
 func expandESVPCOptions(
 func TestExpandIPPerms_nonVPC(

@@ -157,6 +157,7 @@ const testAccAWSSwfDomainConfig_NamePrefix =
 const testAccAWSTransferUserConfig_base =
 const testAccVpcEndpointSubnetAssociationConfig_basic =
 const testAccVpcEndpointSubnetAssociationConfig_multiple =
+const testAccAWSVPCConfigWithIgnoreChanges_DynamicTags =
 const testAccVpcConfig_BothDnsOptions =
 const testAccVpcConfig_DisabledDnsSupport =
 const testAccVpcConfig_ClassiclinkOption =

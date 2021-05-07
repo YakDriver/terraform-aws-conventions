@@ -2840,9 +2840,21 @@ func testAccAWSSyntheticsCanaryVPCConfig2(rName string) string {
 func testAccAWSSyntheticsCanaryVPCConfig3(rName string) string {
 func testAccAWSSyntheticsCanaryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSyntheticsCanaryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSTransferServerConfigBaseVpc(rName string) string {
+func testAccAWSTransferServerConfigBaseLoggingRole(rName string) string {
+func testAccAWSTransferServerConfigBaseApiGateway(rName string) string {
 func testAccAWSTransferServerBasicConfig() string {
 func testAccAWSTransferServerSecurityPolicyConfig(policy string) string {
 func testAccAWSTransferServerUpdatedConfig(rName string) string {
+func testAccAWSTransferServerApiGatewayIdentityProviderTypeConfig(rName string) string {
+func testAccAWSTransferServerForceDestroyConfig(rName string) string {
+func testAccAWSTransferServerVpcEndPointConfig(rName string) string {
+func testAccAWSTransferServerVpcConfig(rName string) string {
+func testAccAWSTransferServerVpcUpdateConfig(rName string) string {
+func testAccAWSTransferServerHostKeyConfig(hostKey string) string {
+func testAccAWSTransferServerProtocolsConfig(rName string) string {
+func testAccAWSTransferServerConfigRootCA(rName string) string {
+func testAccAWSTransferServerProtocolsUpdateConfig(rName string) string {
 func testAccVolumeAttachmentInstanceOnlyConfigBase(rName string) string {
 func testAccVolumeAttachmentConfigBase(rName string) string {
 func testAccVolumeAttachmentConfig(rName string) string {

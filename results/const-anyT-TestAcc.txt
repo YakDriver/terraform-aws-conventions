@@ -404,6 +404,7 @@ const testAccVpcEndpointSubnetAssociationConfig_multiple =
 const testAccAwsVpcIpv4CidrBlockAssociationConfig =
 const testAccVpcConfig =
 const testAccVpcConfigUpdate =
+const testAccAWSVPCConfigWithIgnoreChanges_DynamicTags =
 const testAccVpcDedicatedConfig =
 const testAccVpcConfig_BothDnsOptions =
 const testAccVpcConfig_DisabledDnsSupport =

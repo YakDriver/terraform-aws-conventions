@@ -3812,6 +3812,7 @@ func testAccAWSSyntheticsCanaryVPCConfigBase(
 func testAccAWSSyntheticsCanaryVPCConfig1(
 func testAccAWSSyntheticsCanaryVPCConfig2(
 func testAccAWSSyntheticsCanaryVPCConfig3(
+func testAccAWSTransferServerConfigRootCA(
 func volumeAttachmentID(
 func testAccAWSVolumeAttachmentImportStateIDFunc(
 func TestAccAWSDHCPOptionsAssociation_basic(
@@ -3863,6 +3864,7 @@ func TestAccAWSVPCPeeringConnection_optionsNoAutoAccept(
 func testSweepVPCs(
 func testAccAWSVPCConfigTags1(
 func testAccAWSVPCConfigTags2(
+func testAccAWSVPCConfigWithIgnoreChanges_DynamicTagsMergedWithLocals(
 func validateVpnConnectionTunnelInsideCIDR(
 func validateVpnConnectionTunnelInsideIpv6CIDR(
 func validateTunnelInsideIPVersion(

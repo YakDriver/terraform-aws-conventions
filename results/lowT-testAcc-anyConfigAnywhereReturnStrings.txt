@@ -4740,16 +4740,21 @@ func testAccAWSSyntheticsCanaryVPCConfig2(rName string) string {
 func testAccAWSSyntheticsCanaryVPCConfig3(rName string) string {
 func testAccAWSSyntheticsCanaryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSyntheticsCanaryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSTransferServerConfigBaseVpc(rName string) string {
+func testAccAWSTransferServerConfigBaseLoggingRole(rName string) string {
+func testAccAWSTransferServerConfigBaseApiGateway(rName string) string {
 func testAccAWSTransferServerBasicConfig() string {
 func testAccAWSTransferServerSecurityPolicyConfig(policy string) string {
 func testAccAWSTransferServerUpdatedConfig(rName string) string {
-func testAccAWSTransferServerConfig_apigateway(rName string) string {
-func testAccAWSTransferServerConfig_forcedestroy(rName string) string {
-func testAccAWSTransferServerConfig_VpcEndPoint(rName string) string {
-func testAccAWSTransferServerConfig_VpcDefault(rName string) string {
-func testAccAWSTransferServerConfig_Vpc(rName string) string {
-func testAccAWSTransferServerConfig_VpcUpdate(rName string) string {
-func testAccAWSTransferServerConfig_hostKey(hostKey string) string {
+func testAccAWSTransferServerApiGatewayIdentityProviderTypeConfig(rName string) string {
+func testAccAWSTransferServerForceDestroyConfig(rName string) string {
+func testAccAWSTransferServerVpcEndPointConfig(rName string) string {
+func testAccAWSTransferServerVpcConfig(rName string) string {
+func testAccAWSTransferServerVpcUpdateConfig(rName string) string {
+func testAccAWSTransferServerHostKeyConfig(hostKey string) string {
+func testAccAWSTransferServerProtocolsConfig(rName string) string {
+func testAccAWSTransferServerConfigRootCA(rName string) string {
+func testAccAWSTransferServerProtocolsUpdateConfig(rName string) string {
 func testAccAWSTransferSshKeyConfig_basic(rName string) string {
 func testAccAWSTransferUserConfig_basic(rName string) string {
 func testAccAWSTransferUserConfig_options(rName string) string {
@@ -4806,6 +4811,7 @@ func testAccVpcPeeringConfig_options_noAutoAccept(rName string) string {
 func testAccVpcConfigAssignGeneratedIpv6CidrBlock(assignGeneratedIpv6CidrBlock bool) string {
 func testAccAWSVPCConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAWSVPCConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSVPCConfigWithIgnoreChanges_DynamicTagsMergedWithLocals(localTagKey1, localTagValue1 string) string {
 func testAccAwsVpnConnectionRouteConfig(rBgpAsn int) string {
 func testAccAwsVpnConnectionRouteConfigUpdate(rBgpAsn int) string {
 func testAccAwsVpnConnectionConfig(rBgpAsn int) string {

@@ -413,7 +413,6 @@ func TestAccAWSSubnet_availabilityZoneId(
 func testAccSubnetConfigAvailabilityZoneId(
 func TestAccAWSTransferServer_vpcEndpointId(
 func decodeTransferSshKeyId(
-func decodeTransferUserId(
 func testAccDHCPOptionsAssociationVPCImportIdFunc(
 func flattenVpcEndpointSecurityGroupIds(
 func vpcEndpointIdRouteTableIdHash(

@@ -23,6 +23,7 @@ func TestAccAWSSecurityGroup_vpcNegOneIngress(
 func TestAccAWSSecurityGroup_vpcProtoNumIngress(
 func TestAccAWSSpotInstanceRequest_vpc(
 func TestAccAWSSyntheticsCanary_vpc(
+func TestAccAWSTransferServer_vpc(
 func TestAccAWSTransferServer_vpcEndpointId(
 func TestAccAWSDHCPOptionsAssociation_disappears_vpc(
 func vpcEndpointConnectionNotificationAttributes(

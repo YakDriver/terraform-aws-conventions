@@ -5114,13 +5114,15 @@ func TestAccAWSSyntheticsCanary_vpc(
 func TestAccAWSSyntheticsCanary_tags(
 func TestAccAWSSyntheticsCanary_disappears(
 func TestAccAWSTransferServer_basic(
-func TestAccAWSTransferServer_securityPolicy(
-func TestAccAWSTransferServer_Vpc(
-func TestAccAWSTransferServer_apigateway(
 func TestAccAWSTransferServer_disappears(
-func TestAccAWSTransferServer_forcedestroy(
-func TestAccAWSTransferServer_vpcEndpointId(
+func TestAccAWSTransferServer_securityPolicy(
+func TestAccAWSTransferServer_vpc(
+func TestAccAWSTransferServer_updateEndpointType(
+func TestAccAWSTransferServer_protocols(
+func TestAccAWSTransferServer_apiGateway(
+func TestAccAWSTransferServer_forceDestroy(
 func TestAccAWSTransferServer_hostKey(
+func TestAccAWSTransferServer_vpcEndpointId(
 func TestAccAWSTransferSshKey_basic(
 func TestAccAWSTransferUser_basic(
 func TestAccAWSTransferUser_modifyWithOptions(
@@ -5189,6 +5191,8 @@ func TestAccAWSVpc_defaultTags_updateToResourceOnly(
 func TestAccAWSVpc_defaultTags_providerAndResource_nonOverlappingTag(
 func TestAccAWSVpc_defaultTags_providerAndResource_overlappingTag(
 func TestAccAWSVpc_defaultTags_providerAndResource_duplicateTag(
+func TestAccAWSVpc_DynamicResourceTagsMergedWithLocals_IgnoreChanges(
+func TestAccAWSVpc_DynamicResourceTags_IgnoreChanges(
 func TestAccAWSVpc_defaultAndIgnoreTags(
 func TestAccAWSVpc_ignoreTags(
 func TestAccAWSVpc_AssignGeneratedIpv6CidrBlock(
@@ -5520,6 +5524,7 @@ func TestStringSlicesEqualIgnoreOrder(
 func TestStringSlicesEqual(
 func MapMaxItems(
 func MapKeysDoNotMatch(
+func MapKeyInSlice(
 func TestValidateTypeStringNullableBoolean(
 func TestValidateTypeStringNullableFloat(
 func TestValidateCloudWatchDashboardName(

@@ -52,6 +52,7 @@ const testAccAWSSecurityGroupConfig_IPRangeAndSecurityGroupWithSameRules =
 const testAccAWSSecurityGroupConfig_IPRangesWithSameRules =
 const testAccAWSSwfDomainConfig_GeneratedName =
 const testAccAWSSwfDomainConfig_NamePrefix =
+const testAccAWSVPCConfigWithIgnoreChanges_DynamicTags =
 const testAccVpcConfig_BothDnsOptions =
 const testAccVpcConfig_DisabledDnsSupport =
 const testAccVpcConfig_ClassiclinkOption =
