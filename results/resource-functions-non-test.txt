@@ -3983,6 +3983,10 @@ func flattenSimpleScopeTerm(
 func flattenTagScopeTerm(
 func flattenTagValues(
 func flattenUserPausedDetails(
+func resourceAwsMacie2CustomDataIdentifier(
+func resourceMacie2CustomDataIdentifierCreate(
+func resourceMacie2CustomDataIdentifierRead(
+func resourceMacie2CustomDataIdentifierDelete(
 func resourceAwsMacieMemberAccountAssociation(
 func resourceAwsMacieMemberAccountAssociationCreate(
 func resourceAwsMacieMemberAccountAssociationRead(
@@ -5724,6 +5728,12 @@ func expandAwsSyntheticsCanaryVpcConfig(
 func flattenAwsSyntheticsCanaryTimeline(
 func syntheticsStartCanary(
 func syntheticsStopCanary(
+func init(
+func resourceAwsTimestreamWriteDatabase(
+func resourceAwsTimestreamWriteDatabaseCreate(
+func resourceAwsTimestreamWriteDatabaseRead(
+func resourceAwsTimestreamWriteDatabaseUpdate(
+func resourceAwsTimestreamWriteDatabaseDelete(
 func init(
 func resourceAwsTransferServer(
 func resourceAwsTransferServerCreate(

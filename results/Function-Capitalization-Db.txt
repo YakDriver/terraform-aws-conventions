@@ -414,6 +414,7 @@ func flattenIotDynamoDbActions(
 func flattenIotDynamoDbv2Actions(
 func TestAccAWSIoTTopicRule_dynamoDbv2(
 func testAccAWSIoTTopicRule_dynamoDbv2(
+func testAccAWSLambdaEventSourceMappingConfigDynamoDbBatchSize(
 func resourceAwsOpsworksRdsDbInstance(
 func resourceAwsOpsworksRdsDbInstanceUpdate(
 func resourceAwsOpsworksRdsDbInstanceDeregister(

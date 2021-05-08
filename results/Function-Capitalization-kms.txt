@@ -30,3 +30,4 @@ func TestAccAWSSagemakerEndpointConfiguration_kmsKeyId(
 func TestAccAWSSagemakerNotebookInstance_kms(
 func TestAccAWSStorageGatewayCachedIscsiVolume_kms(
 func TestAccAWSStorageGatewayStoredIscsiVolume_kms(
+func TestAccAWSTimestreamWriteDatabase_kmsKey(

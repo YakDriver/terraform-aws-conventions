@@ -522,6 +522,8 @@ func expandIotDynamoDBAction(
 func expandIotDynamoDBv2Action(
 func flattenIotDynamoDBAction(
 func flattenIotDynamoDBv2Action(
+func TestAccAWSLambdaEventSourceMapping_DynamoDB_basic(
+func testAccAWSLambdaEventSourceMappingConfigDynamoDBBase(
 func resourceAwsQLDBLedger(
 func resourceAwsQLDBLedgerCreate(
 func resourceAwsQLDBLedgerRead(

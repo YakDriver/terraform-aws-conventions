@@ -1865,10 +1865,16 @@ func testAccAWSLambdaEventSourceMappingConfigKinesisParallelizationFactor(rName 
 func testAccAWSLambdaEventSourceMappingConfigKinesisMaximumRetryAttempts(rName string, maximumRetryAttempts int64) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBisectBatch(rName string, bisectBatch bool) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisMaximumRecordAgeInSeconds(rName string, maximumRecordAgeInSeconds int64) string {
-func testAccAWSLambdaEventSourceMappingConfigKinesisDestinationConfig(rName string, streamName string) string {
+func testAccAWSLambdaEventSourceMappingConfigKinesisDestinationConfig(rName string, topicName string) string {
+func testAccAWSLambdaEventSourceMappingConfigKinesisBatchSize(rName, batchSize string) string {
+func testAccAWSLambdaEventSourceMappingConfigKinesisUpdateFunctionName(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigSqsBatchSize(rName, batchSize string) string {
+func testAccAWSLambdaEventSourceMappingConfigSqsUpdateFunctionName(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigSQSBase(rName string) string {
-func testAccAWSLambdaEventSourceMappingConfigSqsWithBatchWindow(rName string, batchWindow int64) string {
+func testAccAWSLambdaEventSourceMappingConfigSqsBatchWindow(rName string, batchWindow int64) string {
 func testAccAWSLambdaEventSourceMappingConfigMsk(rName, batchSize string) string {
+func testAccAWSLambdaEventSourceMappingConfigDynamoDBBase(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigDynamoDbBatchSize(rName, batchSize string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigBase(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSnsTopic(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSqsQueue(rName string) string {
@@ -1981,6 +1987,10 @@ func testAccAwsMacieClassificationJobconfigNamePrefix(nameBucket, namePrefix, jo
 func testAccAwsMacieClassificationJobconfigComplete(nameBucket, jobStatus, description string) string {
 func testAccAwsMacieClassificationJobconfigStatus(nameBucket, jobStatus string) string {
 func testAccAwsMacieClassificationJobconfigCompleteWithTags(nameBucket, jobStatus string) string {
+func testAccAwsMacieCustomDataIdentifierconfigNameGenerated(regex string) string {
+func testAccAwsMacieCustomDataIdentifierconfigNamePrefix(name, regex string) string {
+func testAccAwsMacieCustomDataIdentifierconfigComplete(bucketName, regex, description string) string {
+func testAccAwsMacieCustomDataIdentifierconfigCompleteWithTags(bucketName, regex string) string {
 func testAccMediaPackageChannelConfig(rName string) string {
 func testAccMediaPackageChannelConfigDescription(rName, description string) string {
 func testAccMediaPackageChannelConfigWithTags(rName, key, value string) string {
@@ -2840,6 +2850,10 @@ func testAccAWSSyntheticsCanaryVPCConfig2(rName string) string {
 func testAccAWSSyntheticsCanaryVPCConfig3(rName string) string {
 func testAccAWSSyntheticsCanaryConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSSyntheticsCanaryConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSTimestreamWriteDatabaseConfigBasic(rName string) string {
+func testAccAWSTimestreamWriteDatabaseConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSTimestreamWriteDatabaseConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSTimestreamWriteDatabaseConfigKmsKey(rName string) string {
 func testAccAWSTransferServerConfigBaseVpc(rName string) string {
 func testAccAWSTransferServerConfigBaseLoggingRole(rName string) string {
 func testAccAWSTransferServerConfigBaseApiGateway(rName string) string {

@@ -2212,6 +2212,10 @@ func resourceMacie2ClassificationJobCreate(
 func resourceMacie2ClassificationJobRead(
 func resourceMacie2ClassificationJobUpdate(
 func resourceMacie2ClassificationJobDelete(
+func resourceAwsMacie2CustomDataIdentifier(
+func resourceMacie2CustomDataIdentifierCreate(
+func resourceMacie2CustomDataIdentifierRead(
+func resourceMacie2CustomDataIdentifierDelete(
 func resourceAwsMacieMemberAccountAssociation(
 func resourceAwsMacieMemberAccountAssociationCreate(
 func resourceAwsMacieMemberAccountAssociationRead(
@@ -3318,6 +3322,11 @@ func resourceAwsSyntheticsCanaryCreate(
 func resourceAwsSyntheticsCanaryRead(
 func resourceAwsSyntheticsCanaryUpdate(
 func resourceAwsSyntheticsCanaryDelete(
+func resourceAwsTimestreamWriteDatabase(
+func resourceAwsTimestreamWriteDatabaseCreate(
+func resourceAwsTimestreamWriteDatabaseRead(
+func resourceAwsTimestreamWriteDatabaseUpdate(
+func resourceAwsTimestreamWriteDatabaseDelete(
 func resourceAwsTransferServer(
 func resourceAwsTransferServerCreate(
 func resourceAwsTransferServerRead(
