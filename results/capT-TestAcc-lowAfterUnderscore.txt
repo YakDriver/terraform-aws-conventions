@@ -1913,6 +1913,7 @@ func TestAccAwsLbListenerCertificate_basic(
 func TestAccAwsLbListenerCertificate_multiple(
 func TestAccAwsLbListenerCertificate_disappears(
 func TestAccAWSLBListenerRule_basic(
+func TestAccAWSLBListenerRule_tags(
 func TestAccAWSLBListenerRule_forwardWeighted(
 func TestAccAWSLBListenerRule_redirect(
 func TestAccAWSLBListenerRule_fixedResponse(
@@ -1934,6 +1935,7 @@ func TestAccAWSLBListenerRule_conditionUpdateMixed(
 func TestAccAWSLBListenerRule_conditionMultiple(
 func TestAccAWSLBListenerRule_conditionUpdateMultiple(
 func TestAccAWSLBListener_basic(
+func TestAccAWSLBListener_tags(
 func TestAccAWSLBListener_forwardWeighted(
 func TestAccAWSLBListener_basicUdp(
 func TestAccAWSLBListener_https(

@@ -829,6 +829,7 @@ func testAccAWSCodePipelineConfigWithTags(rName, tag1, tag2 string) string {
 func testAccAWSCodePipelineConfigWithNamespace(rName string) string {
 func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2, githubToken string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigBasic(rName string) string {
+func testAccAWSCodeStarConnectionsConnectionConfigHostArn(rName string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
 func testAccAWSCodeStarConnectionsHostVpcConfig(rName string) string {
@@ -1956,8 +1957,12 @@ func testAccLbListenerCertificateConfigCertificateArnUnderscores(rName, key, cer
 func testAccLbListenerCertificateConfigMultiple(rName string, keys, certificates []string) string {
 func testAccLbListenerCertificateConfigMultipleAddNew(rName string, keys, certificates []string) string {
 func testAccAWSLBListenerRuleConfigBackwardsCompatibility(lbName, targetGroupName string) string {
+func testAccAWSLBListenerRuleTagsConfig1(lbName, targetGroupName, tagKey1, tagValue1 string) string {
+func testAccAWSLBListenerRuleTagsConfig2(lbName, targetGroupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSLBListenerConfigBase(rName string) string {
 func testAccAWSLBListenerConfigBackwardsCompatibility(rName string) string {
+func testAccAWSLBListenerTagsConfig1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSLBListenerTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSslNegotiationPolicyConfig(rName, key, certificate string) string {
 func testAccAWSLBTargetGroupAttachmentConfigInstanceBase() string {
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdInstance(rName string) string {

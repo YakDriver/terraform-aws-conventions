@@ -1592,6 +1592,7 @@ func testAccAWSCodePipelineWebhookConfigWithTags(rName, tag1, tag2, githubToken 
 func testAccAWSCodePipelineWebhookConfig_secretTokenUpdated(rName, githubToken string) string {
 func testAccAWSCodePipelineWebhookConfig_codePipeline(rName, githubToken string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigBasic(rName string) string {
+func testAccAWSCodeStarConnectionsConnectionConfigHostArn(rName string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
 func testAccAWSCodeStarConnectionsConnectionConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
 func testAccAWSCodeStarConnectionsHostVpcConfig(rName string) string {
@@ -3656,6 +3657,8 @@ func testAccAWSLBListenerRuleConfig_conditionMixed_updated(lbName string) string
 func testAccAWSLBListenerRuleConfig_conditionMixed_updated2(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionMultiple(lbName string) string {
 func testAccAWSLBListenerRuleConfig_conditionMultiple_updated(lbName string) string {
+func testAccAWSLBListenerRuleTagsConfig1(lbName, targetGroupName, tagKey1, tagValue1 string) string {
+func testAccAWSLBListenerRuleTagsConfig2(lbName, targetGroupName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSLBListenerConfigBase(rName string) string {
 func testAccAWSLBListenerConfig_basic(rName string) string {
 func testAccAWSLBListenerConfig_forwardWeighted(rName, rName2 string) string {
@@ -3671,6 +3674,8 @@ func testAccAWSLBListenerConfig_fixedResponse(rName string) string {
 func testAccAWSLBListenerConfig_cognito(rName, key, certificate string) string {
 func testAccAWSLBListenerConfig_oidc(rName, key, certificate string) string {
 func testAccAWSLBListenerConfig_DefaultAction_Order(rName, key, certificate string) string {
+func testAccAWSLBListenerTagsConfig1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSLBListenerTagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccSslNegotiationPolicyConfig(rName, key, certificate string) string {
 func testAccAWSLBTargetGroupAttachmentConfigInstanceBase() string {
 func testAccAWSLBTargetGroupAttachmentConfigTargetIdInstance(rName string) string {

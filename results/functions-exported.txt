@@ -1595,6 +1595,7 @@ func TestAccAWSCodePipelineWebhook_unauthenticated(
 func TestAccAWSCodePipelineWebhook_tags(
 func TestAccAWSCodePipelineWebhook_UpdateAuthenticationConfiguration_SecretToken(
 func TestAccAWSCodeStarConnectionsConnection_Basic(
+func TestAccAWSCodeStarConnectionsConnection_HostArn(
 func TestAccAWSCodeStarConnectionsConnection_disappears(
 func TestAccAWSCodeStarConnectionsConnection_Tags(
 func TestAccAWSCodeStarConnectionsHost_basic(
@@ -3544,6 +3545,7 @@ func TestAccAwsLbListenerCertificate_multiple(
 func TestAccAwsLbListenerCertificate_disappears(
 func TestLBListenerARNFromRuleARN(
 func TestAccAWSLBListenerRule_basic(
+func TestAccAWSLBListenerRule_tags(
 func TestAccAWSLBListenerRule_forwardWeighted(
 func TestAccAWSLBListenerRule_BackwardsCompatibility(
 func TestAccAWSLBListenerRule_redirect(
@@ -3568,6 +3570,7 @@ func TestAccAWSLBListenerRule_conditionUpdateMixed(
 func TestAccAWSLBListenerRule_conditionMultiple(
 func TestAccAWSLBListenerRule_conditionUpdateMultiple(
 func TestAccAWSLBListener_basic(
+func TestAccAWSLBListener_tags(
 func TestAccAWSLBListener_forwardWeighted(
 func TestAccAWSLBListener_basicUdp(
 func TestAccAWSLBListener_BackwardsCompatibility(
