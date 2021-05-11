@@ -1806,6 +1806,12 @@ func flattenUserPausedDetails(
 func resourceMacie2CustomDataIdentifierCreate(
 func resourceMacie2CustomDataIdentifierRead(
 func resourceMacie2CustomDataIdentifierDelete(
+func resourceMacie2FindingsFilterCreate(
+func resourceMacie2FindingsFilterRead(
+func resourceMacie2FindingsFilterUpdate(
+func resourceMacie2FindingsFilterDelete(
+func expandFindingCriteriaFilter(
+func flattenFindingCriteriaFindingsFilter(
 func findMainRouteTableAssociation(
 func findMainRouteTable(
 func getAwsMediaConvertAccountClient(

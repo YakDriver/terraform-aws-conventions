@@ -3818,6 +3818,12 @@ func testAccAwsMacieCustomDataIdentifierconfigNameGenerated(regex string) string
 func testAccAwsMacieCustomDataIdentifierconfigNamePrefix(name, regex string) string {
 func testAccAwsMacieCustomDataIdentifierconfigComplete(bucketName, regex, description string) string {
 func testAccAwsMacieCustomDataIdentifierconfigCompleteWithTags(bucketName, regex string) string {
+func testAccAwsMacieFindingsFilterconfigNameGenerated() string {
+func testAccAwsMacieFindingsFilterconfigNamePrefix(name string) string {
+func testAccAwsMacieFindingsFilterconfigComplete(description, action string, position int) string {
+func testAccAwsMacieFindingsFilterconfigCompleteMultipleCriterion(description, action, startDate, endDate string, position int) string {
+func testAccAwsMacieFindingsFilterconfigCompleteMultipleCriterionNumber(description, action, firstNum, secondNum string, position int) string {
+func testAccAwsMacieFindingsFilterconfigWithTags(description, action string, position int) string {
 func testAccAWSMacieMemberAccountAssociationConfig_basic(memberAcctId string) string {
 func testAccAWSMacieS3BucketAssociationConfig_basic(randInt int) string {
 func testAccAWSMacieS3BucketAssociationConfig_basicOneTime(randInt int) string {

@@ -3987,6 +3987,13 @@ func resourceAwsMacie2CustomDataIdentifier(
 func resourceMacie2CustomDataIdentifierCreate(
 func resourceMacie2CustomDataIdentifierRead(
 func resourceMacie2CustomDataIdentifierDelete(
+func resourceAwsMacie2FindingsFilter(
+func resourceMacie2FindingsFilterCreate(
+func resourceMacie2FindingsFilterRead(
+func resourceMacie2FindingsFilterUpdate(
+func resourceMacie2FindingsFilterDelete(
+func expandFindingCriteriaFilter(
+func flattenFindingCriteriaFindingsFilter(
 func resourceAwsMacieMemberAccountAssociation(
 func resourceAwsMacieMemberAccountAssociationCreate(
 func resourceAwsMacieMemberAccountAssociationRead(
