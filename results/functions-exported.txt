@@ -749,6 +749,7 @@ func TestAccAWSALBTargetGroup_missingPortProtocolVpc(
 func TestAccAWSAMICopy_basic(
 func TestAccAWSAMICopy_Description(
 func TestAccAWSAMICopy_EnaSupport(
+func TestAccAWSAMICopy_DestinationOutpost(
 func TestAccAWSAMICopy_tags(
 func TestAccAWSAMIFromInstance_basic(
 func TestAccAWSAMIFromInstance_tags(
@@ -1371,6 +1372,7 @@ func TestAccAWSCloudWatchEventTarget_RetryPolicy_DeadLetterConfig(
 func TestAccAWSCloudWatchEventTarget_full(
 func TestAccAWSCloudWatchEventTarget_disappears(
 func TestAccAWSCloudWatchEventTarget_ssmDocument(
+func TestAccAWSCloudWatchEventTarget_http(
 func TestAccAWSCloudWatchEventTarget_ecs(
 func TestAccAWSCloudWatchEventTarget_ecsWithBlankTaskCount(
 func TestAccAWSCloudWatchEventTarget_batch(
@@ -2430,6 +2432,8 @@ func TestAccAWSEksFargateProfile_Multi_Profile(
 func TestAccAWSEksFargateProfile_Selector_Labels(
 func TestAccAWSEksFargateProfile_Tags(
 func TestAccAWSEksNodeGroup_basic(
+func TestAccAWSEksNodeGroup_Name_Generated(
+func TestAccAWSEksNodeGroup_NamePrefix(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
 func TestAccAWSEksNodeGroup_CapacityType_Spot(

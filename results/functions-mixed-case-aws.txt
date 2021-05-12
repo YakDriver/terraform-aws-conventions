@@ -1886,6 +1886,7 @@ func expandAwsCloudWatchEventTargetEcsParametersNetworkConfiguration(
 func expandAwsCloudWatchEventTargetBatchParameters(
 func expandAwsCloudWatchEventTargetKinesisParameters(
 func expandAwsCloudWatchEventTargetSqsParameters(
+func expandAwsCloudWatchEventTargetHttpParameters(
 func expandAwsCloudWatchEventTransformerParameters(
 func flattenAwsCloudWatchEventTargetRunParameters(
 func flattenAwsCloudWatchEventTargetEcsParameters(
@@ -1893,6 +1894,7 @@ func flattenAwsCloudWatchEventTargetEcsParametersNetworkConfiguration(
 func flattenAwsCloudWatchEventTargetBatchParameters(
 func flattenAwsCloudWatchEventTargetKinesisParameters(
 func flattenAwsCloudWatchEventTargetSqsParameters(
+func flattenAwsCloudWatchEventTargetHttpParameters(
 func flattenAwsCloudWatchInputTransformer(
 func flatternAwsCloudWatchEventTargetRetryPolicy(
 func flatternAwsCloudWatchEventTargetDeadLetterConfig(
@@ -3049,8 +3051,6 @@ func resourceAwsEksNodeGroupCreate(
 func resourceAwsEksNodeGroupRead(
 func resourceAwsEksNodeGroupUpdate(
 func resourceAwsEksNodeGroupDelete(
-func resourceAwsEksNodeGroupParseId(
-func resourceAwsEksNodeGroupCreateId(
 func resourceAwsElasticacheCluster(
 func resourceAwsElasticacheClusterCreate(
 func resourceAwsElasticacheClusterRead(

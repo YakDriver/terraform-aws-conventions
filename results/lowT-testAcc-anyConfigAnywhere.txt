@@ -564,6 +564,7 @@ func testAccAWSAMICopyConfigTags2(
 func testAccAWSAMICopyConfig(
 func testAccAWSAMICopyConfigDescription(
 func testAccAWSAMICopyConfigENASupport(
+func testAccAWSAMICopyConfigDestOutpost(
 func testAccAWSAMIFromInstanceConfigBase(
 func testAccAWSAMIFromInstanceConfig(
 func testAccAWSAMIFromInstanceConfigTags1(
@@ -1304,6 +1305,7 @@ func testAccAWSCloudWatchEventTargetConfigMissingTargetId(
 func testAccAWSCloudWatchEventTargetConfig_retryPolicyDlc(
 func testAccAWSCloudWatchEventTargetConfig_full(
 func testAccAWSCloudWatchEventTargetConfigSsmDocument(
+func testAccAWSCloudWatchEventTargetConfigHttp(
 func testAccAWSCloudWatchEventTargetConfigEcs(
 func testAccAWSCloudWatchEventTargetConfigEcsWithBlankTaskCount(
 func testAccAWSCloudWatchEventTargetConfigBatch(
@@ -2405,6 +2407,8 @@ func testAccAWSEksNodeGroupConfigBaseIamAndVpc(
 func testAccAWSEksNodeGroupConfigBase(
 func testAccAWSEksNodeGroupConfigBaseVersion(
 func testAccAWSEksNodeGroupConfigNodeGroupName(
+func testAccAWSEksNodeGroupConfigNodeGroupNameGenerated(
+func testAccAWSEksNodeGroupConfigNodeGroupNamePrefix(
 func testAccAWSEksNodeGroupConfigAmiType(
 func testAccAWSEksNodeGroupConfigCapacityType(
 func testAccAWSEksNodeGroupConfigDiskSize(

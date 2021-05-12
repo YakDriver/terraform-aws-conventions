@@ -140,10 +140,10 @@ func refreshEksNodeGroupStatus(
 func refreshEksNodeGroupUpdateStatus(
 func waitForEksNodeGroupDeletion(
 func waitForEksNodeGroupUpdate(
-func resourceAwsEksNodeGroupParseId(
-func resourceAwsEksNodeGroupCreateId(
 func testSweepEksNodeGroups(
 func TestAccAWSEksNodeGroup_basic(
+func TestAccAWSEksNodeGroup_Name_Generated(
+func TestAccAWSEksNodeGroup_NamePrefix(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
 func TestAccAWSEksNodeGroup_CapacityType_Spot(
@@ -172,6 +172,8 @@ func testAccAWSEksNodeGroupConfigBaseIamAndVpc(
 func testAccAWSEksNodeGroupConfigBase(
 func testAccAWSEksNodeGroupConfigBaseVersion(
 func testAccAWSEksNodeGroupConfigNodeGroupName(
+func testAccAWSEksNodeGroupConfigNodeGroupNameGenerated(
+func testAccAWSEksNodeGroupConfigNodeGroupNamePrefix(
 func testAccAWSEksNodeGroupConfigAmiType(
 func testAccAWSEksNodeGroupConfigCapacityType(
 func testAccAWSEksNodeGroupConfigDiskSize(

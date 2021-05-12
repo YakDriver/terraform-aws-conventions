@@ -562,6 +562,7 @@ func testAccAWSAMICopyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 
 func testAccAWSAMICopyConfig(rName string) string {
 func testAccAWSAMICopyConfigDescription(rName, description string) string {
 func testAccAWSAMICopyConfigENASupport(rName string) string {
+func testAccAWSAMICopyConfigDestOutpost(rName string) string {
 func testAccAWSAMIFromInstanceConfigBase(rName string) string {
 func testAccAWSAMIFromInstanceConfig(rName string) string {
 func testAccAWSAMIFromInstanceConfigTags1(rName, tagKey1, tagValue1 string) string {
@@ -1293,6 +1294,7 @@ func testAccAWSCloudWatchEventTargetConfigMissingTargetId(ruleName, snsTopicName
 func testAccAWSCloudWatchEventTargetConfig_retryPolicyDlc(ruleName, targetName, rName string) string {
 func testAccAWSCloudWatchEventTargetConfig_full(ruleName, targetName, rName string) string {
 func testAccAWSCloudWatchEventTargetConfigSsmDocument(rName string) string {
+func testAccAWSCloudWatchEventTargetConfigHttp(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigEcs(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigEcsWithBlankTaskCount(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigBatch(rName string) string {
@@ -2301,6 +2303,8 @@ func testAccAWSEksNodeGroupConfigBaseIamAndVpc(rName string) string {
 func testAccAWSEksNodeGroupConfigBase(rName string) string {
 func testAccAWSEksNodeGroupConfigBaseVersion(rName string, version string) string {
 func testAccAWSEksNodeGroupConfigNodeGroupName(rName string) string {
+func testAccAWSEksNodeGroupConfigNodeGroupNameGenerated(rName string) string {
+func testAccAWSEksNodeGroupConfigNodeGroupNamePrefix(rName, namePrefix string) string {
 func testAccAWSEksNodeGroupConfigAmiType(rName, amiType string) string {
 func testAccAWSEksNodeGroupConfigCapacityType(rName, capacityType string) string {
 func testAccAWSEksNodeGroupConfigDiskSize(rName string, diskSize int) string {

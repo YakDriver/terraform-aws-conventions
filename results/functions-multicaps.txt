@@ -869,6 +869,7 @@ func testAccAWSALBTargetGroupConfig_missing_vpc(
 func TestAccAWSAMICopy_basic(
 func TestAccAWSAMICopy_Description(
 func TestAccAWSAMICopy_EnaSupport(
+func TestAccAWSAMICopy_DestinationOutpost(
 func TestAccAWSAMICopy_tags(
 func testAccCheckAWSAMICopyExists(
 func testAccCheckAWSAMICopyDestroy(
@@ -879,6 +880,7 @@ func testAccAWSAMICopyConfigTags2(
 func testAccAWSAMICopyConfig(
 func testAccAWSAMICopyConfigDescription(
 func testAccAWSAMICopyConfigENASupport(
+func testAccAWSAMICopyConfigDestOutpost(
 func TestAccAWSAMIFromInstance_basic(
 func TestAccAWSAMIFromInstance_tags(
 func TestAccAWSAMIFromInstance_disappears(
@@ -2210,6 +2212,7 @@ func TestAccAWSCloudWatchEventTarget_RetryPolicy_DeadLetterConfig(
 func TestAccAWSCloudWatchEventTarget_full(
 func TestAccAWSCloudWatchEventTarget_disappears(
 func TestAccAWSCloudWatchEventTarget_ssmDocument(
+func TestAccAWSCloudWatchEventTarget_http(
 func TestAccAWSCloudWatchEventTarget_ecs(
 func TestAccAWSCloudWatchEventTarget_ecsWithBlankTaskCount(
 func TestAccAWSCloudWatchEventTarget_batch(
@@ -2228,6 +2231,7 @@ func testAccAWSCloudWatchEventTargetConfigMissingTargetId(
 func testAccAWSCloudWatchEventTargetConfig_retryPolicyDlc(
 func testAccAWSCloudWatchEventTargetConfig_full(
 func testAccAWSCloudWatchEventTargetConfigSsmDocument(
+func testAccAWSCloudWatchEventTargetConfigHttp(
 func testAccAWSCloudWatchEventTargetConfigEcs(
 func testAccAWSCloudWatchEventTargetConfigEcsWithBlankTaskCount(
 func testAccAWSCloudWatchEventTargetConfigBatch(
@@ -4462,6 +4466,8 @@ func testAccAWSEksFargateProfileConfigSelectorLabels1(
 func testAccAWSEksFargateProfileConfigTags1(
 func testAccAWSEksFargateProfileConfigTags2(
 func TestAccAWSEksNodeGroup_basic(
+func TestAccAWSEksNodeGroup_Name_Generated(
+func TestAccAWSEksNodeGroup_NamePrefix(
 func TestAccAWSEksNodeGroup_disappears(
 func TestAccAWSEksNodeGroup_AmiType(
 func TestAccAWSEksNodeGroup_CapacityType_Spot(
@@ -4491,6 +4497,8 @@ func testAccAWSEksNodeGroupConfigBaseIamAndVpc(
 func testAccAWSEksNodeGroupConfigBase(
 func testAccAWSEksNodeGroupConfigBaseVersion(
 func testAccAWSEksNodeGroupConfigNodeGroupName(
+func testAccAWSEksNodeGroupConfigNodeGroupNameGenerated(
+func testAccAWSEksNodeGroupConfigNodeGroupNamePrefix(
 func testAccAWSEksNodeGroupConfigAmiType(
 func testAccAWSEksNodeGroupConfigCapacityType(
 func testAccAWSEksNodeGroupConfigDiskSize(

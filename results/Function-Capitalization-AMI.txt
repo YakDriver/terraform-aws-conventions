@@ -4,6 +4,7 @@ func TestAccAWSDataSourceIAMInstanceProfile_basic(
 func TestAccAWSAMICopy_basic(
 func TestAccAWSAMICopy_Description(
 func TestAccAWSAMICopy_EnaSupport(
+func TestAccAWSAMICopy_DestinationOutpost(
 func TestAccAWSAMICopy_tags(
 func testAccCheckAWSAMICopyExists(
 func testAccCheckAWSAMICopyDestroy(
@@ -14,6 +15,7 @@ func testAccAWSAMICopyConfigTags2(
 func testAccAWSAMICopyConfig(
 func testAccAWSAMICopyConfigDescription(
 func testAccAWSAMICopyConfigENASupport(
+func testAccAWSAMICopyConfigDestOutpost(
 func TestAccAWSAMIFromInstance_basic(
 func TestAccAWSAMIFromInstance_tags(
 func TestAccAWSAMIFromInstance_disappears(

@@ -233,6 +233,7 @@ func TestAccAwsAcmpcaCertificate_Validity_EndDate(
 func TestAccAwsAcmpcaCertificate_Validity_Absolute(
 func TestAccAWSAMICopy_Description(
 func TestAccAWSAMICopy_EnaSupport(
+func TestAccAWSAMICopy_DestinationOutpost(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission(
 func TestAccAWSAMILaunchPermission_Disappears_LaunchPermission_Public(
 func TestAccAWSAMILaunchPermission_Disappears_AMI(
@@ -944,6 +945,8 @@ func TestAccAWSEksCluster_NetworkConfig_ServiceIpv4Cidr(
 func TestAccAWSEksFargateProfile_Multi_Profile(
 func TestAccAWSEksFargateProfile_Selector_Labels(
 func TestAccAWSEksFargateProfile_Tags(
+func TestAccAWSEksNodeGroup_Name_Generated(
+func TestAccAWSEksNodeGroup_NamePrefix(
 func TestAccAWSEksNodeGroup_AmiType(
 func TestAccAWSEksNodeGroup_CapacityType_Spot(
 func TestAccAWSEksNodeGroup_DiskSize(

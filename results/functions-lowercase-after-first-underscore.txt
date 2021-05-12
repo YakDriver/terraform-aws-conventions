@@ -1260,6 +1260,7 @@ func TestAccAWSCloudWatchEventTarget_basic(
 func TestAccAWSCloudWatchEventTarget_full(
 func TestAccAWSCloudWatchEventTarget_disappears(
 func TestAccAWSCloudWatchEventTarget_ssmDocument(
+func TestAccAWSCloudWatchEventTarget_http(
 func TestAccAWSCloudWatchEventTarget_ecs(
 func TestAccAWSCloudWatchEventTarget_ecsWithBlankTaskCount(
 func TestAccAWSCloudWatchEventTarget_batch(
