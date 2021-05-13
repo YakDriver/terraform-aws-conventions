@@ -1338,6 +1338,10 @@ func resourceAwsDataSyncTaskCreate(
 func resourceAwsDataSyncTaskRead(
 func resourceAwsDataSyncTaskUpdate(
 func resourceAwsDataSyncTaskDelete(
+func expandAwsDataSyncTaskSchedule(
+func flattenAwsDataSyncTaskSchedule(
+func expandAwsDataSyncFilterRules(
+func flattenAwsDataSyncFilterRules(
 func init(
 func resourceAwsDaxCluster(
 func resourceAwsDaxClusterCreate(
@@ -5276,6 +5280,12 @@ func resourceAwsServiceCatalogProductRead(
 func resourceAwsServiceCatalogProductUpdate(
 func resourceAwsServiceCatalogProductDelete(
 func expandProvisioningArtifactParameters(
+func init(
+func resourceAwsServiceCatalogTagOption(
+func resourceAwsServiceCatalogTagOptionCreate(
+func resourceAwsServiceCatalogTagOptionRead(
+func resourceAwsServiceCatalogTagOptionUpdate(
+func resourceAwsServiceCatalogTagOptionDelete(
 func init(
 func resourceAwsServiceDiscoveryHttpNamespace(
 func resourceAwsServiceDiscoveryHttpNamespaceCreate(

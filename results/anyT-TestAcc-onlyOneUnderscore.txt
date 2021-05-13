@@ -1995,6 +1995,7 @@ func TestAccAWSDataSyncAgent_basic(
 func TestAccAWSDataSyncAgent_disappears(
 func TestAccAWSDataSyncAgent_AgentName(
 func TestAccAWSDataSyncAgent_Tags(
+func TestAccAWSDataSyncAgent_VpcEndpointId(
 func TestAccAWSDataSyncLocationEfs_basic(
 func TestAccAWSDataSyncLocationEfs_disappears(
 func TestAccAWSDataSyncLocationEfs_Subdirectory(
@@ -2016,7 +2017,9 @@ func TestAccAWSDataSyncLocationSmb_disappears(
 func TestAccAWSDataSyncLocationSmb_Tags(
 func TestAccAWSDataSyncTask_basic(
 func TestAccAWSDataSyncTask_disappears(
+func TestAccAWSDataSyncTask_schedule(
 func TestAccAWSDataSyncTask_CloudWatchLogGroupARN(
+func TestAccAWSDataSyncTask_Excludes(
 func TestAccAWSDataSyncTask_Tags(
 func TestAccAWSDAXCluster_basic(
 func TestAccAWSDAXCluster_resize(
@@ -5069,6 +5072,11 @@ func TestAccAWSServiceCatalogProduct_physicalID(
 func testAccAWSServiceCatalogProductConfig_basic(
 func testAccAWSServiceCatalogProductConfig_updateTags(
 func testAccAWSServiceCatalogProductConfig_physicalID(
+func TestAccAWSServiceCatalogTagOption_basic(
+func TestAccAWSServiceCatalogTagOption_disappears(
+func TestAccAWSServiceCatalogTagOption_update(
+func TestAccAWSServiceCatalogTagOption_notActive(
+func testAccAWSServiceCatalogTagOptionConfig_basic(
 func TestAccAWSServiceDiscoveryHttpNamespace_basic(
 func TestAccAWSServiceDiscoveryHttpNamespace_disappears(
 func TestAccAWSServiceDiscoveryHttpNamespace_Description(
@@ -5520,6 +5528,7 @@ func TestAccAWSSyntheticsCanary_vpc(
 func TestAccAWSSyntheticsCanary_tags(
 func TestAccAWSSyntheticsCanary_disappears(
 func TestAccAWSTimestreamWriteDatabase_basic(
+func TestAccAWSTimestreamWriteDatabase_disappears(
 func TestAccAWSTimestreamWriteDatabase_kmsKey(
 func TestAccAWSTimestreamWriteDatabase_updateKmsKey(
 func TestAccAWSTimestreamWriteDatabase_Tags(

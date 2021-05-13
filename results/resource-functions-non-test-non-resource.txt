@@ -518,6 +518,10 @@ func init(
 func init(
 func init(
 func init(
+func expandAwsDataSyncTaskSchedule(
+func flattenAwsDataSyncTaskSchedule(
+func expandAwsDataSyncFilterRules(
+func flattenAwsDataSyncFilterRules(
 func init(
 func setDaxClusterNodeData(
 func (
@@ -2296,6 +2300,7 @@ func createServerlessApplicationRepositoryCloudFormationChangeSet(
 func expandServerlessRepositoryCloudFormationChangeSetParameters(
 func flattenServerlessRepositoryStackCapabilities(
 func expandProvisioningArtifactParameters(
+func init(
 func init(
 func init(
 func init(

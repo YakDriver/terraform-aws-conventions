@@ -1653,11 +1653,12 @@ func testAccCustomerGatewayConfig4ByteAsn(rBgpAsn string) string {
 func testAccAWSDataPipelinePipelineConfig(rName string) string {
 func testAccAWSDataPipelinePipelineConfigWithDescription(rName, description string) string {
 func testAccAWSDataPipelinePipelineConfigWithTags(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
-func testAccAWSDataSyncAgentConfigAgentBase() string {
-func testAccAWSDataSyncAgentConfig() string {
-func testAccAWSDataSyncAgentConfigName(rName string) string {
-func testAccAWSDataSyncAgentConfigTags1(key1, value1 string) string {
-func testAccAWSDataSyncAgentConfigTags2(key1, value1, key2, value2 string) string {
+func testAccAWSDataSyncAgentConfigAgentBase(rName string) string {
+func testAccAWSDataSyncAgentConfig(rName string) string {
+func testAccAWSDataSyncAgentConfigName(rName, agentName string) string {
+func testAccAWSDataSyncAgentConfigTags1(rName, key1, value1 string) string {
+func testAccAWSDataSyncAgentConfigTags2(rName, key1, value1, key2, value2 string) string {
+func testAccAWSDataSyncAgentConfigVpcEndpointId(rName string) string {
 func testAccAWSDataSyncLocationEfsConfigBase() string {
 func testAccAWSDataSyncLocationEfsConfig() string {
 func testAccAWSDataSyncLocationEfsConfigSubdirectory(subdirectory string) string {
@@ -1685,14 +1686,20 @@ func testAccAWSDataSyncLocationSmbConfigTags2(rName, key1, value1, key2, value2 
 func testAccAWSDataSyncTaskConfigDestinationLocationS3Base(rName string) string {
 func testAccAWSDataSyncTaskConfigSourceLocationNfsBase(rName string) string {
 func testAccAWSDataSyncTaskConfig(rName string) string {
+func testAccAWSDataSyncTaskScheduleConfig(rName, cron string) string {
 func testAccAWSDataSyncTaskConfigCloudWatchLogGroupArn(rName string) string {
+func testAccAWSDataSyncTaskConfigCloudWatchLogGroupArn2(rName string) string {
+func testAccAWSDataSyncTaskExcludesConfig(rName, value string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsAtimeMtime(rName, atime, mtime string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsBytesPerSecond(rName string, bytesPerSecond int) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsGid(rName, gid string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsLogLevel(rName, logLevel string) string {
+func testAccAWSDataSyncTaskConfigDefaultSyncOptionsOverwriteMode(rName, overwriteMode string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsPosixPermissions(rName, posixPermissions string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsPreserveDeletedFiles(rName, preserveDeletedFiles string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsPreserveDevices(rName, preserveDevices string) string {
+func testAccAWSDataSyncTaskConfigDefaultSyncOptionsTaskQueueing(rName, taskQueueing string) string {
+func testAccAWSDataSyncTaskConfigDefaultSyncOptionsTransferMode(rName, transferMode string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsUid(rName, uid string) string {
 func testAccAWSDataSyncTaskConfigDefaultSyncOptionsVerifyMode(rName, verifyMode string) string {
 func testAccAWSDataSyncTaskConfigTags1(rName, key1, value1 string) string {
@@ -4381,6 +4388,7 @@ func testAccAWSServiceCatalogProductConfigTemplateURLBase(rName string) string {
 func testAccAWSServiceCatalogProductConfig_basic(rName, description, supportDescription string) string {
 func testAccAWSServiceCatalogProductConfig_updateTags(rName, description, supportDescription string) string {
 func testAccAWSServiceCatalogProductConfig_physicalID(rName string) string {
+func testAccAWSServiceCatalogTagOptionConfig_basic(key, value, active string) string {
 func testAccServiceDiscoveryHttpNamespaceConfig(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigDescription(rName, description string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigTags1(rName, tagKey1, tagValue1 string) string {
