@@ -3140,6 +3140,7 @@ func TestAccAWSPinpointApp_Tags(
 func TestAccAWSPinpointBaiduChannel_basic(
 func TestAccAWSPinpointEmailChannel_basic(
 func TestAccAWSPinpointEmailChannel_configurationSet(
+func TestAccAWSPinpointEmailChannel_noRole(
 func TestAccAWSPinpointEmailChannel_disappears(
 func TestAccAWSPinpointEventStream_basic(
 func TestAccAWSPinpointEventStream_disappears(
@@ -3755,6 +3756,9 @@ func TestAccAWSSecurityGroup_ruleLimitExceededPrepend(
 func TestAccAWSSecurityGroup_ruleLimitExceededAllNew(
 func TestAccAWSSecurityGroup_rulesDropOnError(
 func TestAccAWSSecurityHub_serial(
+func TestAccAWSServiceCatalogOrganizationsAccess_basic(
+func TestAccAWSServiceCatalogPortfolioShare_basic(
+func TestAccAWSServiceCatalogPortfolioShare_organizationalUnit(
 func TestAccAWSServiceCatalogPortfolio_basic(
 func TestAccAWSServiceCatalogPortfolio_Disappears(
 func TestAccAWSServiceCatalogPortfolio_Tags(
@@ -4188,6 +4192,10 @@ func TestAccAWSTimestreamWriteDatabase_disappears(
 func TestAccAWSTimestreamWriteDatabase_kmsKey(
 func TestAccAWSTimestreamWriteDatabase_updateKmsKey(
 func TestAccAWSTimestreamWriteDatabase_Tags(
+func TestAccAWSTimestreamWriteTable_basic(
+func TestAccAWSTimestreamWriteTable_disappears(
+func TestAccAWSTimestreamWriteTable_RetentionProperties(
+func TestAccAWSTimestreamWriteTable_Tags(
 func TestAccAWSTransferServer_basic(
 func TestAccAWSTransferServer_disappears(
 func TestAccAWSTransferServer_securityPolicy(

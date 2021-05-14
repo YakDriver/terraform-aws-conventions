@@ -2936,6 +2936,8 @@ func TestAccAWSSwfDomain_Description(
 func testAccAWSSwfDomainConfig_Description(
 func testAccAWSSwfDomainConfig_Name(
 func TestAccAWSTimestreamWriteDatabase_Tags(
+func TestAccAWSTimestreamWriteTable_RetentionProperties(
+func TestAccAWSTimestreamWriteTable_Tags(
 func TestAccAWSTransferUser_UserName_Validation(
 func TestAccAWSVpcEndpointService_AllowedPrincipals(
 func TestAccAWSVpcEndpointService_GatewayLoadBalancerArns(

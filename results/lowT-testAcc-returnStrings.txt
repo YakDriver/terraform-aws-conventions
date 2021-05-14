@@ -4135,6 +4135,7 @@ func testAccAWSPinpointAppConfig_Tag2(rName, tagKey1, tagValue1, tagKey2, tagVal
 func testAccAWSPinpointBaiduChannelConfig_basic(apiKey, secretKey string) string {
 func testAccAWSPinpointEmailChannelConfig_FromAddress(fromAddress string) string {
 func testAccAWSPinpointEmailChannelConfigConfigurationSet(fromAddress, rName string) string {
+func testAccAWSPinpointEmailChannelConfigNoRole(fromAddress, rName string) string {
 func testAccAWSPinpointEventStreamConfig_basic(rName, streamName string) string {
 func testAccAWSPinpointGCMChannelConfig_basic(apiKey string) string {
 func testAccAWSPinpointSMSChannelConfig_full(senderId, shortCode string) string {
@@ -4767,6 +4768,9 @@ func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versione
 func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versionedPaired(stackName, appARN, version string) string {
 func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags1(rName, appARN, tagKey1, tagValue1 string) string {
 func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags2(rName, appARN, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSServiceCatalogOrganizationsAccessConfig_basic() string {
+func testAccAWSServiceCatalogPortfolioShareConfig_basic(rName string) string {
+func testAccAWSServiceCatalogPortfolioShareConfig_organizationalUnit(rName string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -5190,6 +5194,11 @@ func testAccAWSTimestreamWriteDatabaseConfigBasic(rName string) string {
 func testAccAWSTimestreamWriteDatabaseConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSTimestreamWriteDatabaseConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSTimestreamWriteDatabaseConfigKmsKey(rName string) string {
+func testAccAWSTimestreamWriteTableBaseConfig(rName string) string {
+func testAccAWSTimestreamWriteTableConfigBasic(rName string) string {
+func testAccAWSTimestreamWriteTableConfigRetentionProperties(rName string, magneticStoreDays, memoryStoreHours int) string {
+func testAccAWSTimestreamWriteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSTimestreamWriteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSTransferServerConfigBaseVpc(rName string) string {
 func testAccAWSTransferServerConfigBaseLoggingRole(rName string) string {
 func testAccAWSTransferServerConfigBaseApiGateway(rName string) string {

@@ -1960,6 +1960,8 @@ func TestAccAWSSwfDomain_NamePrefix(
 func TestAccAWSSwfDomain_GeneratedName(
 func TestAccAWSSwfDomain_Description(
 func TestAccAWSTimestreamWriteDatabase_Tags(
+func TestAccAWSTimestreamWriteTable_RetentionProperties(
+func TestAccAWSTimestreamWriteTable_Tags(
 func TestAccAWSTransferUser_UserName_Validation(
 func TestAccAWSVpcEndpointService_AllowedPrincipals(
 func TestAccAWSVpcEndpointService_GatewayLoadBalancerArns(

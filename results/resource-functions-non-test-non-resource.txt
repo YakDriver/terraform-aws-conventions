@@ -2469,6 +2469,9 @@ func syntheticsStartCanary(
 func syntheticsStopCanary(
 func init(
 func init(
+func expandTimestreamWriteRetentionProperties(
+func flattenTimestreamWriteRetentionProperties(
+func init(
 func expandTransferEndpointDetails(
 func flattenTransferEndpointDetails(
 func stopTransferServer(

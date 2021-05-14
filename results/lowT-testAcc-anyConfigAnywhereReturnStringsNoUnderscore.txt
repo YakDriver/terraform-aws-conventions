@@ -2175,6 +2175,7 @@ func testAccAwsOrganizationsOrganizationConfigEnabledPolicyTypes1(policyType1 st
 func testAccAwsOrganizationsOrganizationConfigFeatureSet(featureSet string) string {
 func testAccAwsOrganizationsPolicyConfigConcurrent(rName string) string {
 func testAccAWSPinpointEmailChannelConfigConfigurationSet(fromAddress, rName string) string {
+func testAccAWSPinpointEmailChannelConfigNoRole(fromAddress, rName string) string {
 func testAccAWSPlacementGroupConfig(rName string) string {
 func testAccAWSPlacementGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSPlacementGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -2876,6 +2877,11 @@ func testAccAWSTimestreamWriteDatabaseConfigBasic(rName string) string {
 func testAccAWSTimestreamWriteDatabaseConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSTimestreamWriteDatabaseConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSTimestreamWriteDatabaseConfigKmsKey(rName string) string {
+func testAccAWSTimestreamWriteTableBaseConfig(rName string) string {
+func testAccAWSTimestreamWriteTableConfigBasic(rName string) string {
+func testAccAWSTimestreamWriteTableConfigRetentionProperties(rName string, magneticStoreDays, memoryStoreHours int) string {
+func testAccAWSTimestreamWriteTableConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSTimestreamWriteTableConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSTransferServerConfigBaseVpc(rName string) string {
 func testAccAWSTransferServerConfigBaseLoggingRole(rName string) string {
 func testAccAWSTransferServerConfigBaseApiGateway(rName string) string {

@@ -1119,12 +1119,14 @@ func stripNonKeyAttributes(
 func stripCapacityAttributes(
 func ec2TagsFromTagDescriptions(
 func validatePrincipal(
+func validateServiceCatalogSharePrincipal(
 func validateDbEventSubscriptionName(
 func validateSecurityGroupRuleDescription(
 func validateIotThingTypeDescription(
 func validateNeptuneEventSubscriptionName(
 func validateNeptuneEventSubscriptionNamePrefix(
 func TestValidatePrincipal(
+func TestValidateServiceCatalogSharePrincipal(
 func TestValidateDbEventSubscriptionName(
 func TestValidateNeptuneEventSubscriptionName(
 func TestValidateNeptuneEventSubscriptionNamePrefix(

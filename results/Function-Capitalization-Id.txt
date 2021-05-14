@@ -411,6 +411,7 @@ func testAccAWSStorageGatewayStoredIscsiVolumeConfigSnapshotId(
 func testAccAWSStorageGatewayUploadBufferConfigDiskId(
 func TestAccAWSSubnet_availabilityZoneId(
 func testAccSubnetConfigAvailabilityZoneId(
+func resourceAwsTimestreamWriteTableParseId(
 func TestAccAWSTransferServer_vpcEndpointId(
 func decodeTransferSshKeyId(
 func testAccDHCPOptionsAssociationVPCImportIdFunc(
