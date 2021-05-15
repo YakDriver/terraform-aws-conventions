@@ -1818,6 +1818,10 @@ func resourceMacie2FindingsFilterUpdate(
 func resourceMacie2FindingsFilterDelete(
 func expandFindingCriteriaFilter(
 func flattenFindingCriteriaFindingsFilter(
+func resourceMacie2OrganizationAdminAccountCreate(
+func resourceMacie2OrganizationAdminAccountRead(
+func resourceMacie2OrganizationAdminAccountDelete(
+func getMacie2OrganizationAdminAccount(
 func findMainRouteTableAssociation(
 func findMainRouteTable(
 func getAwsMediaConvertAccountClient(

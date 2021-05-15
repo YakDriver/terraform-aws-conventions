@@ -5549,6 +5549,8 @@ func testAccAwsMacie2FindingsFilter_complete(
 func testAccAwsMacie2FindingsFilter_WithDate(
 func testAccAwsMacie2FindingsFilter_WithNumber(
 func testAccAwsMacie2FindingsFilter_withTags(
+func testAccAwsMacie2OrganizationAdminAccount_basic(
+func testAccAwsMacie2OrganizationAdminAccount_disappears(
 func TestAccAWSMacie2_serial(
 func TestAccAWSMacieMemberAccountAssociation_basic(
 func TestAccAWSMacieMemberAccountAssociation_self(

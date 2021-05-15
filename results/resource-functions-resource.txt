@@ -2219,6 +2219,10 @@ func resourceMacie2FindingsFilterCreate(
 func resourceMacie2FindingsFilterRead(
 func resourceMacie2FindingsFilterUpdate(
 func resourceMacie2FindingsFilterDelete(
+func resourceAwsMacie2OrganizationAdminAccount(
+func resourceMacie2OrganizationAdminAccountCreate(
+func resourceMacie2OrganizationAdminAccountRead(
+func resourceMacie2OrganizationAdminAccountDelete(
 func resourceAwsMacieMemberAccountAssociation(
 func resourceAwsMacieMemberAccountAssociationCreate(
 func resourceAwsMacieMemberAccountAssociationRead(

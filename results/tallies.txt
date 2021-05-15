@@ -1,13 +1,13 @@
 Analysis Tallies
 5657	All Functions:Exported
-16025	All Functions:Non-Exported
+16036	All Functions:Non-Exported
 10583	All Functions:Multicaps
 4154	All Functions:Non-AWS Multicaps
 9394	All Functions:Uppercase AWS
-6542	All Functions:Mixed case AWS
-7985	All Functions:Any underscores
+6548	All Functions:Mixed case AWS
+7987	All Functions:Any underscores
 1866	All Functions:Multiple underscores
-4887	All Functions:Lowercase after first underscore
+4889	All Functions:Lowercase after first underscore
 3097	All Functions:Uppercase after first underscore
 5608	Capital-T Test Functions:All
 5238	Capital-T Test Functions:TestAcc
@@ -27,21 +27,21 @@ Analysis Tallies
 16	Capital-T Test Functions:TestAccAws+Resource
 3195	Capital-T Test Functions:TestAcc and lowercase after first underscore
 2042	Capital-T Test Functions:TestAcc and uppercase after first underscore
-8490	Lowercase-t test Functions:All
-8152	Lowercase-t test Functions:testAcc
+8496	Lowercase-t test Functions:All
+8158	Lowercase-t test Functions:testAcc
 3568	Lowercase-t test Functions:testAccAWS
-836	Lowercase-t test Functions:testAccAws
-1559	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
+839	Lowercase-t test Functions:testAccAws
+1561	Lowercase-t test Functions:testAcc functions with lowercase after first underscore
 1053	Lowercase-t test Functions:testAcc functions with uppercase after first underscore
-5310	Lowercase-t test Functions:testAcc functions with config (any case)
-5548	Lowercase-t test Functions:testAcc functions returning strings
-5127	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
-3048	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
-14098	Any case-t Test Functions:All
-13390	Any case-t Test Functions:TestAcc
-4754	Any case-t Test Functions:TestAcc with lowercase after first underscore
+5311	Lowercase-t test Functions:testAcc functions with config (any case)
+5549	Lowercase-t test Functions:testAcc functions returning strings
+5128	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings
+3049	Lowercase-t test Functions:testAcc functions with config (any case) and returning strings without underscores
+14104	Any case-t Test Functions:All
+13396	Any case-t Test Functions:TestAcc
+4756	Any case-t Test Functions:TestAcc with lowercase after first underscore
 3095	Any case-t Test Functions:TestAcc with uppercase after first underscore
-6022	Any case-t Test Functions:TestAcc with only one underscore
+6024	Any case-t Test Functions:TestAcc with only one underscore
 2075	Any case-t Test Functions:TestAcc with camel case after first underscore
 1828	Any case-t Test Functions:TestAcc with multiple underscores
 440	Test Constants:All
@@ -55,11 +55,11 @@ Analysis Tallies
 373	Test Constants:TestAcc (any case) with config (any case)
 197	Test Constants:TestAcc (any case) with config (any case) and no underscores
 174	Test Constants:TestAcc (any case) with underscore anywhere after config (any case)
-3658	Resource Functions:Resource
+3662	Resource Functions:Resource
 222	Resource Functions:Resource Multi Caps
-6303	Resource Functions:Non-test
+6308	Resource Functions:Non-test
 462	Resource Functions:Non-test Multi-caps
-2704	Resource Functions:Non-test, non-resource
+2708	Resource Functions:Non-test, non-resource
 7	Function Capitalization:acl
 186	Function Capitalization:Acl
 112	Function Capitalization:ACL
@@ -76,7 +76,7 @@ Analysis Tallies
 5	Function Capitalization:Asg
 16	Function Capitalization:ASG
 8	Function Capitalization:aws
-6542	Function Capitalization:Aws
+6548	Function Capitalization:Aws
 9394	Function Capitalization:AWS
 3	Function Capitalization:cidr
 64	Function Capitalization:Cidr
@@ -123,7 +123,7 @@ Analysis Tallies
 4	Function Capitalization:iot
 149	Function Capitalization:Iot
 4	Function Capitalization:IOT
-1133	Function Capitalization:ip
+1134	Function Capitalization:ip
 230	Function Capitalization:Ip
 274	Function Capitalization:IP
 1	Function Capitalization:json

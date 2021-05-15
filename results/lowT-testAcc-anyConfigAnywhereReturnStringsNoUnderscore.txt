@@ -2013,6 +2013,7 @@ func testAccAwsMacieFindingsFilterconfigComplete(description, action string, pos
 func testAccAwsMacieFindingsFilterconfigCompleteMultipleCriterion(description, action, startDate, endDate string, position int) string {
 func testAccAwsMacieFindingsFilterconfigCompleteMultipleCriterionNumber(description, action, firstNum, secondNum string, position int) string {
 func testAccAwsMacieFindingsFilterconfigWithTags(description, action string, position int) string {
+func testAccAwsMacieOrganizationAdminAccountConfigBasic() string {
 func testAccMediaPackageChannelConfig(rName string) string {
 func testAccMediaPackageChannelConfigDescription(rName, description string) string {
 func testAccMediaPackageChannelConfigWithTags(rName, key, value string) string {

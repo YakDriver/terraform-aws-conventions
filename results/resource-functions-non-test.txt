@@ -3998,6 +3998,11 @@ func resourceMacie2FindingsFilterUpdate(
 func resourceMacie2FindingsFilterDelete(
 func expandFindingCriteriaFilter(
 func flattenFindingCriteriaFindingsFilter(
+func resourceAwsMacie2OrganizationAdminAccount(
+func resourceMacie2OrganizationAdminAccountCreate(
+func resourceMacie2OrganizationAdminAccountRead(
+func resourceMacie2OrganizationAdminAccountDelete(
+func getMacie2OrganizationAdminAccount(
 func resourceAwsMacieMemberAccountAssociation(
 func resourceAwsMacieMemberAccountAssociationCreate(
 func resourceAwsMacieMemberAccountAssociationRead(
