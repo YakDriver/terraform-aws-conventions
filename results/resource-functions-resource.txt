@@ -472,6 +472,11 @@ func resourceAwsCloudFrontDistributionDelete(
 func resourceAwsCloudFrontDistributionWaitUntilDeployed(
 func resourceAwsCloudFrontWebDistributionStateRefreshFunc(
 func resourceAwsCloudFrontDistributionMigrateState(
+func resourceAwsCloudFrontFunction(
+func resourceAwsCloudFrontFunctionCreate(
+func resourceAwsCloudFrontFunctionRead(
+func resourceAwsCloudFrontFunctionUpdate(
+func resourceAwsCloudFrontFunctionDelete(
 func resourceAwsCloudFrontKeyGroup(
 func resourceAwsCloudFrontKeyGroupCreate(
 func resourceAwsCloudFrontKeyGroupRead(
@@ -2219,6 +2224,15 @@ func resourceMacie2FindingsFilterCreate(
 func resourceMacie2FindingsFilterRead(
 func resourceMacie2FindingsFilterUpdate(
 func resourceMacie2FindingsFilterDelete(
+func resourceAwsMacie2InvitationAccepter(
+func resourceMacie2InvitationAccepterCreate(
+func resourceMacie2InvitationAccepterRead(
+func resourceMacie2InvitationAccepterDelete(
+func resourceAwsMacie2Member(
+func resourceMacie2MemberCreate(
+func resourceMacie2MemberRead(
+func resourceMacie2MemberUpdate(
+func resourceMacie2MemberDelete(
 func resourceAwsMacie2OrganizationAdminAccount(
 func resourceMacie2OrganizationAdminAccountCreate(
 func resourceMacie2OrganizationAdminAccountRead(

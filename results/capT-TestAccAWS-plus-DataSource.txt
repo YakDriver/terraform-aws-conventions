@@ -156,6 +156,7 @@ func TestAccAWSOutpostsOutpostsDataSource_basic(
 func TestAccAWSOutpostsOutpostDataSource_Id(
 func TestAccAWSOutpostsOutpostDataSource_Name(
 func TestAccAWSOutpostsOutpostDataSource_Arn(
+func TestAccAWSOutpostsOutpostDataSource_OwnerId(
 func TestAccAWSOutpostsSitesDataSource_basic(
 func TestAccAWSOutpostsSiteDataSource_Id(
 func TestAccAWSOutpostsSiteDataSource_Name(

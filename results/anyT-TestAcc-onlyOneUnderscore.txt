@@ -59,6 +59,7 @@ func testAccCheckAwsCloudFormationStackDataSourceConfig_basic(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(
 func TestAccAWSCloudFrontDataSourceCachePolicy_basic(
 func TestAccAWSDataSourceCloudFrontDistribution_basic(
+func TestAccDataSourceAWSCloudfrontFunction_basic(
 func TestAccAWSCloudFrontDataSourceOriginRequestPolicy_basic(
 func TestAccDataSourceCloudHsmV2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
@@ -234,6 +235,8 @@ func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
 func TestAccAWSElbServiceAccount_Region(
 func TestAccDataSourceAWSELB_basic(
+func TestAccDataSourceAwsGlueConnection_basic(
+func TestAccDataSourceAwsGlueDataCatalogEncryptionSettings_basic(
 func testAccAWSGuarddutyDetectorDataSource_basic(
 func testAccAWSGuarddutyDetectorDataSource_Id(
 func testAccAWSIAMAccountAliasDataSource_basic(
@@ -448,6 +451,7 @@ func TestAccAWSOutpostsOutpostsDataSource_basic(
 func TestAccAWSOutpostsOutpostDataSource_Id(
 func TestAccAWSOutpostsOutpostDataSource_Name(
 func TestAccAWSOutpostsOutpostDataSource_Arn(
+func TestAccAWSOutpostsOutpostDataSource_OwnerId(
 func TestAccAWSOutpostsSitesDataSource_basic(
 func TestAccAWSOutpostsSiteDataSource_Id(
 func TestAccAWSOutpostsSiteDataSource_Name(
@@ -1508,6 +1512,10 @@ func TestAccAWSCloudFrontDistribution_Enabled(
 func TestAccAWSCloudFrontDistribution_RetainOnDelete(
 func TestAccAWSCloudFrontDistribution_WaitForDeployment(
 func TestAccAWSCloudFrontDistribution_OriginGroups(
+func TestAccAWSCloudfrontFunction_basic(
+func TestAccAWSCloudfrontFunction_disappears(
+func TestAccAWSCloudfrontFunction_Publish(
+func TestAccAWSCloudfrontFunction_Associated(
 func TestAccAWSCloudFrontKeyGroup_basic(
 func TestAccAWSCloudFrontKeyGroup_disappears(
 func TestAccAWSCloudFrontKeyGroup_Comment(
@@ -3015,6 +3023,7 @@ func TestAccAwsGlobalAcceleratorListener_update(
 func testAccGlobalAcceleratorListener_basic(
 func testAccGlobalAcceleratorListener_update(
 func TestAccAWSGlueCatalogDatabase_full(
+func TestAccAWSGlueCatalogDatabase_targetDatabase(
 func TestAccAWSGlueCatalogDatabase_disappears(
 func testAccGlueCatalogDatabase_basic(
 func testAccGlueCatalogDatabase_full(
@@ -4045,6 +4054,13 @@ func testAccAwsMacie2FindingsFilter_complete(
 func testAccAwsMacie2FindingsFilter_WithDate(
 func testAccAwsMacie2FindingsFilter_WithNumber(
 func testAccAwsMacie2FindingsFilter_withTags(
+func testAccAwsMacie2InvitationAccepter_basic(
+func testAccAwsMacie2Member_basic(
+func testAccAwsMacie2Member_disappears(
+func testAccAwsMacie2Member_invite(
+func testAccAwsMacie2Member_inviteRemoved(
+func testAccAwsMacie2Member_status(
+func testAccAwsMacie2Member_withTags(
 func testAccAwsMacie2OrganizationAdminAccount_basic(
 func testAccAwsMacie2OrganizationAdminAccount_disappears(
 func TestAccAWSMacie2_serial(

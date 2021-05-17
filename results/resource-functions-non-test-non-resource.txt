@@ -272,6 +272,7 @@ func expandCloudformationLoggingConfig(
 func flattenCloudformationLoggingConfig(
 func migrateCloudFrontDistributionStateV0toV1(
 func init(
+func init(
 func expandCloudFrontKeyGroupConfig(
 func init(
 func expandOriginAccessIdentityConfig(
@@ -1074,6 +1075,8 @@ func flattenGlobalAcceleratorEndpointDescriptions(
 func flattenGlobalAcceleratorPortOverrides(
 func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
+func expandGlueDatabaseTargetDatabase(
+func flattenGlueDatabaseTargetDatabase(
 func init(
 func readAwsGlueTableID(
 func expandGlueTableInput(
@@ -1818,6 +1821,13 @@ func resourceMacie2FindingsFilterUpdate(
 func resourceMacie2FindingsFilterDelete(
 func expandFindingCriteriaFilter(
 func flattenFindingCriteriaFindingsFilter(
+func resourceMacie2InvitationAccepterCreate(
+func resourceMacie2InvitationAccepterRead(
+func resourceMacie2InvitationAccepterDelete(
+func resourceMacie2MemberCreate(
+func resourceMacie2MemberRead(
+func resourceMacie2MemberUpdate(
+func resourceMacie2MemberDelete(
 func resourceMacie2OrganizationAdminAccountCreate(
 func resourceMacie2OrganizationAdminAccountRead(
 func resourceMacie2OrganizationAdminAccountDelete(

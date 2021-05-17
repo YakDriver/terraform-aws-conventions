@@ -40,6 +40,7 @@ func TestAccAWSCloudFormationStack_dataSource_yaml(
 func testAccCheckAwsCloudFormationStackDataSourceConfig_yaml(
 func TestAccAWSCloudFrontDataSourceCachePolicy_basic(
 func TestAccAWSDataSourceCloudFrontDistribution_basic(
+func TestAccDataSourceAWSCloudfrontFunction_basic(
 func TestAccAWSCloudFrontDataSourceOriginRequestPolicy_basic(
 func TestAccDataSourceCloudHsmV2Cluster_basic(
 func TestAccAWSCloudTrailServiceAccount_basic(
@@ -147,6 +148,8 @@ func TestAccAWSDataElasticsearchDomain_advanced(
 func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
 func TestAccDataSourceAWSELB_basic(
+func TestAccDataSourceAwsGlueConnection_basic(
+func TestAccDataSourceAwsGlueDataCatalogEncryptionSettings_basic(
 func testAccAWSGuarddutyDetectorDataSource_basic(
 func testAccAWSIAMAccountAliasDataSource_basic(
 func TestAccAWSDataSourceIAMGroup_basic(
@@ -1108,6 +1111,8 @@ func TestAccAWSCloudFrontDistribution_orderedCacheBehaviorCachePolicy(
 func TestAccAWSCloudFrontDistribution_forwardedValuesToCachePolicy(
 func TestAccAWSCloudFrontDistribution_noOptionalItemsConfig(
 func TestAccAWSCloudFrontDistribution_noCustomErrorResponseConfig(
+func TestAccAWSCloudfrontFunction_basic(
+func TestAccAWSCloudfrontFunction_disappears(
 func TestAccAWSCloudFrontKeyGroup_basic(
 func TestAccAWSCloudFrontKeyGroup_disappears(
 func TestAccAWSCloudFrontOriginAccessIdentity_basic(
@@ -2286,6 +2291,7 @@ func TestAccAwsGlobalAcceleratorListener_update(
 func testAccGlobalAcceleratorListener_basic(
 func testAccGlobalAcceleratorListener_update(
 func TestAccAWSGlueCatalogDatabase_full(
+func TestAccAWSGlueCatalogDatabase_targetDatabase(
 func TestAccAWSGlueCatalogDatabase_disappears(
 func testAccGlueCatalogDatabase_basic(
 func testAccGlueCatalogDatabase_full(
@@ -3182,6 +3188,13 @@ func testAccAwsMacie2FindingsFilter_basic(
 func testAccAwsMacie2FindingsFilter_disappears(
 func testAccAwsMacie2FindingsFilter_complete(
 func testAccAwsMacie2FindingsFilter_withTags(
+func testAccAwsMacie2InvitationAccepter_basic(
+func testAccAwsMacie2Member_basic(
+func testAccAwsMacie2Member_disappears(
+func testAccAwsMacie2Member_invite(
+func testAccAwsMacie2Member_inviteRemoved(
+func testAccAwsMacie2Member_status(
+func testAccAwsMacie2Member_withTags(
 func testAccAwsMacie2OrganizationAdminAccount_basic(
 func testAccAwsMacie2OrganizationAdminAccount_disappears(
 func TestAccAWSMacie2_serial(

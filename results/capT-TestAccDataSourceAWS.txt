@@ -1,3 +1,4 @@
+func TestAccDataSourceAWSCloudfrontFunction_basic(
 func TestAccDataSourceAWSEFSAccessPoints_basic(
 func TestAccDataSourceAWSEFSAccessPoint_basic(
 func TestAccDataSourceAWSEIP_Filter(

@@ -745,6 +745,12 @@ func resourceAwsCloudFrontWebDistributionStateRefreshFunc(
 func resourceAwsCloudFrontDistributionMigrateState(
 func migrateCloudFrontDistributionStateV0toV1(
 func init(
+func resourceAwsCloudFrontFunction(
+func resourceAwsCloudFrontFunctionCreate(
+func resourceAwsCloudFrontFunctionRead(
+func resourceAwsCloudFrontFunctionUpdate(
+func resourceAwsCloudFrontFunctionDelete(
+func init(
 func resourceAwsCloudFrontKeyGroup(
 func resourceAwsCloudFrontKeyGroupCreate(
 func resourceAwsCloudFrontKeyGroupRead(
@@ -2671,6 +2677,8 @@ func resourceAwsGlueCatalogDatabaseRead(
 func resourceAwsGlueCatalogDatabaseDelete(
 func readAwsGlueCatalogID(
 func createAwsGlueCatalogID(
+func expandGlueDatabaseTargetDatabase(
+func flattenGlueDatabaseTargetDatabase(
 func init(
 func resourceAwsGlueCatalogTable(
 func readAwsGlueTableID(
@@ -3998,6 +4006,15 @@ func resourceMacie2FindingsFilterUpdate(
 func resourceMacie2FindingsFilterDelete(
 func expandFindingCriteriaFilter(
 func flattenFindingCriteriaFindingsFilter(
+func resourceAwsMacie2InvitationAccepter(
+func resourceMacie2InvitationAccepterCreate(
+func resourceMacie2InvitationAccepterRead(
+func resourceMacie2InvitationAccepterDelete(
+func resourceAwsMacie2Member(
+func resourceMacie2MemberCreate(
+func resourceMacie2MemberRead(
+func resourceMacie2MemberUpdate(
+func resourceMacie2MemberDelete(
 func resourceAwsMacie2OrganizationAdminAccount(
 func resourceMacie2OrganizationAdminAccountCreate(
 func resourceMacie2OrganizationAdminAccountRead(

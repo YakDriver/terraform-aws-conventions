@@ -56,6 +56,7 @@ func testAccAwsCloudformationTypeDataSourceConfigTypeNamePrivate(rName string, z
 func testAccAwsCloudformationTypeDataSourceConfigTypeNamePublic() string {
 func testAccAWSCloudFrontCachePolicyDataSourceNameConfig(rInt int) string {
 func testAccAWSCloudFrontDistributionDataConfig(rInt int) string {
+func testAccDataSourceAWSCloudfrontFunctionConfigBasic(rName string) string {
 func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(rInt int) string {
 func testAccAwsDataSourcePartnerEventSourceConfig(namePrefix string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
@@ -178,6 +179,8 @@ func testAccCheckAwsElasticBeanstalkHostedZoneDataSource_byRegion(r string) stri
 func testAccAWSElasticsearchDomainConfigWithDataSource(rInt int) string {
 func testAccAWSElasticsearchDomainConfigAdvancedWithDataSource(rInt int) string {
 func testAccDataSourceAWSELBConfigBasic(rName, testName string) string {
+func testAccDataSourceAwsGlueConnectionConfig(rName string) string {
+func testAccDataSourceAwsGlueDataCatalogEncryptionSettingsConfig() string {
 func testAccDataSourceAWSGlueScriptConfigPython() string {
 func testAccDataSourceAWSGlueScriptConfigScala() string {
 func testAccAwsGuarddutyDetectorBasicResourceConfig() string {
@@ -327,6 +330,7 @@ func testAccAWSOutpostsOutpostsDataSourceConfig() string {
 func testAccAWSOutpostsOutpostDataSourceConfigId() string {
 func testAccAWSOutpostsOutpostDataSourceConfigName() string {
 func testAccAWSOutpostsOutpostDataSourceConfigArn() string {
+func testAccAWSOutpostsOutpostDataSourceConfigOwnerId() string {
 func testAccAWSOutpostsSitesDataSourceConfig() string {
 func testAccAWSOutpostsSiteDataSourceConfigId() string {
 func testAccAWSOutpostsSiteDataSourceConfigName() string {
@@ -1298,6 +1302,12 @@ func testAccAWSCloudFrontDistributionConfigWaitForDeployment(enabled, waitForDep
 func testAccAWSCloudFrontDistributionConfigCacheBehaviorRealtimeLogConfigBase(rName string) string {
 func testAccAWSCloudFrontDistributionConfigDefaultCacheBehaviorRealtimeLogConfigArn(rName string, retainOnDelete bool) string {
 func testAccAWSCloudFrontDistributionConfigOrderedCacheBehaviorRealtimeLogConfigArn(rName string, retainOnDelete bool) string {
+func testAccAWSCloudfrontConfigBasic(rName string) string {
+func testAccAWSCloudfrontConfigPublish(rName string, publish bool) string {
+func testAccAWSCloudfrontConfigAssociated(rName string) string {
+func testAccAWSCloudfrontConfigUnassociated(rName string) string {
+func testAccAWSCloudfrontConfigCodeUpdate(rName string) string {
+func testAccAWSCloudfrontConfigComment(rName, comment string) string {
 func testAccAWSCloudFrontKeyGroupConfigBase(rName string) string {
 func testAccAWSCloudFrontKeyGroupConfig(rName string) string {
 func testAccAWSCloudFrontKeyGroupConfigComment(rName string, comment string) string {
@@ -2826,6 +2836,7 @@ func testAccGlobalAcceleratorListener_basic(rInt int) string {
 func testAccGlobalAcceleratorListener_update(rInt int) string {
 func testAccGlueCatalogDatabase_basic(rName string) string {
 func testAccGlueCatalogDatabase_full(rName, desc string) string {
+func testAccGlueCatalogDatabaseConfigTargetDatabase(rName string) string {
 func testAccGlueCatalogTable_basic(rName string) string {
 func testAccGlueCatalogTable_full(rName, desc string) string {
 func testAccGlueCatalogTable_full_replacedValues(rName string) string {
@@ -3835,6 +3846,11 @@ func testAccAwsMacieFindingsFilterconfigComplete(description, action string, pos
 func testAccAwsMacieFindingsFilterconfigCompleteMultipleCriterion(description, action, startDate, endDate string, position int) string {
 func testAccAwsMacieFindingsFilterconfigCompleteMultipleCriterionNumber(description, action, firstNum, secondNum string, position int) string {
 func testAccAwsMacieFindingsFilterconfigWithTags(description, action string, position int) string {
+func testAccAwsMacieInvitationAccepterConfigBasic(email string) string {
+func testAccAwsMacieMemberConfigBasic(email string) string {
+func testAccAwsMacieMemberConfigWithTags(email string) string {
+func testAccAwsMacieMemberConfigInvite(email string, invite bool) string {
+func testAccAwsMacieMemberConfigStatus(email, memberStatus string, invite bool) string {
 func testAccAwsMacieOrganizationAdminAccountConfigBasic() string {
 func testAccAWSMacieMemberAccountAssociationConfig_basic(memberAcctId string) string {
 func testAccAWSMacieS3BucketAssociationConfig_basic(randInt int) string {
