@@ -2706,6 +2706,9 @@ func flattenGlueOrders(
 func flattenGlueSkewedInfo(
 func flattenGlueTableSchemaReference(
 func flattenGlueTableSchemaReferenceSchemaID(
+func expandGlueTableTargetTable(
+func flattenGlueTableTargetTable(
+func init(
 func resourceAwsGlueClassifier(
 func resourceAwsGlueClassifierCreate(
 func resourceAwsGlueClassifierRead(

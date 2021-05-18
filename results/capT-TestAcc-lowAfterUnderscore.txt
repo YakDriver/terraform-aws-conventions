@@ -1516,6 +1516,7 @@ func TestAccAWSGlueCatalogTable_update_replaceValues(
 func TestAccAWSGlueCatalogTable_partitionIndexesSingle(
 func TestAccAWSGlueCatalogTable_partitionIndexesMultiple(
 func TestAccAWSGlueCatalogTable_disappears_database(
+func TestAccAWSGlueCatalogTable_targetTable(
 func TestAccAWSGlueCatalogTable_disappears(
 func TestAccAWSGlueClassifier_disappears(
 func TestAccAWSGlueConnection_basic(
@@ -1893,7 +1894,6 @@ func TestAccAWSLaunchTemplate_disappears(
 func TestAccAWSLaunchTemplate_data(
 func TestAccAWSLaunchTemplate_description(
 func TestAccAWSLaunchTemplate_update(
-func TestAccAWSLaunchTemplate_tags(
 func TestAccAWSLaunchTemplate_capacityReservation_preference(
 func TestAccAWSLaunchTemplate_capacityReservation_target(
 func TestAccAWSLaunchTemplate_cpuOptions(
@@ -1902,6 +1902,7 @@ func TestAccAWSLaunchTemplate_creditSpecification_t2(
 func TestAccAWSLaunchTemplate_creditSpecification_t3(
 func TestAccAWSLaunchTemplate_networkInterface(
 func TestAccAWSLaunchTemplate_networkInterfaceAddresses(
+func TestAccAWSLaunchTemplate_networkInterfaceType(
 func TestAccAWSLaunchTemplate_associatePublicIPAddress(
 func TestAccAWSLaunchTemplate_associateCarrierIPAddress(
 func TestAccAWSLaunchTemplate_placement_partitionNum(
@@ -2206,15 +2207,7 @@ func TestAccAWSNetworkInterfaceAttachment_basic(
 func TestAccAWSNetworkInterfaceSGAttachment_basic(
 func TestAccAWSNetworkInterfaceSGAttachment_disappears(
 func TestAccAWSENI_basic(
-func TestAccAWSENI_ipv6(
-func TestAccAWSENI_tags(
-func TestAccAWSENI_ipv6_count(
 func TestAccAWSENI_disappears(
-func TestAccAWSENI_updatedDescription(
-func TestAccAWSENI_attached(
-func TestAccAWSENI_ignoreExternalAttachment(
-func TestAccAWSENI_sourceDestCheck(
-func TestAccAWSENI_computedIPs(
 func TestAccAWSOpsworksApplication_basic(
 func TestAccAWSOpsworksCustomLayer_basic(
 func TestAccAWSOpsworksCustomLayer_tags(

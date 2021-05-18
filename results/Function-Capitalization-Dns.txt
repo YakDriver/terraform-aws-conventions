@@ -2,6 +2,7 @@ func testAccCheckAwsDnsSuffix(
 func ReverseDns(
 func TestReverseDns(
 func testAccCheckResourceAttrRegionalReverseDnsService(
+func testAccCheckResourceAttrPrivateDnsName(
 func testAccCheckAWSProviderDnsSuffix(
 func testAccCheckAWSProviderReverseDnsPrefix(
 func resourceAwsEc2RegionalPrivateDnsSuffix(

@@ -2850,6 +2850,7 @@ func testAccGlueCatalogTableConfigStorageDescriptorSchemaReferenceArn(rName stri
 func testAccGlueCatalogTableColumnParameters(rName string) string {
 func testAccGlueCatalogTablePartitionIndexesSingle(rName string) string {
 func testAccGlueCatalogTablePartitionIndexesMultiple(rName string) string {
+func testAccGlueCatalogTableConfigTargetTable(rName string) string {
 func testAccAWSGlueClassifierConfig_CsvClassifier(rName string, allowSingleColumn bool, containsHeader string, delimiter string, disableValueTrimming bool) string {
 func testAccAWSGlueClassifierConfigCsvClassifierQuoteSymbol(rName, symbol string) string {
 func testAccAWSGlueClassifierConfig_GrokClassifier(rName, classification, grokPattern string) string {
@@ -3604,7 +3605,9 @@ func testAccAWSLaunchConfigurationConfig_withIAMProfile(rInt int) string {
 func testAccAWSLaunchConfigurationConfigEbsNoDevice(rInt int) string {
 func testAccAWSLaunchConfigurationConfig_userData() string {
 func testAccAWSLaunchConfigurationConfig_userDataBase64() string {
-func testAccAWSLaunchTemplateConfig_basic(rName string) string {
+func testAccAWSLaunchTemplateConfigName(rName string) string {
+func testAccAWSLaunchTemplateConfigNameGenerated() string {
+func testAccAWSLaunchTemplateConfigNamePrefix(namePrefix string) string {
 func testAccAWSLaunchTemplateConfig_ipv6_count(rName string) string {
 func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS(rName string) string {
 func testAccAWSLaunchTemplateConfig_BlockDeviceMappings_EBS_DeleteOnTermination(rName string, deleteOnTermination bool) string {
@@ -3613,7 +3616,8 @@ func testAccAWSLaunchTemplateConfig_NetworkInterfaces_DeleteOnTermination(rName 
 func testAccAWSLaunchTemplateConfig_EbsOptimized(rName, ebsOptimized string) string {
 func testAccAWSLaunchTemplateConfigElasticInferenceAccelerator(rName, elasticInferenceAcceleratorType string) string {
 func testAccAWSLaunchTemplateConfig_data(rName string) string {
-func testAccAWSLaunchTemplateConfig_tagsUpdate(rName string) string {
+func testAccAWSLaunchTemplateConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSLaunchTemplateConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSLaunchTemplateConfig_capacityReservation_preference(rName string, preference string) string {
 func testAccAWSLaunchTemplateConfig_capacityReservation_target(rName string) string {
 func testAccAWSLaunchTemplateConfig_cpuOptions(rName string, coreCount, threadsPerCore int) string {
@@ -3628,6 +3632,7 @@ func testAccAWSLaunchTemplateConfig_networkInterfaceAddresses(rName string) stri
 func testAccAWSLaunchTemplateConfig_associatePublicIpAddress(rName, associatePublicIPAddress string) string {
 func testAccAWSLaunchTemplateConfig_associateCarrierIpAddress(rName, associateCarrierIPAddress string) string {
 func testAccAWSLaunchTemplateConfig_networkInterface_ipv6Addresses(rName string) string {
+func testAccAWSLaunchTemplateConfig_networkInterfaceType_efa(rName string) string {
 func testAccAWSLaunchTemplateConfig_metadataOptions(rName string) string {
 func testAccAWSLaunchTemplateConfig_enclaveOptions(rName string, enabled bool) string {
 func testAccAWSLaunchTemplateConfigHibernation(rName string, enabled bool) string {
@@ -4044,19 +4049,20 @@ func testAccAwsNetworkInterfaceSGAttachmentConfig(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaInstance(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigViaDataSource(rName string) string {
 func testAccAwsNetworkInterfaceSGAttachmentConfigMultiple(rName string) string {
-func testAccAWSENIConfig() string {
+func testAccAWSENIIPV4ConfigBase(rName string) string {
 func testAccAWSENIIPV6ConfigBase(rName string) string {
-func testAccAWSENIIPV6Config(rName string) string {
-func testAccAWSENIIPV6MultipleConfig(rName string) string {
-func testAccAWSENIIPV6CountConfig(ipCount int, rName string) string {
-func testAccAWSENIConfigUpdatedDescription() string {
-func testAccAWSENIConfigWithSourceDestCheck(enabled bool) string {
-func testAccAWSENIConfigWithNoPrivateIPs() string {
-func testAccAWSENIConfigWithAttachment() string {
-func testAccAWSENIConfigExternalAttachment() string {
-func testAccAWSENIConfigPrivateIpsCount(privateIpsCount int) string {
-func testAccAWSENITagsConfig1(rName, tagKey1, tagValue1 string) string {
-func testAccAWSENITagsConfig2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSENIConfig(rName string) string {
+func testAccAWSENIConfigIPV6(rName string) string {
+func testAccAWSENIConfigIPV6Multiple(rName string) string {
+func testAccAWSENIConfigIPV6Count(rName string, ipv6Count int) string {
+func testAccAWSENIConfigDescription(rName, description string) string {
+func testAccAWSENIConfigSourceDestCheck(rName string, sourceDestCheck bool) string {
+func testAccAWSENIConfigAttachment(rName string) string {
+func testAccAWSENIConfigExternalAttachment(rName string) string {
+func testAccAWSENIConfigPrivateIpsCount(rName string, privateIpsCount int) string {
+func testAccAWSENIConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSENIConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSENIConfigInterfaceType(rName, interfaceType string) string {
 func testAccAwsOpsworksApplicationCreate(name string) string {
 func testAccAwsOpsworksApplicationUpdate(name string) string {
 func testAccAwsOpsworksCustomLayerSecurityGroups(name string) string {
