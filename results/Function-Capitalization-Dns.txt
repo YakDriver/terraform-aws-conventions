@@ -1,4 +1,10 @@
 func testAccCheckAwsDnsSuffix(
+func dataSourceServiceDiscoveryDnsNamespace(
+func dataSourceServiceDiscoveryDnsNamespaceRead(
+func TestAccAWSServiceDiscoveryDnsNamespaceDataSource_private(
+func TestAccAWSServiceDiscoveryDnsNamespaceDataSource_public(
+func testAccCheckAwsServiceDiscoveryPrivateDnsNamespaceConfig(
+func testAccCheckAwsServiceDiscoveryPublicDnsNamespaceConfig(
 func ReverseDns(
 func TestReverseDns(
 func testAccCheckResourceAttrRegionalReverseDnsService(

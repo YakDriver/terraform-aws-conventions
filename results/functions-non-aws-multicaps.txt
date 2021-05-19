@@ -1020,6 +1020,7 @@ func resourceAwsELBSticknessPolicyAssigned(
 func TestAccAWSAppCookieStickinessPolicy_disappears_ELB(
 func testAccAppmeshVirtualGatewayConfigRootCA(
 func testAccAppmeshVirtualNodeConfigRootCA(
+func testAccAppRunnerIAMRole(
 func decodeAppsyncDataSourceID(
 func expandAppsyncHTTPDataSourceConfig(
 func flattenAppsyncHTTPDataSourceConfig(
@@ -2888,6 +2889,7 @@ func testAccCheckAwsOpsworksHAProxyLayerDestroy(
 func testAccAwsOpsworksHAProxyLayerConfigVpcCreate(
 func testAccAwsOpsworksHAProxyLayerConfigTags1(
 func testAccAwsOpsworksHAProxyLayerConfigTags2(
+func decodeOrganizationDelegatedAdministratorID(
 func decodeAwsOrganizationsPolicyAttachmentID(
 func testAccAwsOrganizationsPolicy_type_AI_OPT_OUT(
 func testAccAwsOrganizationsPolicy_type_SCP(

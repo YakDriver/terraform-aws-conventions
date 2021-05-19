@@ -323,6 +323,13 @@ func testAccDataSourceAwsNetworkInterfaceConfigBasic(rName string) string {
 func testAccDataSourceAwsNetworkInterfaceConfigCarrierIPAssociation(rName string) string {
 func testAccDataSourceAwsNetworkInterfaceConfigPublicIPAssociation(rName string) string {
 func testAccDataSourceAwsNetworkInterfaceConfigFilters(rName string) string {
+func testAccDataSourceAwsOrganizationsDelegatedAdministratorsEmptyConfig(servicePrincipal string) string {
+func testAccDataSourceAwsOrganizationsDelegatedAdministratorsConfig(servicePrincipal string) string {
+func testAccDataSourceAwsOrganizationsDelegatedAdministratorsMultipleConfig(servicePrincipal, servicePrincipal2 string) string {
+func testAccDataSourceAwsOrganizationsDelegatedAdministratorsServicePrincipalConfig(servicePrincipal string) string {
+func testAccDataSourceAwsOrganizationsDelegatedServicesEmptyConfig() string {
+func testAccDataSourceAwsOrganizationsDelegatedServicesConfig(servicePrincipal string) string {
+func testAccDataSourceAwsOrganizationsDelegatedServicesMultipleConfig(servicePrincipal, servicePrincipal2 string) string {
 func testAccAWSOutpostsOutpostInstanceTypesDataSourceConfig() string {
 func testAccAWSOutpostsOutpostInstanceTypeDataSourceConfigInstanceType() string {
 func testAccAWSOutpostsOutpostInstanceTypeDataSourceConfigPreferredInstanceTypes() string {
@@ -435,6 +442,8 @@ func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig(a
 func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_NonExistent() string {
 func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_Versioned(appARN, version string) string {
 func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_Versioned_NonExistent(appARN string) string {
+func testAccCheckAwsServiceDiscoveryPrivateDnsNamespaceConfig(rName string) string {
+func testAccCheckAwsServiceDiscoveryPublicDnsNamespaceConfig(rName string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(serviceCode, quotaCode string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaName(serviceCode, quotaName string) string {
 func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(serviceName string) string {
@@ -995,6 +1004,26 @@ func testAccAppmeshVirtualRouterConfig_tags(meshName, vrName, tagKey1, tagValue1
 func testAccAppmeshVirtualServiceConfig_virtualNode(meshName, vnName1, vnName2, vsName, rName string) string {
 func testAccAppmeshVirtualServiceConfig_virtualRouter(meshName, vrName1, vrName2, vsName, rName string) string {
 func testAccAppmeshVirtualServiceConfig_tags(meshName, vnName1, vnName2, vsName, rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAppRunnerAutoScalingConfigurationVersionConfig_basic(rName string) string {
+func testAccAppRunnerAutoScalingConfigurationVersionConfig_withNonDefaults(rName string, maxConcurrency, maxSize, minSize int) string {
+func testAccAppRunnerAutoScalingConfigurationVersionConfig_multipleVersions(rName string) string {
+func testAccAppRunnerAutoScalingConfigurationVersionConfig_updateMultipleVersions(rName string) string {
+func testAccAppRunnerAutoScalingConfigurationVersionConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
+func testAccAppRunnerAutoScalingConfigurationVersionConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
+func testAccAppRunnerConnection_basic(rName string) string {
+func testAccAppRunnerConnectionConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
+func testAccAppRunnerConnectionConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
+func testAccAppRunnerCustomDomainAssociation_basic(rName string) string {
+func testAccAppRunnerService_imageRepository(rName string) string {
+func testAccAppRunnerService_imageRepository_autoScalingConfiguration(rName string) string {
+func testAccAppRunnerService_imageRepository_encryptionConfiguration(rName string) string {
+func testAccAppRunnerService_imageRepository_healthCheckConfiguration(rName string) string {
+func testAccAppRunnerService_imageRepository_updateHealthCheckConfiguration(rName string) string {
+func testAccAppRunnerIAMRole(rName string) string {
+func testAccAppRunnerService_imageRepository_instanceConfiguration(rName string) string {
+func testAccAppRunnerService_imageRepository_updateInstanceConfiguration(rName string) string {
+func testAccAppRunnerServiceConfigTags1(rName string, tagKey1 string, tagValue1 string) string {
+func testAccAppRunnerServiceConfigTags2(rName string, tagKey1 string, tagValue1 string, tagKey2 string, tagValue2 string) string {
 func testAccAppsyncApiKeyConfig_Description(rName, description string) string {
 func testAccAppsyncApiKeyConfig_Expires(rName, expires string) string {
 func testAccAppsyncApiKeyConfig_Required(rName string) string {
@@ -1449,6 +1478,13 @@ func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSNSTopic(rName string) str
 func testAccAWSCloudWatchMetricAlarmConfigAlarmActionsSWFAction(rName string) string {
 func testAccAWSCloudWatchMetricAlarmConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSCloudWatchMetricAlarmConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSCloudWatchMetricStreamConfig(rName string) string {
+func testAccAWSCloudWatchMetricStreamConfigUpdateArn(rName string) string {
+func testAccAWSCloudWatchMetricStreamConfigIncludeFilters(rName string) string {
+func testAccAWSCloudWatchMetricStreamConfigNoName() string {
+func testAccAWSCloudWatchMetricStreamConfigNamePrefix(rName string) string {
+func testAccAWSCloudWatchMetricStreamConfigExcludeFilters(rName string) string {
+func testAccAWSCloudWatchMetricStreamConfigTags(rName string) string {
 func testAccAWSCloudWatchQueryDefinitionConfig_Basic(rName string) string {
 func testAccAWSCloudWatchQueryDefinitionConfig_LogGroups(rName string, count int) string {
 func testAccAWSCodeArtifactDomainPermissionsPolicyBasicConfig(rName string) string {
@@ -3308,6 +3344,9 @@ func testAccInstanceConfigEnclaveOptions(enabled bool) string {
 func testAccAwsEc2InstanceConfigDynamicEBSBlockDevices() string {
 func testAccAvailableEc2InstanceTypeForRegion(preferredInstanceTypes ...string) string {
 func testAccAvailableEc2InstanceTypeForAvailabilityZone(availabilityZoneName string, preferredInstanceTypes ...string) string {
+func testAccInstanceConfigCapacityReservationSpecification_unspecified(rName string) string {
+func testAccInstanceConfigCapacityReservationSpecification_preference(rName, crPreference string) string {
+func testAccInstanceConfigCapacityReservationSpecification_targetId(rName string) string {
 func testAccAWSInternetGatewayConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSInternetGatewayConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSIotPolicyAttachmentConfig(policyName string) string {
@@ -4123,6 +4162,7 @@ func testAccAwsOrganizationsAccountConfigParentId1(name, email string) string {
 func testAccAwsOrganizationsAccountConfigParentId2(name, email string) string {
 func testAccAwsOrganizationsAccountConfigTags1(name, email, tagKey1, tagValue1 string) string {
 func testAccAwsOrganizationsAccountConfigTags2(name, email, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsOrganizationsDelegatedAdministratorConfig(servicePrincipal string) string {
 func testAccAwsOrganizationsOrganizationalUnitConfig(name string) string {
 func testAccAwsOrganizationsOrganizationalUnitConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccAwsOrganizationsOrganizationalUnitConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -4791,16 +4831,22 @@ func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versione
 func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versionedPaired(stackName, appARN, version string) string {
 func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags1(rName, appARN, tagKey1, tagValue1 string) string {
 func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags2(rName, appARN, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSServiceCatalogConstraintConfig_base(rName string) string {
+func testAccAWSServiceCatalogConstraintConfig_basic(rName, description string) string {
 func testAccAWSServiceCatalogOrganizationsAccessConfig_basic() string {
 func testAccAWSServiceCatalogPortfolioShareConfig_basic(rName string) string {
 func testAccAWSServiceCatalogPortfolioShareConfig_organizationalUnit(rName string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSServiceCatalogProductPortfolioAssociationConfig_base(rName string) string {
+func testAccAWSServiceCatalogProductPortfolioAssociationConfig_basic(rName string) string {
 func testAccAWSServiceCatalogProductConfigTemplateURLBase(rName string) string {
 func testAccAWSServiceCatalogProductConfig_basic(rName, description, supportDescription string) string {
 func testAccAWSServiceCatalogProductConfig_updateTags(rName, description, supportDescription string) string {
 func testAccAWSServiceCatalogProductConfig_physicalID(rName string) string {
+func testAccAWSServiceCatalogServiceActionConfig_basic(rName string) string {
+func testAccAWSServiceCatalogServiceActionConfig_update(rName string) string {
 func testAccAWSServiceCatalogTagOptionConfig_basic(key, value, active string) string {
 func testAccServiceDiscoveryHttpNamespaceConfig(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigDescription(rName, description string) string {

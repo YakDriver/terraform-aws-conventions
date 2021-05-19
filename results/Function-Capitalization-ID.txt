@@ -158,6 +158,7 @@ func testAccInstanceNetworkInstanceVPCSecurityGroupIDs(
 func testAccInstanceNetworkInstanceVPCRemoveSecurityGroupIDs(
 func findPublicNetworkInterfacesForVpcID(
 func testAccCheckAWSENIDestroy(
+func decodeOrganizationDelegatedAdministratorID(
 func decodeAwsOrganizationsPolicyAttachmentID(
 func resourceAwsQuickSightGroupParseID(
 func resourceAwsQuickSightUserParseID(

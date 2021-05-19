@@ -6,6 +6,7 @@ func TestAccDataSourceAWSLB_BackwardsCompatibility(
 func testAccDataSourceAWSLBConfigBackardsCompatibility(
 func resourceAwsAcmCertificateCheckValidationRecords(
 func testAccAcmCertificateValidation_validationRecordFqdnsTwoRoute53Records(
+func flattenAppRunnerCustomDomainCertificateValidationRecords(
 func rdsDescribeDbInstanceRole(
 func openShards(
 func closedShards(

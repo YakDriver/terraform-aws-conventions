@@ -1,4 +1,5 @@
 func suppressEquivalentJsonDiffs(
+func suppressEquivalentJsonEmptyNilDiffs(
 func suppressEquivalentJsonOrYamlDiffs(
 func TestSuppressEquivalentJsonDiffsWhitespaceAndNoWhitespace(
 func TestSuppressEquivalentJsonOrYamlDiffs(

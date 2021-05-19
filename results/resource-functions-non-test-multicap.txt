@@ -255,6 +255,7 @@ func resourceAwsNetworkInterfaceSGAttachmentCreate(
 func resourceAwsNetworkInterfaceSGAttachmentRead(
 func resourceAwsNetworkInterfaceSGAttachmentDelete(
 func delSGFromENI(
+func decodeOrganizationDelegatedAdministratorID(
 func decodeAwsOrganizationsPolicyAttachmentID(
 func resourceAwsPinpointADMChannel(
 func resourceAwsPinpointADMChannelUpsert(

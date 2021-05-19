@@ -285,7 +285,9 @@ func getAwsInstanceVolumeIds(
 func getRootVolumeId(
 func getVolumeIdByDeviceName(
 func TestAccAWSInstance_inDefaultVpcBySgId(
+func TestAccAWSInstance_CapacityReservation_TargetId(
 func testAccInstanceConfigInDefaultVpcBySgId(
+func testAccInstanceConfigCapacityReservationSpecification_targetId(
 func TestAccAWSKinesisStream_UpdateKmsKeyId(
 func testAccKinesisStreamUpdateKmsKeyId(
 func suppressEquivalentTargetKeyIdAndARN(
