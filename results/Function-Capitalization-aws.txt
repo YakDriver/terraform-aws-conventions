@@ -1,3 +1,4 @@
+func testaccawsautoscalingpolicyconfigPredictivescalingUpdated(
 func awsElasticTranscoderPipelineConfigBasic(
 func awsElasticTranscoderPipelineConfigKmsKey(
 func awsElasticTranscoderPipelineWithContentConfig(

@@ -2623,6 +2623,8 @@ func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) stri
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSServiceCatalogProductConfigTemplateURLBase(rName string) string {
+func testAccAWSServiceCatalogProvisioningArtifactConfigTemplateURLBase(rName string) string {
+func testAccAWSServiceCatalogProvisioningArtifactConfigPhysicalIDBase(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfig(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigDescription(rName, description string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigTags1(rName, tagKey1, tagValue1 string) string {

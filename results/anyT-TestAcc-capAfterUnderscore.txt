@@ -1745,6 +1745,7 @@ func testAccAWSGlueClassifierConfig_JsonClassifier(
 func testAccAWSGlueClassifierConfig_XmlClassifier(
 func TestAccAWSGlueConnection_MongoDB(
 func TestAccAWSGlueConnection_Kafka(
+func TestAccAWSGlueConnection_Network(
 func TestAccAWSGlueConnection_Description(
 func TestAccAWSGlueConnection_MatchCriteria(
 func TestAccAWSGlueConnection_PhysicalConnectionRequirements(
@@ -1756,6 +1757,7 @@ func testAccAWSGlueConnectionConfig_PhysicalConnectionRequirements(
 func testAccAWSGlueConnectionConfig_Required(
 func testAccAWSGlueConnectionConfig_MongoDB(
 func testAccAWSGlueConnectionConfig_Kafka(
+func testAccAWSGlueConnectionConfig_Network(
 func TestAccAWSGlueCrawler_DynamodbTarget(
 func TestAccAWSGlueCrawler_DynamodbTarget_scanAll(
 func TestAccAWSGlueCrawler_DynamodbTarget_scanRate(

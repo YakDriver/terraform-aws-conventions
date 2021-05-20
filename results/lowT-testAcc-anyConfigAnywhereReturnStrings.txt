@@ -1083,6 +1083,8 @@ func testAccAutoScalingPlansScalingPlanConfigBasicDynamicScaling(rName, tagName 
 func testAccAutoScalingPlansScalingPlanConfigBasicPredictiveScaling(rName, tagName string) string {
 func testAccAWSAutoscalingPolicyConfig_base(name string) string {
 func testAccAWSAutoscalingPolicyConfig_basic(name string) string {
+func testAccAWSAutoscalingPolicyConfig_predictiveScaling(name string) string {
+func testAccAWSAutoscalingPolicyConfig_predictiveScalingRemoved(name string) string {
 func testAccAWSAutoscalingPolicyConfig_basicUpdate(name string) string {
 func testAccAWSAutoscalingPolicyConfig_SimpleScalingStepAdjustment(name string) string {
 func testAccAwsAutoscalingPolicyConfig_TargetTracking_Predefined(name string) string {
@@ -2670,6 +2672,7 @@ func testAccAWSGlueConnectionConfig_PhysicalConnectionRequirements(rName string)
 func testAccAWSGlueConnectionConfig_Required(rName string) string {
 func testAccAWSGlueConnectionConfig_MongoDB(rName string) string {
 func testAccAWSGlueConnectionConfig_Kafka(rName string) string {
+func testAccAWSGlueConnectionConfig_Network(rName string) string {
 func testAccGlueCrawlerConfig_Base(rName string) string {
 func testAccGlueCrawlerConfig_Classifiers_Single(rName string) string {
 func testAccGlueCrawlerConfig_Classifiers_Multiple(rName string) string {
@@ -4441,6 +4444,8 @@ func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versione
 func testAccAWSServerlessApplicationRepositoryCloudFormationStackConfig_versionedPaired(stackName, appARN, version string) string {
 func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags1(rName, appARN, tagKey1, tagValue1 string) string {
 func testAccAwsServerlessApplicationRepositoryCloudFormationStackConfigTags2(rName, appARN, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSServiceCatalogBudgetResourceAssociationConfig_base(rName, budgetType, limitAmount, limitUnit, timePeriodStart, timeUnit string) string {
+func testAccAWSServiceCatalogBudgetResourceAssociationConfig_basic(rName string) string {
 func testAccAWSServiceCatalogConstraintConfig_base(rName string) string {
 func testAccAWSServiceCatalogConstraintConfig_basic(rName, description string) string {
 func testAccAWSServiceCatalogOrganizationsAccessConfig_basic() string {
@@ -4455,8 +4460,15 @@ func testAccAWSServiceCatalogProductConfigTemplateURLBase(rName string) string {
 func testAccAWSServiceCatalogProductConfig_basic(rName, description, supportDescription string) string {
 func testAccAWSServiceCatalogProductConfig_updateTags(rName, description, supportDescription string) string {
 func testAccAWSServiceCatalogProductConfig_physicalID(rName string) string {
+func testAccAWSServiceCatalogProvisioningArtifactConfigTemplateURLBase(rName string) string {
+func testAccAWSServiceCatalogProvisioningArtifactConfig_basic(rName string) string {
+func testAccAWSServiceCatalogProvisioningArtifactConfig_update(rName string) string {
+func testAccAWSServiceCatalogProvisioningArtifactConfigPhysicalIDBase(rName string) string {
+func testAccAWSServiceCatalogProvisioningArtifactConfig_physicalID(rName string) string {
 func testAccAWSServiceCatalogServiceActionConfig_basic(rName string) string {
 func testAccAWSServiceCatalogServiceActionConfig_update(rName string) string {
+func testAccAWSServiceCatalogTagOptionResourceAssociationConfig_base(rName string) string {
+func testAccAWSServiceCatalogTagOptionResourceAssociationConfig_basic(rName string) string {
 func testAccAWSServiceCatalogTagOptionConfig_basic(key, value, active string) string {
 func testAccServiceDiscoveryHttpNamespaceConfig(rName string) string {
 func testAccServiceDiscoveryHttpNamespaceConfigDescription(rName, description string) string {
