@@ -378,6 +378,23 @@ func testAccAmiConfigEphemeralBlockDevices(rName string) string {
 func testAccAmiConfigGp3BlockDevice(rName string) string {
 func testAccAmiConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAmiConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSAmplifyAppConfigName(rName string) string {
+func testAccAWSAmplifyAppConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAmplifyAppConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSAmplifyAppConfigAutoBranchCreationConfigNoAutoBranchCreationConfig(rName string) string {
+func testAccAWSAmplifyAppConfigAutoBranchCreationConfigAutoBranchCreationConfig(rName, basicAuthCredentials string) string {
+func testAccAWSAmplifyAppConfigAutoBranchCreationConfigAutoBranchCreationConfigUpdated(rName string) string {
+func testAccAWSAmplifyAppConfigBasicAuthCredentials(rName, basicAuthCredentials string) string {
+func testAccAWSAmplifyAppConfigBuildSpec(rName, buildSpec string) string {
+func testAccAWSAmplifyAppConfigCustomRules(rName string) string {
+func testAccAWSAmplifyAppConfigCustomRulesUpdated(rName string) string {
+func testAccAWSAmplifyAppConfigDescription(rName, description string) string {
+func testAccAWSAmplifyAppConfigEnvironmentVariables(rName string) string {
+func testAccAWSAmplifyAppConfigEnvironmentVariablesUpdated(rName string) string {
+func testAccAWSAmplifyAppConfigIAMServiceRoleBase(rName string) string {
+func testAccAWSAmplifyAppConfigIAMServiceRoleArn(rName string) string {
+func testAccAWSAmplifyAppConfigIAMServiceRoleArnUpdated(rName string) string {
+func testAccAWSAmplifyAppConfigRepository(rName, repository, accessToken string) string {
 func testAccAWSAPIGatewayApiKeyConfig(rName string) string {
 func testAccAWSAPIGatewayApiKeyConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSAPIGatewayApiKeyConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {

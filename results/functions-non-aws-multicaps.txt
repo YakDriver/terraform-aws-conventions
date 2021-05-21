@@ -412,6 +412,9 @@ func TestAccAWSAMI_disappears(
 func TestAccAWSAMI_EphemeralBlockDevices(
 func TestAccAWSAMI_Gp3BlockDevice(
 func TestAccAWSAMI_tags(
+func testAccAWSAmplifyAppConfigIAMServiceRoleBase(
+func testAccAWSAmplifyAppConfigIAMServiceRoleArn(
+func testAccAWSAmplifyAppConfigIAMServiceRoleArnUpdated(
 func TestAccAWSAPIGatewayAccount_basic(
 func testAccCheckAWSAPIGatewayAccountCloudwatchRoleArn(
 func testAccCheckAWSAPIGatewayAccountExists(

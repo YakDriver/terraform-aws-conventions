@@ -29,6 +29,14 @@ func expandEc2BlockDeviceMappingsForAmiEphemeralBlockDevice(
 func flattenEc2BlockDeviceMappingForAmiEphemeralBlockDevice(
 func flattenEc2BlockDeviceMappingsForAmiEphemeralBlockDevice(
 func hasLaunchPermission(
+func expandAmplifyAutoBranchCreationConfig(
+func flattenAmplifyAutoBranchCreationConfig(
+func expandAmplifyCustomRule(
+func expandAmplifyCustomRules(
+func flattenAmplifyCustomRule(
+func flattenAmplifyCustomRules(
+func flattenAmplifyProductionBranch(
+func init(
 func validateAuthorizerType(
 func decodeApiGatewayBasePathMappingId(
 func expandApiGatewayDocumentationPartLocation(

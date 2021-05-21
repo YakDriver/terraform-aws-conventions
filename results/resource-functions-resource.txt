@@ -44,6 +44,11 @@ func resourceAwsAmiLaunchPermission(
 func resourceAwsAmiLaunchPermissionCreate(
 func resourceAwsAmiLaunchPermissionRead(
 func resourceAwsAmiLaunchPermissionDelete(
+func resourceAwsAmplifyApp(
+func resourceAwsAmplifyAppCreate(
+func resourceAwsAmplifyAppRead(
+func resourceAwsAmplifyAppUpdate(
+func resourceAwsAmplifyAppDelete(
 func resourceAwsApiGatewayAccount(
 func resourceAwsApiGatewayAccountRead(
 func resourceAwsApiGatewayAccountUpdate(

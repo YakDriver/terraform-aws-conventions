@@ -594,6 +594,9 @@ func TestAccAWSAMI_basic(
 func TestAccAWSAMI_description(
 func TestAccAWSAMI_disappears(
 func TestAccAWSAMI_tags(
+func testAccAWSAmplifyApp_basic(
+func testAccAWSAmplifyApp_disappears(
+func TestAccAWSAmplify_serial(
 func TestAccAWSAPIGatewayAccount_basic(
 func testAccAWSAPIGatewayAccountConfig_updated(
 func testAccAWSAPIGatewayAccountConfig_updated2(

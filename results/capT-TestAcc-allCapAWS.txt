@@ -355,6 +355,7 @@ func TestAccAWSAMI_disappears(
 func TestAccAWSAMI_EphemeralBlockDevices(
 func TestAccAWSAMI_Gp3BlockDevice(
 func TestAccAWSAMI_tags(
+func TestAccAWSAmplify_serial(
 func TestAccAWSAPIGatewayAccount_basic(
 func TestAccAWSAPIGatewayApiKey_basic(
 func TestAccAWSAPIGatewayApiKey_Tags(
