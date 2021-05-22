@@ -128,6 +128,10 @@ func testAccAWSDBInstanceDataSourceConfig_ec2Classic(
 func TestAccAWSDbSnapshotDataSource_basic(
 func TestAccAWSDbSubnetGroupDataSource_basic(
 func TestAccAWSDbSubnetGroupDataSource_nonexistent(
+func TestAccAWSDefaultTagsDataSource_basic(
+func TestAccAWSDefaultTagsDataSource_empty(
+func TestAccAWSDefaultTagsDataSource_multiple(
+func TestAccAWSDefaultTagsDataSource_ignore(
 func TestAccDataSourceAwsDirectoryServiceDirectory_connector(
 func testAccDataSourceDirectoryServiceDirectoryConfig_connector(
 func TestAccAWSDocDBEngineVersionDataSource_basic(
@@ -662,6 +666,8 @@ func TestAccAWSAMI_disappears(
 func TestAccAWSAMI_tags(
 func testAccAWSAmplifyApp_basic(
 func testAccAWSAmplifyApp_disappears(
+func testAccAWSAmplifyBackendEnvironment_basic(
+func testAccAWSAmplifyBackendEnvironment_disappears(
 func TestAccAWSAmplify_serial(
 func TestAccAWSAPIGatewayAccount_basic(
 func testAccAWSAPIGatewayAccountConfig_updated(

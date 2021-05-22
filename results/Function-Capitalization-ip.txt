@@ -3,6 +3,7 @@ func testSweepSkipResourceError(
 func TestAccAWSAcmCertificateDataSource_multipleIssued(
 func amiDescriptionAttributes(
 func dbSnapshotDescriptionAttributes(
+func TestAccAWSDefaultTagsDataSource_multiple(
 func snapshotDescriptionAttributes(
 func volumeDescriptionAttributes(
 func TestAccAWSEbsVolumeDataSource_multipleFilters(

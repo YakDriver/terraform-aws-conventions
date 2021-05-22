@@ -194,6 +194,8 @@ func testAccCheckAwsDbSnapshotDataSourceID(
 func testAccCheckAwsDbSnapshotDataSourceConfig(
 func dataSourceAwsDbSubnetGroup(
 func dataSourceAwsDbSubnetGroupRead(
+func dataSourceAwsDefaultTags(
+func dataSourceAwsDefaultTagsRead(
 func dataSourceAwsDirectoryServiceDirectory(
 func dataSourceAwsDirectoryServiceDirectoryRead(
 func TestAccDataSourceAwsDirectoryServiceDirectory_NonExistent(
@@ -1170,6 +1172,10 @@ func resourceAwsAmplifyAppCreate(
 func resourceAwsAmplifyAppRead(
 func resourceAwsAmplifyAppUpdate(
 func resourceAwsAmplifyAppDelete(
+func resourceAwsAmplifyBackendEnvironment(
+func resourceAwsAmplifyBackendEnvironmentCreate(
+func resourceAwsAmplifyBackendEnvironmentRead(
+func resourceAwsAmplifyBackendEnvironmentDelete(
 func resourceAwsApiGatewayAccount(
 func resourceAwsApiGatewayAccountRead(
 func resourceAwsApiGatewayAccountUpdate(

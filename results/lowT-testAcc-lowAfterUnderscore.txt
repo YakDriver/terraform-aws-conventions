@@ -164,6 +164,8 @@ func testAccAWSALBTargetGroupConfig_missing_protocol(
 func testAccAWSALBTargetGroupConfig_missing_vpc(
 func testAccAWSAmplifyApp_basic(
 func testAccAWSAmplifyApp_disappears(
+func testAccAWSAmplifyBackendEnvironment_basic(
+func testAccAWSAmplifyBackendEnvironment_disappears(
 func testAccAWSAPIGatewayAccountConfig_updated(
 func testAccAWSAPIGatewayAccountConfig_updated2(
 func testAccAWSAPIGatewayAuthorizerConfig_lambda(

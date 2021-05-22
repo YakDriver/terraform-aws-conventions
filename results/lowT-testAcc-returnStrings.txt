@@ -88,6 +88,7 @@ func testAccAWSDBInstanceDataSourceConfig(rInt int) string {
 func testAccAWSDBInstanceDataSourceConfig_ec2Classic(rInt int) string {
 func testAccCheckAwsDbSnapshotDataSourceConfig(rInt int) string {
 func testAccAWSDBSubnetGroupDataSourceConfig(rName string) string {
+func testAccAWSDefaultTagsDataSource() string {
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_Prerequisites(adType string) string {
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_SimpleAD(alias string) string {
 func testAccDataSourceAwsDirectoryServiceDirectoryConfig_MicrosoftAD(alias string) string {
@@ -658,6 +659,8 @@ func testAccAWSAmplifyAppConfigIAMServiceRoleBase(rName string) string {
 func testAccAWSAmplifyAppConfigIAMServiceRoleArn(rName string) string {
 func testAccAWSAmplifyAppConfigIAMServiceRoleArnUpdated(rName string) string {
 func testAccAWSAmplifyAppConfigRepository(rName, repository, accessToken string) string {
+func testAccAWSAmplifyBackendEnvironmentConfigBasic(rName string, environmentName string) string {
+func testAccAWSAmplifyBackendEnvironmentConfigDeploymentArtifactsAndStackName(rName string, environmentName string) string {
 func testAccAWSAPIGatewayAccountConfig_updated(randName string) string {
 func testAccAWSAPIGatewayAccountConfig_updated2(randName string) string {
 func testAccAWSAPIGatewayApiKeyConfig(rName string) string {

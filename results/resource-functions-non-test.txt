@@ -88,6 +88,10 @@ func flattenAmplifyCustomRule(
 func flattenAmplifyCustomRules(
 func flattenAmplifyProductionBranch(
 func init(
+func resourceAwsAmplifyBackendEnvironment(
+func resourceAwsAmplifyBackendEnvironmentCreate(
+func resourceAwsAmplifyBackendEnvironmentRead(
+func resourceAwsAmplifyBackendEnvironmentDelete(
 func resourceAwsApiGatewayAccount(
 func resourceAwsApiGatewayAccountRead(
 func resourceAwsApiGatewayAccountUpdate(
