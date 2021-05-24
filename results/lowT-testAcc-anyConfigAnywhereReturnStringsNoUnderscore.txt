@@ -752,6 +752,7 @@ func testAccAWSCloudTrailConfigMultiRegion(cloudTrailRandInt int) string {
 func testAccAWSCloudTrailConfigOrganization(cloudTrailRandInt int) string {
 func testAccAwsCloudWatchCompositeAlarmBaseConfig(suffix string) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
+func testAccAWSCloudWatchEventApiDestinationConfig(name, invocationEndpoint, httpMethod string) string {
 func testAccAWSCloudWatchEventArchiveConfig(name string) string {
 func testAccAWSCloudWatchEventBusConfig(name string) string {
 func testAccAWSCloudWatchEventBusPartnerEventSourceConfig(name string) string {

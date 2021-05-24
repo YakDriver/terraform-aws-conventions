@@ -553,6 +553,11 @@ func resourceAwsCloudWatchDashboard(
 func resourceAwsCloudWatchDashboardRead(
 func resourceAwsCloudWatchDashboardPut(
 func resourceAwsCloudWatchDashboardDelete(
+func resourceAwsCloudWatchEventApiDestination(
+func resourceAwsCloudWatchEventApiDestinationCreate(
+func resourceAwsCloudWatchEventApiDestinationRead(
+func resourceAwsCloudWatchEventApiDestinationUpdate(
+func resourceAwsCloudWatchEventApiDestinationDelete(
 func resourceAwsCloudWatchEventArchive(
 func resourceAwsCloudWatchEventArchiveCreate(
 func resourceAwsCloudWatchEventArchiveRead(
@@ -563,6 +568,11 @@ func resourceAwsCloudWatchEventBusCreate(
 func resourceAwsCloudWatchEventBusRead(
 func resourceAwsCloudWatchEventBusUpdate(
 func resourceAwsCloudWatchEventBusDelete(
+func resourceAwsCloudWatchEventConnection(
+func resourceAwsCloudWatchEventConnectionCreate(
+func resourceAwsCloudWatchEventConnectionRead(
+func resourceAwsCloudWatchEventConnectionUpdate(
+func resourceAwsCloudWatchEventConnectionDelete(
 func resourceAwsCloudWatchEventPermission(
 func resourceAwsCloudWatchEventPermissionCreate(
 func resourceAwsCloudWatchEventPermissionRead(

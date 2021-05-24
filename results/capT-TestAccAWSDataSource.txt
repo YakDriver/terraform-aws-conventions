@@ -1,4 +1,5 @@
 func TestAccAWSDataSourceCloudFrontDistribution_basic(
+func TestAccAWSDataSourceCloudwatch_Event_Connection_basic(
 func TestAccAWSDataSourceElasticBeanstalkHostedZone_basic(
 func TestAccAWSDataSourceElasticBeanstalkHostedZone_Region(
 func TestAccAWSDataSourceIAMGroup_basic(

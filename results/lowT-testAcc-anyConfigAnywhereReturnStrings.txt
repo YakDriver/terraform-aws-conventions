@@ -55,6 +55,7 @@ func testAccAWSCloudFrontCachePolicyDataSourceNameConfig(rInt int) string {
 func testAccAWSCloudFrontDistributionDataConfig(rInt int) string {
 func testAccDataSourceAWSCloudfrontFunctionConfigBasic(rName string) string {
 func testAccAWSCloudFrontDataSourceOriginRequestPolicyConfig(rInt int) string {
+func testAccAWSCloudwatch_Event_ConnectionDataConfig(name, description, authorizationType, key, value string) string {
 func testAccAwsDataSourcePartnerEventSourceConfig(namePrefix string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfig(rName string) string {
 func testAccCheckAWSCloudwatchLogGroupDataSourceConfigTags(rName string) string {
@@ -1317,6 +1318,8 @@ func testAccAwsCloudWatchCompositeAlarmConfig_updateOkActions(suffix string) str
 func testAccAwsCloudWatchCompositeAlarmConfig_allActions(suffix string) string {
 func testAccAWSCloudWatchDashboardConfig(rInt int) string {
 func testAccAWSCloudWatchDashboardConfig_updateBody(rInt int) string {
+func testAccAWSCloudWatchEventApiDestinationConfig(name, invocationEndpoint, httpMethod string) string {
+func testAccAWSCloudWatchEventApiDestinationConfig_optional(name, invocationEndpoint, httpMethod, description string, invocationRateLimitPerSecond int64) string {
 func testAccAWSCloudWatchEventArchiveConfig(name string) string {
 func testAccAWSCloudWatchEventArchiveConfig_updateAttributes(name string) string {
 func testAccAWSCloudWatchEventArchiveConfig_retentionOnCreation(name string) string {
@@ -1324,6 +1327,8 @@ func testAccAWSCloudWatchEventBusConfig(name string) string {
 func testAccAWSCloudWatchEventBusConfig_Tags1(name, key, value string) string {
 func testAccAWSCloudWatchEventBusConfig_Tags2(name, key1, value1, key2, value2 string) string {
 func testAccAWSCloudWatchEventBusPartnerEventSourceConfig(name string) string {
+func testAccAWSCloudWatchEventConnectionConfig_apiKey(name, description, authorizationType, key, value string) string {
+func testAccAWSCloudWatchEventConnectionConfig_basic(name, description, authorizationType, username, password string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigBasic(principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigDefaultEventBusName(principal, statementID string) string {
 func testAccCheckAwsCloudWatchEventPermissionResourceConfigEventBusName(principal, busName, statementID string) string {

@@ -19,4 +19,6 @@ func testAccAWSAPIGatewayV2RouteConfig_apiHttp(
 func testAccAWSAPIGatewayV2StageConfig_apiWebSocket(
 func testAccAWSAPIGatewayV2StageConfig_apiHttp(
 func apigatewayVpcLinkRefreshStatusFunc(
+func TestAccAWSCloudWatchEventConnection_apiKey(
+func testAccAWSCloudWatchEventConnectionConfig_apiKey(
 func TestAccAWSTransferServer_apiGateway(
