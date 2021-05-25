@@ -922,6 +922,8 @@ func waitForEksFargateProfileDeletion(
 func init(
 func expandEksLaunchTemplateSpecification(
 func expandEksNodegroupScalingConfig(
+func expandEksTaints(
+func expandEksUpdateTaintsPayload(
 func expandEksRemoteAccessConfig(
 func expandEksUpdateLabelsPayload(
 func flattenEksAutoScalingGroups(
@@ -929,6 +931,7 @@ func flattenEksLaunchTemplateSpecification(
 func flattenEksNodeGroupResources(
 func flattenEksNodeGroupScalingConfig(
 func flattenEksRemoteAccessConfig(
+func flattenEksTaints(
 func refreshEksNodeGroupStatus(
 func refreshEksNodeGroupUpdateStatus(
 func waitForEksNodeGroupDeletion(

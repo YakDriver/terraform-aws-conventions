@@ -2400,6 +2400,8 @@ func testAccAWSEksNodeGroupConfigRemoteAccessSourceSecurityGroupIds1(rName strin
 func testAccAWSEksNodeGroupConfigScalingConfigSizes(rName string, desiredSize, maxSize, minSize int) string {
 func testAccAWSEksNodeGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSEksNodeGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSEksNodeGroupConfigTaints1(rName, taintKey1, taintValue1, taintEffect1 string) string {
+func testAccAWSEksNodeGroupConfigTaints2(rName, taintKey1, taintValue1, taintEffect1, taintKey2, taintValue2, taintEffect2 string) string {
 func testAccAWSEksNodeGroupConfigVersion(rName, version string) string {
 func testAccAWSElasticacheClusterConfig_Engine_Memcached(rName string) string {
 func testAccAWSElasticacheClusterConfig_Engine_Redis(rName string) string {

@@ -4238,6 +4238,7 @@ func TestAccAWSEksNodeGroup_ScalingConfig_DesiredSize(
 func TestAccAWSEksNodeGroup_ScalingConfig_MaxSize(
 func TestAccAWSEksNodeGroup_ScalingConfig_MinSize(
 func TestAccAWSEksNodeGroup_Tags(
+func TestAccAWSEksNodeGroup_Taints(
 func TestAccAWSEksNodeGroup_Version(
 func testAccCheckAWSEksNodeGroupExists(
 func testAccCheckAWSEksNodeGroupDestroy(
@@ -4270,6 +4271,8 @@ func testAccAWSEksNodeGroupConfigRemoteAccessSourceSecurityGroupIds1(
 func testAccAWSEksNodeGroupConfigScalingConfigSizes(
 func testAccAWSEksNodeGroupConfigTags1(
 func testAccAWSEksNodeGroupConfigTags2(
+func testAccAWSEksNodeGroupConfigTaints1(
+func testAccAWSEksNodeGroupConfigTaints2(
 func testAccAWSEksNodeGroupConfigVersion(
 func TestAccAWSElasticacheCluster_Engine_Memcached(
 func TestAccAWSElasticacheCluster_Engine_Redis(

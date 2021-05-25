@@ -2832,6 +2832,7 @@ func TestAccAWSEksNodeGroup_ForceUpdateVersion(
 func TestAccAWSEksNodeGroup_Labels(
 func TestAccAWSEksNodeGroup_ReleaseVersion(
 func TestAccAWSEksNodeGroup_Tags(
+func TestAccAWSEksNodeGroup_Taints(
 func TestAccAWSEksNodeGroup_Version(
 func TestAccAWSElasticacheCluster_Port(
 func TestAccAWSElasticacheCluster_snapshotsWithUpdates(

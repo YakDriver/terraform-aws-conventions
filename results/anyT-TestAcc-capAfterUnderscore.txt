@@ -1519,6 +1519,7 @@ func TestAccAWSEksNodeGroup_ScalingConfig_DesiredSize(
 func TestAccAWSEksNodeGroup_ScalingConfig_MaxSize(
 func TestAccAWSEksNodeGroup_ScalingConfig_MinSize(
 func TestAccAWSEksNodeGroup_Tags(
+func TestAccAWSEksNodeGroup_Taints(
 func TestAccAWSEksNodeGroup_Version(
 func TestAccAWSElasticacheCluster_Engine_Memcached(
 func TestAccAWSElasticacheCluster_Engine_Redis(
