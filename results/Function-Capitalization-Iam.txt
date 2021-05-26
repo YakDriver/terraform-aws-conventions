@@ -198,6 +198,9 @@ func getIamInstanceProfile(
 func readIamInstanceProfileFromConfig(
 func TestAccAWSLaunchTemplate_IamInstanceProfile_EmptyConfigurationBlock(
 func testAccAWSLaunchTemplateConfigIamInstanceProfileEmptyConfigurationBlock(
+func flattenMskSaslIam(
+func TestAccAWSMskCluster_ClientAuthentication_Sasl_Iam(
+func testAccMskClusterConfigClientAuthenticationSaslIam(
 func setIamRoleToNeptuneCluster(
 func removeIamRoleFromNeptuneCluster(
 func TestAccAWSNeptuneCluster_updateIamRoles(

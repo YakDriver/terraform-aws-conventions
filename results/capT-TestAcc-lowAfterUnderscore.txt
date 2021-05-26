@@ -2793,6 +2793,7 @@ func TestAccAWSSNSTopic_withDeliveryPolicy(
 func TestAccAWSSNSTopic_deliveryStatus(
 func TestAccAWSSNSTopic_encryption(
 func TestAccAWSSNSTopic_tags(
+func TestAccAWSSNSTopic_disappears(
 func TestAccAWSSpotDatafeedSubscription_serial(
 func TestAccAWSSpotFleetRequest_basic(
 func TestAccAWSSpotFleetRequest_tags(

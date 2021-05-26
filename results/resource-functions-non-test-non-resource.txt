@@ -288,7 +288,7 @@ func expandBatchEvaluateOnExits(
 func flattenBatchRetryStrategy(
 func flattenBatchEvaluateOnExit(
 func flattenBatchEvaluateOnExits(
-func expandJobDefinitionTimeout(
+func expandBatchJobTimeout(
 func flattenBatchJobTimeout(
 func init(
 func createComputeEnvironmentOrder(
@@ -1942,7 +1942,7 @@ func expandMskClusterClientAuthentication(
 func expandMskClusterConfigurationInfo(
 func expandMskClusterEncryptionInfo(
 func expandMskClusterEncryptionInTransit(
-func expandMskClusterScram(
+func expandMskClusterSasl(
 func expandMskClusterTls(
 func expandMskOpenMonitoring(
 func expandMskOpenMonitoringPrometheus(
@@ -1959,7 +1959,8 @@ func flattenMskConfigurationInfo(
 func flattenMskEncryptionInfo(
 func flattenMskEncryptionInTransit(
 func flattenMskSasl(
-func flattenMskScram(
+func flattenMskSaslScram(
+func flattenMskSaslIam(
 func flattenMskTls(
 func flattenMskOpenMonitoring(
 func flattenMskOpenMonitoringPrometheus(

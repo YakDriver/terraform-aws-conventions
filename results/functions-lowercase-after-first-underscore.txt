@@ -4397,6 +4397,7 @@ func TestAccAWSSNSTopic_withDeliveryPolicy(
 func TestAccAWSSNSTopic_deliveryStatus(
 func TestAccAWSSNSTopic_encryption(
 func TestAccAWSSNSTopic_tags(
+func TestAccAWSSNSTopic_disappears(
 func testAccAWSSNSTopicConfig_withIAMRole(
 func testAccAWSSNSTopicConfig_withDeliveryPolicy(
 func testAccAWSSNSTopicConfig_withFakeIAMRole(

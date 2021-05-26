@@ -738,7 +738,7 @@ func expandBatchEvaluateOnExits(
 func flattenBatchRetryStrategy(
 func flattenBatchEvaluateOnExit(
 func flattenBatchEvaluateOnExits(
-func expandJobDefinitionTimeout(
+func expandBatchJobTimeout(
 func flattenBatchJobTimeout(
 func init(
 func resourceAwsBatchJobQueue(
@@ -4216,12 +4216,13 @@ func resourceAwsMskClusterCreate(
 func waitForMskClusterCreation(
 func resourceAwsMskClusterRead(
 func resourceAwsMskClusterUpdate(
+func resourceAwsMskClusterDelete(
 func expandMskClusterBrokerNodeGroupInfo(
 func expandMskClusterClientAuthentication(
 func expandMskClusterConfigurationInfo(
 func expandMskClusterEncryptionInfo(
 func expandMskClusterEncryptionInTransit(
-func expandMskClusterScram(
+func expandMskClusterSasl(
 func expandMskClusterTls(
 func expandMskOpenMonitoring(
 func expandMskOpenMonitoringPrometheus(
@@ -4238,7 +4239,8 @@ func flattenMskConfigurationInfo(
 func flattenMskEncryptionInfo(
 func flattenMskEncryptionInTransit(
 func flattenMskSasl(
-func flattenMskScram(
+func flattenMskSaslScram(
+func flattenMskSaslIam(
 func flattenMskTls(
 func flattenMskOpenMonitoring(
 func flattenMskOpenMonitoringPrometheus(
@@ -4249,7 +4251,6 @@ func flattenMskLoggingInfoBrokerLogs(
 func flattenMskLoggingInfoBrokerLogsCloudWatchLogs(
 func flattenMskLoggingInfoBrokerLogsFirehose(
 func flattenMskLoggingInfoBrokerLogsS3(
-func resourceAwsMskClusterDelete(
 func resourceAwsMskClusterDeleteWaiter(
 func mskClusterOperationRefreshFunc(
 func waitForMskClusterOperation(

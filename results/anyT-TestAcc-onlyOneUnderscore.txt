@@ -5355,6 +5355,7 @@ func TestAccAWSSNSTopic_FIFOWithContentBasedDeduplication(
 func TestAccAWSSNSTopic_FIFOExpectContentBasedDeduplicationError(
 func TestAccAWSSNSTopic_encryption(
 func TestAccAWSSNSTopic_tags(
+func TestAccAWSSNSTopic_disappears(
 func testAccAWSSNSTopicConfig_withIAMRole(
 func testAccAWSSNSTopicConfig_withDeliveryPolicy(
 func testAccAWSSNSTopicConfig_withFakeIAMRole(
@@ -6059,6 +6060,8 @@ func TestAccAwsWafv2WebACL_RateBasedStatement(
 func TestAccAwsWafv2WebACL_GeoMatchStatement(
 func TestAccAwsWafv2WebACL_IPSetReferenceStatement(
 func TestAccAwsWafv2WebACL_RuleGroupReferenceStatement(
+func TestAccAwsWafv2WebACL_CustomRequestHandling(
+func TestAccAwsWafv2WebACL_CustomResponse(
 func TestAccAwsWafv2WebACL_Tags(
 func TestAccAwsWafv2WebACL_MaxNestedRateBasedStatements(
 func TestAccAwsWafv2WebACL_MaxNestedOperatorStatements(
@@ -6066,6 +6069,7 @@ func testAccAwsWafv2WebACLConfig_Basic(
 func testAccAwsWafv2WebACLConfig_BasicRule(
 func testAccAwsWafv2WebACLConfig_UpdateRuleNamePriorityMetric(
 func testAccAwsWafv2WebACLConfig_GeoMatchStatement(
+func testAccAwsWafv2WebACLConfig_CustomResponse(
 func testAccAwsWafv2WebACLConfig_IPSetReferenceStatement(
 func testAccAwsWafv2WebACLConfig_ManagedRuleGroupStatement(
 func testAccAwsWafv2WebACLConfig_RateBasedStatement(

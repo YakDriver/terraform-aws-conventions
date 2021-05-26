@@ -583,6 +583,8 @@ func TestAccAwsWafv2RuleGroup_LogicalRuleStatements(
 func TestAccAwsWafv2RuleGroup_Minimal(
 func TestAccAwsWafv2RuleGroup_RegexPatternSetReferenceStatement(
 func TestAccAwsWafv2RuleGroup_RuleAction(
+func TestAccAwsWafv2RuleGroup_RuleAction_CustomRequestHandling(
+func TestAccAwsWafv2RuleGroup_RuleAction_CustomResponse(
 func TestAccAwsWafv2RuleGroup_SizeConstraintStatement(
 func TestAccAwsWafv2RuleGroup_SqliMatchStatement(
 func TestAccAwsWafv2RuleGroup_Tags(
@@ -597,8 +599,11 @@ func testAccAwsWafv2RuleGroupConfig_UpdateCapacity(
 func testAccAwsWafv2RuleGroupConfig_UpdateMetricName(
 func testAccAwsWafv2RuleGroupConfig_Minimal(
 func testAccAwsWafv2RuleGroupConfig_RuleActionAllow(
+func testAccAwsWafv2RuleGroupConfig_RuleActionAllow_CustomRequestHandling(
 func testAccAwsWafv2RuleGroupConfig_RuleActionBlock(
+func testAccAwsWafv2RuleGroupConfig_RuleActionBlock_CustomResponse(
 func testAccAwsWafv2RuleGroupConfig_RuleActionCount(
+func testAccAwsWafv2RuleGroupConfig_RuleActionCount_CustomRequestHandling(
 func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement(
 func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_Update(
 func testAccAwsWafv2RuleGroupConfig_ByteMatchStatement_FieldToMatchAllQueryArguments(
@@ -721,6 +726,8 @@ func TestAccAwsWafv2WebACL_IPSetReferenceStatement(
 func TestAccAwsWafv2WebACL_IPSetReferenceStatement_IPSetForwardedIPConfig(
 func TestAccAwsWafv2WebACL_RateBasedStatement_ForwardedIPConfig(
 func TestAccAwsWafv2WebACL_RuleGroupReferenceStatement(
+func TestAccAwsWafv2WebACL_CustomRequestHandling(
+func TestAccAwsWafv2WebACL_CustomResponse(
 func TestAccAwsWafv2WebACL_Tags(
 func TestAccAwsWafv2WebACL_MaxNestedRateBasedStatements(
 func TestAccAwsWafv2WebACL_MaxNestedOperatorStatements(
@@ -730,6 +737,9 @@ func testAccAwsWafv2WebACLConfig_Basic(
 func testAccAwsWafv2WebACLConfig_BasicRule(
 func testAccAwsWafv2WebACLConfig_UpdateRuleNamePriorityMetric(
 func testAccAwsWafv2WebACLConfig_GeoMatchStatement(
+func testAccAwsWafv2WebACLConfig_CustomRequestHandling_Count(
+func testAccAwsWafv2WebACLConfig_CustomRequestHandling_Allow(
+func testAccAwsWafv2WebACLConfig_CustomResponse(
 func testAccAwsWafv2WebACLConfig_GeoMatchStatement_ForwardedIPConfig(
 func testAccAwsWafv2WebACLConfig_IPSetReferenceStatement(
 func testAccAwsWafv2WebACLConfig_IPSetReferenceStatement_IPSetForwardedIPConfig(
@@ -820,6 +830,12 @@ func newWafRetryer(
 func expandWafv2Rules(
 func expandWafv2Rule(
 func expandWafv2RuleAction(
+func expandWafv2AllowAction(
+func expandWafv2CountAction(
+func expandWafv2BlockAction(
+func expandWafv2CustomResponse(
+func expandWafv2CustomRequestHandling(
+func expandWafv2CustomHeaders(
 func expandWafv2VisibilityConfig(
 func expandWafv2RootStatement(
 func expandWafv2Statements(
@@ -843,6 +859,13 @@ func expandWafv2SqliMatchStatement(
 func expandWafv2XssMatchStatement(
 func flattenWafv2Rules(
 func flattenWafv2RuleAction(
+func flattenWafv2Allow(
+func flattenWafv2Block(
+func flattenWafv2Count(
+func flattenWafv2CustomRequestHandling(
+func flattenWafv2CustomResponse(
+func flattenWafv2CustomHeaders(
+func flattenWafv2CustomHeader(
 func flattenWafv2RootStatement(
 func flattenWafv2Statements(
 func flattenWafv2Statement(

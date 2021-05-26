@@ -21,3 +21,8 @@ func wafv2FieldToMatchSchema(
 func wafv2ForwardedIPConfig(
 func wafv2TextTransformationSchema(
 func wafv2VisibilityConfigSchema(
+func wafv2AllowConfigSchema(
+func wafv2CountConfigSchema(
+func wafv2BlockConfigSchema(
+func wafv2CustomRequestHandlingSchema(
+func wafv2CustomResponseSchema(

@@ -225,8 +225,7 @@ func testAccGluePartitionParametersConfig1(
 func testAccGluePartitionParametersConfig2(
 func extractProcessorParameters(
 func extractProcessorParameter(
-func expandMskClusterScram(
-func flattenMskScram(
+func flattenMskSaslScram(
 func TestAccAWSMskCluster_ClientAuthentication_Sasl_Scram(
 func testAccMskClusterConfigClientAuthenticationSaslScram(
 func resourceAwsMskScramSecretAssociation(

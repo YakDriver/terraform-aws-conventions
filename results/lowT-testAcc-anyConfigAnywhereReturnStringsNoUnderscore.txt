@@ -2100,11 +2100,12 @@ func testAccRabbitMqClusterBrokerConfig(rName string) string {
 func testAccMqConfigurationConfig(rName string) string {
 func testAccMqConfigurationWithDataConfig(rName string) string {
 func testAccMqConfigurationWithLdapDataConfig(rName string) string {
-func testAccMskClusterBaseConfig() string {
+func testAccMskClusterBaseConfig(rName string) string {
 func testAccMskClusterConfigBrokerNodeGroupInfoEbsVolumeSize(rName string, ebsVolumeSize int) string {
 func testAccMskClusterConfigBrokerNodeGroupInfoInstanceType(rName string, t string) string {
 func testAccMskClusterConfigClientAuthenticationTlsCertificateAuthorityArns(rName string) string {
 func testAccMskClusterConfigClientAuthenticationSaslScram(rName string, enabled bool) string {
+func testAccMskClusterConfigClientAuthenticationSaslIam(rName string, enabled bool) string {
 func testAccMskClusterConfigConfigurationInfoRevision1(rName string) string {
 func testAccMskClusterConfigConfigurationInfoRevision2(rName string) string {
 func testAccMskClusterConfigEncryptionInfoEncryptionAtRestKmsKeyArn(rName string) string {
