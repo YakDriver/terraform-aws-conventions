@@ -2332,6 +2332,8 @@ func init(
 func decodeSagemakerUserProfileName(
 func init(
 func init(
+func init(
+func init(
 func expandSecretsManagerRotationRules(
 func flattenSecretsManagerRotationRules(
 func init(
