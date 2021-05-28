@@ -179,8 +179,11 @@ func validateLocalIpv4NetworkCidr(
 func validateLocalIpv6NetworkCidr(
 func TestAccAWSVpnConnection_Tunnel1InsideIpv6Cidr(
 func TestAccAWSVpnConnection_withIpv6(
+func TestAccAWSVpnConnection_specifyIpv4(
+func TestAccAWSVpnConnection_specifyIpv6(
 func testAccAwsVpnConnectionConfigIpv6(
 func testAccAwsVpnConnectionConfigTunnel1InsideIpv6Cidr(
+func testAccAwsVpnConnectionConfigLocalRemoteIpv4Cidrs(
 func updateWafIpSetDescriptors(
 func diffWafIpSetDescriptors(
 func TestAccAWSWafIPSet_IpSetDescriptors_1000UpdateLimit(

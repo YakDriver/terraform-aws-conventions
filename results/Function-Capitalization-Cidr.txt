@@ -58,6 +58,7 @@ func TestAccAWSVpnConnection_Tunnel1InsideCidr(
 func TestAccAWSVpnConnection_Tunnel1InsideIpv6Cidr(
 func testAccAwsVpnConnectionConfigTunnel1InsideCidr(
 func testAccAwsVpnConnectionConfigTunnel1InsideIpv6Cidr(
+func testAccAwsVpnConnectionConfigLocalRemoteIpv4Cidrs(
 func canonicalCidrBlock(
 func TestCidrBlocksEqual(
 func TestCanonicalCidrBlock(

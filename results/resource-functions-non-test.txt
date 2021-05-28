@@ -817,6 +817,7 @@ func resourceAwsCloudFrontWebDistributionStateRefreshFunc(
 func resourceAwsCloudFrontDistributionMigrateState(
 func migrateCloudFrontDistributionStateV0toV1(
 func init(
+func originShieldItem(
 func resourceAwsCloudFrontFunction(
 func resourceAwsCloudFrontFunctionCreate(
 func resourceAwsCloudFrontFunctionRead(

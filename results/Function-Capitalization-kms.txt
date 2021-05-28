@@ -2,7 +2,6 @@ func TestAccAWSCloudwatchLogGroupDataSource_kms(
 func TestAccDataSourceAWSS3BucketObject_kmsEncrypted(
 func testAccAWSDataSourceS3ObjectConfig_kmsEncrypted(
 func testAccAWSCloudTrail_kmsKey(
-func testAccAWSCloudTrailConfig_kmsKey(
 func TestAccAWSCloudWatchLogGroup_kmsKey(
 func TestAccAWSDBInstance_kmsKey(
 func TestAccAWSDocDBClusterInstance_kmsKey(

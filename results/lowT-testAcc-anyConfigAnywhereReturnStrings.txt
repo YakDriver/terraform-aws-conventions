@@ -426,6 +426,7 @@ func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig(a
 func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_NonExistent() string {
 func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_Versioned(appARN, version string) string {
 func testAccCheckAwsServerlessApplicationRepositoryApplicationDataSourceConfig_Versioned_NonExistent(appARN string) string {
+func testAccAWSServiceCatalogConstraintDataSourceConfig_basic(rName, description string) string {
 func testAccCheckAwsServiceDiscoveryPrivateDnsNamespaceConfig(rName string) string {
 func testAccCheckAwsServiceDiscoveryPublicDnsNamespaceConfig(rName string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(serviceCode, quotaCode string) string {
@@ -1210,16 +1211,17 @@ func testAccAWSCloudFormationStackSetConfigTemplateBody(rName, templateBody stri
 func testAccAWSCloudFormationStackSetConfigTemplateUrl1(rName string) string {
 func testAccAWSCloudFormationStackSetConfigTemplateUrl2(rName string) string {
 func testAccAWSCloudFormationStackSetConfigPermissionModel(rName string) string {
-func testAccAWSCloudFormationStackConfig(stackName string) string {
-func testAccAWSCloudFormationStackConfigCreationFailure(stackName, onFailure string) string {
-func testAccAWSCloudFormationStackConfig_yaml(stackName string) string {
-func testAccAWSCloudFormationStackConfig_defaultParams(stackName string) string {
-func testAccAWSCloudFormationStackConfig_allAttributesWithBodies(stackName string) string {
-func testAccAWSCloudFormationStackConfig_allAttributesWithBodies_modified(stackName string) string {
-func testAccAWSCloudFormationStackConfig_withParams(stackName, cidr string) string {
+func testAccAWSCloudFormationStackConfig(rName string) string {
+func testAccAWSCloudFormationStackConfigCreationFailure(rName, onFailure string) string {
+func testAccAWSCloudFormationStackConfig_yaml(rName string) string {
+func testAccAWSCloudFormationStackConfig_defaultParams(rName string) string {
+func testAccAWSCloudFormationStackConfig_allAttributesWithBodies(rName string) string {
+func testAccAWSCloudFormationStackConfig_allAttributesWithBodies_modified(rName string) string {
+func testAccAWSCloudFormationStackConfig_withParams(rName, cidr string) string {
 func testAccAWSCloudFormationStackConfig_templateUrl_withParams(rName, bucketKey, vpcCidr string) string {
 func testAccAWSCloudFormationStackConfig_templateUrl_withParams_withYaml(rName, bucketKey, vpcCidr string) string {
 func testAccAWSCloudFormationStackConfig_withTransform(rName string) string {
+func testAccAWSCloudFormationStackConfig_onFailure(rName string) string {
 func testAccCloudformationTypeConfigBase(rName string, zipPath string) string {
 func testAccCloudformationTypeConfigExecutionRoleArn(rName string, zipPath string, typeName string) string {
 func testAccCloudformationTypeConfigLoggingConfig(rName string, zipPath string, typeName string) string {
@@ -1286,24 +1288,26 @@ func testAccAWSCloudHsmV2HsmConfigBase() string {
 func testAccAWSCloudHsmV2HsmConfigAvailabilityZone() string {
 func testAccAWSCloudHsmV2HsmConfigIpAddress() string {
 func testAccAWSCloudHsmV2HsmConfigSubnetId() string {
-func testAccAWSCloudTrailConfig(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfigModified(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfigCloudWatch(randInt int) string {
-func testAccAWSCloudTrailConfigCloudWatchModified(randInt int) string {
-func testAccAWSCloudTrailConfigMultiRegion(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfigOrganization(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_logValidation(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_logValidationModified(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_kmsKey(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_include_global_service_events(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_tags(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_tagsModified(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_tagsModifiedAgain(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_eventSelector(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_eventSelectorReadWriteType(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_eventSelectorModified(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_eventSelectorNone(cloudTrailRandInt int) string {
-func testAccAWSCloudTrailConfig_insightSelector(rName string) string {
+func testAccAWSCloudTrailBaseConfig(rName string) string {
+func testAccAWSCloudTrailConfig(rName string) string {
+func testAccAWSCloudTrailModifiedConfig(rName string) string {
+func testAccAWSCloudTrailCloudWatchConfig(rName string) string {
+func testAccAWSCloudTrailCloudWatchModifiedConfig(rName string) string {
+func testAccAWSCloudTrailMultiRegionConfig(rName string) string {
+func testAccAWSCloudTrailOrganizationConfig(rName string) string {
+func testAccAWSCloudTrailLogValidationConfig(rName string) string {
+func testAccAWSCloudTrailLogValidationModifiedConfig(rName string) string {
+func testAccAWSCloudTrailKMSKeyConfig(rName string) string {
+func testAccAWSCloudTrailGlobalServiceEventsConfig(rName string) string {
+func testAccAWSCloudTrailTagsConfig(rName string) string {
+func testAccAWSCloudTrailTagsModifiedConfig(rName string) string {
+func testAccAWSCloudTrailTagsModifiedAgainConfig(rName string) string {
+func testAccAWSCloudTrailEventSelectorConfig(rName string) string {
+func testAccAWSCloudTrailEventSelectorReadWriteTypeConfig(rName string) string {
+func testAccAWSCloudTrailEventSelectorModifiedConfig(rName string) string {
+func testAccAWSCloudTrailEventSelectorNoneConfig(rName string) string {
+func testAccAWSCloudTrailEventSelectorDynamoDBConfig(rName string) string {
+func testAccAWSCloudTrailInsightSelectorConfig(rName string) string {
 func testAccAwsCloudWatchCompositeAlarmBaseConfig(suffix string) string {
 func testAccAwsCloudWatchCompositeAlarmConfig_actionsEnabled(enabled bool, suffix string) string {
 func testAccAwsCloudWatchCompositeAlarmConfig_basic(suffix string) string {
@@ -4977,17 +4981,18 @@ func testAccAWSVPCConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) str
 func testAccAWSVPCConfigWithIgnoreChanges_DynamicTagsMergedWithLocals(localTagKey1, localTagValue1 string) string {
 func testAccAwsVpnConnectionRouteConfig(rBgpAsn int) string {
 func testAccAwsVpnConnectionRouteConfigUpdate(rBgpAsn int) string {
-func testAccAwsVpnConnectionConfig(rBgpAsn int) string {
-func testAccAwsVpnConnectionConfigUpdate(rInt, rBgpAsn int) string {
-func testAccAwsVpnConnectionConfigEnableAcceleration(rBgpAsn int) string {
-func testAccAwsVpnConnectionConfigIpv6(rBgpAsn int, localIpv6NetworkCidr string, remoteIpv6NetworkCidr string, tunnel1InsideIpv6Cidr string, tunnel2InsideIpv6Cidr string) string {
-func testAccAwsVpnConnectionConfigSingleTunnelOptions(rBgpAsn int, psk string, tunnelCidr string) string {
-func testAccAwsVpnConnectionConfigTransitGatewayID(rBgpAsn int) string {
-func testAccAwsVpnConnectionConfigTunnel1InsideCidr(rBgpAsn int, tunnel1InsideCidr string, tunnel2InsideCidr string) string {
-func testAccAwsVpnConnectionConfigTunnel1InsideIpv6Cidr(rBgpAsn int, tunnel1InsideIpv6Cidr string, tunnel2InsideIpv6Cidr string) string {
-func testAccAwsVpnConnectionConfigTunnel1PresharedKey(rBgpAsn int, tunnel1PresharedKey string, tunnel2PresharedKey string) string {
-func testAccAwsVpnConnectionConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
-func testAccAwsVpnConnectionConfigTags2(rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsVpnConnectionConfig(rName string, rBgpAsn int) string {
+func testAccAwsVpnConnectionConfigUpdate(rName string, rBgpAsn int) string {
+func testAccAwsVpnConnectionConfigEnableAcceleration(rName string, rBgpAsn int) string {
+func testAccAwsVpnConnectionConfigIpv6(rName string, rBgpAsn int, localIpv6NetworkCidr string, remoteIpv6NetworkCidr string, tunnel1InsideIpv6Cidr string, tunnel2InsideIpv6Cidr string) string {
+func testAccAwsVpnConnectionConfigSingleTunnelOptions(rName string, rBgpAsn int, psk string, tunnelCidr string) string {
+func testAccAwsVpnConnectionConfigTransitGatewayID(rName string, rBgpAsn int) string {
+func testAccAwsVpnConnectionConfigTunnel1InsideCidr(rName string, rBgpAsn int, tunnel1InsideCidr string, tunnel2InsideCidr string) string {
+func testAccAwsVpnConnectionConfigTunnel1InsideIpv6Cidr(rName string, rBgpAsn int, tunnel1InsideIpv6Cidr string, tunnel2InsideIpv6Cidr string) string {
+func testAccAwsVpnConnectionConfigTunnel1PresharedKey(rName string, rBgpAsn int, tunnel1PresharedKey string, tunnel2PresharedKey string) string {
+func testAccAwsVpnConnectionConfigTags1(rName string, rBgpAsn int, tagKey1, tagValue1 string) string {
+func testAccAwsVpnConnectionConfigTags2(rName string, rBgpAsn int, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAwsVpnConnectionConfigLocalRemoteIpv4Cidrs(rName string, rBgpAsn int, localIpv4Cidr string, remoteIpv4Cidr string) string {
 func testAccVpnGatewayAttachmentConfig(rName string) string {
 func testAccCheckVpnGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccCheckVpnGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {

@@ -765,6 +765,7 @@ func testAccAwsVpnConnectionConfigTunnel1PresharedKey(
 func testAccAwsVpnConnectionConfigTunnelOptions(
 func testAccAwsVpnConnectionConfigTags1(
 func testAccAwsVpnConnectionConfigTags2(
+func testAccAwsVpnConnectionConfigLocalRemoteIpv4Cidrs(
 func testAccAwsWafv2IPSetConfig(
 func testAccAwsWafv2IPSetConfigUpdate(
 func testAccAwsWafv2IPSetConfigIPv6(

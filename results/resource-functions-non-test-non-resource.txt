@@ -316,6 +316,7 @@ func expandCloudformationLoggingConfig(
 func flattenCloudformationLoggingConfig(
 func migrateCloudFrontDistributionStateV0toV1(
 func init(
+func originShieldItem(
 func init(
 func expandCloudFrontKeyGroupConfig(
 func init(

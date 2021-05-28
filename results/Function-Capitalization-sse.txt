@@ -59,6 +59,7 @@ func testAccRoute53ResolverDnssecConfigBase(
 func testAccRoute53ResolverDnssecConfigConfigBasic(
 func TestAccAWSS3BucketObject_sse(
 func testAccCheckAwsSesDomainIdentityVerificationPassed(
+func TestAccAWSVpnConnection_tunnelOptionsLesser(
 func flattenNetworkInterfacesPrivateIPAddresses(
 func expandPrivateIPAddresses(
 func expandIP6Addresses(

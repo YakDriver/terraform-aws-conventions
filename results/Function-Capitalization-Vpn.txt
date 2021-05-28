@@ -159,10 +159,13 @@ func TestAccAWSVpnConnection_Tunnel1InsideCidr(
 func TestAccAWSVpnConnection_Tunnel1InsideIpv6Cidr(
 func TestAccAWSVpnConnection_Tunnel1PresharedKey(
 func TestAccAWSVpnConnection_tunnelOptions(
+func TestAccAWSVpnConnection_tunnelOptionsLesser(
 func TestAccAWSVpnConnection_withoutStaticRoutes(
 func TestAccAWSVpnConnection_withEnableAcceleration(
 func TestAccAWSVpnConnection_withIpv6(
 func TestAccAWSVpnConnection_tags(
+func TestAccAWSVpnConnection_specifyIpv4(
+func TestAccAWSVpnConnection_specifyIpv6(
 func TestAccAWSVpnConnection_disappears(
 func testAccAwsVpnConnectionDestroy(
 func testAccAwsVpnConnectionExists(
@@ -178,6 +181,7 @@ func testAccAwsVpnConnectionConfigTunnel1PresharedKey(
 func testAccAwsVpnConnectionConfigTunnelOptions(
 func testAccAwsVpnConnectionConfigTags1(
 func testAccAwsVpnConnectionConfigTags2(
+func testAccAwsVpnConnectionConfigLocalRemoteIpv4Cidrs(
 func resourceAwsVpnGatewayAttachment(
 func resourceAwsVpnGatewayAttachmentCreate(
 func resourceAwsVpnGatewayAttachmentRead(
