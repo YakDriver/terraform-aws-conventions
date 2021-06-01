@@ -3280,9 +3280,14 @@ func testAccAWSLambdaCodeSigningConfigUpdatePublishers() string {
 func testAccAWSLambdaCodeSigningConfigUpdatePolicy() string {
 func testAccAWSLambdaCodeSigningConfigBasic() string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBase(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigSQSBase(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigDynamoDBBase(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigKafkaBase(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigMQBase(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisStartingPositionTimestamp(rName, startingPositionTimestamp string) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBatchWindow(rName string, batchWindow int64) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisParallelizationFactor(rName string, parallelizationFactor int64) string {
+func testAccAWSLambdaEventSourceMappingConfigKinesisTumblingWindowInSeconds(rName string, tumblingWindowInSeconds int64) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisMaximumRetryAttempts(rName string, maximumRetryAttempts int64) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisBisectBatch(rName string, bisectBatch bool) string {
 func testAccAWSLambdaEventSourceMappingConfigKinesisMaximumRecordAgeInSeconds(rName string, maximumRecordAgeInSeconds int64) string {
@@ -3291,11 +3296,13 @@ func testAccAWSLambdaEventSourceMappingConfigKinesisBatchSize(rName, batchSize s
 func testAccAWSLambdaEventSourceMappingConfigKinesisUpdateFunctionName(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigSqsBatchSize(rName, batchSize string) string {
 func testAccAWSLambdaEventSourceMappingConfigSqsUpdateFunctionName(rName string) string {
-func testAccAWSLambdaEventSourceMappingConfigSQSBase(rName string) string {
 func testAccAWSLambdaEventSourceMappingConfigSqsBatchWindow(rName string, batchWindow int64) string {
 func testAccAWSLambdaEventSourceMappingConfigMsk(rName, batchSize string) string {
-func testAccAWSLambdaEventSourceMappingConfigDynamoDBBase(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigSelfManagedKafka(rName, batchSize, kafkaBootstrapServers string) string {
 func testAccAWSLambdaEventSourceMappingConfigDynamoDbBatchSize(rName, batchSize string) string {
+func testAccAWSLambdaEventSourceMappingConfigDynamoDbFunctionResponseTypes(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigDynamoDbNoFunctionResponseTypes(rName string) string {
+func testAccAWSLambdaEventSourceMappingConfigActiveMQ(rName, batchSize string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigBase(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSnsTopic(rName string) string {
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinationSqsQueue(rName string) string {
