@@ -423,8 +423,12 @@ func getAwsCloudWatchLogsSubscriptionFilterInput(
 func cloudwatchLogsSubscriptionFilterId(
 func validateResourceAwsCloudWatchMetricAlarm(
 func getAwsCloudWatchPutMetricAlarmInput(
-func getAwsCloudWatchMetricAlarm(
-func flattenDimensions(
+func flattenAwsCloudWatchMetricAlarmDimensions(
+func flattenAwsCloudWatchMetricAlarmMetrics(
+func flattenAwsCloudWatchMetricAlarmMetricsMetricStat(
+func expandCloudWatchMetricAlarmMetrics(
+func expandCloudWatchMetricAlarmMetricsMetric(
+func expandAwsCloudWatchMetricAlarmDimensions(
 func migrateCloudWatchMetricAlarmStateV0toV1(
 func validateCloudWatchMetricStreamName(
 func expandCloudWatchMetricStreamFilters(
@@ -1102,6 +1106,7 @@ func expandFMSPolicyMap(
 func flattenFMSPolicyMap(
 func flattenFMSResourceTags(
 func constructResourceTags(
+func resourceFsxLustreFileSystemSchemaCustomizeDiff(
 func init(
 func expandFsxSelfManagedActiveDirectoryConfigurationCreate(
 func expandFsxSelfManagedActiveDirectoryConfigurationUpdate(
@@ -2408,6 +2413,7 @@ func flattenServerlessRepositoryParameterDefinitions(
 func createServerlessApplicationRepositoryCloudFormationChangeSet(
 func expandServerlessRepositoryCloudFormationChangeSetParameters(
 func flattenServerlessRepositoryStackCapabilities(
+func init(
 func init(
 func init(
 func expandProvisioningArtifactParameters(

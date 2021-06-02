@@ -548,6 +548,7 @@ func testAccAwsAcmpcaCertificateAuthorityConfig_WithRootCertificate(rName string
 func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_CustomCname(rName, customCname string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_Enabled(rName string, enabled bool) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_ExpirationInDays(rName string, expirationInDays int) string {
+func testAccAwsAcmpcaCertificateAuthorityConfig_RevocationConfiguration_CrlConfiguration_s3ObjectAcl(rName, s3ObjectAcl string) string {
 func testAccAwsAcmpcaCertificateAuthorityConfig_S3Bucket(rName string) string {
 func testAccAwsAcmpcaCertificateConfig_RootCertificate(rName string) string {
 func testAccAwsAcmpcaCertificateConfig_SubordinateCertificate(rName string) string {
@@ -609,6 +610,14 @@ func testAccAWSAmplifyAppConfigIAMServiceRoleArnUpdated(rName string) string {
 func testAccAWSAmplifyAppConfigRepository(rName, repository, accessToken string) string {
 func testAccAWSAmplifyBackendEnvironmentConfigBasic(rName string, environmentName string) string {
 func testAccAWSAmplifyBackendEnvironmentConfigDeploymentArtifactsAndStackName(rName string, environmentName string) string {
+func testAccAWSAmplifyBranchConfigName(rName string) string {
+func testAccAWSAmplifyBranchConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSAmplifyBranchConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSAmplifyBranchConfigBasicAuthCredentials(rName, basicAuthCredentials string) string {
+func testAccAWSAmplifyBranchConfigEnvironmentVariables(rName string) string {
+func testAccAWSAmplifyBranchConfigEnvironmentVariablesUpdated(rName string) string {
+func testAccAWSAmplifyBranchConfigOptionalArguments(rName, environmentName string) string {
+func testAccAWSAmplifyBranchConfigOptionalArgumentsUpdated(rName, environmentName string) string {
 func testAccAWSAPIGatewayAccountConfig_updated(randName string) string {
 func testAccAWSAPIGatewayAccountConfig_updated2(randName string) string {
 func testAccAWSAPIGatewayApiKeyConfig(rName string) string {
@@ -1381,6 +1390,7 @@ func testAccAWSCloudWatchLogGroupConfig_multiple(rInt int) string {
 func testAccAWSCloudWatchLogGroupConfigWithKmsKeyId(rInt int) string {
 func testAccAWSCloudWatchLogMetricFilterConfig(rInt int) string {
 func testAccAWSCloudWatchLogMetricFilterConfigModified(rInt int) string {
+func testAccAWSCloudWatchLogMetricFilterConfigModifiedWithDimensions(rInt int) string {
 func testAccAWSCloudwatchLogMetricFilterConfigMany(rInt int) string {
 func testAccCheckAWSCloudWatchLogResourcePolicyResourceConfigBasic1(name string) string {
 func testAccCheckAWSCloudWatchLogResourcePolicyResourceConfigBasic2(name string) string {
@@ -1973,6 +1983,9 @@ func testAccAWSDefaultSubnetConfigBasic(rInt int) string {
 func testAccAWSDefaultSubnetConfigPublicIp(rInt int) string {
 func testAccAWSDefaultSubnetConfigNoPublicIp(rInt int) string {
 func testAccDeviceFarmProjectConfig(rName string) string {
+func testAccDeviceFarmProjectConfigDefaultJobTimeout(rName string, timeout int) string {
+func testAccDeviceFarmProjectConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccDeviceFarmProjectConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccDirectoryServiceConditionalForwarderConfig(ip1, ip2 string) string {
 func testAccDirectoryServiceDirectoryConfig_withAlias(alias string) string {
 func testAccDirectoryServiceDirectoryConfig_withSso(alias string) string {
@@ -2618,6 +2631,7 @@ func testAccAwsFsxLustreFileSystemConfigImportedFileChunkSize(rName string, impo
 func testAccAwsFsxLustreFileSystemConfigSecurityGroupIds1() string {
 func testAccAwsFsxLustreFileSystemConfigSecurityGroupIds2() string {
 func testAccAwsFsxLustreFileSystemConfigStorageCapacity(storageCapacity int) string {
+func testAccAwsFsxLustreFileSystemConfigStorageCapacityScratch2(storageCapacity int) string {
 func testAccAwsFsxLustreFileSystemConfigSubnetIds1() string {
 func testAccAwsFsxLustreFileSystemConfigTags1(tagKey1, tagValue1 string) string {
 func testAccAwsFsxLustreFileSystemConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
@@ -3379,6 +3393,7 @@ func testAccAWSLaunchConfigurationWithSpotPriceConfig() string {
 func testAccAWSLaunchConfigurationNoNameConfig() string {
 func testAccAWSLaunchConfigurationPrefixNameConfig() string {
 func testAccAWSLaunchConfigurationWithEncryption() string {
+func testAccAWSLaunchConfigurationWithGP3() string {
 func testAccAWSLaunchConfigurationWithEncryptionUpdated() string {
 func testAccAWSLaunchConfigurationConfig_withVpcClassicLink(rInt int) string {
 func testAccAWSLaunchConfigurationConfig_withIAMProfile(rInt int) string {
@@ -4506,6 +4521,8 @@ func testAccAWSServiceCatalogPortfolioShareConfig_organizationalUnit(rName strin
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigBasic(name string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags1(name, tagKey1, tagValue1 string) string {
 func testAccCheckAwsServiceCatalogPortfolioResourceConfigTags2(name, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSServiceCatalogPrincipalPortfolioAssociationConfig_base(rName string) string {
+func testAccAWSServiceCatalogPrincipalPortfolioAssociationConfig_basic(rName string) string {
 func testAccAWSServiceCatalogProductPortfolioAssociationConfig_base(rName string) string {
 func testAccAWSServiceCatalogProductPortfolioAssociationConfig_basic(rName string) string {
 func testAccAWSServiceCatalogProductConfigTemplateURLBase(rName string) string {

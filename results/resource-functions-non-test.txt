@@ -92,6 +92,11 @@ func resourceAwsAmplifyBackendEnvironment(
 func resourceAwsAmplifyBackendEnvironmentCreate(
 func resourceAwsAmplifyBackendEnvironmentRead(
 func resourceAwsAmplifyBackendEnvironmentDelete(
+func resourceAwsAmplifyBranch(
+func resourceAwsAmplifyBranchCreate(
+func resourceAwsAmplifyBranchRead(
+func resourceAwsAmplifyBranchUpdate(
+func resourceAwsAmplifyBranchDelete(
 func resourceAwsApiGatewayAccount(
 func resourceAwsApiGatewayAccountRead(
 func resourceAwsApiGatewayAccountUpdate(
@@ -1045,8 +1050,12 @@ func resourceAwsCloudWatchMetricAlarmRead(
 func resourceAwsCloudWatchMetricAlarmUpdate(
 func resourceAwsCloudWatchMetricAlarmDelete(
 func getAwsCloudWatchPutMetricAlarmInput(
-func getAwsCloudWatchMetricAlarm(
-func flattenDimensions(
+func flattenAwsCloudWatchMetricAlarmDimensions(
+func flattenAwsCloudWatchMetricAlarmMetrics(
+func flattenAwsCloudWatchMetricAlarmMetricsMetricStat(
+func expandCloudWatchMetricAlarmMetrics(
+func expandCloudWatchMetricAlarmMetricsMetric(
+func expandAwsCloudWatchMetricAlarmDimensions(
 func resourceAwsCloudWatchMetricAlarmMigrateState(
 func migrateCloudWatchMetricAlarmStateV0toV1(
 func resourceAwsCloudWatchMetricStream(
@@ -2687,6 +2696,7 @@ func flattenFMSPolicyMap(
 func flattenFMSResourceTags(
 func constructResourceTags(
 func resourceAwsFsxLustreFileSystem(
+func resourceFsxLustreFileSystemSchemaCustomizeDiff(
 func resourceAwsFsxLustreFileSystemCreate(
 func resourceAwsFsxLustreFileSystemUpdate(
 func resourceAwsFsxLustreFileSystemRead(
@@ -5473,6 +5483,11 @@ func resourceAwsServiceCatalogPortfolioShareCreate(
 func resourceAwsServiceCatalogPortfolioShareRead(
 func resourceAwsServiceCatalogPortfolioShareUpdate(
 func resourceAwsServiceCatalogPortfolioShareDelete(
+func resourceAwsServiceCatalogPrincipalPortfolioAssociation(
+func resourceAwsServiceCatalogPrincipalPortfolioAssociationCreate(
+func resourceAwsServiceCatalogPrincipalPortfolioAssociationRead(
+func resourceAwsServiceCatalogPrincipalPortfolioAssociationDelete(
+func init(
 func resourceAwsServiceCatalogProduct(
 func resourceAwsServiceCatalogProductCreate(
 func resourceAwsServiceCatalogProductRead(

@@ -53,6 +53,11 @@ func resourceAwsAmplifyBackendEnvironment(
 func resourceAwsAmplifyBackendEnvironmentCreate(
 func resourceAwsAmplifyBackendEnvironmentRead(
 func resourceAwsAmplifyBackendEnvironmentDelete(
+func resourceAwsAmplifyBranch(
+func resourceAwsAmplifyBranchCreate(
+func resourceAwsAmplifyBranchRead(
+func resourceAwsAmplifyBranchUpdate(
+func resourceAwsAmplifyBranchDelete(
 func resourceAwsApiGatewayAccount(
 func resourceAwsApiGatewayAccountRead(
 func resourceAwsApiGatewayAccountUpdate(
@@ -1603,6 +1608,7 @@ func resourceAwsFmsPolicyExpandPolicy(
 func resourceAwsFmsPolicyUpdate(
 func resourceAwsFmsPolicyDelete(
 func resourceAwsFsxLustreFileSystem(
+func resourceFsxLustreFileSystemSchemaCustomizeDiff(
 func resourceAwsFsxLustreFileSystemCreate(
 func resourceAwsFsxLustreFileSystemUpdate(
 func resourceAwsFsxLustreFileSystemRead(
@@ -3117,6 +3123,10 @@ func resourceAwsServiceCatalogPortfolioShareCreate(
 func resourceAwsServiceCatalogPortfolioShareRead(
 func resourceAwsServiceCatalogPortfolioShareUpdate(
 func resourceAwsServiceCatalogPortfolioShareDelete(
+func resourceAwsServiceCatalogPrincipalPortfolioAssociation(
+func resourceAwsServiceCatalogPrincipalPortfolioAssociationCreate(
+func resourceAwsServiceCatalogPrincipalPortfolioAssociationRead(
+func resourceAwsServiceCatalogPrincipalPortfolioAssociationDelete(
 func resourceAwsServiceCatalogProduct(
 func resourceAwsServiceCatalogProductCreate(
 func resourceAwsServiceCatalogProductRead(
