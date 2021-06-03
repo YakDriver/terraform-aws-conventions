@@ -618,6 +618,11 @@ func testAccAWSAmplifyBranchConfigEnvironmentVariables(rName string) string {
 func testAccAWSAmplifyBranchConfigEnvironmentVariablesUpdated(rName string) string {
 func testAccAWSAmplifyBranchConfigOptionalArguments(rName, environmentName string) string {
 func testAccAWSAmplifyBranchConfigOptionalArgumentsUpdated(rName, environmentName string) string {
+func testAccAWSAmplifyDomainAssociationConfig(rName, domainName string, waitForVerification bool) string {
+func testAccAWSAmplifyDomainAssociationConfigUpdated(rName, domainName string, waitForVerification bool) string {
+func testAccAWSAmplifyWebhookConfig(rName string) string {
+func testAccAWSAmplifyWebhookConfigDescription(rName string) string {
+func testAccAWSAmplifyWebhookConfigDescriptionUpdated(rName string) string {
 func testAccAWSAPIGatewayAccountConfig_updated(randName string) string {
 func testAccAWSAPIGatewayAccountConfig_updated2(randName string) string {
 func testAccAWSAPIGatewayApiKeyConfig(rName string) string {

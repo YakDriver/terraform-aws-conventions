@@ -1029,7 +1029,13 @@ func testAccAWSAmplifyBranch_Tags(
 func testAccAWSAmplifyBranch_BasicAuthCredentials(
 func testAccAWSAmplifyBranch_EnvironmentVariables(
 func testAccAWSAmplifyBranch_OptionalArguments(
+func testAccAWSAmplifyDomainAssociation_basic(
+func testAccAWSAmplifyDomainAssociation_disappears(
+func testAccAWSAmplifyDomainAssociation_update(
 func TestAccAWSAmplify_serial(
+func testAccAWSAmplifyWebhook_basic(
+func testAccAWSAmplifyWebhook_disappears(
+func testAccAWSAmplifyWebhook_update(
 func TestAccAWSAPIGatewayAccount_basic(
 func testAccAWSAPIGatewayAccountConfig_updated(
 func testAccAWSAPIGatewayAccountConfig_updated2(

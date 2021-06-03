@@ -1187,6 +1187,16 @@ func resourceAwsAmplifyBranchCreate(
 func resourceAwsAmplifyBranchRead(
 func resourceAwsAmplifyBranchUpdate(
 func resourceAwsAmplifyBranchDelete(
+func resourceAwsAmplifyDomainAssociation(
+func resourceAwsAmplifyDomainAssociationCreate(
+func resourceAwsAmplifyDomainAssociationRead(
+func resourceAwsAmplifyDomainAssociationUpdate(
+func resourceAwsAmplifyDomainAssociationDelete(
+func resourceAwsAmplifyWebhook(
+func resourceAwsAmplifyWebhookCreate(
+func resourceAwsAmplifyWebhookRead(
+func resourceAwsAmplifyWebhookUpdate(
+func resourceAwsAmplifyWebhookDelete(
 func resourceAwsApiGatewayAccount(
 func resourceAwsApiGatewayAccountRead(
 func resourceAwsApiGatewayAccountUpdate(

@@ -37,6 +37,10 @@ func flattenAmplifyCustomRule(
 func flattenAmplifyCustomRules(
 func flattenAmplifyProductionBranch(
 func init(
+func expandAmplifySubDomainSetting(
+func expandAmplifySubDomainSettings(
+func flattenAmplifySubDomain(
+func flattenAmplifySubDomains(
 func validateAuthorizerType(
 func decodeApiGatewayBasePathMappingId(
 func expandApiGatewayDocumentationPartLocation(

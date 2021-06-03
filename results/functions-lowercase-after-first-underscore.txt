@@ -674,7 +674,13 @@ func testAccAWSAmplifyBackendEnvironment_basic(
 func testAccAWSAmplifyBackendEnvironment_disappears(
 func testAccAWSAmplifyBranch_basic(
 func testAccAWSAmplifyBranch_disappears(
+func testAccAWSAmplifyDomainAssociation_basic(
+func testAccAWSAmplifyDomainAssociation_disappears(
+func testAccAWSAmplifyDomainAssociation_update(
 func TestAccAWSAmplify_serial(
+func testAccAWSAmplifyWebhook_basic(
+func testAccAWSAmplifyWebhook_disappears(
+func testAccAWSAmplifyWebhook_update(
 func TestAccAWSAPIGatewayAccount_basic(
 func testAccAWSAPIGatewayAccountConfig_updated(
 func testAccAWSAPIGatewayAccountConfig_updated2(

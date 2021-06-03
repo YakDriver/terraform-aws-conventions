@@ -78,6 +78,8 @@ func testAccAWSAMICopyConfigDescription(
 func TestAccAWSAMI_description(
 func testAccAWSAmplifyApp_Description(
 func testAccAWSAmplifyAppConfigDescription(
+func testAccAWSAmplifyWebhookConfigDescription(
+func testAccAWSAmplifyWebhookConfigDescriptionUpdated(
 func TestAccAWSAPIGatewayApiKey_Description(
 func testAccAWSAPIGatewayApiKeyConfigDescription(
 func TestAccAWSAPIGatewayDeployment_Description(
