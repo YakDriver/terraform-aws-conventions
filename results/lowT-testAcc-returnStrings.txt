@@ -2868,6 +2868,7 @@ func testAccAwsFsxLustreFileSystemConfigKmsKeyId2() string {
 func testAccAwsFsxLustreFileSystemHddStorageType(drive_cache_type string) string {
 func testAccAwsFsxLustreFileSystemAutoImportPolicyConfig(rName, exportPrefix, policy string) string {
 func testAccAwsFsxLustreFileSystemCopyTagsToBackups() string {
+func testAccAwsFsxLustreFileSystemConfigCompression() string {
 func testAccAwsFsxWindowsFileSystemConfigBase() string {
 func testAccAwsFsxWindowsFileSystemConfigAutomaticBackupRetentionDays(automaticBackupRetentionDays int) string {
 func testAccAwsFsxWindowsFileSystemConfigCopyTagsToBackups(copyTagsToBackups bool) string {

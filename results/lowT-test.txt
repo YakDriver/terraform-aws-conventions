@@ -4339,6 +4339,7 @@ func testAccAwsFsxLustreFileSystemConfigKmsKeyId2(
 func testAccAwsFsxLustreFileSystemHddStorageType(
 func testAccAwsFsxLustreFileSystemAutoImportPolicyConfig(
 func testAccAwsFsxLustreFileSystemCopyTagsToBackups(
+func testAccAwsFsxLustreFileSystemConfigCompression(
 func testSweepFSXWindowsFileSystems(
 func testAccCheckFsxWindowsFileSystemExists(
 func testAccCheckFsxWindowsFileSystemDestroy(

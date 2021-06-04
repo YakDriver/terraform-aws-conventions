@@ -2776,6 +2776,7 @@ func TestAccAWSFlowLog_disappears(
 func TestAccAWSFms_serial(
 func TestAccAWSFsxLustreFileSystem_basic(
 func TestAccAWSFsxLustreFileSystem_disappears(
+func TestAccAWSFsxLustreFileSystem_dataCompression(
 func TestAccAWSFsxLustreFileSystem_ExportPath(
 func TestAccAWSFsxLustreFileSystem_ImportPath(
 func TestAccAWSFsxLustreFileSystem_ImportedFileChunkSize(
