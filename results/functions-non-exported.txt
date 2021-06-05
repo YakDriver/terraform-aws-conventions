@@ -10195,6 +10195,8 @@ func testAccAWSLambdaConfigKmsKeyArnNoEnvironmentVariables(
 func testAccAWSLambdaConfigWithLayers(
 func testAccAWSLambdaConfigWithLayersUpdated(
 func testAccAWSLambdaConfigWithVPC(
+func testAccAWSLambdaConfigWithVPCPublish(
+func testAccAWSLambdaConfigWithVPCUpdatedPublish(
 func testAccAWSLambdaConfigWithVPCUpdated(
 func testAccAWSLambdaConfigWithEmptyVpcConfig(
 func testAccAWSLambdaConfigS3(

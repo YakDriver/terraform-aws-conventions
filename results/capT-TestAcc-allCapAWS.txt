@@ -2785,6 +2785,8 @@ func TestAccAWSLambdaFunction_VPC(
 func TestAccAWSLambdaFunction_VPCRemoval(
 func TestAccAWSLambdaFunction_VPCUpdate(
 func TestAccAWSLambdaFunction_VPC_withInvocation(
+func TestAccAWSLambdaFunction_VPC_publish_No_Changes(
+func TestAccAWSLambdaFunction_VPC_publish_Has_Changes(
 func TestAccAWSLambdaFunction_VpcConfig_ProperIamDependencies(
 func TestAccAWSLambdaFunction_EmptyVpcConfig(
 func TestAccAWSLambdaFunction_s3(

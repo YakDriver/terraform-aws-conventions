@@ -3665,6 +3665,8 @@ func testAccAWSLambdaConfigKmsKeyArnNoEnvironmentVariables(rName string) string 
 func testAccAWSLambdaConfigWithLayers(funcName, layerName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithLayersUpdated(funcName, layerName, layer2Name, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithVPC(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigWithVPCPublish(funcName, policyName, roleName, sgName string) string {
+func testAccAWSLambdaConfigWithVPCUpdatedPublish(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigWithVPCUpdated(funcName, policyName, roleName, sgName, sgName2 string) string {
 func testAccAWSLambdaConfigWithEmptyVpcConfig(funcName, policyName, roleName, sgName string) string {
 func testAccAWSLambdaConfigS3(bucketName, roleName, funcName string) string {
