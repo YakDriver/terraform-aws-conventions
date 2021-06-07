@@ -13,6 +13,7 @@ func testAccAwsAcmCertificateDataSourceConfigKeyTypes(
 func dataSourceAwsAcmpcaCertificateAuthority(
 func dataSourceAwsAcmpcaCertificateAuthorityRead(
 func TestAccDataSourceAwsAcmpcaCertificateAuthority_basic(
+func TestAccDataSourceAwsAcmpcaCertificateAuthority_S3ObjectAcl(
 func dataSourceAwsAcmpcaCertificate(
 func dataSourceAwsAcmpcaCertificateRead(
 func TestAccDataSourceAwsAcmpcaCertificate_Basic(
@@ -6061,8 +6062,8 @@ func resourceAwsSpotInstanceRequestUpdate(
 func resourceAwsSpotInstanceRequestDelete(
 func resourceAwsSqsQueue(
 func resourceAwsSqsQueueCreate(
-func resourceAwsSqsQueueUpdate(
 func resourceAwsSqsQueueRead(
+func resourceAwsSqsQueueUpdate(
 func resourceAwsSqsQueueDelete(
 func resourceAwsSqsQueueCustomizeDiff(
 func resourceAwsSqsQueuePolicy(

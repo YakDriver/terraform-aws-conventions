@@ -18,11 +18,10 @@ func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnFailureDestinat
 func testAccAWSLambdaFunctionEventInvokeConfigDestinationConfigOnSuccessDestinationSqsQueue(
 func resourceAwsSqsQueue(
 func resourceAwsSqsQueueCreate(
-func resourceAwsSqsQueueUpdate(
 func resourceAwsSqsQueueRead(
+func resourceAwsSqsQueueUpdate(
 func resourceAwsSqsQueueDelete(
 func resourceAwsSqsQueueCustomizeDiff(
-func extractNameFromSqsQueueUrl(
 func resourceAwsSqsQueuePolicy(
 func resourceAwsSqsQueuePolicyUpsert(
 func resourceAwsSqsQueuePolicyRead(

@@ -34,6 +34,8 @@ func buildEC2TagSet(
 func baseAWSCognitoIdentityPoolRolesAttachmentConfig(
 func decodeCognitoIdentityProviderID(
 func decodeCognitoResourceServerID(
+func expandCognitoUserPoolCustomSMSSender(
+func flattenCognitoUserPoolCustomSMSSender(
 func resourceAwsCognitoUserPoolUICustomization(
 func resourceAwsCognitoUserPoolUICustomizationPut(
 func resourceAwsCognitoUserPoolUICustomizationRead(
@@ -89,6 +91,10 @@ func expandECSDeploymentCircuitBreaker(
 func flattenECSDeploymentCircuitBreaker(
 func buildFamilyAndRevisionFromARN(
 func getNameFromARN(
+func expandEcsVolumesEFSVolume(
+func expandEcsVolumesEFSVolumeAuthorizationConfig(
+func flattenEFSVolumeConfiguration(
+func flattenEFSVolumeAuthorizationConfig(
 func flattenElasticacheGlobalReplicationGroupPrimaryGroupID(
 func resourceAwsElasticacheReplicationGroupSetPrimaryClusterID(
 func formatReplicationGroupClusterID(

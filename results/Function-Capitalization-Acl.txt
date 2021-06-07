@@ -1,3 +1,4 @@
+func TestAccDataSourceAwsAcmpcaCertificateAuthority_S3ObjectAcl(
 func dataSourceAwsNetworkAcls(
 func dataSourceAwsNetworkAclsRead(
 func TestAccDataSourceAwsNetworkAcls_basic(

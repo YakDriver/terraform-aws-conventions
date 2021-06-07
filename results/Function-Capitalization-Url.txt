@@ -10,5 +10,4 @@ func testAccAWSCloudFormationStackConfig_templateUrl_withParams_withYaml(
 func WebsiteDomainUrl(
 func TestAccAWSSagemakerModel_primaryContainerModelDataUrl(
 func testAccSagemakerPrimaryContainerModelDataUrlConfig(
-func extractNameFromSqsQueueUrl(
 func validateSagemakerModelDataUrl(

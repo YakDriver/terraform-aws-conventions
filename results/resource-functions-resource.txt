@@ -3334,8 +3334,8 @@ func resourceAwsSpotInstanceRequestUpdate(
 func resourceAwsSpotInstanceRequestDelete(
 func resourceAwsSqsQueue(
 func resourceAwsSqsQueueCreate(
-func resourceAwsSqsQueueUpdate(
 func resourceAwsSqsQueueRead(
+func resourceAwsSqsQueueUpdate(
 func resourceAwsSqsQueueDelete(
 func resourceAwsSqsQueueCustomizeDiff(
 func resourceAwsSqsQueuePolicy(

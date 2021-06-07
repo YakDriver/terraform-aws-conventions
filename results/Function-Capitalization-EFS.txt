@@ -4,6 +4,10 @@ func TestAccDataSourceAWSEFSAccessPoint_basic(
 func testAccDataSourceAWSEFSAccessPointConfig(
 func testAccAWSEFSMountTargetConfigByAccessPointId(
 func testAccAWSEFSMountTargetConfigByFileSystemId(
+func expandEcsVolumesEFSVolume(
+func expandEcsVolumesEFSVolumeAuthorizationConfig(
+func flattenEFSVolumeConfiguration(
+func flattenEFSVolumeAuthorizationConfig(
 func TestAccAWSEcsTaskDefinition_withEFSVolumeMinimal(
 func TestAccAWSEcsTaskDefinition_withEFSVolume(
 func TestAccAWSEcsTaskDefinition_withTransitEncryptionEFSVolume(
@@ -62,5 +66,3 @@ func TestResourceAWSEFSMountTarget_hasEmptyMountTargets(
 func testAccAWSEFSMountTargetConfig(
 func testAccAWSEFSMountTargetConfigModified(
 func testAccAWSEFSMountTargetConfigIpAddress(
-func flattenEFSVolumeConfiguration(
-func flattenEFSVolumeAuthorizationConfig(

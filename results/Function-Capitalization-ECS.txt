@@ -4,3 +4,4 @@ func TestAccAWSCodeDeployApp_computePlatform_ECS(
 func TestAccAWSCodeDeployDeploymentGroup_ECS_BlueGreen(
 func expandECSDeploymentCircuitBreaker(
 func flattenECSDeploymentCircuitBreaker(
+func testAccErrorCheckSkipECS(

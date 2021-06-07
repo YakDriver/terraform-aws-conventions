@@ -939,6 +939,11 @@ func testAccAWSCognitoUserPoolConfigSmsConfigurationBase(rName string, externalI
 func testAccAWSCognitoUserPoolConfigAccountRecoverySingle(rName string) string {
 func testAccAWSCognitoUserPoolConfigAccountRecoveryMulti(rName string) string {
 func testAccAWSCognitoUserPoolConfigAccountRecoveryUpdate(rName string) string {
+func testAccAWSCognitoUserPoolConfigLambdaConfigBase(name string) string {
+func testAccAWSCognitoUserPoolLambdaConfigEmailSenderConfig(name string) string {
+func testAccAWSCognitoUserPoolLambdaConfigEmailSenderConfigUpdated(name string) string {
+func testAccAWSCognitoUserPoolLambdaConfigSMSSenderConfig(name string) string {
+func testAccAWSCognitoUserPoolLambdaConfigSMSSenderConfigUpdated(name string) string {
 func testAccAWSConfigConfigurationAggregatorConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAWSConfigConfigurationAggregatorConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccConfigConfigurationRecorderStatusConfig(randInt int, enabled bool) string {
@@ -2823,18 +2828,22 @@ func testAccAWSSpotInstanceRequestTagsConfig2(rName, tagKey1, tagValue1, tagKey2
 func testAccAWSSpotInstanceRequestConfigValidUntil(rName string, validUntil string) string {
 func testAccAWSSpotInstanceRequestConfigVPC(rName string) string {
 func testAccAWSSpotInstanceRequestInterruptConfig(interruptionBehavior string) string {
-func testAccAWSSQSPolicyConfigBasic(rName string) string {
-func testAccAWSSQSConfigWithDefaults(r string) string {
+func testAccAWSSQSPolicyConfig(rName string) string {
+func testAccAWSSQSPolicyConfigUpdated(rName string) string {
+func testAccAWSSQSConfigName(rName string) string {
 func testAccAWSSQSQueueConfigNamePrefix(prefix string) string {
 func testAccAWSSQSQueueConfigNamePrefixFIFOQueue(prefix string) string {
-func testAccAWSSQSConfigWithOverrides(r string) string {
-func testAccAWSSQSConfigWithRedrive(name string) string {
-func testAccAWSSQSConfigWithFIFO(queue string) string {
-func testAccAWSSQSConfigWithFIFOContentBasedDeduplication(queue string) string {
-func testAccAWSSQSConfigWithFIFOExpectError(queue string) string {
-func testAccAWSSQSConfigWithEncryption(queue string) string {
-func testAccAWSSQSConfigWithTags(r string) string {
-func testAccAWSSQSConfigWithTagsChanged(r string) string {
+func testAccAWSSQSConfigTags1(rName, tagKey1, tagValue1 string) string {
+func testAccAWSSQSConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSSQSConfigUpdated(rName string) string {
+func testAccAWSSQSConfigPolicy(rName string) string {
+func testAccAWSSQSConfigRedrivePolicy(rName string) string {
+func testAccAWSSQSConfigFIFOQueue(rName string) string {
+func testAccAWSSQSConfigFIFOQueueContentBasedDeduplication(rName string) string {
+func testAccAWSSQSConfigFIFOQueueHighThroughputMode(rName, deduplicationScope, fifoThroughputLimit string) string {
+func testAccAWSSQSConfigStandardQueueExpectContentBasedDeduplicationError(rName string) string {
+func testAccAWSSQSConfigEncryption(rName, kmsDataKeyReusePeriodSeconds string) string {
+func testAccAWSSQSConfigZeroVisibilityTimeoutSeconds(rName string) string {
 func testAccAWSSSMActivationBasicConfigBase(rName string) string {
 func testAccAWSSSMActivationBasicConfig(rName string, rTag string) string {
 func testAccAWSSSMAssociationBasicConfigWithApplyOnlyAtCronInterval(rName string, applyOnlyAtCronInterval bool) string {
