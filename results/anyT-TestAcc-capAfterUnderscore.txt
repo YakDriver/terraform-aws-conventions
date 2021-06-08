@@ -1453,6 +1453,7 @@ func TestAccAWSEcsService_ManagedTags(
 func TestAccAWSEcsService_PropagateTags(
 func TestAccAWSEcsService_ExecuteCommand(
 func TestAccAWSEcsTaskDefinition_Fargate(
+func TestAccAWSEcsTaskDefinition_Fargate_ephemeralStorage(
 func TestAccAWSEcsTaskDefinition_ExecutionRole(
 func TestAccAWSEcsTaskDefinition_Tags(
 func TestAccAWSEcsTaskDefinition_ProxyConfiguration(

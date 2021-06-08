@@ -3820,6 +3820,7 @@ func testAccAWSEcsTaskDefinition(
 func testAccAWSEcsTaskDefinitionUpdatedVolume(
 func testAccAWSEcsTaskDefinitionArrays(
 func testAccAWSEcsTaskDefinitionFargate(
+func testAccAWSEcsTaskDefinitionFargateEphemeralStorage(
 func testAccAWSEcsTaskDefinitionExecutionRole(
 func testAccAWSEcsTaskDefinitionWithScratchVolume(
 func testAccAWSEcsTaskDefinitionWithDockerVolumes(
@@ -8229,6 +8230,7 @@ func testAccAWSTransferServerConfigBaseVpc(
 func testAccAWSTransferServerConfigBaseLoggingRole(
 func testAccAWSTransferServerConfigBaseApiGateway(
 func testAccAWSTransferServerBasicConfig(
+func testAccAWSTransferServerDomainConfig(
 func testAccAWSTransferServerSecurityPolicyConfig(
 func testAccAWSTransferServerUpdatedConfig(
 func testAccAWSTransferServerApiGatewayIdentityProviderTypeConfig(
@@ -8244,7 +8246,6 @@ func testAccCheckAWSTransferSshKeyExists(
 func testAccCheckAWSTransferSshKeyDestroy(
 func testAccAWSTransferSshKeyConfig_basic(
 func testAccCheckAWSTransferUserExists(
-func testAccCheckAWSTransferUserDisappears(
 func testAccCheckAWSTransferUserDestroy(
 func testAccAWSTransferUserConfig_basic(
 func testAccAWSTransferUserName_validation(
@@ -8253,6 +8254,8 @@ func testAccAWSTransferUserConfig_modify(
 func testAccAWSTransferUserConfig_forceNew(
 func testAccAWSTransferUserConfig_homeDirectoryMappings(
 func testAccAWSTransferUserConfig_homeDirectoryMappingsUpdate(
+func testAccAWSTransferUserConfigPosix(
+func testAccAWSTransferUserConfigPosixUpdated(
 func testAccCheckVolumeAttachmentExists(
 func testAccCheckVolumeAttachmentDestroy(
 func testAccVolumeAttachmentInstanceOnlyConfigBase(

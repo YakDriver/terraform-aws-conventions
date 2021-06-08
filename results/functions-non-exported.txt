@@ -6952,6 +6952,8 @@ func flattenFsxWinVolumeConfiguration(
 func flattenFsxWinVolumeAuthorizationConfig(
 func flattenEcsContainerDefinitions(
 func expandEcsContainerDefinitions(
+func expandEcsTaskDefinitionEphemeralStorage(
+func flattenEcsTaskDefinitionEphemeralStorage(
 func resourceAwsEcsTaskDefinitionMigrateState(
 func migrateEcsTaskDefinitionStateV0toV1(
 func init(
@@ -6969,6 +6971,7 @@ func testAccAWSEcsTaskDefinition(
 func testAccAWSEcsTaskDefinitionUpdatedVolume(
 func testAccAWSEcsTaskDefinitionArrays(
 func testAccAWSEcsTaskDefinitionFargate(
+func testAccAWSEcsTaskDefinitionFargateEphemeralStorage(
 func testAccAWSEcsTaskDefinitionExecutionRole(
 func testAccAWSEcsTaskDefinitionWithScratchVolume(
 func testAccAWSEcsTaskDefinitionWithDockerVolumes(
@@ -15089,6 +15092,7 @@ func testAccAWSTransferServerConfigBaseVpc(
 func testAccAWSTransferServerConfigBaseLoggingRole(
 func testAccAWSTransferServerConfigBaseApiGateway(
 func testAccAWSTransferServerBasicConfig(
+func testAccAWSTransferServerDomainConfig(
 func testAccAWSTransferServerSecurityPolicyConfig(
 func testAccAWSTransferServerUpdatedConfig(
 func testAccAWSTransferServerApiGatewayIdentityProviderTypeConfig(
@@ -15113,11 +15117,11 @@ func resourceAwsTransferUserCreate(
 func resourceAwsTransferUserRead(
 func resourceAwsTransferUserUpdate(
 func resourceAwsTransferUserDelete(
-func waitForTransferUserDeletion(
 func expandAwsTransferHomeDirectoryMappings(
 func flattenAwsTransferHomeDirectoryMappings(
+func expandTransferUserPosixUser(
+func flattenTransferUserPosixUser(
 func testAccCheckAWSTransferUserExists(
-func testAccCheckAWSTransferUserDisappears(
 func testAccCheckAWSTransferUserDestroy(
 func testAccAWSTransferUserConfig_basic(
 func testAccAWSTransferUserName_validation(
@@ -15126,6 +15130,8 @@ func testAccAWSTransferUserConfig_modify(
 func testAccAWSTransferUserConfig_forceNew(
 func testAccAWSTransferUserConfig_homeDirectoryMappings(
 func testAccAWSTransferUserConfig_homeDirectoryMappingsUpdate(
+func testAccAWSTransferUserConfigPosix(
+func testAccAWSTransferUserConfigPosixUpdated(
 func resourceAwsVolumeAttachment(
 func resourceAwsVolumeAttachmentCreate(
 func volumeAttachmentStateRefreshFunc(

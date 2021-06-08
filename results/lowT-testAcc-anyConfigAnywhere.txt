@@ -5136,6 +5136,7 @@ func testAccAWSTransferServerConfigBaseVpc(
 func testAccAWSTransferServerConfigBaseLoggingRole(
 func testAccAWSTransferServerConfigBaseApiGateway(
 func testAccAWSTransferServerBasicConfig(
+func testAccAWSTransferServerDomainConfig(
 func testAccAWSTransferServerSecurityPolicyConfig(
 func testAccAWSTransferServerUpdatedConfig(
 func testAccAWSTransferServerApiGatewayIdentityProviderTypeConfig(
@@ -5154,6 +5155,8 @@ func testAccAWSTransferUserConfig_modify(
 func testAccAWSTransferUserConfig_forceNew(
 func testAccAWSTransferUserConfig_homeDirectoryMappings(
 func testAccAWSTransferUserConfig_homeDirectoryMappingsUpdate(
+func testAccAWSTransferUserConfigPosix(
+func testAccAWSTransferUserConfigPosixUpdated(
 func testAccVolumeAttachmentInstanceOnlyConfigBase(
 func testAccVolumeAttachmentConfigBase(
 func testAccVolumeAttachmentConfig(

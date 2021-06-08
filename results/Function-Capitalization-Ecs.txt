@@ -212,6 +212,8 @@ func expandEcsVolumesFsxWinVolumeAuthorizationConfig(
 func flattenEcsVolumes(
 func flattenEcsContainerDefinitions(
 func expandEcsContainerDefinitions(
+func expandEcsTaskDefinitionEphemeralStorage(
+func flattenEcsTaskDefinitionEphemeralStorage(
 func resourceAwsEcsTaskDefinitionMigrateState(
 func migrateEcsTaskDefinitionStateV0toV1(
 func testSweepEcsTaskDefinitions(
@@ -234,6 +236,7 @@ func TestAccAWSEcsTaskDefinition_constraint(
 func TestAccAWSEcsTaskDefinition_changeVolumesForcesNewResource(
 func TestAccAWSEcsTaskDefinition_arrays(
 func TestAccAWSEcsTaskDefinition_Fargate(
+func TestAccAWSEcsTaskDefinition_Fargate_ephemeralStorage(
 func TestAccAWSEcsTaskDefinition_ExecutionRole(
 func TestAccAWSEcsTaskDefinition_disappears(
 func TestAccAWSEcsTaskDefinition_Tags(
@@ -250,6 +253,7 @@ func testAccAWSEcsTaskDefinition(
 func testAccAWSEcsTaskDefinitionUpdatedVolume(
 func testAccAWSEcsTaskDefinitionArrays(
 func testAccAWSEcsTaskDefinitionFargate(
+func testAccAWSEcsTaskDefinitionFargateEphemeralStorage(
 func testAccAWSEcsTaskDefinitionExecutionRole(
 func testAccAWSEcsTaskDefinitionWithScratchVolume(
 func testAccAWSEcsTaskDefinitionWithDockerVolumes(

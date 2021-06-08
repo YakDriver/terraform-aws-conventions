@@ -127,6 +127,7 @@ const testAccAWSDefaultNetworkConfig_basicIpv6Vpc =
 const testAccAWSDefaultSecurityGroupConfig_Vpc =
 const testAccAWSDefaultSecurityGroupConfig_Vpc_empty =
 const testAccAWSDefaultVpcDhcpOptionsConfigBasic =
+const testAccAWSDefaultVpcDhcpOptionsConfigOwner =
 const testAccAWSDefaultVpcConfigBasic =
 const testAccDirectoryServiceDirectoryConfigBase =
 const testAccDirectoryServiceDirectoryConfig =

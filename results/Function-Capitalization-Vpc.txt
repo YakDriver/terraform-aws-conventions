@@ -181,6 +181,7 @@ func resourceAwsDefaultVpcDhcpOptions(
 func resourceAwsDefaultVpcDhcpOptionsCreate(
 func resourceAwsDefaultVpcDhcpOptionsDelete(
 func TestAccAWSDefaultVpcDhcpOptions_basic(
+func TestAccAWSDefaultVpcDhcpOptions_owner(
 func testAccCheckAWSDefaultVpcDhcpOptionsDestroy(
 func resourceAwsDefaultVpc(
 func resourceAwsDefaultVpcCreate(

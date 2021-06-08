@@ -3403,6 +3403,7 @@ func testAccAWSDefaultSubnetConfigBasic(
 func testAccAWSDefaultSubnetConfigPublicIp(
 func testAccAWSDefaultSubnetConfigNoPublicIp(
 func TestAccAWSDefaultVpcDhcpOptions_basic(
+func TestAccAWSDefaultVpcDhcpOptions_owner(
 func testAccCheckAWSDefaultVpcDhcpOptionsDestroy(
 func TestAccAWSDefaultVpc_basic(
 func testAccCheckAWSDefaultVpcDestroy(
@@ -4067,6 +4068,7 @@ func TestAccAWSEcsTaskDefinition_constraint(
 func TestAccAWSEcsTaskDefinition_changeVolumesForcesNewResource(
 func TestAccAWSEcsTaskDefinition_arrays(
 func TestAccAWSEcsTaskDefinition_Fargate(
+func TestAccAWSEcsTaskDefinition_Fargate_ephemeralStorage(
 func TestAccAWSEcsTaskDefinition_ExecutionRole(
 func TestAccAWSEcsTaskDefinition_disappears(
 func TestAccAWSEcsTaskDefinition_Tags(
@@ -4083,6 +4085,7 @@ func testAccAWSEcsTaskDefinition(
 func testAccAWSEcsTaskDefinitionUpdatedVolume(
 func testAccAWSEcsTaskDefinitionArrays(
 func testAccAWSEcsTaskDefinitionFargate(
+func testAccAWSEcsTaskDefinitionFargateEphemeralStorage(
 func testAccAWSEcsTaskDefinitionExecutionRole(
 func testAccAWSEcsTaskDefinitionWithScratchVolume(
 func testAccAWSEcsTaskDefinitionWithDockerVolumes(
@@ -9119,6 +9122,7 @@ func testAccAWSTimestreamWriteTableConfigRetentionProperties(
 func testAccAWSTimestreamWriteTableConfigTags1(
 func testAccAWSTimestreamWriteTableConfigTags2(
 func TestAccAWSTransferServer_basic(
+func TestAccAWSTransferServer_domain(
 func TestAccAWSTransferServer_disappears(
 func TestAccAWSTransferServer_securityPolicy(
 func TestAccAWSTransferServer_vpc(
@@ -9135,6 +9139,7 @@ func testAccAWSTransferServerConfigBaseVpc(
 func testAccAWSTransferServerConfigBaseLoggingRole(
 func testAccAWSTransferServerConfigBaseApiGateway(
 func testAccAWSTransferServerBasicConfig(
+func testAccAWSTransferServerDomainConfig(
 func testAccAWSTransferServerSecurityPolicyConfig(
 func testAccAWSTransferServerUpdatedConfig(
 func testAccAWSTransferServerApiGatewayIdentityProviderTypeConfig(
@@ -9151,12 +9156,12 @@ func testAccCheckAWSTransferSshKeyExists(
 func testAccCheckAWSTransferSshKeyDestroy(
 func testAccAWSTransferSshKeyConfig_basic(
 func TestAccAWSTransferUser_basic(
+func TestAccAWSTransferUser_posix(
 func TestAccAWSTransferUser_modifyWithOptions(
 func TestAccAWSTransferUser_disappears(
 func TestAccAWSTransferUser_UserName_Validation(
 func TestAccAWSTransferUser_homeDirectoryMappings(
 func testAccCheckAWSTransferUserExists(
-func testAccCheckAWSTransferUserDisappears(
 func testAccCheckAWSTransferUserDestroy(
 func testAccAWSTransferUserConfig_basic(
 func testAccAWSTransferUserName_validation(
@@ -9165,6 +9170,8 @@ func testAccAWSTransferUserConfig_modify(
 func testAccAWSTransferUserConfig_forceNew(
 func testAccAWSTransferUserConfig_homeDirectoryMappings(
 func testAccAWSTransferUserConfig_homeDirectoryMappingsUpdate(
+func testAccAWSTransferUserConfigPosix(
+func testAccAWSTransferUserConfigPosixUpdated(
 func TestAccAWSVolumeAttachment_basic(
 func TestAccAWSVolumeAttachment_skipDestroy(
 func TestAccAWSVolumeAttachment_attachStopped(

@@ -2292,6 +2292,7 @@ func testAccAWSDefaultSecurityGroupConfig_Classic(
 func TestAccAWSDefaultSubnet_basic(
 func TestAccAWSDefaultSubnet_publicIp(
 func TestAccAWSDefaultVpcDhcpOptions_basic(
+func TestAccAWSDefaultVpcDhcpOptions_owner(
 func TestAccAWSDefaultVpc_basic(
 func TestAccAWSDeviceFarmProject_basic(
 func TestAccAWSDeviceFarmProject_timeout(
@@ -5715,6 +5716,7 @@ func TestAccAWSTimestreamWriteTable_disappears(
 func TestAccAWSTimestreamWriteTable_RetentionProperties(
 func TestAccAWSTimestreamWriteTable_Tags(
 func TestAccAWSTransferServer_basic(
+func TestAccAWSTransferServer_domain(
 func TestAccAWSTransferServer_disappears(
 func TestAccAWSTransferServer_securityPolicy(
 func TestAccAWSTransferServer_vpc(
@@ -5727,6 +5729,7 @@ func TestAccAWSTransferServer_vpcEndpointId(
 func TestAccAWSTransferSshKey_basic(
 func testAccAWSTransferSshKeyConfig_basic(
 func TestAccAWSTransferUser_basic(
+func TestAccAWSTransferUser_posix(
 func TestAccAWSTransferUser_modifyWithOptions(
 func TestAccAWSTransferUser_disappears(
 func TestAccAWSTransferUser_homeDirectoryMappings(

@@ -914,6 +914,8 @@ func flattenFsxWinVolumeConfiguration(
 func flattenFsxWinVolumeAuthorizationConfig(
 func flattenEcsContainerDefinitions(
 func expandEcsContainerDefinitions(
+func expandEcsTaskDefinitionEphemeralStorage(
+func flattenEcsTaskDefinitionEphemeralStorage(
 func migrateEcsTaskDefinitionStateV0toV1(
 func init(
 func hasEmptyAccessPoints(
@@ -2642,9 +2644,10 @@ func startTransferServer(
 func updateTransferServer(
 func init(
 func decodeTransferSshKeyId(
-func waitForTransferUserDeletion(
 func expandAwsTransferHomeDirectoryMappings(
 func flattenAwsTransferHomeDirectoryMappings(
+func expandTransferUserPosixUser(
+func flattenTransferUserPosixUser(
 func volumeAttachmentStateRefreshFunc(
 func volumeAttachmentID(
 func findVPCsByDHCPOptionsID(

@@ -59,6 +59,7 @@ const testAccAWSCloudFrontOriginAccessIdentityNoCommentConfig =
 const testAccAWSCloudWatchEventRuleConfigNameGenerated =
 const testAccAWSDBInstanceBaseConfig =
 const testAccAWSDefaultVpcDhcpOptionsConfigBasic =
+const testAccAWSDefaultVpcDhcpOptionsConfigOwner =
 const testAccAWSDefaultVpcConfigBasic =
 const testAccDirectoryServiceDirectoryConfigBase =
 const testAccDirectoryServiceDirectoryConfig =

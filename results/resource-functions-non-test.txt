@@ -2326,6 +2326,8 @@ func flattenFsxWinVolumeConfiguration(
 func flattenFsxWinVolumeAuthorizationConfig(
 func flattenEcsContainerDefinitions(
 func expandEcsContainerDefinitions(
+func expandEcsTaskDefinitionEphemeralStorage(
+func flattenEcsTaskDefinitionEphemeralStorage(
 func resourceAwsEcsTaskDefinitionMigrateState(
 func migrateEcsTaskDefinitionStateV0toV1(
 func init(
@@ -6070,9 +6072,10 @@ func resourceAwsTransferUserCreate(
 func resourceAwsTransferUserRead(
 func resourceAwsTransferUserUpdate(
 func resourceAwsTransferUserDelete(
-func waitForTransferUserDeletion(
 func expandAwsTransferHomeDirectoryMappings(
 func flattenAwsTransferHomeDirectoryMappings(
+func expandTransferUserPosixUser(
+func flattenTransferUserPosixUser(
 func resourceAwsVolumeAttachment(
 func resourceAwsVolumeAttachmentCreate(
 func volumeAttachmentStateRefreshFunc(
