@@ -433,6 +433,8 @@ func TestAccAWSElbServiceAccount_basic(
 func TestAccAWSElbServiceAccount_Region(
 func TestAccDataSourceAWSELB_basic(
 func testAccDataSourceAWSELBConfigBasic(
+func TestAccAWSDataGlobalAcceleratorAccelerator_basic(
+func testAccAWSGlobalAcceleratorAcceleratorConfigWithDataSource(
 func TestAccDataSourceAwsGlueConnection_basic(
 func testAccDataSourceAwsGlueConnectionCheck(
 func testAccDataSourceAwsGlueConnectionConfig(

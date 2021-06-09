@@ -176,6 +176,7 @@ func testAccAwsElasticBeanstalkApplicationDataSourceConfig_Basic(rName string) s
 func testAccAWSElasticsearchDomainConfigWithDataSource(rInt int) string {
 func testAccAWSElasticsearchDomainConfigAdvancedWithDataSource(rInt int) string {
 func testAccDataSourceAWSELBConfigBasic(rName, testName string) string {
+func testAccAWSGlobalAcceleratorAcceleratorConfigWithDataSource(rName string) string {
 func testAccDataSourceAwsGlueConnectionConfig(rName string) string {
 func testAccDataSourceAwsGlueDataCatalogEncryptionSettingsConfig() string {
 func testAccDataSourceAWSGlueScriptConfigPython() string {

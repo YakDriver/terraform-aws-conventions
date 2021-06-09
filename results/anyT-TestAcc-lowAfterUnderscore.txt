@@ -152,6 +152,7 @@ func TestAccAWSDataElasticsearchDomain_advanced(
 func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
 func TestAccDataSourceAWSELB_basic(
+func TestAccAWSDataGlobalAcceleratorAccelerator_basic(
 func TestAccDataSourceAwsGlueConnection_basic(
 func TestAccDataSourceAwsGlueDataCatalogEncryptionSettings_basic(
 func testAccAWSGuarddutyDetectorDataSource_basic(

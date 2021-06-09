@@ -426,6 +426,8 @@ func dataSourceAwsElbHostedZoneId(
 func dataSourceAwsElbHostedZoneIdRead(
 func dataSourceAwsElbServiceAccount(
 func dataSourceAwsElbServiceAccountRead(
+func dataSourceAwsGlobalAcceleratorAccelerator(
+func dataSourceAwsGlobalAcceleratorAcceleratorRead(
 func dataSourceAwsGlueConnection(
 func dataSourceAwsGlueConnectionRead(
 func TestAccDataSourceAwsGlueConnection_basic(

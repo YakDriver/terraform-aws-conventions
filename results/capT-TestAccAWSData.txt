@@ -5,6 +5,7 @@ func TestAccAWSDataSourceElasticBeanstalkHostedZone_basic(
 func TestAccAWSDataSourceElasticBeanstalkHostedZone_Region(
 func TestAccAWSDataElasticsearchDomain_basic(
 func TestAccAWSDataElasticsearchDomain_advanced(
+func TestAccAWSDataGlobalAcceleratorAccelerator_basic(
 func TestAccAWSDataSourceIAMGroup_basic(
 func TestAccAWSDataSourceIAMGroup_users(
 func TestAccAWSDataSourceIAMInstanceProfile_basic(

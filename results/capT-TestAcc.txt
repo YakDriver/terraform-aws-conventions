@@ -216,6 +216,7 @@ func TestAccAWSElbHostedZoneId_basic(
 func TestAccAWSElbServiceAccount_basic(
 func TestAccAWSElbServiceAccount_Region(
 func TestAccDataSourceAWSELB_basic(
+func TestAccAWSDataGlobalAcceleratorAccelerator_basic(
 func TestAccDataSourceAwsGlueConnection_basic(
 func TestAccDataSourceAwsGlueDataCatalogEncryptionSettings_basic(
 func TestAccDataSourceAWSGlueScript_Language_Python(

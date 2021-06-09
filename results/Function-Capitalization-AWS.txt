@@ -206,6 +206,8 @@ func TestAccAWSElbServiceAccount_basic(
 func TestAccAWSElbServiceAccount_Region(
 func TestAccDataSourceAWSELB_basic(
 func testAccDataSourceAWSELBConfigBasic(
+func TestAccAWSDataGlobalAcceleratorAccelerator_basic(
+func testAccAWSGlobalAcceleratorAcceleratorConfigWithDataSource(
 func TestAccDataSourceAWSGlueScript_Language_Python(
 func TestAccDataSourceAWSGlueScript_Language_Scala(
 func testAccDataSourceAWSGlueScriptConfigPython(

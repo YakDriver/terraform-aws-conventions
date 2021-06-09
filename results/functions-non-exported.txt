@@ -620,6 +620,9 @@ func dataSourceAwsElbHostedZoneIdRead(
 func dataSourceAwsElbServiceAccount(
 func dataSourceAwsElbServiceAccountRead(
 func testAccDataSourceAWSELBConfigBasic(
+func dataSourceAwsGlobalAcceleratorAccelerator(
+func dataSourceAwsGlobalAcceleratorAcceleratorRead(
+func testAccAWSGlobalAcceleratorAcceleratorConfigWithDataSource(
 func dataSourceAwsGlueConnection(
 func dataSourceAwsGlueConnectionRead(
 func testAccDataSourceAwsGlueConnectionCheck(
