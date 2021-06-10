@@ -234,6 +234,11 @@ func testAccAWSAPIGatewayV2ApiDataSourceConfigWebSocket(
 func dataSourceAwsApiGatewayVpcLink(
 func dataSourceAwsApiGatewayVpcLinkRead(
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(
+func dataSourceAwsAppmeshMesh(
+func dataSourceAwsAppmeshMeshRead(
+func testAccCheckAwsAppmeshMeshDataSourceConfig(
+func testAccCheckAwsAppmeshMeshDataSourceConfig_meshOwner(
+func testAccCheckAwsAppmeshMeshDataSourceConfig_specAndTagsSet(
 func dataSourceAwsArn(
 func dataSourceAwsArnRead(
 func testAccDataSourceAwsArn(
@@ -1185,7 +1190,9 @@ func dataSourceAwsServiceQuotasServiceRead(
 func dataSourceAwsServiceQuotasServiceQuota(
 func dataSourceAwsServiceQuotasServiceQuotaRead(
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(
+func testAccAwsServiceQuotasServiceQuotaDataSourceConfig_PermissionError_QuotaCode(
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaName(
+func testAccAwsServiceQuotasServiceQuotaDataSourceConfig_PermissionError_QuotaName(
 func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(
 func dataSourceAwsSfnActivity(
 func dataSourceAwsSfnActivityRead(
@@ -4786,6 +4793,7 @@ func expandCognitoUserPoolCustomSMSSender(
 func flattenCognitoUserPoolCustomSMSSender(
 func expandCognitoUserPoolCustomEmailSender(
 func flattenCognitoUserPoolCustomEmailSender(
+func expandCognitoUserPoolEmailConfig(
 func init(
 func testSweepCognitoUserPools(
 func testAccErrorCheckSkipCognitoIdentityProvider(
@@ -5053,8 +5061,18 @@ func testAccCheckConfigRemediationConfigurationRecreated(
 func resourceAwsCurReportDefinition(
 func resourceAwsCurReportDefinitionCreate(
 func resourceAwsCurReportDefinitionRead(
+func resourceAwsCurReportDefinitionUpdate(
 func resourceAwsCurReportDefinitionDelete(
 func checkAwsCurReportDefinitionPropertyCombination(
+func init(
+func testSweepCurReportDefinitions(
+func testAccAwsCurReportDefinition_basic(
+func testAccAwsCurReportDefinition_textOrCsv(
+func testAccAwsCurReportDefinition_parquet(
+func testAccAwsCurReportDefinition_athena(
+func testAccAwsCurReportDefinition_refresh(
+func testAccAwsCurReportDefinition_overwrite(
+func testAccAwsCurReportDefinition_disappears(
 func testAccCheckAwsCurReportDefinitionDestroy(
 func testAccCheckAwsCurReportDefinitionExists(
 func testAccAwsCurReportDefinitionConfig_basic(
@@ -7326,6 +7344,7 @@ func deleteElasticacheGlobalReplicationGroup(
 func flattenElasticacheGlobalReplicationGroupPrimaryGroupID(
 func init(
 func testSweepElasticacheGlobalReplicationGroups(
+func disassociateMembers(
 func testAccCheckAWSElasticacheGlobalReplicationGroupExists(
 func testAccCheckAWSElasticacheGlobalReplicationGroupDestroy(
 func testAccPreCheckAWSElasticacheGlobalReplicationGroup(
@@ -11287,6 +11306,7 @@ func init(
 func testSweepNatGateways(
 func testAccCheckNatGatewayDestroy(
 func testAccCheckNatGatewayExists(
+func testAccNatGatewayConfigConnectivityType(
 func testAccNatGatewayConfigTags1(
 func testAccNatGatewayConfigTags2(
 func resourceAwsNeptuneCluster(
@@ -14056,6 +14076,7 @@ func resourceAwsServiceQuotasServiceQuotaParseID(
 func testAccPreCheckAWSServiceQuotas(
 func testAccAwsServiceQuotasServiceQuotaConfigSameValue(
 func testAccAwsServiceQuotasServiceQuotaConfigValue(
+func testAccAwsServiceQuotasServiceQuotaConfig_PermissionError(
 func resourceAwsSesActiveReceiptRuleSet(
 func resourceAwsSesActiveReceiptRuleSetUpdate(
 func resourceAwsSesActiveReceiptRuleSetRead(

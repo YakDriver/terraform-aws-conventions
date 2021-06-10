@@ -36,6 +36,9 @@ func TestAccAWSAPIGatewayV2ApiDataSource_Http(
 func TestAccAWSAPIGatewayV2ApiDataSource_WebSocket(
 func testAccAWSAPIGatewayV2ApiDataSourceConfigHttp(
 func testAccAWSAPIGatewayV2ApiDataSourceConfigWebSocket(
+func TestAccAWSAppmeshMeshDataSource_basic(
+func TestAccAWSAppmeshMeshDataSource_meshOwner(
+func TestAccAWSAppmeshMeshDataSource_specAndTagsSet(
 func TestAccAWSAutoscalingGroups_basic(
 func TestAccAWSAvailabilityZones_basic(
 func TestAccAWSAvailabilityZones_AllAvailabilityZones(
@@ -7236,6 +7239,7 @@ func testAccAWSMwaaEnvironmentFullConfig(
 func testAccAWSMwaaEnvironmentPluginsS3ObjectVersionConfig(
 func NGStateRefreshFunc(
 func TestAccAWSNatGateway_basic(
+func TestAccAWSNatGateway_ConnectivityType_Private(
 func TestAccAWSNatGateway_tags(
 func TestAccAWSNeptuneClusterInstance_basic(
 func TestAccAWSNeptuneClusterInstance_withaz(

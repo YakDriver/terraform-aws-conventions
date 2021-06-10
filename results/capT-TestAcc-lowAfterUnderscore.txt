@@ -14,6 +14,9 @@ func TestAccDataSourceAwsApiGatewayDomainName_basic(
 func TestAccDataSourceAwsApiGatewayResource_basic(
 func TestAccDataSourceAwsApiGatewayRestApi_basic(
 func TestAccDataSourceAwsApiGatewayVpcLink_basic(
+func TestAccAWSAppmeshMeshDataSource_basic(
+func TestAccAWSAppmeshMeshDataSource_meshOwner(
+func TestAccAWSAppmeshMeshDataSource_specAndTagsSet(
 func TestAccDataSourceAwsArn_basic(
 func TestAccAWSAutoscalingGroups_basic(
 func TestAccAwsAutoScalingGroupDataSource_basic(
@@ -976,12 +979,7 @@ func TestAccAWSConfigConfigurationAggregator_switch(
 func TestAccAWSConfigConfigurationAggregator_tags(
 func TestAccAWSConfigConfigurationAggregator_disappears(
 func TestAccAWSConfig_serial(
-func TestAccAwsCurReportDefinition_basic(
-func TestAccAwsCurReportDefinition_textOrCsv(
-func TestAccAwsCurReportDefinition_parquet(
-func TestAccAwsCurReportDefinition_athena(
-func TestAccAwsCurReportDefinition_refresh(
-func TestAccAwsCurReportDefinition_overwrite(
+func TestAccAwsCur_serial(
 func TestAccAWSCustomerGateway_basic(
 func TestAccAWSCustomerGateway_tags(
 func TestAccAWSCustomerGateway_similarAlreadyExists(

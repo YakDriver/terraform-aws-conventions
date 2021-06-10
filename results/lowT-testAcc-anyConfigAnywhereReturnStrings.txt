@@ -23,6 +23,9 @@ func testAccAWSAPIGatewayV2ApisDataSourceConfigTags(rName1, rName2 string) strin
 func testAccAWSAPIGatewayV2ApiDataSourceConfigHttp(rName string) string {
 func testAccAWSAPIGatewayV2ApiDataSourceConfigWebSocket(rName string) string {
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(r string) string {
+func testAccCheckAwsAppmeshMeshDataSourceConfig(rName string) string {
+func testAccCheckAwsAppmeshMeshDataSourceConfig_meshOwner(rName string) string {
+func testAccCheckAwsAppmeshMeshDataSourceConfig_specAndTagsSet(rName string) string {
 func testAccDataSourceAwsArnConfig(arn string) string {
 func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(rInt1, rInt2, rInt3 int) string {
@@ -431,7 +434,9 @@ func testAccAWSServiceCatalogConstraintDataSourceConfig_basic(rName, description
 func testAccCheckAwsServiceDiscoveryPrivateDnsNamespaceConfig(rName string) string {
 func testAccCheckAwsServiceDiscoveryPublicDnsNamespaceConfig(rName string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaCode(serviceCode, quotaCode string) string {
+func testAccAwsServiceQuotasServiceQuotaDataSourceConfig_PermissionError_QuotaCode(serviceCode, quotaCode string) string {
 func testAccAwsServiceQuotasServiceQuotaDataSourceConfigQuotaName(serviceCode, quotaName string) string {
+func testAccAwsServiceQuotasServiceQuotaDataSourceConfig_PermissionError_QuotaName(serviceCode, quotaName string) string {
 func testAccAwsServiceQuotasServiceDataSourceConfigServiceName(serviceName string) string {
 func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityArn(rName string) string {
 func testAccCheckAWSStepFunctionsActivityDataSourceConfig_ActivityName(rName string) string {
@@ -1736,7 +1741,7 @@ func testAccConfigOrganizationManagedRuleConfigRuleIdentifier(rName, ruleIdentif
 func testAccConfigOrganizationManagedRuleConfigTagKeyScope(rName, tagKeyScope string) string {
 func testAccConfigOrganizationManagedRuleConfigTagValueScope(rName, tagValueScope string) string {
 func testAccConfigRemediationConfigurationConfig(namePrefix, sseAlgorithm string, randInt int) string {
-func testAccAwsCurReportDefinitionConfig_basic(reportName string, bucketName string) string {
+func testAccAwsCurReportDefinitionConfig_basic(reportName, bucketName, prefix string) string {
 func testAccAwsCurReportDefinitionConfig_additional(reportName string, bucketName string, bucketPrefix string, format string, compression string, additionalArtifacts []string, refreshClosedReports bool, reportVersioning string) string {
 func testAccCustomerGatewayConfig(rBgpAsn int) string {
 func testAccCustomerGatewayConfigTags1(rBgpAsn int, tagKey1, tagValue1 string) string {
@@ -3738,6 +3743,7 @@ func testAccAWSMwaaEnvironmentAirflowConfigurationOptionsConfig(rName, retries, 
 func testAccAWSMwaaEnvironmentLoggingConfigurationConfig(rName, logEnabled, logLevel string) string {
 func testAccAWSMwaaEnvironmentFullConfig(rName string) string {
 func testAccAWSMwaaEnvironmentPluginsS3ObjectVersionConfig(rName, content string) string {
+func testAccNatGatewayConfigConnectivityType(connectivityType string) string {
 func testAccNatGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccNatGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSNeptuneClusterInstanceConfig(instanceName string, n int) string {
@@ -4577,6 +4583,7 @@ func testAccServiceDiscoveryServiceConfigTags1(rName, tagKey1, tagValue1 string)
 func testAccServiceDiscoveryServiceConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigSameValue(quotaCode, serviceCode string) string {
 func testAccAwsServiceQuotasServiceQuotaConfigValue(quotaCode, serviceCode, value string) string {
+func testAccAwsServiceQuotasServiceQuotaConfig_PermissionError(serviceCode, quotaCode string) string {
 func testAccAWSSESActiveReceiptRuleSetConfig(name string) string {
 func testAccAWSSESConfigurationSetBasicConfig(rName string) string {
 func testAccAWSSESConfigurationSetSendingConfig(rName string, enabled bool) string {

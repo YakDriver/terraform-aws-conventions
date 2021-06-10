@@ -20,6 +20,7 @@ func testAccAWSAPIGatewayV2ApisDataSourceConfigTags(rName1, rName2 string) strin
 func testAccAWSAPIGatewayV2ApiDataSourceConfigHttp(rName string) string {
 func testAccAWSAPIGatewayV2ApiDataSourceConfigWebSocket(rName string) string {
 func testAccDataSourceAwsApiGatewayVpcLinkConfig(r string) string {
+func testAccCheckAwsAppmeshMeshDataSourceConfig(rName string) string {
 func testAccDataSourceAwsArnConfig(arn string) string {
 func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(rInt1, rInt2, rInt3 int) string {
@@ -2180,6 +2181,7 @@ func testAccAWSMwaaEnvironmentAirflowConfigurationOptionsConfig(rName, retries, 
 func testAccAWSMwaaEnvironmentLoggingConfigurationConfig(rName, logEnabled, logLevel string) string {
 func testAccAWSMwaaEnvironmentFullConfig(rName string) string {
 func testAccAWSMwaaEnvironmentPluginsS3ObjectVersionConfig(rName, content string) string {
+func testAccNatGatewayConfigConnectivityType(connectivityType string) string {
 func testAccNatGatewayConfigTags1(tagKey1, tagValue1 string) string {
 func testAccNatGatewayConfigTags2(tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAWSNeptuneClusterInstanceConfig(instanceName string, n int) string {

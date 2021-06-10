@@ -14,9 +14,11 @@ func resourceAwsNatGatewayUpdate(
 func resourceAwsNatGatewayDelete(
 func testSweepNatGateways(
 func TestAccAWSNatGateway_basic(
+func TestAccAWSNatGateway_ConnectivityType_Private(
 func TestAccAWSNatGateway_tags(
 func testAccCheckNatGatewayDestroy(
 func testAccCheckNatGatewayExists(
+func testAccNatGatewayConfigConnectivityType(
 func testAccNatGatewayConfigTags1(
 func testAccNatGatewayConfigTags2(
 func TestAccAWSRouteTable_IPv4_To_NatGateway(

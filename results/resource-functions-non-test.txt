@@ -1380,6 +1380,7 @@ func expandCognitoUserPoolCustomSMSSender(
 func flattenCognitoUserPoolCustomSMSSender(
 func expandCognitoUserPoolCustomEmailSender(
 func flattenCognitoUserPoolCustomEmailSender(
+func expandCognitoUserPoolEmailConfig(
 func init(
 func resourceAwsCognitoUserPoolUICustomization(
 func resourceAwsCognitoUserPoolUICustomizationPut(
@@ -1443,8 +1444,10 @@ func resourceAwsConfigRemediationConfigurationDelete(
 func resourceAwsCurReportDefinition(
 func resourceAwsCurReportDefinitionCreate(
 func resourceAwsCurReportDefinitionRead(
+func resourceAwsCurReportDefinitionUpdate(
 func resourceAwsCurReportDefinitionDelete(
 func checkAwsCurReportDefinitionPropertyCombination(
+func init(
 func resourceAwsCustomerGateway(
 func resourceAwsCustomerGatewayCreate(
 func customerGatewayRefreshFunc(
@@ -2477,6 +2480,7 @@ func resourceAwsElasticacheGlobalReplicationGroupDelete(
 func deleteElasticacheGlobalReplicationGroup(
 func flattenElasticacheGlobalReplicationGroupPrimaryGroupID(
 func init(
+func disassociateMembers(
 func resourceAwsElasticacheParameterGroup(
 func resourceAwsElasticacheParameterGroupCreate(
 func resourceAwsElasticacheParameterGroupRead(
