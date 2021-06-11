@@ -599,6 +599,8 @@ func testAccAthenaWorkGroupConfigState(rName, state string) string {
 func testAccAthenaWorkGroupConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccAthenaWorkGroupConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
 func testAccAthenaWorkGroupConfigForceDestroy(rName, dbName string) string {
+func testAccAWSAutoScalingGroupConfigNameGenerated() string {
+func testAccAWSAutoScalingGroupConfigNamePrefix(namePrefix string) string {
 func testAccAWSAutoScalingGroupConfig(name string) string {
 func testAccAWSAutoScalingGroupConfigUpdate(name string) string {
 func testAccAWSAutoScalingGroupConfigWithLoadBalancer() string {
@@ -811,6 +813,7 @@ func testAccAWSCloudWatchEventTargetConfigMissingTargetId(ruleName, snsTopicName
 func testAccAWSCloudWatchEventTargetConfigSsmDocument(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigHttp(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigEcs(rName string) string {
+func testAccAWSCloudWatchEventTargetConfigEcsWithBlankLaunchType(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigEcsWithBlankTaskCount(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigBatch(rName string) string {
 func testAccAWSCloudWatchEventTargetConfigKinesis(rName string) string {
@@ -1024,7 +1027,7 @@ func testAccAWSDataSyncLocationS3ConfigStorageClass(rName string) string {
 func testAccAWSDataSyncLocationS3ConfigTags1(rName, key1, value1 string) string {
 func testAccAWSDataSyncLocationS3ConfigTags2(rName, key1, value1, key2, value2 string) string {
 func testAccAWSDataSyncLocationSmbConfigBase(rName string) string {
-func testAccAWSDataSyncLocationSmbConfig(rName string) string {
+func testAccAWSDataSyncLocationSmbConfig(rName, dir string) string {
 func testAccAWSDataSyncLocationSmbConfigTags1(rName, key1, value1 string) string {
 func testAccAWSDataSyncLocationSmbConfigTags2(rName, key1, value1, key2, value2 string) string {
 func testAccAWSDataSyncTaskConfigDestinationLocationS3Base(rName string) string {
@@ -2057,8 +2060,8 @@ func testAccAWSLaunchConfigurationConfigWithEncryptedRootBlockDevice(rInt int) s
 func testAccAWSLaunchConfigurationConfigMetadataOptions(rName string) string {
 func testAccAWSLaunchConfigurationConfig() string {
 func testAccAWSLaunchConfigurationWithSpotPriceConfig() string {
-func testAccAWSLaunchConfigurationNoNameConfig() string {
-func testAccAWSLaunchConfigurationPrefixNameConfig() string {
+func testAccAWSLaunchConfigurationConfigNameGenerated() string {
+func testAccAWSLaunchConfigurationConfigNamePrefix(namePrefix string) string {
 func testAccAWSLaunchConfigurationWithEncryption() string {
 func testAccAWSLaunchConfigurationWithGP3() string {
 func testAccAWSLaunchConfigurationWithEncryptionUpdated() string {
