@@ -38,6 +38,8 @@ func testAccDataSourceAwsApiGatewayVpcLinkConfig(
 func testAccCheckAwsAppmeshMeshDataSourceConfig(
 func testAccCheckAwsAppmeshMeshDataSourceConfig_meshOwner(
 func testAccCheckAwsAppmeshMeshDataSourceConfig_specAndTagsSet(
+func testAccCheckAwsAppmeshVirtualServiceDataSourceConfig_virtualNode(
+func testAccCheckAwsAppmeshVirtualServiceDataSourceConfig_virtualRouter(
 func testAccDataSourceAwsArn(
 func testAccDataSourceAwsArnConfig(
 func testAccCheckAwsAutoscalingGroups(
@@ -1867,6 +1869,10 @@ func testAccBatchJobQueueConfigPriority(
 func testAccBatchJobQueueConfigState(
 func testAccBatchJobQueueConfigTags1(
 func testAccBatchJobQueueConfigTags2(
+func testSweepBudgetsBudgetActionss(
+func testAccAWSBudgetsBudgetActionExists(
+func testAccAWSBudgetsBudgetActionDestroy(
+func testAccAWSBudgetsBudgetActionConfigBasic(
 func testSweepBudgetsBudgets(
 func testAccAWSBudgetsBudgetExists(
 func testAccAWSBudgetsBudgetCheckTimePeriod(
@@ -2858,6 +2864,7 @@ func testAccCheckAWSDataSyncLocationNfsDisappears(
 func testAccCheckAWSDataSyncLocationNfsNotRecreated(
 func testAccAWSDataSyncLocationNfsConfigBase(
 func testAccAWSDataSyncLocationNfsConfig(
+func testAccAWSDataSyncLocationNfsConfigMountOptions(
 func testAccAWSDataSyncLocationNfsConfigAgentArnsMultiple(
 func testAccAWSDataSyncLocationNfsConfigSubdirectory(
 func testAccAWSDataSyncLocationNfsConfigTags1(
@@ -3756,7 +3763,6 @@ func testAccAWSEcsCapacityProviderConfigTags2(
 func testSweepEcsClusters(
 func testAccCheckAWSEcsClusterDestroy(
 func testAccCheckAWSEcsClusterExists(
-func testAccCheckAWSEcsClusterDisappears(
 func testAccAWSEcsClusterConfig(
 func testAccAWSEcsClusterConfigTags1(
 func testAccAWSEcsClusterCapacityProviderConfig(
@@ -3770,7 +3776,7 @@ func testAccAWSEcsClusterCapacityProvidersFargateNoStrategy(
 func testAccAWSEcsClusterCapacityProvidersFargateSpotNoStrategy(
 func testAccAWSEcsClusterConfigTags2(
 func testAccAWSEcsClusterConfigContainerInsights(
-func testAccAWSEcsClusterConfigContainerInsightsDisable(
+func testAccAWSEcsClusterConfiguationConfig(
 func testSweepEcsServices(
 func testAccCheckAWSEcsServiceDestroy(
 func testAccCheckAWSEcsServiceExists(

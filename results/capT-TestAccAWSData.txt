@@ -55,6 +55,7 @@ func TestAccAWSDataSyncLocationFsxWindows_disappears(
 func TestAccAWSDataSyncLocationFsxWindows_subdirectory(
 func TestAccAWSDataSyncLocationFsxWindows_tags(
 func TestAccAWSDataSyncLocationNfs_basic(
+func TestAccAWSDataSyncLocationNfs_mountOptions(
 func TestAccAWSDataSyncLocationNfs_disappears(
 func TestAccAWSDataSyncLocationNfs_AgentARNs_Multple(
 func TestAccAWSDataSyncLocationNfs_Subdirectory(

@@ -13,9 +13,6 @@ func TestAccAWSAPIGatewayV2ApisDataSource_ProtocolType(
 func TestAccAWSAPIGatewayV2ApisDataSource_Tags(
 func TestAccAWSAPIGatewayV2ApiDataSource_Http(
 func TestAccAWSAPIGatewayV2ApiDataSource_WebSocket(
-func TestAccAWSAppmeshMeshDataSource_basic(
-func TestAccAWSAppmeshMeshDataSource_meshOwner(
-func TestAccAWSAppmeshMeshDataSource_specAndTagsSet(
 func TestAccAWSAutoscalingGroups_basic(
 func TestAccAWSAvailabilityZones_basic(
 func TestAccAWSAvailabilityZones_AllAvailabilityZones(
@@ -759,6 +756,8 @@ func TestAccAWSBatchJobQueue_ComputeEnvironments_ExternalOrderUpdate(
 func TestAccAWSBatchJobQueue_Priority(
 func TestAccAWSBatchJobQueue_State(
 func TestAccAWSBatchJobQueue_Tags(
+func TestAccAWSBudgetsBudgetAction_basic(
+func TestAccAWSBudgetsBudgetAction_disappears(
 func TestAccAWSBudgetsBudget_basic(
 func TestAccAWSBudgetsBudget_prefix(
 func TestAccAWSBudgetsBudget_notification(
@@ -1251,6 +1250,7 @@ func TestAccAWSDataSyncLocationFsxWindows_disappears(
 func TestAccAWSDataSyncLocationFsxWindows_subdirectory(
 func TestAccAWSDataSyncLocationFsxWindows_tags(
 func TestAccAWSDataSyncLocationNfs_basic(
+func TestAccAWSDataSyncLocationNfs_mountOptions(
 func TestAccAWSDataSyncLocationNfs_disappears(
 func TestAccAWSDataSyncLocationNfs_AgentARNs_Multple(
 func TestAccAWSDataSyncLocationNfs_Subdirectory(
@@ -1754,6 +1754,7 @@ func TestAccAWSEcsCluster_CapacityProviders(
 func TestAccAWSEcsCluster_CapacityProvidersUpdate(
 func TestAccAWSEcsCluster_CapacityProvidersNoStrategy(
 func TestAccAWSEcsCluster_containerInsights(
+func TestAccAWSEcsCluster_configuration(
 func TestAccAWSEcsService_withARN(
 func TestAccAWSEcsService_basicImport(
 func TestAccAWSEcsService_disappears(

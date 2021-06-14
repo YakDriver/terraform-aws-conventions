@@ -26,6 +26,8 @@ func testAccDataSourceAwsApiGatewayVpcLinkConfig(r string) string {
 func testAccCheckAwsAppmeshMeshDataSourceConfig(rName string) string {
 func testAccCheckAwsAppmeshMeshDataSourceConfig_meshOwner(rName string) string {
 func testAccCheckAwsAppmeshMeshDataSourceConfig_specAndTagsSet(rName string) string {
+func testAccCheckAwsAppmeshVirtualServiceDataSourceConfig_virtualNode(rName, vsName string) string {
+func testAccCheckAwsAppmeshVirtualServiceDataSourceConfig_virtualRouter(rName, vsName string) string {
 func testAccDataSourceAwsArnConfig(arn string) string {
 func testAccCheckAwsAutoscalingGroupsConfig(rInt1, rInt2, rInt3 int) string {
 func testAccCheckAwsAutoscalingGroupsConfigWithDataSource(rInt1, rInt2, rInt3 int) string {
@@ -1198,6 +1200,7 @@ func testAccBatchJobQueueConfigPriority(rName string, priority int) string {
 func testAccBatchJobQueueConfigState(rName string, state string) string {
 func testAccBatchJobQueueConfigTags1(rName, tagKey1, tagValue1 string) string {
 func testAccBatchJobQueueConfigTags2(rName, tagKey1, tagValue1, tagKey2, tagValue2 string) string {
+func testAccAWSBudgetsBudgetActionConfigBasic(rName string) string {
 func testAccAWSBudgetsBudgetConfig_WithAccountID(budgetConfig budgets.Budget, accountID, costFilterKey string) string {
 func testAccAWSBudgetsBudgetConfig_PrefixDefaults(budgetConfig budgets.Budget, costFilterKey string) string {
 func testAccAWSBudgetsBudgetConfig_Prefix(budgetConfig budgets.Budget, costFilterKey string) string {
@@ -1771,6 +1774,7 @@ func testAccAWSDataSyncLocationFsxWindowsConfigTags1(key1, value1 string) string
 func testAccAWSDataSyncLocationFsxWindowsConfigTags2(key1, value1, key2, value2 string) string {
 func testAccAWSDataSyncLocationNfsConfigBase(rName string) string {
 func testAccAWSDataSyncLocationNfsConfig(rName string) string {
+func testAccAWSDataSyncLocationNfsConfigMountOptions(rName, option string) string {
 func testAccAWSDataSyncLocationNfsConfigAgentArnsMultiple(rName string) string {
 func testAccAWSDataSyncLocationNfsConfigSubdirectory(rName, subdirectory string) string {
 func testAccAWSDataSyncLocationNfsConfigTags1(rName, key1, value1 string) string {
@@ -2322,8 +2326,8 @@ func testAccAWSEcsClusterConfig(rName string) string {
 func testAccAWSEcsClusterConfigTags1(rName, tag1Key, tag1Value string) string {
 func testAccAWSEcsClusterCapacityProviderConfig(rName string) string {
 func testAccAWSEcsClusterConfigTags2(rName, tag1Key, tag1Value, tag2Key, tag2Value string) string {
-func testAccAWSEcsClusterConfigContainerInsights(rName string) string {
-func testAccAWSEcsClusterConfigContainerInsightsDisable(rName string) string {
+func testAccAWSEcsClusterConfigContainerInsights(rName, value string) string {
+func testAccAWSEcsClusterConfiguationConfig(rName string, enable bool) string {
 func testAccAWSEcsServiceWithNetworkConfigurationBase(rName, securityGroups string) string {
 func testAccAWSEcsServiceWithNetworkConfiguration(rName string) string {
 func testAccAWSEcsServiceWithNetworkConfiguration_modified(rName string) string {

@@ -469,6 +469,11 @@ func resourceAwsBatchJobQueueCreate(
 func resourceAwsBatchJobQueueRead(
 func resourceAwsBatchJobQueueUpdate(
 func resourceAwsBatchJobQueueDelete(
+func resourceAwsBudgetsBudgetAction(
+func resourceAwsBudgetsBudgetActionCreate(
+func resourceAwsBudgetsBudgetActionRead(
+func resourceAwsBudgetsBudgetActionUpdate(
+func resourceAwsBudgetsBudgetActionDelete(
 func resourceAwsBudgetsBudget(
 func resourceAwsBudgetsBudgetCreate(
 func resourceAwsBudgetsBudgetNotificationsCreate(

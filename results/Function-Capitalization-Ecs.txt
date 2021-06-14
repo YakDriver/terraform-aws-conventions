@@ -61,8 +61,6 @@ func resourceAwsEcsClusterCreate(
 func resourceAwsEcsClusterRead(
 func resourceAwsEcsClusterUpdate(
 func resourceAwsEcsClusterDelete(
-func waitForEcsClusterActive(
-func refreshEcsClusterStatus(
 func expandEcsSettings(
 func flattenEcsSettings(
 func testSweepEcsClusters(
@@ -74,9 +72,9 @@ func TestAccAWSEcsCluster_CapacityProviders(
 func TestAccAWSEcsCluster_CapacityProvidersUpdate(
 func TestAccAWSEcsCluster_CapacityProvidersNoStrategy(
 func TestAccAWSEcsCluster_containerInsights(
+func TestAccAWSEcsCluster_configuration(
 func testAccCheckAWSEcsClusterDestroy(
 func testAccCheckAWSEcsClusterExists(
-func testAccCheckAWSEcsClusterDisappears(
 func testAccAWSEcsClusterConfig(
 func testAccAWSEcsClusterConfigTags1(
 func testAccAWSEcsClusterCapacityProviderConfig(
@@ -90,7 +88,7 @@ func testAccAWSEcsClusterCapacityProvidersFargateNoStrategy(
 func testAccAWSEcsClusterCapacityProvidersFargateSpotNoStrategy(
 func testAccAWSEcsClusterConfigTags2(
 func testAccAWSEcsClusterConfigContainerInsights(
-func testAccAWSEcsClusterConfigContainerInsightsDisable(
+func testAccAWSEcsClusterConfiguationConfig(
 func resourceAwsEcsService(
 func resourceAwsEcsServiceImport(
 func resourceAwsEcsServiceCreate(

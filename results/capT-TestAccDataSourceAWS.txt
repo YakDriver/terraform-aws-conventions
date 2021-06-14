@@ -1,3 +1,8 @@
+func TestAccDataSourceAWSAppmeshMesh_basic(
+func TestAccDataSourceAWSAppmeshMesh_meshOwner(
+func TestAccDataSourceAWSAppmeshMesh_specAndTagsSet(
+func TestAccDataSourceAWSAppmeshVirtualService_virtualNode(
+func TestAccDataSourceAWSAppmeshVirtualService_virtualRouter(
 func TestAccDataSourceAWSCloudfrontFunction_basic(
 func TestAccDataSourceAWSEFSAccessPoints_basic(
 func TestAccDataSourceAWSEFSAccessPoint_basic(
